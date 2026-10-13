@@ -1,0 +1,1441 @@
+{
+ "cards": [
+  {
+   "id": "genre:winback_email",
+   "kind": "genre",
+   "name": "Win-back / re-engagement email",
+   "status": "current",
+   "summary": "An email (usually one of a 2-4 email flow) sent to customers who have stopped buying or subscribers who have stopped opening, written to get one action before the list is cleaned: a reorder, a click, or a 'keep me subscribed'. Good looks like an honest nod to the gap, one concrete reason to come back (what changed, a product matched to their last order, an incentive the margin can carry), one clear button, and an exit that is as easy as staying.",
+   "use_for": [
+    "Lapsed buyers of a D2C brand who are past their usual reorder window (coffee, skincare, pet food, kurtas, supplements)",
+    "Sunset / re-permission emails to subscribers who have stopped opening, sent before they are suppressed",
+    "Churned SaaS or app users: what has changed or been fixed since they left",
+    "Lapsed memberships and subscriptions (gym, coaching programme, paid newsletter) up for renewal"
+   ],
+   "avoid": [
+    "The person never bought: that is genre:abandoned_cart_email (left a cart) or genre:email_sequence_nurture (lead not yet a customer).",
+    "The customer bought recently: genre:post_purchase_email; a win-back to an active buyer reads as a broken system.",
+    "A store-wide sale sent to the whole list: genre:promotional_email. A win-back that looks like a blast sale is ignored by exactly the people it is for.",
+    "People who unsubscribed or withdrew consent: send nothing. CAN-SPAM requires opt-outs to be honoured and India's DPDP regime is consent-based; do not 'win back' by email someone who said no.",
+    "Re-activation on WhatsApp or SMS: use genre:whatsapp_broadcast or genre:sms_marketing; template approval and DLT rules change the writing."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "recommends building welcome series, abandoned cart, post-purchase and winback flows first"
+    },
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/360017518492",
+     "title": "Klaviyo Help: How to create a sunset flow (read via search 2026-10-05)",
+     "supports": "a sunset flow is a last attempt to win back unengaged profiles before deleting or suppressing them; add one to three emails and keep the flow to no more than three because repeatedly contacting unengaged people can hurt deliverability; profiles that finish the flow are tagged unengaged and can then be suppressed"
+    },
+    {
+     "url": "https://martech.org/new-rules-for-bulk-email-senders-from-google-yahoo-what-you-need-to-know/",
+     "title": "MarTech: New rules for bulk email senders from Google and Yahoo (updated June 2026)",
+     "supports": "bulk-sender guidelines focus on authentication, reported spam rates and the ability to unsubscribe easily"
+    },
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+     "title": "FTC: CAN-SPAM Act compliance guide for business",
+     "supports": "commercial email must tell recipients how to opt out and honour opt-out requests; the sender and any hired agency can both be liable"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "CCPA Guidelines for Prevention and Regulation of Dark Patterns, 2023 (gazette PDF)",
+     "supports": "false urgency and confirm shaming are among the listed dark patterns"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork In-Demand Skills 2026 (press release, 2026-02-04)",
+     "supports": "top-10 most in-demand Sales & Marketing skills include Email Marketing and Marketing Automation"
+    }
+   ],
+   "related": [
+    "genre:abandoned_cart_email",
+    "genre:post_purchase_email",
+    "genre:promotional_email",
+    "genre:welcome_email_series",
+    "genre:email_sequence_nurture",
+    "genre:whatsapp_broadcast",
+    "trend:email_deliverability_rules"
+   ],
+   "buyers": [
+    "D2C and ecommerce brands running Shopify plus an ESP (Klaviyo, Mailchimp, Omnisend, Zoho Campaigns)",
+    "Email marketing and retention/CRM agencies and freelancers",
+    "SaaS and app lifecycle teams",
+    "Edtech, fitness and subscription businesses",
+    "Newsletter publishers cleaning their lists"
+   ],
+   "value": "medium",
+   "value_why": "Klaviyo names winback among the first flows a store should build (help centre, updated 2026-03-30) and Upwork's In-Demand Skills 2026 puts Email Marketing and Marketing Automation in the top-10 Sales & Marketing skills (2026-02-04). It is mostly sold inside a lifecycle-flow package (welcome, cart, post-purchase, winback) rather than on its own.",
+   "goal": "The lapsed customer buys again or clicks to stay subscribed; everyone who does neither is cleanly identified so they can be suppressed.",
+   "structure": [
+    {
+     "part": "Sender name, subject line and preheader",
+     "does": "Sender is the brand or a named person at it ('Ritika at Blue Tokai'-style), never a no-reply. Subject names the gap or the reason to return in plain words; the preheader adds the second half of the thought instead of 'View in browser'.",
+     "length": "Subject under 60 characters and about 9 words; preheader one line"
+    },
+    {
+     "part": "Opening",
+     "does": "Acknowledges the gap without guilt and without pretending nothing happened: names the last product or the time since the last order, using merge tokens only where the data is clean and each token has a fallback.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "One reason to come back",
+     "does": "One concrete thing: what changed (new range, the complaint they had is fixed, faster delivery to their city), a product matched to their last order, or a replenishment reminder. One reason, not a catalogue.",
+     "length": "2-4 sentences or one product block"
+    },
+    {
+     "part": "Incentive (optional, usually email 2 or 3)",
+     "does": "A real offer with its actual expiry date and conditions, sized to what the margin can carry. No fake countdown, no 'only 2 left' unless true.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Single call to action",
+     "does": "One button (repeated as one text link at most) with a specific label: 'Reorder your Monsoon Malabar', 'Keep me on the list', 'See what's new'.",
+     "length": "1 button"
+    },
+    {
+     "part": "Exit door (sunset email)",
+     "does": "Says plainly that emails will stop if they don't click, offers a one-click 'keep me subscribed' and a visible unsubscribe link. Neutral wording, no shaming.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Sign-off and P.S.",
+     "does": "Human sign-off from a named person; the P.S. carries the deadline or invites a reply ('Reply and tell us what went wrong, I read every one').",
+     "length": "1-2 lines"
+    }
+   ],
+   "length": {
+    "min": 50,
+    "max": 200,
+    "unit": "words",
+    "note": "Per email body. A typical flow is 2-4 emails: email 1 gives the reason with no discount, email 2 adds proof or an incentive, the last is the stay-or-go email. Klaviyo advises keeping a sunset flow to three emails at most. Set the trigger from the brand's own repurchase interval (time between orders for that product), not a fixed number of days."
+   },
+   "frameworks": [
+    "fw:bab",
+    "fw:aida"
+   ],
+   "techniques": [
+    "tech:subject_preheader_pairing",
+    "tech:personalization_tokens",
+    "tech:single_cta_email",
+    "tech:ethical_urgency",
+    "tech:sender_name",
+    "tech:ps_line"
+   ],
+   "hooks": [
+    "hook:personalised_subject_line",
+    "hook:descriptive_subject_line",
+    "hook:quick_question_subject_line",
+    "hook:offer_price"
+   ],
+   "platforms": [
+    "plat:email_subject_line",
+    "plat:gmail_clipping"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:founder_candid",
+    "tone:conversational"
+   ],
+   "languages": [
+    "lang:indian_english",
+    "lang:hinglish_roman"
+   ],
+   "compliance": [
+    "comp:can_spam",
+    "comp:dpdp_act_rules",
+    "comp:ccpa_dark_patterns_2023"
+   ],
+   "checklist": [
+    "Is the sender name the brand or a named person the reader will recognise (not no-reply)?",
+    "Is the subject line 60 characters or fewer, with no ALL CAPS and no fake 'RE:' or 'FWD:'?",
+    "Does the opening acknowledge the gap (time or last product) in one or two sentences without guilt-tripping?",
+    "Is there exactly one reason to come back, stated concretely (a product, a change, a date)?",
+    "If there is a discount, does it state the real expiry date and conditions?",
+    "Is there one primary CTA with a specific verb label (not 'Click here')?",
+    "Is there a visible unsubscribe link, and does the sunset email offer a one-click 'keep me subscribed'?",
+    "Does every merge token have a fallback (no 'Hi ,' or 'your {{product}}')?",
+    "Is the body 200 words or fewer?",
+    "Is it free of fake scarcity and confirm-shaming exit links?"
+   ],
+   "pitfalls": [
+    "'We miss you!' and nothing else: the reader gets no reason to return. Lead with what changed or what fits them: 'The Kolhapuris you bought in March now come in a wide fit.'",
+    "A discount in email 1 teaches customers to lapse for a coupon. Open with value (news, replenishment, a fix), keep the incentive for email 2 or 3, and size it to margin.",
+    "Guilt and confirm-shaming ('Did we do something wrong?', 'No thanks, I don't want glowing skin'): confirm shaming is a listed dark pattern in CCPA's 2023 guidelines. Use a neutral 'Unsubscribe' or 'Not now'.",
+    "One trigger for every product ('no order in 90 days'): a mattress buyer is not lapsed at 90 days, a coffee buyer is. Set the trigger per product from the brand's reorder data.",
+    "Mailing unengaged addresses forever: it drags down inbox placement for the whole list. Run a sunset of at most three emails, then suppress the non-responders.",
+    "Hiding the unsubscribe link to 'save' subscribers: Gmail and Yahoo bulk-sender rules require easy unsubscribe, and a spam complaint costs far more than an unsubscribe.",
+    "Merge tokens with no fallback print 'Hi ,' or 'your null': set defaults ('Hi there', 'your last order') and send a test to a profile with empty fields."
+   ],
+   "lint": {
+    "min_words": 30,
+    "max_words": 220,
+    "max_sentence_words": 25,
+    "max_exclamations": 2,
+    "max_emoji": 2,
+    "require": [
+     {
+      "label": "has a return or stay CTA",
+      "regex": "(?i)shop|reorder|re-order|order|buy|browse|see|explore|come back|stay|keep|subscribe|claim|use code|book|try|restart|renew|ऑर्डर|देखें"
+     }
+    ],
+    "ban": [
+     {
+      "label": "vague 'click here' link",
+      "regex": "(?i)click here"
+     },
+     {
+      "label": "pushy spam phrasing",
+      "regex": "(?i)act now|100% free|last chance!!"
+     },
+     {
+      "label": "confirm-shaming exit",
+      "regex": "(?i)no,? (thanks,? )?i (don'?t|do not) (want|like|care)"
+     }
+    ]
+   },
+   "exemplar_brief": "Email 1 of a 3-email win-back flow for a Bengaluru D2C specialty coffee brand (beans Rs 450-900 per 250 g, subscription available); audience: customers whose last order was 75+ days ago, well past the brand's usual 35-day reorder gap; merge tokens for first name and last roast bought; English with one light Hinglish line; subject + preheader + 80-140 word body; no discount in this email (a 10% code comes in email 2); goal: reorder their last roast or try the new single-estate Chikmagalur lot.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_15.json#genre:winback_email",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. Subject (34 chars) names the gap, preheader adds the Chikmagalur lot; opening uses the brief's 35-day vs 10-week gap with no guilt; natural Hinglish line (kaapi ... feeki lag rahi hogi agrees); one reason, one specific button, and the new lot sits on the same page so both goals share one CTA; named sender, reply P.S., unsubscribe footer, no discount as briefed. Writer nits: once filled, 'since your {{last_roast}}' reads 'since your Monsoon Malabar' (write 'since your last bag of ...'); 'Your usual is still on the shelf' repeats the preheader word for word.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:worldbuilding_bible",
+   "kind": "genre",
+   "name": "Worldbuilding / series bible",
+   "status": "niche",
+   "summary": "A living reference document that defines a story world (premise and tone, the rules of how the world works, history, places, factions, characters and their arcs, glossary) so that many writers, artists and developers make consistent work, and, in its short 'pitch bible' form, sells the series. Good looks like numbered rules with their costs, entries that each say what stories they create, one spelling for every invented name, and a change log, short enough that writers actually consult it.",
+   "use_for": [
+    "Writers' room reference for a web series, animated show or audio drama: the first thing new staff read",
+    "Narrative bible for a game studio, shared by writers, level designers and artists",
+    "Pitch bible to sell a series or IP to an OTT platform, channel or studio",
+    "Multi-author novel series, comics and franchise universes",
+    "AI-video series and mascot universes where every prompt must keep characters, places and props identical"
+   ],
+   "avoid": [
+    "Selling a single film: write genre:film_treatment or genre:synopsis.",
+    "Deep detail on one character: genre:character_bio, linked from the bible's cast section.",
+    "Brand voice rules for a company: write genre:brand_voice_guide, not a story bible.",
+    "Writing 50 pages of invented history before any episode exists: write the pilot or first chapter, then grow the bible from what the stories actually need."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Series_bible",
+     "title": "Wikipedia: Bible (screenwriting) (read 2026-10-05)",
+     "supports": "a bible (show bible, pitch bible) is a reference document for characters, settings and other elements of a TV, film or video game project; used for continuity of characters and timeline, as a sales document for networks and studios, and as reference for new writing staff"
+    },
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Synopsis, Story, Script, Plot, Screenplay, Dialogue and Song for members"
+    }
+   ],
+   "related": [
+    "genre:character_bio",
+    "genre:film_treatment",
+    "genre:web_series_episode",
+    "genre:game_narrative",
+    "genre:micro_drama_episode_script",
+    "genre:ai_video_prompt_script",
+    "trend:micro_dramas"
+   ],
+   "buyers": [
+    "Showrunners, producers and OTT development teams",
+    "Animation studios developing an original series",
+    "Game studios (narrative leads)",
+    "Publishers and IP / franchise developers, comic publishers",
+    "Independent creators building an AI-animated or mascot series"
+   ],
+   "value": "low",
+   "value_why": "Bibles are produced inside writers' rooms, game studios and IP-development deals and are rarely bought on their own (harvest note); Wikipedia describes them as both an internal continuity reference and a sales document for networks and studios, so the paid version is usually a pitch bible written by the creator or a hired writer during development.",
+   "goal": "A new writer, artist or prompt writer can read it and produce an episode, scene or asset that fits the world without asking the creator a single question; for a pitch bible, the buyer asks for the pilot.",
+   "structure": [
+    {
+     "part": "Overview page",
+     "does": "Title, logline, format (episodes x minutes, platform), genre, tone in two or three comparables, and the central question or conflict the series keeps returning to.",
+     "length": "1 page"
+    },
+    {
+     "part": "Tone and style",
+     "does": "How the show feels and sounds: do's and don'ts with one sample line of dialogue or narration each; language rules (Hindi-English mix, dialect, who speaks how); visual style references by name.",
+     "length": "1-2 pages"
+    },
+    {
+     "part": "World rules",
+     "does": "The laws that make this world different (technology, magic, social order, economy), numbered so writers can cite 'Rule 4'. Each rule in one sentence, then its limit or cost, then one conflict it creates.",
+     "length": "5-12 rules, 2-5 lines each"
+    },
+    {
+     "part": "History and timeline",
+     "does": "Only past events that drive present conflicts, in a dated table; everything else goes to an appendix or is cut.",
+     "length": "1-2 pages"
+    },
+    {
+     "part": "Places",
+     "does": "Key locations: what it looks, sounds and smells like, who controls it, and what kind of scene happens there.",
+     "length": "Half a page per major location"
+    },
+    {
+     "part": "Factions and institutions",
+     "does": "Each group's goal, methods, resources and who it opposes; a relationship map for three or more groups.",
+     "length": "Half a page each"
+    },
+    {
+     "part": "Characters",
+     "does": "Main cast: want, need, flaw, how they talk (sample line), where they start and end the season; fixed visual descriptors for animation or AI video; link to full character bios.",
+     "length": "Half to 1 page each"
+    },
+    {
+     "part": "Episode engine and arcs",
+     "does": "What kind of story repeats every episode (the engine), the season arc, and where later seasons could go; three or four sample episode loglines.",
+     "length": "1-3 pages"
+    },
+    {
+     "part": "Glossary",
+     "does": "Every invented term and name with its single approved spelling (Roman and Devanagari where relevant) and pronunciation.",
+     "length": "As needed"
+    },
+    {
+     "part": "Canon and change log",
+     "does": "What is fixed canon, what is deliberately open, and a dated list of changes with who approved each.",
+     "length": "Running list"
+    }
+   ],
+   "length": {
+    "min": 2000,
+    "max": 25000,
+    "unit": "words",
+    "note": "A pitch bible sits at the short end (a sales read); a working writers'-room or game bible grows across seasons toward the long end. Length is driven by the number of rules, places and cast, not by lore for its own sake. For the verify wave, the deliverable is a pitch-bible excerpt (1,500-2,500 words)."
+   },
+   "frameworks": [
+    "fw:dan_harmon_story_circle",
+    "fw:three_act_structure",
+    "fw:heros_journey"
+   ],
+   "techniques": [
+    "tech:consistent_terminology",
+    "tech:conflict_and_stakes",
+    "tech:character_with_a_want",
+    "tech:sensory_detail",
+    "tech:foreshadowing"
+   ],
+   "tones": [
+    "tone:storyteller_narrative",
+    "tone:technical_precise"
+   ],
+   "languages": [
+    "lang:hindi_romanisation_schemes",
+    "lang:hinglish_roman",
+    "lang:hindi_devanagari"
+   ],
+   "compliance": [
+    "comp:us_copyright_ai_authorship",
+    "comp:copyright_act_s52_fair_dealing"
+   ],
+   "checklist": [
+    "Does the first page give logline, format, genre and tone in one page or less?",
+    "Is every world rule numbered, stated in one sentence, and followed by its limit or cost?",
+    "Does each rule name at least one conflict or story it creates?",
+    "Does every main character entry state want, flaw and a sample line in their voice?",
+    "Is there an episode-engine paragraph saying what kind of story repeats each episode?",
+    "Is every invented name spelled one way throughout, matching the glossary?",
+    "Is history limited to events that matter to present stories, with dates?",
+    "Is there a change log and a clear split between canon and open questions?",
+    "Could a new writer pitch an episode from it without asking the creator anything?",
+    "Is prose fiction limited to one short sample scene, with everything else in reference entries?"
+   ],
+   "pitfalls": [
+    "Encyclopaedia syndrome: pages of invented history and no conflict. Every section must answer 'what stories does this create?'; cut lore no episode will use.",
+    "Rules without costs: a power or technology with no limit kills tension. State the price ('Every rewind erases one of the user's own memories') and the edge cases writers will hit.",
+    "Drifting spellings of invented or Hindi names across sections (Shivaay / Shivay / Shiva'y): fix one spelling in the glossary with the Devanagari, then search-replace the whole document.",
+    "Bible written as a novel: long atmospheric prose that writers cannot scan. Use headings, short entries and tables; one sample scene for tone at most.",
+    "No change log: writers follow a rule that was changed two meetings ago. Date every change, name who approved it, and mark open questions as open.",
+    "Loose visual descriptions for AI-video or animation series ('a cute robot'): give fixed descriptors (colours, outfit, height, signature prop) that are pasted verbatim into every prompt.",
+    "Sending the full internal bible as a pitch: a buyer wants a short sales read. Keep a pitch version and a working version, and register the story or synopsis (for SWA members) before circulating it."
+   ],
+   "lint": {
+    "min_words": 800,
+    "max_words": 30000,
+    "max_sentence_words": 35,
+    "require": [
+     {
+      "label": "has a logline or premise",
+      "regex": "(?i)logline|premise|कहानी|सार"
+     }
+    ]
+   },
+   "exemplar_brief": "Pitch-bible excerpt (1,500-2,500 words) for an 8-episode Hindi animated web series pitched to an OTT kids-and-family slate: 'Dabba Express', a Mumbai tiffin-delivery network secretly run by retired railway robots; must include a one-page overview (logline, format 8 x 22 min, tone comparables), 6 numbered world rules each with a cost, 3 places, 4 main characters with want, flaw and a sample line, the episode engine, and a glossary with Roman and Devanagari spellings; English text with Hindi terms; goal: the OTT development exec asks for the pilot script.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_15.json#genre:worldbuilding_bible",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. Every brief item delivered and scannable: one-page overview (logline, 8 x 22 min, Bluey / WALL-E / Wallace & Gromit), 6 numbered rules each with cost and conflict plus edge cases, dated history limited to live conflicts, 3 sensory places, factions with a relationship line, 4 leads with want / flaw / arc / sample line and fixed AI-video descriptors, engine plus 4 loglines, Roman + Devanagari glossary with pronunciation, canon and change log. Hindi lines agree (rahi for Tanu, jaunga for Pahiya). One fix: the logline says Mumbai's lunchboxes ARE carried by robots, which contradicts the bible's own respect rule that robots never replace dabbawalas; an Indian OTT exec will flag it ('some of Mumbai's lunchboxes').",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:x_post",
+   "kind": "genre",
+   "name": "X (Twitter) post",
+   "status": "current",
+   "summary": "A single post on X that lands one idea (a take, a lesson, a number, an update, a joke) within 280 weighted characters, readable by someone who sees it alone with no context. Good looks like a first line that carries the claim, one concrete supporting detail, a clean landing, and no padding, hashtag stacks or engagement bait.",
+   "use_for": [
+    "Founder and executive posts written by a ghostwriter: opinions, lessons, behind-the-scenes numbers",
+    "Brand updates: launches, outages, event news, replies that work as standalone posts",
+    "Journalists, civic and political accounts posting news and reactions",
+    "Promoting a newsletter issue, video or article with one takeaway and the link",
+    "Hindi and Hinglish takes, satire and one-liners for Indian audiences"
+   ],
+   "avoid": [
+    "The idea needs several steps or examples: write genre:x_thread.",
+    "Cross-posting the same text to LinkedIn or Threads: write genre:linkedin_post or genre:threads_post; length, register and line-break habits differ.",
+    "Paid promotion: genre:social_ad_copy.",
+    "Ideas that need 500+ words: write genre:linkedin_article, a blog post or a newsletter and post one takeaway with the link."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "supply signal: Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009, Pinterest 376, Threads 238, Snapchat 123, Reddit 96, Twitter 47 gigs"
+    },
+    {
+     "url": "https://docs.x.com/fundamentals/counting-characters",
+     "title": "X Developer docs: Counting characters",
+     "supports": "posts can contain up to 280 characters (weighted); every URL is wrapped by t.co and counts as 23 characters"
+    },
+    {
+     "url": "https://help.x.com/en/using-x/x-premium",
+     "title": "X Help: About X Premium",
+     "supports": "longer posts let subscribers post up to 25,000 characters"
+    },
+    {
+     "url": "https://help.x.com/en/rules-and-policies/paid-partnerships-policy",
+     "title": "X Help: Paid partnerships policy",
+     "supports": "definition of paid partnership, the disclosure requirement and toggle, country rules"
+    }
+   ],
+   "related": [
+    "genre:x_thread",
+    "genre:threads_post",
+    "genre:linkedin_post",
+    "genre:meme_caption",
+    "trend:threads_growth",
+    "trend:ai_slop_backlash"
+   ],
+   "buyers": [
+    "Founders and CXOs (through ghostwriters)",
+    "Startups and SaaS brands' social teams",
+    "D2C brands and their social media agencies",
+    "Media houses, journalists and news creators",
+    "Political campaigns, PR agencies and public figures"
+   ],
+   "value": "low",
+   "value_why": "Twitter is the smallest major platform on Fiverr's social media copywriting Platform facet (47 gigs on 2026-10-04, against 1,338 for LinkedIn). Single posts are rarely bought alone; they sit inside founder ghostwriting or a social retainer.",
+   "goal": "The reader stops, gets the idea in one read, and replies, reposts, follows or clicks the one link.",
+   "structure": [
+    {
+     "part": "First line (hook)",
+     "does": "The claim, number or tension, front-loaded. No throat-clearing ('So...', 'Hot take:', 'Here's a thought').",
+     "length": "1 line, ideally under 12 words"
+    },
+    {
+     "part": "Support",
+     "does": "The one detail, example or reason that makes the claim believable; a line break between thoughts.",
+     "length": "1-3 short lines"
+    },
+    {
+     "part": "Landing",
+     "does": "The punchline, takeaway, a genuine question, or the single link with a reason to click before it.",
+     "length": "1 line"
+    },
+    {
+     "part": "Media (optional)",
+     "does": "An image, chart or short clip that carries the proof, with alt text written.",
+     "length": "0-1 asset"
+    }
+   ],
+   "length": {
+    "min": 5,
+    "max": 60,
+    "unit": "words",
+    "note": "Hard cap is 280 weighted characters (plat:x_post): Latin and Devanagari code points count 1 each (Hindi matras count separately), emoji count 2, every link counts 23. Most strong posts use well under the cap. Premium long posts (up to 25,000 characters) behave like a short article; treat them as a different job."
+   },
+   "frameworks": [
+    "fw:abt",
+    "fw:prep"
+   ],
+   "techniques": [
+    "tech:front_loading",
+    "tech:specificity",
+    "tech:punchline_last",
+    "tech:mobile_line_breaks",
+    "tech:short_sentences"
+   ],
+   "hooks": [
+    "hook:contrarian",
+    "hook:shocking_stat",
+    "hook:personal_story",
+    "hook:hinglish_question",
+    "hook:news_announcement"
+   ],
+   "platforms": [
+    "plat:x_post",
+    "plat:x_long_post"
+   ],
+   "tones": [
+    "tone:founder_candid",
+    "tone:playful_witty",
+    "tone:bold_provocative",
+    "tone:desi_casual_hinglish"
+   ],
+   "languages": [
+    "lang:hinglish_roman",
+    "lang:hindi_devanagari"
+   ],
+   "compliance": [
+    "comp:x_paid_partnerships",
+    "comp:asci_influencer",
+    "comp:bns_defamation_speech",
+    "comp:eci_mcc"
+   ],
+   "checklist": [
+    "Does the post make exactly one point?",
+    "Does the first line carry the claim, number or tension (not a warm-up)?",
+    "Is it within 280 weighted characters, counting each link as 23 and each emoji as 2?",
+    "Does it make sense to someone who sees it alone, quoted out of context?",
+    "Is there at least one concrete detail (a number, a name, a place, a time)?",
+    "Are there two hashtags or fewer, none used as decoration mid-sentence?",
+    "If there is a link, is the reason to click stated before it?",
+    "If the post is paid or the product was gifted, is the partnership disclosed?",
+    "Is it free of engagement bait ('Like if you agree', 'RT if')?",
+    "Can every factual claim about a named person or company be backed by a source?"
+   ],
+   "pitfalls": [
+    "Two ideas in 280 characters: the second steals attention from the first. Cut one, or make it a thread.",
+    "Thread-bait with no thread ('Wait for it', 'You won't believe what happened next'): put the payoff in the post itself.",
+    "Hashtag stacks (#startup #founder #growth #motivation): reads as spam. Use zero, or one or two that people actually search.",
+    "Vague wisdom ('Consistency is key'): replace with the case behind it ('Posted daily for 90 days. 1,200 followers became 1,400. All the growth came from the 3 posts that disagreed with someone.').",
+    "Devanagari running long: matras and viramas count as separate characters, so a Hindi line that looks short can overflow. Draft in the composer or count code points.",
+    "Allegations about named people with no source: defamation risk under BNS s.356. Link the source or don't post it.",
+    "Undisclosed paid posts: X's paid partnerships policy requires disclosure, and ASCI requires a clear label in India."
+   ],
+   "lint": {
+    "min_words": 3,
+    "max_words": 60,
+    "max_sentence_words": 30,
+    "max_hashtags": 2,
+    "max_emoji": 3,
+    "ban": [
+     {
+      "label": "engagement bait",
+      "regex": "(?i)\\b(like|rt|retweet|repost|follow) if you\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Single X post ghostwritten for the founder of a Jaipur fintech that helps kirana stores accept UPI credit; audience: Indian startup and fintech X; topic: one counter-intuitive lesson from onboarding 3,000 kiranas (shopkeepers trusted a 30-second voice note in Marwari more than the in-app tutorial); English with one Hindi phrase allowed; under 280 characters, no hashtags, no link; goal: replies and reposts from founders.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_15.json#genre:x_post",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. 274 weighted characters (recounted), no hashtag, no link. First line carries the 3,000-kirana number, the support line sets tutorial vs voice note, the Hindi landing 'Bharosa awaaz se banta hai, screen se nahi' agrees (bharosa m.) and lands the lesson, and the closing question is a real reply prompt for founders. Only tic: the 'The surprise:' colon reveal; the claim can open directly.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:x_thread",
+   "kind": "genre",
+   "name": "X (Twitter) thread",
+   "status": "niche",
+   "summary": "A numbered series of linked posts that unpacks one idea, story or lesson: a hook post that promises a specific payoff, one point per post in a logical order, and a closing post that summarises and asks for one action. Good looks like a thread where every post stands alone when quoted and the payoff the hook promised actually arrives.",
+   "use_for": [
+    "Founder story threads ('How we got our first 100 customers in Surat')",
+    "Breakdowns of a budget, report, court verdict or policy change",
+    "Lesson and listicle threads repurposed from a podcast, webinar or blog post",
+    "Case studies: a campaign teardown, a product launch post-mortem",
+    "Live threads that add updates to a developing story"
+   ],
+   "avoid": [
+    "One idea that fits in one post: write genre:x_post.",
+    "Material that should rank in search and last: write genre:blog_post or genre:linkedin_article and use a short thread to promote it.",
+    "The same outline on LinkedIn or Instagram: write genre:carousel_copy (a thread outline ports almost one post per slide).",
+    "Padding a thin idea to look substantial: if you have 4 points, ship 4 posts plus the hook and close."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "supply signal: Twitter is the smallest major platform facet at 47 gigs (LinkedIn 1338, Threads 238)"
+    },
+    {
+     "url": "https://help.x.com/en/using-x/how-to-post",
+     "title": "X Help: How to post",
+     "supports": "each post in a thread is composed up to 280 characters; no maximum number of posts per thread is stated"
+    },
+    {
+     "url": "https://docs.x.com/fundamentals/counting-characters",
+     "title": "X Developer docs: Counting characters",
+     "supports": "280 weighted characters per post; URLs count as 23 characters"
+    },
+    {
+     "url": "https://help.x.com/en/rules-and-policies/paid-partnerships-policy",
+     "title": "X Help: Paid partnerships policy",
+     "supports": "paid partnerships must be disclosed"
+    }
+   ],
+   "related": [
+    "genre:x_post",
+    "genre:carousel_copy",
+    "genre:repurposed_content",
+    "genre:threads_post",
+    "genre:linkedin_post",
+    "trend:threads_growth"
+   ],
+   "buyers": [
+    "Founders and VCs (through ghostwriters)",
+    "SaaS, fintech and D2C marketing teams",
+    "Newsletter writers and podcasters repurposing their work",
+    "Journalists and explainer creators",
+    "Policy, think-tank and public-affairs communications teams"
+   ],
+   "value": "low",
+   "value_why": "Twitter is the smallest major platform on Fiverr's social copywriting facet (47 gigs on 2026-10-04); thread ghostwriting survives as a founder niche and as a repurposing add-on to podcast or newsletter work.",
+   "goal": "The reader goes from the hook post to the last post, then follows, bookmarks, replies or clicks the one link at the end.",
+   "structure": [
+    {
+     "part": "Hook post",
+     "does": "States the specific payoff (a number, an outcome, a question) and why the author can be trusted on it (result, credential, data). May signal that a thread follows; never says only 'A thread'.",
+     "length": "1 post, under 280 weighted characters"
+    },
+    {
+     "part": "Context post (optional)",
+     "does": "The situation and stakes in one or two lines, so the points make sense.",
+     "length": "1 post"
+    },
+    {
+     "part": "Body posts",
+     "does": "One point per post in a clear order (chronology, steps or ranked list), numbered for lists. Each opens with its point, adds one specific example, and repeats its subject so it reads alone when quoted.",
+     "length": "3-10 posts"
+    },
+    {
+     "part": "Proof post",
+     "does": "A screenshot, chart, quote or number that backs the main claim, with alt text and credit.",
+     "length": "1 post with media"
+    },
+    {
+     "part": "Summary post",
+     "does": "The takeaways compressed for people who skimmed.",
+     "length": "1 post"
+    },
+    {
+     "part": "CTA post",
+     "does": "One action: follow for the next breakdown, read the full guide (the link lives here, not in the hook), or reply with a specific answer.",
+     "length": "1 post"
+    }
+   ],
+   "length": {
+    "min": 5,
+    "max": 15,
+    "unit": "count",
+    "note": "Number of posts; each post at most 280 weighted characters (plat:x_thread). X states no maximum thread length, so the number of distinct points sets it: if two posts say the same thing, merge them."
+   },
+   "frameworks": [
+    "fw:thread_structure",
+    "fw:scqa",
+    "fw:abt"
+   ],
+   "techniques": [
+    "tech:open_loop",
+    "tech:chunking",
+    "tech:specificity",
+    "tech:tldr_summary",
+    "tech:cta_writing",
+    "tech:front_loading"
+   ],
+   "hooks": [
+    "hook:number_list",
+    "hook:case_study_title",
+    "hook:personal_story",
+    "hook:contrarian",
+    "hook:curiosity_gap"
+   ],
+   "platforms": [
+    "plat:x_thread",
+    "plat:x_post"
+   ],
+   "tones": [
+    "tone:founder_candid",
+    "tone:conversational",
+    "tone:data_driven"
+   ],
+   "languages": [
+    "lang:indian_english",
+    "lang:hinglish_roman"
+   ],
+   "compliance": [
+    "comp:x_paid_partnerships",
+    "comp:bns_defamation_speech",
+    "comp:copyright_act_s52_fair_dealing"
+   ],
+   "checklist": [
+    "Does the hook post promise a specific payoff that the thread delivers?",
+    "Is every post within 280 weighted characters?",
+    "Does each body post carry exactly one point, stated in its first line?",
+    "Does every post make sense when quoted alone (no 'this' or 'as above' without a subject)?",
+    "Are the posts in a clear order, numbered if the thread is a list?",
+    "Is each major claim backed by a number, example or screenshot?",
+    "Is the external link kept out of the hook post and placed in the last post?",
+    "Does the last post summarise and ask for exactly one action?",
+    "Is the thread free of filler posts ('Let's dive in', 'Buckle up')?",
+    "Are screenshots credited and any paid relationship disclosed?"
+   ],
+   "pitfalls": [
+    "A hook that writes a cheque the thread can't cash ('10 secrets that made me a crorepati' followed by generic advice): promise exactly what the posts deliver.",
+    "Filler posts ('Let's dive in', 'Here's the thing:'): each one costs readers. Start the first body post with point 1.",
+    "Posts that only work in sequence: when someone quotes post 6 it reads as nonsense. Repeat the subject ('GST notice reason 3: ...').",
+    "The link in the hook post sends readers away before they reach the value. Put it in the last post.",
+    "Padding to a round number (10 tips when you have 6): ship 6.",
+    "A blog post chopped at 280 characters mid-sentence: rewrite each post as a complete unit with its own first line.",
+    "Copying another creator's thread structure and examples line for line: platforms are demoting unoriginal content and readers notice. Build from the author's own data and stories."
+   ],
+   "lint": {
+    "min_words": 80,
+    "max_words": 900,
+    "max_sentence_words": 30,
+    "max_hashtags": 3,
+    "ban": [
+     {
+      "label": "filler opener",
+      "regex": "(?i)let'?s dive in|buckle up|\\bdelve\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "X thread (7-9 posts) ghostwritten for the Chennai founder of a B2B SaaS that automates GST reconciliation; audience: Indian SME owners and accountants on X; topic: 'We studied 1,200 GST notices our customers received: the 6 reasons they were issued and how each was fixed'; English; each post under 280 characters; one link to the full guide in the last post only; goal: follows and clicks to the guide. DEMO DATA: the 1,200-notice study is fictional and these shares are invented for this test assignment; use them as the thread's figures and build the proof post from them. Reasons by share of the 1,200 notices: 1. ITC claimed in GSTR-3B above what GSTR-2B shows: 34% (408 notices); 2. sales in GSTR-1 not matching GSTR-3B: 26% (312); 3. returns not filed, including nil returns: 15% (180); 4. ITC not reversed when the supplier stayed unpaid beyond 180 days (Rule 37): 11% (132); 5. ITC taken on free samples and gifts (section 17(5)(h)): 8% (96); 6. e-invoice (IRN) errors not cancelled in time: 6% (72).",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_15.json#genre:x_thread",
+    "note": "purpose 2, structure 1, specificity 2, voice 2, craft 1. 8 posts, each 177-266 weighted characters (recounted, link = 23), link only in the last post, every post stands alone ('GST notice reason N of 6'). GST facts check out: GSTR-2B vs 3B ITC, GSTR-1 vs 3B, nil returns, Rule 37 180-day reversal with interest, s.17(5)(h) free samples and gifts, IRN cancellable within 24 h then credit note. Gaps (writer): no proof post and not one figure from the '1,200 notices' study, so the data hook delivers generic GST advice (per-reason [share] placeholders were allowed); hook is flat ('Six reasons explain them'); the close asks for the click but not the follow the goal names. CARD FIX: exemplar_brief -> add each reason's share of the 1,200 notices (or say 'use [n%] placeholders per reason') so the structure's Proof post can be written. | CARD FIXED 2026-10-07 (fix_genre_d): exemplar_brief now gives each of the 6 reasons' share of the 1,200 notices (demo data) so the Proof post can be written; re-judge pending.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:youtube_chapters",
+   "kind": "genre",
+   "name": "YouTube video chapters (timestamps)",
+   "status": "current",
+   "summary": "A timestamped list in the video description that YouTube turns into named segments on the progress bar and clickable chapter links. Good looks like a list that starts at 00:00, has at least three timestamps in ascending order with every chapter at least 10 seconds long, matches the final edit to the second, and uses titles that tell a viewer what they will get rather than 'Part 2'.",
+   "use_for": [
+    "Long-form tutorials, explainers, reviews and video essays",
+    "Video podcasts and interviews, chaptered by topic",
+    "Course, webinar and workshop recordings",
+    "Product demos and comparison videos",
+    "Hindi and Hinglish explainer channels, where chapter titles carry the search terms viewers type"
+   ],
+   "avoid": [
+    "Shorts and any video too short for three chapters of at least 10 seconds.",
+    "Full episode notes with summary, links and guest bio: genre:podcast_show_notes (chapters are one block inside it).",
+    "Writing timestamps from a rough cut or script: they drift after the edit. Write from the final upload.",
+    "Chapter titles used as clickbait for content that isn't in the chapter."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9884579",
+     "title": "YouTube Help: Video chapters",
+     "supports": "manual chapters come from description timestamps: the first timestamp must be 00:00, at least three timestamps in ascending order, minimum chapter length 10 seconds; manual chapters override automatic ones"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/podcast",
+     "title": "Fiverr: Podcast Writing category (Service includes facet read 2026-10-04)",
+     "supports": "supply signal: Segment timestamps offered in 135 podcast-writing gigs, Episode summary 143, Show notes 91"
+    }
+   ],
+   "related": [
+    "genre:youtube_title_description",
+    "genre:podcast_show_notes",
+    "genre:youtube_video_script",
+    "genre:course_lesson_script",
+    "trend:video_podcasts"
+   ],
+   "buyers": [
+    "YouTube creators and channel managers",
+    "Podcast production agencies",
+    "Video editors who deliver upload-ready metadata",
+    "Edtech companies and course creators",
+    "Brand YouTube teams"
+   ],
+   "value": "low",
+   "value_why": "Fiverr podcast-writing gigs offer segment timestamps as a line item (135 gigs on 2026-10-04): a small add-on billed per episode inside a production or show-notes package, almost never a standalone job.",
+   "goal": "The viewer jumps to the part they came for and keeps watching instead of leaving, and the video gets a readable map of its contents.",
+   "structure": [
+    {
+     "part": "Label line (optional)",
+     "does": "A short 'Chapters' or 'Is video mein' label, or a blank line, separating the list from the description above it.",
+     "length": "1 line"
+    },
+    {
+     "part": "First chapter at 00:00",
+     "does": "Starts the list at 00:00 and names what the opening actually delivers ('00:00 Why your SIP lost money in 2025'), not 'Intro'.",
+     "length": "1 line"
+    },
+    {
+     "part": "Chapter lines",
+     "does": "One per line: timestamp (MM:SS, or H:MM:SS past an hour), a space, then a 2-7 word title front-loaded with the keyword or question. Ascending order; a new chapter at each real topic change; every chapter at least 10 seconds.",
+     "length": "3 or more lines; one per real section"
+    },
+    {
+     "part": "Sponsor and end chapters",
+     "does": "Sponsor segments labelled honestly ('Sponsor: Zerodha Varsity' style); the closing chapter named by its content ('Final verdict'), not 'Outro'.",
+     "length": "1 line each"
+    }
+   ],
+   "length": {
+    "min": 3,
+    "max": 30,
+    "unit": "lines",
+    "note": "YouTube needs at least three timestamps. The video's real structure sets the count: one chapter per distinct topic or step; long podcasts and courses carry more. Micro-chapters every few seconds clutter the progress bar."
+   },
+   "frameworks": [
+    "fw:youtube_intro_hook_promise_preview"
+   ],
+   "techniques": [
+    "tech:front_loading",
+    "tech:keyword_placement",
+    "tech:descriptive_subheads",
+    "tech:consistent_terminology"
+   ],
+   "hooks": [
+    "hook:keyword_front_loaded"
+   ],
+   "platforms": [
+    "plat:youtube_chapters",
+    "plat:youtube_description"
+   ],
+   "tones": [
+    "tone:conversational"
+   ],
+   "languages": [
+    "lang:hinglish_roman",
+    "lang:hindi_seo"
+   ],
+   "compliance": [
+    "comp:youtube_paid_promotion"
+   ],
+   "checklist": [
+    "Does the first timestamp read 00:00 (or 0:00)?",
+    "Are there at least three timestamps, in ascending order?",
+    "Is every chapter at least 10 seconds long?",
+    "Do the timestamps match the final upload (spot-check three by clicking)?",
+    "Is each title specific to its chapter (no 'Part 2', 'Misc', 'Intro', 'Outro')?",
+    "Does each title front-load the keyword or question a viewer would search?",
+    "Is each title short (about 2-7 words)?",
+    "Is the format one chapter per line: timestamp, space, title?",
+    "Is any sponsor segment labelled as a sponsor?",
+    "Are titles in the video's own language and script?"
+   ],
+   "pitfalls": [
+    "No 00:00 line: YouTube does not build chapters from the list. Always open with 00:00.",
+    "Timestamps taken from the rough cut: after trims every chapter lands late. Read times off the final upload or the final transcript's timecodes.",
+    "'Intro / Main part / Outro' titles tell the viewer nothing. Name the payoff: '04:12 The 3 documents banks reject'.",
+    "A sponsor read hidden under a vague chapter title: viewers feel tricked and skip anyway. Name it.",
+    "Mixed formats (4:5, 04:05, 4.05) and missing hours on long videos: use colon format, two-digit seconds, and H:MM:SS once the video passes an hour.",
+    "English chapter titles on a Hindi video: viewers search in Hindi or Hinglish; title chapters in the video's language and use the common Roman spelling for Hinglish."
+   ],
+   "lint": {
+    "min_words": 6,
+    "max_words": 300,
+    "max_sentence_words": 15,
+    "require": [
+     {
+      "label": "first timestamp is 00:00",
+      "regex": "(?m)^\\s*0?0:00\\b"
+     },
+     {
+      "label": "at least three timestamps",
+      "regex": "(?s)(\\d{1,2}:\\d{2}\\b.*?){3}"
+     }
+    ]
+   },
+   "exemplar_brief": "Chapter list for a 24-minute Hinglish YouTube explainer by a Lucknow personal-finance creator: 'Term insurance kaise chunein: 7 galtiyan jo sab karte hain'; invent plausible start times across the 24 minutes for a hook, an intro to term cover, the 7 mistakes (one chapter each) and a final checklist; 9-11 chapters, Hinglish titles in Roman script; must follow YouTube's chapter rules; goal: viewers jump to the mistake they care about.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_15.json#genre:youtube_chapters",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. Meets YouTube's rules: starts 00:00, 10 ascending MM:SS stamps, shortest chapter 80 s, last runs to 24:00, optional 'Is video mein:' label. Hook chapter names a payoff, not 'Intro'; one chapter per mistake, keyword first with '(galti N)' so viewers can jump; checklist last, not 'Outro'. Natural Roman Hinglish. Nit: 'Kharidne se pehle ka checklist' -> 'ki checklist' is the more common gender.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:youtube_community_post",
+   "kind": "genre",
+   "name": "YouTube channel post (Community / Posts tab)",
+   "status": "current",
+   "summary": "A text, poll, quiz, image or video post on a channel's Posts tab (formerly the Community tab) that keeps subscribers engaged between uploads, warms up the next video and doubles as audience research. Good looks like one clear ask (vote, answer, watch), the creator's own voice, a first line that works in the feed, and poll or quiz options that are mutually exclusive and inside YouTube's character limits.",
+   "use_for": [
+    "Polls that choose the next video's topic, product or title",
+    "Teasers for an upcoming upload or premiere, and 'new video is live' posts with a reason to watch",
+    "Quizzes that test viewers on what the last video taught (education channels)",
+    "Behind-the-scenes images, milestones and thank-you posts",
+    "Feedback questions between uploads"
+   ],
+   "avoid": [
+    "News meant to reach people who don't follow the channel: put it in a video and its title and description (genre:youtube_title_description).",
+    "Long essays: post the takeaway and link the blog or newsletter.",
+    "Polls with overlapping options or 'All of the above': the results are useless.",
+    "Engagement bait with no purpose ('Comment 1 if you're watching'): ask something whose answer the channel will use."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/7124474",
+     "title": "YouTube Help: Create a post",
+     "supports": "channel posts can be text, image, poll, quiz or video (formerly the Community tab); up to 10 images; text poll options within 65 characters, up to 4 answers; image poll captions within 36 characters; quiz answers up to 80 characters, or 30 with an image; no stated limit for the post text"
+    }
+   ],
+   "related": [
+    "genre:youtube_video_script",
+    "genre:youtube_title_description",
+    "genre:whatsapp_channel_post",
+    "genre:social_content_calendar"
+   ],
+   "buyers": [
+    "YouTube creators and channel managers",
+    "Brand and edtech YouTube teams",
+    "News and explainer channels",
+    "Social media agencies managing YouTube"
+   ],
+   "value": "low",
+   "value_why": "Written by the channel team as part of channel management; no separate marketplace category was found on 2026-10-04, so it is billed inside a YouTube management retainer.",
+   "goal": "The subscriber taps: votes, answers, comments or clicks through to the video, and the channel learns what to make next.",
+   "structure": [
+    {
+     "part": "First line",
+     "does": "The question, the news or the tease, so the post works when only its start shows in the feed.",
+     "length": "1 line"
+    },
+    {
+     "part": "Context",
+     "does": "Why it matters or what the vote decides ('The winner gets tested in Sunday's video').",
+     "length": "1-2 lines"
+    },
+    {
+     "part": "Interactive element",
+     "does": "A poll (2-4 mutually exclusive options, each within 65 characters; 36 for image captions), a quiz (up to 4 answers, each within 80 characters or 30 with an image, one correct, with an explanation), up to 10 images, or a video link.",
+     "length": "1 element"
+    },
+    {
+     "part": "Follow-through",
+     "does": "A later post or pinned comment reporting the result and what the channel will do with it.",
+     "length": "1-2 lines"
+    }
+   ],
+   "length": {
+    "min": 10,
+    "max": 120,
+    "unit": "words",
+    "note": "YouTube publishes no limit for the post text, but the post competes in a feed: most jobs need 1-4 lines plus the poll or quiz. Poll, image-caption and quiz answer limits are hard."
+   },
+   "frameworks": [
+    "fw:what_so_what_now_what"
+   ],
+   "techniques": [
+    "tech:ethical_comment_prompt",
+    "tech:front_loading",
+    "tech:you_focus",
+    "tech:open_loop"
+   ],
+   "hooks": [
+    "hook:question",
+    "hook:hinglish_question",
+    "hook:can_you_spot",
+    "hook:comparison_vs"
+   ],
+   "platforms": [
+    "plat:youtube_post"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:friendly_warm",
+    "tone:desi_casual_hinglish"
+   ],
+   "languages": [
+    "lang:hinglish_roman",
+    "lang:hindi_devanagari"
+   ],
+   "compliance": [
+    "comp:youtube_paid_promotion",
+    "comp:asci_influencer"
+   ],
+   "checklist": [
+    "Does the first line state the question, news or tease?",
+    "Is there exactly one ask (vote, answer, comment or watch)?",
+    "Are poll options 2-4, mutually exclusive, and each within 65 characters (36 for image-poll captions)?",
+    "For a quiz, is there one correct answer, every answer within 80 characters (30 with an image), and an explanation?",
+    "Does the post say what the result will decide or when viewers will see it?",
+    "Is the text 120 words or fewer?",
+    "Does it sound like the creator's voice in the videos?",
+    "If a sponsor or gifted product features, is it disclosed?",
+    "Is it free of hashtag stacks and purpose-less engagement bait?"
+   ],
+   "pitfalls": [
+    "Overlapping poll options ('Budget phones' vs 'Phones under Rs 15,000'): votes split and the data is useless. Make options mutually exclusive and of the same kind.",
+    "Asking and never acting: viewers stop voting. Post the result and make the video the poll promised.",
+    "'New video out! Link below' with nothing else: give one reason to watch ('I tested the Rs 999 earbuds against AirPods for a week').",
+    "Poll options written long and cut at the limit: draft each option within 65 characters (36 for image captions) before posting.",
+    "Trick quizzes that feel unfair: test the idea the last video taught, and explain the answer so the quiz teaches.",
+    "Pasting an Instagram caption with a hashtag block: write for YouTube's feed in the channel's voice instead."
+   ],
+   "lint": {
+    "min_words": 5,
+    "max_words": 150,
+    "max_sentence_words": 25,
+    "max_hashtags": 3,
+    "max_emoji": 4,
+    "ban": [
+     {
+      "label": "purpose-less engagement bait",
+      "regex": "(?i)comment \\d+ if|like if you|type yes if"
+     }
+    ]
+   },
+   "exemplar_brief": "Poll post for an Indore Hindi tech-review YouTube channel (900k subscribers) asking which phone under Rs 20,000 to test next; Hinglish in Roman script; a 1-3 line intro under 40 words plus 4 poll options within 65 characters each; must say when the winning video will go live; goal: votes and comments from subscribers. DEMO DATA: the phones (fictional models) and prices are invented for this test assignment; use them as the four poll options, each with its street price as of 5 October 2026: Zephyr Z5, Rs 17,999 (50 MP camera); Lumo Nova 5G, Rs 19,499 (120 Hz AMOLED screen); Orbit P1 Pro, Rs 15,999 (6,000 mAh battery); Vayu Edge, Rs 19,999 (gaming chipset, 8 GB RAM). The video will test camera, battery and gaming. Poll closes Friday 9 October 2026; the winning phone's video goes live Sunday 11 October 2026 at 6 pm IST.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_15.json#genre:youtube_community_post",
+    "note": "purpose 2, structure 2, specificity 1, voice 2, craft 1. First line is the question with the Rs 20,000 budget, one vote-plus-why ask, and the go-live time stated (Sunday 11 Oct 2026, 6 pm; checked, it is a Sunday); 33-word intro in natural Hinglish (test karun, review ... live hoga). But all four poll options are placeholders, so the card's hard poll rules (mutually exclusive, 65 chars) are not demonstrated, and the intro gives no reason to vote beyond the budget (what will be tested: camera, battery, gaming). CARD FIX: exemplar_brief -> name the four candidate phones with street prices (e.g. 'poll options: <4 named models under Rs 20,000, with price>') so the options are written and checked against the 65-character limit. | CARD FIXED 2026-10-07 (fix_genre_d): exemplar_brief now names the four candidate phones with prices, test focus, poll close and go-live dates (demo data); re-judge pending.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:youtube_title_description",
+   "kind": "genre",
+   "name": "YouTube title + description (video metadata)",
+   "status": "current",
+   "summary": "The words that sell a video in search, the home feed, suggested videos and on the TV screen: a title (100 characters max) written as a pair with the thumbnail text, and a description whose first lines restate the payoff, followed by what the video covers, chapters, one primary link, disclosures and a few relevant hashtags. Good looks like a title that promises one specific payoff the video delivers early, an opening description line that works as a pitch, and nothing stuffed.",
+   "use_for": [
+    "Every long-form upload: tutorials, reviews, explainers, vlogs, podcast episodes",
+    "Metadata refreshes for older videos that underperform",
+    "Brand, edtech and affiliate channels where the description carries product, course or lead-magnet links",
+    "Shorts titles (Shorts use the same title field)",
+    "Hindi and regional channels mixing Devanagari and Roman-script search terms"
+   ],
+   "avoid": [
+    "Writing the title after the edit: plan title and thumbnail before scripting (genre:youtube_video_script); a title bolted on afterwards rarely matches the hook.",
+    "The chapter block alone: genre:youtube_chapters.",
+    "Spending effort on the tags field: tags are not shown to viewers and YouTube warns that more tags make each less relevant (plat:youtube_tags).",
+    "Episode notes for audio podcast apps: genre:podcast_show_notes."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/57404?hl=en",
+     "title": "YouTube Help: Edit video settings (title and description limits)",
+     "supports": "video titles have a 100-character limit; descriptions a 5,000-character limit"
+    },
+    {
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "title": "YouTube Data API: Videos resource",
+     "supports": "description maximum length is 5000 bytes (UTF-8), so Devanagari (3 bytes per character) runs out near 1,666 characters; tags total 500 characters"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/6390658?hl=en",
+     "title": "YouTube Help: Hashtag rules (read 2026-10-05)",
+     "supports": "up to three of the description's hashtags considered most engaging appear by the title; more than 60 hashtags and all are ignored; misleading or unrelated hashtags may get the video removed; too many tags make them less relevant"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/9884579",
+     "title": "YouTube Help: Video chapters",
+     "supports": "chapters come from description timestamps starting at 00:00, at least three, ascending, each at least 10 seconds"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/154235",
+     "title": "YouTube Help: Paid product placements, endorsements and sponsorships",
+     "supports": "creators must tick the paid promotion disclosure for paid placements, endorsements and sponsorships"
+    },
+    {
+     "url": "https://blog.youtube/news-and-events/made-on-youtube-creators-shorts-series-tv-features/",
+     "title": "YouTube Official Blog: Made on YouTube 2026 (2026-09-23)",
+     "supports": "over half of YouTube's top 100 creators have TV as their most watched interface"
+    }
+   ],
+   "related": [
+    "genre:youtube_chapters",
+    "genre:youtube_video_script",
+    "genre:headline_dek",
+    "genre:podcast_show_notes",
+    "trend:youtube_on_tv",
+    "trend:hashtags_to_keywords"
+   ],
+   "buyers": [
+    "YouTube creators and channel managers",
+    "YouTube SEO freelancers and agencies",
+    "Brand, SaaS and edtech YouTube teams",
+    "Podcast production agencies publishing video episodes",
+    "News and explainer channels"
+   ],
+   "value": "medium",
+   "value_why": "YouTube's own help pages make the description a working surface (chapters from timestamps, hashtags shown by the title), and metadata writing is bundled into YouTube SEO and channel-management gigs; it is rarely sold alone but recurs with every upload.",
+   "goal": "The right viewer clicks from search, home or suggested, finds what the title promised, and the description sends them on to one next step (the next video, a link, a subscription).",
+   "structure": [
+    {
+     "part": "Title",
+     "does": "One specific promise, with the main keyword or payoff in the first half so it survives truncation on phone and TV. Natural case; no ALL CAPS words except one for emphasis.",
+     "length": "1 line, 100 characters max"
+    },
+    {
+     "part": "Thumbnail text (paired)",
+     "does": "Adds what the title doesn't say: the emotion, the number or the twist. Never repeats the title's words.",
+     "length": "2-4 words"
+    },
+    {
+     "part": "Description opening",
+     "does": "Restates the payoff with the main search phrase and a reason to watch; this is the part people see before expanding, so no 'Hi guys', no link dump.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "What the video covers",
+     "does": "Who it is for and what they will be able to do, as a short paragraph or 3-5 bullets using related terms people search, written for humans.",
+     "length": "40-150 words"
+    },
+    {
+     "part": "Chapters",
+     "does": "Timestamp list per genre:youtube_chapters for any video with distinct sections.",
+     "length": "3 or more lines"
+    },
+    {
+     "part": "Links and CTA",
+     "does": "One primary, labelled link (next video, playlist, product, free resource) first; secondary links grouped below.",
+     "length": "2-6 lines"
+    },
+    {
+     "part": "Disclosures, credits and sources",
+     "does": "Sponsor and affiliate disclosures, sources for factual claims, music and footage credits, and a note where realistic AI-generated or altered visuals are used; a not-advice line for finance and health topics.",
+     "length": "1-5 lines"
+    },
+    {
+     "part": "Hashtags",
+     "does": "A few directly relevant hashtags at the end; YouTube shows up to three of them by the title.",
+     "length": "1 line, 1-3 hashtags"
+    }
+   ],
+   "length": {
+    "min": 100,
+    "max": 600,
+    "unit": "words",
+    "note": "Description words; chapters and links set most of the length while the first two lines do the selling. Hard caps: title 100 characters; description 5,000 characters in Studio but 5,000 bytes through the API, so a Devanagari description must stay under roughly 1,600 characters."
+   },
+   "frameworks": [
+    "fw:four_us"
+   ],
+   "techniques": [
+    "tech:front_loading",
+    "tech:keyword_placement",
+    "tech:search_intent_matching",
+    "tech:first_line_above_fold",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:thumbnail_text_pairing",
+    "hook:keyword_front_loaded",
+    "hook:stakes_title",
+    "hook:comparison_vs",
+    "hook:challenge_test",
+    "hook:how_to"
+   ],
+   "platforms": [
+    "plat:youtube_title",
+    "plat:youtube_description",
+    "plat:youtube_chapters",
+    "plat:youtube_tags"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:authoritative"
+   ],
+   "languages": [
+    "lang:hindi_seo",
+    "lang:hinglish_roman"
+   ],
+   "compliance": [
+    "comp:youtube_paid_promotion",
+    "comp:youtube_altered_synthetic",
+    "comp:asci_influencer",
+    "comp:sebi_finfluencer_association"
+   ],
+   "checklist": [
+    "Is the title 100 characters or fewer, with the keyword or payoff in its first half?",
+    "Does the title promise one specific thing the video delivers in its first minute?",
+    "Does the thumbnail text add something the title doesn't say, with no repeated words?",
+    "Do the first two lines of the description restate the payoff and work as a standalone pitch?",
+    "Does the description say who the video is for and what they will be able to do?",
+    "Is there a chapter list starting at 00:00 for a video with distinct sections?",
+    "Is there one clearly labelled primary link or CTA?",
+    "Are sponsorships, affiliate links and realistic synthetic visuals disclosed?",
+    "Is the description free of keyword lists, tag dumps and unrelated trending terms?",
+    "Are there 3 or fewer hashtags, all directly related to the video?",
+    "Does a Devanagari description stay under 5,000 bytes?"
+   ],
+   "pitfalls": [
+    "Title and thumbnail saying the same words: wasted space. The title carries the search terms; the thumbnail carries the emotion or the number.",
+    "A promise the video doesn't pay off ('I quit' for a schedule change): viewers leave in the first minute. Promise only what is on screen, early.",
+    "Keyword stuffing ('best phone under 20000 best phone 2026 best camera phone'): reads as spam and adds nothing. Write two clean sentences that use the phrase once.",
+    "Unrelated trending hashtags to borrow reach: YouTube says misleading or unrelated hashtags can get the video removed. Use 1-3 that describe the video.",
+    "Opening the description with 'Hi guys, welcome back' or a wall of social links: the first lines are the pitch. Move links below.",
+    "An English description on a Hindi video: viewers search in Hindi and Hinglish. Write in the video's language and add the common Roman spelling of key terms.",
+    "A Devanagari description that fits in Studio but fails an API upload at 5,000 bytes: budget about 1,600 characters for Hindi.",
+    "Missing disclosures: tick YouTube's paid promotion box, write the sponsor or affiliate line, and for finance videos add a not-investment-advice line and check comp:sebi_finfluencer_association before naming a broker partner."
+   ],
+   "lint": {
+    "min_words": 60,
+    "max_words": 800,
+    "max_sentence_words": 35,
+    "max_hashtags": 4,
+    "require": [
+     {
+      "label": "has a link or CTA",
+      "regex": "(?i)https?://|watch|subscribe|playlist|link|download|देखें|सब्सक्राइब"
+     }
+    ],
+    "ban": [
+     {
+      "label": "throat-clearing opener",
+      "regex": "(?im)^\\s*(hi|hey|hello) (guys|everyone|friends)"
+     }
+    ]
+   },
+   "exemplar_brief": "Title, thumbnail text and full description for a 14-minute English-Hinglish YouTube video by a Pune personal-finance creator testing 'Rs 10,000 a month in SIP vs RD for 5 years' with real numbers; audience: salaried 25-35-year-olds; deliver 3 title options (each 100 characters or fewer) with 2-4 word thumbnail text for each, and one 200-350 word description with chapters, one link to a free SIP-vs-RD calculator sheet, a not-investment-advice line and an affiliate disclosure for a brokerage link; goal: clicks from search and suggested, then the sheet download. DEMO DATA: the numbers below are illustrative maths for this test assignment, not forecasts; use them in the titles and the first line. Rs 10,000 a month for 60 months = Rs 6,00,000 invested. RD at 6.7% a year, compounded quarterly: Rs 7,13,658 at maturity (gain Rs 1,13,658). SIP at an assumed 12% a year: Rs 8,24,864 (gain Rs 2,24,864, which is Rs 1,11,206 more than the RD). SIP at a weak 7% a year: Rs 7,20,105, only Rs 6,447 more than the RD. All figures are before tax and fund costs; SIP returns are not guaranteed.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_15.json#genre:youtube_title_description",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. Three titles (57-70 chars) with the keyword in the first half, one in Hinglish; thumbnail text adds emotion or a number and repeats no title word; description opens on the payoff with the free sheet as the single primary link in line 2; affiliate disclosure above the fold, a creator SEBI-status slot (comp:sebi_finfluencer_association), market-risk and not-advice block, chapters from 00:00, brokerage link demoted, 3 hashtags, 288 words. Title 3 sells a 'Calculator' the video is not. The opening carries no result number because the brief gave none. CARD FIX: exemplar_brief -> state the video's numbers (RD rate used, assumed SIP return, both 5-year values) so the title and first line can carry the result instead of [RD rate] / [SIP return] slots. | CARD FIXED 2026-10-07 (fix_genre_d): exemplar_brief now states the video's numbers: RD rate and value, assumed SIP rates and values (demo data); re-judge pending.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:youtube_video_script",
+   "kind": "genre",
+   "name": "YouTube long-form video script",
+   "status": "current",
+   "summary": "The full spoken script, with visual and B-roll cues, for a YouTube video of several minutes, written for the ear and built to hold retention: a hook that confirms the title's promise in the first seconds, a quick setup, body segments that each open with a question and end with a pull into the next, the payoff, and one end-screen handoff. Good looks like a script that delivers exactly what the title and thumbnail promised, sounds like the host talking, and gives the editor a visual for every beat.",
+   "use_for": [
+    "Explainer and educational channels (finance, tech, history, science) in English, Hindi or Hinglish",
+    "Host-led reviews, comparisons, tests and list videos",
+    "Documentary-style deep dives for creator and brand channels",
+    "Edtech, SaaS and brand long-form channels",
+    "creator YouTube explainers that treat a 5-second curiosity hook as a hard requirement"
+   ],
+   "avoid": [
+    "Vertical videos under about a minute: genre:short_form_video_script.",
+    "Fully narrated videos with stock or AI visuals and no host: genre:faceless_video_script.",
+    "Argument-led essays with heavy research and quotes: genre:video_essay_script.",
+    "The sponsor segment on its own: genre:sponsored_integration_script.",
+    "Reacting to someone else's footage: genre:commentary_video_script.",
+    "Reading a blog post aloud: the eye-written version loses viewers. Rewrite for the ear."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writer job type lists 'YouTube video scripts' first among projects, typical $30-$56/hr, above blog ($15-$35/hr) and content writer ($15-$40/hr) bands"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing",
+     "title": "Fiverr: Scriptwriting category",
+     "supports": "scriptwriting is a Fiverr subcategory; Hindi among the top seller languages on the facet (867 gigs on 2026-10-04)"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/154235",
+     "title": "YouTube Help: Paid product placements, endorsements and sponsorships",
+     "supports": "paid placements, endorsements and sponsorships must be disclosed"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/14328491",
+     "title": "YouTube Help: Disclosing altered or synthetic content",
+     "supports": "realistic altered or synthetic content must be disclosed; clearly unrealistic content and minor edits need not be"
+    },
+    {
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "title": "YouTube CEO letter: The future of YouTube 2026 (2026-01-21)",
+     "supports": "YouTube is working to reduce the spread of low-quality, repetitive content and AI slop"
+    }
+   ],
+   "related": [
+    "genre:youtube_title_description",
+    "genre:youtube_chapters",
+    "genre:faceless_video_script",
+    "genre:video_essay_script",
+    "genre:sponsored_integration_script",
+    "genre:explainer_video_script",
+    "trend:youtube_on_tv",
+    "trend:ai_slop_backlash"
+   ],
+   "buyers": [
+    "YouTube creators and their production teams",
+    "Faceless and narrated channel owners",
+    "Edtech companies and course creators",
+    "Brands and SaaS companies running YouTube channels",
+    "Video agencies and news or explainer creators"
+   ],
+   "value": "high",
+   "value_why": "Upwork's script writer job type names 'YouTube video scripts' first among projects, with a typical $30-$56/hr band, above the blog ($15-$35/hr) and content-writer ($15-$40/hr) bands on the same page (2026-01-21); Fiverr runs a Scriptwriting category where Hindi is among the top seller languages (867 gigs on 2026-10-04).",
+   "goal": "The viewer watches through the payoff and clicks the end-screen video or subscribes, because the video delivered what the title promised.",
+   "structure": [
+    {
+     "part": "Hook (cold open)",
+     "does": "Confirms the title and thumbnail promise at once and opens the question the video will answer, by showing or stating something specific. No 'Hey guys, welcome back', no 'In this video I will'.",
+     "length": "First 5-15 seconds (1-3 sentences)"
+    },
+    {
+     "part": "Setup and stakes",
+     "does": "Why this matters to the viewer now, one line of credibility (what the host tested, built or read), and a preview of the path so the viewer knows the payoff is coming.",
+     "length": "20-45 seconds"
+    },
+    {
+     "part": "Body segments",
+     "does": "Each segment opens with a mini-hook or question, delivers one point with an example, demo or visual, and ends with a re-hook into the next ('That works, until your bank does this'). Order segments so stakes rise; hold the strongest item for last and tease it early.",
+     "length": "3-7 segments of 1-3 minutes each"
+    },
+    {
+     "part": "Sponsor or integration (if any)",
+     "does": "Placed after the first real payoff, not before the hook is delivered; disclosed in words on screen and in YouTube's paid-promotion setting.",
+     "length": "30-90 seconds"
+    },
+    {
+     "part": "Payoff",
+     "does": "The answer, result or winner the title promised, with the proof shown.",
+     "length": "30-90 seconds"
+    },
+    {
+     "part": "Wrap and end-screen CTA",
+     "does": "One-line takeaway, then one CTA pointing to a specific next video ('If you're on an RD right now, watch this one next'), timed to the end screen. Not a list of asks.",
+     "length": "15-30 seconds"
+    },
+    {
+     "part": "Cue layer (throughout)",
+     "does": "Two-column A/V, or VO paragraphs with bracketed cues: [VISUAL], [B-ROLL], [ON-SCREEN TEXT], [GRAPHIC], [SFX]. At least one cue per segment beat so the editor never guesses.",
+     "length": "Every beat"
+    }
+   ],
+   "length": {
+    "min": 900,
+    "max": 3500,
+    "unit": "words",
+    "note": "Spoken words for a roughly 6-20 minute video; the runtime the client sets drives it. Time a read-aloud of the hook and the first segment at the host's pace and scale from there; Hindi and Hinglish delivery speeds differ by host, so always time rather than assume. For the verify wave the deliverable is the opening 4 minutes (600-750 words)."
+   },
+   "frameworks": [
+    "fw:youtube_intro_hook_promise_preview",
+    "fw:hook_retain_reward",
+    "fw:abt",
+    "fw:scqa"
+   ],
+   "techniques": [
+    "tech:retention_rehook",
+    "tech:open_loop",
+    "tech:write_for_voiceover",
+    "tech:but_therefore",
+    "tech:onscreen_text_vs_vo",
+    "tech:read_aloud"
+   ],
+   "hooks": [
+    "hook:curiosity_gap",
+    "hook:challenge_test",
+    "hook:stakes_title",
+    "hook:this_is_why",
+    "hook:in_medias_res_opener",
+    "hook:thumbnail_text_pairing"
+   ],
+   "platforms": [
+    "plat:youtube_title",
+    "plat:youtube_description"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:storyteller_narrative",
+    "tone:authoritative",
+    "tone:desi_casual_hinglish"
+   ],
+   "languages": [
+    "lang:hinglish_roman",
+    "lang:hindi_voiceover_tts",
+    "lang:indian_english"
+   ],
+   "compliance": [
+    "comp:youtube_paid_promotion",
+    "comp:youtube_altered_synthetic",
+    "comp:asci_influencer",
+    "comp:copyright_act_s52_fair_dealing"
+   ],
+   "checklist": [
+    "Does the first spoken line deliver or directly tease the title's promise, with no channel intro or 'welcome back' before it?",
+    "Is the payoff the title promised present in the script, and is it clear where it lands?",
+    "Does the setup say why this matters to the viewer within the first minute?",
+    "Does every body segment open with a question or mini-hook and end with a pull into the next?",
+    "Does every number or factual claim name its source (on screen or for the description)?",
+    "Does every segment carry visual cues ([VISUAL], [B-ROLL], [ON-SCREEN TEXT] or equivalent)?",
+    "Can each sentence be said in one breath when read aloud?",
+    "Is any sponsor segment disclosed and placed after the first payoff?",
+    "Is there exactly one closing CTA pointing to a specific next video or action?",
+    "Is it free of filler ('without further ado', 'let's dive in', 'smash that like button')?",
+    "Does a timed read-aloud fit the runtime in the brief?"
+   ],
+   "pitfalls": [
+    "Channel intro, sponsor or 'subscribe before we start' ahead of the hook: viewers who came for the title leave. Hook first, branding later.",
+    "Writing for the eye: long sentences, brackets, 'as shown above'. Read it aloud and cut to breath-length lines.",
+    "Promise drift: the title says 'I tested 5 budget earbuds' and the script spends 4 minutes on company history. Map every segment to the promise and cut what doesn't serve it.",
+    "A flat list with no escalation: viewers drop at the midpoint. Order by rising stakes, keep the best item for the payoff and tease it in the setup.",
+    "No visual plan: the editor falls back to talking head plus stock. Write a cue for every beat, including on-screen text that carries numbers the ear will miss.",
+    "Finance or health numbers without sources and without a not-advice line: cite in the description and check the compliance cards before naming products.",
+    "Hinglish spelled three ways for the voice artist or TTS: fix one spelling; for TTS write Hindi words in Devanagari (lang:hindi_voiceover_tts).",
+    "Realistic AI-generated visuals with no disclosure: YouTube requires the altered or synthetic content disclosure for realistic scenes."
+   ],
+   "lint": {
+    "min_words": 500,
+    "max_words": 4500,
+    "max_sentence_words": 30,
+    "max_avg_sentence_words": 18,
+    "require": [
+     {
+      "label": "has visual cues",
+      "regex": "(?i)\\[\\s*(b-?roll|visual|on-?screen|graphic|cut|text|shot|screen|sfx|music)"
+     }
+    ],
+    "ban": [
+     {
+      "label": "filler and begging lines",
+      "regex": "(?i)without further ado|let'?s dive in|smash (that|the) like"
+     }
+    ]
+   },
+   "exemplar_brief": "Script for the opening 4 minutes (600-750 words) of a 12-minute YouTube explainer on an Indian AI-tools creator channel: 'I made a 60-second ad with Rs 0 of AI credits: the free tool stack that works in 2026'; audience: Indian creators and small-business owners; Hinglish VO in Roman script with [VISUAL], [B-ROLL] and [ON-SCREEN TEXT] cues; must open with a 5-second curiosity hook, then setup and the first two segments with re-hooks; goal: the viewer keeps watching past minute 4.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_15.json#genre:youtube_video_script",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. 5-second hook shows the finished ad and the zero-credit claim and opens a loop (the skipped step, promised for about minute 9); setup gives stakes, credibility and the 5-stage path; both segments open with a question, deliver concrete steps (about 130 words for 60 s, one locked product descriptor across 8 prompts, no text inside images, 9:16, numbered files) and end on a re-hook; a cue on every beat; AI-visuals label on screen; about 610 spoken words. Nit: 'Meri prompt ye rahi' -> 'Mera prompt ye raha' (prompt is usually masculine in Hinglish).",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1631 @@
+{
+ "cards": [
+  {
+   "id": "edit:line_edit",
+   "kind": "editing",
+   "name": "Line edit",
+   "status": "current",
+   "summary": "A pass over the sentences and paragraphs of a draft whose structure is already settled, improving language, style, rhythm and clarity (the EFA's definition: sentence or paragraph level, language and style first). Good line editing makes the meaning arrive faster and keeps the voice the brief asked for; it does not move sections and it does not chase commas.",
+   "use_for": [
+    "client blog posts, sales pages, emails and scripts once the outline is approved",
+    "ghostwritten founder posts that must sound like the founder, only tighter",
+    "tightening an AI-assisted or junior first draft before it goes to copy edit",
+    "turning expert-written text (a CA, a doctor, an engineer) into text the audience reads without effort",
+    "bringing a draft into a client's voice guide"
+   ],
+   "avoid": [
+    "Line editing a draft whose structure is still wrong: you polish paragraphs a reverse outline would cut. Run edit:reverse_outline and fix structure first.",
+    "Fixing commas and typos in the same pass: UNC says keep editing and proofreading separate. Leave surface errors to edit:copy_edit and edit:proofread.",
+    "Replacing the client's voice with your own taste. Match the brief's tone card or the client's voice guide; edit:brand_voice_audit checks it.",
+    "Swapping in thesaurus words you would not say aloud (UNC warns you may misuse them). Use the plain word.",
+    "Cutting every long sentence to the same length: keep some variety (edit:sentence_length_audit)."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.the-efa.org/editorial-services-definitions/",
+     "title": "Editorial Freelancers Association: Editorial service definitions",
+     "supports": "line editors work at sentence/paragraph level, focused on language and style; done after big-picture issues are addressed"
+    },
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/",
+     "title": "UNC Writing Center: Editing and proofreading",
+     "supports": "editing levels (content, structure, paragraphs, clarity, style); read sentence by sentence from the end; unnecessary phrases like 'there is', 'due to the fact that'; keep editing and proofreading separate"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "split sentences over 25 words; plain words ('buy' not 'purchase'); avoid 'in order to'"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+     "title": "GOV.UK A to Z style guide",
+     "supports": "words to avoid list and replacements"
+    }
+   ],
+   "related": [
+    "edit:developmental_edit",
+    "edit:copy_edit",
+    "edit:proofread",
+    "edit:verb_pass",
+    "edit:sentence_length_audit",
+    "edit:reverse_outline",
+    "edit:ai_tell_removal",
+    "edit:style_sheet",
+    "tech:plain_language",
+    "tech:cut_qualifiers",
+    "tech:read_aloud"
+   ],
+   "steps": [
+    "Gate: confirm the structure is approved. If the genre card's structure (python pcw.py brief) is not met, or paragraphs are still being moved, stop and run edit:reverse_outline first. Line editing starts after the big-picture issues are addressed (EFA).",
+    "Load the voice before touching a sentence: the brief's tone card, the client's voice guide, the project style sheet (edit:style_sheet). Write the three traits you must keep at the top of your notes, e.g. 'plain, warm, no jargon'.",
+    "Pass 1, cut: delete throat-clearing and filler. Look for 'there is/there are' openers, 'due to the fact that', 'in order to', 'it is important to note that', and any sentence that restates the one before in other words.",
+    "Pass 2, verbs: turn accidental passives into active sentences, unhide buried verbs ('make a decision' becomes 'decide'), replace verb-plus-adverb with one strong verb (edit:verb_pass).",
+    "Pass 3, words: swap formal or abstract words for the word the reader uses ('buy' for 'purchase', 'help' for 'assist': GOV.UK's own examples). Replace vague quantity words ('many', 'significant') with the figure and period from the source, e.g. '212 CA firms in 9 months' (tech:specificity).",
+    "Pass 4, sentences: read the piece aloud. Split any sentence you cannot say in one breath or that runs over 25 words (GOV.UK's threshold; see edit:sentence_length_audit). Join runs of three or more very short sentences unless the staccato is deliberate. Do not let more than two sentences in a row start with 'We'.",
+    "Pass 5, clarity: for every pronoun (it, this, they, which) check that what it points to is unambiguous. Define any term the reader may not know. If you cannot judge a paragraph, read it one sentence at a time starting from the last sentence, so you cannot fill gaps from memory (UNC's method).",
+    "Pass 6, paragraph shape: one idea per paragraph, the point in its first or last sentence (tech:paragraph_inverted_pyramid, tech:one_sentence_paragraphs).",
+    "Pass 7, Hindi and Hinglish: keep one script per piece (lang:hinglish_roman or lang:hinglish_devanagari), keep English words only where the audience actually says them, and do not 'purify' Hinglish into formal Hindi (or the reverse) unless the brief asks.",
+    "Pass 8, voice: re-read against the three traits from step 2. Put back any quirk that carries the voice (a recurring phrase, a joke) that an earlier pass flattened.",
+    "Automatic first pass: save the draft to a file and run `python pcw.py check draft.txt --genre <id>`; fix every fail and treat each AI-tell warning as a fail. For English text finish with the `humanizer` skill (edit:ai_tell_removal). Then hand over to edit:copy_edit and edit:proofread; do not fix commas now.",
+    "Deliver with a change note of 3 to 5 lines (what you cut, what you changed and why, what you flagged but left for the client), so the revision round starts from facts (edit:client_feedback_rounds)."
+   ],
+   "checks": [
+    "Is the structure unchanged since it was approved (no section moved or added during this pass)?",
+    "Does every sentence add something the previous sentence did not?",
+    "Is the longest sentence under 25 words, or is each longer one a deliberate choice?",
+    "Is every pronoun's referent clear on first read?",
+    "Is each remaining passive a choice (actor unknown or unimportant), not an accident?",
+    "Could someone in the target audience say every word aloud without reaching for a dictionary?",
+    "Does the piece still sound like the brief's voice, with no jokes or words added that the voice owner would not use?",
+    "Are all numbers, names and claims identical to the sources (wording changed, facts did not)?",
+    "Has `pcw.py check` run with zero fails and the AI-tell warnings cleared or consciously kept?"
+   ]
+  },
+  {
+   "id": "edit:link_text_check",
+   "kind": "editing",
+   "name": "Link-text check",
+   "status": "current",
+   "summary": "A pass that makes every link say where it goes without surrounding text: no 'click here', no bare 'read more', no one phrase pointing at two pages. It serves screen-reader users (WCAG 2.4.4, Level A), skimmers and search engines at once.",
+   "use_for": [
+    "blog posts, landing pages, help articles and newsletters with inline links",
+    "government and scheme explainers where links lead to forms or portals",
+    "internal linking in SEO content (tech:anchor_text)",
+    "email and WhatsApp copy where the URL or button label is the link",
+    "accessibility reviews of client copy (comp:wcag_22)"
+   ],
+   "avoid": [
+    "Stuffing keywords into anchor text: Google says to write as naturally as possible, and keyword stuffing breaks its spam policies. Name the page, not the keyword.",
+    "Making a whole clause the link: Google calls it 'weirdly long'. Link the 2 to 5 words that name the destination.",
+    "Using the bare URL as link text on a web page (Google developer style guide). In plain-text channels the URL is shown anyway, so put a sentence before it that says what it is.",
+    "Dumping all links in a 'Further reading' list at the bottom: GOV.UK wants links in context, where they are useful.",
+    "Fixing the text but not the destination: a descriptive link to a dead or login-walled page still fails the reader."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html",
+     "title": "WCAG 2.2 Understanding SC 2.4.4 Link Purpose (In Context)",
+     "supports": "SC 2.4.4 (Level A): link purpose from link text alone or text plus its context; same destination should have consistent text"
+    },
+    {
+     "url": "https://www.w3.org/WAI/tips/writing/",
+     "title": "W3C WAI: Writing for web accessibility",
+     "supports": "make link text meaningful; avoid 'click here' / 'read more'; give document type and size, e.g. 'Proposal Documents (RTF, 20MB)'"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/add-links/",
+     "title": "GOV.UK: Write effective links",
+     "supports": "descriptive, front-loaded link text; do not reuse text for different pages; verb first for tasks; show file format and size; links in context, not a 'further reading' list"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+     "title": "Google Search Central: SEO link best practices",
+     "supports": "descriptive, concise anchor text; read anchors out of context as a test; image alt text acts as anchor text; do not chain links; no keyword cramming"
+    },
+    {
+     "url": "https://developers.google.com/style/link-text",
+     "title": "Google developer documentation style guide: Link text",
+     "supports": "use the page title or a descriptive phrase; important words first; keep it short; never a bare URL"
+    }
+   ],
+   "related": [
+    "tech:anchor_text",
+    "tech:button_labels",
+    "tech:cta_writing",
+    "edit:accessible_writing_check",
+    "edit:seo_on_page",
+    "edit:pre_publish_qa",
+    "comp:wcag_22",
+    "tech:image_alt_text"
+   ],
+   "steps": [
+    "Extract every link: copy each anchor text and its destination into a two-column list (a spreadsheet, or the 'a' tags of the HTML). Include image links (their alt text is the link text), navigating buttons and footer links.",
+    "Read only the anchor-text column, out of context. If you cannot say what the page is about from the words alone, rewrite it. This is Google's own test; WCAG allows meaning from nearby context, but text that works alone is the safer bar.",
+    "Hunt the generic ones with a search of the draft: `click here`, `read more`, `learn more`, `more`, `this link`, `this article`, `website`; in Hindi and Hinglish also `यहाँ क्लिक करें`, `यहां क्लिक करें`, `और पढ़ें`, `aur padhein`. Replace each with a descriptive phrase, or the destination page's own title (GOV.UK, W3C, Google style guide).",
+    "Front-load: put the distinguishing word first ('GST notice reply format', not 'a format you can use for GST notice replies').",
+    "Right-size: a short phrase, not a sentence. If the link text swallows a whole clause, cut it back to the words that name the destination.",
+    "Action versus information: if the link starts a task, begin with a verb ('Apply for a PAN card'); if it leads to information, use the topic ('PAN card eligibility'). This is GOV.UK's rule.",
+    "Consistency: the same destination gets the same (or same-meaning) text; two different destinations never share one link text (GOV.UK; WCAG 2.4.4). If the same page is linked repeatedly in one piece, keep the first and drop the rest.",
+    "Tell the reader what they will get: for a file add format and size ('Application form (PDF, 19.5KB)' is GOV.UK's example); for a link that leaves your site or opens in another language, say so if the house style allows.",
+    "Check placement: each link sits at the point in the text where it helps. No dumped 'Further reading' list, no run of adjacent links with no words between them, no keyword cramming.",
+    "External links: link to the specific page, not the homepage. Open each one and confirm it loads, needs no login or payment, and says what your sentence claims (GOV.UK's external-link rules). Note the date you checked.",
+    "Plain-text channels (SMS, WhatsApp, plain-text email) show the raw URL: write a sentence before it that says what it is ('Check your refund status: <url>') and keep the URL short. This is channel practice, not a rule from the sources above."
+   ],
+   "checks": [
+    "Can each link's purpose be understood from its text alone, read out of context?",
+    "Is every 'click here', 'read more', 'learn more', 'यहाँ क्लिक करें' and 'और पढ़ें' gone?",
+    "Do links to different pages have different text, and links to the same page the same text?",
+    "Is every document link labelled with its format and size?",
+    "Does every link go to a specific, live page (not a homepage when a page was meant, not broken, not login-walled)?",
+    "Are links placed in the sentence where they help, not collected in a list at the end?",
+    "Is every anchor free of keyword stuffing and bare URLs (web pages)?",
+    "Do image links have alt text that names the destination or action?"
+   ]
+  },
+  {
+   "id": "edit:plagiarism_check",
+   "kind": "editing",
+   "name": "Plagiarism / originality check",
+   "status": "current",
+   "summary": "Run the finished draft through a similarity checker, then judge every match by hand: quote and credit it, drop it as a harmless common phrase, or rewrite it from your own understanding. The checker finds overlap; only you can say whether the overlap is a problem.",
+   "use_for": [
+    "client blogs, articles and ebooks before delivery (clients often run Copyscape themselves)",
+    "rewrites and 'refresh' jobs based on competitor or source pages (genre:content_refresh)",
+    "ghostwritten books and reports that draw on many sources",
+    "AI-assisted drafts, which can echo source text",
+    "proving to a client, with a dated log, that a piece is original"
+   ],
+   "avoid": [
+    "Treating a clean score as proof: software 'finds only precise matches' and misses heavy paraphrase and translated copying (Wikipedia on content similarity detection). Check by hand where the idea itself came from.",
+    "Fixing a flagged passage by swapping a word or two: UNC says that is plagiarizing, not paraphrasing. Rewrite the structure from memory, then credit the source.",
+    "Using an AI-content detector score as evidence of who wrote a piece. The harvest's rule: never present a detector score as proof of authorship. Peer-reviewed work found GPT detectors misclassify non-native English writing as AI-generated; show drafts and sources instead.",
+    "Copying a rival's page 'for structure' and changing the nouns. Google's guidance says do not copy others' content in part or in its entirety, and credit does not replace original effort."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/plagiarism/",
+     "title": "UNC Writing Center: Plagiarism",
+     "supports": "what counts as plagiarism; changing a word or two is plagiarizing; take notes with the book closed; cite even when you name the author"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Content_similarity_detection",
+     "title": "Content similarity detection (Wikipedia)",
+     "supports": "how similarity checkers work (string matching, fingerprinting) and their limits: exact matches only, false positives on citations, cross-language detection not mature"
+    },
+    {
+     "url": "https://www.copyscape.com/",
+     "title": "Copyscape",
+     "supports": "Copyscape searches the web for copies of content and checks originality before publishing"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+     "title": "Google Search Central: SEO Starter Guide",
+     "supports": "'don't copy others' content in part or in its entirety'; copying others' content is a different story from duplicate URLs"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "attribution or giving credit does not replace the need for original effort; substantial additional value when drawing on other sources"
+    },
+    {
+     "url": "https://arxiv.org/abs/2304.02819",
+     "title": "Liang, Yuksekgonul, Mao, Wu, Zou: GPT detectors are biased against non-native English writers (Patterns, 2023)",
+     "supports": "GPT detectors misclassify non-native English writing as AI-generated; authors caution against high-stakes use"
+    }
+   ],
+   "related": [
+    "edit:source_citation",
+    "edit:fact_check",
+    "edit:pre_publish_qa",
+    "edit:ai_tell_removal",
+    "genre:content_refresh",
+    "comp:copyright_act_s52_fair_dealing",
+    "comp:google_search_spam_policies",
+    "trend:original_content_ranking"
+   ],
+   "steps": [
+    "Set the rule before you write: decide with the client what must be original (all prose) and what may be reused (their own boilerplate, legal text, product specs, quotes). Keep research notes in a separate file from the draft.",
+    "While drafting, write from understanding, not from the open source tab. UNC's tip: take notes with the source closed so the wording is yours. Mark every direct quote with quotation marks at the moment you paste it.",
+    "Finish the edit first (edit:line_edit), then run the similarity check on the final text, so the check sees what will be published. Use the checker the client names; otherwise Copyscape or an equivalent for web content.",
+    "Open each flagged match next to its source and sort it: (a) properly quoted and credited, keep; (b) a name, a statutory phrase, a product term or a common idiom, ignore; (c) unattributed overlap, rewrite or quote and credit; (d) too-close paraphrase (same order, same examples, synonyms swapped), rewrite the structure.",
+    "Rewrite (c) and (d) away from the source: close it, say the point aloud in your own words, write it, then add a citation if the idea is theirs (edit:source_citation). Keep your own example, number or story in the passage.",
+    "Check what software cannot see: translated copying (cross-language detection is not mature), ideas lifted from a Hindi or regional-language source into English, and passages the checker could not index (PDFs, paywalled pages, social posts). Read those sources yourself.",
+    "Check the client's supplied material too: brief text, old blog posts and 'reference' pages are often copied from elsewhere. Flag it to the client instead of publishing it.",
+    "Re-run the check after the fixes. Keep a log: date, tool, final result, and the matches you kept on purpose with the reason. Give it to the client with the delivery.",
+    "If anyone asks whether AI wrote it, answer with process evidence (outline, drafts, source list, edit trail) and do not quote a detector's percentage."
+   ],
+   "checks": [
+    "Was the similarity check run on the final text, after all edits?",
+    "Is every direct quotation in quotation marks with a named source?",
+    "Is every remaining match explained: quoted and credited, or a common or required phrase?",
+    "Does no passage follow a source's order, examples and sentence rhythm with only words swapped?",
+    "Were translated and non-web sources checked by a human read, not just by software?",
+    "Does the piece add something the sources do not (an example, a number, a first-hand detail, a view)?",
+    "Is the log (tool, date, result, kept matches) saved for the client?",
+    "Is no detector score presented as proof of authorship?"
+   ]
+  },
+  {
+   "id": "edit:plain_language_check",
+   "kind": "editing",
+   "name": "Plain-language check",
+   "status": "current",
+   "summary": "Review a draft against a plain-language standard: the reader is named, the main point comes first, the words are common, the sentences are short, the headings work as an outline. The test is whether the real audience can find, understand and use the text, not whether it is simple for simplicity's sake.",
+   "use_for": [
+    "scheme explainers, citizen guides and notices (genre:scheme_explainer)",
+    "bank, insurance, tax and legal explainers for non-specialist readers",
+    "help-centre articles, terms and policy pages, onboarding copy",
+    "any expert-written text that must reach a general audience",
+    "pre-delivery review of a long document for a client who asked for 'simple language'"
+   ],
+   "avoid": [
+    "Dumbing down: digital.gov says match your actual audience's level. GOV.UK reports that readers with more education and specialist knowledge also prefer plain English, so write clearly for specialists too.",
+    "Removing a technical term the reader needs: keep it and explain it the first time (GOV.UK's 'bona vacantia' example).",
+    "Treating a grade-level score as the goal: Hemingway Editor's help page says grade level does not define your target audience. Use the score as a flag, then read the text.",
+    "Applying one country's style rules blindly: GOV.UK's guidance is UK-specific (UK spelling, UK words to avoid). Take the method, not the word list, for Indian audiences."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://digital.gov/guides/plain-language",
+     "title": "digital.gov: Plain language guide",
+     "supports": "US plain language guidance; the Plain Writing Act of 2010 requires federal content to be written for its audience"
+    },
+    {
+     "url": "https://digital.gov/guides/plain-language/principles/",
+     "title": "digital.gov: Principles of plain language",
+     "supports": "write for your audience, topic sentences, active voice, organise information, use tables and lists; do not 'dumb down'"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "plain English is mandatory on GOV.UK; short common words; explain specialist terms once; 'must' for legal requirements; sentences over 25 words split; paragraphs up to 5 sentences; specialists also prefer plain English"
+    },
+    {
+     "url": "https://www.iso.org/standard/78907.html",
+     "title": "ISO 24495-1:2023 Plain language, Part 1: Governing principles and guidelines",
+     "supports": "ISO 24495-1:2023 is the international plain-language standard (publisher page refused scripted fetch with 403)"
+    },
+    {
+     "url": "https://standards.iteh.ai/catalog/standards/iso/5266c5b6-e44a-4e68-9600-82b2a8932fc2/iso-24495-1-2023",
+     "title": "ISO 24495-1:2023 catalogue entry (iTeh Standards, secondary description of the four principles)",
+     "supports": "the standard's four principles: readers get what they need, can find it, understand it and use it"
+    },
+    {
+     "url": "https://hemingwayapp.com/help/docs/readability",
+     "title": "Hemingway Editor: Readability",
+     "supports": "grade level does not define the audience; long words and run-ons make text harder"
+    },
+    {
+     "url": "https://www.w3.org/WAI/tips/writing/",
+     "title": "W3C WAI: Writing for web accessibility",
+     "supports": "keep content clear and concise: short sentences, simple words, expand acronyms, lists"
+    }
+   ],
+   "related": [
+    "tech:plain_language",
+    "tech:short_sentences",
+    "tech:active_voice",
+    "tech:unhide_verbs",
+    "tech:curse_of_knowledge_fix",
+    "edit:style_gov_uk",
+    "edit:reading_level_wcag",
+    "edit:cloze_test",
+    "edit:jargon_audit",
+    "edit:flesch_kincaid_grade",
+    "lang:hindustani_everyday",
+    "genre:scheme_explainer"
+   ],
+   "steps": [
+    "Name the reader and the job: write one line, 'This reader must do X by Y', before you read the draft. Every later decision is checked against it (ISO principle 1: readers get what they need; digital.gov: write for your audience).",
+    "Main point first: the opening paragraph states the answer, the action and the deadline. If the first paragraph is background, move the answer above it (GOV.UK: frontload; ISO principle 2: readers can find what they need).",
+    "Structure: headings are descriptive, the most important words come first, and the text still makes sense with the headings removed (GOV.UK). Use a numbered list for steps and bullets for parallel items; use a table for conditions.",
+    "Words: replace long or formal words with the short ones ('buy' for 'purchase', 'about' for 'approximately'); delete buzzwords and say what is being done; keep a needed technical term and explain it once on first use. Prefer the word the audience searches for.",
+    "Sentences: split anything over 25 words; keep paragraphs to about 5 sentences or fewer (GOV.UK numbers). Make the actor the subject and use 'you' (edit:verb_pass).",
+    "Requirements: use 'must' for a legal requirement, 'need' for an administrative step, 'can' for an option, and delete 'may be able to' (GOV.UK's scheme). A reader must never have to guess whether something is compulsory.",
+    "Hindi and Hinglish: use the everyday word, not the notified or textbook one ('खाता', not 'लेखा-विवरण' if people say 'khata'); check lang:hindustani_everyday and lang:hindi_devanagari. Keep English words people actually use (OTP, form, bank).",
+    "Test for understanding: read it aloud; then run a quick cloze test (edit:cloze_test) or ask one person from the real audience to tell you back what they must do. If they cannot, the text fails regardless of any score.",
+    "Measure last, as a flag: run `python pcw.py check draft.txt` and read fk_grade, max_sentence_words and avg_sentence_words; fix the outlier sentences, not the score (English only).",
+    "Final read for tone: plain does not mean cold. Check against the genre card's tone and run the AI-tell pass (edit:ai_tell_removal), because plain-language rewrites by AI tend to flatten to generic phrases."
+   ],
+   "checks": [
+    "Does the draft name its reader and state, in its first paragraph, what that reader should do?",
+    "Does every heading say what the section contains, with the key word first?",
+    "Is every sentence under 25 words, or deliberately longer?",
+    "Are all technical terms either removed or explained at first use?",
+    "Is each requirement marked clearly as must, need or can?",
+    "Is the active voice used wherever the actor matters?",
+    "Are steps in numbered lists and parallel items in bullets or a table?",
+    "Did a person from the target audience explain the text back correctly (or pass a cloze test)?",
+    "Has the draft kept the detail a specialist reader needs?"
+   ]
+  },
+  {
+   "id": "edit:pre_publish_qa",
+   "kind": "editing",
+   "name": "Pre-publish QA checklist",
+   "status": "current",
+   "summary": "The last gate before anything goes live: facts, names and numbers re-verified, links clicked, style and voice passes done, accessibility quick checks, the right disclosures present, and a preview on the device and format where the reader will see it. It is a composite checklist built from the passes below, run in a fixed order, with the copy frozen.",
+   "use_for": [
+    "blog posts, landing pages, newsletters and emails about to be published or scheduled",
+    "social posts, carousels and reels captions before they are queued",
+    "client deliveries where the writer, not the client, owns the final check",
+    "press notes and political or regulated copy where one wrong figure is a public error",
+    "a standing checklist attached to every job in a content calendar"
+   ],
+   "avoid": [
+    "Editing during QA: change the copy and the checks you already ran are void. Freeze the text, log defects, fix, then re-run the affected checks.",
+    "Checking only the text and not the container: a perfect post fails if the preview truncates the hook, the link is broken or the image has no alt text.",
+    "Treating the checklist as a rubber stamp: each item needs a named person and a yes/no, not 'looks fine'.",
+    "Skipping the disclosure check on sponsored, AI-generated or comparative content: see the matching comp: cards."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/test-evaluate/easy-checks/",
+     "title": "W3C WAI: Easy Checks, a first review of web accessibility",
+     "supports": "quick accessibility checks before release: page title, headings, image alt text, contrast, language, zoom, captions, transcripts, form labels"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+     "title": "Google Search Central: SEO Starter Guide",
+     "supports": "on-page basics to confirm: descriptive title, meta description, headings, alt text, link text, URL"
+    },
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/",
+     "title": "UNC Writing Center: Editing and proofreading",
+     "supports": "keep editing and proofreading separate; proofread last; distance from the text before the final read"
+    }
+   ],
+   "related": [
+    "edit:fact_check",
+    "edit:source_citation",
+    "edit:proofread",
+    "edit:link_text_check",
+    "edit:seo_on_page",
+    "edit:accessible_writing_check",
+    "edit:alt_text_check",
+    "edit:ai_tell_removal",
+    "edit:style_sheet",
+    "edit:brand_voice_audit",
+    "comp:wcag_22",
+    "edit:client_feedback_rounds"
+   ],
+   "steps": [
+    "Freeze: save the version under test (file name plus date). From here, no edits except to fix a logged defect.",
+    "Brief match: re-read the brief. Does the piece do the one job (goal), for the named audience, in the agreed length and language? Compare with the genre card's checklist (python pcw.py brief <request>).",
+    "Facts: trace every number, date, name, title, price, quote and claim back to its source (edit:fact_check, edit:source_citation). Re-verify names and figures against the original, not against your own notes.",
+    "Law and platform rules: check disclosures and claims for the genre (influencer or paid label, AI-content label, health, finance, political, comparative claims) against the comp: cards in the brief, and check platform limits and the visible-before-truncation window with `pcw.py check --platform <id>`.",
+    "Style: apply the project style sheet (edit:style_sheet): spellings, capitalisation, number and date formats, product names, banned words.",
+    "Voice and AI tells: run `python pcw.py check draft.txt --genre <id>` and clear every fail and warning; for English, one last pass with the `humanizer` skill (edit:ai_tell_removal); check against the tone card (edit:brand_voice_audit).",
+    "Links: click every link in the final environment. Confirm the destination, that it loads on mobile, and that the link text names it (edit:link_text_check). For tracked links, confirm the tracking tag does not break the URL.",
+    "Accessibility quick checks (W3C Easy Checks): page title distinct and meaningful; headings in a sensible outline; alt text on informative images (edit:alt_text_check); captions or a transcript for audio and video; form fields labelled; language of the page set.",
+    "SEO basics for web pages: unique title and meta description, one clear main heading, descriptive URL, alt text, descriptive links (edit:seo_on_page).",
+    "Preview where the reader will see it: phone first for social, the rendered email in a client app, the live page on mobile, the published reel with captions on. Look for truncated hooks, broken line breaks, emoji or Devanagari rendering and cropped text.",
+    "Proofread last, on the final format and after a break (edit:proofread): names, numbers, dates, phone numbers, URLs and prices read digit by digit.",
+    "Record sign-off: who checked what, which version, date, open risks. Keep the previous version so you can roll back, and note the date for any time-sensitive claim."
+   ],
+   "checks": [
+    "Is the version under test saved and unchanged since the first check?",
+    "Does the piece meet the brief's goal, audience, length and language?",
+    "Is every number, date, name and quote traced to a source and re-verified?",
+    "Are the required disclosures and legal checks for this genre done?",
+    "Does `pcw.py check` show no fails, and are AI-tell warnings cleared?",
+    "Does every link work on mobile and say where it goes?",
+    "Do the page title, headings, alt text, captions or transcripts and form labels pass the W3C easy checks?",
+    "Does the preview on the target device show the hook, line breaks and any non-Latin text correctly?",
+    "Was the final proofread done on the final format, after a break?",
+    "Is the sign-off recorded with a rollback copy?"
+   ]
+  },
+  {
+   "id": "edit:proofread",
+   "kind": "editing",
+   "name": "Proofread",
+   "status": "current",
+   "summary": "The final pass on the laid-out version for typos, formatting slips and changes that did not carry over. It looks only at the surface (spelling, punctuation, grammar, numbers, formatting) and happens after all editing is finished.",
+   "use_for": [
+    "any piece after the last approved edit and before it is published or sent",
+    "layouts: PDFs, decks, carousels, designed emails and print copy where text was re-typed or re-flowed",
+    "names, numbers, prices, dates, phone numbers and URLs in client copy",
+    "Hindi and Hinglish text, where a missing matra or a wrong script mix changes the word",
+    "checking that client-requested changes were all applied (the EFA proofreader's compare-with-previous-stage job)"
+   ],
+   "avoid": [
+    "Proofreading while you are still editing: UNC says to keep the two separate, because worrying about a comma stops you developing the idea. Finish edit:line_edit and edit:copy_edit first.",
+    "Trusting the spell-checker: UNC notes it will not catch a real word used wrongly ('your' for 'you're'). In Hindi it will not catch a valid word that is the wrong one.",
+    "Proofreading right after writing: you read what you meant. Take a break (UNC suggests hours or days) or change the look of the text.",
+    "Checking everything at once: UNC advises one kind of error per read, so a spelling read, a punctuation read, a numbers read."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.the-efa.org/editorial-services-definitions/",
+     "title": "Editorial Freelancers Association: Editorial service definitions",
+     "supports": "proofreading is among the last stages: check for typographical and formatting errors; compare the latest stage to the previous one so changes carried over"
+    },
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/",
+     "title": "UNC Writing Center: Editing and proofreading",
+     "supports": "get distance; one error type at a time; read every word aloud; one sentence per line; circle punctuation; read backwards for spelling; do not rely on spell-checkers; keep editing and proofreading separate"
+    }
+   ],
+   "related": [
+    "edit:copy_edit",
+    "edit:line_edit",
+    "edit:pre_publish_qa",
+    "edit:grammar_tool_pass",
+    "edit:style_sheet",
+    "lang:hindi_devanagari",
+    "lang:hinglish_roman",
+    "lang:localization_qa"
+   ],
+   "steps": [
+    "Gate: confirm editing is finished and the layout is final. If the text will still change, stop; proofreading before that is wasted.",
+    "Get distance: leave the piece for a few hours if you can (UNC suggests hours, days or weeks for a long document). Short on time? At least change its look (size, font, colour) or give it to someone who has not seen it.",
+    "Proof on the real format: the exported PDF, the rendered email, the phone preview of the post, the published page. Never proofread a source document and assume the layout is the same.",
+    "Compare with the previous version (EFA's definition): check that every approved change was actually made and no old wording came back. A document compare or a simple side-by-side does it.",
+    "Read one error type per pass: 1) spelling, reading backwards word by word; 2) punctuation, circling every mark and asking if it is right; 3) grammar and agreement, one sentence per line; 4) formatting: headings, bullets, spacing, fonts, capitalisation, line breaks.",
+    "Numbers pass: read every figure, date, time, price, percentage, phone number, email and URL digit by digit against the source or style sheet (edit:style_sheet). A transposed digit is the costliest typo.",
+    "Names pass: every person, brand, product, place and designation spelt as the owner spells it, consistently, including capitalisation and Indian names with several valid spellings.",
+    "Read it aloud, slowly, every word (UNC). Reading aloud forces each word and exposes doubled words and missing words.",
+    "Hindi and Hinglish: check matras and chandrabindu/anusvara, the nukta where the style sheet uses it, and that one script is used throughout (lang:hindi_devanagari, lang:hinglish_roman). Check that words did not turn into other valid words (for example, 'नई' becoming 'नहीं' changes the meaning, and no spell-checker flags it).",
+    "Use a grammar or spell-checker only as one more pass, not as the judge (edit:grammar_tool_pass). Look up anything you are not sure of.",
+    "Log patterns: if you keep finding the same error type, note it on the style sheet so the next edit stops it at source.",
+    "After fixes, re-read only the changed lines and the lines around them: fixes often introduce errors."
+   ],
+   "checks": [
+    "Was the piece proofread in its final format and after a break?",
+    "Do all approved changes appear and no deleted wording remain?",
+    "Is every figure, date, price, phone number, email address and URL correct digit by digit?",
+    "Are all names spelt as their owners spell them, the same way throughout?",
+    "Is spelling consistent with the style sheet (UK, US or Indian English; one Hinglish convention)?",
+    "Are punctuation, capitalisation and spacing consistent across headings, bullets and body?",
+    "Are there no doubled or missing words (checked by reading aloud)?",
+    "In Hindi and Hinglish text: are matras, nukta and script mix correct, with no word accidentally turned into another valid word?",
+    "Were the fixes themselves re-checked?"
+   ]
+  },
+  {
+   "id": "edit:reading_level_wcag",
+   "kind": "editing",
+   "name": "Reading-level check (WCAG 3.1.5)",
+   "status": "current",
+   "summary": "WCAG Success Criterion 3.1.5 (Level AAA, the optional top tier): if text needs reading ability beyond the lower secondary education level (more than 9 years of school), after removing proper names and titles, a simpler version or supplemental content must be available. The edit is to measure, simplify what can be simplified, and add a summary, glossary or alternative for what cannot.",
+   "use_for": [
+    "public-interest copy for mixed-literacy readers: health, finance, scheme and legal explainers",
+    "accessibility audits and client briefs that name WCAG AAA or an accessibility standard",
+    "technical or research content that needs a plain-language summary beside it",
+    "high-traffic landing and category pages where a wide audience arrives cold",
+    "multilingual pages where each language needs its own check"
+   ],
+   "avoid": [
+    "Treating it as mandatory everywhere: it is Level AAA, so check what the client's accessibility mandate actually requires (see comp:wcag_22 and comp:gigw_3) before promising it.",
+    "Using a grade formula as the whole test: WCAG sets no formula; it says qualified teachers can judge against local education standards, and uses reading level to make the criterion testable. Read the text as well as scoring it.",
+    "Simplifying a document that is meant for specialists by deleting its terms: keep the precise term and add a summary or glossary (supplemental content).",
+    "Scoring Hindi or Hinglish with an English formula: Flesch-type scores are English-only (Yoast notes the same). Use a human read for those languages."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/reading-level.html",
+     "title": "WCAG 2.2 Understanding SC 3.1.5 Reading Level (Level AAA)",
+     "supports": "threshold is the lower secondary education level (7-9 years of school) after removing proper names and titles; supplemental content or a simpler version; each language that is at least 5% of the content is assessed and the worst result governs"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/writing-for-lower-literacy-users/",
+     "title": "NN/g: Lower-Literacy Users: Writing for a Broad Consumer Audience",
+     "supports": "lower-literacy readers plough text word by word; Nielsen advises roughly 6th-grade text on the homepage and landing pages and 8th-grade text elsewhere (US research, 2005)"
+    },
+    {
+     "url": "https://hemingwayapp.com/help/docs/readability",
+     "title": "Hemingway Editor: Readability",
+     "supports": "grade level does not define the audience; long sentences and long words inflate it"
+    },
+    {
+     "url": "https://yoast.com/features/readability-analysis/",
+     "title": "Yoast SEO: Readability analysis",
+     "supports": "Flesch Reading Ease and word complexity checks are English-only"
+    }
+   ],
+   "related": [
+    "edit:flesch_kincaid_grade",
+    "edit:flesch_reading_ease",
+    "edit:gunning_fog",
+    "edit:plain_language_check",
+    "edit:cloze_test",
+    "edit:accessible_writing_check",
+    "edit:hemingway_check",
+    "comp:wcag_22",
+    "comp:gigw_3",
+    "tech:tldr_summary",
+    "lang:global_plain_english"
+   ],
+   "steps": [
+    "Decide whether it applies: ask what accessibility standard the client is held to (WCAG level, GIGW, a funder's rule). SC 3.1.5 is Level AAA; if the client targets AA, treat this as a quality goal, not a pass or fail.",
+    "Prepare the text for measurement: remove proper names and titles (people, places, document and film names), as the criterion allows. Do each language separately; any language that is at least 5% of the page and written in full sentences counts, and the worst result decides.",
+    "Measure English text: save the draft and run `python pcw.py check draft.txt` and read fk_grade, max_sentence_words and avg_sentence_words (edit:flesch_kincaid_grade). Note the score only as a pointer to the hardest paragraphs.",
+    "Measure Hindi or Hinglish by a person, not a formula: a teacher, or one real reader from the audience, marks every sentence they had to reread. Count those marks per paragraph.",
+    "Aim: the target for the general public is text a reader with 7 to 9 years of school can read. For the pages with the widest cold audience, Nielsen's lower-literacy research suggests aiming lower (about 6th-grade text on home and landing pages, 8th elsewhere; US data).",
+    "Simplify first: shorter sentences, common words, the actor as subject, one idea per paragraph (edit:plain_language_check, edit:verb_pass, edit:sentence_length_audit). Re-measure.",
+    "If the text must stay hard (a legal clause, a scientific method), add supplemental content instead: a plain-language summary at the top (tech:tldr_summary), a glossary for terms, a diagram or table, or a separate simplified version. WCAG's own examples are a plain summary beside a technical article and an audio version.",
+    "Label the layers: make clear which version is for whom ('Plain-language summary', 'Full technical text'), and link them to each other with descriptive link text (edit:link_text_check).",
+    "Test with real readers: a cloze test (edit:cloze_test) or 'explain it back' with two people from the audience. Remember WCAG's own caveat: no text suits every reader, so aim for the clearest language that is appropriate.",
+    "Record the result: score or reader-test outcome, the version tested and the date, so an audit can see the work."
+   ],
+   "checks": [
+    "Do we know which accessibility standard applies and whether 3.1.5 is required or a goal?",
+    "Were proper names and titles excluded when measuring?",
+    "Was each full-sentence language on the page assessed separately?",
+    "Does the text need no more than 9 years of school to read, by score or by reader test?",
+    "If not, is a plain summary, glossary or simpler version provided and linked?",
+    "Did at least two people from the real audience read it, with the confusing sentences fixed?",
+    "Are English scores used only as pointers, and Hindi or Hinglish checked by a human?",
+    "Is the result recorded with the date and version?"
+   ]
+  },
+  {
+   "id": "edit:reverse_outline",
+   "kind": "editing",
+   "name": "Reverse outline",
+   "status": "current",
+   "summary": "After drafting, write a line for each paragraph saying what it does, then read those lines as an outline. Fix order, gaps, repeats and off-topic paragraphs from the list, not from the prose. It is the fastest structural check you can run on your own draft.",
+   "use_for": [
+    "long-form pieces: articles, guides, white papers, scripts, speeches, case studies",
+    "any draft that feels 'off' but you cannot say why",
+    "AI-assisted drafts, which often repeat points in different words",
+    "checking a draft against the genre card's structure before line editing",
+    "briefing a reviser: the outline shows exactly what each part does"
+   ],
+   "avoid": [
+    "Writing summaries that repeat the paragraph's words: the point is to say what the paragraph is for. Purdue's rule: if you cannot do it in 5 to 10 words, the paragraph needs work.",
+    "Outlining a draft that is still rough: finish the content first, then outline. Do not polish sentences until the order is right.",
+    "Skipping the second note: the topic alone shows what is there; how it advances the piece shows whether it belongs.",
+    "Doing it once: the method is repeatable (Purdue). Redo it after you move things."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/reverse_outlining.html",
+     "title": "Purdue OWL: Reverse outlining",
+     "supports": "two-step method: topic of each paragraph in the left margin, how it advances the whole in the right; 5-10 words; paragraphs may need to shift"
+    },
+    {
+     "url": "https://writingcenter.gmu.edu/writing-resources/writing-as-process/reverse-outlining",
+     "title": "George Mason University Writing Center: Reverse outlining",
+     "supports": "write the main idea of every paragraph; one main idea per paragraph; check order and thesis fit; look for unnecessary, multi-idea and off-topic paragraphs"
+    },
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/",
+     "title": "UNC Writing Center: Editing and proofreading",
+     "supports": "a reverse outline is one way to check structure after the first draft"
+    }
+   ],
+   "related": [
+    "edit:developmental_edit",
+    "edit:line_edit",
+    "edit:cut_ten_percent",
+    "tech:outlining",
+    "tech:one_sentence_paragraphs",
+    "tech:so_what_test",
+    "fw:inverted_pyramid",
+    "fw:minto_pyramid",
+    "fw:scqa"
+   ],
+   "steps": [
+    "Number every paragraph (or every block: a slide, a scene, a section of an email). For a reel script, number each line of voice-over.",
+    "Left column, topic: beside each paragraph write what it is about in 5 to 10 words (Purdue). If you cannot, the paragraph has no clear subject; mark it.",
+    "Right column, job: beside it write how it moves the piece toward the goal, e.g. 'raises the objection about price', 'gives the proof', 'asks for the call'. Be brief again. If you cannot say what the job is, mark it for cutting.",
+    "Read only the left column, top to bottom, as an outline. Does the order build? Would a stranger understand the argument from these lines alone?",
+    "Compare with the genre card's structure (python pcw.py brief <request>): is each required part present, in order, at about the length the card gives?",
+    "Mark problems: a paragraph with no clear idea (cut or fix); two ideas (split); the same idea twice (merge, keep the better one); off-topic (cut, or move to where it belongs); a missing step in the logic or a part the brief requires (add).",
+    "Check the opening and ending against the outline: does the first paragraph promise what the outline delivers, and does the last one close it (edit:developmental_edit)?",
+    "Rewrite the outline into the order you want, then move the actual paragraphs to match. Fix the joins between moved paragraphs (tech:transitions).",
+    "Repeat the exercise on the revised draft. Only when the outline reads cleanly move on to edit:line_edit.",
+    "Keep the outline: it is the change note for the client and the map for the next revision (edit:client_feedback_rounds)."
+   ],
+   "checks": [
+    "Can every paragraph be summarised in 5 to 10 words?",
+    "Does each paragraph carry one main idea?",
+    "Does every paragraph have a stated job that advances the goal?",
+    "Does the left column read as a logical outline a stranger could follow?",
+    "Is every part the genre card requires present and in order?",
+    "Is nothing repeated in other words?",
+    "Are off-topic paragraphs cut or moved?",
+    "Do the opening promise and the closing line match the outline?"
+   ]
+  },
+  {
+   "id": "edit:sensitivity_read",
+   "kind": "editing",
+   "name": "Sensitivity read",
+   "status": "niche",
+   "summary": "Have a reader who knows the depicted community from the inside review portrayals of identity, culture or lived experience for errors, stereotypes and harm, before publication. The reader reports; the writer and client decide. It is used most in fiction and children's publishing and in brand work that portrays a community.",
+   "use_for": [
+    "fiction, scripts and web series with characters from a community the writer does not belong to",
+    "brand films and campaigns portraying a religion, caste, region, language group, disability or gender identity",
+    "children's, educational and public-service content",
+    "ghostwritten memoir or interview pieces about another person's culture or experience",
+    "content on communal, caste or regional topics where one phrase can inflame"
+   ],
+   "avoid": [
+    "Treating one reader as the voice of a whole community: communities are not uniform. For high-stakes work use more than one reader.",
+    "Using it as a legal review: it finds offence and error, not defamation or hate-speech risk. For that read comp:bns_defamation_speech and comp:asci_code, and use a lawyer when the stakes warrant.",
+    "Letting it flatten satire or irony: critics note sensitivity readers can miss irony and satire, so brief the reader on the intended tone and genre (genre:satire_parody).",
+    "Asking for free labour: the EFA lists sensitivity reading among the editorial services freelancers sell, so budget and pay for it.",
+    "Skipping it for a sensitive piece because it costs time: one mislabelled community or ritual can end a campaign."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.the-efa.org/editorial-services-definitions/",
+     "title": "Editorial Freelancers Association: Editorial service definitions",
+     "supports": "sensitivity readers review for statements, portrayals or perspectives that might offend; authenticity readers are members of the depicted community; the two overlap"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Sensitivity_reader",
+     "title": "Sensitivity reader (Wikipedia)",
+     "supports": "sensitivity readers are hired to identify offensive content, stereotypes and bias and deliver reports with suggested changes; influential in publishing since about 2015; criticisms include missing irony and satire"
+    }
+   ],
+   "related": [
+    "edit:inclusive_language",
+    "edit:fact_check",
+    "edit:brand_voice_audit",
+    "tone:inclusive",
+    "comp:bns_defamation_speech",
+    "comp:asci_code",
+    "genre:satire_parody",
+    "genre:brand_story"
+   ],
+   "steps": [
+    "Decide whether the piece needs one. Triggers: a character, ritual, dialect, name, costume or lived experience from a community outside the writer's own; a topic on religion, caste, region, language politics, gender, disability or mental health; any brand or public-service piece that will reach a wide audience.",
+    "Choose the reader for the community and the topic, not the label: someone with lived experience of that community, ideally of the specific sub-community, region or generation depicted. For a high-stakes piece, book two readers.",
+    "Prepare the brief for the reader: what the piece is, the audience, the channel, the intended tone (earnest, comic, satirical), where the community appears and what the scene needs from it, and which parts you are least sure of. Give the full text, not excerpts.",
+    "Agree scope, deadline and fee in writing before sending. Treat the read as a paid editorial service. Keep the text confidential (NDA if the client requires it).",
+    "Ask the reader to mark, in the margin, for each issue: what it is (factual error, stereotype, loaded word, tone, missing perspective) and how serious (harmful, wrong, awkward, taste). Ask for a replacement idea where possible.",
+    "Sort the report into three piles: fix (factual errors and harmful stereotypes), consider (tone and taste), and disagree (with a written reason). You and the client decide; the reader advises. Where two readers differ, say so rather than averaging.",
+    "Revise. Check that the fixes keep the story or the joke working; do not sand the piece into blandness. Where a fix changes meaning, go back to the reader for a quick second look.",
+    "Run the language checks that sit next to it: edit:inclusive_language for word-level issues and, for named people or groups, edit:fact_check for accuracy.",
+    "Record what was reviewed, by whom (by role if anonymity is needed), what changed and what was kept on purpose, in the project file. Credit the reader only with their permission.",
+    "Send anything with defamation, hate-speech or election-code risk to the legal check separately (comp:bns_defamation_speech, comp:eci_mcc)."
+   ],
+   "checks": [
+    "Was the reader a member of the community depicted, briefed on tone, genre and audience?",
+    "For a high-stakes piece, did at least two readers review it?",
+    "Is every flagged factual error fixed?",
+    "Is every harmful stereotype removed or deliberately reframed with a reason on record?",
+    "Is each rejected suggestion explained in writing?",
+    "Does the piece still do its job (story, joke, argument) after the changes?",
+    "Was the legal and platform-policy review done separately where the topic needs it?",
+    "Was the reader paid and the confidentiality agreed?"
+   ]
+  },
+  {
+   "id": "edit:sentence_length_audit",
+   "kind": "editing",
+   "name": "Sentence-length audit",
+   "status": "current",
+   "summary": "Flag sentences over the house limit and split them, while keeping some variety in length. GOV.UK's limit is 'try to split up sentences that are over 25 words long'; Hemingway Editor adds that long sentences can still work for emphasis or rhythm. The audit finds the outliers; your ear decides what to do with them.",
+   "use_for": [
+    "web, email and script copy that must be read quickly or heard aloud",
+    "expert-written drafts full of long, nested sentences",
+    "legal, finance, health and scheme explainers",
+    "the first line of a social post or caption, where one long sentence loses the hook",
+    "voice-over and talking-head scripts, where a sentence must fit one breath"
+   ],
+   "avoid": [
+    "Cutting everything to the same short length: staccato copy sounds choppy (Hemingway warns against it). Vary the length on purpose (tech:sentence_rhythm).",
+    "Splitting a sentence that works as a chain of logic or a rolling description: Hemingway notes some long sentences work for narrative and for a chain of logic.",
+    "Treating 25 as a law. It is GOV.UK's house guideline; set the house limit from the genre card and the client's guide, and put it in the style sheet.",
+    "Judging by the average only: an average of 14 words can hide one 60-word sentence. Look at the longest ones."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "'Try to split up sentences that are over 25 words long'; paragraphs should have no more than 5 sentences"
+    },
+    {
+     "url": "https://hemingwayapp.com/help/docs/readability",
+     "title": "Hemingway Editor: Readability",
+     "supports": "highlights hard-to-read sentences in yellow and red; guidance only; long sentences can work for emphasis, narrative or a chain of logic; avoid choppy writing"
+    },
+    {
+     "url": "https://yoast.com/features/readability-analysis/",
+     "title": "Yoast SEO: Readability analysis",
+     "supports": "Yoast's readability analysis includes a sentence-length check and a consecutive-sentences check"
+    }
+   ],
+   "related": [
+    "tech:short_sentences",
+    "tech:sentence_rhythm",
+    "tech:one_sentence_paragraphs",
+    "tech:write_for_voiceover",
+    "edit:hemingway_check",
+    "edit:yoast_readability",
+    "edit:line_edit",
+    "edit:plain_language_check",
+    "edit:verb_pass"
+   ],
+   "steps": [
+    "Set the limit first: the genre card's lint (max_sentence_words, max_avg_sentence_words) if it has one, else the client's style guide, else GOV.UK's 25 words. Write the chosen number at the top of your notes.",
+    "Get the numbers: save the draft as a file and run `python pcw.py check draft.txt --genre <id>`. It reports words, sentences, max_sentence_words and avg_sentence_words. Note: it ends a sentence at . ! ? and the Hindi danda, and at every line break, so bullets and script lines count as separate sentences.",
+    "List the sentences over the limit: use the longest one the tool reports as the first target, then scan for the next; or paste into Hemingway Editor, where the yellow and red highlights mark the hard sentences.",
+    "Split at the seams: at 'and', 'but', 'which', 'so', a semicolon or a colon; each half must be a complete sentence with its own subject and verb. Start the second sentence with the thing it is about, not with 'This' alone.",
+    "If the sentence lists items or steps, turn it into a list instead of splitting (tech:bulleted_lists). In a script, break at the natural breath point (tech:write_for_voiceover).",
+    "Reorder before you split: a long sentence is often long because the point is at the end. Move the point to the front (tech:front_loading), then see whether it still needs splitting.",
+    "Look at the shape of the whole paragraph: three long sentences in a row need a short one; five short ones in a row may need one to be joined or lengthened. Aim for a mix, and put the short sentence where the emphasis belongs.",
+    "Hindi and Hinglish: split long chains built on 'जो', 'कि', 'और' and participle strings at the danda; in Hinglish keep the line breaks that suit mobile reading (tech:mobile_line_breaks).",
+    "Check paragraph length too: no more than about 5 sentences per paragraph (GOV.UK). Break at the change of idea.",
+    "Re-run `pcw.py check` and read the paragraph aloud. If you stumble, split again; if it sounds like a telegram, rejoin two sentences."
+   ],
+   "checks": [
+    "Is the house limit stated, and is the longest sentence under it or deliberately over it?",
+    "Is each sentence over the limit there for a reason (emphasis, narrative, a chain of logic)?",
+    "Does every split sentence start with its own subject and verb?",
+    "Is there a mix of long and short sentences within each paragraph?",
+    "Are no paragraphs longer than about 5 sentences?",
+    "For scripts: can each line be said in one breath?",
+    "Does the re-run of `pcw.py check` show max and average sentence length within the limit?"
+   ]
+  },
+  {
+   "id": "edit:seo_on_page",
+   "kind": "editing",
+   "name": "On-page SEO checklist",
+   "status": "current",
+   "summary": "A pre-publication checklist for web copy: a unique descriptive title and meta description, one clear main heading, descriptive subheadings, the answer early, alt text, descriptive links and URL, and no keyword stuffing. It follows Google's own SEO Starter Guide, which also says what not to bother with.",
+   "use_for": [
+    "blog posts, pillar and cluster pages, landing pages and category pages before publishing",
+    "refreshes of old posts (genre:content_refresh)",
+    "product and service pages for D2C and SaaS clients",
+    "Hindi and Hinglish pages written for search (lang:hindi_seo)",
+    "audits of freelancer or AI-assisted drafts for spam patterns"
+   ],
+   "avoid": [
+    "Keyword stuffing: Google calls it tiring for users and against its spam policies. Write the way the reader searches, once, naturally.",
+    "Chasing myths: Google says it does not use the meta keywords tag, has no ideal word count, has no ideal number of headings, and that duplicate content across URLs is not a manual-action trigger (copying others' content is a different matter). It also states E-E-A-T is not a ranking factor.",
+    "Optimising separately for AI Overviews: Google states there are no additional requirements and no special optimisations for AI Overviews or AI Mode; the basics apply (trend:llm_readable_content_myths).",
+    "Mass-producing pages with AI to cover keywords: scaled content abuse is a spam-policy violation (comp:google_search_spam_policies, trend:scaled_ai_content_enforcement).",
+    "Rewriting a good title to fit a keyword: the title must still describe the page to a human."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+     "title": "Google Search Central: SEO Starter Guide",
+     "supports": "baseline practices and what to ignore: descriptive URLs, unique people-first content, link text, title and snippet, alt text, keyword stuffing, no ideal word count, heading count, E-E-A-T"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/title-link",
+     "title": "Google Search Central: Influencing your title links",
+     "supports": "unique, descriptive, concise titles; avoid vague or boilerplate titles; no keyword stuffing; brand concisely; Google may use headings too"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/snippet",
+     "title": "Google Search Central: Control your snippets",
+     "supports": "meta description: short, relevant summary unique to the page; may be used as the snippet; no keyword lists"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "title": "Google Search Essentials: Spam policies",
+     "supports": "keyword stuffing and scaled content abuse are spam"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/ai-features",
+     "title": "Google Search Central: AI features and your website",
+     "supports": "no additional requirements or special optimisations for AI Overviews and AI Mode"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "people-first content: original, reliable, substantial value, clear sourcing"
+    }
+   ],
+   "related": [
+    "tech:title_tag_writing",
+    "tech:meta_description_writing",
+    "tech:descriptive_url_slug",
+    "tech:keyword_placement",
+    "tech:image_alt_text",
+    "tech:anchor_text",
+    "tech:search_intent_matching",
+    "tech:answer_first_paragraph",
+    "edit:link_text_check",
+    "edit:alt_text_check",
+    "edit:pre_publish_qa",
+    "comp:google_search_spam_policies",
+    "trend:geo_ai_search",
+    "lang:hindi_seo"
+   ],
+   "steps": [
+    "Intent first: write down the search query the page answers and what the searcher wants to do next (tech:search_intent_matching). If the page does not answer it in its opening, fix the opening before touching metadata.",
+    "Title (the <title> element): unique to the page, descriptive and concise, and it accurately says what the page contains. No 'Home' or 'Profile' style vague titles, no repeating the same words, no boilerplate that varies by one word; keep a short brand name at the start or end (Google's title-link guidance). Google may still show another title built from your headings.",
+    "Meta description: one or two sentences that summarise this page and its most relevant points, unique per page, not a list of keywords. It is not displayed on the page and Google may or may not use it as the snippet; there is no length limit but it is truncated to fit the device width (Google's snippet guidance).",
+    "Main heading: one clear H1 that says what the page is about, matching the title's promise. Subheadings are descriptive, so a skimmer or screen-reader user can read them as an outline (edit:accessible_writing_check). Number and order do not affect Google ranking, but sensible order matters for screen readers.",
+    "Answer early: the first paragraph or the first section gives the answer, then the depth (tech:answer_first_paragraph). This is craft practice that supports intent matching; Google states no special format is needed for AI features.",
+    "Body: write for the words your reader uses, including the beginner's word and the expert's word (Google's 'charcuterie' versus 'cheese board' example). Use a term where it is natural; read the page aloud and delete any repetition that sounds forced.",
+    "Images: add descriptive alt text that explains what the image shows and how it relates to the page (tech:image_alt_text); use readable file names.",
+    "Links: descriptive anchor text, links to related pages on your own site, links to sources where useful, no chained links, no keyword cramming (edit:link_text_check).",
+    "URL: a short slug made of words a user would understand, not random IDs (tech:descriptive_url_slug).",
+    "People-first and original: confirm the page adds something the existing results do not (first-hand detail, data, a clear explanation), is not copied (edit:plagiarism_check), is sourced (edit:source_citation) and, for a refresh, changes substance not just the date (tech:content_freshness_update).",
+    "Spam check: no keyword stuffing, no pages generated at scale just to catch queries, no hidden text. If AI helped, a human has edited and added value (edit:ai_tell_removal).",
+    "Ignore the myths: do not spend time on meta keywords, a target word count, a fixed number of headings, domain keywords or 'AI-only' rewrites. Log what you checked in the pre-publish QA (edit:pre_publish_qa)."
+   ],
+   "checks": [
+    "Does the page answer the target query in its opening?",
+    "Is the title unique to this page, descriptive and free of repeated keywords?",
+    "Does the meta description summarise this page in a sentence or two, without a keyword list?",
+    "Is there one clear main heading, with descriptive subheadings?",
+    "Does every informative image have descriptive alt text?",
+    "Does every link say where it goes, with no stuffing and no run of links in a row?",
+    "Is the URL made of readable words?",
+    "Does the copy read naturally aloud, with no forced repeated phrases?",
+    "Is the page original, sourced and more useful than a copy of existing results?",
+    "Is nothing in the page designed for search engines at the expense of the reader?"
+   ]
+  },
+  {
+   "id": "edit:source_citation",
+   "kind": "editing",
+   "name": "Source citation pass",
+   "status": "current",
+   "summary": "Attach a named, linkable source to every statistic and quote, prefer primary sources, and date anything time-sensitive. The test comes from fact-checking practice: a reader should be able to follow your sources in enough detail to replicate your work.",
+   "use_for": [
+    "blog posts, reports, white papers and thought-leadership pieces full of statistics",
+    "news explainers, fact-checks and policy briefs (genre:fact_check, genre:news_explainer)",
+    "ghostwritten founder posts that cite market data or studies",
+    "carousels, reels and threads where a source line is easy to forget",
+    "ad and marketing claims that must be substantiated"
+   ],
+   "avoid": [
+    "Vague attribution: 'studies show', 'experts say', 'industry reports'. Name the study, the body, the year, or delete the claim.",
+    "Citing a secondary blog that repeats a number: go to the primary source (the regulator's page, the filing, the paper). IFCN: use the best available primary source and explain when you use a secondary one.",
+    "Using the source's interest as the claim's proof: when the source sells the thing being claimed (a vendor survey), say so in the sentence.",
+    "Believing credit equals originality: Google's guidance says giving credit does not replace the need for original effort (edit:plagiarism_check).",
+    "Writing a number you cannot trace and planning to 'source it later': use a visible placeholder like [stat: source needed], never an invented figure."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://ifcncodeofprinciples.poynter.org/the-commitments",
+     "title": "IFCN Code of Principles: the commitments",
+     "supports": "provide all sources in enough detail that readers can replicate the work; use the best available primary sources; check key claims against more than one named source; identify relevant interests of sources; link where available online"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "asks whether content presents information with clear sourcing and evidence; attribution does not replace original effort"
+    },
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/plagiarism/",
+     "title": "UNC Writing Center: Plagiarism",
+     "supports": "cite quoted and paraphrased ideas; naming the author is not enough on its own"
+    }
+   ],
+   "related": [
+    "edit:fact_check",
+    "edit:plagiarism_check",
+    "edit:pre_publish_qa",
+    "tech:authority_proof",
+    "tech:specificity",
+    "tech:eeat_first_hand_experience",
+    "genre:fact_check",
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "steps": [
+    "Mark every claim that needs a source: each number, percentage, ranking, date, quote, legal or regulatory statement, 'first', 'only', 'best' and any 'studies show'. Highlight them in the draft or list them in a sheet with one row per claim.",
+    "For each row, find the primary source: the regulator's circular, the company filing, the government dataset, the original paper or the person quoted. If you only find a secondary article, follow it back to where it got the number. If no primary source exists, use the secondary one and say so (IFCN).",
+    "Confirm the claim against the source's own wording: open the page, find the sentence or table, and check the number, the unit (Rs crore or lakh?), the population, the period and the geography. Copy the exact figure, not your memory of it.",
+    "Check key claims against a second named source where one exists (IFCN). If the two disagree, say so in the copy or use the more conservative figure with its source.",
+    "Record the source for each row: name, URL, date the source was published, date you checked it. For a figure that will go stale (prices, rates, rankings, user counts) write it as 'as of <month year>' in the sentence.",
+    "Disclose interest: if the source sells what you are claiming, or the survey is the client's own, say so ('in a survey of 400 of our own customers'). Never present a client's internal data as an independent finding.",
+    "Replace vague attributions with named ones: 'According to RBI's <report name>, <month year>, ...'. If you cannot name it, cut the sentence or reword it as the writer's view.",
+    "Quotes: attribute by full name and role, at the time and place of the statement; keep the quote exact. A paraphrase still needs the source named.",
+    "Put the source where the format allows: an inline link in a blog (descriptive link text, edit:link_text_check); numbered endnotes in a white paper; a source line on the last slide of a carousel; an on-screen source credit in a reel; the source name plus a short link in a WhatsApp message.",
+    "Run edit:fact_check on the final text and keep the sheet with the delivery, so the client can answer a challenge months later. Any claim with no source after all this is removed or marked as opinion."
+   ],
+   "checks": [
+    "Does every number, quote, date and legal claim have a named source?",
+    "Is each source primary where a primary source exists, and is any secondary source flagged as such?",
+    "Do key claims match a second named source, or is the single source stated?",
+    "Are time-sensitive figures dated ('as of <month year>')?",
+    "Is any source with an interest in the claim identified as such?",
+    "Is there no 'studies show', 'experts say' or 'reports suggest' left without a name?",
+    "Do inline links use descriptive text and lead to the cited page?",
+    "Is the source sheet saved with the delivery?"
+   ]
+  },
+  {
+   "id": "edit:style_ap",
+   "kind": "editing",
+   "name": "AP Stylebook",
+   "status": "current",
+   "summary": "AP style is the US news and PR house style, covering numbers, titles, dates, abbreviations, capitalisation and usage; it is the default for press releases and news copy. The stylebook is a subscription, so apply it by looking each point up in the current edition, not from memory or old cheat sheets.",
+   "use_for": [
+    "press releases and media pitches for US-facing or news-style outlets",
+    "news stories, bulletins and explainers (genre:news_story, genre:press_release)",
+    "corporate and PR communications where the client says 'follow AP'",
+    "content for Indian clients whose newsroom or PR agency has adopted AP as its base",
+    "checking a draft that must pass a US editor's eye"
+   ],
+   "avoid": [
+    "Working from memory or from a blog cheat sheet: AP updates entries (Wikipedia records changes such as capitalising 'Black' in 2020 and dropping hyphens in terms like 'Asian American' in 2019), so look up the current entry.",
+    "Forcing US conventions onto an Indian audience without recording the exception: lakh and crore, rupee symbols and Indian date habits belong on the project style sheet (lang:india_locale_formats), not in memory.",
+    "Treating AP as the only style: books and long-form usually use Chicago (edit:style_chicago); tech and product docs often use Google or Microsoft guides.",
+    "Mixing AP with another guide mid-piece: pick one base guide, list the client overrides on the style sheet (edit:style_sheet) and apply both consistently."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/AP_Stylebook",
+     "title": "AP Stylebook (Wikipedia)",
+     "supports": "AP style is used in news, magazine publishing, marketing and PR; covers grammar, punctuation, capitalisation, abbreviation, spelling and numerals for American English; later editions changed several entries"
+    },
+    {
+     "url": "https://www.apstylebook.com/",
+     "title": "AP Stylebook (official site)",
+     "supports": "the official stylebook is a subscription product (the harvest could not fetch the page)"
+    },
+    {
+     "url": "https://web.news.niu.edu/2019/02/25/numbers-in-ap-style/",
+     "title": "Northern Illinois University: Using Numbers in AP Style (secondary source)",
+     "supports": "secondary source: spell out one through nine, numerals for 10 and above, spell out a number that starts a sentence, figures for ages"
+    },
+    {
+     "url": "https://proofed.com/writing-tips/everything-you-need-to-know-about-numbers-in-ap-style/",
+     "title": "Proofed: Everything you need to know about numbers in AP Style (secondary source)",
+     "supports": "secondary source: AP number rules and exceptions"
+    }
+   ],
+   "related": [
+    "genre:press_release",
+    "genre:news_story",
+    "genre:media_pitch",
+    "fw:inverted_pyramid",
+    "edit:style_chicago",
+    "edit:style_sheet",
+    "edit:copy_edit",
+    "lang:us_english",
+    "lang:india_locale_formats",
+    "lang:indian_english"
+   ],
+   "steps": [
+    "Confirm AP applies: ask whether the client or outlet says 'AP style' or has its own guide. If the client has overrides, they win; list them on the project style sheet before you start (edit:style_sheet).",
+    "Have the stylebook open: get the current AP Stylebook (subscription) or the client's licence. Look up every point you are unsure of and write the answer on the style sheet with the date. Do not rely on memory.",
+    "Pass 1, spelling and usage: American English spellings; for any word the stylebook does not cover, use the dictionary it names as its default (Wikipedia reports AP moved to Merriam-Webster in 2024; check the current edition's wording).",
+    "Pass 2, numbers: per the secondary guides, spell out one through nine and use numerals from 10; spell out a number that starts a sentence (restructure if it is a long number); use figures for ages and percentages. Confirm each exception in the stylebook.",
+    "Pass 3, names, titles and capitalisation: look up titles, organisations, government bodies and identity terms. Terms such as 'Black' and 'Asian American' were changed by AP in recent editions, so check the current entry.",
+    "Pass 4, dates, times, places and abbreviations: apply the AP entry for each; for Indian places and institutions, check whether the client or the Indian outlet has a house form and record it.",
+    "Pass 5, Indian formats: decide and record how to write rupee amounts and Indian number units (lakh, crore) in a US-style piece (for example give the crore figure and an international equivalent for a global release). This is not an AP rule; it is a style-sheet decision (lang:india_locale_formats).",
+    "Pass 6, structure: press releases and news copy lead with the news (fw:inverted_pyramid, genre:press_release). Check the genre card's checklist for what the first paragraph must contain.",
+    "Pass 7, consistency: search the draft for each term on the style sheet and confirm one form is used everywhere.",
+    "Run `python pcw.py check draft.txt --genre genre:press_release`, then the humanizer skill on English text (edit:ai_tell_removal), then proofread (edit:proofread)."
+   ],
+   "checks": [
+    "Was the base style guide and any client override confirmed in writing?",
+    "Were uncertain points looked up in the current stylebook and logged, not decided from memory?",
+    "Are numbers handled consistently (spelled out up to nine, numerals from 10, none starting a sentence)?",
+    "Are names, titles and identity terms in the form the current edition gives?",
+    "Are Indian-specific formats (rupees, lakh, crore, dates) decided and consistent?",
+    "Does the lead paragraph give the news first?",
+    "Does the style sheet record every decision made?"
+   ]
+  },
+  {
+   "id": "edit:style_chicago",
+   "kind": "editing",
+   "name": "Chicago Manual of Style",
+   "status": "current",
+   "summary": "The Chicago Manual of Style is the US book-publishing standard for grammar, usage, citation and manuscript preparation, published by the University of Chicago Press since 1906; the 18th edition appeared in September 2024. It is the default for books, long-form non-fiction and many academic and trade publishers.",
+   "use_for": [
+    "ghostwritten books, memoirs and non-fiction manuscripts (genre:ghostwritten_book, genre:book_proposal)",
+    "white papers, research reports and long articles that need footnotes or a reference list",
+    "editorial and publishing clients who say 'Chicago'",
+    "academic-style writing for trade audiences",
+    "choosing a citation system for a long document"
+   ],
+   "avoid": [
+    "Using it for short web copy: Chicago is built for books and long documents. Web, UX and product text are better served by Google, Microsoft or the client's own guide.",
+    "Choosing a citation system by habit: the manual offers two (notes-bibliography and author-date); agree one with the client or publisher before drafting and keep it throughout.",
+    "Citing from an old edition: the 18th edition changed practice (for example it omits publication locations in citations and adds guidance for citing AI-generated content). Use the edition the client names.",
+    "Applying US conventions to an Indian-English or Hinglish book without a decision: record spelling, number and quotation conventions on the style sheet."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/The_Chicago_Manual_of_Style",
+     "title": "The Chicago Manual of Style (Wikipedia)",
+     "supports": "published by University of Chicago Press since 1906; 18th edition September 2024; two citation systems; 18th edition changes (publication locations, singular they, AI-content citation guidance)"
+    },
+    {
+     "url": "https://www.chicagomanualofstyle.org/home.html",
+     "title": "The Chicago Manual of Style Online",
+     "supports": "the online edition: style, usage and grammar; Citation Quick Guide; Style Q&A; audience of writers, editors, proofreaders and publishers; subscription"
+    }
+   ],
+   "related": [
+    "genre:ghostwritten_book",
+    "genre:book_proposal",
+    "genre:white_paper",
+    "genre:research_report",
+    "edit:style_ap",
+    "edit:copy_edit",
+    "edit:style_sheet",
+    "edit:source_citation",
+    "lang:us_english"
+   ],
+   "steps": [
+    "Confirm the edition and any publisher overrides: ask the client or publisher which edition and whether they have a house sheet. Write both on the style sheet (edit:style_sheet).",
+    "Choose the citation system early: notes-bibliography (footnotes or endnotes plus a bibliography) or author-date (in-text author and year plus a reference list). The manual provides both; match the client's field and publisher.",
+    "Set up the manuscript consistently: one heading hierarchy, consistent capitalisation of headings, consistent treatment of quotations and block quotes, one convention for numbers and dates. Record each decision once on the style sheet.",
+    "Build the source list as you write (edit:source_citation): author, title, publisher, date, URL and access date; add page numbers for quotations. Use the manual's Citation Quick Guide and Style Q&A to settle edge cases instead of guessing.",
+    "Check usage and grammar against the manual for any point you are unsure of; where Chicago allows a choice (for example singular they in the 18th edition), pick one and apply it consistently.",
+    "Run the copy edit pass (edit:copy_edit): consistency of terms, cross-references, spelling variant (US by default), then the line edit if the budget covers it (edit:line_edit).",
+    "Check every note and reference against the style: that each in-text cite has an entry and each entry is cited, and that quotations are exact.",
+    "Proofread the formatted manuscript after layout (edit:proofread), checking note numbers and the bibliography."
+   ],
+   "checks": [
+    "Are the edition and any publisher overrides recorded?",
+    "Is one citation system used throughout?",
+    "Does every in-text citation have a matching entry, and every entry a citation?",
+    "Is every direct quotation exact and attributed?",
+    "Are heading capitalisation, numbers and dates consistent across the manuscript?",
+    "Are the 18th-edition choices (such as singular they, omitted publication locations) applied only if the client's edition is the 18th?",
+    "Does the style sheet record each decision?"
+   ]
+  },
+  {
+   "id": "edit:style_google_dev",
+   "kind": "editing",
+   "name": "Google developer documentation style guide",
+   "status": "current",
+   "summary": "Google's free developer documentation style guide: a conversational, friendly voice, second person, active voice, sentence-case headings, numbered steps, inclusive and objective wording, and a word list for term-by-term decisions. It is a practical base style for technical and product docs and a good model for any client without a guide.",
+   "use_for": [
+    "developer tutorials, API references, READMEs and technical blog articles (genre:developer_tutorial, genre:api_reference, genre:readme)",
+    "knowledge-base and help-centre articles (genre:knowledge_base_article)",
+    "SaaS and product documentation where the client has no style guide",
+    "settling a word-choice argument with a public reference",
+    "inclusive-language and precision passes on technical copy"
+   ],
+   "avoid": [
+    "Using it on marketing copy: it favours neutral, precise docs, not persuasion. Use the genre card's tone for sales copy.",
+    "Applying US style to a UK or Indian-English client unasked: the guide uses US spelling and punctuation, so record the client's variant on the style sheet.",
+    "Words like 'simple', 'easy' and 'quick' in instructions: the guide avoids them because they assert an opinion about difficulty. State what to do instead.",
+    "Skipping the word list: when a term is in dispute, check the word list entry, then record the decision on the style sheet."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/style/highlights",
+     "title": "Google developer documentation style guide: Highlights",
+     "supports": "highlights: conversational and friendly; 'you' over 'we'; active voice; American spelling; conditions before instructions; sentence case headings; numbered lists for steps; serial commas; unambiguous dates; descriptive link text; alt text"
+    },
+    {
+     "url": "https://developers.google.com/style/voice",
+     "title": "Google developer documentation style guide: Active voice versus passive voice",
+     "supports": "prefer active voice; passive is acceptable when the object matters or the actor is unknown"
+    },
+    {
+     "url": "https://developers.google.com/style/headings",
+     "title": "Google developer documentation style guide: Headings and titles",
+     "supports": "sentence case; descriptive and unique headings; no end punctuation; do not skip heading levels; no empty headings"
+    },
+    {
+     "url": "https://developers.google.com/style/link-text",
+     "title": "Google developer documentation style guide: Link text",
+     "supports": "link text: page title or descriptive phrase, important words first, short, never a bare URL"
+    },
+    {
+     "url": "https://developers.google.com/style/inclusive-documentation",
+     "title": "Google developer documentation style guide: Write inclusive documentation",
+     "supports": "gender-neutral language; avoid ableist and graphic or metaphorical terms; precise, objective language; avoid 'simple', 'easy', 'quick', 'carefully', 'properly'; diverse examples"
+    },
+    {
+     "url": "https://developers.google.com/style/word-list",
+     "title": "Google style guide: Word list",
+     "supports": "term-by-term usage decisions"
+    }
+   ],
+   "related": [
+    "genre:developer_tutorial",
+    "genre:api_reference",
+    "genre:readme",
+    "genre:knowledge_base_article",
+    "genre:technical_blog_article",
+    "tech:step_by_step_instructions",
+    "tech:active_voice",
+    "tech:consistent_terminology",
+    "edit:inclusive_language",
+    "edit:style_microsoft",
+    "edit:style_sheet",
+    "lang:us_english"
+   ],
+   "steps": [
+    "Read the highlights page once and write the 10 rules you will enforce on the project style sheet, noting any the client overrides (edit:style_sheet).",
+    "Voice pass: address the reader as 'you', prefer 'you' to 'we', and turn passives into active sentences where the actor matters ('The server sends an acknowledgment', not 'An acknowledgment is sent'). Keep a passive when the object is the topic or the actor is unknown (edit:verb_pass).",
+    "Sentence order: put the condition before the instruction ('If the connection fails, restart the service', not the reverse).",
+    "Headings: sentence case, descriptive and unique, no end punctuation, no skipped levels, no empty or stacked headings, no links in headings.",
+    "Procedures: number steps that must happen in order, bullet other lists, and start each step with a verb. Format UI elements in bold and code in code font (tech:step_by_step_instructions).",
+    "Precision pass: delete 'simple', 'easy', 'quick', 'simply', 'carefully', 'properly' and similar opinion words. Replace each with the concrete action or a measurable result.",
+    "Inclusion pass: gender-neutral wording and pronouns; remove ableist terms (the guide names crazy, insane, blind to, cripple, dumb) and unnecessarily graphic or metaphorical terms; use diverse names and places in examples, including Indian ones where the audience is Indian (edit:inclusive_language).",
+    "Links and images: descriptive link text with the important words first, no bare URLs, alt text on every image (edit:link_text_check, edit:alt_text_check).",
+    "Word list check: look up any disputed term on the word list and apply its decision; add the term and the decision to the project style sheet.",
+    "Dates and numbers: use an unambiguous date format (month spelled out), serial commas, and keep terminology consistent (tech:consistent_terminology).",
+    "Run `python pcw.py check draft.txt` for sentence stats and AI-tell warnings, then the humanizer skill on English text."
+   ],
+   "checks": [
+    "Is the reader addressed as 'you', with active voice wherever the actor matters?",
+    "Does each condition come before its instruction?",
+    "Are headings sentence case, descriptive, unique and in order?",
+    "Are ordered steps numbered and does each start with a verb?",
+    "Are 'simple', 'easy', 'quick' and 'properly' gone?",
+    "Is language gender-neutral, free of ableist terms and graphic metaphors?",
+    "Do links use descriptive text and do images have alt text?",
+    "Are disputed terms settled against the word list and recorded?"
+   ]
+  },
+  {
+   "id": "edit:style_gov_uk",
+   "kind": "editing",
+   "name": "GOV.UK style guide",
+   "status": "current",
+   "summary": "The UK government's public A to Z style guide and writing guidelines: plain English, frontloading, numerals, sentence case, 'you', and a list of words to avoid. It is free, specific and a strong model for any citizen-facing or explainer copy, including Indian scheme and service content, as long as UK-only choices (spelling, currency, departments) are swapped for local ones.",
+   "use_for": [
+    "government scheme explainers and citizen guides (genre:scheme_explainer, genre:government_press_note)",
+    "bank, insurance, tax and utility information pages",
+    "terms, policy and help-centre text for a general audience",
+    "any client who wants 'clear, no-jargon' copy and has no guide of its own",
+    "training a junior writer in plain-English habits"
+   ],
+   "avoid": [
+    "Copying UK-specific rules into Indian copy: UK spelling, '2 June 2025' date form, pounds and UK department names are not universal. Take the principles; record local choices on the style sheet.",
+    "Following 'headings should not be questions' on FAQ-style pages: GOV.UK's rule is for its own pages. An FAQ page may need question headings (genre:faq_page); decide per genre.",
+    "Applying the tone rule 'emotionless' to condolence, apology or empathy copy: GOV.UK means no spin and no emotive adjectives in guidance, not no humanity in a hard moment.",
+    "Banning every word on the 'words to avoid' list mechanically: GOV.UK itself lists exceptions (for example 'deliver' for pizzas and post). Replace the vague use, not the word."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+     "title": "GOV.UK A to Z style guide",
+     "supports": "A to Z entries: abbreviations explained on first use; bullet and step rules; sentence case; dates ('2 June', 'to' in ranges); numbers (numerals from 2, spell out 'one'); no italics; bold sparingly; words to avoid and their replacements"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "plain English; short words; active voice; 'must' for legal requirements; avoid negative contractions; sentences over 25 words split; paragraphs up to 5 sentences; links and clear structure"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/right-tone/",
+     "title": "GOV.UK: Use the right tone",
+     "supports": "tone: specific, informative, clear and concise, brisk but not terse, serious but not pompous, emotionless; no 'please'; no block capitals"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-structure/",
+     "title": "GOV.UK: Create a clear structure for your content",
+     "supports": "frontload; headings descriptive, frontloaded, active and removable; people skim; bullets and steps; avoid footnotes"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/add-links/",
+     "title": "GOV.UK: Write effective links",
+     "supports": "write descriptive links; verb first for tasks; show file format and size; links in context"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/",
+     "title": "GOV.UK writing guidelines",
+     "supports": "the writing guidelines index: user needs, structure, clear language, tone, links, titles, summaries, change notes"
+    }
+   ],
+   "related": [
+    "tech:plain_language",
+    "tech:front_loading",
+    "tech:active_voice",
+    "tech:descriptive_subheads",
+    "tech:numerals",
+    "tech:bulleted_lists",
+    "edit:plain_language_check",
+    "edit:link_text_check",
+    "edit:style_sheet",
+    "genre:scheme_explainer",
+    "genre:government_press_note",
+    "lang:india_locale_formats"
+   ],
+   "steps": [
+    "Decide the adaptation first: list on the style sheet what you keep (plain English, frontloading, active voice, sentence case) and what you change for the client (spelling variant, currency format, date format, department and scheme names). See lang:indian_english and lang:india_locale_formats.",
+    "Reader and need: write one line on who is reading and what they need to do (GOV.UK: write to meet user needs). Delete content that serves no user need.",
+    "Frontload: put the most important information first, then taper down (the inverted pyramid). Check the first paragraph and every first sentence.",
+    "Headings: descriptive, frontloaded, active ('Apply for a driving licence', not 'You can apply for a driving licence'), and removable (the text still makes sense with the headings stripped). Avoid generic headings like 'Introduction' and avoid headings that are questions, except on an FAQ page.",
+    "Words pass: replace formal or long words with short ones ('buy' for 'purchase', 'help' for 'assist', 'about' for 'approximately'); scan for the words-to-avoid list (for example utilise, facilitate, leverage, impact, robust, empower, deliver (for abstract things), 'in order to') and replace each with what is actually being done; remove metaphors and buzzwords.",
+    "Verbs pass: active voice; turn '-ion' and '-ment' nouns back into verbs (GOV.UK notes they lengthen sentences); keep the passive only when the outcome matters more than the actor (edit:verb_pass).",
+    "Requirements pass: 'must' for a legal requirement, 'need' for an administrative step with no criminal consequence, 'can' for something optional. Delete 'may be able to' and 'please' and 'please note'.",
+    "Length: split sentences over 25 words; keep paragraphs to 5 sentences or fewer (edit:sentence_length_audit). Avoid negative contractions ('can't', 'don't') and 'should've'-type forms; ordinary contractions like 'you'll' are fine.",
+    "Formatting: sentence case everywhere, including titles; no italics (use single quotes for a document or scheme name); bold only for interface elements that tell the user what to do; no block capitals; no footnotes.",
+    "Lists: lead-in line, more than one bullet, lower-case starts, no 'and' or 'or' after bullets, one sentence per bullet, no full stop after the last bullet. Use numbered steps for processes; each step is a full sentence ending with a full stop.",
+    "Numbers and dates: numerals for 2 and above, 'one' written out unless it is a step or date; a comma in thousands (9,000); '%' for percentages; dates like '2 June 2025' with no ordinal; 'to' in ranges ('10 November to 21 December'). Record the Indian equivalents (lakh, crore, Rs or the rupee sign) on the style sheet.",
+    "Abbreviations and links: explain each abbreviation in full on first use (except very well known ones); write descriptive link text with the file format and size where relevant (edit:link_text_check).",
+    "Test: read aloud, then run `python pcw.py check draft.txt` and the plain-language check (edit:plain_language_check)."
+   ],
+   "checks": [
+    "Is the style sheet's list of kept and changed GOV.UK rules written down for this client?",
+    "Does the first paragraph give the most important information?",
+    "Are headings descriptive, frontloaded and removable?",
+    "Are words on the avoid list replaced by plain, specific wording?",
+    "Is each requirement marked must, need or can?",
+    "Are sentences under 25 words and paragraphs at most 5 sentences?",
+    "Is formatting sentence case with no italics, no block capitals and no footnotes?",
+    "Are bullets and steps formatted to the list rules?",
+    "Are numbers, dates and abbreviations consistent with the style sheet?"
+   ]
+  },
+  {
+   "id": "edit:style_mailchimp",
+   "kind": "editing",
+   "name": "Mailchimp Content Style Guide",
+   "status": "current",
+   "summary": "Mailchimp's free Content Style Guide: a constant voice (plainspoken, genuine, translator of jargon, dry humour) with a tone that shifts to the reader's state of mind, plus rules on grammar, accessibility, writing about people and translation. It is a ready model for building a client's own brand content guide.",
+   "use_for": [
+    "newsletters, emails and in-app copy for SaaS and D2C brands (genre:creator_newsletter, genre:promotional_email)",
+    "building or auditing a brand voice guide for a client (genre:brand_voice_guide)",
+    "tone-shifting decisions: a celebration email versus an error message",
+    "marketing copy that must stay clear and a little human",
+    "a base guide for small brands with no style rules"
+   ],
+   "avoid": [
+    "Copying Mailchimp's personality: the voice is theirs. Borrow the structure (voice traits, tone shifts, mechanics, word list) and write the client's own traits.",
+    "Forced humour: the guide itself says it is more important to be clear than entertaining and that forced humour can be worse than none. Cut the joke if it hides the point.",
+    "Exclamation points in error or failure messages: the guide bans them there and allows at most one elsewhere.",
+    "Treating its US rules as universal: spelling, serial comma and date style are US choices; record the client's variant on the style sheet."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://styleguide.mailchimp.com/",
+     "title": "Mailchimp Content Style Guide",
+     "supports": "sections of the guide: goals, voice and tone, writing about people, grammar and mechanics, web elements, educational content, legal, email newsletters, social media, accessibility, translation, structured content, word list"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/voice-and-tone/",
+     "title": "Mailchimp: Voice and tone",
+     "supports": "voice stays constant (plainspoken, genuine, translators, dry humour); tone shifts with the reader's state of mind; clarity over entertainment; forced humour can be worse than none"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/grammar-and-mechanics/",
+     "title": "Mailchimp: Grammar and mechanics",
+     "supports": "mechanics: active voice, contractions, serial comma, numbers, dates, percentages, exclamation points sparingly (never more than one, never in failure messages), emoji sparingly, lowercase email and internet, left-align text"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/writing-for-accessibility/",
+     "title": "Mailchimp: Writing for accessibility",
+     "supports": "accessibility rules: descriptive links, nested headers, true lists, alt text, spell out abbreviations on first use, captions or transcripts"
+    }
+   ],
+   "related": [
+    "genre:brand_voice_guide",
+    "genre:creator_newsletter",
+    "genre:promotional_email",
+    "genre:ux_microcopy",
+    "tone:friendly_warm",
+    "tone:conversational",
+    "edit:brand_voice_audit",
+    "edit:style_sheet",
+    "edit:style_microsoft",
+    "edit:accessible_writing_check",
+    "lang:transcreation"
+   ],
+   "steps": [
+    "Separate voice from tone: write 3 to 4 voice traits that never change, each as 'we are X, not Y', and a table of tone shifts by situation (celebrating, onboarding, apologising, warning). Mailchimp's own split is the pattern: voice constant, tone varies.",
+    "For each piece, name the reader's state of mind first (relieved, confused, anxious, excited) and set the tone from it. An error message and a launch email do not share a tone, only a voice.",
+    "Plain-English pass: active voice, everyday words, no slang or B2B jargon, positive phrasing ('To get a refund, send the order ID', not 'You can't get a refund without the order ID').",
+    "Clarity over cleverness: read each joke and delete it if it competes with the instruction or the offer.",
+    "Mechanics pass (the guide's choices, adjust to the client): contractions allowed, serial comma, numerals except at the start of a sentence, spelled-out dates, % symbol, hyphen for ranges, one exclamation mark at most and none in errors, emoji used rarely and on purpose, lowercase 'email' and 'internet'.",
+    "Accessibility pass: descriptive link text, headings nested in order, real lists, alt text on images, abbreviations explained on first use, captions or transcripts for video (edit:accessible_writing_check).",
+    "Writing about people: check how the copy refers to customers, disabilities, gender and identity against the guide's section; apply inclusive wording (edit:inclusive_language).",
+    "Translation: avoid idioms and puns that will not travel; for Hinglish or Hindi versions use transcreation, not word-for-word (lang:transcreation).",
+    "Build the client guide: copy the section list as a skeleton, fill each with the client's decisions, add a word list, keep it short enough to be used. Test it by having a second writer draft from it and comparing results (edit:brand_voice_audit)."
+   ],
+   "checks": [
+    "Are the voice traits and the tone-shift table written down separately?",
+    "Does each piece state the reader's likely state of mind and match its tone to it?",
+    "Is every joke secondary to the clarity of the message?",
+    "Is there at most one exclamation mark, and none in an error or failure message?",
+    "Are abbreviations explained on first use and links descriptive?",
+    "Is language inclusive and free of jargon and slang?",
+    "Do spelling and mechanics match the client's recorded variant?"
+   ]
+  },
+  {
+   "id": "edit:style_microsoft",
+   "kind": "editing",
+   "name": "Microsoft Writing Style Guide",
+   "status": "current",
+   "summary": "Microsoft's free tech-writing and UI style reference: warm, crisp, conversational, contractions, sentence-case headings, bias-free and global English. Its 'Top 10 tips' page is a one-page edit checklist: bigger ideas with fewer words, write like you speak, get to the point fast, be brief, sentence case, minimal punctuation in titles, serial comma, one space after periods, start with a verb.",
+   "use_for": [
+    "UI text, product copy, help articles and onboarding flows (genre:ux_microcopy, genre:knowledge_base_article)",
+    "SaaS and tech marketing copy that must sound human and brief",
+    "global audiences and non-native readers (lang:global_plain_english)",
+    "inclusive-language and bias-free checks",
+    "a one-page checklist when a client has no style guide"
+   ],
+   "avoid": [
+    "Contractions where the register is formal or legal: Microsoft uses them to sound friendly. Keep a legal notice or a condolence message uncontracted, as the brief's tone requires.",
+    "Mixing contractions and full forms in one UI: the guide says not to mix 'can't' and 'cannot' in the same UI.",
+    "Forming contractions from a noun and a verb ('Microsoft's developing...') or using awkward ones (there'd, it'll, they'd): the guide advises against them.",
+    "Cutting to the point of coldness: 'shorter is always better' is Microsoft's brand rule for its own products; keep what the user needs to decide."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice",
+     "title": "Microsoft Writing Style Guide: Top 10 tips for Microsoft style and voice",
+     "supports": "top 10 tips: bigger ideas fewer words; write like you speak; contractions; get to the point fast; be brief; sentence-style capitalisation; no period or colon at the end of headings; serial comma; one space after periods and no spaces around dashes; start with a verb and avoid 'there is'"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/word-choice/use-contractions",
+     "title": "Microsoft Writing Style Guide: Use contractions",
+     "supports": "use common contractions; do not mix with spelled-out forms in UI text; never contract a noun and a verb; avoid awkward contractions"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/bias-free-communication",
+     "title": "Microsoft Writing Style Guide: Bias-free communication",
+     "supports": "bias-free communication: gender-neutral alternatives; avoid he or she in generic references; singular 'they' acceptable"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+     "title": "Microsoft Writing Style Guide",
+     "supports": "the guide's scope: voice, word choice, grammar, global communications, scannable content"
+    }
+   ],
+   "related": [
+    "genre:ux_microcopy",
+    "genre:knowledge_base_article",
+    "genre:error_messages",
+    "tech:contractions",
+    "tech:read_aloud",
+    "tech:front_loading",
+    "edit:style_google_dev",
+    "edit:style_mailchimp",
+    "edit:inclusive_language",
+    "edit:style_sheet",
+    "lang:global_plain_english"
+   ],
+   "steps": [
+    "Voice pass: read the text aloud (Microsoft: write like you speak). Replace jargon and complex phrasing with what you would say to a colleague.",
+    "Brevity pass: for each paragraph ask what the reader needs to decide or do, keep that, and cut the rest. Microsoft's own example turns a long paragraph about a feature into a single sentence that leads with the benefit.",
+    "Front-load: lead with what matters most; put the keyword the reader scans for at the start of headings and buttons; make the next step obvious (tech:front_loading).",
+    "Contractions: use common ones (it's, you'll, you're, we're, let's, don't); do not mix them with the full form in the same piece; skip awkward ones (there'd, it'll, they'd); never contract noun plus verb.",
+    "Capitalisation: sentence style everywhere (capitalise the first word and proper nouns only). When in doubt, do not capitalise.",
+    "Punctuation: no period or colon at the end of titles, headings and UI titles; serial comma in lists of three or more; one space after a period; no spaces around an em dash.",
+    "Weak-writing pass: start statements with a verb where you can, cut 'you can' when it adds nothing, and remove 'there is', 'there are', 'there were'. ('You can access Office apps across your devices' becomes 'Access Office apps on all your devices'.)",
+    "Bias-free pass: swap gendered terms for neutral ones (chairperson, sales representative, workforce), avoid 'he or she' in generic references by using 'you', plural forms or a role, and use singular 'they' where you cannot rewrite (edit:inclusive_language).",
+    "Global pass: avoid idioms and culture-specific references; keep sentences short enough to translate; spell out abbreviations on first use (lang:global_plain_english).",
+    "Run `python pcw.py check draft.txt`, fix AI-tell warnings, and record any client override on the style sheet (edit:style_sheet)."
+   ],
+   "checks": [
+    "Does the text sound like something you would say aloud to a colleague?",
+    "Does each paragraph lead with what matters most and cut what the reader does not need?",
+    "Are contractions used consistently, with none awkward and none mixed with full forms?",
+    "Is capitalisation sentence style throughout?",
+    "Are there no end periods or colons on headings and titles?",
+    "Is there a serial comma and one space after periods?",
+    "Is 'there is/are/were' gone and do statements start with verbs where possible?",
+    "Is wording gender-neutral and free of 'he or she' in generic references?"
+   ]
+  },
+  {
+   "id": "edit:style_sheet",
+   "kind": "editing",
+   "name": "Project style sheet",
+   "status": "current",
+   "summary": "A running list of the piece's or client's decisions (spellings, names, capitals, hyphenation, numbers, terms) that you apply everywhere and hand over with the work. The EFA lists preparing style sheets that guide consistency as a core part of copyediting.",
+   "use_for": [
+    "every client job longer than one page or repeated weekly (blogs, newsletters, social calendars)",
+    "multi-writer teams, so each writer follows the same decisions",
+    "long documents: books, white papers, reports, scripts",
+    "Hindi, Hinglish and Indian-English work, where several spellings of the same word are valid",
+    "handing a recurring client to another writer without losing the voice"
+   ],
+   "avoid": [
+    "Keeping decisions in your head: the next edit, the next writer or the AI session will make a different choice. Write each decision down the first time you make it.",
+    "A sheet so long no one reads it: record decisions that came up, not the whole style guide. Link to the base guide (edit:style_ap, edit:style_chicago, edit:style_gov_uk) instead of copying it.",
+    "Undated, unowned decisions: log who decided and when, so a later contradiction can be resolved.",
+    "Applying the sheet only at the end: apply it during the copy edit and the QA pass, and check new terms against it as they appear."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.the-efa.org/editorial-services-definitions/",
+     "title": "Editorial Freelancers Association: Editorial service definitions",
+     "supports": "copyeditors prepare the style sheets that guide consistency and accuracy across the manuscript"
+    },
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/",
+     "title": "UNC Writing Center: Editing and proofreading",
+     "supports": "patterns of error: note what you tend to get wrong and set up a check for it"
+    }
+   ],
+   "related": [
+    "edit:copy_edit",
+    "edit:proofread",
+    "edit:brand_voice_audit",
+    "edit:pre_publish_qa",
+    "tech:consistent_terminology",
+    "edit:style_ap",
+    "edit:style_chicago",
+    "edit:style_gov_uk",
+    "lang:indian_english",
+    "lang:india_locale_formats",
+    "lang:hinglish_roman",
+    "lang:hindi_devanagari"
+   ],
+   "steps": [
+    "Start from what exists: gather the client's brand voice guide, past published pieces and any base guide they follow. Write at the top which base guide applies (AP, Chicago, GOV.UK, the client's own) and the date.",
+    "Open a one-page table with columns: item, decision, reason or source, date, who decided. Use a shared file the client can see. Group rows by type: spelling, names, capitalisation, hyphenation, numbers and dates, punctuation, terms and product names, banned words and claims, links and formatting.",
+    "Seed it with the decisions that always come up: English variant (UK, US or Indian English), serial comma yes or no, heading case, how numbers and money are written (Rs, rupee symbol, lakh and crore, 'Rs 5 crore' or 'Rs 5 Cr'), date format, how the brand name and product names are spelt and capitalised, and whether contractions are allowed (lang:indian_english, lang:india_locale_formats).",
+    "Hindi and Hinglish rows: script per piece (lang:hinglish_roman or lang:hinglish_devanagari), the spelling you use for common Hinglish words (for example 'karo' or 'kro'), the nukta and matra conventions, and which English words stay in English.",
+    "Log decisions as you read the draft, the first time each issue arises: write the term exactly as it will appear, the chosen form and why. Add the page or section where it first occurs, so you can check context later.",
+    "Apply it in the copy edit: search the text for each logged term and its variants, and make every instance match (edit:copy_edit). Update the sheet when you spot a new variant.",
+    "Re-check at the QA gate: read the sheet against the final text, especially names, numbers and banned words (edit:pre_publish_qa).",
+    "Send it to the client for approval with the first delivery, flag the decisions you made on your own, and ask them to confirm or change. A client correction becomes a new row, not a one-off fix.",
+    "Version and hand over: save as <client>_stylesheet_<date>, keep one live copy, and give it to the next writer or the next AI session before they draft (tech:consistent_terminology)."
+   ],
+   "checks": [
+    "Does the sheet name its base style guide and the client overrides?",
+    "Is every decision recorded with a reason or source and a date?",
+    "Are English variant, number and money format, date format, brand and product names and serial-comma choice all present?",
+    "For Hindi or Hinglish work, are script, spelling conventions and kept English words recorded?",
+    "Does the final text match every row?",
+    "Has the client seen and approved the sheet?",
+    "Is there one live version, handed to the next writer?"
+   ]
+  },
+  {
+   "id": "edit:verb_pass",
+   "kind": "editing",
+   "name": "Verb and voice pass",
+   "status": "current",
+   "summary": "Find passive constructions, hidden verbs (nominalisations such as 'make a decision') and weak verb-plus-adverb pairs, and rewrite them with strong active verbs. It is a review, not a ban: the passive is right when the actor is unknown or unimportant.",
+   "use_for": [
+    "almost every draft: this is the highest-yield line-edit pass",
+    "government, legal, bank and corporate copy written in a heavy official register",
+    "AI-assisted drafts, which lean on abstract nouns and passive phrasing",
+    "service and policy copy where responsibility must be clear (who does what, by when)",
+    "apology and update emails that must own the problem"
+   ],
+   "avoid": [
+    "Banning the passive: GOV.UK allows it where the outcome matters more than the actor, or where it makes the writing more user-centred. Google's style guide says the same.",
+    "Inventing an actor where none matters ('Someone built the temple in 1600'): leave it passive.",
+    "Using the passive to dodge blame in an apology or crisis note ('mistakes were made'): name who did what and what happens next (genre:apology_statement, genre:crisis_statement).",
+    "Treating Yoast's 10% passive threshold as a standard: it is the vendor's own choice, based on its testing. Use it as a flag, not a rule.",
+    "Turning every sentence into 'We do X': rotate to 'You' or to the thing the reader cares about."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "use the active voice: more direct, keeps sentences short; passive acceptable when the outcome matters more than the agent; '-ion' and '-ment' words lengthen sentences"
+    },
+    {
+     "url": "https://developers.google.com/style/voice",
+     "title": "Google developer documentation style guide: Active voice versus passive voice",
+     "supports": "prefer active voice; passive acceptable when emphasising the object or when the actor is unknown or irrelevant"
+    },
+    {
+     "url": "https://yoast.com/features/readability-analysis/",
+     "title": "Yoast SEO: Readability analysis",
+     "supports": "passive voice check; Yoast's threshold is 10% of sentences, based on its testing"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Nominalization",
+     "title": "Nominalization (Wikipedia)",
+     "supports": "nominalisation: turning verbs into nouns, hiding the verb"
+    },
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/",
+     "title": "UNC Writing Center: Editing and proofreading",
+     "supports": "grammar checkers can flag passive voice but you must judge the result"
+    }
+   ],
+   "related": [
+    "tech:active_voice",
+    "tech:unhide_verbs",
+    "tech:concrete_nouns_strong_verbs",
+    "tech:cut_qualifiers",
+    "edit:line_edit",
+    "edit:style_gov_uk",
+    "edit:yoast_readability",
+    "edit:hemingway_check",
+    "genre:apology_statement"
+   ],
+   "steps": [
+    "Set the scene: this pass comes after the structure is settled (edit:reverse_outline) and as part of the line edit (edit:line_edit). Work paragraph by paragraph.",
+    "Find passives: look for a form of 'be' (is, are, was, were, been, being, will be) followed by a past participle (sent, approved, verified), often with 'by'. In Hindi and Hinglish look for 'kiya gaya', 'bheja jayega', 'diya jaata hai' and similar. A tool such as Hemingway Editor or Yoast's passive check will flag them, but you decide.",
+    "For each passive ask: who does the action? If the actor is named ('by the committee'), move it to the front: 'The committee reviews your application'. If it is not named, decide who it is (we, you, the bank, the department) and name it.",
+    "Keep the passive when you choose it: the actor is unknown or unimportant ('Aadhaar numbers are masked in the export'), or the object is the topic of the paragraph. Note it as deliberate so the next editor does not change it.",
+    "Find hidden verbs: look for abstract nouns ending in -ion, -ment, -ance, -al, and light verbs like 'make', 'give', 'have', 'take', 'carry out', 'perform' ('make a decision', 'give consideration to', 'carry out an inspection'). Rewrite with the verb inside: decide, consider, inspect (tech:unhide_verbs).",
+    "Fix verb-plus-adverb pairs: replace the pair with one precise verb ('walk slowly' becomes 'stroll'; 'work quickly' becomes 'rush' or, better, give the time: 'finish in 2 days'). Where the adverb is a hedge (really, very, quite), delete it (tech:cut_qualifiers).",
+    "Cut weak openers: sentences that begin 'There is', 'There are', 'It is' + adjective + 'that', or 'The fact that' usually hide the real subject and verb. Start with the thing doing the work (tech:concrete_nouns_strong_verbs).",
+    "Check rhythm after rewriting: if every sentence now starts with 'We', rotate some to start with 'You' or with the reader's goal. If the paragraph became too clipped, join two short sentences.",
+    "Count: if more than about a tenth of the sentences are still passive, check each is deliberate (Yoast's threshold is 10%, a vendor choice).",
+    "Run `python pcw.py check draft.txt` for the automatic first pass (it flags AI vocabulary and filler phrases), then the `humanizer` skill on English text (edit:ai_tell_removal)."
+   ],
+   "checks": [
+    "Is every remaining passive a deliberate choice (actor unknown, unimportant, or the object is the topic)?",
+    "Are all responsibilities in the piece clear: can you tell who does what and by when?",
+    "Are buried verbs ('make a decision', 'give consideration to') turned back into verbs?",
+    "Are verb-plus-adverb pairs replaced by precise verbs or numbers?",
+    "Do no more than two sentences in a row start with 'We' or 'There is'?",
+    "Do apologies and crisis lines name the actor and the action?",
+    "Did the pass keep the facts and meaning unchanged?"
+   ]
+  },
+  {
+   "id": "edit:yoast_readability",
+   "kind": "editing",
+   "name": "Yoast readability analysis",
+   "status": "current",
+   "summary": "Yoast SEO's readability analysis, a WordPress-plugin check of passive voice, sentence length, paragraph length, subheading distribution, transition words, consecutive sentences and (in Premium) word complexity. The thresholds are the vendor's choices, not standards: Yoast itself says the assessments are guidance, not a hard requirement.",
+   "use_for": [
+    "blog and web copy written in WordPress or the Yoast Google Docs add-on",
+    "a quick structural flag on long articles before the final read",
+    "teaching junior writers sentence and paragraph discipline",
+    "client reports where a readability traffic light is expected",
+    "Hindi and other languages where the passive and transition checks are supported (check Yoast's language list)"
+   ],
+   "avoid": [
+    "Chasing green lights: Yoast states a score does not guarantee rankings and that you do not need to fix every flag. Fix what a real reader would notice.",
+    "Forcing a transition word into every sentence: Yoast says there is no need, only enough to keep the logic flowing.",
+    "Trusting English-only checks on other languages: Yoast says Flesch Reading Ease and word complexity are English-only; passive voice and transition words support many languages.",
+    "Treating passive voice as an error: Yoast notes some sentences read better in the passive and some paragraphs must run long.",
+    "Skipping the human read: the tool cannot judge voice, accuracy or whether the hook works."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://yoast.com/features/readability-analysis/",
+     "title": "Yoast SEO: Readability analysis",
+     "supports": "list of assessments (subheading distribution, paragraph length, sentence length, consecutive sentences, passive voice, transition words, text presence, word complexity, text alignment); passive threshold is 10% of sentences; Flesch and word complexity English-only; assessments are guidance; no ranking guarantee"
+    }
+   ],
+   "related": [
+    "edit:verb_pass",
+    "edit:sentence_length_audit",
+    "edit:flesch_reading_ease",
+    "edit:hemingway_check",
+    "edit:seo_on_page",
+    "edit:plain_language_check",
+    "tech:transitions",
+    "tech:descriptive_subheads",
+    "lang:hindi_seo"
+   ],
+   "steps": [
+    "Set the language: choose the correct content language in Yoast so the right checks run. Check Yoast's language-support list before trusting results in Hindi or any non-English text; word complexity and Flesch scores are English-only.",
+    "Draft first, check second: finish the content and the structure (edit:reverse_outline) before reading the traffic lights, so you do not edit to the tool while still writing.",
+    "Passive voice: read the flagged sentences. Rewrite those where the actor matters; keep those where the passive is the better sentence. Yoast's 10% of sentences is its own threshold (edit:verb_pass).",
+    "Sentence length and paragraph length: split the flagged sentences at natural seams and break long paragraphs at the change of idea (edit:sentence_length_audit). Do not break a paragraph in the middle of an idea just to clear the flag.",
+    "Subheading distribution: if a long stretch has no subheading, add a descriptive one that tells the skimmer what that section contains (tech:descriptive_subheads, edit:seo_on_page). Do not add empty headings to satisfy the check.",
+    "Transition words: where the logic needs a signpost ('however', 'therefore', 'for example'), add one; if the sentences already flow, leave them. There is no need for one in every sentence (Yoast's own FAQ).",
+    "Consecutive sentences: if several sentences in a row start the same way, vary the openers or merge two (tech:transitions).",
+    "Word complexity (Premium, English only): replace the flagged jargon with plain words, unless the term is needed and explained.",
+    "Stop when the remaining flags are ones you can defend: keep a short note ('passive kept: actor unimportant'), and move to the human passes (edit:line_edit, edit:proofread).",
+    "Then run `python pcw.py check draft.txt` and, for English, the humanizer skill: the checks Yoast lists do not cover AI tells."
+   ],
+   "checks": [
+    "Was the correct language set and its support confirmed for the checks you rely on?",
+    "Are remaining passive, long-sentence and long-paragraph flags each defensible?",
+    "Does every long section have a descriptive subheading?",
+    "Are transition words used where the logic needs them, not forced into every sentence?",
+    "Do consecutive sentences vary their openers?",
+    "Were Hindi and Hinglish passages checked by a human, since English-only checks do not apply?",
+    "Was the draft also checked for voice, facts and AI tells, which Yoast does not cover?"
+   ]
+  }
+ ]
+}

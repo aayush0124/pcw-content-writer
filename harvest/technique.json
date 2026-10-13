@@ -1,0 +1,2432 @@
+{
+ "kind": "technique",
+ "worker": "tech_edit",
+ "as_of": "2026-10-04",
+ "source": "Craft moves harvested from primary writing guidance (GOV.UK, digital.gov plain language, Google Search Central, Google/Microsoft style guides, NN/g, W3C, BBC/Netflix subtitle guides, Cialdini's IAW site) plus Wikipedia articles for named rhetorical and narrative devices; every URL status-checked 2026-10-04.",
+ "items": [
+  {
+   "id": "tech:social_proof",
+   "name": "Social proof",
+   "category": "Persuasion & proof",
+   "one_line": "Show that people like the reader already chose this (counts, reviews, logos, named users) so the choice feels safe.",
+   "aliases": [
+    "consensus",
+    "bandwagon proof"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "Social proof / consensus is one of Cialdini's principles of persuasion"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Social_proof",
+     "title": "Social proof (Wikipedia)",
+     "supports": "definition and research background"
+    }
+   ],
+   "note": "Proof must be real and attributable; invented counts or reviews are a compliance issue (see comp: items), not a craft choice. Strongest when the proof-giver resembles the reader."
+  },
+  {
+   "id": "tech:authority_proof",
+   "name": "Authority proof",
+   "category": "Persuasion & proof",
+   "one_line": "Borrow credibility from credentials, experts, certifications, media mentions or hard data placed where doubt peaks.",
+   "aliases": [
+    "credibility markers",
+    "expert endorsement"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "Authority is one of the seven principles"
+    }
+   ]
+  },
+  {
+   "id": "tech:reciprocity",
+   "name": "Reciprocity (give first)",
+   "category": "Persuasion & proof",
+   "one_line": "Give genuine value before the ask (a useful tip, template, free sample) so the request lands as a fair exchange.",
+   "aliases": [
+    "give before you ask",
+    "value-first"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "Reciprocity is one of the seven principles"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Reciprocity_(social_psychology)",
+     "title": "Reciprocity (social psychology) (Wikipedia)",
+     "supports": "background on the norm"
+    }
+   ]
+  },
+  {
+   "id": "tech:micro_yes_commitment",
+   "name": "Micro-yes ladder (commitment and consistency)",
+   "category": "Persuasion & proof",
+   "one_line": "Ask for a small, easy agreement first (a quiz answer, a reply, a free step) so the bigger ask feels consistent with it.",
+   "aliases": [
+    "foot in the door",
+    "yes ladder",
+    "commitment and consistency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "consistency is activated by asking for small initial commitments"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Foot-in-the-door_technique",
+     "title": "Foot-in-the-door technique (Wikipedia)",
+     "supports": "small request first raises compliance with a larger one"
+    }
+   ]
+  },
+  {
+   "id": "tech:liking_and_unity",
+   "name": "Liking and shared identity",
+   "category": "Persuasion & proof",
+   "one_line": "Make the writer likeable and signal shared identity (we-language, same city, same struggle) without faking it.",
+   "aliases": [
+    "rapport",
+    "unity",
+    "in-group framing"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "Liking and Unity are two of the seven principles"
+    }
+   ]
+  },
+  {
+   "id": "tech:ethical_scarcity",
+   "name": "Ethical scarcity",
+   "category": "Persuasion & proof",
+   "one_line": "State a real limit (stock, seats, batch size) plainly and specifically; never invent one.",
+   "aliases": [
+    "limited availability",
+    "real scarcity"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "Scarcity is one of the seven principles"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Scarcity_(social_psychology)",
+     "title": "Scarcity (social psychology) (Wikipedia)",
+     "supports": "why perceived scarcity raises value"
+    },
+    {
+     "url": "https://www.ftc.gov/reports/bringing-dark-patterns-light",
+     "title": "FTC staff report: Bringing Dark Patterns to Light",
+     "supports": "fake scarcity and urgency are treated as dark patterns"
+    }
+   ],
+   "note": "Fake low-stock or fake 'only 2 left' counters are dark patterns; pair with the relevant comp: items."
+  },
+  {
+   "id": "tech:ethical_urgency",
+   "name": "Ethical urgency (real deadlines)",
+   "category": "Persuasion & proof",
+   "one_line": "Give a true reason to act now (a dated deadline, price change, cohort start) and say what happens after it.",
+   "aliases": [
+    "deadline urgency",
+    "real urgency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ftc.gov/reports/bringing-dark-patterns-light",
+     "title": "FTC staff report: Bringing Dark Patterns to Light",
+     "supports": "fake countdown timers and false urgency are dark patterns"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Dark_pattern",
+     "title": "Dark pattern (Wikipedia)",
+     "supports": "catalogue of manipulative urgency patterns to avoid"
+    }
+   ],
+   "note": "Countdown timers that reset, and 'today only' that runs every day, are the failure mode."
+  },
+  {
+   "id": "tech:price_anchoring",
+   "name": "Price anchoring",
+   "category": "Persuasion & proof",
+   "one_line": "Show a relevant higher reference first (cost of the problem, the premium tier, the alternative) so the price reads against it.",
+   "aliases": [
+    "anchoring",
+    "value anchoring"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anchoring_effect",
+     "title": "Anchoring effect (Wikipedia)",
+     "supports": "first number seen biases later judgements"
+    }
+   ],
+   "note": "Anchor must be honest (a real list price or a real cost of inaction); fake 'was' prices are a compliance problem."
+  },
+  {
+   "id": "tech:decoy_pricing",
+   "name": "Decoy option",
+   "category": "Persuasion & proof",
+   "one_line": "Add a clearly weaker third option next to the target plan so the target reads as the obvious pick.",
+   "aliases": [
+    "decoy effect",
+    "asymmetric dominance"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Decoy_effect",
+     "title": "Decoy effect (Wikipedia)",
+     "supports": "an asymmetrically dominated option shifts preference"
+    }
+   ]
+  },
+  {
+   "id": "tech:loss_aversion_framing",
+   "name": "Loss-aversion framing",
+   "category": "Persuasion & proof",
+   "one_line": "Frame the cost of not acting (what the reader keeps losing) alongside the gain, because losses weigh heavier.",
+   "aliases": [
+    "loss framing",
+    "cost of inaction"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Loss_aversion",
+     "title": "Loss aversion (Wikipedia)",
+     "supports": "losses loom larger than equivalent gains"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+     "title": "Framing effect (psychology) (Wikipedia)",
+     "supports": "same facts framed as loss vs gain change choices"
+    }
+   ]
+  },
+  {
+   "id": "tech:curse_of_knowledge_fix",
+   "name": "Curse-of-knowledge fix",
+   "category": "Persuasion & proof",
+   "one_line": "Rewrite for someone who does not know what you know: define the term, add the missing step, show the example.",
+   "aliases": [
+    "write for the newcomer",
+    "expert blind spot"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Curse_of_knowledge",
+     "title": "Curse of knowledge (Wikipedia)",
+     "supports": "experts struggle to imagine not knowing"
+    }
+   ]
+  },
+  {
+   "id": "tech:testimonial_placement",
+   "name": "Testimonial placement",
+   "category": "Persuasion & proof",
+   "one_line": "Put a specific, named testimonial right next to the claim or objection it proves, not in a block at the end.",
+   "aliases": [
+    "proof placement",
+    "review placement"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Testimonial",
+     "title": "Testimonial (Wikipedia)",
+     "supports": "what a testimonial is in advertising"
+    }
+   ]
+  },
+  {
+   "id": "tech:risk_reversal",
+   "name": "Risk reversal (guarantee)",
+   "category": "Persuasion & proof",
+   "one_line": "Move the risk from buyer to seller with a clear, specific guarantee and say exactly how to claim it.",
+   "aliases": [
+    "guarantee",
+    "money-back guarantee"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Money-back_guarantee",
+     "title": "Money-back guarantee (Wikipedia)",
+     "supports": "what a satisfaction guarantee is and why sellers use it"
+    }
+   ]
+  },
+  {
+   "id": "tech:cta_writing",
+   "name": "Call-to-action writing",
+   "category": "Persuasion & proof",
+   "one_line": "One clear, verb-led instruction that names the action and the payoff, repeated where the reader is ready.",
+   "aliases": [
+    "CTA",
+    "call to action"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Call_to_action_(marketing)",
+     "title": "Call to action (marketing) (Wikipedia)",
+     "supports": "definition of a CTA"
+    }
+   ]
+  },
+  {
+   "id": "tech:ps_line",
+   "name": "The P.S. line",
+   "category": "Persuasion & proof",
+   "one_line": "Use a postscript after the sign-off to restate the offer, deadline or strongest benefit for readers who skip to the end.",
+   "aliases": [
+    "postscript",
+    "P.S."
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Postscript",
+     "title": "Postscript (Wikipedia)",
+     "supports": "what a postscript is"
+    }
+   ]
+  },
+  {
+   "id": "tech:voice_of_customer_mining",
+   "name": "Voice-of-customer mining",
+   "category": "Persuasion & proof",
+   "one_line": "Lift the exact words customers use (reviews, support tickets, interviews, comments) and write the copy in them.",
+   "aliases": [
+    "VOC",
+    "review mining",
+    "message mining"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Voice_of_the_customer",
+     "title": "Voice of the customer (Wikipedia)",
+     "supports": "capturing customers' expressed needs in their own terms"
+    }
+   ]
+  },
+  {
+   "id": "tech:show_dont_tell",
+   "name": "Show, don't tell",
+   "category": "Storytelling",
+   "one_line": "Replace a summary judgement ('she was nervous') with the action, detail or dialogue that lets the reader conclude it.",
+   "aliases": [
+    "dramatise",
+    "show not tell"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Show,_don%27t_tell",
+     "title": "Show, don't tell (Wikipedia)",
+     "supports": "definition and origin of the guideline"
+    }
+   ]
+  },
+  {
+   "id": "tech:in_medias_res",
+   "name": "In medias res opening",
+   "category": "Storytelling",
+   "one_line": "Start in the middle of the action and fill in the backstory later.",
+   "aliases": [
+    "In medias res opening",
+    "cold open",
+    "start in the middle"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/In_medias_res",
+     "title": "In medias res (Wikipedia)",
+     "supports": "narrative opening in the middle of events"
+    }
+   ]
+  },
+  {
+   "id": "tech:foreshadowing",
+   "name": "Foreshadowing (plant and payoff)",
+   "category": "Storytelling",
+   "one_line": "Plant a detail early that pays off later, and cut details that never pay off.",
+   "aliases": [
+    "Chekhov's gun",
+    "setup and payoff",
+    "plant and payoff"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Foreshadowing",
+     "title": "Foreshadowing (Wikipedia)",
+     "supports": "definition of the device"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Chekhov%27s_gun",
+     "title": "Chekhov's gun (Wikipedia)",
+     "supports": "every planted element should pay off"
+    }
+   ]
+  },
+  {
+   "id": "tech:callback",
+   "name": "Callback",
+   "category": "Storytelling",
+   "one_line": "Bring back an earlier line, image or joke near the end so the piece feels closed and the reader feels rewarded.",
+   "aliases": [
+    "callback joke",
+    "bookend",
+    "kicker callback"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Callback_(comedy)",
+     "title": "Callback (comedy) (Wikipedia)",
+     "supports": "a joke referring back to an earlier one"
+    }
+   ],
+   "note": "Covers both the story callback and the comic callback named in the brief."
+  },
+  {
+   "id": "tech:twist_reveal",
+   "name": "Twist / reveal",
+   "category": "Storytelling",
+   "one_line": "Withhold one fact and reveal it late so the reader reinterprets everything before it.",
+   "aliases": [
+    "plot twist",
+    "the reveal"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Plot_twist",
+     "title": "Plot twist (Wikipedia)",
+     "supports": "definition and types of twist"
+    }
+   ]
+  },
+  {
+   "id": "tech:conflict_and_stakes",
+   "name": "Conflict and stakes",
+   "category": "Storytelling",
+   "one_line": "Give the story an obstacle and make clear what is lost if the character fails.",
+   "aliases": [
+    "stakes",
+    "tension"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Conflict_(narrative)",
+     "title": "Conflict (narrative) (Wikipedia)",
+     "supports": "conflict as the engine of narrative"
+    }
+   ]
+  },
+  {
+   "id": "tech:sensory_detail",
+   "name": "Sensory detail",
+   "category": "Storytelling",
+   "one_line": "Add one concrete sight, sound, smell, taste or touch to make a scene real in a few words.",
+   "aliases": [
+    "imagery",
+    "concrete detail"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Imagery",
+     "title": "Imagery (Wikipedia)",
+     "supports": "sensory language evokes vivid impressions"
+    }
+   ]
+  },
+  {
+   "id": "tech:dialogue",
+   "name": "Dialogue",
+   "category": "Storytelling",
+   "one_line": "Let people speak in short, real-sounding lines that reveal character or move the story, instead of reporting what they said.",
+   "aliases": [
+    "quoted speech",
+    "scene dialogue"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dialogue",
+     "title": "Dialogue (Wikipedia)",
+     "supports": "dialogue as a literary and dramatic form"
+    }
+   ]
+  },
+  {
+   "id": "tech:anecdote_lead",
+   "name": "Anecdote lead",
+   "category": "Storytelling",
+   "one_line": "Open with a short true story about one person, then widen to the point it illustrates.",
+   "aliases": [
+    "anecdotal lede",
+    "delayed lede",
+    "feature lead"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lead_paragraph",
+     "title": "Lead paragraph (Wikipedia)",
+     "supports": "lead types in journalism, including feature-style leads"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Anecdote",
+     "title": "Anecdote (Wikipedia)",
+     "supports": "what an anecdote is"
+    }
+   ]
+  },
+  {
+   "id": "tech:nut_graf",
+   "name": "Nut graf",
+   "category": "Storytelling",
+   "one_line": "After a feature-style opening, add one paragraph that says why the story matters now.",
+   "aliases": [
+    "nut graph",
+    "nutshell paragraph"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nut_graph",
+     "title": "Nut graph (Wikipedia)",
+     "supports": "paragraph explaining the news value of a feature"
+    }
+   ]
+  },
+  {
+   "id": "tech:vulnerability_confession",
+   "name": "Vulnerability / confession",
+   "category": "Storytelling",
+   "one_line": "Admit a real mistake, fear or failure before the lesson so the reader trusts the advice.",
+   "aliases": [
+    "confessional writing",
+    "admit the flaw"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Confessional_writing",
+     "title": "Confessional writing (Wikipedia)",
+     "supports": "the confessional mode in literature"
+    }
+   ],
+   "note": "The literary source is about the genre; the marketing use (a founder admitting a failure) is a craft extension. Fake vulnerability ('I cried when I hit 10k followers') reads as a tell."
+  },
+  {
+   "id": "tech:active_voice",
+   "name": "Active voice",
+   "category": "Line craft & rhetoric",
+   "one_line": "Put the doer first and the action in a verb ('We reviewed the claim', not 'The claim was reviewed').",
+   "aliases": [
+    "active verbs"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "use the active voice; it is more direct and keeps sentences short"
+    },
+    {
+     "url": "https://developers.google.com/style/voice",
+     "title": "Google developer documentation style guide: Active voice",
+     "supports": "prefer active voice"
+    },
+    {
+     "url": "https://digital.gov/guides/plain-language",
+     "title": "digital.gov plain language guide",
+     "supports": "US federal plain language guidance (plainlanguage.gov now redirects here)"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 10: use the active voice"
+    }
+   ]
+  },
+  {
+   "id": "tech:short_sentences",
+   "name": "Short sentences",
+   "category": "Line craft & rhetoric",
+   "one_line": "Keep most sentences short and split the long ones; one idea per sentence.",
+   "aliases": [
+    "sentence length"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "quote: 'Try to split up sentences that are over 25 words long.'"
+    }
+   ],
+   "note": "The 25-word split point is GOV.UK's; other houses differ. Pair with tech:sentence_rhythm so short does not become monotonous."
+  },
+  {
+   "id": "tech:rule_of_three",
+   "name": "Rule of three",
+   "category": "Line craft & rhetoric",
+   "one_line": "Group items in threes for rhythm and memorability; the third item carries the weight or the twist.",
+   "aliases": [
+    "tricolon",
+    "triad"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Rule_of_three_(writing)",
+     "title": "Rule of three (writing) (Wikipedia)",
+     "supports": "triads are more satisfying and memorable"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+     "title": "Wikipedia: Signs of AI writing",
+     "supports": "lists overuse of the rule of three as an AI tell"
+    }
+   ],
+   "note": "Reflexive triplets in every sentence are a listed AI tell; use once or twice per piece."
+  },
+  {
+   "id": "tech:parallelism",
+   "name": "Parallelism",
+   "category": "Line craft & rhetoric",
+   "one_line": "Give matching ideas matching grammar (same verb form, same shape) in lists, headings and contrasts.",
+   "aliases": [
+    "parallel structure",
+    "isocolon"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Parallelism_(grammar)",
+     "title": "Parallelism (grammar) (Wikipedia)",
+     "supports": "balance of grammatically similar constructions"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 15: express co-ordinate ideas in similar form"
+    }
+   ]
+  },
+  {
+   "id": "tech:antithesis",
+   "name": "Antithesis",
+   "category": "Line craft & rhetoric",
+   "one_line": "Set two opposed ideas side by side in balanced phrases to sharpen a point.",
+   "aliases": [
+    "contrast line"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Antithesis",
+     "title": "Antithesis (Wikipedia)",
+     "supports": "juxtaposition of contrasting ideas in parallel structure"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+     "title": "Wikipedia: Signs of AI writing",
+     "supports": "lists negative parallelism ('not X, but Y') as an AI tell"
+    }
+   ],
+   "note": "The formula 'It's not X, it's Y' is a listed AI tell when used reflexively."
+  },
+  {
+   "id": "tech:alliteration",
+   "name": "Alliteration",
+   "category": "Line craft & rhetoric",
+   "one_line": "Repeat an opening sound across nearby words to make a phrase stick (sparingly: headlines, taglines, names).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Alliteration",
+     "title": "Alliteration (Wikipedia)",
+     "supports": "definition of the device"
+    }
+   ]
+  },
+  {
+   "id": "tech:chiasmus",
+   "name": "Chiasmus",
+   "category": "Line craft & rhetoric",
+   "one_line": "Reverse the order of key words in a second clause (AB, BA) for a memorable, quotable line.",
+   "aliases": [
+    "reversal line"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chiasmus",
+     "title": "Chiasmus (Wikipedia)",
+     "supports": "definition of the device"
+    }
+   ]
+  },
+  {
+   "id": "tech:metaphor_analogy",
+   "name": "Metaphor and analogy",
+   "category": "Line craft & rhetoric",
+   "one_line": "Explain the unfamiliar through something the reader already knows, with one clear mapping.",
+   "aliases": [
+    "analogy",
+    "simile",
+    "comparison"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Metaphor",
+     "title": "Metaphor (Wikipedia)",
+     "supports": "definition of the device"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Analogy",
+     "title": "Analogy (Wikipedia)",
+     "supports": "transfer of meaning from a known source to a target"
+    }
+   ]
+  },
+  {
+   "id": "tech:wordplay_pun",
+   "name": "Wordplay and puns",
+   "category": "Line craft & rhetoric",
+   "one_line": "Use a double meaning or sound-alike for a smile, only where the brand voice allows and the meaning survives.",
+   "aliases": [
+    "pun",
+    "double meaning"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pun",
+     "title": "Pun (Wikipedia)",
+     "supports": "definition and types of pun"
+    }
+   ],
+   "note": "Puns often do not survive translation or Hinglish code-switching; test with a reader of the target language."
+  },
+  {
+   "id": "tech:rhetorical_question",
+   "name": "Rhetorical question",
+   "category": "Line craft & rhetoric",
+   "one_line": "Ask a question the reader answers in their head, to pull them in or make a point land.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Rhetorical_question",
+     "title": "Rhetorical question (Wikipedia)",
+     "supports": "definition of the device"
+    }
+   ],
+   "note": "GOV.UK advises against questions as headings because they are hard to frontload; keep rhetorical questions for body copy and hooks."
+  },
+  {
+   "id": "tech:anaphora_repetition",
+   "name": "Anaphora and deliberate repetition",
+   "category": "Line craft & rhetoric",
+   "one_line": "Repeat the same opening words across successive lines to build rhythm and emphasis.",
+   "aliases": [
+    "anaphora",
+    "epistrophe",
+    "repetition"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anaphora_(rhetoric)",
+     "title": "Anaphora (rhetoric) (Wikipedia)",
+     "supports": "repetition at the start of successive clauses"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Epistrophe",
+     "title": "Epistrophe (Wikipedia)",
+     "supports": "repetition at the end of successive clauses"
+    }
+   ]
+  },
+  {
+   "id": "tech:punchline_last",
+   "name": "Punchline at the end of the line",
+   "category": "Line craft & rhetoric",
+   "one_line": "Put the surprising or most important word last in the sentence, where emphasis naturally falls.",
+   "aliases": [
+    "end weight",
+    "paraprosdokian",
+    "stress position"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Paraprosdokian",
+     "title": "Paraprosdokian (Wikipedia)",
+     "supports": "a sentence whose latter part surprises and reframes the first"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 18: place the emphatic words of a sentence at the end"
+    }
+   ]
+  },
+  {
+   "id": "tech:plain_language",
+   "name": "Plain language",
+   "category": "Line craft & rhetoric",
+   "one_line": "Use common words, short sentences and a clear order so the intended reader understands on first read.",
+   "aliases": [
+    "plain English",
+    "clear language"
+   ],
+   "sources": [
+    {
+     "url": "https://digital.gov/guides/plain-language",
+     "title": "digital.gov plain language guide",
+     "supports": "US federal plain language guidance"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "plain English rules for government content"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Plain_language",
+     "title": "Plain language (Wikipedia)",
+     "supports": "definition and history"
+    }
+   ]
+  },
+  {
+   "id": "tech:power_words",
+   "name": "Power words (loaded language)",
+   "category": "Line craft & rhetoric",
+   "one_line": "Choose a few emotionally charged words at decision points; strip the ones that only inflate.",
+   "aliases": [
+    "emotional words",
+    "loaded language",
+    "trigger words"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Loaded_language",
+     "title": "Loaded language (Wikipedia; 'Power word' redirects here)",
+     "supports": "words with strong connotations used to influence an audience"
+    }
+   ],
+   "note": "Lists of 'power words' are marketing folklore; the device itself is loaded language. Overuse slides into hype and AI-style promotional vocabulary."
+  },
+  {
+   "id": "tech:contractions",
+   "name": "Contractions for a conversational voice",
+   "category": "Line craft & rhetoric",
+   "one_line": "Use everyday contractions (you'll, it's) to sound human, but spell out negatives where misreading costs something.",
+   "aliases": [
+    "conversational tone"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "use contractions like 'you'll' but avoid negative contractions like 'can't' or 'don't'"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/word-choice/use-contractions",
+     "title": "Microsoft Writing Style Guide: Use contractions",
+     "supports": "Microsoft recommends contractions for a friendly tone"
+    }
+   ],
+   "note": "GOV.UK and Microsoft disagree on negative contractions; follow the client's style guide."
+  },
+  {
+   "id": "tech:unhide_verbs",
+   "name": "Unhide verbs (fix nominalisations)",
+   "category": "Line craft & rhetoric",
+   "one_line": "Turn nouns made from verbs back into verbs ('make a decision' to 'decide', 'conduct an analysis' to 'analyse').",
+   "aliases": [
+    "zombie nouns",
+    "nominalisation",
+    "hidden verbs"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nominalization",
+     "title": "Nominalization (Wikipedia)",
+     "supports": "verbs and adjectives turned into nouns"
+    }
+   ]
+  },
+  {
+   "id": "tech:cut_qualifiers",
+   "name": "Cut qualifiers, hedges and weasel words",
+   "category": "Line craft & rhetoric",
+   "one_line": "Delete 'very', 'really', 'quite', 'some say' and unattributed claims; keep a hedge only where the uncertainty is real.",
+   "aliases": [
+    "cut adverbs",
+    "remove hedges",
+    "omit needless words"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hedge_(linguistics)",
+     "title": "Hedge (linguistics) (Wikipedia)",
+     "supports": "hedges lessen the force of a statement"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Weasel_word",
+     "title": "Weasel word (Wikipedia)",
+     "supports": "vague attributions that create an impression of a claim"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Concision",
+     "title": "Concision (Wikipedia)",
+     "supports": "eliminating redundancy while keeping meaning"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 13: omit needless words"
+    }
+   ]
+  },
+  {
+   "id": "tech:front_loading",
+   "name": "Front-loading",
+   "category": "Line craft & rhetoric",
+   "one_line": "Put the most important words at the start of every heading, link, bullet, sentence and paragraph.",
+   "aliases": [
+    "frontload",
+    "key words first"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-structure/",
+     "title": "GOV.UK: Create a clear structure",
+     "supports": "frontload your content: put the most important information first"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/",
+     "title": "NN/g: First 2 Words, a signal for the scanning eye",
+     "supports": "scanners read the first words of lines"
+    }
+   ]
+  },
+  {
+   "id": "tech:f_pattern_scanning",
+   "name": "Writing for the F-pattern",
+   "category": "Structure & scannability",
+   "one_line": "Assume readers scan the top and left edge; put meaning in headings, first lines and first words to beat the F-pattern.",
+   "aliases": [
+    "F-shaped reading",
+    "scan pattern"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/",
+     "title": "NN/g: F-Shaped Pattern of Reading on the Web",
+     "supports": "eyetracking finding and how to design text against it"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/text-scanning-patterns-eyetracking/",
+     "title": "NN/g: Text Scanning Patterns",
+     "supports": "other scanning patterns (layer-cake, spotted, etc.)"
+    }
+   ]
+  },
+  {
+   "id": "tech:chunking",
+   "name": "Chunking",
+   "category": "Structure & scannability",
+   "one_line": "Break content into small, labelled groups (short paragraphs, lists, sections) so the reader can process and find it.",
+   "aliases": [
+    "content chunking"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/chunking/",
+     "title": "NN/g: How Chunking Helps Content Processing",
+     "supports": "definition and methods"
+    }
+   ]
+  },
+  {
+   "id": "tech:paragraph_inverted_pyramid",
+   "name": "Conclusion-first paragraphs",
+   "category": "Structure & scannability",
+   "one_line": "Open each paragraph with its point (topic sentence), then support it, so skimmers get the message from first lines alone.",
+   "aliases": [
+    "inverted pyramid per paragraph",
+    "topic sentence first"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/inverted-pyramid/",
+     "title": "NN/g: Inverted Pyramid",
+     "supports": "start with the conclusion, applies at page and paragraph level"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Topic_sentence",
+     "title": "Topic sentence (Wikipedia)",
+     "supports": "topic sentence summarises the paragraph, usually first"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/",
+     "title": "NN/g: Concise, Scannable, and Objective: How to Write for the Web",
+     "supports": "scanners read only first sentences; topic sentences and 'one idea per paragraph' matter"
+    }
+   ],
+   "note": "The whole-piece inverted pyramid is fw:inverted_pyramid (worker fw_hook); this item is the paragraph-level move."
+  },
+  {
+   "id": "tech:open_loop",
+   "name": "Open loop",
+   "category": "Structure & scannability",
+   "one_line": "Raise a question or promise early and close it later, so the unfinished thread keeps the reader going.",
+   "aliases": [
+    "curiosity loop",
+    "Zeigarnik loop"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Zeigarnik_effect",
+     "title": "Zeigarnik effect (Wikipedia)",
+     "supports": "interrupted tasks are remembered better (the psychology usually cited for open loops)"
+    }
+   ],
+   "note": "The Zeigarnik research is about memory of interrupted tasks; its use for reading retention is a marketing extension. Every loop opened must close."
+  },
+  {
+   "id": "tech:cliffhanger",
+   "name": "Cliffhanger",
+   "category": "Structure & scannability",
+   "one_line": "End a section, email or episode at an unresolved moment so the reader comes back for the next one.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cliffhanger",
+     "title": "Cliffhanger (Wikipedia)",
+     "supports": "definition of the device"
+    }
+   ]
+  },
+  {
+   "id": "tech:descriptive_subheads",
+   "name": "Descriptive subheads",
+   "category": "Structure & scannability",
+   "one_line": "Write headings that say what the section tells the reader, so the headings alone summarise the piece.",
+   "aliases": [
+    "subheadings",
+    "informative headings"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/style/headings",
+     "title": "Google developer documentation style guide: Headings",
+     "supports": "heading guidance"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/formatting-long-form-content/",
+     "title": "NN/g: Formatting long-form content",
+     "supports": "headings and formatting help users scan long pages"
+    }
+   ]
+  },
+  {
+   "id": "tech:bulleted_lists",
+   "name": "Bulleted and numbered lists",
+   "category": "Structure & scannability",
+   "one_line": "Turn a run of parallel items or steps into a list; number steps, bullet unordered items, keep each item parallel.",
+   "aliases": [
+    "bullets",
+    "lists"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/style/lists",
+     "title": "Google developer documentation style guide: Lists",
+     "supports": "when to use numbered vs bulleted lists"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/scannable-content/",
+     "title": "Microsoft Writing Style Guide: Scannable content",
+     "supports": "lists and headings for scannability"
+    }
+   ]
+  },
+  {
+   "id": "tech:bold_for_skimmers",
+   "name": "Bold for skimmers",
+   "category": "Structure & scannability",
+   "one_line": "Bold a few key phrases that carry the meaning on their own; never whole sentences or every other line.",
+   "aliases": [
+    "highlighting",
+    "emphasis"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/formatting-long-form-content/",
+     "title": "NN/g: Formatting long-form content",
+     "supports": "bolding and formatting to support scanning"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+     "title": "Wikipedia: Signs of AI writing",
+     "supports": "overuse of boldface is a listed AI tell"
+    }
+   ]
+  },
+  {
+   "id": "tech:title_tag_writing",
+   "name": "Title tag writing",
+   "category": "SEO & AI search",
+   "one_line": "Write a unique, descriptive, concise page title that says what the page is; avoid keyword stuffing and boilerplate.",
+   "aliases": [
+    "title link",
+    "SEO title"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/title-link",
+     "title": "Google Search Central: Influencing your title links",
+     "supports": "Google's best practices for title elements"
+    }
+   ]
+  },
+  {
+   "id": "tech:meta_description_writing",
+   "name": "Meta description writing",
+   "category": "SEO & AI search",
+   "one_line": "Write a unique, specific summary of the page for each URL; Google may show it as the snippet but can also choose page text.",
+   "aliases": [
+    "meta description",
+    "snippet copy"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/snippet",
+     "title": "Google Search Central: Control your snippets in search results",
+     "supports": "meta description best practices and that snippets can come from page content"
+    }
+   ]
+  },
+  {
+   "id": "tech:image_alt_text",
+   "name": "Image alt text writing",
+   "category": "SEO & AI search",
+   "one_line": "Describe what the image shows and why it is there, in context; empty alt for purely decorative images.",
+   "aliases": [
+    "alt text",
+    "alt attribute"
+   ],
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+     "title": "W3C WAI: An alt Decision Tree",
+     "supports": "how to decide what alt text an image needs"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/google-images",
+     "title": "Google Search Central: Image SEO best practices",
+     "supports": "descriptive alt text helps Google understand images"
+    }
+   ]
+  },
+  {
+   "id": "tech:anchor_text",
+   "name": "Descriptive anchor text (internal links)",
+   "category": "SEO & AI search",
+   "one_line": "Make link text say where the link goes ('2026 GST rate table', not 'click here'), concise and relevant to the target.",
+   "aliases": [
+    "link text",
+    "internal linking anchor text"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+     "title": "Google Search Central: Link best practices",
+     "supports": "write good, descriptive anchor text"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/add-links/",
+     "title": "GOV.UK: Write effective links",
+     "supports": "link text should describe the destination"
+    },
+    {
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html",
+     "title": "WCAG 2.2 Understanding 2.4.4 Link Purpose (In Context)",
+     "supports": "link purpose must be clear from the link text or its context"
+    }
+   ]
+  },
+  {
+   "id": "tech:eeat_first_hand_experience",
+   "name": "First-hand experience signals (E-E-A-T)",
+   "category": "SEO & AI search",
+   "one_line": "Show you actually did, used or visited the thing: original photos, test results, specific numbers, who wrote it and why.",
+   "aliases": [
+    "E-E-A-T",
+    "experience signals",
+    "people-first content"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "asks whether content demonstrates first-hand expertise; Who, How and Why questions"
+    }
+   ]
+  },
+  {
+   "id": "tech:content_freshness_update",
+   "name": "Substantive freshness updates",
+   "category": "SEO & AI search",
+   "one_line": "Update a page by changing what is out of date (facts, prices, screenshots) and say what changed; never just bump the date.",
+   "aliases": [
+    "content refresh",
+    "historical optimisation"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "warns against changing page dates to seem fresh when content has not substantially changed"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/change-notes/",
+     "title": "GOV.UK: Write change notes",
+     "supports": "telling users what changed on an updated page"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/publication-dates",
+     "title": "Google Search Central: Influence your byline dates",
+     "supports": "how Google reads visible and structured publication / updated dates"
+    }
+   ]
+  },
+  {
+   "id": "tech:answer_first_paragraph",
+   "name": "Answer-first paragraph",
+   "category": "SEO & AI search",
+   "one_line": "Under a question-shaped heading, answer it directly in the first one or two sentences, then expand.",
+   "aliases": [
+    "snippet bait",
+    "direct answer",
+    "answer engine optimisation"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/featured-snippets",
+     "title": "Google Search Central: Featured snippets",
+     "supports": "how featured snippets are drawn from page text"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/ai-features",
+     "title": "Google Search Central: AI features and your website",
+     "supports": "no additional requirements or special optimisation for AI Overviews / AI Mode; standard SEO best practices apply"
+    }
+   ],
+   "note": "Google states there is no special optimisation for AI Overviews; answer-first writing is a clarity move that also suits snippets. Claims that it 'guarantees' AI citations are unsourced."
+  },
+  {
+   "id": "tech:faq_block",
+   "name": "FAQ block",
+   "category": "SEO & AI search",
+   "one_line": "Answer real follow-up questions in a short Q-and-A section at the end of a page, in the reader's own wording.",
+   "aliases": [
+    "FAQ section",
+    "FAQ schema"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/updates",
+     "title": "Google Search Central: Latest documentation updates",
+     "supports": "FAQ rich result deprecated: no longer appears in Google Search starting May 7, 2026; docs removed June 2026"
+    }
+   ],
+   "note": "Since May 2026 FAQ markup no longer produces a Google rich result; write FAQs for readers (and answer extraction), not for the rich result."
+  },
+  {
+   "id": "tech:schema_friendly_formatting",
+   "name": "Structure-friendly formatting",
+   "category": "SEO & AI search",
+   "one_line": "Present steps, specs, prices and Q&A as real headings, lists and tables so machines and skimmers can parse them.",
+   "aliases": [
+    "structured content",
+    "machine-readable formatting"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+     "title": "Google Search Central: Introduction to structured data",
+     "supports": "how structured data describes page content"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/ai-features",
+     "title": "Google Search Central: AI features and your website",
+     "supports": "no special schema.org structured data is needed for AI features"
+    }
+   ]
+  },
+  {
+   "id": "tech:keyword_placement",
+   "name": "Natural keyword placement",
+   "category": "SEO & AI search",
+   "one_line": "Use the words people search with in the title, main heading, opening and link text, naturally and never stuffed.",
+   "aliases": [
+    "on-page keywords"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+     "title": "Google Search Central: SEO Starter Guide",
+     "supports": "anticipate the words users search with; keyword stuffing is against spam policies"
+    }
+   ]
+  },
+  {
+   "id": "tech:captions_subtitles",
+   "name": "Captions and subtitle writing",
+   "category": "Social & video",
+   "one_line": "Write on-video captions as short, well-timed lines broken at natural phrase boundaries, edited for reading speed.",
+   "aliases": [
+    "subtitles",
+    "closed captions",
+    "burned-in captions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.bbc.co.uk/accessibility/forproducts/guides/subtitles/",
+     "title": "BBC Subtitle Guidelines",
+     "supports": "line-break, timing and length guidance; two lines maximum recommended for landscape/square video"
+    },
+    {
+     "url": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/217350977-English-USA-Timed-Text-Style-Guide",
+     "title": "Netflix English (USA) Timed Text Style Guide",
+     "supports": "industry subtitle style rules"
+    }
+   ]
+  },
+  {
+   "id": "tech:ethical_comment_prompt",
+   "name": "Ethical comment prompt",
+   "category": "Social & video",
+   "one_line": "End with a genuine, specific question people want to answer, not 'comment YES' or 'tag a friend' bait.",
+   "aliases": [
+    "engagement question",
+    "conversation starter"
+   ],
+   "sources": [
+    {
+     "url": "https://about.fb.com/news/2017/12/news-feed-fyi-fighting-engagement-bait-on-facebook/",
+     "title": "Meta: Fighting Engagement Bait on Facebook (2017)",
+     "supports": "Facebook demotes posts that goad people into likes, shares and comments"
+    }
+   ],
+   "note": "Engagement bait is demoted on Facebook per Meta's 2017 announcement; other platforms' current treatment needs checking per platform."
+  },
+  {
+   "id": "tech:write_for_voiceover",
+   "name": "Writing for voice-over",
+   "category": "Social & video",
+   "one_line": "Write for the ear: short spoken sentences, one idea per breath, numbers and names written the way they are said.",
+   "aliases": [
+    "VO script writing",
+    "writing for the ear",
+    "broadcast writing"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Voice-over",
+     "title": "Voice-over (Wikipedia)",
+     "supports": "what voice-over narration is"
+    },
+    {
+     "url": "https://ask.ifas.ufl.edu/publication/WC193",
+     "title": "UF/IFAS EDIS WC193: News Writing for Television and Radio",
+     "supports": "read the story aloud; broadcast rules for writing and rounding numbers"
+    },
+    {
+     "url": "https://mediahelpingmedia.org/quick-guides/writing-a-radio-news-script/",
+     "title": "Media Helping Media: Writing a radio news script",
+     "supports": "practical rules for writing news copy to be spoken"
+    }
+   ]
+  },
+  {
+   "id": "tech:personalization_tokens",
+   "name": "Personalisation tokens",
+   "category": "Email",
+   "one_line": "Insert merge fields (name, city, last purchase) only where they add meaning, always with a safe fallback value.",
+   "aliases": [
+    "merge tags",
+    "mail merge fields",
+    "dynamic fields"
+   ],
+   "sources": [
+    {
+     "url": "https://mailchimp.com/help/all-the-merge-tags-cheat-sheet/",
+     "title": "Mailchimp: All the Merge Tags Cheat Sheet",
+     "supports": "how merge tags insert subscriber data"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Mail_merge",
+     "title": "Mail merge (Wikipedia)",
+     "supports": "definition"
+    }
+   ]
+  },
+  {
+   "id": "tech:subject_preheader_pairing",
+   "name": "Subject line + preheader pairing",
+   "category": "Email",
+   "one_line": "Write the preheader as the second half of the subject line: it extends or pays off the subject instead of repeating it.",
+   "aliases": [
+    "preview text",
+    "preheader"
+   ],
+   "sources": [
+    {
+     "url": "https://www.litmus.com/blog/the-ultimate-guide-to-preview-text-support",
+     "title": "Litmus: The ultimate guide to preview text",
+     "supports": "what preview text is and how clients display it"
+    }
+   ],
+   "note": "Character counts for preview text belong to plat:email_subject / platform items."
+  },
+  {
+   "id": "tech:error_message_structure",
+   "name": "Error-message structure",
+   "category": "UX writing",
+   "one_line": "Say what went wrong in plain words, why if useful, and exactly how to fix it, next to the problem, without blame.",
+   "aliases": [
+    "error copy",
+    "error messages"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/error-message-guidelines/",
+     "title": "NN/g: Error-Message Guidelines",
+     "supports": "visibility, communication and efficiency guidelines for error messages"
+    }
+   ]
+  },
+  {
+   "id": "tech:empty_state_copy",
+   "name": "Empty-state copy",
+   "category": "UX writing",
+   "one_line": "When a screen has no data yet, say why it is empty and give the one action that fills it.",
+   "aliases": [
+    "empty states",
+    "zero-data state"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/empty-state-interface-design/",
+     "title": "NN/g: Designing Empty States in Complex Applications",
+     "supports": "empty states should communicate status, teach and offer a direct path"
+    }
+   ]
+  },
+  {
+   "id": "tech:progressive_disclosure",
+   "name": "Progressive disclosure",
+   "category": "UX writing",
+   "one_line": "Show only what most readers need now; tuck detail behind a link, toggle or later step.",
+   "aliases": [
+    "layered content"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/progressive-disclosure/",
+     "title": "NN/g: Progressive Disclosure",
+     "supports": "defer advanced or rarely used information"
+    }
+   ]
+  },
+  {
+   "id": "tech:consistent_terminology",
+   "name": "Consistent terminology",
+   "category": "UX writing",
+   "one_line": "Call one thing by one name everywhere (UI, help, emails); keep a word list and do not vary terms for style.",
+   "aliases": [
+    "term consistency",
+    "controlled vocabulary"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/consistency-and-standards/",
+     "title": "NN/g: Consistency and Standards (usability heuristic #4)",
+     "supports": "users should not wonder whether different words mean the same thing"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+     "title": "Wikipedia: Signs of AI writing",
+     "supports": "elegant variation (swapping synonyms for the same thing) is a listed tell"
+    }
+   ]
+  },
+  {
+   "id": "tech:swipe_file",
+   "name": "Swipe file",
+   "category": "Research & process",
+   "one_line": "Keep a collection of proven ads, emails and lines to study structure and moves, never to copy wording.",
+   "aliases": [
+    "swipe library",
+    "inspiration file"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Swipe_file",
+     "title": "Swipe file (Wikipedia)",
+     "supports": "collection of tested copy kept for reference"
+    }
+   ]
+  },
+  {
+   "id": "tech:sme_interview",
+   "name": "SME interview",
+   "category": "Research & process",
+   "one_line": "Interview a subject-matter expert with prepared questions to get the specifics, stories and quotes no desk research gives.",
+   "aliases": [
+    "expert interview",
+    "subject-matter expert"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Subject-matter_expert",
+     "title": "Subject-matter expert (Wikipedia)",
+     "supports": "who an SME is"
+    }
+   ]
+  },
+  {
+   "id": "tech:outlining",
+   "name": "Outlining",
+   "category": "Research & process",
+   "one_line": "Plan the sections and their points as a hierarchy before drafting; fix order and gaps at outline stage.",
+   "aliases": [
+    "outline",
+    "skeleton"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Outline_(list)",
+     "title": "Outline (list) (Wikipedia)",
+     "supports": "hierarchical outline as a writing plan"
+    }
+   ]
+  },
+  {
+   "id": "tech:freewriting",
+   "name": "Freewriting",
+   "category": "Research & process",
+   "one_line": "Write nonstop for a set time without editing to get raw material and find what you think.",
+   "aliases": [
+    "free writing",
+    "stream of consciousness draft"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Free_writing",
+     "title": "Free writing (Wikipedia)",
+     "supports": "definition and method"
+    }
+   ]
+  },
+  {
+   "id": "tech:features_to_benefits",
+   "name": "Features to benefits",
+   "category": "Persuasion & proof",
+   "one_line": "Translate each feature (what it is) into the outcome it gives the reader (what it does for them), and lead with the outcome.",
+   "aliases": [
+    "benefit-led copy",
+    "FAB (features, advantages, benefits)"
+   ],
+   "sources": [
+    {
+     "url": "https://my.copyblogger.com/wp-content/uploads/2020/08/Copywriting-101.pdf",
+     "title": "Copyblogger: Copywriting 101 (ebook)",
+     "supports": "move past what a product is to what it does for the buyer"
+    }
+   ]
+  },
+  {
+   "id": "tech:so_what_test",
+   "name": "The 'So what?' test",
+   "category": "Persuasion & proof",
+   "one_line": "After every claim ask 'so what?' until the answer is something the reader actually cares about; write that answer.",
+   "aliases": [
+    "so-what chain",
+    "which means that"
+   ],
+   "sources": [
+    {
+     "url": "https://handcartmedia.com/website-copywriting-tips-so-what-principle/",
+     "title": "Handcart Media: the 'So what' test for website copy",
+     "supports": "practitioner description of the test (secondary, low confidence)"
+    }
+   ],
+   "note": "Folk technique with no single originator; search summaries attach conversion-lift numbers to it that are unsourced, do not repeat them."
+  },
+  {
+   "id": "tech:objection_handling",
+   "name": "Objection handling in copy",
+   "category": "Persuasion & proof",
+   "one_line": "List the reader's likely reasons not to act and answer each one where it arises (inline, FAQ, guarantee, 'even if' line).",
+   "aliases": [
+    "overcoming objections",
+    "'even if' line",
+    "anxiety reducers"
+   ],
+   "sources": [
+    {
+     "url": "https://copyhackers.com/3-essential-copy-techniques/",
+     "title": "Copyhackers: The 3 essential copywriting techniques",
+     "supports": "'even if' technique: promise + 'even if' + the objection"
+    },
+    {
+     "url": "https://unbounce.com/photos/The-Conversion-Marketers-Guide-To-LandingPage-Copywriting.pdf",
+     "title": "Joanna Wiebe: The Conversion Marketer's Guide to Landing Page Copywriting (Unbounce)",
+     "supports": "work backward from the goal through the objections and anxieties that block conversion"
+    }
+   ],
+   "note": "Objections come from VOC research (tech:voice_of_customer_mining), not guesswork."
+  },
+  {
+   "id": "tech:reason_why",
+   "name": "Reason-why ('because')",
+   "category": "Persuasion & proof",
+   "one_line": "Give the reader a real reason for every claim and request, joined with 'because'; a stated reason makes compliance more likely.",
+   "aliases": [
+    "reason-why copy",
+    "the because effect"
+   ],
+   "sources": [
+    {
+     "url": "https://doi.org/10.1037/0022-3514.36.6.635",
+     "title": "Langer, Blank & Chanowitz (1978), The mindlessness of ostensibly thoughtful action, JPSP 36(6)",
+     "supports": "copier study: requests with a reason, even a placebic one, got more compliance for small requests"
+    },
+    {
+     "url": "https://jamesclear.com/wp-content/uploads/2015/03/copy-machine-study-ellen-langer.pdf",
+     "title": "Full text of the 1978 copier study (hosted copy)",
+     "supports": "the effect of a placebic reason disappeared when the request was larger"
+    }
+   ],
+   "note": "The empty-'because' effect only held for a small favour; for bigger asks the reason must be real. Do not cite the study as proof that any 'because' works."
+  },
+  {
+   "id": "tech:future_pacing",
+   "name": "Future pacing",
+   "category": "Persuasion & proof",
+   "one_line": "Walk the reader through a specific moment after they have the result, in present tense, so the outcome feels concrete.",
+   "aliases": [
+    "imagine-this passage",
+    "visualisation"
+   ],
+   "sources": [
+    {
+     "url": "https://medium.com/@olsenrec/how-to-use-future-pacing-to-help-your-prospect-imagine-a-better-life-f2262f41acfb",
+     "title": "How to use future pacing to help your prospect imagine a better life (Medium)",
+     "supports": "practitioner description; term borrowed from NLP (secondary, low confidence) [403 to scripted fetch; URL seen in search results 2026-10-04]"
+    }
+   ],
+   "note": "The term comes from NLP, which has weak scientific support; treat it as a craft move, not a proven mechanism. Never future-pace results the product cannot deliver."
+  },
+  {
+   "id": "tech:unique_mechanism",
+   "name": "Unique mechanism",
+   "category": "Persuasion & proof",
+   "one_line": "Name and explain the specific method that makes the result possible, so a sceptical reader believes this one is different.",
+   "aliases": [
+    "mechanism",
+    "the 'how it works' reveal"
+   ],
+   "sources": [
+    {
+     "url": "https://toddbrown.me/the-unique-mechanism/",
+     "title": "Todd Brown: What's your product's unique mechanism?",
+     "supports": "definition; promotes the process rather than the result (page refused a scripted status check; seen via search)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Unique_selling_proposition",
+     "title": "Unique selling proposition (Wikipedia)",
+     "supports": "the older USP concept the mechanism builds on"
+    }
+   ],
+   "note": "Concept credited to Eugene Schwartz (Breakthrough Advertising, 1966), popularised by Todd Brown; the mechanism must be true and explainable."
+  },
+  {
+   "id": "tech:big_idea",
+   "name": "Big idea",
+   "category": "Persuasion & proof",
+   "one_line": "Build the whole piece around one fresh, simple central idea that makes the offer memorable and different.",
+   "aliases": [
+    "the big idea",
+    "central concept"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Big_Idea_(marketing)",
+     "title": "Big Idea (marketing) (Wikipedia)",
+     "supports": "definition and Ogilvy association"
+    },
+    {
+     "url": "https://copychief.com/big-idea/",
+     "title": "CopyChief: WANTED, the Big Idea (direct response style)",
+     "supports": "how direct-response writers use the big idea"
+    }
+   ]
+  },
+  {
+   "id": "tech:one_reader_rule",
+   "name": "Write to one reader",
+   "category": "Persuasion & proof",
+   "one_line": "Picture one specific person and write to them as 'you', not to an audience or 'users'.",
+   "aliases": [
+    "one-reader rule",
+    "write to one person",
+    "the you rule"
+   ],
+   "sources": [
+    {
+     "url": "https://expresswriters.com/copywriting-advice/",
+     "title": "Express Writers: 57 pieces of copywriting advice",
+     "supports": "'write to one person, not a million', attributed to Fairfax M. Cone (secondary, low confidence)"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/right-tone/",
+     "title": "GOV.UK: Use the right tone",
+     "supports": "address the user directly as 'you'"
+    }
+   ]
+  },
+  {
+   "id": "tech:awareness_level_matching",
+   "name": "Match copy to awareness level",
+   "category": "Persuasion & proof",
+   "one_line": "Decide whether the reader is unaware, problem-aware, solution-aware, product-aware or most aware, and open where they are.",
+   "aliases": [
+    "Schwartz awareness levels",
+    "stages of awareness",
+    "market sophistication"
+   ],
+   "sources": [
+    {
+     "url": "https://selzee.com/eugene-schwartz-5-levels-of-awareness",
+     "title": "Eugene Schwartz 5 levels of awareness explained (Selzee)",
+     "supports": "summary of the five levels from Breakthrough Advertising (1966) (secondary)"
+    }
+   ],
+   "note": "Originates in Eugene Schwartz, Breakthrough Advertising (1966), cited by name. Could also be filed as a framework (fw_hook worker); merge decides."
+  },
+  {
+   "id": "tech:specificity",
+   "name": "Specificity",
+   "category": "Persuasion & proof",
+   "one_line": "Replace vague claims with exact, checkable details (numbers, names, places, times) the reader can picture and believe.",
+   "aliases": [
+    "concrete claims",
+    "specific numbers",
+    "definite language"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 12: use definite, specific, concrete language"
+    }
+   ],
+   "note": "Every specific must be true and sourced; an invented exact number is worse than a vague one."
+  },
+  {
+   "id": "tech:pain_agitation",
+   "name": "Pain agitation",
+   "category": "Persuasion & proof",
+   "one_line": "Make the reader feel the cost of the problem with concrete consequences before offering the fix, without fearmongering.",
+   "aliases": [
+    "agitate the problem",
+    "twist the knife"
+   ],
+   "sources": [
+    {
+     "url": "https://copyhackers.com/2015/10/copywriting-formula/",
+     "title": "Copyhackers: Copywriting formulas, the ultimate guide",
+     "supports": "agitation as the middle step of problem-agitate-solve formulas"
+    }
+   ],
+   "note": "The whole PAS structure is fw:pas (worker fw_hook); this is the agitation move alone. Agitation about health, money or safety can tip into unfair fear appeals (see comp: items)."
+  },
+  {
+   "id": "tech:but_therefore",
+   "name": "But / therefore links",
+   "category": "Storytelling",
+   "one_line": "Join story beats with 'but' or 'therefore' (cause and complication), never 'and then', so events drive each other.",
+   "aliases": [
+    "South Park rule",
+    "causal chain"
+   ],
+   "sources": [
+    {
+     "url": "https://www.aerogrammestudio.com/2014/03/06/writing-advice-from-south-parks-trey-parker-and-matt-stone/",
+     "title": "Aerogramme Studio: Writing advice from South Park's Trey Parker and Matt Stone",
+     "supports": "the 'but/therefore' rule from their NYU class visit"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=vGUNqq3jVLg",
+     "title": "Writing Advice from Matt Stone & Trey Parker @ NYU (video)",
+     "supports": "primary recording of the advice"
+    }
+   ]
+  },
+  {
+   "id": "tech:character_with_a_want",
+   "name": "Character with a want",
+   "category": "Storytelling",
+   "one_line": "Give the person in the story a clear desire and an obstacle, so the reader has something to root for.",
+   "aliases": [
+    "want and obstacle",
+    "goal-driven character"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Protagonist",
+     "title": "Protagonist (Wikipedia)",
+     "supports": "the protagonist as the character whose goals drive the story"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Character_arc",
+     "title": "Character arc (Wikipedia)",
+     "supports": "change a character undergoes in pursuing a goal"
+    }
+   ],
+   "note": "In brand stories the customer is the character with the want, not the brand."
+  },
+  {
+   "id": "tech:sentence_rhythm",
+   "name": "Sentence-length rhythm",
+   "category": "Line craft & rhetoric",
+   "one_line": "Mix short, medium and long sentences so the prose has music; land key points on a short one after longer ones.",
+   "aliases": [
+    "vary sentence length",
+    "cadence",
+    "write music"
+   ],
+   "sources": [
+    {
+     "url": "https://www.aerogrammestudio.com/2014/08/05/this-sentence-has-five-words/",
+     "title": "Aerogramme Studio: Gary Provost on varying sentence length",
+     "supports": "Provost's demonstration that varied sentence length creates rhythm"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Gary_Provost",
+     "title": "Gary Provost (Wikipedia)",
+     "supports": "author of 100 Ways to Improve Your Writing (1985)"
+    },
+    {
+     "url": "https://hemingwayapp.com/help/docs/readability",
+     "title": "Hemingway Editor: Readability",
+     "supports": "save longer sentences for emphasis or variety and rhythm; do not chase conciseness at all costs"
+    }
+   ],
+   "note": "Provost's passage is copyrighted; cite by name, do not paste it."
+  },
+  {
+   "id": "tech:concrete_nouns_strong_verbs",
+   "name": "Concrete nouns and strong verbs",
+   "category": "Line craft & rhetoric",
+   "one_line": "Prefer nouns you can picture and verbs that carry the action over abstract nouns plus weak verbs and adjectives.",
+   "aliases": [
+    "strong verbs",
+    "concrete language"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 12: use definite, specific, concrete language"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Nominalization",
+     "title": "Nominalization (Wikipedia)",
+     "supports": "abstract nouns made from verbs weaken prose"
+    }
+   ]
+  },
+  {
+   "id": "tech:positive_form",
+   "name": "Positive form",
+   "category": "Line craft & rhetoric",
+   "one_line": "Say what is, not what is not ('forgot', not 'did not remember'); avoid double negatives.",
+   "aliases": [
+    "avoid negatives",
+    "positive framing"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 11: put statements in positive form"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "negative contractions are often misread as the opposite"
+    }
+   ]
+  },
+  {
+   "id": "tech:bucket_brigade",
+   "name": "Bucket brigades",
+   "category": "Line craft & rhetoric",
+   "one_line": "Short conversational bridge phrases ('Here's why.' 'The catch?') that carry the reader over a paragraph break.",
+   "aliases": [
+    "bucket brigade",
+    "bridge phrases"
+   ],
+   "sources": [
+    {
+     "url": "https://copyhackers.com/engage-bucket-brigade-technique/",
+     "title": "Copyhackers: How to engage with the bucket brigade technique",
+     "supports": "definition and use"
+    },
+    {
+     "url": "https://backlinko.com/copywriting-guide",
+     "title": "Backlinko: Copywriting, 7 fundamentals",
+     "supports": "Brian Dean's use of bucket brigades in blog posts"
+    }
+   ],
+   "note": "Overuse reads as formula; several stock bucket-brigade openers ('Here's the thing') overlap with AI-tell lists (see pcw.py AI_TELLS)."
+  },
+  {
+   "id": "tech:transitions",
+   "name": "Transitions",
+   "category": "Line craft & rhetoric",
+   "one_line": "Signal the logical link between sentences and paragraphs (contrast, cause, example, sequence) so the reader never wonders why the next part follows.",
+   "aliases": [
+    "transition words",
+    "signposting"
+   ],
+   "sources": [
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/transitions/",
+     "title": "UNC Writing Center: Transitions",
+     "supports": "how transitions express logical relationships"
+    }
+   ],
+   "note": "Stacked transition words ('Moreover', 'Furthermore', 'Additionally') are a common AI tell; the logic should carry the link."
+  },
+  {
+   "id": "tech:one_sentence_paragraphs",
+   "name": "One-idea and one-sentence paragraphs",
+   "category": "Line craft & rhetoric",
+   "one_line": "Keep one idea per paragraph and use an occasional one-sentence paragraph for emphasis or a turn.",
+   "aliases": [
+    "short paragraphs",
+    "one-liners"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/",
+     "title": "NN/g: Concise, Scannable, and Objective: How to Write for the Web",
+     "supports": "the 'one idea per paragraph' rule observed in user testing"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 8: make the paragraph the unit of composition"
+    }
+   ],
+   "note": "A page made only of one-line paragraphs (LinkedIn 'broetry') loses the emphasis it was after."
+  },
+  {
+   "id": "tech:you_focus",
+   "name": "You-focus (second person)",
+   "category": "Line craft & rhetoric",
+   "one_line": "Address the reader as 'you' and make them the subject of sentences; cut 'we offer' sentences that are about the writer.",
+   "aliases": [
+    "second person",
+    "you-attitude",
+    "reader-centred"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/right-tone/",
+     "title": "GOV.UK: Use the right tone",
+     "supports": "address the user as 'you' where possible"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+     "title": "GOV.UK A to Z style guide",
+     "supports": "address the user as 'you'; avoid gendered pronouns"
+    }
+   ]
+  },
+  {
+   "id": "tech:numerals",
+   "name": "Numbers as numerals (for reading)",
+   "category": "Line craft & rhetoric",
+   "one_line": "On screen, write numbers as numerals so they stand out to scanners; in scripts for the ear, write them the way they are said.",
+   "aliases": [
+    "numerals",
+    "number style"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+     "title": "GOV.UK A to Z style guide",
+     "supports": "write all other numbers in numerals (including 2 to 9) except in common expressions"
+    },
+    {
+     "url": "https://ask.ifas.ufl.edu/publication/WC193",
+     "title": "UF/IFAS EDIS WC193: News Writing for Television and Radio",
+     "supports": "broadcast number style differs: spell out small numbers and round large ones"
+    }
+   ],
+   "note": "House styles differ (AP spells out one to nine); follow the client's style guide."
+  },
+  {
+   "id": "tech:tldr_summary",
+   "name": "TL;DR / key-takeaways summary",
+   "category": "Structure & scannability",
+   "one_line": "Open long pieces with a short summary or takeaways box that states what the reader will learn or must do.",
+   "aliases": [
+    "TL;DR",
+    "key takeaways",
+    "summary box",
+    "executive summary"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/summaries/",
+     "title": "GOV.UK: Write clear summaries",
+     "supports": "how to write a page summary that tells users what the page is for"
+    }
+   ]
+  },
+  {
+   "id": "tech:slippery_slide",
+   "name": "Slippery slide",
+   "category": "Structure & scannability",
+   "one_line": "Make every element do one job: the headline gets the first line read, the first line gets the second read, and so on to the CTA.",
+   "aliases": [
+    "Slippery slide (Sugarman)",
+    "Sugarman slippery slide",
+    "first sentence's job",
+    "greased chute",
+    "slippery slope copy"
+   ],
+   "sources": [
+    {
+     "url": "https://www.upgrow.io/joe-sugarman-slippery-slide-landing-page-style/",
+     "title": "Upgrow: Joe Sugarman's slippery slide",
+     "supports": "summary of Sugarman's concept from The Adweek Copywriting Handbook (secondary) [403 to scripted fetch; URL seen in search results 2026-10-04]"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Joe_Sugarman",
+     "title": "Joseph Sugarman - Wikipedia",
+     "supports": "Direct-response copywriter, founder of JS&A and BluBlocker"
+    },
+    {
+     "url": "https://www.goodreads.com/en/book/show/603716.The_Adweek_Copywriting_Handbook",
+     "title": "The Adweek Copywriting Handbook - Goodreads",
+     "supports": "Sugarman's book where the slippery-slide idea is set out"
+    }
+   ],
+   "note": "Originator: Joseph Sugarman, The Adweek Copywriting Handbook; cited by name. [merged from fw:slippery_slide: Joseph Sugarman, The Adweek Copywriting Handbook (book). Borderline with technique (tech:bucket_brigade lives with tech_edit).]"
+  },
+  {
+   "id": "tech:pattern_interrupt",
+   "name": "Pattern interrupt",
+   "category": "Structure & scannability",
+   "one_line": "Break the expected pattern (a sudden short line, a visual change, an unexpected question) at the point attention usually drops.",
+   "aliases": [
+    "interrupt",
+    "jolt"
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9314415",
+     "title": "YouTube Help: Measure key moments for audience retention",
+     "supports": "dips show where viewers skip or leave, i.e. where an interrupt is needed"
+    }
+   ],
+   "note": "No primary source defines the copy technique (the term comes from NLP); the YouTube report only shows where attention drops. Low confidence."
+  },
+  {
+   "id": "tech:search_intent_matching",
+   "name": "Search-intent matching",
+   "category": "SEO & AI search",
+   "one_line": "Work out what the searcher wants to do (know, do, go somewhere, visit in person) and give that format first.",
+   "aliases": [
+    "user intent",
+    "query intent"
+   ],
+   "sources": [
+    {
+     "url": "https://services.google.com/fh/files/misc/hsw-sqrg.pdf",
+     "title": "Google: Search Quality Rater Guidelines, an overview",
+     "supports": "how raters judge whether results meet the user's need/intent"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Search_intent",
+     "title": "User intent (Wikipedia)",
+     "supports": "types of search intent"
+    }
+   ]
+  },
+  {
+   "id": "tech:topic_coverage",
+   "name": "Topic and entity coverage",
+   "category": "SEO & AI search",
+   "one_line": "Cover the sub-questions, related entities and terms a complete answer needs, so the page fully satisfies the topic.",
+   "aliases": [
+    "entity coverage",
+    "topical completeness",
+    "semantic coverage"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "asks whether the content gives a substantial, complete or comprehensive description of the topic"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Semantic_search",
+     "title": "Semantic search (Wikipedia)",
+     "supports": "search engines matching meaning and entities, not only keywords"
+    }
+   ],
+   "note": "Coverage means answering what readers need, not padding to match competitor word counts."
+  },
+  {
+   "id": "tech:descriptive_url_slug",
+   "name": "Descriptive URL slug",
+   "category": "SEO & AI search",
+   "one_line": "Use short, readable words in the URL that describe the page, not IDs or dates that will go stale.",
+   "aliases": [
+    "URL slug",
+    "permalink"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/crawling-indexing/url-structure",
+     "title": "Google Search Central: URL structure best practices",
+     "supports": "use simple, descriptive words in URLs"
+    }
+   ]
+  },
+  {
+   "id": "tech:first_line_above_fold",
+   "name": "First line above the fold",
+   "category": "Social & video",
+   "one_line": "Make the opening line of a post or caption complete and compelling on its own, because the rest hides behind 'see more'.",
+   "aliases": [
+    "above the fold",
+    "pre-truncation line",
+    "hook line"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/",
+     "title": "NN/g: First 2 Words, a signal for the scanning eye",
+     "supports": "readers decide from the first words whether to continue"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "title": "LinkedIn Help: Post and share updates",
+     "supports": "how posts are composed and displayed"
+    }
+   ],
+   "note": "Truncation lengths per platform belong to plat: items; hook families belong to hook: items (worker fw_hook)."
+  },
+  {
+   "id": "tech:mobile_line_breaks",
+   "name": "Line breaks for mobile reading",
+   "category": "Social & video",
+   "one_line": "Break captions and emails into short lines and short paragraphs with white space so they read on a phone screen.",
+   "aliases": [
+    "white space",
+    "mobile formatting"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/mobile-content/",
+     "title": "NN/g: Reading Content on Mobile Devices",
+     "supports": "comprehension research on small screens; difficult content suffers most on mobile"
+    }
+   ]
+  },
+  {
+   "id": "tech:native_formatting",
+   "name": "Native formatting per platform",
+   "category": "Social & video",
+   "one_line": "Format for how the platform actually renders text (no markdown where it shows literally, platform-native lists, mentions, emoji bullets) rather than pasting one version everywhere.",
+   "aliases": [
+    "platform-native copy",
+    "repurposing with rewrite"
+   ],
+   "note": "Unsourced craft norm; what each platform renders is documented per plat: item (formatting field)."
+  },
+  {
+   "id": "tech:hashtag_strategy",
+   "name": "Hashtag selection",
+   "category": "Social & video",
+   "one_line": "Use a few specific, relevant hashtags that describe the content, not long lists of generic ones.",
+   "aliases": [
+    "hashtags"
+   ],
+   "sources": [
+    {
+     "url": "https://later.com/blog/ultimate-guide-to-using-instagram-hashtags/",
+     "title": "Later: Instagram hashtags guide",
+     "supports": "practitioner guidance on fewer, relevant hashtags (secondary)"
+    }
+   ],
+   "note": "Search results report Instagram enforcing a cap on hashtags per post from Dec 2025; that is a platform limit to verify in plat: items, not here."
+  },
+  {
+   "id": "tech:retention_rehook",
+   "name": "Retention re-hooks",
+   "category": "Social & video",
+   "one_line": "Plant a new reason to keep watching at the points viewers usually drop (a tease, a question, a stakes reminder), not only at the start.",
+   "aliases": [
+    "re-hook",
+    "retention beats",
+    "mid-video hook"
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9314415",
+     "title": "YouTube Help: Measure key moments for audience retention",
+     "supports": "intro, top moments, spikes and dips; intro measures how many still watch after the first 30 seconds"
+    }
+   ]
+  },
+  {
+   "id": "tech:onscreen_text_vs_vo",
+   "name": "On-screen text vs voice-over split",
+   "category": "Social & video",
+   "one_line": "Do not put the full VO on screen; use on-screen text for short keywords, numbers and labels that support what is said.",
+   "aliases": [
+    "redundancy principle",
+    "supers vs narration"
+   ],
+   "sources": [
+    {
+     "url": "https://www.devlinpeck.com/content/mayers-principles-of-multimedia-learning",
+     "title": "Devlin Peck: Mayer's principles of multimedia learning",
+     "supports": "redundancy principle: graphics + narration beat graphics + narration + identical text; short labels can help"
+    },
+    {
+     "url": "https://www.researchgate.net/publication/232540768_Revising_the_Redundancy_Principle_in_Multimedia_Learning",
+     "title": "Revising the Redundancy Principle in Multimedia Learning (paper)",
+     "supports": "short redundant on-screen phrases can aid retention [403 to scripted fetch; URL seen in search results 2026-10-04]"
+    }
+   ],
+   "note": "The research is about learning material; social videos watched muted need captions anyway (tech:captions_subtitles)."
+  },
+  {
+   "id": "tech:loopable_ending",
+   "name": "Loopable ending",
+   "category": "Social & video",
+   "one_line": "Write the last line so it flows back into the first, inviting an immediate rewatch of a short video.",
+   "aliases": [
+    "seamless loop",
+    "loop script"
+   ],
+   "note": "No primary source found within budget; YouTube's retention report shows rewatched moments as spikes but does not describe loops. Low confidence."
+  },
+  {
+   "id": "tech:single_cta_email",
+   "name": "Single-CTA email",
+   "category": "Email",
+   "one_line": "Give each email one job and one call to action, repeated if needed, instead of several competing links.",
+   "aliases": [
+    "one goal per email"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Call_to_action_(marketing)",
+     "title": "Call to action (marketing) (Wikipedia)",
+     "supports": "definition of a CTA"
+    }
+   ],
+   "note": "Conversion-lift figures quoted online for single-CTA emails were not traced to a primary; leave numbers out."
+  },
+  {
+   "id": "tech:plain_text_email",
+   "name": "Plain-text style email",
+   "category": "Email",
+   "one_line": "Write some emails like a personal note (no heavy design, one link, a person's name in the signature) where it suits the relationship.",
+   "aliases": [
+    "plain text email",
+    "letter-style email"
+   ],
+   "sources": [
+    {
+     "url": "https://www.litmus.com/blog/the-results-are-in-a-b-testing-html-vs-plain-text-emails",
+     "title": "Litmus: A/B testing HTML vs plain text emails",
+     "supports": "Litmus's own test: results differed by audience (customers vs non-customers)"
+    },
+    {
+     "url": "https://www.litmus.com/blog/best-practices-for-plain-text-emails-a-look-at-why-theyre-important",
+     "title": "Litmus: Best practices for plain text emails",
+     "supports": "why and how to write the plain-text version"
+    }
+   ],
+   "note": "One company's test, not a law; test on your own list (edit:ab_test_copy)."
+  },
+  {
+   "id": "tech:sender_name",
+   "name": "Sender-name choice",
+   "category": "Email",
+   "one_line": "Use a recognisable, consistent from-name (a person at the brand, or the brand) that matches the email's content.",
+   "aliases": [
+    "from name",
+    "sender name strategy"
+   ],
+   "sources": [
+    {
+     "url": "https://mailchimp.com/resources/sender-name/",
+     "title": "Mailchimp: Email sender name best practices",
+     "supports": "recognisable, consistent, brand-including sender names"
+    }
+   ]
+  },
+  {
+   "id": "tech:button_labels",
+   "name": "Front-loaded button labels",
+   "category": "UX writing",
+   "one_line": "Label buttons with a specific verb phrase that says what happens ('Save draft', 'Pay ₹499'), not 'OK' or 'Submit'.",
+   "aliases": [
+    "button copy",
+    "command labels",
+    "action labels"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/ui-copy/",
+     "title": "NN/g: UI Copy, guidelines for command names",
+     "supports": "command labels should be specific and start with the important word"
+    }
+   ]
+  },
+  {
+   "id": "tech:form_labels_helper_text",
+   "name": "Form labels and helper text",
+   "category": "UX writing",
+   "one_line": "Use a visible label for every field and put format hints in helper text, not in placeholder text that disappears.",
+   "aliases": [
+    "field labels",
+    "microcopy",
+    "hint text"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/form-design-placeholders/",
+     "title": "NN/g: Placeholders in Form Fields Are Harmful",
+     "supports": "placeholder text as labels hurts usability"
+    }
+   ]
+  },
+  {
+   "id": "tech:confirmation_dialog_copy",
+   "name": "Confirmation-dialog copy",
+   "category": "UX writing",
+   "one_line": "Ask only before destructive or costly actions, state the consequence, and label the buttons with the actual actions.",
+   "aliases": [
+    "are-you-sure dialog"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/confirmation-dialog/",
+     "title": "NN/g: Confirmation Dialogs Can Prevent User Errors (If Not Overused)",
+     "supports": "when to use confirmation dialogs and how to word them"
+    }
+   ]
+  },
+  {
+   "id": "tech:step_by_step_instructions",
+   "name": "Step-by-step instructions",
+   "category": "UX writing",
+   "one_line": "Write procedures as numbered steps, one action per step, starting with the goal or location and an imperative verb.",
+   "aliases": [
+    "procedures",
+    "how-to steps"
+   ],
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/procedures-instructions/writing-step-by-step-instructions",
+     "title": "Microsoft Writing Style Guide: Writing step-by-step instructions",
+     "supports": "rules for procedures"
+    }
+   ]
+  },
+  {
+   "id": "tech:zero_draft",
+   "name": "Zero draft (permission to write badly)",
+   "category": "Research & process",
+   "one_line": "Get a complete rough version down fast without editing, then revise; separate drafting from judging.",
+   "aliases": [
+    "vomit draft",
+    "shitty first draft",
+    "rough draft"
+   ],
+   "sources": [
+    {
+     "url": "https://www.poynter.org/reporting-editing/2018/the-power-of-awful-offal-first-drafts/",
+     "title": "Poynter: The power of awful first drafts",
+     "supports": "case for fast, imperfect first drafts in journalism"
+    }
+   ],
+   "note": "Popularised by Anne Lamott, Bird by Bird (1994), cited by name."
+  },
+  {
+   "id": "tech:headline_first",
+   "name": "Headline-first writing",
+   "category": "Research & process",
+   "one_line": "Write many candidate headlines before (and after) drafting; the chosen promise defines what the body must deliver.",
+   "aliases": [
+    "write 25 headlines",
+    "headline brainstorm"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Headline",
+     "title": "Headline (Wikipedia)",
+     "supports": "role of the headline"
+    },
+    {
+     "url": "https://www.niemanlab.org/2023/03/negative-words-in-news-headlines-generate-more-clicks-but-sad-words-are-more-effective-than-angry-or-scary-ones/",
+     "title": "Nieman Lab (2023): study of Upworthy's headline A/B tests",
+     "supports": "Upworthy routinely wrote and tested several headlines per story"
+    }
+   ],
+   "note": "Headline families themselves are hook: items (worker fw_hook)."
+  },
+  {
+   "id": "tech:read_aloud",
+   "name": "Read it aloud",
+   "category": "Research & process",
+   "one_line": "Read the draft out loud to catch clumsy rhythm, missing words and sentences too long to say in one breath.",
+   "aliases": [
+    "read-aloud test",
+    "ear test"
+   ],
+   "sources": [
+    {
+     "url": "https://ask.ifas.ufl.edu/publication/WC193",
+     "title": "UF/IFAS EDIS WC193: News Writing for Television and Radio",
+     "supports": "reading the story aloud is the most important habit when writing for the ear"
+    }
+   ]
+  },
+  {
+   "id": "tech:word_budget",
+   "name": "Writing to a word budget",
+   "category": "Research & process",
+   "one_line": "Allot words to each section before drafting (from the brief's length) and cut to the budget instead of trimming at random.",
+   "aliases": [
+    "word count planning",
+    "length budget"
+   ],
+   "note": "Unsourced craft norm; per-genre lengths live in genre cards and platform limits in plat: items."
+  }
+ ]
+}

@@ -1,0 +1,471 @@
+{
+ "kind": "genre",
+ "items": [
+  {
+   "id": "genre:statement_of_purpose",
+   "name": "Statement of purpose (admissions SOP)",
+   "category": "Academic, grants & admissions",
+   "one_line": "A personal essay for university admission that connects past work, the chosen programme and future goals.",
+   "aliases": [
+    "SOP",
+    "statement of purpose",
+    "personal statement (grad school)",
+    "letter of motivation",
+    "visa SOP",
+    "study permit SOP"
+   ],
+   "value": "high",
+   "value_evidence": "Many Indian agencies sell SOP writing as a standalone study-abroad service (e.g., SOP Expert, Write Right).",
+   "sources": [
+    {
+     "url": "https://sopexpert.in/",
+     "title": "SOP Expert (India)",
+     "supports": "agency selling SOP, LOR and admission-essay writing for university and visa applications"
+    },
+    {
+     "url": "https://www.write-right.in/university-sop",
+     "title": "Write Right: University SOP writing services (India)",
+     "supports": "Indian agency selling university SOPs"
+    }
+   ],
+   "note": "Word limits and prompts differ by university and programme; always use the programme's own prompt. Do not confuse with genre:sop_process_doc. Admissions offices increasingly screen for AI-written essays.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:synopsis",
+   "name": "Book or film synopsis",
+   "category": "Publishing",
+   "one_line": "A beginning-to-end summary of a story, including the ending, sent to agents, publishers or producers.",
+   "aliases": [
+    "novel synopsis",
+    "story synopsis",
+    "film synopsis"
+   ],
+   "value": "low",
+   "value_evidence": "Required by agents and producers but rarely commissioned alone; SWA registers synopses as a category, showing Indian writers pitch with them.",
+   "sources": [
+    {
+     "url": "https://janefriedman.com/how-to-write-a-novel-synopsis/",
+     "title": "Jane Friedman: How to Write a Novel or Memoir Synopsis",
+     "supports": "default synopsis is one or two pages, about 500-1000 words, single spaced, and must reveal the ending"
+    },
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Synopsis, Story, Script, Plot, Screenplay, Dialogue and Song for members, online or at its Mumbai office"
+    }
+   ],
+   "note": "Third person, present tense, reveals the ending. Indian film pitches usually run logline, one-page synopsis, step outline, screenplay.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:system_prompt",
+   "name": "AI prompt / system prompt (as a deliverable)",
+   "category": "Technical & product documentation",
+   "one_line": "Instructions written for a language model (system prompt, agent brief, reusable prompt template) that make it behave reliably for a task.",
+   "aliases": [
+    "prompt engineering",
+    "system prompt",
+    "agent instructions",
+    "custom GPT instructions",
+    "prompt template"
+   ],
+   "value": "medium",
+   "value_evidence": "Anthropic and OpenAI publish prompt-writing guides for this as a craft; sold as a service and on prompt marketplaces.",
+   "sources": [
+    {
+     "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+     "title": "Anthropic docs: Prompt engineering overview",
+     "supports": "vendor guidance on writing prompts and system prompts"
+    },
+    {
+     "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+     "title": "OpenAI docs: Prompt engineering",
+     "supports": "vendor guidance on writing prompts"
+    }
+   ],
+   "note": "Write role, context, task, constraints, output format and examples; test against varied inputs and keep a regression set. For an AI video shot list see genre:ai_video_prompt_script.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:tagline_slogan",
+   "name": "Tagline / slogan",
+   "category": "Brand",
+   "one_line": "A short line that carries the brand's promise or attitude and survives repetition.",
+   "aliases": [
+    "slogan",
+    "tagline",
+    "strapline",
+    "brand line",
+    "campaign line"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Business Names & Slogans lists 'Slogan' and 'Tagline' as separate deliverables",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/business-names-and-slogans",
+     "title": "Fiverr: Business Names & Slogans subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1233 gigs; filter = Company, Product, Website/App, Slogan, Book/Movie, Tagline; add-ons Domain research, Trademark check, Social media handles"
+    }
+   ],
+   "note": "Tagline = brand-level and long-lived; campaign line = one campaign.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:talking_head_script",
+   "name": "Talking-head / to-camera script",
+   "category": "Video & audio scripts",
+   "one_line": "Script for one person speaking to camera, written in their natural spoken voice with beats for cuts, B-roll and on-screen text.",
+   "aliases": [
+    "to-camera script",
+    "A-roll script",
+    "presenter script"
+   ],
+   "value": "medium",
+   "value_evidence": "Falls under Upwork's script writer type (2026-01-21) and under ghostwriting of video scripts; no separate facet.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "Read it aloud; write contractions and short sentences, and bullet-point mode for presenters who ad-lib.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:technical_blog_article",
+   "name": "Technical blog article (developer content)",
+   "category": "Blog & SEO",
+   "one_line": "Blog article for a technical audience (code walkthrough, architecture explainer, tool comparison) published as marketing content, not product docs.",
+   "aliases": [
+    "technical article",
+    "developer blog post",
+    "dev content"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr's Article type facet lists 'Technical Article' (254 gigs on 2026-10-04); Upwork's technical writer type lists blogs, case studies and how-to guides among projects.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "Product documentation, API docs and manuals belong to genre_pro_creative (see genre:developer_tutorial, which overlaps); this is the marketing-blog version. Code must run.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:technical_design_doc",
+   "name": "Technical specification / design doc",
+   "category": "Technical & product documentation",
+   "one_line": "An engineer's written proposal for how a system will be built, reviewed before code is written.",
+   "aliases": [
+    "design doc",
+    "tech spec",
+    "RFC",
+    "architecture decision record",
+    "ADR"
+   ],
+   "value": "low",
+   "value_evidence": "Internal engineering artefact written by the engineers who will build the system; little external paid demand.",
+   "sources": [
+    {
+     "url": "https://www.industrialempathy.com/posts/design-docs-at-google/",
+     "title": "Design Docs at Google (Malte Ubl)",
+     "supports": "describes the design-doc practice: context, goals/non-goals, design, alternatives considered, cross-cutting concerns"
+    }
+   ],
+   "note": "Alternatives considered and trade-offs are the heart of it. ADR = one decision per short record (context, decision, consequences).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:ted_style_talk",
+   "name": "TED-style talk",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A short idea-led talk built around one idea worth spreading, told through story and evidence.",
+   "aliases": [
+    "TEDx talk",
+    "idea talk",
+    "conference talk"
+   ],
+   "value": "medium",
+   "value_evidence": "TEDx events run worldwide and speakers hire coaches and writers; TED publishes the format rules.",
+   "sources": [
+    {
+     "url": "https://www.ted.com/participate/organize-a-local-tedx-event/before-you-start/tedx-rules",
+     "title": "TED: TEDx rules",
+     "supports": "'TEDx talks are typically under 18 minutes'; 'Many talks are even shorter, with 3-9 minutes being ideal for a focused idea'"
+    }
+   ],
+   "note": "TEDx rules: talks typically under 18 minutes, with 3-9 minutes ideal for a focused idea. One idea, a throughline, no selling from the stage.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:telegram_channel_post",
+   "name": "Telegram channel post",
+   "category": "Organic social",
+   "one_line": "Broadcast post to a Telegram channel's subscribers, typically news, deals, signals or course updates with rich formatting and links.",
+   "aliases": [
+    "Telegram post",
+    "Telegram broadcast"
+   ],
+   "value": "low",
+   "value_evidence": "No dedicated marketplace category found on 2026-10-04; written by channel owners or bundled with community management.",
+   "note": "Finance 'tip' channels attract SEBI scrutiny in India; never publish investment advice without registration (see compliance cards).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:testimonial_copy",
+   "name": "Testimonial collection & testimonial page copy",
+   "category": "Web & UX",
+   "one_line": "Questions that draw specific customer quotes, and the edited testimonials / reviews page built from them.",
+   "aliases": [
+    "testimonial page",
+    "reviews page",
+    "customer quote collection",
+    "testimonial interview script"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr Website Content lists 'Testimonials' and 'Reviews' as page types; AWAI lists 'Testimonial'",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Edit for clarity only; invented or materially altered testimonials breach consumer law (comp: cards).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:thesis_summary",
+   "name": "Thesis summary / PhD synopsis",
+   "category": "Academic, grants & admissions",
+   "one_line": "A condensed account of a thesis's problem, method, findings and contribution, required at registration or submission.",
+   "aliases": [
+    "PhD synopsis",
+    "thesis synopsis",
+    "dissertation summary"
+   ],
+   "value": "low",
+   "value_evidence": "Required by Indian universities in the PhD process; little open-market demand.",
+   "note": "Format and length are set by each university's ordinance. State the contribution to knowledge explicitly.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:thought_leadership_article",
+   "name": "Thought leadership article",
+   "category": "Long-form B2B",
+   "one_line": "Article under an executive's or expert's name that offers a distinctive, defensible point of view on where an industry is going.",
+   "aliases": [
+    "thought leadership content",
+    "POV article",
+    "executive article"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork's ghostwriting job type lists 'Thought leadership content' among common projects at a $20-$45/hr band (Upwork, 2026-01-21).",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "Fails when it is generic trend commentary; it needs a claim the named author can defend in a meeting.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:threads_post",
+   "name": "Threads post",
+   "category": "Organic social",
+   "one_line": "Short conversational text post on Meta's Threads, written to start replies rather than to broadcast.",
+   "aliases": [
+    "Threads update"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr's social media copywriting Platform facet lists Threads (238 gigs on 2026-10-04).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "Fiverr's Platform filter with live gig counts, a SUPPLY signal: Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009, Pinterest 376, Threads 238, Snapchat 123, Reddit 96, Twitter 47, Discord 5, Quora 3"
+    }
+   ],
+   "note": "Often cross-posted from X; the native tone is more casual and question-led.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:topic_cluster_article",
+   "name": "Topic cluster (spoke) article",
+   "category": "Blog & SEO",
+   "one_line": "Focused article on one subtopic or long-tail query that links up to its pillar page and across to sibling articles.",
+   "aliases": [
+    "cluster article",
+    "spoke article",
+    "supporting article"
+   ],
+   "value": "medium",
+   "value_evidence": "Sold as batches of SEO blog posts; Superpath's community guidance prices a 1200-word B2B SaaS article at $350-$700 (2022, dated).",
+   "sources": [
+    {
+     "url": "https://www.superpath.co/blog/freelance-writers-rates",
+     "title": "Superpath: How to work with freelance writers: rates, relationships and sourcing (2022-10-11)",
+     "supports": "Superpath community guidance that a 1200-word B2B SaaS article should cost $350-$700, with flat fees per project the norm in B2B (dated 2022, medium confidence)"
+    }
+   ],
+   "note": "Must target an intent the pillar does not already answer, or the two pages cannibalise each other.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:topical_ad",
+   "name": "Topical / moment-marketing ad",
+   "category": "Advertising",
+   "one_line": "Fast brand reaction to news, a match or a festival, built on one witty line plus the brand.",
+   "aliases": [
+    "topical",
+    "moment marketing",
+    "brand topical",
+    "real-time marketing"
+   ],
+   "value": "medium",
+   "value_evidence": "Indian agency social retainers routinely include topicals (qualitative; no market list found)",
+   "note": "India-specific staple (Amul-style). Unsure if this is ad or organic social; merge may move it to genre_content.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:trade_show_materials",
+   "name": "Trade show / exhibition materials",
+   "category": "Other commercial",
+   "one_line": "Booth graphics lines, standees, handouts and demo scripts for expos and exhibitions.",
+   "aliases": [
+    "exhibition copy",
+    "booth copy",
+    "standee copy",
+    "expo collateral"
+   ],
+   "value": "low",
+   "value_evidence": "AWAI lists 'Trade Show Materials' as a project type",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Booth lines must read from a distance, like OOH.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:transactional_email",
+   "name": "Transactional email copy",
+   "category": "Email & CRM",
+   "one_line": "Order confirmations, receipts, password resets and shipping updates written to be clear and on-brand.",
+   "aliases": [
+    "system email",
+    "triggered email",
+    "order confirmation email"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Email Copy lists 'Transactional emails' as an email type",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    }
+   ],
+   "note": "Clarity first; adding marketing content to a transactional message can change how the law treats it (check comp: cards).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:travel_guide_post",
+   "name": "Travel guide / itinerary post",
+   "category": "Blog & SEO",
+   "one_line": "Destination article (itinerary, where to stay, what to eat, costs, how to get there) written from first-hand travel.",
+   "aliases": [
+    "itinerary post",
+    "destination guide",
+    "travel blog post"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr's article Topic facet lists Travel & hospitality (316 gigs on 2026-10-04).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Prices, timings and visa rules date fast; show a 'last checked' date.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:troubleshooting_guide",
+   "name": "Troubleshooting guide",
+   "category": "Technical & product documentation",
+   "one_line": "A symptom-to-fix guide that lets a user or support agent diagnose and resolve a known problem without escalation.",
+   "aliases": [
+    "troubleshooter",
+    "diagnostic guide",
+    "error-message guide",
+    "FAQ (support)"
+   ],
+   "value": "medium",
+   "value_evidence": "Part of technical-writing work on manuals and how-to guides (Upwork technical-writer projects).",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "technical writers produce manuals and how-to guides"
+    }
+   ],
+   "note": "Organise by symptom the user sees (exact error text), then likely cause, then fix steps, then 'if that did not work'. Most common cause first.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:tvc_script",
+   "name": "TV / OTT / CTV commercial script (TVC)",
+   "category": "Advertising",
+   "one_line": "Shot-by-shot script for a broadcast or streaming TV spot: visuals, VO, supers and sound, to a fixed duration.",
+   "aliases": [
+    "TVC script",
+    "TV commercial script",
+    "ad film script",
+    "OTT ad script",
+    "CTV ad script"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI's 2026 pricing guide lists 'TV Commercial Script'; Fiverr Video Script sub-subcategory covers ads and commercials; Indian agencies sell ad film scripts",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing/video-script",
+     "title": "Fiverr: Script Writing > Video Script",
+     "supports": "own sub-subcategory for video scripts incl. ads/commercials (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://thegreyhawks.com/copywriting-agency-in-india/",
+     "title": "The Grey Hawks: Copywriting agency in India (service menu)",
+     "supports": "Indian agency menu: brand voice & messaging framework, website & landing page, performance ad copy, email & funnel, scripts for video & commercials"
+    }
+   ],
+   "note": "Two-column (video | audio) format is standard; India 'ad film' scripts usually go through a storyboard and agency/client approval rounds.",
+   "kind": "genre"
+  }
+ ]
+}

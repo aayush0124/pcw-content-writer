@@ -1,0 +1,1399 @@
+{
+ "cards": [
+  {
+   "id": "tech:headline_first",
+   "kind": "technique",
+   "name": "Headline-first writing",
+   "status": "current",
+   "level": "piece",
+   "summary": "Write a long list of candidate headlines before you draft, choose the strongest promise the piece can honestly keep, and treat that promise as the brief for the body; then rewrite the headline once the draft exists. Newsrooms built on testing (Upworthy was the famous case) wrote and A/B-tested several headlines per story.",
+   "use_for": [
+    "blog posts, explainers and SEO articles before the outline is fixed",
+    "email subject lines and the first line of a newsletter",
+    "YouTube titles and thumbnail text written before the script",
+    "landing-page H1s and ad headlines",
+    "LinkedIn and Instagram first lines, where the first line is the headline"
+   ],
+   "avoid": [
+    "Locking the headline before the research is done, then dropping findings that contradict it: keep it a working headline until the facts are in.",
+    "Picking the clickiest candidate when the body cannot pay it off (curiosity bait): choose the most specific true promise and keep the bait for nothing.",
+    "Spending headline time on internal memos and replies where the subject only needs to say what the message is (hook:descriptive_subject_line)."
+   ],
+   "how": [
+    "Write the piece's one-sentence point and its one reader at the top of the doc ('A Jaipur shop owner who just got a GST notice and is scared').",
+    "In one sitting, write at least 10 candidate headlines; on a high-traffic piece push past 20. The first five are the obvious ones, the useful ones come later.",
+    "Vary the angle, not the synonyms: a how-to, a number, a question, a contrarian line, a specific result, an audience call-out, a mistake warning (see the hook: cards for each family).",
+    "Do not judge while listing. Then shortlist 3 that are specific, promise an answer or benefit this reader wants, and are true.",
+    "Strike any candidate the body cannot deliver. Pick one as the working headline.",
+    "Turn its promise into a checklist: every element the headline names (the number, the audience, the result, the time frame) must appear in the body. Draft against that list and cut sections that serve none of it.",
+    "After drafting, rewrite the headline to match what the piece actually delivers. If the body drifted, fix one or the other; never ship a mismatch.",
+    "Keep the two runners-up for a test (email subject, social post, thumbnail text) where the platform allows it (edit:headline_testing)."
+   ],
+   "before": "Headline written last: 'GST: Things Every Business Should Know' (body: 1,400 words of GST history and rates, one filing tip at the very end).",
+   "after": "Picked from 18 candidates before drafting: 'Got a GST notice? What a Jaipur shop owner should do in the first 7 days' (body: day-by-day steps, the documents to gather, when to call a CA).",
+   "overuse_signs": [
+    "A 'list' of 20 headlines that is one angle in 20 synonyms",
+    "The body bent out of shape to justify a dramatic headline",
+    "Hours of headline work on a two-line internal update",
+    "The final headline never revisited after the draft changed direction"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Headline",
+     "title": "Headline (Wikipedia)",
+     "supports": "role of the headline"
+    },
+    {
+     "url": "https://www.niemanlab.org/2023/03/negative-words-in-news-headlines-generate-more-clicks-but-sad-words-are-more-effective-than-angry-or-scary-ones/",
+     "title": "Nieman Lab (2023): study of Upworthy's headline A/B tests",
+     "supports": "Upworthy routinely wrote and tested several headlines per story"
+    }
+   ],
+   "related": [
+    "edit:headline_testing",
+    "fw:four_us",
+    "hook:specificity",
+    "tech:first_line_above_fold",
+    "tech:outlining"
+   ]
+  },
+  {
+   "id": "tech:image_alt_text",
+   "kind": "technique",
+   "name": "Image alt text writing",
+   "status": "current",
+   "level": "line",
+   "summary": "Alt text stands in for an image for screen-reader users and helps search engines understand it. Write what the image contributes on this page, in context: the text in an image of text, the destination of a linked image, a brief description of an informative photo, and an empty alt (alt=\"\") for decorative or redundant images.",
+   "use_for": [
+    "blog, news and explainer images",
+    "e-commerce product photos (Shopify, Amazon-style listings, D2C sites)",
+    "infographics, charts and quote cards published on web pages",
+    "icon links and image buttons in apps and websites",
+    "alt fields on LinkedIn, X and Instagram uploads"
+   ],
+   "avoid": [
+    "Keyword lists in the alt ('kurta, cotton kurta, buy kurta online'): Google's image guidance warns against keyword stuffing; describe the image and use the keyword only if it truly describes it.",
+    "Describing a linked logo or icon as a picture ('blue arrow', 'company logo'): say where it goes or what it does ('Home', 'Download the fee schedule (PDF)').",
+    "Leaving the alt attribute out on decorative images: give them an empty alt so screen readers skip them, instead of announcing a file name.",
+    "Squeezing a chart's whole data into the alt: write a short alt with the takeaway and put the data in a table or text on the page."
+   ],
+   "how": [
+    "Ask why the image is on this page. Write the alt for that job, not for the pixels.",
+    "Decorative (a border, a mood background, an icon beside text that says the same thing) or redundant with the caption or nearby text: alt=\"\" (empty, not missing).",
+    "Image inside a link or button: describe the destination or the action, e.g. 'Book a GST consultation'.",
+    "Image of text (quote card, poster, scanned notice): put the image's text in the alt, word for word if it is short.",
+    "Informative photo or simple graphic: one short sentence on what matters here, typically who, doing what, where. 'Chief Minister cutting the ribbon at the new Patna bus terminal' beats 'Man with scissors'.",
+    "Chart, map or infographic: a short alt naming the type and the takeaway ('Bar chart: online orders rose every quarter in 2025'), plus the full numbers elsewhere on the page.",
+    "Do not open with 'Image of' or 'Picture of'; get straight to the content.",
+    "Product photos: include what a shopper cannot see otherwise and needs to choose: colour, material, angle, detail shown.",
+    "Write the alt in the page's language; a Hindi page gets Hindi alt text.",
+    "Read the page with images off (or with a screen reader): the text alone should still make complete sense."
+   ],
+   "before": "alt=\"kurta, cotton kurta, buy kurta online, best kurta Jaipur, kurta for women\"",
+   "after": "alt=\"Indigo hand-block-printed cotton kurta, side view showing the deep side pocket\"",
+   "overuse_signs": [
+    "Decorative flourishes given alt text, so a screen reader announces 'decorative swirl' all down the page",
+    "Alt that repeats the visible caption word for word",
+    "A paragraph-long alt on a simple photo",
+    "The same target keyword in every alt on the page"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+     "title": "W3C WAI: An alt Decision Tree",
+     "supports": "empty alt for decorative/redundant images; link/button images describe destination or action; images of text carry the text; informative images get a brief description; complex images need the information elsewhere on the page (checked 2026-10-04)"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/google-images",
+     "title": "Google Search Central: Image SEO best practices",
+     "supports": "descriptive alt text helps Google understand images; avoid keyword stuffing in alt"
+    }
+   ],
+   "related": [
+    "edit:alt_text_check",
+    "edit:accessible_writing_check",
+    "tech:keyword_placement",
+    "tech:plain_language"
+   ]
+  },
+  {
+   "id": "tech:in_medias_res",
+   "kind": "technique",
+   "name": "In medias res opening",
+   "status": "current",
+   "level": "piece",
+   "summary": "Open in the middle of the action, at a moment of tension or change the reader can grasp without context, and feed in the backstory only once they care. The term is Latin for 'into the middle of things' and comes from Horace's Ars Poetica. Good use returns to the opening moment and pays it off.",
+   "use_for": [
+    "founder and brand story videos and posts",
+    "case studies and customer stories",
+    "reel and short-video scripts that need a first-second hook",
+    "magazine features and long-form profiles",
+    "LinkedIn story posts and newsletter openings"
+   ],
+   "avoid": [
+    "News, B2B updates and reports where the reader wants the point first: use fw:inverted_pyramid or fw:bluf.",
+    "Inventing a dramatic scene for a nonfiction piece or case study: open on a real moment from the interview, or do not use the move.",
+    "Instructions and help content: the reader needs step one, not a scene."
+   ],
+   "how": [
+    "List the story's events in time order, one line each.",
+    "Pick the opening moment: the decision, crisis or surprising image just before the turn, not the resolution itself (keep that as the payoff).",
+    "Write it in present action: a person, a place, something happening, or a line of dialogue. 1-3 sentences in print; the first 3 seconds in a video.",
+    "Leave one question hanging (how did it get here? what happens next?).",
+    "Step back with a clear time marker ('Three years earlier...', 'Teen saal pehle...') and give only the backstory needed to understand the stakes.",
+    "Come back to the opening moment and move past it to the resolution, so the opening pays off.",
+    "Test the backstory: cut it in half. If the piece still makes sense, keep the shorter version."
+   ],
+   "before": "Rekha Devi started her pickle business in Muzaffarpur in 2019 with Rs 5,000. At first she sold to neighbours. In 2022 she got her first bulk order.",
+   "after": "The truck was leaving at 6 a.m., and 400 jars of Rekha Devi's mango pickle still had no labels. Three years earlier, she had started with Rs 5,000 and a neighbour's kitchen in Muzaffarpur.",
+   "overuse_signs": [
+    "Every post on a page opens mid-scene, so readers spot the trick",
+    "Time jumps with no marker; the reader cannot tell what happened when",
+    "The opening moment is never returned to",
+    "The opening scene is dramatised beyond what the source said"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/In_medias_res",
+     "title": "In medias res (Wikipedia)",
+     "supports": "narrative opening in the middle of events; Latin phrase from Horace's Ars Poetica"
+    }
+   ],
+   "related": [
+    "hook:in_medias_res_opener",
+    "tech:anecdote_lead",
+    "tech:nut_graf",
+    "tech:conflict_and_stakes",
+    "fw:nut_graf_feature"
+   ]
+  },
+  {
+   "id": "tech:keyword_placement",
+   "kind": "technique",
+   "name": "Natural keyword placement",
+   "status": "current",
+   "level": "piece",
+   "summary": "Find the words your readers actually type and use them where people and Google look first: title, main heading, opening, subheads and link text, always in natural sentences. Google's starter guide says to think about the words a user might search for, and that keyword stuffing is against its spam policies.",
+   "use_for": [
+    "blog posts, service pages and location pages",
+    "product and category pages",
+    "YouTube titles and descriptions",
+    "FAQ pages and help articles",
+    "refreshing an existing page that ranks for the wrong query"
+   ],
+   "avoid": [
+    "Repeating the phrase until it reads badly ('best CA in Jaipur' five times in a paragraph): Google calls excessive repetition tiring for users and keyword stuffing a spam-policy violation. Use it once where it fits and let synonyms and pronouns do the rest.",
+    "Keeping an ungrammatical phrase because 'that is the keyword' ('CA Jaipur best'): write the natural form; search engines match close variants.",
+    "City-swap pages where only the place name changes: write each page from real local detail or do not make it (comp:google_search_spam_policies)."
+   ],
+   "how": [
+    "Before writing, list the phrases this reader would type. Sources: what customers say on calls and in WhatsApp chats, the search box's own suggestions, and Search Console queries for existing pages. Pick one primary phrase and 2-4 variants or questions.",
+    "Decide what the searcher wants from that phrase (tech:search_intent_matching); the phrase sets what the page must answer.",
+    "Put the primary phrase, or its most natural form, in the title tag and the main heading, near the front where it reads well.",
+    "Answer the query in the opening paragraph, using the phrase once.",
+    "Turn variants into subheads phrased the way people ask ('How much does GST registration cost in Jaipur?').",
+    "When other pages link to this one, use descriptive link text that names the topic (tech:anchor_text), not 'click here'.",
+    "Use the reader's vocabulary, including Indian usage and Hinglish if that is how they search ('ITR filing last date', 'CA near me'); do not swap it for industry jargon.",
+    "Read the page aloud. Wherever the phrase repeats where a person would say 'it' or 'this', cut it. Ignore density percentages.",
+    "Skip what does not matter: Google says it does not use the meta keywords tag, that keywords in the domain or URL path alone have hardly any ranking effect, and that there is no magic word count."
+   ],
+   "before": "Best CA in Jaipur for GST registration in Jaipur. Our Jaipur CA firm offers GST registration Jaipur services. Contact the best CA in Jaipur today.",
+   "after": "Need GST registration in Jaipur? Our CA team prepares your application, answers the department's queries and tells you the day your GSTIN is issued.",
+   "overuse_signs": [
+    "The exact phrase in every subhead",
+    "A 'keyword density' target in the brief",
+    "Sentences that only make sense to a search engine",
+    "Synonyms banned because they are 'not the keyword'"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+     "title": "Google Search Central: SEO Starter Guide",
+     "supports": "'Think about the words that a user might search for'; keyword stuffing is against spam policies; Google doesn't use the keywords meta tag; domain/URL keywords alone have hardly any effect; no magical word count (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tech:search_intent_matching",
+    "tech:title_tag_writing",
+    "tech:anchor_text",
+    "tech:topic_coverage",
+    "edit:seo_on_page",
+    "comp:google_search_spam_policies"
+   ]
+  },
+  {
+   "id": "tech:liking_and_unity",
+   "kind": "technique",
+   "name": "Liking and shared identity",
+   "status": "current",
+   "level": "piece",
+   "summary": "Two of Cialdini's seven principles: we say yes more readily to people we like (those similar to us, who compliment us, and who cooperate with us towards shared goals) and to people we see as 'one of us' (unity, shared identity). In copy, show a true, specific similarity, a sincere compliment on something the reader does, and a shared goal; use 'we' only for a group the writer really belongs to.",
+   "use_for": [
+    "founder-led posts, newsletters and About pages",
+    "cold emails and LinkedIn DMs",
+    "community, alumni and association appeals",
+    "creator and influencer captions",
+    "local business copy (same city, same language, same street)"
+   ],
+   "avoid": [
+    "Claiming a shared background the writer does not have ('As fellow farmers...' from a multinational): say who you are and why you understand, or drop the identity line; a false claim can also mislead consumers (comp:asci_code).",
+    "Identity framing that pits groups against each other (region, caste, religion, language): build the group around a shared problem or goal instead.",
+    "Using relatability to replace proof in finance, health or education offers: liking opens the door, evidence must still carry the claim (comp:sebi_finfluencer_association for investment content)."
+   ],
+   "how": [
+    "List what the writer or brand genuinely shares with the reader: city, language, profession, stage of business, a problem lived through. Keep only the true ones.",
+    "Put one specific shared detail early. Specific beats a generic 'I understand you': 'I did the stock register at 11 p.m. in my father's medical store in Patna' instead of 'We know running a business is hard'.",
+    "Name the group in the reader's own label ('CA articleship students', 'first-gen founders', 'Bihar ke UPSC aspirants') and speak as a member only if the writer is one.",
+    "Compliment a real behaviour, not the person in general: 'You already reconcile every month, which most shops skip'.",
+    "Frame the offer as working towards their goal together: 'Let's get your return off your desk before the 20th'.",
+    "Match their register and language mix; a reader who writes in Hinglish gets Hinglish.",
+    "Then give the proof (numbers, testimonials, credentials). Check that the piece would still persuade if the identity lines were removed; if not, the argument is too thin."
+   ],
+   "before": "Our solution is trusted by businesses across India and designed to meet all your needs.",
+   "after": "I grew up behind the counter of my father's medical store in Patna, doing the stock register at 11 p.m. That's why our app works offline, in Hindi, and closes the day's stock in two taps.",
+   "overuse_signs": [
+    "Flattery that sounds like a sales script ('You're clearly a smart investor')",
+    "Personal backstory so long the offer disappears",
+    "'We' and 'us' from a brand that is plainly not one of the readers",
+    "Every post opens with 'As a fellow...'"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "Liking and Unity are two of the seven principles; 'We like people who are similar to us, we like people who pay us compliments, and we like people who cooperate with us ...' (checked 2026-10-04; the page lists Unity without defining it)"
+    }
+   ],
+   "related": [
+    "tech:vulnerability_confession",
+    "tech:you_focus",
+    "tech:social_proof",
+    "tech:voice_of_customer_mining",
+    "comp:asci_code"
+   ]
+  },
+  {
+   "id": "tech:loopable_ending",
+   "kind": "technique",
+   "name": "Loopable ending",
+   "status": "current",
+   "level": "piece",
+   "summary": "In a short video, write the last line so it runs straight back into the first, often by letting the opening line finish the closing one, so an autoplay replay feels like one continuous thought and invites a rewatch. This is a creator craft norm with no primary source on its effect: use it on shorts and reels, and judge it by your own retention data.",
+   "use_for": [
+    "Instagram Reels, YouTube Shorts and other autoplaying short videos under a minute",
+    "single-point explainer reels and myth-busters",
+    "satire and punchline reels where the setup can double as the tag",
+    "silent text-on-screen videos and memes"
+   ],
+   "avoid": [
+    "Long-form videos and podcasts: end on a summary and a clear next step instead.",
+    "Ads that must end with a CTA, offer terms or a disclaimer: keep those; place the loop earlier or skip it.",
+    "Loops that only make sense on the second watch: the first viewing must still be complete and clear."
+   ],
+   "how": [
+    "Draft the script, then write the first line and the last line together, as a pair.",
+    "Choose a bridge. Split sentence: the last line is a lead-in the first line completes. Question and answer: end on the question the opening answers. Visual return: end on the same shot, pose or frame the video opened with.",
+    "Make sure the first line still works as a standalone hook for a new viewer.",
+    "Cut the outro: no 'follow for more', no 'bye', no logo sting after the last line. Put the CTA in the caption, on-screen text mid-video, or a pinned comment.",
+    "Match the audio: no silence at the end, the music or VO carries across the cut, and the last word is delivered as if the sentence continues.",
+    "Read the script aloud three times on repeat; the seam should be hard to hear.",
+    "After publishing, compare the retention graph and average percentage viewed with similar videos that did not loop; YouTube's retention report marks spikes where viewers rewatch. Keep the move only if it helps on this page."
+   ],
+   "before": "Last line: 'To bas itna hi, follow karo aur bye!' (a dead stop after the opening line 'Ye ek galti tumhara CIBIL score gira rahi hai.')",
+   "after": "Last line: 'Aur isliye main baar baar bolta hoon...' which runs straight into the opening line on replay: 'Ye ek galti tumhara CIBIL score gira rahi hai.'",
+   "overuse_signs": [
+    "Every reel on the page loops, so the trick is obvious",
+    "The client's CTA dropped entirely to protect the loop",
+    "An ending that sounds like an editing error rather than a lead-in",
+    "The loop forces an unnatural first line"
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9314415",
+     "title": "YouTube Help: Measure key moments for audience retention",
+     "supports": "the retention report shows where viewers rewatch, skip or leave (used here only to measure the effect; it does not describe loops)"
+    }
+   ],
+   "related": [
+    "fw:shorts_loop",
+    "fw:hook_retain_reward",
+    "tech:callback",
+    "tech:write_for_voiceover",
+    "trend:short_video_india"
+   ]
+  },
+  {
+   "id": "tech:loss_aversion_framing",
+   "kind": "technique",
+   "name": "Loss-aversion framing",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "Losses loom larger than equivalent gains (loss aversion), and the same facts framed as a loss or as a gain change people's choices (the framing effect, shown in Tversky and Kahneman's work). In copy, state the concrete, verified cost the reader keeps paying by not acting, next to the gain and a way out, without exaggeration or fear-mongering.",
+   "use_for": [
+    "sales pages and emails for tools that remove an ongoing cost (late fees, manual hours, lost leads)",
+    "subject lines and headlines to test against a gain-framed version",
+    "public-interest messaging (missed scheme benefits, unclaimed refunds)",
+    "renewal and win-back emails ('what you lose access to')",
+    "B2B proposals with a cost-of-inaction section"
+   ],
+   "avoid": [
+    "Inflated or unverifiable losses ('You're losing lakhs every month!'): show the calculation from the reader's own numbers, or describe the loss without a figure; misleading claims fall under comp:ccpa_misleading_ads_2022.",
+    "Fake deadlines and countdowns to make the loss feel urgent: false urgency is a listed dark pattern (comp:ccpa_dark_patterns_2023). Use a real deadline (tech:ethical_urgency) or none.",
+    "Readers already frightened (a diagnosis, debt, exam results): lead with the gain and support; a loss frame there reads as exploitation."
+   ],
+   "how": [
+    "Find the ongoing cost of the status quo in the reader's terms: money, hours, customers, marks, sleep, per week, month or year.",
+    "Verify the number from client data or the reader's own inputs, and show the arithmetic ('6 hours a week is about 300 hours a year'). No verified number, no number.",
+    "Write the loss as something happening now, not a hypothetical: 'Every month you file late, you pay...'.",
+    "Prefer stop/keep verbs over save/gain where it reads naturally: 'Stop paying Rs 1,800 a month in late fees' rather than 'Save Rs 1,800'.",
+    "Follow the loss with the gain and the way out in the next line. Never end a section on the loss.",
+    "Use one loss frame per piece, at the decision point (headline or just before the CTA), not in every paragraph.",
+    "Test it: run the loss frame against a gain frame on subject lines or ad headlines (edit:ab_test_copy); the loss version does not always win."
+   ],
+   "before": "Switch to our billing software and save time on invoicing.",
+   "after": "Right now you spend about 6 hours a week typing invoices by hand. That's roughly 300 hours a year you never get back. Our billing software brings it under an hour a week.",
+   "overuse_signs": [
+    "Every line is a threat; the copy reads like a warning notice",
+    "Losses stated without any way out",
+    "Round, dramatic numbers with no working shown",
+    "Health, child-safety or money fears used to sell something unrelated"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Loss_aversion",
+     "title": "Loss aversion (Wikipedia)",
+     "supports": "losses loom larger than equivalent gains"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+     "title": "Framing effect (psychology) (Wikipedia)",
+     "supports": "same facts framed as loss vs gain change choices (Tversky and Kahneman)"
+    }
+   ],
+   "related": [
+    "hook:negative_loss_framed",
+    "tech:pain_agitation",
+    "tech:ethical_urgency",
+    "tech:specificity",
+    "comp:ccpa_dark_patterns_2023"
+   ]
+  },
+  {
+   "id": "tech:meta_description_writing",
+   "kind": "technique",
+   "name": "Meta description writing",
+   "status": "current",
+   "level": "line",
+   "summary": "A meta description is a unique, specific summary of one page that Google may show as the search snippet when it describes the page better than on-page text; otherwise Google builds the snippet from the page. Google sets no length limit but truncates to fit the device, so put the decisive facts first.",
+   "use_for": [
+    "service, product and category pages",
+    "blog posts and explainers",
+    "home and About pages",
+    "programmatic templates for large catalogues",
+    "Shopify and CMS SEO fields"
+   ],
+   "avoid": [
+    "One description reused across the site or swapped only by city: Google says identical or similar descriptions are not helpful; write one per page or generate from each page's own data.",
+    "Keyword strings ('GST registration, GST Jaipur, GST consultant'): Google says these are less likely to be shown; write a sentence.",
+    "Promising what the page does not deliver: Google may ignore it and use page text, and readers who click bounce."
+   ],
+   "how": [
+    "Read the page and the query it targets. Write one description for that URL only.",
+    "Open with what the searcher gets, in the words they search with: the answer, the service, the product.",
+    "Add the specifics that decide the click. Google's own examples: author, date or byline for articles; price, age, manufacturer for products. For services: location, turnaround, fixed fee.",
+    "Front-load: the most important facts in the first part, because the snippet is cut to fit the device width. Use your SEO tool's preview to see where it cuts; treat any character count as a preview aid, not a rule.",
+    "Write in complete, plain sentences; one or two is enough. End with a reason to click, not 'Click here'.",
+    "Match the page's language: a Hindi page gets a Hindi description.",
+    "For large catalogues, build a template that pulls each product's real fields (name, material, price, delivery area); Google encourages programmatic descriptions for large database-driven sites.",
+    "After publishing, search for the page; if Google shows page text instead, check whether your description matches the query and the page."
+   ],
+   "before": "Welcome to our website. We offer the best services at affordable prices. Contact us for more information.",
+   "after": "GST registration in Jaipur for shops and online sellers: a CA prepares and files your application, handles the department's queries and updates you on WhatsApp. Fixed fee, quoted upfront.",
+   "overuse_signs": [
+    "Hours polishing descriptions for pages that get no search traffic",
+    "Every description ends with the same slogan",
+    "Descriptions written to a strict character count and cut mid-thought",
+    "Click-bait phrasing the page does not support"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/snippet",
+     "title": "Google Search Central: Control your snippets in search results",
+     "supports": "no length limit but truncated to device width; identical descriptions unhelpful; Google sometimes uses the meta description over page content; include author/date or price/manufacturer; keyword strings less likely shown; programmatic generation encouraged for large sites (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tech:title_tag_writing",
+    "tech:front_loading",
+    "tech:search_intent_matching",
+    "tech:keyword_placement",
+    "plat:google_search_result",
+    "edit:seo_on_page"
+   ]
+  },
+  {
+   "id": "tech:metaphor_analogy",
+   "kind": "technique",
+   "name": "Metaphor and analogy",
+   "status": "current",
+   "level": "line",
+   "summary": "Explain something unfamiliar by mapping it onto something the reader already knows, transferring one clear feature, then state the literal point so the comparison never carries the meaning alone. Good analogies are drawn from the reader's daily life and stop before they break.",
+   "use_for": [
+    "finance, tax, insurance and legal explainers for non-experts",
+    "tech and SaaS product explanations",
+    "government scheme and policy explainers",
+    "reel and YouTube scripts that must land an idea in one line",
+    "pitch decks and founder talks"
+   ],
+   "avoid": [
+    "Analogies that change the facts, especially in finance ('as safe as an FD' for a market-linked product): that is a misleading claim, not a comparison; describe the risk literally.",
+    "Analogies for ideas the reader already understands: they slow experts down; use plain language instead.",
+    "Mixed metaphors in one paragraph ('a roadmap that is the backbone of our ecosystem'): pick one image and keep it.",
+    "Stock images ('game-changer', 'tip of the iceberg'): they explain nothing; run edit:cliche_pass."
+   ],
+   "how": [
+    "Write the literal idea in one sentence first: 'Diversification means spreading your money across different kinds of investments'.",
+    "Name the reader and what they handle every day: a tiffin, cricket, a local train, a joint family, a phone battery, a ration card.",
+    "Pick the one feature you need to transfer (here: one failure does not spoil everything).",
+    "Choose a source where that feature is obvious, and write the mapping in one line.",
+    "Follow it with the literal point in plain words, so a reader who misses the image still gets the idea.",
+    "Find where the analogy breaks and stop before that point; do not extend it to features that do not match.",
+    "Use one analogy per idea. If a second one is needed, the first did not work: replace it.",
+    "Use references this audience shares; an Indian reader gets dabbas and cricket, not baseball."
+   ],
+   "before": "Diversification reduces unsystematic risk by spreading exposure across uncorrelated assets.",
+   "after": "Think of your money as a four-compartment tiffin: if the sabzi spills, you still have roti, dal and rice. Spread your savings across different kinds of investments so one bad one doesn't spoil the whole meal.",
+   "overuse_signs": [
+    "An analogy in every paragraph",
+    "An extended metaphor running for half the page",
+    "The literal explanation missing, so the image has to do all the work",
+    "Clichéd comparisons the reader has heard a hundred times"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Metaphor",
+     "title": "Metaphor (Wikipedia)",
+     "supports": "definition of the device"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Analogy",
+     "title": "Analogy (Wikipedia)",
+     "supports": "transfer of meaning from a known source to a target"
+    }
+   ],
+   "related": [
+    "fw:feynman_technique",
+    "tech:curse_of_knowledge_fix",
+    "tech:show_dont_tell",
+    "tech:concrete_nouns_strong_verbs",
+    "edit:cliche_pass"
+   ]
+  },
+  {
+   "id": "tech:micro_yes_commitment",
+   "kind": "technique",
+   "name": "Micro-yes ladder (commitment and consistency)",
+   "status": "current",
+   "level": "piece",
+   "summary": "Ask for a small, easy agreement first (a one-word reply, a quiz answer, a free first step) so the bigger ask feels consistent with what the reader has already said or done. Cialdini: consistency is activated by asking for small initial commitments; the classic evidence is Freedman and Fraser's foot-in-the-door studies.",
+   "use_for": [
+    "WhatsApp and email nurture sequences ('Reply 1 or 2')",
+    "quiz funnels and lead magnets before a paid offer",
+    "cold outreach that asks a question before asking for a call",
+    "onboarding flows (one setup step before the upgrade prompt)",
+    "webinar and event registration sequences"
+   ],
+   "avoid": [
+    "Chains of obvious yes-questions ('Do you want more customers? Do you want to save time?'): readers recognise the script; ask one real question whose answer you will use.",
+    "A small ask unrelated to the big one (a contest entry used to sell insurance): it is bait and the consistency effect does not carry over.",
+    "Trick commitments such as pre-ticked boxes or a 'free' step that silently starts a subscription: these are dark patterns (comp:ccpa_dark_patterns_2023)."
+   ],
+   "how": [
+    "Write down the big ask: buy, book a call, upgrade, donate.",
+    "Work backwards to the smallest action that is a genuine step towards it and costs nothing: reply with one word, answer one question, pick an option, take a 2-minute quiz, download a checklist.",
+    "Make the small ask effortless: one tap or one word, no form. 'Reply YES', 'Reply 1 for Hindi, 2 for English'.",
+    "Prefer an action the reader takes (a reply, a choice, a comment) over a passive nod.",
+    "Use the answer in the next message and link the big ask to it: 'You said late payments are the biggest problem. Here is the 15-minute call where we fix that.'",
+    "Keep the ladder short: one or two small steps, then the real ask. Each extra step loses people.",
+    "Make it easy to say no at every step; a reader who feels trapped stops replying."
+   ],
+   "before": "Book a 30-minute demo of our clinic management software today.",
+   "after": "Quick question, doctor: on a busy day, how many patients does your clinic see? Just reply with a number. (Next message: 'Clinics at that size tell us billing eats their evenings. Want me to show you a 15-minute fix on a call this week?')",
+   "overuse_signs": [
+    "Five 'yes' questions before any information",
+    "The reader's answer is ignored in the follow-up",
+    "Every message ends with a micro-ask, so nothing is ever delivered",
+    "Steps that exist only to raise engagement numbers"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "'Consistency is activated by looking for, and asking for, small initial commitments' (checked 2026-10-04)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Foot-in-the-door_technique",
+     "title": "Foot-in-the-door technique (Wikipedia)",
+     "supports": "small request first raises compliance with a larger one (Freedman and Fraser)"
+    }
+   ],
+   "related": [
+    "tech:cta_writing",
+    "tech:reciprocity",
+    "tech:rhetorical_question",
+    "hook:can_you_spot",
+    "comp:ccpa_dark_patterns_2023"
+   ]
+  },
+  {
+   "id": "tech:mobile_line_breaks",
+   "kind": "technique",
+   "name": "Line breaks for mobile reading",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "On a phone, a five-line paragraph becomes a wall. Break captions, emails and posts into short paragraphs of one idea each, with white space between, so the reader can scan and keep their place. NN/g's research found difficult content suffers most on small screens, so simplify the content too, not just the breaks.",
+   "use_for": [
+    "Instagram, LinkedIn and Facebook captions",
+    "marketing and newsletter emails read on phones",
+    "WhatsApp broadcasts and community messages",
+    "mobile landing pages and app screens",
+    "blog posts with mostly mobile traffic"
+   ],
+   "avoid": [
+    "Every sentence on its own line ('broetry'): the rhythm becomes monotonous and emphasis disappears; group related sentences.",
+    "Breaking mid-clause for drama: break where the idea changes.",
+    "Applying caption spacing to PDFs, reports and long documents read on desktop: use normal paragraphs with subheads (tech:descriptive_subheads)."
+   ],
+   "how": [
+    "Write the draft normally, then preview it at phone width: on your phone, or a browser window narrowed to phone size.",
+    "Break wherever the idea changes. One idea per paragraph (tech:one_sentence_paragraphs).",
+    "Keep most paragraphs to 1-3 sentences, so none fills more than about four lines on a phone.",
+    "Make the first line a complete hook; on platforms that truncate, it is all the reader sees before tapping (tech:first_line_above_fold).",
+    "Leave a blank line between paragraphs, and check the target app keeps it (see that platform's plat: card).",
+    "Turn any run of 3 or more items into one item per line (numbers, or emoji bullets where the platform shows them).",
+    "Simplify hard content (terms, eligibility, prices) as well as spacing it: shorter sentences, fewer conditions.",
+    "Scroll the preview once: if you need more than three thumb-scrolls to reach the CTA, cut words, not spacing."
+   ],
+   "before": "We are excited to announce that our Diwali collection is now live with 40 new handloom sarees from Bhagalpur and Chanderi weavers and every order above Rs 2,000 ships free across India till 5 November so explore the collection today using the link in bio.",
+   "after": "Our Diwali collection is live. 🪔\n\n40 new handloom sarees from Bhagalpur and Chanderi weavers.\n\nFree shipping across India on orders above Rs 2,000, till 5 November.\n\nShop now: link in bio.",
+   "overuse_signs": [
+    "A caption that is all single-sentence lines",
+    "An email so airy it takes five scrolls to reach the point",
+    "Lists broken into lines inside a sentence",
+    "Desktop documents formatted like Instagram captions"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/mobile-content/",
+     "title": "NN/g: Reading Content on Mobile Devices",
+     "supports": "comprehension research on small screens; difficult content suffers most on mobile"
+    }
+   ],
+   "related": [
+    "tech:one_sentence_paragraphs",
+    "tech:first_line_above_fold",
+    "tech:native_formatting",
+    "tech:chunking",
+    "plat:instagram_caption",
+    "plat:linkedin_post"
+   ]
+  },
+  {
+   "id": "tech:native_formatting",
+   "kind": "technique",
+   "name": "Native formatting per platform",
+   "status": "current",
+   "level": "piece",
+   "summary": "Every platform renders text differently: some show markdown symbols literally, some make links unclickable, some cut the text after a line or two. Rebuild the piece in each platform's native form (breaks, lists, links, mentions, hashtags, opening line) instead of pasting one version everywhere. What each surface renders is in its plat: card's formatting field.",
+   "use_for": [
+    "repurposing a blog post or newsletter into social posts",
+    "one announcement going to LinkedIn, Instagram, X and WhatsApp",
+    "client copy drafted in Google Docs or a chat tool and pasted into apps",
+    "WhatsApp broadcasts and Telegram channel posts",
+    "content calendars with one master message per day"
+   ],
+   "avoid": [
+    "Pasting markdown (**bold**, ## headings, [text](link)) into apps that show it literally: strip it and use line breaks and plain words.",
+    "Unicode 'fancy font' generators for bold or italic on LinkedIn or Instagram: they are different characters, which search and screen readers may not read as normal words; use line breaks and word choice for emphasis.",
+    "Making every platform look identical: resize is not repurpose; rewrite the opening, the length and the CTA for each."
+   ],
+   "how": [
+    "Before writing, open the plat: card for each target surface and note: line breaks kept or collapsed, bold/italic support, clickable links or not, hashtag and mention behaviour, emoji, and where the text truncates.",
+    "Write the master message once: the point, the proof, the CTA.",
+    "For each platform, rewrite the first line for its truncation point and its audience.",
+    "Strip what will show literally (markdown symbols, HTML, smart bullets copied from a doc) and replace it with that platform's own conventions; WhatsApp, for example, has its own formatting syntax (see plat:whatsapp_message).",
+    "Place links where they work: in the text where they are clickable, otherwise in the bio, first comment or link sticker, and say where in the copy.",
+    "Rebuild structure, do not just cut: a LinkedIn post becomes an X thread with one idea per post (fw:thread_structure); a 900-word blog becomes a 3-line WhatsApp message with one link.",
+    "Place hashtags and mentions by the platform's norm (tech:hashtag_strategy).",
+    "Paste into the real app as a draft or test send and look at it on a phone before handing it to the client."
+   ],
+   "before": "**Big news!** Our new [GST checklist](https://example.com/gst) is out. ## What's inside (pasted unchanged into an Instagram caption)",
+   "after": "Big news: our free GST checklist is out.\n\nWhat's inside:\n✅ Documents to keep ready\n✅ The dates you can't miss\n✅ What to do if a notice arrives\n\nGet it free: link in bio.",
+   "overuse_signs": [
+    "Emoji bullets in a law firm's LinkedIn post or a formal email",
+    "Unicode bold and italic fonts throughout a caption",
+    "Hours spent tailoring copy for platforms the client does not use",
+    "The same CTA ('link in bio') on platforms where links are clickable"
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/mobile-content/",
+     "title": "NN/g: Reading Content on Mobile Devices",
+     "supports": "how text reads on small screens (context only; the per-platform rendering rules live in the plat: cards)"
+    }
+   ],
+   "related": [
+    "tech:mobile_line_breaks",
+    "tech:hashtag_strategy",
+    "fw:thread_structure",
+    "plat:whatsapp_message",
+    "plat:instagram_caption",
+    "plat:linkedin_post"
+   ]
+  },
+  {
+   "id": "tech:numerals",
+   "kind": "technique",
+   "name": "Numbers as numerals (for reading)",
+   "status": "current",
+   "level": "line",
+   "summary": "On screen, write numbers as numerals so scanning eyes catch them: GOV.UK writes all numbers in numerals, including 2 to 9, except in common expressions like 'one or two of them'. In scripts for the ear, write numbers the way they are spoken; broadcast style spells out small numbers and rounds large ones. House styles differ (AP spells out one to nine), and the client's style guide always wins.",
+   "use_for": [
+    "web pages, app screens and help content",
+    "email subject lines and bodies",
+    "social captions, carousels and slide text",
+    "ads and landing pages with prices and offers",
+    "voice-over and TTS scripts (spoken form)"
+   ],
+   "avoid": [
+    "Numerals in a VO or TTS script ('1,200+', 'Rs 2.5L'): the artist or engine may read them wrongly; write them as spoken ('twelve hundred plus', 'dhai lakh rupaye').",
+    "Mixing number systems in one piece (lakh in one line, million in the next): pick the reader's system and convert the rest.",
+    "Digits inside idioms ('1 of a kind', 'on cloud 9'): keep common expressions in words."
+   ],
+   "how": [
+    "Check whether the client has a style guide (AP, Chicago, GOV.UK, a house sheet). If it does, follow it and stop here.",
+    "In screen copy, use numerals for counts, prices, percentages, times and dates: '3 steps', 'Rs 499', '40%', '7 days'.",
+    "Keep words for common expressions where digits would look odd: 'one or two', 'a hundred reasons'.",
+    "Rephrase sentences so they do not start with a digit ('In 2025, 34 firms...' rather than '34 firms in 2025...'), or follow the house rule for spelling it out.",
+    "For Indian readers, pick one money style and use it throughout: 'Rs 2.5 lakh' or 'Rs 2,50,000', 'Rs 1,200 crore'. For global readers, give the international form or a conversion with its date.",
+    "Keep units and ranges consistent: '5 km', '10 kg', '5 to 7 days' in running text.",
+    "In scripts for the ear, write numbers exactly as the speaker will say them, and round big ones ('nearly 12 lakh', not '11,87,342'): a listener cannot re-read.",
+    "Log the choices in the project style sheet (edit:style_sheet) so every piece in the series matches."
+   ],
+   "before": "Our team of thirty-five experts has helped over twelve hundred businesses file their returns in less than seven days.",
+   "after": "Our 35 experts have helped 1,200+ businesses file returns in under 7 days.",
+   "overuse_signs": [
+    "A VO script full of digits, symbols and abbreviations",
+    "False precision in a caption ('43.27% of founders')",
+    "Numerals forced into idioms and brand lines",
+    "Numerals used against a client's house style that spells out one to nine"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+     "title": "GOV.UK A to Z style guide",
+     "supports": "write all other numbers in numerals (including 2 to 9) except in common expressions"
+    },
+    {
+     "url": "https://ask.ifas.ufl.edu/publication/WC193",
+     "title": "UF/IFAS EDIS WC193: News Writing for Television and Radio",
+     "supports": "broadcast number style differs: spell out small numbers and round large ones"
+    }
+   ],
+   "related": [
+    "lang:india_locale_formats",
+    "lang:hindi_voiceover_tts",
+    "tech:write_for_voiceover",
+    "edit:style_sheet",
+    "edit:style_ap"
+   ]
+  },
+  {
+   "id": "tech:nut_graf",
+   "kind": "technique",
+   "name": "Nut graf",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "After a feature-style opening (a scene, an anecdote, a quote), the nut graf is the paragraph that tells the reader what the story is really about and why it matters now. It bridges the one example to the bigger point, and it comes early, before the reader wonders why they are still reading.",
+   "use_for": [
+    "magazine and newspaper features",
+    "long-form brand blog posts that open with a story",
+    "case studies that open on a customer moment",
+    "newsletter essays and LinkedIn long posts",
+    "documentary and explainer video scripts after the cold open"
+   ],
+   "avoid": [
+    "Hard news that already leads with the news: the lede does the nut graf's job (fw:inverted_pyramid).",
+    "A vague nut graf ('This is a story about resilience'): state the specific trend, change or stakes.",
+    "Burying it below the first screen: if the reader scrolls past the opening without knowing the point, move it up."
+   ],
+   "how": [
+    "Write the opening scene or anecdote first (tech:anecdote_lead, tech:in_medias_res).",
+    "Answer four questions in one paragraph: what is this story really about, why now (the news peg: a rule, a data release, an event), why should this reader care, and what will the piece show.",
+    "Connect the opening person to the bigger group: 'She is one of many...', with any number sourced.",
+    "Place it right after the opening, usually within the first few paragraphs.",
+    "Keep it to 2-4 sentences: a signpost, not a summary of everything.",
+    "Test it: an editor should be able to write the headline from the nut graf alone.",
+    "Do not restate it word for word as the ending; the ending should move past it."
+   ],
+   "before": "(After an opening scene about a pickle maker in Muzaffarpur:) Rekha has many dreams. She wants to grow her business. She works very hard every day.",
+   "after": "(After the same opening:) Rekha is one of many home-food sellers in Bihar who now sell online. For most of them the hurdle is no longer demand but paperwork: food-safety registration, labels and GST. This is how three of them cleared it.",
+   "overuse_signs": [
+    "A nut graf on a 150-word social post",
+    "The nut graf arrives in paragraph nine",
+    "The nut graf promises more than the piece delivers",
+    "Every feature uses the same 'X is one of many' sentence shape"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nut_graph",
+     "title": "Nut graph (Wikipedia)",
+     "supports": "paragraph explaining the news value of a feature"
+    }
+   ],
+   "related": [
+    "fw:nut_graf_feature",
+    "tech:anecdote_lead",
+    "tech:in_medias_res",
+    "tech:so_what_test",
+    "fw:inverted_pyramid"
+   ]
+  },
+  {
+   "id": "tech:objection_handling",
+   "kind": "technique",
+   "name": "Objection handling in copy",
+   "status": "current",
+   "level": "piece",
+   "summary": "List the reader's real reasons not to act (price, trust, time, effort, 'not for someone like me', switching cost) from customer research, and answer each one where it arises: beside the claim that triggers it, in an FAQ, through a guarantee, or with an 'even if' line (Copyhackers' pattern: promise + 'even if' + the objection). Joanna Wiebe's landing-page method works backwards from the goal through the objections and anxieties that block it.",
+   "use_for": [
+    "sales and landing pages",
+    "course, coaching and SaaS pricing pages",
+    "email sequences before a launch or cart close",
+    "proposals and pitch decks",
+    "reel and VSL scripts with a 'but what if...' section"
+   ],
+   "avoid": [
+    "Answering objections nobody has: it plants doubts; use only the ones from VOC (tech:voice_of_customer_mining).",
+    "Reassurance without proof ('Don't worry, it's easy!'): answer with a number, a testimonial from someone who had that doubt, a demo or a policy.",
+    "Guarantees with hidden conditions: a misleading guarantee is a misleading ad (comp:ccpa_misleading_ads_2022); state the terms plainly or do not offer one."
+   ],
+   "how": [
+    "Collect objections in the customer's own words: sales-call notes, WhatsApp enquiries, refund reasons, support tickets, reviews of competitors.",
+    "Rank them by how often they stop a sale; keep the top 3-5.",
+    "Map each to the spot on the page where it arises: price doubt beside the price, 'will it work for my business type' beside the main claim, 'what if I don't like it' beside the CTA.",
+    "Answer each with evidence: a specific number, a testimonial from a customer who had that exact worry (tech:testimonial_placement), a short demo, or a clear policy.",
+    "Write one 'even if' line for the biggest objection and use it high on the page: '[Promise], even if [objection].'",
+    "Put the remaining questions in an FAQ phrased the way customers ask them (tech:faq_block).",
+    "Near the CTA, add the true anxiety reducers: refund terms, 'no card needed', 'cancel any time', who to call.",
+    "Re-read as the most sceptical buyer; any 'yes, but...' left unanswered is the next fix."
+   ],
+   "before": "Our accounting course is perfect for everyone. Enrol now!",
+   "after": "File GST returns for your own shop in four weekends, even if you failed maths in Class 10. Classes are in Hindi, recordings stay with you for a year, and if you can't file your first return by week six, we refund the full fee.",
+   "overuse_signs": [
+    "A 30-question FAQ answering things nobody asked",
+    "A defensive tone that makes the product sound risky",
+    "Every paragraph starts with 'You might be thinking...'",
+    "Guarantee wording the client has not approved"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://copyhackers.com/3-essential-copy-techniques/",
+     "title": "Copyhackers: The 3 essential copywriting techniques",
+     "supports": "'even if' technique: promise + 'even if' + the objection"
+    },
+    {
+     "url": "https://unbounce.com/photos/The-Conversion-Marketers-Guide-To-LandingPage-Copywriting.pdf",
+     "title": "Joanna Wiebe: The Conversion Marketer's Guide to Landing Page Copywriting (Unbounce)",
+     "supports": "work backward from the goal through the objections and anxieties that block conversion"
+    }
+   ],
+   "related": [
+    "tech:voice_of_customer_mining",
+    "tech:risk_reversal",
+    "tech:faq_block",
+    "tech:testimonial_placement",
+    "hook:objection_removal"
+   ]
+  },
+  {
+   "id": "tech:one_reader_rule",
+   "kind": "technique",
+   "name": "Write to one reader",
+   "status": "current",
+   "level": "piece",
+   "summary": "Picture one specific person (their job, their situation, what they already know) and write to them as 'you', the way you would explain it across a table, not to 'an audience', 'users' or 'customers'. GOV.UK tells writers to address the user directly as 'you'. This card is about the imagined reader shaping the whole piece; tech:you_focus covers second-person phrasing line by line.",
+   "use_for": [
+    "sales emails, newsletters and landing pages",
+    "reel and YouTube scripts (talk to one viewer, not 'guys')",
+    "help content and onboarding",
+    "founder posts and LinkedIn writing",
+    "government and civic explainers"
+   ],
+   "avoid": [
+    "Writing to the client (the person paying for the copy) instead of their customer: the reader note names the customer.",
+    "A persona so narrow it shuts out the rest of the audience (age, gender, city details the copy does not need): keep the details that change what you write.",
+    "Contracts, T&Cs and formal notices with house rules for third person: follow the document's convention."
+   ],
+   "how": [
+    "Before drafting, write a two-line reader note at the top of the doc, built from customer research, not imagination: 'Sunita, 34, runs a three-chair salon in Nagpur, does her accounts on WhatsApp, has never heard the term ITC.'",
+    "Draft every line as if replying to a message from that person. Use 'you' and 'your'.",
+    "Search the draft for 'users', 'customers', 'people', 'businesses', 'one' and replace with 'you' or 'your shop' wherever the sentence is about the reader.",
+    "Check every term against the note: would she say this word? If not, replace or define it.",
+    "Cut sections she does not need, even if some other reader might.",
+    "Read it aloud picturing her face; wherever she would frown or switch off, rewrite.",
+    "For a broadcast to thousands, still pick one representative reader from the core segment and write to that person."
+   ],
+   "before": "Our platform enables small businesses to streamline their invoicing processes and improve cash flow.",
+   "after": "You finish a haircut, tap 'Send bill' on WhatsApp, and your customer pays by UPI before she's out of the chair.",
+   "overuse_signs": [
+    "Fake intimacy ('Hey bestie!') from a bank or a law firm",
+    "'You' used to scold in every line ('You're doing it all wrong')",
+    "Several named readers in one piece, so the voice keeps shifting",
+    "Persona details pasted into the copy itself"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/right-tone/",
+     "title": "GOV.UK: Use the right tone",
+     "supports": "address the user directly as 'you'"
+    },
+    {
+     "url": "https://expresswriters.com/copywriting-advice/",
+     "title": "Express Writers: 57 pieces of copywriting advice",
+     "supports": "'write to one person, not a million', attributed to Fairfax M. Cone (secondary, low confidence; do not quote the attribution in client copy)"
+    }
+   ],
+   "related": [
+    "tech:you_focus",
+    "tech:voice_of_customer_mining",
+    "tech:curse_of_knowledge_fix",
+    "tech:contractions",
+    "edit:style_gov_uk"
+   ]
+  },
+  {
+   "id": "tech:one_sentence_paragraphs",
+   "kind": "technique",
+   "name": "One-idea and one-sentence paragraphs",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "Keep one idea per paragraph (NN/g observed it helps web readers; Strunk's rule 8: one paragraph to each topic), and use an occasional one-sentence paragraph for emphasis or a turn. The one-liner works because the paragraphs around it are longer; a page made only of one-liners loses the emphasis it was after.",
+   "use_for": [
+    "web articles and blog posts",
+    "emails and newsletters",
+    "LinkedIn posts and long captions",
+    "sales pages (the turn before the offer)",
+    "op-eds and essays"
+   ],
+   "avoid": [
+    "LinkedIn 'broetry', every line its own paragraph: group related sentences and keep one-liners for 1-3 moments.",
+    "Filler one-liners ('Let that sink in.', 'Read that again.'): a one-line paragraph must carry a real point.",
+    "Academic, legal and report writing where one-line paragraphs look unfinished: keep full paragraphs, still one idea each."
+   ],
+   "how": [
+    "After drafting, write each paragraph's idea in 3-5 words in the margin.",
+    "A paragraph with two labels: split it. Two neighbours with the same label: merge them.",
+    "Keep web and email paragraphs to about 1-4 sentences; longer is fine in reports and essays as long as it is still one idea.",
+    "Choose 1-3 moments for a one-sentence paragraph: the turn ('Then the supplier went bankrupt.'), the key claim, the punchline, the ask.",
+    "Make each one-liner short and concrete, and place it after a longer paragraph so the contrast does the work.",
+    "Never stack more than two one-liners in a row.",
+    "Skim the first line of every paragraph in order; it should read as the piece's argument (tech:paragraph_inverted_pyramid)."
+   ],
+   "before": "We moved our warehouse from Bhiwandi to Nashik in March, which cut rent by a third, and we also launched a Marathi website and delivery times improved, but then our main supplier went bankrupt and we had two weeks to find a new one before orders stopped.",
+   "after": "In March we moved our warehouse from Bhiwandi to Nashik and cut rent by a third. The same month we launched a Marathi website, and delivery times improved.\n\nThen our main supplier went bankrupt.\n\nWe had two weeks to find a new one before orders stopped.",
+   "overuse_signs": [
+    "Every paragraph is one line",
+    "One-liners that restate the previous paragraph",
+    "Emphasis lines every other paragraph, so nothing stands out",
+    "Paragraphs chopped mid-argument to look 'skimmable'"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/",
+     "title": "NN/g: Concise, Scannable, and Objective: How to Write for the Web",
+     "supports": "the 'one idea per paragraph' rule observed in user testing"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 8: make the paragraph the unit of composition: one paragraph to each topic (checked against the Gutenberg text 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tech:mobile_line_breaks",
+    "tech:paragraph_inverted_pyramid",
+    "tech:sentence_rhythm",
+    "tech:chunking",
+    "edit:reverse_outline"
+   ]
+  },
+  {
+   "id": "tech:onscreen_text_vs_vo",
+   "kind": "technique",
+   "name": "On-screen text vs voice-over split",
+   "status": "current",
+   "level": "piece",
+   "summary": "Do not put the whole voice-over on screen as titles. Mayer's redundancy principle: people learn better from graphics plus narration than from graphics plus narration plus the same printed text, though short on-screen labels can help. Let on-screen text carry the keyword, number, name or step that supports what is being said. Captions for muted viewing are a separate layer (tech:captions_subtitles).",
+   "use_for": [
+    "explainer reels and YouTube videos",
+    "training, e-learning and product demo videos",
+    "ads with a voice-over",
+    "slide narration and webinar recordings",
+    "news and civic explainer videos"
+   ],
+   "avoid": [
+    "Dropping on-screen text entirely: viewers watching muted are lost; keep captions plus key labels.",
+    "Labels that say something different from the VO at the same moment: the viewer has to choose which to follow; make the label a short form of the spoken point.",
+    "Placing supers over faces or on top of burned-in captions: put them in clear space."
+   ],
+   "how": [
+    "Write the VO script first, for the ear (tech:write_for_voiceover).",
+    "For each VO line, mark the one thing the viewer must remember: a number, a name, a term, a step. That becomes the on-screen text, usually 1-5 words.",
+    "Time each label to appear as the word is spoken.",
+    "Use on-screen text for what the voice does badly: exact figures, spellings, URLs, codes, legal lines.",
+    "If captions are burned in, keep supers to short labels in a different position and style, so the two layers do not compete.",
+    "Hold each label long enough for a slow reader to finish it; check by reading it aloud while the clip plays.",
+    "Watch the cut once muted and once eyes-closed: muted, captions plus labels should tell the story; eyes closed, the VO alone should.",
+    "For Hindi or Hinglish audiences, keep the script of the labels (Devanagari or Roman) consistent with the captions."
+   ],
+   "before": "VO: 'Open the app, tap Pay, then scan the shop's QR code.' On screen: the full sentence as a big title, word for word, stacked above the burned-in captions.",
+   "after": "VO: 'Open the app, tap Pay, then scan the shop's QR code.' On screen: one label, 'Tap Pay → Scan QR', timed to the word 'Pay', with the captions at the bottom.",
+   "overuse_signs": [
+    "Every VO sentence also appears as a title",
+    "Labels so terse they mean nothing without sound",
+    "Three text layers at once (title, label, captions)",
+    "Animated text effects that make labels slower to read"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.devlinpeck.com/content/mayers-principles-of-multimedia-learning",
+     "title": "Devlin Peck: Mayer's principles of multimedia learning",
+     "supports": "redundancy principle: graphics + narration beat graphics + narration + identical text; short labels can help"
+    },
+    {
+     "url": "https://www.researchgate.net/publication/232540768_Revising_the_Redundancy_Principle_in_Multimedia_Learning",
+     "title": "Revising the Redundancy Principle in Multimedia Learning (paper)",
+     "supports": "short redundant on-screen phrases can aid retention [403 to scripted fetch; URL seen in search results 2026-10-04]"
+    }
+   ],
+   "related": [
+    "tech:captions_subtitles",
+    "tech:write_for_voiceover",
+    "tech:numerals",
+    "lang:hindi_subtitles",
+    "trend:short_video_india"
+   ]
+  },
+  {
+   "id": "tech:open_loop",
+   "kind": "technique",
+   "name": "Open loop",
+   "status": "current",
+   "level": "piece",
+   "summary": "Raise a question or promise early and close it later, so the unfinished thread keeps the reader or viewer going. The psychology usually cited is the Zeigarnik effect (interrupted tasks are remembered better); its use for reading retention is a marketing extension of that memory research. Every loop opened must close, with a payoff at least as good as the tease.",
+   "use_for": [
+    "YouTube and reel scripts (tease the best point, deliver it later)",
+    "long emails and newsletters",
+    "listicles where the best item comes last",
+    "sales pages and VSLs",
+    "story-led LinkedIn posts and threads"
+   ],
+   "avoid": [
+    "Loops that never close or close with a weak payoff: that is bait; viewers stop trusting the page.",
+    "Help content, news and anything the reader needs now: answer first (tech:answer_first_paragraph).",
+    "Vague teases ('something crazy happened'): name what the payoff is about, just not what it is."
+   ],
+   "how": [
+    "Find the strongest payoff in the piece: a number, a reveal, the answer, the twist.",
+    "Tease it early. Say what it is about and why it matters, without giving it away: 'The third mistake cost a client of mine Rs 4 lakh, and it took ten seconds to make.'",
+    "Decide where it closes: just before the point where attention usually sags, or right before the CTA.",
+    "If the gap is long, remind once in the middle ('I'll get to that third mistake in a minute').",
+    "Close it clearly and fully. Re-state the question in one line, then give the answer.",
+    "Keep one or two loops open at a time in short pieces; for long ones, nest them deliberately (fw:nested_loops).",
+    "Before handing over, list every loop opened and tick where each closes."
+   ],
+   "before": "Here are three GST mistakes small businesses make. First, ...",
+   "after": "Three GST mistakes cost small shops money every year. The third one cost a client of mine Rs 4 lakh, and it took ten seconds to make. But first, the one almost everyone makes...",
+   "overuse_signs": [
+    "'Stay till the end' in every video",
+    "Three or more loops open at once in a 60-second script",
+    "The payoff is smaller than the tease",
+    "A loop opened in the hook and never mentioned again"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Zeigarnik_effect",
+     "title": "Zeigarnik effect (Wikipedia)",
+     "supports": "interrupted tasks are remembered better (the psychology usually cited for open loops)"
+    }
+   ],
+   "related": [
+    "hook:curiosity_gap",
+    "tech:cliffhanger",
+    "tech:retention_rehook",
+    "tech:foreshadowing",
+    "fw:nested_loops"
+   ]
+  },
+  {
+   "id": "tech:outlining",
+   "kind": "technique",
+   "name": "Outlining",
+   "status": "current",
+   "level": "piece",
+   "summary": "Before drafting, plan the sections and their points as a hierarchy: headings, the one claim each section makes, and the evidence under each. Fix order, gaps and repetition in the outline, where a change costs minutes instead of a rewrite, and get client sign-off on long pieces at this stage.",
+   "use_for": [
+    "blog posts, guides and SEO articles",
+    "white papers, reports and ebooks",
+    "YouTube and documentary scripts",
+    "speeches, decks and webinars",
+    "multi-email sequences"
+   ],
+   "avoid": [
+    "Outlining with topic labels only ('Introduction, GST, Benefits, Conclusion'): name each section by what it says or answers.",
+    "Treating the outline as fixed when drafting shows a better order: update the outline and keep going.",
+    "Exploratory or creative pieces where you do not yet know the point: write a zero draft first, then outline it (tech:zero_draft, edit:reverse_outline)."
+   ],
+   "how": [
+    "Write the goal and the reader at the top, one sentence each.",
+    "Brain-dump every point, fact and example from your research as unordered bullets.",
+    "Group them into 3-7 sections. Name each section by what it tells the reader or answers, not by a topic word.",
+    "Order the sections by the reader's questions, or by a framework that fits (fw:minto_pyramid for reports, fw:pas for sales).",
+    "Under each section, list the evidence: the example, the number, the source link.",
+    "Check for gaps (a claim with no evidence), strays (a point that does not serve the goal) and repeats. Fix them now.",
+    "Give each section a word budget (tech:word_budget).",
+    "For long pieces, send the outline to the client before drafting (edit:client_feedback_rounds).",
+    "Draft section by section from the outline; when the draft changes the plan, change the outline too."
+   ],
+   "before": "Outline: 1. Introduction 2. GST 3. Benefits 4. Conclusion",
+   "after": "Outline: H1 'Got a GST notice? Your first 7 days' / 1. What the notice is asking you (reference number, reply date) / 2. Days 1-2: gather invoices, returns and bank statements for that period / 3. Days 3-5: draft the reply with your CA / 4. Days 6-7: file the reply and save the acknowledgement / Close: when to ask for more time. Each section: one example and one source link.",
+   "overuse_signs": [
+    "An outline so detailed it is the draft",
+    "A 100-word caption outlined in five levels",
+    "Every piece forced into the same five-section template",
+    "Outline approved, then drafted without checking it again"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Outline_(list)",
+     "title": "Outline (list) (Wikipedia)",
+     "supports": "hierarchical outline as a writing plan"
+    }
+   ],
+   "related": [
+    "tech:zero_draft",
+    "tech:word_budget",
+    "tech:descriptive_subheads",
+    "edit:reverse_outline",
+    "fw:minto_pyramid"
+   ]
+  },
+  {
+   "id": "tech:pain_agitation",
+   "kind": "technique",
+   "name": "Pain agitation",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "Before offering the fix, make the reader feel the real cost of the problem through concrete consequences in their own day: what happens next, what it costs, who notices. Agitation is the middle step of problem-agitate-solve formulas (fw:pas). Done well it is short, specific and true; done badly it is fear-mongering.",
+   "use_for": [
+    "sales pages and sales emails",
+    "ad copy and reel scripts in PAS shape",
+    "SaaS and service landing pages",
+    "cold emails (one line of agitation, not a paragraph)",
+    "proposals with a 'what happens if we do nothing' section"
+   ],
+   "avoid": [
+    "Catastrophising (every problem ends in ruin): use the typical consequence, not the worst case presented as normal.",
+    "Fear appeals in health, money, children or safety copy: regulators watch these closely (comp:asci_code, comp:ccpa_misleading_ads_2022); state the risk factually and move quickly to the fix.",
+    "Agitating the person instead of the problem ('Only lazy owners file late'): readers who feel judged leave."
+   ],
+   "how": [
+    "State the problem in the reader's own words, taken from customer research.",
+    "Ask 'and then what?' two or three times to find the downstream consequences: late bills, then the CA's midnight call, then the late fee, then the supplier asking why the credit did not show.",
+    "Pick the one to three consequences this reader has actually felt or fears most.",
+    "Make each concrete: a time, a place, a number, a moment ('It's the 19th, 11 p.m.').",
+    "Keep it to 2-5 sentences, then turn to the fix with a clear pivot line.",
+    "Check every consequence is true and typical for this reader; cut anything you cannot stand behind.",
+    "Make sure the solution section is longer than the agitation."
+   ],
+   "before": "Managing GST is difficult. Our software makes it easy.",
+   "after": "It's the 19th. Your CA needs your purchase bills tonight. Half are in a WhatsApp chat with your supplier, the rest are in a carton under the counter, and the return is due tomorrow. Our app saves every bill the day it arrives, so the 19th is just another day.",
+   "overuse_signs": [
+    "Agitation longer than the solution",
+    "The same knife twisted in every email of a sequence",
+    "Dramatic consequences the product does not actually prevent",
+    "A tone of panic in a brand that is meant to sound calm"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://copyhackers.com/2015/10/copywriting-formula/",
+     "title": "Copyhackers: Copywriting formulas, the ultimate guide",
+     "supports": "agitation as the middle step of problem-agitate-solve formulas"
+    }
+   ],
+   "related": [
+    "fw:pas",
+    "tech:loss_aversion_framing",
+    "tech:voice_of_customer_mining",
+    "tech:sensory_detail",
+    "comp:asci_code"
+   ]
+  },
+  {
+   "id": "tech:paragraph_inverted_pyramid",
+   "kind": "technique",
+   "name": "Conclusion-first paragraphs",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "Open each paragraph with its point (the topic sentence), then support it, so a skimmer who reads only first lines still gets the message. NN/g applies the inverted pyramid at page and paragraph level and found that scanners often read only first sentences; Strunk's rule 9 says to begin each paragraph with a topic sentence.",
+   "use_for": [
+    "web articles, help content and FAQs",
+    "business emails, memos and reports",
+    "proposals and recommendations",
+    "policy and scheme explainers",
+    "LinkedIn posts with several points"
+   ],
+   "avoid": [
+    "Jokes, punchlines and story beats: putting the point first kills them (tech:punchline_last).",
+    "Topic sentences that only announce ('There are several factors to consider'): state the conclusion itself.",
+    "Every paragraph in an identical claim-then-proof shape for pages on end: vary length and rhythm (tech:sentence_rhythm)."
+   ],
+   "how": [
+    "After drafting, ask of each paragraph: what is the one thing it says? Write that as one sentence.",
+    "Move that sentence to the front of the paragraph, or replace the opening with it. It should be a claim or an answer, not a teaser.",
+    "Follow with support: the reason, the example, the number, the source.",
+    "Move any sentence that does not support the topic sentence to its own paragraph, or cut it.",
+    "Put the key words at the start of the topic sentence (tech:front_loading).",
+    "Skim test: read only the first sentence of every paragraph in order. It should read as a complete summary of the piece; fix any first line that does not.",
+    "Leave story and humour paragraphs in narrative order on purpose."
+   ],
+   "before": "We looked at several options last quarter, including hiring, outsourcing and new software, and compared their costs over two years. After all that, we recommend outsourcing payroll to a Pune firm.",
+   "after": "We recommend outsourcing payroll to a Pune firm. Over two years it costs less than hiring or buying new software, the other two options we compared last quarter.",
+   "overuse_signs": [
+    "Story paragraphs flattened into conclusions",
+    "Topic sentences that repeat the subhead word for word",
+    "Robotic same-shape paragraphs on every page",
+    "Conclusions stated before the reader has the context to accept them in a sensitive message"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/inverted-pyramid/",
+     "title": "NN/g: Inverted Pyramid",
+     "supports": "start with the conclusion, applies at page and paragraph level"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Topic_sentence",
+     "title": "Topic sentence (Wikipedia)",
+     "supports": "topic sentence summarises the paragraph, usually first"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/",
+     "title": "NN/g: Concise, Scannable, and Objective: How to Write for the Web",
+     "supports": "scanners read only first sentences; topic sentences and 'one idea per paragraph' matter"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 9: as a rule, begin each paragraph with a topic sentence (checked against the Gutenberg text 2026-10-04)"
+    }
+   ],
+   "related": [
+    "fw:inverted_pyramid",
+    "fw:bluf",
+    "tech:answer_first_paragraph",
+    "tech:front_loading",
+    "tech:f_pattern_scanning"
+   ]
+  },
+  {
+   "id": "tech:parallelism",
+   "kind": "technique",
+   "name": "Parallelism",
+   "status": "current",
+   "level": "line",
+   "summary": "Give matching ideas matching grammar: the same verb form, the same part of speech, the same shape. Strunk's rule 15: express co-ordinate ideas in similar form. Lists, headings, button sets, comparisons and slogans read faster and land harder when their items are parallel.",
+   "use_for": [
+    "bulleted feature and benefit lists",
+    "headings and subheads at the same level",
+    "taglines, slogans and speech lines",
+    "button and menu labels",
+    "comparisons ('not X but Y', 'either X or Y')"
+   ],
+   "avoid": [
+    "Forcing a third item to complete a pattern: if there are two real points, write two.",
+    "Every sentence a balanced triplet: the copy starts to sound like a speech; vary it (tech:sentence_rhythm).",
+    "Parallel phrasing that distorts meaning to fit the shape: accuracy beats symmetry."
+   ],
+   "how": [
+    "Find every list, set of headings, series inside a sentence and paired construction (both/and, not only/but also, either/or, not X but Y).",
+    "Choose the shape from the first item: imperative verb ('Book'), noun phrase ('Free delivery'), -ing form, or full sentence.",
+    "Rewrite every other item to that shape.",
+    "Even out length roughly; if one item needs far more words, split it or move the detail below the list.",
+    "In paired constructions, make what follows each half grammatically equal ('not only cheaper but also faster').",
+    "Keep headings at one level in one form throughout the document: all questions, or all statements, or all imperatives.",
+    "Hindi and Hinglish follow the same rule: 'Bill banao, bhejo aur payment lo.'"
+   ],
+   "before": "With our app you can create invoices, GST returns get filed automatically, and for tracking payments.",
+   "after": "With our app you can create invoices, file GST returns and track payments.",
+   "overuse_signs": [
+    "Triplets in every paragraph",
+    "Items invented to complete a pattern",
+    "Sing-song slogans where a plain line would be clearer",
+    "Symmetry that hides a real difference between the items"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Parallelism_(grammar)",
+     "title": "Parallelism (grammar) (Wikipedia)",
+     "supports": "balance of grammatically similar constructions"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 15: express co-ordinate ideas in similar form (checked against the Gutenberg text 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tech:rule_of_three",
+    "tech:antithesis",
+    "tech:anaphora_repetition",
+    "tech:bulleted_lists",
+    "tech:descriptive_subheads"
+   ]
+  },
+  {
+   "id": "tech:pattern_interrupt",
+   "kind": "technique",
+   "name": "Pattern interrupt",
+   "status": "current",
+   "level": "piece",
+   "summary": "Break the expected pattern (a sudden short line, a change of visual, an unexpected question or sound) at the point where attention usually drops, so the reader or viewer re-engages. The term comes from neuro-linguistic programming and no primary source defines it as a copy technique; use your own retention data (YouTube's retention report shows where viewers skip or leave) to decide where interrupts go.",
+   "use_for": [
+    "YouTube and reel scripts (visual and verbal beats)",
+    "long sales pages and VSLs",
+    "long emails and newsletters",
+    "webinars and talks",
+    "carousels (a slide that breaks the visual rhythm)"
+   ],
+   "avoid": [
+    "Random zooms, whooshes and SFX every two seconds with no change in content: they become the new pattern and tire the viewer.",
+    "Calm, premium or serious subjects (grief, health, luxury): a jolt reads as cheap or disrespectful; use a quiet change of pace instead.",
+    "Fake notification sounds or alarming visuals unrelated to the topic: misleading, and viewers feel tricked."
+   ],
+   "how": [
+    "Find where attention drops: the dips in retention graphs of past videos, the middle of long emails, the stretch after the third section of a sales page.",
+    "Pick an interrupt that carries content: a one-line paragraph, a direct question to the viewer, a surprising number, a switch of speaker, a cut to a new visual, a reversal ('Except that's wrong.').",
+    "Place it just before the dip, not after.",
+    "Make the interrupt introduce the next point; if it could be deleted without losing anything, it is noise.",
+    "In scripts, mark interrupts with a visual or audio note in the margin; in long-form, put them at section changes (tech:retention_rehook).",
+    "Vary the type; the same interrupt three times is a pattern.",
+    "After publishing, compare the retention graph with earlier videos; keep the interrupts that flatten dips."
+   ],
+   "before": "(Minute 3 of a 6-minute loan explainer, long talking-head stretch) 'So the next factor is the interest rate, which also matters, and then there is the tenure...'",
+   "after": "(Minute 3, cut to a hand writing two EMIs on paper) 'Same loan. Same bank. Two EMIs. Guess which one costs you more in the end.'",
+   "overuse_signs": [
+    "An interrupt every few seconds in a slow-paced explainer",
+    "'But wait!' in every paragraph",
+    "Shock lines unrelated to the topic",
+    "Edits that make the video harder to follow"
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9314415",
+     "title": "YouTube Help: Measure key moments for audience retention",
+     "supports": "dips show where viewers skip or leave, i.e. where an interrupt is needed"
+    }
+   ],
+   "related": [
+    "tech:retention_rehook",
+    "hook:pattern_interrupt",
+    "tech:open_loop",
+    "tech:sentence_rhythm",
+    "tech:rhetorical_question"
+   ]
+  },
+  {
+   "id": "tech:personalization_tokens",
+   "kind": "technique",
+   "name": "Personalisation tokens",
+   "status": "current",
+   "level": "line",
+   "summary": "Merge fields insert each recipient's data (first name, city, last purchase) into an email or message; in Mailchimp, *|FNAME|* inserts a contact's first name if it is available. Use tokens only where they add meaning, always with a safe fallback for empty or messy data, and only with data the person knowingly gave you.",
+   "use_for": [
+    "marketing and lifecycle emails",
+    "WhatsApp Business template messages",
+    "transactional SMS and app notifications",
+    "cold outreach sequences",
+    "reorder, renewal and reminder messages"
+   ],
+   "avoid": [
+    "Tokens with no fallback: an empty field ships as 'Hi ,' to thousands; set a default value or a conditional block in your tool for every token.",
+    "Creepy detail ('We noticed you visited our pricing page 7 times'): use data the reader expects you to have, for a purpose they would welcome; personal data use falls under comp:dpdp_act_rules.",
+    "Fake one-to-one intimacy in a mass send ('I was just looking at your profile'): it is deceptive when sent to a list; personalise with real data or write honestly as a broadcast."
+   ],
+   "how": [
+    "Decide which personal detail actually helps the reader: the last product for a reorder, the city for a local event, the plan for an account notice. A first name in the greeting is the least useful token.",
+    "Export the field and check the data: blanks, ALL CAPS, 'test', company names in the first-name field, emojis, mixed scripts.",
+    "Set a fallback for every token in your tool, using its default-value or conditional syntax (Mailchimp has conditional merge tags; check your ESP's own syntax).",
+    "Write the sentence so it reads naturally with both the real value and the fallback; if it cannot, hide the whole line for records without data.",
+    "Keep tokens out of public or high-visibility spots (subject lines, SMS previews) until the data is clean and tested.",
+    "Send test messages to seeded records: one complete, one blank, one with a very long name, one in Devanagari.",
+    "On WhatsApp and Indian SMS, write the approved template so every variable slot reads correctly whatever fills it (plat:whatsapp_business_template, plat:sms_india_dlt).",
+    "Use only data collected with consent for this purpose, and honour opt-outs in the same send."
+   ],
+   "before": "Hi *|FNAME|*, as a valued customer in *|CITY|*, we thought you'd love our latest offers! (arrives as 'Hi , as a valued customer in , ...')",
+   "after": "Hi *|FNAME|*, it's been about six weeks since your last pack of *|PRODUCT|*. Running low? Reorder in one tap. (Fallbacks: 'there' for the name; the line is hidden for customers with no past order.)",
+   "overuse_signs": [
+    "The reader's name in every paragraph",
+    "Several tokens in one sentence so it reads like a form",
+    "Personal details the reader never shared with this brand",
+    "Tokens that break the subject line when data is missing"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://mailchimp.com/help/all-the-merge-tags-cheat-sheet/",
+     "title": "Mailchimp: All the Merge Tags Cheat Sheet",
+     "supports": "*|FNAME|* inserts a contact's first name if available; conditional merge tags display content only to contacts who meet the conditions (checked 2026-10-04)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Mail_merge",
+     "title": "Mail merge (Wikipedia)",
+     "supports": "definition"
+    }
+   ],
+   "related": [
+    "plat:whatsapp_business_template",
+    "plat:sms_india_dlt",
+    "hook:personalised_subject_line",
+    "comp:dpdp_act_rules",
+    "tech:plain_text_email"
+   ]
+  }
+ ]
+}

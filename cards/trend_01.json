@@ -1,0 +1,2005 @@
+{
+ "cards": [
+  {
+   "id": "trend:agentic_commerce_product_content",
+   "kind": "trend",
+   "name": "Product content written for AI shopping agents",
+   "status": "rising",
+   "summary": "Shoppers say they want AI agents to do part of the shopping (a 2026 Accenture survey of Indian consumers: 70% would like agents to shop in line with their personal goals, 36% would switch brand if an agent recommended a better option), so product copy has to work for a machine reader first: complete attributes, plain declarative sentences, a verifiable proof for every claim. The numbers are stated intent in one survey, not observed purchases; treat the direction as solid and the timing as open.",
+   "use_for": [
+    "Product pages, marketplace listings and feed text where an agent (or a comparison engine) lifts attributes and decides which product matches the buyer's stated goal",
+    "Rewriting a D2C catalogue so every SKU states size, material, ingredients, compatibility, price and warranty in the same order",
+    "Turning vague brand claims ('premium', 'best quality') into checkable specs with a number, a standard or a test result"
+   ],
+   "avoid": [
+    "Adjective-led copy ('luxuriously soft, crafted with love'): an agent cannot verify it and a shopper comparing five products cannot use it. Replace with the measurable fact: '240 GSM combed cotton, shrinkage under 3% after 5 washes (tested at <lab>)' only when the lab report exists.",
+    "Burying specs in an image or a PDF: put them in text on the page and in the feed. Agents and search read text.",
+    "Inventing attributes to fill a field. A missing warranty term stays missing until the client supplies it; ask for it instead of guessing.",
+    "Over-reading the survey: do not tell a client 'agents will buy for your customers in 2026'. Say shoppers report openness, and complete product data helps today in search and marketplaces anyway."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://brandequity.economictimes.indiatimes.com/news/digital/indian-consumers-embrace-ai-agent-led-shopping-says-accenture/132453300",
+     "title": "ET BrandEquity: Indian consumers embrace AI agent-led shopping, says Accenture",
+     "supports": "Indian consumer openness to agent shopping; AI-ready product info"
+    }
+   ],
+   "related": [
+    "genre:product_description",
+    "genre:marketplace_listing",
+    "genre:amazon_a_plus_content",
+    "genre:category_page",
+    "genre:d2c_brand_store",
+    "genre:catalogue_copy",
+    "plat:amazon_product_listing",
+    "plat:google_merchant_center",
+    "plat:shopify_seo_fields",
+    "plat:etsy_listing"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "ET BrandEquity on Accenture Consumer Pulse Survey 2026 (India): '70 per cent would like AI agents to shop in line with their personal goals'; '36 per cent indicated they would switch to another brand if an AI agent recommended a better option'; Accenture urges brands to ensure 'product information is machine-readable, pricing is transparent, claims are verifiable'.",
+     "url": "https://brandequity.economictimes.indiatimes.com/news/digital/indian-consumers-embrace-ai-agent-led-shopping-says-accenture/132453300",
+     "date": "2026-07-17"
+    }
+   ],
+   "do": [
+    "Open every product description with one declarative sentence that names the product type and its decisive attributes: 'Mehendi-brown 100% cotton kurta, regular fit, sizes S-XXL, machine washable at 30 degrees, Rs 1,299 incl. GST.'",
+    "Use a fixed attribute block in the same order on every SKU (size / material / ingredients or composition / compatibility / dimensions and weight / price / warranty or return window) so a machine can compare products line by line.",
+    "Put a proof next to every claim: the number, the test, the certificate or the reviewer count. 'Dermatologist tested' becomes 'tested on 30 volunteers by <named lab>, report available on request' only if the client holds that report; otherwise drop the claim.",
+    "Keep price, offer terms and delivery promise in plain text that matches the feed exactly; a mismatch between page and feed is the first thing a shopping agent will distrust.",
+    "Ask the client for the missing attribute list before writing; return a gaps table (attribute, what we have, who must confirm) with the draft."
+   ],
+   "dont": [
+    "Do not lead with mood and adjectives and leave the facts for a 'features' tab nobody parses.",
+    "Do not put key specs only in images, carousels or a downloadable brochure.",
+    "Do not use unverifiable superlatives ('India's best', 'number 1', 'most trusted') without a named, dated source; they are also risky under ad-claim rules (see comp:asci_code).",
+    "Do not copy the same manufacturer text across 50 SKUs; each page needs its own attributes."
+   ],
+   "half_life_months": 30
+  },
+  {
+   "id": "trend:ai_assisted_writing_mainstream",
+   "kind": "trend",
+   "name": "AI-assisted writing is the default workflow; editing AI output is the job",
+   "status": "current",
+   "summary": "Almost every marketing team now drafts with AI (CMI 2026: 89% of B2B marketers use AI tools for written content), and only 9% put human resources first in 2026 budget increases; Upwork reports AI-applied skills in existing roles grew 109% year over year and says professionals who can direct and refine AI output will stand out. A paid writer is therefore hired for the brief, the research, the interviews, the fact-check, the voice and the final accountability, not for a first draft the client could generate themselves.",
+   "use_for": [
+    "Positioning and pricing a writing engagement as editor-strategist work: brief, source gathering, interviews, editing, sign-off",
+    "Setting the process for any piece drafted with AI: who briefs, who checks facts, who owns the final text",
+    "Writing the brief, style guide or system prompt that makes a client's AI drafts usable (a deliverable in its own right)"
+   ],
+   "avoid": [
+    "Delivering raw model output with light polish: clients can produce that in a minute, and it carries the AI tells readers now punish (see trend:ai_slop_backlash). Add reporting, specifics and a point of view.",
+    "Charging per word. When a draft costs minutes, per-word pricing collapses; quote per project or outcome (a 1,500-word interview-led piece, a 12-post month) instead.",
+    "Hiding AI use. Follow the contract and platform rules; where a client or law requires disclosure, say so plainly (see trend:ai_disclosure_rules).",
+    "Claiming 'human-written' as a selling line unless every sentence truly is; say 'edited and fact-checked by <name>' instead."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research",
+     "title": "CMI: B2B Content and Marketing Trends for 2026",
+     "supports": "AI use for writing; flat human budgets"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork: In-Demand Skills 2026 press release",
+     "supports": "AI-applied skills +109%"
+    }
+   ],
+   "related": [
+    "genre:blog_post",
+    "genre:content_brief",
+    "genre:content_refresh",
+    "genre:brand_voice_guide",
+    "genre:system_prompt",
+    "genre:ghostwritten_founder_post",
+    "genre:thought_leadership_article",
+    "genre:services_proposal",
+    "genre:linkedin_post"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "CMI B2B 2026 research: 89% of B2B marketers use AI tools for written content; only 9% prioritise human resources (salaries, training) in 2026 budget increases.",
+     "url": "https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research",
+     "date": "2025-10-08"
+    },
+    {
+     "claim": "Upwork In-Demand Skills 2026: 'the top skills explicitly tied to applying AI within existing roles grew 109% year over year'; 'Professionals who can direct and refine AI outputs to enhance their work will stand out and find success.'",
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "date": "2026-02-04"
+    }
+   ],
+   "do": [
+    "Start each job with a one-page brief before any drafting: audience, the one claim, three proofs (a number, a quote, a case), banned phrases, voice reference. Whether a human or a model drafts, the brief is the part the client pays for.",
+    "Edit in fixed passes: facts (every number traced to a source you can name), specifics (add a name, a place, a figure to each paragraph), voice (read aloud against the client's voice sample), cut (delete the generic opener and the closing summary).",
+    "Record who reviewed what (a one-line sign-off: 'fact-checked and edited by <name>, <date>') so accountability stays with a named human.",
+    "Quote the engagement by project or outcome and list what the fee covers: interviews held, sources checked, revision rounds."
+   ],
+   "dont": [
+    "Do not submit a first draft you have not fact-checked line by line.",
+    "Do not sell 'AI-written content at low cost'; that is the cheapest thing the client can already get.",
+    "Do not pad to word count; AI makes length free, so tight is the differentiator.",
+    "Do not leave AI use undisclosed where the contract, platform or law asks for disclosure."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:ai_chatbots_for_news_and_answers",
+   "kind": "trend",
+   "name": "AI chatbots as a news and answer source",
+   "status": "rising",
+   "summary": "Reuters Institute Digital News Report 2026 puts weekly AI-chatbot news use at 10%, up from 7% a year earlier; growth is driven largely by parts of Asia, Africa, Latin America and Southern/Eastern Europe (the UK is lowest at 4%) and under-35s use chatbots about three times as much as the oldest group. When a model summarises your page, only the sentence it lifts travels, so each fact must carry its own who, what, number and date.",
+   "use_for": [
+    "News explainers, FAQ answers and glossary entries written so a single sentence is correct and attributed when quoted on its own",
+    "Press releases and brand fact pages where the brand name must stay attached to the claim",
+    "Briefing PR and content teams on why every statistic needs a named source and a year in the same sentence"
+   ],
+   "avoid": [
+    "Pronoun-heavy, context-dependent prose ('This helped them grow 3x'): lifted alone it says nothing. Name the subject and the period in the sentence.",
+    "Unattributed numbers ('studies show 70%'): a model may repeat the number and drop the source. Write 'according to <Org>'s <report>, <year>'.",
+    "Treating the 10% as India data: it is a global survey figure; the Asia-led growth is broader than one country. Use it as direction, not as an Indian benchmark.",
+    "Writing only for chatbots; 42% of chatbot-news users in the same report say they always or often click through to the source (see trend:geo_ai_search), so keep a reason to visit."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+     "title": "Reuters Institute Digital News Report 2026",
+     "supports": "chatbot news use 10%; 42% click through"
+    }
+   ],
+   "related": [
+    "genre:news_explainer",
+    "genre:faq_answer_article",
+    "genre:informational_article",
+    "genre:glossary_page",
+    "genre:fact_check",
+    "genre:knowledge_base_article",
+    "genre:press_release",
+    "genre:how_to_article",
+    "plat:google_search_result"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Reuters DNR 2026: '10% of people use AI chatbots for news, up from 7% last year'.",
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+     "date": "2026-06-16"
+    },
+    {
+     "claim": "GIJN summary of DNR 2026: growth driven largely by parts of Asia, Africa, Latin America and Southern/Eastern Europe; UK lowest at 4%; under-35s about three times the oldest group.",
+     "url": "https://gijn.org/stories/2026-reuters-institute-digital-news-report/",
+     "date": "2026-06-17"
+    }
+   ],
+   "do": [
+    "Write each key fact as a self-contained sentence with subject, verb, number, date and source: 'Bihar's Jeevika scheme reached <n> women's self-help groups by <month year>, according to <named government release>.' (fill the slots only from a source you hold).",
+    "Put the brand or author name in the same sentence as the claim you want credited: 'Our Jaipur CA firm filed 212 GST replies in FY26' travels better than 'we filed 212 replies'.",
+    "Start FAQ and explainer sections with a one- or two-sentence answer that stands alone, then add detail underneath.",
+    "Date-stamp statistics ('as of March 2026') and put a visible updated-on line on the page so quoted facts are not read as current years later."
+   ],
+   "dont": [
+    "Do not make a paragraph depend on the one before it for its meaning.",
+    "Do not use vague attribution ('experts say', 'a recent study').",
+    "Do not quote the 10% / 7% / 4% figures without 'Reuters Institute Digital News Report 2026' beside them.",
+    "Do not assume Indian readers behave like the global average; say 'globally' when the figure is global."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:ai_disclosure_rules",
+   "kind": "trend",
+   "name": "Mandatory AI-content labelling (India IT Rules 2026, EU AI Act Art. 50)",
+   "status": "rising",
+   "summary": "India's IT Rules amendments (announced 10 Feb 2026, in force 20 Feb 2026) put synthetic audio, visual and audio-visual media under prominent labelling, metadata and user-declaration duties for large platforms, with AI text excluded (per Freshfields); the EU AI Act Article 50 duties apply from 2 August 2026, including disclosure of AI origin for AI text published to inform the public on public-interest matters unless it has had human review or editorial control with a named person holding editorial responsibility. YouTube separately requires creators to disclose realistic altered or synthetic content. Evidence here is law-firm and platform summaries: check the compliance cards and the client's counsel before giving legal advice.",
+   "use_for": [
+    "Scripts and prompts for AI voice-over, avatar, synthetic-likeness or realistic AI-visual videos for Indian and EU audiences",
+    "Setting a review-and-sign-off step so every AI-assisted public-interest or news piece has a named responsible editor",
+    "Writing plain disclosure lines and platform-toggle instructions into video, ad and social deliverables"
+   ],
+   "avoid": [
+    "Burying the label in a hashtag pile or at the end of a long description. Make it plain and early; where the platform has a disclosure toggle, tell the client to set it.",
+    "Assuming one rule covers every market: the India rules as summarised exclude AI text, the EU rule reaches AI text on public-interest matters unless human editorial control exists. Check the deliverable's audience.",
+    "Dropping the named editor: the EU exemption turns on human review plus someone holding editorial responsibility, so write that responsibility down (who, what they checked, when).",
+    "Giving legal conclusions. State what the sources say, mark what you did not check, and route edge cases (political, health, finance) to the client's counsel."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://artificialintelligenceact.eu/transparency-rules-article-50/",
+     "title": "artificialintelligenceact.eu: practical guide to Article 50",
+     "supports": "EU dates and text-disclosure rule"
+    },
+    {
+     "url": "https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/india-targets-deepfakes-and-ai-generated-content-key-changes-under-meitys-2026-102mjwn",
+     "title": "Freshfields: India targets deepfakes and AI-generated content",
+     "supports": "India SGI labelling rules"
+    }
+   ],
+   "related": [
+    "genre:faceless_video_script",
+    "genre:ai_video_prompt_script",
+    "genre:short_form_video_script",
+    "genre:youtube_video_script",
+    "genre:video_ad_script",
+    "genre:news_explainer",
+    "plat:youtube_description",
+    "comp:it_rules_sgi_2026",
+    "comp:eu_ai_act_art50",
+    "comp:asci_ai_sgc_labelling"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Freshfields: India's IT Rules amendments (announced 10 Feb 2026, in force 20 Feb 2026) bring 'synthetically generated information' (audio, visual, audio-visual; AI text excluded) under prominent labelling, metadata and user-declaration duties for large platforms.",
+     "url": "https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/india-targets-deepfakes-and-ai-generated-content-key-changes-under-meitys-2026-102mjwn",
+     "date": "2026-02-20"
+    },
+    {
+     "claim": "EU AI Act Article 50 transparency obligations apply from 2 August 2026; AI-generated text published to inform the public on matters of public interest must disclose its AI origin unless 'the AI-generated content has undergone a process of human review or editorial control and a natural or legal person holds editorial responsibility'.",
+     "url": "https://artificialintelligenceact.eu/transparency-rules-article-50/",
+     "date": "2026-05-14"
+    },
+    {
+     "claim": "YouTube: 'creators must disclose when they've created realistic altered or synthetic content.'",
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "date": "2026-01-21"
+    }
+   ],
+   "do": [
+    "Add a deliverable line to every AI-assisted video brief: 'Synthetic elements: AI voice-over (yes/no), AI avatar (yes/no), realistic AI footage (yes/no); disclosure placed: on-screen text at 0-3 s and in the description.'",
+    "Write the disclosure in plain words the viewer reads in one glance, in the video's own language: 'AI-generated voice and visuals' / 'AI se banaya gaya voice-over aur visuals'.",
+    "Tell the client to switch on the YouTube altered/synthetic content disclosure for realistic synthetic material and keep a screenshot of the setting in the project file.",
+    "For public-interest AI-assisted text going to EU readers, record a reviewer: name, role, date, what was checked (facts, sources, final wording) and keep it with the piece.",
+    "Keep a provenance note per project (which tools made which assets) so labels can be applied accurately when a platform or client asks."
+   ],
+   "dont": [
+    "Do not present a synthetic voice or face as a real person without a clear label.",
+    "Do not rely on a hidden metadata tag alone; the rules ask for prominent labels and declarations, and viewers must be able to see them.",
+    "Do not write 'no AI used' unless you can prove it for the whole piece.",
+    "Do not treat AI text as automatically exempt everywhere; the exemption described for India does not carry over to EU public-interest text."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:ai_overviews_zero_click",
+   "kind": "trend",
+   "name": "AI Overviews and zero-click search eat organic clicks",
+   "status": "current",
+   "summary": "When Google shows an AI summary, far fewer people click through: Ahrefs (Dec 2025 data, 300,000 keywords, quoted via PPC Land's write-up of the Ahrefs post) found a 58% lower CTR for the top-ranking page; Pew's 2025 study of 68,879 searches by 900 US adults found clicks on a traditional result in 8% of visits with an AI summary versus 15% without, and links inside the summary in just 1%. Reuters DNR 2026 reports Google organic traffic to over 2,500 sites down 33% between Nov 2024 and Nov 2025, and Google says AI Mode has crossed 1 billion monthly users and AI Overviews reach 2.5 billion. Write pages whose value does not vanish in a summary.",
+   "use_for": [
+    "Deciding which informational topics are still worth an article and which an AI Overview already answers",
+    "Building pages around original data, tools, templates, first-hand cases and opinions that give a reason to click",
+    "Setting client expectations and success metrics for informational content: citations, brand mentions, assisted conversions, not raw clicks alone"
+   ],
+   "avoid": [
+    "Commissioning 'what is X' posts whose whole value is a definition any summary can give. Replace with a proprietary number, a worked case or a calculator on the page.",
+    "Promising a client 'rank #1 and traffic follows'. Pew's sample is US adults in March 2025; say traffic risk is real and size it per topic with the client's own Search Console data.",
+    "Hiding the answer to force a click: answer early (it earns the citation) but keep the part that needs the page (the full table, the worksheet, the method).",
+    "Quoting the Ahrefs 58% without its caveat: it is a correlation on 300,000 keywords reported via a secondary write-up."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://ppc.land/googles-ai-summaries-now-swallow-58-of-clicks-that-once-went-to-websites/",
+     "title": "PPC Land on Ahrefs' Feb 2026 AI Overviews CTR update",
+     "supports": "58% CTR drop and method"
+    },
+    {
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+     "title": "Reuters Institute Digital News Report 2026",
+     "supports": "organic Google traffic to 2,500+ news sites down 33%"
+    },
+    {
+     "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+     "title": "Pew Research Center short read, July 2025",
+     "supports": "8% vs 15% click rate with/without AI summary"
+    }
+   ],
+   "related": [
+    "genre:blog_post",
+    "genre:informational_article",
+    "genre:how_to_article",
+    "genre:listicle",
+    "genre:ultimate_guide",
+    "genre:pillar_page",
+    "genre:research_article",
+    "genre:content_brief",
+    "genre:content_refresh",
+    "plat:google_search_result"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Ahrefs update (Dec 2025 GSC data, 300,000 keywords): AI Overviews correlate with a 58% lower CTR for the top-ranking page, up from 34.5% in April 2025; 'The forecasted rate of 0.037 compares against the actual rate of 0.016, producing the 58% reduction figure.' (quoted from PPC Land's write-up of the Ahrefs post)",
+     "url": "https://ppc.land/googles-ai-summaries-now-swallow-58-of-clicks-that-once-went-to-websites/",
+     "date": "2026-02-04"
+    },
+    {
+     "claim": "Reuters DNR 2026: 'Google traffic from organic search to over 2,500 sites was down by a third (33%) globally between November 2024 and November 2025'.",
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+     "date": "2026-06-16"
+    },
+    {
+     "claim": "Google I/O 2026 (MediaNama): 'Google said AI Mode has crossed 1 billion monthly users, while AI Overviews now reach 2.5 billion users every month.'",
+     "url": "https://www.medianama.com/2026/05/223-major-products-google-announced-i-o-2026/",
+     "date": "2026-05-25"
+    },
+    {
+     "claim": "Pew (68,879 searches by 900 US adults, March 2025): 'Users who encountered an AI summary clicked on a traditional search result link in 8% of all visits' vs 15% without; links inside the summary were clicked in 'just 1% of all visits'.",
+     "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+     "date": "2025-07-22"
+    }
+   ],
+   "do": [
+    "In the brief, add a 'reason to click' line for every informational page: the thing the page has that a summary cannot (original survey, downloadable template, interactive calculator, first-hand photo evidence).",
+    "Answer the headline question in the first 40-60 words under a question-shaped H2, then immediately add the part that needs the full page ('the three-step GST reconciliation checklist is below').",
+    "Rewrite or merge old thin 'what is' posts into pages with original numbers, expert quotes and a worked Indian example; refresh the date visibly.",
+    "Report content with a four-part scorecard: impressions, citations/brand mentions in AI answers, clicks, conversions from organic visitors. Tell the client why clicks alone will look worse."
+   ],
+   "dont": [
+    "Do not build a content plan on top-of-funnel definition posts alone.",
+    "Do not cite the 58%, 8% vs 15% or 33% figures without the source and what each measured (a keyword set, 900 US adults, 2,500 sites).",
+    "Do not promise recovery of lost clicks through rewording; change what the page offers.",
+    "Do not delete useful content just because it lost clicks; check whether it still earns citations or conversions first."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:ai_search_indian_languages",
+   "kind": "trend",
+   "name": "AI search in Hindi and Indian languages",
+   "status": "rising",
+   "summary": "Google India announced AI Mode rolling out in Bengali, Kannada, Malayalam, Marathi, Tamil, Telugu and Urdu (Oct 2025), with Search Live in AI Mode in English and Hindi, India first outside the US; the IAMAI-Kantar Internet in India 2025 report says 44% of users engage with AI-enabled features such as voice search, image-based search, chatbots and AI filters. Vernacular answer-first pages now have a route into AI search results, so Indian clients should not publish only in English.",
+   "use_for": [
+    "Hindi and regional-language answer pages, FAQs and scheme or service explainers that match how people speak a query",
+    "Local business and service pages where voice search is likely (near me, price, how to apply)",
+    "Briefing a transcreation, not a translation, of the client's best English pages into the audiences' main language"
+   ],
+   "avoid": [
+    "Machine-translating English posts word for word: stiff Hindi or regional text rarely matches spoken queries. Write natively (see lang:hindi_seo, lang:transcreation).",
+    "Assuming Hinglish in Roman script is the only form people search in; check the client's Search Console queries for Devanagari versus Roman before choosing the page script.",
+    "Skipping the basics because it is 'AI search': pages still need to be indexable, clear and correct in the target language.",
+    "Treating the 44% as adoption of AI Mode; it covers a bundle of AI-enabled features (voice, image search, chatbots, filters)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://blog.google/intl/en-in/products/supercharging-search-for-india-new-languages-in-ai-mode-search-live-debuts/",
+     "title": "Google India blog: new languages in AI Mode & Search Live",
+     "supports": "AI Mode in 7 Indian languages + Hindi Search Live"
+    }
+   ],
+   "related": [
+    "genre:faq_answer_article",
+    "genre:informational_article",
+    "genre:blog_post",
+    "genre:local_seo_page",
+    "genre:scheme_explainer",
+    "genre:news_explainer",
+    "plat:google_search_result",
+    "plat:google_business_profile",
+    "lang:hindi_seo",
+    "lang:regional_indian_languages"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Google India: AI Mode rolling out in 'Bengali, Kannada, Malayalam, Marathi, Tamil, Telugu, and Urdu', plus 'Search Live in AI Mode to India in English and Hindi', India first outside the US.",
+     "url": "https://blog.google/intl/en-in/products/supercharging-search-for-india-new-languages-in-ai-mode-search-live-debuts/",
+     "date": "2025-10-08"
+    },
+    {
+     "claim": "IAMAI-Kantar Internet in India 2025: '44% of users engaging with AI-enabled features such as voice search, image-based search, chatbots, and AI filters'.",
+     "url": "https://yourstory.com/2026/01/indias-internet-user-base-crosses-950-million-2025-iamai-report",
+     "date": "2026-01-29"
+    }
+   ],
+   "do": [
+    "Use conversational question headings in the language people speak: 'GST notice aaye to kya karein?' or its Devanagari form, followed by a 2-3 sentence direct answer, then the steps.",
+    "Publish the same core page natively in Hindi and the client's top regional language where the audience is, with local examples (a Pune kirana, a Madurai exporter) instead of translated Western ones.",
+    "Keep names, numbers, fees and dates identical across language versions so facts do not conflict in AI answers.",
+    "For local pages, write the answer a voice user would hear read aloud: short, plain sentences, price or timing included."
+   ],
+   "dont": [
+    "Do not publish English-only for clients whose customers search in Hindi or a regional language.",
+    "Do not transliterate English headings into Devanagari and call it localisation.",
+    "Do not use stiff formal register for conversational queries; match the spoken question.",
+    "Do not let language versions drift: one page updated, the others stale."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:ai_slop_backlash",
+   "kind": "trend",
+   "name": "Backlash against AI slop; human authenticity as a selling point",
+   "status": "rising",
+   "summary": "Audiences and platforms are pushing back on generic AI content: Fortune cites a 2025 Gartner survey that 53% of consumers distrust AI-generated search results and summaries, and YouTube's CEO named managing 'AI slop' a 2026 priority. A secondary roundup (Ringer Sciences, medium-low confidence) reports 40% of consumers say heavy AI use would decrease trust in a favourite brand, double the 20% in 2025 (Fractl, Q2 2026), and 42% would think less of a brand advertised beside low-quality AI content (DoubleVerify/YouGov). Specific, named, accountable writing is the counter.",
+   "use_for": [
+    "Editing passes that strip AI tells and add names, places, numbers and lived detail",
+    "Brand story, about-page, founder and case-study writing where visible people and real proof carry trust",
+    "Briefing clients on why 'more AI content faster' can reduce trust, and what to publish instead"
+   ],
+   "avoid": [
+    "Stock AI openers and rhythms: 'In today's fast-paced world', triplets of adjectives, 'delve', empty hedges, a neat summary paragraph. Cut them and start on the specific fact.",
+    "Faking authenticity: invented founder anecdotes, fake reviews or made-up customer names damage trust and may breach advertising and consumer rules. Interview real people.",
+    "Quoting the 40% or 42% figures as hard fact: they come from a secondary roundup of other surveys; cite them as 'reported by' or leave them out, and prefer the Gartner 53% (via Fortune) when a number is needed.",
+    "Promising 'human-written' unless true. Say who edited and verified it."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "title": "YouTube CEO letter 2026",
+     "supports": "platform commitment to reduce AI slop"
+    },
+    {
+     "url": "https://fortune.com/2026/06/05/war-ai-slop-publicis-groupe-hachette-publishers-association/",
+     "title": "Fortune: Businesses are declaring war on AI slop",
+     "supports": "consumer distrust stats and industry response"
+    }
+   ],
+   "related": [
+    "genre:blog_post",
+    "genre:brand_story",
+    "genre:about_page",
+    "genre:linkedin_post",
+    "genre:instagram_caption",
+    "genre:thought_leadership_article",
+    "genre:short_form_video_script",
+    "genre:youtube_video_script",
+    "genre:testimonial_copy",
+    "genre:case_study"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Fortune: 'Over half (53%) of consumers distrust AI-generated search results and summaries, a 2025 survey by Gartner found'; YouTube's CEO named 'managing AI slop' a 2026 priority.",
+     "url": "https://fortune.com/2026/06/05/war-ai-slop-publicis-groupe-hachette-publishers-association/",
+     "date": "2026-06-05"
+    },
+    {
+     "claim": "Ringer Sciences roundup: '40% of consumers say heavy AI use would decrease trust in a favorite brand — double the 20% in 2025 — Fractl, Q2 2026'; 42% would think less of a brand advertised beside low-quality AI content (DoubleVerify/YouGov). Secondary roundup; medium-low confidence.",
+     "url": "https://ringersciences.com/articles/ringer-weekly-2026-08-10-ai-content-trust-backlash.html",
+     "date": "2026-08-10"
+    },
+    {
+     "claim": "YouTube CEO letter: 'The rise of AI has raised concerns about low-quality content, aka \"AI slop.\"'",
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "date": "2026-01-21"
+    }
+   ],
+   "do": [
+    "On the final pass, hunt for AI tells (generic openers, three-item lists everywhere, 'it's not X, it's Y' reversals, a recap paragraph) and replace each with a concrete detail from an interview, document or the client's data.",
+    "Give each piece one thing only the client can say: a number from their books, a customer's name with permission, a place, a dated event ('the 14 Diwali orders we shipped from a Surat garage').",
+    "Put real people on the page: named author with a line of credentials, photos of the actual team, a quote with name and role.",
+    "Where AI helped produce a visual or voice, keep it consistent with the disclosure rules (see trend:ai_disclosure_rules) rather than passing it off as shot or recorded."
+   ],
+   "dont": [
+    "Do not publish volume for its own sake; one specific piece beats five generic ones.",
+    "Do not fabricate people, quotes or case results to look human.",
+    "Do not describe a draft as 'fully human' when AI wrote or reshaped parts.",
+    "Do not lean on the secondary-roundup percentages in client decks without saying they are secondary."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:ai_video_scripting_demand",
+   "kind": "trend",
+   "name": "AI video generation creates script and prompt work",
+   "status": "rising",
+   "summary": "Upwork's In-Demand Skills 2026 lists AI Video Generation & Editing (+329%) and AI Image Generation & Editing (+95%) among its fastest-growing Design & Creative skills (US-demand freelancer earnings, 2025), and YouTube's CEO says creators will be able to make a Short using their own likeness. Every generated video still needs a script, a shot list, per-shot prompts and VO lines, so the writer who delivers them as one pack is in demand. Tools change monthly; the written structure outlasts them.",
+   "use_for": [
+    "AI video packs: script, shot list, per-shot prompts, voice-over lines and on-screen text as one deliverable",
+    "Writing prompts as camera directions with continuity notes so shots cut together",
+    "Serial and faceless formats where the same character or look must hold across many generated clips"
+   ],
+   "avoid": [
+    "Pasting a story paragraph in as a prompt. Generators need subject, action, camera, light, lens and duration per shot; split the script into shot-sized units.",
+    "Tool-specific prompt tricks that expire: keep the shot list tool-agnostic and put model quirks in a separate adapter note.",
+    "Forgetting continuity: without a character/look lock (name, wardrobe, setting, colour) shot 6 will not match shot 2.",
+    "Ignoring disclosure and consent for synthetic likeness (see trend:ai_disclosure_rules)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork: In-Demand Skills 2026 press release",
+     "supports": "AI video +329%"
+    }
+   ],
+   "related": [
+    "genre:ai_video_prompt_script",
+    "genre:faceless_video_script",
+    "genre:short_form_video_script",
+    "genre:explainer_video_script",
+    "genre:video_ad_script",
+    "genre:micro_drama_episode_script",
+    "genre:youtube_video_script",
+    "plat:youtube_description"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Upwork In-Demand Skills 2026: Design & Creative fastest-growing 'AI Video Generation & Editing (+329%)' and 'AI Image Generation & Editing (+95%)' (US-demand freelancer earnings, 2025).",
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "date": "2026-02-04"
+    },
+    {
+     "claim": "YouTube CEO letter: 'This year you'll be able to create a Short using your own likeness'.",
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "date": "2026-01-21"
+    }
+   ],
+   "do": [
+    "Deliver five parts: one-line concept, scene-by-scene script, shot list (shot number, duration, framing), a prompt per shot written as a camera direction, and VO plus on-screen text lines timed to the shots.",
+    "Write each prompt as: subject and look, action, camera move, lens/framing, light, setting, duration. Reuse the same character descriptor line verbatim in every shot that features them.",
+    "Add a continuity sheet at the top: character descriptors, wardrobe, locations, colour palette, what must not change between shots.",
+    "Mark every synthetic element (AI voice, AI face, AI footage) in the brief so the client can label it where rules require."
+   ],
+   "dont": [
+    "Do not deliver prompts without the script and shot list they belong to.",
+    "Do not describe emotions abstractly ('feels hopeful'); direct what the camera shows ('slow push-in on her hands closing the shutter, golden hour').",
+    "Do not use a real person's likeness in a prompt without written consent.",
+    "Do not quote the +329% as a market-size figure; it is a growth rate in US freelancer earnings."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:chatgpt_ads",
+   "kind": "trend",
+   "name": "Ads inside AI assistants (ChatGPT ads)",
+   "status": "rising",
+   "summary": "OpenAI said in January 2026 it planned to test ads in the U.S., stating that ads do not influence ChatGPT's answers and are always separate and clearly labelled (Plus, Pro, Business and Enterprise stay ad-free), and TechCrunch reported the U.S. test reaching the Free and Go tiers in February 2026. It is a new ad surface where copy sits beside a conversation, not a results page. The evidence is U.S. only: check availability and formats for an Indian client before planning spend.",
+   "use_for": [
+    "Drafting ad copy for conversational placements that must match the intent of the chat around them",
+    "Testing a 'question answered, one benefit, one action' ad pattern alongside search and social ads",
+    "Advising clients that organic answer-quality content and paid assistant ads are separate things"
+   ],
+   "avoid": [
+    "Writing assistant ads like banner copy ('Best deals, buy now'): beside a helpful answer, hype reads as intrusive. Match the question's tone.",
+    "Promising clients that ads will make the assistant recommend them: OpenAI states ads do not influence answers; visibility inside answers is earned by being useful and citable.",
+    "Planning India budgets on a U.S. test. Treat it as watch-and-prepare until the client's market is confirmed.",
+    "Making claims you would not make in a search ad; platform ad policies still apply."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+     "title": "OpenAI: Our approach to advertising and expanding access to ChatGPT",
+     "supports": "ads test announcement and principles"
+    }
+   ],
+   "related": [
+    "genre:search_ad_copy",
+    "genre:native_ad",
+    "genre:landing_page",
+    "genre:chatbot_script",
+    "genre:faq_answer_article",
+    "genre:social_ad_copy",
+    "plat:google_ads_rsa"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "OpenAI: 'In the coming weeks, we're also planning to start testing ads in the U.S.'; 'Ads do not influence the answers ChatGPT gives you.'; 'Ads are always separate and clearly labeled.' Plus, Pro, Business and Enterprise stay ad-free.",
+     "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+     "date": "2026-01-16"
+    },
+    {
+     "claim": "TechCrunch: ChatGPT rolls out ads (US test for Free and Go tiers).",
+     "url": "https://www.techcrunch.com/2026/02/09/chatgpt-rolls-out-ads/",
+     "date": "2026-02-09"
+    }
+   ],
+   "do": [
+    "Write the ad to answer the question the person was asking: if the chat is about 'which air purifier for a 150 sq ft Delhi bedroom', the ad names the model, the room size it covers and the price, with one plain CTA ('See room-size chart').",
+    "Give each ad one concrete benefit with a number or a proof, and one next step; no more than that.",
+    "Make the landing page continue the same conversation: first screen restates the answer and the offer in the same words.",
+    "Keep organic answer-ready content (FAQ, comparison, spec pages) as a separate workstream; do not brief it as an ad."
+   ],
+   "dont": [
+    "Do not write ads that pretend to be part of the assistant's answer; ads are labelled and separate.",
+    "Do not stack three benefits and two CTAs into a conversational slot.",
+    "Do not assume Indian availability or targeting from the U.S. announcement.",
+    "Do not sell clients 'pay to be recommended by ChatGPT'."
+   ],
+   "half_life_months": 12
+  },
+  {
+   "id": "trend:creator_led_ads",
+   "kind": "trend",
+   "name": "Creator-made content as paid ads (partnership ads, UGC)",
+   "status": "rising",
+   "summary": "Meta announced for Cannes Lions 2026 that it would merge Creator Marketplace and Partnership Ads Hub into a 'Meta Creator Marketing Hub' that makes it easier to find product-linked creator content and convert it into partnership ads, and Net Influencer reports Instagram Live video ads that turn creator livestreams into paid ads (Oct 2026). A Forbes headline claims partnership ads hit $10 billion and outperform brand messages (headline-only, article body not read, low confidence: do not quote it in client work). The practical shift: a creator post is now briefed as a future ad.",
+   "use_for": [
+    "UGC and creator briefs that serve both organic posting and paid partnership-ad reuse",
+    "Hook-variant plans (3-5 per ad) the creator can say in their own words",
+    "Disclosure and claim guardrails for creator content that will be boosted"
+   ],
+   "avoid": [
+    "Locked word-for-word scripts that make the creator sound like an ad; give the must-say points and let them phrase it.",
+    "A single hook per brief: ads fatigue and creators perform differently. Brief 3-5 openings.",
+    "Missing disclosure: ASCI influencer rules and Meta's Paid partnership label apply, and boosted posts keep the obligation (see comp:asci_influencer).",
+    "Quoting the Forbes $10 billion headline as a fact; it is headline-only here."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.buzzincontent.com/news/meta-builds-single-creator-marketing-hub-to-move-creator-content-into-paid-ads-12065075",
+     "title": "BuzzInContent: Meta builds single creator marketing hub",
+     "supports": "creator content to partnership ads"
+    }
+   ],
+   "related": [
+    "genre:ugc_ad_script",
+    "genre:influencer_brief",
+    "genre:sponsored_creator_post",
+    "genre:sponsored_integration_script",
+    "genre:video_ad_script",
+    "genre:social_ad_copy",
+    "genre:short_form_video_script",
+    "plat:meta_ads",
+    "plat:instagram_caption",
+    "comp:asci_influencer"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Meta at Cannes Lions 2026 will merge Creator Marketplace and Partnership Ads Hub into 'Meta Creator Marketing Hub' and make it easier for brands to find product-linked creator content and 'convert it into partnership ads'.",
+     "url": "https://www.buzzincontent.com/news/meta-builds-single-creator-marketing-hub-to-move-creator-content-into-paid-ads-12065075",
+     "date": "2026-06-23"
+    },
+    {
+     "claim": "Forbes headline: 'Meta Partnership Ads Hit $10 Billion As Creators Outperform Brand Messages' (article body blocked; headline-only, low confidence).",
+     "url": "https://www.forbes.com/sites/jamiegutfreund/2026/08/12/meta-partnership-ads-hit-10-billion-as-creators-outperform-brand-messages/",
+     "date": "2026-08-12"
+    },
+    {
+     "claim": "Net Influencer: Meta turns creator livestreams into paid ads with new Instagram Live video ads.",
+     "url": "https://www.netinfluencer.com/meta-turns-creator-livestreams-into-paid-ads-with-new-instagram-live-video-ads/",
+     "date": "2026-10-01"
+    }
+   ],
+   "do": [
+    "Write the brief in five blocks: product truth in two lines, must-say claims (each with its proof and the required disclosure wording), the proof moment to show on camera, three to five hook options, and a CTA the creator can phrase naturally.",
+    "Add a reuse note: which segments are safe to cut into a 15 s paid version (hook + proof + CTA) and which need creator approval to edit.",
+    "Give a Hinglish and an English hook example per brief when the creator posts in Hinglish; let them rewrite in their voice.",
+    "Put the 'Paid partnership' / #ad disclosure instruction at the top of the brief, not the footer."
+   ],
+   "dont": [
+    "Do not require verbatim lines for every sentence of a 30 s video.",
+    "Do not list claims without proof the creator can show (a demo, a bill, a before/after taken honestly).",
+    "Do not forget usage-rights and whitelisting terms; paid reuse needs them agreed in writing.",
+    "Do not brief health or finance claims without checking the sector rules first."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:email_deliverability_rules",
+   "kind": "trend",
+   "name": "Inbox-provider rules punish spammy bulk and cold email",
+   "status": "current",
+   "summary": "MarTech (updated June 2026) summarises the Gmail bulk-sender guidelines as focused on three areas: authentication of outgoing mail, reported spam rates and easy unsubscribe; Google defines a bulk sender as one sending more than 5,000 messages to Gmail addresses in a day, and Microsoft applies similar rules to Outlook.com domains. Authentication is a technical job, but copy decides complaint rates: relevant, single-ask, easy-to-leave email is what stays in the inbox, and volume-based AI sequences put the sending domain at risk.",
+   "use_for": [
+    "Cold and promotional email copy written for fewer, more relevant sends",
+    "Unsubscribe and preference-centre wording that makes leaving easy instead of hiding it",
+    "Briefing the sender-ops or marketing team on what copy can and cannot fix (copy: relevance and complaint rate; ops: authentication)"
+   ],
+   "avoid": [
+    "Mail-merge 'personalisation' (first name, company name) with no real reason for the email: it reads as spam and raises complaints. Use one researched fact.",
+    "Hiding or fighting the unsubscribe link. A visible link costs less than spam complaints.",
+    "Scaling an AI-written sequence to thousands of near-identical sends; the cost lands on the client's domain reputation.",
+    "Assuming the 5,000 threshold makes small senders safe: it is the definition of a bulk sender, not permission to send irrelevant mail below it."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://martech.org/new-rules-for-bulk-email-senders-from-google-yahoo-what-you-need-to-know/",
+     "title": "MarTech: Bulk email restrictions from Google, Yahoo and Microsoft",
+     "supports": "bulk-sender rules"
+    }
+   ],
+   "related": [
+    "genre:cold_email",
+    "genre:promotional_email",
+    "genre:email_sequence_nurture",
+    "genre:winback_email",
+    "genre:abandoned_cart_email",
+    "genre:welcome_email_series",
+    "genre:editorial_newsletter",
+    "genre:creator_newsletter",
+    "plat:email_subject_line",
+    "plat:gmail_clipping"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "MarTech (updated June 2026): bulk-sender guidelines 'largely focus on three areas: authentication of outgoing emails, reported spam rates and the ability to easily unsubscribe'; Google defines bulk senders as 'those who send more than 5,000 messages to Gmail addresses in one day'; Microsoft applies similar rules to Outlook.com domains.",
+     "url": "https://martech.org/new-rules-for-bulk-email-senders-from-google-yahoo-what-you-need-to-know/",
+     "date": "2026-06-12"
+    }
+   ],
+   "do": [
+    "Write plain, short, text-style emails with one ask and one link; open on the specific reason you are writing to this person (a filing deadline, a post they wrote, a hiring page).",
+    "Base personalisation on one researched fact per recipient and say so in the first line; if you cannot find one, do not send that email.",
+    "Add a clear one-line opt-out in the footer ('Reply STOP or click here to unsubscribe') and honour it.",
+    "In the handover note, list what the client's ops team must set up (authentication records, a spam-rate check) because copy cannot fix those.",
+    "Propose a smaller list and a tighter segment instead of a bigger blast; report replies and complaints, not opens."
+   ],
+   "dont": [
+    "Do not use all-caps subject lines, fake 'Re:' threads or false urgency.",
+    "Do not send the same template to a purchased list.",
+    "Do not bury unsubscribe in grey 6 px text.",
+    "Do not promise inbox placement; no copywriter controls it."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:geo_ai_search",
+   "kind": "trend",
+   "name": "Generative engine optimisation (GEO / AEO): writing to be cited by AI search",
+   "status": "rising",
+   "summary": "Clients now ask for copy that Google AI Overviews, AI Mode, ChatGPT search and Perplexity will quote and cite, not just rank. Google's own Search Central guide (May 2026) says optimizing for generative AI search is optimizing for the search experience and thus still SEO, so the work is SEO writing done for answers: direct answer sentences, precise entities and numbers, original claims, indexable pages. Context: AI Mode has crossed 1 billion monthly users and AI Overviews reach 2.5 billion (Google I/O 2026), and 42% of chatbot-news users say they always or often click through to sources (Reuters DNR 2026).",
+   "use_for": [
+    "Answer-first articles, FAQs, glossaries and how-tos built to be quoted",
+    "Briefs that specify entities, numbers, dates and the original claim each section must carry",
+    "Selling the service honestly: SEO writing for answer engines, not a separate secret trick"
+   ],
+   "avoid": [
+    "Selling 'GEO' as a different discipline with its own magic files; Google's guide says it is still SEO (see trend:llm_readable_content_myths).",
+    "Answer-only pages with nothing beyond the answer: they earn a citation at best and no visit. Add the original data or method.",
+    "Vague entities ('a leading platform', 'recently'): name the product, the person, the number and the date.",
+    "Blocking snippets or indexing on pages you want cited; pages must be eligible to appear with a snippet."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+     "title": "Google Search Central: Optimizing your website for generative AI features on Google Search",
+     "supports": "Google's own position: GEO/AEO is SEO; non-commodity content"
+    },
+    {
+     "url": "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/",
+     "title": "Search Engine Journal: Google's new AI search guide calls AEO and GEO 'still SEO'",
+     "supports": "date and verbatim quotes of the guide"
+    }
+   ],
+   "related": [
+    "genre:blog_post",
+    "genre:faq_answer_article",
+    "genre:pillar_page",
+    "genre:topic_cluster_article",
+    "genre:glossary_page",
+    "genre:how_to_article",
+    "genre:content_brief",
+    "genre:informational_article",
+    "genre:ultimate_guide",
+    "plat:google_search_result"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Google Search Central guide 'Optimizing your website for generative AI features on Google Search': 'From Google Search's perspective, optimizing for generative AI search is optimizing for the search experience, and thus still SEO.'",
+     "url": "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/",
+     "date": "2026-05-15"
+    },
+    {
+     "claim": "Google I/O 2026: AI Mode 'has crossed 1 billion monthly users', AI Overviews 'reach 2.5 billion users every month'.",
+     "url": "https://www.medianama.com/2026/05/223-major-products-google-announced-i-o-2026/",
+     "date": "2026-05-25"
+    },
+    {
+     "claim": "Reuters DNR 2026: '42% of AI chatbot users for news say they always or often click through from chatbot answers to original news sources'.",
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+     "date": "2026-06-16"
+    }
+   ],
+   "do": [
+    "Lead each section with a direct, self-contained answer sentence under a question-shaped heading, ideally 40-60 words, then expand with proof, steps and an example.",
+    "Name the entity, number and date in the sentence: 'Sahyadri Tea's 250 g Assam tin costs Rs 349 incl. GST (price as of October 2026)' beats 'our tea is very affordable' (illustrative brand; use only the client's confirmed facts).",
+    "Add one quotable original claim per page (your data, a first-hand test, a clear opinion) so there is something worth citing.",
+    "Keep pages indexable and snippet-eligible, and tell the client to watch Search Console's generative AI performance report where available.",
+    "Write the brief's 'what we add' line: first-hand evidence, expert quote, dataset, template."
+   ],
+   "dont": [
+    "Do not split one page into dozens of near-duplicate question fragments.",
+    "Do not stuff every variation of a keyword in.",
+    "Do not invent statistics to look citable.",
+    "Do not promise guaranteed citations in ChatGPT, Perplexity or AI Overviews."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:hashtags_to_keywords",
+   "kind": "trend",
+   "name": "Hashtags shrink; keyword-rich captions and on-screen text do the discovery work",
+   "status": "rising",
+   "summary": "Instagram's guidance (Dec 2025) is that using fewer, up to 5, more targeted hashtags rather than many generic ones can improve content performance, and the platform card plat:instagram_hashtags records a limit of 5 tags per post. Third-party summaries say Meta has let Google and Bing index public posts from professional Instagram accounts since 10 July 2025. Discovery therefore leans on the words in the caption, the on-screen text and the spoken line: write them like the search a person would type.",
+   "use_for": [
+    "Captions and carousel slides whose first line contains the searchable phrase",
+    "On-screen text and spoken hooks that name the topic in plain words",
+    "Replacing generic hashtag blocks with 3-5 specific tags"
+   ],
+   "avoid": [
+    "Copying a 25-tag block from an old template: Instagram's limit is now 5 and generic tags dilute relevance. Pick 3-5 specific ones.",
+    "Vague hooks with no searchable phrase ('You won't believe this'). Open with the topic: 'GST notice reply format for small shops'.",
+    "Treating the Google/Bing indexing claim as settled: it is a third-party summary and applies to public posts from professional accounts only.",
+    "Keyword stuffing the caption; it must still read like a person talking."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/",
+     "title": "Social Media Today: Instagram implements new limits on hashtag use",
+     "supports": "five-hashtag cap"
+    }
+   ],
+   "related": [
+    "genre:instagram_caption",
+    "genre:carousel_copy",
+    "genre:short_form_video_script",
+    "genre:social_content_calendar",
+    "genre:instagram_story_copy",
+    "genre:social_bio",
+    "plat:instagram_caption",
+    "plat:instagram_hashtags",
+    "plat:instagram_carousel",
+    "plat:instagram_bio"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Instagram (Dec 2025): 'Using fewer (up to 5) more targeted hashtags, rather than many generic ones, can improve both your content's performance and people's experience on Instagram.'",
+     "url": "https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/",
+     "date": "2025-12-18"
+    },
+    {
+     "claim": "From 10 July 2025 Meta let Google and Bing index public posts from professional Instagram accounts (third-party summary).",
+     "url": "https://birdeye.com/blog/instagram-search-indexing-update/",
+     "date": "2025-07-10"
+    }
+   ],
+   "do": [
+    "Put the searchable phrase (what, for whom, where) in the first caption line, and repeat it in the on-screen text at the start of the reel or on slide 1.",
+    "Write the caption as the answer to a typed question: 'Kya GST notice aaye to turant reply dena zaroori hai? Short answer: haan, notice mein likhi deadline se pehle...' (add the exact time limit only after checking the notice type on the official source).",
+    "End with at most 3-5 specific hashtags (topic + audience + place), not a generic block.",
+    "Add the keyword to the profile name or bio line where the client's niche is searched."
+   ],
+   "dont": [
+    "Do not paste more than 5 hashtags.",
+    "Do not rely on trending generic tags (#viral, #reels) for discovery.",
+    "Do not leave the first line as a teaser that hides the topic.",
+    "Do not forget on-screen text: it is read by viewers and, increasingly, by search."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:linkedin_creator_economy",
+   "kind": "trend",
+   "name": "LinkedIn becomes a creator and video platform",
+   "status": "rising",
+   "summary": "LinkedIn's BrandLink ad revenue-share now covers more than 100 creators and publishers, up from 30, and LinkedIn is reportedly building a brand-deals marketplace, subscriptions and a creator fund for fiscal 2027 (per Business Insider-reviewed documents, so reported, not announced). LinkedIn's own engineering post describes a rebuilt feed using LLM embeddings that relies on professional signals and engagement patterns and excludes demographic attributes; CMI B2B 2026 finds 96% create thought leadership and LinkedIn is the top channel for it at 76%. B2B writing is moving toward consistent expertise and short video.",
+   "use_for": [
+    "LinkedIn posts built on 2-3 repeating topics so the feed sees consistent expertise",
+    "Short vertical video scripts for founders and subject experts",
+    "Posts designed to draw substantive comments rather than reactions"
+   ],
+   "avoid": [
+    "Chasing 'LinkedIn algorithm hacks' or the unconfirmed '360Brew' claims; LinkedIn's own engineering post describes a generative recommender. Write for the reader.",
+    "Random topics every week: it blurs what the profile is expert in. Pick themes and stay on them.",
+    "Treating creator-fund and marketplace plans as live: they are reported plans, so do not promise clients revenue.",
+    "Corporate-page voice for an executive post; the platform rewards a person."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://socialday.live/features/linkedins-brandlink-now-shares-revenue-with-over-100-creators-as-platform",
+     "title": "Social Day: LinkedIn BrandLink shares revenue with 100+ creators",
+     "supports": "LinkedIn creator monetisation"
+    },
+    {
+     "url": "https://ppc.land/linkedin-rebuilds-its-feed-from-scratch-with-llms-and-gpu-powered-ranking/",
+     "title": "PPC Land: LinkedIn rebuilds its feed with LLMs",
+     "supports": "March 2026 feed ranking change"
+    }
+   ],
+   "related": [
+    "genre:linkedin_post",
+    "genre:linkedin_article",
+    "genre:ghostwritten_founder_post",
+    "genre:thought_leadership_article",
+    "genre:short_form_video_script",
+    "genre:talking_head_script",
+    "genre:carousel_copy",
+    "plat:linkedin_post",
+    "plat:linkedin_article",
+    "plat:linkedin_document_post"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "BrandLink ad revenue-share now covers 'more than 100 creators and publishers', up from 30; LinkedIn is building a brand-deals marketplace, subscriptions and a creator fund for fiscal 2027 (per Business Insider-reviewed documents).",
+     "url": "https://socialday.live/features/linkedins-brandlink-now-shares-revenue-with-over-100-creators-as-platform",
+     "date": "2026-09-18"
+    },
+    {
+     "claim": "LinkedIn engineering post 'Engineering the next generation of LinkedIn's Feed' (Hristo Danchev) describes rebuilt ranking using LLM embeddings; 'The ranking model relies on professional signals and engagement patterns, and specifically excludes demographic attributes.'",
+     "url": "https://ppc.land/linkedin-rebuilds-its-feed-from-scratch-with-llms-and-gpu-powered-ranking/",
+     "date": "2026-03-12"
+    },
+    {
+     "claim": "CMI B2B 2026 research: 96% create thought leadership content and LinkedIn is the top channel for it at 76%.",
+     "url": "https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research",
+     "date": "2025-10-08"
+    }
+   ],
+   "do": [
+    "Define 2-3 content pillars per person ('GST for D2C founders', 'hiring in tier-2 cities') and write every post under one of them.",
+    "End posts with a specific question a practitioner can answer from experience, and plan time to reply to comments soon after posting.",
+    "Pair each strong written post with a 30-60 second to-camera script that tells the same story in the person's spoken voice.",
+    "Open with the concrete situation ('Last quarter a Surat exporter lost Rs 4 lakh to a missed deadline') using only facts the client confirms."
+   ],
+   "dont": [
+    "Do not recycle generic 'lessons from 10 years' lists.",
+    "Do not rely on engagement pods or tag-lists.",
+    "Do not state algorithm rules as fact; cite LinkedIn's own posts or say unconfirmed.",
+    "Do not post about everything; consistency of topic is the signal."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:llm_readable_content_myths",
+   "kind": "trend",
+   "name": "llms.txt, chunking and AI-only rewrites: not needed for Google",
+   "status": "current",
+   "summary": "Agencies are selling llms.txt files, chunked copy and AI-specific rewrites; Google's May 2026 guide says you do not need machine-readable files, AI text files, markup or Markdown to appear in generative AI search, there is no requirement to break content into small pieces, and site owners do not need to capture every long-tail keyword variation. It also says structured data is not required for generative AI search. Write clear pages for people with descriptive headings. llms.txt may matter for other assistants, but it is not a Google ranking factor and should not be billed as one.",
+   "use_for": [
+    "Pushing back on briefs that ask for fragmented 'AI-friendly' pages or keyword-variant bloat",
+    "Keeping content plans focused on useful pages instead of AI-specific tricks",
+    "Explaining to clients what Google has actually said about AI features and what remains unproven for other assistants"
+   ],
+   "avoid": [
+    "Splitting one good page into dozens of tiny fragments so a model can 'chunk' it: Google says it understands nuance and does not require this.",
+    "Writing a page's copy twice (a human version and an AI version): one clear page serves both.",
+    "Telling clients llms.txt will lift Google rankings. If a client wants one for other assistants, say that is an unproven side bet.",
+    "Adding schema or markup just for AI features and promising results; Google says no special markup is needed."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+     "title": "Google Search Central: Optimizing your website for generative AI features",
+     "supports": "no llms.txt / chunking / special markup needed"
+    }
+   ],
+   "related": [
+    "genre:blog_post",
+    "genre:content_brief",
+    "genre:pillar_page",
+    "genre:faq_answer_article",
+    "genre:knowledge_base_article",
+    "genre:glossary_page",
+    "genre:informational_article",
+    "genre:topic_cluster_article",
+    "plat:google_search_result"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Google's AI-features guide: 'You don't need to create machine-readable files, AI text files, markup, or Markdown to appear in generative AI search.'",
+     "url": "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/",
+     "date": "2026-05-15"
+    },
+    {
+     "claim": "Same guide: 'There's no requirement to break content into small pieces for AI systems. Google's systems are able to understand the nuance.' and 'Site owners don't need to capture every long-tail keyword variation.'",
+     "url": "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/",
+     "date": "2026-05-15"
+    }
+   ],
+   "do": [
+    "Structure each page for people: descriptive H2/H3 headings, short paragraphs, one clear answer per section, a table where a comparison is needed.",
+    "Write one version of each page. If a client insists on an llms.txt, treat it as a separate low-cost task labelled experimental.",
+    "When a vendor claims a special AI format works, ask for the page in Google's guide that says so; if there is none, do not put it in the plan.",
+    "Cover the topic's real questions once, well, instead of one thin page per keyword variant."
+   ],
+   "dont": [
+    "Do not bill llms.txt, chunking or 'AI schema' as a Google AI-feature requirement.",
+    "Do not duplicate content across variant pages to capture long-tail phrases.",
+    "Do not remove useful context from paragraphs to make them 'liftable'.",
+    "Do not cite this guide for other assistants; it speaks only for Google's features."
+   ],
+   "half_life_months": 12
+  },
+  {
+   "id": "trend:micro_dramas",
+   "kind": "trend",
+   "name": "Vertical micro-dramas (scripted short series)",
+   "status": "rising",
+   "summary": "Vertical micro-dramas are scaling fast in India: Redseer (via Storyboard18, Aug 2026) says the market could grow 10x to Rs 23,500-25,500 crore by FY32, with ad revenue from around Rs 24 crore in FY26 to Rs 210 crore in FY27E and Rs 5,000-5,500 crore by FY32P (all forecasts); YouTube reports microdramas surpassing 6.5 billion views with watch time up over 50% year over year and has added Shorts Series for seasons and episodes; an Eloelo CEO at FICCI FRAMES 2026 called it the 'quick-commerce moment for entertainment' (speaker claim, as are his download and watch-time figures). Demand for serial short-form scripts is real; revenue forecasts are not guarantees.",
+   "use_for": [
+    "Episode scripts of about a minute for vertical drama apps and YouTube Shorts Series (check the commissioning platform's own length spec)",
+    "Series bibles, character sheets and episode maps that keep a long run of short episodes consistent",
+    "Pitching brand-funded micro-series to D2C clients where the product sits inside the story"
+   ],
+   "avoid": [
+    "Writing a short film cut into pieces: each episode must open on a hook and end on a cliffhanger by itself, because viewers decide episode by episode.",
+    "Slow set-up and exposition. Put the conflict in the first seconds and let backstory surface through action.",
+    "Treating forecast numbers (Rs 23,500-25,500 crore, Rs 5,000-5,500 crore) as current revenue when pitching; label them as Redseer projections.",
+    "Overloading an episode with plot: one reversal per episode keeps the pace and the ending sharp."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.storyboard18.com/media-and-entertainment/ad-revenue-from-indias-micro-dramas-could-reach-rs-5500-crore-by-fy32-redseer-109673.htm",
+     "title": "Storyboard18: Redseer micro-drama report",
+     "supports": "India market size and ad revenue forecasts"
+    },
+    {
+     "url": "https://blog.youtube/news-and-events/made-on-youtube-creators-shorts-series-tv-features/",
+     "title": "YouTube Official Blog, Made on YouTube 2026",
+     "supports": "microdrama views and Shorts series"
+    }
+   ],
+   "related": [
+    "genre:micro_drama_episode_script",
+    "genre:serialized_fiction",
+    "genre:web_series_episode",
+    "genre:worldbuilding_bible",
+    "genre:character_bio",
+    "genre:short_form_video_script",
+    "genre:sponsored_integration_script",
+    "plat:youtube_title"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Storyboard18 on Redseer (report dated August 2026): micro-drama market could grow 10x to 'Rs 23,500-25,500 crore by FY32'; ad revenue 'from around Rs 24 crore in FY26 to Rs 210 crore in FY27E and eventually reach Rs 5,000-5,500 crore by FY32P'.",
+     "url": "https://www.storyboard18.com/media-and-entertainment/ad-revenue-from-indias-micro-dramas-could-reach-rs-5500-crore-by-fy32-redseer-109673.htm",
+     "date": "2026-09-03"
+    },
+    {
+     "claim": "FICCI FRAMES 2026 (Eloelo CEO Saurabh Pandey): 'Microdrama is the quick-commerce moment for entertainment'; downloads in India 'roughly 60% to 65% of OTT downloads', users spend '60 to 70 minutes a day' (speaker claim).",
+     "url": "https://www.socialsamosa.com/industry-updates/ficci-frmaes-2026-saurabh-pandey-microdrama-q-comm-moment-for-entertainment-12591111",
+     "date": "2026-09-29"
+    },
+    {
+     "claim": "YouTube: 'microdramas on YouTube surpassed 6.5 billion views, with watch time growing by over 50% year-over-year'; new Shorts Series lets creators 'structure their Shorts into seasons and episodes'.",
+     "url": "https://blog.youtube/news-and-events/made-on-youtube-creators-shorts-series-tv-features/",
+     "date": "2026-09-23"
+    }
+   ],
+   "do": [
+    "Open each episode with the conflict already running in the first lines, in dialogue the audience can follow muted with subtitles: 'Tumne meri chitthi padhi? - Kaunsi chitthi?'.",
+    "Give every episode one reversal (a reveal, a betrayal, a decision) and end on a last line or image that forces the next tap.",
+    "Write Hindi or Hinglish dialogue in short exchanges a performer can say in one breath; keep scenes to one or two locations for cost.",
+    "Maintain a one-page series bible (characters, secrets, what each viewer knows when) and an episode map so cliffhangers pay off.",
+    "For a brand series, place the product as a plot tool (a delivery, a gift, a clue), never as a pause in the story; agree disclosure with the client."
+   ],
+   "dont": [
+    "Do not end an episode on a resolved scene with no open question.",
+    "Do not use voice-over to explain what the picture can show.",
+    "Do not promise clients the Redseer revenue as a return on their series.",
+    "Do not write dialogue that is only readable, not speakable."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:news_creators",
+   "kind": "trend",
+   "name": "News and explainer creators rival publishers",
+   "status": "rising",
+   "summary": "Reuters Institute Digital News Report 2026: around a quarter (27%) of respondents globally get some news from news-focused individual creators or influencers, 13% say most or all of their news needs are met by such creators, and 77% consume online news video each week. Personality-led explainers compete with brand media. These are global figures; the report is not an India benchmark.",
+   "use_for": [
+    "To-camera news and explainer scripts in a named person's first-person voice",
+    "Commentary and analysis videos where on-screen sources carry the trust",
+    "Helping institutional clients (a think tank, a bank, a government office) make a human-fronted explainer series"
+   ],
+   "avoid": [
+    "Press-release voice read aloud ('We are pleased to announce'): creator audiences trust a person's judgement, not an institution's wording.",
+    "Opinion with no sources on screen. Trust is the creator's only asset, so show every claim's source as a caption.",
+    "Passing off outrage as analysis; a correction later costs more than checking now (see genre:fact_check).",
+    "Quoting 27% or 13% as India figures."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+     "title": "Reuters Institute Digital News Report 2026",
+     "supports": "27% / 13% creator news figures; 77% weekly news video"
+    }
+   ],
+   "related": [
+    "genre:news_explainer",
+    "genre:talking_head_script",
+    "genre:commentary_video_script",
+    "genre:news_bulletin_script",
+    "genre:video_essay_script",
+    "genre:fact_check",
+    "genre:short_form_video_script",
+    "genre:youtube_video_script",
+    "plat:youtube_description"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Reuters DNR 2026: 'Around a quarter (27%) of respondents globally get some news from news-focused individual creators or influencers'; '13% of respondents say that most or all of their news needs are met by creators who focus on news'.",
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+     "date": "2026-06-16"
+    },
+    {
+     "claim": "Reuters DNR 2026: '77% of people globally consume online news video each week'.",
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+     "date": "2026-06-16"
+    }
+   ],
+   "do": [
+    "Script in first person and present tense, with a clear stance in the first 10 seconds: 'Mujhe lagta hai yeh notice galat hai, aur yeh rahi wajah.'",
+    "Structure: the news in one sentence, why it matters to this viewer, the evidence with sources on screen, what to do next.",
+    "Put a source caption (document name, date) on screen for each factual claim, and list sources in the description.",
+    "Keep a visible corrections habit: pin or add a correction line when a fact changes."
+   ],
+   "dont": [
+    "Do not read a bulletin in a neutral anchor monotone when the format is a creator's explainer.",
+    "Do not claim certainty beyond the evidence; say 'reported by' and name the outlet.",
+    "Do not use unlabelled AI voice or visuals for news (see trend:ai_disclosure_rules).",
+    "Do not mix fact and opinion in the same sentence without a signal."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:newsletters_owned_audience",
+   "kind": "trend",
+   "name": "Paid newsletters and owned audiences",
+   "status": "rising",
+   "summary": "As platform reach and search clicks shift, brands and creators invest in lists they own. beehiiv's State of Paid Newsletters 2026 (platform data) reports paid subscription revenue of $19 million in 2025, up 138% from 2024, median free-to-paid conversion of 0.62%, and the share of revenue-earning users with paid subscriptions doubling from 15% (Q1 2024) to 30% (Q1 2026). Expect under 1% free-to-paid, so the free tier's job is trust, not teasing.",
+   "use_for": [
+    "Newsletter issues with one strong idea, a consistent format and a reason to forward",
+    "Welcome sequences and free-tier issues that build trust before any paid ask",
+    "Pitching newsletter writing as an owned-channel hedge to brands and creators"
+   ],
+   "avoid": [
+    "Using the free issue as a teaser that withholds the useful part: it lowers trust, and conversion is already under 1% at the median.",
+    "Link roundups with no point of view; add one opinion and one original line per issue (see genre:curated_newsletter).",
+    "Reading beehiiv's numbers as industry-wide: they are one platform's data, and the dollar figure is not a market size.",
+    "Promising a client a paid-conversion rate; give 0.62% as a median benchmark from one platform, not a target."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+     "title": "beehiiv: The State of Paid Newsletters 2026",
+     "supports": "paid newsletter growth and conversion benchmarks"
+    }
+   ],
+   "related": [
+    "genre:creator_newsletter",
+    "genre:editorial_newsletter",
+    "genre:curated_newsletter",
+    "genre:product_update_newsletter",
+    "genre:linkedin_article",
+    "genre:welcome_email_series",
+    "genre:lead_magnet_content",
+    "plat:substack_post",
+    "plat:email_subject_line",
+    "plat:gmail_clipping"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "beehiiv State of Paid Newsletters 2026: paid subscription revenue '$19 million in 2025, up 138% from 2024'; median free-to-paid conversion '0.62%'; share of revenue-earning users with paid subscriptions doubled from 15% (Q1 2024) to 30% (Q1 2026).",
+     "url": "https://www.beehiiv.com/blog/the-state-of-paid-newsletters-2026",
+     "date": "2026-06-22"
+    }
+   ],
+   "do": [
+    "Give each issue one idea, delivered in the same format every time (e.g. 'one chart, one story, one action'), so subscribers know what they are getting.",
+    "End with a reason to forward: a line the reader would send to a colleague ('Forward this to your CA before 15th').",
+    "Make the free issue complete and useful; offer paid issues as deeper material (templates, data, access), described by what the reader can do with them.",
+    "Add a visible subscribe-to-reply habit and answer replies; replies teach you the next topic."
+   ],
+   "dont": [
+    "Do not cram five topics into one issue.",
+    "Do not change the format every week.",
+    "Do not paywall the single answer the free reader came for.",
+    "Do not set growth targets from the headline revenue growth number."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:non_commodity_content",
+   "kind": "trend",
+   "name": "First-hand, non-commodity content as the ranking and citation edge",
+   "status": "rising",
+   "summary": "Google's May 2026 AI-search guide stresses non-commodity content with unique, first-hand insight over generic guidance, and Pew found users ended their browsing session on 26% of pages with an AI summary versus 16% of pages with only traditional results. Generic explainers are what an AI summary replaces; experience, original data and a point of view are what get cited and clicked.",
+   "use_for": [
+    "Informational and thought-leadership pieces built from the client's own numbers, cases, screenshots and opinions",
+    "Interview-led articles where the expert's experience is the product",
+    "Cutting 'what is X' padding that a summary already covers"
+   ],
+   "avoid": [
+    "Rewriting what the top ten results already say. If the piece could be generated from a prompt, it is commodity; add something only the client has.",
+    "Fabricated first-hand claims ('in our experience...') with no real experience behind them: get the interview first.",
+    "Padding with definitions to hit word count; a short piece with original evidence beats a long generic one.",
+    "Reading the Pew 26% vs 16% as a promise: it is a US 2025 browsing study that shows summaries end sessions more often."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+     "title": "Google Search Central: Optimizing your website for generative AI features",
+     "supports": "non-commodity content emphasis"
+    }
+   ],
+   "related": [
+    "genre:blog_post",
+    "genre:informational_article",
+    "genre:thought_leadership_article",
+    "genre:case_study",
+    "genre:research_article",
+    "genre:ultimate_guide",
+    "genre:content_brief",
+    "genre:listicle",
+    "genre:best_of_roundup",
+    "plat:google_search_result"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Google's May 2026 AI-search guide stresses 'non-commodity content' with unique, first-hand insight over generic guidance.",
+     "url": "https://www.searchenginejournal.com/googles-new-ai-search-guide-calls-aeo-and-geo-still-seo/575026/",
+     "date": "2026-05-15"
+    },
+    {
+     "claim": "Pew: users ended their browsing session on '26% of pages with an AI summary, compared with 16% of pages with only traditional search results'.",
+     "url": "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
+     "date": "2025-07-22"
+    }
+   ],
+   "do": [
+    "Before drafting, interview the client's expert for 20-30 minutes and extract three things: a number from their own work, a story with names and dates, and one opinion that goes against the common advice.",
+    "Open with that proof, not with a definition: 'We handled 212 GST notices last year; 61 were wrong on the same field' (illustrative; use the client's real data).",
+    "Add original assets: a screenshot of the real process, a table from their data, a worked example with Indian rupee figures.",
+    "Replace each 'what is X' section with one sentence and a link, and spend the words on 'what we saw'."
+   ],
+   "dont": [
+    "Do not write generic 'ultimate guides' that repeat the SERP.",
+    "Do not cite statistics you cannot trace to a source.",
+    "Do not invent anecdotes or case results.",
+    "Do not hide the author; a named expert with credentials is part of what makes content non-commodity."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:organic_publisher_traffic_squeeze",
+   "kind": "trend",
+   "name": "Publishers and brands shift from search traffic to direct relationships",
+   "status": "rising",
+   "summary": "Reuters DNR 2026 finds social media and video networks are, on average across the markets covered, more popular than both TV and owned news websites and apps as sources of news, and Fortune (quoting an industry source, secondary) says some businesses have seen organic search traffic decline by between 5% and 35% as AI answer engines respond instantly. Content plans therefore need an owned-audience path and a video or creator path, measured by subscribers and returning readers, not only sessions.",
+   "use_for": [
+    "Content plans that pair search content with a newsletter, WhatsApp or community path",
+    "Repurposing a strong article into video, newsletter and channel posts",
+    "Reporting that tracks subscribers and returning visitors beside sessions"
+   ],
+   "avoid": [
+    "A plan that is 100% SEO articles. Add at least one owned channel (newsletter, WhatsApp channel, community) and one video format.",
+    "Quoting the 5%-35% range as a measured average; it is a quote from an industry source in Fortune and varies by business.",
+    "Repurposing by copy-paste: each channel needs its own opening and format (see trend:original_content_ranking).",
+    "Measuring only sessions; a falling session count with a rising subscriber base can be a healthy shift."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+     "title": "Reuters Institute Digital News Report 2026",
+     "supports": "social/video overtaking owned sites"
+    }
+   ],
+   "related": [
+    "genre:editorial_newsletter",
+    "genre:creator_newsletter",
+    "genre:whatsapp_channel_post",
+    "genre:repurposed_content",
+    "genre:social_content_calendar",
+    "genre:news_explainer",
+    "genre:community_post",
+    "genre:short_form_video_script",
+    "plat:substack_post",
+    "plat:email_subject_line"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Reuters DNR 2026: 'social media and video networks are, on average ..., more popular than both TV and owned news websites and apps as sources of news'.",
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2026/dnr-executive-summary",
+     "date": "2026-06-16"
+    },
+    {
+     "claim": "Fortune quoting an industry source: 'Some businesses have seen organic search traffic decline by between 5% and 35% as AI answer engines provide instant responses'.",
+     "url": "https://fortune.com/2026/06/05/war-ai-slop-publicis-groupe-hachette-publishers-association/",
+     "date": "2026-06-05"
+    }
+   ],
+   "do": [
+    "For every flagship article, plan its second life: a 60 s video script, a newsletter issue and a WhatsApp channel post, each with its own hook.",
+    "Add an owned-audience call to action on every piece (subscribe, join the WhatsApp channel) with a concrete reason, e.g. 'Mon-Fri: one GST update in 3 lines'.",
+    "Write the monthly report line as: new subscribers, returning readers, channel joins, then sessions.",
+    "Keep search content for topics where the page offers something a summary cannot (see trend:ai_overviews_zero_click)."
+   ],
+   "dont": [
+    "Do not rely on one platform for all reach.",
+    "Do not post the identical caption on every channel.",
+    "Do not judge content only by organic clicks this quarter.",
+    "Do not announce 'SEO is dead' to a client; reallocate, do not abandon."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:original_content_ranking",
+   "kind": "trend",
+   "name": "Platforms reward originality and demote reposts and repetitive content",
+   "status": "rising",
+   "summary": "Instagram says it will no longer recommend photos and carousel posts from aggregator accounts in Explore and other surfaces, and an account whose most posts within a 30-day period are re-posts is treated as an aggregator (Apr 2026); YouTube's CEO letter (Jan 2026) says it is reducing the spread of low-quality, repetitive content. Instagram also says edits must add real value beyond simply restating or referencing third-party content. Reaction and curation formats survive only with real commentary, data or a new angle.",
+   "use_for": [
+    "Reaction, commentary and curation posts that add a stated opinion, data or a new angle",
+    "Social calendars that vary format and message instead of templated near-duplicates",
+    "Repurposed content rewritten for each channel"
+   ],
+   "avoid": [
+    "Posting the same template with the name or number swapped, at scale: this is the repetitive pattern platforms are cutting back.",
+    "Re-posting others' images or reels with a one-line caption: if most of the 30-day output is re-posts, the account is classed an aggregator.",
+    "Meme and news-reactive posts with no added view; add the take, the number or the local angle (see genre:newsjacking_post).",
+    "Treating this as a content-volume problem; fewer, original posts are safer than many copies."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.socialmediatoday.com/news/instagram-updates-algorithm-to-benefit-original-creators/819016/",
+     "title": "Social Media Today: Instagram updates algorithm to benefit original creators",
+     "supports": "aggregator demotion extended to photos and carousels"
+    },
+    {
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "title": "YouTube CEO letter 2026",
+     "supports": "managing AI slop, repetitive content"
+    }
+   ],
+   "related": [
+    "genre:commentary_video_script",
+    "genre:newsjacking_post",
+    "genre:meme_caption",
+    "genre:repurposed_content",
+    "genre:social_content_calendar",
+    "genre:instagram_caption",
+    "genre:carousel_copy",
+    "genre:short_form_video_script",
+    "plat:instagram_caption",
+    "plat:instagram_carousel"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Instagram will 'no longer recommend photos and carousel posts from aggregator accounts within Explore and other surfaces'; 'If most of what an account posts within that 30-day period are re-posts, it will be considered an aggregator account.'",
+     "url": "https://www.socialmediatoday.com/news/instagram-updates-algorithm-to-benefit-original-creators/819016/",
+     "date": "2026-04-30"
+    },
+    {
+     "claim": "YouTube CEO letter: 'To reduce the spread of low quality AI content, we're actively building on our established systems ... reducing the spread of low quality, repetitive content.'",
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "date": "2026-01-21"
+    }
+   ],
+   "do": [
+    "For every reaction or curation post, write one sentence of your own view and one added fact (a number, a rupee impact, a local example) before posting the source.",
+    "Plan the month so most posts are original work (a tip, a case, a short video, a data point) and curation is the minority.",
+    "Rewrite repurposed content for the format: an article becomes a 5-slide carousel with new copy, not the same paragraphs cropped.",
+    "Credit the source on screen or in the first line and say what you add: 'Source: <outlet>, <date>. My take: ...'."
+   ],
+   "dont": [
+    "Do not fill the calendar with fill-in-the-blank templates.",
+    "Do not re-post other creators' content as the main strategy.",
+    "Do not remove credits to look original.",
+    "Do not mass-produce lightly reworded AI variants."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:reddit_and_forums_in_search",
+   "kind": "trend",
+   "name": "Reddit and forum content in search and AI answers, with volatile referrals",
+   "status": "current",
+   "summary": "CNBC (July 2026) reports Reddit's daily active uniques up 18% year over year to 130.3 million, with the company saying search referrals were choppy and its two biggest data-licensing partners being OpenAI and Google; gHacks (citing WSJ via TechSpot) reports Reddit and major publishers reevaluating Google access as AI Overviews cut referral traffic. Community threads surface in search and feed AI answers, but referrals swing, so community writing is a channel, not a guaranteed traffic source.",
+   "use_for": [
+    "Honest, specific community answers a searcher or AI model can cite",
+    "Reddit and forum posts that follow each community's rules and disclose affiliation",
+    "Telling clients community is worth doing for credibility, not for a promised traffic line"
+   ],
+   "avoid": [
+    "Link-dropping and stealth promotion; moderators often remove it and may ban the account. Answer first, disclose, and link only where the community allows.",
+    "Planning a client's traffic around Reddit's Google referrals; the company itself called them choppy.",
+    "Posting the same reply across threads. Each answer should address that thread's actual question.",
+    "Pretending to be a customer. Disclose the brand relationship plainly."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/07/30/reddit-rddt-q2-2026-earnings-report.html",
+     "title": "CNBC: Reddit Q2 2026 earnings",
+     "supports": "Reddit DAU and Google referral volatility"
+    }
+   ],
+   "related": [
+    "genre:reddit_post",
+    "genre:quora_answer",
+    "genre:community_post",
+    "genre:comment_reply",
+    "genre:faq_answer_article",
+    "plat:reddit_post",
+    "plat:reddit_community_description"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "CNBC: Reddit DAUq 'jumped 18% year-over-year to 130.3 million'; the company said 'search referrals were choppy'; its two biggest data-licensing partners are OpenAI and Google.",
+     "url": "https://www.cnbc.com/2026/07/30/reddit-rddt-q2-2026-earnings-report.html",
+     "date": "2026-07-30"
+    },
+    {
+     "claim": "gHacks (citing WSJ via TechSpot): Reddit and major publishers reevaluate Google access as AI Overviews cut search referral traffic.",
+     "url": "https://www.ghacks.net/2026/07/23/reddit-and-major-publishers-consider-blocking-google-as-ai-overviews-cut-search-referral-traffic/",
+     "date": "2026-07-23"
+    }
+   ],
+   "do": [
+    "Read the subreddit rules and the top threads first, then write an answer that fully solves the asker's problem with the specific steps, numbers and caveats.",
+    "Disclose affiliation in the first line: 'I work at <brand>; here is what we see in practice.' Keep the tone of a member, not a pitch.",
+    "Add one specific detail someone can verify (a price band, a time frame, a source link when the rules allow).",
+    "Track mentions and citations, not only referral clicks, and report them as such."
+   ],
+   "dont": [
+    "Do not drop a link as the whole answer.",
+    "Do not astroturf with fake accounts or fake testimonials.",
+    "Do not copy-paste the same reply to many threads.",
+    "Do not argue with critics; acknowledge the point and add the fact."
+   ],
+   "half_life_months": 12
+  },
+  {
+   "id": "trend:rural_vernacular_internet_india",
+   "kind": "trend",
+   "name": "Rural, vernacular India drives internet growth",
+   "status": "rising",
+   "summary": "IAMAI-Kantar (Jan 2026): India has 958 million active internet users, about 8% year-on-year growth; rural India accounts for 57% of them, approximately 548 million, and is growing at nearly four times the pace of urban India. Google also expanded AI Mode to seven Indian languages beyond Hindi and English (Oct 2025). For mass-market Indian brands the growth audience is rural, so Hindi or regional versions and Hinglish social copy reach it. The report figures above do not give a language split, so check the client's own analytics.",
+   "use_for": [
+    "Bilingual or trilingual deliverables: Hindi (Devanagari) or regional, Hinglish for social, English for metros",
+    "Reels, WhatsApp messages and ads for tier-2, tier-3 and rural audiences",
+    "Scheme, service and product explainers that need plain, spoken-register language"
+   ],
+   "avoid": [
+    "Translating English copy word for word: write natively in the target language with local examples (see lang:transcreation).",
+    "Assuming all rural users read Devanagari or all prefer Hinglish; check by region and platform.",
+    "Using metro references (a cafe, a flat, a startup) for audiences whose daily life is different.",
+    "Quoting 57% as 'India reads Hindi'; it is the rural share of active internet users."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://yourstory.com/2026/01/indias-internet-user-base-crosses-950-million-2025-iamai-report",
+     "title": "YourStory on IAMAI-Kantar Internet in India Report 2025",
+     "supports": "958M users, 57% rural, rural growth 4x urban"
+    }
+   ],
+   "related": [
+    "genre:short_form_video_script",
+    "genre:whatsapp_broadcast",
+    "genre:scheme_explainer",
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "genre:public_service_announcement",
+    "lang:hindi_devanagari",
+    "lang:hinglish_roman",
+    "lang:transcreation",
+    "plat:whatsapp_business_template"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "IAMAI-Kantar report (Jan 2026): 'India now has 958 million Active Internet Users (AIU), marking an approximate 8% year-on-year growth'; 'rural India accounts for 57% of India's active internet users, i.e, approximately 548 million'; rural is 'growing at nearly four times the pace of urban India'.",
+     "url": "https://yourstory.com/2026/01/indias-internet-user-base-crosses-950-million-2025-iamai-report",
+     "date": "2026-01-29"
+    },
+    {
+     "claim": "Google expanded AI Mode to seven Indian languages beyond Hindi and English.",
+     "url": "https://blog.google/intl/en-in/products/supercharging-search-for-india-new-languages-in-ai-mode-search-live-debuts/",
+     "date": "2025-10-08"
+    }
+   ],
+   "do": [
+    "Deliver at least two language versions for mass-market work: one Hindi or regional (written natively) and one Hinglish for reels and captions, plus English where the client targets metros.",
+    "Use examples from the audience's daily life (a kirana, a mandi, a UPI payment to a local shop) and spoken words rather than formal ones.",
+    "Keep numbers, prices, dates and scheme names identical across versions and in the script the client's team will actually read out.",
+    "Read each version aloud (or have a native speaker do it) before delivery; flag any term you had to guess."
+   ],
+   "dont": [
+    "Do not machine-translate and ship.",
+    "Do not mix scripts randomly inside one line.",
+    "Do not use heavy Sanskritised or heavy English vocabulary for a mass audience.",
+    "Do not cut the regional version for budget and keep only English."
+   ],
+   "half_life_months": 36
+  },
+  {
+   "id": "trend:scaled_ai_content_enforcement",
+   "kind": "trend",
+   "name": "Search enforcement against scaled AI content",
+   "status": "current",
+   "summary": "Google's spam policies (last updated 28 Aug 2026) list using generative AI tools to generate many pages without adding value for users as scaled content abuse (alongside scraping and stitching content without adding value), and the policy page also covers attempts to manipulate generative AI responses in Google Search. A Google spam update was announced on 24 June 2026 and completed 26 June 2026 (third-party summary, low confidence on what it targeted). Policy advice is to exclude such content from Search. Volume without added value is a liability, so sell fewer, better pages.",
+   "use_for": [
+    "Pushing back on briefs for hundreds of near-identical programmatic pages (city pages, spun posts)",
+    "Setting an added-value bar for every AI-assisted draft: original examples, data, expert input, real editing",
+    "Auditing and pruning thin pages with a client's SEO lead"
+   ],
+   "avoid": [
+    "Template pages that swap only the city or keyword ('GST filing in Indore', 'GST filing in Bhopal') with identical text. Each page needs unique local substance or should not exist.",
+    "Treating AI as the offence: the policy targets many pages generated without adding value, whatever the tool. Edited, expert-informed pages are not the target.",
+    "Citing the June 2026 update as proof of what Google targeted; the evidence here is a third-party summary only.",
+    "Tricks to manipulate AI answers of any kind; the spam page names manipulating generative AI responses as a concern."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "title": "Google Search Central: Spam policies for Google web search",
+     "supports": "scaled content abuse definition incl. generative AI; AI-response manipulation"
+    }
+   ],
+   "related": [
+    "genre:programmatic_seo_page",
+    "genre:local_seo_page",
+    "genre:blog_post",
+    "genre:topic_cluster_article",
+    "genre:content_refresh",
+    "genre:category_page",
+    "genre:best_of_roundup",
+    "plat:google_search_result",
+    "plat:shopify_seo_fields",
+    "comp:google_search_spam_policies"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Google spam policies: scaled content abuse includes 'Using generative AI tools or other similar tools to generate many pages without adding value for users'; the page also covers 'attempting to manipulate generative AI responses in Google Search'. 'Last updated 2026-08-28 UTC.'",
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "date": "2026-08-28"
+    },
+    {
+     "claim": "Google's June 2026 spam update was announced on the Search Status Dashboard on 24 June 2026 and completed 26 June 2026 (third-party summary; low confidence on what it targeted).",
+     "url": "https://www.digitalapplied.com/blog/google-june-2026-spam-update-rollout-site-owner-guide",
+     "date": "2026-06-26"
+    }
+   ],
+   "do": [
+    "For any multi-page job, set a per-page minimum in the brief: at least one thing unique to that page (local data, a real example, a named expert quote, a photo) and a human edit sign-off.",
+    "Cap the first batch small (ten strong pages) and expand only after they earn impressions and conversions.",
+    "When asked for volume, quote the plan as fewer, better pages and list what each page will contain that others do not.",
+    "Prune or merge near-duplicate thin pages during refreshes, redirecting where it makes sense."
+   ],
+   "dont": [
+    "Do not generate hundreds of pages from one template and one prompt.",
+    "Do not publish an AI draft without edits, facts and added value.",
+    "Do not scrape or stitch other pages' content.",
+    "Do not promise a client that a page count will lift rankings."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:short_video_india",
+   "kind": "trend",
+   "name": "Short-form video is the mass format in India",
+   "status": "current",
+   "summary": "IAMAI-Kantar says that in 2025, 588 million (61%) Indian internet users consumed short-video content, with rural users marginally outnumbering urban users, and YouTube's CEO says Shorts now averages 200 billion daily views. For B2C India the reel or Short script is the default brief, and many pieces should be scripted before any article.",
+   "use_for": [
+    "Reel and Shorts scripts with a first-line hook, one idea and on-screen text that works muted",
+    "Turning a client's long-form idea into a short script plus caption",
+    "Hinglish scripting for audiences that speak it, with a second-language version when the audience requires it"
+   ],
+   "avoid": [
+    "Writing a blog post and reading it aloud: spoken video needs short sentences, visual beats and a hook inside the first line.",
+    "More than one idea per reel; a second idea belongs in the next reel.",
+    "Relying on audio alone: many viewers watch muted, so the point must be readable on screen.",
+    "Using the 61% figure without 'IAMAI-Kantar, 2025 data'; also avoid urban-only assumptions, since rural users marginally outnumber urban among short-video consumers."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://yourstory.com/2026/01/indias-internet-user-base-crosses-950-million-2025-iamai-report",
+     "title": "IAMAI-Kantar Internet in India 2025 (via YourStory)",
+     "supports": "588M short-video consumers"
+    },
+    {
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "title": "YouTube Official Blog: From the CEO, what's coming to YouTube in 2026",
+     "supports": "Shorts 200B daily views"
+    }
+   ],
+   "related": [
+    "genre:short_form_video_script",
+    "genre:video_ad_script",
+    "genre:ugc_ad_script",
+    "genre:talking_head_script",
+    "genre:faceless_video_script",
+    "genre:instagram_caption",
+    "genre:social_ad_copy",
+    "plat:instagram_caption",
+    "plat:meta_ads",
+    "plat:youtube_title"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "IAMAI-Kantar report: 'in 2025, 588 million (61%) internet users consumed short-video content, with rural users marginally outnumbering urban users'.",
+     "url": "https://yourstory.com/2026/01/indias-internet-user-base-crosses-950-million-2025-iamai-report",
+     "date": "2026-01-29"
+    },
+    {
+     "claim": "YouTube CEO letter: Shorts 'now averages 200 billion daily views'.",
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "date": "2026-01-21"
+    }
+   ],
+   "do": [
+    "Write the first line as the promise or the problem and put it on screen too: 'Rs 500 mein kitchen ka yeh jugaad?'",
+    "Build the script in beats: hook (one line), one idea in three short steps, proof or demo moment, one action (follow, save, WhatsApp).",
+    "Write on-screen text separately from the voice-over so the reel works with sound off.",
+    "Add a caption that repeats the topic in plain keywords (see trend:hashtags_to_keywords).",
+    "Draft the reel script first and derive the article or carousel from it for B2C India."
+   ],
+   "dont": [
+    "Do not open with a logo, greeting or long intro.",
+    "Do not pack three tips and a story into one reel.",
+    "Do not write voice-over lines that need a screen to be understood unless the screen shows it.",
+    "Do not assume all viewers are urban."
+   ],
+   "half_life_months": 36
+  },
+  {
+   "id": "trend:thought_leadership_b2b",
+   "kind": "trend",
+   "name": "Founder- and executive-led thought leadership",
+   "status": "current",
+   "summary": "CMI's B2B Content and Marketing Trends for 2026 finds 96% of B2B organisations create thought leadership content, LinkedIn is rated top channel at 76%, and 65% credit content relevance and quality for improved effectiveness; LinkedIn's BrandLink expansion (100+ participants, Sep 2026) now pays individual creators and executives for video. B2B buyers trust people over logos, so ghostwritten executive posts, point-of-view essays and bylines are a core commissioned genre.",
+   "use_for": [
+    "Ghostwritten founder and executive posts and articles built from recorded interviews",
+    "Bylined point-of-view essays for trade media",
+    "Executive video scripts for LinkedIn from the same interview material"
+   ],
+   "avoid": [
+    "Generic 'lessons I learned' lists any executive could have posted. Each piece needs one experience, number or contrarian view only this person can claim.",
+    "Ghostwriting without a recorded interview: you will invent voice and facts. Interview first, then write.",
+    "Putting words in an executive's mouth they would not say; read the draft aloud to them or approve it before publishing.",
+    "Treating 96% as proof that any thought leadership works; the 65% effectiveness link is about relevance and quality, which is what you add."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research",
+     "title": "Content Marketing Institute: B2B Content and Marketing Trends, Insights for 2026",
+     "supports": "thought leadership adoption and LinkedIn channel effectiveness"
+    }
+   ],
+   "related": [
+    "genre:ghostwritten_founder_post",
+    "genre:thought_leadership_article",
+    "genre:linkedin_post",
+    "genre:byline_article",
+    "genre:opinion_column",
+    "genre:linkedin_article",
+    "genre:personal_brand_statement",
+    "genre:ceo_letter",
+    "plat:linkedin_post",
+    "plat:linkedin_article"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "CMI B2B Content and Marketing Trends for 2026: 96% of B2B organisations create thought leadership content; LinkedIn rated top channel (76%); 65% credit content relevance and quality for improved effectiveness.",
+     "url": "https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research",
+     "date": "2025-10-08"
+    },
+    {
+     "claim": "LinkedIn BrandLink expansion pays individual creators and executives for video content (100+ participants).",
+     "url": "https://socialday.live/features/linkedins-brandlink-now-shares-revenue-with-over-100-creators-as-platform",
+     "date": "2026-09-18"
+    }
+   ],
+   "do": [
+    "Record a 30-minute interview per batch of posts and mine it for: one specific incident with names and dates, one number from the business, one belief that goes against common advice.",
+    "Write the post around one of those three, in the executive's own words and sentence length, using phrases lifted from the transcript.",
+    "State a clear point of view in the first two lines ('Most D2C brands should delay their own app by a year') and defend it with evidence from the interview.",
+    "Send the draft for approval with the source quote beside each factual claim."
+   ],
+   "dont": [
+    "Do not write 'In today's competitive landscape' openers.",
+    "Do not invent anecdotes for the executive.",
+    "Do not publish a claim the executive has not confirmed.",
+    "Do not post company-voice announcements under a personal name."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:threads_growth",
+   "kind": "trend",
+   "name": "Threads becomes a mainstream text network",
+   "status": "rising",
+   "summary": "On Meta's Q2 2026 earnings call (29 Jul 2026) Threads crossed 500 million monthly actives, and Meta said it completed its global ads expansion on Threads; Meta's newsroom marked the milestone with new features (Jun 2026). Short text posts are a growing brand channel again, closest in tone to a conversation.",
+   "use_for": [
+    "Conversational Threads posts: one opinion or observation, often with a question",
+    "Reply threads that continue a point instead of a long monologue",
+    "Repurposing LinkedIn or X thinking into a looser, shorter register"
+   ],
+   "avoid": [
+    "Cross-posting a LinkedIn post or an X thread unchanged: Threads reads as conversation, so cut formality and length.",
+    "Stuffing hashtags; check plat:threads_post for the tag limit, and let the words of the post carry the topic.",
+    "Assuming a link-in-post strategy; do not claim a platform ranking rule for links without a source. Test it for the client.",
+    "Using Threads as a broadcast board with no replies; it rewards conversation."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
+     "title": "Meta Q2 2026 earnings call transcript",
+     "supports": "Threads 500M MAU; Threads ads global"
+    },
+    {
+     "url": "https://about.fb.com/news/2026/06/meta-launching-new-features-500-million-monthly-threads-users/",
+     "title": "Meta newsroom: Threads 500 million",
+     "supports": "milestone date"
+    }
+   ],
+   "related": [
+    "genre:threads_post",
+    "genre:social_content_calendar",
+    "genre:x_post",
+    "genre:x_thread",
+    "genre:linkedin_post",
+    "genre:newsjacking_post",
+    "genre:comment_reply",
+    "plat:threads_post",
+    "plat:x_post"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Meta Q2 2026 earnings call: 'Threads crossed 500 million monthly actives, making it the fastest growing conversation app ever.' and 'we also expanded availability of ads on our newer surfaces, including completing our global ads expansion on Threads.'",
+     "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
+     "date": "2026-07-29"
+    },
+    {
+     "claim": "Meta newsroom: new features to celebrate 500 million monthly users on Threads.",
+     "url": "https://about.fb.com/news/2026/06/meta-launching-new-features-500-million-monthly-threads-users/",
+     "date": "2026-06-16"
+    }
+   ],
+   "do": [
+    "Write each post as one idea in the first person, in the words you would say to a colleague: 'Unpopular opinion: your GST invoice template is costing you refunds.'",
+    "End with a real question someone can answer in a sentence, and budget time to reply in the first hours.",
+    "Plan a three-reply thread when the idea needs more than the post allows, each reply carrying one point; keep the main post complete on its own.",
+    "Check the platform's current post length and link rules in plat:threads_post before drafting."
+   ],
+   "dont": [
+    "Do not paste a LinkedIn-style multi-paragraph essay.",
+    "Do not use engagement-bait ('Comment YES if...').",
+    "Do not schedule posts and never reply.",
+    "Do not assume what Threads ranks without a source; label guesses as tests."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:video_podcasts",
+   "kind": "trend",
+   "name": "Video podcasts and clip culture",
+   "status": "rising",
+   "summary": "Edison Research's Infinite Dial 2026 (SSRS, 2,050 US respondents, Jan 2026) reports podcast and online audio consumption at all-time highs, with 84% of Americans 12+ using YouTube monthly; YouTube's CEO letter lists podcasts among the formats viewers choose YouTube for. The evidence is US-based and YouTube's exact share of podcast listening was snippet-only in the harvest, so no share is stated here. Podcast work now includes episode outlines, titles, thumbnail text, clip hooks and show notes for filmed shows cut into clips.",
+   "use_for": [
+    "Podcast packages: guest research brief, cold-open clip pick, episode title and thumbnail text, clip hooks, chapters and show notes",
+    "YouTube-first titles and descriptions for filmed shows",
+    "3-5 clip hooks per episode for Shorts and Reels"
+   ],
+   "avoid": [
+    "Audio-first titles ('Episode 42 with Rahul') on YouTube: write for a searcher and a thumbnail, with the guest and the promise.",
+    "Show notes that only list timestamps; add a two-line summary and the key quotes so search and clips have words to work with.",
+    "Treating US survey figures as India listening data; check the client's own analytics.",
+    "Cutting clips that start mid-thought; each clip needs its own hook and a clean end."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://ssrs.com/insights/the-infinite-dial-2026/",
+     "title": "Edison Research at SSRS: The Infinite Dial 2026",
+     "supports": "podcast consumption at record highs"
+    }
+   ],
+   "related": [
+    "genre:podcast_script",
+    "genre:podcast_show_notes",
+    "genre:youtube_title_description",
+    "genre:youtube_chapters",
+    "genre:repurposed_content",
+    "genre:short_form_video_script",
+    "genre:podcast_ad_read",
+    "plat:youtube_title",
+    "plat:youtube_description",
+    "plat:youtube_chapters"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "Edison Research at SSRS, The Infinite Dial 2026: 'podcast and online audio consumption have reached all-time highs'; 84% of Americans 12+ use YouTube monthly (survey of 2,050 people, January 2026).",
+     "url": "https://ssrs.com/insights/the-infinite-dial-2026/",
+     "date": "2026-03-12"
+    },
+    {
+     "claim": "YouTube CEO letter lists podcasts among the formats viewers choose YouTube for, on 'every format on every screen'.",
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "date": "2026-01-21"
+    }
+   ],
+   "do": [
+    "Write a guest brief (who they are, what they have done, five questions that lead to stories) and pick the cold-open line from the best moment of the conversation.",
+    "Title for YouTube search and curiosity: the guest or topic plus the specific promise ('Ex-food-delivery PM on why Tier-2 delivery fails'), with thumbnail text of 3-5 words that adds to the title, not repeats it (illustrative example).",
+    "Mark 3-5 clip moments with a one-line hook each, plus start and end timestamps.",
+    "Produce chapter markers and show notes with a two-line summary and three quotable lines."
+   ],
+   "dont": [
+    "Do not reuse the audio title for the YouTube version.",
+    "Do not repeat the same hook across all clips.",
+    "Do not make claims about podcast listening shares without a source.",
+    "Do not write show notes that are transcripts dumped into the description."
+   ],
+   "half_life_months": 24
+  },
+  {
+   "id": "trend:whatsapp_conversational_commerce",
+   "kind": "trend",
+   "name": "WhatsApp as acquisition and AI-agent sales channel",
+   "status": "rising",
+   "summary": "An ET report on GoKwik data says about 83% of orders generated through WhatsApp during the October-December festive quarter came from first-time buyers, and brands using its WhatsApp tools saw median GMV growth 2.25 times higher (vendor data); Meta said on its Q2 2026 call that Meta Business Agents are available globally on WhatsApp and Messenger, with more than 1 million businesses using them weekly to talk to customers or complete sales. Conversational copy, flows and agent personas are a paid deliverable for Indian D2C.",
+   "use_for": [
+    "WhatsApp broadcast and template message copy",
+    "Bot flows, agent personas, FAQs and escalation lines",
+    "Order, cart and post-purchase message journeys"
+   ],
+   "avoid": [
+    "Long marketing paragraphs in a chat: each message gets one idea and one action.",
+    "Messaging without permission; follow opt-in and template-category rules (see plat:whatsapp_business_template), and use the template limits listed there.",
+    "Bot scripts with no human escalation line; customers need a way out.",
+    "Quoting GoKwik's figures as industry facts; they are one vendor's data."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://m.economictimes.com/industry/services/retail/d2c-brands-turn-to-whatsapp-to-win-new-customers/articleshow/131821469.cms",
+     "title": "Economic Times: D2C brands turn to WhatsApp to win new customers",
+     "supports": "WhatsApp acquisition stats"
+    },
+    {
+     "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
+     "title": "Meta Q2 2026 earnings call transcript",
+     "supports": "Business Agents on WhatsApp"
+    }
+   ],
+   "related": [
+    "genre:whatsapp_broadcast",
+    "genre:chatbot_script",
+    "genre:whatsapp_channel_post",
+    "genre:d2c_brand_store",
+    "genre:abandoned_cart_email",
+    "genre:post_purchase_email",
+    "genre:faq_page",
+    "plat:whatsapp_business_template",
+    "plat:whatsapp_message"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "ET on a GoKwik report: 'About 83% of orders generated through WhatsApp during the October-December festive quarter came from first-time buyers'; brands using its WhatsApp tools saw median GMV growth '2.25 times higher'.",
+     "url": "https://m.economictimes.com/industry/services/retail/d2c-brands-turn-to-whatsapp-to-win-new-customers/articleshow/131821469.cms",
+     "date": "2026-06-18"
+    },
+    {
+     "claim": "Meta Q2 2026: Business Agents are live globally on WhatsApp and Messenger, and 'there are already more than 1 million businesses using them to talk to their customers or complete sales every week'",
+     "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
+     "date": "2026-07-29"
+    }
+   ],
+   "do": [
+    "Write each broadcast as a short message with one idea, one offer detail and one button or reply ('Reply 1 to see sizes'), in the language the customer used to opt in.",
+    "Script the agent persona: name, tone, what it can do, what it will not do, and a clear handoff line ('Main aapko team se jod deta hoon').",
+    "Draft the FAQ answers as 1-2 sentence replies and the escalation triggers (refund, complaint, high-value order).",
+    "Map the journey: opt-in confirmation, order confirmation, shipping update, review request; keep each message transactional and useful.",
+    "Check opt-in wording and template categories with the client's ops before sending anything."
+   ],
+   "dont": [
+    "Do not send promotions to people who did not opt in.",
+    "Do not use fake urgency or misleading offers.",
+    "Do not leave the bot without an exit to a human.",
+    "Do not write the same template for every customer segment."
+   ],
+   "half_life_months": 18
+  },
+  {
+   "id": "trend:youtube_on_tv",
+   "kind": "trend",
+   "name": "YouTube long-form watched on the TV screen",
+   "status": "rising",
+   "summary": "YouTube says over half of its top 100 creators have TV as their most-watched interface (Sep 2026), and its CEO's 2026 letter says 'YouTube is the new TV because creators are the new prime time.' The evidence is YouTube's own statement about top creators, not all viewers and not India, but the direction is clear: long-form can be watched lean-back on a TV, which rewards produced, structured scripts.",
+   "use_for": [
+    "YouTube long-form scripts with a cold open, chaptered acts and a payoff",
+    "Titles, chapters and descriptions that work for a viewer scanning on a TV",
+    "Recaps and on-screen cues for viewers joining mid-video"
+   ],
+   "avoid": [
+    "Phone-only tricks like 'tap the link below' as the sole call to action: a TV viewer cannot tap. Put the action in words (the search phrase, the channel name, the next video).",
+    "Visuals that need a phone screen to read; keep on-screen text large and short so it reads across a room.",
+    "Dragging a 12-minute video on a 30-second idea; TV viewers tolerate length when the structure is clear.",
+    "Treating the top-100 statement as a general viewership stat."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://blog.youtube/news-and-events/made-on-youtube-creators-shorts-series-tv-features/",
+     "title": "YouTube Official Blog, Made on YouTube 2026",
+     "supports": "TV as most-watched interface for top creators"
+    },
+    {
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "title": "YouTube CEO letter 2026",
+     "supports": "YouTube as the new TV"
+    }
+   ],
+   "related": [
+    "genre:youtube_video_script",
+    "genre:documentary_narration",
+    "genre:video_essay_script",
+    "genre:explainer_video_script",
+    "genre:podcast_script",
+    "genre:youtube_title_description",
+    "genre:youtube_chapters",
+    "plat:youtube_title",
+    "plat:youtube_description",
+    "plat:youtube_chapters"
+   ],
+   "as_of": "2026-10-04",
+   "evidence": [
+    {
+     "claim": "YouTube: 'Over half of YouTube's top 100 creators have TV as their most watched interface'.",
+     "url": "https://blog.youtube/news-and-events/made-on-youtube-creators-shorts-series-tv-features/",
+     "date": "2026-09-23"
+    },
+    {
+     "claim": "YouTube CEO letter: 'YouTube is the new TV because creators are the new prime time.'",
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "date": "2026-01-21"
+    }
+   ],
+   "do": [
+    "Write like television: a cold open that states the stakes in the first 30 seconds, then acts with chapter titles, and a payoff that matches the title's promise.",
+    "Add a one-line recap at the start of each major chapter for viewers who joined late or resumed.",
+    "Give calls to action in speakable form: 'Search our channel name and watch the next part' rather than 'link in the description'.",
+    "Write on-screen text in short large lines (a few words), and describe what the visual shows so the editor can plan wide, readable frames."
+   ],
+   "dont": [
+    "Do not rely on tapping, scanning or clicking to complete the action.",
+    "Do not use tiny text and dense charts.",
+    "Do not open with a long intro before the stakes.",
+    "Do not leave chapters unnamed; they help both scanning and structure."
+   ],
+   "half_life_months": 24
+  }
+ ]
+}

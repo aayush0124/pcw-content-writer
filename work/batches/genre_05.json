@@ -1,0 +1,478 @@
+{
+ "kind": "genre",
+ "items": [
+  {
+   "id": "genre:facebook_post",
+   "name": "Facebook post (organic page / group post)",
+   "category": "Organic social",
+   "one_line": "Organic post on a Facebook page or in a group that starts conversation or shares an update, written for comments and shares.",
+   "aliases": [
+    "FB post",
+    "Facebook page post",
+    "Facebook group post"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr's social media copywriting Platform facet shows Facebook as the second-largest platform on 2026-10-04 (1663 gigs).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "Fiverr's Platform filter with live gig counts, a SUPPLY signal: Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009, Pinterest 376, Threads 238, Snapchat 123, Reddit 96, Twitter 47, Discord 5, Quora 3"
+    }
+   ],
+   "note": "Paid Facebook ads are genre_commercial. In India Facebook groups remain strong for local, regional-language and older audiences.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:faceless_video_script",
+   "name": "Faceless / AI-generated video script",
+   "category": "Video & audio scripts",
+   "one_line": "VO-led script for a channel with no on-camera host, where every line also specifies the generated or stock visual that carries it.",
+   "aliases": [
+    "faceless YouTube script",
+    "AI video script",
+    "animated video script",
+    "cash-cow channel script"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork's script writer job type lists 'Scripts for AI-generated or animated videos' as a common project (Upwork, 2026-01-21).",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "YouTube's inauthentic/repetitious content policy targets mass-produced templated videos; the script must add original narrative or analysis.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:fact_check",
+   "name": "Fact-check article",
+   "category": "Journalism",
+   "one_line": "Article that tests one specific public claim against evidence, shows the method and sources, and ends on a clear rating.",
+   "aliases": [
+    "fact check",
+    "claim check",
+    "debunk",
+    "viral claim check"
+   ],
+   "value": "low",
+   "value_evidence": "Produced by dedicated fact-checking desks held to the IFCN Code of Principles; no freelance marketplace category found on 2026-10-04.",
+   "sources": [
+    {
+     "url": "https://ifcncodeofprinciples.poynter.org/the-commitments",
+     "title": "IFCN Code of Principles: the commitments",
+     "supports": "Five commitments for signatory fact-checkers: non-partisanship and fairness, transparency of sources, of funding and organisation, of methodology, and an open corrections policy"
+    }
+   ],
+   "note": "Follow the IFCN commitments (same standard for every claim, replicable sources, published method, open corrections). Quote the claim exactly, link the original, show each verification step; a rating scale must be defined. In India, election-season fact-checks interact with comp:eci_mcc.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:faq_answer_article",
+   "name": "FAQ / answer article for AI search",
+   "category": "Blog & SEO",
+   "one_line": "Page built from real customer questions, each answered directly in the first one or two sentences, so search engines and AI answers can lift and cite it.",
+   "aliases": [
+    "AEO article",
+    "GEO content",
+    "answer page",
+    "people also ask article",
+    "question-led article"
+   ],
+   "value": "medium",
+   "value_evidence": "Driven by AI search interest in 2026; Google itself says no special optimization or markup is needed for AI Overviews / AI Mode beyond normal SEO best practice (last updated 2025-12-10).",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/ai-features",
+     "title": "Google Search Central: AI features and your website (last updated 2025-12-10)",
+     "supports": "Google says there are no additional requirements or special optimizations to appear in AI Overviews or AI Mode; the same SEO fundamentals apply and no special AI text files or markup are needed"
+    }
+   ],
+   "note": "Write for the question, not for 'AI'; vendors selling special AI files or markup contradict Google's own page. Pairs with trend:geo_ai_search.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:faq_page",
+   "name": "FAQ page",
+   "category": "Web & UX",
+   "one_line": "Questions and answers that remove purchase objections and cut support load.",
+   "aliases": [
+    "FAQs",
+    "frequently asked questions"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Website Content lists 'FAQs'; India rate tables have a separate FAQ-content row; AWAI lists FAQs",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://eloritescontent.com/research/content-writing-services-prices-usa-india/",
+     "title": "Elorites: Content Writing Services Prices 2026, India & USA (updated 2026-06-10)",
+     "supports": "India per-word rate tables by industry with separate rows for web pages, FAQ content, brochures and marketing material"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Each answer should stand alone (people and AI answer engines read one at a time).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:feature_article",
+   "name": "Feature article",
+   "category": "Journalism",
+   "one_line": "In-depth, story-led article that uses scenes, anecdotes and quotes to explore a person, trend or issue beyond the bare news facts.",
+   "aliases": [
+    "feature story",
+    "magazine feature",
+    "long read",
+    "soft news"
+   ],
+   "value": "medium",
+   "value_evidence": "Journalism curricula teach features as a distinct story type with delayed/anecdotal leads (NVCC Introduction to Journalism I); Fiverr's 'Long-form article' type is the largest article facet (3494 gigs on 2026-10-04), though not all of it is journalism.",
+   "sources": [
+    {
+     "url": "https://pressbooks.nvcc.edu/eng121/chapter/types-of-news-stories/",
+     "title": "Jasmine Roberts, Introduction to Journalism I (NVCC Pressbooks, CC BY-NC 4.0, 2023): Types of news stories",
+     "supports": "Defines straight/hard news (inverted pyramid, essential facts, impartial), features (in-depth, storytelling devices, soft news; profiles are an example) and the editorial (argument representing an editorial board's official view)"
+    },
+    {
+     "url": "https://pressbooks.nvcc.edu/eng121/chapter/types-of-features/",
+     "title": "Introduction to Journalism I (NVCC Pressbooks): table of contents incl. Headlines, Feature leads, Types of Features, Crafting the Nut",
+     "supports": "Journalism course syllabus that treats headlines, summary leads, feature leads, nut graphs and feature types as separately taught skills; features use delayed or anecdotal leads and more direct quotes than news"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Needs a nut graph (why this story, why now) within the first few paragraphs. Brand journalism / company-blog features use the same shape.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:festival_greeting",
+   "name": "Festival greeting copy",
+   "category": "Indian cultural & devotional",
+   "one_line": "Short greeting text for Diwali, Holi, Eid, Christmas, Navratri, Chhath and other festivals, for people, leaders and organisations.",
+   "aliases": [
+    "Diwali wishes",
+    "festival wishes",
+    "tyohar shubhkamna",
+    "festival post copy"
+   ],
+   "value": "medium",
+   "value_evidence": "Every brand, party and leader posts festival greetings; agencies and political content teams write them on a calendar.",
+   "note": "Use the festival's correct name and greeting in the right language and script (e.g., Chhath, Onam, Pongal). Respect the meaning of the day; leaders' greetings follow a formal register. Brand greeting ads belong to the commercial worker.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:film_treatment",
+   "name": "Film treatment / step outline",
+   "category": "Creative: scripts & performance",
+   "one_line": "A prose telling of a film or series in present tense, scene by scene or act by act, used to sell or plan before the screenplay.",
+   "aliases": [
+    "treatment",
+    "step outline",
+    "story outline"
+   ],
+   "value": "low",
+   "value_evidence": "A pitching and development document inside screenwriting deals; SWA registers story, plot and synopsis documents of this kind.",
+   "sources": [
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Synopsis, Story, Script, Plot, Screenplay, Dialogue and Song for members, online or at its Mumbai office"
+    }
+   ],
+   "note": "Present tense, vivid but brief, follows the story beats in order including the ending. Indian producers often ask for a one-page story, then a step outline, then the screenplay.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:flash_fiction",
+   "name": "Flash fiction / microfiction",
+   "category": "Creative: fiction & poetry",
+   "one_line": "A complete story in a very small word budget, often ending on a twist or an image.",
+   "aliases": [
+    "microfiction",
+    "drabble",
+    "six-word story",
+    "laghukatha"
+   ],
+   "value": "low",
+   "value_evidence": "Contest and literary-magazine market; little paid demand.",
+   "note": "Word caps are set per market or contest. Hindi 'laghukatha' is an established short-short form.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:fundraising_appeal",
+   "name": "Nonprofit fundraising appeal",
+   "category": "Other commercial",
+   "one_line": "Donation ask by email, letter or page that moves a supporter to give now.",
+   "aliases": [
+    "donation appeal",
+    "fundraising email",
+    "appeal letter",
+    "donor letter",
+    "year-end appeal"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Email Copy lists 'Fundraising Emails'; Upwork has a Grant Writers hire category for the institutional side",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    },
+    {
+     "url": "https://www.upwork.com/hire/grant-writers/",
+     "title": "Upwork: hire Grant Writers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "India: 80G tax-exemption wording and FCRA limits on foreign donations affect the ask. Grant proposals may belong to genre_pro_creative.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:game_narrative",
+   "name": "Game narrative / dialogue / interactive fiction",
+   "category": "Creative: scripts & performance",
+   "one_line": "Branching story, character dialogue and in-world text for video games and interactive fiction.",
+   "aliases": [
+    "game writing",
+    "narrative design",
+    "interactive fiction",
+    "branching dialogue",
+    "visual novel script"
+   ],
+   "value": "medium",
+   "value_evidence": "Game studios hire narrative designers and game writers as distinct roles.",
+   "note": "Delivered in spreadsheets or tools (Twine, Ink, Yarn) with node IDs, conditions and barks; any line may be read out of order. Respect UI string length limits.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:ghostwritten_book",
+   "name": "Ghostwritten book / memoir",
+   "category": "Publishing",
+   "one_line": "A full book written in the client's voice and published under their name.",
+   "aliases": [
+    "ghostwriting",
+    "ghostwritten memoir",
+    "autobiography ghostwriting",
+    "nonfiction book ghostwriting"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork lists ghostwriting as a freelance writing type with a stated hourly band; Fiverr runs a Ghostwriting subcategory under book writing.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "ghostwriters write books, speeches and thought leadership without byline; rate band $20-$45 per hour"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/book-and-ebook-writing/ghostwriting",
+     "title": "Fiverr Writing & Translation: Book & eBook Writing: Ghostwriting",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Interview-driven: record, transcribe, outline, draft chapter by chapter, client approves each. Contract must state confidentiality, credit and rights.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:ghostwritten_founder_post",
+   "name": "Ghostwritten founder / executive social posts",
+   "category": "Long-form B2B",
+   "one_line": "Retainer service that captures a founder's voice through interviews and turns it into regular posts published under their own name.",
+   "aliases": [
+    "founder-led content",
+    "executive ghostwriting",
+    "LinkedIn ghostwriting retainer",
+    "CEO posts"
+   ],
+   "value": "high",
+   "value_evidence": "Agencies publish monthly retainer pricing for founder LinkedIn ghostwriting (Foundera's 2026 comparison titles its range '$1.5K-$15K/mo'; third-party, low confidence); Upwork lists social posts and thought leadership among ghostwriting projects.",
+   "sources": [
+    {
+     "url": "https://www.foundera.co/blog/linkedin-ghostwriting-pricing-guide-2026",
+     "title": "Foundera: LinkedIn Ghostwriting Pricing 2026: $1.5K-$15K/mo Compared",
+     "supports": "Agency-published pricing comparison for founder LinkedIn ghostwriting retainers (third-party, low confidence; the range is in the page's own title)"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "The deliverable is the system (voice interview, idea bank, approval loop) plus the posts; see genre:linkedin_post and genre:x_post for the post shapes. Never invent the founder's experiences.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:glossary_page",
+   "name": "Glossary / definition page",
+   "category": "Blog & SEO",
+   "one_line": "Short page that defines one term clearly in the first lines, then adds context, examples and links to deeper content.",
+   "aliases": [
+    "definition page",
+    "what is X page",
+    "glossary hub",
+    "wiki-style page"
+   ],
+   "value": "low",
+   "value_evidence": "Usually produced in bulk inside programmatic or content-strategy projects; agency playbooks rate glossary pages below bottom-of-funnel pages for pipeline (Optiseon, low confidence).",
+   "sources": [
+    {
+     "url": "https://optiseon.com/blog/b2b-saas-seo-playbook-2026/",
+     "title": "Optiseon: B2B SaaS SEO in 2026: the playbook that drives pipeline",
+     "supports": "Agency playbook naming comparison, alternatives, integration and use-case pages as the bottom-of-funnel page types B2B SaaS teams prioritise in 2026 (third-party, low confidence)"
+    }
+   ],
+   "note": "Exposed to AI-answer substitution; the definition must still be the first sentence.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:government_press_note",
+   "name": "Government press note / press release",
+   "category": "Speeches, public affairs & political",
+   "one_line": "An official release from a ministry or department announcing a decision, scheme, event or rebuttal.",
+   "aliases": [
+    "PIB release",
+    "official statement"
+   ],
+   "value": "medium",
+   "value_evidence": "PIB publishes releases for every central ministry daily; state information departments do the same.",
+   "sources": [
+    {
+     "url": "https://pib.gov.in/indexd.aspx",
+     "title": "Press Information Bureau (PIB)",
+     "supports": "central government's channel publishing ministry press releases in English, Hindi and regional languages"
+    }
+   ],
+   "note": "Official register: dateline, ministry, headline, lead paragraph with the decision, details, quotes from the minister, background. Bilingual (English and Hindi) is the norm. Corporate press releases belong to the commercial worker.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:grant_proposal",
+   "name": "Grant proposal",
+   "category": "Academic, grants & admissions",
+   "one_line": "A funding application that shows a funder a fundable problem, a credible plan, a budget and measurable outcomes.",
+   "aliases": [
+    "grant application",
+    "funding proposal",
+    "CSR proposal",
+    "research grant proposal"
+   ],
+   "value": "high",
+   "value_evidence": "Grant writing is an established paid specialism (funders and portals publish how-to-apply guidance; Indian CSR and research funders each run proposal calls); market-category page could not be fetched (403), so tier rests on that.",
+   "sources": [
+    {
+     "url": "https://www.grants.gov/learn-grants/grant-writing-basics",
+     "title": "Grants.gov: Grant Writing Basics",
+     "supports": "US federal grants portal's official guidance on writing grant applications (page is script-rendered; existence checked 2026-10-04, text not read)"
+    }
+   ],
+   "note": "Follow the funder's template and word limits exactly; scoring rubrics decide. India: CSR funds under Companies Act Schedule VII and government research schemes (ANRF/DST) each set their own format.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:greeting_wishes_message",
+   "name": "Greeting / wishes message (birthday, anniversary, congratulations)",
+   "category": "Career & personal",
+   "one_line": "A short personal message for a milestone, written to feel personal rather than copied.",
+   "aliases": [
+    "birthday wishes",
+    "anniversary wishes",
+    "congratulations message",
+    "card message"
+   ],
+   "value": "low",
+   "value_evidence": "Huge consumer search demand but almost no paid market; template sites dominate.",
+   "note": "One specific detail about the person beats any generic line. Festival greetings are a separate genre (genre:festival_greeting).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:guest_post",
+   "name": "Guest post (article for another site)",
+   "category": "Blog & SEO",
+   "one_line": "Article written for publication on someone else's blog or site, to reach its audience and earn a byline and a link back.",
+   "aliases": [
+    "guest article",
+    "guest blog",
+    "contributor post"
+   ],
+   "value": "medium",
+   "value_evidence": "Sold as a link-building service by SEO vendors and bundled into article writing (Upwork content-writing types, 2026-01-21); the Fiverr guest-posting category page was blocked by a bot check on 2026-10-04, so its size is unverified.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "Write to the host site's guidelines and audience. Guest posts placed mainly to pass keyword-rich links are treated as link spam under Google's spam policies; disclose any payment.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:headline_dek",
+   "name": "Headline + dek (title and standfirst)",
+   "category": "Journalism",
+   "one_line": "The headline and the one- or two-line summary under it (dek / standfirst) that sell a story on a homepage, feed or search result.",
+   "aliases": [
+    "headline writing",
+    "dek",
+    "standfirst",
+    "subhead",
+    "SEO title and meta description"
+   ],
+   "value": "medium",
+   "value_evidence": "Headline writing is taught as its own module in journalism courses (NVCC Introduction to Journalism I, chapter 'Headlines'); every commissioned article needs one.",
+   "sources": [
+    {
+     "url": "https://pressbooks.nvcc.edu/eng121/chapter/types-of-features/",
+     "title": "Introduction to Journalism I (NVCC Pressbooks): table of contents incl. Headlines, Feature leads, Types of Features, Crafting the Nut",
+     "supports": "Journalism course syllabus that treats headlines, summary leads, feature leads, nut graphs and feature types as separately taught skills; features use delayed or anecdotal leads and more direct quotes than news"
+    }
+   ],
+   "note": "Headline FORMULAS live in the hook kind (hook:*); this card is the deliverable. Web headlines usually need both a display headline and an SEO title.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:homepage_copy",
+   "name": "Homepage copy",
+   "category": "Web & UX",
+   "one_line": "Above-the-fold promise plus the sections that route each visitor type to the right next page.",
+   "aliases": [
+    "home page copy",
+    "website homepage",
+    "website copy"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Website Content (4310 gigs, 2026-10-04) lists 'Homepage'; India rate tables price web pages separately; AWAI lists home page copy",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://eloritescontent.com/research/content-writing-services-prices-usa-india/",
+     "title": "Elorites: Content Writing Services Prices 2026, India & USA (updated 2026-06-10)",
+     "supports": "India per-word rate tables by industry with separate rows for web pages, FAQ content, brochures and marketing material"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Usually sold inside a full website-copy package with About, Services and Contact pages.",
+   "kind": "genre"
+  }
+ ]
+}

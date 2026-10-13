@@ -1,0 +1,476 @@
+{
+ "kind": "genre",
+ "items": [
+  {
+   "id": "genre:kdp_book_description",
+   "name": "Amazon KDP book description",
+   "category": "Publishing",
+   "one_line": "The product-page description that turns an Amazon browser into a buyer or a Kindle Unlimited reader.",
+   "aliases": [
+    "Amazon book description",
+    "book listing copy",
+    "KDP blurb"
+   ],
+   "value": "medium",
+   "value_evidence": "Every self-published KDP title needs one; Reedsy's marketplace sells blurb and metadata optimisation as a service.",
+   "sources": [
+    {
+     "url": "https://kdp.amazon.com/en_US/help/topic/G201189630",
+     "title": "Amazon KDP Help: Write a Book Description",
+     "supports": "'we have a limit of 4000 characters for the description'; bans reviews/quotes/testimonials, contact info, time-sensitive info, emojis, keyword phrases"
+    },
+    {
+     "url": "https://reedsy.com/",
+     "title": "Reedsy marketplace",
+     "supports": "author-services marketplace: editing, design, marketing (incl. blurb/metadata), ghostwriting"
+    }
+   ],
+   "note": "Hard limit 4000 characters and HTML tags count toward it (KDP help). No reviews, quotes, contact details, prices, time-sensitive info or emojis. Open with a bold hook line, then stakes, then the reader promise.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:keynote_speech",
+   "name": "Keynote / business speech",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A speech written for one speaker and one audience that moves them to a belief or action, delivered aloud.",
+   "aliases": [
+    "speechwriting",
+    "conference keynote",
+    "CEO speech",
+    "address"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork lists speechwriting under business-writing projects; Fiverr runs a Speechwriting category.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business writer projects include speechwriting and presentations"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/speech-writing",
+     "title": "Fiverr Writing & Translation: Speechwriting",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Written for the ear: short sentences, repetition, signposting, stories over statistics. Time it by reading aloud at the speaker's own pace.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:knowledge_base_article",
+   "name": "Knowledge-base / help-centre article",
+   "category": "Technical & product documentation",
+   "one_line": "A single self-service support article that answers one customer question so they do not open a ticket.",
+   "aliases": [
+    "help article",
+    "support article",
+    "help centre doc",
+    "FAQ article"
+   ],
+   "value": "medium",
+   "value_evidence": "Support teams commission these in sets when launching a help centre; overlaps technical writing (Upwork lists how-to guides).",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "how-to guides listed as technical-writing work"
+    }
+   ],
+   "note": "Title = the user's question in their words. Answer in the first lines, then steps, then troubleshooting and related links. One problem per article; screenshots captioned.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:landing_page",
+   "name": "Landing page copy",
+   "category": "Web & UX",
+   "one_line": "Single-purpose page built for one campaign and one conversion (sign-up, lead, purchase).",
+   "aliases": [
+    "campaign landing page",
+    "squeeze page",
+    "lead capture page",
+    "opt-in page",
+    "LP copy"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Website Content lists 'Landing page' first; AWAI lists sales/landing and lead-gen landing pages; SaaS rate cards sell 'landing page in a day'",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.mightyfinecopy.com/services",
+     "title": "Mighty Fine Copy: B2B SaaS copywriting rate card",
+     "supports": "fixed-price lines for brand messaging guide, landing page, full website copy"
+    }
+   ],
+   "note": "Message match with the ad or email that sent the traffic is the first check.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:launch_sequence",
+   "name": "Product launch sequence (pre-launch to close)",
+   "category": "Sales & conversion",
+   "one_line": "Coordinated emails, pages and posts that build anticipation, open the cart and close it.",
+   "aliases": [
+    "launch copy",
+    "launch campaign",
+    "cart open/close emails",
+    "PLF sequence"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Email Copy lists 'New product announcement' and 'Email Sequences'; launch work is sold inside funnel packages",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    },
+    {
+     "url": "https://www.upwork.com/hire/sales-funnel-copywriting-freelancers/",
+     "title": "Upwork: hire Sales Funnel Copywriters",
+     "supports": "dedicated hire category; snippets mention webinar scripts, VSLs and funnel emails (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Card should pair with launch frameworks (fw:) rather than restate them.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:lead_magnet_content",
+   "name": "Lead magnet content (checklist, template, mini-guide)",
+   "category": "Creator & affiliate",
+   "one_line": "Small, immediately useful free resource (checklist, template, swipe file, mini-guide) given in exchange for an email or follow.",
+   "aliases": [
+    "freebie",
+    "opt-in",
+    "content upgrade",
+    "checklist",
+    "template pack",
+    "swipe file"
+   ],
+   "value": "medium",
+   "value_evidence": "Gated-content writing (ebooks, guides) is a standard Upwork ghostwriting and business-writing deliverable (2026-01-21); lead magnets are its short form.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "Must deliver one quick win in minutes; the opt-in page that sells it is genre_commercial.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:link_in_bio_copy",
+   "name": "Link-in-bio page copy",
+   "category": "Creator & affiliate",
+   "one_line": "Headline, button labels and short blurbs on a creator's link-in-bio page (Linktree, Beacons, Stan) that route followers to the right offer.",
+   "aliases": [
+    "Linktree copy",
+    "bio link page",
+    "creator landing hub"
+   ],
+   "value": "low",
+   "value_evidence": "Creators write their own or get it bundled with a profile setup; no marketplace category found on 2026-10-04.",
+   "note": "Order buttons by what the creator most wants clicked this month; a full sales page is genre_commercial.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:linkedin_article",
+   "name": "LinkedIn article / LinkedIn newsletter edition",
+   "category": "Long-form B2B",
+   "one_line": "Long-form post published with LinkedIn's article editor (or as a LinkedIn newsletter edition) with a headline, cover image and sections.",
+   "aliases": [
+    "LinkedIn long-form post",
+    "LinkedIn newsletter",
+    "LinkedIn Pulse article"
+   ],
+   "value": "low",
+   "value_evidence": "Bundled into LinkedIn ghostwriting retainers rather than sold alone (Fiverr LinkedIn copywriting hire page); feed posts carry most of the demand.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/hire/linkedin-copywriting",
+     "title": "Fiverr: Best freelance LinkedIn copywriters for hire",
+     "supports": "Fiverr runs a dedicated hire page for LinkedIn copywriting"
+    }
+   ],
+   "note": "A LinkedIn newsletter notifies subscribers on each edition, which feed posts do not.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:linkedin_post",
+   "name": "LinkedIn post",
+   "category": "Organic social",
+   "one_line": "Feed post on LinkedIn (text, document or image) from a person or company page that shares an insight, story or lesson for a professional audience.",
+   "aliases": [
+    "LinkedIn update",
+    "ghostwritten LinkedIn post",
+    "LinkedIn text post"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr's social media copywriting Platform facet shows LinkedIn as the third-largest platform on 2026-10-04 (1338 gigs); Upwork's ghostwriting type lists social media posts and thought leadership content.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "Fiverr's Platform filter with live gig counts, a SUPPLY signal: Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009, Pinterest 376, Threads 238, Snapchat 123, Reddit 96, Twitter 47, Discord 5, Quora 3"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "Limits live in plat:linkedin_post. Personal-profile posts outperform page posts for founders; see genre:ghostwritten_founder_post for the voice-capture service.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:linkedin_profile",
+   "name": "LinkedIn profile (headline + About)",
+   "category": "Career & personal",
+   "one_line": "Profile copy (headline, About, experience blurbs) that makes recruiters and clients find and contact the person.",
+   "aliases": [
+    "LinkedIn summary",
+    "LinkedIn About section",
+    "LinkedIn headline"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr runs a LinkedIn Profiles category; sold with resume packages.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/linkedin-profile-services",
+     "title": "Fiverr Writing & Translation: LinkedIn Profiles",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Headline and About have hard character limits (platform worker owns the numbers). First-person, searchable keywords in the headline, proof in the About, a contact line at the end.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:listicle",
+   "name": "Listicle (numbered list article)",
+   "category": "Blog & SEO",
+   "one_line": "Article organised as a numbered list of tips, tools, examples or reasons, each item a scannable mini-section.",
+   "aliases": [
+    "Listicle (numbered list article)",
+    "countdown list",
+    "list article",
+    "list post",
+    "top N article"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr's Article type facet lists 'Listicle' as its own article type (1243 gigs on 2026-10-04).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Listicle",
+     "title": "Listicle - Wikipedia",
+     "supports": "Article structured as a list with subheadings per entry and a title naming the number of items"
+    }
+   ],
+   "note": "Overlaps best-of roundup (products) and carousel copy (same list shape on social). Every item needs a concrete payoff, not padding to hit the number.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:literature_review",
+   "name": "Literature review",
+   "category": "Academic, grants & admissions",
+   "one_line": "A synthesis of published research on a question showing what is known, contested and missing.",
+   "aliases": [
+    "lit review",
+    "review of literature"
+   ],
+   "value": "low",
+   "value_evidence": "Academic-support demand exists, but Upwork bars students from hiring help for homework and papers.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork warns students may not use independent professionals for homework and papers"
+    }
+   ],
+   "note": "Organise by theme or debate, not paper by paper. Every claim cited. Edit and coach; do not write assessed student work.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:live_blog",
+   "name": "Live blog",
+   "category": "Journalism",
+   "one_line": "Continuously updated, time-stamped page covering a developing event (election count, match, launch, budget) newest-first.",
+   "aliases": [
+    "live updates",
+    "live coverage",
+    "minute-by-minute",
+    "liveblog"
+   ],
+   "value": "low",
+   "value_evidence": "Written by newsroom staff on shift; no freelance marketplace category found on Upwork or Fiverr on 2026-10-04.",
+   "note": "Needs a pinned summary at top that is rewritten as the story moves; every entry time-stamped with timezone (IST for Indian audiences).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:livestream_run_of_show",
+   "name": "Livestream run-of-show",
+   "category": "Video & audio scripts",
+   "one_line": "Minute-by-minute plan for a live stream or live event: segments, talking points, guest cues, CTA moments and fallback lines.",
+   "aliases": [
+    "run of show",
+    "rundown",
+    "live show outline",
+    "stream rundown"
+   ],
+   "value": "low",
+   "value_evidence": "Produced by event or channel producers; no writing marketplace category found on 2026-10-04.",
+   "note": "Include timings, who speaks, what is on screen, and a plan for dead air or tech failure.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:local_business_listing",
+   "name": "Local business listing description (Google Business Profile, Justdial)",
+   "category": "Web & UX",
+   "one_line": "Business description, services and posts on map and directory listings that win local enquiries.",
+   "aliases": [
+    "Google Business Profile description",
+    "GMB description",
+    "Justdial listing",
+    "directory listing copy"
+   ],
+   "value": "low",
+   "value_evidence": "AWAI lists 'Company Description: Google My Business, Review Sites, Directories'",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Unsure: may sit with local SEO in genre_content.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:local_seo_page",
+   "name": "Local SEO / location page",
+   "category": "Blog & SEO",
+   "one_line": "Page for one service in one place (city, neighbourhood) with genuinely local details, written to rank for '[service] in [place]' searches.",
+   "aliases": [
+    "location page",
+    "city page",
+    "service area page",
+    "near me page"
+   ],
+   "value": "medium",
+   "value_evidence": "Local pages are one of the standard programmatic page types in agency playbooks (third-party); no separate freelance category found on 2026-10-04.",
+   "sources": [
+    {
+     "url": "https://optiseon.com/blog/b2b-saas-seo-playbook-2026/",
+     "title": "Optiseon: B2B SaaS SEO in 2026: the playbook that drives pipeline",
+     "supports": "Agency playbook naming comparison, alternatives, integration and use-case pages as the bottom-of-funnel page types B2B SaaS teams prioritise in 2026 (third-party, low confidence)"
+    }
+   ],
+   "note": "Doorway pages (same copy, city name swapped) fall under Google's spam policies; include local proof (address, landmarks, local reviews, team).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:marketplace_listing",
+   "name": "Marketplace listing (Amazon, Flipkart, Myntra, Meesho)",
+   "category": "Ecommerce",
+   "one_line": "Title, bullets, description and backend keywords written to each marketplace's style rules.",
+   "aliases": [
+    "Amazon listing",
+    "Flipkart listing",
+    "listing optimisation",
+    "product listing"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Product Descriptions lists 'Marketplaces' as a platform filter",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    }
+   ],
+   "note": "Each marketplace has its own title length and banned-claim rules; numbers belong on plat: cards.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:matrimonial_profile",
+   "name": "Matrimonial profile / marriage biodata",
+   "category": "Career & personal",
+   "one_line": "The 'about me' and biodata for a marriage site or family-shared biodata that presents a person and what they seek.",
+   "aliases": [
+    "marriage biodata",
+    "shaadi profile",
+    "rishta biodata",
+    "matrimony about me"
+   ],
+   "value": "low",
+   "value_evidence": "Matrimony platforms offer free biodata makers (e.g., Shaadi.com), which caps paid demand; premium writing is a niche service.",
+   "sources": [
+    {
+     "url": "https://www.shaadi.com/marriage-biodata-maker",
+     "title": "Shaadi.com: Free Marriage Biodata Maker",
+     "supports": "platform tool for creating marriage biodata, showing the format is standard and widely used"
+    }
+   ],
+   "note": "Biodata: personal details, education, work, family, expectations. 'About me' should sound like the person (often written by parents; say so). Avoid caste or colour preferences phrased offensively.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:media_pitch",
+   "name": "Media pitch (to journalists)",
+   "category": "PR & corporate comms",
+   "one_line": "Short personalised email that offers a journalist a story, angle or spokesperson.",
+   "aliases": [
+    "pitch email",
+    "story pitch",
+    "PR pitch"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has a Media Pitches hire category",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/media-pitches-freelancers/us/",
+     "title": "Upwork: hire Media Pitches Freelancers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Pitch the angle, not the press release; one journalist, one reason it fits their beat.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:medical_regulatory_writing",
+   "name": "Medical / regulatory writing",
+   "category": "Technical & product documentation",
+   "one_line": "Scientific documents for drugs, devices and clinical research: protocols, clinical study reports, regulatory submissions, patient leaflets.",
+   "aliases": [
+    "medical writing",
+    "regulatory writing",
+    "clinical study report",
+    "CSR (clinical)",
+    "patient information leaflet"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork names medical writing among technical-writing projects; pharma outsourcing hubs in India hire medical writers as a distinct job family.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "technical writing projects include medical writing"
+    }
+   ],
+   "note": "Follows ICH guidelines and each regulator's templates (CDSCO in India). Accuracy and traceability over style. Medical claims to consumers fall under advertising law (compliance cards).",
+   "kind": "genre"
+  }
+ ]
+}

@@ -1,0 +1,831 @@
+{
+ "kind": "tone",
+ "worker": "tone_lang",
+ "as_of": "2026-10-04",
+ "source": "NN/g four tone dimensions + 37 tone words + tone study, Mailchimp/Microsoft/Google style guides, reference works for comic and cultural registers; each item placed on the NN/g dimensions where a source supports it",
+ "items": [
+  {
+   "id": "tone:authoritative",
+   "name": "Authoritative / expert",
+   "category": "Core registers",
+   "one_line": "Confident, evidence-backed voice of someone who knows the subject and does not hedge without reason.",
+   "aliases": [
+    "expert",
+    "trustworthy",
+    "thought-leader voice"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g, Kate Moran)",
+     "supports": "'Authoritative', 'Trustworthy' and 'Professional' are on NN/g's 37-word tone list used to plan and evaluate tone"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "in NN/g's study trustworthiness explained far more of desirability than friendliness did, so credibility is the job of this tone"
+    }
+   ],
+   "note": "NN/g dimensions: serious, respectful, leaning matter-of-fact; can be formal or casual (expert-but-conversational is common for creators)."
+  },
+  {
+   "id": "tone:conversational",
+   "name": "Conversational",
+   "category": "Core registers",
+   "one_line": "Writes the way a knowledgeable person talks: contractions, short everyday words, direct 'you'.",
+   "aliases": [
+    "talk like a person",
+    "write like you speak",
+    "casual but serious"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "casual, conversational, moderately enthusiastic tones performed best in the NN/g tone study, even for banking"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human",
+     "title": "Microsoft Style Guide: brand voice, above all simple and human",
+     "supports": "'talk like a person': short everyday words, contractions, no jargon"
+    },
+    {
+     "url": "https://developers.google.com/style/tone",
+     "title": "Google developer documentation style guide: voice and tone",
+     "supports": "conversational, friendly and respectful, like a knowledgeable friend; no slang or wackiness"
+    }
+   ],
+   "note": "NN/g dimensions: casual + serious (NN/g's 'conversational' sample was casual but serious). The safe default for most explainers, emails and captions."
+  },
+  {
+   "id": "tone:friendly_warm",
+   "name": "Friendly / warm",
+   "category": "Core registers",
+   "one_line": "Approachable and kind; reads like someone on the reader's side.",
+   "aliases": [
+    "warm",
+    "approachable",
+    "human"
+   ],
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human",
+     "title": "Microsoft Style Guide: brand voice",
+     "supports": "voice principles 'warm and relaxed' and 'ready to lend a hand' (show customers you are on their side)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Friendly', 'Caring', 'Cheerful' are NN/g tone words"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/voice-and-tone/",
+     "title": "Mailchimp Content Style Guide: Voice and tone",
+     "supports": "'genuine' voice trait; tone adjusted to the reader's emotional state"
+    }
+   ],
+   "note": "NN/g dimensions: casual, respectful, mildly enthusiastic. Friendliness alone did not drive desirability in the NN/g study; pair it with substance."
+  },
+  {
+   "id": "tone:playful_witty",
+   "name": "Playful / witty",
+   "category": "Humour & edge",
+   "one_line": "Light, clever and fun; wordplay and surprise without losing the message.",
+   "aliases": [
+    "fun",
+    "quirky",
+    "humorous"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-samples/",
+     "title": "Tone-of-Voice Samples (NN/g)",
+     "supports": "playful samples sit at funny + casual + irreverent + enthusiastic on the four dimensions"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "humorous copy hurt credibility in serious industries (study participants said friendliness took away credibility)"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/voice-and-tone/",
+     "title": "Mailchimp Content Style Guide: Voice and tone",
+     "supports": "humour should come naturally; do not force jokes, keep a straight face when unsure; clarity beats entertainment"
+    }
+   ],
+   "note": "NN/g dimensions: funny, casual, irreverent-leaning, enthusiastic. Wrong for health, money-loss, grief or error states."
+  },
+  {
+   "id": "tone:irreverent_edgy",
+   "name": "Irreverent / edgy",
+   "category": "Humour & edge",
+   "one_line": "Pokes at conventions, authority or the category itself; deliberately not polite.",
+   "aliases": [
+    "edgy",
+    "cheeky"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-of-voice-dimensions/",
+     "title": "The Four Dimensions of Tone of Voice (NN/g)",
+     "supports": "respectful vs irreverent is one of the four tone dimensions"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Irreverent', 'Edgy', 'Snarky', 'Unapologetic' and 'Coarse' are NN/g tone words"
+    }
+   ],
+   "note": "NN/g dimensions: irreverent pole, usually casual and funny. Target ideas and the category, never the reader."
+  },
+  {
+   "id": "tone:satirical_vyangya",
+   "name": "Satirical (vyangya)",
+   "category": "Humour & edge",
+   "one_line": "Exposes hypocrisy and folly through irony, exaggeration and mock-praise; the Hindi tradition is vyangya.",
+   "aliases": [
+    "vyangya",
+    "vyang",
+    "satire",
+    "political satire",
+    "व्यंग्य"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Satire",
+     "title": "Satire (Wikipedia)",
+     "supports": "satire ridicules vices and follies to criticise; Horatian (gentle) vs Juvenalian (scathing) distinction"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Harishankar_Parsai",
+     "title": "Harishankar Parsai (Wikipedia)",
+     "supports": "Parsai is the reference writer of Hindi vyangya: plain prose aimed at hypocrisy, corruption and pretence"
+    }
+   ],
+   "note": "Decide Horatian vs Juvenalian before writing. Satire needs a real target and a recognisable truth; political satire overlaps law/compliance (another worker's scope)."
+  },
+  {
+   "id": "tone:sarcastic",
+   "name": "Sarcastic",
+   "category": "Humour & edge",
+   "one_line": "Says the opposite of what it means to mock; cutting rather than gentle.",
+   "aliases": [
+    "snarky",
+    "caustic",
+    "taunting",
+    "tanz (ताना)"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sarcasm",
+     "title": "Sarcasm (Wikipedia)",
+     "supports": "sarcasm is caustic, mocking use of words; it travels badly in text without vocal cues (RFC 1855 warning)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Sarcastic' and 'Snarky' are NN/g tone words"
+    }
+   ],
+   "note": "NN/g dimensions: irreverent, funny. In text it needs context or markers or readers take it literally; risky in translation and captions."
+  },
+  {
+   "id": "tone:deadpan",
+   "name": "Deadpan / dry",
+   "category": "Humour & edge",
+   "one_line": "States absurd things flatly, with no visible emotion, and lets the reader find the joke.",
+   "aliases": [
+    "dry humour",
+    "dry wit",
+    "straight-faced"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Deadpan",
+     "title": "Deadpan (Wikipedia)",
+     "supports": "deadpan = deliberate emotional neutrality; humour comes from the contrast between flat delivery and absurd content"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Dry' and 'Matter-of-fact' are NN/g tone words"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/voice-and-tone/",
+     "title": "Mailchimp Content Style Guide: Voice and tone",
+     "supports": "Mailchimp's voice uses dry humour rather than loud jokes"
+    }
+   ],
+   "note": "NN/g dimensions: funny but matter-of-fact (the opposite of hype). No exclamation marks, no emoji winks."
+  },
+  {
+   "id": "tone:technical_precise",
+   "name": "Technical / precise",
+   "category": "Core registers",
+   "one_line": "Exact, unambiguous and consistent terminology; every sentence can be acted on.",
+   "aliases": [
+    "documentation voice",
+    "instructional",
+    "developer docs tone"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/style/tone",
+     "title": "Google developer documentation style guide: voice and tone",
+     "supports": "knowledgeable-friend tone; avoid slang, jargon without need, figurative language, exclamation marks and over-politeness ('please' in steps)"
+    }
+   ],
+   "note": "NN/g dimensions: serious, matter-of-fact, respectful; casual-to-neutral formality. Simple consistent terms also help non-native readers and translation."
+  },
+  {
+   "id": "tone:enthusiastic_hype",
+   "name": "Hype / energetic creator",
+   "category": "Creator & social",
+   "one_line": "High-energy, exclamatory, excited voice that sells the moment.",
+   "aliases": [
+    "enthusiastic",
+    "upbeat",
+    "passionate",
+    "high energy"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-of-voice-dimensions/",
+     "title": "The Four Dimensions of Tone of Voice (NN/g)",
+     "supports": "matter-of-fact vs enthusiastic is a tone dimension; adding 'Oops!'-style exclamations raised perceived enthusiasm and casualness"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Enthusiastic', 'Upbeat' and 'Passionate' are NN/g tone words"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "moderate enthusiasm performed best; extreme playful samples cost credibility"
+    }
+   ],
+   "note": "NN/g dimensions: enthusiastic pole, casual. Keep it 'moderately enthusiastic' for trust; full hype only for launches, drops and reels."
+  },
+  {
+   "id": "tone:nostalgic",
+   "name": "Nostalgic",
+   "category": "Emotional",
+   "one_line": "Evokes a shared past (childhood, a decade, old India) to create warmth and belonging.",
+   "aliases": [
+    "throwback",
+    "retro",
+    "yaadein"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Nostalgic' is one of NN/g's 37 tone words"
+    }
+   ],
+   "note": "Works on specific sensory details of a period, not generic 'good old days'."
+  },
+  {
+   "id": "tone:bold_provocative",
+   "name": "Bold / provocative",
+   "category": "Brand positioning",
+   "one_line": "Takes a strong stand or challenges a belief head-on to start an argument.",
+   "aliases": [
+    "provocative",
+    "unapologetic",
+    "hot take",
+    "contrarian voice"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Provocative', 'Unapologetic' and 'Frank' are NN/g tone words"
+    }
+   ],
+   "note": "Can be serious (not only funny). The claim must be defensible; provocation without evidence reads as clickbait."
+  },
+  {
+   "id": "tone:academic_formal",
+   "name": "Academic / formal",
+   "category": "Core registers",
+   "one_line": "Formal, impersonal, hedged and cited; claims sit inside existing evidence.",
+   "aliases": [
+    "formal",
+    "scholarly",
+    "official",
+    "institutional"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Academic_writing",
+     "title": "Academic writing (Wikipedia)",
+     "supports": "formal tone, referencing other work, hedging between caution and certainty, compressed noun phrases"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-of-voice-dimensions/",
+     "title": "The Four Dimensions of Tone of Voice (NN/g)",
+     "supports": "NN/g's formal example (Duke Health) sits at formal + serious + respectful + matter-of-fact"
+    }
+   ],
+   "note": "NN/g dimensions: formal, serious, respectful, matter-of-fact. Right for white papers, research summaries, government and institutional copy; too stiff for social."
+  },
+  {
+   "id": "tone:journalistic_neutral",
+   "name": "Journalistic neutral",
+   "category": "Core registers",
+   "one_line": "Reports what happened and who said what, from nobody's point of view; attribution over adjectives.",
+   "aliases": [
+    "objective",
+    "news voice",
+    "impartial",
+    "reportorial"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Journalistic_objectivity",
+     "title": "Journalistic objectivity (Wikipedia)",
+     "supports": "objectivity = truthfulness, neutrality and detachment; known failure is false balance between unequal claims"
+    }
+   ],
+   "note": "NN/g dimensions (inferred, not stated by a source): serious, matter-of-fact, respectful, neutral formality. Neutral does not mean equal weight for a claim the evidence does not support. BBC impartiality guidelines were blocked to the fetcher; add them at card time if reachable."
+  },
+  {
+   "id": "tone:empathetic_supportive",
+   "name": "Empathetic / supportive",
+   "category": "Emotional",
+   "one_line": "Acknowledges how the reader feels before telling them what to do; patient, never jokey.",
+   "aliases": [
+    "sympathetic",
+    "caring",
+    "compassionate",
+    "supportive"
+   ],
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human",
+     "title": "Microsoft Style Guide: brand voice",
+     "supports": "voice stays constant while tone moves from serious to empathetic to lighthearted to fit the customer's state of mind"
+    },
+    {
+     "url": "https://service-manual.nhs.uk/content/voice-and-tone",
+     "title": "NHS digital service manual: Voice and tone",
+     "supports": "tone adapts to anxious users; empowering not patronising; avoid jokey or flippant language in sensitive situations"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Sympathetic' and 'Caring' are NN/g tone words"
+    }
+   ],
+   "note": "NN/g dimensions: serious, respectful, casual-to-neutral, matter-of-fact. For grief, health, money loss, apologies and complaint replies."
+  },
+  {
+   "id": "tone:calm_reassuring",
+   "name": "Calm / reassuring",
+   "category": "Emotional",
+   "one_line": "Steady, factual and quietly confident so an anxious reader feels safe to act.",
+   "aliases": [
+    "reassuring",
+    "steady",
+    "soothing",
+    "measured"
+   ],
+   "sources": [
+    {
+     "url": "https://service-manual.nhs.uk/content/voice-and-tone",
+     "title": "NHS digital service manual: Voice and tone",
+     "supports": "NHS voice combines authority with calm reassurance; balanced phrasing rather than alarm; avoid patronising 'should'"
+    }
+   ],
+   "note": "Use balanced facts (most people..., you can...) rather than 'don't worry'. Pairs with empathetic; differs from urgent."
+  },
+  {
+   "id": "tone:urgent",
+   "name": "Urgent",
+   "category": "Emotional",
+   "one_line": "Direct, serious and action-first when time really matters: what to do, by when, why.",
+   "aliases": [
+    "time-sensitive",
+    "alert",
+    "direct"
+   ],
+   "sources": [
+    {
+     "url": "https://service-manual.nhs.uk/content/voice-and-tone",
+     "title": "NHS digital service manual: Voice and tone",
+     "supports": "for serious matters such as emergencies the NHS uses direct, serious and reassuring language"
+    }
+   ],
+   "note": "Real urgency only (deadline, safety, last date). Fake scarcity and countdown pressure are a compliance matter (another worker's kind); keep exclamation marks and caps out."
+  },
+  {
+   "id": "tone:inspirational",
+   "name": "Inspirational / motivational",
+   "category": "Emotional",
+   "one_line": "Optimistic and forward-looking; shows the reader what is possible and that they can get there.",
+   "aliases": [
+    "motivational",
+    "uplifting",
+    "aspirational",
+    "hero voice"
+   ],
+   "sources": [
+    {
+     "url": "https://atlassian.design/foundations/content/voice-tone",
+     "title": "Atlassian Design System: Voice and tone",
+     "supports": "'optimistic' voice trait; motivating by showing what is possible; optimism scaled to how sure the reader feels"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Jungian_archetypes",
+     "title": "Jungian archetypes (Wikipedia)",
+     "supports": "the twelve branding archetypes (Mark and Pearson) include the Hero"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Passionate' and 'Upbeat' are NN/g tone words"
+    }
+   ],
+   "note": "NN/g dimensions: enthusiastic, serious-to-light, respectful. Anchor uplift in a concrete story or number, or it reads as poster-quote filler."
+  },
+  {
+   "id": "tone:luxury_premium",
+   "name": "Luxury / premium",
+   "category": "Brand positioning",
+   "one_line": "Restrained, assured and exclusive: craft, rarity and heritage, never discounts or shouting.",
+   "aliases": [
+    "premium",
+    "upscale",
+    "high-end",
+    "exclusive"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Luxury_goods",
+     "title": "Luxury goods (Wikipedia)",
+     "supports": "luxury brands communicate being top of their class; personalisation, special packaging and limited supply create exclusivity"
+    }
+   ],
+   "note": "Restraint (fewer adjectives, no exclamation marks, no 'cheap/offer') is common practice, not a sourced rule here; a luxury brand-voice source was not found within the search budget. Overlaps regal/heritage and minimalist."
+  },
+  {
+   "id": "tone:minimalist_understated",
+   "name": "Minimalist / understated",
+   "category": "Brand positioning",
+   "one_line": "Fewest words, plain claims, white space; lets the product or fact speak.",
+   "aliases": [
+    "understated",
+    "crisp",
+    "spare",
+    "matter-of-fact"
+   ],
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human",
+     "title": "Microsoft Style Guide: brand voice",
+     "supports": "'crisp and clear': bigger ideas, fewer words; prune every excess word; short sentences and fragments"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-of-voice-dimensions/",
+     "title": "The Four Dimensions of Tone of Voice (NN/g)",
+     "supports": "matter-of-fact is the opposite pole to enthusiastic"
+    }
+   ],
+   "note": "NN/g dimensions: matter-of-fact, serious-to-dry, casual or formal. Understatement only works when the claim underneath is strong."
+  },
+  {
+   "id": "tone:corporate_b2b",
+   "name": "Corporate B2B professional",
+   "category": "Brand positioning",
+   "one_line": "Clear, confident, practical business voice for buyers who need to justify a decision.",
+   "aliases": [
+    "professional",
+    "enterprise",
+    "business voice",
+    "B2B"
+   ],
+   "sources": [
+    {
+     "url": "https://atlassian.design/foundations/content/voice-tone",
+     "title": "Atlassian Design System: Voice and tone",
+     "supports": "a B2B voice built on bold, optimistic, practical-with-a-wink traits; tone scaled to the user's confidence and context"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "conversational beat cold formality even for financial services; trustworthiness drove desirability"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Professional', 'Conservative', 'Trustworthy' are NN/g tone words"
+    }
+   ],
+   "note": "NN/g dimensions: serious, respectful, matter-of-fact, casual-leaning per the study. Professional is not jargon: name outcomes, numbers and next steps."
+  },
+  {
+   "id": "tone:devotional_bhakti",
+   "name": "Devotional / spiritual (bhakti)",
+   "category": "Indian & cultural",
+   "one_line": "Reverent, loving, surrendering voice addressed to or about a deity; the bhajan and katha register.",
+   "aliases": [
+    "bhakti",
+    "spiritual",
+    "reverent",
+    "bhajan voice",
+    "भक्ति"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bhakti",
+     "title": "Bhakti (Wikipedia)",
+     "supports": "bhakti = devotion, love and surrender to a deity; the movement used vernacular languages and poet-saints (Kabir, Tulsidas, Mirabai, Surdas); bhajan and kirtan forms"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Awadhi_language",
+     "title": "Awadhi language (Wikipedia)",
+     "supports": "Tulsidas's Ramcharitmanas (1575) is the landmark devotional text, written in Awadhi"
+    }
+   ],
+   "note": "NN/g dimensions: serious, respectful, enthusiastic-to-calm. Never ironic; check scripture quotes against an edition (see lang:sanskrit_iast)."
+  },
+  {
+   "id": "tone:gen_z_internet",
+   "name": "Gen-Z internet voice",
+   "category": "Creator & social",
+   "one_line": "Lower-case, meme-literate, in-group slang and self-aware irony, tuned to what is current this month.",
+   "aliases": [
+    "Gen Z",
+    "internet-native",
+    "meme voice",
+    "trendy"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Internet_slang",
+     "title": "Internet slang (Wikipedia)",
+     "supports": "slang marks group belonging and spreads fast from creators to mainstream (e.g. 'rizz'; Dictionary.com's 2025 Word of the Year '67' from Gen Alpha TikTok)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Trendy' and 'Quirky' are NN/g tone words"
+    },
+    {
+     "url": "https://developers.google.com/style/tone",
+     "title": "Google developer documentation style guide: voice and tone",
+     "supports": "counter-rule: slang and internet abbreviations are avoided in documentation for global readers"
+    }
+   ],
+   "note": "NN/g dimensions: casual, funny, irreverent. Slang has a short half-life; verify any term is current before use, and never use it for docs, legal or support copy."
+  },
+  {
+   "id": "tone:storyteller_narrative",
+   "name": "Storyteller / narrative",
+   "category": "Creator & social",
+   "one_line": "Carries the message inside a story: a character, a moment, a turn, a point of view.",
+   "aliases": [
+    "narrative",
+    "story-led",
+    "kahani voice"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Storytelling",
+     "title": "Storytelling (Wikipedia)",
+     "supports": "storytelling is increasingly used in advertising to build loyalty; core elements are plot, characters and narrative point of view"
+    }
+   ],
+   "note": "A voice, not a framework: tense, person and scene detail carry it. Story structures belong to the framework kind."
+  },
+  {
+   "id": "tone:tough_love_coach",
+   "name": "Tough-love coach",
+   "category": "Creator & social",
+   "one_line": "Frank, demanding and on the reader's side: names the excuse, then gives the next step.",
+   "aliases": [
+    "strict coach",
+    "no-nonsense",
+    "frank"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Frank' and 'Unapologetic' are NN/g tone words"
+    }
+   ],
+   "note": "NN/g dimensions: serious, casual, mildly irreverent, enthusiastic. Harsh on the behaviour, never on the person; always end with an action. Only the tone words are sourced; the coaching pattern is practice."
+  },
+  {
+   "id": "tone:inclusive",
+   "name": "Inclusive",
+   "category": "Core registers",
+   "one_line": "Bias-free wording that does not assume the reader's gender, ability, region or wealth.",
+   "aliases": [
+    "bias-free",
+    "gender-neutral",
+    "people-first"
+   ],
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/bias-free-communication",
+     "title": "Microsoft Style Guide: Bias-free communication",
+     "supports": "gender-neutral terms (chair not chairman); no generic he/she; people-first disability language without pity words; diverse names and non-Western examples; no generalisations about cultures"
+    }
+   ],
+   "note": "A layer applied over any other tone. In Hindi, verb gender forces a choice; address the reader as aap and rephrase with plural or role nouns where possible."
+  },
+  {
+   "id": "tone:kid_friendly",
+   "name": "Kid-friendly",
+   "category": "Core registers",
+   "one_line": "Short, concrete, warm sentences a child can follow, without talking down.",
+   "aliases": [
+    "for children",
+    "kids",
+    "child-safe"
+   ],
+   "sources": [
+    {
+     "url": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/217350977-English-USA-Timed-Text-Style-Guide",
+     "title": "Netflix English (USA) Timed Text Style Guide",
+     "supports": "children's programmes get a slower reading speed (up to 17 characters per second vs 20 for adults)"
+    },
+    {
+     "url": "https://developers.google.com/style/tone",
+     "title": "Google developer documentation style guide: voice and tone",
+     "supports": "avoid condescending phrasing"
+    }
+   ],
+   "note": "Children's advertising rules are a compliance matter for another worker. No scary urgency, no sarcasm (children read it literally)."
+  },
+  {
+   "id": "tone:desi_casual_hinglish",
+   "name": "Desi casual (Hinglish)",
+   "category": "Indian & cultural",
+   "one_line": "Easy Hindi-English mix with Indian references; sounds like a friend from the same city.",
+   "aliases": [
+    "desi",
+    "Hinglish voice",
+    "yaar tone",
+    "bolchaal"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hinglish",
+     "title": "Hinglish (Wikipedia)",
+     "supports": "Hinglish code-switching is common in Indian advertising and media; Google added Hinglish support to Gboard and Search"
+    },
+    {
+     "url": "https://aclanthology.org/W14-3914/",
+     "title": "Bali et al. 2014, 'I am borrowing ya mixing?' An Analysis of English-Hindi Code Mixing in Facebook",
+     "supports": "Hindi sentences carried English insertions far more often (23.7% of Hindi matrices) than English sentences carried Hindi (7.2%)"
+    }
+   ],
+   "note": "NN/g dimensions: casual, light, respectful-to-cheeky. Spelling and script rules are in lang:hinglish_roman and lang:hinglish_devanagari; this item is the attitude."
+  },
+  {
+   "id": "tone:regal_heritage",
+   "name": "Regal / heritage",
+   "category": "Indian & cultural",
+   "one_line": "Stately, legacy-proud voice of an old house, a royal craft or a long tradition.",
+   "aliases": [
+    "heritage",
+    "royal",
+    "legacy",
+    "khandani",
+    "ruler archetype"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Jungian_archetypes",
+     "title": "Jungian archetypes (Wikipedia)",
+     "supports": "the Ruler is one of the twelve branding archetypes (Mark and Pearson, The Hero and the Outlaw)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Conservative' and 'Nostalgic' are NN/g tone words"
+    }
+   ],
+   "note": "NN/g dimensions: formal, serious, respectful, matter-of-fact. Back the legacy with real dates and names; invented heritage is a false claim."
+  },
+  {
+   "id": "tone:data_driven",
+   "name": "Data-driven / evidence-led",
+   "category": "Brand positioning",
+   "one_line": "Leads with numbers, sources and tests; persuades by proof rather than adjectives.",
+   "aliases": [
+    "evidence-led",
+    "analytical",
+    "proof-first",
+    "informative"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "trustworthiness, not friendliness, explained most of desirability in the study"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Informative', 'Smart' and 'Matter-of-fact' are NN/g tone words"
+    }
+   ],
+   "note": "NN/g dimensions: serious, matter-of-fact, respectful. Every number needs its source and date; one unsourced stat undoes the voice."
+  },
+  {
+   "id": "tone:founder_candid",
+   "name": "Humble / founder-candid",
+   "category": "Brand positioning",
+   "one_line": "First-person, transparent, admits mistakes and shares real numbers.",
+   "aliases": [
+    "founder voice",
+    "build in public",
+    "transparent",
+    "candid"
+   ],
+   "sources": [
+    {
+     "url": "https://buffer.com/transparency",
+     "title": "Buffer: Transparency",
+     "supports": "a named company practice (since 2013) of publishing finances, salaries and internal decisions to build trust"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Frank' is an NN/g tone word"
+    }
+   ],
+   "note": "NN/g dimensions: casual, serious, respectful, matter-of-fact. Candour needs specifics (what went wrong, the number); vague humility reads as a humblebrag."
+  },
+  {
+   "id": "tone:rebel_challenger",
+   "name": "Rebellious challenger brand",
+   "category": "Brand positioning",
+   "one_line": "Names the category leader or the status quo as the enemy and positions the brand as the break-out.",
+   "aliases": [
+    "challenger",
+    "outlaw archetype",
+    "disruptor voice",
+    "rebel"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Jungian_archetypes",
+     "title": "Jungian archetypes (Wikipedia)",
+     "supports": "the Outlaw is one of the twelve branding archetypes (Mark and Pearson, The Hero and the Outlaw)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-of-voice-dimensions/",
+     "title": "The Four Dimensions of Tone of Voice (NN/g)",
+     "supports": "respectful vs irreverent dimension"
+    }
+   ],
+   "note": "NN/g dimensions: irreverent, casual, enthusiastic. Comparative claims about named competitors are a compliance matter (another worker)."
+  },
+  {
+   "id": "tone:asmr_soft",
+   "name": "ASMR / soft",
+   "category": "Creator & social",
+   "one_line": "Hushed, slow, intimate voice for whisper VO, sleep, skincare and calm-down content.",
+   "aliases": [
+    "soft-spoken",
+    "whisper",
+    "cozy",
+    "slow"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Autonomous_sensory_meridian_response",
+     "title": "Autonomous sensory meridian response (Wikipedia)",
+     "supports": "ASMR triggers include whispering, soft speaking and personal attention; roughly 25 million ASMR videos on YouTube by 2022"
+    }
+   ],
+   "note": "Written for the ear: short phrases, sensory words, pauses marked in the script. Opposite of hype."
+  },
+  {
+   "id": "tone:romantic",
+   "name": "Romantic",
+   "category": "Emotional",
+   "one_line": "Tender, intimate, longing voice for love, weddings, gifting and shayari-style captions.",
+   "aliases": [
+    "tender",
+    "shayarana",
+    "love"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Romantic' is one of NN/g's 37 tone words"
+    }
+   ],
+   "note": "In Hindi this register leans on Urdu vocabulary (see lang:urdu_influenced_hindi)."
+  }
+ ]
+}

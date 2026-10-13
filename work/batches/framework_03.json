@@ -1,0 +1,199 @@
+{
+ "kind": "framework",
+ "items": [
+  {
+   "id": "fw:diataxis",
+   "name": "Diataxis (tutorial, how-to guide, reference, explanation)",
+   "category": "Documentation & reporting structure",
+   "one_line": "Split documentation into four kinds by the reader's need (learning, doing a task, looking something up, understanding) and keep each page to one kind.",
+   "aliases": [
+    "Diátaxis",
+    "four kinds of documentation",
+    "documentation system",
+    "tutorials how-to reference explanation"
+   ],
+   "sources": [
+    {
+     "url": "https://diataxis.fr/",
+     "title": "Diátaxis (official site)",
+     "supports": "'a systematic approach to technical documentation authoring'; four forms: tutorials (learning-oriented), how-to guides (task-oriented), technical reference (information-oriented), explanation (understanding-oriented), placed 'in a systematic relationship'"
+    },
+    {
+     "url": "https://diataxis.fr/colophon/",
+     "title": "Diátaxis: Colophon",
+     "supports": "'Diátaxis is the work of Daniele Procida.'"
+    }
+   ],
+   "note": "Use for help centres, developer docs, SaaS knowledge bases and course material. Most common failure it fixes: a tutorial that stops to explain theory, or a reference page that tries to teach. Map to PCW genres: tutorial -> genre:developer_tutorial / genre:how_to_article, reference -> genre:api_reference, how-to -> genre:sop_process_doc. Style guides that pair with it: edit:style_google_dev, edit:style_microsoft.",
+   "kind": "framework"
+  },
+  {
+   "id": "fw:effie_case_format",
+   "name": "Effie case format (challenge and objectives, insights and strategy, bringing it to life, results)",
+   "category": "Business & logic structure",
+   "one_line": "The four-section written case Effie juries score: the business challenge with measurable objectives, the insight and strategic idea, how the idea was brought to life, and results tied back to each objective.",
+   "aliases": [
+    "Effie entry",
+    "Effie framework",
+    "effectiveness case",
+    "award case structure",
+    "Effie's Effectiveness Framework"
+   ],
+   "sources": [
+    {
+     "url": "https://effie.org/wp-content/uploads/2026/02/2026-Effie-Awards-SA-Standard-Entry-Form_final.pdf",
+     "title": "2026 Effie Awards South Africa: Standard Entry Form (effie.org)",
+     "supports": "'Four Sections using Effie's Effectiveness Framework': Section 1 Challenge, Context & Objectives (23.3% of total score; 400 words, 3 charts/visuals for context); Section 2 Insights & Strategy (23.3%; 300 + 300 + 200 words); Section 3 Bringing the Strategy & Idea to Life (23.3%); Section 4 Results (30%; 'up to 350 words and 5 charts/visuals', then a result for each objective, 'All results must correspond to a data source'); executive summary lines Challenge / Insights / Strategic Idea / Bringing the Strategy & Idea to Life / Results, 'Maximum per line: 20 words'"
+    },
+    {
+     "url": "https://current.effie.org/downloads/Global_Effie_Entry_Kit.pdf",
+     "title": "Global Effie Awards entry kit (effie.org)",
+     "supports": "the same four scoring sections in the global programme (found by search, not opened)"
+    }
+   ],
+   "note": "Word limits and weights above are from the 2026 South Africa form; other Effie programmes (India, Global, Europe) use the same four sections but may set different limits: take the limits from the entry kit of the programme being entered. Writing rules from the form: name the objective and its KPI before the idea; every result maps to a stated objective and has a data source and time frame; give category/competitor context so judges can see the result is significant. Deliverable genre: genre:award_entry; the same skeleton works for genre:case_study.",
+   "kind": "framework"
+  },
+  {
+   "id": "fw:perfect_webinar",
+   "name": "Perfect Webinar (Russell Brunson)",
+   "category": "Copywriting formula",
+   "one_line": "A sales-webinar script: origin story, one big belief to shift (the Big Domino), three 'secrets' that break the vehicle, internal and external false beliefs, then the Stack and close.",
+   "aliases": [
+    "Perfect Webinar script",
+    "Big Domino",
+    "three secrets",
+    "the Stack",
+    "Russell Brunson webinar framework"
+   ],
+   "sources": [
+    {
+     "url": "https://www.clickfunnels.com/blog/complete-guide-high-converting-webinar/",
+     "title": "ClickFunnels blog: The Playbook to a High Converting Webinar (Perfect Webinar), updated 2026-03-19",
+     "supports": "ClickFunnels (Brunson's company) lays out the 90-minute Perfect Webinar: Origin Story (15 min) 'Your introduction, where you capture attention and build trust'; The Vehicle (15 min) 'Introduce your framework and break down the first major belief'; Internal Beliefs (15 min); External Beliefs (15 min); Stack and Close (30 min) 'Present your offer, highlight its value, and close the deal'; refers to Brunson's 'Perfect Webinar Secrets' training"
+    }
+   ],
+   "note": "Primary source is the originator's company blog (ClickFunnels); the full slide-by-slide version is in Brunson's book Expert Secrets (2017), not read here. Big Domino = the one belief that, once accepted, makes the purchase follow; Stack = list each component with its value, re-show the growing stack, then reveal the price. Compliance: stacked 'values' and income claims must be real (comp:asci_code; for finance or earnings, check SEBI rules). Deliverable genre: genre:webinar_pitch_script. Not for purely educational webinars (genre:webinar_script).",
+   "kind": "framework"
+  },
+  {
+   "id": "fw:postmortem_blameless",
+   "name": "Blameless postmortem (Google SRE format)",
+   "category": "Documentation & reporting structure",
+   "one_line": "Write up an incident as summary, impact, root causes and trigger, resolution and detection, owned action items, lessons learned and a timeline, without blaming people.",
+   "aliases": [
+    "postmortem",
+    "post-mortem",
+    "incident review",
+    "post-incident review",
+    "retrospective",
+    "RCA write-up"
+   ],
+   "sources": [
+    {
+     "url": "https://sre.google/sre-book/postmortem-culture/",
+     "title": "Google, Site Reliability Engineering, ch. 15 'Postmortem Culture: Learning from Failure' (John Lunney and Sue Lueder)",
+     "supports": "'A postmortem is a written record of an incident, its impact, the actions taken ..., the root cause(s), and the follow-up actions ...' A blameless postmortem 'assumes that everyone involved in an incident had good intentions and did the right thing with the information they had.' Triggers include user-visible downtime beyond a threshold, data loss of any kind, on-call intervention, long resolution time, monitoring failure, and any stakeholder's request"
+    },
+    {
+     "url": "https://sre.google/sre-book/example-postmortem/",
+     "title": "Google SRE book: Example postmortem",
+     "supports": "section order: Date, Authors, Status, Summary, Impact, Root Causes, Trigger, Resolution, Detection, Action Items, Lessons Learned (What went well / What went wrong / Where we got lucky), Timeline, Supporting information"
+    }
+   ],
+   "note": "Writing rules: name systems and decisions, not culprits; separate trigger from root cause; every action item has an owner and a tracking ID; timeline in one time zone with timestamps. The same skeleton serves project retrospectives (drop 'trigger', keep impact, what went well/wrong, actions). Deliverable genre: genre:incident_report; public-facing status updates during the incident belong to genre:crisis_statement.",
+   "kind": "framework"
+  },
+  {
+   "id": "fw:rumelt_strategy_kernel",
+   "name": "Rumelt's kernel of good strategy (diagnosis, guiding policy, coherent action)",
+   "category": "Business & logic structure",
+   "one_line": "Structure a strategy as a diagnosis of the critical challenge, one guiding policy for dealing with it, and a set of coordinated actions that carry the policy out, not as a list of goals.",
+   "aliases": [
+    "strategy kernel",
+    "Good Strategy Bad Strategy",
+    "diagnosis guiding policy coherent action",
+    "Rumelt kernel"
+   ],
+   "sources": [
+    {
+     "url": "https://profilebooks.com/wp-content/uploads/wpallimport/files/PDFs/9781847657466_preview.pdf",
+     "title": "Richard Rumelt, Good Strategy/Bad Strategy (2011), Profile Books preview PDF",
+     "supports": "'The kernel of a strategy contains three elements: a diagnosis, a guiding policy, and coherent action.' The guiding policy is the approach to the obstacles the diagnosis names; coherent actions are the coordinated commitments that carry it out. Chapter 3 contents name the bad-strategy signs: fluff, not facing the problem, mistaking goals for strategy, bad strategic objectives"
+    },
+    {
+     "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-perils-of-bad-strategy",
+     "title": "Richard Rumelt, 'The perils of bad strategy', McKinsey Quarterly (2011)",
+     "supports": "the author's article version of the kernel and the hallmarks of bad strategy (page timed out on 2026-10-05; not read)"
+    }
+   ],
+   "note": "Write the diagnosis as a plain statement of what is going on and which part matters most; the guiding policy rules options out (it is not a goal or vision); actions must reinforce each other. Use for genre:okr_strategy_doc, strategy memos, pitch-deck strategy slides and brand-strategy decks. Check a draft against Rumelt's bad-strategy signs: fluff, no named challenge, goals dressed as strategy, a 'dog's dinner' of objectives.",
+   "kind": "framework"
+  },
+  {
+   "id": "fw:setup_punchline_tag",
+   "name": "Setup, punchline, tag (joke structure)",
+   "category": "Comedy & song structure",
+   "one_line": "A joke in two moves plus extras: the setup builds a false expectation, the punchline reveals a second meaning that breaks it, and tags add further laughs off the same setup.",
+   "aliases": [
+    "setup and punch",
+    "joke structure",
+    "setup-punch-tag",
+    "target assumption and reinterpretation",
+    "one-liner structure"
+   ],
+   "sources": [
+    {
+     "url": "https://stand-upcomedy.com/glossary/",
+     "title": "Greg Dean's Stand-Up Comedy Classes: Comedy terms glossary",
+     "supports": "Setup: 'First of two parts of one-liner jokes designed to misdirect the audience to a false expectation.' Punchline: 'Second of two parts of one-liner jokes meant to get a laugh.' Tag: 'Additional short punchline immediately following a punchline or tag that does not require a new setup.' Joke structure: 'Often referred to as setup, punchline, and sometimes tag.' Connector: '1 thing with at least 2 interpretations'"
+    },
+    {
+     "url": "https://stand-upcomedy.com/glossary/target-assumption/",
+     "title": "Greg Dean: Target Assumption",
+     "supports": "the Target Assumption is the expected interpretation of the Connector set up to misdirect; the Reinterpretation in the punchline makes it wrong"
+    }
+   ],
+   "note": "Greg Dean's deeper model (Step by Step to Stand-Up Comedy) names five parts: 1st Story, Target Assumption, Connector, Reinterpretation, 2nd Story; the glossary is on his own site. Writer's steps: pick the connector (a word, phrase or situation with two readings), write the setup so the audience commits to reading one, put the reveal word last (see tech:punchline_last), then add 1-3 tags without a new setup. Hinglish: code-switch words make strong connectors. Used in genre:standup_comedy_set, genre:sketch_comedy, meme captions and roast copy; the reel-scale engine is tech:game_and_heightening.",
+   "kind": "framework"
+  },
+  {
+   "id": "fw:song_form",
+   "name": "Song form (verse, pre-chorus, chorus, bridge; mukhda and antara)",
+   "category": "Comedy & song structure",
+   "one_line": "The section map a lyric is written to: verses carry the story, the chorus (mukhda in a Hindi film song) carries the hook and repeats, and a bridge or interlude brings contrast before the final return.",
+   "aliases": [
+    "song structure",
+    "verse-chorus form",
+    "AABA",
+    "32-bar form",
+    "mukhda antara",
+    "sthayi antara"
+   ],
+   "sources": [
+    {
+     "url": "https://online.berklee.edu/takenote/writing-bridges-for-your-songs-can-be-much-easier/",
+     "title": "Berklee Online Take Note (Andrea Stolpe): How to write a bridge",
+     "supports": "common map: 'Verse 1, Verse 2 (optional), Pre-chorus (optional), Chorus, Verse 3, Pre-chorus (optional), Chorus, Bridge, Chorus'; 'A bridge is the section in a song that typically comes after the second chorus'; verses carry narrative, chorus the main message and hook, bridge a contrasting new look"
+    },
+    {
+     "url": "https://online.berklee.edu/courses/songwriting-fundamentals",
+     "title": "Berklee Online: Songwriting Fundamentals course",
+     "supports": "course teaches Verse-Chorus-Bridge, AABA (32-bar form) and Verse/Refrain forms (read from the search result summary, page not opened)"
+    },
+    {
+     "url": "https://www.songsofyore.com/where-is-the-mukhada-gone-where-is-antara-gone/",
+     "title": "Songs of Yore (AK, 2025-01-21): 'Where is the mukhada gone, where is antara gone?'",
+     "supports": "'a mukhada with a catchy tune and refrain. This was followed by interlude music and two or three antaras with different tunes'; each antara ends on a connector line back into the mukhda (secondary, Hindi film-music history blog)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Antara_(music)",
+     "title": "Antara (music), Wikipedia",
+     "supports": "in Hindustani classical music the sthayi is the base section the singer returns to and the antara is the verse-like second section (secondary)"
+    }
+   ],
+   "note": "Two maps a lyricist must know: Western (verse / pre-chorus / chorus / bridge, or AABA) and Hindi film (prelude, mukhda, interlude, antara 1, mukhda, interlude, antara 2, mukhda; each antara's last line leads back into the mukhda by rhyme or sense). Write every repeat of the chorus/mukhda word-for-word; vary only the verses/antaras. Fit syllables to the tune (genre:song_lyrics note). Jingles are usually one chorus-like section (genre:jingle_lyrics). Never reproduce existing lyrics as examples.",
+   "kind": "framework"
+  }
+ ]
+}

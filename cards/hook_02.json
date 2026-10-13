@@ -1,0 +1,2316 @@
+{
+ "cards": [
+  {
+   "id": "hook:number_list",
+   "kind": "hook",
+   "name": "Number / list headline",
+   "status": "current",
+   "confidence": "high",
+   "summary": "Put an exact count in the headline ('7 GST notice replies that...') so the reader knows the size of the payoff and that the piece is skimmable. A good one uses a numeral, picks the number the material actually supports, and every item in the body earns its slot.",
+   "use_for": [
+    "blog and listicle titles",
+    "YouTube titles for tips, tools and compilation videos",
+    "carousel cover slide ('5 ...' on slide 1, one item per slide)",
+    "roundup newsletter subject lines",
+    "first line of a LinkedIn post before the 'see more' cut"
+   ],
+   "avoid": [
+    "Padding to reach a big round number ('101 ways', '50 tools'): count the items you can defend and use that number, even if it is 6.",
+    "Using a list title for a piece that is one argument or one method: use hook:how_to or hook:contrarian instead.",
+    "Expecting a list post to earn backlinks: Backlinko's 2019 study found list posts strong for shares but weak for links; for a link-earning piece use a 'why' or 'what' research title (hook:reason_why).",
+    "Spelling the number out ('Seven ways'): use the numeral (tech:numerals), it is what the eye catches in a feed or search result.",
+    "'The 5 best...' with no testing behind the ranking: say how you ranked ('ranked by delivery time in our 30 test orders') or drop 'best'."
+   ],
+   "templates": [
+    "[N] [ways / reasons / tools / mistakes] to [result] [qualifier: for whom, by when].",
+    "[N] [things] every [audience] should [check / know] before [moment].",
+    "[N] [tools] I use to [result] (and [N] I stopped paying for).",
+    "[N] [free / cheap] [tools] for [task] in [year].",
+    "[N] [cheezein] jo har [audience] ko [moment] se pehle pata honi chahiye."
+   ],
+   "examples": [
+    "7 GST notice replies that closed the case in one round, with the exact wording.",
+    "5 free tools a 4-person CA office in Jaipur runs on in 2026.",
+    "Shaadi se pehle 6 paise ki baatein jo couples skip kar dete hain.",
+    "9 Meesho listing fixes, ranked by how fast each one paid off."
+   ],
+   "why_it_works": "The number tells the reader the size of the commitment and promises a structure they can skim, so the click feels low-risk. Backlinko with BuzzSumo (2019, 912 million posts) found list posts got an average of 218% more shares than how-to posts, while the same study found them weak for backlinks. Copyblogger and CoSchedule both name the list headline as a core type, and a listicle title typically states its count (Wikipedia).",
+   "works_on": [
+    "plat:youtube_title",
+    "plat:instagram_carousel",
+    "plat:linkedin_post",
+    "plat:email_subject_line",
+    "plat:google_search_result",
+    "plat:pinterest_pin"
+   ],
+   "risk": "Broken promise when the count is inflated (items repeat, the last item is 'follow us for more') or the title says 10 and the body delivers 6 plus filler. Clickbait when a ranked list ('The 5 best...') implies testing that never happened. Legal line: in an ad, 'No. 1', 'best' or a ranked comparison is an objectively factual claim and must be capable of substantiation, with source and date when it rests on research (CCPA 2022 cl. 12, comp:ccpa_misleading_ads_2022; ASCI Code Ch I.1, comp:asci_code). Obvious hyperbole that no one reads literally is allowed.",
+   "related": [
+    "genre:listicle",
+    "genre:best_of_roundup",
+    "tech:numerals",
+    "hook:list_of_mistakes",
+    "hook:specificity",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "sources": [
+    {
+     "url": "https://backlinko.com/content-study",
+     "title": "We Analyzed 912 Million Blog Posts - Backlinko with BuzzSumo (2019)",
+     "supports": "List posts averaged 218% more shares than how-to posts; list posts weak for backlinks"
+    },
+    {
+     "url": "https://coschedule.com/headlines/how-to-write-the-best-headlines-that-will-increase-traffic",
+     "title": "How to Write Headlines That Drive Traffic - CoSchedule",
+     "supports": "Names list, how-to and question headlines as core blog headline types"
+    },
+    {
+     "url": "https://copyblogger.com/10-sure-fire-headline-formulas-that-work/",
+     "title": "22 Best Headline Formulas that Work - Copyblogger (Brian Clark, 2021)",
+     "supports": "Lists the numbered headline template among 22 formulas"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Listicle",
+     "title": "Listicle - Wikipedia",
+     "supports": "A listicle title typically names the number of items"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Factual claims and comparisons capable of substantiation, source and date for research claims (cl. 12); obvious hyperbole allowed"
+    },
+    {
+     "url": "https://www.ascionline.in/the-asci-code/",
+     "title": "ASCI: The ASCI Code",
+     "supports": "Chapter I clause 1: claims about objectively ascertainable fact must be capable of substantiation"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/hook_02.json#hook:number_list",
+    "note": "P2 S2 Sp1 V2 C1. Titles fit YouTube (67-86 chars), numerals used, Hinglish #5 agrees ('cheezein ... pata honi chahiye'). #2 ('7 things every D2C founder should check before replying to a GST notice') and #5 are strong search titles. Variety is thin: #1 and #2 are both the reply moment, #3 and #4 are both tool lists; #1's trailing ', for D2C founders' is clunky; '5 free tools for tracking GST notice deadlines' risks padding unless five real free tools exist. Writer fault for the overlap; card fine.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:objection_removal",
+   "kind": "hook",
+   "name": "'You don't have to be X to Y' headline",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Name the barrier the reader assumes rules them out (money, expertise, fluent English, a degree, a big team) and remove it: 'You don't have to be [X] to [result]'. A good one picks the barrier from real customer objections and backs the removal in the very next line with the mechanism or the real minimum.",
+   "use_for": [
+    "ads and landing-page heroes for beginner products: tools, templates, courses, first-time services",
+    "reel hooks for 'you can do this too' education",
+    "webinar and workshop registration headlines",
+    "nurture-email subject lines for leads who signed up but never bought",
+    "service pitches to small businesses who think agencies are 'for big brands'"
+   ],
+   "avoid": [
+    "Removing a barrier that is real (you do need some capital, some practice, some time): lower it with the true minimum instead ('Start with Rs 500 and one weekend').",
+    "Talking down to the reader ('Even you can...'): state the barrier neutrally and let the mechanism do the reassuring.",
+    "Using it on an audience that does not hold the objection (experts, existing customers): use hook:specificity or hook:like_a_pro.",
+    "Leaving the 'how' for later: the line after the hook must name what replaces the barrier (a template, a tool, a 3-step method)."
+   ],
+   "templates": [
+    "You don't have to be [assumed requirement] to [result].",
+    "No [barrier]? You can still [result]. Here's how.",
+    "[Result] without [barrier]: [mechanism in 3-5 words].",
+    "[Result] ke liye [barrier] hona zaroori nahi hai.",
+    "[Barrier] nahi hai? Koi baat nahi. [Result] aise hoga: [mechanism]."
+   ],
+   "examples": [
+    "You don't have to be a designer to make a menu card your customers photograph.",
+    "Fluent English nahi hai? Interview phir bhi nikal jayega, agar ye 4 answers ready hain.",
+    "You don't need a CA on retainer to file your first GST return. You need these 3 documents.",
+    "Instagram pe grow karne ke liye dance karna zaroori nahi hai. Ye 3 formats try karo."
+   ],
+   "why_it_works": "An unspoken objection stops action before interest starts; naming the hidden disqualifier and removing it lets the reader see themselves as eligible, which is what makes the rest of the piece feel relevant. Copyblogger lists 'You don't have to be [X] to [Y]' among its 22 headline formulas. The body then has to carry the proof, which is tech:objection_handling.",
+   "works_on": [
+    "plat:meta_ads",
+    "plat:instagram_caption",
+    "plat:youtube_title",
+    "plat:linkedin_post",
+    "plat:email_subject_line",
+    "plat:google_ads_rsa"
+   ],
+   "risk": "Broken promise when the body quietly reintroduces the barrier: the 'no money needed' course costs Rs 25,000, the 'no coding' tool needs code. Clickbait territory: 'You don't need money to start trading', 'No degree, Rs 1 lakh a month'. Legal line in India: claims must be capable of substantiation and a disclaimer may clarify but never contradict the headline (comp:ccpa_misleading_ads_2022); coaching and ed-tech ads may not promise guaranteed selection, jobs or salary increases (comp:ccpa_coaching_ads_2024). In Meta ads the barrier must not imply the viewer's personal attribute ('Broke? Still...' implies financial status) (comp:meta_advertising_standards).",
+   "related": [
+    "tech:objection_handling",
+    "hook:quick_easy",
+    "hook:like_a_pro",
+    "comp:ccpa_coaching_ads_2024",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:meta_advertising_standards"
+   ],
+   "sources": [
+    {
+     "url": "https://copyblogger.com/10-sure-fire-headline-formulas-that-work/",
+     "title": "22 Best Headline Formulas that Work - Copyblogger (Brian Clark, 2021)",
+     "supports": "Lists the 'You don't have to be X to Y' template among 22 formulas"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Substantiation (cl. 12); disclaimers clarify, never contradict (cl. 11)"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/Guidelines%20for%20Prevention%20of%20Misleading%20Advertisement%20in%20Coaching%20Sector,%202024.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisement in Coaching Sector, 2024",
+     "supports": "No guaranteed selection, job security, promotion or salary-increase promises (cl. 3)"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/",
+     "title": "Meta Advertising Standards: Personal attributes",
+     "supports": "Ads must not assert or imply personal attributes including vulnerable financial status"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/hook_02.json#hook:objection_removal",
+    "note": "P2 S2 Sp1 V2 C2. Five distinct situational barriers (bland food, no time to prep, powders, a separate tiffin, no kitchen), none a personal attribute, all under 125 chars, mechanism in the same line. #3 ('High-protein lunch without shakes or powders: a full thali from our Pune kitchen') is the cleanest ad line. The mechanism is mostly 'our new thali, delivered', so the removal is asserted more than shown; 'eat high-protein' is unidiomatic.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:offer_price",
+   "kind": "hook",
+   "name": "Price / offer headline",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Lead with the deal itself when the price is the news: the exact price, the cut, the EMI, or the free thing. A good one states the real number, what is included, and the condition (date, minimum order) in the same line or the next, so the price in the headline is the price at checkout.",
+   "use_for": [
+    "festive and sale campaigns (Diwali, Navratri, end-of-season sale) in Meta and search ads",
+    "promotional email subject lines and WhatsApp broadcast first lines",
+    "search ad headlines where the buyer is comparing prices",
+    "launch pricing and introductory offers",
+    "print, OOH and pamphlet ads for local retail"
+   ],
+   "avoid": [
+    "Leading on price when the reader does not yet know what the product is: open with the problem or result (hook:problem_solution, hook:before_after) and put the price second.",
+    "'Up to 70% off' when most items are 10% off: state the real flat rate or the real range.",
+    "'FREE' or 'SALE' in capitals in Google search ads: the editorial policy rejects gimmicky capitalisation; write 'Free delivery'.",
+    "Calling something free when delivery, a 'convenience fee' or a subscription follows: say 'free with any order above Rs 999' or drop 'free'.",
+    "Price-led headlines for a premium brand whose whole case is quality: lead with the result and let the price sit in the body."
+   ],
+   "templates": [
+    "[Product] at Rs [price]: [what's included].",
+    "Flat [N]% off [category] till [date, time].",
+    "[Product] for Rs [EMI]/month for [N] months, [interest condition].",
+    "Free [item] with every [purchase] above Rs [threshold], till [date].",
+    "Sirf Rs [price] mein [product], [what's included] ke saath."
+   ],
+   "examples": [
+    "Hand-block cotton kurtas, Rs 899 each. Same price for every size.",
+    "Flat 20% off every planner till Sunday midnight. No code needed.",
+    "Free blouse stitching on any saree above Rs 1,500 this Navratri.",
+    "Sirf Rs 49 mein poore mahine ka meal plan, shopping list ke saath."
+   ],
+   "why_it_works": "When the reader is already shopping the category, 'how much' is the decision variable; a headline that answers it saves a click and filters out people who could never afford it. Caples' tested headline categories include price and offer headlines (Lofgren's summary). An exact figure also reads as more honest than 'great prices'.",
+   "works_on": [
+    "plat:meta_ads",
+    "plat:google_ads_rsa",
+    "plat:email_subject_line",
+    "plat:whatsapp_business_template",
+    "plat:sms_india_dlt",
+    "plat:google_ads_pmax"
+   ],
+   "risk": "Broken promise when the headline price is not what the buyer pays: fees added at checkout (drip pricing), a 'from Rs 99' item that is out of stock (bait), a 'sale' price that was never higher. Legal line in India: 'free' only when the consumer pays nothing beyond the unavoidable delivery or response cost, no 'free trial' for money-back offers (CCPA 2022 cl. 7); no vague 'up to' or 'as low as' framing for prices, state the fixed price (cl. 12(e)(i)); no bait ads (cl. 5) (comp:ccpa_misleading_ads_2022). Drip pricing, bait and switch and fake time-limited sales are banned dark patterns (comp:ccpa_dark_patterns_2023). Google Ads bans pricing that creates 'a false or misleading impression of the cost' (comp:google_ads_misrepresentation). Promotional SMS must go on a registered DLT template with an opt-out in the same message (comp:trai_tcccpr_2018).",
+   "related": [
+    "tech:price_anchoring",
+    "hook:urgency_deadline",
+    "genre:promotional_email",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:ccpa_dark_patterns_2023",
+    "comp:google_ads_misrepresentation"
+   ],
+   "sources": [
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Summarises Caples' Tested Advertising Methods headline categories, including price headlines"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Honest 'free' (cl. 7), bait ads (cl. 5), no vague 'up to' price framing (cl. 12(e)(i))"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "Gazette of India (30 Nov 2023): Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+     "supports": "Bans false urgency, bait and switch, drip pricing (Annexure 1)"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en",
+     "title": "Google Advertising Policies Help: Misrepresentation",
+     "supports": "Dishonest pricing that creates a false or misleading impression of the cost"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en",
+     "title": "Google Advertising Policies Help: Editorial",
+     "supports": "No capitalisation used for emphasis (e.g. FREE)"
+    },
+    {
+     "url": "https://www.trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf",
+     "title": "TRAI TCCCPR (Second Amendment) Regulations, 2025",
+     "supports": "Opt-out in the same message; promotional content mixed into service messages is treated as promotional"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_5.json#hook:offer_price",
+    "note": "ROUND 2: P2 S2 Sp2 V1 C1. Five different offer mechanics (monthly price with what is included, flat percent, introductory term, free extra, Hinglish price), each naming the product, templates named, all within 60 characters and 9 words (re-checked); conditions move to the preheader as the card allows. #5 'Sirf Rs [price] mein voice note se meeting minutes' is the strongest line and #1 reads clearly. Nits (writer): #4 'Hindi minutes plans' reads like an audio-minutes quota again (say 'meeting-minutes plans'); 'our Hindi minutes tool' (#2, #3) is label-speak, not how a user names it; #3 sits at exactly 60 characters with '[terms]' still unfilled and will run over. | round 1: weak 7",
+    "judge": "vj_retest_5",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "hook:pattern_interrupt",
+   "kind": "hook",
+   "name": "Pattern interrupt / visual-verbal mismatch",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Break what the viewer expects in the first second (an odd visual, a hard cut, a line that contradicts what is on screen), then land the problem or promise within the next two seconds. The interrupt buys a look; the line after it decides whether they stay, so the oddity should be the product or the problem shown in an unexpected way.",
+   "use_for": [
+    "the first second of reels, Shorts and vertical video ads",
+    "UGC and creator ad openers (trend:creator_led_ads)",
+    "YouTube pre-roll before the skip button",
+    "carousel slide 1 with an image that contradicts its headline",
+    "muted autoplay video on LinkedIn or Facebook, carried by on-screen text"
+   ],
+   "avoid": [
+    "An interrupt unrelated to the message (a scream, a slap, a random explosion): viewers feel tricked and leave at second 3. Make the oddity demonstrate the claim, e.g. a 'leak-proof' bottle thrown onto a sofa.",
+    "Sound-only interrupts: much short video is watched muted, so put the twist in the picture and the on-screen text (tech:onscreen_text_vs_vo).",
+    "The same interrupt in every post: it stops being unexpected; rotate the type (visual, verbal, edit).",
+    "Interrupts with no follow-through line: script the 1-3 second line (problem, product or promise) before you design the shock."
+   ],
+   "templates": [
+    "[Visual that contradicts the line] + on-screen text: '[line the visual proves wrong]'.",
+    "[Ordinary object] used for the wrong job. Text: 'Ye [object] nahi, [problem] ka solution hai.'",
+    "Open mid-[action] on a hard cut; line at 1 s: '[problem or promise in under 8 words]'.",
+    "Text: '[what everyone expects]'. Cut to: [the opposite, shown].",
+    "Line at 0 s that contradicts what the viewer believes: '[common belief] galat hai.' Then the real point at 2 s: '[what is actually true]'."
+   ],
+   "examples": [
+    "Visual: a CA pours a glass of water over a stack of paper invoices. On-screen: 'Paper bills ka yahi hota hai. Scan karo, 2 minute mein.'",
+    "Visual: a bride at her mehendi staring at a spreadsheet instead of a mirror. Line: 'Shaadi ka sabse bada kharcha decor nahi tha.'",
+    "Visual: a founder deletes his own homepage on camera. Line: 'This page was losing us leads. Here's what replaced it.'",
+    "Visual: a steel bottle thrown across the room onto a white sofa, then opened. On-screen: 'Leak-proof ka matlab ye hai.'"
+   ],
+   "why_it_works": "A feed trains the eye to expect a familiar first frame; a mismatch makes the viewer look twice before the thumb moves. Zeely's timing for ad openers is 0-1 s pattern break, 1-3 s product, problem or promise, 3-6 s proof (practitioner guidance, not platform data). Insense and TrueFan list visual scroll-stoppers among reel hook types for brands, including India-specific ones.",
+   "works_on": [
+    "plat:meta_ads",
+    "plat:youtube_video_ads",
+    "plat:instagram_carousel",
+    "plat:linkedin_post",
+    "plat:linkedin_ads_sponsored_content"
+   ],
+   "risk": "Clickbait when the interrupt has nothing to do with what follows, or fakes something the viewer must react to: a fake cracked screen, a fake notification, a fake 'breaking news' strap. Legal line: Google Ads bans 'clickbait tactics or sensationalist text or imagery' and ad designs that mimic system notifications (comp:google_ads_misrepresentation). In India, realistic AI-generated footage that makes a person or event look real must carry a prominent label (comp:it_rules_sgi_2026), and from about December 2026 ASCI bans AI result visuals that exaggerate product results even with a label (comp:asci_ai_sgc_labelling).",
+   "related": [
+    "tech:pattern_interrupt",
+    "fw:hook_retain_reward",
+    "tech:onscreen_text_vs_vo",
+    "genre:short_form_video_script",
+    "genre:ugc_ad_script",
+    "comp:google_ads_misrepresentation"
+   ],
+   "sources": [
+    {
+     "url": "https://zeely.ai/blog/hooks-for-tiktok-video-ads/",
+     "title": "TikTok ad hooks: 35 native openers - Zeely",
+     "supports": "Ad hook families with timing: 0-1 s pattern break, 1-3 s product/problem/promise, 3-6 s proof"
+    },
+    {
+     "url": "https://insense.pro/blog/instagram-reel-hooks",
+     "title": "40+ New Instagram Reel Hooks - Insense",
+     "supports": "Reel hook templates for brands"
+    },
+    {
+     "url": "https://www.truefan.ai/blogs/instagram-reels-hooks-india",
+     "title": "Instagram Reels hooks India 2026 - TrueFan",
+     "supports": "Hinglish and India-specific reel hook archetypes"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en",
+     "title": "Google Advertising Policies Help: Misrepresentation",
+     "supports": "No clickbait or sensationalist text or imagery; no ad design that mimics system notifications"
+    },
+    {
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf",
+     "title": "MeitY: IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, updated 10.02.2026",
+     "supports": "Synthetically generated audio-visual content must be prominently labelled (rule 3(3))"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2026/09/Guidelines-for-Responsible-Labelling-of-Synthetically-Generated-Content-in-Advertising.pdf",
+     "title": "ASCI: Guidelines for Responsible Labelling of Synthetically Generated Content in Advertising (2026)",
+     "supports": "AI before-after or result visuals that exaggerate results banned even with a label; effective about 3 months after publication"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/hook_02.json#hook:pattern_interrupt",
+    "note": "P2 S2 Sp2 V1 C1. #1 (clothes line beside the panel) and #2 (terrace used for kabaad: 'Ye chhat kabaad rakhne ki jagah nahi...') are strong desi interrupts that demonstrate the claim; #4 is a clean expectation flip. #3 and #5 are the same idea (a hand at the AC at 2 pm, mid-action) on the same template, and the English follow-ups read flat ('Here is the government scheme behind it'). No emblem, amount or fake alert. CARD FIX: templates -> add a fifth, purely verbal interrupt (e.g. \"Line at 0 s that contradicts what the viewer believes about [category]: '[odd but true statement]'. Line at 2 s: '[the real point]'\"); the card's avoid line says rotate visual / verbal / edit interrupts but its four templates hold only visual and edit types, so a fifth hook repeats one. | CARD FIXED 2026-10-07 (lead fix3): added a purely verbal interrupt template; re-judge pending.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:personal_story",
+   "kind": "hook",
+   "name": "Personal story opener",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Open on one specific first-person moment (a date, a place, a mistake, a number) that sets up the lesson: 'How [event] made me [result]', 'I was wrong about...'. A good one starts inside the moment, not with 'Let me tell you a story', and the story is true and belongs to the byline (the writer's or, ghostwritten, the client's).",
+   "use_for": [
+    "founder and executive LinkedIn posts, including ghostwritten ones",
+    "newsletter openers",
+    "YouTube intros and reel voice-over hooks for personal channels",
+    "About pages and brand-story openers",
+    "speech, webinar and podcast openings"
+   ],
+   "avoid": [
+    "Preambles ('Story time', 'Let me tell you something'): start at the moment ('Tuesday, 11:40 pm, the GST portal logged me out').",
+    "A story with no lesson for the reader: tie the last line of the moment to the reader's problem, or cut the story.",
+    "Inventing an anecdote for a ghostwritten post: interview the client for a real one (tech:sme_interview) and get sign-off on every fact.",
+    "The humblebrag 'mistake' that is really a flex ('My biggest mistake was working too hard'): pick a mistake that cost something."
+   ],
+   "templates": [
+    "How [specific event] made me [result / changed belief].",
+    "I was wrong about [belief]. [The moment that proved it].",
+    "[Time], [place]: [what happened, in one line].",
+    "[N] years ago I [mistake]. Today [result]. Here's what changed.",
+    "Us din [jagah] mein [person] ne kaha '[line]'. Tab samajh aaya [lesson]."
+   ],
+   "examples": [
+    "In 2019 I lost my biggest client over one WhatsApp message. Here's what I'd send instead.",
+    "Papa ki dukaan pe pehla UPI QR maine lagaya tha. Teen mahine mein galla khaali rehne laga.",
+    "How a Rs 300 courier mistake made our Surat store rewrite its returns page.",
+    "I was wrong about cold email. Forty sends, zero replies, then I changed one line."
+   ],
+   "why_it_works": "A concrete first-person moment signals real experience and gives the reader a character to follow, and it opens a loop: what happened next? Copyblogger lists the 'How [event] made me [result]' story headline among its 22 formulas, and a narrative hook is by definition the opening that makes the reader keep going (Wikipedia). The best-known story headline in direct response is Caples' own 'They Laughed When I Sat Down At the Piano' ad.",
+   "works_on": [
+    "plat:linkedin_post",
+    "plat:substack_post",
+    "plat:youtube_title",
+    "plat:instagram_caption",
+    "plat:x_thread",
+    "plat:email_subject_line"
+   ],
+   "risk": "Broken promise when the 'story' is an invented parable or a pitch in disguise that never returns to the lesson. Legal line: if the story sells something the storyteller is paid for, gets free, or earns commission on, disclose the material connection up front, not at the end (comp:asci_influencer, comp:endorsement_know_hows). A result inside a story used in an ad ('I cleared my loan in 8 months with this app') is a claim that must be capable of substantiation (comp:ccpa_misleading_ads_2022).",
+   "related": [
+    "tech:anecdote_lead",
+    "tech:vulnerability_confession",
+    "hook:i_statement_title",
+    "hook:in_medias_res_opener",
+    "genre:ghostwritten_founder_post",
+    "comp:asci_influencer"
+   ],
+   "sources": [
+    {
+     "url": "https://copyblogger.com/10-sure-fire-headline-formulas-that-work/",
+     "title": "22 Best Headline Formulas that Work - Copyblogger (Brian Clark, 2021)",
+     "supports": "Lists the 'How [event] made me [result]' template among 22 formulas"
+    },
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Summarises Caples' Tested Advertising Methods headline categories"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Narrative_hook",
+     "title": "Narrative hook - Wikipedia",
+     "supports": "Opening that hooks the reader so they keep reading"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI: Guidelines for Influencer Advertising in Digital Media",
+     "supports": "Disclose any material connection upfront and prominently, not at the end or behind MORE"
+    },
+    {
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1892527",
+     "title": "PIB (20 Jan 2023): Centre releases endorsement guidelines for Celebs and Social Media Influencers",
+     "supports": "Material connections to disclose; prominent, hard-to-miss disclosure"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/hook_02.json#hook:personal_story",
+    "note": "P2 S2 Sp1 V2 C1. Correctly slots every story fact for the founder to supply after an interview (true-story rule kept, no invented student, mistake or result), and the frames around the brackets carry real angles ('I was wrong about what Tier-2 college students need first'; '[N] years ago I [opened a batch with grammar rules]'). Hinglish #5 agrees ('galti ... ki thi'). Specificity rests on the e.g. hints. #4 and #5 are the same shape because the card's Hinglish template is a translation of template 4. CARD FIX: templates -> rewrite the Hinglish template as a different shape, e.g. \"Us din [jagah] mein [person] ne kaha '[line]'. Tab samajh aaya [lesson].\", so the five templates give five angles. | CARD FIXED 2026-10-07 (lead fix3): Hinglish template is now its own shape, not a translation of template 4; re-judge pending.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:personalised_subject_line",
+   "kind": "hook",
+   "name": "Personalised subject line",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Insert a recipient-specific detail (first name, city, the item they saved, the event they attended) through merge tags so the subject reads as written for them. A good one uses a detail that changes the meaning of the line (their order status, their city's date), not a name bolted onto a generic offer, and every merge field has a fallback.",
+   "use_for": [
+    "lifecycle email: abandoned cart, back-in-stock, renewal, refund and delivery updates",
+    "event follow-ups ('Priya, your workshop notes')",
+    "segmented newsletters by city or interest",
+    "cold outreach that names the company or a specific observation",
+    "push notifications and WhatsApp templates with variables"
+   ],
+   "avoid": [
+    "Empty or broken merge fields ('Hi ,', 'Hi {FNAME}', 'Hi PRIYA SHARMA'): set a fallback ('there', the city name) and normalise case in the CRM before sending.",
+    "Using data the person did not knowingly give or would find creepy ('Still thinking about that pregnancy test?'): personalise only with declared or transactional data.",
+    "Name-only personalisation on a mass promo: a detail tied to their action (the size they saved) does more than their name.",
+    "Personalising a bought or scraped list: wrong names and no consent; build the list yourself."
+   ],
+   "templates": [
+    "[First name], your [product / order] [status or next step].",
+    "[City] mein [event / offer] [date] ko: [one detail].",
+    "[First name], the [item they saved] is back in [size / colour].",
+    "For [company]: [specific observation about their business].",
+    "[First name], [question about their last action]?"
+   ],
+   "examples": [
+    "Priya, your Rs 1,240 refund is on its way",
+    "Ananya, the size M kurta you saved is back",
+    "Indore workshop Sunday ko: venue badal gaya hai",
+    "For Sharma Textiles: 3 RTO fixes from your last 50 orders"
+   ],
+   "why_it_works": "People scan an inbox for 'this is for me'; their own name, city or recent action is the strongest match. Mailchimp's guidance: use merge tags for name or location, personalisation 'is shown to increase open rates for most users', and keep subject lines to no more than 9 words and 60 characters.",
+   "works_on": [
+    "plat:email_subject_line",
+    "plat:push_notification_fcm",
+    "plat:push_notification_apns",
+    "plat:whatsapp_business_template",
+    "plat:sms_india_dlt"
+   ],
+   "risk": "Tips into deception when the personal touch fakes a relationship ('Rohit, following up on our call' when there was no call) or a fake 'Re:'. Legal line: US commercial email must not use misleading headers and 'The subject line must accurately reflect the content of the message' (comp:can_spam). India's DPDP Act needs specific, purpose-stated consent to use personal data for marketing; the Rules were notified on 14 Nov 2025 with phased compliance (comp:dpdp_act_rules). UK and EU individuals need consent or the soft opt-in (comp:uk_pecr, comp:gdpr_marketing_consent). For India SMS, the body must match a registered DLT template; TRAI's 2025 note says at least 30% of a template stays fixed and more than three variables needs justification (comp:trai_tcccpr_2018).",
+   "related": [
+    "tech:personalization_tokens",
+    "tech:subject_preheader_pairing",
+    "hook:descriptive_subject_line",
+    "comp:can_spam",
+    "comp:dpdp_act_rules",
+    "comp:trai_tcccpr_2018"
+   ],
+   "sources": [
+    {
+     "url": "https://mailchimp.com/help/best-practices-for-email-subject-lines/",
+     "title": "Best Practices for Email Subject Lines - Mailchimp",
+     "supports": "Personalise with merge tags; personalisation 'is shown to increase open rates for most users'; no more than 9 words and 60 characters"
+    },
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+     "title": "FTC: CAN-SPAM Act: A Compliance Guide for Business",
+     "supports": "No misleading header information; subject line must accurately reflect the content"
+    },
+    {
+     "url": "https://www.pib.gov.in/PressNoteDetails.aspx?NoteId=156054&ModuleId=3&reg=3&lang=2",
+     "title": "PIB explainer (17 Nov 2025): DPDP Rules, 2025 Notified",
+     "supports": "Rules notified 14 Nov 2025; phased compliance; separate clear consent notice with a specific purpose"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/",
+     "title": "ICO: Guide to PECR, Electronic mail marketing",
+     "supports": "Specific consent or soft opt-in for marketing email to individuals"
+    },
+    {
+     "url": "https://www.trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf",
+     "title": "TRAI TCCCPR (Second Amendment) Regulations, 2025",
+     "supports": "Templates: at least 30% fixed; more than three variables needs justification"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/hook_02.json#hook:personalised_subject_line",
+    "note": "P2 S2 Sp2 V1 C2. Every merge field changes the meaning (report ready, saved view with new mismatches, a vendor's invoices still unmatched), all under 60 chars, fallbacks set, nothing invented as data. #3 is a smart B2B adaptation of the back-in-stock template. #2 is a Hinglish city line for a Bengaluru finance audience and introduces a 'reconciliation workshop' the topic never mentions; #5 asks the user whether an upload finished matching, which the product already knows, so the question reads hollow.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:pov",
+   "kind": "hook",
+   "name": "POV hook",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "'POV: you [are in a specific situation]' puts the viewer inside a scene they recognise before any product appears. A good POV is hyper-specific (time, place, one telling detail), the camera actually plays the viewer's eyes, and the product arrives as the natural next beat of the scene, not as a cutaway pitch.",
+   "use_for": [
+    "organic reels and Shorts for D2C and service brands",
+    "UGC and creator ad openers",
+    "relatable-comedy posts and meme captions",
+    "on-screen text over b-roll when there is no voice-over",
+    "Threads and X posts written as a one-line scene"
+   ],
+   "avoid": [
+    "Generic POVs ('POV: you love coffee'): add the situation and the stake ('POV: 8:55 am, standup at 9, and the geyser just died').",
+    "POV text over footage that is not from the viewer's eyes (a third-person shot of the creator talking): either shoot first-person or use hook:audience_callout.",
+    "POV in formats where the convention is not native (search ads, formal email, B2B proposals): use hook:you_direct_address.",
+    "A POV scene with no payoff (the joke never lands, the product never fits the scene): script the last beat first."
+   ],
+   "templates": [
+    "POV: you [specific situation] at [time / place].",
+    "POV: [audience] when [trigger moment].",
+    "POV: it's [date / season] and you still haven't [task].",
+    "POV: [relative / boss] ne abhi bola '[line]'.",
+    "POV: tum [situation] mein ho aur [complication]."
+   ],
+   "examples": [
+    "POV: it's 31 July, 11:52 pm, and the income tax portal just logged you out.",
+    "POV: shaadi ka card aa gaya hai aur tumhare paas 'pehenne ko kuch nahi hai'.",
+    "POV: you run a cloud kitchen and the third 'food was cold' review of the week just came in.",
+    "POV: mummy ne guests ke saamne bola, 'beta, zara wifi theek kar do'."
+   ],
+   "why_it_works": "It starts with identity, not features (Zeely): the viewer recognises their own moment and stays to see how it resolves. TrueFan lists POV among the trending India hook formats of 2026, and Insense includes POV openers in its reel hook templates for brands.",
+   "works_on": [
+    "plat:meta_ads",
+    "plat:youtube_video_ads",
+    "plat:instagram_caption",
+    "plat:threads_post",
+    "plat:x_post"
+   ],
+   "risk": "Broken promise when the POV sets up a relatable moment and then cuts to a hard sell that ignores the scene. Clickbait when the scene is fake drama unrelated to the product ('POV: you just got arrested' for a phone case). Legal line: in Meta ads a POV that names the viewer's condition ('POV: you're diabetic and...') implies a personal attribute and is disallowed (comp:meta_advertising_standards); a creator performing a brand's POV needs an upfront ad label (comp:asci_influencer).",
+   "related": [
+    "hook:audience_callout",
+    "tech:one_reader_rule",
+    "genre:short_form_video_script",
+    "genre:meme_caption",
+    "trend:short_video_india",
+    "comp:meta_advertising_standards"
+   ],
+   "sources": [
+    {
+     "url": "https://zeely.ai/blog/hooks-for-tiktok-video-ads/",
+     "title": "TikTok ad hooks: 35 native openers - Zeely",
+     "supports": "POV works because it starts with identity, not features"
+    },
+    {
+     "url": "https://insense.pro/blog/instagram-reel-hooks",
+     "title": "40+ New Instagram Reel Hooks - Insense",
+     "supports": "Reel hook templates for brands"
+    },
+    {
+     "url": "https://www.truefan.ai/blogs/trending-hook-formats-2026",
+     "title": "Trending Hook Formats 2026: AI video hooks in India - TrueFan (2026-02-15)",
+     "supports": "India hook formats including POV, myth vs fact, shock stat, secret app"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/",
+     "title": "Meta Advertising Standards: Personal attributes",
+     "supports": "Ads must not assert or imply personal attributes such as health"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI: Guidelines for Influencer Advertising in Digital Media",
+     "supports": "Upfront disclosure label for any material connection"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/hook_02.json#hook:pov",
+    "note": "P2 S2 Sp1 V2 C1. #1 ('8:40 am, bus-stop shed, umbrella useless, and a client meeting at 10') is exactly the card's hyper-specific POV, and #3's naani line is natural, funny and keeps ingredient words in the relative's mouth. No skin condition, cure or result. But #2 and #5 are the same idea (routine not swapped for monsoon) and generic by the card's own avoid line, and #3 and #4 both lean on naani. Fault: writer.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:problem_solution",
+   "kind": "hook",
+   "name": "Problem-solved headline",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Name one specific, felt problem and promise it ends: 'Get rid of [problem] once and for all'. A good one names the problem in the reader's own words (from reviews, DMs, calls), hints at the mechanism, and promises no more than the product can prove.",
+   "use_for": [
+    "ad headlines and reel hooks for products that fix one clear annoyance",
+    "landing-page heroes for single-problem services",
+    "nurture-email subject lines that introduce the fix",
+    "how-to blog and YouTube titles",
+    "the first bullet of a marketplace listing"
+   ],
+   "avoid": [
+    "'Once and for all', 'forever', 'permanently' when the fix is partial: say what it really does ('cut the calls by half', 'stop it this monsoon').",
+    "Vague problems ('Struggling with growth?'): lift the exact phrase customers use (tech:voice_of_customer_mining), e.g. 'kab tak aayega?' calls.",
+    "Health, skin, hair and disease 'get rid of' lines: these are cure claims; describe the product and its tested benefit instead.",
+    "Leading with a problem the audience does not know they have: use a story or hook:curiosity_gap to make them aware first."
+   ],
+   "templates": [
+    "Get rid of [problem] [time qualifier], without [unwanted cost].  (for annoyances you remove, not things you repair)",
+    "Stop [problem] before [moment]: [mechanism in 3-6 words].",
+    "[Problem]? [Fix in 5 words].",
+    "[Audience] stuck with [problem]? [Mechanism] that worked for [named case].",
+    "[Problem] se pareshan? [Fix] try karo."
+   ],
+   "examples": [
+    "Get rid of the 'kab tak aayega?' calls: send tracking on WhatsApp automatically.",
+    "Almirah mein seelan ki smell? Is monsoon ye 2 cheezein rakh ke dekho.",
+    "Stop chasing clients for payment: add this one line to every invoice.",
+    "No more double-booked slots at your salon: one shared calendar, set up in 20 minutes."
+   ],
+   "why_it_works": "A named problem filters for the people who have it and promises relief in the same breath. Copyblogger lists 'Get rid of [problem] once and for all' among its 22 formulas, and CreatorsJet frames reel hooks as jobs that include calling out a mistake and promising a payoff. The full-piece structure is fw:pas.",
+   "works_on": [
+    "plat:meta_ads",
+    "plat:google_ads_rsa",
+    "plat:youtube_title",
+    "plat:amazon_product_listing",
+    "plat:email_subject_line",
+    "plat:instagram_caption"
+   ],
+   "risk": "Broken promise when the headline says 'once and for all' and the body says 'reduce', or the fix needs a paid upgrade the headline hid. Legal line: claims must be capable of substantiation (comp:ccpa_misleading_ads_2022, comp:asci_code). Drug or remedy ads that suggest cure, treatment or prevention of scheduled diseases are barred by the DMR Act, and 'taking part in the publication' covers the writer (comp:dmr_act_1954). Meta bans claims to 'cure, heal, or eliminate' a listed set of conditions such as diabetes, thyroid and psoriasis (comp:meta_advertising_standards). Google bans presenting an improbable result as the likely outcome (comp:google_ads_misrepresentation).",
+   "related": [
+    "fw:pas",
+    "tech:voice_of_customer_mining",
+    "hook:mistake_warning",
+    "hook:this_is_why",
+    "comp:dmr_act_1954",
+    "comp:meta_advertising_standards"
+   ],
+   "sources": [
+    {
+     "url": "https://copyblogger.com/10-sure-fire-headline-formulas-that-work/",
+     "title": "22 Best Headline Formulas that Work - Copyblogger (Brian Clark, 2021)",
+     "supports": "Lists 'Get rid of [problem] once and for all' among 22 formulas"
+    },
+    {
+     "url": "https://www.creatorsjet.com/blog/15-instagram-reel-hook-formulas-you-can-copy-today",
+     "title": "15 Instagram Reel Hook Formulas - CreatorsJet (2025)",
+     "supports": "Reel hook jobs: call out, curiosity, mistake, payoff"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Claims capable of substantiation (cl. 12)"
+    },
+    {
+     "url": "https://indiankanoon.org/doc/1929849/",
+     "title": "Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954 (Indian Kanoon text)",
+     "supports": "s.3-4: no drug ads suggesting cure or treatment of scheduled diseases; no false or misleading drug claims"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/",
+     "title": "Meta Advertising Standards: Health and wellness",
+     "supports": "No claims to cure, heal or eliminate listed conditions"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en",
+     "title": "Google Advertising Policies Help: Misrepresentation",
+     "supports": "No improbable result presented as the likely outcome"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_4.json#hook:problem_solution",
+    "note": "ROUND 2: P2 S2 Sp1 V2 C1. Five YouTube titles under 100 characters, each naming its template, using only the topic's facts, with no absolute promise; #1 ('Broken village road? A Bihar WhatsApp group fixed theirs.'), #2 ('Copy this village's WhatsApp group') and the Hinglish #4 are clean and clickable. Nits (writer): #5 ('Stop forwarding road complaints before they pile up') is forced by its template; all five tell one story in five wordings. | round 1: weak 7",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "hook:question",
+   "kind": "hook",
+   "name": "Question headline",
+   "status": "current",
+   "confidence": "high",
+   "summary": "Ask the question the reader is already asking (often the exact search query), or one they cannot answer without reading. A good question is specific, has a non-obvious answer the piece actually gives, and cannot be dismissed with a quick 'no'.",
+   "use_for": [
+    "blog and YouTube titles that match a search query ('Is term insurance worth it at 25?')",
+    "FAQ and answer articles written to be cited by AI search",
+    "first line of a LinkedIn, X or Threads post",
+    "quiz-style reel openers",
+    "newsletter subject lines when the answer is the body"
+   ],
+   "avoid": [
+    "Yes/no questions the reader answers 'no' to and leaves ('Want more sales?'): ask which, why, how much or what happens if.",
+    "Questions the body answers with 'it depends' and nothing else: give a default answer and the conditions that change it.",
+    "Asking about the viewer's condition in a Meta ad ('In debt?', 'Depression getting you down?'): Meta disallows both styles; ask about the product or situation instead.",
+    "A question headline on a news story whose answer is unknown ('Was it sabotage?'): report what is known with hook:news_announcement."
+   ],
+   "templates": [
+    "Is [option] worth it for [audience] in [year]?",
+    "Why does [observed problem] happen [when / where]?",
+    "[Option A] or [Option B]: which one [outcome] for [audience]?",
+    "How much does [thing] actually cost in [city]?",
+    "[Situation] mein kya karein: [option A] ya [option B]?"
+   ],
+   "examples": [
+    "Is a Rs 1 crore term plan enough for a family of four in Pune?",
+    "Why does your sourdough go flat on humid Mumbai days?",
+    "Home loan prepay karein ya SIP badhayein? Dono ka hisaab ek sheet mein.",
+    "Composition or regular GST: which one saves more for a Rs 40 lakh cafe?"
+   ],
+   "why_it_works": "A question opens a gap the reader wants closed and mirrors the words people type into search and AI assistants. Backlinko's 2019 study of 912 million posts found titles ending in '?' got 23.3% more social shares than those that did not. CoSchedule names the question headline as a core blog type, and Caples' tested categories include it (Lofgren's summary).",
+   "works_on": [
+    "plat:youtube_title",
+    "plat:google_search_result",
+    "plat:linkedin_post",
+    "plat:x_post",
+    "plat:reddit_post",
+    "plat:email_subject_line"
+   ],
+   "risk": "Clickbait when the question implies something untrue ('Is your phone spying on you?' to sell a phone cover) or the body never answers it. A question about a named person ('Did [leader] take a bribe?') is still an imputation: defamation under BNS s.356 covers spoken, written or visual imputations, and the exceptions protect good-faith opinion on public conduct, not invented insinuation (comp:bns_defamation_speech). Meta's own disallowed ad example is 'Are you bankrupt? Check out our services.' (comp:meta_advertising_standards).",
+   "related": [
+    "tech:rhetorical_question",
+    "hook:hinglish_question",
+    "hook:curiosity_gap",
+    "genre:faq_answer_article",
+    "comp:meta_advertising_standards",
+    "comp:bns_defamation_speech"
+   ],
+   "sources": [
+    {
+     "url": "https://backlinko.com/content-study",
+     "title": "We Analyzed 912 Million Blog Posts - Backlinko with BuzzSumo (2019)",
+     "supports": "Titles ending in '?' got 23.3% more social shares"
+    },
+    {
+     "url": "https://coschedule.com/headlines/how-to-write-the-best-headlines-that-will-increase-traffic",
+     "title": "How to Write Headlines That Drive Traffic - CoSchedule",
+     "supports": "Names list, how-to and question headlines as core blog headline types"
+    },
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Summarises Caples' Tested Advertising Methods headline categories"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Rhetorical_question",
+     "title": "Rhetorical question - Wikipedia",
+     "supports": "Questions asked for effect rather than information"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/",
+     "title": "Meta Advertising Standards: Personal attributes",
+     "supports": "'Are you bankrupt? Check out our services.' and 'Depression getting you down?' are disallowed examples"
+    },
+    {
+     "url": "https://www.mha.gov.in/sites/default/files/250883_english_01042024.pdf",
+     "title": "Ministry of Home Affairs: The Bharatiya Nyaya Sanhita, 2023 (Act text)",
+     "supports": "s.356 defamation covers spoken, written or visual imputations; exceptions for good-faith opinion on public conduct"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/hook_02.json#hook:question",
+    "note": "P2 S2 Sp2 V2 C1. Five real search questions and five angles (worth it, why, A vs B, local cost, what to do first), all within 60 chars, none dismissible with a quick no, nothing invented. #2 'Why does a GST notice arrive after you filed on time?' is a model title tag. #3 clips 'D2C brands' to 'D2C'. Hinglish #5 natural.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:quick_easy",
+   "kind": "hook",
+   "name": "Quick and easy headline",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Promise the result for less time or effort than the reader expects: 'Here's a quick way to...', 'The lazy person's way to...'. A good one quantifies the effort honestly ('10 minutes once, then automatic') and the body proves it with steps short enough to match the claim.",
+   "use_for": [
+    "tutorial reels and how-to Shorts",
+    "template, checklist and tool lead magnets",
+    "recipe titles and food reels",
+    "product demos for simple apps and tools",
+    "Pinterest pins and blog titles for hacks"
+   ],
+   "avoid": [
+    "Calling a hard job easy (tax notices, weight loss, visa paperwork): say how long it took and for whom ('took me 40 minutes the first time').",
+    "Stacking 'quick, easy, simple' in one line: pick one and put a number on it.",
+    "'Lazy' framing for a formal B2B or finance audience: use 'in one meeting' or 'without a new tool'.",
+    "Speed promises on high-stakes decisions (insurance, investing, medical): fast reads as careless; lead with clarity, not speed.",
+    "Done-for-you products (delivery, a service that does the task): do not quantify the ordering ([N] taps, 3 steps: pick, order, eat), which was never the hassle; size the effort the reader skips (the hour of cooking, Sunday meal-prep, the tiffin to pack) or name the hassle removed."
+   ],
+   "templates": [
+    "The [lazy / quick] way to [result] ([time]).",
+    "[Result] in [N] minutes, using only [tool you already have].",
+    "Here's a quick way to [task] without [usual hassle].",
+    "[Task] sirf [N] minute mein, bina [hassle] ke.",
+    "[Result] the easy way: [N] steps, [time] total."
+   ],
+   "examples": [
+    "The lazy way to plan a week of tiffins: one Sunday list, seven dinners.",
+    "Rent receipt sirf 2 minute mein, bina kisi app ke.",
+    "A quick way to see which product actually makes you money: one extra Excel column.",
+    "Pressure-cooker biryani in 30 minutes. No dum, no oven."
+   ],
+   "why_it_works": "Effort and time are part of the price the reader pays; shrinking them raises the value of the same result (the time and effort terms of fw:hormozi_value_equation). Copyblogger lists 'Here's a quick way to [solve a problem]', and Caples' benefit headlines include quick-and-easy promises (Lofgren's summary).",
+   "works_on": [
+    "plat:youtube_title",
+    "plat:pinterest_pin",
+    "plat:instagram_caption",
+    "plat:meta_ads",
+    "plat:email_subject_line"
+   ],
+   "risk": "Broken promise when the 'quick' method needs paid tools, prior skill or hidden steps, or the '5-minute' video runs 18 minutes before the method. Clickbait: 'easy money', 'earn from your phone in 10 minutes'. Legal line: claims must be capable of substantiation and a disclaimer may not contradict the headline (comp:ccpa_misleading_ads_2022); Meta bans promises of specific outcomes within a set timeframe without qualifiers in health and weight-loss ads (comp:meta_advertising_standards); Google bans presenting an improbable result as the likely outcome (comp:google_ads_misrepresentation).",
+   "related": [
+    "hook:time_bound_promise",
+    "hook:how_to",
+    "hook:objection_removal",
+    "fw:hormozi_value_equation",
+    "comp:google_ads_misrepresentation"
+   ],
+   "sources": [
+    {
+     "url": "https://copyblogger.com/10-sure-fire-headline-formulas-that-work/",
+     "title": "22 Best Headline Formulas that Work - Copyblogger (Brian Clark, 2021)",
+     "supports": "Lists 'Here's a quick way to...' among 22 formulas"
+    },
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Summarises Caples' benefit headline categories, including quick-and-easy"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Substantiation (cl. 12); disclaimers must not contradict the claim (cl. 11)"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/",
+     "title": "Meta Advertising Standards: Health and wellness",
+     "supports": "No promises of specific outcomes within a set timeframe without qualifiers"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en",
+     "title": "Google Advertising Policies Help: Misrepresentation",
+     "supports": "No improbable result presented as the likely outcome"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_6.json#hook:quick_easy",
+    "note": "ROUND 3: P2 S2 Sp2 V1 C1. The done-for-you avoid line worked: nothing counts taps, steps or order minutes and nothing reads as a delivery time; each hook names a different effort the reader skips (Sunday prep hours, packing a tiffin, stove minutes, the grocery list, washing up), two sized with a kitchen-supplied [N]; 'quick' and 'easy' never share a line; 9 words and 42-49 characters each, re-checked against the subject-line limits. #1 'The lazy way to lunch: no [N]-hour Sunday prep' and the Hinglish #5 'Roz ka lunch, bina bartan dhoye, bina jhanjhat ke' are good subject lines. Nits (writer): #2 and #4 reuse 'A quick way to...' and are bland, and nothing is quick about planning lunch in #4; three of five name the hassle without sizing it, which the card allows but leaves the 'quick' unproven in those lines. Card proven. | round 2: weak 7 | round 1: weak 7",
+    "judge": "vj_retest_6",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "hook:quick_question_subject_line",
+   "kind": "hook",
+   "name": "Plain-text 'quick question' subject line",
+   "status": "current",
+   "confidence": "low",
+   "summary": "A short, lower-case, colleague-style subject line ('quick question about sharma textiles', 'gst notice q') for one-to-one cold outreach. It works when the email it opens is genuinely short and asks one real question about the recipient's business, and fails when it hides a long pitch.",
+   "use_for": [
+    "B2B cold email to one named person",
+    "partnership, podcast-guest and media pitches",
+    "follow-ups after a warm introduction",
+    "founder-to-customer plain-text emails asking for feedback"
+   ],
+   "avoid": [
+    "Bulk newsletters and promotions: a colleague-style subject on a campaign email reads as a trick; use hook:descriptive_subject_line.",
+    "A bare 'quick question' with nothing specific: add the company, the topic or the mutual contact ('quick question about your diwali catalogue').",
+    "A fake 'Re:' or 'Fwd:', or 'following up on our call' when there was no call: it implies a thread that does not exist.",
+    "Sales words in the subject ('demo', 'offer', 'free'): Gong's cold-email data, as reported by 30 Minutes to President's Club, found salesy techniques cut opens by as much as 17.9%.",
+    "A 300-word body under a 'quick' subject: keep the body to a few lines and one question the recipient can answer in one reply."
+   ],
+   "templates": [
+    "quick question about [company]'s [specific thing]",
+    "[topic] at [company]",
+    "[mutual contact] suggested I ask",
+    "q about [specific observation]",
+    "[first name], [specific topic]?"
+   ],
+   "examples": [
+    "quick question about sharma textiles' returns",
+    "idea for your diwali catalogue",
+    "gst notice q for patel & co",
+    "aapki google listing ke baare mein"
+   ],
+   "why_it_works": "Short lower-case subjects look like a note from a colleague, not a campaign, so they get opened as conversation rather than filtered as marketing. 30 Minutes to President's Club, reporting Gong data on 85M+ cold emails: all-lowercase subject lines had the highest open rates, 1-4 words is the ideal range, and salesy techniques reduced open rates by as much as 17.9%. These are vendor-reported figures (confidence low): treat them as direction, and test on your own list.",
+   "works_on": [
+    "plat:email_subject_line"
+   ],
+   "risk": "Tips into deception when the subject implies a relationship or prior thread that does not exist, or when 'quick question' opens a pitch with no question in it. Legal line: under CAN-SPAM, header information must not be misleading and 'The subject line must accurately reflect the content of the message' (comp:can_spam). Cold email to individuals in the UK needs specific consent or the soft opt-in, and the sender must not disguise their identity (comp:uk_pecr). High complaint rates also get bulk cold email filtered by Gmail, Yahoo and Outlook (trend:email_deliverability_rules).",
+   "related": [
+    "genre:cold_email",
+    "tech:plain_text_email",
+    "hook:personalised_subject_line",
+    "hook:descriptive_subject_line",
+    "comp:can_spam",
+    "trend:email_deliverability_rules"
+   ],
+   "sources": [
+    {
+     "url": "https://www.30mpc.com/newsletter/4-data-backed-subject-lines-to-get-your-cold-emails-opened",
+     "title": "4 Data-Backed Subject Lines to Get Your Cold Emails Opened - 30 Minutes to President's Club (Gong data)",
+     "supports": "Gong, 85M+ cold emails: all-lowercase subject lines have the highest open rates; 1-4 words ideal; salesy techniques reduce open rates by as much as 17.9%"
+    },
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+     "title": "FTC: CAN-SPAM Act: A Compliance Guide for Business",
+     "supports": "No false or misleading header information; subject line must accurately reflect the content"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/",
+     "title": "ICO: Guide to PECR, Electronic mail marketing",
+     "supports": "Consent or soft opt-in for marketing email to individuals; do not disguise identity"
+    },
+    {
+     "url": "https://martech.org/new-rules-for-bulk-email-senders-from-google-yahoo-what-you-need-to-know/",
+     "title": "MarTech: New rules for bulk email senders from Google and Yahoo (updated June 2026)",
+     "supports": "Bulk-sender rules focus on authentication, reported spam rates and easy unsubscribe"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/hook_02.json#hook:quick_question_subject_line",
+    "note": "P2 S2 Sp1 V1 C2. Lower-case, short, no sales words, no fake Re:, conditional use of the mutual-contact line built in; #1-#3 read like real colleague notes. #4 'q about aapki team ke voice notes' mixes a casual English stub with formal 'aapki' and names no observation; #5 '[first name]?' says nothing. CARD FIX: templates -> replace '[first name]?' with '[first name], [specific topic]?' (a bare name from a stranger implies a relationship that does not exist, which the card's risk line flags, and contradicts its own avoid line on bare subjects). | CARD FIXED 2026-10-07 (lead fix3): bare-name template now names a topic; re-judge pending.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:reason_why",
+   "kind": "hook",
+   "name": "Reason-why headline",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Promise an explanation: '[N] reasons why...' or 'Why [surprising fact]'. A good one picks a 'why' the reader has actually wondered about and delivers real causes (data, mechanism, named sources), not opinions dressed as reasons.",
+   "use_for": [
+    "explainer blog posts and YouTube explainers",
+    "news explainers once the causes are known",
+    "B2B thought-leadership and research-post titles meant to earn links",
+    "reasons-to-buy sections and sales-page subheads",
+    "reel hooks in the 'isliye...' form (see hook:this_is_why for the spoken opener)"
+   ],
+   "avoid": [
+    "'Why' headlines that explain nothing new ('Why marketing matters'): make the why specific or surprising ('Why your Google reviews dry up after month one').",
+    "Padding a reasons list with weak reasons: three strong reasons beat seven with filler.",
+    "'Why X happened' on breaking news before causes are confirmed: use 'what we know' framing (hook:news_announcement) and attribute every cause.",
+    "A 'reasons to buy' headline whose reasons are features: turn each into what it does for the buyer (tech:features_to_benefits)."
+   ],
+   "templates": [
+    "Why [surprising fact] (and what it means for [audience]).",
+    "[N] reasons [audience] are switching to [option].",
+    "Why your [thing] keeps [problem].",
+    "Because [reason], [result]: [what to do].",
+    "[Fact] kyun hota hai? [N] wajah."
+   ],
+   "examples": [
+    "Why sabzi prices jump every monsoon, explained with mandi arrival data.",
+    "4 reasons Surat textile traders are moving their catalogues to WhatsApp.",
+    "Why your Google reviews dry up after the first month.",
+    "Startup ki pehli hiring galat kyun hoti hai: 3 wajah."
+   ],
+   "why_it_works": "A 'why' promises understanding, which people seek out and share, and it signals the piece has substance beyond tips. Caples' keyword openers include 'Why' and 'Because' (Lofgren's summary). Backlinko's 2019 study found 'Why' posts, 'What' posts and infographics got 25.8% more links than videos and how-to posts, which makes this the title to reach for when a piece must earn backlinks. Hopkins' reason-why copy is the full-piece version (fw:reason_why_copy).",
+   "works_on": [
+    "plat:youtube_title",
+    "plat:google_search_result",
+    "plat:linkedin_post",
+    "plat:medium_story",
+    "plat:x_thread",
+    "plat:substack_post"
+   ],
+   "risk": "Broken promise when the 'reasons' are speculation presented as cause, or the 'why' asserts a fact that is not true. In news, 'Why [official] resigned' needs a confirmed, attributed reason. In ads, reasons that are factual claims ('fastest', 'most trusted', 'No. 1 in Jaipur') must be capable of substantiation (comp:ccpa_misleading_ads_2022, comp:asci_code).",
+   "related": [
+    "fw:reason_why_copy",
+    "tech:reason_why",
+    "hook:this_is_why",
+    "hook:number_list",
+    "genre:news_explainer",
+    "comp:asci_code"
+   ],
+   "sources": [
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Caples keyword openers include 'Why' and 'Because'"
+    },
+    {
+     "url": "https://backlinko.com/content-study",
+     "title": "We Analyzed 912 Million Blog Posts - Backlinko with BuzzSumo (2019)",
+     "supports": "'Why' and 'What' posts and infographics got 25.8% more links than videos and how-to posts"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Factual claims capable of substantiation (cl. 12)"
+    },
+    {
+     "url": "https://www.ascionline.in/the-asci-code/",
+     "title": "ASCI: The ASCI Code",
+     "supports": "Chapter I clause 1: substantiation of factual claims"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/hook_02.json#hook:reason_why",
+    "note": "P2 S2 Sp1 V2 C1. Five angles within 280 chars, nothing asserted beyond the topic. #1 (a subsidy is not free solar) is a genuinely useful why; #5's Hinglish ('isse kya lena-dena') is natural. #2 '4 reasons households are looking at the rooftop-solar subsidy scheme, explained one by one' is generic and implies a trend nobody has shown; #4's 'because' is circular (the subsidy is for rooftops, so your roof comes first). Fault: writer.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:secret_reveal",
+   "kind": "hook",
+   "name": "Secret / insider reveal",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Promise insider knowledge: 'The secret of [result]', 'Little-known ways to...', 'What everybody ought to know about...'. It works only when the payload is a real, specific nuance most of the audience does not know, delivered early, ideally from someone with first-hand experience.",
+   "use_for": [
+    "expert reels and carousels from practitioners (a chef, a CA, a property lawyer)",
+    "newsletter subject lines that carry one genuine insider tip",
+    "YouTube titles for craft and trade knowledge",
+    "long-form sales letters that name a unique mechanism",
+    "B2B posts sharing an internal process"
+   ],
+   "avoid": [
+    "Fake secrets (common advice relabelled): Insense and CreatorsJet both warn the hook must share a real nuance. Test: would a working professional in the field nod, or roll their eyes?",
+    "'What doctors / banks don't want you to know': conspiracy framing that invites regulatory trouble; say 'the step most people skip'.",
+    "Withholding the secret for a 'part 2' or a paid course: deliver it in the piece, sell the depth.",
+    "Using 'secret' when the reveal is your product: name the mechanism (tech:unique_mechanism) and show it."
+   ],
+   "templates": [
+    "The secret of [result] isn't [assumed cause]. It's [actual cause].",
+    "Little-known ways to [result] in [context].",
+    "What every [audience] ought to know about [topic] before [moment].",
+    "The [small detail] [experts] check first when [task].",
+    "[Insiders] ka secret: [reveal in one line]."
+   ],
+   "examples": [
+    "What every first-time Pune flat buyer ought to know about the carpet-area clause.",
+    "Halwai ka secret: besan pehle sukha bhuno, ghee baad mein.",
+    "The detail a property lawyer checks first in any sale deed: the chain of title, not the price.",
+    "Little-known ways tier-2 CA firms win referral clients."
+   ],
+   "why_it_works": "Curiosity plus status: the reader gets to know something others do not. Copyblogger's 22 formulas include 'The secret of [result]', 'Little-known ways to...' and 'What everybody ought to know about...'. TrueFan's 2026 India hook formats include the 'secret app' type, and Insense lists insider-tip hooks for brands while warning it must share a real nuance, not a fake secret.",
+   "works_on": [
+    "plat:youtube_title",
+    "plat:instagram_carousel",
+    "plat:instagram_caption",
+    "plat:email_subject_line",
+    "plat:linkedin_post"
+   ],
+   "risk": "Clickbait when the 'secret' is common knowledge or held back until a paid product. Broken promise in sales letters that tease a 'secret method' and never name it. Legal line: health 'secret cure' and remedy claims fall under the DMR Act (comp:dmr_act_1954) and Meta's cure-claim ban (comp:meta_advertising_standards); 'secret stock' or return claims by a creator a SEBI-regulated brand pays or refers to are a prohibited association unless the creator is registered (comp:sebi_finfluencer_association); Google Ads bans 'clickbait tactics or sensationalist text' (comp:google_ads_misrepresentation).",
+   "related": [
+    "hook:curiosity_gap",
+    "hook:nobody_tells_you",
+    "tech:open_loop",
+    "tech:unique_mechanism",
+    "comp:sebi_finfluencer_association",
+    "comp:dmr_act_1954"
+   ],
+   "sources": [
+    {
+     "url": "https://copyblogger.com/10-sure-fire-headline-formulas-that-work/",
+     "title": "22 Best Headline Formulas that Work - Copyblogger (Brian Clark, 2021)",
+     "supports": "Lists 'The secret of...', 'Little-known ways to...', 'What everybody ought to know about...'"
+    },
+    {
+     "url": "https://insense.pro/blog/instagram-reel-hooks",
+     "title": "40+ New Instagram Reel Hooks - Insense",
+     "supports": "Insider-tip reel hooks; must share a real nuance, not a fake secret"
+    },
+    {
+     "url": "https://www.truefan.ai/blogs/trending-hook-formats-2026",
+     "title": "Trending Hook Formats 2026: AI video hooks in India - TrueFan (2026-02-15)",
+     "supports": "India hook formats including the secret app type"
+    },
+    {
+     "url": "https://indiankanoon.org/doc/1929849/",
+     "title": "Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954 (Indian Kanoon text)",
+     "supports": "No drug or magic-remedy ads for scheduled diseases; no false or misleading drug claims"
+    },
+    {
+     "url": "https://www.sebi.gov.in/legal/circulars/jan-2025/details-clarifications-on-provisions-related-to-association-of-persons-regulated-by-the-board-miis-and-their-agents-with-persons-engaged-in-prohibited-activities_91356.html",
+     "title": "SEBI: clarifications on association of regulated persons with persons engaged in prohibited activities",
+     "supports": "Regulated entities may not associate with unregistered creators giving advice or return claims"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en",
+     "title": "Google Advertising Policies Help: Misrepresentation",
+     "supports": "No clickbait tactics or sensationalist text"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/hook_02.json#hook:secret_reveal",
+    "note": "P2 S2 Sp2 V2 C1. Each reveal is delivered in the hook itself (say the sentence aloud before checking it; where you pause; practice in a hostel room; 'Tell me about yourself' before the first interview), no fluency, placement or timeline promise, all under 125 chars. #4 is the best: a real coach's nuance. #5 ('think directly in English') is common advice relabelled as a secret and fails the card's own eye-roll test.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:shocking_stat",
+   "kind": "hook",
+   "name": "Shocking statistic",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Open with one surprising, sourced number that reframes the topic. A good one names the source and year, keeps the base visible (61% of whom?), translates the number into human scale, and puts the source on screen or in the next line.",
+   "use_for": [
+    "news and policy explainers, reels on civic and money topics",
+    "LinkedIn thought-leadership openers",
+    "report, survey and white-paper launch posts",
+    "PSA scripts and campaign openers",
+    "pitch-deck and sales-deck title slides"
+   ],
+   "avoid": [
+    "The invented '99% log ye galti karte hain': use the real figure with its source, or drop the number and use hook:mistake_warning.",
+    "Numbers without base or year ('300% growth'): add 'from 2 to 8 stores' or the survey size and date.",
+    "Old stats presented as current: give the year in the line; replace anything older than the topic's change cycle.",
+    "Mixing up per cent and percentage points, or crore and million: check the unit against the source before posting."
+   ],
+   "templates": [
+    "[Number] [of group] [surprising fact] ([source], [year]).",
+    "Only [N] in [M] [group] [action]. [What it means for you].",
+    "[Number]. That's [what it measures]. ([Source])",
+    "[Number] [group] [fact]. Source: [source, year]. Ab sawaal ye hai: [question]."
+   ],
+   "examples": [
+    "61% of Indian internet users watched short video in 2025 (IAMAI-Kantar). Your brochure isn't in that feed.",
+    "YouTube Shorts ab roz average 200 billion views karta hai (YouTube CEO letter, 2026). Aapka product demo kahan hai?",
+    "53% of consumers distrust AI search summaries (Gartner 2025 survey, via Fortune). So why does your FAQ read like one?"
+   ],
+   "why_it_works": "A concrete, unexpected number breaks an assumption faster than an argument and lends authority to everything after it. Caples' tested headlines include facts-and-figures headlines (Lofgren's summary), and TrueFan lists the shock stat among India's trending hook formats in 2026. The surprise only works if the number is believable and checkable, which is why the source belongs in the hook.",
+   "works_on": [
+    "plat:linkedin_post",
+    "plat:youtube_title",
+    "plat:x_post",
+    "plat:instagram_carousel",
+    "plat:meta_ads",
+    "plat:email_subject_line"
+   ],
+   "risk": "Clickbait when the number is invented, outdated, cherry-picked or stripped of its base (300% growth from 2 users to 8). Legal line: a statistic in an ad is an objectively factual claim and must be capable of substantiation, with the source and date cited when it rests on research (CCPA 2022 cl. 12(a)-(b), comp:ccpa_misleading_ads_2022; ASCI Code Ch I.1, comp:asci_code). Health statistics in ads also meet Meta's health rules and the DMR Act (comp:meta_advertising_standards, comp:dmr_act_1954).",
+   "related": [
+    "tech:specificity",
+    "tech:authority_proof",
+    "hook:specificity",
+    "genre:news_explainer",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code"
+   ],
+   "sources": [
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Caples' facts-and-figures headlines"
+    },
+    {
+     "url": "https://www.truefan.ai/blogs/trending-hook-formats-2026",
+     "title": "Trending Hook Formats 2026: AI video hooks in India - TrueFan (2026-02-15)",
+     "supports": "India hook formats including shock stat"
+    },
+    {
+     "url": "https://yourstory.com/2026/01/indias-internet-user-base-crosses-950-million-2025-iamai-report",
+     "title": "YourStory (2026-01-29): India's internet user base crosses 950 million - IAMAI report",
+     "supports": "IAMAI-Kantar: in 2025, 588 million (61%) internet users consumed short-video content (used in an example)"
+    },
+    {
+     "url": "https://blog.youtube/inside-youtube/the-future-of-youtube-2026/",
+     "title": "YouTube CEO letter: The future of YouTube 2026 (2026-01-21)",
+     "supports": "Shorts 'now averages 200 billion daily views' (used in an example)"
+    },
+    {
+     "url": "https://fortune.com/2026/06/05/war-ai-slop-publicis-groupe-hachette-publishers-association/",
+     "title": "Fortune (2026-06-05): the war on AI slop",
+     "supports": "53% of consumers distrust AI-generated search results and summaries, Gartner 2025 survey (used in an example)"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Claims capable of substantiation; cite source and date for research claims (cl. 12(a)-(b))"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/hook_02.json#hook:shocking_stat",
+    "note": "P2 S2 Sp2 V2 C1. Numbers, bases and sources are placeholders by design with an explicit drop rule if no real figure exists; the words around them are concrete and well chosen (matching by hand, zero unmatched at month-end, paying the same vendor invoice twice). Five angles; Hinglish #4 natural ('...unmatched invoice milta hai'). #2's tail 'What happens to the rest at yours?' is clunky; #1 and #5 share a template (the card has four).",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:short_punchy",
+   "kind": "hook",
+   "name": "One-to-three-word headline",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "A headline of one to three words that a strong visual, a subhead or the product itself completes. A good one is half a thought on its own and obvious the moment you see the image, and the subhead underneath carries the specific promise, place or price.",
+   "use_for": [
+    "billboards, hoardings and transit ads read in two seconds",
+    "print ads and packaging fronts",
+    "carousel cover slides and reel covers with a strong image",
+    "short headlines in display and responsive ads",
+    "campaign lines that sit above a longer explanatory subhead"
+   ],
+   "avoid": [
+    "Search ads, SEO titles and email subject lines, where the words must carry the meaning without a picture: use hook:keyword_front_loaded or hook:descriptive_subject_line.",
+    "Abstract virtue words ('Quality. Trust. Service.'): use a concrete noun or verb the image proves ('Zero paperwork.').",
+    "Publishing the short line without its subhead or visual: test it by covering the image; if the line plus subhead says nothing specific, rewrite the subhead.",
+    "English wordplay for a Hindi-belt audience that will not catch the pun: use a Hindi word with the same punch ('Bas.', 'Garam. Abhi.').",
+    "Responsive display ads: Google may show a short headline without the description, and the long headline is a separate asset, so a one-word line cannot rely on a subhead (support.google.com/google-ads/answer/7005917); use hook:keyword_front_loaded there."
+   ],
+   "templates": [
+    "[One concrete noun].  Subhead: [specific promise, place, price].",
+    "[Verb] [object].  Subhead: [who it is for and how].",
+    "[Adjective]. [Noun].  Subhead: [proof in one line].",
+    "[Hindi word or phrase].  Subhead: [what to do, where]."
+   ],
+   "examples": [
+    "Garam. Abhi.  Subhead: Samosas delivered hot in Kothrud, under 20 minutes.",
+    "Zero paperwork.  Subhead: GST filing for Jaipur shops, done on WhatsApp.",
+    "Bas.  Subhead: Tapakta nal band karo. Har boond ka bill aata hai.",
+    "Monday, sorted.  Subhead: 5 lunches prepped in one Sunday hour."
+   ],
+   "why_it_works": "A one-to-three-word line is read in a glance, which is all a hoarding, a thumbnail or a feed cover gets; the visual does the rest of the sentence, and the gap between them makes the viewer finish it. Caples' tested headline categories include one-to-three-word headlines (Lofgren's summary). The classic model is DDB's 'Think small.' for Volkswagen, where the image of a tiny car completes the line.",
+   "works_on": [
+    "plat:instagram_carousel",
+    "plat:meta_ads",
+    "plat:linkedin_ads_sponsored_content",
+    "plat:pinterest_pin"
+   ],
+   "risk": "Rarely clickbait; the failure is ambiguity, or an image-plus-word pair that implies a claim the product cannot back ('Cured.' over a supplement bottle, 'Guaranteed.' over a coaching batch). The word and the visual together are the claim, so it must be capable of substantiation (comp:ccpa_misleading_ads_2022, comp:asci_code). In Google ads, gimmicky capitals or symbols ('FREE!!!') are rejected under the editorial policy (comp:google_ads_editorial).",
+   "related": [
+    "genre:ooh_billboard_copy",
+    "genre:print_ad_copy",
+    "genre:tagline_slogan",
+    "hook:thumbnail_text_pairing",
+    "comp:asci_code"
+   ],
+   "sources": [
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Caples' categories include one-to-three-word headlines"
+    },
+    {
+     "url": "https://www.ascionline.in/the-asci-code/",
+     "title": "ASCI: The ASCI Code",
+     "supports": "Chapter I clause 1: claims capable of substantiation"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Claims capable of substantiation (cl. 12)"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en",
+     "title": "Google Advertising Policies Help: Editorial",
+     "supports": "No gimmicky capitalisation, punctuation or symbols"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_6.json#hook:short_punchy",
+    "note": "ROUND 3: P1 S2 Sp2 V2 C1. Round 2's faults are fixed: no abstract pair, every headline is a concrete noun, an image verb or a Hindi sensory word ('Local train.', 'Chipchipahat.', 'Pasina.'), and each subhead carries a felt monsoon moment ('Sticky by the second station', 'Sweat under the helmet strap') instead of restating the range; headlines 7-14 characters and subheads 84-108, re-checked against 40 and 125; no cure, result, price or invented proof, and skipping the proof template with no documented proof is right. Nits (writer): the subheads never say what the range does about the stickiness ('for the commute', 'for days like this'), so the click rests on recognition alone; #4 repeats 'Wet chappals' in its subhead and wet feet are not a skincare problem; #3 and #5 share the same second half. Card proven. | round 2: weak 7 | round 1: weak 7",
+    "judge": "vj_retest_6",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "hook:social_proof",
+   "kind": "hook",
+   "name": "Social proof headline",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Lead with how many people like the reader use or approve it: 'Here is a method that is helping [group] to [result]', '2,300 Jaipur shopkeepers file GST with us'. A good one uses a verifiable count with its unit and time window, names the peer group the reader belongs to, and never rounds up.",
+   "use_for": [
+    "ad headlines and landing-page heroes for products with real traction",
+    "app store and Play Store first lines",
+    "B2B trust lines ('used by 40 CA firms in Rajasthan')",
+    "launch and waitlist emails",
+    "WhatsApp broadcasts to a local audience"
+   ],
+   "avoid": [
+    "Vanity numbers (impressions, followers, 'views'): use users, orders, repeat buyers or clients, with a time window.",
+    "A crowd the reader does not identify with ('Delhi's favourite' to a Chennai audience): name their peer group or city.",
+    "Rounding up ('10,000+' when the count is 7,800): use the real number; '7,800' reads as more honest anyway.",
+    "Live counters and 'X people are viewing this' widgets unless the number is real and live.",
+    "Only one case to point to (one village, one client): that is a story or testimonial, not a crowd; use hook:testimonial or hook:personal_story, or a contrast line."
+   ],
+   "templates": [
+    "[Number] [peer group] [use / switched to] [product] for [result].",
+    "Here's a method that is helping [group] [result].",
+    "Join [number] [group] who [action] every [period].",
+    "[Recognisable peer group] [uses] this to [result].",
+    "[City] ke [number] [group] ye already use kar rahe hain."
+   ],
+   "examples": [
+    "2,300 Jaipur shopkeepers now file GST on WhatsApp with us. Here's how it works.",
+    "Here's the 15-minute routine helping first-year B.Com students in Patna pass accounts.",
+    "Indore ke 400 gharon mein ab subah ka doodh 7 baje se pehle aata hai.",
+    "Used by 40 CA firms across Rajasthan to track every GST notice."
+   ],
+   "why_it_works": "Under uncertainty people copy what similar others do (social proof, the term popularised by Robert Cialdini, per Wikipedia). Copyblogger's formulas include 'Here is a method that is helping [X] to [Y]', and TrueFan lists crowd-proof hooks among India's reel archetypes. The closer the group is to the reader, the stronger the pull.",
+   "works_on": [
+    "plat:meta_ads",
+    "plat:google_ads_rsa",
+    "plat:google_play_listing",
+    "plat:apple_app_store",
+    "plat:linkedin_post",
+    "plat:whatsapp_business_template"
+   ],
+   "risk": "Fabrication is the line: invented, inflated or bought numbers. Legal line in India: fake popularity is a banned dark pattern, and the gazette's own illustration is 'Only 2 rooms left! 30 others are looking at this right now' (comp:ccpa_dark_patterns_2023); a usage count in an ad must be capable of substantiation (comp:ccpa_misleading_ads_2022). US: the FTC rule bans buying or selling fake indicators of social media influence such as bot followers or views (comp:ftc_consumer_reviews_rule). UK: fake or concealed-incentive reviews are banned outright (comp:uk_dmcc_schedule20).",
+   "related": [
+    "tech:social_proof",
+    "hook:testimonial",
+    "hook:who_else_wants",
+    "comp:ccpa_dark_patterns_2023",
+    "comp:ftc_consumer_reviews_rule"
+   ],
+   "sources": [
+    {
+     "url": "https://copyblogger.com/10-sure-fire-headline-formulas-that-work/",
+     "title": "22 Best Headline Formulas that Work - Copyblogger (Brian Clark, 2021)",
+     "supports": "Lists 'Here is a method that is helping [X] to [Y]' among 22 formulas"
+    },
+    {
+     "url": "https://www.truefan.ai/blogs/instagram-reels-hooks-india",
+     "title": "Instagram Reels hooks India 2026 - TrueFan",
+     "supports": "Hinglish and India-specific reel hook archetypes"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Social_proof",
+     "title": "Social proof - Wikipedia",
+     "supports": "People copy others' actions under uncertainty; term from Robert Cialdini (1984)"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "Gazette of India (30 Nov 2023): Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+     "supports": "False urgency includes fake scarcity or popularity; 'Only 2 rooms left! 30 others are looking at this right now' illustration"
+    },
+    {
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials",
+     "title": "FTC press release: Final Rule Banning Fake Reviews and Testimonials (14 Aug 2024)",
+     "supports": "Bans fake indicators of social media influence such as bot followers or views"
+    },
+    {
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20",
+     "title": "legislation.gov.uk: DMCC Act 2024, Schedule 20",
+     "supports": "Para 13: fake consumer reviews and concealed incentivised reviews are always unfair"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_6.json#hook:social_proof",
+    "note": "ROUND 3: P2 S2 Sp2 V1 C1. On a topic with a real crowd the card works: every number keeps its unit and window (1,140 Indian teams and 212 CA firms in September 2026; 3,870 Google Play reviews at 4.6 stars), nothing is rounded up, no crowd is claimed beyond the facts, the peer groups match the SME and CA-firm audience, and the Hinglish #5 'Jaipur ke 38 CA firms ye already use kar rahe hain' is natural; 88-105 characters, re-checked against 125. Nits (writer): #2 calls an app 'a method' and stacks 'in India... in September 2026'; #3 'Join the 3,870 people who reviewed this app' invites the reader to join reviewers rather than users and drops the date; #4 has no number; 'this app' stands in for a name the brief did not give. Card proven; the round-2 test-design fault is closed by the new topic. | round 2: weak 6 | round 1: weak 7",
+    "judge": "vj_retest_6",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "hook:specificity",
+   "kind": "hook",
+   "name": "Specificity headline",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Replace every vague word in the headline with the exact number, name, place, timeframe and result ('Rs 2.4 lakh recovered in 41 days' instead of 'big savings, fast'), so the claim reads as measured, not guessed. A good one is true down to the digit and the body shows where each number came from.",
+   "use_for": [
+    "case-study titles and portfolio headlines",
+    "B2B ads and LinkedIn posts",
+    "landing-page heroes and proof bars",
+    "email subject lines for results-led nurture emails",
+    "YouTube titles for experiments and breakdowns"
+   ],
+   "avoid": [
+    "Specific-sounding invented figures: a made-up exact number is a worse lie than a vague one. Get the client's real data or write the headline without the number.",
+    "Fake precision ('97.38% faster') unless it is an actual measurement: round to what the reader needs.",
+    "Four numbers in one line: keep one or two, move the rest to the body.",
+    "A number with no base or window ('300% growth'): add 'from 12 to 48 orders a day, March to June'."
+   ],
+   "templates": [
+    "How [named client or type] [result with number] in [timeframe].",
+    "[Exact number] [unit] [result] for [exact audience], [time window].",
+    "[Result] in [city] in [N] days: [mechanism in 3-5 words].",
+    "[N] [actions] in [time]: [measured outcome].",
+    "[Time] mein [exact result]: [kaise]."
+   ],
+   "examples": [
+    "How a Jaipur CA firm cut notice replies from 6 days to 2 with one shared tracker.",
+    "Rs 2.4 lakh in stuck GST refunds recovered for 11 Surat traders in 41 days.",
+    "38 din, hafte mein 3 reels: ek Lucknow bakery ke DMs mein kya badla.",
+    "The 9-word subject line that booked 14 calls from 212 cold emails."
+   ],
+   "why_it_works": "Exact figures signal that someone measured, which makes the claim believable and the reader able to picture their own result. 'Ultra-specific' is one of Michael Masterson's 4 Us of a headline (fw:four_us), and Caples lists facts and figures among benefit headlines (Lofgren's summary).",
+   "works_on": [
+    "plat:linkedin_post",
+    "plat:youtube_title",
+    "plat:meta_ads",
+    "plat:google_ads_rsa",
+    "plat:email_subject_line",
+    "plat:linkedin_ads_sponsored_content"
+   ],
+   "risk": "The danger flips here: a false specific number is a stronger, more checkable lie, and a best-ever result presented as typical is a broken promise. Legal line: factual claims must be capable of substantiation, with source and date for research-based ones (CCPA 2022 cl. 12, comp:ccpa_misleading_ads_2022); results quoted from customers must be genuine endorsements (cl. 13-14). Coaching and ed-tech results need the topper's rank, course name and duration, and whether the course was paid, plus written consent (comp:ccpa_coaching_ads_2024).",
+   "related": [
+    "fw:four_us",
+    "tech:specificity",
+    "hook:case_study_title",
+    "hook:shocking_stat",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:ccpa_coaching_ads_2024"
+   ],
+   "sources": [
+    {
+     "url": "https://writingisasuperpower.com/what-are-the-four-us-in-copywriting",
+     "title": "What Are the Four U's in Copywriting?",
+     "supports": "Urgent, unique, ultra-specific, useful headline test credited to Michael Masterson"
+    },
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Caples lists facts and figures among benefit headlines"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Substantiation (cl. 12); genuine endorsements (cl. 13-14)"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/Guidelines%20for%20Prevention%20of%20Misleading%20Advertisement%20in%20Coaching%20Sector,%202024.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisement in Coaching Sector, 2024",
+     "supports": "Disclose rank, course and paid status; written consent for topper photos and testimonials (cl. 4)"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_5.json#hook:specificity",
+    "note": "ROUND 2: P2 S2 Sp1 V2 C1. Five different measures (reply time, volume, first-pass acceptance, rupees of demand, days in Hinglish), never more than two numbers, every key phrase inside the 70 visible characters (re-checked), templates named. The round-1 English slips are fixed. #4 'Rs [amount] of GST demand closed for Jaipur D2C sellers, [quarter]' and #2 are strong once filled. Nits (writer): #3 dropped 'GST notice', so '[N] replies filed in [Month]' has no subject when the headline is read alone; #5 is reply time again, and 'CA ke review ke saath' is a given for a CA firm, not a mechanism; #1 credits the brand with what the firm did. | round 1: weak 7",
+    "judge": "vj_retest_5",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "hook:stakes_title",
+   "kind": "hook",
+   "name": "High-stakes YouTube title (MrBeast-style)",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "A YouTube title that states an extreme, concrete stake or challenge the thumbnail shows at a glance ('I Lived on Rs 100 a Day in Mumbai for a Week'). A good one is decided before filming, the stake is real and on camera, and the first minute proves the title's promise is being kept.",
+   "use_for": [
+    "YouTube challenge, experiment and stunt videos",
+    "food, travel and money creators' long-form titles",
+    "brand-funded stunts and creator collaborations",
+    "Shorts series built on a repeated challenge",
+    "pitch titles when planning a video before production"
+   ],
+   "avoid": [
+    "A stake the video does not deliver (the 'Rs 1 lakh' prize that never appears on screen): film the stake or change the title.",
+    "Copying MrBeast-scale stakes without the budget: scale the stake to what you can show ('Rs 50 vs Rs 5,000 thali' is a stake).",
+    "Stakes titles on educational or B2B channels where viewers search for answers: use hook:keyword_front_loaded or hook:how_to.",
+    "Dangerous stunts, minors at risk, or wasting food for spectacle: the backlash costs more than the views."
+   ],
+   "templates": [
+    "I [did extreme thing] for [N days / hours].",
+    "I Tried [thing] With Only Rs [small amount].",
+    "Rs [low] [thing] vs Rs [high] [thing].",
+    "Last to [action] Wins [real prize].",
+    "[N] [people] vs [N] [people]: [contest]."
+   ],
+   "examples": [
+    "I Lived on Rs 100 a Day in Mumbai for a Week",
+    "Rs 50 ki thali vs Rs 5,000 ki thali: Indore edition",
+    "I Built a Website for My Mom's Tiffin Service in 24 Hours",
+    "Last Person to Leave the Dhaba Wins Rs 10,000"
+   ],
+   "why_it_works": "A concrete, extreme stake is legible in one glance and creates the question 'did they make it?'. The leaked 'How to Succeed at MrBeast Production' handbook (reported 2024) says production starts from the title and thumbnail, thumbnails set viewer expectations, and the first minute, when most people click off, must show the thumbnail's promise is met (Passionfruit, GIGAZINE).",
+   "works_on": [
+    "plat:youtube_title",
+    "plat:youtube_video_ads"
+   ],
+   "risk": "Broken promise when the stake in the title or thumbnail is not in the video, or only appears in the last 30 seconds. Platform line: YouTube's spam policy bans 'Malicious clickbait: Using maliciously misleading titles, thumbnails, descriptions, or imagery to trick users into clicking on a video that does not deliver what was promised' (its example: a title offering a full sports match when the video shows only a clip). Brand-funded stunts need the paid promotion box ticked (comp:youtube_paid_promotion) and an upfront ad label in India (comp:asci_influencer). A challenge sponsored by an online money game app is an ad for it, and the Online Gaming Act 2025 bans such ads once in force (confirm commencement) (comp:online_gaming_act_2025).",
+   "related": [
+    "hook:thumbnail_text_pairing",
+    "hook:challenge_test",
+    "fw:youtube_intro_hook_promise_preview",
+    "genre:youtube_title_description",
+    "comp:youtube_paid_promotion"
+   ],
+   "sources": [
+    {
+     "url": "https://passionfru.it/mrbeast-leaked-document-81151/",
+     "title": "'How to Succeed at MrBeast Production' handbook leaked - Passionfruit",
+     "supports": "Thumbnails set viewer expectations; the first minute is when people click off most"
+    },
+    {
+     "url": "https://gigazine.net/gsc_news/en/20240917-mrbeast-youtube-production/",
+     "title": "MrBeast production manual leaked - GIGAZINE (2024-09-17)",
+     "supports": "Production starts with the title and thumbnail; the first minute shows the thumbnail's promise is met"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/MrBeast",
+     "title": "MrBeast - Wikipedia",
+     "supports": "Jimmy Donaldson, YouTuber and founder of Beast Industries"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/2801973",
+     "title": "YouTube Help: Spam, deceptive practices and scams policies",
+     "supports": "Bans malicious clickbait: misleading titles, thumbnails, descriptions or imagery that do not deliver what was promised; full-match example"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/154235",
+     "title": "YouTube Help: Paid product placements, endorsements and sponsorships",
+     "supports": "Paid promotion checkbox adds a disclosure label"
+    },
+    {
+     "url": "https://www.meity.gov.in/static/uploads/2025/10/8a7f103cefc68ed8aaa2ebc9a2ed7c13.pdf",
+     "title": "MeitY: The Promotion and Regulation of Online Gaming Act, 2025 (Act text)",
+     "supports": "s.6: no ad that directly or indirectly promotes online money games; commences on notification"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/hook_02.json#hook:stakes_title",
+    "note": "P2 S2 Sp2 V2 C1. Five stakes legible at a glance that the first minute can show (7 days on the thali only, Rs [amount] a day, cheap vs costly thali, last to quit, 5 foodies vs 5 gym-goers blind taste test), no health result, nothing dangerous or wasteful. #5 is the strongest. 'Eating High-Protein' is unidiomatic; #1 and #4 share the 7-day frame.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:stop_scrolling",
+   "kind": "hook",
+   "name": "'Stop scrolling' call",
+   "status": "declining",
+   "confidence": "medium",
+   "summary": "Tell the viewer to stop ('Ruko!', 'Don't swipe if you...') and in the same breath give a specific reason that applies to them. The command alone is noise and now overused; the reason (who it is for, what they lose or gain in the next seconds) does all the work.",
+   "use_for": [
+    "reel and Short openers for time-sensitive information: a deadline, a scam alert, a recall",
+    "local civic and news alerts for one city or community",
+    "festival and sale reminders where the date is real",
+    "creator PSAs on money and consumer safety"
+   ],
+   "avoid": [
+    "The bare 'Stop scrolling!': Insense lists it among weak, overused openers. Lead with the reason itself ('GST notice aaya hai? Reply bhejne se pehle 10 second ruko').",
+    "Using it on low-stakes content (a recipe, a vlog): show the result instead (hook:before_after).",
+    "Fake alarm ('Ruko! Ye dekh ke shock ho jaoge'): if nothing in the video is urgent, use a curiosity or story hook.",
+    "Using it in every post: the viewer learns to ignore it; keep it for genuinely urgent posts."
+   ],
+   "templates": [
+    "Ruko! Agar [audience / situation], toh [specific reason].",
+    "Don't swipe if you [specific situation]: [what you'll lose or get].",
+    "Stop. Before you [action], check [specific thing].",
+    "Wait, [city / group] walon: [news or warning in under 10 words]."
+   ],
+   "examples": [
+    "Ruko, Jaipur ke shop owners: GST notice aaya hai toh reply bhejne se pehle ye dekh lo.",
+    "Stop. Before you pay that 'electricity bill pending' SMS, read the sender ID.",
+    "Don't swipe if you booked a Goa trip from a Rs 999 Instagram ad. Check this first.",
+    "Ruko! Shaadi ka gold book karne se pehle hallmark ka ye number check karo."
+   ],
+   "why_it_works": "A direct command breaks autopilot for a split second; the specific reason that follows tells the viewer it is about them, which is what actually keeps them. Insense says the generic version is weak and overused and works only with a specific reason attached; ebookwaala and TrueFan list the Hindi and Hinglish 'ruko' forms among India reel hooks.",
+   "works_on": [
+    "plat:meta_ads",
+    "plat:youtube_video_ads",
+    "plat:instagram_caption",
+    "plat:threads_post"
+   ],
+   "risk": "Clickbait when the 'reason' is fake alarm or the urgent tone fronts a routine promo. Legal line: false urgency is a banned dark pattern in India (comp:ccpa_dark_patterns_2023); Google Ads bans using 'negative life events such as death, accidents, illness, arrests or bankruptcy' to pressure immediate action (comp:google_ads_misrepresentation). A promo dressed as an official alert that uses government names or emblems in trade runs into the Emblems and Names Act (comp:emblems_names_act_1950).",
+   "related": [
+    "hook:pattern_interrupt",
+    "hook:mistake_warning",
+    "hook:urgency_deadline",
+    "hook:audience_callout",
+    "comp:ccpa_dark_patterns_2023"
+   ],
+   "sources": [
+    {
+     "url": "https://insense.pro/blog/instagram-reel-hooks",
+     "title": "40+ New Instagram Reel Hooks - Insense",
+     "supports": "Lists generic 'Stop scrolling' among weak, overused openers; works only with a specific reason"
+    },
+    {
+     "url": "https://ebookwaala.in/15-hook-lines-for-viral-instagram-reels/",
+     "title": "15 Hook Lines for Instagram Reels - ebookwaala.in",
+     "supports": "Hindi/Hinglish reel hook lines"
+    },
+    {
+     "url": "https://www.truefan.ai/blogs/instagram-reels-hooks-india",
+     "title": "Instagram Reels hooks India 2026 - TrueFan",
+     "supports": "Hinglish and India-specific reel hook archetypes"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "Gazette of India (30 Nov 2023): Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+     "supports": "False urgency banned"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en",
+     "title": "Google Advertising Policies Help: Misrepresentation",
+     "supports": "No negative life events to pressure immediate action"
+    },
+    {
+     "url": "https://thc.nic.in/Central%20Governmental%20Acts/Emblems%20and%20Names%20(%20Prevention%20of%20Improper%20Use)%20Act,1950.pdf",
+     "title": "The Emblems and Names (Prevention of Improper Use) Act, 1950 (High Court of Tripura library scan)",
+     "supports": "s.3: no use of scheduled emblems and names for trade without permission"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/hook_02.json#hook:stop_scrolling",
+    "note": "P2 S2 Sp2 V1 C1. Every command carries a specific reason for a team lead who works in Hindi; #1 ('...toh minutes kaun likhta hai?') and #3 ('Before you delete that long voice note, check whether it holds a decision nobody wrote down') are excellent and non-alarmist. #2's 'a voice note can do that job' credits the wrong thing (the tool does the job); #4 'team leads walon' is awkward Hinglish; #5 implies Hindi-to-English minutes, a language claim the brief ruled out. Fault for the slips: writer.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:testimonial",
+   "kind": "hook",
+   "name": "Testimonial headline",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Put a real customer's own words, in quotes and with their name and context, in the headline slot. A good one quotes a specific outcome or moment in the customer's own voice (Hinglish included), trims without rewriting, and has the customer's written permission.",
+   "use_for": [
+    "static and video ads, especially for local services",
+    "landing-page heroes and pricing-page headers",
+    "case-study titles and testimonial pages",
+    "email subject lines for proof emails in a sequence",
+    "print ads and brochures"
+   ],
+   "avoid": [
+    "Invented or 'composite' quotes: every quote must be a real customer's words. The examples on this card show the format only.",
+    "Polishing the quote into brand voice: keep the customer's words and grammar, trim for length, never add claims.",
+    "Anonymous attribution ('A happy customer'): use name plus role or city, with permission; first name and city if they prefer.",
+    "Quotes that claim results the brand itself could not substantiate ('cured my sugar'): drop them, the endorser's words count as the brand's claim."
+   ],
+   "templates": [
+    "'[Specific outcome in the customer's words]' - [Name], [role], [city]",
+    "'[Before feeling]. [After feeling].' - [Name], [context]",
+    "'[Hinglish quote as said]' - [Name], [city]",
+    "[Name] said '[quote]'. Here's what changed."
+   ],
+   "examples": [
+    "'Pehli baar Diwali pe stock khatam nahi hua.' - Ramesh Gupta, kirana owner, Kanpur",
+    "'I stopped dreading GST month.' - Neha Jain, boutique owner, Jaipur",
+    "'My son asked for the dal again.' - Farah, Bengaluru, on the 15-minute dal kit",
+    "'Finally, a CA who replies on WhatsApp' (Ankit, Pune)"
+   ],
+   "why_it_works": "Words from a third party carry more belief than the brand's own claim, and a real person's phrasing sounds like the reader's own thoughts. Caples lists testimonial headlines within his benefit headlines (Lofgren's summary); a testimonial is a person's statement extolling a product (Wikipedia).",
+   "works_on": [
+    "plat:meta_ads",
+    "plat:email_subject_line",
+    "plat:linkedin_ads_sponsored_content",
+    "plat:instagram_carousel",
+    "plat:google_business_profile"
+   ],
+   "risk": "Fabrication is the line, and it is a legal one. India: endorsements must reflect the endorser's genuine, reasonably current opinion based on adequate experience, and any material connection (free product, payment, discount) must be disclosed (CCPA 2022 cl. 13-14, comp:ccpa_misleading_ads_2022); coaching ads need the topper's rank, course and paid status and written consent taken after selection (comp:ccpa_coaching_ads_2024); from about December 2026 ASCI bans AI-fabricated testimonials attributed to real people even with a label (comp:asci_ai_sgc_labelling). US: the FTC rule bans fake reviews and testimonials, including AI-generated ones and ones by people with no experience of the product (comp:ftc_consumer_reviews_rule). UK: fake reviews are always unfair (comp:uk_dmcc_schedule20).",
+   "related": [
+    "genre:testimonial_copy",
+    "tech:testimonial_placement",
+    "hook:social_proof",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:ccpa_coaching_ads_2024",
+    "comp:ftc_consumer_reviews_rule"
+   ],
+   "sources": [
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Caples lists testimonial headlines within benefit headlines"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Testimonial",
+     "title": "Testimonial - Wikipedia",
+     "supports": "A person's written or spoken statement extolling a product"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Endorsements genuine and current; material connection disclosed (cl. 13-14)"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/Guidelines%20for%20Prevention%20of%20Misleading%20Advertisement%20in%20Coaching%20Sector,%202024.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisement in Coaching Sector, 2024",
+     "supports": "Rank, course and paid-status disclosure; written consent after selection (cl. 4)"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2026/09/Guidelines-for-Responsible-Labelling-of-Synthetically-Generated-Content-in-Advertising.pdf",
+     "title": "ASCI: Guidelines for Responsible Labelling of Synthetically Generated Content in Advertising (2026)",
+     "supports": "AI-fabricated endorsements or testimonials attributed to real people banned even with a label"
+    },
+    {
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials",
+     "title": "FTC press release: Final Rule Banning Fake Reviews and Testimonials (14 Aug 2024)",
+     "supports": "Bans fake, AI-generated or no-experience reviews and testimonials"
+    }
+   ],
+   "verified": {
+    "verdict": "not_tested",
+    "sample": "gallery/hook_02.json#hook:testimonial",
+    "note": "No customer quote was supplied, so the writer correctly slotted every quote, name and city (inventing one would breach the card's own risk line). The slots pick good moments (first bill after the panels, the neighbour's question, what the terrace is used for now, the subsidy paperwork in Hinglish), but there is no copy to score for purpose, voice or craft. Not a card fault and not a writer fault: re-test with a real (or brief-supplied, clearly hypothetical) customer quote in the exemplar topic.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:this_is_why",
+   "kind": "hook",
+   "name": "'This is why...' explainer hook",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Open on the answer to a frustration the viewer has felt but never asked out loud: 'This is why your [X] keeps [problem]'. A good one names a precise, recognisable symptom, gives the cause within the next few seconds, and ends with the fix.",
+   "use_for": [
+    "explainer reels and Shorts for home, kitchen, tech, money and small-business problems",
+    "expert creators (a CA, an electrician, a chef) answering common complaints",
+    "LinkedIn video and carousel slide 1",
+    "Shorts series built on one recurring problem type",
+    "ad openers for a product that removes a known cause"
+   ],
+   "avoid": [
+    "Broad symptoms ('This is why you're not successful'): name an observable one ('why your shop gets calls but no walk-ins').",
+    "A 'cause' that is opinion or a generational jab ('This is why Gen Z can't focus'): if you cannot point to the mechanism, use hook:contrarian and own it as a view.",
+    "Holding the cause until the end: give it early and spend the rest on the fix, or viewers feel baited.",
+    "Medical 'this is why you have [condition]' lines: that is diagnosis; point to a doctor and keep product claims out."
+   ],
+   "templates": [
+    "This is why your [thing] keeps [problem].",
+    "Isliye tumhara [thing] [problem] karta hai: [cause].",
+    "This is why [audience] [observed behaviour], and the fix.",
+    "That's why [common belief] is wrong: [cause in one line].",
+    "Aapke [thing] ka [problem] isliye hota hai: [cause]."
+   ],
+   "examples": [
+    "This is why your shop gets Google calls but no walk-ins: the map pin is 300 metres off.",
+    "Isliye aapke WhatsApp broadcast ka reply nahi aata: pehli line sirf 'Dear customer' hai.",
+    "This is why your new phone dies by 4 pm: three apps you never open.",
+    "Isliye tumhari chai mein doodh phat jaata hai: adrak daalne ka order galat hai."
+   ],
+   "why_it_works": "It promises closure on a frustration the viewer already has, so the payoff feels personal and immediate. Zeely lists 'this is why' among native ad openers and TrueFan includes the form in India reel archetypes. It is the spoken, short-form cousin of hook:reason_why and runs on tech:open_loop.",
+   "works_on": [
+    "plat:meta_ads",
+    "plat:youtube_video_ads",
+    "plat:instagram_caption",
+    "plat:linkedin_post",
+    "plat:youtube_title"
+   ],
+   "risk": "Broken promise when the 'why' is a guess presented as fact, or the reveal is simply 'because you haven't bought our product'. Legal line: a health 'this is why' paired with a remedy becomes a treatment claim (comp:dmr_act_1954, comp:meta_advertising_standards). Naming a rival brand as the cause ('This is why [Brand X] bottles leak') must not unfairly denigrate it (ASCI Code Ch IV.1.5, comp:asci_code), and advertising a registered mark against honest practices infringes it (Trade Marks Act s.29(8), comp:trade_marks_comparative_ads).",
+   "related": [
+    "hook:reason_why",
+    "hook:problem_solution",
+    "tech:open_loop",
+    "genre:explainer_video_script",
+    "comp:asci_code",
+    "comp:trade_marks_comparative_ads"
+   ],
+   "sources": [
+    {
+     "url": "https://zeely.ai/blog/hooks-for-tiktok-video-ads/",
+     "title": "TikTok ad hooks: 35 native openers - Zeely",
+     "supports": "TikTok ad hook families with timing"
+    },
+    {
+     "url": "https://www.truefan.ai/blogs/instagram-reels-hooks-india",
+     "title": "Instagram Reels hooks India 2026 - TrueFan",
+     "supports": "Hinglish and India-specific reel hook archetypes"
+    },
+    {
+     "url": "https://www.ascionline.in/the-asci-code/",
+     "title": "ASCI: The ASCI Code",
+     "supports": "Chapter IV clause 1.5: no unfair denigration of competitors"
+    },
+    {
+     "url": "https://www.ipindia.gov.in/tm-act-1999",
+     "title": "IP India: The Trade Marks Act, 1999",
+     "supports": "s.29(8): advertising a registered mark contrary to honest practices infringes it"
+    },
+    {
+     "url": "https://indiankanoon.org/doc/1929849/",
+     "title": "Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954 (Indian Kanoon text)",
+     "supports": "No drug ads suggesting diagnosis, cure or treatment of scheduled diseases"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/hook_02.json#hook:this_is_why",
+    "note": "P2 S2 Sp2 V2 C1. Observable symptoms with the cause in the same line, no generational jab, no 'because you have not bought our course', all under 125 chars; #1 (English freezes in interviews: you read it daily but rarely say it aloud) and #3 ('Tell me about yourself' with no prepared first line) are strong. Hinglish agrees ('tumhari English ... atak jaati hai', 'flow ... tootta hai'). The causes overlap: #4 and #5 both blame grammar-first, #2 and #5 both blame the mental step before speaking.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:thumbnail_text_pairing",
+   "kind": "hook",
+   "name": "Title + thumbnail-text pairing",
+   "status": "current",
+   "confidence": "high",
+   "summary": "Thumbnail text and title do different jobs: the image text adds two to four words of stake, emotion or number that the title does not repeat, and the title explains with the important words first. Together they promise exactly what the video delivers.",
+   "use_for": [
+    "YouTube long-form titles and thumbnails",
+    "reel and Short covers paired with the caption's first line",
+    "podcast episode artwork and titles",
+    "Pinterest pin image text and pin title",
+    "course and webinar thumbnails"
+   ],
+   "avoid": [
+    "Repeating the title word for word on the thumbnail: use the image for what the title cannot say in the same glance (the stake, the reaction, the number).",
+    "ALL CAPS and emoji everywhere: YouTube Help advises limiting both; keep caps for one word if any.",
+    "Thumbnail text too long to read on a phone: two to four words, high contrast, clear of faces.",
+    "Burying the key word at the end of a long title: put the important words first, as YouTube Help advises.",
+    "A thumbnail or title promising something the video does not contain: change the packaging, not the viewer's expectation."
+   ],
+   "templates": [
+    "Thumbnail: '[2-4 word stake or emotion]' | Title: '[keyword-first explanation]'",
+    "Thumbnail: '[number]' | Title: '[what the number means] ([context])'",
+    "Thumbnail: '[before] vs [after]' | Title: 'How [subject] went from [before] to [after]'",
+    "Thumbnail: '[Hindi word]?' | Title: '[question the video answers]'",
+    "Thumbnail: '[the mistake, 2-3 words]' | Title: '[keyword]: [N] [mistakes / checks] [audience] miss'"
+   ],
+   "examples": [
+    "Thumbnail: 'Rs 18 lakh?' | Title: 'Building a 2BHK in Indore: The Full Cost Breakdown'",
+    "Thumbnail: 'Galat tha' | Title: 'I Filed GST the Wrong Way for 3 Years: Here's the Fix'",
+    "Thumbnail: '7 din' | Title: 'Living Without UPI in Delhi for a Week'",
+    "Thumbnail: 'Asli ya nakli?' | Title: 'How to Spot Fake Banarasi Silk: 5 Checks a Weaver Uses'"
+   ],
+   "why_it_works": "Viewers decide from the pair, not from either part; when the two add up instead of repeating, the package carries more information in the same glance. YouTube Help: overlay images with descriptive text, keep titles short with important words first, limit ALL CAPS and emoji, and make the title accurately represent the video, or viewers stop watching. The leaked MrBeast production handbook says thumbnails set viewer expectations that the first minute must meet.",
+   "works_on": [
+    "plat:youtube_title",
+    "plat:instagram_caption",
+    "plat:pinterest_pin"
+   ],
+   "risk": "Broken promise when the pair promises something the video does not show. Platform line: YouTube bans 'maliciously misleading titles, thumbnails, descriptions, or imagery to trick users into clicking on a video that does not deliver what was promised' (spam policy). A thumbnail that uses a real person's face to imply they endorse the video is an endorsement claim (comp:ccpa_misleading_ads_2022 cl. 13-14); a sponsored video needs the paid promotion label (comp:youtube_paid_promotion).",
+   "related": [
+    "hook:stakes_title",
+    "hook:keyword_front_loaded",
+    "hook:short_punchy",
+    "genre:youtube_title_description",
+    "comp:youtube_paid_promotion"
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/12340300",
+     "title": "Thumbnail & title tips - YouTube Help",
+     "supports": "Title must accurately represent the video; short, important words first; limit ALL CAPS and emoji; descriptive overlay text"
+    },
+    {
+     "url": "https://passionfru.it/mrbeast-leaked-document-81151/",
+     "title": "'How to Succeed at MrBeast Production' handbook leaked - Passionfruit",
+     "supports": "Thumbnails set viewer expectations; the first minute is when people click off most"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/2801973",
+     "title": "YouTube Help: Spam, deceptive practices and scams policies",
+     "supports": "Bans malicious clickbait in titles, thumbnails and descriptions"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/154235",
+     "title": "YouTube Help: Paid product placements, endorsements and sponsorships",
+     "supports": "Paid promotion disclosure label"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/hook_02.json#hook:thumbnail_text_pairing",
+    "note": "P2 S2 Sp1 V2 C1. Keyword-first titles under 100 chars and thumbnail text that never repeats the title; #2 ('[N] hours' + what manual matching costs) and #4 ('Paisa kahan?' + 'Payment Aaya, Invoice Match Nahi Hua?') are good pairs. #5 repeats #1 (a product walkthrough title) and its thumbnail 'Live setup' adds no stake or emotion, which is the template's job; #1's title is generic. CARD FIX: templates -> add a fifth pair, e.g. Thumbnail: '[the mistake, 2-3 words]' | Title: '[keyword]: [N] [mistakes / checks] [audience] miss', so a fifth hook does not reuse template 1. | CARD FIXED 2026-10-07 (lead fix3): added a fifth pair; re-judge pending.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:time_bound_promise",
+   "kind": "hook",
+   "name": "Time-bound promise ('Give me X, I'll give you Y')",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Trade a small, fixed amount of the reader's time for one concrete result: 'Give me [5 minutes] and I'll give you [result]'. A good one keeps the time honest (the piece really takes that long) and the result is a single thing the reader can do or has in hand afterwards.",
+   "use_for": [
+    "YouTube intros and podcast cold opens",
+    "webinar and workshop invitations",
+    "newsletter openers and lead-magnet titles",
+    "mini-tutorial reels ('60 second do...')",
+    "LinkedIn posts that teach one skill"
+   ],
+   "avoid": [
+    "A time claim the content breaks (a 20-minute video promising 5): match the number to the runtime or reading time.",
+    "Promising a transformation in the time slot ('Give me 10 minutes, I'll make you rich'): promise an output (a template, a fixed headline, a checklist).",
+    "Vague results ('a better business'): name the artefact the reader leaves with.",
+    "Timed outcomes in health, fitness and weight-loss ads: Meta bans specific outcomes within a set timeframe without qualifiers."
+   ],
+   "templates": [
+    "Give me [N minutes] and I'll [show / give] you [specific result].",
+    "In the next [N] seconds: [result].",
+    "[N]-minute [task] that [result].",
+    "[N] minute do, [result] le jao.",
+    "One [chai break / commute] and you'll have [result]."
+   ],
+   "examples": [
+    "Give me 7 minutes and you'll have a GST invoice template your CA won't need to fix.",
+    "60 second do, phone ki storage ka sabse bada kachra mil jayega.",
+    "In the next 90 seconds: the three numbers a bank checks before your home loan.",
+    "Give me one chai break and I'll fix your LinkedIn headline."
+   ],
+   "why_it_works": "A bounded time cost lowers the commitment while the named output raises the value, the time and effort terms of fw:hormozi_value_equation. Copyblogger lists 'Give me [short time] and I'll give you [result]' among its 22 formulas.",
+   "works_on": [
+    "plat:youtube_title",
+    "plat:email_subject_line",
+    "plat:linkedin_post",
+    "plat:instagram_caption",
+    "plat:meta_ads"
+   ],
+   "risk": "Broken promise when the result needs more time than promised or a purchase the hook hid. Legal line: claims must be capable of substantiation (comp:ccpa_misleading_ads_2022); coaching ads may not promise guaranteed selection, ranks or jobs (comp:ccpa_coaching_ads_2024); Meta bans 'promises of specific outcomes within a set timeframe without disclaimers or qualifiers' in health ads (comp:meta_advertising_standards).",
+   "related": [
+    "hook:quick_easy",
+    "hook:bold_promise",
+    "fw:youtube_intro_hook_promise_preview",
+    "fw:hormozi_value_equation",
+    "comp:meta_advertising_standards"
+   ],
+   "sources": [
+    {
+     "url": "https://copyblogger.com/10-sure-fire-headline-formulas-that-work/",
+     "title": "22 Best Headline Formulas that Work - Copyblogger (Brian Clark, 2021)",
+     "supports": "Lists the 'Give me X and I'll give you Y' template among 22 formulas"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements, 2022 (gazette)",
+     "supports": "Claims capable of substantiation (cl. 12)"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/Guidelines%20for%20Prevention%20of%20Misleading%20Advertisement%20in%20Coaching%20Sector,%202024.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisement in Coaching Sector, 2024",
+     "supports": "No guaranteed selection, rank, job or salary promises (cl. 3)"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/",
+     "title": "Meta Advertising Standards: Health and wellness",
+     "supports": "No timed outcomes without qualifiers"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/hook_02.json#hook:time_bound_promise",
+    "note": "P2 S2 Sp2 V2 C1. Every promise trades a fixed slice of time for an artefact (routine order, label-reading guide, shelf reset, bag checklist, buying questions): five angles, no skin result or timeframe-to-result claim, [N] tied to the real runtime. Hinglish #4 ('[N] minute do, ... le jao') natural. #1 is wordy and 'minutes' sits oddly on a reel; #5 runs long for a first line.",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "hook:ultimate_guide",
+   "kind": "hook",
+   "name": "Ultimate / complete guide title",
+   "status": "current",
+   "confidence": "low",
+   "summary": "'The [complete / ultimate] guide to [topic] ([year])' promises one page that covers everything a searcher needs. It holds only when the page genuinely covers the topic end to end, the year in the title is true (content updated), and the page is organised so readers can jump to their part.",
+   "use_for": [
+    "pillar pages and long-form SEO articles",
+    "ebooks and gated guides",
+    "long YouTube tutorials with chapters",
+    "B2B playbooks",
+    "KDP non-fiction subtitles"
+   ],
+   "avoid": [
+    "'Ultimate guide' on a 900-word post: call it what it is ('quick guide', 'checklist').",
+    "A stale year in the title: update the content and the year together, or drop the year.",
+    "'Ultimate' when a specific scope says more: 'Every GST form a Jaipur cafe files, with due dates' beats 'The ultimate GST guide'.",
+    "Mass-producing 'ultimate guides' with AI for rankings: that is the pattern Google's scaled content abuse policy targets; publish fewer, deeper pages."
+   ],
+   "templates": [
+    "The complete guide to [topic] for [audience] ([year]).",
+    "[Topic]: the beginner's guide ([N] steps, [N] templates).",
+    "Everything [audience] needs to know about [topic] in [year].",
+    "[Topic] ki poori guide: [scope], [year] edition."
+   ],
+   "examples": [
+    "The complete guide to GST for home bakers in 2026, with filled sample invoices",
+    "Pune rental agreements: the complete tenant's guide, from token amount to move-out",
+    "Shaadi ke liye passport, visa aur forex: poori guide, 2026 edition",
+    "The beginner's guide to Meta ads for D2C brands spending under Rs 1 lakh a month"
+   ],
+   "why_it_works": "It signals completeness to a searcher who wants one trusted page instead of ten tabs, and the year signals freshness. The pattern is sourced from instances only (Farnam Street's 'Feynman Technique: The Ultimate Guide...'); no study of its performance was found, so treat it as a positioning label, not a proven lift.",
+   "works_on": [
+    "plat:google_search_result",
+    "plat:youtube_title",
+    "plat:medium_story",
+    "plat:linkedin_article",
+    "plat:amazon_kdp_book",
+    "plat:pinterest_pin"
+   ],
+   "risk": "Broken promise when the 'ultimate' guide is thin, outdated or written to rank rather than help. Search line: Google's spam policies target generating many pages 'for the primary purpose of manipulating search rankings and not helping users', whether AI or humans made them (comp:google_search_spam_policies, trend:scaled_ai_content_enforcement). In an ad, 'the only guide you'll ever need' is a claim that needs substantiation (comp:ccpa_misleading_ads_2022).",
+   "related": [
+    "genre:ultimate_guide",
+    "genre:pillar_page",
+    "fw:skyscraper_technique",
+    "hook:keyword_front_loaded",
+    "comp:google_search_spam_policies",
+    "trend:scaled_ai_content_enforcement"
+   ],
+   "sources": [
+    {
+     "url": "https://fs.blog/feynman-technique/",
+     "title": "Feynman Technique: The Ultimate Guide to Learning Anything Faster - Farnam Street",
+     "supports": "An instance of the pattern in a page title"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "title": "Google Search Central: Spam policies for Google web search",
+     "supports": "Scaled content abuse: many pages generated to manipulate rankings, AI or human"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_5.json#hook:ultimate_guide",
+    "note": "ROUND 2: P2 S2 Sp1 V2 C1. Titles now lead with what a searcher types ('Get a Village Road Repaired', 'Gaon ki sadak theek kaise karwayein', 'Village Road Repair by WhatsApp Group'), 'complete' appears once and the year twice, the story is one village and not a scheme, and all are 55-57 characters (re-checked); the Hinglish title is natural. Nits (writer): #1 'The Complete Guide' claims the whole topic for one village's method (the card's avoid says to name the scope); #5 'WhatsApp Road Repair Guide for Villagers' is label-shaped again; #3 is a case-study title rather than the template's search shape, and its '(2026)' reads as the year of the fix. | round 1: weak 6",
+    "judge": "vj_retest_5",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "hook:urgency_deadline",
+   "kind": "hook",
+   "name": "Urgency / deadline",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Tie the read or the action to a real date, quantity or window: 'Before [date]...', 'Last [N] seats'. A good one uses deadlines that exist outside the ad (tax dates, festival dates, real stock, a batch start), names the exact day and time, and the offer really ends when it says.",
+   "use_for": [
+    "closing emails for sales, launches and cohorts",
+    "festival campaigns ('Diwali se pehle delivery')",
+    "tax and compliance reminders",
+    "event and webinar registrations with real capacity",
+    "limited stock drops"
+   ],
+   "avoid": [
+    "Countdown timers that reset on reload, or 'last chance' every week: once readers catch it, every future deadline is ignored.",
+    "Vague 'Hurry, limited time!': give the date and time ('ends Monday 11:59 pm').",
+    "Pressure on considered purchases (home loans, insurance, admissions): lead with clarity and let the real date sit in the body.",
+    "Fear-based urgency ('before it's too late for your family'): name the concrete deadline instead."
+   ],
+   "templates": [
+    "Before [date]: [action], or [real consequence].",
+    "[N] [seats / units] left for [event / batch] on [date].",
+    "[Offer] ends [day, time]. From [next day] it's [new terms].",
+    "[Festival] se pehle [action], warna [real consequence].",
+    "Last [N] days to [action] at [current price]."
+   ],
+   "examples": [
+    "Diwali se pehle delivery chahiye? Order 24 October tak kar do.",
+    "Sunday batch: 6 seats left. Registrations close Friday 8 pm.",
+    "Our Rs 499 launch price ends Monday midnight. From Tuesday it's Rs 799.",
+    "Before your ITR due date: the 4-document checklist to finish this weekend."
+   ],
+   "why_it_works": "A real deadline removes the reader's default option, which is 'later'. 'Urgent' is one of the 4 Us of a headline (fw:four_us); Caples' benefit headlines include warnings against delaying a purchase (Lofgren's summary); TrueFan describes festival FOMO (do this before Diwali) as the India seasonal form.",
+   "works_on": [
+    "plat:email_subject_line",
+    "plat:meta_ads",
+    "plat:whatsapp_business_template",
+    "plat:sms_india_dlt",
+    "plat:google_ads_rsa",
+    "plat:push_notification_fcm"
+   ],
+   "risk": "Fake urgency is the line, and in India it is a legal one: fake scarcity or popularity and fake time-limited sales are a banned dark pattern; the gazette's own illustration is 'Only 2 rooms left! 30 others are looking at this right now' (comp:ccpa_dark_patterns_2023). Coaching ads may not use false urgency (cl. 3(e), comp:ccpa_coaching_ads_2024). The UK bans false 'limited time' claims outright (comp:uk_dmcc_schedule20). Google Ads bans using negative life events to pressure immediate action (comp:google_ads_misrepresentation). Use tech:ethical_urgency.",
+   "related": [
+    "tech:ethical_urgency",
+    "tech:ethical_scarcity",
+    "hook:fomo",
+    "fw:four_us",
+    "comp:ccpa_dark_patterns_2023",
+    "comp:uk_dmcc_schedule20"
+   ],
+   "sources": [
+    {
+     "url": "https://writingisasuperpower.com/what-are-the-four-us-in-copywriting",
+     "title": "What Are the Four U's in Copywriting?",
+     "supports": "Urgent, unique, ultra-specific, useful headline test credited to Michael Masterson"
+    },
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Benefit headlines include warnings against delaying a purchase"
+    },
+    {
+     "url": "https://www.truefan.ai/blogs/instagram-reels-hooks-india",
+     "title": "Instagram Reels hooks India 2026 - TrueFan",
+     "supports": "Festival FOMO as the India seasonal urgency form"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "Gazette of India (30 Nov 2023): Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+     "supports": "False urgency: no fake scarcity, popularity or time-limited sales"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/Guidelines%20for%20Prevention%20of%20Misleading%20Advertisement%20in%20Coaching%20Sector,%202024.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisement in Coaching Sector, 2024",
+     "supports": "No false urgency or false popularity (cl. 3(e))"
+    },
+    {
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20",
+     "title": "legislation.gov.uk: DMCC Act 2024, Schedule 20",
+     "supports": "False limited-time claims are always unfair"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_5.json#hook:urgency_deadline",
+    "note": "ROUND 2: P2 S2 Sp1 V2 C1. Five real deadline sources (the notice's reply-by date, intake capacity, an offer end, the statutory due date, a renewal price change), each sent to the segment for which it is true. No festival, no invented event, nothing resets; templates are named, all lines are within limits (re-checked), and the festival-slot swap is declared. Hinglish #4 '[Date] se pehle sales data bhejiye, warna [late fee]' is natural and strong. Nits (writer): #1 tells clients whose notice the firm is handling to 'reply to your GST notice' (say 'send us [documents]'); #2 and #3 sell the same notice review to leads and new leads; #3 reads as the review ending, not the price ('Rs [price] review offer ends'). | round 1: weak 7",
+    "judge": "vj_retest_5",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "hook:who_else_wants",
+   "kind": "hook",
+   "name": "'Who else wants...' headline",
+   "status": "dated",
+   "confidence": "medium",
+   "summary": "'Who else wants [desired result]?' presupposes that many people already have the result and invites the reader to join them. It works when the result is concrete and the crowd is real, and it reads most naturally in long-form sales letters and email, where a classic direct-response voice fits.",
+   "use_for": [
+    "sales-letter and long-form landing-page headlines",
+    "email subject lines for a list used to direct-response style",
+    "print ads for traditional audiences",
+    "webinar and workshop invitations",
+    "a playful Hinglish nod in reels ('Aur kisko chahiye...?')"
+   ],
+   "avoid": [
+    "Modern social feeds in English: the phrasing reads as vintage ad copy; use hook:social_proof with a real number, or the Hinglish 'Aur kisko chahiye...?'.",
+    "Vague results ('Who else wants success?'): name the outcome a reader can picture ('their Sundays back from bookkeeping').",
+    "Implying a crowd that does not exist: if almost no one has it yet, use hook:news_announcement instead.",
+    "Body-image versions ('Who else wants a flat stomach?'): these break Meta's health rules; lead with the product."
+   ],
+   "templates": [
+    "Who else wants [concrete result] [qualifier]?",
+    "Who else wants [result] without [pain]?",
+    "Who else in [city / group] wants [result]?",
+    "Aur kisko chahiye [result]?",
+    "Who else is done with [pain]?"
+   ],
+   "examples": [
+    "Who else wants their Sundays back from bookkeeping?",
+    "Who else in Koramangala wants fresh idli batter delivered by 7 am?",
+    "Aur kisko chahiye 10 minute mein ready hone wala office lunch?",
+    "Who else wants a GST return filed without a single CA visit?"
+   ],
+   "why_it_works": "The word 'else' presupposes others already have the result, so social proof and desire land in five words. Caples lists 'Who else' as a keyword opener (Lofgren's summary) and Copyblogger includes 'Who else wants [blank]?' among its 22 formulas.",
+   "works_on": [
+    "plat:email_subject_line",
+    "plat:meta_ads",
+    "plat:whatsapp_business_template"
+   ],
+   "risk": "The implied popularity must be real; a presupposed crowd that does not exist is a misleading claim, and fake popularity is a banned dark pattern in India (comp:ccpa_dark_patterns_2023). Body and weight versions hit Meta's ban on 'statements of inferiority about physical appearance' and its 18+ targeting rule for weight-loss ads (comp:meta_advertising_standards).",
+   "related": [
+    "hook:social_proof",
+    "hook:fomo",
+    "hook:you_direct_address",
+    "genre:sales_page",
+    "comp:ccpa_dark_patterns_2023"
+   ],
+   "sources": [
+    {
+     "url": "https://copyblogger.com/10-sure-fire-headline-formulas-that-work/",
+     "title": "22 Best Headline Formulas that Work - Copyblogger (Brian Clark, 2021)",
+     "supports": "Lists 'Who else wants [blank]?' among 22 formulas"
+    },
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Caples lists 'Who else' as a keyword opener"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "Gazette of India (30 Nov 2023): Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+     "supports": "Fake popularity is false urgency"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/",
+     "title": "Meta Advertising Standards: Health and wellness",
+     "supports": "No statements of inferiority about appearance; weight-loss ads 18+"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_4.json#hook:who_else_wants",
+    "note": "ROUND 2: P2 S2 Sp1 V2 C1. Five subject lines within 60 characters and 9 words, now in five different shapes (at the desk, without Sunday prep, Pune offices, 'tiffin ke bina' in Hinglish, done with plain dal-chawal), each presupposing people who want this lunch rather than buyers who already have it; no body result. Nits (writer): 'high-protein lunch' repeats in three of the five; #5 slights home food. | round 1: weak 7",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "hook:you_direct_address",
+   "kind": "hook",
+   "name": "Direct 'you' address",
+   "status": "current",
+   "confidence": "medium",
+   "summary": "Speak to the reader as 'you' about their own situation: 'Are you still [X]?', 'Your [thing] is [problem]'. A good one makes the 'you' specific (what they do, where, when), keeps the focus on the reader's world rather than the brand's, and in Hindi picks aap or tum on purpose.",
+   "use_for": [
+    "ad headlines and landing-page heroes",
+    "email subject lines and first lines",
+    "reels spoken to camera",
+    "first line of a LinkedIn post",
+    "push notifications and WhatsApp messages"
+   ],
+   "avoid": [
+    "'You' plus a personal attribute in Meta ads ('Are you bankrupt?', 'Your diabetes...'): Meta disallows it; talk about the product or the situation ('Sugar-free mithai for Diwali').",
+    "Accusing 'you' on sensitive topics ('You're failing your kids'): use 'most parents' or 'we'.",
+    "Mixing aap and tum, or using tum for elders and customers: aap for customers and formal brands, tum for young peer-to-peer content, and keep it consistent.",
+    "A 'you' line that fits everyone ('You deserve the best'): add the situation that makes it theirs."
+   ],
+   "templates": [
+    "Your [thing] is [problem]. Here's [fix].",
+    "Are you still [outdated practice]?",
+    "You [specific habit] every [period]. [Implication].",
+    "Aapka [thing] [problem] kar raha hai: [fix].",
+    "If you [situation], your [thing] needs [action]."
+   ],
+   "examples": [
+    "Your invoice is why clients pay late. Look at line 3.",
+    "Aapka WhatsApp catalogue customer ko confuse kar raha hai. Ye 3 badlav karo.",
+    "You check your Shopify dashboard 20 times a day. Only one number on it matters.",
+    "Are you still sending GST bills as photos on WhatsApp?"
+   ],
+   "why_it_works": "Second person turns copy into a conversation with one reader, so they test the line against their own life. Caples' benefit headlines include ones where the advertiser speaks directly to the reader (Lofgren's summary), and Copyblogger's formulas use 'you' forms throughout. The full-piece habit is tech:you_focus.",
+   "works_on": [
+    "plat:meta_ads",
+    "plat:email_subject_line",
+    "plat:linkedin_post",
+    "plat:push_notification_fcm",
+    "plat:instagram_caption",
+    "plat:google_ads_rsa"
+   ],
+   "risk": "Tips into manipulation when 'you' is used to frighten ('Your family is unprotected if you die tomorrow') or to fake an alert ('Your account will be blocked'). Legal line: Meta ads must not assert or imply personal attributes, and 'you/your' is fine only without one (comp:meta_advertising_standards); Google Ads bans using negative life events such as death, illness, arrests or bankruptcy to pressure immediate action, and ads that mimic system notifications (comp:google_ads_misrepresentation).",
+   "related": [
+    "tech:you_focus",
+    "tech:one_reader_rule",
+    "hook:audience_callout",
+    "hook:question",
+    "comp:meta_advertising_standards",
+    "comp:google_ads_misrepresentation"
+   ],
+   "sources": [
+    {
+     "url": "https://copyblogger.com/10-sure-fire-headline-formulas-that-work/",
+     "title": "22 Best Headline Formulas that Work - Copyblogger (Brian Clark, 2021)",
+     "supports": "Lists 'you' headline templates among 22 formulas"
+    },
+    {
+     "url": "https://larslofgren.com/john-caples-headline-formulas/",
+     "title": "The 35 Headline Formulas of John Caples - Lars Lofgren",
+     "supports": "Benefit headlines where the advertiser speaks directly to the reader"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/",
+     "title": "Meta Advertising Standards: Personal attributes",
+     "supports": "Ads must not assert or imply personal attributes; disallowed examples"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en",
+     "title": "Google Advertising Policies Help: Misrepresentation",
+     "supports": "No negative life events to pressure action; no ads mimicking system notifications"
+    }
+   ],
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/hook_02.json#hook:you_direct_address",
+    "note": "P2 S2 Sp2 V1 C2. Every 'you' is tied to a work habit (decisions sitting in voice notes, re-listening to long Hindi notes, voice notes after client visits, reviews run in Hindi), no fear or accusation, 'aap' kept. #1 and #2 are strong LinkedIn openers. #4 'Aapka meeting ke baad ka typing time kha raha hai' is broken Hinglish (eating what? it needs an object, e.g. 'Meeting ke baad ki typing aapka din kha rahi hai').",
+    "judge": "vj_hook_02",
+    "date": "2026-10-07"
+   }
+  }
+ ]
+}

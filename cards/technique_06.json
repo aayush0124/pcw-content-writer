@@ -1,0 +1,371 @@
+{"cards": [
+{
+ "id": "tech:branching_narrative",
+ "kind": "technique",
+ "name": "Branch-and-bottleneck branching with state flags",
+ "status": "niche",
+ "level": "piece",
+ "summary": "Let the reader's choices split the story, then bring every branch back together at shared key scenes (bottlenecks), and record each meaningful choice as a named flag that later scenes read, so the story still remembers what the reader did. Good branching has few branches, rich state, and at least one changed line downstream for every choice that matters.",
+ "use_for": [
+  "game dialogue and quest scripts where a writer must keep the branch count shippable",
+  "choose-your-path stories on WhatsApp or Instagram Stories (reply 1 or 2, tap a poll) for a brand or a creator",
+  "e-learning and compliance scenarios: a bank teller handling a KYC customer, a nurse triaging a patient, with consequences that show up later",
+  "chatbot and IVR conversations that must reconverge on the same booking or payment step"
+ ],
+ "avoid": [
+  "A pure tree where every choice spawns a whole new storyline (Ashwell's 'Time Cave' pattern): the writing doubles at every choice and most of it is never seen. Use bottlenecks every two or three choices.",
+  "Linear stories or one-way messages (an ad, a reel, an explainer): branching adds cost and no value. Use a linear frame such as fw:three_act_structure.",
+  "Choices whose result is never mentioned again: readers notice the fake choice. Either spend the flag in a later line or cut the choice.",
+  "Branching in a channel that cannot hold state (a broadcast message, a printed booklet): without a tool that stores flags, use a short quiz with a fixed result per answer instead (genre:interactive_quiz_content)."
+ ],
+ "how": [
+  "Map the spine first: list the 3-6 bottleneck scenes every reader must pass through (meeting the mentor, the exam, the final choice). These are written once.",
+  "Between two bottlenecks, allow one or two choices, each with two or three options. Each option gets its own short scene, then rejoins at the next bottleneck.",
+  "At every meaningful choice, set a named flag in plain words: trusted_ravi = true, paid_bribe = false, score_empathy + 1. Keep a flag list in the script header with where each is set and where it is read.",
+  "Write each bottleneck so it reads true from every incoming branch: read it once per branch before you finish. Remove any line that assumes one path ('after you lied to him...') unless it sits inside a flag check.",
+  "Spend every flag at least once before the ending: a changed greeting, a door that is open or locked, a character who brings it up. Don't save all consequences for the final screen.",
+  "Keep variation small and frequent: one or two lines that change per flag inside a shared scene is cheaper and feels more responsive than a whole alternative scene.",
+  "Write the conditions into the script in the tool's own syntax (Twine, ink and Yarn Spinner all hold variables) so the developer does not have to guess.",
+  "Test every path end to end. Count the paths: if you cannot read them all in an afternoon, cut a branch or turn it into a flag."
+ ],
+ "before": "BOTTLENECK, Day 3, Patna station. Ravi meets you on platform 4. 'Train's late,' he says. 'Let's get chai.'",
+ "after": "BOTTLENECK, Day 3, Patna station. Ravi meets you on platform 4. [if trusted_ravi] 'You kept my secret yesterday,' he says, and hands you the second ticket. 'Chai's on me.' [else] He counts the two tickets twice before he gives you yours. 'Train's late. You're buying the chai.'",
+ "overuse_signs": [
+  "A branch diagram that looks like a full tree with no rejoin points",
+  "Flags that are set but never read",
+  "Every choice is a binary 'good / evil' pick, so the reader can see the 'right' answer",
+  "Bottleneck scenes stuffed with conditionals until they read as a patchwork",
+  "Choices added to a story that never needed them (an explainer with a fake 'choose your path')"
+ ],
+ "confidence": "medium",
+ "sources": [
+  {
+   "url": "https://heterogenoustasks.wordpress.com/2015/01/26/standard-patterns-in-choice-based-games/",
+   "title": "Sam Kabo Ashwell, 'Standard Patterns in Choice-Based Games' (2015-01-26)",
+   "supports": "names branch-and-bottleneck (branches regularly rejoin around events common to all versions) and says these structures rely heavily on state-tracking; also names Time Cave and other patterns"
+  },
+  {
+   "url": "https://emshort.blog/2016/11/05/small-scale-structures-in-cyoa/",
+   "title": "Emily Short, 'Small-Scale Structures in CYOA' (2016)",
+   "supports": "small choice structures inside branching games (secondary, practitioner)"
+  },
+  {
+   "url": "https://christytuckerlearning.com/branch-and-bottleneck-scenario-structure/",
+   "title": "Christy Tucker: Branch and bottleneck scenario structure",
+   "supports": "the same structure applied to e-learning branching scenarios (secondary)"
+  }
+ ],
+ "related": [
+  "genre:game_narrative",
+  "genre:elearning_course_script",
+  "genre:chatbot_script",
+  "tech:foreshadowing",
+  "tech:conflict_and_stakes"
+ ]
+},
+{
+ "id": "tech:fascination_bullets",
+ "kind": "technique",
+ "name": "Fascination bullets",
+ "status": "current",
+ "level": "line",
+ "summary": "Short bullets on a sales page, registration page or email that each tease one specific benefit while holding back the method, so the reader has to buy, register or read on to get it. A good fascination is concrete (a number, a named situation), useful, and fully paid off by the product.",
+ "use_for": [
+  "the 'what you'll learn' block of a course, ebook or KDP sales page",
+  "webinar and masterclass registration pages",
+  "VSL and long-form sales letters, between the story and the offer",
+  "newsletter promo emails that sell the next issue or a paid tier"
+ ],
+ "avoid": [
+  "Teasing something the product does not contain: that is a broken promise and, in an ad, a misleading claim (comp:asci_code). Write each bullet from a page or module you have actually seen.",
+  "Investment, health or income results ('the stock that will double', 'lose 8 kg in 10 days'): curiosity framing does not make a claim lawful. Tease a method or a mistake, never a guaranteed result.",
+  "Reference and help content (FAQs, docs, product specs): the reader wants the answer now. Use tech:bulleted_lists that give the answer.",
+  "A whole page of bullets with no proof or offer around them: fascinations sit inside a structure (fw:aida, fw:pastor), they are not the structure."
+ ],
+ "how": [
+  "Work from the product: list 20-30 specific things it teaches or does, each with its page, module or minute mark.",
+  "For each item, write the benefit the reader gets, then hide the 'how'. Patterns: 'The [specific thing] that [result], and why [surprising detail] (page N)'; 'How to [result] without [usual pain]'; 'Why [common practice] backfires, and what to do instead'; 'What never to [do] when [situation]'.",
+  "Put one benefit in each bullet. If a bullet has 'and also', split it or cut the weaker half.",
+  "Make it specific: replace 'save time' with the task and the minutes, 'grow sales' with the channel and the situation. AWAI's 4 U's test (useful, urgent, unique, ultra-specific) is the scoring sheet: rewrite any bullet that scores low on more than one.",
+  "Rewrite the dull ones with AWAI's question: 'What if I say it in a way that has more meaning?' Name the reader's real situation (a humid Mumbai kitchen, a Tally export at month-end).",
+  "Order them: your two or three strongest first, then mix strong and weaker bullets so the list keeps its pace (AWAI, 2011).",
+  "Check each bullet against the product once more: the answer must be there, and it must be as good as the tease."
+ ],
+ "before": "Tips for baking better sourdough at home.",
+ "after": "The two-minute 'poke test' that tells you the dough is ready, so you stop pulling dense loaves out of the oven in a humid Mumbai kitchen (page 31).",
+ "overuse_signs": [
+  "Every bullet starts with 'The secret...' or 'You won't believe...'",
+  "Bullets with curiosity but no benefit ('What's on page 7 will shock you')",
+  "Forty bullets where twelve would do; the reader stops reading at about the point the writer stopped caring",
+  "Teases for content the product treats in one sentence",
+  "Same sentence pattern in every bullet, so the list reads like a template"
+ ],
+ "confidence": "medium",
+ "sources": [
+  {
+   "url": "https://www.awai.com/2024/04/fix-boring-copy/",
+   "title": "AWAI (Sandy Franks, 2024-04-02): 'A Simple Technique That Fixes Boring Passages of Copy'",
+   "supports": "definition of a fascination as a short sentence or two designed to conjure intense curiosity and compel action; credits Mel Martin of Boardroom Inc.; the rewrite question 'What if I say it in a way that has more meaning?'"
+  },
+  {
+   "url": "https://www.awai.com/2011/12/write-powerful-bullets/",
+   "title": "AWAI (John Wood, 2011): 'Write Powerful Bullets That Your Readers Will Devour'",
+   "supports": "score bullets on the 4 U's (urgent, useful, unique, ultra-specific); one benefit per bullet; strongest two or three first, then mix strong and weaker ones"
+  }
+ ],
+ "related": [
+  "genre:sales_page",
+  "genre:kdp_book_description",
+  "tech:open_loop",
+  "tech:specificity",
+  "fw:four_us",
+  "comp:asci_code"
+ ]
+},
+{
+ "id": "tech:game_and_heightening",
+ "kind": "technique",
+ "name": "Game of the scene and heightening (sketch / improv comedy)",
+ "status": "current",
+ "level": "piece",
+ "summary": "Set up a normal world, let one unusual thing happen, name the pattern behind it (the game), then play that pattern again and again with each beat bigger than the last, and end on a button. A good comic scene has exactly one game, three or so escalating beats, and an ending that tops the pattern instead of stopping it.",
+ "use_for": [
+  "sketch comedy scripts and brand skits",
+  "comic reels and Shorts built on one escalating idea",
+  "ad films with a comic premise (a customer who takes the brand promise too literally)",
+  "satire pieces where one absurd rule is pushed to its logical extreme"
+ ],
+ "avoid": [
+  "A single joke or a one-liner caption: that is fw:setup_punchline_tag. The game needs room for at least three beats.",
+  "Two or three unrelated unusual things in one scene: the audience cannot tell which pattern to follow. Pick one and cut the rest.",
+  "Repeating the same beat at the same size ('He asks again. He asks again, louder'): that is repetition, not heightening. Each beat must raise the stakes, the scale or the absurdity.",
+  "Games whose joke is a group of people (caste, region, body, religion): the escalation turns a stereotype into the whole piece. Build the game on a behaviour, not an identity."
+ ],
+ "how": [
+  "Write the base reality in one or two lines: who, where, what normal looks like (a tenant viewing a 1BHK in Bengaluru).",
+  "Introduce the first unusual thing and let the straight character notice it (the landlord asks for the tenant's Class 10 marksheet).",
+  "Name the game in one sentence before writing further: 'The landlord treats renting a flat like a UPSC exam.' If you cannot say it in one sentence, you do not have a game yet.",
+  "Ask 'if this is true, what else is true?' and list ten possible beats. Pick the three that escalate best and order them small to big (essay on 'My vision for the kitchen', then a three-member interview panel, then a medical fitness certificate).",
+  "Keep one character grounded: the straight person's reactions show the audience that the game is unusual and give the laughs a measure.",
+  "End on a button: one final beat that tops or flips the pattern (the tenant passes; the landlord smiles: 'Deposit is ten months. Cash.'). Do not end by explaining the joke or letting the scene trail off.",
+  "Cut anything that is not base reality, a game beat, or the button."
+ ],
+ "before": "Landlord: Marksheet dikhao. Tenant: Kyun? Landlord: Bas dikhao. Tenant: Theek hai. Landlord: Aur ek baar dikhao.",
+ "after": "Landlord: Class 10 marksheet? Tenant: ...Ji, ye lijiye. Landlord: 78%. Hmm. Ab 500 words likho: 'Meri kitchen ke liye vision.' (Next beat: a three-uncle interview panel with a buzzer. Button: 'Selected! Deposit dus mahine ka. Cash.')",
+ "overuse_signs": [
+  "Every sketch on the channel uses the same escalation shape, so the audience predicts the button",
+  "Beats that are bigger but no longer follow the game (random absurdity)",
+  "Scenes that run past the strongest beat",
+  "No grounded character, so nothing reads as unusual"
+ ],
+ "confidence": "medium",
+ "sources": [
+  {
+   "url": "https://archive.org/details/uprightcitizensb0000bess",
+   "title": "Besser, Roberts and Walsh, The Upright Citizens Brigade Comedy Improvisation Manual (2013), Internet Archive record",
+   "supports": "the originating manual for 'the game' of the scene (record only; full text not read)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Upright_Citizens_Brigade",
+   "title": "Upright Citizens Brigade (Wikipedia)",
+   "supports": "the 2013 manual teaches two-person scene work with a heavy emphasis on finding 'the game' of the scene (secondary)"
+  },
+  {
+   "url": "https://improvarchive.org/books/upright-citizens-brigade-comedy-improvisation-manual",
+   "title": "Improv Archive: UCB Comedy Improvisation Manual",
+   "supports": "book record and authorship (secondary)"
+  }
+ ],
+ "related": [
+  "genre:sketch_comedy",
+  "fw:setup_punchline_tag",
+  "tech:callback",
+  "tech:rule_of_three",
+  "tone:satirical_vyangya"
+ ]
+},
+{
+ "id": "tech:hindi_address_register",
+ "kind": "technique",
+ "name": "Consistent aap / tum / tu address in Hindi and Hinglish",
+ "status": "current",
+ "level": "piece",
+ "summary": "Choose one level of address for the reader (आप formal, तुम familiar, तू intimate) and make every pronoun, possessive, reflexive and verb ending in the piece agree with it. Good copy never switches level by accident, especially in the call to action.",
+ "use_for": [
+  "any Hindi or Hinglish copy addressed to the reader: captions, reel VO, WhatsApp broadcasts, app microcopy, ads",
+  "translating or transcreating English 'you' copy into Hindi, where the level has to be chosen",
+  "brand voice guides: fixing the level once for every writer on the account",
+  "proofreading a Hindi draft from several writers or from an AI tool, which often mixes levels"
+ ],
+ "avoid": [
+  "Mixing levels in one breath: 'आप जानिए ... अभी क्लिक करो' (aap + tum imperative). Keep the CTA at the same level as the rest.",
+  "'आप आपके खाते में' for a reflexive: when the subject is the same person, use अपना/अपने (Microsoft: आप अपने, हम अपने).",
+  "तुम or तू in government, banking, insurance, healthcare or UI copy: use आप and the polite verb forms (Mozilla and Microsoft style guides).",
+  "Stiff आप + -इए in a Gen-Z creator reel where the brand chose तुम: register is a brand decision; follow the brand sheet, not a habit.",
+  "Changing a quoted character's register to match the narrator: dialogue keeps the speaker's own level."
+ ],
+ "how": [
+  "Decide the level before drafting and write it in the brief: आप for formal, government, finance, health and product UI; तुम for friendly creator or youth brands that chose it; तू only for deliberate intimacy, a character's voice or rough humour.",
+  "Use the matching set every time. आप: आपका/आपकी, verbs कीजिए/करें/करेंगे, 'aap check kijiye / kariye'. तुम: तुम्हारा, करो/करोगे, 'tum check karo'. तू: तेरा, कर/करेगा, 'tu check kar'. (Hindustani imperative of करना: kar / karo / kījie.)",
+  "Use the reflexive अपना/अपने/अपनी whenever the owner is the subject: 'आप अपने खाते में लॉग इन करें', not 'आप आपके खाते में'.",
+  "For UI commands and instructions use the respectful forms the style guides use (संपादन करें, सहेजें, हटाएँ; ढूँढें, not ढूँढो).",
+  "Proof pass: search the draft for the other levels' markers. In an आप piece look for तुम, तुम्हारा, -ओ endings (करो, देखो, जाओ) and तू/तेरा; in Roman Hinglish search 'karo', 'dekho', 'tumhara', 'tera'.",
+  "Read the CTA, the first line and the last line together: these are where the level usually slips.",
+  "In Hinglish, the English words do not carry the level; the Hindi verb does ('aap download karo' is still a slip)."
+ ],
+ "before": "आप हमारे ऐप में आपका अकाउंट बनाइए और आज ही पहला ऑर्डर करो।",
+ "after": "आप हमारे ऐप में अपना अकाउंट बनाइए और आज ही पहला ऑर्डर कीजिए।",
+ "overuse_signs": [
+  "Every sentence stacked with कृपया and -इएगा until a casual caption reads like a bank notice",
+  "Rewriting a character's तू dialogue into आप, which flattens the character",
+  "Forcing आप onto a brand whose voice guide deliberately chose तुम"
+ ],
+ "confidence": "high",
+ "sources": [
+  {
+   "url": "https://en.wikipedia.org/wiki/Hindustani_grammar",
+   "title": "Hindustani grammar (Wikipedia)",
+   "supports": "tū, tum and āp form a threefold scale of formality (intimate, familiar, formal); imperative of karnā: kar (tū), karo (tum), kījie (āp) (secondary)"
+  },
+  {
+   "url": "https://aka.ms/hindi-styleguide",
+   "title": "Microsoft Hindi Localization Style Guide (PDF)",
+   "supports": "verbs inflect for degree of respect; UI commands take the respectful form (संपादन करें, सहेजें, हटाएँ); known error 'आप आपके खाते': use आप अपने, हम अपने, वो अपने"
+  },
+  {
+   "url": "https://mozilla-l10n.github.io/styleguides/hi-IN/",
+   "title": "Mozilla style guide: Hindi (hi-IN)",
+   "supports": "formal product copy uses आप, not तुम, and avoids curt imperatives (ढूँढें, not ढूँढो)"
+  }
+ ],
+ "related": [
+  "lang:hindi_devanagari",
+  "lang:hinglish_roman",
+  "edit:hindi_proofread",
+  "tone:sarkari_formal",
+  "tone:desi_casual_hinglish",
+  "tech:you_focus"
+ ]
+},
+{
+ "id": "tech:logline",
+ "kind": "technique",
+ "name": "Logline (one-sentence story pitch)",
+ "status": "current",
+ "level": "piece",
+ "summary": "One sentence that sells a story: a type of hero, the opposing force, the conflict between them, and an open question, with some irony and a picture the buyer can see. A good logline makes a producer or commissioning editor ask for the script; it never gives away the ending.",
+ "use_for": [
+  "pitch decks and series bibles for OTT, web series and vertical micro-dramas",
+  "submission forms for film festivals, screenwriting labs and OTT portals",
+  "query letters, book descriptions and YouTube film descriptions",
+  "testing your own story before drafting: if you cannot write the logline, the premise is not ready"
+ ],
+ "avoid": [
+  "Theme instead of story ('a film about love, family and finding yourself'): name the hero, the opponent and the fight.",
+  "A plot summary of three acts with 'and then': one sentence, the setup and the conflict only.",
+  "Giving away the twist or the ending: end on the open question.",
+  "Using it as a brand tagline or ad headline: that job is a positioning line (genre:elevator_pitch)."
+ ],
+ "how": [
+  "Name the hero by type, not by name: an adjective plus a role that hints at the flaw ('a by-the-book Jaipur wedding planner', not 'Meera').",
+  "Name the opposing force by type too: a person, a system or a deadline ('her ex-fiancé's family', 'a 48-hour eviction notice').",
+  "State the conflict with an active verb: what the hero must do against that force.",
+  "Build in irony: the hero is the worst possible person for this situation, or the goal fights their nature (Save the Cat names irony and a compelling mental picture as parts of a good logline).",
+  "End on the open question the story answers, without answering it.",
+  "Write it in one sentence, present tense. If it needs a semicolon or two 'and's, cut detail until it does not.",
+  "Test it aloud on someone who has not heard the story: if they ask 'and then what?', it works; if they ask 'what is it about?', rewrite."
+ ],
+ "before": "A heartwarming story about love, second chances and family in modern-day Rajasthan.",
+ "after": "When a by-the-book Jaipur wedding planner is hired to run her ex-fiancé's wedding, she must choose between sabotaging the biggest booking of her career and proving to everyone, herself included, that she has moved on.",
+ "overuse_signs": [
+  "Every logline opens 'In a world where...'",
+  "Adjective piles on the hero ('a brave, smart, funny, broken...')",
+  "Loglines that are really taglines ('Some secrets never die')",
+  "Names of characters the reader has never heard of"
+ ],
+ "confidence": "high",
+ "sources": [
+  {
+   "url": "https://savethecat.com/forum/loglines",
+   "title": "Save the Cat!: Loglines (official site of Blake Snyder's method)",
+   "supports": "a logline has four basic elements (a type of protagonist, a type of antagonist, conflict, an open-ended question) plus irony and a compelling mental picture"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Save_the_Cat!:_The_Last_Book_on_Screenwriting_You'll_Ever_Need",
+   "title": "Save the Cat! (Blake Snyder, 2005), Wikipedia",
+   "supports": "book record for the method the site summarises (secondary)"
+  }
+ ],
+ "related": [
+  "fw:save_the_cat",
+  "genre:screenplay_feature",
+  "genre:web_series_episode",
+  "genre:micro_drama_episode_script",
+  "genre:worldbuilding_bible",
+  "tech:character_with_a_want"
+ ]
+},
+{
+ "id": "tech:poll_quiz_options",
+ "kind": "technique",
+ "name": "Mutually exclusive, exhaustive poll and quiz options",
+ "status": "current",
+ "level": "line",
+ "summary": "Write answer options that do not overlap, cover every reasonable answer (or offer an honest 'other'), ask one thing per question, and do not push the reader toward one choice. Good options are short, parallel in form and fit the platform's character limit without abbreviations nobody understands.",
+ "use_for": [
+  "Instagram Story, YouTube channel-post, LinkedIn and X polls",
+  "quiz and personality-quiz questions (genre:interactive_quiz_content)",
+  "survey and feedback forms for a brand or an event",
+  "WhatsApp 'reply 1, 2 or 3' menus"
+ ],
+ "avoid": [
+  "Ranges that share an endpoint (0-5 / 5-10): a person with 5 fits both. Use 0-4 / 5-9 / 10 or more.",
+  "Double-barrelled questions ('Do you like our price and delivery?'): Pew says ask one question at a time. Split into two polls.",
+  "A loaded option set where one answer is obviously the 'right' one or three options praise the brand: the result is worthless and readers see it. Write options a real person on each side would pick.",
+  "Engagement-bait polls with no real question ('Yes / Also yes'): fine for a joke, useless for research; never report such a poll as data."
+ ],
+ "how": [
+  "Write the question first and check it asks exactly one thing. If it has 'and' or 'or' between two topics, split it.",
+  "List every answer a real reader could give. If the list cannot be complete inside the option limit, add an honest escape: 'Other (comment karo)', 'Depends', 'Never tried it'.",
+  "For numbers, make ranges touch without overlapping (under 2 hrs / 2-4 hrs / over 4 hrs) and cover the extremes at both ends.",
+  "Keep options parallel: same grammar, similar length, same level of detail. A long, specific option stands out and draws votes.",
+  "Order with care: scales go in their natural order (low to high); unordered lists can be rotated between posts, since Pew notes option order influences answers and randomises it.",
+  "Fit the platform: YouTube text-poll options take up to 65 characters each and X poll options up to 25 (plat:youtube_post, plat:x_ads). Write the short version first instead of abbreviating at the end.",
+  "For quizzes: one defensible correct answer, distractors that a reasonable person might pick, no trick wording, and no 'all of the above' unless you mean it."
+ ],
+ "before": "Roz phone pe kitna time? 0-2 hrs / 2-4 hrs / 4+ hrs / Bahut zyada",
+ "after": "Roz phone pe kitna screen time? 2 ghante se kam / 2-4 ghante / 4 ghante se zyada / Track nahi karta",
+ "overuse_signs": [
+  "A poll every day on the same account with no follow-up on the results",
+  "Options so cautious ('It depends on many factors') that nobody picks a side",
+  "'Other' added to every poll even when the list is complete",
+  "Polls that ask what the brand already knows, just to farm taps"
+ ],
+ "confidence": "high",
+ "sources": [
+  {
+   "url": "https://www.pewresearch.org/writing-survey-questions/",
+   "title": "Pew Research Center: Writing Survey Questions",
+   "supports": "closed-ended options should be exhaustive and mutually exclusive; ask only one question at a time; number and order of options influence answers; Pew randomises option order"
+  },
+  {
+   "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+   "title": "YouTube Help: create posts (polls)",
+   "supports": "text poll answers within 65 characters each; image poll captions within 36 characters (from the PCW harvest for plat:youtube_post, checked 2026-10-04)"
+  },
+  {
+   "url": "https://business.x.com/en/help/campaign-setup/creative-ad-specifications-old",
+   "title": "X Business: creative ad specifications",
+   "supports": "each poll option up to 25 characters (from the PCW harvest for plat:x_ads, checked 2026-10-05, medium confidence)"
+  }
+ ],
+ "related": [
+  "genre:interactive_quiz_content",
+  "genre:youtube_community_post",
+  "genre:instagram_story_copy",
+  "plat:youtube_post",
+  "plat:x_ads",
+  "hook:can_you_spot"
+ ]
+}
+]}

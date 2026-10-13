@@ -1,0 +1,1391 @@
+{
+ "kind": "platform",
+ "worker": "plat_social",
+ "as_of": "2026-10-04",
+ "source": "Organic social, video, messaging and podcast text surfaces; every limit read on the platform's own help centre, developer API reference or protocol schema on 2026-10-04 and quoted; third-party only where marked low.",
+ "items": [
+  {
+   "id": "plat:instagram_caption",
+   "name": "Instagram feed post caption",
+   "category": "Instagram",
+   "one_line": "The text under an Instagram photo, video or carousel post.",
+   "limits": [
+    {
+     "field": "caption",
+     "max": 2200,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-04",
+     "quote": "Maximum 2200 characters, 30 hashtags, and 20 @ tags.",
+     "confidence": "high (Meta developer reference, caption parameter)"
+    },
+    {
+     "field": "@ mentions per caption",
+     "max": 20,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-04",
+     "quote": "Maximum 2200 characters, 30 hashtags, and 20 @ tags.",
+     "confidence": "high (Meta developer reference, caption parameter)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "Instagram Platform: IG User Media reference",
+     "supports": "caption 2200 chars, 20 @ tags (and the older 30-hashtag figure)"
+    }
+   ],
+   "note": "Hashtag cap: see plat:instagram_hashtags (the API reference still prints 30; Instagram cut it to 5 in Dec 2025). Links in captions are not clickable; hashtags and @mentions are tappable. Line breaks render. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:x_post",
+   "name": "X (Twitter) post",
+   "category": "X (Twitter)",
+   "one_line": "A single post on X, standard account (Premium long posts are a separate limit).",
+   "limits": [
+    {
+     "field": "post text",
+     "max": 280,
+     "unit": "chars",
+     "url": "https://docs.x.com/fundamentals/counting-characters",
+     "checked": "2026-10-04",
+     "quote": "Posts on X can contain up to 280 characters.",
+     "confidence": "high (X developer docs)"
+    },
+    {
+     "field": "URL (any length, counted as)",
+     "max": 23,
+     "unit": "chars",
+     "url": "https://docs.x.com/fundamentals/counting-characters",
+     "checked": "2026-10-04",
+     "quote": "All URLs are wrapped with t.co shortener and count as 23 characters, regardless of the original length",
+     "confidence": "high (X developer docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://docs.x.com/fundamentals/counting-characters",
+     "title": "X API: Counting characters",
+     "supports": "280 weighted characters, URL = 23, CJK and emoji weigh 2"
+    },
+    {
+     "url": "https://github.com/twitter/twitter-text/blob/master/config/v3.json",
+     "title": "twitter-text config v3",
+     "supports": "weight ranges: 0-4351 weight 100, default 200, URL length 23"
+    }
+   ],
+   "note": "The 280 is a WEIGHTED count (twitter-text config v3: maxWeightedTweetLength 280, defaultWeight 200 on scale 100). Code points 0-4351 (Latin, Devanagari U+0900-097F and other Indic blocks included) weigh 1; emoji and CJK weigh 2, so 140 of them fill a post. Hindi matras and viramas are separate code points and each count. Links are clickable; hashtags and @mentions are clickable; no bold/italic in standard posts. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:threads_post",
+   "name": "Threads post",
+   "category": "Threads",
+   "one_line": "A text post on Meta's Threads.",
+   "limits": [
+    {
+     "field": "post text",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/threads/posts",
+     "checked": "2026-10-04",
+     "quote": "Text posts are limited to 500 characters.",
+     "confidence": "high (Meta Threads API docs)"
+    },
+    {
+     "field": "links per post",
+     "max": 5,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/threads/posts",
+     "checked": "2026-10-04",
+     "quote": "The number of links is restricted to 5 or less.",
+     "confidence": "high (Meta Threads API docs)"
+    },
+    {
+     "field": "carousel items",
+     "max": 20,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/threads/posts",
+     "checked": "2026-10-04",
+     "quote": "Carousels are limited to 20 images, videos, or a mix of the two.",
+     "confidence": "high (Meta Threads API docs)"
+    },
+    {
+     "field": "topic tag length",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/threads/posts",
+     "checked": "2026-10-04",
+     "quote": "Topic tags must be at least 1 character and no more than 50 characters long.",
+     "confidence": "high (Meta Threads API docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/threads/posts",
+     "title": "Threads API: Posts",
+     "supports": "500 chars, 5 links, 20 carousel items, topic tag length"
+    }
+   ],
+   "note": "Threads uses one topic tag per post rather than many hashtags. Links in post text are clickable. Line breaks render. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:bluesky_post",
+   "name": "Bluesky post",
+   "category": "Bluesky",
+   "one_line": "A post (skeet) on Bluesky / the AT Protocol app.bsky.feed.post record.",
+   "limits": [
+    {
+     "field": "post text",
+     "max": 300,
+     "unit": "chars",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json",
+     "checked": "2026-10-04",
+     "quote": "\"text\": { \"type\": \"string\", \"maxLength\": 3000, \"maxGraphemes\": 300",
+     "confidence": "high (official protocol lexicon; unit is graphemes, i.e. user-perceived characters)"
+    },
+    {
+     "field": "post text (UTF-8 bytes)",
+     "max": 3000,
+     "unit": "bytes",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json",
+     "checked": "2026-10-04",
+     "quote": "\"maxLength\": 3000, \"maxGraphemes\": 300",
+     "confidence": "high (official protocol lexicon)"
+    },
+    {
+     "field": "extra tags (beyond in-text hashtags)",
+     "max": 8,
+     "unit": "count",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json",
+     "checked": "2026-10-04",
+     "quote": "Additional hashtags, in addition to any included in post text and facets.\", \"maxLength\": 8",
+     "confidence": "high (official protocol lexicon)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json",
+     "title": "atproto lexicon app.bsky.feed.post",
+     "supports": "300 graphemes / 3000 bytes per post, up to 8 extra tags"
+    }
+   ],
+   "note": "Limit is 300 graphemes: an emoji or a Devanagari conjunct cluster counts as one. Links, mentions and hashtags are clickable (facets). No bold/italic. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:bluesky_bio",
+   "name": "Bluesky profile bio and display name",
+   "category": "Bluesky",
+   "one_line": "The display name and free-text description on a Bluesky profile.",
+   "limits": [
+    {
+     "field": "bio (description)",
+     "max": 256,
+     "unit": "chars",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json",
+     "checked": "2026-10-04",
+     "quote": "\"description\": { \"type\": \"string\", \"description\": \"Free-form profile description text.\", \"maxGraphemes\": 256, \"maxLength\": 2560 }",
+     "confidence": "high (official protocol lexicon; graphemes)"
+    },
+    {
+     "field": "display name",
+     "max": 64,
+     "unit": "chars",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json",
+     "checked": "2026-10-04",
+     "quote": "\"displayName\": { \"type\": \"string\", \"maxGraphemes\": 64, \"maxLength\": 640 }",
+     "confidence": "high (official protocol lexicon; graphemes)"
+    },
+    {
+     "field": "pronouns",
+     "max": 20,
+     "unit": "chars",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json",
+     "checked": "2026-10-04",
+     "quote": "\"pronouns\": { \"type\": \"string\", \"description\": \"Free-form pronouns text.\", \"maxGraphemes\": 20",
+     "confidence": "high (official protocol lexicon; graphemes)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json",
+     "title": "atproto lexicon app.bsky.actor.profile",
+     "supports": "bio 256 graphemes, display name 64 graphemes, pronouns 20"
+    }
+   ],
+   "note": "Profile has a separate website field (format uri)."
+  },
+  {
+   "id": "plat:mastodon_post",
+   "name": "Mastodon post (status), default server",
+   "category": "Mastodon",
+   "one_line": "A status on a Mastodon server running the default configuration.",
+   "limits": [
+    {
+     "field": "status text",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"statuses\" : { \"max_characters\" : 500 , \"max_media_attachments\" : 4 , \"characters_reserved_per_url\" : 23 }",
+     "confidence": "high (official Mastodon docs example of the instance config; each server can change it)"
+    },
+    {
+     "field": "URL (counted as)",
+     "max": 23,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"characters_reserved_per_url\" : 23",
+     "confidence": "high (official Mastodon docs example)"
+    },
+    {
+     "field": "media alt text (description)",
+     "max": 1500,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"media_attachments\" : { \"description_limit\" : 1500",
+     "confidence": "high (official Mastodon docs example)"
+    },
+    {
+     "field": "poll option",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"polls\" : { \"max_options\" : 4 , \"max_characters_per_option\" : 50",
+     "confidence": "high (official Mastodon docs example)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "title": "Mastodon docs: Instance entity",
+     "supports": "configuration.statuses.max_characters = 500 in the documented default"
+    }
+   ],
+   "note": "The 500 is per server: read GET /api/v2/instance configuration.statuses.max_characters for the actual server before writing. Links, hashtags and @mentions are clickable; a content-warning field exists. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:discord_message",
+   "name": "Discord message",
+   "category": "Discord",
+   "one_line": "A chat message in a Discord channel or DM.",
+   "limits": [
+    {
+     "field": "message content",
+     "max": 2000,
+     "unit": "chars",
+     "url": "https://discord.com/developers/docs/resources/message",
+     "checked": "2026-10-04",
+     "quote": "content?* string Message contents (up to 2000 characters)",
+     "confidence": "high (Discord developer docs)"
+    },
+    {
+     "field": "message content (Nitro subscriber)",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://support.discord.com/hc/en-us/articles/360034632292-Sending-Messages",
+     "checked": "2026-10-04",
+     "quote": "The character cap per message is 2000. ... You can raise the character cap limit to 4000 when you subscribe to Discord Nitro.",
+     "confidence": "high (Discord Support)"
+    },
+    {
+     "field": "rich embeds per message (bots/webhooks)",
+     "max": 10,
+     "unit": "count",
+     "url": "https://discord.com/developers/docs/resources/message",
+     "checked": "2026-10-04",
+     "quote": "embeds array of embed objects Up to 10 rich embeds (up to 6000 characters)",
+     "confidence": "high (Discord developer docs)"
+    },
+    {
+     "field": "all embeds combined",
+     "max": 6000,
+     "unit": "chars",
+     "url": "https://discord.com/developers/docs/resources/message",
+     "checked": "2026-10-04",
+     "quote": "Up to 10 rich embeds (up to 6000 characters)",
+     "confidence": "high (Discord developer docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://discord.com/developers/docs/resources/message",
+     "title": "Discord Developer Docs: Message resource",
+     "supports": "2000-char content, 10 embeds / 6000 chars"
+    },
+    {
+     "url": "https://support.discord.com/hc/en-us/articles/360034632292-Sending-Messages",
+     "title": "Discord Support: Sending Messages",
+     "supports": "2000 cap, over-limit pastes become a text file, Nitro 4000"
+    },
+    {
+     "url": "https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline",
+     "title": "Discord Support: Markdown Text 101",
+     "supports": "chat formatting: bold, italic, underline and other markdown"
+    }
+   ],
+   "note": "Renders Discord markdown: **bold**, *italic*, __underline__, headings (#), lists, `code`, > quotes, ||spoilers||. Links auto-embed. Over 2000 characters the client converts the paste into a .txt file attachment. Write to 2000 unless every sender has Nitro."
+  },
+  {
+   "id": "plat:telegram_message",
+   "name": "Telegram text message (chat or channel post)",
+   "category": "Telegram",
+   "one_line": "A plain text message or channel post on Telegram.",
+   "limits": [
+    {
+     "field": "message text",
+     "max": 4096,
+     "unit": "chars",
+     "url": "https://core.telegram.org/bots/api#sendmessage",
+     "checked": "2026-10-04",
+     "quote": "Text of the message to be sent, 1-4096 characters after entities parsing",
+     "confidence": "high (Telegram Bot API reference)"
+    },
+    {
+     "field": "poll question",
+     "max": 300,
+     "unit": "chars",
+     "url": "https://core.telegram.org/bots/api#sendpoll",
+     "checked": "2026-10-04",
+     "quote": "Poll question, 1-300 characters",
+     "confidence": "high (Telegram Bot API reference)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://core.telegram.org/bots/api",
+     "title": "Telegram Bot API",
+     "supports": "message text 1-4096 characters after entities parsing"
+    }
+   ],
+   "note": "Counted AFTER entity parsing: markdown/HTML markup does not count. Supports bold, italic, underline, strikethrough, spoiler, code, links, blockquote. Longer text must be split into several messages."
+  },
+  {
+   "id": "plat:telegram_caption",
+   "name": "Telegram media caption",
+   "category": "Telegram",
+   "one_line": "The caption under a photo, video, document or audio file on Telegram.",
+   "limits": [
+    {
+     "field": "media caption (non-Premium)",
+     "max": 1024,
+     "unit": "chars",
+     "url": "https://core.telegram.org/bots/api#sendphoto",
+     "checked": "2026-10-04",
+     "quote": "Photo caption (may also be used when resending photos by file_id), 0-1024 characters after entities parsing",
+     "confidence": "high (Telegram Bot API reference)"
+    },
+    {
+     "field": "media caption (Premium sender)",
+     "max": 4096,
+     "unit": "chars",
+     "url": "https://core.telegram.org/api/config",
+     "checked": "2026-10-04",
+     "quote": "\"caption_length_limit_default\": 1024, \"caption_length_limit_premium\": 4096",
+     "confidence": "high (Telegram client API config docs, example values)"
+    },
+    {
+     "field": "story caption (non-Premium)",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://core.telegram.org/api/config",
+     "checked": "2026-10-04",
+     "quote": "\"story_caption_length_limit_default\": 200, \"story_caption_length_limit_premium\": 2048",
+     "confidence": "high (Telegram client API config docs, example values)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://core.telegram.org/bots/api",
+     "title": "Telegram Bot API",
+     "supports": "caption 0-1024 chars"
+    },
+    {
+     "url": "https://core.telegram.org/api/config",
+     "title": "Telegram API: Client configuration",
+     "supports": "caption 1024 default / 4096 Premium, story caption 200 / 2048"
+    }
+   ],
+   "note": "Write to 1024 unless the posting account is Premium. A long text plus a picture is better sent as a text message with a link preview (4096)."
+  },
+  {
+   "id": "plat:youtube_title",
+   "name": "YouTube video title",
+   "category": "YouTube",
+   "one_line": "The title of a YouTube video (long-form or Short).",
+   "limits": [
+    {
+     "field": "title",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/57404?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Video titles have a character limit of 100 characters and cannot include invalid characters.",
+     "confidence": "high (YouTube Help)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/57404?hl=en",
+     "title": "YouTube Help: Edit video settings",
+     "supports": "title limit 100 characters"
+    },
+    {
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "title": "YouTube Data API: Videos",
+     "supports": "snippet.title max length 100 characters, no < or >"
+    }
+   ],
+   "note": "Data API adds: may contain all valid UTF-8 characters except < and >. Shorts use the same title field. No separate title or description limit for Shorts was found on YouTube Help on 2026-10-04."
+  },
+  {
+   "id": "plat:youtube_description",
+   "name": "YouTube video description",
+   "category": "YouTube",
+   "one_line": "The description box under a YouTube video.",
+   "limits": [
+    {
+     "field": "description",
+     "max": 5000,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/57404?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Video descriptions have a character limit of 5,000 characters and cannot include invalid characters.",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "description (API, UTF-8 bytes)",
+     "max": 5000,
+     "unit": "bytes",
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "checked": "2026-10-04",
+     "quote": "The property value has a maximum length of 5000 bytes and may contain all valid UTF-8 characters except < and > .",
+     "confidence": "high (YouTube Data API reference)"
+    },
+    {
+     "field": "hashtags before all are ignored",
+     "max": 60,
+     "unit": "count",
+     "url": "https://support.google.com/youtube/answer/6390658?hl=en",
+     "checked": "2026-10-04",
+     "quote": "If a video or playlist has more than 60 hashtags, we'll ignore each hashtag on that content.",
+     "confidence": "high (YouTube Help)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/57404?hl=en",
+     "title": "YouTube Help: Edit video settings",
+     "supports": "5,000-character description"
+    },
+    {
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "title": "YouTube Data API: Videos",
+     "supports": "5000 bytes"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/6390658?hl=en",
+     "title": "YouTube Help: Hashtags",
+     "supports": "more than 60 hashtags = all ignored"
+    }
+   ],
+   "note": "CONFLICT: Help says 5,000 characters, the API says 5000 BYTES. Devanagari is 3 bytes per character in UTF-8, so a Hindi description can hit the API limit near ~1,666 characters; budget by bytes for Hindi. Studio offers bold, italic and strikethrough. URLs are clickable only if the channel meets YouTube's conditions (API note). Timestamps become chapter links (see plat:youtube_chapters)."
+  },
+  {
+   "id": "plat:youtube_tags",
+   "name": "YouTube video tags",
+   "category": "YouTube",
+   "one_line": "The hidden keyword tags attached to a YouTube video.",
+   "limits": [
+    {
+     "field": "tags (total, commas count)",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "checked": "2026-10-04",
+     "quote": "The property value has a maximum length of 500 characters. ... commas between items in the list count toward the limit.",
+     "confidence": "high (YouTube Data API reference)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "title": "YouTube Data API: Videos",
+     "supports": "snippet.tags[] max 500 characters, commas count"
+    }
+   ],
+   "note": "The API also says a tag containing a space is wrapped in quotation marks and the quotes count toward the limit. Tags are not shown to viewers."
+  },
+  {
+   "id": "plat:youtube_chapters",
+   "name": "YouTube chapters (description timestamps)",
+   "category": "YouTube",
+   "one_line": "Manual video chapters written as a timestamp list in the description.",
+   "limits": [
+    {
+     "field": "minimum timestamps",
+     "unit": "count",
+     "url": "https://support.google.com/youtube/answer/9884579?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Your video should have at least three timestamps listed in ascending order.",
+     "confidence": "high (YouTube Help; this is a MINIMUM, not a maximum)",
+     "min": 3
+    },
+    {
+     "field": "minimum chapter length",
+     "unit": "seconds",
+     "url": "https://support.google.com/youtube/answer/9884579?hl=en",
+     "checked": "2026-10-04",
+     "quote": "The minimum length for video chapters is 10 seconds.",
+     "confidence": "high (YouTube Help; this is a MINIMUM, not a maximum)",
+     "min": 10
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9884579?hl=en",
+     "title": "YouTube Help: Video chapters",
+     "supports": "first timestamp 00:00, at least 3 timestamps ascending, each chapter at least 10 seconds"
+    }
+   ],
+   "note": "Both numbers are MINIMUMS stored in the max field because the schema has no min field: a chapter list needs >= 3 timestamps and every chapter >= 10 seconds. Rule: \"Make sure that the first timestamp you list starts with 00:00.\" Manual chapters override automatic chapters."
+  },
+  {
+   "id": "plat:youtube_channel_description",
+   "name": "YouTube channel description and keywords",
+   "category": "YouTube",
+   "one_line": "The About text and channel keywords of a YouTube channel.",
+   "limits": [
+    {
+     "field": "channel description",
+     "max": 1000,
+     "unit": "chars",
+     "url": "https://developers.google.com/youtube/v3/docs/channels",
+     "checked": "2026-10-04",
+     "quote": "The channel description, which appears in the channel information box on your channel page. The property's value has a maximum length of 1000 characters.",
+     "confidence": "high (YouTube Data API reference)"
+    },
+    {
+     "field": "channel keywords (total)",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://developers.google.com/youtube/v3/docs/channels",
+     "checked": "2026-10-04",
+     "quote": "Channel keywords might be truncated if they exceed the maximum allowed length of 500 characters",
+     "confidence": "high (YouTube Data API reference)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/youtube/v3/docs/channels",
+     "title": "YouTube Data API: Channels",
+     "supports": "description 1000 chars, keywords 500 chars total"
+    }
+   ],
+   "note": "Keywords are a space-separated list; the 500 is the total across all keywords, not per keyword."
+  },
+  {
+   "id": "plat:instagram_hashtags",
+   "name": "Instagram hashtags per post or Reel",
+   "category": "Instagram",
+   "one_line": "How many hashtags one Instagram post, Reel or carousel may carry.",
+   "limits": [
+    {
+     "field": "hashtags per post",
+     "max": 5,
+     "unit": "count",
+     "url": "https://help.instagram.com/351460621611097",
+     "checked": "2026-10-04",
+     "quote": "You can use up to 5 tags on a post. If you include more than 5 tags on a single photo/video, your comment won't post.",
+     "confidence": "high (Instagram Help Center, read in the live page 2026-10-04)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.instagram.com/351460621611097",
+     "title": "Instagram Help: Use hashtags on Instagram",
+     "supports": "cap of 5 hashtags per post"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "Instagram Platform: IG User Media reference",
+     "supports": "older figure: 30 hashtags per caption"
+    }
+   ],
+   "note": "CONFLICT: the Help Center (current) says 5; the Instagram Graph API media reference still says \"Maximum 2200 characters, 30 hashtags, and 20 @ tags.\" Write to 5. The cut from 30 to 5 was announced by Instagram in December 2025 (press coverage: digitaltrends.com, 2025-12; not an Instagram page). Hashtags are tappable and lead to hashtag pages."
+  },
+  {
+   "id": "plat:instagram_bio",
+   "name": "Instagram profile bio",
+   "category": "Instagram",
+   "one_line": "The free-text bio on an Instagram profile.",
+   "limits": [
+    {
+     "field": "bio",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://help.instagram.com/728994388226960",
+     "checked": "2026-10-04",
+     "quote": "You can write a bio of up to 150 characters on your Instagram profile.",
+     "confidence": "high (Instagram Help Center)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.instagram.com/728994388226960",
+     "title": "Instagram Help: Add a bio to your Instagram profile",
+     "supports": "bio up to 150 characters"
+    }
+   ],
+   "note": "The help page warns that anyone can see the bio. Links typed in the bio are not the profile link field; the profile has separate link slots. @mentions and hashtags in the bio are tappable. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:x_long_post",
+   "name": "X Premium longer post",
+   "category": "X (Twitter)",
+   "one_line": "A long-form post on X, available only to Premium subscribers.",
+   "limits": [
+    {
+     "field": "longer post text",
+     "max": 25000,
+     "unit": "chars",
+     "url": "https://help.x.com/en/using-x/x-premium",
+     "checked": "2026-10-04",
+     "quote": "Longer posts allow subscribers to post up to 25,000 characters.",
+     "confidence": "high (X Help Center, About X Premium)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.x.com/en/using-x/x-premium",
+     "title": "X Help: About X Premium",
+     "supports": "longer posts up to 25,000 characters, Premium only"
+    },
+    {
+     "url": "https://help.x.com/en/using-x/how-to-post",
+     "title": "X Help: How to post",
+     "supports": "conflicting older figure of 4,000 characters for longer posts"
+    }
+   ],
+   "note": "CONFLICT: the How to Post help page still says \"Once you've finished writing (up to 4,000 characters), select post\"; the About X Premium page says 25,000. Use 25,000 as the hard cap. The help page says the composer switches mode at 280 (\"When you reach 280 characters, the word count will switch...\"); no X page read states where a long post collapses in the timeline, so no visible point is recorded. Everyone can read longer posts; only Premium subscribers can create them. Premium also unlocks text formatting (bold/italic) per the Premium page. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:x_bio",
+   "name": "X profile bio, display name and username",
+   "category": "X (Twitter)",
+   "one_line": "The bio, display name and @username on an X profile.",
+   "limits": [
+    {
+     "field": "bio",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://help.x.com/en/managing-your-account/how-to-customize-your-profile",
+     "checked": "2026-10-04",
+     "quote": "Bio (maximum 160 characters)",
+     "confidence": "high (X Help Center)"
+    },
+    {
+     "field": "display name",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://help.x.com/en/managing-your-account/x-username-rules",
+     "checked": "2026-10-04",
+     "quote": "Your name can be longer (50 characters) or shorter than 4 characters",
+     "confidence": "high (X Help Center)"
+    },
+    {
+     "field": "@username",
+     "max": 15,
+     "unit": "chars",
+     "url": "https://help.x.com/en/managing-your-account/x-username-rules",
+     "checked": "2026-10-04",
+     "quote": "Your username cannot be longer than 15 characters.",
+     "confidence": "high (X Help Center)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.x.com/en/managing-your-account/how-to-customize-your-profile",
+     "title": "X Help: How to customize your profile",
+     "supports": "bio max 160"
+    },
+    {
+     "url": "https://help.x.com/en/managing-your-account/x-username-rules",
+     "title": "X Help: Help with username registration",
+     "supports": "name 50, username 15"
+    }
+   ],
+   "note": "Usernames: letters A-Z, digits 0-9 and underscore only. Location and website are separate profile fields."
+  },
+  {
+   "id": "plat:x_thread",
+   "name": "X thread",
+   "category": "X (Twitter)",
+   "one_line": "A chain of connected X posts published together.",
+   "limits": [
+    {
+     "field": "each post in the thread",
+     "max": 280,
+     "unit": "chars",
+     "url": "https://help.x.com/en/using-x/how-to-post",
+     "checked": "2026-10-04",
+     "quote": "Compose your message (up to 280 characters) and select Post.",
+     "confidence": "high (X Help Center; the per-post cap applies to each post of a thread)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.x.com/en/using-x/create-a-thread",
+     "title": "X Help: How to create a thread on X",
+     "supports": "thread composer; over-limit text is highlighted"
+    },
+    {
+     "url": "https://help.x.com/en/using-x/how-to-post",
+     "title": "X Help: How to post",
+     "supports": "280 characters per post"
+    }
+   ],
+   "note": "The thread help page states no maximum number of posts per thread (checked 2026-10-04): \"If you go over the character limit, the text that is over the limit will be highlighted\". Each post is counted on its own with the weighted rules in plat:x_post."
+  },
+  {
+   "id": "plat:discord_bio",
+   "name": "Discord About Me, display name and username",
+   "category": "Discord",
+   "one_line": "The About Me blurb, display name and username on a Discord profile.",
+   "limits": [
+    {
+     "field": "About Me",
+     "max": 190,
+     "unit": "chars",
+     "url": "https://support.discord.com/hc/en-us/articles/4403147417623-Custom-Profiles",
+     "checked": "2026-10-04",
+     "quote": "Up to 190 characters (this includes emojis, markdown text, and links)",
+     "confidence": "high (Discord Support)"
+    },
+    {
+     "field": "display name",
+     "max": 32,
+     "unit": "chars",
+     "url": "https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names",
+     "checked": "2026-10-04",
+     "quote": "Display names must be at least 1 character and at most 32 characters long",
+     "confidence": "high (Discord Support)"
+    },
+    {
+     "field": "username",
+     "max": 32,
+     "unit": "chars",
+     "url": "https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names",
+     "checked": "2026-10-04",
+     "quote": "Usernames must be at least 2 characters and at most 32 characters long",
+     "confidence": "high (Discord Support)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.discord.com/hc/en-us/articles/4403147417623-Custom-Profiles",
+     "title": "Discord Support: Custom Profiles",
+     "supports": "About Me 190 chars"
+    },
+    {
+     "url": "https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names",
+     "title": "Discord Support: New Usernames & Display Names",
+     "supports": "display name and username 32 chars"
+    }
+   ],
+   "note": "About Me renders markdown, links and emoji. Per-server profiles have their own 190-character About Me."
+  },
+  {
+   "id": "plat:reddit_post",
+   "name": "Reddit post (title + text body)",
+   "category": "Reddit",
+   "one_line": "A Reddit submission: title plus optional markdown text body.",
+   "limits": [
+    {
+     "field": "title",
+     "max": 300,
+     "unit": "chars",
+     "url": "https://www.reddit.com/dev/api/#POST_api_submit",
+     "checked": "2026-10-04",
+     "quote": "title title of the submission. up to 300 characters long",
+     "confidence": "high (Reddit API documentation, /api/submit)"
+    },
+    {
+     "field": "text body (non-Premium)",
+     "max": 40000,
+     "unit": "chars",
+     "url": "https://support.reddithelp.com/hc/en-us/articles/360043034412-What-is-a-Reddit-Premium-subscription",
+     "checked": "2026-10-04",
+     "quote": "80,000 characters in post body (up from 40,000 for non-premium users)",
+     "confidence": "high (Reddit Help, updated 2026-10-04)"
+    },
+    {
+     "field": "text body (Premium)",
+     "max": 80000,
+     "unit": "chars",
+     "url": "https://support.reddithelp.com/hc/en-us/articles/360043034412-What-is-a-Reddit-Premium-subscription",
+     "checked": "2026-10-04",
+     "quote": "80,000 characters in post body (up from 40,000 for non-premium users)",
+     "confidence": "high (Reddit Help, updated 2026-10-04)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.reddit.com/dev/api/",
+     "title": "Reddit API documentation",
+     "supports": "submission title up to 300 characters"
+    },
+    {
+     "url": "https://support.reddithelp.com/hc/en-us/articles/360043034412-What-is-a-Reddit-Premium-subscription",
+     "title": "Reddit Help: What is a Reddit Premium subscription?",
+     "supports": "post body 40,000 / 80,000 (Premium)"
+    },
+    {
+     "url": "https://support.reddithelp.com/hc/en-us/articles/42961314311700-Changelog-November-4-2025",
+     "title": "Reddit Help: Changelog November 4, 2025",
+     "supports": "date the 80,000 Premium body limit arrived"
+    }
+   ],
+   "note": "Body renders Reddit markdown (bold, italic, headings, lists, links, tables, spoilers; see Reddit's Formatting Guide). Titles do not render markdown. Each subreddit may add its own title/body rules (post guidance, flair). Comment length was not found on an official Reddit page; no limit recorded."
+  },
+  {
+   "id": "plat:reddit_community_description",
+   "name": "Reddit community description and name",
+   "category": "Reddit",
+   "one_line": "The short description and the name of a subreddit.",
+   "limits": [
+    {
+     "field": "community description",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484546290068-Community-settings",
+     "checked": "2026-10-04",
+     "quote": "markdown/formatting will not work here and you can only write up to 500 characters",
+     "confidence": "high (Reddit Help)"
+    },
+    {
+     "field": "community name",
+     "max": 21,
+     "unit": "chars",
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484258409492-How-to-create-a-community",
+     "checked": "2026-10-04",
+     "quote": "The community name must be between 3 and 21 characters and cannot be edited after the community is created.",
+     "confidence": "high (Reddit Help)"
+    },
+    {
+     "field": "sidebar text widget",
+     "max": 10000,
+     "unit": "chars",
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484474697748-Sidebar-Widgets",
+     "checked": "2026-10-04",
+     "quote": "Text - Add up to 10,000 characters of text, with markdown formatting options.",
+     "confidence": "high (Reddit Help)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484546290068-Community-settings",
+     "title": "Reddit Help: Community settings",
+     "supports": "description 500 chars, no markdown"
+    },
+    {
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484258409492-How-to-create-a-community",
+     "title": "Reddit Help: How to create a community",
+     "supports": "name 3-21 chars"
+    },
+    {
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484474697748-Sidebar-Widgets",
+     "title": "Reddit Help: Sidebar Widgets",
+     "supports": "text widget 10,000 chars"
+    }
+   ],
+   "note": "Description is plain text (no markdown); sidebar text widgets accept markdown."
+  },
+  {
+   "id": "plat:pinterest_pin",
+   "name": "Pinterest Pin title and description",
+   "category": "Pinterest",
+   "one_line": "The title, description, alt text and link of an organic Pinterest Pin.",
+   "limits": [
+    {
+     "field": "title",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://github.com/pinterest/api-description/blob/main/v5/openapi.yaml",
+     "checked": "2026-10-04",
+     "quote": "PinCreate ... title: type: string maxLength: 100",
+     "confidence": "high (Pinterest's official API v5 OpenAPI spec)"
+    },
+    {
+     "field": "description",
+     "max": 800,
+     "unit": "chars",
+     "url": "https://github.com/pinterest/api-description/blob/main/v5/openapi.yaml",
+     "checked": "2026-10-04",
+     "quote": "PinCreate ... description: type: string maxLength: 800",
+     "confidence": "high (Pinterest's official API v5 OpenAPI spec)"
+    },
+    {
+     "field": "alt text",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://github.com/pinterest/api-description/blob/main/v5/openapi.yaml",
+     "checked": "2026-10-04",
+     "quote": "PinCreate ... alt_text: type: string maxLength: 500",
+     "confidence": "high (Pinterest's official API v5 OpenAPI spec)"
+    },
+    {
+     "field": "destination link",
+     "max": 2048,
+     "unit": "chars",
+     "url": "https://github.com/pinterest/api-description/blob/main/v5/openapi.yaml",
+     "checked": "2026-10-04",
+     "quote": "PinCreate ... link: type: string maxLength: 2048",
+     "confidence": "high (Pinterest's official API v5 OpenAPI spec)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/pinterest/api-description/blob/main/v5/openapi.yaml",
+     "title": "Pinterest API v5 OpenAPI description (PinCreate schema)",
+     "supports": "title 100, description 800, alt_text 500, link 2048"
+    }
+   ],
+   "note": "API schema limits. Pinterest's in-app editor has been reported (third-party) to cap descriptions at 500 characters; not verified on a Pinterest page here, so write to 500 when the Pin is made in the app and up to 800 via the API. Pin descriptions are searchable text; hashtags are allowed but not required. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:substack_post",
+   "name": "Substack post (web + email newsletter)",
+   "category": "Newsletter platforms",
+   "one_line": "A Substack post that publishes to the web and is emailed to subscribers.",
+   "limits": [
+    {
+     "field": "post length (save limit)",
+     "max": 1000000,
+     "unit": "chars",
+     "url": "https://support.substack.com/hc/en-us/articles/360038866571-Why-does-it-say-Your-post-may-be-truncated-in-the-post-editor",
+     "checked": "2026-10-04",
+     "quote": "There's no word limit but posts over 1,000,000 characters can't be saved.",
+     "confidence": "high (Substack Support, updated 2026-10-04)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.substack.com/hc/en-us/articles/360038866571-Why-does-it-say-Your-post-may-be-truncated-in-the-post-editor",
+     "title": "Substack Support: Why does it say Your post may be truncated",
+     "supports": "1,000,000-char save limit; Gmail clips emails over about 102KB"
+    }
+   ],
+   "note": "The practical limit is email size: \"Gmail clips emails larger than about 102KB.\" Links, images and the publication's header/footer text all count toward that size; long posts show a truncation warning in the editor. Subject-line rules are out of scope here (email subject = plat_commerce). Substack lets you A/B test titles (support article 36026518014100)."
+  },
+  {
+   "id": "plat:medium_story",
+   "name": "Medium story (title, subtitle, shortform) and publication newsletter",
+   "category": "Blogging platforms",
+   "one_line": "A story on Medium, plus the newsletter attached to a Medium publication.",
+   "limits": [
+    {
+     "field": "shortform threshold (story classified as shortform at or below)",
+     "max": 150,
+     "unit": "words",
+     "url": "https://help.medium.com/hc/en-us/articles/1500001252562-About-shortform-content",
+     "checked": "2026-10-04",
+     "quote": "Shortform on Medium is a post that is 150 words or less. This excludes kickers, titles, subtitles, and image captions.",
+     "confidence": "high (Medium Help, updated 2026-07-09; a classification threshold, not a cap)"
+    },
+    {
+     "field": "publication newsletter name",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://help.medium.com/hc/en-us/articles/115004682167-Newsletter",
+     "checked": "2026-10-04",
+     "quote": "It can be no less than 3 characters, no more than 50 characters.",
+     "confidence": "high (Medium Help, updated 2025-09-23)"
+    },
+    {
+     "field": "publication newsletter description",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://help.medium.com/hc/en-us/articles/115004682167-Newsletter",
+     "checked": "2026-10-04",
+     "quote": "It can be no less than 10 characters, no more than 200 characters.",
+     "confidence": "high (Medium Help, updated 2025-09-23)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.medium.com/hc/en-us/articles/1500001252562-About-shortform-content",
+     "title": "Medium Help: About shortform content",
+     "supports": "shortform = 150 words or less"
+    },
+    {
+     "url": "https://help.medium.com/hc/en-us/articles/115004682167-Newsletter",
+     "title": "Medium Help: Newsletter",
+     "supports": "name 3-50 chars, description 10-200 chars"
+    },
+    {
+     "url": "https://help.medium.com/hc/en-us/articles/214895188-Custom-titles-subtitles",
+     "title": "Medium Help: Custom titles & subtitles",
+     "supports": "separate display title/subtitle for previews and social; no length limit stated"
+    }
+   ],
+   "note": "Medium's help pages state no character limit for story titles or subtitles (checked 2026-10-04); a custom display title/subtitle can be set for previews and social shares. Read time is computed from word count (Medium Help: Read time)."
+  },
+  {
+   "id": "plat:instagram_comment",
+   "name": "Instagram comment",
+   "category": "Instagram",
+   "one_line": "A comment under an Instagram post or Reel (including the creator's own first comment).",
+   "limits": [
+    {
+     "field": "@mentions per comment",
+     "max": 5,
+     "unit": "count",
+     "url": "https://help.instagram.com/161863397286564",
+     "checked": "2026-10-04",
+     "quote": "You can't include more than 5 @mentions",
+     "confidence": "high (Instagram Help Center)"
+    },
+    {
+     "field": "hashtags per comment",
+     "max": 30,
+     "unit": "count",
+     "url": "https://help.instagram.com/161863397286564",
+     "checked": "2026-10-04",
+     "quote": "You can't include more than 30 hashtags in a single comment.",
+     "confidence": "high (Instagram Help Center; see conflict note)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.instagram.com/161863397286564",
+     "title": "Instagram Help: I get an error when trying to add a comment",
+     "supports": "max 5 @mentions, max 30 hashtags per comment, no duplicate comments"
+    }
+   ],
+   "note": "CONFLICT: this page still allows 30 hashtags per comment, while the hashtag page (help.instagram.com/351460621611097) caps a post at 5 and says more than 5 means \"your comment won't post\". Do not move hashtags into the first comment to dodge the post cap; write to 5. The same comment cannot be posted repeatedly (including emoji). Instagram filters certain words and phrases."
+  },
+  {
+   "id": "plat:instagram_carousel",
+   "name": "Instagram carousel post",
+   "category": "Instagram",
+   "one_line": "One Instagram feed post holding several photos and videos that people swipe through.",
+   "limits": [
+    {
+     "field": "photos and videos per carousel (app)",
+     "max": 20,
+     "unit": "count",
+     "url": "https://help.instagram.com/269314186824048",
+     "checked": "2026-10-04",
+     "quote": "You can share a post with up to 20 photos and videos as a single post, also known as a carousel, to your Instagram feed.",
+     "confidence": "high (Instagram Help Center)"
+    },
+    {
+     "field": "items per carousel (Graph API publishing)",
+     "max": 10,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-04",
+     "quote": "Carousels can have up to 10 total images, vidoes, or a mix of the two.",
+     "confidence": "high (Meta developer reference)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.instagram.com/269314186824048",
+     "title": "Instagram Help: Share multiple photos or videos as a single post",
+     "supports": "up to 20 items in the app; one caption and one comment thread for the whole post"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "Instagram Platform: IG User Media reference",
+     "supports": "API carousels up to 10 items"
+    }
+   ],
+   "note": "CONFLICT by route: 20 when posted in the app, 10 when published through the Graph API (schedulers). One orientation applies to every slide. Caption limits are those of plat:instagram_caption; comments and likes apply to the whole post. In feed only the first slide shows, with dots below, so slide 1 carries the hook."
+  },
+  {
+   "id": "plat:linkedin_post",
+   "name": "LinkedIn post (member or Page)",
+   "category": "LinkedIn",
+   "one_line": "A text post shared from the LinkedIn share box, from a member or a LinkedIn Page.",
+   "limits": [
+    {
+     "field": "post text",
+     "max": 3000,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "checked": "2026-10-04",
+     "quote": "The character limit for a post is 3,000 characters.",
+     "confidence": "high (LinkedIn Help, last updated about 2 weeks before 2026-10-04)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "title": "LinkedIn Help: Post and share updates",
+     "supports": "3,000-character post limit; longer text should be an article"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/compliance/integrations/shares/ugc-post-api",
+     "title": "LinkedIn UGC Post API",
+     "supports": "API: maximum length of the text of a UGC Post is 3000 characters"
+    }
+   ],
+   "note": "Help: \"If your post exceeds 3000 characters, you can instead write an article\". The API doc agrees: \"The maximum length of the text of a UGC Post is 3000 characters.\" No official LinkedIn page states where the feed truncates with \"...see more\"; any figure for that is third-party, so none is recorded. Line breaks render; no native bold/italic; links are clickable but the first one generates a preview card; hashtags and @mentions are clickable. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:linkedin_document_post",
+   "name": "LinkedIn document (PDF carousel) post",
+   "category": "LinkedIn",
+   "one_line": "A LinkedIn post with an uploaded PDF, PPT or DOC that readers page through (the 'carousel' format).",
+   "limits": [
+    {
+     "field": "pages per document",
+     "max": 300,
+     "unit": "count",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a564109",
+     "checked": "2026-10-04",
+     "quote": "The file size cannot exceed 100 MB. The page limit is 300 pages. The word count limit is one million words.",
+     "confidence": "high (LinkedIn Help, last updated about 2 weeks before 2026-10-04)"
+    },
+    {
+     "field": "words per document",
+     "max": 1000000,
+     "unit": "words",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a564109",
+     "checked": "2026-10-04",
+     "quote": "The word count limit is one million words.",
+     "confidence": "high (LinkedIn Help)"
+    },
+    {
+     "field": "post text above the document",
+     "max": 3000,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "checked": "2026-10-04",
+     "quote": "The character limit for a post is 3,000 characters.",
+     "confidence": "high (LinkedIn Help)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a564109",
+     "title": "LinkedIn Help: Media file types supported on LinkedIn",
+     "supports": "100 MB, 300 pages, one million words; DOC/DOCX/PPT/PPTX/PDF"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a518909",
+     "title": "LinkedIn Help: Upload and share documents on LinkedIn",
+     "supports": "100MB and 300 pages"
+    }
+   ],
+   "note": "File size cap 100 MB. Supported: PPT, PPTX, DOC, DOCX, PDF. Text on the slides is read inside the viewer, so the post text still needs its own hook."
+  },
+  {
+   "id": "plat:linkedin_article",
+   "name": "LinkedIn article (and newsletter edition)",
+   "category": "LinkedIn",
+   "one_line": "A long-form article published with LinkedIn's publishing tool, standalone or as a newsletter edition.",
+   "limits": [
+    {
+     "field": "SEO title (truncated in search results above)",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a6244140",
+     "checked": "2026-10-04",
+     "quote": "If your SEO title is over 60 characters, it will be truncated.",
+     "confidence": "medium (LinkedIn Help, last updated about 3 years before 2026-10-04)"
+    },
+    {
+     "field": "SEO description (suggested length)",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a6244140",
+     "checked": "2026-10-04",
+     "quote": "We suggest utilizing keywords, summarizing your writing, and aiming to write between 140-160 characters.",
+     "confidence": "medium (LinkedIn Help, a recommendation not a hard cap, page about 3 years old)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a6244140",
+     "title": "LinkedIn Help: SEO settings for articles or Newsletters published on LinkedIn",
+     "supports": "SEO title truncated over 60 chars; SEO description 140-160 suggested"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a522427",
+     "title": "LinkedIn Help: Write and publish articles on LinkedIn",
+     "supports": "article publishing (no length limit stated)"
+    }
+   ],
+   "note": "LinkedIn Help pages read on 2026-10-04 (a522427 articles, a517925 and a596833 newsletters) state no character limit for the article headline, body, newsletter name or newsletter description; none recorded. Articles render headings, bold, italic, lists, quotes, links and embeds. The SEO title and description replace the article title and opening lines only in search-engine results. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:whatsapp_message",
+   "name": "WhatsApp text message",
+   "category": "WhatsApp",
+   "one_line": "A free-form WhatsApp text message (chat, broadcast list).",
+   "limits": [
+    {
+     "field": "text body (Cloud API)",
+     "max": 4096,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/messages/text-messages",
+     "checked": "2026-10-04",
+     "quote": "Maximum 4096 characters.",
+     "confidence": "medium (Meta WhatsApp Cloud API docs; states the API limit, not the consumer app's)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/messages/text-messages",
+     "title": "WhatsApp Cloud API: Text messages",
+     "supports": "body max 4096 characters; URLs auto-hyperlinked; optional link preview"
+    }
+   ],
+   "note": "API doc: \"The WhatsApp client automatically hyperlinks URLs in the body text.\" Formatting renders: *bold*, _italic_, ~strikethrough~, ```monospace```. Template messages and Business rules are plat_commerce scope. No official limit for WhatsApp Status text or Channel posts was found on 2026-10-04. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]"
+  },
+  {
+   "id": "plat:youtube_post",
+   "name": "YouTube community post",
+   "category": "YouTube",
+   "one_line": "A text, image, poll or quiz post in a channel's Posts tab.",
+   "limits": [
+    {
+     "field": "images per post",
+     "max": 10,
+     "unit": "count",
+     "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+     "checked": "2026-10-04",
+     "quote": "You can choose to upload up to 10 images with your post.",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "text poll option",
+     "max": 65,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Enter answers in the \"Add option\" fields within 65 characters each. Click Add another option to add up to 4 answers.",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "image poll caption",
+     "max": 36,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Upload images as answers, and add captions within 36 characters in the 'Option' fields.",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "quiz answer (no image / with image: 30)",
+     "max": 80,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Answers can be up to 80 characters each or up to 30 characters if an image is added.",
+     "confidence": "high (YouTube Help)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+     "title": "YouTube Help: Create posts",
+     "supports": "10 images, 4 poll options of 65 chars, image-poll captions 36, quiz answers 80/30"
+    }
+   ],
+   "note": "Polls and quizzes allow up to 4 answers. The help page states no character limit for the post text itself (checked 2026-10-04)."
+  },
+  {
+   "id": "plat:telegram_bio",
+   "name": "Telegram profile bio",
+   "category": "Telegram",
+   "one_line": "The bio ('about') text on a Telegram user profile.",
+   "limits": [
+    {
+     "field": "bio (non-Premium)",
+     "max": 70,
+     "unit": "bytes",
+     "url": "https://core.telegram.org/api/config",
+     "checked": "2026-10-04",
+     "quote": "about_length_limit_default The maximum UTF-8 length of bios of non- Premium users (integer); example config: \"about_length_limit_default\": 70",
+     "confidence": "medium (Telegram client API config docs; the value shown is the documented example, the live value is served per client)"
+    },
+    {
+     "field": "bio (Premium)",
+     "max": 140,
+     "unit": "bytes",
+     "url": "https://core.telegram.org/api/config",
+     "checked": "2026-10-04",
+     "quote": "about_length_limit_premium The maximum UTF-8 length of bios of Premium users (integer); example config: \"about_length_limit_premium\": 140",
+     "confidence": "medium (Telegram client API config docs, example value)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://core.telegram.org/api/config",
+     "title": "Telegram API: Client configuration",
+     "supports": "about_length_limit_default 70 / premium 140, measured as UTF-8 length"
+    }
+   ],
+   "note": "The docs define the limit as \"UTF-8 length\"; recorded as bytes. Devanagari is 3 bytes per character in UTF-8, so a Hindi bio may fit only about 23 characters if Telegram counts bytes; test in the app before relying on a Hindi bio. Channel and group descriptions are separate fields; no limit for them was read."
+  },
+  {
+   "id": "plat:mastodon_bio",
+   "name": "Mastodon profile bio, display name and fields (default server)",
+   "category": "Mastodon",
+   "one_line": "The bio (note), display name and custom profile fields of a Mastodon account.",
+   "limits": [
+    {
+     "field": "bio (note)",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"accounts\" : { \"max_display_name_lenth\" : 30 , \"max_note_length\" : 500",
+     "confidence": "high (official Mastodon docs example of the instance config; each server can change it)"
+    },
+    {
+     "field": "display name",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"max_display_name_lenth\" : 30",
+     "confidence": "high (official Mastodon docs example; the key is misspelt 'lenth' in the docs)"
+    },
+    {
+     "field": "custom profile fields",
+     "max": 4,
+     "unit": "count",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"max_profile_fields\" : 4 , \"profile_field_name_limit\" : 255 , \"profile_field_value_limit\" : 255",
+     "confidence": "high (official Mastodon docs example)"
+    },
+    {
+     "field": "profile field value",
+     "max": 255,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "profile_field_value_limit Description: The maximum size of a profile field value, in characters.",
+     "confidence": "high (official Mastodon docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "title": "Mastodon docs: Instance entity",
+     "supports": "accounts config: note 500, display name 30, 4 profile fields of 255"
+    }
+   ],
+   "note": "Per-server values: read GET /api/v2/instance configuration.accounts before writing."
+  }
+ ]
+}

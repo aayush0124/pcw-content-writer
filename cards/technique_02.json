@@ -1,0 +1,1457 @@
+{
+ "cards": [
+  {
+   "id": "tech:content_freshness_update",
+   "kind": "technique",
+   "name": "Substantive freshness updates",
+   "status": "current",
+   "level": "piece",
+   "summary": "Refresh a page by fixing what has actually gone out of date (prices, rates, steps, screenshots, links, examples), tell readers what changed, and only then move the visible 'Updated' date. Google's helpful-content questions name changing a page's date to seem fresh, when the content has not substantially changed, as a warning sign.",
+   "use_for": [
+    "refreshing old blog posts and guides that have lost rankings or traffic",
+    "yearly 'best X' roundups and comparison pages whose prices and models change",
+    "scheme, tax and policy explainers after a rule, fee or deadline changes",
+    "help-centre articles after a product UI change",
+    "pricing and plan pages"
+   ],
+   "avoid": [
+    "Changing only the year in the title and the date on top ('Best invoicing apps 2026') over content last checked in 2024: change the facts first, then the date.",
+    "Rewriting a page that is still correct and still ranking just to look active: edit only what is wrong or missing, and log the review internally instead of changing the public date.",
+    "Silently changing a figure readers acted on (a fee, a deadline, a rate): add a dated change note so returning readers see what moved.",
+    "Scattering several dates over the page (event dates, old 'as of' lines, the update date): Google advises minimising other dates; keep one clear 'Published' and 'Updated' line."
+   ],
+   "how": [
+    "Audit before writing: list every claim that can expire (prices, rates, dates, deadlines, limits, product and plan names, UI steps, screenshots, statistics, links, people's job titles) and check each one against a current primary source.",
+    "Re-check intent: search the page's main query, read what ranks now and what an AI answer already covers, then add what the page is missing (a new section, a question support keeps getting) and cut what no longer matters.",
+    "Make the substantive changes: replace stale numbers with current ones and an 'as of' date, re-shoot screenshots, fix or replace dead links, swap outdated examples.",
+    "Write a change note in plain words: date plus what changed ('Updated 4 Oct 2026: Basic plan now Rs 599/month; steps 3-5 match the new editor'). GOV.UK writes a change note for every substantial update.",
+    "Set the visible 'Updated' date and the structured-data dateModified to the same day; keep datePublished as the original date; never use a future date.",
+    "Keep the URL. If the slug carries a stale year or count, change the title, not the URL, unless you set a redirect.",
+    "If you checked the page and nothing needed changing, record the check in the client's content sheet; do not touch the public date."
+   ],
+   "before": "Best invoicing apps for small businesses in 2026 (Updated 4 Oct 2026) [only the year and date changed; prices, screenshots and plan names are from 2024]",
+   "after": "Updated 4 Oct 2026: re-tested all five apps; the Basic plan prices in the table are current as of this date; replaced the screenshots of the new invoice editors; removed one app that shut down. First published 12 Mar 2024.",
+   "overuse_signs": [
+    "Every page on the site shows the same 'Updated' date",
+    "Change notes that say only 'Updated for 2026' with no specifics",
+    "Padding the intro with new paragraphs so an update looks bigger than it is",
+    "Numbers that other sites cite change without a change note"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "warning question: 'Are you changing the date of pages to make them seem fresh when the content has not substantially changed?' (checked 2026-10-04)"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/change-notes/",
+     "title": "GOV.UK: Write change notes",
+     "supports": "telling users what changed on an updated page"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/publication-dates",
+     "title": "Google Search Central: Influence your byline dates",
+     "supports": "visible 'Published'/'Updated' labels, datePublished/dateModified, consistency, no future dates, minimise other dates on the page (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "genre:content_refresh",
+    "edit:content_audit",
+    "edit:fact_check",
+    "trend:non_commodity_content",
+    "tech:eeat_first_hand_experience"
+   ]
+  },
+  {
+   "id": "tech:contractions",
+   "kind": "technique",
+   "name": "Contractions for a conversational voice",
+   "status": "current",
+   "level": "line",
+   "summary": "Use the contractions people say out loud (you'll, it's, we're, that's, let's) so the copy sounds like a person, and settle negatives with the client's style guide: GOV.UK avoids 'can't' and 'don't' because readers misread them, while Microsoft uses 'don't' for a friendly tone. Pick one rule per piece and apply it everywhere.",
+   "use_for": [
+    "emails, newsletters and WhatsApp messages",
+    "landing pages, product pages and social captions",
+    "help articles and FAQs",
+    "UI copy (with one consistent rule across the product)",
+    "voice-over and talking-head scripts"
+   ],
+   "avoid": [
+    "Legal text, contracts, policies and formal academic writing where the house style spells everything out: follow the house style.",
+    "Negative contractions in warnings, consent lines and instructions where missing the 'not' costs money or safety: write 'Do not share this OTP' and put the 'not' early.",
+    "Noun + verb contractions ('The bank's sending you a code', 'Priya's joining') and awkward ones (there'd, it'll, they'd, should've, could've, would've): both Microsoft and GOV.UK advise against them; write the full form.",
+    "Mixing 'can't' and 'cannot' in the same UI or document: choose one form.",
+    "Forcing English contractions into transliterated Hindi or Hinglish: conversational register there comes from aap/tum choice and spoken word order, not apostrophes."
+   ],
+   "how": [
+    "Find the style rule first: the client's guide, else GOV.UK (positive contractions yes, negative ones no) or Microsoft (common contractions including 'don't'). With no guide, default to positive contractions and spelled-out negatives in instructions and warnings.",
+    "Read the draft aloud. Wherever you would naturally contract while speaking (you will, it is, we are, that is, let us), contract it.",
+    "Find every negative (not, cannot, do not, will not). In instructions, warnings, consent and money lines, keep the full form and move it early in the sentence. Elsewhere, apply the chosen style.",
+    "Remove noun + verb contractions, double contractions and the ambiguous or past-modal ones (it'll, there'd, they'd, should've, would've).",
+    "Make it consistent: search for both forms of each contraction and keep one.",
+    "For voice-over, contract almost everything; uncontracted forms sound stiff or stressed when spoken. Keep a full 'do not' only where you want that stress."
+   ],
+   "before": "We are delighted to inform you that your order has been shipped. You will receive it by Friday. Do not hesitate to contact us should you have any queries.",
+   "after": "Your order is on its way and you'll get it by Friday. Questions? Reply to this email and we'll help.",
+   "overuse_signs": [
+    "Noun contractions everywhere ('The app's got', 'Rahul's gonna')",
+    "Slang forms (gonna, wanna, y'all) in a brand voice that is not that casual",
+    "Contracted negatives in a safety or fraud warning",
+    "A policy or legal page that suddenly reads chatty"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "use contractions like 'you'll'; avoid negative contractions like 'can't' or 'don't' because many users misread them; avoid should've, could've, would've, they've (checked 2026-10-04)"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/word-choice/use-contractions",
+     "title": "Microsoft Writing Style Guide: Use contractions",
+     "supports": "use common contractions (it's, you're, that's, don't); don't mix contracted and spelled-out forms in UI; never contract noun + verb; avoid there'd, it'll, they'd (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tone:conversational",
+    "tech:read_aloud",
+    "tech:write_for_voiceover",
+    "edit:style_gov_uk",
+    "edit:style_microsoft"
+   ]
+  },
+  {
+   "id": "tech:cta_writing",
+   "kind": "technique",
+   "name": "Call-to-action writing",
+   "status": "current",
+   "level": "line",
+   "summary": "A call to action is one instruction, verb first, that names the action and what the reader gets ('Book your free 15-minute GST notice review'), placed after the reader has enough reason to act and repeated in the same words at the next decision point. A good CTA also says what happens next and removes the worry about clicking.",
+   "use_for": [
+    "landing pages and sales pages",
+    "emails and WhatsApp broadcasts",
+    "ads and social captions",
+    "reel and video end cards (spoken and on screen)",
+    "buttons and links"
+   ],
+   "avoid": [
+    "Several competing asks in one piece ('Follow, share, sign up and DM us'): choose the one action the piece exists for; put secondary asks in small text or another piece.",
+    "Vague verbs as the only CTA (Submit, Click here, Learn more on a sales page): name the action and the payoff.",
+    "A CTA that hides the real next step ('Get free access' that opens a card form): say it ('Start 7-day trial, card needed').",
+    "Guilt or shame on the decline option ('No thanks, I like paying penalties'): that is confirm shaming, a dark pattern under India's CCPA 2023 guidelines; use a neutral 'No thanks'.",
+    "Asking for the big action on first contact (a cold email asking for a 1-hour demo): ask for a small, easy step such as a one-line reply."
+   ],
+   "how": [
+    "Write down the one action the reader must take after this piece (book a call, reply, buy, download, save the post) before drafting the CTA.",
+    "Start with that action's verb: Book, Get, Download, Reply, Start, Join, Order, Call, Save. Avoid Submit and Click here.",
+    "Add the object or payoff: what they get or what happens next ('Book a 15-minute call', 'Get the GST checklist').",
+    "Remove friction in the line or right below it, only with true facts: price, time, what is needed ('Free, takes 2 minutes, no card').",
+    "Place it where the case is complete: on a long page after the proof, plus once mid-page and at the end; in a short email once, at the end; in a reel, said aloud and shown on screen in the final beat.",
+    "Repeat it in the same words each time and make the button label match the sentence ('Book your free call' -> button 'Book free call').",
+    "Add a reason to act now only if a real one exists (see tech:ethical_urgency).",
+    "Hinglish works the same way: 'Abhi book karo' is weak; 'Free GST check book karo: 15 minute, zero charge' names the payoff."
+   ],
+   "before": "To know more about our services, click here.",
+   "after": "Book a free 15-minute GST notice review: we'll tell you whether you need to reply, and by when.",
+   "overuse_signs": [
+    "The same CTA after every paragraph of a short piece",
+    "Every CTA leans on 'now' or 'today'",
+    "Gimmicky first-person buttons on everything ('Yes! I want my FREE guide!!')",
+    "A CTA in the first line, before the reader knows what is offered"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Call_to_action_(marketing)",
+     "title": "Call to action (marketing) (Wikipedia)",
+     "supports": "definition of a CTA"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "Gazette of India (30 Nov 2023): Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+     "supports": "confirm shaming listed as a specified dark pattern (via harvest item comp:ccpa_dark_patterns_2023)"
+    }
+   ],
+   "related": [
+    "tech:button_labels",
+    "tech:single_cta_email",
+    "tech:risk_reversal",
+    "tech:ethical_urgency",
+    "comp:ccpa_dark_patterns_2023",
+    "fw:aida"
+   ]
+  },
+  {
+   "id": "tech:curse_of_knowledge_fix",
+   "kind": "technique",
+   "name": "Curse-of-knowledge fix",
+   "status": "current",
+   "level": "piece",
+   "summary": "Experts find it hard to imagine not knowing what they know (the 'curse of knowledge', a term economists Camerer, Loewenstein and Weber used in 1989). The fix: write for one named newcomer, define each term at first use, put back the steps you skipped, add one worked example, and test the draft on someone outside the field.",
+   "use_for": [
+    "explainers and government scheme explainers for citizens",
+    "help articles, onboarding and product tours",
+    "copy for CA, legal, medical and technical clients written from an expert interview",
+    "founder-written SaaS and B2B pages full of internal terms",
+    "technical blog posts aimed at beginners"
+   ],
+   "avoid": [
+    "Explaining basics to experts (defining GST to CFOs): define for the actual reader; for a mixed audience, define inline once or link a glossary.",
+    "Talking down ('Simply put, for the layman'): explain without commenting on the reader's level.",
+    "Fixing only the jargon: the bigger gap is usually a skipped step or a missing 'why', not a word."
+   ],
+   "how": [
+    "Name the reader at the top of the draft: one person, their job, what they already know ('a Jaipur kirana owner who uses UPI daily but has never filed GST').",
+    "Mark every term, acronym and abbreviation. If that reader would not say it in conversation, replace it with plain words or define it in one clause at first use ('ITC, the tax you already paid on purchases').",
+    "List the real steps of the process and compare with the draft. Restore the ones you skipped because they are obvious to you: where to click, which document, what success looks like.",
+    "Add the 'why' in one line next to each instruction.",
+    "After each abstract explanation, add one worked example with realistic numbers.",
+    "Test: ask someone outside the field (or a fresh model given only the reader persona) to explain it back or do the task. Every place they stall is a fix.",
+    "When writing from an expert interview, ask 'What do new clients always get wrong?'; the answers are the missing steps."
+   ],
+   "before": "Reconcile your ITC with GSTR-2B before filing 3B to avoid mismatches.",
+   "after": "Before you file your monthly return (GSTR-3B), check that the tax credit you claim on purchases matches GSTR-2B, a statement the GST portal prepares for you each month from your suppliers' filings. If a supplier has not uploaded your bill, call them before you claim that credit.",
+   "overuse_signs": [
+    "Every term defined, including ones the audience uses daily",
+    "A long 'basics' section before anything useful; move definitions inline or into a glossary",
+    "An analogy for every sentence",
+    "The piece doubled in length; cut what this reader does not need"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Curse_of_knowledge",
+     "title": "Curse of knowledge (Wikipedia)",
+     "supports": "term coined by Camerer, Loewenstein and Weber (1989, Journal of Political Economy); Elizabeth Newton's 1990 tappers-and-listeners study where tappers overestimated recognition (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tech:plain_language",
+    "tech:sme_interview",
+    "tech:step_by_step_instructions",
+    "edit:jargon_audit",
+    "fw:feynman_technique"
+   ]
+  },
+  {
+   "id": "tech:cut_qualifiers",
+   "kind": "technique",
+   "name": "Cut qualifiers, hedges and weasel words",
+   "status": "current",
+   "level": "line",
+   "summary": "Delete intensifiers (very, really, quite, extremely), stacked hedges (may possibly, somewhat, arguably) and unattributed claims ('experts say', 'studies show') that add words but no information. Keep one hedge where the uncertainty is real and say what it depends on; replace a weasel attribution with a named source or cut the claim.",
+   "use_for": [
+    "every line-edit pass",
+    "thought leadership, LinkedIn posts and opinion pieces",
+    "B2B and service copy",
+    "reports and executive summaries",
+    "video scripts where every second counts"
+   ],
+   "avoid": [
+    "Removing real uncertainty from health, money, legal or forecast content: 'may lower' is correct when the evidence is limited, and Indian ad rules require claims you can substantiate, so a true hedge beats a false certainty.",
+    "Stripping softeners from requests and feedback ('Could you send...', 'I think this section...'): keep politeness in asks; cut hedges in claims.",
+    "Swapping 'very big' for a louder adjective ('massive'): replace it with the measure ('three times the size')."
+   ],
+   "how": [
+    "Search for intensifiers: very, really, quite, extremely, truly, totally, absolutely, incredibly, highly, super, literally, just, actually, basically (in Hinglish, filler 'bahut', 'ekdum', 'sach mein').",
+    "Delete each and re-read. If nothing was lost, leave it out. If the line went flat, replace the adjective with a number or concrete detail, not a bigger adjective.",
+    "Search for hedges: may, might, could, perhaps, possibly, somewhat, arguably, tends to, seems, I think, sort of, kind of. If the claim is certain, state it plainly. If it is not, keep one hedge and add the condition ('may lower your penalty if you file before the notice date').",
+    "Search for weasel attributions: experts say, studies show, research suggests, many believe, it is widely known. Name the source and year and link it, or cut the claim.",
+    "Delete throat-clearing openers: 'It is important to note that', 'Needless to say', 'In today's fast-paced world'.",
+    "Re-read each edited line: it must claim no more than you can prove."
+   ],
+   "before": "Many experts believe that our onboarding is really quite simple and can possibly help teams get started somewhat faster.",
+   "after": "Setup asks for three things: your GSTIN, your logo and your bank details. Most teams send their first invoice the same day.",
+   "overuse_signs": [
+    "Every claim stated with total certainty, including forecasts",
+    "Emails and feedback that now read curt or rude",
+    "'About' and 'roughly' removed from estimates, so they read as exact figures",
+    "Every sentence the same clipped length after the cut"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hedge_(linguistics)",
+     "title": "Hedge (linguistics) (Wikipedia)",
+     "supports": "hedges lessen the force of a statement"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Weasel_word",
+     "title": "Weasel word (Wikipedia)",
+     "supports": "vague attributions that create an impression of a claim"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Concision",
+     "title": "Concision (Wikipedia)",
+     "supports": "eliminating redundancy while keeping meaning"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 13: omit needless words"
+    },
+    {
+     "url": "https://www.ascionline.in/the-asci-code/",
+     "title": "ASCI: The ASCI Code",
+     "supports": "Chapter I: claims of objectively ascertainable fact must be capable of substantiation (via harvest item comp:asci_code)"
+    }
+   ],
+   "related": [
+    "tech:specificity",
+    "edit:cliche_pass",
+    "edit:cut_ten_percent",
+    "edit:ai_tell_removal",
+    "comp:asci_code"
+   ]
+  },
+  {
+   "id": "tech:decoy_pricing",
+   "kind": "technique",
+   "name": "Decoy option",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "In a tiered offer, add or shape a third option that is clearly worse than your target option on the one dimension buyers compare, at nearly the same price, so the target reads as the obvious pick (the decoy or asymmetric-dominance effect). Every option must be real, buyable and honestly priced.",
+   "use_for": [
+    "SaaS and subscription pricing tables",
+    "service packages (Basic / Standard / Premium)",
+    "D2C pack sizes, combos and subscriptions",
+    "course, coaching, gym and studio passes",
+    "cafe and restaurant menu sizes"
+   ],
+   "avoid": [
+    "A decoy nobody can actually buy, or one that changes at checkout: that is bait and switch, a specified dark pattern under India's CCPA 2023 guidelines; every tier must be real and delivered in full.",
+    "Fees added only at checkout so the table looks cheaper: drip pricing is also on the CCPA list; show the full price in the table.",
+    "Using a decoy to fix a problem that is really about the competitor: decoys shape a choice inside your own set; if buyers are comparing you with someone else, fix positioning first.",
+    "Five or more tiers or several decoys: keep three options so the comparison takes one glance."
+   ],
+   "how": [
+    "Pick the target option you want most buyers to choose (usually the middle or best-margin tier).",
+    "Pick the one dimension buyers compare most: price, quantity, sessions, users, delivery speed.",
+    "Shape the decoy close to the target on price but clearly worse on that dimension (e.g. Rs 2,799 for 6 classes beside Rs 2,999 for 12).",
+    "Put decoy and target next to each other and label the target honestly ('Best value per class'; 'Most chosen' only if your sales data says so).",
+    "Use the same units for every tier (per month, per class, per kg) and show per-unit prices when they make the gap obvious (about Rs 467 vs Rs 250 a class).",
+    "Write each tier as an outcome line plus the facts, not just a feature list.",
+    "Ask: would the client happily sell the decoy? If a buyer picks it, it is delivered in full.",
+    "Check the tier split after a month; if the decoy is the best seller, it is mispriced, not a decoy."
+   ],
+   "before": "Pune yoga studio: Drop-in class Rs 400 | Monthly pass, 12 classes, Rs 2,999",
+   "after": "Drop-in class Rs 400 | 6-class pack Rs 2,799 | 12-class monthly pass Rs 2,999 (about Rs 250 a class): best value",
+   "overuse_signs": [
+    "Decoys so obviously bad they insult the buyer",
+    "A 'Most popular' badge on a plan that is not",
+    "Three-tier tables forced onto single-product pages",
+    "Tiers that differ in features nobody understands"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Decoy_effect",
+     "title": "Decoy effect (Wikipedia)",
+     "supports": "an asymmetrically dominated option shifts preference toward the dominating option"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "Gazette of India (30 Nov 2023): Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+     "supports": "bait and switch and drip pricing listed as specified dark patterns (via harvest item comp:ccpa_dark_patterns_2023)"
+    }
+   ],
+   "related": [
+    "tech:price_anchoring",
+    "genre:pricing_page",
+    "genre:offer_stack",
+    "comp:ccpa_dark_patterns_2023"
+   ]
+  },
+  {
+   "id": "tech:descriptive_subheads",
+   "kind": "technique",
+   "name": "Descriptive subheads",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "Write each heading as a short task or statement that tells the reader what the section gives them ('Check your refund status', 'Why refunds get stuck'), so the headings alone read as the outline of the piece. Google's developer style guide uses sentence case, starts task headings with a bare verb ('Create an instance') and concept headings with a noun phrase.",
+   "use_for": [
+    "blog posts, guides and how-to articles",
+    "help-centre and knowledge-base articles",
+    "reports, white papers and scheme explainers",
+    "landing pages and services pages",
+    "long newsletters and LinkedIn articles"
+   ],
+   "avoid": [
+    "Clever or empty labels ('The journey', 'Let's dive in', 'Part 2', 'Final thoughts'): say what the section says.",
+    "Every heading as a question (outside an FAQ that answers real queries): scanners look for answers, not more questions.",
+    "The same keyword jammed into every heading: write for the reader; use the keyword once where it fits.",
+    "Bold body text dressed up as headings, or skipped levels (H2 straight to H4): use real heading levels in order; screen-reader users navigate by them."
+   ],
+   "how": [
+    "Before drafting headings, write each section's takeaway as a full sentence: what does it tell the reader or let them do?",
+    "Shrink each to a heading: task sections start with a verb ('Download your Form 16'); concept sections use a noun phrase or short statement ('Why refunds get stuck').",
+    "Front-load: the first two or three words should identify the section ('Late fee: Rs 50 a day', not 'What you should know about the late fee').",
+    "Use sentence case, no full stop, and keep headings short (aim for under about eight words).",
+    "Read only the headings, in order. If they do not summarise the piece and show its sequence, rewrite the weak ones.",
+    "Keep headings at the same level parallel (all verbs, or all statements).",
+    "H2 for main sections, H3 inside them; never skip a level; no links or code inside headings."
+   ],
+   "before": "Getting started / The details / Things to keep in mind",
+   "after": "Apply for your trade licence online / Upload three documents / Track your application status",
+   "overuse_signs": [
+    "A heading every 50 words, so the page is mostly headings",
+    "Headings that are 15-word sentences",
+    "Headings written as keyword strings",
+    "Every heading starts with 'How to'"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/style/headings",
+     "title": "Google developer documentation style guide: Headings",
+     "supports": "sentence case; task headings start with a bare infinitive ('Create an instance'); conceptual headings use noun phrases; don't skip levels; no links or code in headings (checked 2026-10-04)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/formatting-long-form-content/",
+     "title": "NN/g: Formatting long-form content",
+     "supports": "headings and formatting help users scan long pages"
+    }
+   ],
+   "related": [
+    "tech:front_loading",
+    "tech:f_pattern_scanning",
+    "tech:chunking",
+    "tech:bold_for_skimmers",
+    "edit:style_google_dev"
+   ]
+  },
+  {
+   "id": "tech:descriptive_url_slug",
+   "kind": "technique",
+   "name": "Descriptive URL slug",
+   "status": "current",
+   "level": "line",
+   "summary": "Make the URL path a few readable, hyphen-separated words that describe the page ('/gst-registration-documents'), not IDs, parameters or years that go stale. Google recommends readable words over long ID numbers, hyphens instead of underscores, and words in the audience's language.",
+   "use_for": [
+    "blog posts and articles",
+    "landing, services and location pages",
+    "product and category pages (Shopify, WooCommerce)",
+    "help-centre articles",
+    "campaign pages"
+   ],
+   "avoid": [
+    "Changing the slug of a live page that already ranks or has inbound links: keep it, or add a 301 redirect from the old URL.",
+    "Years and counts in evergreen slugs ('/best-laptops-2024', '/7-tips'): they go stale on the next update; keep the year in the title only. A dated news page ('/union-budget-2026-highlights') is the exception.",
+    "Keyword strings ('/best-cheap-affordable-gst-software-india-online'): 3-5 meaningful words.",
+    "Transliterated Hindi spelled differently from page to page: pick one spelling and record it in the style sheet."
+   ],
+   "how": [
+    "Start from the page's main topic phrase, the words a reader would search ('documents needed for GST registration').",
+    "Lowercase it, drop stop words and filler (for, the, a, of, needed), keep 3-5 meaningful words: 'gst-registration-documents'.",
+    "Separate words with hyphens, never underscores or spaces.",
+    "Remove dates, version numbers and list counts unless the page is permanently about that event or year.",
+    "Use words in the audience's language. For Hindi pages choose either Devanagari (percent-encoded when linked) or one consistent transliteration.",
+    "Mirror the site's structure with a sensible folder ('/help/gst/registration-documents'), but nest no deeper than needed.",
+    "Before publishing, check the slug is unique on the site and still matches the final title."
+   ],
+   "before": "https://example.in/blog/index.php?p=4821&cat=7  or  https://example.in/blog/10_Tips_For_GST_Registration_In_2024",
+   "after": "https://example.in/blog/gst-registration-documents",
+   "overuse_signs": [
+    "Slugs so short they are ambiguous ('/gst')",
+    "Slugs changed on every refresh, breaking old links",
+    "Every slug stuffed with the same head keyword",
+    "Deep folder chains that repeat words ('/gst/gst-help/gst-registration')"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/crawling-indexing/url-structure",
+     "title": "Google Search Central: URL structure best practices",
+     "supports": "readable words rather than long ID numbers; hyphens instead of underscores; words in the audience's language with percent-encoding; trim unnecessary parameters (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tech:title_tag_writing",
+    "tech:meta_description_writing",
+    "tech:keyword_placement",
+    "edit:seo_on_page",
+    "plat:shopify_seo_fields"
+   ]
+  },
+  {
+   "id": "tech:dialogue",
+   "kind": "technique",
+   "name": "Dialogue",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "Let people speak in short lines that sound like them and do a job in the scene: reveal character, raise conflict or move the story. Good dialogue skips the hellos and the obvious, tags with 'said' or an action, and leaves the important thing half-unsaid.",
+   "use_for": [
+    "short stories and fiction",
+    "ad, reel, micro-drama and web-series scripts",
+    "brand stories and customer case studies (the customer's real words)",
+    "feature articles and profiles",
+    "children's books and sketch comedy"
+   ],
+   "avoid": [
+    "'As you know' lines where characters tell each other what both already know, to brief the audience: show it in action, or let one character genuinely not know.",
+    "Transcribed small talk (hi, how are you, fine): enter the scene late, leave early.",
+    "Every character sounding like the writer: vary word choice, rhythm and language mix (one speaks shuddh Hindi, another Hinglish).",
+    "Invented or 'improved' quotes in nonfiction: case studies and features use what the person actually said, trimmed and approved, never rewritten.",
+    "Fancy tags and adverbs (he retorted angrily, she exclaimed): use 'said' or an action beat."
+   ],
+   "how": [
+    "Decide what the scene must change (a decision, a reveal, a shift in who has the upper hand); every line pushes toward it.",
+    "Draft the exchange fast, then cut the first and last lines (greetings, sign-offs).",
+    "Give each speaker a want in the scene and make it hard to get: people dodge, interrupt and answer a different question.",
+    "Make it sound spoken: fragments, contractions, code-switching. Read every line aloud in the character's voice.",
+    "Leave the key feeling unsaid where you can; let an object or a small action carry it (subtext).",
+    "Tag with 'said' or an action beat; with two speakers, drop tags once the pattern is clear.",
+    "Format for the medium: a new paragraph per speaker in prose; NAME + line in scripts; in reels, each line fits one breath.",
+    "In nonfiction, quote verbatim, mark cuts with an ellipsis and get sign-off."
+   ],
+   "before": "Riya told her father that she had resigned from the bank to open a bakery. He was upset and said he did not think it was a good idea.",
+   "after": "\"Papa, I've resigned.\"\nHe kept reading the paper. \"From the bank?\"\n\"From the bank. I'm opening the bakery.\"\nHe turned the page. \"Your mother's cakes were also good. She didn't sell them.\"",
+   "overuse_signs": [
+    "Pages of talk with no action or setting",
+    "Every line a quip or a punchline",
+    "Accents spelled out phonetically for laughs",
+    "Characters explaining the plot to each other"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dialogue",
+     "title": "Dialogue (Wikipedia)",
+     "supports": "dialogue as a literary and dramatic form"
+    }
+   ],
+   "related": [
+    "tech:show_dont_tell",
+    "tech:character_with_a_want",
+    "tech:conflict_and_stakes",
+    "tech:read_aloud",
+    "genre:short_story",
+    "genre:micro_drama_episode_script"
+   ]
+  },
+  {
+   "id": "tech:eeat_first_hand_experience",
+   "kind": "technique",
+   "name": "First-hand experience signals (E-E-A-T)",
+   "status": "current",
+   "level": "piece",
+   "summary": "Show that a real, named person did, used, tested or visited the thing: who wrote it and why they know, how it was tested, original photos and numbers, and what did not work. Google's helpful-content guidance asks whether content shows first-hand expertise and answers who made it, how and why.",
+   "use_for": [
+    "product reviews, best-of roundups and affiliate articles",
+    "travel guides, recipes and how-to posts",
+    "case studies and B2B thought leadership",
+    "money, health and legal topics written with a qualified expert",
+    "any page competing with AI answers that already cover the generic version"
+   ],
+   "avoid": [
+    "Faked experience (stock photos captioned 'our test', an invented '30 days with it'): deceptive, and fake reviews and testimonials are banned under the FTC review rule; if you did not test it, say what you relied on and cite it.",
+    "Credentials as decoration (a list of degrees unrelated to the topic): one line of relevant experience beats a CV.",
+    "A personal story that buries the answer (600 words before the recipe): answer first, then weave the experience into the steps.",
+    "Claiming expert review that did not happen: write 'Reviewed by' only when the expert actually reviewed it."
+   ],
+   "how": [
+    "Before drafting, collect proof from the client or expert: their own photos, test notes, before/after numbers, dates, places, counts, failures. Interview for it.",
+    "Byline the piece with a real name and a short bio carrying the one relevant credential (only if true).",
+    "Add a short 'How we tested' or 'How we know' paragraph: what, how long, which versions, what criteria, what the limits were.",
+    "Put details only an eyewitness knows into the body: the fee that appears at checkout, the step where the app froze, the part that wore out.",
+    "Use original images, labelled with date and place; never pass stock off as your own.",
+    "Say what did not work and who it is not for; a balanced verdict reads as first-hand.",
+    "Disclose how it was made where relevant: affiliate links, sponsorship, AI assistance.",
+    "Have the expert check and approve the final draft before publishing."
+   ],
+   "before": "This mixer grinder is powerful, durable and perfect for Indian kitchens.",
+   "after": "I ground idli batter for a family of five in it every week for three months. Four cups of soaked rice took 11 minutes; the jar got warm but the overload switch never tripped. The chutney jar leaked at the lid twice until I replaced the gasket (Rs 120 at the brand's service centre).",
+   "overuse_signs": [
+    "'As an expert with 20 years of experience' repeated in every section",
+    "Every article opens with a personal anecdote",
+    "First-person claims with no detail behind them",
+    "A methodology section longer than the verdict"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "asks whether content demonstrates first-hand expertise (e.g. from having used a product or visited a place); Who, How and Why: bylines, disclosure of automation/AI, purpose (checked 2026-10-04)"
+    },
+    {
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials",
+     "title": "FTC press release: Final Rule Banning Fake Reviews and Testimonials (14 Aug 2024)",
+     "supports": "bans reviews by people who do not exist or have no actual experience of the product (via harvest item comp:ftc_consumer_reviews_rule)"
+    }
+   ],
+   "related": [
+    "trend:non_commodity_content",
+    "tech:sme_interview",
+    "tech:specificity",
+    "genre:product_review_article",
+    "comp:ftc_consumer_reviews_rule",
+    "comp:google_ai_content_guidance"
+   ]
+  },
+  {
+   "id": "tech:empty_state_copy",
+   "kind": "technique",
+   "name": "Empty-state copy",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "When a screen has nothing to show, the copy says which kind of empty it is (nothing created yet, nothing matches, all done), what will appear here, and gives the one action that fills it. NN/g's guidance: communicate system status, give learning cues, provide a direct path to the key task, and never leave a screen totally blank.",
+   "use_for": [
+    "first-use screens (no orders, invoices, saved items or contacts yet)",
+    "search and filter results with no matches",
+    "inboxes, task lists and notification panels after everything is cleared",
+    "dashboards waiting for data to sync",
+    "WhatsApp or chatbot replies when a lookup returns nothing"
+   ],
+   "avoid": [
+    "A blank area or bare 'No data': users cannot tell empty from loading or broken; state the status.",
+    "'No orders' shown while data is still loading: NN/g warns that misleading status messages damage trust; show a loading state until you know.",
+    "Jokes when empty means a failure (sync error, outage): be plain; keep humour for good-news empties such as inbox zero.",
+    "Three buttons in one empty state: one primary action, at most one secondary link."
+   ],
+   "how": [
+    "Name the empty state you are writing for: first use, user-cleared, no results, or error/unavailable. Each gets different words.",
+    "Headline: the status in plain words ('No invoices yet', 'No results for \"kurta XL\"', 'You're all caught up').",
+    "One line of body: what will appear here and why it matters, or why nothing matched ('Invoices you send show up here with their payment status.').",
+    "One action that fills the screen, labelled verb + object ('Create invoice'); for no-results, the fix ('Clear filters', 'Check the spelling').",
+    "For first use, offer a sample or template to start from when the product has one.",
+    "Keep it to roughly 25 words plus the button.",
+    "Hindi UI follows the same order: 'Abhi koi invoice nahi hai. Invoice bhejne par yahan dikhega.' + button 'Invoice banayein'."
+   ],
+   "before": "No data found.",
+   "after": "No invoices yet\nInvoices you send show up here with their payment status.\n[Create your first invoice]",
+   "overuse_signs": [
+    "A mascot and a joke on every empty screen",
+    "Long tutorials crammed into empty states",
+    "The same generic copy for first use and for no search results",
+    "An empty state with several competing buttons"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/empty-state-interface-design/",
+     "title": "NN/g: Designing Empty States in Complex Applications",
+     "supports": "communicate system status, provide learning cues, give direct pathways for key tasks, don't default to totally empty states, avoid misleading status messages (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tech:button_labels",
+    "tech:error_message_structure",
+    "tech:progressive_disclosure",
+    "genre:ux_microcopy",
+    "genre:onboarding_flow_copy"
+   ]
+  },
+  {
+   "id": "tech:error_message_structure",
+   "kind": "technique",
+   "name": "Error-message structure",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "An error message says what went wrong in plain words, precisely, and how to fix it, shown right next to the problem, without blaming the user and without wiping what they typed. NN/g groups the guidance into visibility, communication (human-readable, precise, constructive, no blame) and efficiency (preserve input, suggest the fix).",
+   "use_for": [
+    "form validation and sign-up flows",
+    "payment and UPI failures",
+    "upload, login and OTP errors",
+    "outage and maintenance messages",
+    "chatbot and WhatsApp bot fallback replies"
+   ],
+   "avoid": [
+    "'Something went wrong', 'An error occurred' or a bare code: say what failed and the next step; put the code after the human line for support.",
+    "Blame words ('You entered an invalid PIN', 'Illegal input'): describe the problem and the fix ('That PIN doesn't match').",
+    "Cute copy during a payment failure or data loss: stay calm and plain (NN/g reserves novelty for total outages, to soften them).",
+    "Showing errors while the user is still typing: validate when they leave the field or submit.",
+    "Clearing the form after an error: keep the input and highlight only the field to fix."
+   ],
+   "how": [
+    "Write the cause in one sentence for yourself, then decide what the user can do. If they can do nothing, say what you are doing and when to try again.",
+    "Line 1, what happened, in the user's words: 'Your payment didn't go through.'",
+    "Line 2, why, only if it helps them fix it: 'Your bank declined it.'",
+    "Line 3, the fix as an instruction with a verb, plus a button or link that does it: 'Try another card or pay with UPI.'",
+    "Reassure on the thing they fear most, only if true: 'You haven't been charged.'",
+    "Place it inline next to the field; use a page banner for page-level problems; keep modal dialogs for severe ones.",
+    "Strip blame words: invalid, illegal, wrong, failed (applied to the user), you must.",
+    "Hindi or Hinglish keeps the same order: 'Payment nahi hua. Aapke paise nahi kate. UPI se dobara try karein.'"
+   ],
+   "before": "Error 402: Transaction failed. Invalid input.",
+   "after": "Your payment didn't go through, and you haven't been charged. Check the card's expiry date or pay with UPI instead. [Pay with UPI]",
+   "overuse_signs": [
+    "Long apologies before the fix",
+    "Every error starts with 'Oops!'",
+    "Messages that explain internals ('database timeout') to customers",
+    "A help-centre link instead of the fix"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/error-message-guidelines/",
+     "title": "NN/g: Error-Message Guidelines",
+     "supports": "display near the error; human-readable, precise, constructive, no blame; preserve user input; suggest fixes; novelty only for dire situations (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "genre:error_messages",
+    "tech:button_labels",
+    "tech:plain_language",
+    "tech:positive_form",
+    "tech:empty_state_copy"
+   ]
+  },
+  {
+   "id": "tech:ethical_comment_prompt",
+   "kind": "technique",
+   "name": "Ethical comment prompt",
+   "status": "current",
+   "level": "line",
+   "summary": "End a post with one specific question your audience can answer from their own experience in a line ('Which tax decision confused you most in your first salaried year?'), not goading lines like 'Comment YES', 'Tag 3 friends' or 'Like if you agree'. Meta said in 2017 that Facebook demotes engagement bait, while posts asking for help, advice or recommendations are not affected.",
+   "use_for": [
+    "LinkedIn posts and Instagram captions",
+    "Facebook page and group posts",
+    "YouTube community posts and WhatsApp channel posts",
+    "newsletter sign-offs that invite replies",
+    "community posts (Discord, Circle, Skool)"
+   ],
+   "avoid": [
+    "Engagement bait ('Comment YES', 'Tag someone who needs this', 'Share if you agree', 'Like for part 2'): demoted on Facebook since Meta's 2017 update and it cheapens the brand; ask a real question instead.",
+    "Questions too broad to answer quickly ('Thoughts?', 'Agree?', 'What do you think about AI?'): ask about one experience or a choice between two options.",
+    "Asking and then ignoring the replies: answer early comments, or people learn not to reply.",
+    "Keyword-comment automations ('Comment GUIDE and I'll DM it'): this trades a reward for a comment; check the platform's current rules first and always deliver exactly what was promised.",
+    "Questions that draw out private details in public (salary, loan amount, health): ask about choices and opinions instead."
+   ],
+   "how": [
+    "Decide what you want from the comments (a story, a preference, a tip); the question must belong to the post's topic.",
+    "Make it specific and answerable in one line: a choice ('Tally or Zoho for a 5-person firm?'), a memory ('What did your first salary go on?'), a tip ('One thing you check before signing a rent agreement?').",
+    "Keep it quick to answer and free of private information.",
+    "Answer it yourself first, in the post or the first comment, to show the shape of a good reply.",
+    "Put it last, on its own line, once; one question per post.",
+    "Reply to the early comments.",
+    "Hinglish works: 'Aapki pehli salary kis cheez pe gayi thi? Meri: mummy ke liye mixer grinder.'"
+   ],
+   "before": "Comment 'YES' if you agree and tag 3 friends who need to see this!",
+   "after": "Mine was choosing between the old and new tax regimes in my first job. Which tax decision confused you most in your first year of salary?",
+   "overuse_signs": [
+    "Every post ends with a question",
+    "Questions unrelated to the post, there only to farm comments",
+    "'Thoughts?' as a reflex sign-off",
+    "Questions that invite people to post personal financial details"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://about.fb.com/news/2017/12/news-feed-fyi-fighting-engagement-bait-on-facebook/",
+     "title": "Meta: Fighting Engagement Bait on Facebook (Dec 2017)",
+     "supports": "engagement bait demoted in News Feed; posts asking for help, advice or recommendations are not adversely affected (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tech:rhetorical_question",
+    "tech:you_focus",
+    "genre:instagram_caption",
+    "genre:linkedin_post",
+    "genre:facebook_post"
+   ]
+  },
+  {
+   "id": "tech:ethical_scarcity",
+   "kind": "technique",
+   "name": "Ethical scarcity",
+   "status": "current",
+   "level": "line",
+   "summary": "State a real limit plainly, with the number, the reason and what happens when it runs out ('120 dupattas in this batch; 47 left as of 9 am; next batch in March'). Scarcity persuades (it is one of Cialdini's principles), which is exactly why fake stock counters count as dark patterns in the FTC staff report and as 'false urgency' under India's CCPA 2023 guidelines.",
+   "use_for": [
+    "small-batch D2C products (food, handloom, crafts, limited drops)",
+    "cohort courses, workshops and events with real capacity",
+    "service businesses with limited slots (a CA firm taking 10 new clients a quarter)",
+    "pre-orders and waitlists",
+    "festive and seasonal stock"
+   ],
+   "avoid": [
+    "Fake counters ('Only 2 left!', '30 people are viewing this') that are not wired to real stock: the CCPA gazette's own false-urgency illustration is a fake 'only 2 rooms left' line; show the live number or nothing.",
+    "A 'limited edition' that restocks every month: say 'restocks monthly' instead.",
+    "Scarcity with no reason given: say why it is limited (handwoven, one harvest, one coach).",
+    "Scarcity before the reader wants the product: make the case first; scarcity only speeds up a decision already forming."
+   ],
+   "how": [
+    "Ask the client for the real limit and its record: stock count, seat list, coach hours, harvest size. No real limit means no scarcity line; use another true reason to act (tech:reason_why).",
+    "State the number and the unit ('24 seats', '200 jars').",
+    "Give the reason in one clause ('each saree takes three weeks on the loom').",
+    "If you show what is left, tie it to the live count and give an 'as of' time; never hard-code a remaining number.",
+    "Say what happens when it is gone ('Next batch: March. Join the waitlist.').",
+    "Place it near the CTA, once; do not repeat it in every paragraph.",
+    "Keep the evidence (stock sheet, booking list) on file in case a customer, ASCI or CCPA asks."
+   ],
+   "before": "HURRY!!! Only 3 left! Selling out fast! (on a product with 2,000 units in the warehouse)",
+   "after": "This indigo batch is 120 dupattas, hand-block printed in Bagru over two weeks. 47 are left as of 9 am today. When they're gone, the next batch is in March.",
+   "overuse_signs": [
+    "A scarcity line on every product page",
+    "Stock counter, countdown and 'others are viewing' stacked on one page",
+    "'Few left' numbers that never go down",
+    "Scarcity claimed for a digital product with unlimited copies"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "scarcity is one of the seven principles"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Scarcity_(social_psychology)",
+     "title": "Scarcity (social psychology) (Wikipedia)",
+     "supports": "why perceived scarcity raises value"
+    },
+    {
+     "url": "https://www.ftc.gov/reports/bringing-dark-patterns-light",
+     "title": "FTC staff report: Bringing Dark Patterns to Light",
+     "supports": "fake scarcity and urgency treated as dark patterns"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "Gazette of India (30 Nov 2023): Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+     "supports": "false urgency includes fake scarcity or popularity, illustrated by an 'Only 2 rooms left' message (via harvest item comp:ccpa_dark_patterns_2023)"
+    }
+   ],
+   "related": [
+    "tech:ethical_urgency",
+    "tech:reason_why",
+    "comp:ccpa_dark_patterns_2023",
+    "comp:asci_code",
+    "hook:fomo"
+   ]
+  },
+  {
+   "id": "tech:ethical_urgency",
+   "kind": "technique",
+   "name": "Ethical urgency (real deadlines)",
+   "status": "current",
+   "level": "line",
+   "summary": "Give a true, dated reason to act now (price rises on a date, enrolment closes, festive delivery cut-off) and say what happens after it. Countdown timers that reset and 'today only' offers that run every day are dark patterns in the FTC staff report and fall under 'false urgency' in India's CCPA 2023 guidelines.",
+   "use_for": [
+    "promotional and last-day emails",
+    "launch sequences and sales pages",
+    "WhatsApp broadcasts and SMS",
+    "festive sale ads",
+    "event, webinar and cohort registrations",
+    "renewal reminders"
+   ],
+   "avoid": [
+    "Timers that reset on reload, or 'ends tonight' every night: false urgency; use the real date or drop the timer.",
+    "Urgency without a deadline ('Act now!', 'Hurry!'): give day, date, time and timezone.",
+    "'Final' deadlines that keep getting extended: if you must extend, say so and why; repeated extensions teach buyers to wait.",
+    "Pressure on high-stakes decisions (loans, insurance, health): state the deadline as a fact and let the reader decide; regulated sectors have their own rules (check the comp: cards)."
+   ],
+   "how": [
+    "Find the real deadline and the real consequence: price change, seat cap, last courier date, cohort start, filing due date. If none exists, do not invent one.",
+    "Write the deadline in full: 'Friday 9 Oct, 11:59 pm IST'.",
+    "Say what changes afterwards: 'From Saturday the price is Rs 4,499' or 'Orders after this won't arrive before Diwali'.",
+    "Give the reason the deadline exists: 'the batch starts Monday', 'courier cut-off'.",
+    "Put it next to the CTA, and in the subject line or first line of the last-day message.",
+    "Sequence it: announce early, remind once mid-way, final reminder on the last day. Not five 'last chance' emails.",
+    "Honour it: close the offer when you said you would."
+   ],
+   "before": "HURRY! Offer ends soon! Don't miss out!!!",
+   "after": "Early-bird price of Rs 3,499 ends Friday 9 Oct at 11:59 pm IST. From Saturday the workshop is Rs 4,499, and the batch starts on Monday 12 Oct.",
+   "overuse_signs": [
+    "Every email in a sequence is a 'last chance'",
+    "Urgency words stacked in one line (now, today, hurry, last)",
+    "A deadline in the subject line but missing from the body",
+    "Deadlines on evergreen products that have no real cut-off"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.ftc.gov/reports/bringing-dark-patterns-light",
+     "title": "FTC staff report: Bringing Dark Patterns to Light",
+     "supports": "fake countdown timers and false urgency are dark patterns"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Dark_pattern",
+     "title": "Dark pattern (Wikipedia)",
+     "supports": "catalogue of manipulative urgency patterns to avoid"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "Gazette of India (30 Nov 2023): Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+     "supports": "false urgency, including fake time-limited sales, is a specified dark pattern (via harvest item comp:ccpa_dark_patterns_2023)"
+    }
+   ],
+   "related": [
+    "tech:ethical_scarcity",
+    "tech:cta_writing",
+    "hook:urgency_deadline",
+    "comp:ccpa_dark_patterns_2023",
+    "genre:launch_sequence",
+    "genre:promotional_email"
+   ]
+  },
+  {
+   "id": "tech:f_pattern_scanning",
+   "kind": "technique",
+   "name": "Writing for the F-pattern",
+   "status": "current",
+   "level": "piece",
+   "summary": "NN/g's eyetracking found many readers scan text-heavy pages in an F shape: across the top, across again lower down, then down the left edge. Write so a scanner still gets the point: the answer early, meaning in headings, in the first sentence of each paragraph and the first words of each line, plus lists, bold and tables as extra entry points.",
+   "use_for": [
+    "blog posts and how-to articles",
+    "help-centre articles and FAQs",
+    "landing pages and services pages",
+    "emails and newsletters",
+    "reports and scheme explainers read on screen"
+   ],
+   "avoid": [
+    "Treating the F as a layout to aim for (stuffing keywords down the left edge): NN/g presents it as a symptom of unstructured text; the cure is structure that lets readers find what they need.",
+    "Turning everything into bullets and bold: when everything is highlighted, nothing is; keep paragraphs where the reasoning matters.",
+    "Fiction, essays and long-form features read line by line: write for reading, not scanning."
+   ],
+   "how": [
+    "Put the main point and the action in the first two paragraphs.",
+    "Break the page with descriptive subheads every few paragraphs.",
+    "Start each paragraph with its point; details follow.",
+    "Front-load headings, bullets and links with the information-carrying words.",
+    "Use lists for parallel items, bold for the few phrases a skimmer must not miss, tables for comparisons.",
+    "Keep on-screen paragraphs short (two to four sentences).",
+    "Test: read only the headings, first sentences and bold text. If that does not give the gist and the next step, move the key information into those places."
+   ],
+   "before": "In this article, we'll take a look at some of the various factors you should consider when you're thinking about choosing between the old and the new tax regimes this year.",
+   "after": "Choose the regime that gives you the lower tax for your deductions; the calculator below compares both in a minute. Section 2 lists the deductions only the old regime allows.",
+   "overuse_signs": [
+    "Every paragraph a single sentence",
+    "Bold on every other phrase",
+    "A subhead every 40 words",
+    "Prose chopped into bullets that lose the 'because'"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/",
+     "title": "NN/g: F-Shaped Pattern of Reading on the Web",
+     "supports": "eyetracking finding and how to design text against it"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/text-scanning-patterns-eyetracking/",
+     "title": "NN/g: Text Scanning Patterns",
+     "supports": "other scanning patterns (layer-cake, spotted and others)"
+    }
+   ],
+   "related": [
+    "tech:front_loading",
+    "tech:descriptive_subheads",
+    "tech:bold_for_skimmers",
+    "tech:answer_first_paragraph",
+    "tech:paragraph_inverted_pyramid",
+    "tech:chunking"
+   ]
+  },
+  {
+   "id": "tech:faq_block",
+   "kind": "technique",
+   "name": "FAQ block",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "A short question-and-answer section, usually near the end of a page, that answers the follow-up questions real readers still have, in their own wording, with each answer opening on the direct answer. Google stopped showing the FAQ rich result from 7 May 2026, so write FAQs for readers and for answer extraction, not to win space on the results page.",
+   "use_for": [
+    "services, product and pricing pages",
+    "government scheme and policy explainers",
+    "course, event and booking pages",
+    "blog posts with predictable follow-up questions",
+    "help-centre landing pages"
+   ],
+   "avoid": [
+    "Invented questions that exist to repeat a keyword ('Why is XYZ the best GST software in India?'): use questions customers actually ask (support tickets, sales calls, comments, site search, People Also Ask).",
+    "Moving core information into the FAQ (price, eligibility, what is included): the body carries the main facts; the FAQ handles edge cases and objections.",
+    "Long answers that bury the reply: lead with yes, no or the number, then two to four sentences; link to depth.",
+    "Promising the client an FAQ rich result from FAQ markup: Google no longer shows it (since May 2026)."
+   ],
+   "how": [
+    "Collect questions from real sources: support tickets, WhatsApp queries, sales-call notes, post comments, site search, People Also Ask. Keep people's exact wording, Hinglish included.",
+    "Pick the 4-8 the page body does not already answer clearly.",
+    "Write each question the way the reader would ask it ('Can I pay in instalments?').",
+    "Open each answer with the direct answer (Yes / No / the figure), then the condition or detail in two to four sentences, then a link if more is needed.",
+    "Keep facts consistent with the body; mark time-sensitive answers with an 'as of' date.",
+    "Order by how often each is asked, or by the buyer's sequence (before buying, payment, after buying).",
+    "Make each question a real heading (or an accordion whose text is in the page HTML) so readers and machines can find it.",
+    "Review the block when new support questions pile up; delete questions nobody asks."
+   ],
+   "before": "Q: Why is Sharma & Co. the best choice for all your taxation needs?\nA: Sharma & Co. offers world-class, best-in-class services with a customer-first approach.",
+   "after": "Q: Can you still file my income tax return if I missed the 31 July deadline?\nA: Yes. You can file a belated return, with a late fee. Send us your Form 16 and bank statements and we'll file within 3 working days.",
+   "overuse_signs": [
+    "The same five FAQs pasted on every page",
+    "Questions phrased as sales pitches",
+    "Answers that open with 'Great question!'",
+    "An FAQ longer than the page above it"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/updates",
+     "title": "Google Search Central: Latest documentation updates",
+     "supports": "FAQ rich result deprecated: no longer appears in Google Search starting May 7, 2026; docs removed June 2026 (harvest)"
+    }
+   ],
+   "related": [
+    "genre:faq_page",
+    "genre:faq_answer_article",
+    "tech:answer_first_paragraph",
+    "tech:voice_of_customer_mining",
+    "tech:schema_friendly_formatting",
+    "trend:geo_ai_search"
+   ]
+  },
+  {
+   "id": "tech:features_to_benefits",
+   "kind": "technique",
+   "name": "Features to benefits",
+   "status": "current",
+   "level": "line",
+   "summary": "For each feature (what the product is or has), write what it does for this reader and what that means in their day, lead with that outcome, and keep the feature right after it as proof. Good benefit lines are specific to the feature and the reader, never generic 'saves time, peace of mind'.",
+   "use_for": [
+    "product descriptions and marketplace bullets",
+    "landing pages and sales pages",
+    "ads and social captions",
+    "B2B one-pagers, sales decks and pitch decks",
+    "services pages"
+   ],
+   "avoid": [
+    "Benefits so generic they fit any product ('saves time', 'hassle-free'): tie each benefit to its feature and to this reader's situation.",
+    "Dropping features altogether: technical buyers (engineers, procurement, CA firms) need specs to believe the benefit; keep the feature as proof and a spec table below.",
+    "Promising a benefit the feature cannot prove (health, income, speed figures from nowhere): substantiate it from the client's data or cut it.",
+    "Benefit lines that exaggerate the spec: check the arithmetic and the test data before writing the number."
+   ],
+   "how": [
+    "List every feature in one column: specs, components, inclusions, service terms.",
+    "Next to each, ask 'so what?' from the reader's side and write the answer; ask again until you reach something they would say out loud (feature -> what it does -> what that means for them).",
+    "Make the benefit concrete: time, money, effort, status, or a scene from their day. Use customers' own words where you have them.",
+    "Rank benefits by what this audience cares about most; lead with the top one.",
+    "Write each line benefit first, feature as proof: '[benefit]: [feature that makes it true]'.",
+    "One benefit per bullet; keep full specs in a separate table for the buyers who compare.",
+    "Check each benefit is true for a typical buyer and backed by the client's data."
+   ],
+   "before": "Features: 10,000 mAh battery, 22.5W fast charging, 2 USB ports.",
+   "after": "A full charge for your phone on the Mumbai-Delhi train, with enough left for your co-passenger's: 10,000 mAh battery, 22.5W fast charging, two USB ports.",
+   "overuse_signs": [
+    "Every line starts with 'Imagine'",
+    "Benefits that inflate the spec",
+    "No specs anywhere, so comparison shoppers leave",
+    "Emotional benefits on a purely functional purchase (a screw that 'transforms your life')"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://my.copyblogger.com/wp-content/uploads/2020/08/Copywriting-101.pdf",
+     "title": "Copyblogger: Copywriting 101 (ebook)",
+     "supports": "move past what a product is to what it does for the buyer"
+    }
+   ],
+   "related": [
+    "fw:fab",
+    "tech:so_what_test",
+    "tech:you_focus",
+    "tech:specificity",
+    "tech:voice_of_customer_mining",
+    "genre:product_description"
+   ]
+  },
+  {
+   "id": "tech:first_line_above_fold",
+   "kind": "technique",
+   "name": "First line above the fold",
+   "status": "current",
+   "level": "line",
+   "summary": "On social feeds only the opening of a post or caption shows before 'see more', so the first line must work alone: a specific claim, result, promise or question that makes the reader tap. Scanners decide from the first words (NN/g); exact truncation points belong to the platform cards.",
+   "use_for": [
+    "LinkedIn posts",
+    "Instagram and Facebook captions",
+    "YouTube descriptions and community posts",
+    "WhatsApp channel and Telegram channel posts",
+    "email preview text"
+   ],
+   "avoid": [
+    "Spending the line on greetings, context or the company name ('Hello LinkedIn family!', 'At Sharma & Co., we believe...'): open with the point.",
+    "A promise the body does not keep ('You won't believe what happened next'): the rest of the post must pay off the line.",
+    "Opening with hashtags, links or @mentions: they push the hook out of view.",
+    "Writing a teaser for a format that shows the whole text anyway (a short X post): match the platform."
+   ],
+   "how": [
+    "Write the whole post first. Then find its most surprising, useful or specific sentence; it is often the right first line.",
+    "Make it complete on its own: someone who reads only this line should know the topic and why it matters to them.",
+    "Put the key words in the first five to seven words; truncation varies by platform and screen, so assume little shows (check the plat: cards).",
+    "Use a specific: a number, a name, a place, a result ('We answered 312 GST notices this year').",
+    "Follow with a line break and a second line that pulls into the body.",
+    "Preview it on a phone in the real app before posting.",
+    "Hinglish works the same: 'GST notice aaya? Reply karne se pehle ye 3 cheezein check karo.'"
+   ],
+   "before": "Excited to share some reflections on our journey this year! At Sharma & Co. we have always believed that...",
+   "after": "We answered 312 GST notices this year. Nine in ten came from the same mismatch.\n\nHere's the one check that would have prevented them:",
+   "overuse_signs": [
+    "Every post opens with a one-word line ('Wow.', 'Unpopular opinion:')",
+    "Fake-dramatic openers on routine news",
+    "A line break after every three words",
+    "The hook promises more than the post delivers"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/",
+     "title": "NN/g: First 2 Words, a signal for the scanning eye",
+     "supports": "readers decide from the first words whether to continue"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "title": "LinkedIn Help: Post and share updates",
+     "supports": "how posts are composed and displayed"
+    }
+   ],
+   "related": [
+    "tech:front_loading",
+    "tech:mobile_line_breaks",
+    "hook:curiosity_gap",
+    "plat:linkedin_post",
+    "plat:instagram_caption",
+    "genre:linkedin_post"
+   ]
+  },
+  {
+   "id": "tech:foreshadowing",
+   "kind": "technique",
+   "name": "Foreshadowing (plant and payoff)",
+   "status": "current",
+   "level": "piece",
+   "summary": "Plant a detail early (an object, a line, a habit, a number) that pays off later, so the ending feels earned instead of convenient, and cut weighted details that never pay off (the principle known as Chekhov's gun). In a short script the plant can be one line or one frame in the opening beat.",
+   "use_for": [
+    "short stories, novels and flash fiction",
+    "ad films, reels and micro-drama scripts with a reveal",
+    "brand stories and founder stories",
+    "speeches and talks that close on a callback",
+    "case studies with a turn"
+   ],
+   "avoid": [
+    "Plants so heavy the audience guesses the ending in the first line: hide the plant inside a scene that is doing something else.",
+    "Payoffs with no plant (the rescue or answer appears from nowhere): go back and plant it.",
+    "Weighted details that go nowhere in short formats: in a 30-second script every named object is a promise; pay it off or cut it."
+   ],
+   "how": [
+    "Write the ending or reveal first, then list what the audience must already know or have seen for it to land.",
+    "Plant each item early, inside a moment that has another job, so it reads as ordinary detail.",
+    "Space it: introduce, remind once lightly in the middle, pay off near the end.",
+    "Make the payoff use the plant in a new way or with a new meaning.",
+    "Audit the draft: list every detail you gave weight to (a named object, a repeated line, a close-up). Each one pays off or goes.",
+    "In ads and reels the plant is often a line or a prop in the first beat and the payoff lands on the end card."
+   ],
+   "before": "At the party, Dadaji's old radio suddenly started working and played his favourite song. (no earlier mention of the radio)",
+   "after": "Opening: \"Dadaji's Murphy radio sat on the shelf, silent since 1998. He still dusted it every Sunday.\" ... Ending: \"On his 80th birthday, Aarav came home with a small brown box from Lamington Road. Dadaji dusted the radio one more time. It hummed.\"",
+   "overuse_signs": [
+    "Clues the camera or narrator points at too obviously",
+    "Every single detail paid off, so the story feels mechanical",
+    "Plants explained twice in case the audience missed them"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Foreshadowing",
+     "title": "Foreshadowing (Wikipedia)",
+     "supports": "definition of the device"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Chekhov%27s_gun",
+     "title": "Chekhov's gun (Wikipedia)",
+     "supports": "every planted element should pay off"
+    }
+   ],
+   "related": [
+    "tech:callback",
+    "tech:twist_reveal",
+    "tech:open_loop",
+    "tech:show_dont_tell",
+    "genre:short_story",
+    "genre:short_film_script"
+   ]
+  },
+  {
+   "id": "tech:form_labels_helper_text",
+   "kind": "technique",
+   "name": "Form labels and helper text",
+   "status": "current",
+   "level": "line",
+   "summary": "Give every field a visible label outside the box that stays put while the user types ('Mobile number'), put format rules and reasons in helper text that is always visible ('We'll send a 6-digit OTP here'), and never use placeholder text as the label: NN/g lists how it vanishes on typing, strains memory, blocks checking and looks like a pre-filled value.",
+   "use_for": [
+    "sign-up, login and checkout forms",
+    "KYC, loan and application forms",
+    "lead forms on landing pages",
+    "settings and profile screens",
+    "WhatsApp Flows and chatbot forms"
+   ],
+   "avoid": [
+    "Placeholder as label (grey 'Enter mobile no.' inside an unlabelled box): the instruction disappears as soon as they type; use a visible label.",
+    "Format rules revealed only in the error ('Password must contain...'): state them up front in helper text.",
+    "Fields the purpose does not need (date of birth for a newsletter): cut them; India's DPDP Act expects you to collect only the personal data the stated purpose needs (see comp:dpdp_act_rules).",
+    "Chatty question labels on serious forms ('What should we call you?'): plain nouns are faster to scan."
+   ],
+   "how": [
+    "Label each field with a short noun phrase in sentence case: 'Full name (as on PAN)', 'Mobile number', 'PIN code'. Add a qualifier only when it changes what they type.",
+    "Place the label above the field, visible at all times.",
+    "Add helper text only where people go wrong: format ('DD/MM/YYYY'), the reason you ask ('We send the OTP here'), constraints ('At least 8 characters, including a number'). Keep it visible, between label and field or just under the field.",
+    "Mark the minority: if most fields are required, mark the optional ones '(optional)'; otherwise mark the required ones.",
+    "Use placeholder text only for an example value, if at all, never for anything they need while typing.",
+    "Make error messages reuse the helper text's wording.",
+    "Bilingual forms: one script per locale, or both scripts in a consistent order; never half-and-half in one label."
+   ],
+   "before": "[ Enter mobile no. ]  [ DOB ]  [ Password ]   (placeholders only, no labels)",
+   "after": "Mobile number\nWe'll send a 6-digit OTP to this number.\n[            ]\n\nDate of birth (DD/MM/YYYY)\n[            ]\n\nPassword\nAt least 8 characters, including a number.\n[            ]",
+   "overuse_signs": [
+    "Helper text under every field, including 'Name'",
+    "Legal paragraphs used as helper text",
+    "Labels in ALL CAPS",
+    "Helper text repeating the label ('Email: enter your email')"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/form-design-placeholders/",
+     "title": "NN/g: Placeholders in Form Fields Are Harmful",
+     "supports": "seven problems with placeholders as labels; recommends visible labels outside fields with hints always visible (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tech:error_message_structure",
+    "tech:button_labels",
+    "genre:ux_microcopy",
+    "genre:order_form_checkout_copy",
+    "comp:dpdp_act_rules",
+    "edit:accessible_writing_check"
+   ]
+  },
+  {
+   "id": "tech:freewriting",
+   "kind": "technique",
+   "name": "Freewriting",
+   "status": "current",
+   "level": "piece",
+   "summary": "Before drafting, write nonstop for a short, fixed time without editing, judging or fixing spelling, to find what you actually think and pull up raw material; then mine it for the angle, the story and the best lines. The method: a time limit (Wikipedia gives one to twenty minutes), keep writing, ignore grammar and style. Julia Cameron's 'morning pages' made it widely known.",
+   "use_for": [
+    "finding the angle for a column, essay, speech or brand story",
+    "breaking a block on any long piece",
+    "personal essays, memoir and ghostwritten books",
+    "processing an expert interview before outlining",
+    "generating hook and headline candidates"
+   ],
+   "avoid": [
+    "Sending the freewrite as the draft: it is raw material; outline and rewrite it.",
+    "Freewriting fixed-format items (a meta description, a button label, a subject line): use the template and the card's rules.",
+    "Freewriting instead of research: facts still need sources; flag anything you 'remember' for checking."
+   ],
+   "how": [
+    "Set a timer (10-15 minutes). Write a prompt at the top: the topic plus one honest question ('What do first-time GST filers really get wrong?').",
+    "Write without stopping. If stuck, repeat the last word or write 'what I really mean is...' until something comes. No deleting, no fixing, no looking things up.",
+    "Write in the language you think in; Hindi, Hinglish and English mixed are all fine.",
+    "Stop when the timer ends and step away briefly.",
+    "Re-read with a highlighter: mark surprising sentences, concrete images, strong opinions and any line that sounds like a person talking.",
+    "Take the best line as the seed for a second, shorter round, or as the thesis or hook.",
+    "Turn the highlights into an outline and draft properly.",
+    "For an AI writer: run a private freewrite pass from the brief and interview notes before outlining, keep it out of the deliverable, and use it only to find the angle."
+   ],
+   "before": "Topic: why small shops should go digital. Opening line: 'In today's digital age, going online is essential for every business.'",
+   "after": "Opening line found in a 10-minute freewrite: 'My father's paint shop in Kota kept its udhaar book until 2019. The monsoon the book got wet, he lost track of Rs 1.8 lakh.'",
+   "overuse_signs": [
+    "The final piece reads like a stream of consciousness",
+    "Endless freewrites, no draft",
+    "Tangents kept because they were fun to write, not because they serve the reader"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Free_writing",
+     "title": "Free writing (Wikipedia)",
+     "supports": "method: time limit of one to twenty minutes, keep writing, ignore grammar, spelling and style; popularised by Julia Cameron's 'morning pages' (The Artist's Way, 1992) (checked 2026-10-04)"
+    }
+   ],
+   "related": [
+    "tech:zero_draft",
+    "tech:outlining",
+    "tech:anecdote_lead",
+    "tech:swipe_file",
+    "genre:personal_essay"
+   ]
+  },
+  {
+   "id": "tech:front_loading",
+   "kind": "technique",
+   "name": "Front-loading",
+   "status": "current",
+   "level": "line",
+   "summary": "Put the words that carry the meaning at the start of every heading, link, bullet, sentence and paragraph, so a scanning reader gets the point from the first few words. GOV.UK tells writers to put the most important information first; NN/g's scanning research shows readers judge a line by its first words.",
+   "use_for": [
+    "headings and subheads",
+    "link text and buttons",
+    "bullets and lists",
+    "email subject lines and push notifications",
+    "first sentences of paragraphs",
+    "search titles and snippets"
+   ],
+   "avoid": [
+    "Starting every bullet with the same word ('GST registration...', 'GST returns...', 'GST notices...'): if the heading already says it, drop it and lead with what differs.",
+    "Jokes, stories and speeches that depend on the build-up: there the punch goes last (tech:punchline_last).",
+    "Front-loading the brand name or jargon: lead with what the reader is looking for, not what you want to say."
+   ],
+   "how": [
+    "For each line, name the two or three words this reader is looking for (the task, the number, the outcome, the name).",
+    "Move them to the start; push context, conditions and attribution to the end ('Refunds take 7 working days, the bank says', not 'According to the bank, refunds take...').",
+    "Cut empty openers: 'Please note that', 'In order to', 'It is important to', 'Click here to', 'Learn more about'.",
+    "Headings and links begin with the information word ('Late fees for GST returns', not 'Information about late fees').",
+    "Bullets begin with the word that distinguishes them ('Free delivery over Rs 499', 'Returns within 7 days').",
+    "Paragraphs open with their point; supporting detail follows.",
+    "Check: cover everything after the first three words of each line. Can you still tell the lines apart and know what each one is about?"
+   ],
+   "before": "Please note that, as per the revised policy, all cancellation requests must be made at least 48 hours prior to check-in.",
+   "after": "Cancellations: at least 48 hours before check-in (revised policy).",
+   "overuse_signs": [
+    "Prose that reads like a list because every sentence starts with a keyword",
+    "Headings that sound unnatural ('GST late fee India 2026 rules')",
+    "Every sentence starting with a number"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-structure/",
+     "title": "GOV.UK: Create a clear structure",
+     "supports": "frontload your content: put the most important information first"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/",
+     "title": "NN/g: First 2 Words, a signal for the scanning eye",
+     "supports": "scanners read the first words of lines"
+    }
+   ],
+   "related": [
+    "tech:f_pattern_scanning",
+    "tech:descriptive_subheads",
+    "tech:button_labels",
+    "tech:anchor_text",
+    "tech:paragraph_inverted_pyramid",
+    "edit:style_gov_uk"
+   ]
+  },
+  {
+   "id": "tech:future_pacing",
+   "kind": "technique",
+   "name": "Future pacing",
+   "status": "current",
+   "level": "paragraph",
+   "summary": "Walk the reader through one specific, ordinary moment after they have the result, in second person and present tense, so the outcome feels real ('It's the 20th. Your return went in on the 11th...'). The term comes from NLP, which has weak scientific support: use it as a way to make a benefit concrete, not as a proven mechanism, and never picture results the product cannot deliver.",
+   "use_for": [
+    "sales pages and VSL scripts",
+    "service, course and coaching landing pages",
+    "nurture and launch emails",
+    "real-estate and travel copy",
+    "fundraising appeals (picture the impact of the gift)"
+   ],
+   "avoid": [
+    "Picturing outcomes a typical buyer will not get (income, weight loss, guaranteed marks): that is a misleading claim under India's ad rules; future-pace only the typical, provable result.",
+    "Generic dream scenes ('Imagine living your best life'): one specific, ordinary moment beats a fantasy.",
+    "'Imagine...' in every section: once per piece, where desire peaks, before the offer.",
+    "Using it before the reader understands what the product is: explain the offer first."
+   ],
+   "how": [
+    "Pick the most tangible result a typical customer gets, from testimonials or the client's data, not the best case.",
+    "Choose one moment in the buyer's life where that result shows: a day, a place, other people, a small detail.",
+    "Write it in second person, present tense, three to five sentences.",
+    "Add one sensory or social detail (who notices, what they say, what you no longer have to do).",
+    "Optionally contrast quietly with today ('...instead of chasing three clients on WhatsApp').",
+    "Place it after the problem and the solution are clear, right before proof or the offer.",
+    "Check against the claim rules: could a typical buyer live this scene? If not, scale it down."
+   ],
+   "before": "Our bookkeeping service will make your life easier and give you peace of mind.",
+   "after": "It's the 20th. Your GST return went in on the 11th, your books are reconciled, and the only message from us is a two-line summary. You spend the evening on the new menu instead of hunting for last month's bills.",
+   "overuse_signs": [
+    "Every section opens with 'Imagine'",
+    "Luxury fantasies (sports cars, beach villas) unrelated to the product",
+    "Scenes no typical customer will ever see",
+    "Future-pacing stacked with fake urgency"
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://medium.com/@olsenrec/how-to-use-future-pacing-to-help-your-prospect-imagine-a-better-life-f2262f41acfb",
+     "title": "How to use future pacing to help your prospect imagine a better life (Medium)",
+     "supports": "practitioner description; term borrowed from NLP (secondary, low confidence; 403 to scripted fetch, URL seen in search results 2026-10-04)"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "Gazette of India: CCPA Guidelines for Prevention of Misleading Advertisements, 2022",
+     "supports": "claims must be truthful and capable of substantiation (via harvest item comp:ccpa_misleading_ads_2022)"
+    }
+   ],
+   "related": [
+    "tech:sensory_detail",
+    "tech:features_to_benefits",
+    "fw:bab",
+    "fw:pastor",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code"
+   ]
+  },
+  {
+   "id": "tech:hashtag_strategy",
+   "kind": "technique",
+   "name": "Hashtag selection",
+   "status": "current",
+   "level": "line",
+   "summary": "Use a few specific hashtags that describe what the post is about and that your audience actually follows (#PuneFoodies, not #food), and put the searchable words in the caption and on-screen text as well, because discovery is shifting from hashtags to keyword search. Instagram now allows up to 5 hashtags per post (Instagram Help, checked 2026-10-04).",
+   "use_for": [
+    "Instagram posts, carousels and Reels",
+    "LinkedIn and X posts",
+    "YouTube Shorts",
+    "event, campaign and festival tags",
+    "UGC contests built on a branded hashtag"
+   ],
+   "avoid": [
+    "Blocks of 20-30 generic tags (#love #instagood #reels #viral): Instagram now caps posts at 5 and says fewer, more targeted tags work better; choose specific ones.",
+    "Trending or disaster tags unrelated to the post: irrelevant tags look like spam and can backfire publicly; use a trend tag only if the post is about it.",
+    "Hashtags scattered mid-sentence on LinkedIn ('Our #GST #notice #service...'): put them at the end, or skip them.",
+    "A new branded hashtag that someone else already uses: search it before launching."
+   ],
+   "how": [
+    "Write the caption first, with the topic's searchable phrase in the first line.",
+    "List candidates in three layers: topic (#GSTFiling), community or audience (#CAStudents, #PuneFoodies), place or event (#JaipurBusiness, #Diwali2026). Add a branded tag only if the client uses it consistently.",
+    "Search each one on the platform. Keep tags whose top posts are the kind of content you want to sit beside; drop spammy or unrelated ones.",
+    "Keep 3-5 on Instagram (the cap is 5); elsewhere keep to a few and check the plat: card for any limit.",
+    "Write multi-word tags in CamelCase (#SmallBusinessIndia) so they are readable.",
+    "Put tags at the end of the caption, never in the first line.",
+    "Keep a per-client tag list, note which tags show up in reach insights, and refresh the list every few months."
+   ],
+   "before": "#love #instagood #food #foodie #yummy #instadaily #reels #viral #trending #explore #delicious #followforfollowback (and 18 more)",
+   "after": "First line: 'Pune's best misal under Rs 100: 5 places we tried this week.' Tags at the end: #PuneFood #MisalPav #PuneFoodies",
+   "overuse_signs": [
+    "The same tag block pasted on every post",
+    "Hashtags in the first line pushing the hook below the fold",
+    "A new branded hashtag for every post",
+    "Tags chosen by size alone, not by fit"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://help.instagram.com/351460621611097",
+     "title": "Instagram Help: Use hashtags on Instagram",
+     "supports": "up to 5 hashtags per post (via harvest item plat:instagram_hashtags, read 2026-10-04)"
+    },
+    {
+     "url": "https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/",
+     "title": "Social Media Today: Instagram implements new limits on hashtag use (Dec 2025)",
+     "supports": "Instagram: fewer (up to 5), more targeted hashtags rather than many generic ones (via harvest item trend:hashtags_to_keywords)"
+    },
+    {
+     "url": "https://later.com/blog/ultimate-guide-to-using-instagram-hashtags/",
+     "title": "Later: Instagram hashtags guide",
+     "supports": "practitioner guidance on fewer, relevant hashtags (secondary)"
+    }
+   ],
+   "related": [
+    "plat:instagram_hashtags",
+    "trend:hashtags_to_keywords",
+    "tech:first_line_above_fold",
+    "tech:keyword_placement",
+    "genre:instagram_caption"
+   ]
+  }
+ ]
+}

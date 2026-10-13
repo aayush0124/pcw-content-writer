@@ -1,0 +1,185 @@
+{
+ "kind": "genre",
+ "items": [
+  {
+   "id": "genre:winback_email",
+   "name": "Win-back / re-engagement email",
+   "category": "Email & CRM",
+   "one_line": "Email that re-activates lapsed customers or cold subscribers before they are suppressed.",
+   "aliases": [
+    "re-engagement email",
+    "reactivation email",
+    "lapsed customer email",
+    "sunset email"
+   ],
+   "value": "medium",
+   "value_evidence": "Klaviyo lists winback among the core flows to build first",
+   "sources": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "recommends building welcome series, abandoned cart, post-purchase and winback flows first; separate email and SMS welcome flows"
+    }
+   ],
+   "kind": "genre"
+  },
+  {
+   "id": "genre:worldbuilding_bible",
+   "name": "Worldbuilding / series bible",
+   "category": "Creative: scripts & performance",
+   "one_line": "A reference document defining a story world (rules, history, places, factions, tone) so many writers stay consistent.",
+   "aliases": [
+    "series bible",
+    "story bible",
+    "lore document",
+    "show bible"
+   ],
+   "value": "low",
+   "value_evidence": "Produced inside writers' rooms, game studios and IP-development deals; rarely a standalone purchase.",
+   "note": "Logline, tone, world rules, character arcs, season or book arcs, glossary, change log.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:x_post",
+   "name": "X (Twitter) post",
+   "category": "Organic social",
+   "one_line": "Single short post on X that lands one idea, take or update in a few lines.",
+   "aliases": [
+    "tweet",
+    "Twitter post"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr's social media copywriting Platform facet lists Twitter at only 47 gigs on 2026-10-04, the smallest of the major platforms.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "Fiverr's Platform filter with live gig counts, a SUPPLY signal: Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009, Pinterest 376, Threads 238, Snapchat 123, Reddit 96, Twitter 47, Discord 5, Quora 3"
+    }
+   ],
+   "note": "Limits live in plat:x_post. X ghostwriting for founders exists as a niche service; see genre:x_thread.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:x_thread",
+   "name": "X (Twitter) thread",
+   "category": "Organic social",
+   "one_line": "Numbered series of linked posts that unpacks one idea, story or lesson, with a hook post that earns the click into the thread.",
+   "aliases": [
+    "Twitter thread",
+    "tweetstorm",
+    "thread"
+   ],
+   "value": "low",
+   "value_evidence": "Twitter is the smallest major platform on Fiverr's social copywriting facet (47 gigs on 2026-10-04); thread ghostwriting survives as a founder niche.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "Fiverr's Platform filter with live gig counts, a SUPPLY signal: Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009, Pinterest 376, Threads 238, Snapchat 123, Reddit 96, Twitter 47, Discord 5, Quora 3"
+    }
+   ],
+   "note": "Each post should stand alone when quoted; the same outline ports to a LinkedIn carousel or Threads.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:youtube_chapters",
+   "name": "YouTube video chapters (timestamps)",
+   "category": "Video & audio scripts",
+   "one_line": "Timestamped chapter list in a video description that splits a long video into named, skimmable sections.",
+   "aliases": [
+    "chapters",
+    "timestamps",
+    "video chapters"
+   ],
+   "value": "low",
+   "value_evidence": "Small add-on to video or podcast work; Fiverr podcast gigs offer segment timestamps (135 gigs on 2026-10-04).",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9884579",
+     "title": "YouTube Help: Video chapters",
+     "supports": "Manual chapters come from description timestamps: first timestamp must be 00:00, at least three timestamps in ascending order, minimum chapter length 10 seconds"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/podcast",
+     "title": "Fiverr: Podcast Writing category (Service includes facet read 2026-10-04)",
+     "supports": "Fiverr podcast-writing gigs list deliverables: Episode summary 143, Segment timestamps 135, Relevant links 125, Script writing 114, Show notes 91, Discussion guide 80, Ad break 59 (gig counts, supply signal)"
+    }
+   ],
+   "note": "YouTube's rules: first timestamp 00:00, at least three timestamps in ascending order, each chapter at least 10 seconds (YouTube Help).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:youtube_community_post",
+   "name": "YouTube channel post (Community / Posts tab)",
+   "category": "Organic social",
+   "one_line": "Text, poll, quiz or image post on a YouTube channel's Posts tab that keeps subscribers engaged between uploads.",
+   "aliases": [
+    "YouTube community post",
+    "YouTube poll",
+    "Posts tab"
+   ],
+   "value": "low",
+   "value_evidence": "Written by the channel team as part of channel management; no separate marketplace category found on 2026-10-04.",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/7124474",
+     "title": "YouTube Help: Create a post",
+     "supports": "YouTube's own help page for channel posts (text, image, poll, quiz, video), formerly the Community tab"
+    }
+   ],
+   "note": "Polls double as audience research for the next video's title and topic.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:youtube_title_description",
+   "name": "YouTube title + description (video metadata)",
+   "category": "Video & audio scripts",
+   "one_line": "The title, description, hashtags and pinned comment that sell a video in search and suggested feeds and route viewers onward.",
+   "aliases": [
+    "YouTube SEO copy",
+    "video description",
+    "YouTube metadata",
+    "title and thumbnail text"
+   ],
+   "value": "medium",
+   "value_evidence": "YouTube's own help pages set description-based features (chapters from description timestamps); metadata writing is bundled into YouTube SEO and channel-management gigs.",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9884579",
+     "title": "YouTube Help: Video chapters",
+     "supports": "Manual chapters come from description timestamps: first timestamp must be 00:00, at least three timestamps in ascending order, minimum chapter length 10 seconds"
+    }
+   ],
+   "note": "Title and thumbnail text are written as a pair and must not repeat each other. Limits live in plat: cards.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:youtube_video_script",
+   "name": "YouTube long-form video script",
+   "category": "Video & audio scripts",
+   "one_line": "Full spoken script (with visual and B-roll cues) for a YouTube video of several minutes, built to hold retention from hook to end screen.",
+   "aliases": [
+    "YouTube script",
+    "long-form video script",
+    "YT script"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork's script writer job type names 'YouTube video scripts' first among projects, with a typical $30-$56/hr band, above the blog ($15-$35/hr) and content-writer ($15-$40/hr) bands on the same page (Upwork, 2026-01-21).",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing",
+     "title": "Fiverr: Scriptwriting category",
+     "supports": "Scriptwriting is a Fiverr subcategory; Hindi is among the top seller languages on the facet (867 gigs on 2026-10-04)"
+    }
+   ],
+   "note": "Two-column (A/V) or VO-plus-cue format. Explainer channels often treat a 5-second curiosity hook as a hard requirement.",
+   "kind": "genre"
+  }
+ ]
+}

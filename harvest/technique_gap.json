@@ -1,0 +1,71 @@
+{"kind": "technique", "worker": "gap_craft", "as_of": "2026-10-05",
+ "source": "Gap-fill (work/gaps.jsonl, BRIEF_GAPS.md): originators' own pages where they exist (Save the Cat, Sam Kabo Ashwell, AWAI, Pew Research Center, Microsoft and Mozilla Hindi style guides); book records where the source is a book.",
+ "items": [
+  {"id": "tech:logline",
+   "name": "Logline (one-sentence story pitch)",
+   "category": "Storytelling",
+   "one_line": "Compress a film, series, book or branded story into one sentence: who the hero is, what they want, what stands in the way, and the ironic hook that makes a buyer ask for the script.",
+   "aliases": ["log line", "one-liner", "story one-liner", "elevator pitch for a story", "pitch line"],
+   "sources": [
+    {"url": "https://savethecat.com/forum/loglines", "title": "Save the Cat!: Loglines (official site of Blake Snyder's method)", "supports": "'Blake Snyder felt loglines have 4 basic elements: a type of protagonist, a type of antagonist, conflict, and an open-ended question.' Snyder also wanted irony and a compelling mental picture."},
+    {"url": "https://en.wikipedia.org/wiki/Save_the_Cat!:_The_Last_Book_on_Screenwriting_You'll_Ever_Need", "title": "Save the Cat! (Blake Snyder, 2005), Wikipedia", "supports": "book record for the method the site summarises (secondary)"}
+   ],
+   "note": "Elements per Save the Cat: a TYPE of protagonist (adjective + role, not a name), a type of antagonist or obstacle, the conflict, an open-ended question, plus irony and a mental picture. One sentence, present tense, no ending given away. Used in pitch decks, series bibles, OTT submission forms, YouTube film descriptions. Origin of the word 'logline' is not stated by the source; do not claim one."},
+
+  {"id": "tech:branching_narrative",
+   "name": "Branch-and-bottleneck branching with state flags",
+   "category": "Storytelling",
+   "one_line": "Let player or reader choices branch the story, then rejoin the branches at shared key events, and carry earlier choices forward as tracked state so the rejoined story still remembers them.",
+   "aliases": ["branch and bottleneck", "branching dialogue", "choice-based structure", "state tracking", "story flags", "foldback structure"],
+   "sources": [
+    {"url": "https://heterogenoustasks.wordpress.com/2015/01/26/standard-patterns-in-choice-based-games/", "title": "Sam Kabo Ashwell, 'Standard Patterns in Choice-Based Games' (2015-01-26)", "supports": "names the pattern: 'The game branches, but the branches regularly rejoin, usually around events that are common to all versions of the story'; 'branch-and-bottleneck structures almost always rely on heavy use of state-tracking'; other named patterns: Time Cave, Gauntlet, Quest, Open Map, Sorting Hat, Floating Modules, Loop and Grow"},
+    {"url": "https://emshort.blog/2016/11/05/small-scale-structures-in-cyoa/", "title": "Emily Short, 'Small-Scale Structures in CYOA' (2016)", "supports": "follow-up on small choice structures inside branching games (secondary, practitioner)"},
+    {"url": "https://christytuckerlearning.com/branch-and-bottleneck-scenario-structure/", "title": "Christy Tucker: Branch and bottleneck scenario structure", "supports": "the same structure applied to e-learning branching scenarios (secondary)"}
+   ],
+   "note": "Craft rules a writer can follow: write each bottleneck scene so it reads true from every incoming branch; set a named flag (e.g. trusted_ravi = true) at each meaningful choice and spend it later in a changed line, not only in the ending; keep the branch count low and the state rich (Ashwell: state-tracking is what keeps past choices from being obliterated). Fits genre:game_narrative, interactive WhatsApp/IG-story fiction and e-learning scenarios. Tools that hold the flags: Twine, ink, Yarn Spinner."},
+
+  {"id": "tech:fascination_bullets",
+   "name": "Fascination bullets",
+   "category": "Persuasion & proof",
+   "one_line": "Short curiosity bullets on a sales page or email that tease a specific benefit without giving away the answer, so the only way to get it is to buy, register or read on.",
+   "aliases": ["fascinations", "blind bullets", "curiosity bullets", "sales-page bullets"],
+   "sources": [
+    {"url": "https://www.awai.com/2024/04/fix-boring-copy/", "title": "AWAI (Sandy Franks, 2024-04-02): 'A Simple Technique That Fixes Boring Passages of Copy'", "supports": "'A fascination is a short sentence (or two) designed to conjure up intense curiosity and compel a reader to act.'; credits Mel Martin of Boardroom Inc. with the technique; method: ask 'What if I say it in a way that has more meaning?' and rewrite"},
+    {"url": "https://www.awai.com/2011/12/write-powerful-bullets/", "title": "AWAI (John Wood, 2011): 'Write Powerful Bullets That Your Readers Will Devour'", "supports": "bullets scored on the 4 U's (Urgent, Useful, Unique, Ultra-specific); one benefit per bullet; make the first two or three bullets the strongest, then mix strong and weaker ones for rhythm"}
+   ],
+   "note": "Attribution differs between sources (AWAI 2024 credits Mel Martin; other blogs credit Gene Schwartz): cite AWAI's words, do not settle the origin. Rules: one specific benefit per bullet, a concrete number or detail, withhold the 'how' (page number or 'see Chapter 3' style pointers are classic), never promise what the product does not deliver (ties to comp:asci_code and misleading-claim rules). Indian use: course/webinar pages, ebook and KDP sales pages, finance newsletters (check SEBI rules before teasing returns)."},
+
+  {"id": "tech:game_and_heightening",
+   "name": "Game of the scene and heightening (sketch / improv comedy)",
+   "category": "Storytelling",
+   "one_line": "Find the first unusual thing in a comic scene, name the pattern (the game), then repeat it with escalating stakes until a button ending.",
+   "aliases": ["the game", "game of the scene", "first unusual thing", "heightening", "escalation", "if this is true, what else is true"],
+   "sources": [
+    {"url": "https://archive.org/details/uprightcitizensb0000bess", "title": "Besser, Roberts and Walsh, The Upright Citizens Brigade Comedy Improvisation Manual (2013), Internet Archive record", "supports": "the originating manual; borrowable scan (login needed for the full text, not read)"},
+    {"url": "https://en.wikipedia.org/wiki/Upright_Citizens_Brigade", "title": "Upright Citizens Brigade (Wikipedia)", "supports": "the 2013 manual covers two-person scene work 'with a heavy emphasis on finding \"the game\" of the scene' and long-form structures such as the Harold (secondary)"},
+    {"url": "https://improvarchive.org/books/upright-citizens-brigade-comedy-improvisation-manual", "title": "Improv Archive: UCB Comedy Improvisation Manual", "supports": "book record and authorship (secondary)"}
+   ],
+   "note": "UCB's own page (ucbcomedy.com/improvisation-manual/) returned 403 on 2026-10-05, so the method is cited through the book record and secondary summaries: confidence medium. Writer's steps: establish a normal base reality, introduce one unusual thing, state the game in a sentence, heighten it two or three times (each beat bigger, not just repeated), end on a button. Same engine drives genre:sketch_comedy, brand skits and comic reels; it differs from tech:callback (late reference) and fw:setup_punchline_tag (single joke)."},
+
+  {"id": "tech:hindi_address_register",
+   "name": "Consistent aap / tum / tu address in Hindi and Hinglish",
+   "category": "Line craft & rhetoric",
+   "one_line": "Pick one level of address (aap formal, tum familiar, tu intimate) for the reader and keep every pronoun, possessive and verb ending in that level through the whole piece.",
+   "aliases": ["aap vs tum", "T-V distinction in Hindi", "Hindi honorific consistency", "sambodhan"],
+   "sources": [
+    {"url": "https://en.wikipedia.org/wiki/Hindustani_grammar", "title": "Hindustani grammar (Wikipedia)", "supports": "'tū, tum, and āp are the three second-person pronouns, constituting a threefold scale of sociolinguistic formality: respectively, intimate, familiar, and formal'; imperative of karnā: kar (tū), karo (tum), kījie (āp) (secondary)"},
+    {"url": "https://aka.ms/hindi-styleguide", "title": "Microsoft Hindi Localization Style Guide (PDF, download.microsoft.com hin-ind-StyleGuide.pdf)", "supports": "Hindi verbs inflect for 'degree of respect (intimate, familiar, respect)'; UI commands take the respectful form (संपादन करें, सहेजें, हटाएँ); 'Known issue: It's a common error to use आप आपके खाते ... it should be always आप अपने, हम अपने, and वो अपने'; address the user directly with the second-person pronoun"},
+    {"url": "https://mozilla-l10n.github.io/styleguides/hi-IN/", "title": "Mozilla style guide: Hindi (hi-IN)", "supports": "formal product copy uses आप (not तुम) and avoids curt imperatives (ढूँढें, not ढूँढो)"}
+   ],
+   "note": "Checks: (1) pronoun level matches every verb (aap + -iye/-ein/-enge; tum + -o/-oge; tu + bare stem/-ega); (2) possessives match (aapka / tumhara / tera) and the reflexive is apna when the subject is the same person (Microsoft: आप अपने, not आप आपके); (3) a CTA does not drop level ('aap jaaniye ... abhi click karo' is a slip). Brand choice: formal/government/finance/UI = aap; creator Hinglish often tum by design; tu only for deliberate intimacy or rough humour. Related: lang:hindi_devanagari, lang:hinglish_roman, edit:hindi_proofread."},
+
+  {"id": "tech:poll_quiz_options",
+   "name": "Mutually exclusive, exhaustive poll and quiz options",
+   "category": "Social & video",
+   "one_line": "Write answer options that do not overlap, cover every reasonable answer (or say 'other'), ask one thing at a time, and do not lean the reader toward one choice.",
+   "aliases": ["poll options", "MECE options", "answer choices", "multiple-choice options", "survey response options"],
+   "sources": [
+    {"url": "https://www.pewresearch.org/writing-survey-questions/", "title": "Pew Research Center: Writing Survey Questions", "supports": "'Closed-ended questions should include all reasonable responses (i.e., the list of options is exhaustive) and the response categories should not overlap'; avoid double-barreled questions ('ask only one question at a time'); 'the number of response options offered, and the order in which options are read can all influence how people respond'; Pew randomizes option order"}
+   ],
+   "note": "For social polls (LinkedIn, Instagram story, YouTube posts, X) the same rules hold inside tight option limits (see the plat: items for counts): number ranges must not share endpoints (0-5 / 6-10, not 0-5 / 5-10); include an honest escape option when the list cannot be exhaustive ('kuch aur, comment karo'); keep options parallel in length and grammar so none stands out; one idea per question. Quiz copy (genre:interactive_quiz_content) adds: each distractor plausible, one defensible right answer, no 'all of the above' traps unless intended."}
+ ]}

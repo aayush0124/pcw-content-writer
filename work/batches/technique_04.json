@@ -1,0 +1,535 @@
+{
+ "kind": "technique",
+ "items": [
+  {
+   "id": "tech:plain_language",
+   "name": "Plain language",
+   "category": "Line craft & rhetoric",
+   "one_line": "Use common words, short sentences and a clear order so the intended reader understands on first read.",
+   "aliases": [
+    "plain English",
+    "clear language"
+   ],
+   "sources": [
+    {
+     "url": "https://digital.gov/guides/plain-language",
+     "title": "digital.gov plain language guide",
+     "supports": "US federal plain language guidance"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "plain English rules for government content"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Plain_language",
+     "title": "Plain language (Wikipedia)",
+     "supports": "definition and history"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:plain_text_email",
+   "name": "Plain-text style email",
+   "category": "Email",
+   "one_line": "Write some emails like a personal note (no heavy design, one link, a person's name in the signature) where it suits the relationship.",
+   "aliases": [
+    "plain text email",
+    "letter-style email"
+   ],
+   "sources": [
+    {
+     "url": "https://www.litmus.com/blog/the-results-are-in-a-b-testing-html-vs-plain-text-emails",
+     "title": "Litmus: A/B testing HTML vs plain text emails",
+     "supports": "Litmus's own test: results differed by audience (customers vs non-customers)"
+    },
+    {
+     "url": "https://www.litmus.com/blog/best-practices-for-plain-text-emails-a-look-at-why-theyre-important",
+     "title": "Litmus: Best practices for plain text emails",
+     "supports": "why and how to write the plain-text version"
+    }
+   ],
+   "note": "One company's test, not a law; test on your own list (edit:ab_test_copy).",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:positive_form",
+   "name": "Positive form",
+   "category": "Line craft & rhetoric",
+   "one_line": "Say what is, not what is not ('forgot', not 'did not remember'); avoid double negatives.",
+   "aliases": [
+    "avoid negatives",
+    "positive framing"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 11: put statements in positive form"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "negative contractions are often misread as the opposite"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:power_words",
+   "name": "Power words (loaded language)",
+   "category": "Line craft & rhetoric",
+   "one_line": "Choose a few emotionally charged words at decision points; strip the ones that only inflate.",
+   "aliases": [
+    "emotional words",
+    "loaded language",
+    "trigger words"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Loaded_language",
+     "title": "Loaded language (Wikipedia; 'Power word' redirects here)",
+     "supports": "words with strong connotations used to influence an audience"
+    }
+   ],
+   "note": "Lists of 'power words' are marketing folklore; the device itself is loaded language. Overuse slides into hype and AI-style promotional vocabulary.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:price_anchoring",
+   "name": "Price anchoring",
+   "category": "Persuasion & proof",
+   "one_line": "Show a relevant higher reference first (cost of the problem, the premium tier, the alternative) so the price reads against it.",
+   "aliases": [
+    "anchoring",
+    "value anchoring"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anchoring_effect",
+     "title": "Anchoring effect (Wikipedia)",
+     "supports": "first number seen biases later judgements"
+    }
+   ],
+   "note": "Anchor must be honest (a real list price or a real cost of inaction); fake 'was' prices are a compliance problem.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:progressive_disclosure",
+   "name": "Progressive disclosure",
+   "category": "UX writing",
+   "one_line": "Show only what most readers need now; tuck detail behind a link, toggle or later step.",
+   "aliases": [
+    "layered content"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/progressive-disclosure/",
+     "title": "NN/g: Progressive Disclosure",
+     "supports": "defer advanced or rarely used information"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:ps_line",
+   "name": "The P.S. line",
+   "category": "Persuasion & proof",
+   "one_line": "Use a postscript after the sign-off to restate the offer, deadline or strongest benefit for readers who skip to the end.",
+   "aliases": [
+    "postscript",
+    "P.S."
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Postscript",
+     "title": "Postscript (Wikipedia)",
+     "supports": "what a postscript is"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:punchline_last",
+   "name": "Punchline at the end of the line",
+   "category": "Line craft & rhetoric",
+   "one_line": "Put the surprising or most important word last in the sentence, where emphasis naturally falls.",
+   "aliases": [
+    "end weight",
+    "paraprosdokian",
+    "stress position"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Paraprosdokian",
+     "title": "Paraprosdokian (Wikipedia)",
+     "supports": "a sentence whose latter part surprises and reframes the first"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 18: place the emphatic words of a sentence at the end"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:read_aloud",
+   "name": "Read it aloud",
+   "category": "Research & process",
+   "one_line": "Read the draft out loud to catch clumsy rhythm, missing words and sentences too long to say in one breath.",
+   "aliases": [
+    "read-aloud test",
+    "ear test"
+   ],
+   "sources": [
+    {
+     "url": "https://ask.ifas.ufl.edu/publication/WC193",
+     "title": "UF/IFAS EDIS WC193: News Writing for Television and Radio",
+     "supports": "reading the story aloud is the most important habit when writing for the ear"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:reason_why",
+   "name": "Reason-why ('because')",
+   "category": "Persuasion & proof",
+   "one_line": "Give the reader a real reason for every claim and request, joined with 'because'; a stated reason makes compliance more likely.",
+   "aliases": [
+    "reason-why copy",
+    "the because effect"
+   ],
+   "sources": [
+    {
+     "url": "https://doi.org/10.1037/0022-3514.36.6.635",
+     "title": "Langer, Blank & Chanowitz (1978), The mindlessness of ostensibly thoughtful action, JPSP 36(6)",
+     "supports": "copier study: requests with a reason, even a placebic one, got more compliance for small requests"
+    },
+    {
+     "url": "https://jamesclear.com/wp-content/uploads/2015/03/copy-machine-study-ellen-langer.pdf",
+     "title": "Full text of the 1978 copier study (hosted copy)",
+     "supports": "the effect of a placebic reason disappeared when the request was larger"
+    }
+   ],
+   "note": "The empty-'because' effect only held for a small favour; for bigger asks the reason must be real. Do not cite the study as proof that any 'because' works.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:reciprocity",
+   "name": "Reciprocity (give first)",
+   "category": "Persuasion & proof",
+   "one_line": "Give genuine value before the ask (a useful tip, template, free sample) so the request lands as a fair exchange.",
+   "aliases": [
+    "give before you ask",
+    "value-first"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "Reciprocity is one of the seven principles"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Reciprocity_(social_psychology)",
+     "title": "Reciprocity (social psychology) (Wikipedia)",
+     "supports": "background on the norm"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:retention_rehook",
+   "name": "Retention re-hooks",
+   "category": "Social & video",
+   "one_line": "Plant a new reason to keep watching at the points viewers usually drop (a tease, a question, a stakes reminder), not only at the start.",
+   "aliases": [
+    "re-hook",
+    "retention beats",
+    "mid-video hook"
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9314415",
+     "title": "YouTube Help: Measure key moments for audience retention",
+     "supports": "intro, top moments, spikes and dips; intro measures how many still watch after the first 30 seconds"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:rhetorical_question",
+   "name": "Rhetorical question",
+   "category": "Line craft & rhetoric",
+   "one_line": "Ask a question the reader answers in their head, to pull them in or make a point land.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Rhetorical_question",
+     "title": "Rhetorical question (Wikipedia)",
+     "supports": "definition of the device"
+    }
+   ],
+   "note": "GOV.UK advises against questions as headings because they are hard to frontload; keep rhetorical questions for body copy and hooks.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:risk_reversal",
+   "name": "Risk reversal (guarantee)",
+   "category": "Persuasion & proof",
+   "one_line": "Move the risk from buyer to seller with a clear, specific guarantee and say exactly how to claim it.",
+   "aliases": [
+    "guarantee",
+    "money-back guarantee"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Money-back_guarantee",
+     "title": "Money-back guarantee (Wikipedia)",
+     "supports": "what a satisfaction guarantee is and why sellers use it"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:rule_of_three",
+   "name": "Rule of three",
+   "category": "Line craft & rhetoric",
+   "one_line": "Group items in threes for rhythm and memorability; the third item carries the weight or the twist.",
+   "aliases": [
+    "tricolon",
+    "triad"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Rule_of_three_(writing)",
+     "title": "Rule of three (writing) (Wikipedia)",
+     "supports": "triads are more satisfying and memorable"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+     "title": "Wikipedia: Signs of AI writing",
+     "supports": "lists overuse of the rule of three as an AI tell"
+    }
+   ],
+   "note": "Reflexive triplets in every sentence are a listed AI tell; use once or twice per piece.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:schema_friendly_formatting",
+   "name": "Structure-friendly formatting",
+   "category": "SEO & AI search",
+   "one_line": "Present steps, specs, prices and Q&A as real headings, lists and tables so machines and skimmers can parse them.",
+   "aliases": [
+    "structured content",
+    "machine-readable formatting"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+     "title": "Google Search Central: Introduction to structured data",
+     "supports": "how structured data describes page content"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/ai-features",
+     "title": "Google Search Central: AI features and your website",
+     "supports": "no special schema.org structured data is needed for AI features"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:search_intent_matching",
+   "name": "Search-intent matching",
+   "category": "SEO & AI search",
+   "one_line": "Work out what the searcher wants to do (know, do, go somewhere, visit in person) and give that format first.",
+   "aliases": [
+    "user intent",
+    "query intent"
+   ],
+   "sources": [
+    {
+     "url": "https://services.google.com/fh/files/misc/hsw-sqrg.pdf",
+     "title": "Google: Search Quality Rater Guidelines, an overview",
+     "supports": "how raters judge whether results meet the user's need/intent"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Search_intent",
+     "title": "User intent (Wikipedia)",
+     "supports": "types of search intent"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:sender_name",
+   "name": "Sender-name choice",
+   "category": "Email",
+   "one_line": "Use a recognisable, consistent from-name (a person at the brand, or the brand) that matches the email's content.",
+   "aliases": [
+    "from name",
+    "sender name strategy"
+   ],
+   "sources": [
+    {
+     "url": "https://mailchimp.com/resources/sender-name/",
+     "title": "Mailchimp: Email sender name best practices",
+     "supports": "recognisable, consistent, brand-including sender names"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:sensory_detail",
+   "name": "Sensory detail",
+   "category": "Storytelling",
+   "one_line": "Add one concrete sight, sound, smell, taste or touch to make a scene real in a few words.",
+   "aliases": [
+    "imagery",
+    "concrete detail"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Imagery",
+     "title": "Imagery (Wikipedia)",
+     "supports": "sensory language evokes vivid impressions"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:sentence_rhythm",
+   "name": "Sentence-length rhythm",
+   "category": "Line craft & rhetoric",
+   "one_line": "Mix short, medium and long sentences so the prose has music; land key points on a short one after longer ones.",
+   "aliases": [
+    "vary sentence length",
+    "cadence",
+    "write music"
+   ],
+   "sources": [
+    {
+     "url": "https://www.aerogrammestudio.com/2014/08/05/this-sentence-has-five-words/",
+     "title": "Aerogramme Studio: Gary Provost on varying sentence length",
+     "supports": "Provost's demonstration that varied sentence length creates rhythm"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Gary_Provost",
+     "title": "Gary Provost (Wikipedia)",
+     "supports": "author of 100 Ways to Improve Your Writing (1985)"
+    },
+    {
+     "url": "https://hemingwayapp.com/help/docs/readability",
+     "title": "Hemingway Editor: Readability",
+     "supports": "save longer sentences for emphasis or variety and rhythm; do not chase conciseness at all costs"
+    }
+   ],
+   "note": "Provost's passage is copyrighted; cite by name, do not paste it.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:short_sentences",
+   "name": "Short sentences",
+   "category": "Line craft & rhetoric",
+   "one_line": "Keep most sentences short and split the long ones; one idea per sentence.",
+   "aliases": [
+    "sentence length"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "quote: 'Try to split up sentences that are over 25 words long.'"
+    }
+   ],
+   "note": "The 25-word split point is GOV.UK's; other houses differ. Pair with tech:sentence_rhythm so short does not become monotonous.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:show_dont_tell",
+   "name": "Show, don't tell",
+   "category": "Storytelling",
+   "one_line": "Replace a summary judgement ('she was nervous') with the action, detail or dialogue that lets the reader conclude it.",
+   "aliases": [
+    "dramatise",
+    "show not tell"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Show,_don%27t_tell",
+     "title": "Show, don't tell (Wikipedia)",
+     "supports": "definition and origin of the guideline"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:single_cta_email",
+   "name": "Single-CTA email",
+   "category": "Email",
+   "one_line": "Give each email one job and one call to action, repeated if needed, instead of several competing links.",
+   "aliases": [
+    "one goal per email"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Call_to_action_(marketing)",
+     "title": "Call to action (marketing) (Wikipedia)",
+     "supports": "definition of a CTA"
+    }
+   ],
+   "note": "Conversion-lift figures quoted online for single-CTA emails were not traced to a primary; leave numbers out.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:slippery_slide",
+   "name": "Slippery slide",
+   "category": "Structure & scannability",
+   "one_line": "Make every element do one job: the headline gets the first line read, the first line gets the second read, and so on to the CTA.",
+   "aliases": [
+    "Slippery slide (Sugarman)",
+    "Sugarman slippery slide",
+    "first sentence's job",
+    "greased chute",
+    "slippery slope copy"
+   ],
+   "sources": [
+    {
+     "url": "https://www.upgrow.io/joe-sugarman-slippery-slide-landing-page-style/",
+     "title": "Upgrow: Joe Sugarman's slippery slide",
+     "supports": "summary of Sugarman's concept from The Adweek Copywriting Handbook (secondary) [403 to scripted fetch; URL seen in search results 2026-10-04]"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Joe_Sugarman",
+     "title": "Joseph Sugarman - Wikipedia",
+     "supports": "Direct-response copywriter, founder of JS&A and BluBlocker"
+    },
+    {
+     "url": "https://www.goodreads.com/en/book/show/603716.The_Adweek_Copywriting_Handbook",
+     "title": "The Adweek Copywriting Handbook - Goodreads",
+     "supports": "Sugarman's book where the slippery-slide idea is set out"
+    }
+   ],
+   "note": "Originator: Joseph Sugarman, The Adweek Copywriting Handbook; cited by name. [merged from fw:slippery_slide: Joseph Sugarman, The Adweek Copywriting Handbook (book). Borderline with technique (tech:bucket_brigade lives with tech_edit).]",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:sme_interview",
+   "name": "SME interview",
+   "category": "Research & process",
+   "one_line": "Interview a subject-matter expert with prepared questions to get the specifics, stories and quotes no desk research gives.",
+   "aliases": [
+    "expert interview",
+    "subject-matter expert"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Subject-matter_expert",
+     "title": "Subject-matter expert (Wikipedia)",
+     "supports": "who an SME is"
+    }
+   ],
+   "kind": "technique"
+  }
+ ]
+}

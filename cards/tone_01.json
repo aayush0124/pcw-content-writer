@@ -1,0 +1,1212 @@
+{
+ "cards": [
+  {
+   "id": "tone:academic_formal",
+   "kind": "tone",
+   "name": "Academic / formal",
+   "status": "current",
+   "summary": "Impersonal, precise prose where every claim is placed inside existing evidence and its certainty is calibrated (neither over-claimed nor buried in hedges). Good academic-formal copy lets a sceptical expert check each statement against a source.",
+   "use_for": [
+    "research abstracts, paper sections, literature reviews and thesis summaries",
+    "policy briefs, white papers and grant proposals read by committees",
+    "government, institutional and regulatory copy where authority and precision matter more than warmth",
+    "formal letters to officials (RTI applications, representations)"
+   ],
+   "avoid": [
+    "Social posts, reels, WhatsApp copy, emails to customers: this register reads as stiff there. Use tone:conversational or tone:friendly_warm.",
+    "Stiffness mistaken for rigour: piled-up nominalisations ('the implementation of the utilisation of') hide the actor. Name who did what unless the house style requires passive (some methods sections do: follow the venue's style sheet).",
+    "Hedging every sentence ('may possibly perhaps suggest'). One calibrated hedge per claim, placed where the evidence is thin; cut the rest (tech:cut_qualifiers).",
+    "Authority without a source ('studies show', 'experts agree'). Cite the work or cut the claim.",
+    "Fancy substitutes for plain words (utilise, commence, endeavour). Formal does not mean ornate."
+   ],
+   "markers": [
+    "NN/g placement: formal + serious + respectful + matter-of-fact (NN/g's formal example is a Duke Health sentence about putting the patient at the centre of everything it does). All four poles move together; if one slips (a joke, an exclamation mark) the register breaks.",
+    "Third-person, impersonal subjects: 'this paper', 'the evidence', 'the committee', 'respondents'. First person ('we argue') only where the venue's style allows it.",
+    "No contractions, no slang, no exclamation marks, no emoji, no rhetorical questions.",
+    "Calibrated certainty: strong verbs ('shows', 'establishes') only where the evidence is strong; 'suggests', 'is associated with', 'may' where it is partial. Say what limits the claim (sample, period, method).",
+    "Claims sit inside prior work: say what earlier sources found, then where this piece's position differs or adds something. Citations in the required system (APA, Chicago, numbered).",
+    "Explicit cohesion: 'however', 'by contrast', 'consequently', 'first / second'; one claim per paragraph, topic sentence first.",
+    "Precise terms defined at first use; compressed noun phrases ('district-level crop-insurance enrolment') are normal, but unpack any with more than three modifiers for non-specialist readers.",
+    "Numbers carry units, period and denominator ('Rs 4,200 crore in FY2024-25', 'n = 412 households'); dates are explicit.",
+    "Sentences run longer than web copy, but each carries one claim; split any sentence that can be read two ways."
+   ],
+   "sample": "Studies of rural digital payments in India have mostly measured adoption at state level (Author, [year]; Author and Author, [year]). Such aggregates may conceal differences between neighbouring villages. This paper therefore compares enrolment in two blocks of Muzaffarpur district and finds that distance to the nearest banking agent, rather than household income, is the stronger correlate of repeat use. The finding is suggestive, not causal: the sample is small and drawn from a single season.",
+   "sample_note": "Illustrative passage; the study and citations are placeholders, not real findings.",
+   "fits": [
+    "genre:research_paper_section",
+    "genre:literature_review",
+    "genre:research_abstract",
+    "genre:thesis_summary",
+    "genre:policy_brief",
+    "genre:white_paper",
+    "genre:grant_proposal",
+    "genre:research_report",
+    "genre:government_press_note",
+    "genre:rti_application"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Academic_writing",
+     "title": "Academic writing (Wikipedia)",
+     "supports": "formal tone; evidence of reason over emotion; hedging balanced between cautious and assertive; explicit cohesion; compressed noun phrases; acknowledgement of prior work; citation systems (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-of-voice-dimensions/",
+     "title": "The Four Dimensions of Tone of Voice (NN/g)",
+     "supports": "the four dimensions (formal-casual, serious-funny, respectful-irreverent, matter-of-fact-enthusiastic); Duke Health sentence as the formal / matter-of-fact example (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:technical_precise",
+    "tone:authoritative",
+    "tone:journalistic_neutral",
+    "tone:data_driven",
+    "tech:cut_qualifiers",
+    "tech:plain_language",
+    "edit:source_citation",
+    "fw:imrad"
+   ]
+  },
+  {
+   "id": "tone:asmr_soft",
+   "kind": "tone",
+   "name": "ASMR / soft",
+   "status": "niche",
+   "summary": "A hushed, slow, intimate voice written for the ear: short breath-length phrases, sensory words, marked pauses and personal attention. It is the opposite of hype; the script's job is to be easy to whisper and easy to relax into.",
+   "use_for": [
+    "whisper voice-over for skincare, tea, candle, bedding and wellness product videos",
+    "sleep, wind-down and calm-down audio or video scripts",
+    "'soft routine' and get-ready-with-me reels where the voice is close-mic'd",
+    "ASMR-style roleplay or tapping/brushing videos that need a narration script"
+   ],
+   "avoid": [
+    "Hype openers and CTAs inside the soft section ('Guys! Link in bio NOW!'). Put one quiet ask at the very end, or on screen.",
+    "Long sentences with clauses: nobody can whisper them in one breath. Break at every natural pause.",
+    "Promising sleep, calm or a cure ('cures insomnia', 'clinically proven to relax'). Describe the experience, not a medical outcome; check ASCI rules for product claims.",
+    "Sudden loud or sharp words and sound cues in a calm piece; they undo the effect.",
+    "Using this tone for a launch, a sale or a news item: switch to tone:enthusiastic_hype or tone:conversational."
+   ],
+   "markers": [
+    "Placement (our reading; NN/g does not rate this tone): casual, serious, respectful, and at the low-energy, matter-of-fact end of NN/g's enthusiastic-vs-matter-of-fact dimension. Calm, not flat.",
+    "One short phrase per line, roughly one breath each (3-7 words). The line break in the script IS the pause in the voice.",
+    "Pauses are written, not assumed: '[pause 2s]' or '...' at a consistent place; a long piece gets a pause after every 2-4 lines.",
+    "Sensory words that name a sound, texture or temperature: soft, slow, warm, cool, gentle, tap, brush, rustle, hum, drip. Say what the listener will hear next.",
+    "Personal attention: direct 'you' and 'I' in a running commentary ('now I'm going to...', 'aap bas sunte rahiye').",
+    "Gentle repetition and refrains ('slowly... slowly...') are a feature; do not edit them out as redundancy.",
+    "Present tense, simple verbs; no jargon, no numbers, no statistics.",
+    "Punctuation: commas, full stops and ellipses only. No exclamation marks, no ALL CAPS, no emoji in the spoken text.",
+    "Hinglish/Hindi works when soft and slow: 'dheere se', 'aaram se', 'bas ek lambi saans'. Keep the verbs simple and the lines short.",
+    "ASMR triggers named in the source are whispering, soft speaking and personal attention; script for those three."
+   ],
+   "sample": "Aaram se baith jaiye...\nAb main yeh serum haath par le rahi hoon.\nBas do boondein. Thandi, halki.\n[pause 2s]\nGaalon par dheere se... dheere se.\nAap bhi saath mein saans lijiye.\nAndar... aur bahar.\n[pause 2s]\nSunai de raha hai?\nBas ungliyon ki halki aawaz.\nKoi jaldi nahi.\nAaj ka din ab khatam hua.",
+   "fits": [
+    "genre:short_form_video_script",
+    "genre:youtube_video_script",
+    "genre:faceless_video_script",
+    "genre:audio_series_script",
+    "genre:podcast_script",
+    "genre:video_ad_script"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Autonomous_sensory_meridian_response",
+     "title": "Autonomous sensory meridian response (Wikipedia)",
+     "supports": "ASMR triggers include whispering, soft speaking and personal attention (per harvest note; the 25-million-videos figure is left out of the card)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-of-voice-dimensions/",
+     "title": "The Four Dimensions of Tone of Voice (NN/g)",
+     "supports": "the enthusiastic vs matter-of-fact dimension used for the placement (placement itself is our reading)"
+    }
+   ],
+   "related": [
+    "tone:calm_reassuring",
+    "tone:minimalist_understated",
+    "tech:write_for_voiceover",
+    "tech:read_aloud",
+    "tech:sensory_detail",
+    "lang:hindi_voiceover_tts",
+    "lang:hinglish_roman",
+    "comp:asci_code"
+   ]
+  },
+  {
+   "id": "tone:authoritative",
+   "kind": "tone",
+   "name": "Authoritative / expert",
+   "status": "current",
+   "summary": "The confident voice of someone who knows the subject: declarative claims, proof placed next to the claim, hedges only where the evidence is genuinely uncertain. Its job is credibility, and in NN/g's study credibility mattered far more than friendliness.",
+   "use_for": [
+    "thought-leadership articles, bylined pieces and ghostwritten founder posts",
+    "white papers, playbooks, ultimate guides and expert answers (Quora, FAQ, explainers)",
+    "professional bios, keynote speeches and talking-head expert videos",
+    "advisory copy for CA, legal, health-adjacent and finance brands (within the compliance rules)"
+   ],
+   "avoid": [
+    "Hedge stacking ('it may possibly be worth considering'): it reads as unsure. State the claim, then name the real limit once (tech:cut_qualifiers).",
+    "Unsourced absolutes ('always', 'never', 'guaranteed', 'the only way'). Authority comes from proof, not volume.",
+    "Credential-dropping instead of evidence ('with 20 years of experience...'). Show one specific case, number or method instead (tech:authority_proof).",
+    "Condescension ('obviously', 'as everyone knows') and jargon walls. An expert's mark is making the hard thing simple.",
+    "A single made-up or unsourced statistic: it undoes the whole voice. In regulated fields (health, finance, insurance, law) authority never means guaranteeing an outcome."
+   ],
+   "markers": [
+    "NN/g placement: serious + respectful, leaning matter-of-fact; formality is a choice (formal for institutions, casual-conversational for creators). 'Authoritative', 'Trustworthy' and 'Professional' are all on NN/g's 37-word tone list.",
+    "Credibility is the job: in NN/g's study trustworthiness explained about 52% of the variation in willingness to recommend; friendliness added only about 8%. Spend words on proof, not on charm.",
+    "Declarative present tense: 'Late filing costs you input credit', not 'late filing may potentially affect credit'.",
+    "Hedge only where the evidence is uncertain, and say why ('the data covers one financial year'). A calibrated limit builds trust; a reflex hedge loses it.",
+    "Proof sits within a sentence of the claim: a number with source and date, a first-hand case ('in the 140 notices we handled this year'), or the mechanism ('because the portal matches invoices by month').",
+    "Give the reason: every recommendation carries a 'because' (tech:reason_why).",
+    "Imperative for advice ('Check the period first. Skip the late fee.'); one longer sentence to explain, then back to short ones.",
+    "Plain words; define a technical term the first time, in the same sentence.",
+    "No exclamation marks; no 'world-class', 'leading', 'best-in-class' unless a named, dated source backs it."
+   ],
+   "sample": "Read the notice before you reply. It names three things: the section, the period and the amount. Check each against your own books first. If one is wrong, say so in the opening line of your reply and attach the proof. If all three are right, find the invoice behind the amount. Do not pay first and query later; query first. A reply that points to a document beats a long explanation.",
+   "fits": [
+    "genre:thought_leadership_article",
+    "genre:byline_article",
+    "genre:ghostwritten_founder_post",
+    "genre:linkedin_post",
+    "genre:white_paper",
+    "genre:ultimate_guide",
+    "genre:professional_bio",
+    "genre:keynote_speech",
+    "genre:quora_answer",
+    "genre:talking_head_script"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g, Kate Moran)",
+     "supports": "'Authoritative', 'Trustworthy' and 'Professional' are among NN/g's 37 tone words; use the four dimensions then pick words (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "about 52% of desirability (willingness to recommend) explained by trustworthiness, friendliness only about 8% more; playful tone cost credibility (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:data_driven",
+    "tone:corporate_b2b",
+    "tone:conversational",
+    "tech:authority_proof",
+    "tech:eeat_first_hand_experience",
+    "tech:cut_qualifiers",
+    "tech:reason_why",
+    "trend:thought_leadership_b2b"
+   ]
+  },
+  {
+   "id": "tone:bold_provocative",
+   "kind": "tone",
+   "name": "Bold / provocative",
+   "status": "current",
+   "summary": "Takes a clear stand or challenges a common belief in the first line, then earns it with evidence. Provocation aimed at an idea or a practice starts an argument worth having; provocation without proof is just clickbait.",
+   "use_for": [
+    "LinkedIn, X and Threads posts that argue against a common practice",
+    "opinion columns, brand manifestos and challenger-brand positioning",
+    "commentary and video-essay scripts that open on a contrarian claim",
+    "launch copy for a brand that wants to be remembered, not liked by everyone"
+   ],
+   "avoid": [
+    "A hot take with no evidence behind it. Put the number, test or example within two lines of the claim; a defensible stand is the whole point.",
+    "Aiming at people, communities, faiths or named individuals. Attack the practice or the belief ('discount-led growth is rent'), not a group. Check comp:bns_defamation_speech before naming a person or brand.",
+    "Naming a competitor with factual claims you cannot prove (see comp:trade_marks_comparative_ads and comp:asci_code).",
+    "Provocation as bait: a headline the body does not pay off. Use the stand you can fully defend.",
+    "Grief, health scares, apologies, crisis statements: switch to tone:empathetic_supportive or tone:calm_reassuring."
+   ],
+   "markers": [
+    "NN/g placement (our reading): 'Provocative', 'Unapologetic' and 'Frank' are NN/g tone words. On the four dimensions it sits at the irreverent pole of respectful-irreverent (toward ideas, not people) and can be serious or funny, enthusiastic or matter-of-fact.",
+    "Opens with the stand, not a warm-up: the first sentence is the claim ('Stop running sales to grow.').",
+    "Names the belief it overturns: 'Everyone tells you X. For [your audience], X is wrong, and here is why.'",
+    "Short, hard sentences; verbs of judgment (stop, quit, waste, wrong); one-line paragraphs; the sharpest word last (tech:punchline_last).",
+    "Evidence within two lines of the claim: a number, a test, a named example. The claim must survive a hostile reader.",
+    "Concedes the one case where the opposite holds; it makes the stand more believable, not weaker.",
+    "No hedges and no apology: 'I think', 'maybe', 'sorry if this is controversial' are out. Save 'always' and 'never' for one line per piece and only if true.",
+    "Punctuation: full stops over exclamation marks; one rhetorical question is fine; no ALL CAPS shouting.",
+    "Ends by telling the reader what to do instead, so the stand is useful, not just loud."
+   ],
+   "sample": "Stop using discounts to grow.\nEvery sale teaches your customer one lesson: wait for the next one.\nWe tested it. For 90 days our Pune tea brand ran no discount codes. Revenue dipped in month one. Repeat orders rose.\nDiscounts feel like growth. They are rent.\nIf your margin cannot survive full price, the problem is the product. Fix that first, then sell.",
+   "sample_note": "Illustrative; the 90-day test is invented for the demonstration.",
+   "fits": [
+    "genre:linkedin_post",
+    "genre:opinion_column",
+    "genre:x_post",
+    "genre:x_thread",
+    "genre:threads_post",
+    "genre:thought_leadership_article",
+    "genre:brand_manifesto",
+    "genre:commentary_video_script",
+    "genre:video_essay_script"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Provocative', 'Unapologetic' and 'Frank' are on NN/g's 37-word tone list (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-of-voice-dimensions/",
+     "title": "The Four Dimensions of Tone of Voice (NN/g)",
+     "supports": "irreverent vs respectful dimension used for the placement (placement is our reading)"
+    }
+   ],
+   "related": [
+    "tone:irreverent_edgy",
+    "tone:rebel_challenger",
+    "tone:authoritative",
+    "tone:data_driven",
+    "hook:contrarian",
+    "hook:myth_busting",
+    "tech:pattern_interrupt",
+    "tech:punchline_last"
+   ]
+  },
+  {
+   "id": "tone:calm_reassuring",
+   "kind": "tone",
+   "name": "Calm / reassuring",
+   "status": "current",
+   "summary": "Steady, factual and quietly confident, so an anxious reader feels safe to act. It reassures by giving balanced facts and a clear next step, not by telling the reader not to worry.",
+   "use_for": [
+    "claim, delay, refund and complaint-status emails and messages",
+    "health, insurance, finance and scheme explainers read by worried people",
+    "FAQs, help articles, error messages and chatbot replies at a moment of stress",
+    "service-disruption notices, IVR / hold messages and internal change announcements"
+   ],
+   "avoid": [
+    "'Don't worry' / 'relax' / 'no need to panic': it tells the reader how to feel. Give the balanced fact and the step instead.",
+    "False assurance ('everything will be fine', 'zero risk', 'guaranteed'). It breaks trust and in health, finance and insurance copy can breach advertising or consumer rules.",
+    "Alarm vocabulary (urgent, danger, warning, immediately) except for a real red flag. State a real red flag once, plainly, with what to do.",
+    "'Should' used as an instruction; the NHS style guide warns it can sound patronising. Use 'you can' or 'it helps to'.",
+    "Cheery exclamations and emoji around bad news. If the situation is a real emergency, use tone:urgent."
+   ],
+   "markers": [
+    "Placement (our reading; NN/g does not rate this tone): serious, respectful, matter-of-fact, casual-to-neutral. The NHS voice is described as neutral and factual, authoritative but also calm and reassuring.",
+    "Balanced-fact pattern: name the concern plainly, then what is usual or likely, then the next step ('Delays happen. Most are cleared within [the usual time]. Here is what we are doing.').",
+    "Plain quantifiers over adjectives: 'most people', 'usually', 'in many cases', 'you can'; never 'rest assured'.",
+    "Direct 'you' for the reader and 'we' for what the organisation will do, with a date or time frame for each promise.",
+    "Fixed order: acknowledge, facts, what happens next, when to seek help, who to contact. Anxious readers need the structure to be predictable.",
+    "Short, even sentences; one idea each; a steady rhythm with no stacked clauses.",
+    "Empowering verbs: 'you can check', 'talk to your doctor about', not 'your doctor will tell you'.",
+    "No exclamation marks, no emoji, no ALL CAPS, no comic relief.",
+    "Warns once, calmly, when something truly matters: state the sign, state the action."
+   ],
+   "sample": "Your claim is still being reviewed. This does not mean it has been rejected. Hospitals often send bills in two parts, and we are checking the second bill against the first. We already have all your documents, so you do not need to send anything more. We will update you by Friday. If you have heard nothing by then, call the number below and we will check it with you.",
+   "sample_note": "Illustrative; the claim scenario is invented for the demonstration.",
+   "fits": [
+    "genre:transactional_email",
+    "genre:faq_page",
+    "genre:knowledge_base_article",
+    "genre:troubleshooting_guide",
+    "genre:error_messages",
+    "genre:chatbot_script",
+    "genre:ivr_on_hold_script",
+    "genre:public_service_announcement",
+    "genre:crisis_statement",
+    "genre:internal_announcement"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://service-manual.nhs.uk/content/voice-and-tone",
+     "title": "NHS digital service manual: Voice and tone",
+     "supports": "voice is neutral and factual, authoritative but calm and reassuring; reassure without minimising; avoid 'should' as it can sound patronising; address the user as 'you'; tone adapts to context (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:empathetic_supportive",
+    "tone:urgent",
+    "tone:friendly_warm",
+    "tech:positive_form",
+    "tech:plain_language",
+    "tech:error_message_structure",
+    "tech:you_focus"
+   ]
+  },
+  {
+   "id": "tone:conversational",
+   "kind": "tone",
+   "name": "Conversational",
+   "status": "current",
+   "summary": "Writes the way a knowledgeable person talks: contractions, short everyday words, direct 'you', the point first. In NN/g's study the casual-but-serious, moderately enthusiastic samples performed best, so this is the safe default for most explainers, emails and captions.",
+   "use_for": [
+    "blog posts, explainers, how-tos and newsletters",
+    "welcome, nurture and promotional emails",
+    "homepage, services and FAQ copy for consumer and SMB readers",
+    "Instagram captions, explainer-video scripts and knowledge-base articles"
+   ],
+   "avoid": [
+    "Slang, memes and wacky humour: the Google developer style guide rules out slang and 'wackiness, zaniness, and goofiness'. Conversational is not Gen-Z; for that, see tone:gen_z_internet.",
+    "Forced jokes. Mailchimp's guide says forced humour can be worse than none; when unsure, stay serious.",
+    "Over-casual, playful samples: NN/g's test found an overtly playful insurance sample seemed friendlier but not more trustworthy.",
+    "Fake chumminess ('Hey there, friend!') and chat padding that delays the point. Lead with the takeaway.",
+    "Casual voice in legal notices, regulatory text or contract terms; use tone:academic_formal or tone:technical_precise."
+   ],
+   "markers": [
+    "NN/g placement: casual + serious (NN/g's tested 'conversational' bank sample was casual but serious and outperformed its formal counterpart on friendliness and trustworthiness). Keep enthusiasm moderate.",
+    "Contractions throughout ('you're', 'it's', 'we'll', 'don't'); keep full forms only for emphasis (tech:contractions).",
+    "Short everyday words: 'use' not 'utilise', 'start' not 'commence', 'buy' not 'procure'. Define acronyms, cut jargon.",
+    "Direct 'you' and 'we'/'I'; the reader is the subject of most sentences (tech:you_focus).",
+    "Takeaway first: the key point in the first sentence, then the detail (Microsoft style: get to the point fast).",
+    "Mostly short sentences with an occasional fragment; vary length. Test by reading aloud; if you would not say it, rewrite it (Google style).",
+    "Asks the question the reader is already asking, then answers it in the next sentence.",
+    "Exclamation marks are rare (one per piece at most); no emoji unless the channel expects them; do not say 'simply', 'just' or 'it's easy' about steps.",
+    "Do not over-use 'please' in instructions: 'To view the file, click View.'"
+   ],
+   "sample": "A notice from the GST portal looks scary, but it usually asks for just one thing: an explanation or a document. Start by reading three lines: the section, the period and the amount. Then compare them with your own books. If they match, reply with proof. If they don't, tell us. We'll go through it with you well before the due date.",
+   "fits": [
+    "genre:blog_post",
+    "genre:informational_article",
+    "genre:how_to_article",
+    "genre:welcome_email_series",
+    "genre:email_sequence_nurture",
+    "genre:promotional_email",
+    "genre:homepage_copy",
+    "genre:services_page",
+    "genre:faq_page",
+    "genre:creator_newsletter",
+    "genre:instagram_caption",
+    "genre:explainer_video_script",
+    "genre:knowledge_base_article"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "casual, conversational and moderately enthusiastic tones performed best; the casual-but-serious bank sample beat the formal one on friendliness and trustworthiness; playful insurance sample did not earn more trust (checked 2026-10-05)"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human",
+     "title": "Microsoft Style Guide: brand voice, above all simple and human",
+     "supports": "'talk like a person': short everyday words, contractions, no jargon or acronyms; get to the point fast; short sentences and fragments (checked 2026-10-05)"
+    },
+    {
+     "url": "https://developers.google.com/style/tone",
+     "title": "Google developer documentation style guide: voice and tone",
+     "supports": "conversational, friendly, respectful, like a knowledgeable friend; avoid slang and wackiness; use exclamation marks sparingly; avoid 'simply' and 'easy'; read aloud to test; do not over-use 'please' (checked 2026-10-05)"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/voice-and-tone/",
+     "title": "Mailchimp Content Style Guide: Voice and tone",
+     "supports": "forced humour can be worse than none; plain English; more important to be clear than entertaining (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:friendly_warm",
+    "tone:desi_casual_hinglish",
+    "tone:authoritative",
+    "tech:contractions",
+    "tech:you_focus",
+    "tech:plain_language",
+    "tech:read_aloud",
+    "edit:style_microsoft",
+    "edit:style_google_dev"
+   ]
+  },
+  {
+   "id": "tone:corporate_b2b",
+   "kind": "tone",
+   "name": "Corporate B2B professional",
+   "status": "current",
+   "summary": "Clear, confident, practical business voice for a buyer who has to justify the decision to colleagues: outcomes, numbers and a concrete next step in plain words, not jargon.",
+   "use_for": [
+    "cold emails, services pages, one-pagers and sales decks to business buyers",
+    "case studies, executive summaries, white papers and proposals",
+    "RFP and tender responses",
+    "homepage and landing copy for software, finance, logistics and professional-services brands"
+   ],
+   "avoid": [
+    "Buzzword soup (synergy, best-in-class, end-to-end, seamless, 'solutions'). Replace each with the thing it does and the number it changes.",
+    "Cold formality ('We are pleased to inform you'). NN/g's study found a conversational voice beat a formal one even for banking; keep the respect, drop the stiffness.",
+    "Feature lists without a buyer outcome; the buyer needs a line they can forward to a CFO.",
+    "Superlatives and 'No. 1 / India's leading' without a named, dated source: they invite ASCI and consumer-law trouble (comp:asci_code).",
+    "Vague security or compliance claims. Name the standard and the scope, only if true."
+   ],
+   "markers": [
+    "NN/g placement: serious, respectful, matter-of-fact, casual-leaning per the study (professional but not stiff). 'Professional', 'Conservative' and 'Trustworthy' are NN/g tone words.",
+    "Outcome-first: each claim names a buyer result (hours saved, cost cut, risk removed) with a number, a time window and a baseline.",
+    "Plain verbs over buzzwords: cut, match, file, approve, reduce, track.",
+    "Writes for the committee: includes the proof points a buyer forwards (customer count, similar-company case, how pricing works, security or compliance status if true).",
+    "'You' sentences outnumber 'we' sentences; the buyer's problem comes before the vendor's product.",
+    "One claim per sentence; split at 'and' when a sentence carries two.",
+    "Contractions fine on the web and in email; drop them in proposals and RFP responses.",
+    "Concrete next step with a size and a time ('a 20-minute walkthrough', 'reply with your entity count').",
+    "Measured: no exclamation marks, no emoji, no hype adjectives; confidence comes from specifics. Atlassian's B2B voice combines boldness with practicality and scales tone to the user's context."
+   ],
+   "sample": "Month-end close should not take two weeks. Our reconciliation tool matches bank, GST and vendor ledgers automatically, so your finance team reviews exceptions instead of rows. Pricing is per entity, with no setup fee. Book a 20-minute walkthrough and bring one month of your own data; we will show the match rate on it. If the match rate is low, we will tell you why before you spend anything.",
+   "sample_note": "Illustrative; the product and its offer are invented for the demonstration.",
+   "fits": [
+    "genre:cold_email",
+    "genre:services_page",
+    "genre:homepage_copy",
+    "genre:landing_page",
+    "genre:case_study",
+    "genre:one_pager",
+    "genre:sales_deck",
+    "genre:services_proposal",
+    "genre:rfp_response",
+    "genre:executive_summary"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "conversational beat cold formality even for financial services; trustworthiness drove desirability (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Professional', 'Conservative', 'Trustworthy' are NN/g tone words (checked 2026-10-05)"
+    },
+    {
+     "url": "https://atlassian.design/foundations/content/voice-tone",
+     "title": "Atlassian Design System: Voice and tone",
+     "supports": "a B2B voice built on bold, optimistic, practical-with-a-wink traits; tone scaled to the user's confidence and context (per harvest; not re-fetched)"
+    }
+   ],
+   "related": [
+    "tone:authoritative",
+    "tone:data_driven",
+    "tone:conversational",
+    "tech:features_to_benefits",
+    "tech:specificity",
+    "tech:cta_writing",
+    "tech:objection_handling",
+    "edit:jargon_audit",
+    "comp:asci_code"
+   ]
+  },
+  {
+   "id": "tone:data_driven",
+   "kind": "tone",
+   "name": "Data-driven / evidence-led",
+   "status": "current",
+   "summary": "Leads with numbers, sources and tests and persuades by proof, not adjectives. Every figure carries its source, date and baseline, and the writer states what the data cannot show.",
+   "use_for": [
+    "original-research posts, state-of reports and benchmark write-ups",
+    "case studies and investor or board updates built on results",
+    "business reports, ESG or annual-report narrative, infographic copy",
+    "fact-check pieces and any explainer that claims 'the data shows'"
+   ],
+   "avoid": [
+    "A number without a source and date. One unsourced stat undoes the whole voice; cut it or find the source (edit:fact_check).",
+    "Percentages on tiny bases ('up 300%' from 2 to 6) and cherry-picked baselines. Give the base number and the period.",
+    "Correlation written as cause. Say 'coincided with', name confounders, state what was not tested.",
+    "Stat dumps with no interpretation. Follow every figure with one plain sentence on what it means (tech:so_what_test).",
+    "Hype adjectives ('massive', 'skyrocketing') beside a number; let the figure speak.",
+    "Quoting a roundup's number as if it were primary. Link the original or mark it as secondary."
+   ],
+   "markers": [
+    "NN/g placement: serious, matter-of-fact, respectful. 'Informative', 'Smart' and 'Matter-of-fact' are NN/g tone words; trustworthiness, not friendliness, explained most of desirability in NN/g's study.",
+    "Number first: the opening sentence carries the finding in the form '[figure] [unit] in [period] ([source, year])'.",
+    "Every figure has its source and date next to it; method or sample size where it matters ('n = 3,140 orders').",
+    "A comparison, not a lone number: against last year, a benchmark or a control. Say whether it is percent or percentage points.",
+    "Plain reporting verbs: rose, fell, held at, doubled. No adjectives of size.",
+    "One-sentence 'so what' after each figure, then the next figure.",
+    "States the limits: sample, period, what was not controlled, correlation versus cause.",
+    "Numbers as numerals with units and consistent rounding; Indian currency in the audience's habit (lakh/crore or millions) as set in lang:india_locale_formats.",
+    "Tables and charts hold the detail; prose holds the claim and the interpretation."
+   ],
+   "sample": "Repeat orders rose from 18% to 24% of all orders between April and September 2026 (our Shopify export, 3,140 orders). The rise began in the month we added a refill reminder on WhatsApp. The timing suggests a link, but we also changed pack sizes in July, so we cannot isolate the reminder. Next quarter we will hold pack size fixed and send the reminder to half of customers.",
+   "sample_note": "Illustrative; the figures are invented for the demonstration.",
+   "fits": [
+    "genre:research_article",
+    "genre:research_report",
+    "genre:case_study",
+    "genre:investor_update",
+    "genre:business_report",
+    "genre:infographic_copy",
+    "genre:fact_check",
+    "genre:esg_csr_report",
+    "genre:white_paper",
+    "genre:executive_summary"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "trustworthiness explained about 52% of desirability, friendliness about 8% more (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Informative', 'Smart' and 'Matter-of-fact' are on the 37-word tone list (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:authoritative",
+    "tone:academic_formal",
+    "tone:journalistic_neutral",
+    "tone:technical_precise",
+    "tech:specificity",
+    "tech:so_what_test",
+    "tech:numerals",
+    "edit:fact_check",
+    "edit:source_citation",
+    "lang:india_locale_formats"
+   ]
+  },
+  {
+   "id": "tone:deadpan",
+   "kind": "tone",
+   "name": "Deadpan / dry",
+   "status": "current",
+   "summary": "States absurd things flatly, with no visible emotion, and lets the reader find the joke. The humour lives in the gap between flat delivery and ridiculous content, so the writer must never signal that a joke is coming.",
+   "use_for": [
+    "satire, parody and news-style spoofs",
+    "memes, X/Threads posts and short-video scripts with a straight-faced narrator",
+    "stand-up, sketch and web-series dialogue for dry characters",
+    "low-stakes UX microcopy (empty states, 404 pages) for a brand that has earned a dry voice"
+   ],
+   "avoid": [
+    "Winking at the joke: exclamation marks, emoji, 'lol', '(just kidding)'. Each one turns deadpan into an ordinary gag.",
+    "Explaining the joke or adding 'the funny thing is'. Stop after the punchline.",
+    "Using it in grief, crisis, health, legal or support-ticket copy. Mailchimp's guide says forced humour can be worse than none and to stay serious when unsure.",
+    "Mocking vulnerable people. Aim the dry eye at institutions, habits and absurd processes.",
+    "Mixing with hype energy in the same piece; the flat voice is the joke."
+   ],
+   "markers": [
+    "NN/g placement: funny at the serious-funny pole, but matter-of-fact (the opposite of hype) on enthusiastic vs matter-of-fact. 'Dry' and 'Matter-of-fact' are NN/g tone words.",
+    "Flat delivery of absurd content: report the ridiculous as routine fact ('The meeting was moved to 7 a.m. so nobody could attend').",
+    "The comedy comes from contrast between neutral form and absurd content (Wikipedia: deliberate emotional neutrality).",
+    "Zero exclamation marks, zero emoji, no laughter words; a full stop after every sentence.",
+    "Understatement for large things ('a minor setback'); bureaucratic precision for trivial ones (form numbers, times, clause numbers) so the absurdity feels credible.",
+    "Short declarative sentences, plain verbs, past or present tense; the punchline is the last clause of the last sentence (tech:punchline_last).",
+    "Formal register applied to something trivial ('The committee regrets the monsoon').",
+    "Rule of three where the third item quietly breaks the pattern (tech:rule_of_three).",
+    "Hinglish works when the voice stays flat: 'Form 4 zaroori hai. Form 4 Form 3 ke baad milta hai. Form 3 Form 4 ke baad.'",
+    "Mailchimp describes its dry humour as straight-faced, subtle and a touch eccentric."
+   ],
+   "sample": "The new flyover opened on Monday. It leads to the old flyover, which is closed for repairs. Officials say the two projects are unrelated. Both are expected to finish in the same year, though they have not said which one. Commuters are advised to use the road underneath, which is under construction. The advisory will be updated once the advisory is ready.",
+   "fits": [
+    "genre:satire_parody",
+    "genre:sketch_comedy",
+    "genre:standup_comedy_set",
+    "genre:meme_caption",
+    "genre:x_post",
+    "genre:threads_post",
+    "genre:short_form_video_script",
+    "genre:video_essay_script",
+    "genre:newsjacking_post",
+    "genre:ux_microcopy"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Deadpan",
+     "title": "Deadpan (Wikipedia)",
+     "supports": "deadpan = deliberate emotional neutrality; humour comes from the contrast between flat delivery and absurd content (per harvest; not re-fetched)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Dry' and 'Matter-of-fact' are on the 37-word tone list (checked 2026-10-05)"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/voice-and-tone/",
+     "title": "Mailchimp Content Style Guide: Voice and tone",
+     "supports": "dry humour described as straight-faced, subtle and a touch eccentric; forced humour can be worse than none (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:satirical_vyangya",
+    "tone:sarcastic",
+    "tone:irreverent_edgy",
+    "tone:playful_witty",
+    "tone:minimalist_understated",
+    "tech:punchline_last",
+    "tech:rule_of_three"
+   ]
+  },
+  {
+   "id": "tone:desi_casual_hinglish",
+   "kind": "tone",
+   "name": "Desi casual (Hinglish)",
+   "status": "current",
+   "summary": "An easy Hindi-English mix with Indian references, written the way a friend from the same city would say it. It is the attitude of the voice (relaxed, a little cheeky, respectful of the reader); spelling and script rules live in lang:hinglish_roman and lang:hinglish_devanagari.",
+   "use_for": [
+    "Instagram captions, Reels and Shorts scripts, Stories and memes for Indian consumers",
+    "WhatsApp broadcasts, push notifications and SMS where the audience speaks Hinglish",
+    "UGC-style ads and creator scripts for D2C, fintech, ed-tech and food brands",
+    "comment replies and community posts in a casual brand voice"
+   ],
+   "avoid": [
+    "Slang overload ('bro scene on hai yaar bhai'): a pinch per paragraph is a voice, a handful per line is a costume.",
+    "Word-for-word translation of English idioms into Hindi ('dil ki baat ko neeche mat rakho'); write the way people actually say it.",
+    "Pure-Sanskritised Hindi in a casual piece (anusandhan, upayog) and, in the other direction, English with a Hindi word sprinkled on top; the sentence frame should be Hindi.",
+    "Casual 'tu' with an unknown buyer: it reads as rude. Pick 'aap' (default) or 'tum' (peer voice) and hold it for the whole piece.",
+    "Mocking regional accents or stereotyping a state or community for a laugh; and writing Delhi-Punjabi slang for a Chennai or Kolkata audience.",
+    "Using it for legal, medical, financial-disclosure or regulatory text: switch to tone:conversational in plain Hindi or English, with the mandatory lines intact."
+   ],
+   "markers": [
+    "Placement (per the batch note): casual, light, respectful-to-cheeky on NN/g's dimensions: cheeky about the situation, respectful to the reader.",
+    "Hindi sentence frame with English insertions: verbs, postpositions and particles stay Hindi (hai, ka, ko, mein, toh, na); English supplies the nouns and terms people already say in English (EMI, refund, deadline, salary, app). Bali et al. 2014 found Hindi sentences carried English insertions far more often (23.7% of Hindi matrices) than English sentences carried Hindi (7.2%): follow that direction.",
+    "One register for the whole piece: 'aap' or 'tum' from the first line to the last.",
+    "Conversational tags used sparingly, one or two per paragraph: yaar, na, toh, dekho, suno, matlab, chalo, bas.",
+    "Tag questions that invite a nod: 'sahi hai na?', 'hai na?', 'kabhi hua hai aisa?'.",
+    "Local, shared references the audience will recognise: chai, auto, local train, WhatsApp family group, shaadi season, monsoon, cricket, salary-day. Match the city or region of the audience.",
+    "Short lines, one beat per line; the line break does the work of a pause (see tech:mobile_line_breaks).",
+    "Self-aware humour that owns a relatable failure ('salary aayi, teen din mein gayab') rather than mocking the reader.",
+    "Roman script with consistent spelling for captions and ads (lang:hinglish_roman); Devanagari with English words for voice-over and TTS (lang:hinglish_devanagari). Do not switch spelling mid-piece.",
+    "Emoji sparingly in captions (one to three, at the line end), none inside a voice-over script.",
+    "Numbers in the audience's form: 'Rs 499', '2 hafte', lakh / crore."
+   ],
+   "sample": "Salary aayi, aur teen din mein gayab. Sahi hai na?\nDekho, problem tumhari kamai nahi hai. Problem yeh hai ki paisa bina naam ke ghoomta rehta hai.\nAaj bas ek kaam karo: salary aate hi teen hisse bana lo. Kharcha, bachat, mauj.\nMauj ka hissa chhota rakho, par poora use karo. Bina guilt ke.\nPehla hissa abhi nikalo. Ek minute lagega.",
+   "fits": [
+    "genre:instagram_caption",
+    "genre:short_form_video_script",
+    "genre:social_ad_copy",
+    "genre:ugc_ad_script",
+    "genre:video_ad_script",
+    "genre:instagram_story_copy",
+    "genre:whatsapp_broadcast",
+    "genre:push_notification",
+    "genre:sms_marketing",
+    "genre:meme_caption",
+    "genre:comment_reply"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hinglish",
+     "title": "Hinglish (Wikipedia)",
+     "supports": "Hinglish code-switching is common in Indian advertising and media; Google added Hinglish support to Gboard and Search (per harvest; not re-fetched)"
+    },
+    {
+     "url": "https://aclanthology.org/W14-3914/",
+     "title": "Bali et al. 2014, 'I am borrowing ya mixing?' An Analysis of English-Hindi Code Mixing in Facebook",
+     "supports": "Hindi sentences carried English insertions far more often (23.7% of Hindi matrices) than English sentences carried Hindi (7.2%) (per harvest; not re-fetched)"
+    }
+   ],
+   "related": [
+    "tone:conversational",
+    "tone:friendly_warm",
+    "tone:gen_z_internet",
+    "lang:hinglish_roman",
+    "lang:hinglish_devanagari",
+    "lang:hindustani_everyday",
+    "hook:hinglish_question",
+    "hook:hinglish_galti_mat_karna",
+    "trend:short_video_india",
+    "trend:rural_vernacular_internet_india"
+   ]
+  },
+  {
+   "id": "tone:devotional_bhakti",
+   "kind": "tone",
+   "name": "Devotional / spiritual (bhakti)",
+   "status": "current",
+   "summary": "A reverent, loving, surrendering voice addressed to or about a deity: the bhajan, aarti, stuti and katha register. It is sincere, never ironic, and its words must be accurate to the tradition.",
+   "use_for": [
+    "aarti, bhajan, stuti and chalisa-style lyrics and captions",
+    "vrat katha and mythological narration",
+    "festival greetings and daily devotional forwards (WhatsApp, Channel, Instagram)",
+    "audio and video devotional content in Hindi, Awadhi, Braj or Sanskritised Hindi"
+   ],
+   "avoid": [
+    "Irony, jokes, memes or 'bro' energy anywhere near a deity or a scripture; the register collapses at the first wink.",
+    "Selling inside the devotion ('Buy now!' between verses). Keep the commercial line outside the devotional text.",
+    "Invented shlokas, wrong attributions (a verse credited to the wrong poet-saint) and machine-made Sanskrit. Check every quote against an edition and give Devanagari plus IAST (lang:sanskrit_iast).",
+    "Promised boons ('read this and get a job in 7 days'): for paid or promotional copy see comp:dmr_act_1954 (magic remedies) and comp:asci_code.",
+    "Ranking deities or mixing one tradition's attributes into another's, and anything that could outrage religious feelings (see comp:bns_defamation_speech).",
+    "Casual Hinglish and English slang in the verse itself; keep the verse in the tradition's own language."
+   ],
+   "markers": [
+    "Placement (per the batch note): serious and respectful on NN/g's dimensions, with energy that ranges from enthusiastic (kirtan, jaikara) to calm (evening aarti, stuti), decided by the form. Never funny, never irreverent.",
+    "Bhakti is devotion, love and surrender to a deity; the movement used vernacular languages and poet-saints (Kabir, Tulsidas, Mirabai, Surdas), so the voice is plain, heartfelt and local, not scholarly.",
+    "Direct address to the deity with honorifics: Prabhu, Maiya, Hey Ram, Shri; the devotee speaks humbly ('main', 'hum'). Match the pronoun forms to the tradition and the source text.",
+    "Vocabulary of surrender and light: sharan, charan, kripa, daya, seva, bhav, deep, jyot, shankh. Petition is phrased as a plea ('kripa karo'), never as a demand.",
+    "Short lines with a steady beat; rhymed couplets, refrains and invocations as the form needs ('Jai ...' at the start and the end).",
+    "Repetition is the form (naam, refrain), not padding: do not edit it out.",
+    "Scripture quoted verbatim from a verified edition; paraphrase is marked as paraphrase and never placed in quotation marks as the original.",
+    "Festival and vrat facts (date, tithi, muhurat, rules) checked against a trusted panchang before they are printed.",
+    "Awadhi, Braj or Bhojpuri flavour only where the tradition or the audience owns it (lang:bhojpuri_awadhi_flavour); Tulsidas's Ramcharitmanas (1575) is the landmark Awadhi devotional text.",
+    "In captions, one or two traditional emoji at most (for example a folded-hands emoji); none inside the verse."
+   ],
+   "sample": "हे पवनसुत, तेरे द्वार पर आज फिर आया हूँ।\nन माँगता हूँ धन, न मान, बस इतनी दया —\nजब मन डगमगाए, तेरा नाम याद रहे।\nतेरे चरणों की धूल मेरा तिलक हो,\nतेरी कृपा का दीपक मेरी राह में जले।\nजय बजरंगबली, जय जय सिया राम।",
+   "sample_note": "Original lines written for this card; not a scripture quote.",
+   "fits": [
+    "genre:devotional_content",
+    "genre:katha_narration",
+    "genre:festival_greeting",
+    "genre:whatsapp_forward",
+    "genre:whatsapp_channel_post",
+    "genre:greeting_wishes_message",
+    "genre:song_lyrics",
+    "genre:audio_series_script",
+    "genre:instagram_caption"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bhakti",
+     "title": "Bhakti (Wikipedia)",
+     "supports": "bhakti = devotion, love and surrender to a deity; the movement used vernacular languages and poet-saints (Kabir, Tulsidas, Mirabai, Surdas); bhajan and kirtan forms (per harvest; not re-fetched)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Awadhi_language",
+     "title": "Awadhi language (Wikipedia)",
+     "supports": "Tulsidas's Ramcharitmanas (1575) is the landmark devotional text, written in Awadhi (per harvest; not re-fetched)"
+    }
+   ],
+   "related": [
+    "tone:regal_heritage",
+    "tone:calm_reassuring",
+    "tone:storyteller_narrative",
+    "lang:sanskrit_iast",
+    "lang:hindi_devanagari",
+    "lang:bhojpuri_awadhi_flavour",
+    "comp:bns_defamation_speech",
+    "comp:dmr_act_1954"
+   ]
+  },
+  {
+   "id": "tone:empathetic_supportive",
+   "kind": "tone",
+   "name": "Empathetic / supportive",
+   "status": "current",
+   "summary": "Acknowledges what the reader is going through before telling them what to do. It is patient, specific, never jokey, and it backs the feeling with a concrete action and a named person.",
+   "use_for": [
+    "complaint replies, delayed-order and refund messages",
+    "apology statements and crisis communication that affects real people",
+    "health, money-loss and support-ticket copy; chatbot replies when the user is stuck",
+    "condolence messages, layoff or change announcements, fundraising appeals about hardship"
+   ],
+   "avoid": [
+    "Template apology ('we apologise for any inconvenience'): name what actually happened to this person instead.",
+    "Defensive openers ('Unfortunately, as per policy...'), blaming the user, or an upsell in the same message.",
+    "Humour, puns, emoji and exclamation marks. The NHS manual says to avoid jokey or flippant language in sensitive situations.",
+    "Telling people how to feel ('don't be upset', 'calm down') or claiming 'I know exactly how you feel'.",
+    "Passive apologies ('mistakes were made'): say who did it, in active voice (tech:active_voice).",
+    "A performed warmth from bots that opens every line with 'I understand'. One real acknowledgement, then action."
+   ],
+   "markers": [
+    "NN/g placement (per the batch note): serious, respectful, casual-to-neutral, matter-of-fact. 'Sympathetic' and 'Caring' are on NN/g's 37-word tone list. Microsoft's guide holds the voice constant while tone moves from serious to empathetic to lighthearted to fit the customer's state of mind.",
+    "Order: one acknowledgement of the specific situation, then the facts, then what we are doing, then what you can do. Never open with policy.",
+    "Names the specific event ('your gift box missed your sister's Diwali'), not a category ('the inconvenience caused').",
+    "One plain acknowledgement, in plain words: 'I'm sorry', 'that's frustrating', 'that sounds stressful'. No stacked intensifiers ('deeply, truly, so incredibly sorry').",
+    "Owns the cause when it is ours: 'we made a mistake', 'our courier hub held it', in active voice.",
+    "Offers choices rather than commands; avoids 'should' (the NHS manual notes it can sound patronising); empowers: 'you can pick a refund or a replacement'.",
+    "Patient pace: short sentences, no pressure words, a time frame for every promise.",
+    "A named human and a way to reach them: 'Kavya, customer care, here until 7 pm'.",
+    "In Hindi or Hinglish use 'aap', plain verbs and your own words ('yeh hamari galti thi'); stock phrases like 'humein khed hai' sound scripted.",
+    "No exclamation marks, no emoji, no ALL CAPS, no jokes."
+   ],
+   "sample": "Hi Meera, I'm sorry your gift box didn't reach your sister before Diwali. That was our mistake: our courier hub held the parcel for two days and we missed it. A replacement is on its way by express and will reach her by Thursday. I've also refunded the shipping. If Thursday is too late, reply here and I'll arrange a full refund instead. I'm here until 7 pm today. Kavya, customer care",
+   "sample_note": "Illustrative; the order and names are invented for the demonstration.",
+   "fits": [
+    "genre:apology_statement",
+    "genre:condolence_message",
+    "genre:comment_reply",
+    "genre:crisis_statement",
+    "genre:transactional_email",
+    "genre:post_purchase_email",
+    "genre:chatbot_script",
+    "genre:internal_announcement",
+    "genre:error_messages",
+    "genre:fundraising_appeal"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human",
+     "title": "Microsoft Style Guide: brand voice, above all simple and human",
+     "supports": "voice stays constant while tone adapts from serious to empathetic to lighthearted to fit the context and the customer's state of mind (checked 2026-10-05)"
+    },
+    {
+     "url": "https://service-manual.nhs.uk/content/voice-and-tone",
+     "title": "NHS digital service manual: Voice and tone",
+     "supports": "tone changes with the user's emotional state; empowering rather than patronising; avoid 'should' (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Sympathetic' and 'Caring' are on the 37-word tone list (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:calm_reassuring",
+    "tone:friendly_warm",
+    "tech:active_voice",
+    "tech:vulnerability_confession",
+    "tech:error_message_structure",
+    "edit:sensitivity_read",
+    "edit:style_microsoft"
+   ]
+  },
+  {
+   "id": "tone:enthusiastic_hype",
+   "kind": "tone",
+   "name": "Hype / energetic creator",
+   "status": "current",
+   "summary": "High-energy, exclamatory, excited voice that sells the moment. It works when every burst of energy is attached to something concrete (a date, a number, a reason to care) and when it is kept short.",
+   "use_for": [
+    "launch and drop announcements, Reels and Shorts scripts",
+    "event promotion, livestream run-of-show and anchoring",
+    "push notifications, SMS and Stories about a live offer",
+    "social ads and promotional emails where the moment is the message"
+   ],
+   "avoid": [
+    "Walls of exclamation marks and emoji; NN/g found extreme playful samples cost credibility and moderate enthusiasm performed best. Keep trust-heavy copy moderately enthusiastic.",
+    "Fake urgency (countdowns that reset, 'only 2 left' that never changes). Use real deadlines and real stock (tech:ethical_urgency).",
+    "Claims past the evidence ('world's best', 'guaranteed results'): see comp:asci_code. A superlative needs a number behind it.",
+    "Hype in grief, health scares, finance risk disclosures or B2B contracts; use tone:calm_reassuring or tone:corporate_b2b.",
+    "Sustaining full hype over a long script; it tires the viewer. Peak at the reveal and the ask, then stop."
+   ],
+   "markers": [
+    "NN/g placement: the enthusiastic pole of matter-of-fact vs enthusiastic, and casual. In NN/g's examples adding an 'Oops!'-style exclamation raised perceived enthusiasm and casualness. 'Enthusiastic', 'Upbeat' and 'Passionate' are NN/g tone words.",
+    "Exclamation marks are rationed: one for each beat that earns it, not one per line.",
+    "Present-tense energy verbs and a clock: drops, lands, live, tonight, just in; the time or date appears in the first two lines.",
+    "Short bursts of 3-8 words, one beat per line; fragments are fine.",
+    "Every superlative is backed by a fact in the next clause ('14 hours of battery', 'waterproof knit').",
+    "Direct address and inclusion: 'you', 'we', 'let's'.",
+    "Emoji: one to three, relevant, at line end; ALL CAPS on at most one word per piece.",
+    "Hinglish hype words when the audience speaks it ('aa gaya', 'dhamaka', 'scene on hai'): one or two, not a string.",
+    "Rhythm builds: tease, reveal, ask on the peak, then stop; the CTA is the last line, not buried.",
+    "Hype is a mood, not a replacement for information: the product, the price or date and the action must still be in the text."
+   ],
+   "sample": "It's here! The Monsoon Runner drops tonight at 8.\nWaterproof knit. 240 g. Grip that holds on wet Bengaluru roads.\nThe first 500 pairs ship free.\nSet your reminder: the last drop sold out in one evening.\nLink in bio. See you at 8!",
+   "sample_note": "Illustrative; the product and sell-out claim are invented for the demonstration.",
+   "fits": [
+    "genre:short_form_video_script",
+    "genre:instagram_caption",
+    "genre:instagram_story_copy",
+    "genre:launch_sequence",
+    "genre:event_promotion",
+    "genre:push_notification",
+    "genre:sms_marketing",
+    "genre:promotional_email",
+    "genre:social_ad_copy",
+    "genre:livestream_run_of_show",
+    "genre:anchoring_script"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-of-voice-dimensions/",
+     "title": "The Four Dimensions of Tone of Voice (NN/g)",
+     "supports": "matter-of-fact vs enthusiastic is a tone dimension; the 'Oops!' error-message example shows exclamations raising enthusiasm and casualness (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Enthusiastic', 'Upbeat' and 'Passionate' are on the 37-word tone list (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "casual, conversational and moderately enthusiastic tones performed best; the playful insurance sample did not earn more trust (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:playful_witty",
+    "tone:urgent",
+    "tone:desi_casual_hinglish",
+    "tone:conversational",
+    "tech:ethical_urgency",
+    "tech:power_words",
+    "tech:pattern_interrupt",
+    "trend:short_video_india"
+   ]
+  },
+  {
+   "id": "tone:founder_candid",
+   "kind": "tone",
+   "name": "Humble / founder-candid",
+   "status": "current",
+   "summary": "First-person, transparent writing that admits mistakes and shares real numbers. The candour is carried by specifics (what went wrong, the figure, what changed); vague humility reads as a humblebrag.",
+   "use_for": [
+    "founder and CEO posts on LinkedIn or X, including ghostwritten ones built from the founder's own interview",
+    "investor updates, founder letters and build-in-public newsletters",
+    "about pages and brand stories that need to feel earned",
+    "crowdfunding pages and product-update newsletters that report setbacks"
+   ],
+   "avoid": [
+    "Vague humility ('humbled', 'blessed', 'we learned a lot'): it reads as a humblebrag. Give the mistake, the cost and the change.",
+    "Performed vulnerability for engagement (a confession with no number, no consequence and no decision).",
+    "Sharing figures you cannot back with a statement or export; and sharing investor, employee or customer information without consent (see comp:dpdp_act_rules).",
+    "Blaming 'the market' or a team member. Own the decision that was yours.",
+    "A ghostwriter inventing a story the founder did not live. Interview first (tech:sme_interview); never fabricate an anecdote or a figure."
+   ],
+   "markers": [
+    "NN/g placement (per the batch note): casual, serious, respectful, matter-of-fact. 'Frank' is on NN/g's 37-word tone list.",
+    "First person ('I', 'we') and past tense for what happened; present tense for what is changing.",
+    "Real numbers with a period: revenue, loss, churn, price, runway, headcount. Buffer is a named example of the stance: since 2013 it has published its finances and salaries.",
+    "The shape of a candid story: what I decided, what it cost, what I got wrong, what we do now.",
+    "States uncertainty plainly ('we don't know yet'), plus the test that will settle it.",
+    "Plain, unpolished diction with contractions; no press-release voice, no jargon.",
+    "Credit named: the teammate or customer who spotted the problem, with their permission.",
+    "Ends on a decision or a rule ('from now on I order 500, wait ten days, then reorder'), not a moral platitude.",
+    "No exclamation marks and no 'so excited to announce'; delight, when real, is stated in one flat sentence."
+   ],
+   "sample": "Last quarter we lost Rs 6 lakh on a stock bet I made alone. I ordered 4,000 cotton kurtas for Navratri after one good week of sales. We sold 1,100. The rest are still in our Surat godown.\nMy mistake: I read one week as a trend. From now on I order 500, wait ten days, then reorder.\nSlower. Cheaper to be wrong.",
+   "sample_note": "Illustrative; the company and the figures are invented for the demonstration.",
+   "fits": [
+    "genre:ghostwritten_founder_post",
+    "genre:linkedin_post",
+    "genre:x_thread",
+    "genre:ceo_letter",
+    "genre:investor_update",
+    "genre:brand_story",
+    "genre:about_page",
+    "genre:creator_newsletter",
+    "genre:product_update_newsletter",
+    "genre:crowdfunding_page",
+    "genre:personal_essay"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://buffer.com/transparency",
+     "title": "Buffer: Transparency",
+     "supports": "'Since 2013, we've been open with Buffer's finances and our team's salaries, among many other metrics'; publishes salaries, monthly metrics and shareholder updates (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Frank' is on the 37-word tone list (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:conversational",
+    "tone:authoritative",
+    "tone:empathetic_supportive",
+    "tech:vulnerability_confession",
+    "tech:specificity",
+    "tech:anecdote_lead",
+    "tech:sme_interview",
+    "trend:thought_leadership_b2b",
+    "trend:ai_slop_backlash"
+   ]
+  },
+  {
+   "id": "tone:friendly_warm",
+   "kind": "tone",
+   "name": "Friendly / warm",
+   "status": "current",
+   "summary": "Approachable and kind, so the reader feels someone is on their side. Warmth works when it comes with useful substance: in NN/g's study friendliness alone did not drive desirability.",
+   "use_for": [
+    "welcome, onboarding and post-purchase emails",
+    "about pages, community posts and comment replies",
+    "WhatsApp broadcasts, greetings and festival messages",
+    "Instagram and Facebook captions for consumer and community brands"
+   ],
+   "avoid": [
+    "Friendliness instead of substance. NN/g found trustworthiness explained about 52% of desirability and friendliness only about 8% more; warmth with nothing useful in it does not persuade.",
+    "Over-familiarity with strangers ('Hey bestie!'): it reads as presumptuous. Warm is not the same as chatty.",
+    "Hollow warmth ('Dear valued customer, we truly care'). Show the care with a specific action.",
+    "Exclamation floods and emoji clusters. One exclamation mark per short message at most.",
+    "A chirpy tone on a complaint or a loss; switch to tone:empathetic_supportive."
+   ],
+   "markers": [
+    "NN/g placement (per the batch note): casual, respectful, mildly enthusiastic. 'Friendly', 'Caring' and 'Cheerful' are NN/g tone words; Microsoft's voice principles are 'warm and relaxed' and 'ready to lend a hand'.",
+    "Greets the reader as a person (a name where you have it) and moves to something useful in the next sentence.",
+    "'You' and 'we', plain words, contractions, short sentences.",
+    "Helps first: anticipates the next question and offers the next step before being asked ('ready to lend a hand').",
+    "Warm vocabulary with a reason: 'glad', 'happy to', 'welcome', 'thanks for [specific thing]'.",
+    "Reads the reader's state (relieved, confused, frustrated) and adjusts, as Mailchimp's guide advises.",
+    "Specific kindness over generic care: 'since this is a gift, we've added a card'.",
+    "Mild energy: at most one exclamation mark and one or two emoji where the channel expects them (WhatsApp, Instagram); none in regulated or legal text.",
+    "Signs off with a named human, not a department.",
+    "In Hindi or Hinglish: 'aap' with warmth ('swagat hai', 'hum madad ke liye yahin hain'), not slang."
+   ],
+   "sample": "Hi Anita, welcome to Chai Mitra. We're glad you're here.\nYour first box of Assam leaf ships on Monday, and we'll message you the day it leaves so you can plan for it. If you'd like it a bit stronger or milder, just reply to this email and Ravi from our team will sort it out. The 250 g pack is a good size to find your taste. Enjoy the first cup!",
+   "fits": [
+    "genre:welcome_email_series",
+    "genre:post_purchase_email",
+    "genre:onboarding_flow_copy",
+    "genre:saas_onboarding_email",
+    "genre:about_page",
+    "genre:community_post",
+    "genre:comment_reply",
+    "genre:festival_greeting",
+    "genre:greeting_wishes_message",
+    "genre:whatsapp_broadcast",
+    "genre:instagram_caption",
+    "genre:facebook_post"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human",
+     "title": "Microsoft Style Guide: brand voice",
+     "supports": "voice principles 'warm and relaxed' and 'ready to lend a hand' (show customers you are on their side) (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Friendly', 'Caring', 'Cheerful' are on the 37-word tone list (checked 2026-10-05)"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/voice-and-tone/",
+     "title": "Mailchimp Content Style Guide: Voice and tone",
+     "supports": "'genuine' voice trait (familiar, warm, accessible); tone adjusted to the reader's emotional state (checked 2026-10-05)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-users/",
+     "title": "The Impact of Tone of Voice on Users' Brand Perception (NN/g)",
+     "supports": "trustworthiness explained about 52% of desirability, friendliness about 8% more (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:conversational",
+    "tone:empathetic_supportive",
+    "tone:desi_casual_hinglish",
+    "tech:you_focus",
+    "tech:personalization_tokens",
+    "tech:contractions",
+    "edit:style_mailchimp",
+    "edit:style_microsoft"
+   ]
+  },
+  {
+   "id": "tone:gen_z_internet",
+   "kind": "tone",
+   "name": "Gen-Z internet voice",
+   "status": "current",
+   "summary": "Lower-case, meme-literate, in-group slang and self-aware irony, tuned to what is current this month. Its half-life is short: a term that is right in the audience's feed today may be cringe by next quarter, so verify before you write it.",
+   "use_for": [
+    "memes, Reels and Shorts captions and scripts aimed at under-25 audiences",
+    "X, Threads and Reddit posts, Stories and social bios for youth brands",
+    "UGC-style ads and sponsored creator posts",
+    "newsjacking and trend-reactive posts where speed and format-fluency matter"
+   ],
+   "avoid": [
+    "Slang that is dated or used in the wrong sense. Wikipedia notes slang marks group belonging and spreads fast from creators to the mainstream (for example 'rizz'; Dictionary.com's 2025 Word of the Year was '67', from Gen Alpha TikTok), so check the term against the audience's own recent posts, not against a list.",
+    "The 'how do you do, fellow kids' effect: a brand wearing a meme as a costume while running a hard sell. Join the format only if the post would work without the logo.",
+    "Slang in documentation, legal, support or B2B copy. The Google developer style guide counsels avoiding slang and internet abbreviations for global readers.",
+    "Edgy-by-default insults, slurs or stereotyping to sound cool.",
+    "Translating slang between languages: it rarely survives (see lang:transcreation). Write it natively in the language of the audience.",
+    "Posting on a controversial trend because it is trending."
+   ],
+   "markers": [
+    "NN/g placement (per the batch note): casual, funny, irreverent. 'Trendy' and 'Quirky' are on NN/g's 37-word tone list.",
+    "Lower-case, minimal punctuation, line breaks as beats; stylised spellings or abbreviations only if the audience uses them this month.",
+    "One to three current terms, used the way the audience uses them; none forced. Slang is a group signal, so a wrong one outs the writer.",
+    "Self-aware irony: the second line undercuts the first ('me: I'll sleep early / also me: 3 am').",
+    "Format literacy: POV posts, 'nobody:' and 'me when' setups, with the format named as the audience names it (see hook:pov).",
+    "Hyper-specific relatable micro-moments (placement-week chai, hostel mess, 2 am fridge run) over generic 'we all know that feeling'.",
+    "Short: one to three lines, ending on the punchline; the CTA is casual ('link in bio').",
+    "India Gen Z mixes Hinglish with English slang and desi references; code-switch the way the audience does (tone:desi_casual_hinglish).",
+    "Emoji as tone marker, not decoration, and only the ones the audience uses sincerely or ironically right now.",
+    "ALL CAPS only for one ironic word."
+   ],
+   "sample": "pov: placement week, you're \"ready\"\nresume: 3 versions\nconfidence: 0 versions\nchai: 4th cup\nmom: sab ho jayega\nanyway we built a resume checker that tells you what's wrong in 30 seconds. no judgment. ok a little judgment.\nlink in bio",
+   "sample_note": "Illustrative; the product and the 30-second claim are invented for the demonstration.",
+   "fits": [
+    "genre:meme_caption",
+    "genre:short_form_video_script",
+    "genre:instagram_caption",
+    "genre:instagram_story_copy",
+    "genre:x_post",
+    "genre:threads_post",
+    "genre:reddit_post",
+    "genre:social_bio",
+    "genre:ugc_ad_script",
+    "genre:sponsored_creator_post",
+    "genre:newsjacking_post"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Internet_slang",
+     "title": "Internet slang (Wikipedia)",
+     "supports": "slang marks group belonging and spreads fast from creators to the mainstream (e.g. 'rizz'; Dictionary.com's 2025 Word of the Year '67' from Gen Alpha TikTok) (per harvest; not re-fetched)"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/tone-voice-words/",
+     "title": "Tone-of-Voice Words (NN/g)",
+     "supports": "'Trendy' and 'Quirky' are on the 37-word tone list (checked 2026-10-05)"
+    },
+    {
+     "url": "https://developers.google.com/style/tone",
+     "title": "Google developer documentation style guide: voice and tone",
+     "supports": "counter-rule: avoid slang and internet abbreviations (tl;dr, ymmv) for global readers (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "tone:irreverent_edgy",
+    "tone:playful_witty",
+    "tone:desi_casual_hinglish",
+    "tone:deadpan",
+    "hook:pov",
+    "lang:hinglish_roman",
+    "lang:transcreation",
+    "trend:short_video_india"
+   ]
+  },
+  {
+   "id": "tone:inclusive",
+   "kind": "tone",
+   "name": "Inclusive",
+   "status": "current",
+   "summary": "Bias-free wording that does not assume the reader's gender, ability, region or wealth. It is a layer applied over any other tone: it changes word choice and examples, not the energy or formality of the piece.",
+   "use_for": [
+    "job descriptions, recruitment ads and policy documents",
+    "government scheme explainers and citizen-facing guidance",
+    "FAQs, manuals, onboarding and e-learning copy for a mixed audience",
+    "brand voice guides, internal announcements and any copy with example people or names"
+   ],
+   "avoid": [
+    "Over-correcting until the meaning blurs. Gendered words are fine when gender is the topic (Microsoft: discussions about the challenges women face in the workplace) and in direct quotations and titles of works.",
+    "Token diversity: varied names in the example but stereotyped job roles. Microsoft asks writers to avoid stereotypes in job roles and to choose names from a variety of gender identities and cultural backgrounds.",
+    "Generalisations about people, countries, regions or cultures, even positive or neutral ones ('Marwaris are natural businessmen').",
+    "Pity words for disability ('suffering from', 'stricken with') and mentioning a disability when it is not relevant.",
+    "Assuming wealth, metro life or English: a car, a credit card, a nuclear family, a laptop, an English-medium school.",
+    "Preachy disclaimers. Inclusion shows in the sentences, not in a statement about inclusion."
+   ],
+   "markers": [
+    "Placement: a layer, not a point on NN/g's four dimensions. Keep the host tone (formal, casual, hype) and change only the words that exclude.",
+    "Gender-neutral role words (Microsoft's list): chair or moderator, not chairman; sales representative, not salesman; staff or workforce, not manpower; humanity or people, not mankind.",
+    "No generic 'he' or 'she' and no 'he/she' or 's/he'. Rewrite to 'you', to a plural noun and pronoun, to 'the' or 'a', to a role (reader, applicant, customer) or to 'person'; if you cannot rewrite, singular 'they' is acceptable.",
+    "For a real person, use the pronouns that person uses.",
+    "People-first disability language: readers who are blind or have low vision, customers with limited dexterity. Mention disability only when relevant.",
+    "Examples and names drawn from many regions, communities and family shapes; avoid examples that assume a Western or affluent lifestyle (Microsoft's guidance applied to India: not only metro, not only nuclear families, not only one religion's festivals).",
+    "Do not assume the reader's wealth or access: give a no-card, no-app, no-English route where one exists.",
+    "In Hindi, verb gender forces a choice. Address the reader as 'aap' and use gender-neutral forms: the polite imperative ('darj karein', 'bataiye'), 'aapko ... milega', plural or role nouns.",
+    "Bias-free technical terms where an equivalent exists: primary and subordinate, not master and slave.",
+    "Check the finished piece with edit:inclusive_language and, for sensitive subjects, edit:sensitivity_read."
+   ],
+   "sample": "If you have a smartphone or a basic phone, you can apply. The form is available in Hindi, Marathi and Tamil, in large print, and as audio on request. Applicants can bring a family member, a friend or a support worker to help fill it in. फ़ॉर्म भरने में मदद चाहिए तो बताइए; कोई भी सहायक आपके साथ बैठ सकता है। No bank account is needed: pay the fee in cash at any centre.",
+   "sample_note": "Illustrative; the scheme and its rules are invented for the demonstration.",
+   "fits": [
+    "genre:job_description",
+    "genre:recruitment_ad",
+    "genre:policy_document",
+    "genre:scheme_explainer",
+    "genre:internal_announcement",
+    "genre:faq_page",
+    "genre:user_manual",
+    "genre:brand_voice_guide",
+    "genre:elearning_course_script",
+    "genre:ux_microcopy"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/bias-free-communication",
+     "title": "Microsoft Style Guide: Bias-free communication",
+     "supports": "gender-neutral terms (chair not chairman); no generic he/she and no he/she or s/he; singular they if you cannot write around it; people-first disability language without pity words; diverse names and non-Western or non-affluent examples; avoid stereotypes in job roles; no generalisations about cultures; gendered words acceptable when gender is relevant and in direct quotations (checked 2026-10-05)"
+    }
+   ],
+   "related": [
+    "edit:inclusive_language",
+    "edit:sensitivity_read",
+    "edit:accessible_writing_check",
+    "tech:plain_language",
+    "lang:hindi_devanagari",
+    "lang:indian_english",
+    "comp:rpwd_act_accessibility",
+    "edit:style_microsoft"
+   ]
+  }
+ ]
+}

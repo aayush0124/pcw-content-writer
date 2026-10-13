@@ -1,0 +1,502 @@
+{
+ "kind": "genre",
+ "items": [
+  {
+   "id": "genre:press_release",
+   "name": "Press release",
+   "category": "PR & corporate comms",
+   "one_line": "Newsworthy announcement written in news style for journalists and wire distribution.",
+   "aliases": [
+    "news release",
+    "media release",
+    "press note"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Press Releases (3627 gigs, 2026-10-04); Upwork Press Release Writers hire category; India rate guides price press releases separately",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/writing-press-releases",
+     "title": "Fiverr: Press Releases subcategory",
+     "supports": "page search data on 2026-10-04: num_found 3627 gigs; add-ons Format press release, Submit press release, Research PR ideas"
+    },
+    {
+     "url": "https://www.upwork.com/hire/press-release-writers/",
+     "title": "Upwork: hire Press Release Writers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://textuar.com/blog/content-writing-services-price-india/",
+     "title": "Textuar: Content Writing Services in India 2026 price guide",
+     "supports": "India rate guide; cites an agency pricing press releases and ad scripts as separate line items"
+    }
+   ],
+   "note": "Inverted pyramid, dateline, quotes, boilerplate, media contact; 'press note' is the common Indian term.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:pricing_page",
+   "name": "Pricing page copy",
+   "category": "Sales & conversion",
+   "one_line": "Plan names, plan descriptions, feature tables and FAQs that help a buyer pick a tier.",
+   "aliases": [
+    "plans page",
+    "pricing table copy"
+   ],
+   "value": "medium",
+   "value_evidence": "Sold within SaaS website-copy packages (B2B SaaS rate cards sell full websites and landing pages)",
+   "sources": [
+    {
+     "url": "https://www.mightyfinecopy.com/services",
+     "title": "Mighty Fine Copy: B2B SaaS copywriting rate card",
+     "supports": "fixed-price lines for brand messaging guide, landing page, full website copy"
+    }
+   ],
+   "note": "Plan naming and who-it's-for lines matter more than feature lists.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:print_ad_copy",
+   "name": "Print ad copy (newspaper / magazine)",
+   "category": "Advertising",
+   "one_line": "Headline, body and sign-off for a press ad that must work on a page full of competing news.",
+   "aliases": [
+    "press ad",
+    "space ad",
+    "newspaper ad copy",
+    "magazine ad copy"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI's 2026 pricing guide lists 'Print/Space Ad'; Indian full-service agencies still sell newspaper ad creation and booking",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://ommadvertising.com/",
+     "title": "OMM Advertising (Kolkata): full-service ad agency",
+     "supports": "Indian agency selling newspaper, TV, radio and outdoor ads incl. audio scripts and jingles (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "India: regional-language newspaper ads remain a large buy; copy often written in English and transcreated.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:product_description",
+   "name": "Product description (D2C / ecommerce)",
+   "category": "Ecommerce",
+   "one_line": "Benefit-led copy on a product page that answers the buyer's questions and makes the add-to-cart easy.",
+   "aliases": [
+    "product copy",
+    "PDP copy",
+    "product page copy",
+    "ecommerce copy"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Product Descriptions had the most gigs of the copy subcategories checked (4945, 2026-10-04); AWAI lists product page copy",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Often bulk work (hundreds of SKUs) with an SEO title and bullets; tone follows the brand voice guide.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:product_review_article",
+   "name": "Product review article",
+   "category": "Blog & SEO",
+   "one_line": "Hands-on evaluation of one product or service with tested pros, cons, verdict and who should buy it.",
+   "aliases": [
+    "review post",
+    "hands-on review",
+    "single-product review"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr's Article type facet lists 'Review' as its own type (679 gigs on 2026-10-04).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Disclosure rules apply when monetised (ASCI / FTC compliance cards). Google publishes specific guidance on high-quality reviews; see genre:affiliate_review.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:product_update_newsletter",
+   "name": "Company / product update newsletter",
+   "category": "Newsletters",
+   "one_line": "Periodic email or blog digest telling customers what shipped, what changed and how to use it, written to drive adoption.",
+   "aliases": [
+    "product newsletter",
+    "customer update",
+    "what's new digest",
+    "changelog digest"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork's email and newsletter writer type lists product launches and announcements, ongoing newsletters and customer updates among projects (2026-01-21).",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "Technical release notes are genre_pro_creative; promotional launch emails are genre_commercial. This card is the content newsletter that explains value.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:professional_bio",
+   "name": "Professional bio (short / long)",
+   "category": "Career & personal",
+   "one_line": "A bio for speaker intros, websites, proposals and event programmes, delivered in several lengths.",
+   "aliases": [
+    "Executive / speaker bio",
+    "about me",
+    "executive bio",
+    "founder bio",
+    "leadership bio",
+    "speaker bio"
+   ],
+   "value": "medium",
+   "value_evidence": "Sold in personal-branding packages; Upwork lists thought-leadership content among ghostwriting projects.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "ghostwriters produce thought-leadership content for clients"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    }
+   ],
+   "note": "Deliver a one-liner, a short and a long version. Lead with what the person does for whom, then proof, then one human detail. [merged from genre:executive_bio: Unsure: personal bios may belong to genre_pro_creative (career/personal).]",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:profile_piece",
+   "name": "Profile (person or company)",
+   "category": "Journalism",
+   "one_line": "Feature built around one person or organisation, using their story as the lens on something bigger and newsworthy now.",
+   "aliases": [
+    "profile",
+    "personality profile",
+    "founder profile",
+    "company profile feature"
+   ],
+   "value": "medium",
+   "value_evidence": "Named as the standard example of a feature article in NVCC's Introduction to Journalism I; founder and customer profiles are also commissioned as brand content.",
+   "sources": [
+    {
+     "url": "https://pressbooks.nvcc.edu/eng121/chapter/types-of-news-stories/",
+     "title": "Jasmine Roberts, Introduction to Journalism I (NVCC Pressbooks, CC BY-NC 4.0, 2023): Types of news stories",
+     "supports": "Defines straight/hard news (inverted pyramid, essential facts, impartial), features (in-depth, storytelling devices, soft news; profiles are an example) and the editorial (argument representing an editorial board's official view)"
+    }
+   ],
+   "note": "Requires interviews with the subject and with people around them; a profile that only quotes the subject reads as PR.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:programmatic_seo_page",
+   "name": "Programmatic SEO page template",
+   "category": "Blog & SEO",
+   "one_line": "One page template plus data fields that generates many pages (by city, integration, use case or product), each written to be useful on its own.",
+   "aliases": [
+    "pSEO page",
+    "template page",
+    "location x service page",
+    "integration page"
+   ],
+   "value": "medium",
+   "value_evidence": "Agency playbooks list integration, use-case and comparison templates as 2026 SaaS growth levers (Optiseon, low confidence); Google's spam policy (updated 2026-08-28) names scaled pages made to manipulate rankings as abuse.",
+   "sources": [
+    {
+     "url": "https://optiseon.com/blog/b2b-saas-seo-playbook-2026/",
+     "title": "Optiseon: B2B SaaS SEO in 2026: the playbook that drives pipeline",
+     "supports": "Agency playbook naming comparison, alternatives, integration and use-case pages as the bottom-of-funnel page types B2B SaaS teams prioritise in 2026 (third-party, low confidence)"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "title": "Google Search Central: Spam policies for Google web search (last updated 2026-08-28)",
+     "supports": "Defines scaled content abuse: many pages generated primarily to manipulate rankings and not help users, with or without AI; examples include stitched or keyword-stuffed template pages"
+    }
+   ],
+   "note": "The writer's deliverable is the template copy, the variable slots and the unique-value rules per page. Pages that only swap a keyword are scaled content abuse.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:promotional_email",
+   "name": "Promotional / offer email",
+   "category": "Email & CRM",
+   "one_line": "Campaign email announcing a sale, offer or new product to an existing list.",
+   "aliases": [
+    "promo email",
+    "campaign email",
+    "broadcast email",
+    "product announcement email",
+    "sale email"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Email Copy lists 'Special offers' and 'New product announcement'; AWAI lists 'Stand-Alone Email'",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Subject line and preheader do most of the work; see plat:email_subject.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:public_service_announcement",
+   "name": "Public service announcement (PSA)",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A short non-commercial message (script, poster or audio) that asks citizens to adopt a safe or civic behaviour.",
+   "aliases": [
+    "PSA",
+    "awareness message",
+    "jan jagrukta sandesh",
+    "IEC message"
+   ],
+   "value": "medium",
+   "value_evidence": "Government departments and NGOs commission awareness campaigns (IEC budgets) on health, safety and voting.",
+   "sources": [
+    {
+     "url": "https://www.mygov.in/",
+     "title": "MyGov",
+     "supports": "government citizen-engagement platform that runs awareness campaigns"
+    }
+   ],
+   "note": "One behaviour, one reason, one action. Simple language, local dialect where possible. Avoid fear appeals without a doable action.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:push_notification",
+   "name": "Push notification / in-app message copy",
+   "category": "Email & CRM",
+   "one_line": "Title and body for app or web push and in-app messages that bring a user back to act.",
+   "aliases": [
+    "push copy",
+    "in-app message",
+    "app notification copy",
+    "web push"
+   ],
+   "value": "medium",
+   "value_evidence": "CleverTap (Indian-founded engagement platform) publishes mobile copywriting and onboarding-push playbooks; mostly in-house CRM teams",
+   "sources": [
+    {
+     "url": "https://clevertap.com/blog/mobile-copywriting/",
+     "title": "CleverTap: Mobile copywriting tips",
+     "supports": "Indian-founded engagement platform's guide to push and in-app copy"
+    },
+    {
+     "url": "https://clevertap.com/blog/welcome-push-notifications-to-onboard-new-users/",
+     "title": "CleverTap: Welcome push notifications",
+     "supports": "onboarding push sequences as a CRM deliverable"
+    }
+   ],
+   "note": "Title and body truncate differently by OS; personalisation tokens need fallbacks.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:query_letter",
+   "name": "Query letter (to literary agents)",
+   "category": "Publishing",
+   "one_line": "A one-page letter pitching a finished manuscript to a literary agent or editor so they request pages.",
+   "aliases": [
+    "agent query",
+    "submission letter",
+    "pitch letter (books)"
+   ],
+   "value": "low",
+   "value_evidence": "Reedsy sells query-letter review as an editorial service; demand sits mostly in US/UK trade publishing.",
+   "sources": [
+    {
+     "url": "https://janefriedman.com/query-letters/",
+     "title": "Jane Friedman: How to Write a Query Letter That Gets Manuscript Requests",
+     "supports": "query anatomy: housekeeping, story description (150-300 words), comps, bio (50-100 words); whole query about 200 to 450 words"
+    }
+   ],
+   "note": "Parts: housekeeping (genre, word count, title), story description, comparable titles, short bio. Whole query about one page, 200 to 450 words (Jane Friedman).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:quora_answer",
+   "name": "Quora answer",
+   "category": "Organic social",
+   "one_line": "Expert answer to a Quora question that solves it in the first lines and links out only where it genuinely helps.",
+   "aliases": [
+    "Quora post",
+    "Q&A answer"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr's social media copywriting Platform facet lists Quora at 3 gigs on 2026-10-04.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "Fiverr's Platform filter with live gig counts, a SUPPLY signal: Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009, Pinterest 376, Threads 238, Snapchat 123, Reddit 96, Twitter 47, Discord 5, Quora 3"
+    }
+   ],
+   "note": "Still read in India for exam, career and tech questions; promotional answers get collapsed.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:radio_spot_script",
+   "name": "Radio / audio ad script",
+   "category": "Advertising",
+   "one_line": "Timed script for a radio or streaming-audio spot where sound, voice and repetition carry the brand.",
+   "aliases": [
+    "radio commercial",
+    "radio ad script",
+    "audio ad",
+    "streaming audio ad",
+    "RJ mention script"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Radio Commercial Script' and a direct-response radio variant; Fiverr has an Audio Script sub-subcategory",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing/audio-script",
+     "title": "Fiverr: Script Writing > Audio Script",
+     "supports": "own sub-subcategory for audio scripts; gigs offer radio commercial scripts (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://ommadvertising.com/",
+     "title": "OMM Advertising (Kolkata): full-service ad agency",
+     "supports": "Indian agency selling newspaper, TV, radio and outdoor ads incl. audio scripts and jingles (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Write for the ear: brand and offer repeated, phone number or URL said slowly; India FM spots are often bilingual.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:rashifal_horoscope",
+   "name": "Daily rashifal / horoscope copy",
+   "category": "Indian cultural & devotional",
+   "one_line": "Daily, weekly or yearly predictions per zodiac sign (rashi) for newspapers, apps and social posts.",
+   "aliases": [
+    "rashifal",
+    "horoscope",
+    "daily horoscope",
+    "panchang text"
+   ],
+   "value": "medium",
+   "value_evidence": "Every Hindi daily and many astrology apps publish it daily; a steady staff or freelance writing job. No market source fetched.",
+   "note": "Twelve signs, same structure each (general, career, money, love, health, lucky colour/number). Framed as belief, not fact; avoid health or financial advice that could cause harm.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:readme",
+   "name": "README (project front page)",
+   "category": "Technical & product documentation",
+   "one_line": "The first file a visitor reads in a code repository: what it is, why it matters, how to install and use it.",
+   "aliases": [
+    "README.md",
+    "repo readme",
+    "project readme"
+   ],
+   "value": "medium",
+   "value_evidence": "Usually written in-house by developers rather than commissioned; paid when bundled with open-source launches or developer-tool marketing.",
+   "sources": [
+    {
+     "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+     "title": "GitHub Docs: About READMEs",
+     "supports": "GitHub's own guidance on what a README should contain and where it renders"
+    }
+   ],
+   "note": "Order: name + one-line purpose, badges (optional), install, minimal usage example, configuration, contributing, licence. Markdown; renders on GitHub. Keep the first screen useful.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:real_estate_listing",
+   "name": "Real estate listing / project copy",
+   "category": "Other commercial",
+   "one_line": "Property description, project brochure and ad copy that gets the right buyers to enquire.",
+   "aliases": [
+    "property listing",
+    "property description",
+    "real estate copy",
+    "project brochure copy"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Product Descriptions lists 'Property listings/Real estate' as a platform filter",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    }
+   ],
+   "note": "India: RERA registration number and carpet-area disclosure rules shape project ads.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:recipe_post",
+   "name": "Recipe post",
+   "category": "Blog & SEO",
+   "one_line": "Food-blog article with a short intro, ingredient list, numbered method, timings, yields and tips, formatted so readers can cook from it.",
+   "aliases": [
+    "recipe article",
+    "recipe blog post",
+    "food blog post"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr's article Topic facet lists Food & beverage (263 gigs on 2026-10-04), a mid-sized niche; most food bloggers write their own.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Readers hate long preambles; put a jump-to-recipe link first. Recipe structured data is a separate SEO task.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:recommendation_letter",
+   "name": "Letter of recommendation (LOR)",
+   "category": "Academic, grants & admissions",
+   "one_line": "A letter from a teacher or manager vouching for a candidate's ability with specific evidence.",
+   "aliases": [
+    "LOR",
+    "reference letter",
+    "letter of reference"
+   ],
+   "value": "medium",
+   "value_evidence": "Indian study-abroad agencies sell LOR drafting alongside SOPs (e.g., SOP Expert).",
+   "sources": [
+    {
+     "url": "https://sopexpert.in/",
+     "title": "SOP Expert (India)",
+     "supports": "Indian agency selling SOP, LOR and admission-essay writing for study abroad"
+    }
+   ],
+   "note": "Must be in the recommender's voice and signed by them; specific anecdotes and comparisons carry weight. Some universities treat applicant-drafted LORs as misconduct; flag it.",
+   "kind": "genre"
+  }
+ ]
+}

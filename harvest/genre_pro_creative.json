@@ -1,0 +1,1966 @@
+{
+ "kind": "genre",
+ "worker": "genre_pro_creative",
+ "as_of": "2026-10-04",
+ "source": "Freelance-market category lists (Upwork, Fiverr, Reedsy), US BLS outlook pages, platform help pages (Amazon KDP, GitHub, Google developer docs), university and government pages for India-specific genres; fetched 2026-10-04.",
+ "items": [
+  {
+   "id": "genre:user_manual",
+   "name": "User guide / product manual",
+   "category": "Technical & product documentation",
+   "one_line": "Task-based instructions that get a user from unboxing or sign-up to doing the job the product exists for.",
+   "aliases": [
+    "user manual",
+    "instruction manual",
+    "product guide",
+    "owner's manual"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork lists product instructional manuals and how-to guides as core technical-writer projects at a stated hourly band; BLS tracks technical writers as a distinct occupation.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "technical writer projects include product instructional manuals and how-to guides; freelance rate band $20-$45 per hour"
+    },
+    {
+     "url": "https://www.bls.gov/ooh/media-and-communication/technical-writers.htm",
+     "title": "US BLS Occupational Outlook Handbook: Technical Writers",
+     "supports": "technical writing is a tracked occupation: median annual wage $90,390 (May 2025), about 46,400 jobs (2025)"
+    }
+   ],
+   "note": "Write by task, not by feature. Numbered steps, one action per step, expected result after each. Warnings before the step they apply to. Hardware manuals sold in India must also carry the statutory declarations the product category requires (owned by compliance workers)."
+  },
+  {
+   "id": "genre:api_reference",
+   "name": "API reference documentation",
+   "category": "Technical & product documentation",
+   "one_line": "Endpoint-by-endpoint (or function-by-function) reference a developer scans to call an API correctly.",
+   "aliases": [
+    "API docs",
+    "SDK reference",
+    "endpoint reference"
+   ],
+   "value": "high",
+   "value_evidence": "Technical writing is a BLS-tracked occupation; API docs are the developer-facing slice of it (see Google developer documentation style guide).",
+   "sources": [
+    {
+     "url": "https://www.bls.gov/ooh/media-and-communication/technical-writers.htm",
+     "title": "US BLS Occupational Outlook Handbook: Technical Writers",
+     "supports": "technical writer occupation and pay"
+    },
+    {
+     "url": "https://developers.google.com/style",
+     "title": "Google developer documentation style guide",
+     "supports": "industry style guide used for API and developer docs"
+    }
+   ],
+   "note": "Each entry: purpose, request (method, path, parameters with type/required/default), example request, response schema, example response, errors. Generated-from-spec (OpenAPI) skeleton plus human-written descriptions is the norm; never invent parameters."
+  },
+  {
+   "id": "genre:developer_tutorial",
+   "name": "Developer tutorial / quickstart",
+   "category": "Technical & product documentation",
+   "one_line": "A guided, runnable walkthrough that takes a developer from zero to a first working result.",
+   "aliases": [
+    "quickstart",
+    "getting started guide",
+    "how-to tutorial",
+    "codelab"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork names tutorials and how-to guides among technical-writing projects; developer-relations teams publish them as a separate doc type.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "technical writing covers how-to guides and tutorials"
+    }
+   ],
+   "note": "Every code block must run as written, in order. State prerequisites and versions up front, show expected output, end with next steps. Quickstart = minimum path; tutorial = teaches a concept along the way."
+  },
+  {
+   "id": "genre:readme",
+   "name": "README (project front page)",
+   "category": "Technical & product documentation",
+   "one_line": "The first file a visitor reads in a code repository: what it is, why it matters, how to install and use it.",
+   "aliases": [
+    "README.md",
+    "repo readme",
+    "project readme"
+   ],
+   "value": "medium",
+   "value_evidence": "Usually written in-house by developers rather than commissioned; paid when bundled with open-source launches or developer-tool marketing.",
+   "sources": [
+    {
+     "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+     "title": "GitHub Docs: About READMEs",
+     "supports": "GitHub's own guidance on what a README should contain and where it renders"
+    }
+   ],
+   "note": "Order: name + one-line purpose, badges (optional), install, minimal usage example, configuration, contributing, licence. Markdown; renders on GitHub. Keep the first screen useful."
+  },
+  {
+   "id": "genre:release_notes",
+   "name": "Release notes / changelog",
+   "category": "Technical & product documentation",
+   "one_line": "Per-version record of what changed, written so users know what is new, fixed or breaking.",
+   "aliases": [
+    "changelog",
+    "what's new",
+    "patch notes",
+    "version history"
+   ],
+   "value": "medium",
+   "value_evidence": "Routine product-team deliverable, often owned by technical writers or product marketing; rarely commissioned alone.",
+   "sources": [
+    {
+     "url": "https://keepachangelog.com/en/1.1.0/",
+     "title": "Keep a Changelog 1.1.0",
+     "supports": "community convention: Added / Changed / Deprecated / Removed / Fixed / Security sections, newest first"
+    }
+   ],
+   "note": "Lead with user impact, not ticket titles. Group by type; flag breaking changes and migration steps first. App-store 'What's new' text has its own character limit (platform worker)."
+  },
+  {
+   "id": "genre:knowledge_base_article",
+   "name": "Knowledge-base / help-centre article",
+   "category": "Technical & product documentation",
+   "one_line": "A single self-service support article that answers one customer question so they do not open a ticket.",
+   "aliases": [
+    "help article",
+    "support article",
+    "help centre doc",
+    "FAQ article"
+   ],
+   "value": "medium",
+   "value_evidence": "Support teams commission these in sets when launching a help centre; overlaps technical writing (Upwork lists how-to guides).",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "how-to guides listed as technical-writing work"
+    }
+   ],
+   "note": "Title = the user's question in their words. Answer in the first lines, then steps, then troubleshooting and related links. One problem per article; screenshots captioned."
+  },
+  {
+   "id": "genre:sop_process_doc",
+   "name": "Standard operating procedure (SOP) / process document",
+   "category": "Technical & product documentation",
+   "one_line": "Step-by-step procedure an employee follows so a recurring task is done the same safe, compliant way every time.",
+   "aliases": [
+    "work instruction",
+    "process documentation",
+    "runbook",
+    "playbook"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork lists policies and training materials under business and technical writing; regulated industries (pharma, food, manufacturing) require written SOPs.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business-writing projects include company policies and training materials; technical-writing projects include policies"
+    }
+   ],
+   "note": "Do not confuse with the admissions 'statement of purpose' (genre:statement_of_purpose), also called SOP in India. Structure: purpose, scope, roles, definitions, procedure steps, records, revision history. Imperative verbs."
+  },
+  {
+   "id": "genre:prd",
+   "name": "Product requirements document (PRD)",
+   "category": "Technical & product documentation",
+   "one_line": "Defines the problem, users, goals and requirements of a product or feature so design and engineering can build it.",
+   "aliases": [
+    "product spec",
+    "feature spec",
+    "MRD",
+    "product brief"
+   ],
+   "value": "medium",
+   "value_evidence": "Written by product managers as part of the job rather than bought from freelancers; demand shows up as a skill in PM hiring, not as a marketplace category.",
+   "note": "Typical parts: problem, goals and non-goals, users and use cases, requirements (must/should/could), success metrics, open questions, launch plan. Requirements must be testable."
+  },
+  {
+   "id": "genre:technical_design_doc",
+   "name": "Technical specification / design doc",
+   "category": "Technical & product documentation",
+   "one_line": "An engineer's written proposal for how a system will be built, reviewed before code is written.",
+   "aliases": [
+    "design doc",
+    "tech spec",
+    "RFC",
+    "architecture decision record",
+    "ADR"
+   ],
+   "value": "low",
+   "value_evidence": "Internal engineering artefact written by the engineers who will build the system; little external paid demand.",
+   "sources": [
+    {
+     "url": "https://www.industrialempathy.com/posts/design-docs-at-google/",
+     "title": "Design Docs at Google (Malte Ubl)",
+     "supports": "describes the design-doc practice: context, goals/non-goals, design, alternatives considered, cross-cutting concerns"
+    }
+   ],
+   "note": "Alternatives considered and trade-offs are the heart of it. ADR = one decision per short record (context, decision, consequences)."
+  },
+  {
+   "id": "genre:system_prompt",
+   "name": "AI prompt / system prompt (as a deliverable)",
+   "category": "Technical & product documentation",
+   "one_line": "Instructions written for a language model (system prompt, agent brief, reusable prompt template) that make it behave reliably for a task.",
+   "aliases": [
+    "prompt engineering",
+    "system prompt",
+    "agent instructions",
+    "custom GPT instructions",
+    "prompt template"
+   ],
+   "value": "medium",
+   "value_evidence": "Anthropic and OpenAI publish prompt-writing guides for this as a craft; sold as a service and on prompt marketplaces.",
+   "sources": [
+    {
+     "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+     "title": "Anthropic docs: Prompt engineering overview",
+     "supports": "vendor guidance on writing prompts and system prompts"
+    },
+    {
+     "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+     "title": "OpenAI docs: Prompt engineering",
+     "supports": "vendor guidance on writing prompts"
+    }
+   ],
+   "note": "Write role, context, task, constraints, output format and examples; test against varied inputs and keep a regression set. For an AI video shot list see genre:ai_video_prompt_script."
+  },
+  {
+   "id": "genre:business_plan",
+   "name": "Business plan",
+   "category": "Business documents",
+   "one_line": "A plan that explains how a business will make money, used to raise funds, get a loan or align founders.",
+   "aliases": [
+    "startup business plan",
+    "bank loan project report",
+    "DPR (detailed project report)"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork lists business plans among business-writing projects; Indian bank loans and schemes ask for a project report.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business writer projects include business plans"
+    },
+    {
+     "url": "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan",
+     "title": "US SBA: Write your business plan",
+     "supports": "official template: executive summary, company description, market analysis, organisation, products, marketing, funding request, financial projections"
+    }
+   ],
+   "note": "India: banks and MUDRA/PMEGP-type schemes ask for a 'project report' with cost of project and means of finance; numbers must reconcile across sections."
+  },
+  {
+   "id": "genre:executive_summary",
+   "name": "Executive summary",
+   "category": "Business documents",
+   "one_line": "A one-to-two page standalone summary that lets a decision-maker act without reading the full document.",
+   "aliases": [
+    "exec summary",
+    "management summary"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork lists executive summaries among business-writing projects.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business writer projects include executive summaries"
+    }
+   ],
+   "note": "Write it last, read first. Lead with the recommendation or ask; then the why in three points; then the numbers. Must stand alone."
+  },
+  {
+   "id": "genre:policy_document",
+   "name": "Company policy / employee handbook",
+   "category": "Business documents",
+   "one_line": "Internal rules and entitlements written so every employee understands what is expected and what they get.",
+   "aliases": [
+    "HR policy",
+    "employee handbook",
+    "code of conduct",
+    "POSH policy"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork lists employee handbooks and company policies among business-writing projects.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business writer projects include employee handbooks and company policies"
+    }
+   ],
+   "note": "India: workplaces must have a POSH (sexual harassment) policy and Internal Committee under the 2013 Act; legal review before publishing. Plain language, numbered clauses, effective date and owner."
+  },
+  {
+   "id": "genre:job_description",
+   "name": "Job description / job post",
+   "category": "Business documents",
+   "one_line": "A role description that attracts the right applicants and filters out the wrong ones.",
+   "aliases": [
+    "JD",
+    "job ad",
+    "job posting",
+    "vacancy notice"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr runs a dedicated Job Description Writing category.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/job-description-writing-services",
+     "title": "Fiverr Writing & Translation: Job Description Writing",
+     "supports": "category exists on the Writing & Translation menu (seen 2026-10-04)"
+    }
+   ],
+   "note": "Title people search for, the why of the role, outcomes in the first year, must-haves vs nice-to-haves, pay band where possible, how to apply. Avoid gendered or age-coded words."
+  },
+  {
+   "id": "genre:resume",
+   "name": "Resume / CV",
+   "category": "Career & personal",
+   "one_line": "A one-to-two page record of achievements that gets a candidate shortlisted by an ATS and a recruiter.",
+   "aliases": [
+    "CV",
+    "curriculum vitae",
+    "biodata (job)",
+    "ATS resume"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork reports resume writers as one of the highest-paid freelance writing types by hourly band; Fiverr runs a Resume Writing category.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "resume writers on Upwork typically charge $25-$65 per hour"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/resume-writing",
+     "title": "Fiverr Writing & Translation: Resume Writing",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Bullets = action verb + what + measurable result. ATS-safe: no tables/text boxes for key data, standard headings. India uses 'CV' and 'resume' interchangeably; academic CV is long-form and different."
+  },
+  {
+   "id": "genre:cover_letter",
+   "name": "Cover letter",
+   "category": "Career & personal",
+   "one_line": "A short letter that connects a candidate's proof to one specific job and asks for the interview.",
+   "aliases": [
+    "application letter",
+    "motivation letter"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr runs a Cover Letter category; often sold bundled with resume writing.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/cover-letter-services",
+     "title": "Fiverr Writing & Translation: Cover Letters",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Three to four short paragraphs: why this company, the one or two proofs that match the role, close with a clear ask. Never repeat the resume line by line."
+  },
+  {
+   "id": "genre:linkedin_profile",
+   "name": "LinkedIn profile (headline + About)",
+   "category": "Career & personal",
+   "one_line": "Profile copy (headline, About, experience blurbs) that makes recruiters and clients find and contact the person.",
+   "aliases": [
+    "LinkedIn summary",
+    "LinkedIn About section",
+    "LinkedIn headline"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr runs a LinkedIn Profiles category; sold with resume packages.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/linkedin-profile-services",
+     "title": "Fiverr Writing & Translation: LinkedIn Profiles",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Headline and About have hard character limits (platform worker owns the numbers). First-person, searchable keywords in the headline, proof in the About, a contact line at the end."
+  },
+  {
+   "id": "genre:keynote_speech",
+   "name": "Keynote / business speech",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A speech written for one speaker and one audience that moves them to a belief or action, delivered aloud.",
+   "aliases": [
+    "speechwriting",
+    "conference keynote",
+    "CEO speech",
+    "address"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork lists speechwriting under business-writing projects; Fiverr runs a Speechwriting category.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business writer projects include speechwriting and presentations"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/speech-writing",
+     "title": "Fiverr Writing & Translation: Speechwriting",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Written for the ear: short sentences, repetition, signposting, stories over statistics. Time it by reading aloud at the speaker's own pace."
+  },
+  {
+   "id": "genre:wedding_speech",
+   "name": "Wedding speech / toast",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A short, personal speech at a wedding or reception that honours the couple and gets laughs without embarrassing anyone.",
+   "aliases": [
+    "best man speech",
+    "maid of honour speech",
+    "father of the bride speech",
+    "sangeet speech",
+    "toast"
+   ],
+   "value": "low",
+   "value_evidence": "One-off personal commission, sold under speechwriting marketplaces; low ticket size.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/speech-writing",
+     "title": "Fiverr Writing & Translation: Speechwriting",
+     "supports": "speechwriting category covers personal speeches"
+    }
+   ],
+   "note": "Indian weddings add sangeet and reception speeches, often in Hinglish; mixed-generation audience, so keep jokes clean. Typical length a few minutes."
+  },
+  {
+   "id": "genre:screenplay_feature",
+   "name": "Feature film screenplay",
+   "category": "Creative: scripts & performance",
+   "one_line": "A full-length film script in industry format: scene headings, action, character cues and dialogue.",
+   "aliases": [
+    "screenplay",
+    "film script",
+    "movie script",
+    "spec script",
+    "shooting script"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork lists script writing with a stated hourly band; Fiverr runs a Scriptwriting category; Indian film work runs through producers and the Screenwriters Association.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writers charge $30-$56 per hour on Upwork"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing",
+     "title": "Fiverr Writing & Translation: Scriptwriting",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Industry format: Courier font, scene headings INT./EXT. LOCATION - DAY/NIGHT, action in present tense, character cue above dialogue; use screenwriting software templates for margins. Hindi films often deliver in Roman-script Hindi or Devanagari with English scene directions. Register the script before sending it out."
+  },
+  {
+   "id": "genre:short_story",
+   "name": "Short story",
+   "category": "Creative: fiction & poetry",
+   "one_line": "Self-contained fiction built around one change in one character, for magazines, anthologies, contests or audio platforms.",
+   "aliases": [
+    "short fiction",
+    "kahani"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr's Creative Writing category covers it; paid markets exist but rates are low and competitive.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/creative-writing",
+     "title": "Fiverr Writing & Translation: Creative Writing",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Word-count bands (flash, short story, novelette) are set by each market's guidelines; read them before writing. Hindi kahani tradition (Premchand) favours social realism."
+  },
+  {
+   "id": "genre:ai_video_prompt_script",
+   "name": "AI video / film prompt-script (shot-by-shot)",
+   "category": "Creative: scripts & performance",
+   "one_line": "A shot-by-shot script written as prompts for AI video generators: subject, action, camera, lens, light and audio per shot.",
+   "aliases": [
+    "AI film script",
+    "shot list for AI video",
+    "Seedance/Veo/Kling prompt",
+    "text-to-video prompt"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork's 2026 script-writer description names scripts for AI-generated or animated videos as a common project.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writing projects include scripts for AI-generated or animated videos; writers must understand avatars and text-to-video platforms"
+    }
+   ],
+   "note": "Each shot is self-contained (models do not remember earlier shots unless referenced); keep character and wardrobe descriptors identical across shots; state duration and aspect ratio. See also genre:system_prompt."
+  },
+  {
+   "id": "genre:ghostwritten_book",
+   "name": "Ghostwritten book / memoir",
+   "category": "Publishing",
+   "one_line": "A full book written in the client's voice and published under their name.",
+   "aliases": [
+    "ghostwriting",
+    "ghostwritten memoir",
+    "autobiography ghostwriting",
+    "nonfiction book ghostwriting"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork lists ghostwriting as a freelance writing type with a stated hourly band; Fiverr runs a Ghostwriting subcategory under book writing.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "ghostwriters write books, speeches and thought leadership without byline; rate band $20-$45 per hour"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/book-and-ebook-writing/ghostwriting",
+     "title": "Fiverr Writing & Translation: Book & eBook Writing: Ghostwriting",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Interview-driven: record, transcribe, outline, draft chapter by chapter, client approves each. Contract must state confidentiality, credit and rights."
+  },
+  {
+   "id": "genre:grant_proposal",
+   "name": "Grant proposal",
+   "category": "Academic, grants & admissions",
+   "one_line": "A funding application that shows a funder a fundable problem, a credible plan, a budget and measurable outcomes.",
+   "aliases": [
+    "grant application",
+    "funding proposal",
+    "CSR proposal",
+    "research grant proposal"
+   ],
+   "value": "high",
+   "value_evidence": "Grant writing is an established paid specialism (funders and portals publish how-to-apply guidance; Indian CSR and research funders each run proposal calls); market-category page could not be fetched (403), so tier rests on that.",
+   "sources": [
+    {
+     "url": "https://www.grants.gov/learn-grants/grant-writing-basics",
+     "title": "Grants.gov: Grant Writing Basics",
+     "supports": "US federal grants portal's official guidance on writing grant applications (page is script-rendered; existence checked 2026-10-04, text not read)"
+    }
+   ],
+   "note": "Follow the funder's template and word limits exactly; scoring rubrics decide. India: CSR funds under Companies Act Schedule VII and government research schemes (ANRF/DST) each set their own format."
+  },
+  {
+   "id": "genre:statement_of_purpose",
+   "name": "Statement of purpose (admissions SOP)",
+   "category": "Academic, grants & admissions",
+   "one_line": "A personal essay for university admission that connects past work, the chosen programme and future goals.",
+   "aliases": [
+    "SOP",
+    "statement of purpose",
+    "personal statement (grad school)",
+    "letter of motivation",
+    "visa SOP",
+    "study permit SOP"
+   ],
+   "value": "high",
+   "value_evidence": "Many Indian agencies sell SOP writing as a standalone study-abroad service (e.g., SOP Expert, Write Right).",
+   "sources": [
+    {
+     "url": "https://sopexpert.in/",
+     "title": "SOP Expert (India)",
+     "supports": "agency selling SOP, LOR and admission-essay writing for university and visa applications"
+    },
+    {
+     "url": "https://www.write-right.in/university-sop",
+     "title": "Write Right: University SOP writing services (India)",
+     "supports": "Indian agency selling university SOPs"
+    }
+   ],
+   "note": "Word limits and prompts differ by university and programme; always use the programme's own prompt. Do not confuse with genre:sop_process_doc. Admissions offices increasingly screen for AI-written essays."
+  },
+  {
+   "id": "genre:kdp_book_description",
+   "name": "Amazon KDP book description",
+   "category": "Publishing",
+   "one_line": "The product-page description that turns an Amazon browser into a buyer or a Kindle Unlimited reader.",
+   "aliases": [
+    "Amazon book description",
+    "book listing copy",
+    "KDP blurb"
+   ],
+   "value": "medium",
+   "value_evidence": "Every self-published KDP title needs one; Reedsy's marketplace sells blurb and metadata optimisation as a service.",
+   "sources": [
+    {
+     "url": "https://kdp.amazon.com/en_US/help/topic/G201189630",
+     "title": "Amazon KDP Help: Write a Book Description",
+     "supports": "'we have a limit of 4000 characters for the description'; bans reviews/quotes/testimonials, contact info, time-sensitive info, emojis, keyword phrases"
+    },
+    {
+     "url": "https://reedsy.com/",
+     "title": "Reedsy marketplace",
+     "supports": "author-services marketplace: editing, design, marketing (incl. blurb/metadata), ghostwriting"
+    }
+   ],
+   "note": "Hard limit 4000 characters and HTML tags count toward it (KDP help). No reviews, quotes, contact details, prices, time-sensitive info or emojis. Open with a bold hook line, then stakes, then the reader promise."
+  },
+  {
+   "id": "genre:book_blurb",
+   "name": "Book blurb / back-cover copy",
+   "category": "Publishing",
+   "one_line": "The few paragraphs on the back cover or jacket flap that make a browser open the book.",
+   "aliases": [
+    "back cover copy",
+    "jacket copy",
+    "flap copy",
+    "blurb"
+   ],
+   "value": "medium",
+   "value_evidence": "Reedsy lists blurb optimisation among its marketing services for authors.",
+   "sources": [
+    {
+     "url": "https://reedsy.com/",
+     "title": "Reedsy marketplace",
+     "supports": "author-services marketplace covering editing, design, marketing (incl. blurb) and ghostwriting"
+    }
+   ],
+   "note": "Fiction: protagonist, want, obstacle, stakes, no ending. Nonfiction: reader problem, promise, proof, author credibility. Endorsement quotes on a cover must be real and permissioned."
+  },
+  {
+   "id": "genre:author_bio",
+   "name": "Author bio",
+   "category": "Publishing",
+   "one_line": "A short third-person bio for book jackets, retailer author pages, festival programmes and bylines.",
+   "aliases": [
+    "about the author",
+    "author page bio",
+    "byline bio"
+   ],
+   "value": "low",
+   "value_evidence": "Usually bundled with blurb or launch packages rather than sold alone.",
+   "sources": [
+    {
+     "url": "https://janefriedman.com/query-letters/",
+     "title": "Jane Friedman: How to Write a Query Letter That Gets Manuscript Requests",
+     "supports": "query anatomy: housekeeping, story description (150-300 words), comps, bio (50-100 words); whole query about 200 to 450 words"
+    }
+   ],
+   "note": "Write two lengths (one line, one paragraph). Credentials relevant to this book first, one human detail last. Query-letter bios stay short (Jane Friedman's guide)."
+  },
+  {
+   "id": "genre:query_letter",
+   "name": "Query letter (to literary agents)",
+   "category": "Publishing",
+   "one_line": "A one-page letter pitching a finished manuscript to a literary agent or editor so they request pages.",
+   "aliases": [
+    "agent query",
+    "submission letter",
+    "pitch letter (books)"
+   ],
+   "value": "low",
+   "value_evidence": "Reedsy sells query-letter review as an editorial service; demand sits mostly in US/UK trade publishing.",
+   "sources": [
+    {
+     "url": "https://janefriedman.com/query-letters/",
+     "title": "Jane Friedman: How to Write a Query Letter That Gets Manuscript Requests",
+     "supports": "query anatomy: housekeeping, story description (150-300 words), comps, bio (50-100 words); whole query about 200 to 450 words"
+    }
+   ],
+   "note": "Parts: housekeeping (genre, word count, title), story description, comparable titles, short bio. Whole query about one page, 200 to 450 words (Jane Friedman)."
+  },
+  {
+   "id": "genre:synopsis",
+   "name": "Book or film synopsis",
+   "category": "Publishing",
+   "one_line": "A beginning-to-end summary of a story, including the ending, sent to agents, publishers or producers.",
+   "aliases": [
+    "novel synopsis",
+    "story synopsis",
+    "film synopsis"
+   ],
+   "value": "low",
+   "value_evidence": "Required by agents and producers but rarely commissioned alone; SWA registers synopses as a category, showing Indian writers pitch with them.",
+   "sources": [
+    {
+     "url": "https://janefriedman.com/how-to-write-a-novel-synopsis/",
+     "title": "Jane Friedman: How to Write a Novel or Memoir Synopsis",
+     "supports": "default synopsis is one or two pages, about 500-1000 words, single spaced, and must reveal the ending"
+    },
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Synopsis, Story, Script, Plot, Screenplay, Dialogue and Song for members, online or at its Mumbai office"
+    }
+   ],
+   "note": "Third person, present tense, reveals the ending. Indian film pitches usually run logline, one-page synopsis, step outline, screenplay."
+  },
+  {
+   "id": "genre:book_proposal",
+   "name": "Nonfiction book proposal",
+   "category": "Publishing",
+   "one_line": "The sales document that sells an unwritten nonfiction book to an agent or publisher.",
+   "aliases": [
+    "book proposal",
+    "nonfiction proposal"
+   ],
+   "value": "medium",
+   "value_evidence": "Reedsy runs book-proposal writing as its own ghostwriting service with a published guide price band.",
+   "sources": [
+    {
+     "url": "https://reedsy.com/ghostwriting",
+     "title": "Reedsy: Find Book Ghostwriting Services",
+     "supports": "marketplace guide prices: book proposal $750-$10,000 (59 projects, 2026); book ghostwriting average $450 per 1,000 words (2,006 offers, 2025); short-form $500-$2,000"
+    }
+   ],
+   "note": "Overview, target market, comparable titles, author platform, marketing plan, chapter outline, one or two sample chapters. Platform (audience) often decides the deal."
+  },
+  {
+   "id": "genre:novel_chapter",
+   "name": "Novel / novel chapter (long-form fiction)",
+   "category": "Creative: fiction & poetry",
+   "one_line": "Book-length fiction, written and delivered chapter by chapter.",
+   "aliases": [
+    "novel",
+    "fiction manuscript",
+    "upanyas"
+   ],
+   "value": "medium",
+   "value_evidence": "Reedsy's ghostwriting marketplace prices full-length book projects per 1,000 words.",
+   "sources": [
+    {
+     "url": "https://reedsy.com/ghostwriting",
+     "title": "Reedsy: Find Book Ghostwriting Services",
+     "supports": "marketplace guide prices: book proposal $750-$10,000 (59 projects, 2026); book ghostwriting average $450 per 1,000 words (2,006 offers, 2025); short-form $500-$2,000"
+    }
+   ],
+   "note": "Each chapter needs its own turn and a reason to read the next. Word-count expectations differ by category; agent and publisher guidelines own the numbers."
+  },
+  {
+   "id": "genre:serialized_fiction",
+   "name": "Serialized fiction / web novel episodes",
+   "category": "Creative: fiction & poetry",
+   "one_line": "Fiction published in short daily or weekly parts on reading apps, built to keep readers unlocking the next part.",
+   "aliases": [
+    "web serial",
+    "Pratilipi series",
+    "episodic fiction",
+    "web novel"
+   ],
+   "value": "medium",
+   "value_evidence": "Pratilipi pays authors from premium series whose later parts are locked behind coins and subscriptions (Pratilipi's own FAQ).",
+   "sources": [
+    {
+     "url": "https://english.pratilipi.com/blog/faqs-for-new-premium-feature-ev6nkgoaucz1bzz",
+     "title": "Pratilipi: FAQs for New Premium Feature",
+     "supports": "premium series model: early parts free, later parts locked, authors earn from unlocks"
+    },
+    {
+     "url": "https://thenewpublishingstandard.com/2025/04/03/pratilipi-reviving-vernacular-mass-literature-in-india-through-self-publishing/",
+     "title": "The New Publishing Standard (2025-04-03): Pratilipi reviving vernacular mass literature",
+     "supports": "scale of Indian-language serialized fiction"
+    }
+   ],
+   "note": "Indian-language market (Hindi, Marathi, Malayalam, Bengali and more) is large. Every part ends on a hook; romance, family drama, revenge and fantasy dominate. Long series earn more than one-offs."
+  },
+  {
+   "id": "genre:flash_fiction",
+   "name": "Flash fiction / microfiction",
+   "category": "Creative: fiction & poetry",
+   "one_line": "A complete story in a very small word budget, often ending on a twist or an image.",
+   "aliases": [
+    "microfiction",
+    "drabble",
+    "six-word story",
+    "laghukatha"
+   ],
+   "value": "low",
+   "value_evidence": "Contest and literary-magazine market; little paid demand.",
+   "note": "Word caps are set per market or contest. Hindi 'laghukatha' is an established short-short form."
+  },
+  {
+   "id": "genre:poetry",
+   "name": "Poetry (free verse and formal)",
+   "category": "Creative: fiction & poetry",
+   "one_line": "Verse written for print, performance, greeting or occasion, in free verse or a set form.",
+   "aliases": [
+    "poem",
+    "spoken word",
+    "kavita",
+    "occasional verse"
+   ],
+   "value": "low",
+   "value_evidence": "Small paid market except occasional verse (weddings, greetings, brand poems) and spoken-word performance.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/creative-writing",
+     "title": "Fiverr Writing & Translation: Creative Writing",
+     "supports": "creative-writing category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Never paste existing poems as examples (copyright). Spoken-word pieces are written for breath and pause, not the page."
+  },
+  {
+   "id": "genre:shayari",
+   "name": "Shayari (Hindi/Urdu couplets)",
+   "category": "Creative: fiction & poetry",
+   "one_line": "Urdu/Hindi verse in couplets (sher) and forms like ghazal, nazm and rubai, used in posts, speeches and greetings.",
+   "aliases": [
+    "sher",
+    "ghazal",
+    "nazm",
+    "do line shayari",
+    "status shayari"
+   ],
+   "value": "low",
+   "value_evidence": "Huge consumer demand on social media and WhatsApp but mostly unpaid; paid when written for brands, films or speeches.",
+   "sources": [
+    {
+     "url": "https://www.rekhta.org/",
+     "title": "Rekhta",
+     "supports": "largest online archive of Urdu poetry and its forms (ghazal, nazm, sher)"
+    }
+   ],
+   "note": "Ghazal rules: matla, maqta, radif, qafiya and one consistent bahr (metre). Attribute every quoted sher to its poet; never pass off a known poet's sher as original."
+  },
+  {
+   "id": "genre:song_lyrics",
+   "name": "Song lyrics",
+   "category": "Creative: fiction & poetry",
+   "one_line": "Words written to be sung: hook/chorus (mukhda), verses (antara) and bridge, fitted to a melody or meter.",
+   "aliases": [
+    "lyrics",
+    "songwriting",
+    "geet",
+    "rap lyrics",
+    "devotional song lyrics"
+   ],
+   "value": "medium",
+   "value_evidence": "SWA registers songs as a category for its lyricist members; film and indie-music lyric writing is paid work in India.",
+   "sources": [
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Synopsis, Story, Script, Plot, Screenplay, Dialogue and Song for members, online or at its Mumbai office"
+    }
+   ],
+   "note": "Hindi film songs use mukhda and antara structure. Write to the meter and stress of the tune. Never reproduce existing lyrics. Ad jingles belong to the commercial worker."
+  },
+  {
+   "id": "genre:childrens_picture_book",
+   "name": "Children's picture book text",
+   "category": "Creative: fiction & poetry",
+   "one_line": "A short read-aloud story told with illustrations, for young children, written spread by spread.",
+   "aliases": [
+    "picture book",
+    "kids' book",
+    "bedtime story book",
+    "board book"
+   ],
+   "value": "medium",
+   "value_evidence": "Self-publishers commission kids' books for KDP; Fiverr's Book & eBook Writing category covers them.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/book-and-ebook-writing",
+     "title": "Fiverr Writing & Translation: Book & eBook Writing",
+     "supports": "book-writing category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Leave room for the art: do not describe what the picture will show. Plan by spreads with page-turn reveals. Publishers expect short texts; confirm the target publisher's word guidance."
+  },
+  {
+   "id": "genre:audio_series_script",
+   "name": "Audio series / audio drama script",
+   "category": "Creative: scripts & performance",
+   "one_line": "Episodic script for listen-only stories (audio series, radio drama), where narration and dialogue carry everything.",
+   "aliases": [
+    "audio drama",
+    "Pocket FM series",
+    "Kuku FM story",
+    "radio play",
+    "audio fiction"
+   ],
+   "value": "high",
+   "value_evidence": "Pocket FM reports tens of thousands of AI audio series live and tens of thousands of Indian users publishing monthly, with a paid writer programme (medianews4u, 2025-09-17).",
+   "sources": [
+    {
+     "url": "https://www.medianews4u.com/pocket-fm-brings-ai-powered-audio-storytelling-to-india-with-30000-series-live/",
+     "title": "medianews4u (2025-09-17): Pocket FM brings AI-powered audio storytelling to India",
+     "supports": "over 30,000 AI audio series live; over 33,000 Indian users publish audio series each month; top writers projected to cross Rs 10 lakh a year"
+    }
+   ],
+   "note": "Write for the ear: name the speaker often, signal scene changes with sound cues, avoid visual-only action. Indian apps favour long-running Hindi serials with a cliffhanger every episode."
+  },
+  {
+   "id": "genre:web_series_episode",
+   "name": "Web-series / TV episode script",
+   "category": "Creative: scripts & performance",
+   "one_line": "One episode of a multi-episode series for OTT or TV, in screenplay format with a series arc behind it.",
+   "aliases": [
+    "OTT episode script",
+    "teleplay",
+    "pilot script"
+   ],
+   "value": "medium",
+   "value_evidence": "Indian OTT and TV writers register work with SWA; Upwork publishes a freelance script-writer rate band.",
+   "sources": [
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Synopsis, Story, Script, Plot, Screenplay, Dialogue and Song for members, online or at its Mumbai office"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writer freelance rate band $30-$56 per hour"
+    }
+   ],
+   "note": "Pilot sets the world and the engine; each episode has A/B plots and an end hook. Writers' rooms deliver a series bible, episode outlines, then scripts."
+  },
+  {
+   "id": "genre:short_film_script",
+   "name": "Short-film script",
+   "category": "Creative: scripts & performance",
+   "one_line": "A complete short film in screenplay format, built around one idea, for festivals, brands or YouTube.",
+   "aliases": [
+    "short film",
+    "festival short script",
+    "branded short film"
+   ],
+   "value": "low",
+   "value_evidence": "Mostly self-funded or festival work; paid when brands commission short films.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing",
+     "title": "Fiverr Writing & Translation: Scriptwriting",
+     "supports": "scriptwriting category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Same format as a feature screenplay. One location and few characters keep it producible. Festivals cap running time; check each festival's rules."
+  },
+  {
+   "id": "genre:stage_play",
+   "name": "Stage play / nukkad natak script",
+   "category": "Creative: scripts & performance",
+   "one_line": "Script for live theatre, from proscenium plays to Indian street theatre (nukkad natak) with chorus and direct address.",
+   "aliases": [
+    "play script",
+    "nukkad natak",
+    "street play",
+    "one-act play",
+    "theatre script"
+   ],
+   "value": "low",
+   "value_evidence": "Small paid market; street plays are commissioned by NGOs, colleges and awareness campaigns.",
+   "note": "Stage format puts character names above dialogue and directions in brackets or italics. Nukkad natak: loud short lines, songs and slogans, audience participation, short running time."
+  },
+  {
+   "id": "genre:comic_script",
+   "name": "Comic / graphic-novel script",
+   "category": "Creative: scripts & performance",
+   "one_line": "A page-by-page, panel-by-panel script telling an artist what to draw and a letterer what to letter.",
+   "aliases": [
+    "comic book script",
+    "graphic novel script",
+    "webtoon script",
+    "manga script"
+   ],
+   "value": "low",
+   "value_evidence": "Niche paid market: publishers, webtoon platforms, brand comics.",
+   "note": "Format: PAGE n, Panel n description, then CAPTION / CHARACTER dialogue. Keep dialogue per panel short; page turns are reveal points. Vertical-scroll webtoons pace by scroll, not page."
+  },
+  {
+   "id": "genre:standup_comedy_set",
+   "name": "Stand-up comedy set",
+   "category": "Creative: scripts & performance",
+   "one_line": "A performer's set of bits (premise, setup, punchline, tags) written for live delivery and recorded specials.",
+   "aliases": [
+    "stand-up set",
+    "comedy bit",
+    "open-mic set",
+    "comedy special"
+   ],
+   "value": "low",
+   "value_evidence": "Comedians mostly write their own material; paid writing is for specials, hosts, roasts and corporate shows.",
+   "note": "Indian stand-up is largely Hinglish. Jokes about religion, communities or public figures carry legal risk in India (compliance cards). Test lines live; tag after the punch."
+  },
+  {
+   "id": "genre:sketch_comedy",
+   "name": "Sketch comedy script",
+   "category": "Creative: scripts & performance",
+   "one_line": "A short comic scene built on one game (the funny pattern) that escalates to a button ending.",
+   "aliases": [
+    "comedy sketch",
+    "skit",
+    "spoof sketch"
+   ],
+   "value": "low",
+   "value_evidence": "Commissioned by comedy channels and brands; small market.",
+   "note": "Find the game, heighten it, end on a button. Short runtime for online release."
+  },
+  {
+   "id": "genre:satire_parody",
+   "name": "Satire / parody piece",
+   "category": "Creative: scripts & performance",
+   "one_line": "Humour that exposes a real target (politician, policy, trend) by exaggeration, irony or imitation.",
+   "aliases": [
+    "political satire",
+    "parody",
+    "spoof",
+    "vyangya",
+    "lampoon"
+   ],
+   "value": "medium",
+   "value_evidence": "Political pages and comedy channels commission it.",
+   "note": "Punch at power, not at the powerless. Label it as satire where it could pass for news. Defamation and election-period rules apply in India (compliance cards). Hindi vyangya has its own literary tradition (Harishankar Parsai, Sharad Joshi)."
+  },
+  {
+   "id": "genre:game_narrative",
+   "name": "Game narrative / dialogue / interactive fiction",
+   "category": "Creative: scripts & performance",
+   "one_line": "Branching story, character dialogue and in-world text for video games and interactive fiction.",
+   "aliases": [
+    "game writing",
+    "narrative design",
+    "interactive fiction",
+    "branching dialogue",
+    "visual novel script"
+   ],
+   "value": "medium",
+   "value_evidence": "Game studios hire narrative designers and game writers as distinct roles.",
+   "note": "Delivered in spreadsheets or tools (Twine, Ink, Yarn) with node IDs, conditions and barks; any line may be read out of order. Respect UI string length limits."
+  },
+  {
+   "id": "genre:worldbuilding_bible",
+   "name": "Worldbuilding / series bible",
+   "category": "Creative: scripts & performance",
+   "one_line": "A reference document defining a story world (rules, history, places, factions, tone) so many writers stay consistent.",
+   "aliases": [
+    "series bible",
+    "story bible",
+    "lore document",
+    "show bible"
+   ],
+   "value": "low",
+   "value_evidence": "Produced inside writers' rooms, game studios and IP-development deals; rarely a standalone purchase.",
+   "note": "Logline, tone, world rules, character arcs, season or book arcs, glossary, change log."
+  },
+  {
+   "id": "genre:character_bio",
+   "name": "Character bio / character sheet",
+   "category": "Creative: scripts & performance",
+   "one_line": "A profile of one character (want, need, wound, voice, look, relationships) that writers, actors or AI generators work from.",
+   "aliases": [
+    "character profile",
+    "character breakdown",
+    "casting breakdown"
+   ],
+   "value": "low",
+   "value_evidence": "A supporting deliverable inside screenplay, game and AI-film projects.",
+   "note": "For AI video, pair with a fixed visual descriptor block reused verbatim in every shot prompt (see genre:ai_video_prompt_script)."
+  },
+  {
+   "id": "genre:professional_bio",
+   "name": "Professional bio (short / long)",
+   "category": "Career & personal",
+   "one_line": "A bio for speaker intros, websites, proposals and event programmes, delivered in several lengths.",
+   "aliases": [
+    "Executive / speaker bio",
+    "about me",
+    "executive bio",
+    "founder bio",
+    "leadership bio",
+    "speaker bio"
+   ],
+   "value": "medium",
+   "value_evidence": "Sold in personal-branding packages; Upwork lists thought-leadership content among ghostwriting projects.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "ghostwriters produce thought-leadership content for clients"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    }
+   ],
+   "note": "Deliver a one-liner, a short and a long version. Lead with what the person does for whom, then proof, then one human detail. [merged from genre:executive_bio: Unsure: personal bios may belong to genre_pro_creative (career/personal).]"
+  },
+  {
+   "id": "genre:personal_brand_statement",
+   "name": "Personal brand statement",
+   "category": "Career & personal",
+   "one_line": "One or two sentences stating who a person helps, how, and what makes them different, reused across profiles.",
+   "aliases": [
+    "personal value proposition",
+    "personal elevator pitch",
+    "personal positioning statement"
+   ],
+   "value": "low",
+   "value_evidence": "Sold inside LinkedIn and resume packages rather than alone.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/linkedin-profile-services",
+     "title": "Fiverr Writing & Translation: LinkedIn Profiles",
+     "supports": "personal-branding copy sold with LinkedIn profiles"
+    }
+   ],
+   "note": "Feeds the LinkedIn headline, bio first line and portfolio header. Specific audience plus specific outcome beats adjectives."
+  },
+  {
+   "id": "genre:portfolio_case_writeup",
+   "name": "Portfolio case write-up (creative / design project)",
+   "category": "Career & personal",
+   "one_line": "A project story for a designer's or creative's portfolio: brief, constraints, process, decisions and result.",
+   "aliases": [
+    "Behance case study",
+    "portfolio project page",
+    "UX case study (portfolio)"
+   ],
+   "value": "low",
+   "value_evidence": "Written by the creative to win jobs; occasionally commissioned. Distinct from marketing case studies (genre_content worker).",
+   "note": "Lead with the outcome and the role played. Show decisions and trade-offs, not just final frames. Credit collaborators; respect client NDAs and any contract rules on posting client work publicly."
+  },
+  {
+   "id": "genre:resignation_letter",
+   "name": "Resignation letter",
+   "category": "Career & personal",
+   "one_line": "A brief formal letter giving notice, stating the last working day and leaving on good terms.",
+   "aliases": [
+    "resignation email",
+    "notice letter"
+   ],
+   "value": "low",
+   "value_evidence": "Template-driven; no meaningful paid market.",
+   "note": "Date, notice period as per contract, last working day, thanks, handover offer. No grievances in writing."
+  },
+  {
+   "id": "genre:recommendation_letter",
+   "name": "Letter of recommendation (LOR)",
+   "category": "Academic, grants & admissions",
+   "one_line": "A letter from a teacher or manager vouching for a candidate's ability with specific evidence.",
+   "aliases": [
+    "LOR",
+    "reference letter",
+    "letter of reference"
+   ],
+   "value": "medium",
+   "value_evidence": "Indian study-abroad agencies sell LOR drafting alongside SOPs (e.g., SOP Expert).",
+   "sources": [
+    {
+     "url": "https://sopexpert.in/",
+     "title": "SOP Expert (India)",
+     "supports": "Indian agency selling SOP, LOR and admission-essay writing for study abroad"
+    }
+   ],
+   "note": "Must be in the recommender's voice and signed by them; specific anecdotes and comparisons carry weight. Some universities treat applicant-drafted LORs as misconduct; flag it."
+  },
+  {
+   "id": "genre:college_essay",
+   "name": "College / scholarship application essay",
+   "category": "Academic, grants & admissions",
+   "one_line": "A personal essay for undergraduate admission or a scholarship that reveals character through a specific story.",
+   "aliases": [
+    "Common App essay",
+    "personal statement (UG)",
+    "UCAS personal statement",
+    "scholarship essay",
+    "supplemental essay"
+   ],
+   "value": "medium",
+   "value_evidence": "Admissions consulting is a paid market; Indian agencies sell admission essays alongside SOPs (SOP Expert).",
+   "sources": [
+    {
+     "url": "https://www.commonapp.org/blog/announcing-2026-2027-common-app-essay-prompts/",
+     "title": "Common App: Announcing the 2026-2027 essay prompts",
+     "supports": "official personal-essay prompts for the 2026-27 cycle"
+    },
+    {
+     "url": "https://sopexpert.in/",
+     "title": "SOP Expert (India)",
+     "supports": "Indian agency selling SOP, LOR and admission-essay writing for study abroad"
+    }
+   ],
+   "note": "Word caps differ (Common App, UCAS, each scholarship). Coaching and editing are fine; writing it for the applicant breaks most honour codes."
+  },
+  {
+   "id": "genre:research_abstract",
+   "name": "Research abstract",
+   "category": "Academic, grants & admissions",
+   "one_line": "A structured summary of a study (background, methods, results, conclusion) that decides whether it is read or accepted.",
+   "aliases": [
+    "abstract",
+    "conference abstract",
+    "structured abstract"
+   ],
+   "value": "low",
+   "value_evidence": "Usually written by researchers; paid help comes through research-summary and academic-editing services.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/research-summaries",
+     "title": "Fiverr Writing & Translation: Research Summaries",
+     "supports": "research-summary category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Word limits are set by each journal or conference. Structured abstracts use fixed headings; report numbers, not adjectives."
+  },
+  {
+   "id": "genre:literature_review",
+   "name": "Literature review",
+   "category": "Academic, grants & admissions",
+   "one_line": "A synthesis of published research on a question showing what is known, contested and missing.",
+   "aliases": [
+    "lit review",
+    "review of literature"
+   ],
+   "value": "low",
+   "value_evidence": "Academic-support demand exists, but Upwork bars students from hiring help for homework and papers.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork warns students may not use independent professionals for homework and papers"
+    }
+   ],
+   "note": "Organise by theme or debate, not paper by paper. Every claim cited. Edit and coach; do not write assessed student work."
+  },
+  {
+   "id": "genre:research_paper_section",
+   "name": "Research paper / thesis section",
+   "category": "Academic, grants & admissions",
+   "one_line": "Introduction, methods, results or discussion sections of a journal paper or thesis, written to the target format.",
+   "aliases": [
+    "manuscript section",
+    "IMRaD paper",
+    "thesis chapter",
+    "dissertation chapter"
+   ],
+   "value": "low",
+   "value_evidence": "Paid academic and medical editing exist; ghostwriting assessed work is barred by marketplaces and universities.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "academic-related work restricted by Upwork policy"
+    }
+   ],
+   "note": "IMRaD structure; follow the journal's author guidelines. Indian universities run plagiarism checks on theses."
+  },
+  {
+   "id": "genre:thesis_summary",
+   "name": "Thesis summary / PhD synopsis",
+   "category": "Academic, grants & admissions",
+   "one_line": "A condensed account of a thesis's problem, method, findings and contribution, required at registration or submission.",
+   "aliases": [
+    "PhD synopsis",
+    "thesis synopsis",
+    "dissertation summary"
+   ],
+   "value": "low",
+   "value_evidence": "Required by Indian universities in the PhD process; little open-market demand.",
+   "note": "Format and length are set by each university's ordinance. State the contribution to knowledge explicitly."
+  },
+  {
+   "id": "genre:troubleshooting_guide",
+   "name": "Troubleshooting guide",
+   "category": "Technical & product documentation",
+   "one_line": "A symptom-to-fix guide that lets a user or support agent diagnose and resolve a known problem without escalation.",
+   "aliases": [
+    "troubleshooter",
+    "diagnostic guide",
+    "error-message guide",
+    "FAQ (support)"
+   ],
+   "value": "medium",
+   "value_evidence": "Part of technical-writing work on manuals and how-to guides (Upwork technical-writer projects).",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "technical writers produce manuals and how-to guides"
+    }
+   ],
+   "note": "Organise by symptom the user sees (exact error text), then likely cause, then fix steps, then 'if that did not work'. Most common cause first."
+  },
+  {
+   "id": "genre:elearning_course_script",
+   "name": "E-learning course / training module script",
+   "category": "Technical & product documentation",
+   "one_line": "Learning content (module scripts, storyboards, quizzes) built around learning objectives for online or corporate training.",
+   "aliases": [
+    "instructional design",
+    "training material",
+    "course script",
+    "LMS module",
+    "storyboard (e-learning)"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork lists instructional designer as a freelance writing type with its own rate band; Fiverr runs an E-Learning Content Development category.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "instructional designer listed among 14 freelance writing types; rate band $20-$45 per hour; business writers also produce training materials"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/elearning-content-development",
+     "title": "Fiverr Writing & Translation: E-Learning Content Development",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Start from measurable objectives (learner will be able to...). Chunk into short screens, check understanding with questions tied to objectives. Narration scripts are written for the ear."
+  },
+  {
+   "id": "genre:medical_regulatory_writing",
+   "name": "Medical / regulatory writing",
+   "category": "Technical & product documentation",
+   "one_line": "Scientific documents for drugs, devices and clinical research: protocols, clinical study reports, regulatory submissions, patient leaflets.",
+   "aliases": [
+    "medical writing",
+    "regulatory writing",
+    "clinical study report",
+    "CSR (clinical)",
+    "patient information leaflet"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork names medical writing among technical-writing projects; pharma outsourcing hubs in India hire medical writers as a distinct job family.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "technical writing projects include medical writing"
+    }
+   ],
+   "note": "Follows ICH guidelines and each regulator's templates (CDSCO in India). Accuracy and traceability over style. Medical claims to consumers fall under advertising law (compliance cards)."
+  },
+  {
+   "id": "genre:investor_update",
+   "name": "Investor update",
+   "category": "Business documents",
+   "one_line": "A regular (monthly or quarterly) note from a founder to investors: metrics, wins, misses, asks.",
+   "aliases": [
+    "monthly investor update",
+    "board update"
+   ],
+   "value": "low",
+   "value_evidence": "Founders write these themselves; little external paid demand.",
+   "note": "Same structure every time: headline metrics vs last period, highlights, lowlights, priorities, specific asks. Bad news early and plain."
+  },
+  {
+   "id": "genre:business_report",
+   "name": "Business report",
+   "category": "Business documents",
+   "one_line": "A structured document that presents findings, analysis and recommendations on a business question.",
+   "aliases": [
+    "analytical report",
+    "project report",
+    "status report",
+    "feasibility report"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork lists business reports among business-writing projects.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business writer projects include business reports"
+    }
+   ],
+   "note": "Executive summary, background, method, findings, recommendations, appendices. Recommendations must follow from findings. Annual reports for listed companies belong with corporate comms (commercial worker)."
+  },
+  {
+   "id": "genre:internal_memo",
+   "name": "Internal memo / business email (internal)",
+   "category": "Business documents",
+   "one_line": "A short internal message that informs or asks colleagues for a decision, readable in one pass.",
+   "aliases": [
+    "memo",
+    "office memorandum",
+    "circular"
+   ],
+   "value": "low",
+   "value_evidence": "Everyday workplace writing; taught, not commissioned.",
+   "note": "Subject line states the ask. Bottom line up front, then context, then next steps with owners and dates. Indian government 'office memorandum' has its own fixed format."
+  },
+  {
+   "id": "genre:meeting_minutes",
+   "name": "Meeting minutes",
+   "category": "Business documents",
+   "one_line": "The official record of what a meeting decided, who attended and who will do what by when.",
+   "aliases": [
+    "minutes of meeting",
+    "MoM",
+    "board minutes",
+    "action log"
+   ],
+   "value": "low",
+   "value_evidence": "Routine company-secretarial and admin work; Indian board minutes are governed by ICSI SS-1.",
+   "sources": [
+    {
+     "url": "https://taxguru.in/company-law/secretarial-standards-minutes-companies-act-2013-ss-1-ss-2.html",
+     "title": "TaxGuru: Secretarial Standards on minutes (SS-1 & SS-2)",
+     "supports": "secondary summary of ICSI SS-1: minutes are a fair and correct summary, not a transcript; draft circulated within 15 days, comments within 7 days, final entry within 30 days"
+    }
+   ],
+   "note": "Indian board minutes: fair and correct summary, not a transcript; draft circulated within 15 days, final entered within 30 days (SS-1, via TaxGuru summary; check the ICSI text). Record decisions and dissent, not chatter."
+  },
+  {
+   "id": "genre:internal_faq",
+   "name": "Internal FAQ",
+   "category": "Business documents",
+   "one_line": "A question-and-answer document that pre-empts what employees or partners will ask about a change, policy or launch.",
+   "aliases": [
+    "employee FAQ",
+    "launch FAQ",
+    "Q&A document",
+    "PR/FAQ (internal)"
+   ],
+   "value": "low",
+   "value_evidence": "Written in-house by HR, comms or product teams.",
+   "note": "Write the hard questions people will actually ask, answer each in the first sentence. Owner and last-updated date at top."
+  },
+  {
+   "id": "genre:okr_strategy_doc",
+   "name": "Strategy / OKR document",
+   "category": "Business documents",
+   "one_line": "A plan that states where an organisation is going and how progress will be measured (objectives and key results).",
+   "aliases": [
+    "OKRs",
+    "strategy memo",
+    "annual plan",
+    "roadmap narrative",
+    "six-pager"
+   ],
+   "value": "low",
+   "value_evidence": "Internal leadership document; consultants write them inside larger engagements.",
+   "note": "Diagnosis, guiding policy, actions. Key results are measurable outcomes, not tasks. Narrative memos beat bullet decks for reasoning."
+  },
+  {
+   "id": "genre:ted_style_talk",
+   "name": "TED-style talk",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A short idea-led talk built around one idea worth spreading, told through story and evidence.",
+   "aliases": [
+    "TEDx talk",
+    "idea talk",
+    "conference talk"
+   ],
+   "value": "medium",
+   "value_evidence": "TEDx events run worldwide and speakers hire coaches and writers; TED publishes the format rules.",
+   "sources": [
+    {
+     "url": "https://www.ted.com/participate/organize-a-local-tedx-event/before-you-start/tedx-rules",
+     "title": "TED: TEDx rules",
+     "supports": "'TEDx talks are typically under 18 minutes'; 'Many talks are even shorter, with 3-9 minutes being ideal for a focused idea'"
+    }
+   ],
+   "note": "TEDx rules: talks typically under 18 minutes, with 3-9 minutes ideal for a focused idea. One idea, a throughline, no selling from the stage."
+  },
+  {
+   "id": "genre:motivational_speech",
+   "name": "Motivational / inspirational speech",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A speech designed to lift an audience's energy and commitment, built on personal story and a clear call.",
+   "aliases": [
+    "inspirational talk",
+    "commencement speech",
+    "annual-day speech",
+    "team rally speech"
+   ],
+   "value": "low",
+   "value_evidence": "Sold under speechwriting categories; school, college and corporate events in India commission them.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/speech-writing",
+     "title": "Fiverr Writing & Translation: Speechwriting",
+     "supports": "speechwriting category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Struggle, turn, lesson, challenge to the audience. Avoid cliches the audience has heard at every annual day; specific detail wins."
+  },
+  {
+   "id": "genre:political_speech",
+   "name": "Political / rally speech",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A speech for a leader or candidate at a rally, launch or legislature, built to rouse supporters and frame the opponent.",
+   "aliases": [
+    "rally speech",
+    "bhashan",
+    "campaign speech",
+    "stump speech",
+    "address to the nation"
+   ],
+   "value": "medium",
+   "value_evidence": "Parties and political consultancies employ speechwriters; BLS counts speechwriters within writers and authors.",
+   "sources": [
+    {
+     "url": "https://www.bls.gov/ooh/media-and-communication/writers-and-authors.htm",
+     "title": "US BLS OOH: Writers and Authors",
+     "supports": "occupation includes speechwriters, novelists, playwrights, screenwriters and copywriters; median annual wage $76,910 (May 2025)"
+    }
+   ],
+   "note": "Indian rally speeches are mostly Hindi or regional language, call-and-response, slogans repeated, local issues named. Model Code of Conduct and hate-speech law apply during elections (compliance cards)."
+  },
+  {
+   "id": "genre:election_manifesto",
+   "name": "Election manifesto",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A party's or candidate's published set of promises and positions for an election.",
+   "aliases": [
+    "sankalp patra",
+    "ghoshna patra",
+    "vision document"
+   ],
+   "value": "medium",
+   "value_evidence": "Every party issues one per election; drafted by party committees and political consultancies. ECI regulates content under MCC Part VIII.",
+   "sources": [
+    {
+     "url": "https://ceoelection.bihar.gov.in/pdf/Compendium_MCC.pdf",
+     "title": "ECI Compendium of Instructions on Model Code of Conduct (hosted by CEO Bihar)",
+     "supports": "Part VIII manifesto guidelines (ECI letter 437/6/Manifesto/2013, 19.02.2014): nothing repugnant to the Constitution; manifesto should reflect the rationale for promises and broadly indicate the ways and means to meet the financial requirement"
+    }
+   ],
+   "note": "ECI guidelines: nothing repugnant to the Constitution; reflect the rationale for promises and broadly indicate how they will be funded; manifestos are not released during the prohibitory period before polling (check the compendium)."
+  },
+  {
+   "id": "genre:campaign_slogan",
+   "name": "Political campaign slogan",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A short, chantable line that carries a candidate's or movement's message.",
+   "aliases": [
+    "election slogan",
+    "nara",
+    "rally chant",
+    "political tagline"
+   ],
+   "value": "medium",
+   "value_evidence": "Commissioned by parties and political consultancies at every election; brand taglines belong to the commercial worker.",
+   "note": "Rhythm and rhyme in Hindi carry it (chantable in two beats). Test in the local language. Must avoid appeals to religion or caste for votes under election law (compliance cards)."
+  },
+  {
+   "id": "genre:policy_brief",
+   "name": "Policy brief",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A short evidence-based document that recommends a policy action to a decision-maker.",
+   "aliases": [
+    "policy note",
+    "policy paper (short)",
+    "briefing note",
+    "white note"
+   ],
+   "value": "medium",
+   "value_evidence": "Think tanks, NGOs and government advisory roles produce them; commissioned in research and advocacy projects.",
+   "note": "Problem, evidence, options, recommendation, in a few pages. Lead with the recommendation. Cite data; separate fact from opinion."
+  },
+  {
+   "id": "genre:government_press_note",
+   "name": "Government press note / press release",
+   "category": "Speeches, public affairs & political",
+   "one_line": "An official release from a ministry or department announcing a decision, scheme, event or rebuttal.",
+   "aliases": [
+    "PIB release",
+    "official statement"
+   ],
+   "value": "medium",
+   "value_evidence": "PIB publishes releases for every central ministry daily; state information departments do the same.",
+   "sources": [
+    {
+     "url": "https://pib.gov.in/indexd.aspx",
+     "title": "Press Information Bureau (PIB)",
+     "supports": "central government's channel publishing ministry press releases in English, Hindi and regional languages"
+    }
+   ],
+   "note": "Official register: dateline, ministry, headline, lead paragraph with the decision, details, quotes from the minister, background. Bilingual (English and Hindi) is the norm. Corporate press releases belong to the commercial worker."
+  },
+  {
+   "id": "genre:public_service_announcement",
+   "name": "Public service announcement (PSA)",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A short non-commercial message (script, poster or audio) that asks citizens to adopt a safe or civic behaviour.",
+   "aliases": [
+    "PSA",
+    "awareness message",
+    "jan jagrukta sandesh",
+    "IEC message"
+   ],
+   "value": "medium",
+   "value_evidence": "Government departments and NGOs commission awareness campaigns (IEC budgets) on health, safety and voting.",
+   "sources": [
+    {
+     "url": "https://www.mygov.in/",
+     "title": "MyGov",
+     "supports": "government citizen-engagement platform that runs awareness campaigns"
+    }
+   ],
+   "note": "One behaviour, one reason, one action. Simple language, local dialect where possible. Avoid fear appeals without a doable action."
+  },
+  {
+   "id": "genre:scheme_explainer",
+   "name": "Government scheme explainer (for citizens)",
+   "category": "Speeches, public affairs & political",
+   "one_line": "Plain-language explainer telling citizens who is eligible for a scheme, what they get and how to apply.",
+   "aliases": [
+    "yojana explainer",
+    "scheme guide",
+    "citizen guide",
+    "how to apply guide"
+   ],
+   "value": "medium",
+   "value_evidence": "Government, MyGov, parties and media all produce scheme explainers; political content teams commission them daily.",
+   "sources": [
+    {
+     "url": "https://www.mygov.in/",
+     "title": "MyGov",
+     "supports": "platform for citizen-facing scheme communication"
+    }
+   ],
+   "note": "Eligibility, benefit, documents needed, how to apply, helpline. Verify every figure against the scheme's official guidelines page; schemes change amounts and dates often."
+  },
+  {
+   "id": "genre:political_social_commentary",
+   "name": "Political social-media commentary",
+   "category": "Speeches, public affairs & political",
+   "one_line": "Short opinion posts and threads reacting to political news, written to persuade or rally followers.",
+   "aliases": [
+    "political post",
+    "political thread",
+    "rebuttal post",
+    "IT-cell post"
+   ],
+   "value": "medium",
+   "value_evidence": "Party IT cells, political consultancies and political pages employ writers for it.",
+   "note": "React fast but verify the news peg first. Name the claim, give the counter-fact with a source, end with a line people will repost. Election-period and defamation rules apply (compliance cards). Organic social formats as a whole belong to genre_content."
+  },
+  {
+   "id": "genre:rti_application",
+   "name": "RTI application / citizen grievance letter",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A citizen's written request for information under India's Right to Information Act, or a formal grievance to an authority.",
+   "aliases": [
+    "RTI",
+    "RTI application",
+    "grievance letter",
+    "complaint letter",
+    "CPGRAMS complaint"
+   ],
+   "value": "low",
+   "value_evidence": "Citizens and activists draft them; some lawyers and NGOs offer drafting help for a small fee.",
+   "note": "RTI: ask for specific records, not opinions or reasons; one subject; addressed to the PIO of the right department. Grievances: facts, dates, reference numbers, the remedy sought."
+  },
+  {
+   "id": "genre:eulogy",
+   "name": "Eulogy",
+   "category": "Career & personal",
+   "one_line": "A short spoken tribute at a funeral or memorial (shraddhanjali sabha) that honours a life with specific memories.",
+   "aliases": [
+    "funeral speech",
+    "tribute speech",
+    "shraddhanjali",
+    "memorial speech"
+   ],
+   "value": "low",
+   "value_evidence": "Occasional one-off commissions under speechwriting; mostly written by family.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/speech-writing",
+     "title": "Fiverr Writing & Translation: Speechwriting",
+     "supports": "personal speeches sold under speechwriting"
+    }
+   ],
+   "note": "Specific stories over adjectives, one light moment allowed, end with what the person leaves behind. Check names, dates and family relationships twice."
+  },
+  {
+   "id": "genre:obituary_notice",
+   "name": "Obituary / death notice",
+   "category": "Career & personal",
+   "one_line": "A published notice of a death (newspaper, social media) with the person's life details and funeral or prayer-meet information.",
+   "aliases": [
+    "death announcement",
+    "uthala / prayer meet notice"
+   ],
+   "value": "low",
+   "value_evidence": "Newspaper classifieds and families write these; little freelance market.",
+   "note": "Name, age, date, family, short life note, prayer-meet or funeral details. Indian newspaper notices often include a photo and 'with deep sorrow' style opening."
+  },
+  {
+   "id": "genre:condolence_message",
+   "name": "Condolence message",
+   "category": "Career & personal",
+   "one_line": "A short message of sympathy to a bereaved person or family, by card, letter, WhatsApp or official statement.",
+   "aliases": [
+    "sympathy message",
+    "condolence letter",
+    "shok sandesh",
+    "official condolence statement"
+   ],
+   "value": "low",
+   "value_evidence": "No meaningful paid market except official statements written by leaders' offices.",
+   "note": "Name the person who died, one specific memory, an offer of concrete help. Avoid 'everything happens for a reason'. Leaders' condolence posts follow a set formal register in Hindi and English."
+  },
+  {
+   "id": "genre:greeting_wishes_message",
+   "name": "Greeting / wishes message (birthday, anniversary, congratulations)",
+   "category": "Career & personal",
+   "one_line": "A short personal message for a milestone, written to feel personal rather than copied.",
+   "aliases": [
+    "birthday wishes",
+    "anniversary wishes",
+    "congratulations message",
+    "card message"
+   ],
+   "value": "low",
+   "value_evidence": "Huge consumer search demand but almost no paid market; template sites dominate.",
+   "note": "One specific detail about the person beats any generic line. Festival greetings are a separate genre (genre:festival_greeting)."
+  },
+  {
+   "id": "genre:matrimonial_profile",
+   "name": "Matrimonial profile / marriage biodata",
+   "category": "Career & personal",
+   "one_line": "The 'about me' and biodata for a marriage site or family-shared biodata that presents a person and what they seek.",
+   "aliases": [
+    "marriage biodata",
+    "shaadi profile",
+    "rishta biodata",
+    "matrimony about me"
+   ],
+   "value": "low",
+   "value_evidence": "Matrimony platforms offer free biodata makers (e.g., Shaadi.com), which caps paid demand; premium writing is a niche service.",
+   "sources": [
+    {
+     "url": "https://www.shaadi.com/marriage-biodata-maker",
+     "title": "Shaadi.com: Free Marriage Biodata Maker",
+     "supports": "platform tool for creating marriage biodata, showing the format is standard and widely used"
+    }
+   ],
+   "note": "Biodata: personal details, education, work, family, expectations. 'About me' should sound like the person (often written by parents; say so). Avoid caste or colour preferences phrased offensively."
+  },
+  {
+   "id": "genre:festival_greeting",
+   "name": "Festival greeting copy",
+   "category": "Indian cultural & devotional",
+   "one_line": "Short greeting text for Diwali, Holi, Eid, Christmas, Navratri, Chhath and other festivals, for people, leaders and organisations.",
+   "aliases": [
+    "Diwali greeting",
+    "Diwali message",
+    "Diwali wishes",
+    "Eid wishes",
+    "Holi wishes",
+    "festival greeting message",
+    "festival post copy",
+    "festival wishes",
+    "festive greeting for clients",
+    "tyohar shubhkamna"
+   ],
+   "value": "medium",
+   "value_evidence": "Every brand, party and leader posts festival greetings; agencies and political content teams write them on a calendar.",
+   "note": "Use the festival's correct name and greeting in the right language and script (e.g., Chhath, Onam, Pongal). Respect the meaning of the day; leaders' greetings follow a formal register. Brand greeting ads belong to the commercial worker."
+  },
+  {
+   "id": "genre:devotional_content",
+   "name": "Devotional content (aarti, bhajan, stuti, vrat katha text)",
+   "category": "Indian cultural & devotional",
+   "one_line": "Hindu (and other faith) devotional text: aarti, bhajan, stuti, vrat katha, mantra explanation, temple and festival lore.",
+   "aliases": [
+    "aarti",
+    "bhajan",
+    "stuti",
+    "chalisa explainer",
+    "bhakti content",
+    "vrat katha"
+   ],
+   "value": "medium",
+   "value_evidence": "Faith-tech platforms built on devotional content are raising venture money (Sri Mandir's Series C, Business Standard 2025-06-30).",
+   "sources": [
+    {
+     "url": "https://www.business-standard.com/companies/start-ups/appsforbharat-raises-rs-175-crore-series-c-to-expand-devotion-platform-125063001067_1.html",
+     "title": "Business Standard (2025-06-30): AppsForBharat raises Rs 175 crore Series C to scale Sri Mandir platform",
+     "supports": "investor money is flowing into Indian devotional (faith-tech) platforms that run on devotional content"
+    }
+   ],
+   "note": "Traditional aartis and chalisas are public-domain scripture but specific modern bhajans and translations are copyrighted; quote traditional texts accurately, never invent scripture. Respect sampradaya differences; avoid mocking any faith."
+  },
+  {
+   "id": "genre:katha_narration",
+   "name": "Katha / mythological story narration",
+   "category": "Indian cultural & devotional",
+   "one_line": "Story narration of mythology, folk tales or saints' lives in a kathavachak style, for audio, video or live recitation.",
+   "aliases": [
+    "katha",
+    "pauranik kahani",
+    "mythology story",
+    "dharmik katha",
+    "folk tale narration"
+   ],
+   "value": "medium",
+   "value_evidence": "Audio and video platforms in India run large mythology catalogues; Pocket FM's popular shows include mythology titles.",
+   "sources": [
+    {
+     "url": "https://www.medianews4u.com/pocket-fm-brings-ai-powered-audio-storytelling-to-india-with-30000-series-live/",
+     "title": "medianews4u (2025-09-17): Pocket FM brings AI-powered audio storytelling to India",
+     "supports": "over 30,000 AI audio series live; over 33,000 Indian users publish audio series each month; top writers projected to cross Rs 10 lakh a year"
+    }
+   ],
+   "note": "Name the source text (Ramayana, Mahabharata, Puranas, regional versions) and do not present invented episodes as scripture. Narrator voice: warm, rhetorical questions, moral at the end."
+  },
+  {
+   "id": "genre:whatsapp_forward",
+   "name": "WhatsApp good-morning / broadcast forward",
+   "category": "Indian cultural & devotional",
+   "one_line": "Short shareable text (good-morning suvichar, quote, news-style update, community notice) written to be forwarded in Indian WhatsApp groups.",
+   "aliases": [
+    "good morning message",
+    "suvichar",
+    "forward message",
+    "group message"
+   ],
+   "value": "low",
+   "value_evidence": "Enormous unpaid consumer volume; paid only when political, religious or community organisations run broadcast lists.",
+   "note": "Write for a phone screen in Hindi or Hinglish; one idea, emoji used sparingly, sender line at end. Never fabricate quotes or news; political forwards spread misinformation risk (compliance cards)."
+  },
+  {
+   "id": "genre:wedding_invitation_wording",
+   "name": "Wedding / event invitation wording",
+   "category": "Indian cultural & devotional",
+   "one_line": "The text of an Indian wedding card or e-invite: blessings, hosts, couple, ceremonies, dates, venue, RSVP.",
+   "aliases": [
+    "shaadi card matter",
+    "invitation card text",
+    "e-invite wording",
+    "kankotri text"
+   ],
+   "value": "low",
+   "value_evidence": "Card printers and e-invite apps bundle wording; small standalone market.",
+   "note": "Order: deity invocation (Shri Ganeshaya Namah etc.), hosts and grandparents, couple, ceremonies with dates and times, venue, RSVP and 'with best compliments from'. Bilingual Hindi-English is common; spelling of names must be confirmed by the family."
+  },
+  {
+   "id": "genre:film_treatment",
+   "name": "Film treatment / step outline",
+   "category": "Creative: scripts & performance",
+   "one_line": "A prose telling of a film or series in present tense, scene by scene or act by act, used to sell or plan before the screenplay.",
+   "aliases": [
+    "treatment",
+    "step outline",
+    "story outline"
+   ],
+   "value": "low",
+   "value_evidence": "A pitching and development document inside screenwriting deals; SWA registers story, plot and synopsis documents of this kind.",
+   "sources": [
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Synopsis, Story, Script, Plot, Screenplay, Dialogue and Song for members, online or at its Mumbai office"
+    }
+   ],
+   "note": "Present tense, vivid but brief, follows the story beats in order including the ending. Indian producers often ask for a one-page story, then a step outline, then the screenplay."
+  },
+  {
+   "id": "genre:anchoring_script",
+   "name": "Anchoring / emcee script (events)",
+   "category": "Speeches, public affairs & political",
+   "one_line": "The compere's running script for an event: opening, introductions, link lines between acts, shayari, audience engagement and close.",
+   "aliases": [
+    "emcee script",
+    "compering script",
+    "MC script",
+    "sanchalan"
+   ],
+   "value": "low",
+   "value_evidence": "Indian schools, colleges, corporates and weddings need anchoring scripts for every event; mostly written by the anchor or event company.",
+   "note": "Bilingual Hindi-English is standard; a shayari or quote to open and to introduce each guest is expected in India. Confirm guest names, titles and order of protocol with the organiser."
+  },
+  {
+   "id": "genre:welcome_address_vote_of_thanks",
+   "name": "Welcome address / vote of thanks",
+   "category": "Speeches, public affairs & political",
+   "one_line": "The formal opening and closing speeches at Indian institutional events, honouring dignitaries in protocol order.",
+   "aliases": [
+    "welcome speech",
+    "vote of thanks",
+    "dhanyavad gyapan",
+    "swagat bhashan"
+   ],
+   "value": "low",
+   "value_evidence": "Ubiquitous at Indian institutional events but written in-house; little paid market.",
+   "note": "Protocol order: chief guest, guest of honour, presiding officer, dignitaries, organisers, audience. Short; names and designations must be exact."
+  },
+  {
+   "id": "genre:personal_essay",
+   "name": "Personal essay / creative nonfiction",
+   "category": "Creative: fiction & poetry",
+   "one_line": "A first-person nonfiction essay that turns a lived experience into an insight a stranger cares about.",
+   "aliases": [
+    "First-person narrative / personal essay post",
+    "creative nonfiction",
+    "experience post",
+    "first-person essay",
+    "first-person narrative",
+    "lyric essay",
+    "memoir essay",
+    "personal essay",
+    "story post"
+   ],
+   "value": "low",
+   "value_evidence": "Paid by some magazines and anthologies; small market. Op-eds and blog essays belong to the genre_content worker.",
+   "sources": [
+    {
+     "url": "https://reedsy.com/ghostwriting",
+     "title": "Reedsy: Find Book Ghostwriting Services",
+     "supports": "marketplace guide prices: book proposal $750-$10,000 (59 projects, 2026); book ghostwriting average $450 per 1,000 words (2,006 offers, 2025); short-form $500-$2,000"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Scene first, reflection after; the insight must be earned by the story. Get consent or change details for real people who appear. [merged from genre:personal_essay_post: Literary/creative personal essays belong to genre_pro_creative; this card is the marketing/creator version (lesson-led, ends on a takeaway).]"
+  },
+  {
+   "id": "genre:documentary_narration",
+   "name": "Documentary / film narration script",
+   "category": "Creative: scripts & performance",
+   "one_line": "Voice-over narration written against picture for a documentary, corporate film or AI film, timed to the edit.",
+   "aliases": [
+    "documentary VO script",
+    "narration script",
+    "voice-over script (film)"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork's script-writer category covers narrated video work with a published rate band; overlaps the genre_content worker's YouTube scripts.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writer projects include explainer and narrated video; $30-$56 per hour"
+    }
+   ],
+   "note": "Write to picture: two-column (visual / audio) format; leave silence for images to work. Every factual claim sourced. YouTube and Reels scripts belong to genre_content."
+  },
+  {
+   "id": "genre:rashifal_horoscope",
+   "name": "Daily rashifal / horoscope copy",
+   "category": "Indian cultural & devotional",
+   "one_line": "Daily, weekly or yearly predictions per zodiac sign (rashi) for newspapers, apps and social posts.",
+   "aliases": [
+    "rashifal",
+    "horoscope",
+    "daily horoscope",
+    "panchang text"
+   ],
+   "value": "medium",
+   "value_evidence": "Every Hindi daily and many astrology apps publish it daily; a steady staff or freelance writing job. No market source fetched.",
+   "note": "Twelve signs, same structure each (general, career, money, love, health, lucky colour/number). Framed as belief, not fact; avoid health or financial advice that could cause harm."
+  }
+ ]
+}

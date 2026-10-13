@@ -1,0 +1,528 @@
+{
+ "kind": "technique",
+ "items": [
+  {
+   "id": "tech:headline_first",
+   "name": "Headline-first writing",
+   "category": "Research & process",
+   "one_line": "Write many candidate headlines before (and after) drafting; the chosen promise defines what the body must deliver.",
+   "aliases": [
+    "write 25 headlines",
+    "headline brainstorm"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Headline",
+     "title": "Headline (Wikipedia)",
+     "supports": "role of the headline"
+    },
+    {
+     "url": "https://www.niemanlab.org/2023/03/negative-words-in-news-headlines-generate-more-clicks-but-sad-words-are-more-effective-than-angry-or-scary-ones/",
+     "title": "Nieman Lab (2023): study of Upworthy's headline A/B tests",
+     "supports": "Upworthy routinely wrote and tested several headlines per story"
+    }
+   ],
+   "note": "Headline families themselves are hook: items (worker fw_hook).",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:image_alt_text",
+   "name": "Image alt text writing",
+   "category": "SEO & AI search",
+   "one_line": "Describe what the image shows and why it is there, in context; empty alt for purely decorative images.",
+   "aliases": [
+    "alt text",
+    "alt attribute"
+   ],
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+     "title": "W3C WAI: An alt Decision Tree",
+     "supports": "how to decide what alt text an image needs"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/google-images",
+     "title": "Google Search Central: Image SEO best practices",
+     "supports": "descriptive alt text helps Google understand images"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:in_medias_res",
+   "name": "In medias res opening",
+   "category": "Storytelling",
+   "one_line": "Start in the middle of the action and fill in the backstory later.",
+   "aliases": [
+    "In medias res opening",
+    "cold open",
+    "start in the middle"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/In_medias_res",
+     "title": "In medias res (Wikipedia)",
+     "supports": "narrative opening in the middle of events"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:keyword_placement",
+   "name": "Natural keyword placement",
+   "category": "SEO & AI search",
+   "one_line": "Use the words people search with in the title, main heading, opening and link text, naturally and never stuffed.",
+   "aliases": [
+    "on-page keywords"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+     "title": "Google Search Central: SEO Starter Guide",
+     "supports": "anticipate the words users search with; keyword stuffing is against spam policies"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:liking_and_unity",
+   "name": "Liking and shared identity",
+   "category": "Persuasion & proof",
+   "one_line": "Make the writer likeable and signal shared identity (we-language, same city, same struggle) without faking it.",
+   "aliases": [
+    "rapport",
+    "unity",
+    "in-group framing"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "Liking and Unity are two of the seven principles"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:loopable_ending",
+   "name": "Loopable ending",
+   "category": "Social & video",
+   "one_line": "Write the last line so it flows back into the first, inviting an immediate rewatch of a short video.",
+   "aliases": [
+    "seamless loop",
+    "loop script"
+   ],
+   "note": "No primary source found within budget; YouTube's retention report shows rewatched moments as spikes but does not describe loops. Low confidence.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:loss_aversion_framing",
+   "name": "Loss-aversion framing",
+   "category": "Persuasion & proof",
+   "one_line": "Frame the cost of not acting (what the reader keeps losing) alongside the gain, because losses weigh heavier.",
+   "aliases": [
+    "loss framing",
+    "cost of inaction"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Loss_aversion",
+     "title": "Loss aversion (Wikipedia)",
+     "supports": "losses loom larger than equivalent gains"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Framing_effect_(psychology)",
+     "title": "Framing effect (psychology) (Wikipedia)",
+     "supports": "same facts framed as loss vs gain change choices"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:meta_description_writing",
+   "name": "Meta description writing",
+   "category": "SEO & AI search",
+   "one_line": "Write a unique, specific summary of the page for each URL; Google may show it as the snippet but can also choose page text.",
+   "aliases": [
+    "meta description",
+    "snippet copy"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/snippet",
+     "title": "Google Search Central: Control your snippets in search results",
+     "supports": "meta description best practices and that snippets can come from page content"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:metaphor_analogy",
+   "name": "Metaphor and analogy",
+   "category": "Line craft & rhetoric",
+   "one_line": "Explain the unfamiliar through something the reader already knows, with one clear mapping.",
+   "aliases": [
+    "analogy",
+    "simile",
+    "comparison"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Metaphor",
+     "title": "Metaphor (Wikipedia)",
+     "supports": "definition of the device"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Analogy",
+     "title": "Analogy (Wikipedia)",
+     "supports": "transfer of meaning from a known source to a target"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:micro_yes_commitment",
+   "name": "Micro-yes ladder (commitment and consistency)",
+   "category": "Persuasion & proof",
+   "one_line": "Ask for a small, easy agreement first (a quiz answer, a reply, a free step) so the bigger ask feels consistent with it.",
+   "aliases": [
+    "foot in the door",
+    "yes ladder",
+    "commitment and consistency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "consistency is activated by asking for small initial commitments"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Foot-in-the-door_technique",
+     "title": "Foot-in-the-door technique (Wikipedia)",
+     "supports": "small request first raises compliance with a larger one"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:mobile_line_breaks",
+   "name": "Line breaks for mobile reading",
+   "category": "Social & video",
+   "one_line": "Break captions and emails into short lines and short paragraphs with white space so they read on a phone screen.",
+   "aliases": [
+    "white space",
+    "mobile formatting"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/mobile-content/",
+     "title": "NN/g: Reading Content on Mobile Devices",
+     "supports": "comprehension research on small screens; difficult content suffers most on mobile"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:native_formatting",
+   "name": "Native formatting per platform",
+   "category": "Social & video",
+   "one_line": "Format for how the platform actually renders text (no markdown where it shows literally, platform-native lists, mentions, emoji bullets) rather than pasting one version everywhere.",
+   "aliases": [
+    "platform-native copy",
+    "repurposing with rewrite"
+   ],
+   "note": "Unsourced craft norm; what each platform renders is documented per plat: item (formatting field).",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:numerals",
+   "name": "Numbers as numerals (for reading)",
+   "category": "Line craft & rhetoric",
+   "one_line": "On screen, write numbers as numerals so they stand out to scanners; in scripts for the ear, write them the way they are said.",
+   "aliases": [
+    "numerals",
+    "number style"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+     "title": "GOV.UK A to Z style guide",
+     "supports": "write all other numbers in numerals (including 2 to 9) except in common expressions"
+    },
+    {
+     "url": "https://ask.ifas.ufl.edu/publication/WC193",
+     "title": "UF/IFAS EDIS WC193: News Writing for Television and Radio",
+     "supports": "broadcast number style differs: spell out small numbers and round large ones"
+    }
+   ],
+   "note": "House styles differ (AP spells out one to nine); follow the client's style guide.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:nut_graf",
+   "name": "Nut graf",
+   "category": "Storytelling",
+   "one_line": "After a feature-style opening, add one paragraph that says why the story matters now.",
+   "aliases": [
+    "nut graph",
+    "nutshell paragraph"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nut_graph",
+     "title": "Nut graph (Wikipedia)",
+     "supports": "paragraph explaining the news value of a feature"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:objection_handling",
+   "name": "Objection handling in copy",
+   "category": "Persuasion & proof",
+   "one_line": "List the reader's likely reasons not to act and answer each one where it arises (inline, FAQ, guarantee, 'even if' line).",
+   "aliases": [
+    "overcoming objections",
+    "'even if' line",
+    "anxiety reducers"
+   ],
+   "sources": [
+    {
+     "url": "https://copyhackers.com/3-essential-copy-techniques/",
+     "title": "Copyhackers: The 3 essential copywriting techniques",
+     "supports": "'even if' technique: promise + 'even if' + the objection"
+    },
+    {
+     "url": "https://unbounce.com/photos/The-Conversion-Marketers-Guide-To-LandingPage-Copywriting.pdf",
+     "title": "Joanna Wiebe: The Conversion Marketer's Guide to Landing Page Copywriting (Unbounce)",
+     "supports": "work backward from the goal through the objections and anxieties that block conversion"
+    }
+   ],
+   "note": "Objections come from VOC research (tech:voice_of_customer_mining), not guesswork.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:one_reader_rule",
+   "name": "Write to one reader",
+   "category": "Persuasion & proof",
+   "one_line": "Picture one specific person and write to them as 'you', not to an audience or 'users'.",
+   "aliases": [
+    "one-reader rule",
+    "write to one person",
+    "the you rule"
+   ],
+   "sources": [
+    {
+     "url": "https://expresswriters.com/copywriting-advice/",
+     "title": "Express Writers: 57 pieces of copywriting advice",
+     "supports": "'write to one person, not a million', attributed to Fairfax M. Cone (secondary, low confidence)"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/right-tone/",
+     "title": "GOV.UK: Use the right tone",
+     "supports": "address the user directly as 'you'"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:one_sentence_paragraphs",
+   "name": "One-idea and one-sentence paragraphs",
+   "category": "Line craft & rhetoric",
+   "one_line": "Keep one idea per paragraph and use an occasional one-sentence paragraph for emphasis or a turn.",
+   "aliases": [
+    "short paragraphs",
+    "one-liners"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/",
+     "title": "NN/g: Concise, Scannable, and Objective: How to Write for the Web",
+     "supports": "the 'one idea per paragraph' rule observed in user testing"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 8: make the paragraph the unit of composition"
+    }
+   ],
+   "note": "A page made only of one-line paragraphs (LinkedIn 'broetry') loses the emphasis it was after.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:onscreen_text_vs_vo",
+   "name": "On-screen text vs voice-over split",
+   "category": "Social & video",
+   "one_line": "Do not put the full VO on screen; use on-screen text for short keywords, numbers and labels that support what is said.",
+   "aliases": [
+    "redundancy principle",
+    "supers vs narration"
+   ],
+   "sources": [
+    {
+     "url": "https://www.devlinpeck.com/content/mayers-principles-of-multimedia-learning",
+     "title": "Devlin Peck: Mayer's principles of multimedia learning",
+     "supports": "redundancy principle: graphics + narration beat graphics + narration + identical text; short labels can help"
+    },
+    {
+     "url": "https://www.researchgate.net/publication/232540768_Revising_the_Redundancy_Principle_in_Multimedia_Learning",
+     "title": "Revising the Redundancy Principle in Multimedia Learning (paper)",
+     "supports": "short redundant on-screen phrases can aid retention [403 to scripted fetch; URL seen in search results 2026-10-04]"
+    }
+   ],
+   "note": "The research is about learning material; social videos watched muted need captions anyway (tech:captions_subtitles).",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:open_loop",
+   "name": "Open loop",
+   "category": "Structure & scannability",
+   "one_line": "Raise a question or promise early and close it later, so the unfinished thread keeps the reader going.",
+   "aliases": [
+    "curiosity loop",
+    "Zeigarnik loop"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Zeigarnik_effect",
+     "title": "Zeigarnik effect (Wikipedia)",
+     "supports": "interrupted tasks are remembered better (the psychology usually cited for open loops)"
+    }
+   ],
+   "note": "The Zeigarnik research is about memory of interrupted tasks; its use for reading retention is a marketing extension. Every loop opened must close.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:outlining",
+   "name": "Outlining",
+   "category": "Research & process",
+   "one_line": "Plan the sections and their points as a hierarchy before drafting; fix order and gaps at outline stage.",
+   "aliases": [
+    "outline",
+    "skeleton"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Outline_(list)",
+     "title": "Outline (list) (Wikipedia)",
+     "supports": "hierarchical outline as a writing plan"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:pain_agitation",
+   "name": "Pain agitation",
+   "category": "Persuasion & proof",
+   "one_line": "Make the reader feel the cost of the problem with concrete consequences before offering the fix, without fearmongering.",
+   "aliases": [
+    "agitate the problem",
+    "twist the knife"
+   ],
+   "sources": [
+    {
+     "url": "https://copyhackers.com/2015/10/copywriting-formula/",
+     "title": "Copyhackers: Copywriting formulas, the ultimate guide",
+     "supports": "agitation as the middle step of problem-agitate-solve formulas"
+    }
+   ],
+   "note": "The whole PAS structure is fw:pas (worker fw_hook); this is the agitation move alone. Agitation about health, money or safety can tip into unfair fear appeals (see comp: items).",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:paragraph_inverted_pyramid",
+   "name": "Conclusion-first paragraphs",
+   "category": "Structure & scannability",
+   "one_line": "Open each paragraph with its point (topic sentence), then support it, so skimmers get the message from first lines alone.",
+   "aliases": [
+    "inverted pyramid per paragraph",
+    "topic sentence first"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/inverted-pyramid/",
+     "title": "NN/g: Inverted Pyramid",
+     "supports": "start with the conclusion, applies at page and paragraph level"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Topic_sentence",
+     "title": "Topic sentence (Wikipedia)",
+     "supports": "topic sentence summarises the paragraph, usually first"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/",
+     "title": "NN/g: Concise, Scannable, and Objective: How to Write for the Web",
+     "supports": "scanners read only first sentences; topic sentences and 'one idea per paragraph' matter"
+    }
+   ],
+   "note": "The whole-piece inverted pyramid is fw:inverted_pyramid (worker fw_hook); this item is the paragraph-level move.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:parallelism",
+   "name": "Parallelism",
+   "category": "Line craft & rhetoric",
+   "one_line": "Give matching ideas matching grammar (same verb form, same shape) in lists, headings and contrasts.",
+   "aliases": [
+    "parallel structure",
+    "isocolon"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Parallelism_(grammar)",
+     "title": "Parallelism (grammar) (Wikipedia)",
+     "supports": "balance of grammatically similar constructions"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 15: express co-ordinate ideas in similar form"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:pattern_interrupt",
+   "name": "Pattern interrupt",
+   "category": "Structure & scannability",
+   "one_line": "Break the expected pattern (a sudden short line, a visual change, an unexpected question) at the point attention usually drops.",
+   "aliases": [
+    "interrupt",
+    "jolt"
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9314415",
+     "title": "YouTube Help: Measure key moments for audience retention",
+     "supports": "dips show where viewers skip or leave, i.e. where an interrupt is needed"
+    }
+   ],
+   "note": "No primary source defines the copy technique (the term comes from NLP); the YouTube report only shows where attention drops. Low confidence.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:personalization_tokens",
+   "name": "Personalisation tokens",
+   "category": "Email",
+   "one_line": "Insert merge fields (name, city, last purchase) only where they add meaning, always with a safe fallback value.",
+   "aliases": [
+    "merge tags",
+    "mail merge fields",
+    "dynamic fields"
+   ],
+   "sources": [
+    {
+     "url": "https://mailchimp.com/help/all-the-merge-tags-cheat-sheet/",
+     "title": "Mailchimp: All the Merge Tags Cheat Sheet",
+     "supports": "how merge tags insert subscriber data"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Mail_merge",
+     "title": "Mail merge (Wikipedia)",
+     "supports": "definition"
+    }
+   ],
+   "kind": "technique"
+  }
+ ]
+}

@@ -1,0 +1,3133 @@
+{
+ "cards": [
+  {
+   "id": "genre:abandoned_cart_email",
+   "kind": "genre",
+   "name": "Abandoned cart / browse abandonment email",
+   "status": "current",
+   "summary": "A triggered email (usually a 2-3 email flow) that brings a shopper back to the exact product they left. Good ones read like a helpful shop assistant: they show the item, remove the one doubt that stopped checkout, and give one button back to the cart.",
+   "use_for": [
+    "cart abandonment flow (2-3 emails) for a Shopify/WooCommerce D2C store",
+    "browse abandonment (viewed a product, never added to cart)",
+    "checkout abandonment where payment failed or COD was not offered",
+    "the email leg of an email + WhatsApp + SMS recovery sequence"
+   ],
+   "avoid": [
+    "Leading with a discount in email 1: it trains repeat visitors to abandon on purpose. Lead with the product and the doubt it removes; hold any incentive for the last email and only if margins allow.",
+    "Fake scarcity ('Only 2 left!', '30 people are viewing this') that is not wired to live stock data: it is a false-urgency dark pattern under India's CCPA 2023 guidelines. Show stock or deadlines only when the data is real.",
+    "Guilt or nagging copy ('You forgot something, again?'). Use a neutral reminder and a reason to come back.",
+    "Promotional newsletters disguised as recovery: if the cart item is not visible above the fold, write a promotional email instead (genre:promotional_email)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "build welcome series, abandoned cart, post-purchase and winback flows first"
+    },
+    {
+     "url": "https://www.klaviyo.com/blog/abandoned-cart-email",
+     "title": "Klaviyo: Abandoned cart emails best practices",
+     "supports": "abandoned cart as a standard ecommerce flow"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork In-Demand Skills 2026 (press release, 2026-02-04)",
+     "supports": "top-10 Sales & Marketing skills include Email Marketing and Marketing Automation; fastest-growing Design & Creative skill 'AI Video Generation & Editing (+329%)'"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "CCPA Guidelines for Prevention and Regulation of Dark Patterns, 2023 (gazette PDF)",
+     "supports": "false urgency (fake scarcity or popularity) is a listed dark pattern, with an 'Only 2 rooms left!' style illustration in Annexure 1"
+    }
+   ],
+   "related": [
+    "genre:post_purchase_email",
+    "genre:winback_email",
+    "genre:promotional_email",
+    "genre:whatsapp_broadcast",
+    "genre:sms_marketing",
+    "trend:email_deliverability_rules",
+    "trend:whatsapp_conversational_commerce"
+   ],
+   "buyers": [
+    "D2C and Shopify brands",
+    "ecommerce retention / CRM agencies",
+    "Klaviyo, WebEngage, MoEngage and Mailchimp consultants",
+    "marketplace sellers with their own store"
+   ],
+   "value": "high",
+   "value_why": "Klaviyo names abandoned cart among the first flows every store should build (help centre, 2026-03-30), and Upwork's In-Demand Skills 2026 puts Email Marketing and Marketing Automation in the top-10 Sales & Marketing skills.",
+   "goal": "Click back to the saved cart and complete checkout.",
+   "structure": [
+    {
+     "part": "Subject + preheader",
+     "does": "Names the product or the cart and pairs with a preheader that adds a reason (delivery date, COD, easy returns). No 'Hey!' or 'Oops'.",
+     "length": "subject 4-9 words; preheader 6-12 words"
+    },
+    {
+     "part": "Opening line",
+     "does": "Plain reminder in the brand's voice that the item is saved; one sentence, no guilt.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Cart block",
+     "does": "Dynamic product image, name, variant (size/colour), price and quantity from the ESP's cart tokens; the visual carries the sell.",
+     "length": "merge tags, not copy"
+    },
+    {
+     "part": "Doubt remover",
+     "does": "Answers the one objection most likely to stop checkout for this category: size fit, delivery date to the shopper's pin code, COD or UPI, returns window, authenticity. Email 2 can use a short review instead.",
+     "length": "1-3 short lines or 3 bullets"
+    },
+    {
+     "part": "Primary CTA",
+     "does": "One button whose label says the action ('Return to my cart', 'Complete my order'), repeated once at most.",
+     "length": "2-4 words"
+    },
+    {
+     "part": "Help line",
+     "does": "A human route for stuck buyers (WhatsApp number, reply-to, support hours), useful when payment failed.",
+     "length": "1 line"
+    },
+    {
+     "part": "Footer",
+     "does": "Brand address, unsubscribe and preference links as the ESP requires.",
+     "length": "standard"
+    }
+   ],
+   "length": {
+    "min": 40,
+    "max": 180,
+    "unit": "words",
+    "note": "Per email body, excluding the cart block. Browse abandonment sits at the short end; high-ticket or considered purchases (furniture, electronics) earn the long end with one proof element. Flow = 2-3 emails; set timing in the ESP and test it."
+   },
+   "frameworks": [
+    "fw:aida",
+    "fw:four_cs"
+   ],
+   "techniques": [
+    "tech:single_cta_email",
+    "tech:subject_preheader_pairing",
+    "tech:objection_handling",
+    "tech:personalization_tokens",
+    "tech:ethical_urgency",
+    "tech:risk_reversal"
+   ],
+   "hooks": [
+    "hook:descriptive_subject_line",
+    "hook:personalised_subject_line",
+    "hook:question"
+   ],
+   "platforms": [
+    "plat:email_subject_line",
+    "plat:whatsapp_business_template",
+    "plat:sms_india_dlt"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:conversational"
+   ],
+   "compliance": [
+    "comp:ccpa_dark_patterns_2023",
+    "comp:dpdp_act_rules",
+    "comp:can_spam"
+   ],
+   "checklist": [
+    "Does the subject line name the product, the cart or the brand (not just 'Hey!' or 'Oops')?",
+    "Does the preheader add new information instead of repeating the subject?",
+    "Is the product (name, variant, price) shown via cart tokens near the top?",
+    "Is there exactly one primary CTA, labelled with the action (not 'Click here')?",
+    "Does the email answer at least one specific purchase doubt (delivery, COD/UPI, returns, size, authenticity)?",
+    "Is email 1 free of discounts?",
+    "Is every deadline or stock statement true and data-driven?",
+    "Is a human help route given (WhatsApp, reply-to or support line)?",
+    "Is the tone free of guilt or shaming?",
+    "Are the unsubscribe link and sender details present?"
+   ],
+   "pitfalls": [
+    "Hard-coding product names: the flow sends the wrong item. Use the ESP's cart/line-item tokens and preview with a real abandoned cart.",
+    "Three emails that all say 'still thinking?': give each email a different job (reminder, doubt remover, last nudge or incentive).",
+    "Ignoring the Indian payment reality: many checkouts die at payment. Mention COD/UPI or 'payment failed? reply and we'll help' when the store supports it.",
+    "WhatsApp and email firing the same message minutes apart: stagger channels and suppress the email once the order is placed."
+   ],
+   "lint": {
+    "min_words": 30,
+    "max_words": 220,
+    "max_sentence_words": 25,
+    "max_exclamations": 2,
+    "max_emoji": 2,
+    "require": [
+     {
+      "label": "has a cart/checkout CTA",
+      "regex": "(?i)cart|checkout|check out|complete|order|bag|basket|कार्ट|ऑर्डर"
+     }
+    ],
+    "ban": [
+     {
+      "label": "vague 'click here' link",
+      "regex": "(?i)click here"
+     },
+     {
+      "label": "spam-trigger or pushy phrasing",
+      "regex": "(?i)act now|100% free|buy now before it'?s gone"
+     }
+    ]
+   },
+   "exemplar_brief": "Email 1 of a 3-email abandoned-cart flow for a Pune D2C cotton kurta brand (orders Rs 1,200-2,500, COD and UPI available, 7-day exchange, ships in 2-4 days); audience: first-time visitors who left one kurta in the cart; English with one light Hinglish line; subject + preheader + 70-120 word body using cart tokens; no discount; goal: return to cart and complete checkout.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:abandoned_cart_email",
+    "note": "P2 S2 Sp2 V2 C1. Every part in order: subject names the item via token, preheader adds UPI/COD + 2-4 day Pune dispatch, cart tokens up top, 3-bullet doubt remover (COD/UPI, delivery, 7-day exchange), one action-labelled button, WhatsApp help line, footer; no discount, no guilt; body copy ~80 words. 'Payment atak gaya tha?' is natural Hinglish. Only nit: subject is the stock pattern and can run long with real kurta names; keep item.name short or truncate.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:about_page",
+   "kind": "genre",
+   "name": "About page / company bio",
+   "status": "current",
+   "summary": "The page a prospect opens to decide whether to trust you. A good About page leads with who you help and why you exist, proves it with specifics (years, clients, names, faces), tells one real origin moment, and ends with a single next step.",
+   "use_for": [
+    "About us page for an SME, clinic, CA or law firm, agency or D2C brand",
+    "'Our story' page for a founder-led brand",
+    "company bio for proposals, tender documents and LinkedIn company pages (cut down)",
+    "rewriting a generic About page that does not convert"
+   ],
+   "avoid": [
+    "Opening with 'Founded in 2009, XYZ is a leading...': the reader wants to know what's in it for them. Open with who you serve and the problem you fix, then the history.",
+    "Value lists ('Integrity. Innovation. Excellence.') with no example: show each value in one concrete act or cut it.",
+    "Unprovable superlatives ('India's best', 'No. 1 firm'): ASCI and the Consumer Protection Act require claims to be substantiated. Replace with a checkable fact.",
+    "A personal founder essay when the buyer is choosing a firm: keep the founder story to one paragraph and link to a separate founder bio (genre:professional_bio)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page-type filter includes 'Bio/About us' (read 2026-10-04)"
+    },
+    {
+     "url": "https://www.ascionline.in/the-asci-code/",
+     "title": "ASCI Code (page updated 29 Apr 2024)",
+     "supports": "Chapter I: claims about objectively ascertainable facts must be substantiated"
+    }
+   ],
+   "related": [
+    "genre:homepage_copy",
+    "genre:brand_story",
+    "genre:professional_bio",
+    "genre:mission_vision_values",
+    "genre:services_page",
+    "trend:ai_slop_backlash",
+    "trend:non_commodity_content"
+   ],
+   "buyers": [
+    "small and mid-size businesses",
+    "professional firms (CA, law, architecture, clinics)",
+    "D2C and founder-led brands",
+    "agencies and consultants",
+    "NGOs and schools"
+   ],
+   "value": "medium",
+   "value_why": "Fiverr's Website Content category lists 'Bio/About us' as its own page type (2026-10-04); usually sold inside a website copy package rather than alone.",
+   "goal": "Trust the business enough to take the next step (call, book, enquire or buy).",
+   "structure": [
+    {
+     "part": "Headline",
+     "does": "Says who you help and the result, in the customer's words; 'About us' can be the nav label, not the headline.",
+     "length": "6-14 words"
+    },
+    {
+     "part": "Opening",
+     "does": "The customer's problem and why this business exists to solve it; the reader should recognise themselves.",
+     "length": "40-80 words"
+    },
+    {
+     "part": "Origin story",
+     "does": "One specific moment that started the business (place, year, the trigger), told in 3-5 sentences, ending in what it made you decide.",
+     "length": "60-150 words"
+    },
+    {
+     "part": "How we work / what's different",
+     "does": "2-4 concrete differences in method, each with proof: a number with its time window, a named client type, a certification, a process step.",
+     "length": "60-150 words"
+    },
+    {
+     "part": "People",
+     "does": "Founder and key team with names, roles, photos and one human detail each; for larger firms, leaders only plus a team photo.",
+     "length": "30-60 words per person"
+    },
+    {
+     "part": "Proof",
+     "does": "Client logos, 1-2 short testimonials with name and role, press mentions, years and numbers served.",
+     "length": "2-5 items"
+    },
+    {
+     "part": "CTA",
+     "does": "One next step that matches buying stage ('Book a 20-minute call', 'See our work', 'WhatsApp us').",
+     "length": "1-2 lines + button"
+    }
+   ],
+   "length": {
+    "min": 250,
+    "max": 900,
+    "unit": "words",
+    "note": "Professional firms with team bios and a long track record run long; one-person brands and D2C stores run short. Every paragraph must survive the question 'would a buyer miss this?'."
+   },
+   "frameworks": [
+    "fw:storybrand_sb7",
+    "fw:golden_circle",
+    "fw:abt"
+   ],
+   "techniques": [
+    "tech:you_focus",
+    "tech:specificity",
+    "tech:anecdote_lead",
+    "tech:social_proof",
+    "tech:eeat_first_hand_experience",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:audience_callout",
+    "hook:personal_story"
+   ],
+   "platforms": [
+    "plat:google_search_result"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:founder_candid",
+    "tone:authoritative"
+   ],
+   "compliance": [
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "checklist": [
+    "Does the first screen say who the business helps and what they get?",
+    "Is there at least one specific origin detail (place, year, a real moment)?",
+    "Does every experience claim carry a number, name or time window?",
+    "Are real people named with roles (or is there a stated reason not to)?",
+    "If values are listed, does each have a concrete example?",
+    "Is the page free of unprovable superlatives ('best', 'No. 1', 'leading') or are they sourced?",
+    "Does the opening use more 'you' than 'we'?",
+    "Is there exactly one primary next step?"
+   ],
+   "pitfalls": [
+    "Writing it from the founder's diary: the timeline of every office move bores buyers. Keep only events that explain why a client should trust you today.",
+    "Stock-photo team: faces sell trust. If the client will not supply photos, write fewer people with more detail rather than a faceless list.",
+    "Copying the homepage: the About page is where the evidence lives; the homepage is where the offer lives. Cross-link instead of repeating.",
+    "Year-stamped numbers that rot ('500+ clients'): write '500+ clients since 2009' and note in the hand-off which numbers need yearly updating."
+   ],
+   "lint": {
+    "min_words": 150,
+    "max_words": 1000,
+    "max_sentence_words": 30,
+    "require": [
+     {
+      "label": "has a next step",
+      "regex": "(?i)contact|call|book|write to|email|whatsapp|visit|shop|get in touch|talk to|schedule|enquir|संपर्क"
+     }
+    ],
+    "ban": [
+     {
+      "label": "empty corporate filler",
+      "regex": "(?i)one[- ]stop (shop|solution)|customer[- ]centric|passionate about|state[- ]of[- ]the[- ]art|world[- ]class|leading provider"
+     }
+    ]
+   },
+   "exemplar_brief": "About page for 'Bhandari & Mehra Associates' (demo name), a 12-person chartered accountancy firm in Jaipur, founded 2009 by partners Ritu Bhandari (ICAI-qualified CA, runs GST and export refunds) and Sandeep Mehra (CA, runs income-tax notices and audit); handles GST, income-tax notices and export compliance for D2C and export SMEs; 300+ active clients. Founding moment (use as the origin story): in March 2009 a Jaipur gem exporter got an income-tax notice with a 7-day reply window; his old firm answered on day six with a wrong figure. Ritu and Sandeep, then colleagues at a mid-size Jaipur audit firm, rebuilt his workings over one weekend, replied on time, and decided to start a practice where a partner reads every notice within one working day. Proof: partner reads every notice within one working day; one team handles GST, ITR and refunds so the figures agree; 40+ exporters on LUT/IGST refund files. Human details: Ritu coaches a Saturday-morning girls' cricket group; Sandeep still hand-writes his client call list. One testimonial: 'They found the mismatch in our GSTR-1 in an afternoon' - Pooja Agarwal, finance head, a Jaipur home-textile exporter (demo). Audience: founders of Rs 5-50 crore businesses comparing 2-3 firms; English; 400-550 words; goal: book a 20-minute consultation.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:about_page",
+    "note": "P2 S2 Sp2 V2 C1. Headline plus subhead say who and what; opening is 'you'-led and recognisable (unopened GST notice, stuck refund, CA who answers on day four); three differences with real mechanics (one team so GSTR-1/ITR/refund figures agree, written first read of a notice, marketplace TCS and LUT/IGST refund detail); one CTA. Origin moment, partner names and testimonial are placeholders (not supplied). Writer fault: 'FCA' for both partners was invented. CARD FIX: exemplar_brief -> supply the two partners' names and the founding moment (one line: the client or notice that made them start, 2009), since the structure's Origin story part cannot be written without it. | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now supplies partner names/roles, the 2009 founding moment, proof points, human details and a testimonial; re-judge pending.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:advertorial",
+   "kind": "genre",
+   "name": "Advertorial / sponsored article",
+   "status": "current",
+   "summary": "A paid article that reads like the host publication's own journalism and still moves the reader to the brand. It works when most of it is genuinely useful (a news peg, an explainer, real data) and the brand arrives as one credible part of the answer, with the paid label in plain sight.",
+   "use_for": [
+    "sponsored article on a news, finance, lifestyle or trade site ('Partner content', 'Brand Desk')",
+    "print advertorial pages in newspapers and magazines",
+    "long-form native piece for a brand's paid media plan",
+    "sponsored feature in a trade newsletter"
+   ],
+   "avoid": [
+    "Hiding the paid nature: unlabelled paid content misleads readers and breaks ad self-regulation. Put the label above the headline.",
+    "Writing a press release with a news headline: if the brand is in the headline and every paragraph, readers bounce. Lead with the reader's problem or the news; bring the brand in after the reader cares.",
+    "Sensational 'doctors hate this' headlines: they belong to low-quality native ad networks and damage the host's trust. Use the publication's real headline style.",
+    "Followed paid links: Google treats paid articles with links that pass ranking credit as link spam unless the links carry rel=\"sponsored\" or rel=\"nofollow\"."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/advertorial-freelancers/",
+     "title": "Upwork: hire Advertorial Specialists",
+     "supports": "dedicated hire category (snippet-only, 2026-10-04)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "lists Advertorial, Annual Report and Sales Enablement: Battlecard as priced copywriting project types"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "title": "Google Search Central: spam policies (fetched 2026-10-04)",
+     "supports": "link spam includes 'Advertorials or native advertising where payment is received for articles that include links that pass ranking credit'; allowed when links carry rel=\"nofollow\" or rel=\"sponsored\"; scaled content abuse"
+    }
+   ],
+   "related": [
+    "genre:native_ad",
+    "genre:feature_article",
+    "genre:sponsored_creator_post",
+    "genre:byline_article",
+    "genre:press_release",
+    "genre:news_explainer"
+   ],
+   "buyers": [
+    "brands in finance, health, real estate, education and D2C",
+    "media brand studios and branded-content desks",
+    "PR and media-buying agencies",
+    "trade associations"
+   ],
+   "value": "medium",
+   "value_why": "Upwork has a dedicated Advertorial Specialists hire category and AWAI's 2026 copywriting pricing guide lists 'Advertorial' as its own project type.",
+   "goal": "Read to the end, believe the brand is a credible answer, and act on the soft CTA (visit, calculate, sign up).",
+   "structure": [
+    {
+     "part": "Paid label",
+     "does": "Publication's own label ('Partner content', 'Brand Desk', 'Advt.', 'Sponsored') above or beside the headline.",
+     "length": "1-3 words"
+    },
+    {
+     "part": "Headline + dek",
+     "does": "Written in the host's headline style around the reader's question or a news peg, not the brand name.",
+     "length": "headline 8-14 words; dek 15-30 words"
+    },
+    {
+     "part": "Lede",
+     "does": "A scene, a person or a striking fact that makes the problem real.",
+     "length": "40-90 words"
+    },
+    {
+     "part": "Nut graf",
+     "does": "Why this matters now, to this reader; sets up the article's promise.",
+     "length": "40-70 words"
+    },
+    {
+     "part": "Useful body",
+     "does": "Explainer, tips, data or expert view that helps even a reader who never buys; subheads every 150-250 words.",
+     "length": "50-60% of the piece"
+    },
+    {
+     "part": "Brand as solution",
+     "does": "Introduce the brand as one answer: what it does, how it works, price or plan, with a named customer, expert quote or sourced number.",
+     "length": "20-30% of the piece"
+    },
+    {
+     "part": "Soft CTA",
+     "does": "A next step in the publication's voice (calculator, free guide, store locator), with a sponsored-tagged link.",
+     "length": "1-2 sentences"
+    }
+   ],
+   "length": {
+    "min": 500,
+    "max": 1400,
+    "unit": "words",
+    "note": "Print length is fixed by page size and images; online native pieces run longer. The publication's own average feature length is the best guide."
+   },
+   "frameworks": [
+    "fw:nut_graf_feature",
+    "fw:problem_promise_proof_proposal",
+    "fw:inverted_pyramid"
+   ],
+   "techniques": [
+    "tech:anecdote_lead",
+    "tech:nut_graf",
+    "tech:sme_interview",
+    "tech:authority_proof",
+    "tech:descriptive_subheads",
+    "tech:social_proof"
+   ],
+   "hooks": [
+    "hook:news_announcement",
+    "hook:how_to",
+    "hook:shocking_stat"
+   ],
+   "tones": [
+    "tone:journalistic_neutral",
+    "tone:storyteller_narrative"
+   ],
+   "compliance": [
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:google_search_spam_policies"
+   ],
+   "checklist": [
+    "Is a paid label visible at or above the headline?",
+    "Would the headline sit naturally on the host's editorial page?",
+    "Is the brand absent from the headline and the first paragraph?",
+    "Would a reader who never buys still learn something specific?",
+    "Is every number and claim sourced or attributable to a named person?",
+    "Is the brand section concrete (what, how, price or plan, proof)?",
+    "Is there one soft CTA, and are paid links marked sponsored or nofollow?",
+    "Is it free of miracle, guarantee and 'secret' language?"
+   ],
+   "pitfalls": [
+    "Client rewrites that add the brand name to every paragraph: agree the 60/30/10 split (useful/brand/CTA) in the brief before drafting.",
+    "Unverifiable health or returns claims ('guaranteed 12% returns', 'cures diabetes') turn an advertorial into a misleading ad. Use the regulator-approved wording or cut the claim.",
+    "Ignoring the host's style sheet: match its spelling, number style and headline case so the piece reads native.",
+    "Fake bylines or 'staff reporter' credits: credit 'Brand Desk' or the brand's expert, never a fictional journalist."
+   ],
+   "lint": {
+    "min_words": 400,
+    "max_words": 1600,
+    "max_sentence_words": 35,
+    "require": [
+     {
+      "label": "carries a paid/sponsored label",
+      "regex": "(?i)sponsored|advertorial|advt|partner content|brand desk|paid (partnership|post|content|feature)|in association with|promoted|प्रायोजित|विज्ञापन"
+     }
+    ],
+    "ban": [
+     {
+      "label": "sensational native-ad clichés",
+      "regex": "(?i)doctors hate|shocking secret|miracle|this one trick|guaranteed (results|returns)"
+     }
+    ]
+   },
+   "exemplar_brief": "Online advertorial ('Partner content') for BimaBridge (demo name), a Bengaluru health-insurance comparison platform (IRDAI-licensed web aggregator; licence line to print: 'BimaBridge Insurance Web Aggregator Pvt Ltd, IRDAI licence no. WA-0000 (demo), valid till 31 March 2028; insurance is the subject matter of solicitation'), on a personal-finance news site. Topic: what a super top-up policy is and when salaried 30-45-year-olds supporting retired parents need one. English; 700-900 words; soft CTA to the platform's free premium calculator (compares 14 insurers; free to the user; BimaBridge is paid by insurers). Advisor quote supplied by the client, to use verbatim: 'Most families I meet hold a Rs 5 lakh cover from the employer and think they are done. One hip surgery for a parent can cross that in a week. A super top-up only starts paying after the first Rs 5 lakh is used, so it costs far less than raising the base cover.' - Kavita Narang, independent insurance advisor, 12 years in practice, IRDAI-licensed individual agent (demo). One illustrative number, from the calculator, checked 5 Oct 2026: Rs 50 lakh super top-up with a Rs 5 lakh deductible, 38-year-old non-smoker, about Rs 6,500 a year. Facts the writer may use: IRDAI's 2024 cap of three years on pre-existing-disease waiting periods; Section 80D deduction (old tax regime only). Goal: reader understands super top-ups and uses the calculator.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:advertorial",
+    "note": "P2 S2 Sp2 V2 C1. Reads like the host's own explainer: paid label, reader-question headline (17 words, over the 8-14 band), composite Bengaluru scene lede, nut graf, subheaded body (top-up vs super top-up worked example, when it fits, 5 checks), brand only after ~80% as one answer, sponsored-tagged calculator CTA, solicitation disclaimer. Facts check out (IRDAI 2024 three-year PED cap, 80D old regime). 'Insurance advisors point to' is a soft attribution. Brand section ~17% and placeholder-heavy. CARD FIX: exemplar_brief -> it says the advisor quote is 'supplied by the client' but gives none; include the quote text with advisor name and credential, plus the platform name and IRDAI licence line. | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now supplies the advisor quote with name/credential, platform name, IRDAI licence line, calculator facts and one illustrative premium; re-judge pending.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:affiliate_review",
+   "kind": "genre",
+   "name": "Affiliate review / affiliate article",
+   "status": "current",
+   "summary": "A single-product review (or 'is it worth it') article whose links earn a commission. It succeeds when it reads like advice from someone who actually used the product: test conditions, measurements, honest cons, who should skip it, and a clear verdict, with the affiliate disclosure up front.",
+   "use_for": [
+    "single-product review ('X review after 30 days')",
+    "'Is X worth it?' and 'X vs Y' money pages",
+    "review section of a commerce or affiliate blog",
+    "Amazon/Flipkart affiliate content for a niche site"
+   ],
+   "avoid": [
+    "Rewriting the manufacturer's spec sheet: Google's review guidance asks for first-hand evidence and quantitative measurements, and thin rewrites get demoted. If you have not used it, write a comparison of published specs and say so.",
+    "Only pros: a review with no real cons reads as an ad and loses trust. Name at least one real drawback and who it matters to.",
+    "Disclosure hidden in the footer: put it before the first affiliate link in plain words ('We earn a commission if you buy through these links').",
+    "Ranking many products in one piece: that is a best-of roundup (genre:best_of_roundup)."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews",
+     "title": "Google Search Central: Write high quality reviews (last updated 2025-12-10)",
+     "supports": "firsthand evidence, quantitative measurements, pros and cons, comparison to alternatives, justify 'best' picks; ranked lists need enough useful content to stand alone"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "supply signal by article type: Review 679 gigs, Affiliate marketing 323, Listicle 1243, Long-form 3494 (2026-10-04)"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI Guidelines for Influencer Advertising in Digital Media",
+     "supports": "disclose any material connection, including free or discounted products, even if the review is honest"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "title": "Google Search Central: spam policies (fetched 2026-10-04)",
+     "supports": "link spam includes 'Advertorials or native advertising where payment is received for articles that include links that pass ranking credit'; allowed when links carry rel=\"nofollow\" or rel=\"sponsored\"; scaled content abuse"
+    }
+   ],
+   "related": [
+    "genre:product_review_article",
+    "genre:best_of_roundup",
+    "genre:comparison_article",
+    "trend:non_commodity_content",
+    "trend:scaled_ai_content_enforcement",
+    "trend:ai_overviews_zero_click"
+   ],
+   "buyers": [
+    "affiliate and niche-site owners",
+    "commerce desks of digital publishers",
+    "creators with blogs",
+    "SaaS review sites"
+   ],
+   "value": "medium",
+   "value_why": "Fiverr's Article type facet lists 'Affiliate marketing' (323 gigs) and 'Review' (679 gigs) as their own article types on 2026-10-04; value is shifting to writers who can show first-hand testing.",
+   "goal": "Decide whether the product fits their need and click through to buy it, or to the better-fitting alternative.",
+   "structure": [
+    {
+     "part": "Disclosure",
+     "does": "Plain-language affiliate disclosure before the first link.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Verdict box",
+     "does": "Who it's for, who should skip it, score or one-line verdict, price with the date checked, primary link.",
+     "length": "40-80 words"
+    },
+    {
+     "part": "How we tested",
+     "does": "Duration, setting, conditions and what was measured, with original photos referenced.",
+     "length": "60-150 words"
+    },
+    {
+     "part": "What it does well",
+     "does": "Each strength backed by an observation or measurement from the test, in the buyer's use case.",
+     "length": "150-400 words"
+    },
+    {
+     "part": "Where it falls short",
+     "does": "Real cons, how much they matter and to whom.",
+     "length": "100-250 words"
+    },
+    {
+     "part": "Compared with alternatives",
+     "does": "1-3 rivals: when to pick each instead, with links.",
+     "length": "100-300 words"
+    },
+    {
+     "part": "Buying advice + FAQ",
+     "does": "Which variant, what to check (warranty, service network, filters/consumables cost), 3-5 real questions buyers ask.",
+     "length": "150-350 words"
+    },
+    {
+     "part": "Final verdict + CTA",
+     "does": "Restates who should buy and links to the product (and the alternative).",
+     "length": "40-80 words"
+    }
+   ],
+   "length": {
+    "min": 900,
+    "max": 2500,
+    "unit": "words",
+    "note": "Driven by product complexity and the number of buyer questions; a Rs 500 gadget does not need 2,500 words, a laptop or air purifier might."
+   },
+   "frameworks": [
+    "fw:bluf",
+    "fw:fab"
+   ],
+   "techniques": [
+    "tech:eeat_first_hand_experience",
+    "tech:specificity",
+    "tech:objection_handling",
+    "tech:faq_block",
+    "tech:search_intent_matching",
+    "tech:bulleted_lists"
+   ],
+   "hooks": [
+    "hook:challenge_test",
+    "hook:comparison_vs",
+    "hook:keyword_front_loaded"
+   ],
+   "platforms": [
+    "plat:google_search_result"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:data_driven"
+   ],
+   "compliance": [
+    "comp:asci_influencer",
+    "comp:ftc_endorsement_guides",
+    "comp:ftc_consumer_reviews_rule",
+    "comp:google_search_spam_policies"
+   ],
+   "checklist": [
+    "Does an affiliate disclosure appear before the first affiliate link?",
+    "Does the piece state how long and in what conditions the product was used?",
+    "Are there at least two measured or observed facts from the test (not from the spec sheet)?",
+    "Is at least one real con named, with who it matters to?",
+    "Is at least one alternative compared, with when to choose it?",
+    "Does it say who should not buy?",
+    "Is the price given with the date it was checked?",
+    "Is the verdict stated both near the top and at the end?"
+   ],
+   "pitfalls": [
+    "Inventing test results: if the client supplies no test data, ask for it or reframe the piece as a spec comparison; never fabricate measurements.",
+    "Stale prices and 'deal' language: prices on Indian marketplaces change daily. Write 'Rs 12,999 on Amazon.in when checked on 3 Oct 2026' and avoid 'lowest price ever'.",
+    "Ignoring after-sales: Indian buyers weigh service network, warranty claims and consumable costs (filters, refills). Cover them.",
+    "Affiliate link on every mention: link the first mention, the verdict box and the final CTA; more looks spammy."
+   ],
+   "lint": {
+    "min_words": 700,
+    "max_words": 3000,
+    "max_sentence_words": 35,
+    "require": [
+     {
+      "label": "affiliate disclosure",
+      "regex": "(?i)affiliate|commission|we (may )?earn|paid link|कमीशन"
+     },
+     {
+      "label": "names a con or drawback",
+      "regex": "(?i)\\bcons?\\b|downside|drawback|falls short|weakness|कमी"
+     }
+    ],
+    "ban": [
+     {
+      "label": "hype instead of evidence",
+      "regex": "(?i)best .{0,20} ever|lowest price ever|you won'?t regret|hurry"
+     }
+    ]
+   },
+   "exemplar_brief": "Affiliate review of the 'PureBreeze 400' (demo name), a Rs 13,000 HEPA air purifier (price checked on Amazon.in 5 Oct 2026: Rs 12,999), for a Delhi-NCR home-appliance blog; audience: parents in Delhi flats buying before winter smog. Tester notes supplied: 21 days in a 160 sq ft bedroom, windows and door shut, incense burnt to push PM2.5 up, readings from a separate Rs 3,500 handheld PM2.5 meter 2 m away; PM2.5 fell from about 180 to 35 in 40 minutes on high; 52 dB on high and 33 dB on low (sleep mode); replacement filter Rs 2,800 every 6-8 months; app needs 2.4 GHz Wi-Fi (failed on a 5 GHz-only router), shows live PM2.5, scheduling works, logged out twice in 21 days. Cheaper alternative to name in the comparison: 'AirNest 300' (demo), Rs 9,500 (checked 5 Oct 2026), rated for 130 sq ft, CADR 280 m3/h vs 400 for the PureBreeze, 58 dB on high, no app, filter Rs 1,900 every 6 months; fits a small room or a tighter budget. English with Indian context; 1,300-1,700 words; Amazon.in affiliate links; goal: click through to this model or the cheaper alternative. The editorial score out of 10 is the writer's call.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_01.json#genre:affiliate_review",
+    "note": "P2 S2 Sp1 V2 C1.Structure complete (disclosure before first link, verdict box, method, strengths from the supplied notes, honest cons, alternative, buying advice, parent FAQ, verdict top and bottom); filter running-cost maths and the 2.4 GHz fix are exactly what a Delhi parent needs; NAAQS 60 ug/m3 context is correct. Writer faults: invented test conditions not in the notes (windows shut, door closed, 'did not light anything', run schedule, 'as long as the door stayed shut'), which the card's pitfall forbids; 'Rs 12,600-16,800 over three years: more than the purifier itself' is false at the low end (12,600 < 13,000); '[X/10]' score left as a placeholder though the score is an editorial call. CARD FIX: exemplar_brief -> name the cheaper alternative with price, date checked and 2-3 specs (the goal sends readers to it but the brief never names it), and add the low-setting dB and app notes. | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now names the cheaper alternative (price, date, specs), adds low-setting dB, app notes and the test conditions; re-judge pending.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:ai_video_prompt_script",
+   "kind": "genre",
+   "name": "AI video / film prompt-script (shot-by-shot)",
+   "status": "rising",
+   "summary": "A shot list written as prompts an AI video model can execute: per shot, a fixed character and location description, one action, camera, lens, light, audio and duration. A good one produces usable, consistent shots in one or two generations because nothing is left for the model to guess and nothing changes between shots by accident.",
+   "use_for": [
+    "AI-generated ads and brand films (9:16 reels, 16:9 films)",
+    "music videos and AI short films",
+    "storyboard-to-video handoff for an AI production team",
+    "explainer B-roll generated shot by shot"
+   ],
+   "avoid": [
+    "Mood words instead of instructions ('epic, stunning, cinematic, 8K'): the model cannot film adjectives. Name the shot size, camera move, lens and light source.",
+    "Re-describing the character differently in each shot: drift follows. Write one descriptor string per character and paste it verbatim into every shot.",
+    "Several actions in one shot ('she enters, sits, opens the letter and cries'): models blend or drop actions. One main action per shot; split the rest.",
+    "Real people, celebrities or brand logos without rights: use original characters and the client's own assets, and plan the AI-content label."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "freelance writing job types and typical Upwork rate bands (blog/web content $15-$35/hr; script writer $30-$56/hr); script projects include AI-generated or animated videos; ghostwriting/business-writing project lists"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork In-Demand Skills 2026 (press release, 2026-02-04)",
+     "supports": "top-10 Sales & Marketing skills include Email Marketing and Marketing Automation; fastest-growing Design & Creative skill 'AI Video Generation & Editing (+329%)'"
+    }
+   ],
+   "related": [
+    "genre:short_film_script",
+    "genre:tvc_script",
+    "genre:video_ad_script",
+    "genre:system_prompt",
+    "trend:ai_video_scripting_demand",
+    "trend:ai_disclosure_rules"
+   ],
+   "buyers": [
+    "brands and agencies producing AI ads",
+    "creators and AI filmmakers",
+    "music labels and artists",
+    "D2C brands and political/campaign content teams"
+   ],
+   "value": "high",
+   "value_why": "Upwork's 2026 writing guide names scripts for AI-generated videos as a script-writing project (2026-01-21), and Upwork's In-Demand Skills 2026 reports AI Video Generation & Editing as the fastest-growing Design & Creative skill (+329%).",
+   "goal": "Generate each shot as intended in one or two attempts, with characters and look consistent across the whole film.",
+   "structure": [
+    {
+     "part": "Header",
+     "does": "Project, target model/tool, aspect ratio, resolution, total runtime, shot count, style reference (film look, grade), language of any dialogue.",
+     "length": "5-8 lines"
+    },
+    {
+     "part": "Character and location bible",
+     "does": "One fixed descriptor per character (age, build, face, hair, wardrobe with colours) and per location (place, time of day, light), each with an ID to paste into shots.",
+     "length": "30-60 words each"
+    },
+    {
+     "part": "Shot block: framing",
+     "does": "Shot number, duration, shot size and angle, camera movement in film terms (static, slow push-in, tracking left, handheld).",
+     "length": "1-2 lines"
+    },
+    {
+     "part": "Shot block: subject + action",
+     "does": "Pasted character descriptor and ONE main action with timing ('over 4 seconds she turns toward the door').",
+     "length": "20-50 words"
+    },
+    {
+     "part": "Shot block: look",
+     "does": "Lens/focal length and depth of field, light source and direction, colour palette, texture (film grain, haze).",
+     "length": "10-25 words"
+    },
+    {
+     "part": "Shot block: audio",
+     "does": "Dialogue in quotes with speaker and language, SFX, ambience, music cue; or 'no dialogue'.",
+     "length": "1-2 lines"
+    },
+    {
+     "part": "Shot block: constraints + continuity",
+     "does": "What must not appear (on-screen text, extra people, logos), and which reference image or previous frame anchors continuity.",
+     "length": "1-2 lines"
+    },
+    {
+     "part": "Edit notes",
+     "does": "Transitions, VO/subtitle lines, end card and the AI-content label plan for publishing.",
+     "length": "3-6 lines"
+    }
+   ],
+   "length": {
+    "min": 40,
+    "max": 130,
+    "unit": "words",
+    "note": "Per shot prompt 40-130 words excluding the pasted character and location descriptors (each 30-60 words, pasted into every shot they appear in). Shot count = runtime divided by the model's clip length (check the tool's current maximum clip duration and prompt limits before writing). Longer prompts are not better; every word should be an instruction."
+   },
+   "frameworks": [
+    "fw:hook_retain_reward",
+    "fw:three_act_structure"
+   ],
+   "techniques": [
+    "tech:consistent_terminology",
+    "tech:concrete_nouns_strong_verbs",
+    "tech:sensory_detail",
+    "tech:onscreen_text_vs_vo",
+    "tech:write_for_voiceover",
+    "tech:loopable_ending"
+   ],
+   "hooks": [
+    "hook:pattern_interrupt",
+    "hook:in_medias_res_opener"
+   ],
+   "tones": [
+    "tone:technical_precise",
+    "tone:storyteller_narrative"
+   ],
+   "compliance": [
+    "comp:it_rules_sgi_2026",
+    "comp:asci_ai_sgc_labelling",
+    "comp:meta_ai_labels",
+    "comp:youtube_altered_synthetic",
+    "comp:eci_ai_content_advisory"
+   ],
+   "checklist": [
+    "Does the header state model, aspect ratio, runtime and shot count?",
+    "Is each character's descriptor identical (copy-pasted) in every shot they appear in?",
+    "Does every shot state its duration?",
+    "Does every shot have exactly one main action?",
+    "Is the camera described in film terms (shot size + movement)?",
+    "Is a light source and direction named in every shot?",
+    "Are dialogue lines in quotes with speaker and language?",
+    "Are shots 2+ anchored to a reference image or previous frame?",
+    "Is the script free of real people's likenesses and third-party logos unless rights are confirmed?",
+    "Is an AI-content disclosure planned for publishing?"
+   ],
+   "pitfalls": [
+    "Asking the model to render on-screen text or brand names: most video models garble text. Add titles in the edit and write 'no on-screen text' in the constraints.",
+    "Continuity by memory: models do not remember the previous shot. Re-state wardrobe, props and time of day every time, and pass the previous approved frame as a reference when the tool allows.",
+    "Writing a screenplay and calling it a prompt: interior thoughts and backstory do nothing. Translate them into visible action, expression and light.",
+    "Indian settings rendered as generic 'India': name the city, architecture, fabrics and signage language (e.g. 'Lucknow old-city haveli, carved jaali screens, terracotta floor')."
+   ],
+   "lint": {
+    "min_words": 150,
+    "max_words": 2500,
+    "require": [
+     {
+      "label": "names shot size or camera movement",
+      "regex": "(?i)wide|close[- ]?up|medium shot|\\bcu\\b|\\bmcu\\b|tracking|dolly|\\bpan\\b|tilt|handheld|crane|drone|push[- ]in|static shot|over[- ]the[- ]shoulder"
+     }
+    ],
+    "ban": [
+     {
+      "label": "vague quality tokens instead of camera/light specifics",
+      "regex": "(?i)stunning|breathtaking|masterpiece|award[- ]winning|\\b8k\\b|ultra[- ]realistic|hyper[- ]?detailed"
+     }
+    ]
+   },
+   "exemplar_brief": "30-second, 6-shot AI video ad prompt-script for a Lucknow chikankari brand's Diwali collection, 9:16, for a Seedance/Veo-class model with 5-second clips; one recurring model (woman, 28, wearing an ivory chikankari anarkali) and one location (old-city haveli courtyard at dusk with diyas); English prompts with one Hindi dialogue line; end card added in edit; goal: consistent, usable shots in at most two generations each.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/genre_01.json#genre:ai_video_prompt_script",
+    "note": "P2 S2 Sp2 V2 C2. Production-ready: header with model, 9:16, 6x5 s, look and generation budget; char/location bible with IDs and reference stills; every shot has timecode, shot size + movement, one timed action, lens/DoF, named light source and direction, audio, negatives and an anchor to the previous approved frame; Hindi line in quotes with speaker and language; titles and end card kept out of generation; AI-label plan and a product-truth check. Lucknow specifics (lakhori brick, jaali, tulsi platform, mogra) avoid generic 'India'. CARD FIX: length.note -> say 'per shot prompt 40-130 words excluding the pasted character and location descriptors'; the structure requires pasting 30-60-word descriptors into every shot, which alone pushes a literal paste past 130. | CARD FIXED 2026-10-07 (fix_genre_b): length.note now says the 40-130 words per shot exclude the pasted character and location descriptors; re-judge pending.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:alt_text",
+   "kind": "genre",
+   "name": "Image alt text and accessible descriptions",
+   "status": "current",
+   "summary": "The text a screen reader speaks in place of an image, also read by search engines. Good alt text gives the same information or function the image gives a sighted user, in context, in one short sentence; decorative images get an empty alt, functional images say what the link or button does.",
+   "use_for": [
+    "alt text for website and ecommerce product images",
+    "alt text and image descriptions for Instagram, LinkedIn and X posts",
+    "accessible descriptions for charts and infographics (short alt + long description)",
+    "accessibility fixes in a website content audit"
+   ],
+   "avoid": [
+    "Starting with 'Image of' or 'Picture of': screen readers already announce it is an image. Start with the content.",
+    "Keyword stuffing ('kurta, cotton kurta, best kurta, buy kurta online'): it is spam to search engines and noise to screen-reader users. Describe the image; one natural keyword is enough.",
+    "Describing a logo-link as the logo ('Company logo'): for a linked image, say where it goes ('Home', 'Chat with us on WhatsApp').",
+    "Squeezing a chart into alt text: give a one-line takeaway in alt and put the data in a table or text near the chart."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+     "title": "W3C WAI: An alt decision tree (fetched 2026-10-04)",
+     "supports": "decorative: empty alt; images of text: alt holds the text; functional images: alt gives destination or action; complex images: information elsewhere on the page; informative: brief description that conveys the meaning"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/google-images",
+     "title": "Google Search Central: Google Images best practices",
+     "supports": "descriptive alt text helps Google understand images"
+    }
+   ],
+   "related": [
+    "genre:ux_microcopy",
+    "genre:product_description",
+    "genre:photo_caption",
+    "edit:alt_text_check",
+    "edit:accessible_writing_check"
+   ],
+   "buyers": [
+    "website owners and ecommerce brands",
+    "publishers and government/education sites with accessibility obligations",
+    "social media managers",
+    "web agencies doing accessibility fixes"
+   ],
+   "value": "low",
+   "value_why": "Usually a small add-on to web, ecommerce or social work; no dedicated marketplace category found on 2026-10-04.",
+   "goal": "A screen-reader user gets the same information or function the image gives everyone else.",
+   "structure": [
+    {
+     "part": "Decide the image's role",
+     "does": "Classify each image: informative, functional (inside a link/button), image of text, complex (chart, map), or decorative.",
+     "length": "a label per image, not published"
+    },
+    {
+     "part": "Informative alt",
+     "does": "What matters about the image in this context: subject, key detail (colour, pattern, action, expression), setting if relevant.",
+     "length": "5-20 words"
+    },
+    {
+     "part": "Functional alt",
+     "does": "The destination or action of the link or button, not the picture.",
+     "length": "1-5 words"
+    },
+    {
+     "part": "Image-of-text alt",
+     "does": "The text in the image, verbatim (or its key content if long).",
+     "length": "as long as the text"
+    },
+    {
+     "part": "Complex image",
+     "does": "Short alt with the takeaway plus a long description or data table on the page.",
+     "length": "alt 10-25 words; long description separate"
+    },
+    {
+     "part": "Decorative",
+     "does": "Empty alt (alt=\"\") so screen readers skip it.",
+     "length": "empty"
+    }
+   ],
+   "length": {
+    "min": 1,
+    "max": 25,
+    "unit": "words",
+    "note": "Per image. Context decides: the same photo needs different alt on a product page (colour, fabric) and in a news story (who, what event). Long descriptions go in body text or a caption, not alt."
+   },
+   "frameworks": [
+    "fw:five_ws_and_h",
+    "fw:bluf"
+   ],
+   "techniques": [
+    "tech:image_alt_text",
+    "tech:front_loading",
+    "tech:plain_language",
+    "tech:concrete_nouns_strong_verbs"
+   ],
+   "tones": [
+    "tone:minimalist_understated"
+   ],
+   "compliance": [],
+   "checklist": [
+    "Is each image classified (informative, functional, text, complex, decorative)?",
+    "Does no alt text start with 'image of' or 'picture of'?",
+    "Do decorative images have an empty alt?",
+    "Do linked or button images describe the destination or action?",
+    "Do images of text carry that text in the alt?",
+    "Does each informative alt include the detail that matters on this page (e.g. colour and pattern on a product page)?",
+    "Is each alt free of keyword lists?",
+    "Do charts have a takeaway alt plus data elsewhere on the page?"
+   ],
+   "pitfalls": [
+    "Same alt on every product image ('Blue kurta'): describe what each angle shows ('Back view showing the hand-embroidered yoke').",
+    "Repeating the caption in alt: screen-reader users hear it twice. If a caption already says it, keep alt short or describe what the caption does not.",
+    "Guessing people's identity, caste, religion or emotions: describe what is visible; name people only when the page names them.",
+    "Hindi or regional pages with English alt: write alt in the page's language so the screen reader voices it correctly."
+   ],
+   "lint": {
+    "max_words": 400,
+    "max_sentence_words": 30,
+    "ban": [
+     {
+      "label": "redundant 'image of' opener",
+      "regex": "(?i)\\b(image|picture) of\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Alt text for 6 images on a Jaipur hand-block-print double bedsheet product page. Image 1 (front product shot): the double bedsheet spread on a bed with two matching pillow covers, off-white cotton ground, rust-red and indigo block print of small paisley (buta) motifs in staggered rows. Image 2 (close-up of the print): one rust-red paisley outlined in indigo dots, slightly uneven ink at the edges, cotton weave visible. Image 3 (size-chart image): text reads 'Double bedsheet 90 x 108 in (229 x 274 cm); 2 pillow covers 17 x 27 in (43 x 69 cm); 100% cotton, 144 thread count; wash cold, separately for the first wash'. Image 4 (lifestyle bedroom photo): the same sheet on a bed in morning light, a woman sitting cross-legged reading, cane bedside table with a brass lamp, white wall. Image 5 (decorative divider): thin green line with a small leaf in the middle, no text. Image 6 (linked icon): green WhatsApp icon with the words 'Chat on WhatsApp', opens a chat with the seller (Mon-Sat, 10 am-7 pm). English; one alt per image (empty for the decorative one), labelled by image; goal: a screen-reader shopper learns colour, pattern, size and how to contact the seller.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:alt_text",
+    "note": "P2 S2 Sp2 V2 C1. All six images classified; informative alts carry colour and pattern, the close-up adds handmade cues (uneven ink, block overlap), size chart carries its text, decorative alt is empty, the WhatsApp link names the action; no 'image of'. Image 1 and 4 alts run 21-22 words, just over the card's 5-20 band. Colours/motif are stand-ins and sizes are placeholders because the brief gives none. CARD FIX: exemplar_brief -> describe what each image shows (ground colour, motif, lifestyle scene) and give the size-chart text (e.g. bedsheet and pillow-cover dimensions); alt text can only describe supplied visuals, so the writer had to invent indigo/lotus. | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now describes what each of the 6 images shows and gives the size-chart text; re-judge pending.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:amazon_a_plus_content",
+   "kind": "genre",
+   "name": "Amazon A+ content / Brand Story",
+   "status": "current",
+   "summary": "The module-based, image-led section below an Amazon listing (A+ modules and the Brand Story carousel) available to brand-registered sellers. Good A+ copy is short benefit headlines and one-line explanations placed in images, plus a comparison chart of the brand's own range, so a shopper who scrolled past the bullets can decide without leaving the page.",
+   "use_for": [
+    "A+ content (Enhanced Brand Content) for Amazon.in / Amazon.com listings",
+    "Brand Story carousel copy",
+    "comparison chart across a brand's own variants",
+    "rewriting A+ text after returns or Q&A show buyer confusion"
+   ],
+   "avoid": [
+    "Pasting the bullet points into modules: A+ should add what bullets cannot (how it works, who it's for, comparisons, care). Plan the modules from buyer questions.",
+    "Long paragraphs in image modules: shoppers skim on mobile. One headline plus 1-2 lines per tile.",
+    "Price, discount, shipping or ranking claims ('lowest price', 'best seller', '50% off'): they go stale and A+ content is reviewed against Amazon's content guidelines. Check the current guidelines in Seller Central before submitting.",
+    "Comparing against other brands by name: keep the comparison chart to your own range unless the guidelines allow otherwise."
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/119bb4cc3cf0a4b4e8d75e94b7c836ee",
+     "title": "Amazon Seller Forums: guide to A+ modules",
+     "supports": "A+ content (Enhanced Product Description, Brand Story) is a separate module-based description for Brand Registry sellers (forum, low confidence)"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "platform filter includes Marketplaces and App store (4945 gigs on 2026-10-04)"
+    }
+   ],
+   "related": [
+    "genre:product_description",
+    "genre:marketplace_listing",
+    "genre:comparison_table_copy",
+    "genre:brand_story",
+    "genre:packaging_copy",
+    "trend:agentic_commerce_product_content"
+   ],
+   "buyers": [
+    "brand-registered Amazon sellers (D2C brands, manufacturers)",
+    "Amazon marketplace agencies",
+    "listing optimisation freelancers"
+   ],
+   "value": "medium",
+   "value_why": "Sold as a listing add-on by marketplace agencies; Fiverr's Product Descriptions category has a Marketplaces platform filter (4945 gigs, 2026-10-04). Module text limits and rules live in Seller Central, so the writer must work inside the builder's constraints.",
+   "goal": "Feel confident enough to add to cart without asking a question or leaving the page.",
+   "structure": [
+    {
+     "part": "Brand Story carousel",
+     "does": "Who the brand is, why it exists, what makes it trustworthy, and cards linking to other products.",
+     "length": "1 headline + 1-2 lines per card"
+    },
+    {
+     "part": "Hero banner",
+     "does": "The core promise in the shopper's words, matching the main image.",
+     "length": "headline 4-8 words + 1 line"
+    },
+    {
+     "part": "Benefit tiles",
+     "does": "3-4 tiles, each a benefit headline with a one-line proof (material, test, measurement).",
+     "length": "headline 3-6 words; body 10-25 words each"
+    },
+    {
+     "part": "How it works / what's inside",
+     "does": "Ingredients, materials, process or tech explained simply, with what each does for the user.",
+     "length": "40-80 words"
+    },
+    {
+     "part": "Use cases / who it's for",
+     "does": "2-4 situations or buyer types, each with why this product fits.",
+     "length": "30-60 words"
+    },
+    {
+     "part": "Comparison chart",
+     "does": "Own variants side by side: size, key spec, best for; helps shoppers pick and reduces wrong-variant returns.",
+     "length": "4-6 rows, short cells"
+    },
+    {
+     "part": "Care / FAQ / in the box",
+     "does": "Answers the top questions from the listing's Q&A and reviews.",
+     "length": "30-80 words"
+    }
+   ],
+   "length": {
+    "min": 120,
+    "max": 500,
+    "unit": "words",
+    "note": "Total text across modules. Module type and image count decide it; check each module's character limits in the A+ builder before writing."
+   },
+   "frameworks": [
+    "fw:fab",
+    "fw:jobs_to_be_done"
+   ],
+   "techniques": [
+    "tech:features_to_benefits",
+    "tech:chunking",
+    "tech:front_loading",
+    "tech:specificity",
+    "tech:objection_handling",
+    "tech:voice_of_customer_mining"
+   ],
+   "hooks": [
+    "hook:problem_solution",
+    "hook:specificity"
+   ],
+   "platforms": [
+    "plat:amazon_product_listing"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:minimalist_understated"
+   ],
+   "compliance": [
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code"
+   ],
+   "checklist": [
+    "Is every tile headline a benefit, not a feature name?",
+    "Does every claim rest on something measurable or verifiable (material, test, certification)?",
+    "Does the comparison chart cover only the brand's own range?",
+    "Is the copy free of price, discount, shipping and ranking claims?",
+    "Does at least one module answer a question found in the listing's Q&A or reviews?",
+    "Is every text block short enough to read on a phone in one glance?",
+    "Does the Brand Story say why the brand exists, not just what it sells?",
+    "Does the A+ add information the bullets do not already give?"
+   ],
+   "pitfalls": [
+    "Writing without the images: A+ copy and images are one unit. Get the image plan or write the image direction next to each text block.",
+    "Unproven 'dermatologically tested', 'chemical-free', 'clinically proven' claims: ask for the test report or cut the claim.",
+    "One A+ for every variant with different needs: a baby oil and a hair oil from the same brand need different modules.",
+    "Ignoring Hindi and regional shoppers: if the brand sells heavily in Hindi-speaking markets, ask whether a Hindi listing is planned and keep sentences simple for translation."
+   ],
+   "lint": {
+    "min_words": 80,
+    "max_words": 600,
+    "ban": [
+     {
+      "label": "price, promo or ranking claims that go stale",
+      "regex": "(?i)lowest price|cheapest|% off|discount|limited[- ]time|best ?seller|#1|no\\.? ?1"
+     }
+    ]
+   },
+   "exemplar_brief": "A+ content (Brand Story with 4 cards + 5 modules including a comparison chart of 3 variants) for 'Nariyal Nest' (demo name), a Kochi coconut-oil-based baby massage oil brand on Amazon.in, founded 2021 by two Kochi mothers who could not find an oil without mineral oil or fragrance. Evidence supplied. Ingredients: virgin coconut oil 85%, sweet almond oil 10%, sesame oil 4%, vitamin E 1%; no mineral oil, fragrance or parabens. Safety: patch-tested on 52 babies aged 3 weeks to 18 months at an NABL-accredited lab (report dated June 2025), no irritation recorded; claim 'tested from 3 weeks', not 'newborn-safe' for younger babies. Absorption: in an in-house trial with 20 parents, 17 said the skin no longer felt oily after 10 minutes. Staining: oil left on white cotton for 2 hours, one 30 C wash with ordinary detergent removed it fully on 4 of 5 swatches, a faint mark stayed on 1. Variants (at about 7 ml per daily massage): 100 ml flip-cap travel bottle, about 2 weeks; 200 ml flip-cap bottle, about 4 weeks; 500 ml pump bottle, about 10 weeks. Buyer questions to answer: 'is it sticky?', 'safe for newborns?', 'does it stain clothes?'. Audience: first-time parents; English; 250-400 words of module text; goal: add to cart.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/retest_1.json#genre:amazon_a_plus_content",
+    "note": "ROUND 2: P2 S2 Sp2 V2 C1. Re-test on the fixed brief. Brand Story 4 cards, hero, 3 benefit tiles that answer the three buyer questions with the supplied evidence (17 of 20 parents, 52 babies from 3 weeks at an NABL lab, 4 of 5 swatches clean), what's inside with the exact %, a who-it-is-for size module and a 3-variant own-range chart (14/28/70 massages at 7 ml check out); an honest 'tested from 3 weeks, ask your paediatrician' line; no price or ranking claims. Nits (writer): the newborn answer sits in a chart footnote rather than a tile or FAQ line; Module 3 repeats the founders' story from card 2; 'Check us, don't trust us' and '100% of the label' are awkward. | round 1: weak 7",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:anchoring_script",
+   "kind": "genre",
+   "name": "Anchoring / emcee script (events)",
+   "status": "current",
+   "summary": "The compere's complete running script for a live event: announcements, opening, welcome of guests in protocol order, an intro and outro for every act, audience engagement, filler for delays, and the close. A good script keeps the event on time, gets every name and title right, and gives the anchor lines that are easy to say aloud.",
+   "use_for": [
+    "school and college annual days, fests and farewells",
+    "corporate town halls, award nights and dealer meets",
+    "government and institutional functions",
+    "weddings, sangeet and family functions",
+    "product launches and cultural programmes"
+   ],
+   "avoid": [
+    "Writing paragraphs to be read: anchors speak in short breaths. Break lines at breath points and keep sentences short.",
+    "Guessing names, titles and order: a wrong designation in front of a chief guest is the classic failure. Mark every unconfirmed name [CONFIRM] and get the organiser to sign off the protocol list.",
+    "Borrowing famous shayari and misattributing it: popular couplets online are often credited to the wrong poet. Write original lines or cite verified sources.",
+    "Jokes about guests' looks, region, caste or religion: keep humour on the situation and the anchor."
+   ],
+   "confidence": "medium",
+   "sources": [],
+   "related": [
+    "genre:welcome_address_vote_of_thanks",
+    "genre:shayari",
+    "genre:livestream_run_of_show",
+    "genre:keynote_speech",
+    "genre:motivational_speech"
+   ],
+   "buyers": [
+    "schools and colleges",
+    "corporate HR and internal comms teams",
+    "event management companies",
+    "government departments",
+    "professional anchors and wedding planners"
+   ],
+   "value": "low",
+   "value_why": "Every Indian school, college, corporate and wedding event needs one, but it is mostly written by the anchor or event company; paid commissions are small.",
+   "goal": "Run the event on time in the right protocol order while keeping the audience engaged and every guest correctly honoured.",
+   "structure": [
+    {
+     "part": "Pre-event announcements",
+     "does": "Phones on silent, seating, exits, photography rules, start time.",
+     "length": "30-60 seconds"
+    },
+    {
+     "part": "Opening",
+     "does": "Greeting in the event's languages, an original shayari or quote, the occasion and its purpose.",
+     "length": "1-2 minutes"
+    },
+    {
+     "part": "Welcome of guests",
+     "does": "Each dignitary by full name and designation in the organiser's protocol order, with a one-line honour; cues for bouquets or mementos.",
+     "length": "2-4 lines per guest"
+    },
+    {
+     "part": "Ceremonial cues",
+     "does": "Lamp lighting, invocation, anthem or song, each with a clear spoken cue and a bracketed stage note.",
+     "length": "2-4 lines each"
+    },
+    {
+     "part": "Act intros and outros",
+     "does": "For each item: who performs, what it is, one engaging line; after it, a thank-you and a bridge to the next.",
+     "length": "2-5 lines each"
+    },
+    {
+     "part": "Speaker introductions",
+     "does": "Credentials relevant to the audience, and a handover line.",
+     "length": "3-6 lines each"
+    },
+    {
+     "part": "Audience engagement + filler bank",
+     "does": "Quiz, claps, call-and-response, shayari or trivia ready for delays and stage changes.",
+     "length": "4-8 items"
+    },
+    {
+     "part": "Awards / prize sequence",
+     "does": "Category, winner name, presenter, photo cue, in order.",
+     "length": "1-2 lines per award"
+    },
+    {
+     "part": "Vote of thanks + close",
+     "does": "Hand over to the vote of thanks, then final thanks, anthem if applicable, exit and dinner instructions.",
+     "length": "1-2 minutes"
+    }
+   ],
+   "length": {
+    "min": 800,
+    "max": 4500,
+    "unit": "words",
+    "note": "Set by the running order and number of items; a 2-3 hour programme is typical. Time a read-aloud of the anchor's lines and keep the filler bank separate."
+   },
+   "frameworks": [
+    "fw:hook_retain_reward",
+    "fw:abt"
+   ],
+   "techniques": [
+    "tech:read_aloud",
+    "tech:write_for_voiceover",
+    "tech:transitions",
+    "tech:callback",
+    "tech:rhetorical_question",
+    "tech:wordplay_pun"
+   ],
+   "hooks": [
+    "hook:question"
+   ],
+   "tones": [
+    "tone:enthusiastic_hype",
+    "tone:friendly_warm",
+    "tone:regal_heritage"
+   ],
+   "languages": [
+    "lang:hindi_devanagari",
+    "lang:urdu_influenced_hindi",
+    "lang:hinglish_roman",
+    "lang:indian_english"
+   ],
+   "checklist": [
+    "Is every guest name and designation either confirmed or marked [CONFIRM]?",
+    "Are guests welcomed in the organiser's protocol order?",
+    "Does every act have an intro and an outro line?",
+    "Are stage cues in brackets, separate from spoken lines?",
+    "Can each spoken sentence be said in one breath?",
+    "Is any shayari or quote original or correctly attributed?",
+    "Is there a filler bank of at least 4 items for delays?",
+    "Are language switches (Hindi/English) deliberate and balanced for the audience?",
+    "Is humour free of jokes about guests' looks, region, caste or religion?",
+    "Is the running time per segment noted?"
+   ],
+   "pitfalls": [
+    "No plan for delays: the chief guest arrives late at most Indian events. Write an alternate opening that does not need the chief guest present.",
+    "Over-praising every guest with the same adjectives: give each a specific line (their school, project, years of service).",
+    "Same bridge line between every act ('Let's give a big round of applause'): vary with callbacks to the previous act.",
+    "Forgetting stage logistics: who hands the memento, who comes up for the photo. Put it in brackets so the anchor can direct."
+   ],
+   "lint": {
+    "min_words": 400,
+    "max_words": 5000,
+    "max_sentence_words": 30,
+    "ban": [
+     {
+      "label": "stock anchor clichés",
+      "regex": "(?i)without (any )?further ado|ladies and gentlemen,? ladies and gentlemen"
+     }
+    ]
+   },
+   "exemplar_brief": "Bilingual Hindi-English anchoring script for the annual day of a CBSE school in Patna: chief guest the district education officer and a guest of honour (names as [CONFIRM] placeholders), lamp lighting and Saraswati vandana, 8 cultural items, principal's address, prize distribution, vote of thanks; 2.5-hour programme; 1,800-2,500 words; includes an original opening shayari, intro and outro lines for every item and a 4-item filler bank; goal: run on time with every guest honoured correctly.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/genre_01.json#genre:anchoring_script",
+    "note": "P2 S2 Sp2 V2 C2. Runnable on the night: protocol order with [CONFIRM] names, timed running order that adds up to 2:30, alternate opening for a late chief guest, original two-line shayari, bracketed cues (bouquets, photo, lamp), intro and outro for all 8 items with varied callback bridges, prize sequence with presenters, 8-item filler bank (Pataliputra, Nalanda, Chhath), timekeeping cut rules. Hindi/English balance and register feel like a real Patna school stage; humour is safe. Nit: 'please stay standing for our national anthem' should be 'please stand'.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:annual_report_narrative",
+   "kind": "genre",
+   "name": "Annual report narrative",
+   "status": "current",
+   "summary": "The non-financial story of the year: the theme, the chairman's and CEO's letters, highlights and the business reviews. A good narrative tells shareholders plainly what happened, why, what went wrong, and what management will do next, and every number in it matches the audited statements.",
+   "use_for": [
+    "chairman's message and MD/CEO letter",
+    "year-at-a-glance and highlights pages",
+    "business and segment reviews",
+    "theme line and section openers for listed companies, PSUs, NGOs and foundations"
+   ],
+   "avoid": [
+    "Only good news: shareholders and analysts already know the bad quarters. Name the miss, its cause and the response in the letter; it buys credibility for the rest.",
+    "Adjective-heavy prose ('robust performance amid headwinds'): replace with the number, the comparison and the reason ('Revenue rose 11% to Rs 2,140 crore; margins fell 3 points as solvent prices doubled').",
+    "Writing the statutory sections: the Board's Report, MD&A and sustainability disclosures follow formats owned by the company secretary, auditors and legal. The writer owns the narrative and keeps it consistent with them.",
+    "A theme that appears only on the cover: carry it into the letters and segment reviews or drop it."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "lists Advertorial, Annual Report and Sales Enablement: Battlecard as priced copywriting project types"
+    },
+    {
+     "url": "https://www.upwork.com/hire/report-writers/",
+     "title": "Upwork: hire Report Writers",
+     "supports": "snippets list annual and sustainability reports (snippet-only, 2026-10-04)"
+    }
+   ],
+   "related": [
+    "genre:ceo_letter",
+    "genre:esg_csr_report",
+    "genre:investor_relations_copy",
+    "genre:executive_summary",
+    "edit:fact_check"
+   ],
+   "buyers": [
+    "listed companies' corporate communications and investor relations teams",
+    "IR and annual-report design agencies",
+    "PSUs and large family-owned groups",
+    "foundations and large NGOs"
+   ],
+   "value": "medium",
+   "value_why": "AWAI's 2026 copywriting pricing guide lists 'Annual Report' as its own project type, and Upwork's report-writer category lists annual and sustainability reports.",
+   "goal": "Understand what happened this year and why, and trust management's account of what comes next.",
+   "structure": [
+    {
+     "part": "Theme line",
+     "does": "A short phrase that captures the year's strategic story and recurs through the report.",
+     "length": "2-6 words"
+    },
+    {
+     "part": "Year at a glance",
+     "does": "Headline metrics with last year's figure and the change; one line on what drove each.",
+     "length": "6-10 metrics"
+    },
+    {
+     "part": "Chairman's message",
+     "does": "The year in context (economy, sector), the big decisions, what went wrong and what was learned, governance and people, outlook; signed.",
+     "length": "800-1,500 words"
+    },
+    {
+     "part": "MD/CEO review",
+     "does": "Strategy, performance against last year's stated priorities, operations, next year's priorities with measurable targets where permitted.",
+     "length": "1,000-2,000 words"
+    },
+    {
+     "part": "Segment / business reviews",
+     "does": "For each segment: context, performance with numbers, drivers, outlook.",
+     "length": "400-900 words each"
+    },
+    {
+     "part": "Stories",
+     "does": "1-3 short features on a customer, plant, employee or community project, with named, consenting people.",
+     "length": "200-400 words each"
+    },
+    {
+     "part": "Forward-looking statement note",
+     "does": "The legal caution on forward-looking statements, as supplied by legal.",
+     "length": "as supplied"
+    }
+   ],
+   "length": {
+    "min": 3000,
+    "max": 15000,
+    "unit": "words",
+    "note": "Narrative sections only. Driven by the number of segments, whether the report is integrated, and how many stories the company wants. A single chairman's letter commission is 800-1,500 words."
+   },
+   "frameworks": [
+    "fw:scqa",
+    "fw:minto_pyramid",
+    "fw:what_so_what_now_what"
+   ],
+   "techniques": [
+    "tech:specificity",
+    "tech:plain_language",
+    "tech:active_voice",
+    "tech:paragraph_inverted_pyramid",
+    "tech:descriptive_subheads",
+    "tech:anecdote_lead"
+   ],
+   "tones": [
+    "tone:corporate_b2b",
+    "tone:authoritative",
+    "tone:data_driven"
+   ],
+   "checklist": [
+    "Does every number match the audited statements (with a page reference in the draft notes)?",
+    "Does each headline metric show last year's figure and the change?",
+    "Does the chairman's or CEO letter name at least one setback, its cause and the response?",
+    "Does each segment review cover context, performance, drivers and outlook?",
+    "Are last year's stated priorities reported against?",
+    "Is every vague adjective replaced by a number or a reason?",
+    "Is the forward-looking-statement caution included where outlook is discussed?",
+    "Does the theme recur beyond the cover?",
+    "Are named people in stories consenting and correctly titled?"
+   ],
+   "pitfalls": [
+    "Drafting before the numbers are final: annual reports change until the board approves the accounts. Mark every figure [VERIFY vs audited FS] and run a final number check.",
+    "Twelve hands, twelve voices: segment heads write differently. Apply one style sheet (number formats like 'Rs 2,140 crore', tense, titles) across all sections.",
+    "Promising targets legal has not cleared: write outlook as priorities unless guidance is formally given.",
+    "Copying last year's report with new numbers: analysts notice. Re-plan the narrative around this year's decisions."
+   ],
+   "lint": {
+    "max_sentence_words": 35,
+    "max_avg_sentence_words": 22,
+    "ban": [
+     {
+      "label": "corporate filler",
+      "regex": "(?i)synergies|best[- ]in[- ]class|paradigm shift|world[- ]class|value[- ]accretive journey"
+     }
+    ]
+   },
+   "exemplar_brief": "Chairman's message for the FY2025-26 annual report of 'Surya Fine Chem Ltd' (demo name), a mid-cap Gujarat specialty-chemicals company; chairman: Harshad Vora. Facts supplied (audited consolidated statements, pp. 118-124 of the report): revenue up 11% to Rs 2,140 crore (Rs 1,928 crore last year); EBITDA Rs 321 crore, margin down from 18% to 15% (last year Rs 347 crore) because raw-material costs rose faster than prices. Margin action: price-adjustment clauses added to contracts covering 60% of volume (25% before), and a second source qualified for the main intermediate. Dahej plant (Rs 410 crore project) commissioned in October 2025, six months late: delayed delivery of imported glass-lined reactors plus a three-month wait for the state pollution board's consent to operate; extra cost Rs 42 crore, mostly interest and site costs. First externally assured sustainability report (limited assurance). Dividend maintained at Rs 6 a share. Last year's stated priorities: commission Dahej by April 2025 (missed), raise export share from 31% to 35% (achieved: 36%), publish an assured sustainability report (done). Outlook target permitted: Dahej at 60% utilisation by March 2027; no margin guidance. Theme line: 'Chemistry of Resilience'. Audience: retail shareholders and analysts; English; 900-1,200 words; goal: shareholders trust management's account of a mixed year.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:annual_report_narrative",
+    "note": "P2 S2 Sp2 V2 C1. Candid, shareholder-first letter: strong opening ('sold more than ever before and earned less on each rupee'), margin fall owned as a contract-design weakness with a fix, Dahej delay addressed under its own head, assurance explained in plain terms, dividend reasoning, priorities-vs-results section, outlook as priorities, FLS caution; derived EBITDA (~321 vs ~347 crore) is correctly computed and flagged VERIFY. Writer faults: 'customers who had paused orders returned' and the record-sales implication are not in the brief; the theme line is a placeholder that never recurs in the letter. CARD FIX: exemplar_brief -> supply the Dahej delay cause, its cost and one margin action taken; the checklist demands setback + cause + response and the brief gives the cause for only one of the two setbacks, leaving ~20 [CONFIRM] slots. | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now supplies the Dahej delay cause and cost, a margin action, prior-year priorities, outlook target, theme line and page references; re-judge pending.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:api_reference",
+   "kind": "genre",
+   "name": "API reference documentation",
+   "status": "current",
+   "summary": "Endpoint-by-endpoint (or function-by-function) reference a developer scans while coding. Good reference is complete, consistent and exact: every parameter typed and explained, a request that runs when pasted, a response that matches the schema, and every error paired with a fix.",
+   "use_for": [
+    "REST/GraphQL endpoint reference pages",
+    "SDK and library function reference",
+    "webhook event reference",
+    "overview pages: authentication, errors, pagination, rate limits, versioning"
+   ],
+   "avoid": [
+    "Descriptions that repeat the name ('amount: The amount'): add units, limits, defaults and side effects ('Refund amount in paise; must not exceed the captured amount; defaults to the full amount').",
+    "Inventing parameters or behaviour: reference is generated from the spec (OpenAPI) plus engineer review. If the spec is silent, ask; never guess.",
+    "Tutorial prose inside reference: step-by-step journeys belong in a guide (genre:developer_tutorial); link to it.",
+    "Real keys or customer data in examples: use clearly fake placeholders."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.bls.gov/ooh/media-and-communication/technical-writers.htm",
+     "title": "US BLS Occupational Outlook Handbook: Technical Writers",
+     "supports": "'The median annual wage for technical writers was $90,390 in May 2025.'"
+    },
+    {
+     "url": "https://developers.google.com/style",
+     "title": "Google developer documentation style guide",
+     "supports": "industry style guide used for API and developer docs"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/technical-writer-salary",
+     "title": "AmbitionBox: Technical Writer salary (updated 2026-10-04)",
+     "supports": "'The average salary for a Technical Writer is ₹8.5 Lakhs per year' (10.1k salaries)"
+    }
+   ],
+   "related": [
+    "genre:developer_tutorial",
+    "genre:readme",
+    "genre:release_notes",
+    "genre:knowledge_base_article",
+    "genre:technical_design_doc",
+    "edit:style_google_dev",
+    "edit:style_microsoft"
+   ],
+   "buyers": [
+    "API-first SaaS and fintech companies (payments, UPI, KYC, logistics APIs)",
+    "developer-tool startups",
+    "documentation agencies",
+    "enterprise platform teams"
+   ],
+   "value": "high",
+   "value_why": "Technical writing is a BLS-tracked occupation with a May 2025 median wage of $90,390; in India AmbitionBox puts the average technical writer at ₹8.5 lakh a year (updated 2026-10-04), about double a content writer.",
+   "goal": "Make a correct first call and handle errors without opening a support ticket.",
+   "structure": [
+    {
+     "part": "Title",
+     "does": "Task-shaped name: verb + object ('Create a refund').",
+     "length": "2-5 words"
+    },
+    {
+     "part": "Description",
+     "does": "What the endpoint does, when to use it, key side effects (emails sent, money moved).",
+     "length": "1-3 sentences"
+    },
+    {
+     "part": "Request line + auth",
+     "does": "Method and path, required auth scheme or scope, required headers (idempotency key, version).",
+     "length": "2-4 lines"
+    },
+    {
+     "part": "Parameters table",
+     "does": "Path, query and body parameters: name, type, required/optional, default, constraints, description with units.",
+     "length": "one row per parameter"
+    },
+    {
+     "part": "Example request",
+     "does": "A curl call (and one SDK snippet if the product has SDKs) that runs when pasted with a test key.",
+     "length": "code block"
+    },
+    {
+     "part": "Response",
+     "does": "Success status code and a schema table of returned fields; realistic example response matching the schema.",
+     "length": "table + code block"
+    },
+    {
+     "part": "Errors",
+     "does": "Each error code or status this endpoint returns, what it means, and how to fix it.",
+     "length": "one row per error"
+    },
+    {
+     "part": "Notes + related",
+     "does": "Idempotency, pagination, rate limits, versioning caveats that apply here; links to related endpoints and guides.",
+     "length": "2-6 lines"
+    }
+   ],
+   "length": {
+    "min": 120,
+    "max": 700,
+    "unit": "words",
+    "note": "Per endpoint, excluding code blocks. Endpoints with many parameters or complex errors run long; the overview pages (auth, errors, pagination) are written once."
+   },
+   "frameworks": [
+    "fw:bluf",
+    "fw:inverted_pyramid"
+   ],
+   "techniques": [
+    "tech:consistent_terminology",
+    "tech:plain_language",
+    "tech:curse_of_knowledge_fix",
+    "tech:front_loading",
+    "tech:active_voice",
+    "tech:step_by_step_instructions"
+   ],
+   "tones": [
+    "tone:technical_precise"
+   ],
+   "checklist": [
+    "Does every parameter have type, required/optional status and a description that adds meaning beyond its name?",
+    "Are units, formats and limits stated (paise vs rupees, ISO 8601 dates, max lengths)?",
+    "Does the example request run as written with a test key?",
+    "Does the example response match the documented schema?",
+    "Does every documented error include a fix?",
+    "Are terms identical across endpoints (one name per concept)?",
+    "Is every parameter traceable to the spec or an engineer's confirmation?",
+    "Are all keys and personal data in examples placeholders?",
+    "Is it written in present tense and second person?"
+   ],
+   "pitfalls": [
+    "Documenting the happy path only: developers live in the errors. Get the real error list from engineering logs or the spec.",
+    "Examples drifting from the API: wire examples to tests or regenerate them from the spec on each release.",
+    "Mixing money units: Indian payment APIs often take paise; say so in every amount field and in the example.",
+    "Undated breaking changes: link each reference page to the changelog and version header."
+   ],
+   "lint": {
+    "min_words": 80,
+    "ban": [
+     {
+      "label": "condescending minimisers",
+      "regex": "(?i)\\b(simply|obviously|easily)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "API reference page for 'Create a refund' (POST /v1/payments/{payment_id}/refunds) of 'PayDemo', a Bengaluru payment gateway (demo name). Base URL https://api.paydemo.example; auth: HTTP Basic with the test key id as username and key secret as password (placeholders in examples). Facts from the engineering spec: full and partial refunds, amount in paise (integer, minimum 100 paise = Rs 1, cannot exceed captured amount minus earlier refunds); refunds allowed within 180 days of capture; Idempotency-Key header required (up to 64 characters, remembered for 24 hours); optional notes object (up to 15 key-value pairs, key up to 40 characters, value up to 256 characters). Success: 201 Created with id (rfnd_...), payment_id, amount, currency (INR), status (pending | processed | failed), notes, created_at (Unix seconds). Four errors: 400 PAYMENT_NOT_CAPTURED; 400 AMOUNT_EXCEEDS_CAPTURED; 409 IDEMPOTENCY_KEY_REUSED (same key, different body); 400 REFUND_WINDOW_EXPIRED. Audience: backend developers at Indian D2C merchants; English; 300-600 words plus a curl example and JSON request/response; goal: a correct first refund call.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:api_reference",
+    "note": "P2 S2 Sp2 V2 C1. Clean, scannable reference: task title, side effects (settlement deduction, partial refunds), auth + required Idempotency-Key, typed parameter tables with paise and examples, curl with test-key placeholders, response schema matching the JSON, all 4 briefed errors with fixes, pending/webhook guidance, notes and related links; second person, present tense. Writer fault: minimum 100 paise is stated as fact while other unspecified limits are bracketed; base URL placeholder means the curl does not run as pasted. CARD FIX (minor): exemplar_brief -> give the base URL, refund window (days), minimum amount and notes limits, since the checklist requires every parameter to trace to a spec. | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now gives base URL, refund window, minimum amount, notes and idempotency limits, auth and error codes; re-judge pending.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:apology_statement",
+   "kind": "genre",
+   "name": "Public apology statement",
+   "status": "current",
+   "summary": "A statement from a brand or leader that says sorry for a specific harm, owns it without excuses, and says exactly what has been done and what will change. A good apology is short, plain, signed by a named senior person and gives affected people a way to get redress.",
+   "use_for": [
+    "brand apology after a service failure, offensive ad or product defect",
+    "leader or creator apology for a remark or post",
+    "apology to customers after a data incident (with legal review)",
+    "the apology paragraph inside a longer crisis statement"
+   ],
+   "avoid": [
+    "Non-apologies ('we regret if anyone was offended', 'mistakes were made'): they read as evasion and get screenshotted. Say 'We are sorry that we...' and name the act.",
+    "Blaming a vendor, an intern or a 'technical glitch' as the whole story: own the outcome first; explain the cause only as part of the fix.",
+    "Lawyer-only drafts that admit nothing and say nothing: legal should review the facts, not remove the apology. Agree the factual wording, keep the sorry.",
+    "Using an apology when facts are still unknown: issue a holding statement (genre:crisis_statement) and apologise once you know what happened."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/corporate-communications-freelancers/us/",
+     "title": "Upwork: hire Corporate Communications Experts",
+     "supports": "dedicated hire category; snippets list crisis, internal and external communications (snippet-only, 2026-10-04)"
+    }
+   ],
+   "related": [
+    "genre:crisis_statement",
+    "genre:press_release",
+    "genre:comment_reply",
+    "genre:ceo_letter",
+    "genre:internal_announcement"
+   ],
+   "buyers": [
+    "consumer brands, apps and D2C companies",
+    "PR and crisis-communications agencies",
+    "public figures and creators",
+    "institutions (universities, hospitals, civic bodies)"
+   ],
+   "value": "low",
+   "value_why": "Written inside crisis-communications engagements rather than bought alone (Upwork corporate communications category); high stakes, low volume.",
+   "goal": "Affected people and onlookers accept that the organisation understands what it did and believe the fix.",
+   "structure": [
+    {
+     "part": "The apology",
+     "does": "First sentence says sorry for the specific act, in active voice.",
+     "length": "1 sentence"
+    },
+    {
+     "part": "What happened",
+     "does": "Plain facts known so far: what, when, how many affected; no speculation.",
+     "length": "40-80 words"
+    },
+    {
+     "part": "Impact acknowledged",
+     "does": "Names the harm from the affected people's side (time lost, money, hurt, safety).",
+     "length": "1-3 sentences"
+    },
+    {
+     "part": "What we have done",
+     "does": "Concrete actions already taken, with dates.",
+     "length": "2-4 sentences or bullets"
+    },
+    {
+     "part": "What changes",
+     "does": "Prevention steps and who is accountable, with timing.",
+     "length": "2-4 sentences or bullets"
+    },
+    {
+     "part": "Redress",
+     "does": "How affected people get help: refund, replacement, contact route, timeline.",
+     "length": "1-3 sentences"
+    },
+    {
+     "part": "Sign-off",
+     "does": "Named senior person and title.",
+     "length": "1-2 lines"
+    }
+   ],
+   "length": {
+    "min": 100,
+    "max": 350,
+    "unit": "words",
+    "note": "Severity and the number of affected people drive length; the social-media version is a 40-80 word excerpt linking to the full statement."
+   },
+   "frameworks": [
+    "fw:bluf",
+    "fw:what_so_what_now_what"
+   ],
+   "techniques": [
+    "tech:active_voice",
+    "tech:plain_language",
+    "tech:specificity",
+    "tech:cut_qualifiers"
+   ],
+   "tones": [
+    "tone:empathetic_supportive",
+    "tone:calm_reassuring"
+   ],
+   "compliance": [
+    "comp:bns_defamation_speech",
+    "comp:dpdp_act_rules"
+   ],
+   "checklist": [
+    "Does the first sentence contain an explicit sorry or apology?",
+    "Does it name the specific act rather than 'recent events'?",
+    "Is it free of conditional phrasing ('if anyone was offended')?",
+    "Is it free of passive evasions ('mistakes were made')?",
+    "Does it name at least one action already taken, with a date?",
+    "Does it name at least one future change, with timing?",
+    "Does it tell affected people exactly how to get help?",
+    "Is it signed by a named senior person?"
+   ],
+   "pitfalls": [
+    "Apologising in English only when the harmed audience speaks Hindi or a regional language: publish the apology in their language too.",
+    "Deleting the offending post silently before apologising: acknowledge it was removed and why.",
+    "Promises the business cannot keep ('this will never happen again'): commit to specific checks instead.",
+    "Defensive 'context' paragraphs longer than the apology: keep explanation to one or two sentences."
+   ],
+   "lint": {
+    "min_words": 60,
+    "max_words": 450,
+    "max_sentence_words": 28,
+    "require": [
+     {
+      "label": "explicit apology",
+      "regex": "(?i)sorry|apologi[sz]e|apology|माफ़ी|माफी|क्षमा"
+     }
+    ],
+    "ban": [
+     {
+      "label": "non-apology phrasing",
+      "regex": "(?i)if (anyone|we have|any of you) (was |were |have been )?(offended|hurt)|mistakes were made|regret any inconvenience|inconvenience caused"
+     }
+    ]
+   },
+   "exemplar_brief": "Public apology from a Mumbai mithai-delivery D2C brand after about 1,400 Diwali gift-box orders arrived up to 3 days late and its support line went unanswered for 2 days; facts supplied: courier partner capacity failure, refunds of delivery fee already issued, a second courier added; audience: customers on Instagram, X and email, plus press; English with a one-line Hindi version; 180-260 words; signed by the founder-CEO; goal: customers believe the apology and know how to claim redress.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/genre_01.json#genre:apology_statement",
+    "note": "P2 S2 Sp2 V2 C2. First sentence apologises for both specific failures in active voice; facts (1,400 orders, up to 3 days, 2 silent days, courier capacity) without speculation; impact told from the customer's evening ('a puja, a visit to your parents'); 'That is on us, not on the courier' owns it; actions done (auto delivery-fee refund, second courier) and changes (capacity cap, named accountability); exact redress route with deadline; signed by founder-CEO; natural Hindi line. Nit: 'or damaged' widens the redress beyond the brief.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:app_store_listing",
+   "kind": "genre",
+   "name": "App store listing copy",
+   "status": "current",
+   "summary": "The words on an app's Google Play or App Store page: name, subtitle or short description, screenshot captions, promotional text, full description, keywords and what's new. Good listing copy says what the app does for whom in the first visible line, sells through the first two screenshots, and places search keywords naturally within each store's limits.",
+   "use_for": [
+    "Google Play store listing (title, short and full description)",
+    "App Store product page (name, subtitle, promotional text, description, keywords)",
+    "screenshot caption sets",
+    "localised listings for Hindi and regional markets",
+    "ASO refresh after a feature launch"
+   ],
+   "avoid": [
+    "Describing features before saying what the app is for: the first line must say the job ('Split rent, food and trip costs with flatmates').",
+    "Keyword stuffing or competitor names in fields: stores restrict it and users distrust it. Use each keyword once where it reads naturally; Apple's keyword field must not repeat the app name or name other apps.",
+    "Writing to one store's limits and pasting into the other: Apple and Google fields and limits differ. Draft per store using the platform cards.",
+    "Unproven ranking or user-count claims ('India's No. 1 app', '10 million users') without a dated source."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "platform filter includes Marketplaces and App store (4945 gigs on 2026-10-04)"
+    },
+    {
+     "url": "https://support.google.com/googleplay/android-developer/answer/9859152?hl=en",
+     "title": "Google Play Console Help: store listing",
+     "supports": "store listing fields and character limits"
+    },
+    {
+     "url": "https://developer.apple.com/app-store/product-page/",
+     "title": "Apple: Creating your product page",
+     "supports": "writing guidance per field; keywords must not repeat the app or company name or use other apps' names"
+    }
+   ],
+   "related": [
+    "genre:release_notes",
+    "genre:onboarding_flow_copy",
+    "genre:product_description",
+    "genre:push_notification",
+    "genre:ux_microcopy"
+   ],
+   "buyers": [
+    "app startups and product marketing teams",
+    "fintech, edtech, health and gaming studios",
+    "ASO agencies",
+    "indie developers"
+   ],
+   "value": "medium",
+   "value_why": "Fiverr's Product Descriptions category lists 'App store' as a platform filter (2026-10-04); work is usually bundled with ASO keyword research.",
+   "goal": "Install the app.",
+   "structure": [
+    {
+     "part": "App name / title",
+     "does": "Brand plus the core job or keyword, within the store's limit.",
+     "length": "per platform limit"
+    },
+    {
+     "part": "Subtitle (iOS) / short description (Play)",
+     "does": "The main benefit for the main user, in plain words.",
+     "length": "one line, per platform limit"
+    },
+    {
+     "part": "Screenshot captions",
+     "does": "One benefit per screenshot; the first two carry the pitch and are readable at thumbnail size.",
+     "length": "3-7 words each, 4-8 captions"
+    },
+    {
+     "part": "Description opening",
+     "does": "What the app does, for whom, and why it beats the current way; must work alone before 'more'.",
+     "length": "1-3 sentences"
+    },
+    {
+     "part": "Feature-benefit list",
+     "does": "4-8 features each tied to what the user gets.",
+     "length": "1 line each"
+    },
+    {
+     "part": "Trust + proof",
+     "does": "Security, data handling, licences or registrations that matter in the category, real ratings or awards with dates.",
+     "length": "2-4 lines"
+    },
+    {
+     "part": "Closing CTA",
+     "does": "A plain invitation to try the core action.",
+     "length": "1 line"
+    },
+    {
+     "part": "Keywords (iOS) + what's new",
+     "does": "Non-repeating keyword list within the byte limit; release notes that say what changed for the user.",
+     "length": "per platform limit"
+    }
+   ],
+   "length": {
+    "min": 120,
+    "max": 700,
+    "unit": "words",
+    "note": "Full description; most users never expand it, so the title, subtitle/short description and captions do most of the selling. Field limits are in plat:apple_app_store and plat:google_play_listing."
+   },
+   "frameworks": [
+    "fw:fab",
+    "fw:aida"
+   ],
+   "techniques": [
+    "tech:keyword_placement",
+    "tech:front_loading",
+    "tech:features_to_benefits",
+    "tech:bulleted_lists",
+    "tech:social_proof"
+   ],
+   "hooks": [
+    "hook:keyword_front_loaded",
+    "hook:quick_easy",
+    "hook:problem_solution"
+   ],
+   "platforms": [
+    "plat:apple_app_store",
+    "plat:google_play_listing"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:conversational"
+   ],
+   "compliance": [
+    "comp:ccpa_misleading_ads_2022",
+    "comp:online_gaming_act_2025",
+    "comp:dpdp_act_rules"
+   ],
+   "checklist": [
+    "Do the name and subtitle/short description say what the app does in plain words?",
+    "Does the first screenshot caption state the main benefit?",
+    "Do the first lines of the description work without expanding 'more'?",
+    "Does each main keyword appear once, naturally, in a high-weight field?",
+    "Is every user, rating or award claim dated and sourced?",
+    "Are regulated claims (credit, returns, health, money games) accurate to the app's licences?",
+    "Does every field fit its store's limit?",
+    "Do the release notes say what changed for the user?"
+   ],
+   "pitfalls": [
+    "Machine-translated Hindi listings: they read wrong and rank poorly. Transcreate captions and the short description with natural Hinglish or Hindi.",
+    "Captions that describe the screen ('Dashboard screen'): say the benefit ('See who owes what at a glance').",
+    "Release notes reading 'Bug fixes and improvements' every time: name the fix users noticed.",
+    "Forgetting the promotional text (iOS) can be changed without a new release: use it for timely messages."
+   ],
+   "lint": {
+    "min_words": 100,
+    "max_words": 900,
+    "max_exclamations": 3,
+    "ban": [
+     {
+      "label": "unproven top-ranking claim",
+      "regex": "(?i)no\\.? ?1 app|#1 app|best app (in india|in the world|ever)"
+     }
+    ]
+   },
+   "exemplar_brief": "Google Play listing (title, short description, full description and 5 screenshot captions) for a Hyderabad UPI-linked expense-splitting app for flatmates and college trips; features supplied: split by item or share, UPI settle-up requests, monthly rent reminders, Hindi and English UI; audience: 18-28 urban Indians; English with Hinglish screenshot captions; full description 250-400 words; goal: install.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:app_store_listing",
+    "note": "P2 S2 Sp2 V2 C1. Title 28/30 and short description 79/80 fit Play limits and say the job; five Hinglish captions are natural and benefit-led ('Flat ka hisaab, bina jhagde ke', 'Rent ki date? Hum yaad dilayenge'); description opening works before 'more', features tied to outcomes, trust block states the app never holds money with a legal CONFIRM, one closing action, release-notes placeholder that bans 'bug fixes'. 'MADE FOR' block is the one generic stretch.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:audio_series_script",
+   "kind": "genre",
+   "name": "Audio series / audio drama script",
+   "status": "rising",
+   "summary": "An episodic script for listen-only fiction where dialogue, narration and sound carry everything. A good episode establishes place by sound, keeps every speaker identifiable without visuals, turns the story several times, and ends on a cliffhanger that makes the next episode feel unmissable.",
+   "use_for": [
+    "long-running serial fiction for Indian audio apps (Pocket FM, Kuku FM type)",
+    "audio drama and radio plays",
+    "branded audio series",
+    "adapting a novel or web series for audio"
+   ],
+   "avoid": [
+    "Visual-only action ('she nods', 'he looks at the letter'): the listener gets nothing. Turn it into sound, dialogue or a narrator line.",
+    "Recaps told as summary ('Last time, Meera found out...'): dramatise the cliffhanger again in a short scene.",
+    "Similar-sounding names (Rohan/Rohit, Priya/Piya): listeners cannot see spelling. Make names differ in first sound and syllable count.",
+    "Episodes that end at a calm moment: serial apps live on the next play. End on a question, a danger or a reveal."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.medianews4u.com/pocket-fm-brings-ai-powered-audio-storytelling-to-india-with-30000-series-live/",
+     "title": "medianews4u (2025-09-17): Pocket FM brings AI-powered audio storytelling to India",
+     "supports": "over 30,000 AI audio series live; over 33,000 Indian users publish audio series each month; top writers projected to cross Rs 10 lakh a year"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/script-writer-salary",
+     "title": "AmbitionBox: Script Writer salary (updated 2026-10-03)",
+     "supports": "'The average salary for a Script Writer is ₹5 Lakhs per year ... with 1 year of experience' (400 salaries)"
+    }
+   ],
+   "related": [
+    "genre:micro_drama_episode_script",
+    "genre:serialized_fiction",
+    "genre:podcast_script",
+    "genre:katha_narration",
+    "trend:micro_dramas"
+   ],
+   "buyers": [
+    "Indian audio-series apps and their writer programmes",
+    "podcast networks and radio stations",
+    "brands commissioning branded audio",
+    "audiobook producers"
+   ],
+   "value": "high",
+   "value_why": "Pocket FM reports over 30,000 AI audio series live, over 33,000 Indian users publishing each month and top writers projected above Rs 10 lakh a year (medianews4u, 2025-09-17); AmbitionBox puts an entry-level script writer at Rs 5 lakh a year.",
+   "goal": "Finish the episode and immediately play the next one.",
+   "structure": [
+    {
+     "part": "Cold open / recap scene",
+     "does": "Re-enters the last cliffhanger in action, or opens on a gripping sound-led moment.",
+     "length": "100-200 words"
+    },
+    {
+     "part": "Scene setting",
+     "does": "Each scene opens with a bracketed sound cue and a line that tells the listener where and who.",
+     "length": "1-3 lines per scene"
+    },
+    {
+     "part": "Rising scenes",
+     "does": "3-5 scenes, each with a goal, an obstacle and a turn; one main conflict advances.",
+     "length": "200-450 words each"
+    },
+    {
+     "part": "Mid-episode reversal",
+     "does": "A discovery or betrayal that changes what the protagonist wants or knows.",
+     "length": "1 scene"
+    },
+    {
+     "part": "Cliffhanger",
+     "does": "Ends mid-tension on one clear question the next episode answers.",
+     "length": "50-150 words"
+    },
+    {
+     "part": "Tag",
+     "does": "Optional narrator line or tease of the next episode.",
+     "length": "1-2 lines"
+    }
+   ],
+   "length": {
+    "min": 900,
+    "max": 2600,
+    "unit": "words",
+    "note": "Per episode. Set by the app's target episode duration and narration pace; time a read-aloud of episode 1 to calibrate words per minute for this language and voice."
+   },
+   "frameworks": [
+    "fw:three_act_structure",
+    "fw:dan_harmon_story_circle",
+    "fw:nested_loops"
+   ],
+   "techniques": [
+    "tech:cliffhanger",
+    "tech:dialogue",
+    "tech:sensory_detail",
+    "tech:write_for_voiceover",
+    "tech:conflict_and_stakes",
+    "tech:open_loop"
+   ],
+   "hooks": [
+    "hook:in_medias_res_opener"
+   ],
+   "tones": [
+    "tone:storyteller_narrative",
+    "tone:romantic"
+   ],
+   "languages": [
+    "lang:hindi_devanagari",
+    "lang:hindustani_everyday",
+    "lang:hindi_voiceover_tts"
+   ],
+   "checklist": [
+    "Is each scene's location established by a sound cue or line within its first lines?",
+    "Can every speaker be identified without visuals (names in dialogue, distinct voices)?",
+    "Is the script free of visual-only action?",
+    "Are sound and music cues bracketed and separate from spoken lines?",
+    "Is the recap dramatised rather than summarised?",
+    "Does the main conflict advance in this episode?",
+    "Do character names differ clearly in sound?",
+    "Does the episode end on one clear unanswered question?",
+    "Can each line be spoken in one breath?"
+   ],
+   "pitfalls": [
+    "Narrator doing all the work: listeners want scenes. Use narration for time jumps and inner stakes, not to describe dialogue.",
+    "Too many characters in one scene: keep to two or three speakers so voices stay distinct.",
+    "Literary Hindi in dialogue for a mass app: write everyday Hindustani that voice artists say naturally; save shuddh Hindi for characters who would use it.",
+    "Cliffhangers that the next episode cheats: pay off the danger honestly or listeners stop trusting the hook."
+   ],
+   "lint": {
+    "min_words": 700,
+    "max_words": 3000,
+    "max_sentence_words": 25,
+    "ban": [
+     {
+      "label": "visual-only action in an audio script",
+      "regex": "(?i)\\b(nods|nodded|shrugs|shrugged|winks|winked)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Episode 1 of a 60-episode Hindi audio drama for an Indian audio-series app: in Kanpur, a leather-factory owner's daughter discovers on her engagement night that her fiancé's father is the man who bankrupted her own father; Devanagari Hindi in an everyday register, sound cues in English brackets; 1,500-2,000 words; goal: the listener plays episode 2.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/genre_01.json#genre:audio_series_script",
+    "note": "P2 S2 Sp2 V2 C2. Best in batch. Cold open plants a sound motif (ring tapping on glass, 'hisaab barabar') that pays off on stage; every scene opens on a sound cue that places it; speakers named in dialogue, distinct names; visuals carried by dialogue ('tum muskura rahi ho'); everyday Hindustani that voice artists can say; mid-episode reversal (father engineered the match) and a clean cliffhanger at the roof door with one question for episode 2. Timeline consistent (2012 -> 14 years, Mehar 12 -> 26). 1,548 words, inside the band.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:author_bio",
+   "kind": "genre",
+   "name": "Author bio",
+   "status": "current",
+   "summary": "A short third-person bio for a book jacket, retailer author page, festival programme or byline. A good one leads with the credential that makes this author worth reading on this book's subject, lists only real credits, adds one human detail and fits the slot it is written for, usually delivered in a one-line and a paragraph version.",
+   "use_for": [
+    "back-flap and back-cover bios",
+    "Amazon/KDP and Goodreads author pages",
+    "query-letter bios",
+    "festival, panel and byline bios"
+   ],
+   "avoid": [
+    "Life story from childhood: readers want relevance. Lead with what qualifies the author for this book; keep one personal detail.",
+    "'Aspiring author', 'avid reader', 'passionate about writing': they signal amateur. State what the author has done.",
+    "Inflated or unverifiable credits ('award-winning' with no award named): name the award or drop the word.",
+    "One length for every slot: write a one-liner and a paragraph; query-letter bios stay short (Jane Friedman's guide puts them at 50-100 words)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://janefriedman.com/query-letters/",
+     "title": "Jane Friedman: How to Write a Query Letter That Gets Manuscript Requests",
+     "supports": "query anatomy: story description 150-300 words, comps, bio 50-100 words; whole query about 200-450 words"
+    }
+   ],
+   "related": [
+    "genre:professional_bio",
+    "genre:book_blurb",
+    "genre:query_letter",
+    "genre:kdp_book_description",
+    "genre:social_bio"
+   ],
+   "buyers": [
+    "self-published and traditionally published authors",
+    "publishers' marketing teams",
+    "ghostwriting clients",
+    "speakers and columnists"
+   ],
+   "value": "low",
+   "value_why": "Usually bundled with a blurb, KDP description or launch package rather than sold alone.",
+   "goal": "Trust the author on this book's subject and remember one human detail about them.",
+   "structure": [
+    {
+     "part": "One-line version",
+     "does": "Name, the most relevant credential, and the book or series.",
+     "length": "15-30 words"
+    },
+    {
+     "part": "Credential sentence",
+     "does": "Opens the paragraph version with the expertise or experience behind this book.",
+     "length": "1 sentence"
+    },
+    {
+     "part": "Credits",
+     "does": "Previous books, prizes, publications or roles, named and real.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Place and life",
+     "does": "Where the author lives or works, linked to the book's world if possible, plus one specific human detail.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Where to find",
+     "does": "Website or one social handle (for retailer and festival bios).",
+     "length": "1 line"
+    }
+   ],
+   "length": {
+    "min": 15,
+    "max": 150,
+    "unit": "words",
+    "note": "Slot-driven: byline and one-liner 15-30 words; jacket and author page 60-150; query letter 50-100 (Friedman)."
+   },
+   "frameworks": [
+    "fw:bluf"
+   ],
+   "techniques": [
+    "tech:specificity",
+    "tech:front_loading",
+    "tech:show_dont_tell",
+    "tech:word_budget"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:minimalist_understated"
+   ],
+   "checklist": [
+    "Is it in third person (unless the brief asks for first person)?",
+    "Does the first sentence give the credential most relevant to this book?",
+    "Is every credit named and real?",
+    "Is it free of 'aspiring', 'avid reader' and 'passionate about'?",
+    "Is there one specific human detail?",
+    "Are both the one-line and paragraph versions delivered?",
+    "Does each version fit its slot's word budget?"
+   ],
+   "pitfalls": [
+    "Credentials that do not connect to the book: a doctor writing a thriller should say what in their work feeds the story, or keep the credential brief.",
+    "Jokey bios on serious nonfiction: match the book's register.",
+    "Stale bios on retailer pages: date-check credits and update when a new book launches.",
+    "Listing every social handle: one link the author actually maintains."
+   ],
+   "lint": {
+    "min_words": 15,
+    "max_words": 200,
+    "ban": [
+     {
+      "label": "amateur-signal phrases",
+      "regex": "(?i)aspiring (author|writer)|avid reader|passionate about|has always loved (books|writing|reading)"
+     }
+    ]
+   },
+   "exemplar_brief": "Author bio in two lengths (one line of 15-30 words; a paragraph of 80-110 words) for Ibaphylla Marbaniang (demo name), a Shillong-based schoolteacher, for her debut English YA mystery 'The Hour of the Living Roots', set in Meghalaya's living-root-bridge villages. Credentials supplied: 14 years teaching English at a Shillong school; short story shortlisted in the Kathasetu National Short Story Contest 2022 (demo name); grew up in Sohra. One personal detail to use: she coaches the school's under-14 girls' football team on Saturday mornings. Third person; for the back flap and the Amazon author page; English; goal: readers trust her to tell this place's story.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_1.json#genre:author_bio",
+    "note": "ROUND 2: P2 S2 Sp2 V1 C1. Both versions in budget (26 and 85 words), third person, Sohra and the root-bridge villages tie her to the book's world, the named contest shortlist is there, and the Saturday under-14 girls' football detail lands as the human close. Nits (writer): 'written by a teacher with 14 years of English classes ... behind her' and 'her short fiction has been noticed' are flat; 'She still teaches there' has a vague 'there'. | round 1: weak 7",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:award_entry",
+   "kind": "genre",
+   "name": "Award entry / award submission",
+   "status": "current",
+   "summary": "A written case for an awards jury, answering the entry form's questions (typically objective, insight, idea, execution, results) inside strict word limits. A winning entry tells one clear story in its first lines and proves every result with a number, a time period, a source and a comparison against the objective.",
+   "use_for": [
+    "marketing effectiveness awards (Effie-style entries)",
+    "creative, PR and digital award submissions",
+    "HR, CSR, sustainability and industry awards",
+    "startup and innovation award applications"
+   ],
+   "avoid": [
+    "Results without a baseline ('sales grew massively'): juries penalise vague claims. Give number, period, source and the comparison to the objective or category.",
+    "An insight that is a fact about the brand ('our oil is cold-pressed'): an insight is a human truth about the audience, with evidence.",
+    "Ignoring the form's order and headings: answer each question where the jury expects it.",
+    "Going over the word limit or padding to it: use the space for proof, not adjectives."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://boost-awards.co.uk/award-writing/",
+     "title": "Boost Awards: Award writing",
+     "supports": "dedicated award-entry writing agency"
+    },
+    {
+     "url": "https://effie.org/partners/united-states/entry-details/",
+     "title": "Effie Awards: entry details",
+     "supports": "entries are written cases judged on objective, insight, idea and results"
+    }
+   ],
+   "related": [
+    "genre:case_study",
+    "genre:portfolio_case_writeup",
+    "genre:executive_summary",
+    "edit:fact_check"
+   ],
+   "buyers": [
+    "advertising, PR and digital agencies",
+    "brand marketing teams",
+    "corporates entering HR, CSR or industry awards",
+    "startups"
+   ],
+   "value": "low",
+   "value_why": "Dedicated award-entry writing agencies exist (Boost Awards) and Effie entries are judged on a written case, but commissions are seasonal and few.",
+   "goal": "Score high enough with the jury to be shortlisted.",
+   "structure": [
+    {
+     "part": "Summary",
+     "does": "The whole story in one breath: challenge, idea, headline result.",
+     "length": "25-60 words"
+    },
+    {
+     "part": "Challenge and objectives",
+     "does": "The business problem and measurable objectives set before launch.",
+     "length": "15-20% of the limit"
+    },
+    {
+     "part": "Insight",
+     "does": "A human truth about the audience, with the research or data that revealed it.",
+     "length": "10-15% of the limit"
+    },
+    {
+     "part": "Idea and strategy",
+     "does": "The idea in one sentence, then why it answers the insight.",
+     "length": "15% of the limit"
+    },
+    {
+     "part": "Execution",
+     "does": "Channels, timeline, scale and craft choices that brought the idea to life.",
+     "length": "15-20% of the limit"
+    },
+    {
+     "part": "Results",
+     "does": "Each result vs its objective: number, period, source, benchmark; other factors ruled out.",
+     "length": "25-30% of the limit"
+    }
+   ],
+   "length": {
+    "min": 300,
+    "max": 2000,
+    "unit": "words",
+    "note": "The entry form's limit governs every section; plan to it before drafting and never exceed it."
+   },
+   "frameworks": [
+    "fw:effie_case_format",
+    "fw:problem_promise_proof_proposal",
+    "fw:scqa",
+    "fw:star"
+   ],
+   "techniques": [
+    "tech:specificity",
+    "tech:so_what_test",
+    "tech:authority_proof",
+    "tech:word_budget",
+    "tech:anecdote_lead"
+   ],
+   "tones": [
+    "tone:data_driven",
+    "tone:authoritative"
+   ],
+   "checklist": [
+    "Does each section answer the form's question under its own heading, in the form's order?",
+    "Does the summary give challenge, idea and headline result?",
+    "Were the objectives measurable and set before launch?",
+    "Is the insight a human truth with evidence, not a product fact?",
+    "Does every result give number, period, source and comparison to objective or benchmark?",
+    "Are other factors (price cuts, distribution, seasonality) addressed?",
+    "Is every section within its word limit?",
+    "Is client permission confirmed for the data used?"
+   ],
+   "pitfalls": [
+    "Writing the entry after the deadline rush from memory: collect the results deck, research and media data first.",
+    "Vanity metrics as results (impressions, views): pair them with business outcomes the objective named.",
+    "The same entry pasted into every category: rewrite the emphasis to the category's criteria.",
+    "Agency-speak ('disruptive', 'clutter-breaking'): show what was new by describing it."
+   ],
+   "lint": {
+    "min_words": 250,
+    "max_words": 2200,
+    "max_sentence_words": 32,
+    "require": [
+     {
+      "label": "contains numbers",
+      "regex": "\\d"
+     }
+    ],
+    "ban": [
+     {
+      "label": "unproven success clichés",
+      "regex": "(?i)huge success|overwhelming response|went viral|massive buzz|clutter[- ]breaking"
+     }
+    ]
+   },
+   "exemplar_brief": "Effie-style award entry for 'Keralam Oil' (demo name), a Kerala Ayurveda hair-oil brand's Onam regional campaign, regional-marketing category; a summary plus five headed sections (Challenge and objectives, Insight, Idea and strategy, Execution, Results). Facts supplied: objective set in June 2026 of +15% Kerala sales in Aug-Sep vs last year; achieved +22% while the category grew 6% (retail audit, same two months); no price change (Rs 185 for 200 ml), distribution unchanged at about 11,200 outlets. Insight from 40 consumer interviews: grandmothers' oiling ritual is how many Kerala women remember being cared for. Idea: the grandmother's Sunday oiling, retold as a film. Execution: a 90-second Malayalam film released 14 August 2026 on YouTube and Instagram; 24 Malayalam WhatsApp stickers (grandmother's lines); 6.8 million film views and 410,000 sticker shares by 30 September; regional-language radio for two weeks. Client has approved use of all figures. English; 700-900 words; goal: shortlist.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:award_entry",
+    "note": "P2 S2 Sp2 V2 C1. Jury-ready logic: one-breath summary, objective set before launch with source, insight framed as a human truth from the 40 interviews, single-sentence idea, results stated as number/period/source/objective and benchmark (22% vs 15% target, 16 points over a 6% category), price, distribution and seasonality addressed, permission line. Execution is thin because film/sticker specifics and reach are placeholders; the 'for every 100 units' gloss is padding for a jury. CARD FIX: exemplar_brief -> say 'a summary plus five headed sections' (the card's structure has six parts including Summary, so 'five headed sections' contradicts it) and supply execution specifics (film length, platforms, sticker count, reach figures). | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now says a summary plus five headed sections and supplies execution specifics (film length, platforms, sticker count, reach); re-judge pending.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:b2b_playbook",
+   "kind": "genre",
+   "name": "Playbook / practical guide (B2B)",
+   "status": "current",
+   "summary": "A step-by-step operational guide (often gated) that shows a business buyer exactly how to do a job, with templates, checklists and worked examples. A good playbook is mostly doing, little arguing: every chapter ends with something the reader can do on Monday, and the vendor earns trust by being useful rather than by pitching.",
+   "use_for": [
+    "gated lead-magnet playbooks for SaaS and B2B services",
+    "sales or marketing enablement playbooks",
+    "field guides and toolkits for a buyer's job (hiring, collections, compliance)",
+    "customer-success guides that drive adoption"
+   ],
+   "avoid": [
+    "Argument instead of action: if a chapter persuades rather than instructs, it belongs in a white paper (genre:white_paper).",
+    "Generic steps any blog lists ('define your goals'): add the template, the numbers and the worked example only a practitioner would know. Interview an SME.",
+    "Product pitch in every chapter: keep the product to examples where it genuinely fits and one closing CTA.",
+    "No usable artefact: a playbook without a template, checklist or script is an article."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "freelance writing job types and typical Upwork rate bands (blog/web content $15-$35/hr; script writer $30-$56/hr); script projects include AI-generated or animated videos; ghostwriting/business-writing project lists"
+    }
+   ],
+   "related": [
+    "genre:white_paper",
+    "genre:ebook_lead_magnet",
+    "genre:lead_magnet_content",
+    "genre:ultimate_guide",
+    "genre:sop_process_doc",
+    "trend:non_commodity_content",
+    "trend:thought_leadership_b2b"
+   ],
+   "buyers": [
+    "B2B SaaS marketing teams",
+    "consultancies and professional-services firms",
+    "sales enablement and customer-success teams",
+    "agencies producing gated content"
+   ],
+   "value": "medium",
+   "value_why": "Sold inside the same gated-content and ghostwriting work as ebooks and white papers (Upwork writing job types, 2026-01-21); no separate marketplace category.",
+   "goal": "Do the job using the playbook's steps and templates (and remember who taught them).",
+   "structure": [
+    {
+     "part": "Title + promise",
+     "does": "Outcome and audience ('The collections playbook for Indian SME finance heads').",
+     "length": "6-14 words"
+    },
+    {
+     "part": "Who it's for + what you'll be able to do",
+     "does": "Sets the reader, the starting situation and the end state.",
+     "length": "60-120 words"
+    },
+    {
+     "part": "Quick-start checklist",
+     "does": "One page with the whole method as a checklist for readers who skim.",
+     "length": "8-15 items"
+    },
+    {
+     "part": "Chapters (one per step of the job)",
+     "does": "Each: why the step matters, numbered how-to, template or script, worked example with realistic numbers, common mistakes, 'do this Monday' action.",
+     "length": "600-1,500 words each"
+    },
+    {
+     "part": "Templates and tools",
+     "does": "Copy-ready templates, scripts, calculators referenced in the chapters.",
+     "length": "as needed"
+    },
+    {
+     "part": "Next step",
+     "does": "Soft CTA: demo, audit call, community or next playbook.",
+     "length": "50-100 words"
+    }
+   ],
+   "length": {
+    "min": 2500,
+    "max": 9000,
+    "unit": "words",
+    "note": "Driven by the number of steps in the job; a single chapter commission is 1,000-2,000 words. Templates and checklists count as part of the value, not padding."
+   },
+   "frameworks": [
+    "fw:what_so_what_now_what",
+    "fw:bluf",
+    "fw:jobs_to_be_done"
+   ],
+   "techniques": [
+    "tech:step_by_step_instructions",
+    "tech:tldr_summary",
+    "tech:chunking",
+    "tech:sme_interview",
+    "tech:specificity",
+    "tech:descriptive_subheads"
+   ],
+   "hooks": [
+    "hook:how_to",
+    "hook:ultimate_guide"
+   ],
+   "tones": [
+    "tone:authoritative",
+    "tone:conversational"
+   ],
+   "checklist": [
+    "Does every chapter end with a concrete action the reader can take this week?",
+    "Is there at least one copy-ready template, checklist or script?",
+    "Does each chapter include a worked example with realistic numbers?",
+    "Are steps numbered in the order they are performed?",
+    "Is a quick-start checklist near the top?",
+    "Is there visible first-hand input (named practitioner, own data, real example)?",
+    "Is the product mentioned only where it genuinely fits, with one closing CTA?"
+   ],
+   "pitfalls": [
+    "Templates that need the vendor's product to work: make them tool-agnostic so readers can use them anywhere.",
+    "US examples for an Indian audience: set the numbers in rupees, Indian timelines and Indian regulations.",
+    "Wall-of-text PDFs: use checklists, tables and call-out boxes; readers come back to a playbook, so make it scannable.",
+    "Steps without failure modes: each step should say what usually goes wrong and how to spot it."
+   ],
+   "lint": {
+    "min_words": 1000,
+    "max_words": 10000,
+    "max_sentence_words": 30,
+    "require": [
+     {
+      "label": "has a usable template, checklist or numbered steps",
+      "regex": "(?i)template|checklist|worksheet|script|step \\d|^\\s*\\d+[.)]"
+     }
+    ]
+   },
+   "exemplar_brief": "Chapter 2 of a 5-chapter gated playbook, 'Collecting overdue invoices without losing the client', for an Indian accounts-receivable SaaS; audience: finance heads at Rs 20-200 crore manufacturing SMEs; must include a 3-stage reminder email template set, a phone script for 60+ days overdue and an escalation checklist; English; 1,500-2,000 words; goal: the reader runs the process this month.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/genre_01.json#genre:b2b_playbook",
+    "note": "P2 S2 Sp2 V2 C2. Mostly doing, little arguing: who-for and end state, 12-item quick start, numbered day-3/15/30/45/60 ladder, three copy-ready emails with escalating asks, a 60+ day call script branched by answer type, escalation checklist with correct NI Act s138 timelines and MSMED/Samadhaan pointer, worked example with correct maths (Rs 32.9 lakh/day, Rs 3.3 crore freed, ~Rs 36 lakh interest), failure modes, Monday plan, one soft CTA. Fully Indian (UTR, NEFT/RTGS, e-way bill, challan) and tool-agnostic.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:battle_card",
+   "kind": "genre",
+   "name": "Competitive battle card",
+   "status": "current",
+   "summary": "An internal one-to-two-page sheet that arms sales reps to win against one named competitor: where we win, where they win, trap-setting questions, objection responses with proof, and what never to say. A good card is accurate, dated, honest about the rival's strengths and scannable mid-call.",
+   "use_for": [
+    "competitor-specific cards for B2B SaaS and IT services sales teams",
+    "quick reference during discovery and demo calls",
+    "onboarding new reps on the competitive landscape",
+    "win/loss learnings turned into talk tracks"
+   ],
+   "avoid": [
+    "Trash talk and unverified claims about the rival: cards leak to prospects and get forwarded. Use only public, verifiable facts with a source and date.",
+    "Pretending the rival has no strengths: reps lose credibility the first time a prospect disagrees. List their real strengths and how to reframe them.",
+    "Long prose: reps scan for 10 seconds mid-call. Use headings, short bullets and 'they say / you say' rows.",
+    "Undated cards: competitors change pricing and features; a stale card loses deals."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "lists Advertorial, Annual Report and Sales Enablement: Battlecard as priced copywriting project types"
+    }
+   ],
+   "related": [
+    "genre:sales_deck",
+    "genre:sales_call_script",
+    "genre:comparison_page",
+    "genre:one_pager",
+    "genre:positioning_statement"
+   ],
+   "buyers": [
+    "B2B SaaS product marketing teams",
+    "sales enablement teams",
+    "IT services and consulting sales teams"
+   ],
+   "value": "low",
+   "value_why": "AWAI's 2026 copywriting pricing guide lists 'Sales Enablement: Battlecard'; mostly written in-house by product marketing, so freelance volume is small.",
+   "goal": "A rep finds the right answer in seconds and keeps the deal without discounting.",
+   "structure": [
+    {
+     "part": "Header",
+     "does": "Competitor name, last updated date, owner, sources used.",
+     "length": "2-3 lines"
+    },
+    {
+     "part": "Positioning in one line",
+     "does": "Where we win and the buyer type we beat them with.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Quick facts",
+     "does": "Their target segment, pricing model, key strengths, recent changes.",
+     "length": "4-6 bullets"
+    },
+    {
+     "part": "Why we win",
+     "does": "3 differentiators, each with proof (metric, customer, feature demo).",
+     "length": "3 bullets + proof"
+    },
+    {
+     "part": "Where they're strong",
+     "does": "Honest strengths and how to reframe or qualify around them.",
+     "length": "2-4 bullets"
+    },
+    {
+     "part": "Trap-setting questions",
+     "does": "Questions that make the prospect discover the rival's weak spot themselves.",
+     "length": "3-5 questions"
+    },
+    {
+     "part": "Objection handling",
+     "does": "'They say / You say / Proof' rows for the common objections.",
+     "length": "3-6 rows"
+    },
+    {
+     "part": "Proof + don'ts",
+     "does": "Named switch stories or permitted anonymised wins; claims reps must never make.",
+     "length": "2-4 bullets each"
+    }
+   ],
+   "length": {
+    "min": 300,
+    "max": 900,
+    "unit": "words",
+    "note": "One or two screens; more competitors means more cards, not a longer card."
+   },
+   "frameworks": [
+    "fw:dunford_positioning",
+    "fw:fab"
+   ],
+   "techniques": [
+    "tech:objection_handling",
+    "tech:bulleted_lists",
+    "tech:chunking",
+    "tech:social_proof",
+    "tech:front_loading",
+    "tech:specificity"
+   ],
+   "tones": [
+    "tone:corporate_b2b",
+    "tone:technical_precise"
+   ],
+   "compliance": [
+    "comp:bns_defamation_speech",
+    "comp:asci_code"
+   ],
+   "checklist": [
+    "Is there a last-updated date and are competitor facts sourced?",
+    "Are the competitor's real strengths listed?",
+    "Does each objection have a response and a proof point?",
+    "Are trap-setting items phrased as questions, not attacks?",
+    "Is every claim about the competitor public and verifiable?",
+    "Is it scannable in under 30 seconds (headings, short bullets)?",
+    "Does it fit on one or two screens?",
+    "Are customer proof points named or approved for anonymised use?"
+   ],
+   "pitfalls": [
+    "Feature-checklist wars: buyers care about outcomes. Translate each differentiator into what the buyer gets.",
+    "No owner: assign who updates it each quarter or after each pricing change.",
+    "Discounting as the default answer: give reps value-based responses before price.",
+    "Same card for every segment: an SMB buyer and an enterprise buyer weigh the rival differently; add a segment note if needed."
+   ],
+   "lint": {
+    "min_words": 200,
+    "max_words": 1100,
+    "require": [
+     {
+      "label": "carries a date",
+      "regex": "(?i)updated|as of|last reviewed|\\b20\\d\\d\\b"
+     }
+    ],
+    "ban": [
+     {
+      "label": "defamatory or abusive language about the rival",
+      "regex": "(?i)\\b(scam|fraud|cheats?|garbage|they suck)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Battle card for 'PayKart HR' (demo name), a Pune HR-and-payroll SaaS for 50-500 employee Indian companies, against a larger national payroll provider referred to as 'Competitor X'. Header: owner Meera Kulkarni (product marketing), updated 5 Oct 2026, sources: X's public pricing page and our own call notes. Facts supplied: we win on statutory compliance automation (PF, ESI, PT across states) and WhatsApp payslips; they win on brand size and bundled accounting. Pricing per employee per month: ours Rs 95 all-in, no set-up fee; X lists Rs 70 payroll plus Rs 25 compliance add-on and a one-time Rs 40,000 set-up above 100 employees (so for 200 staff, year one costs about Rs 2.28 lakh with us vs Rs 2.68 lakh with X). Proof supplied: approved named switch story - Sahyadri Auto Components (demo), 180 staff, Chakan, switched January 2026: payroll run cut from 3 working days to 5 hours; WhatsApp payslip open rate 91% within 24 hours vs 38% for emailed PDFs. Approved anonymised: a 320-employee Gujarat textile firm cut payroll re-runs from 6% to 0.5% of runs. Other metrics: state PT changes live within 2 working days; average go-live 9 working days across the last 20 customers. Audience: inside-sales reps on discovery calls; English; 400-700 words with 5 'they say / you say' rows and 4 trap questions; goal: handle 'X is bigger and cheaper' without discounting.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:battle_card",
+    "note": "P2 S2 Sp2 V2 C1. Scannable and honest: dated header with owner and review cadence, one-line positioning, quick facts, three differentiators translated into outcomes (state PT slabs, shop-floor staff on WhatsApp), X's strengths conceded then qualified, four genuine discovery questions, five they-say/you-say rows that answer 'bigger and cheaper' with a whole-cost comparison instead of a discount, never-say list. Every proof point and X fact is a placeholder. CARD FIX: exemplar_brief -> supply at least one approved switch story and one metric (e.g. hours saved per payroll run, WhatsApp payslip open rate); the checklist requires a proof point per objection and the brief gives none, so all five proofs became placeholders. | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now supplies pricing for both sides, one named and one anonymised switch story and several metrics for the proof points; re-judge pending.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:best_of_roundup",
+   "kind": "genre",
+   "name": "Best-of roundup (ranked product list)",
+   "status": "current",
+   "summary": "A ranked list of the best products for a use case: quick picks up top, then each pick with why it made the list, who it suits, what testing showed and its trade-off, plus a comparison table and buying guide. Google's review guidance asks for first-hand evidence and justified 'best' picks, so a good roundup reads like a tester's notes, not a catalogue.",
+   "use_for": [
+    "'Best X for Y' affiliate articles",
+    "gift guides and seasonal buying guides",
+    "'Top tools for [job]' SaaS roundups",
+    "commerce-desk listicles for publishers"
+   ],
+   "avoid": [
+    "Ten near-identical products from one marketplace page: each pick needs a distinct use case and a reason. Fewer, well-justified picks beat a long list.",
+    "Picks you never evaluated: Google's review guidance asks reviewers to show evidence of hands-on use and to justify 'best'. If you only researched specs, say so and frame the piece accordingly.",
+    "A list with no cons: every pick needs its trade-off and who should skip it.",
+    "Hiding affiliate relationships: disclose before the first link."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews",
+     "title": "Google Search Central: Write high quality reviews (last updated 2025-12-10)",
+     "supports": "firsthand evidence, quantitative measurements, pros and cons, comparison to alternatives, justify 'best' picks; ranked lists need enough useful content to stand alone"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "supply signal by article type: Review 679 gigs, Affiliate marketing 323, Listicle 1243, Long-form 3494 (2026-10-04)"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "title": "Google Search Central: spam policies (fetched 2026-10-04)",
+     "supports": "link spam includes 'Advertorials or native advertising where payment is received for articles that include links that pass ranking credit'; allowed when links carry rel=\"nofollow\" or rel=\"sponsored\"; scaled content abuse"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI Guidelines for Influencer Advertising in Digital Media",
+     "supports": "disclose any material connection, including free or discounted products, even if the review is honest"
+    }
+   ],
+   "related": [
+    "genre:affiliate_review",
+    "genre:product_review_article",
+    "genre:listicle",
+    "genre:comparison_article",
+    "genre:comparison_table_copy",
+    "trend:non_commodity_content",
+    "trend:scaled_ai_content_enforcement",
+    "trend:geo_ai_search"
+   ],
+   "buyers": [
+    "affiliate publishers and niche sites",
+    "commerce desks of digital media",
+    "SaaS review and comparison sites",
+    "creators with blogs"
+   ],
+   "value": "high",
+   "value_why": "A core affiliate-site format that Google's own review guidance addresses directly (last updated 2025-12-10); Fiverr shows Listicle (1,243) and Review (679) as large article-type supplies on 2026-10-04.",
+   "goal": "Pick the product that fits their use case and click through to buy it.",
+   "structure": [
+    {
+     "part": "Title",
+     "does": "'Best [product] for [use case] ([year])' or a variant with the buyer's constraint (budget, space).",
+     "length": "6-14 words"
+    },
+    {
+     "part": "Disclosure",
+     "does": "Plain affiliate disclosure before the first link.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Quick picks",
+     "does": "Top 3-6 picks as 'Best overall / Best budget / Best for X', one line each with price and link.",
+     "length": "60-150 words"
+    },
+    {
+     "part": "How we chose",
+     "does": "Criteria, hands-on time, measurements and who tested.",
+     "length": "80-200 words"
+    },
+    {
+     "part": "Pick sections",
+     "does": "For each: verdict line, who it's for, what testing showed (numbers), pros, cons, price with date, alternative.",
+     "length": "150-350 words each"
+    },
+    {
+     "part": "Comparison table",
+     "does": "Picks side by side on the 4-6 criteria that matter.",
+     "length": "one row per pick"
+    },
+    {
+     "part": "Buying guide + FAQ",
+     "does": "What to look for, mistakes to avoid, 3-6 real buyer questions.",
+     "length": "250-500 words"
+    },
+    {
+     "part": "Update log",
+     "does": "Last tested/updated date and what changed.",
+     "length": "1-3 lines"
+    }
+   ],
+   "length": {
+    "min": 1200,
+    "max": 4500,
+    "unit": "words",
+    "note": "Number of picks (5-10) and testing depth drive length; each pick must earn its section."
+   },
+   "frameworks": [
+    "fw:bluf",
+    "fw:fab"
+   ],
+   "techniques": [
+    "tech:eeat_first_hand_experience",
+    "tech:search_intent_matching",
+    "tech:specificity",
+    "tech:schema_friendly_formatting",
+    "tech:tldr_summary",
+    "tech:content_freshness_update"
+   ],
+   "hooks": [
+    "hook:number_list",
+    "hook:keyword_front_loaded",
+    "hook:comparison_vs"
+   ],
+   "platforms": [
+    "plat:google_search_result"
+   ],
+   "tones": [
+    "tone:data_driven",
+    "tone:conversational"
+   ],
+   "compliance": [
+    "comp:asci_influencer",
+    "comp:ftc_endorsement_guides",
+    "comp:ftc_consumer_reviews_rule",
+    "comp:google_search_spam_policies"
+   ],
+   "checklist": [
+    "Does each pick name a distinct use case ('best for X')?",
+    "Is each 'best' justified with evidence from testing or stated criteria?",
+    "Is the testing or selection method stated?",
+    "Does every pick list at least one con?",
+    "Are prices given with the date checked?",
+    "Is there a comparison table?",
+    "Does an affiliate disclosure appear before the first link?",
+    "Is a last-updated date visible?"
+   ],
+   "pitfalls": [
+    "Ranking by commission rate: readers and Google notice when the 'best' pick is always the highest-paying one. Rank by fit and evidence.",
+    "Never updating: models go out of stock and prices move. Schedule a refresh and keep an update log.",
+    "Ignoring Indian buying factors: service network, warranty claims, voltage and water quality (for appliances), EMI and exchange offers matter to Indian buyers.",
+    "Copy-pasted spec bullets per pick: translate specs into what they mean for the use case."
+   ],
+   "lint": {
+    "min_words": 1000,
+    "max_words": 5000,
+    "max_sentence_words": 35,
+    "require": [
+     {
+      "label": "affiliate disclosure",
+      "regex": "(?i)affiliate|commission|we (may )?earn|paid link|sponsored|कमीशन"
+     },
+     {
+      "label": "names cons or trade-offs",
+      "regex": "(?i)\\bcons?\\b|downside|drawback|trade-?off|skip it|कमी"
+     }
+    ]
+   },
+   "exemplar_brief": "'Best mixer grinders for South Indian kitchens under Rs 6,000 (2026)' for a Chennai home-and-kitchen affiliate site; 6 picks (best overall, budget, for idli-dosa batter, quietest, compact, best warranty); English; 1,800-2,400 words; Amazon.in and Flipkart affiliate links; goal: click through to the pick that fits. Method: two testers, Sept 2026; batter test = 1 kg idli rice + 250 g urad in the wet jar, texture checked after 20 minutes; noise measured at 1 m on high with a phone meter; prices checked 3 Oct 2026. Tester notes (demo models): (1) Vasanta Wetstone 750, Rs 5,490, 750 W, 3 jars, batter smooth with no grit, 68 dB, service centres in 14 Tamil Nadu towns plus Bengaluru and Kochi. (2) Annam Basic 500, Rs 2,799, 500 W, 2 jars, batter slightly grainy, 78 dB, service in Chennai and Coimbatore only. (3) Thenral Batter Pro 1000, Rs 5,950, 1000 W, 3 jars incl. a 1.8 L batter jar, fluffy batter, 74 dB, heavy at 4.1 kg. (4) Mouna Silent 600, Rs 5,799, 600 W, 3 jars, batter slightly coarse, 62 dB, 1-year warranty. (5) Chotu Mix 400, Rs 3,499, 400 W, 2 jars, batter coarse, 70 dB, fits a 20 cm shelf. (6) Surabhi Care 650, Rs 5,299, 650 W, 3 jars, batter smooth, 72 dB, 5-year motor warranty, service in 22 Tamil Nadu districts and Kerala.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/retest_1.json#genre:best_of_roundup",
+    "note": "ROUND 2: P2 S2 Sp2 V2 C1. All six picks use the supplied tester notes and every comparison sum checks (Rs 191, 100 W, 4 dB, Rs 2,691, 16 dB, Rs 460, Rs 309, Rs 700); disclosure before links, quick picks by use case, method with its limits (phone meter, no long-term run), honest cons and an alternative per pick, comparison table, an Indian buying guide (batter result over wattage, rated vs peak watts, service reach, jars), FAQ and update log; 1,970 words. Warranty gaps are [verify] where the notes are silent, which is right. Nits (writer): pick sections run about 140-170 words (card 150-350); no EMI/exchange or voltage note from the card's Indian pitfalls. | round 1: weak 7",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:blog_post",
+   "kind": "genre",
+   "name": "Blog post (general / SEO blog article)",
+   "status": "current",
+   "summary": "A standalone article on a brand or creator site that answers one reader question well enough to earn search, AI-answer or social traffic. In 2026 a good post answers in the first paragraph, structures each section around a sub-question, and carries something AI rewrites cannot: first-hand data, real examples, an expert's view.",
+   "use_for": [
+    "SEO articles for SaaS, D2C, local businesses and professional firms",
+    "thought-leadership and opinion posts on a company blog",
+    "how-to, listicle, guide and comparison posts (see the specific format cards)",
+    "posts written to be cited by AI search answers"
+   ],
+   "avoid": [
+    "Throat-clearing intros ('In today's fast-paced world...', 'In this article we will...'): answer the question in the first two or three sentences.",
+    "Rewriting the top 10 search results: commodity content is what AI Overviews and scaled-content enforcement hurt. Add something only this business knows: a client example, own numbers, a photo, a practitioner quote.",
+    "Keyword-stuffed headings: write each H2 as the question or claim the section answers, with the keyword where natural.",
+    "Using this umbrella card when the format is clear: use genre:how_to_article, genre:listicle, genre:ultimate_guide or genre:comparison_article."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "freelance writing job types and typical Upwork rate bands (blog/web content $15-$35/hr; script writer $30-$56/hr); script projects include AI-generated or animated videos; ghostwriting/business-writing project lists"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "supply signal by article type: Review 679 gigs, Affiliate marketing 323, Listicle 1243, Long-form 3494 (2026-10-04)"
+    },
+    {
+     "url": "https://www.the-efa.org/rates/",
+     "title": "EFA 2026 Rate Chart (member survey Nov 2025-Jan 2026)",
+     "supports": "Ghostwriting > Blog posts: 25-40 cents per word, $75-$100 per hour"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/content-writer-salary",
+     "title": "AmbitionBox: Content Writer salary (updated 2026-10-03)",
+     "supports": "'The average salary for a Content Writer is ₹4.1 Lakhs per year' (28.8k salaries)"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "title": "Google Search Central: spam policies (fetched 2026-10-04)",
+     "supports": "link spam includes 'Advertorials or native advertising where payment is received for articles that include links that pass ranking credit'; allowed when links carry rel=\"nofollow\" or rel=\"sponsored\"; scaled content abuse"
+    }
+   ],
+   "related": [
+    "genre:how_to_article",
+    "genre:listicle",
+    "genre:informational_article",
+    "genre:pillar_page",
+    "genre:content_refresh",
+    "trend:geo_ai_search",
+    "trend:ai_overviews_zero_click",
+    "trend:non_commodity_content",
+    "edit:seo_on_page"
+   ],
+   "buyers": [
+    "SaaS and D2C content teams",
+    "SEO and content agencies",
+    "local businesses and professional firms",
+    "creators and coaches"
+   ],
+   "value": "high",
+   "value_why": "Upwork lists blog/web content as its own freelance job type ($15-$35/hr band, 2026-01-21) and Fiverr's Articles & Blog Posts has thousands of gigs per article type; but it is the most AI-commoditised tier (EFA 2026 blog ghostwriting 25-40 cents/word, about half the business/marketing rate; AmbitionBox content writer average Rs 4.1 lakh), so pay follows original data and expertise.",
+   "goal": "Get the answer they searched for and take one next step (read the next post, subscribe, enquire).",
+   "structure": [
+    {
+     "part": "Title + meta",
+     "does": "Main keyword plus the promise; meta description summarises the answer.",
+     "length": "title 6-14 words; meta 1-2 sentences"
+    },
+    {
+     "part": "Intro",
+     "does": "Answers the core question or states the takeaway, then says why this source is worth trusting.",
+     "length": "50-120 words"
+    },
+    {
+     "part": "Body sections",
+     "does": "One H2 per sub-question, each opening with a direct answer, then explanation, example and specifics.",
+     "length": "150-350 words each"
+    },
+    {
+     "part": "First-hand element",
+     "does": "Own data, a client example, a photo or screenshot, or a named expert quote.",
+     "length": "at least one, placed where it proves a point"
+    },
+    {
+     "part": "Summary",
+     "does": "Key takeaways or a short checklist for skimmers.",
+     "length": "3-6 bullets or 50-100 words"
+    },
+    {
+     "part": "CTA + internal links",
+     "does": "One next step and 2-4 descriptive internal links.",
+     "length": "1-3 sentences"
+    }
+   ],
+   "length": {
+    "min": 700,
+    "max": 2200,
+    "unit": "words",
+    "note": "Search intent drives it: a quick-answer query needs 700-1,000 focused words; a comparison or guide runs longer. Length that does not add answers hurts."
+   },
+   "frameworks": [
+    "fw:inverted_pyramid",
+    "fw:bluf",
+    "fw:topic_cluster",
+    "fw:pas"
+   ],
+   "techniques": [
+    "tech:answer_first_paragraph",
+    "tech:search_intent_matching",
+    "tech:descriptive_subheads",
+    "tech:eeat_first_hand_experience",
+    "tech:anchor_text",
+    "tech:keyword_placement"
+   ],
+   "hooks": [
+    "hook:how_to",
+    "hook:question",
+    "hook:number_list"
+   ],
+   "platforms": [
+    "plat:google_search_result"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:authoritative"
+   ],
+   "compliance": [
+    "comp:google_search_spam_policies",
+    "comp:google_ai_content_guidance"
+   ],
+   "checklist": [
+    "Does the title contain the main keyword and a clear promise?",
+    "Do the first 100 words answer the core question?",
+    "Is each H2 a question or claim that its section answers?",
+    "Is there at least one first-hand element (own data, client example, photo, expert quote)?",
+    "Are facts and numbers sourced?",
+    "Are there 2-4 internal links with descriptive anchor text?",
+    "Is there exactly one primary CTA?",
+    "Are a meta title and description supplied?",
+    "Is it free of throat-clearing intros and 'In conclusion' endings?"
+   ],
+   "pitfalls": [
+    "Writing for the keyword tool instead of the reader: check what the searcher actually wants (definition, steps, comparison) before outlining.",
+    "No author or reviewer: add a byline with relevant credentials, especially for money, health and legal topics.",
+    "Publishing and forgetting: plan a refresh when facts, prices or rules change (genre:content_refresh).",
+    "English-only for Hindi-searching audiences: if the client's customers search in Hindi or Hinglish, propose a Hindi version."
+   ],
+   "lint": {
+    "min_words": 500,
+    "max_words": 3000,
+    "max_sentence_words": 30,
+    "ban": [
+     {
+      "label": "throat-clearing intro or outro",
+      "regex": "(?i)in this (article|blog|post),? (we will|we'?ll|you will)|without further ado|in conclusion"
+     }
+    ]
+   },
+   "exemplar_brief": "Blog post for a Kochi home-renovation company: 'Monsoon-proofing a Kerala home: 7 checks to do before June'; audience: homeowners aged 35-60 in Kerala; first-hand notes supplied from the site crew (the three leak points they fix most: terrace parapet joints, bathroom slab, window sills); English; 1,000-1,400 words with meta title and description; goal: book a free site inspection.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:blog_post",
+    "note": "P2 S2 Sp2 V2 C1. Answers the query in the first paragraph, trust line from the site crew, seven question-H2s each opening with a direct check, the three crew-supplied leak points carry real mechanism (stain appears away from the crack, re-grouting buys weeks), ponding test, RCCB test button, closing checklist, three descriptive internal links, one inspection CTA, meta pair within limits. 'One of the three places our crew fixes most' repeats three times; monsoon-onset date and other claims are unsourced; photo and supervisor quote are placeholders.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:book_blurb",
+   "kind": "genre",
+   "name": "Book blurb / back-cover copy",
+   "status": "current",
+   "summary": "The few paragraphs on the back cover, jacket flap or retailer page that make a browser open the book. Fiction blurbs set up protagonist, want, obstacle and stakes and stop before the ending; nonfiction blurbs name the reader's problem, promise specific takeaways and prove the author can deliver.",
+   "use_for": [
+    "back-cover and jacket-flap copy",
+    "retailer descriptions (Amazon, Flipkart) adapted from the blurb",
+    "series blurbs and box-set copy",
+    "publisher catalogue and festival listings"
+   ],
+   "avoid": [
+    "Plot summary of the whole book: stop at the end of act one, on the question the book answers.",
+    "Self-praise ('a gripping page-turner', 'unputdownable'): let real, permissioned endorsements say that, or show it through stakes.",
+    "Character lists and world-building lore: one protagonist, one antagonist or obstacle, one setting detail.",
+    "Fake or unpermissioned endorsement quotes: they mislead buyers; use only real quotes the endorser approved."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://reedsy.com/",
+     "title": "Reedsy marketplace",
+     "supports": "author-services marketplace covering editing, design, marketing (incl. blurb) and ghostwriting"
+    }
+   ],
+   "related": [
+    "genre:kdp_book_description",
+    "genre:author_bio",
+    "genre:synopsis",
+    "genre:query_letter"
+   ],
+   "buyers": [
+    "self-published authors (KDP and Indian self-publishing platforms)",
+    "traditional publishers' editorial and marketing teams",
+    "ghostwriting clients",
+    "translators and literary agents"
+   ],
+   "value": "medium",
+   "value_why": "Reedsy lists blurb writing among its author marketing services; every published book needs one, and self-publishing keeps demand steady.",
+   "goal": "Open the sample or the first page, then buy.",
+   "structure": [
+    {
+     "part": "Tagline",
+     "does": "One line that states the hook or central question.",
+     "length": "6-15 words"
+    },
+    {
+     "part": "Fiction: protagonist + world",
+     "does": "Who she is and where, with one specific detail.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Fiction: inciting incident + want",
+     "does": "What happens and what the protagonist now wants.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Fiction: obstacle + stakes",
+     "does": "What stands in the way and what she loses if she fails.",
+     "length": "1-3 sentences"
+    },
+    {
+     "part": "Fiction: closing line",
+     "does": "A tension line or question; never the ending.",
+     "length": "1 sentence"
+    },
+    {
+     "part": "Nonfiction: problem + promise",
+     "does": "The reader's problem in their words, then what the book will help them do.",
+     "length": "2-3 sentences"
+    },
+    {
+     "part": "Nonfiction: what's inside",
+     "does": "3-5 specific takeaways.",
+     "length": "3-5 bullets"
+    },
+    {
+     "part": "Credibility",
+     "does": "Author credential (nonfiction) or real, permissioned endorsement (either).",
+     "length": "1-2 sentences"
+    }
+   ],
+   "length": {
+    "min": 90,
+    "max": 250,
+    "unit": "words",
+    "note": "Cover space and genre drive it: thrillers and romance run short and punchy, literary fiction and nonfiction a little longer. Retailer pages can carry a longer version."
+   },
+   "frameworks": [
+    "fw:abt",
+    "fw:pas",
+    "fw:problem_promise_proof_proposal"
+   ],
+   "techniques": [
+    "tech:conflict_and_stakes",
+    "tech:character_with_a_want",
+    "tech:open_loop",
+    "tech:specificity",
+    "tech:word_budget"
+   ],
+   "hooks": [
+    "hook:curiosity_gap",
+    "hook:audience_callout",
+    "hook:bold_promise"
+   ],
+   "platforms": [
+    "plat:amazon_kdp_book"
+   ],
+   "tones": [
+    "tone:storyteller_narrative"
+   ],
+   "compliance": [
+    "comp:ccpa_misleading_ads_2022",
+    "comp:ftc_endorsement_guides"
+   ],
+   "checklist": [
+    "Fiction: is the protagonist named in the first two sentences?",
+    "Fiction: are the want, the obstacle and concrete stakes all stated?",
+    "Fiction: is the ending withheld?",
+    "Does the vocabulary signal the genre (crime, romance, fantasy, self-help)?",
+    "Nonfiction: is the reader's problem in the first line and are 3-5 specific takeaways named?",
+    "Is every endorsement real and permissioned?",
+    "Does it end on tension or a clear promise?",
+    "Does it fit the cover's word budget?"
+   ],
+   "pitfalls": [
+    "Opening with the setting's history: start with the person and the problem.",
+    "Vague stakes ('everything she holds dear'): name the thing she loses (the boat, her brother, her licence).",
+    "Translated fiction that reads translated: write the English blurb fresh for the English reader, keeping cultural specifics.",
+    "Comp titles on the cover without the publisher's agreement: keep comps for queries and retailer copy if the client prefers."
+   ],
+   "lint": {
+    "min_words": 60,
+    "max_words": 300,
+    "max_sentence_words": 35,
+    "ban": [
+     {
+      "label": "self-praise clichés (leave praise to real endorsers)",
+      "regex": "(?i)roller ?coaster|page[- ]turner|won'?t be able to put (it|this) down|unputdownable|must[- ]read"
+     }
+    ]
+   },
+   "exemplar_brief": "Back-cover blurb plus one-line tagline for 'The Far Bank', an English translation (by Arvind Tripathi, demo name) of a Hindi crime novel by Meera Dwivedi (demo name), set on Varanasi's ghats: Gauri, a woman boat-rower, witnesses a drowning that the police call suicide and must decide whether to testify against the temple trust that controls her family's mooring licence. Name Gauri in the first two sentences; keep the ending secret. Audience: Indian English readers of literary crime; English; 150-200 words; goal: the browser opens the sample.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_01.json#genre:book_blurb",
+    "note": "P2 S2 Sp2 V2 C1. Tagline sets the dilemma in 13 words; opens on the woman at the oars, inciting incident in two sentences ('By noon the police have a word for it: suicide... It was not that.'), concrete stakes both ways (lose the river her family earns from / a death stays recorded as a choice), ending withheld, literary-crime register, 168 words. Mooring/licence is said three times. CARD FIX: exemplar_brief -> give the protagonist's name, author and translator; the checklist requires naming the protagonist in the first two sentences and the brief does not supply one. | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now supplies the protagonist's name (Gauri), author and translator; re-judge pending.",
+    "judge": "vj_genre_01",
+    "date": "2026-10-06"
+   }
+  }
+ ]
+}

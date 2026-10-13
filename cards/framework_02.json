@@ -1,0 +1,2412 @@
+{
+ "cards": [
+  {
+   "id": "fw:nested_loops",
+   "kind": "framework",
+   "name": "Nested loops (story within a story)",
+   "status": "current",
+   "summary": "Open two or three stories inside each other, deliver the core message in the innermost one, then close the stories in reverse order. Done well, every open loop keeps the audience listening and every close lands as an echo of the core.",
+   "use_for": [
+    "keynotes and TED-style talks that need to hold a room for 10-20 minutes",
+    "long YouTube videos and podcast monologues",
+    "founder-story posts and newsletter essays built on personal anecdotes",
+    "webinar openings that carry a lesson before the teaching starts"
+   ],
+   "avoid": [
+    "Stacking loops until the listener loses track: if you cannot name each open loop in one line, cut one.",
+    "A loop left open: the audience feels cheated; list the loops while drafting and tick off each close before you ship.",
+    "Outer stories that have nothing to do with the core: each one must show the core lesson from another angle, or it is decoration.",
+    "Using it on a web article for skimmers: they jump to the end and miss the setup; put the answer first (fw:bluf, tech:answer_first_paragraph)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Story_within_a_story",
+     "title": "Story within a story - Wikipedia",
+     "supports": "Embedded narrative; multiple layers of stories within stories are called nested stories"
+    }
+   ],
+   "related": [
+    "tech:open_loop",
+    "tech:callback",
+    "fw:three_act_structure",
+    "genre:keynote_speech",
+    "genre:ted_style_talk",
+    "genre:youtube_video_script"
+   ],
+   "steps": [
+    {
+     "step": "Open the outer story",
+     "does": "Start story A and stop at its moment of tension, without resolving it."
+    },
+    {
+     "step": "Open the middle story",
+     "does": "Move into story B (often how you learned the lesson) and stop it at its own tension point."
+    },
+    {
+     "step": "Deliver the core",
+     "does": "The innermost story or the main content: the lesson, the data, the offer. Everything else exists to protect this part."
+    },
+    {
+     "step": "Close inner to outer",
+     "does": "Resolve B, then A, in reverse order; each close should repeat or reframe the core so it lands twice."
+    }
+   ],
+   "best_for": [
+    "spoken pieces of 10 minutes or more",
+    "personal and founder stories that carry one lesson",
+    "audiences who came to listen, not to skim"
+   ],
+   "not_for": [
+    "ads and reels under a minute (use fw:abt or a single tech:open_loop)",
+    "news and reference writing (use fw:inverted_pyramid)",
+    "executive readers who want the answer first (use fw:bluf)"
+   ],
+   "mini_example": "[Open loop 1] Diwali 2021, 2 am: our Bhosari warehouse is on fire and 3,000 orders are inside. [Open loop 2] Standing outside, I remembered my father's kirana in Satara and the year the river flooded it. [Open loop 3, the core] He told me later: 'Customers forgive a shut shop. They never forgive silence.' [Close 3] So the lesson tonight is simple: tell customers the bad news before they find it. [Close 2] Dad phoned every regular himself and reopened in nine days, his udhaar book full. [Close 1] By 6 am we had emailed all 3,000 buyers with new dates. Cancellations: 41. We still use that email.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:nested_loops",
+    "note": "Outer (founder's late notice) and middle (article-assistant ASMT-10) loops open at tension, core lands ('lost on the calendar, not the law'), closes run inner to outer and each echoes the core. Concrete (ASMT-10, TCS, credit notes, C-Scheme), natural Hinglish. Only gap: no next step for the D2C reader.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:nut_graf_feature",
+   "kind": "framework",
+   "name": "Feature structure with nut graf",
+   "status": "current",
+   "summary": "Open on a scene or a person, then give the nut graf: one paragraph straight after the lede that says what the story is about, why it matters now and what is at stake. The body delivers the evidence in sections and a kicker ends on an image or quote, not a summary.",
+   "use_for": [
+    "magazine and newspaper features",
+    "long-form explainers and profiles",
+    "brand journalism and newsletter lead stories",
+    "case studies that open on a customer scene"
+   ],
+   "avoid": [
+    "A lede that runs on so long the reader still does not know what the story is: the nut graf comes right after the lede, not halfway down.",
+    "A nut graf that only restates the scene: it must say why now and why it matters beyond this one person.",
+    "A colourful anecdote that does not show the problem the story is about: pick the scene that is the story in miniature.",
+    "A kicker that summarises the piece: end on a quote, an image or what happens next.",
+    "Composite or invented people and quotes presented as real: in journalism every name, quote and number is real and checked (edit:fact_check)."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nut_graph",
+     "title": "Nut graph - Wikipedia",
+     "supports": "Paragraph after the lede that explains the story's context in a nutshell"
+    }
+   ],
+   "related": [
+    "tech:nut_graf",
+    "tech:anecdote_lead",
+    "fw:inverted_pyramid",
+    "genre:feature_article",
+    "genre:profile_piece",
+    "genre:news_explainer"
+   ],
+   "steps": [
+    {
+     "step": "Lede",
+     "does": "A scene, person or anecdote that puts the reader inside the story; one to three short paragraphs."
+    },
+    {
+     "step": "Nut graf",
+     "does": "One paragraph: what this story is about, why it matters now, what is at stake and for whom."
+    },
+    {
+     "step": "Body",
+     "does": "Evidence in sections (data, named sources, the other side, further scenes); each section answers a question the nut graf raised."
+    },
+    {
+     "step": "Kicker",
+     "does": "An ending that lands: back to the opening person, a telling quote, or what happens next."
+    }
+   ],
+   "best_for": [
+    "stories where a human face makes a trend or policy real",
+    "pieces of 800 words and up that readers choose to read"
+   ],
+   "not_for": [
+    "breaking news (use fw:inverted_pyramid)",
+    "search answer pages where the answer must come first (use tech:answer_first_paragraph)",
+    "busy decision-makers (use fw:bluf)"
+   ],
+   "mini_example": "[Lede] At 5:40 am Sunita Devi is third in line at the hand pump outside her village near Gaya, a steel bucket on each hip. The tap fixed to her wall two years ago is dry again. [Nut graf] Her lane got a piped connection on paper; the water runs for under an hour a day. This story follows the gap between a connection and water in the bucket. [Body] Sections: what the records count, what the pump operator says, how families plan around dry hours, what the district office promises. [Kicker] At 6:15 the pump coughs. Sunita laughs: 'Aaj line, kal bhi line.'",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:nut_graf_feature",
+    "note": "Strong scene lede, a nut graf that says what, why now and the stake, kicker returns to the kitchen with a callback and what happens next. Body is mostly placeholder slots (fine by design) but 'rival kitchens say' is an unsourced attribution a feature desk would cut or source.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:oath",
+   "kind": "framework",
+   "name": "OATH (Oblivious, Apathetic, Thinking, Hurting)",
+   "status": "niche",
+   "summary": "A diagnosis, not a writing order: decide whether the target reader is Oblivious to the problem, Apathetic about it, Thinking about options or Hurting and ready to buy, then choose the opening, length and amount of proof to match. Copywriting School describes it as a simpler cut of Schwartz's awareness levels.",
+   "use_for": [
+    "choosing the lead and length of a page, ad or email before drafting",
+    "splitting ad copy by audience temperature (cold, warm, retargeting, search)",
+    "explaining to a client why the cold ad and the retargeting ad must differ"
+   ],
+   "avoid": [
+    "A Hurting-style hard sell to Oblivious readers: they do not know they need it; open with the problem as a story or surprising fact.",
+    "Mixing all four states in one piece: pick the dominant state for that channel and write to it.",
+    "Lecturing Apathetic readers with general facts: show the cost in their own numbers and their own week.",
+    "Manufacturing a Hurting state with invented consequences: misleading claims fall under comp:ccpa_misleading_ads_2022."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://michelfortin.com/oath-formula/",
+     "title": "The OATH Formula of Buyer Awareness - Michel Fortin",
+     "supports": "Fortin's own page on the OATH formula"
+    },
+    {
+     "url": "https://copywriting.school/formulas/oath",
+     "title": "OATH Framework - Copywriting School",
+     "supports": "Four audience states and how to write to each; calls it a simplification of Schwartz's levels"
+    }
+   ],
+   "related": [
+    "fw:schwartz_awareness_levels",
+    "tech:awareness_level_matching",
+    "fw:quest",
+    "fw:market_sophistication",
+    "genre:landing_page",
+    "genre:social_ad_copy"
+   ],
+   "steps": [
+    {
+     "step": "Oblivious",
+     "does": "Reader does not know the problem exists. Make them notice it with a story or a fact about their own situation; the product comes late."
+    },
+    {
+     "step": "Apathetic",
+     "does": "Knows the problem but does not care. Make it relevant: what ignoring it costs them now, in their terms."
+    },
+    {
+     "step": "Thinking",
+     "does": "Weighing options. Compare, prove, differentiate and answer objections."
+    },
+    {
+     "step": "Hurting",
+     "does": "Needs a fix now. Get out of the way: offer, price, speed, one call to action, early in the copy."
+    }
+   ],
+   "best_for": [
+    "pre-writing diagnosis for any sales piece",
+    "media plans where each audience gets its own copy"
+   ],
+   "not_for": [
+    "use as a paragraph order (it chooses the approach, not the sequence)",
+    "fine-grained work on what the reader knows about your product (use fw:schwartz_awareness_levels)"
+   ],
+   "origin": {
+    "who": "Michel Fortin",
+    "url": "https://michelfortin.com/oath-formula/"
+   },
+   "mini_example": "One Jaipur CA firm's GST notice desk, four openings. [Oblivious] Your GST credit depends on your suppliers filing on time. When they don't, the mismatch lands on you. [Apathetic] Ignored notices don't expire. They come back as demands with interest, usually when cash is tight. [Thinking] Full-time accountant, filing app or a notice desk? Here is what each covers and what each misses. [Hurting] Got a GST notice this week? WhatsApp us a photo. Draft reply in 48 hours, fixed fee Rs 4,999.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:oath",
+    "note": "Written as four alternative openings, as the mini_example shows. Each fits its state: Oblivious opens on a cement-delivery story with no product, Apathetic shows the cost in the reader's week, Thinking compares three routes, Hurting is offer plus one action. Natural Hinglish throughout.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:oreo",
+   "kind": "framework",
+   "name": "OREO (Opinion, Reason, Explanation/Example, Opinion)",
+   "status": "niche",
+   "summary": "A classroom persuasive structure: state an opinion, give the reason, back it with an explanation or example, then restate the opinion. It is near-identical to fw:prep; use it for short takes, and sharpen the closing opinion instead of repeating the first line.",
+   "use_for": [
+    "short opinion answers (Quora, comments, LinkedIn replies)",
+    "school and college persuasive paragraphs and debate answers",
+    "teaching a junior writer to structure a take"
+   ],
+   "avoid": [
+    "One reason carrying a contested claim: a sceptical reader needs grounds and a rebuttal; use fw:toulmin_model.",
+    "Restating the opening opinion word for word: the last line should add the implication or the ask.",
+    "An opinion hedged into nothing ('it depends'): commit in the first sentence, qualify in the explanation.",
+    "A hypothetical example when a real one exists: a named case or number persuades; 'imagine if' does not."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.twinkl.com/resource/au-t2-e-41248-oreo-persuasive-writing-organiser-display-poster",
+     "title": "OREO Persuasive Writing Organiser - Twinkl",
+     "supports": "Classroom organiser for the OREO structure"
+    }
+   ],
+   "related": [
+    "fw:prep",
+    "fw:toulmin_model",
+    "genre:quora_answer",
+    "genre:opinion_column",
+    "genre:comment_reply"
+   ],
+   "steps": [
+    {
+     "step": "Opinion",
+     "does": "Your position in one sentence."
+    },
+    {
+     "step": "Reason",
+     "does": "The main reason, stated specifically."
+    },
+    {
+     "step": "Explanation / Example",
+     "does": "Evidence for the reason: a fact, a case, a short story."
+    },
+    {
+     "step": "Opinion",
+     "does": "Restate the position, sharpened, with the implication or next step."
+    }
+   ],
+   "best_for": [
+    "one-paragraph to 200-word opinion pieces",
+    "education content and student writing"
+   ],
+   "not_for": [
+    "op-eds that must answer the other side (use fw:rogerian_argument or fw:classical_arrangement)",
+    "achievement stories (use fw:star)"
+   ],
+   "mini_example": "[Opinion] Small cafes should serve filtered water free. [Reason] It costs very little per glass, and it decides whether a guest orders a second chai or leaves. [Example] When a cafe we advise on MI Road, Jaipur, put a steel jug on every table, guests stayed longer and second orders went up within a month. [Opinion] Free water is not charity. It is the cheapest upsell on your menu, so put the jug out tomorrow.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:oreo",
+    "note": "Committed opinion with a real qualifier, a reason that names the upfront-cost barrier and the vendor/discom/net-meter mechanism, and a sharpened close with a two-step action. Example is all placeholders and asserts paperwork detail for that placeholder household; the Reason has a 42-word sentence.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:pas",
+   "kind": "framework",
+   "name": "PAS (Problem, Agitate, Solution)",
+   "status": "current",
+   "summary": "Name a specific problem the reader already feels, make its cost vivid (Agitate), then present the product as the fix with a mechanism, proof and one action. Good PAS agitates with consequences the reader would confirm, never with invented fear.",
+   "use_for": [
+    "cold emails and DMs",
+    "social and search ads",
+    "landing-page hero and problem sections",
+    "short sales emails and reel captions"
+   ],
+   "avoid": [
+    "Agitating with invented or exaggerated harm (health scares, 'you will lose everything'): misleading claims breach comp:ccpa_misleading_ads_2022 and comp:asci_code; agitate only with consequences the reader would recognise.",
+    "An Agitate section longer than the Solution: the reader feels lectured and leaves before the offer; keep Agitate shorter than Solution.",
+    "A Problem stated as a category ('accounting is hard'): name the moment it bites (the 5th of the month, 40 bills on WhatsApp).",
+    "A Solution with no mechanism or proof: one line on how it works and one proof point, then the CTA."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://copywriting.school/formulas/pas",
+     "title": "PAS Formula - Copywriting School",
+     "supports": "Steps and worked guidance for Problem, Agitate, Solution"
+    },
+    {
+     "url": "https://samueljwoods.com/100-persuasive-copywriting-formulas/",
+     "title": "100+ Persuasive Copywriting Formulas That Convert (Samuel Woods)",
+     "supports": "Round-up listing the formula with its expansion (secondary source)"
+    }
+   ],
+   "related": [
+    "fw:bab",
+    "fw:pastor",
+    "fw:aida",
+    "tech:pain_agitation",
+    "genre:cold_email",
+    "genre:social_ad_copy"
+   ],
+   "steps": [
+    {
+     "step": "Problem",
+     "does": "One specific problem in the reader's words: the situation and the moment it hurts."
+    },
+    {
+     "step": "Agitate",
+     "does": "What it costs and what happens if it stays: money, time, stress, knock-on effects. Real consequences only."
+    },
+    {
+     "step": "Solution",
+     "does": "The product as the fix: how it works in one line, one proof point, one call to action."
+    }
+   ],
+   "best_for": [
+    "problems the reader already feels",
+    "short and mid-length direct-response copy"
+   ],
+   "not_for": [
+    "aspirational or luxury purchases (use fw:bab or fw:pppp)",
+    "readers unaware of the problem (diagnose with fw:schwartz_awareness_levels first)",
+    "health, loans and exams, where agitation easily becomes fear-selling; explain plainly instead (fw:prep)"
+   ],
+   "mini_example": "[Problem] Har mahine 5 tareekh ko wahi scene: 40 suppliers ke bill WhatsApp pe, aur Tally entry abhi bhi pending. [Agitate] Ek bill miss hua toh return mein mismatch, phir CA ka call, late fee, aur poora Sunday hisaab mein gaya. Dukaan pe dhyaan kab doge? [Solution] KhataSaaf WhatsApp pe aaye bill khud padh ke entry bana deta hai; aap bas check karke approve karo. Indore ke traders ke liye bana hai. 14 din free try karo, link bio mein.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:pas",
+    "note": "Problem is the GD-round moment in the reader's words, Agitate is short and real (viva, HR call, shortlist), Solution gives mechanism, the Day 1 vs Day 30 recording as proof, price and one CTA. Solution carries more mechanism lines than the card's 'one line', but it reads tight. Natural Hinglish.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:pastor",
+   "kind": "framework",
+   "name": "PASTOR (Problem, Amplify, Story, Transformation, Offer, Response)",
+   "status": "current",
+   "summary": "Ray Edwards' long-form sales structure for taking a cold reader all the way to a purchase in one piece: the problem, its amplified cost, a story of someone who solved it, the transformation (with testimony), the offer and a call to respond. Letter expansions vary between write-ups (Person/Problem, Story/Solution, Testimony/Transformation); the order of jobs is what matters.",
+   "use_for": [
+    "long-form sales pages",
+    "VSL and webinar pitch scripts",
+    "launch emails that carry the full argument",
+    "course and service sales letters"
+   ],
+   "avoid": [
+    "Fake or composite testimonials in Transformation: use real customers with written consent; endorsements must be genuine (comp:asci_code, comp:ftc_endorsement_guides).",
+    "A founder story that never comes back to the reader: the Story must mirror the reader's Problem step for step.",
+    "Amplify that becomes fear-selling (debt, health, exam failure): state real costs; coaching and course claims are covered by comp:ccpa_coaching_ads_2024.",
+    "An Offer with vague contents: list every deliverable, the price, and the guarantee terms in plain words."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://copywriting.school/formulas/pastor",
+     "title": "PASTOR Formula - Copywriting School",
+     "supports": "Says PASTOR was developed by copywriter Ray Edwards for converting a cold reader in one long-form piece"
+    },
+    {
+     "url": "https://www.shortform.com/blog/ray-edwards-p-a-s-t-o-r-framework/",
+     "title": "Ray Edwards's P.A.S.T.O.R. Framework - Shortform",
+     "supports": "Summary of the framework from Ray Edwards' book How to Write Copy That Sells"
+    }
+   ],
+   "related": [
+    "fw:pas",
+    "fw:star_story_solution",
+    "tech:risk_reversal",
+    "genre:sales_page",
+    "genre:vsl_script",
+    "genre:webinar_pitch_script"
+   ],
+   "steps": [
+    {
+     "step": "Problem",
+     "does": "Identify the person and the problem in their own language."
+    },
+    {
+     "step": "Amplify",
+     "does": "Show the cost of leaving it unsolved: what it does to money, time, relationships, self-respect."
+    },
+    {
+     "step": "Story",
+     "does": "Tell how someone like the reader (or the author) found the solution."
+    },
+    {
+     "step": "Transformation",
+     "does": "The concrete change after, backed by real testimony and results."
+    },
+    {
+     "step": "Offer",
+     "does": "Exactly what they get, the price, bonuses and guarantee."
+    },
+    {
+     "step": "Response",
+     "does": "Ask for the action and say how to take it, step by step."
+    }
+   ],
+   "best_for": [
+    "cold traffic that needs the whole journey in one piece",
+    "info products, courses and high-touch services"
+   ],
+   "not_for": [
+    "short ads (use fw:pas)",
+    "warm, most-aware buyers who just need the deal (lead with the offer; see fw:schwartz_awareness_levels)",
+    "B2B procurement documents (use fw:problem_promise_proof_proposal)"
+   ],
+   "origin": {
+    "who": "Ray Edwards",
+    "when": "set out in his book How to Write Copy That Sells (per Copywriting School and Shortform)",
+    "url": "https://copywriting.school/formulas/pastor"
+   },
+   "mini_example": "[Problem] You bake 30 cakes a month in Lucknow and still can't say what you earn per cake. [Amplify] So you price by guess, undercharge for fondant, and reach Diwali tired and no richer. [Story] Rukhsana was there last year, until she costed one cake ingredient by ingredient and found she lost Rs 140 on every custom order. [Transformation] She repriced, lost two customers, and earned more on fewer orders. [Offer] The Cake Costing Kit: a pricing sheet, three video lessons and one review call. Rs 1,499, full refund within 7 days. [Response] Tap 'Get the kit' and price this weekend's orders properly.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:pastor",
+    "note": "Every job done: problem in the finance lead's terms (UTR by UTR), amplify with real costs (suspense, collections chasing paid customers, analyst attrition), founder story mirrors the problem, transformation with a consent placeholder for testimony, a complete offer with price and pilot guarantee, numbered response steps.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:pixar_story_spine",
+   "kind": "framework",
+   "name": "Story spine (Pixar story spine)",
+   "status": "current",
+   "summary": "Eight sentence starters that force cause and effect: Once upon a time, Every day, But one day, Because of that (three times), Until finally, And ever since then. Created by improviser Kenn Adams and often called the 'Pixar' story spine; use it to plan a story fast and to test that each event causes the next.",
+   "use_for": [
+    "brand and founder stories",
+    "explainer and animated video scripts",
+    "children's stories",
+    "checking a plot or case study for cause and effect"
+   ],
+   "avoid": [
+    "'And then' instead of 'because of that': a list of events is not a story; each line must be caused by the one before (tech:but_therefore).",
+    "Leaving the starters in the final copy: the spine is scaffolding; rewrite them out unless the format is deliberately storybook.",
+    "A 'one day' that is not a real change: the inciting event must break the routine set up in 'every day'.",
+    "Turning 'ever since then' into a sales line: show the new normal; the CTA comes after the story."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.npr.org/2026/06/23/nx-s1-5750619/meet-the-creator-of-the-story-spine-an-8-sentence-tool-to-create-and-analyze-stories",
+     "title": "Meet the creator of the Story Spine - NPR (2026-06-23)",
+     "supports": "Profile of Kenn Adams, creator of the 8-sentence Story Spine"
+    },
+    {
+     "url": "https://improvencyclopedia.org/games/Story_Spine.html",
+     "title": "Story Spine - Improv Encyclopedia",
+     "supports": "Sentence starters; says the original story spine was created by Kenn Adams"
+    }
+   ],
+   "related": [
+    "fw:three_act_structure",
+    "fw:abt",
+    "fw:dan_harmon_story_circle",
+    "tech:but_therefore",
+    "genre:brand_story",
+    "genre:explainer_video_script"
+   ],
+   "steps": [
+    {
+     "step": "Once upon a time",
+     "does": "Who, where: the main character and their world."
+    },
+    {
+     "step": "Every day",
+     "does": "The routine, the normal that is about to break."
+    },
+    {
+     "step": "But one day",
+     "does": "The event that changes things."
+    },
+    {
+     "step": "Because of that (x3)",
+     "does": "Three linked consequences, each caused by the one before, raising the stakes."
+    },
+    {
+     "step": "Until finally",
+     "does": "The climax: the decisive moment the chain was building to."
+    },
+    {
+     "step": "And ever since then",
+     "does": "The new normal that shows what changed."
+    }
+   ],
+   "best_for": [
+    "60-second to 5-minute stories",
+    "first drafts when the writer has facts but no shape"
+   ],
+   "not_for": [
+    "arguments and decision documents (use fw:scqa)",
+    "long fiction with subplots (use fw:save_the_cat)"
+   ],
+   "origin": {
+    "who": "Kenn Adams, improviser (per NPR and Improv Encyclopedia)",
+    "url": "https://www.npr.org/2026/06/23/nx-s1-5750619/meet-the-creator-of-the-story-spine-an-8-sentence-tool-to-create-and-analyze-stories"
+   },
+   "mini_example": "[Once upon a time] there was a cobbler in Kolhapur named Vithal. [Every day] he stitched chappals by hand and sold them to tourists who haggled. [But one day] a customer in Bengaluru messaged that her pair had lasted nine years. [Because of that] Vithal's daughter posted the message on Instagram. [Because of that] orders came from cities he had never seen. [Because of that] he trained six young cobblers to keep up. [Until finally] the workshop shipped its 10,000th pair. [And ever since then] every box carries the maker's name, stitched inside the strap.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:pixar_story_spine",
+    "note": "Each 'because of that' is caused by the line before (complaint, notebook, reformulation, humid-city trials), the climax and new normal land, and the closing callback to the Mumbai customer is good. Sentences run long (avg 24.5 words, one of 40), which flattens the rhythm of a spine that should move fast.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:pppp",
+   "kind": "framework",
+   "name": "4 Ps / PPPP (Picture, Promise, Prove, Push)",
+   "status": "current",
+   "summary": "Paint the outcome the reader wants (Picture), state what the product will do (Promise), back it with evidence (Prove), then ask for action with a reason to act now (Push). Two orderings circulate: Picture-first for desire-led offers, Promise-first (Promise, Picture, Proof, Push) when the reader is already looking; say which one the brief wants.",
+   "use_for": [
+    "direct mail and promotional email",
+    "travel, real estate, lifestyle and event copy",
+    "landing pages for a desirable outcome",
+    "print and social ads"
+   ],
+   "avoid": [
+    "A Picture the product cannot deliver: the Prove step gets checked against it; paint only what the proof supports.",
+    "Proof as a vague crowd ('thousands of happy customers'): use the count, the rating, a named review, a guarantee.",
+    "A Push built on fake scarcity or countdowns: dark patterns are covered by comp:ccpa_dark_patterns_2023; push with a real reason (dates, stock, price change).",
+    "Mixing the two orderings in one team: name the variant in the brief so writer and reviewer judge the same thing."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://copywriting.school/formulas/pppp-picture-promise-prove-push",
+     "title": "PPPP Formula - Copywriting School",
+     "supports": "Four-stage formula attributed to direct-mail pioneer Henry Hoke Sr."
+    },
+    {
+     "url": "https://copywriting.school/formulas/4ps",
+     "title": "4Ps Formula: Promise, Picture, Proof, Push - Copywriting School",
+     "supports": "The Promise-first ordering of the same four Ps"
+    },
+    {
+     "url": "https://samueljwoods.com/100-persuasive-copywriting-formulas/",
+     "title": "100+ Persuasive Copywriting Formulas That Convert (Samuel Woods)",
+     "supports": "Round-up listing the formula with its expansion (secondary source)"
+    }
+   ],
+   "related": [
+    "fw:aida",
+    "fw:bab",
+    "fw:problem_promise_proof_proposal",
+    "tech:future_pacing",
+    "genre:direct_mail_package",
+    "genre:promotional_email"
+   ],
+   "steps": [
+    {
+     "step": "Picture",
+     "does": "Paint the scene the reader wants, with sensory and concrete detail."
+    },
+    {
+     "step": "Promise",
+     "does": "State specifically what the product or service will do for them."
+    },
+    {
+     "step": "Prove",
+     "does": "Evidence: reviews, numbers, demos, credentials, a guarantee."
+    },
+    {
+     "step": "Push",
+     "does": "One clear action, made easy, with a true reason to do it now."
+    }
+   ],
+   "best_for": [
+    "offers the reader wants rather than offers that fix a pain",
+    "email and mail where there is room for a scene"
+   ],
+   "not_for": [
+    "pain-led offers (use fw:pas)",
+    "sceptical B2B buyers who need the proof first (use fw:problem_promise_proof_proposal)"
+   ],
+   "origin": {
+    "who": "Henry Hoke Sr., direct-mail pioneer (attribution by Copywriting School, a secondary source)",
+    "url": "https://copywriting.school/formulas/pppp-picture-promise-prove-push"
+   },
+   "mini_example": "[Picture] Saturday, 7 am: mist over the Mulshi backwaters, a cup of kadak chai on the verandah, and no laptop in sight. [Promise] Two nights at Dhuke Farmstay, 90 minutes from Pune, with three home-cooked meals a day and nothing on the schedule. [Prove] 214 guest reviews, 4.8 average, and the word that comes up most is 'slept'. [Push] Four monsoon weekends are left this year. Reply 'MIST' and we'll hold your dates for 24 hours, no payment needed.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:pppp",
+    "note": "Smart reframing of a civic story as Rampur Tola's appeal to the next village. Picture is sensory and local (cycle in the slush, milk van, khatiya), Promise is specific (chanda ledger, rate comparison, shramdaan rota), Prove uses photos and ledger placeholders, Push has a true reason (bricks do not set on wet soil) and one small ask.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:prep",
+   "kind": "framework",
+   "name": "PREP (Point, Reason, Example, Point)",
+   "status": "current",
+   "summary": "Answer first (Point), say why (Reason), make it concrete (Example), then restate the point as a next step. It is the fastest way to give a clear spoken or written answer under pressure; the near-twin of fw:oreo.",
+   "use_for": [
+    "impromptu answers in meetings, interviews and panels",
+    "short emails and Slack or WhatsApp replies to a manager or client",
+    "LinkedIn opinion posts",
+    "media quotes and spokesperson answers"
+   ],
+   "avoid": [
+    "Burying the point after background ('So, a little context first...'): the first sentence is the answer.",
+    "A generic example ('many companies do this'): use your number, your client, your last campaign.",
+    "Closing with the same sentence you opened with: end on the action or decision you want.",
+    "Three reasons in an impromptu answer: one strong reason is remembered; save the rest for questions."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://sholakaye.com/prep/",
+     "title": "Improve your impromptu speaking with the PREP framework",
+     "supports": "PREP steps"
+    },
+    {
+     "url": "https://boldspeaker.com/short-and-easy-impromptu-frameworks-the-prep-framework/",
+     "title": "The PREP Framework - Bold Speaker",
+     "supports": "PREP for impromptu speaking"
+    }
+   ],
+   "related": [
+    "fw:oreo",
+    "fw:bluf",
+    "fw:star",
+    "fw:minto_pyramid",
+    "genre:linkedin_post",
+    "genre:internal_memo"
+   ],
+   "steps": [
+    {
+     "step": "Point",
+     "does": "Your answer or position in one sentence."
+    },
+    {
+     "step": "Reason",
+     "does": "The main reason it is right."
+    },
+    {
+     "step": "Example",
+     "does": "A specific case, number or short story that proves the reason."
+    },
+    {
+     "step": "Point",
+     "does": "Restate the point as a decision or next step."
+    }
+   ],
+   "best_for": [
+    "answers under 2 minutes or 150 words",
+    "audiences who want the conclusion before the detail"
+   ],
+   "not_for": [
+    "achievement stories in interviews (use fw:star)",
+    "contested arguments with a hostile audience (use fw:rogerian_argument or fw:toulmin_model)",
+    "long reports (use fw:minto_pyramid)"
+   ],
+   "mini_example": "Question in the review meeting: should the Diwali push move to WhatsApp? [Point] Yes, let's move most of the Diwali budget to WhatsApp. [Reason] Our buyers are repeat customers, and they open WhatsApp; email they skim. [Example] On Raksha Bandhan the WhatsApp broadcast brought 412 orders, against 96 from the same list on email. [Point] So WhatsApp leads for Diwali and email carries order confirmations. I can get the template approved by Friday.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:prep",
+    "note": "Answer in line one, one strong reason (the first reply goes on record), an accurate example (GSTR-1 vs marketplace TCS, month-booking and out-of-state warehouse causes) and a closing point that is a concrete next step. The Example runs about 100 words, long for a format sold as the fast answer.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:problem_promise_proof_proposal",
+   "kind": "framework",
+   "name": "Problem, Promise, Proof, Proposal",
+   "status": "current",
+   "summary": "State the reader's problem, promise a specific fix, prove it works for people like them, then make the offer with price and terms. It is the plain base sequence that the Bencivenga persuasion equation (fw:bencivenga_persuasion_equation) upgrades; it shines where proof decides the sale.",
+   "use_for": [
+    "B2B and services proposals",
+    "cold emails and services pages",
+    "sales deck narratives",
+    "ads where the buyer has been burned before"
+   ],
+   "avoid": [
+    "A Promise bigger than the Proof: the buyer reads them side by side; promise only what the evidence shows.",
+    "Proof about you (awards, years in business) instead of results for clients like them: lead with the comparable case.",
+    "A Proposal that hides price or terms: state fee, scope and the first step; vagueness reads as risk.",
+    "Using it on readers who do not yet feel the problem: agitate first with fw:pas or diagnose with fw:schwartz_awareness_levels."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://samueljwoods.com/100-persuasive-copywriting-formulas/",
+     "title": "100+ Persuasive Copywriting Formulas That Convert (Samuel Woods)",
+     "supports": "Round-up listing the formula with its expansion (secondary source)"
+    },
+    {
+     "url": "https://gameofconversions.com/gary-bencivenga-shoestring-business-ad-the-bencivenga-persuasion-equation/",
+     "title": "The Bencivenga Persuasion Equation - Game of Conversions",
+     "supports": "Presents Problem + Promise + Proof + Proposition as the base of Gary Bencivenga's persuasion equation"
+    }
+   ],
+   "related": [
+    "fw:bencivenga_persuasion_equation",
+    "fw:pppp",
+    "fw:pas",
+    "tech:social_proof",
+    "genre:services_proposal",
+    "genre:cold_email"
+   ],
+   "steps": [
+    {
+     "step": "Problem",
+     "does": "The specific problem, in the buyer's terms and numbers."
+    },
+    {
+     "step": "Promise",
+     "does": "A specific, measurable result you will deliver."
+    },
+    {
+     "step": "Proof",
+     "does": "Evidence for people like them: case results, data, demo, references."
+    },
+    {
+     "step": "Proposal",
+     "does": "The offer: what, price, terms, and one next step."
+    }
+   ],
+   "best_for": [
+    "considered purchases",
+    "sceptical or previously burned buyers"
+   ],
+   "not_for": [
+    "impulse and emotional buys (use fw:bab or fw:pppp)",
+    "audiences unaware of the problem"
+   ],
+   "mini_example": "[Problem] Your marketplace payouts, GST credits and bank statement never match, and someone loses three days a month reconciling them. [Promise] We close your books by the 7th of every month, reconciled to the rupee. [Proof] We do this today for 18 D2C brands between Rs 5 and 50 crore revenue; last quarter none of them received a mismatch notice. [Proposal] Fixed fee Rs 35,000 a month, first month at half price while we clear the backlog. Can we take 15 minutes on Thursday to walk through one of your months?",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:problem_promise_proof_proposal",
+    "note": "Well chosen B2B channel (email to an IT park admin/HR lead). Promise is measurable with a late-box guarantee, Proof offers lab report, a reference client and a tasting, Proposal states price, minimum, terms and a dated next step. Problem has no buyer numbers (even as a placeholder), which the step asks for.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:quest",
+   "kind": "framework",
+   "name": "QUEST (Qualify, Understand, Educate, Stimulate, Transition)",
+   "status": "current",
+   "summary": "Michel Fortin's sales-letter sequence: Qualify the right reader (and turn the wrong one away), show you Understand their situation, Educate them on the cause and the fix, Stimulate desire with benefits and proof, then Transition them from reader to buyer with the offer.",
+   "use_for": [
+    "long sales letters and landing pages",
+    "webinar and VSL pitches",
+    "service pages where filtering out bad-fit leads saves time"
+   ],
+   "avoid": [
+    "A Qualify step that excludes no one ('for anyone who wants to grow'): name who it is for and who should leave.",
+    "Understand written as flattery: prove empathy with the exact situation and the words they use.",
+    "Educate that turns into a free course and never reaches the offer: teach only what makes the product the logical answer.",
+    "A Transition that introduces a new idea: it should only be the offer, the risk reversal and the action."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://michelfortin.com/quest-formula/",
+     "title": "The QUEST Formula Explained, Qualify to Transition - Michel Fortin",
+     "supports": "Fortin's own page on the QUEST formula"
+    },
+    {
+     "url": "https://copywriting.school/formulas/quest",
+     "title": "QUEST Formula - Copywriting School",
+     "supports": "Five stages and credit to Michel Fortin"
+    }
+   ],
+   "related": [
+    "fw:oath",
+    "fw:pastor",
+    "hook:audience_callout",
+    "tech:you_focus",
+    "genre:sales_page",
+    "genre:webinar_pitch_script"
+   ],
+   "steps": [
+    {
+     "step": "Qualify",
+     "does": "Call out the right reader and filter out the wrong ones."
+    },
+    {
+     "step": "Understand",
+     "does": "Show you know their situation and feelings, in their words."
+    },
+    {
+     "step": "Educate",
+     "does": "Explain the cause of the problem, what a fix must do, and introduce the product as that fix."
+    },
+    {
+     "step": "Stimulate",
+     "does": "Build desire: benefits, proof, the picture of life after."
+    },
+    {
+     "step": "Transition",
+     "does": "Turn the reader into a buyer: offer, guarantee, one clear action."
+    }
+   ],
+   "best_for": [
+    "mid to long copy aimed at a defined niche",
+    "offers where a bad-fit buyer costs money (refunds, support)"
+   ],
+   "not_for": [
+    "short ads (use fw:pas or fw:slap)",
+    "readers unaware of the problem (diagnose with fw:oath first)"
+   ],
+   "origin": {
+    "who": "Michel Fortin",
+    "url": "https://michelfortin.com/quest-formula/"
+   },
+   "mini_example": "[Qualify] This is for Surat saree wholesalers who still send 200 photos a day on WhatsApp. If you only sell in-store, skip this. [Understand] You know the drill: retailers ask 'rate?', you reply 300 times, and half never order. [Educate] A WhatsApp Business catalogue shows design, price and stock in one tap, so the questions arrive pre-filtered. [Stimulate] Picture opening your phone to orders instead of 'rate?', and getting your evenings back. [Transition] We set up your catalogue with 150 designs in 3 days for Rs 6,000. Reply 'CATALOGUE' and we start Monday.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:quest",
+    "note": "Qualify turns away Zoom/English teams, Understand uses the reader's own day (20 voice notes, 'woh delivery date kya fix hui thi?'), Educate names the cause and the three jobs a fix must do before the product, Stimulate paints Monday's review, Transition is offer, easy cancel and one action. Natural Hinglish.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:reason_why_copy",
+   "kind": "framework",
+   "name": "Reason-why copy (Hopkins)",
+   "status": "current",
+   "summary": "Sell with researched, specific reasons the product is better, stated plainly, instead of slogans or cleverness. Claude C. Hopkins insisted copywriters research the product first; his Schlitz beer campaign (1907) detailed the brewing process, which competitors also used but did not advertise (Wikipedia). Pre-work (not part of the ad): spend time with the product and the people who make it until you find the untold fact. Follow-up (not part of the ad): test headlines built on different reasons against each other.",
+   "use_for": [
+    "product pages and D2C launch copy",
+    "print and long-form ads",
+    "technical, B2B and ingredient-led products",
+    "any category full of vague 'best quality' claims"
+   ],
+   "avoid": [
+    "Reasons that stay features with no 'so what': translate each into what the buyer gets (fw:fab).",
+    "Superlatives instead of reasons ('premium quality'): replace with the process detail, measurement or date that proves it.",
+    "Comparative claims you cannot substantiate or that knock a rival: every reason must be true and provable (comp:asci_code).",
+    "Clever wordplay over the reason: Hopkins' approach is plain salesmanship; if the line needs decoding, rewrite it."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Claude_C._Hopkins",
+     "title": "Claude C. Hopkins - Wikipedia",
+     "supports": "Hopkins insisted copywriters research their clients' products and produce reason-why copy; Schlitz campaign (hired 1907) detailing brewing methods competitors did not advertise; belief in sampling and testing headlines and offers"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Scientific_Advertising",
+     "title": "Scientific Advertising - Wikipedia",
+     "supports": "Hopkins' 1923 book"
+    }
+   ],
+   "related": [
+    "tech:reason_why",
+    "tech:specificity",
+    "fw:usp",
+    "tech:unique_mechanism",
+    "tech:sme_interview",
+    "genre:product_description"
+   ],
+   "steps": [
+    {
+     "step": "Lead with the researched fact",
+     "does": "Open with the specific, true process or ingredient detail nobody in the category talks about, as the headline or first line."
+    },
+    {
+     "step": "Explain why it makes it better",
+     "does": "Plain words, numbers and the word 'because': what that detail does to the result the buyer gets."
+    },
+    {
+     "step": "Say what the buyer gets",
+     "does": "Translate the reason into the experience or outcome, in the buyer's terms."
+    },
+    {
+     "step": "Invite a test",
+     "does": "A sample, trial or guarantee plus one action, so the buyer can check the reason themselves."
+    }
+   ],
+   "best_for": [
+    "products with a real process, ingredient or engineering story",
+    "sceptical buyers comparing similar options"
+   ],
+   "not_for": [
+    "identity and lifestyle brands where the reason is not what decides (use fw:golden_circle)",
+    "true parity products with nothing specific to say (lead with the offer instead)"
+   ],
+   "origin": {
+    "who": "Claude C. Hopkins",
+    "when": "his working method at Lord & Thomas; codified in Scientific Advertising (1923), per Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Claude_C._Hopkins"
+   },
+   "mini_example": "[Lead with the researched fact] Every Teesta Leaf batch is plucked as two leaves and a bud, fired the same day and nitrogen-sealed within 72 hours. [Explain why it makes it better] Tea goes flat because air gets to it; sealing it in three days instead of three weeks keeps the malt in the leaf. [Say what the buyer gets] Your first cup tastes malty, not dusty, and the packing date is printed on every pouch so you can see how fresh it is. [Invite a test] Order the 50 g trial pack for Rs 49, brew it beside your current tea, and decide.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_1.json#fw:reason_why_copy",
+    "note": "ROUND 2: P2 S2 Sp2 V1 C1. All four steps in order, and every one is now ad copy (round 1 ended on a test plan): the untold process fact up front (the month rebuilt from payout reports before the notice is read), a plain 'because', what the founder gets (a one-page reconciliation, no lost weekend), and a WhatsApp test with a no-fee condition. Nits (writer): the lead fact carries a [confirm] tag and three 'Illustrative' tags clutter a 193-word piece; the 'because' step opens on a sentence fragment. | round 1: weak 7",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "fw:rogerian_argument",
+   "kind": "framework",
+   "name": "Rogerian argument",
+   "status": "current",
+   "summary": "Argue by first stating the other side so fairly they would sign off on it, conceding where they are right, then giving your position and where it holds, and showing how they gain by adopting part of it. Named after psychologist Carl Rogers; it persuades people who would close up against a frontal attack.",
+   "use_for": [
+    "op-eds and columns on divisive topics",
+    "internal proposals to sceptical stakeholders",
+    "RWA, community and stakeholder letters",
+    "crisis responses and policy briefs that must keep both sides talking"
+   ],
+   "avoid": [
+    "A strawman summary of the other side: if they would not agree with your summary, rewrite it.",
+    "A fake concession ('I understand, but...') followed by an attack: the second step must concede something real.",
+    "False balance on settled facts: do not present misinformation as a valid side; use fw:toulmin_model with a rebuttal, or a fact-check.",
+    "Empathy as a disguise for pure advocacy: critics (Lisa Ede, 1984, per Wikipedia) argue the textbook method leans that way; keep the benefit-to-them step honest."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Rogerian_argument",
+     "title": "Rogerian argument - Wikipedia",
+     "supports": "Named after Carl Rogers; developed as a rhetorical method by Young, Becker and Pike in Rhetoric: Discovery and Change (1970); their four stages; criticism by Lisa Ede (1984) and feminist scholars"
+    }
+   ],
+   "related": [
+    "fw:toulmin_model",
+    "fw:classical_arrangement",
+    "tech:objection_handling",
+    "genre:opinion_column",
+    "genre:policy_brief",
+    "genre:crisis_statement"
+   ],
+   "steps": [
+    {
+     "step": "Introduce and show understanding",
+     "does": "Introduce the problem and state the opposing position so fairly its holders would accept your summary."
+    },
+    {
+     "step": "Where they are right",
+     "does": "State the contexts in which the opposing position is valid."
+    },
+    {
+     "step": "Your position",
+     "does": "State your position and the contexts in which it is valid."
+    },
+    {
+     "step": "How they gain",
+     "does": "Show how the other side benefits by adopting elements of your position; end on the shared proposal."
+    }
+   ],
+   "best_for": [
+    "audiences who disagree with you and will stop reading if attacked",
+    "negotiated outcomes where both sides must keep working together"
+   ],
+   "not_for": [
+    "ads and sales copy (too slow)",
+    "bad-faith opponents or one-sided facts (use fw:toulmin_model)"
+   ],
+   "origin": {
+    "who": "Richard E. Young, Alton L. Becker and Kenneth L. Pike, building on Carl Rogers and Anatol Rapoport",
+    "when": "Rhetoric: Discovery and Change (1970), per Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rogerian_argument"
+   },
+   "mini_example": "[Understand] Many residents want delivery riders stopped at the gate: bikes in the lanes at night feel unsafe for children and elders. [Where they're right] After 9 pm, with dim lanes and kids cycling, that worry is fair, and last month's two near-misses prove it. [My position] In daylight, though, making riders walk 600 metres means cold food, late medicines, and riders refusing our society. [How they gain] A marked delivery lane with a 10 km/h limit by day, and gate-only drop-offs after 9 pm, keeps lanes safe at night and deliveries coming by day. Can we vote on this at Sunday's meeting?",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:rogerian_argument",
+    "note": "Opposing view stated so fairly the department would sign it, a real concession (no fluency in 30 days, grammar needs a semester), a narrowed position (the first spoken sentence, not grammar) and a shared, testable proposal judged by the sceptics themselves. Exactly what the card asks.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:save_the_cat",
+   "kind": "framework",
+   "name": "Save the Cat beat sheet",
+   "status": "current",
+   "summary": "Blake Snyder's 15-beat map of a mainstream film, from Opening Image to a mirroring Final Image, widely reused for novels, series and long brand films. The title rule: early on, the hero must do something that makes the audience like them and want them to win. Use the beats to diagnose a draft, not to generate one.",
+   "use_for": [
+    "feature screenplays and film pitches",
+    "web series and episode arcs",
+    "novels and serialised fiction",
+    "brand films of two minutes or more"
+   ],
+   "avoid": [
+    "Hitting all 15 beats in a 60-second ad: compress to set-up, catalyst, finale, or use fw:three_act_structure.",
+    "Formula over voice: critics say the book's wide adoption made screenwriting formulaic (Peter Suderman, per Wikipedia); outline with the beats, then break one on purpose.",
+    "A hero the audience has no reason to like: give them a 'save the cat' moment in the set-up.",
+    "A Final Image that does not mirror the Opening Image: the change is invisible without the comparison."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Save_the_Cat!:_The_Last_Book_on_Screenwriting_You%27ll_Ever_Need",
+     "title": "Save the Cat! - Wikipedia",
+     "supports": "2005 book by Blake Snyder; lists the 15 beats in order; the 'save the cat' rule (hero does something that makes the audience like them); criticism that it is formulaic and sexist"
+    }
+   ],
+   "related": [
+    "fw:three_act_structure",
+    "fw:writers_journey_vogler",
+    "fw:heros_journey",
+    "fw:dan_harmon_story_circle",
+    "genre:screenplay_feature",
+    "genre:web_series_episode"
+   ],
+   "steps": [
+    {
+     "step": "Opening Image",
+     "does": "A snapshot of the hero's world and problem before the story changes it."
+    },
+    {
+     "step": "Theme Stated",
+     "does": "Someone says, usually in passing, what the story is about."
+    },
+    {
+     "step": "Set-up",
+     "does": "Hero, world, what is missing in their life; plant what pays off later."
+    },
+    {
+     "step": "Catalyst",
+     "does": "The event that upends the status quo."
+    },
+    {
+     "step": "Debate",
+     "does": "The hero hesitates over whether to act."
+    },
+    {
+     "step": "Break into Two",
+     "does": "The hero chooses and enters the new situation."
+    },
+    {
+     "step": "B Story",
+     "does": "A second story, often a relationship, that carries the theme."
+    },
+    {
+     "step": "Fun and Games",
+     "does": "The premise delivered: the scenes the trailer is made of."
+    },
+    {
+     "step": "Midpoint",
+     "does": "A false victory or false defeat that raises the stakes."
+    },
+    {
+     "step": "Bad Guys Close In",
+     "does": "Pressure builds from outside and inside."
+    },
+    {
+     "step": "All Is Lost",
+     "does": "The lowest point; something or someone is lost."
+    },
+    {
+     "step": "Dark Night of the Soul",
+     "does": "The hero absorbs the loss."
+    },
+    {
+     "step": "Break into Three",
+     "does": "The insight, often from the B Story, that shows the way out."
+    },
+    {
+     "step": "Finale",
+     "does": "The hero applies the lesson and resolves the conflict."
+    },
+    {
+     "step": "Final Image",
+     "does": "A mirror of the Opening Image that shows the change."
+    }
+   ],
+   "best_for": [
+    "long narrative with a clear protagonist and goal",
+    "diagnosing a sagging middle in a draft"
+   ],
+   "not_for": [
+    "ads under a minute (use fw:three_act_structure or fw:abt)",
+    "stories without central conflict (use fw:kishotenketsu)",
+    "documentaries bound to real events"
+   ],
+   "origin": {
+    "who": "Blake Snyder",
+    "when": "Save the Cat! (2005)",
+    "url": "https://en.wikipedia.org/wiki/Save_the_Cat!:_The_Last_Book_on_Screenwriting_You%27ll_Ever_Need"
+   },
+   "mini_example": "Three-minute Diwali brand film. [Opening Image] Retired postman Mishraji alone, polishing 40 diyas. [Theme Stated] Neighbour: 'Ghar logon se roshan hota hai.' [Set-up] Son in Toronto, always busy; Mishraji feeds the stray cat. [Catalyst] A smart speaker arrives as a gift. [Debate] He won't touch it. [Break into Two] Grandson teaches him one command on video. [B Story] Friendship with the shy delivery girl. [Fun and Games] Bhajans, weather, wrong songs. [Midpoint] He books a call to Toronto himself. [Bad Guys] The call keeps dropping. [All Is Lost] Power cut on Diwali eve. [Dark Night] Cold diyas. [Break into Three] The delivery girl lights one. [Finale] The lane joins in; the call connects. [Final Image] 40 diyas, a full verandah.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:save_the_cat",
+    "note": "All 15 beats land in a 3-minute film outline with a save-the-cat moment, a theme line that pays off ('roz ka hisaab roz karo'), a false-victory midpoint and a final image that mirrors the opening. Concrete detail (BHAIYA KIRANA UPI, three invoices in one transfer). Risk for the client: the low point is a wrong auto-match, which confirms the buyer's fear.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:schwartz_awareness_levels",
+   "kind": "framework",
+   "name": "Five levels of awareness (Schwartz)",
+   "status": "current",
+   "summary": "Match the opening of a piece to what the reader already knows: unaware, problem-aware, solution-aware, product-aware or most aware. The more aware the reader, the sooner you can name the product and the offer; the less aware, the more the opening must start from the reader's own life.",
+   "use_for": [
+    "choosing the headline and lead of any sales piece",
+    "writing different ads for cold, warm and retargeting audiences",
+    "briefing hooks for each funnel stage",
+    "explaining to a client why the search ad and the reel ad open differently"
+   ],
+   "avoid": [
+    "Price-first copy for cold traffic: unaware readers do not know why the price matters; open with the problem or a story.",
+    "Unaware copy that never reaches the product: by the middle the reader must recognise the problem and the solution type.",
+    "Guessing the level: check the traffic source first (search query, retargeting list, cold interest audience).",
+    "Confusing awareness with sophistication: how many competing claims they have already heard is fw:market_sophistication."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://selzee.com/eugene-schwartz-5-levels-of-awareness",
+     "title": "The 5 Stages of Awareness: Schwartz's 5 Levels",
+     "supports": "Lists the five levels from Breakthrough Advertising with examples"
+    },
+    {
+     "url": "https://copywriting.school/formulas/oath",
+     "title": "OATH Framework - Copywriting School",
+     "supports": "Names the five Schwartz levels from Breakthrough Advertising (1966)"
+    }
+   ],
+   "related": [
+    "tech:awareness_level_matching",
+    "fw:market_sophistication",
+    "fw:oath",
+    "fw:quest",
+    "genre:landing_page",
+    "genre:social_ad_copy"
+   ],
+   "steps": [
+    {
+     "step": "Most aware",
+     "does": "Knows the product and wants it: lead with the offer, price, and the reason to buy now."
+    },
+    {
+     "step": "Product-aware",
+     "does": "Knows the product, not yet convinced: lead with what makes it different, proof, answered objections."
+    },
+    {
+     "step": "Solution-aware",
+     "does": "Knows the result they want, not that you deliver it: lead with the result and how your product gets it."
+    },
+    {
+     "step": "Problem-aware",
+     "does": "Feels the problem, does not know the fixes: lead with the problem in their words, then the type of solution."
+    },
+    {
+     "step": "Unaware",
+     "does": "Does not recognise the problem: lead with a story, identity or surprising fact they see themselves in; the product comes late."
+    }
+   ],
+   "best_for": [
+    "any sales or ad piece, before the first line is written",
+    "multi-ad campaigns across funnel stages"
+   ],
+   "not_for": [
+    "use as a body-copy order (it decides the opening and the length)",
+    "news and informational writing"
+   ],
+   "origin": {
+    "who": "Eugene Schwartz, Breakthrough Advertising (per secondary sources)",
+    "when": "1966",
+    "url": "https://selzee.com/eugene-schwartz-5-levels-of-awareness"
+   },
+   "mini_example": "One Gurugram tiffin service, five openings. [Most aware] DabbaDesk 20-meal plan: Rs 2,400 until Sunday, Rs 2,800 after. Start Monday. [Product-aware] Why DabbaDesk over a cloud kitchen: steel tiffins, a menu that changes daily, and you can pause any day. [Solution-aware] Home-style dal, chawal and sabzi at your desk by 1 pm, cooked that morning. [Problem-aware] Tired of oily office lunches that knock you out by 4? [Unaware] 'I'm always sleepy by 4 pm.' Sound like your week?",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:schwartz_awareness_levels",
+    "note": "Five openings, each matched to its level: price and real launch-price deadline for Most aware, objection handling for Product-aware, result-plus-mechanism for Solution-aware, problem in the reader's words for Problem-aware, story with the product late for Unaware. Writer slip: the Unaware customer quote is invented and presented as real; it needed a placeholder. CARD FIX (minor): mini_example -> reorder to Most aware > Product-aware > Solution-aware > Problem-aware > Unaware to match the steps (it currently runs Unaware first). | CARD FIXED 2026-10-06 per this note; re-judge pending.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:scqa",
+   "kind": "framework",
+   "name": "SCQA (Situation, Complication, Question, Answer)",
+   "status": "current",
+   "summary": "Open with a Situation the reader already agrees with, introduce the Complication that changed it, name the Question that raises, then give your Answer, which becomes the top of the argument that follows. It is the standard introduction of Barbara Minto's pyramid principle and gets a busy reader from context to recommendation in a few lines.",
+   "use_for": [
+    "executive summaries and memos",
+    "consulting and sales deck storylines",
+    "proposal and report introductions",
+    "explainer video and op-ed openings"
+   ],
+   "avoid": [
+    "A Situation that is news to the reader: it must be shared ground they would nod at; if it needs arguing, it is not the Situation.",
+    "A Complication that only restates the Situation: it must be a change, a threat or a gap that creates tension.",
+    "A Question the reader would not actually ask: write the question in their words, or the Answer feels like a pitch.",
+    "An Answer with nothing under it: follow it with the two to four key points that support it (fw:minto_pyramid).",
+    "Using it when the reader wants the answer in line one: flip to Answer first (fw:bluf)."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://modelthinkers.com/mental-model/minto-pyramid-scqa",
+     "title": "Minto Pyramid & SCQA - ModelThinkers",
+     "supports": "SCQA as the pyramid's introduction"
+    },
+    {
+     "url": "https://managementconsulted.com/scqa-framework/",
+     "title": "SCQA Framework - Management Consulted",
+     "supports": "Steps and usage in consulting"
+    }
+   ],
+   "related": [
+    "fw:minto_pyramid",
+    "fw:bluf",
+    "fw:prep",
+    "genre:executive_summary",
+    "genre:business_report",
+    "genre:sales_deck"
+   ],
+   "steps": [
+    {
+     "step": "Situation",
+     "does": "The stable context the reader already knows and accepts; short."
+    },
+    {
+     "step": "Complication",
+     "does": "What changed or went wrong, creating tension."
+    },
+    {
+     "step": "Question",
+     "does": "The question the complication raises in the reader's mind; can be stated or implied."
+    },
+    {
+     "step": "Answer",
+     "does": "Your recommendation or main point, followed by its supporting points."
+    }
+   ],
+   "best_for": [
+    "business readers who must decide something",
+    "the first paragraph or first slide of a longer document"
+   ],
+   "not_for": [
+    "emotional storytelling (use fw:three_act_structure)",
+    "readers who do not share the situation yet (set context first, at more length)"
+   ],
+   "origin": {
+    "who": "Barbara Minto, as the introduction of her pyramid principle (per secondary sources)",
+    "url": "https://modelthinkers.com/mental-model/minto-pyramid-scqa"
+   },
+   "mini_example": "[Situation] Our Rs 999 starter kit has been the best seller since launch, sold mostly through Instagram ads. [Complication] Since June our Meta cost per order has nearly doubled, and the kit now loses Rs 60 an order after shipping. [Question] Do we keep it, reprice it or drop it? [Answer] Reprice it to Rs 1,199 with a free refill, and move a third of the ad budget to WhatsApp re-orders from existing buyers. The three reasons follow: margin maths, the August price test and repeat-order data.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:scqa",
+    "note": "BDO-to-DM note: a Situation the DM nods at, a Complication that is a real change plus a rule gap, the Question in the DM's terms, and an Answer with three supporting points (quality, accounts, fairness) and a dated ask. Concrete and civil-service right.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:shorts_loop",
+   "kind": "framework",
+   "name": "Loop structure for shorts",
+   "status": "current",
+   "summary": "Write the last line of a short so it runs straight back into the first, so the replay feels like one continuous video. The opening has to work twice: as a hook for a first-time viewer and as the completion of the closing line.",
+   "use_for": [
+    "Reels and Shorts built on one tip, one joke or one reveal",
+    "satisfying-visual and process clips",
+    "faceless and text-on-screen shorts"
+   ],
+   "avoid": [
+    "An opening that only makes sense as the end of the sentence: first-time viewers bounce; the first line must stand alone as a hook.",
+    "'Follow for more' after the last line: it breaks the seam; put the CTA in the caption, the pinned comment or earlier on-screen text.",
+    "Selling the loop as an algorithm hack: the sources here describe the technique, not a ranking boost; pitch it as a rewatch device.",
+    "Forcing a loop on a story whose payoff is the ending: if the ending matters, end it properly.",
+    "A visible jump at the seam: match framing, position and audio between the last and first frames."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://faceless.so/blog/how-to-create-a-seamless-video-loop",
+     "title": "How to Create a Seamless Video Loop - Faceless",
+     "supports": "Planning the last moment to return to the first"
+    },
+    {
+     "url": "https://www.mariosomedia.com/blog/seamlessloop",
+     "title": "How to Create a Looping Video for YouTube Shorts - Mario So",
+     "supports": "Scripting the end to connect to the start"
+    }
+   ],
+   "related": [
+    "tech:loopable_ending",
+    "fw:hook_retain_reward",
+    "hook:in_medias_res_opener",
+    "genre:short_form_video_script",
+    "trend:short_video_india"
+   ],
+   "steps": [
+    {
+     "step": "Pick the seam",
+     "does": "Choose the one sentence or action that will be split across the end and the start."
+    },
+    {
+     "step": "Write the opening as the second half",
+     "does": "The first line completes the seam sentence and still works as a hook on its own."
+    },
+    {
+     "step": "Body",
+     "does": "Deliver the single idea fast; no recap."
+    },
+    {
+     "step": "Write the ending as the first half",
+     "does": "The last line leads straight into the opening line; nothing after it."
+    },
+    {
+     "step": "Match picture and sound",
+     "does": "Same framing and position at both ends, audio that carries through the cut."
+    }
+   ],
+   "best_for": [
+    "short, single-idea videos where rewatching is natural",
+    "content whose CTA can live in the caption"
+   ],
+   "not_for": [
+    "ads with a hard on-screen CTA (use fw:slap)",
+    "stories whose payoff is the ending",
+    "long-form video (use fw:youtube_intro_hook_promise_preview)"
+   ],
+   "mini_example": "Hinglish reel, career tips. [Opening, second half of the seam] ...isliye 5 saal se same salary pe ho. [Body] Appraisal mein 'main bahut mehnat karta hoon' mat bolo. Ek page le ke jao: kaunsa kaam tumne close kiya, usse company ka kitna paisa ya time bacha, aur agle 6 mahine ka plan. Numbers ke saath. [Ending, first half of the seam] Aur agar ye page nahi banaya, toh samajh lo... (cuts back to the opening line)",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:shorts_loop",
+    "note": "The seam works: the last line 'Aur sabse badi galti yeh maan lena hai ki...' runs into 'GST notice khud expire ho jaata hai. Nahi hota.', which also stands alone as a hook. Body is one fast, useful idea, CTA moved to the caption, and picture/sound matched. The opening hook is serviceable rather than a scroll-stopper.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:skyscraper_technique",
+   "kind": "framework",
+   "name": "Skyscraper technique",
+   "status": "declining",
+   "summary": "Brian Dean's link-building method: find the most-linked piece on a topic, publish a clearly better one, then pitch it to the sites that link to the original. The 'longer list' version is worn out; what still earns links is a piece that adds something the original cannot, such as first-hand data, tests or local detail.",
+   "use_for": [
+    "SEO content in competitive topics with an obvious link-earning winner",
+    "original-data and resource pages built to earn links",
+    "planning outreach for a content launch"
+   ],
+   "avoid": [
+    "'Better' meaning longer: a bigger rewrite of the same list is commodity content; add first-hand data, tests, Indian prices or expert input (trend:non_commodity_content, tech:eeat_first_hand_experience).",
+    "Mass template outreach to every linker: generic emails get ignored or flagged; write one by one to people whose readers would use the piece (trend:email_deliverability_rules).",
+    "Scaling it with AI rewrites of competitor pages: that is the pattern Google's scaled content abuse policy targets (comp:google_search_spam_policies).",
+    "Picking a topic whose query is now answered on the results page: check whether AI answers already satisfy it (trend:ai_overviews_zero_click)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://backlinko.com/skyscraper-technique",
+     "title": "Skyscraper Method: +110% Traffic (Link Building Case Study) - Backlinko",
+     "supports": "Brian Dean's original case study of the technique"
+    }
+   ],
+   "related": [
+    "fw:topic_cluster",
+    "tech:eeat_first_hand_experience",
+    "trend:non_commodity_content",
+    "comp:google_search_spam_policies",
+    "genre:research_article",
+    "genre:ultimate_guide"
+   ],
+   "steps": [
+    {
+     "step": "Find link-worthy content",
+     "does": "Use a backlink tool to find the piece in your topic that the most relevant sites link to."
+    },
+    {
+     "step": "Make something clearly better",
+     "does": "More current, more useful, better designed, and with something the original lacks (data, tests, a tool, a local angle)."
+    },
+    {
+     "step": "Reach out",
+     "does": "Contact the people who link to the original, one by one, and show them why yours serves their readers better."
+    }
+   ],
+   "best_for": [
+    "brands that can produce original data or expertise",
+    "teams with time for personal outreach"
+   ],
+   "not_for": [
+    "queries answered outright by AI overviews",
+    "news and time-bound content",
+    "brands with nothing new to add beyond length"
+   ],
+   "origin": {
+    "who": "Brian Dean, Backlinko",
+    "url": "https://backlinko.com/skyscraper-technique"
+   },
+   "mini_example": "[Find] The most-linked page on 'how to read a salary slip in India' is a 2021 post with an old sample payslip; about 140 sites link to it. [Make it better] Publish a 2026 version: a downloadable annotated payslip, the old and new tax regimes worked through on a Rs 12 lakh CTC, a Hindi edition, and a Pune payroll head answering the five questions HR hears most. [Reach out] Email the 30 most relevant linkers, college placement cells and HR blogs, one at a time: 'Your freshers' guide links to the 2021 payslip post; ours covers the new regime and has a Hindi version, if it helps your students.'",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:skyscraper_technique",
+    "note": "Finds the real gap (raw-ingredient protein tables vs cooked dishes as served), adds first-hand lab data, local prices, a Marathi edition and an expert, keeps the brand to one honest row, and writes one-by-one outreach with a usable line. The 'better' paragraph is a single 78-word sentence.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:slap",
+   "kind": "framework",
+   "name": "SLAP (Stop, Look, Act, Purchase)",
+   "status": "niche",
+   "summary": "A short-form ad structure: Stop the scroll, make them Look closer, get one small Action, then make the Purchase easy. It suits low-price, quick-decision offers where the whole ad is a few lines or seconds.",
+   "use_for": [
+    "Instagram, Facebook and YouTube short ads",
+    "display banners and app-store promos",
+    "food delivery, D2C and impulse-buy offers",
+    "billboards that end in a scan or a search"
+   ],
+   "avoid": [
+    "A Stop line that is clickbait unrelated to the offer: the viewer feels tricked at Look; stop them with the offer's own most striking detail.",
+    "Asking a cold audience to Purchase a high-ticket product: make Act a micro-step (book a demo, get a quote) and sell later.",
+    "A Look section crammed with features: one detail that makes them lean in is enough.",
+    "Fake strike-through prices or countdowns at Purchase: banned as dark patterns (comp:ccpa_dark_patterns_2023)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://copywriting.school/formulas/slap",
+     "title": "SLAP Formula - Copywriting School",
+     "supports": "Stop, Look, Act, Purchase"
+    },
+    {
+     "url": "https://samueljwoods.com/100-persuasive-copywriting-formulas/",
+     "title": "100+ Persuasive Copywriting Formulas That Convert (Samuel Woods)",
+     "supports": "Round-up listing the formula with its expansion (secondary source)"
+    }
+   ],
+   "related": [
+    "fw:aida",
+    "hook:stop_scrolling",
+    "tech:pattern_interrupt",
+    "tech:cta_writing",
+    "genre:social_ad_copy",
+    "genre:display_banner_ad_copy"
+   ],
+   "steps": [
+    {
+     "step": "Stop",
+     "does": "Break the scroll with an image, line or claim about the viewer or the offer."
+    },
+    {
+     "step": "Look",
+     "does": "Hold attention with the one detail that makes the offer desirable."
+    },
+    {
+     "step": "Act",
+     "does": "Ask for one small, specific action: tap, order, claim, swipe."
+    },
+    {
+     "step": "Purchase",
+     "does": "Make buying simple: price, offer, how fast it arrives, what if it goes wrong."
+    }
+   ],
+   "best_for": [
+    "low-price, quick-decision offers",
+    "ads of a few lines or under 15 seconds"
+   ],
+   "not_for": [
+    "considered B2B and high-ticket buys (use fw:problem_promise_proof_proposal)",
+    "long-form sales pages (use fw:pastor)"
+   ],
+   "mini_example": "[Stop] Biryani for 2 at Rs 349. Hyderabad mein? [Look] Dum-cooked in a sealed handi, overnight-marinated chicken, salan and raita included. [Act] Tap 'Order now' and pick your slot. [Purchase] First order 20% off with code DUM20. Delivered in 40 minutes, or your next biryani is on us.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:slap",
+    "note": "Stop is the relatable 7-minute boss voice note, Look is the one detail (what, who, by when), Act is a micro-step with no sign-up, Purchase gives price, cancel and refund. Lean at 167 words with on-screen frames. The Stop line is two sentences, slower than a scroll-stopper should be.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:star",
+   "kind": "framework",
+   "name": "STAR (Situation, Task, Action, Result)",
+   "status": "current",
+   "summary": "Tell an achievement as Situation, Task, Action, Result. Employers use it to evaluate answers to behavioural interview questions; a good STAR answer spends the least time on context and the most on what you personally did, and ends with a measurable result.",
+   "use_for": [
+    "behavioural interview answers",
+    "resume and LinkedIn achievement bullets (compressed to Action plus Result)",
+    "award entries and performance reviews",
+    "short case studies and portfolio write-ups"
+   ],
+   "avoid": [
+    "A Situation that eats half the answer: one or two sentences of context, then move.",
+    "'We' all through the Action: interviewers score what you did; say 'I' for your decisions.",
+    "A Result with no number or consequence: give the metric, the before and after, or what changed for the team.",
+    "Inflated or invented numbers on a resume: use real figures, or describe scale honestly ('for a 12-person team')."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Situation,_task,_action,_result",
+     "title": "Situation, task, action, result - Wikipedia",
+     "supports": "STAR method used by employers to evaluate candidates' answers to behavioural questions"
+    }
+   ],
+   "related": [
+    "genre:resume",
+    "genre:cover_letter",
+    "genre:award_entry",
+    "genre:case_study",
+    "genre:portfolio_case_writeup",
+    "fw:prep"
+   ],
+   "steps": [
+    {
+     "step": "Situation",
+     "does": "Where and when, and what was going on; brief."
+    },
+    {
+     "step": "Task",
+     "does": "What you were responsible for, or the goal you had to hit."
+    },
+    {
+     "step": "Action",
+     "does": "What you personally did, step by step, including the key decision; the longest part."
+    },
+    {
+     "step": "Result",
+     "does": "The outcome with numbers, plus what you learned or now do differently."
+    }
+   ],
+   "best_for": [
+    "proving a skill with one past example",
+    "any achievement told in 60-200 words"
+   ],
+   "not_for": [
+    "opinion questions (use fw:prep)",
+    "brand stories with an emotional arc (use fw:three_act_structure)"
+   ],
+   "mini_example": "[Situation] At a Bengaluru ed-tech startup in 2024, webinar sign-ups had fallen for three straight months. [Task] I owned the webinar funnel and had six weeks to recover registrations before admissions season. [Action] I listened to 20 sales calls, found parents asked about fees before anything else, rewrote the landing page to answer fees on the first screen, and moved reminders from email to WhatsApp. [Result] Registrations rose 38% in five weeks and show-up went from 22% to 31%. I now start every funnel fix with sales calls.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:star",
+    "note": "Brief Situation, a clear Task, an Action that is the longest part with 'I' decisions and the key call (engineer, not sales, at the help desk), and a Result with placeholders for the numbers plus a stated lesson. Exactly the shape an interviewer scores.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:star_story_solution",
+   "kind": "framework",
+   "name": "Star, Story, Solution",
+   "status": "current",
+   "summary": "Introduce one person the reader identifies with (the Star), tell their struggle with real stakes (the Story), then reveal what solved it and the result (the Solution), ending in a call to action. The Star must be real and consenting, or clearly presented as a dramatisation.",
+   "use_for": [
+    "UGC and testimonial-style video ads",
+    "customer case studies and success-story emails",
+    "sales-page story sections",
+    "founder and customer reels"
+   ],
+   "avoid": [
+    "A Star the target reader does not identify with: pick someone with the reader's job, city, budget or problem.",
+    "A Solution that arrives like an ad break: let the Star discover it inside the story.",
+    "Fabricated customer stories presented as real: endorsements must reflect genuine experience (comp:asci_code, comp:ftc_endorsement_guides).",
+    "A Story with no stakes: say what the Star stood to lose."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://copywriting.school/formulas/sss-star-story-solution",
+     "title": "SSS Formula - Copywriting School",
+     "supports": "Star, Story, Solution"
+    },
+    {
+     "url": "https://samueljwoods.com/100-persuasive-copywriting-formulas/",
+     "title": "100+ Persuasive Copywriting Formulas That Convert (Samuel Woods)",
+     "supports": "Round-up listing the formula with its expansion (secondary source)"
+    }
+   ],
+   "related": [
+    "fw:pastor",
+    "fw:bab",
+    "hook:personal_story",
+    "genre:ugc_ad_script",
+    "genre:case_study",
+    "genre:testimonial_copy"
+   ],
+   "steps": [
+    {
+     "step": "Star",
+     "does": "Introduce one named, specific person the reader sees themselves in."
+    },
+    {
+     "step": "Story",
+     "does": "Their struggle: what went wrong, what they tried, what was at stake."
+    },
+    {
+     "step": "Solution",
+     "does": "What solved it (the product), the concrete result, and the reader's next step."
+    }
+   ],
+   "best_for": [
+    "offers with real, consenting customers",
+    "audiences who trust peers more than brands"
+   ],
+   "not_for": [
+    "brands with no real customer stories yet (use fw:bab with the reader as the subject)",
+    "technical buyers who want specs first (use fw:fab)"
+   ],
+   "mini_example": "[Star] Meet Ramesh bhau, 52, who has run a kirana in Nagpur's Sitabuldi for 26 years. [Story] Last year his son moved to Pune, and with him went the only person who could handle online orders. Ramesh tried a notebook; three orders went missing in one week, and two regulars switched shops. [Solution] His nephew set up DukaanSathi: customers send a Marathi voice note, the app turns it into a packing list. Ramesh now does 40 home deliveries a day without missing one. Want the same setup? Call the number on screen.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:star_story_solution",
+    "note": "A Star the reader sees themselves in (first-gen BCom student in Sagar), real stakes (father told the mohalla), tried-and-failed attempts, the course found inside the story via a senior, a Day 1/Day 30 result placeholder and a Hinglish CTA. Flags itself as a draft for a real, consenting student, as the card requires.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:storybrand_sb7",
+   "kind": "framework",
+   "name": "StoryBrand SB7",
+   "status": "current",
+   "summary": "Donald Miller's seven-part messaging framework: the customer is the hero (a character) with a problem, who meets a guide (your brand) who gives them a plan and calls them to action, helping them avoid failure and reach success. It turns a company-centred 'about us' message into a customer-centred one.",
+   "use_for": [
+    "homepages and landing pages for small and mid-size businesses",
+    "brand messaging documents",
+    "about pages and sales-deck openings",
+    "lead-generation emails"
+   ],
+   "avoid": [
+    "The brand as the hero ('Our journey since 1998'): the customer is the hero; the brand appears as the guide.",
+    "A guide with authority and no empathy (only awards and logos): first show you understand the problem, then show you can solve it.",
+    "A plan with too many steps: a plan should look easy; merge steps until it does.",
+    "Inflated failure stakes: name the real cost of not acting; scare copy breaks trust and can mislead (comp:ccpa_misleading_ads_2022).",
+    "Pasting the seven parts as page copy: SB7 is the message map; translate it into headline, sections and CTAs."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.goodreads.com/book/show/34460583-building-a-storybrand",
+     "title": "Building a StoryBrand - Goodreads",
+     "supports": "Donald Miller's book; first published 10 October 2017; teaches 'the seven universal story points'"
+    },
+    {
+     "url": "https://storybrand.com/",
+     "title": "StoryBrand (official site)",
+     "supports": "Donald Miller's StoryBrand messaging framework"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Donald_Miller_(author)",
+     "title": "Donald Miller (author) - Wikipedia",
+     "supports": "CEO of StoryBrand"
+    }
+   ],
+   "related": [
+    "genre:homepage_copy",
+    "genre:messaging_framework",
+    "genre:about_page",
+    "fw:heros_journey",
+    "fw:golden_circle",
+    "genre:brand_story"
+   ],
+   "steps": [
+    {
+     "step": "A character",
+     "does": "The customer, and the one thing they want."
+    },
+    {
+     "step": "Has a problem",
+     "does": "What stands in the way, and how it makes them feel."
+    },
+    {
+     "step": "Meets a guide",
+     "does": "Your brand: show you understand them and that you can help."
+    },
+    {
+     "step": "Who gives them a plan",
+     "does": "A few simple steps that make buying feel safe."
+    },
+    {
+     "step": "And calls them to action",
+     "does": "One clear, direct call to action."
+    },
+    {
+     "step": "That helps them avoid failure",
+     "does": "The real cost of not acting."
+    },
+    {
+     "step": "And ends in a success",
+     "does": "A concrete picture of life after the problem is solved."
+    }
+   ],
+   "best_for": [
+    "businesses whose site talks about themselves",
+    "aligning a team on one customer-centred message"
+   ],
+   "not_for": [
+    "fiction and long narrative (use fw:writers_journey_vogler)",
+    "technical docs and news",
+    "every individual post (it is a message map, not a post template)"
+   ],
+   "origin": {
+    "who": "Donald Miller",
+    "when": "Building a StoryBrand, first published 10 October 2017 (per Goodreads)",
+    "url": "https://www.goodreads.com/book/show/34460583-building-a-storybrand"
+   },
+   "mini_example": "Homepage for a Chandigarh rooftop-solar installer. [Character] You want a lower electricity bill and a roof that pays for itself. [Problem] But quotes vary wildly, subsidy paperwork is confusing, and you've heard of panels that died in a year. [Guide] We've installed rooftop solar on 1,200 Chandigarh homes, and we file the paperwork for you. [Plan] 1. Free roof survey. 2. Fixed quote in 48 hours. 3. Installed in a day. [Call to action] Book your survey. [Failure] Every month you wait is another full bill. [Success] Next summer: AC on, bill near zero.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:storybrand_sb7",
+    "note": "Customer as hero with one want (books closed by the 5th), a problem with the feeling, a guide showing empathy then authority, a three-step plan, one CTA, real failure cost (auditor's first query on suspense) and a concrete success. Framed as a message map, which matches the card's avoid.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:thread_structure",
+   "kind": "framework",
+   "name": "Thread structure (hook, one idea per post, summary, CTA)",
+   "status": "current",
+   "summary": "A hook post that promises a specific payoff, numbered body posts with one idea each (each readable on its own), a summary post, and one call to action at the end. It is a practitioner convention for X and Threads; take character limits from the platform cards, not from memory.",
+   "use_for": [
+    "X and Threads explainers, lessons and lists",
+    "turning a blog post, talk or podcast into a thread",
+    "founder and expert build-in-public updates"
+   ],
+   "avoid": [
+    "A hook that promises more than the thread delivers: count your posts and ideas first, then write the hook.",
+    "Body posts that only make sense in sequence: each should survive being quoted or reposted alone.",
+    "A CTA in every post: one ask, at the end.",
+    "Padding to look substantial: if you have four ideas, write four posts.",
+    "Character or post limits quoted from memory: check plat:x_thread and plat:threads_post."
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://www.wordcounttool.com/twitter-thread-guide",
+     "title": "Twitter / X Thread Writing Guide",
+     "supports": "Hook, body, summary and CTA tweets"
+    },
+    {
+     "url": "https://tugan.ai/blog/how-to-write-a-twitter-thread",
+     "title": "How to Write a Twitter Thread (Hooks + Structure)",
+     "supports": "Thread structure guide"
+    }
+   ],
+   "related": [
+    "genre:x_thread",
+    "plat:x_thread",
+    "genre:threads_post",
+    "plat:threads_post",
+    "hook:number_list",
+    "trend:threads_growth"
+   ],
+   "steps": [
+    {
+     "step": "Hook post",
+     "does": "Promise a specific payoff and say why you are worth reading; must work alone."
+    },
+    {
+     "step": "Context (optional)",
+     "does": "One post on why this matters now or why you know it."
+    },
+    {
+     "step": "Body posts",
+     "does": "Numbered, one idea each, each readable on its own."
+    },
+    {
+     "step": "Summary",
+     "does": "The takeaways in one post."
+    },
+    {
+     "step": "CTA",
+     "does": "One ask: follow, repost the first post, subscribe."
+    }
+   ],
+   "best_for": [
+    "list and process content with 3-10 distinct points",
+    "experts with first-hand lessons"
+   ],
+   "not_for": [
+    "nuanced news or arguments that need connected paragraphs (use a long post or article)",
+    "LinkedIn (use genre:carousel_copy or genre:linkedin_post)"
+   ],
+   "mini_example": "[Hook] I've written 400 reel scripts for Indian D2C brands. The 5-step process I use for every one: [1/5] Write the last line first. If you don't know the payoff, the hook will lie. [2/5] Put the hook in the first six words, and say it out loud. [3/5] One idea per reel. Two ideas means two reels. [4/5] Write on-screen text separately from the voice-over; they do different jobs. [5/5] Cut every line that doesn't move toward the payoff. [Summary] Last line first, short hook, one idea, split text and VO, cut. [CTA] Repost the first post if a creator friend needs this.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:thread_structure",
+    "note": "Hook promises five changes and the thread delivers five, each body post stands alone, a one-line summary and a single repost CTA. For a launch thread it never names the range or points to it (even 'link in reply'), so the reader learns the routine but not what to buy.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:three_act_structure",
+   "kind": "framework",
+   "name": "Three-act structure",
+   "status": "current",
+   "summary": "Setup, Confrontation, Resolution: establish the character and world until an inciting incident and a first turning point raise a dramatic question, show the attempts to resolve it under rising pressure, then answer the question in a climax. It is the default skeleton for a story of any length, from a 30-second ad to a feature film.",
+   "use_for": [
+    "TV and digital ads and brand films",
+    "short films and screenplays",
+    "case-study videos and keynote stories",
+    "any story that needs a clear beginning, middle and end"
+   ],
+   "avoid": [
+    "An Act 1 that is all backstory: get to the inciting incident fast; backstory can come in through the action.",
+    "A sagging Act 2 of repeated obstacles: each obstacle must raise the stakes or force a new tactic (see the Midpoint in fw:save_the_cat).",
+    "An Act 3 solved by luck, or by the product appearing from nowhere: the hero's choice must resolve it.",
+    "The brand as hero in ads: the customer is the protagonist; the product is what they use to win."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Three-act_structure",
+     "title": "Three-act structure - Wikipedia",
+     "supports": "Names the acts Setup, Confrontation, Resolution; inciting incident, first plot point and climax; says Syd Field described it in his 1979 book Screenplay"
+    }
+   ],
+   "related": [
+    "fw:save_the_cat",
+    "fw:freytags_pyramid",
+    "fw:pixar_story_spine",
+    "fw:heros_journey",
+    "genre:tvc_script",
+    "genre:short_film_script"
+   ],
+   "steps": [
+    {
+     "step": "Act 1: Setup",
+     "does": "Establish the main character, relationships and world; an inciting incident confronts the character, and the first plot point raises the dramatic question."
+    },
+    {
+     "step": "Act 2: Confrontation",
+     "does": "Rising action: the protagonist tries to resolve the problem and things get harder."
+    },
+    {
+     "step": "Act 3: Resolution",
+     "does": "The climax brings the tension to its peak and answers the dramatic question; subplots resolve."
+    }
+   ],
+   "best_for": [
+    "any story with one protagonist and one problem",
+    "ads and films from 30 seconds up"
+   ],
+   "not_for": [
+    "news, reference and list content",
+    "stories without central conflict (use fw:kishotenketsu)",
+    "argument pieces (use fw:toulmin_model)"
+   ],
+   "origin": {
+    "who": "Syd Field (described it for screenwriting)",
+    "when": "Screenplay: The Foundations of Screenwriting (1979), per Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Three-act_structure"
+   },
+   "mini_example": "30-second ad for a scooter-insurance app. [Act 1: Setup] Monsoon evening in Indore. Arjun parks his new scooter outside the office; a branch crashes onto it. Who pays? [Act 2: Confrontation] The dealer says, 'Insurance office jaana padega.' Forms, photocopies, a queue, a missing stamp; days pass and the scooter sits broken. [Act 3: Resolution] A colleague opens BimaBuddy; Arjun uploads four photos, a surveyor calls that evening, and on Saturday he rides to work. End line: 'Claim on the phone. Not in the queue.'",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:three_act_structure",
+    "note": "Act 1 gets to the inciting incident fast (Kamla chachi carried on a khatiya), Act 2 escalates with new tactics each time (receipts, rate comparison, the washout, the mistri's drain lesson), Act 3 is resolved by the hero's choice, with a final image that answers the opening. Vivid and local.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:topic_cluster",
+   "kind": "framework",
+   "name": "Topic cluster (pillar and cluster / hub and spoke)",
+   "status": "current",
+   "summary": "One broad pillar page covers a topic at overview depth and links to many narrow cluster pages, each answering one specific question and linking back. Done well, every page targets a distinct intent, the links use descriptive anchors, and the whole set shows depth on a topic; this is HubSpot's pillar-page model.",
+   "use_for": [
+    "planning a blog or resource centre around a business topic",
+    "fixing a site with many overlapping posts",
+    "briefing writers on pillar and spoke articles"
+   ],
+   "avoid": [
+    "Cluster pages that target the same query: they compete with each other; one intent per page, merge the rest.",
+    "A pillar that is only a list of links: it must answer the broad question on its own.",
+    "Anchors like 'click here' or 'read more': describe the target page (tech:anchor_text).",
+    "Publishing dozens of AI-generated spokes at once: that pattern is what comp:google_search_spam_policies calls scaled content abuse.",
+    "Promising a client ranking gains from the structure alone: no source here measures a lift; sell it as a planning and linking discipline."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://blog.hubspot.com/marketing/what-is-a-pillar-page",
+     "title": "What Is a Pillar Page? - HubSpot",
+     "supports": "HubSpot's explanation of pillar pages and topic clusters"
+    }
+   ],
+   "related": [
+    "genre:pillar_page",
+    "genre:topic_cluster_article",
+    "tech:anchor_text",
+    "tech:search_intent_matching",
+    "fw:skyscraper_technique",
+    "trend:geo_ai_search"
+   ],
+   "steps": [
+    {
+     "step": "Choose the pillar topic",
+     "does": "A broad, business-relevant topic your audience searches and you can cover with authority."
+    },
+    {
+     "step": "Map the cluster",
+     "does": "List the specific questions (from search data, sales calls, comments); one page per distinct intent."
+    },
+    {
+     "step": "Write the pillar page",
+     "does": "Cover the whole topic at overview depth, with a section per subtopic linking to its cluster page."
+    },
+    {
+     "step": "Write the cluster pages",
+     "does": "Each goes deep on one question and links back to the pillar, and to siblings where useful, with descriptive anchors."
+    },
+    {
+     "step": "Maintain",
+     "does": "Add clusters as new questions appear, refresh the pillar, fix orphan and broken links."
+    }
+   ],
+   "best_for": [
+    "sites with many posts on related questions",
+    "B2B and services firms that answer the same questions repeatedly"
+   ],
+   "not_for": [
+    "one-off campaigns and news",
+    "sites without capacity to keep the pillar current"
+   ],
+   "mini_example": "[Pillar topic] Home loans for first-time buyers in Bengaluru. [Cluster map] Eligibility for salaried vs self-employed buyers; documents checklist; fixed vs floating rates; prepaying early; joint loans with a spouse; khata type and loan approval. [Pillar page] 'First home loan in Bengaluru: the complete guide', one section per subtopic, each linking to its cluster page. [Cluster pages] One page per question, each linking back with anchors like 'documents you need for a home loan'. [Maintain] Every quarter, turn the new questions clients asked on calls into cluster pages.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:topic_cluster",
+    "note": "Real pillar topic and a cluster map of distinct intents (ASMT-10, GSTR-1 vs TCS, 3B vs 2B, DRC-01, unemailed portal notices, out-of-state warehouse), descriptive anchors, a sibling link and a maintenance rule. Long list sentences (one of 51 words) and the last line repeats the card's avoid nearly word for word.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:toulmin_model",
+   "kind": "framework",
+   "name": "Toulmin model of argument",
+   "status": "current",
+   "summary": "Stephen Toulmin's six parts of a practical argument: the claim, the grounds that support it, the warrant that links grounds to claim, the backing that supports the warrant, the qualifier that sets how strong the claim is, and the rebuttal that names where it does not hold. Claim, grounds and warrant are essential; the other three make an argument hold up with sceptical readers.",
+   "use_for": [
+    "op-eds and policy briefs",
+    "white papers and business cases",
+    "debate, academic and legal-style writing",
+    "stress-testing any argument for unstated assumptions"
+   ],
+   "avoid": [
+    "An unstated warrant the reader does not share: write it out; that is usually where the disagreement is.",
+    "No rebuttal: sceptical readers think of the exception anyway; name it and answer it.",
+    "No qualifier: 'always' and 'every' invite the counter-example; scope the claim honestly.",
+    "Leaving the six labels in the final prose: it is an analysis tool; the finished piece reads as normal paragraphs.",
+    "Backing that is just more grounds: backing supports the link (the warrant), not the claim."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Stephen_Toulmin",
+     "title": "Stephen Toulmin - Wikipedia",
+     "supports": "The Uses of Argument (1958); defines claim, ground, warrant, backing, rebuttal and qualifier; says the first three are essential"
+    }
+   ],
+   "related": [
+    "fw:rogerian_argument",
+    "fw:classical_arrangement",
+    "fw:oreo",
+    "genre:opinion_column",
+    "genre:policy_brief",
+    "genre:white_paper"
+   ],
+   "steps": [
+    {
+     "step": "Claim",
+     "does": "The conclusion you want accepted."
+    },
+    {
+     "step": "Grounds",
+     "does": "The facts and evidence the claim rests on."
+    },
+    {
+     "step": "Warrant",
+     "does": "The principle that connects the grounds to the claim."
+    },
+    {
+     "step": "Backing",
+     "does": "Support for the warrant itself: credentials, precedent, wider evidence."
+    },
+    {
+     "step": "Qualifier",
+     "does": "How strongly the claim holds ('usually', 'in most cases')."
+    },
+    {
+     "step": "Rebuttal",
+     "does": "The conditions under which the claim would not hold, answered."
+    }
+   ],
+   "best_for": [
+    "contested claims aimed at informed, sceptical readers",
+    "reviewing a draft argument for gaps"
+   ],
+   "not_for": [
+    "short ads and emotional storytelling",
+    "impromptu spoken answers (use fw:prep)"
+   ],
+   "origin": {
+    "who": "Stephen Toulmin",
+    "when": "The Uses of Argument (1958), per Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Stephen_Toulmin"
+   },
+   "mini_example": "Note to a Patna school's managing committee. [Claim] Class 9 should start at 8:30, not 7:30. [Grounds] Last term, first-period attendance was 71%, against 93% in second period. [Warrant] Teaching only counts if students are in the room. [Backing] The same gap appears in each of the last three terms, so it is not a one-off. [Qualifier] In most weeks, a later start should recover most of that lost period. [Rebuttal] Unless the bus contractor cannot shift routes; then start at 8:00 and review in a term.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/framework_02.json#fw:toulmin_model",
+    "note": "All six parts present and the rebuttal is good. Backing mostly supports the claim (FSSAI substantiation, public reviews) rather than the warrant, and the qualifier scopes a sub-claim (quarterly testing) instead of the main claim, borrowing the mini_example's 'In most weeks'. Dense (avg 22 words). The 'feedback cards' finding is invented, not placeholdered.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:usp",
+   "kind": "framework",
+   "name": "Unique selling proposition (USP)",
+   "status": "current",
+   "summary": "Build the message around one proposition: buy this and you get this specific benefit, one the competition cannot or does not offer, strong enough to win new customers. Rosser Reeves' three tests (per Wikipedia) still sort a real USP from puffery; Anacin, M&M's and FedEx are the classic cases the article cites.",
+   "use_for": [
+    "positioning statements and brand messaging",
+    "taglines and campaign lines",
+    "homepage heroes and packaging fronts",
+    "briefing ad campaigns around one claim"
+   ],
+   "avoid": [
+    "Puffery dressed as a USP ('best quality', 'customer first'): Reeves' first test rules out mere puffery; state a specific benefit.",
+    "A claim competitors could make tomorrow: choose one they cannot or do not make.",
+    "Superiority you cannot prove: substantiate every comparative claim (comp:asci_code).",
+    "Three USPs: one proposition, repeated; the rest are supporting reasons.",
+    "Confusing the USP with the tagline: the USP is the proposition; the tagline is one way to say it."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Unique_selling_proposition",
+     "title": "Unique selling proposition - Wikipedia",
+     "supports": "Reeves' three-part definition (a proposition, unique, strong enough to move the masses); term coined during campaigns of the early 1940s; examples Anacin (1952), M&M's, FedEx (1978-1983)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Rosser_Reeves",
+     "title": "Rosser Reeves - Wikipedia",
+     "supports": "Advertising executive at Ted Bates, associated with the USP"
+    }
+   ],
+   "related": [
+    "fw:reason_why_copy",
+    "fw:dunford_positioning",
+    "fw:moore_positioning_statement",
+    "tech:unique_mechanism",
+    "genre:positioning_statement",
+    "genre:tagline_slogan"
+   ],
+   "steps": [
+    {
+     "step": "List what you do better",
+     "does": "Specific, provable advantages for the target buyer."
+    },
+    {
+     "step": "Strike shared claims",
+     "does": "Remove anything competitors also say or could easily say."
+    },
+    {
+     "step": "Pick one proposition",
+     "does": "'Buy this, get this specific benefit': the strongest remaining claim for this buyer."
+    },
+    {
+     "step": "Say it in one line, everywhere",
+     "does": "One sentence used consistently across ads, pack, site and sales talk."
+    }
+   ],
+   "best_for": [
+    "crowded categories where buyers cannot tell options apart",
+    "products with a real, provable difference"
+   ],
+   "not_for": [
+    "true parity products with no difference (compete on offer, service or brand instead)",
+    "early-stage products still finding their market (work through fw:dunford_positioning first)"
+   ],
+   "origin": {
+    "who": "Rosser Reeves, Ted Bates & Company",
+    "when": "coined during campaigns of the early 1940s (per Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Unique_selling_proposition"
+   },
+   "mini_example": "Pune laundry service. [What we do better] Same-day turnaround, eco detergent, app tracking, hand ironing. [Strike shared claims] The three nearest competitors also say 'eco' and 'tracking', and all of them hand-iron; none promises same-day. [One proposition] Drop clothes by 9 am, wear them pressed by 7 pm, or the wash is free. [One line, everywhere] 'Morning drop. Evening ready.' On the van, the app icon, the hanger tag and every ad.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_02.json#fw:usp",
+    "note": "Honest strike step (drops Hindi transcription, price and privacy as shared or uncheckable), one proposition a buyer feels on day one, and a short Hinglish line placed everywhere it should go. The 'list' step is one 68-word sentence.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:what_so_what_now_what",
+   "kind": "framework",
+   "name": "What? So what? Now what?",
+   "status": "current",
+   "summary": "Three questions in order: what happened, why it matters, and what happens next. Born as a reflective-learning model (Borton, then Driscoll and Rolfe et al.), it is equally strong for reports, recaps and explainers; the test of a good one is a 'Now what' with named actions, owners and dates.",
+   "use_for": [
+    "monthly client reports and investor updates",
+    "project retros and incident summaries",
+    "event recaps and news explainers",
+    "reflective writing in training, teaching and nursing"
+   ],
+   "avoid": [
+    "A long 'What' and a one-line 'Now what' ('we'll keep improving'): the next steps need actions, owners and dates.",
+    "A 'So what' that restates the facts: it must say what they mean, for whom.",
+    "Blame language in retros and incident notes: describe what happened and what changes.",
+    "Reflection with no evidence: anchor 'So what' in something observed or measured."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://reflection.ed.ac.uk/reflectors-toolkit/reflecting-on-experience/what-so-what-now-what",
+     "title": "What? So what? Now what? - University of Edinburgh Reflection Toolkit",
+     "supports": "The three-question reflective model"
+    },
+    {
+     "url": "https://ltc.uow.edu.au/hub/article/rolfe-et-al-model",
+     "title": "Model of reflection: the Rolfe et al. model - University of Wollongong",
+     "supports": "Rolfe et al. (2001) model inspired by Terry Borton (1970)"
+    }
+   ],
+   "related": [
+    "fw:scqa",
+    "tech:so_what_test",
+    "genre:investor_update",
+    "genre:event_recap_post",
+    "genre:news_explainer",
+    "genre:business_report"
+   ],
+   "steps": [
+    {
+     "step": "What?",
+     "does": "Describe what happened: the facts, what you saw or did, the numbers."
+    },
+    {
+     "step": "So what?",
+     "does": "Why it matters: the meaning, the impact, what was learned."
+    },
+    {
+     "step": "Now what?",
+     "does": "What happens next: actions, decisions, owners, dates."
+    }
+   ],
+   "best_for": [
+    "regular updates to clients, investors or teams",
+    "any piece that must end in a decision"
+   ],
+   "not_for": [
+    "persuasive sales copy (use fw:pas or fw:aida)",
+    "stories that need a dramatic arc (use fw:three_act_structure)"
+   ],
+   "origin": {
+    "who": "Terry Borton, later developed by Driscoll and by Rolfe et al. (per University of Wollongong)",
+    "when": "Borton 1970; Driscoll 1994; Rolfe et al. 2001",
+    "url": "https://ltc.uow.edu.au/hub/article/rolfe-et-al-model"
+   },
+   "mini_example": "Monthly report to a Lucknow food brand. [What?] In September we posted 18 reels for Ghar Ka Swad. Three crossed 100k views, all of them 30-second recipe formats, and website orders rose from 410 to 530. [So what?] Short recipe reels are now our best driver of orders; festive-offer posts got likes but few clicks. [Now what?] In October, 12 of 18 slots go to 30-second recipes, offer posts drop to two, and we test a WhatsApp order link in the bio. We need your sign-off by 5 October.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:what_so_what_now_what",
+    "note": "What is factual (placeholders for counts, real details like shared roofs with water tanks), So what finds the bottleneck (discom feasibility) and who is missed (towers C and D), Now what names owners, actions and dates with a decision deadline. Exactly the card's test.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:writers_journey_vogler",
+   "kind": "framework",
+   "name": "The Writer's Journey (Vogler's 12 stages)",
+   "status": "current",
+   "summary": "Christopher Vogler's screenwriter-friendly rewrite of Campbell's hero's journey: 12 stages from the Ordinary World to the Return with the Elixir, plus eight character archetypes (Hero, Mentor, Threshold Guardian, Herald, Shapeshifter, Shadow, Ally, Trickster). Use it to find what a story is missing, not as a checklist every story must tick.",
+   "use_for": [
+    "screenplays and novels",
+    "long brand films and founder documentaries",
+    "character design for series and games",
+    "course and programme narratives built as a journey"
+   ],
+   "avoid": [
+    "Ticking all 12 stages in order: merge, skip or reorder stages when the story needs it; use them to diagnose gaps.",
+    "A Mentor who solves the problem: the mentor gives a tool or insight; the hero still has to act.",
+    "A Return with no Elixir: if the hero brings nothing back, the story has no payoff.",
+    "The brand as Hero in marketing: make the customer the Hero and the brand the Mentor (see fw:storybrand_sb7)."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/The_Writer%27s_Journey:_Mythic_Structure_for_Writers",
+     "title": "The Writer's Journey: Mythic Structure for Writers - Wikipedia",
+     "supports": "Grew from a seven-page studio memo; first edition 1992, revised 1998, third edition 2007; lists the 12 stages and eight archetypes"
+    }
+   ],
+   "related": [
+    "fw:heros_journey",
+    "fw:save_the_cat",
+    "fw:dan_harmon_story_circle",
+    "fw:three_act_structure",
+    "genre:screenplay_feature",
+    "genre:brand_story"
+   ],
+   "steps": [
+    {
+     "step": "The Ordinary World",
+     "does": "The hero's normal life and what is lacking in it."
+    },
+    {
+     "step": "The Call to Adventure",
+     "does": "A problem or opportunity disrupts that life."
+    },
+    {
+     "step": "Refusal of the Call",
+     "does": "Fear or doubt makes the hero hesitate."
+    },
+    {
+     "step": "Meeting with the Mentor",
+     "does": "Someone gives advice, a tool or courage."
+    },
+    {
+     "step": "Crossing the First Threshold",
+     "does": "The hero commits and enters the new world."
+    },
+    {
+     "step": "Tests, Allies, and Enemies",
+     "does": "The hero learns the new world's rules and who is on which side."
+    },
+    {
+     "step": "Approach to the Innermost Cave",
+     "does": "Preparation for the central challenge."
+    },
+    {
+     "step": "The Ordeal",
+     "does": "The biggest test so far; a brush with failure."
+    },
+    {
+     "step": "Reward",
+     "does": "The hero survives and gains something."
+    },
+    {
+     "step": "The Road Back",
+     "does": "Consequences follow the hero; the push toward home."
+    },
+    {
+     "step": "The Resurrection",
+     "does": "A final, highest-stakes test that proves the hero has changed."
+    },
+    {
+     "step": "Return with the Elixir",
+     "does": "The hero comes home with something that benefits others."
+    }
+   ],
+   "best_for": [
+    "long-form narrative with a transforming protagonist",
+    "finding why a story's middle or ending feels thin"
+   ],
+   "not_for": [
+    "ads under a minute (use fw:three_act_structure or fw:abt)",
+    "ensemble stories without a single hero",
+    "structures without conflict (use fw:kishotenketsu)"
+   ],
+   "origin": {
+    "who": "Christopher Vogler",
+    "when": "grew from his seven-page studio memo 'A Practical Guide to The Hero with a Thousand Faces'; book first published 1992, revised 1998 and 2007 (per Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/The_Writer%27s_Journey:_Mythic_Structure_for_Writers"
+   },
+   "mini_example": "Founder film for a Bhopal millet brand. [Ordinary World] Anita, a bank clerk, cooks for her ageing father. [Call] He asks for the jowar roti his mother made. [Refusal] 'Who has time to grind millet?' [Mentor] A village aunt shows her the old chakki. [Threshold] She quits the bank. [Tests, Allies, Enemies] Shops refuse her packs; a tiffin cooperative becomes her first buyer. [Approach] A big retailer's tasting. [Ordeal] The batch spoils the night before. [Reward] She cooks fresh at the counter; the buyer orders. [Road Back] Scaling without losing the taste. [Resurrection] She turns down a cheap-blend deal. [Elixir] Her father's roti, now on 300 shelves.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:writers_journey_vogler",
+    "note": "All 12 stages in a tight film beat sheet; the mentor gives a rule and a tool, not the answer, the ordeal is a real failure, the reward is self-heard progress, and the elixir benefits others (a speaking circle for juniors). Customer as hero, course as mentor, as the card asks.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  },
+  {
+   "id": "fw:youtube_intro_hook_promise_preview",
+   "kind": "framework",
+   "name": "YouTube intro: hook, promise, preview",
+   "status": "current",
+   "summary": "Open with the most interesting thing (hook), state the specific payoff the viewer gets by the end (promise), show what is coming or why to trust you (preview), then start delivering at once. It must match the title and thumbnail; the 'preview, proof, plan' (PPP) label was not found as a named formula in the sources checked.",
+   "use_for": [
+    "YouTube long-form intros",
+    "video podcast and webinar openings",
+    "course lesson intros",
+    "explainer and tutorial videos"
+   ],
+   "avoid": [
+    "A hook the video never pays off: viewers leave and stop trusting the channel; hook with something the video actually delivers.",
+    "Restating the title word for word: the viewer already read it; add the stakes or the first surprising detail.",
+    "A logo sting, channel intro or 'before we start, subscribe' before any value: earn the ask after the first payoff.",
+    "A preview that gives away the whole payoff: keep one open loop to the end (tech:open_loop).",
+    "A hook that does not match the thumbnail: plan them together (hook:thumbnail_text_pairing)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://vidiq.com/blog/post/write-youtube-video-script/",
+     "title": "How to Write a YouTube Video Script - vidIQ",
+     "supports": "Script template with hook and intro"
+    },
+    {
+     "url": "https://backlinko.com/hub/youtube/planning",
+     "title": "YouTube Video Planning & Outlining Guide - Backlinko",
+     "supports": "Planning and intro structure"
+    }
+   ],
+   "related": [
+    "genre:youtube_video_script",
+    "fw:hook_retain_reward",
+    "tech:open_loop",
+    "tech:retention_rehook",
+    "hook:thumbnail_text_pairing",
+    "hook:curiosity_gap"
+   ],
+   "steps": [
+    {
+     "step": "Hook",
+     "does": "The first line or shot: the result, the question or the conflict, matching the title and thumbnail."
+    },
+    {
+     "step": "Promise",
+     "does": "What the viewer will have or know by the end, specifically."
+    },
+    {
+     "step": "Preview",
+     "does": "What is coming (the steps or parts), a glimpse of the payoff, or one line on why you are credible."
+    },
+    {
+     "step": "Deliver",
+     "does": "Start the content immediately; save channel asks for after the first payoff."
+    }
+   ],
+   "best_for": [
+    "videos of several minutes or more",
+    "tutorials, reviews and explainers"
+   ],
+   "not_for": [
+    "Shorts and Reels (use fw:shorts_loop or fw:hook_retain_reward)",
+    "documentaries that open on a cold scene (use fw:nut_graf_feature logic: scene, then why it matters)"
+   ],
+   "mini_example": "Hinglish tech video. [Hook] Ye Rs 18,000 ka phone Rs 60,000 wale phone jaisi photo le raha hai, sirf settings ki wajah se. [Promise] Video ke end tak aapke phone ki camera settings bhi wahi hongi, phone koi bhi ho. [Preview] Teen settings hain: pehli do minute mein, doosri jo sab galat set karte hain, aur teesri jo night photos badal deti hai. Maine 12 phones pe test kiya hai. [Deliver] Toh camera app kholiye. Pehli setting...",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/framework_02.json#fw:youtube_intro_hook_promise_preview",
+    "note": "Hook is the thumbnail's own bank line with the stakes, Promise is a specific deliverable, Preview gives three rules, a credibility line and an open loop for the end, and Deliver starts in the spreadsheet at once with no channel ask.",
+    "judge": "vj_framework_02",
+    "date": "2026-10-04"
+   }
+  }
+ ]
+}

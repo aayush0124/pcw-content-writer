@@ -1,0 +1,81 @@
+{
+ "cards": [
+  {
+   "id": "tone:sarkari_formal",
+   "kind": "tone",
+   "name": "Sarkari formal (official and legal-letter register, English and Hindi)",
+   "status": "current",
+   "summary": "The register of Indian government orders, official letters, notices and legal correspondence: impersonal or third person, exact, reference-numbered, courteous and fixed in form, in English, Hindi or both. Good sarkari prose is plain and direct inside the fixed form; the formality sits in the structure and the vocabulary, not in long sentences.",
+   "use_for": [
+     "government press notes, circulars, notices and scheme explainers written for a ministry, department or public body",
+     "official letters and replies, including a reply to a Hindi communication",
+     "legal-letter style correspondence: formal notices and responses where precision and a record matter",
+     "citizen-facing official communication that must still read as authentic (RTI replies, scheme guidelines)",
+     "bilingual issues where the Hindi and English versions must match in register"
+   ],
+   "avoid": [
+     "Circumlocution used to sound official. The official drafting manual asks for drafts that are clear, concise and incapable of misconstruction; use short, direct sentences inside the fixed form.",
+     "Defaulting to 'I am directed to say' to open every letter. The manual notes it distances the writer from the reader; open with the matter itself.",
+     "Superlatives, slang, emoji and exclamation marks ('historic!', 'super scheme'). State the fact, the figure and the date.",
+     "Mixed registers inside one piece: formal Hindi administrative vocabulary beside casual Hinglish, or आप switching to तुम. Pick the formal form and keep it.",
+     "A command tone in an office memorandum. The Hindi form is described as requesting (अनुरोध है) rather than ordering; keep it courteous.",
+     "Using this tone for a consumer brand's friendly page or a campaign reel: use tone:conversational, tone:corporate_b2b or tone:friendly_warm instead."
+   ],
+   "markers": [
+     "Structure first: a subject line, then the reference number and date, then the body. The form fixes the opening and closing: Sir/Madam ... Yours faithfully for a letter, महोदय/महोदया ... भवदीय/भवदीया in Hindi; an office memorandum has no salutation or subscription.",
+     "Person: third person or impersonal for decisions and orders; first person only in a demi-official letter.",
+     "English decision phrases: 'it has been decided', 'it is requested', 'with reference to', 'is hereby', 'for information and necessary action', 'kindly ensure'. Passive voice is natural here for a decision whose actor is the office.",
+     "Hindi administrative vocabulary (tatsam): निर्णय लिया गया है, सूचित किया जाता है, अनुरोध है, संदर्भ, कृपया सुनिश्चित करें, अनुपालन, शीघ्र, तदनुसार.",
+     "Hindi verbs take the respectful form for requests and instructions to the reader (करें, भेजें, सुनिश्चित करें) and आप is used throughout, never तुम or तू.",
+     "Defined terms and names are used identically each time (the 'Scheme', 'the Department'); no elegant variation, and pronouns avoided where they could be ambiguous.",
+     "Numbers, dates, section references and amounts are exact: '15 October 2026', 'Rs 5,00,000', 'section 5'. Use Indian digit grouping.",
+     "Sentences are short and carry one instruction or fact; a long communication ends with a summary. No superlatives, no repetition, no padding.",
+     "Courteous, impersonal warmth: requests rather than orders ('is requested to', 'अनुरोध है'), no exclamation marks, no emoji, no slang, no rhetorical questions.",
+     "Hindi side: danda । at the end of sentences, standard spelling (see edit:hindi_proofread), formal Hindi rather than bolchaal Hindustani (lang:hindustani_everyday is the contrast)."
+   ],
+   "sample": "Subject: Extension of last date, Handloom Support Scheme 2026.\nRef: No. 14/2026-SM dated 3 October 2026.\nIt has been decided to extend the last date for applications from 15 October 2026 to 31 October 2026. District Industries Centres are requested to publicise this extension.\n\nविषय: आवेदन की अंतिम तिथि में वृद्धि।\nनिर्णय लिया गया है कि अंतिम तिथि 15 अक्टूबर 2026 से बढ़ाकर 31 अक्टूबर 2026 कर दी जाए। सभी जिला उद्योग केंद्रों से अनुरोध है कि इसका प्रचार करें।",
+   "fits": [
+     "genre:government_press_note",
+     "genre:scheme_explainer",
+     "genre:rti_application",
+     "genre:policy_brief",
+     "genre:public_service_announcement",
+     "genre:internal_memo",
+     "genre:policy_document"
+   ],
+   "confidence": "medium",
+   "sources": [
+     {
+       "url": "https://www.darpg.gov.in/static/uploads/2025/10/e4360b9fcbc0a1a94649c758541051a0.pdf",
+       "title": "DARPG, Central Secretariat Manual of Office Procedure, 13th edition (2010)",
+       "supports": "drafts should be clear, concise and incapable of misconstruction and avoid lengthy sentences, abruptness, redundancy, circumlocution, superlatives and repetition; 'I am directed to say' at the start distances the communicator from the reader and a more direct format is preferred; letter = 'Sir/Madam' ... 'Yours faithfully'; office memorandum = third person with no salutation or subscription; demi-official letter = first person, personal and friendly"
+     },
+     {
+       "url": "https://rajbhasha.gov.in/sites/default/files/olact1963eng.pdf",
+       "title": "The Official Languages Act, 1963 (as amended 1967)",
+       "supports": "resolutions, general orders, rules, notifications, reports and press communiques of the Central Government are issued in both Hindi and English"
+     },
+     {
+       "url": "https://aka.ms/hindi-styleguide",
+       "title": "Microsoft Hindi Localization Style Guide",
+       "supports": "Hindi verbs carry a degree of respect (intimate, familiar, respect); requests and commands to the reader take the respectful form (करें, सहेजें)"
+     },
+     {
+       "url": "https://hindisarang.com/karyalay-gyapan-office-memorandum/",
+       "title": "Hindi Sarang: कार्यालय ज्ञापन (office memorandum)",
+       "supports": "an office memorandum is written in the third person (अन्य पुरुष), its language is requesting (अनुरोधपरक) rather than commanding, and it has no salutation or closing such as भवदीय (secondary source, low confidence); the Hindi edition of the CSMOP was not read"
+     }
+   ],
+   "related": [
+     "edit:style_india_government",
+     "edit:hindi_proofread",
+     "tone:academic_formal",
+     "tone:corporate_b2b",
+     "lang:hindi_devanagari",
+     "lang:hindustani_everyday",
+     "tech:hindi_address_register",
+     "comp:gigw_3"
+   ]
+  }
+ ]
+}

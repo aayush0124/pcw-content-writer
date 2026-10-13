@@ -1,0 +1,500 @@
+{
+ "kind": "editing",
+ "items": [
+  {
+   "id": "edit:line_edit",
+   "name": "Line edit",
+   "category": "Editing levels",
+   "one_line": "Sentence- and paragraph-level pass on language, style, rhythm and clarity once structure is settled.",
+   "aliases": [
+    "stylistic edit"
+   ],
+   "sources": [
+    {
+     "url": "https://www.the-efa.org/editorial-services-definitions/",
+     "title": "Editorial Freelancers Association: Editorial service definitions",
+     "supports": "line editors work at sentence/paragraph level, focused on language and style"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:link_text_check",
+   "name": "Link-text check",
+   "category": "Accessibility & inclusion",
+   "one_line": "Make sure every link says where it goes on its own (no 'click here', 'read more' without context) and links are not overloaded.",
+   "aliases": [
+    "descriptive links check"
+   ],
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html",
+     "title": "WCAG 2.2 Understanding SC 2.4.4 Link Purpose (In Context)",
+     "supports": "link purpose determinable from link text or context"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/add-links/",
+     "title": "GOV.UK: Write effective links",
+     "supports": "descriptive link text rules"
+    },
+    {
+     "url": "https://developers.google.com/style/cross-references",
+     "title": "Google style guide: Cross-references and linking",
+     "supports": "link-text guidance"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:plagiarism_check",
+   "name": "Plagiarism / originality check",
+   "category": "Accuracy & originality",
+   "one_line": "Run the draft through a similarity checker and fix any unattributed overlap; quote and credit or rewrite.",
+   "aliases": [
+    "originality check",
+    "similarity check",
+    "Copyscape check"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Content_similarity_detection",
+     "title": "Content similarity detection (Wikipedia)",
+     "supports": "how plagiarism-detection software works and its limits"
+    },
+    {
+     "url": "https://www.copyscape.com/",
+     "title": "Copyscape",
+     "supports": "web-page duplicate-content checker"
+    },
+    {
+     "url": "https://copyleaks.com/",
+     "title": "Copyleaks",
+     "supports": "plagiarism and AI-content detection tool"
+    },
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/plagiarism/",
+     "title": "UNC Writing Center: Plagiarism",
+     "supports": "what counts as plagiarism and how to avoid it"
+    }
+   ],
+   "note": "AI-content detectors are unreliable; never present a detector score as proof of authorship.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:plain_language_check",
+   "name": "Plain-language check",
+   "category": "Plain language & style guides",
+   "one_line": "Review against a plain-language standard: reader identified, main point first, common words, short sentences, clear headings.",
+   "aliases": [
+    "plain English review",
+    "ISO 24495-1"
+   ],
+   "sources": [
+    {
+     "url": "https://digital.gov/guides/plain-language",
+     "title": "digital.gov: Plain language guide (plainlanguage.gov redirects here)",
+     "supports": "US federal plain language guidance"
+    },
+    {
+     "url": "https://www.iso.org/standard/78907.html",
+     "title": "ISO 24495-1:2023 Plain language, Part 1: Governing principles and guidelines",
+     "supports": "international plain-language standard (page refused scripted fetch with 403)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Plain_Writing_Act_of_2010",
+     "title": "Plain Writing Act of 2010 (Wikipedia)",
+     "supports": "US law requiring plain writing in federal documents"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:pre_publish_qa",
+   "name": "Pre-publish QA checklist",
+   "category": "Workflow & QA",
+   "one_line": "Final gate: facts and links checked, names and numbers re-verified, style and voice pass done, accessibility quick checks, preview on the target device, CTA works.",
+   "aliases": [
+    "publish checklist",
+    "final QA"
+   ],
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/test-evaluate/easy-checks/",
+     "title": "W3C WAI: Easy Checks, a first review of web accessibility",
+     "supports": "quick accessibility checks (title, headings, alt text, contrast) before release"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+     "title": "Google Search Central: SEO Starter Guide",
+     "supports": "on-page basics to confirm before publishing"
+    }
+   ],
+   "note": "Composite checklist; the order and items are this harvest's synthesis of the passes above.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:proofread",
+   "name": "Proofread",
+   "category": "Editing levels",
+   "one_line": "Final pass on the laid-out version for typos, formatting slips and changes that did not carry over.",
+   "aliases": [
+    "proofing",
+    "final read"
+   ],
+   "sources": [
+    {
+     "url": "https://www.the-efa.org/editorial-services-definitions/",
+     "title": "Editorial Freelancers Association: Editorial service definitions",
+     "supports": "proofreading is a late-stage check of the proof for typographical and formatting errors"
+    },
+    {
+     "url": "https://writingcenter.unc.edu/tips-and-tools/editing-and-proofreading/",
+     "title": "UNC Writing Center: Editing and proofreading",
+     "supports": "keep editing and proofreading separate; proofread with a plan for specific error types"
+    }
+   ],
+   "note": "Proofread after a break and on the final format (phone preview for social, rendered email) where possible.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:reading_level_wcag",
+   "name": "Reading-level check (WCAG 3.1.5)",
+   "category": "Readability scoring",
+   "one_line": "If text needs more than lower-secondary reading ability, provide a simpler version or supplemental content.",
+   "aliases": [
+    "WCAG reading level",
+    "accessibility reading level"
+   ],
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/reading-level.html",
+     "title": "WCAG 2.2 Understanding SC 3.1.5 Reading Level (Level AAA)",
+     "supports": "threshold is the lower secondary education level, after removing proper names and titles"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/writing-for-lower-literacy-users/",
+     "title": "NN/g: Lower-Literacy Users",
+     "supports": "lower-literacy readers plough text rather than scan it"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:reverse_outline",
+   "name": "Reverse outline",
+   "category": "Self-edit passes",
+   "one_line": "After drafting, write one line per paragraph saying what it does, then fix order, gaps and repeats from that list.",
+   "aliases": [
+    "after-the-fact outline"
+   ],
+   "sources": [
+    {
+     "url": "https://owl.purdue.edu/owl/general_writing/the_writing_process/reverse_outlining.html",
+     "title": "Purdue OWL: Reverse outlining",
+     "supports": "method for taking notes on and revising a draft"
+    },
+    {
+     "url": "https://writingcenter.gmu.edu/writing-resources/writing-as-process/reverse-outlining",
+     "title": "George Mason University Writing Center: Reverse outlining",
+     "supports": "step-by-step method"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:sensitivity_read",
+   "name": "Sensitivity read",
+   "category": "Accessibility & inclusion",
+   "one_line": "Have a reader from the depicted community review portrayals of identity, culture or experience for errors and harm.",
+   "aliases": [
+    "authenticity read"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sensitivity_reader",
+     "title": "Sensitivity reader (Wikipedia)",
+     "supports": "what sensitivity readers do"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:sentence_length_audit",
+   "name": "Sentence-length audit",
+   "category": "Self-edit passes",
+   "one_line": "Flag sentences over the house limit and split them, while keeping some variety in length.",
+   "aliases": [
+    "long-sentence check"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "quote: 'Try to split up sentences that are over 25 words long.'"
+    },
+    {
+     "url": "https://hemingwayapp.com/help/docs/readability",
+     "title": "Hemingway Editor: Readability",
+     "supports": "flags hard-to-read sentences; long sentences can still work for emphasis or rhythm"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:seo_on_page",
+   "name": "On-page SEO checklist",
+   "category": "SEO & testing",
+   "one_line": "Before publishing: unique title and meta description, one clear main heading, descriptive headings, answer early, alt text, descriptive links and URL, no keyword stuffing.",
+   "aliases": [
+    "on-page SEO review"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+     "title": "Google Search Central: SEO Starter Guide",
+     "supports": "baseline on-page practices and what not to bother with"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/title-link",
+     "title": "Google Search Central: Influencing your title links",
+     "supports": "title element practices"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/snippet",
+     "title": "Google Search Central: Control your snippets",
+     "supports": "meta description practices"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "title": "Google Search Essentials: Spam policies",
+     "supports": "keyword stuffing and scaled content abuse are spam"
+    }
+   ],
+   "note": "Google states AI Overviews/AI Mode need no extra optimisation beyond these basics (developers.google.com/search/docs/appearance/ai-features).",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:source_citation",
+   "name": "Source citation pass",
+   "category": "Accuracy & originality",
+   "one_line": "Attach a named, linkable source to every statistic and quote, prefer primary sources, and date time-sensitive claims.",
+   "aliases": [
+    "attribution check",
+    "citation check"
+   ],
+   "sources": [
+    {
+     "url": "https://ifcncodeofprinciples.poynter.org/the-commitments",
+     "title": "IFCN Code of Principles: the commitments",
+     "supports": "provide sources in enough detail that readers can replicate the work"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "asks whether content presents information with clear sourcing and evidence"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:style_ap",
+   "name": "AP Stylebook",
+   "category": "Plain language & style guides",
+   "one_line": "US news and PR house style for numbers, titles, dates, abbreviations and usage; the default for press releases and news copy.",
+   "aliases": [
+    "AP style"
+   ],
+   "sources": [
+    {
+     "url": "https://www.apstylebook.com/",
+     "title": "AP Stylebook (official site)",
+     "supports": "the style guide itself (subscription)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/AP_Stylebook",
+     "title": "AP Stylebook (Wikipedia)",
+     "supports": "scope and users"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:style_chicago",
+   "name": "Chicago Manual of Style",
+   "category": "Plain language & style guides",
+   "one_line": "US book-publishing style for grammar, citation and manuscript preparation; default for books and long-form.",
+   "aliases": [
+    "CMOS",
+    "Chicago style"
+   ],
+   "sources": [
+    {
+     "url": "https://www.chicagomanualofstyle.org/home.html",
+     "title": "The Chicago Manual of Style Online",
+     "supports": "the style guide itself (subscription)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/The_Chicago_Manual_of_Style",
+     "title": "The Chicago Manual of Style (Wikipedia)",
+     "supports": "scope and users"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:style_google_dev",
+   "name": "Google developer documentation style guide",
+   "category": "Plain language & style guides",
+   "one_line": "Free style reference for technical and product docs: voice, word list, headings, lists, link text, inclusive language.",
+   "aliases": [
+    "Google style guide"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/style",
+     "title": "Google developer documentation style guide",
+     "supports": "the guide"
+    },
+    {
+     "url": "https://developers.google.com/style/word-list",
+     "title": "Google style guide: Word list",
+     "supports": "term-by-term usage decisions"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:style_gov_uk",
+   "name": "GOV.UK style guide",
+   "category": "Plain language & style guides",
+   "one_line": "UK government's public A-Z style guide and writing guidelines: plain English, frontloading, numerals, 'you'.",
+   "aliases": [
+    "GDS style",
+    "GOV.UK A to Z"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/",
+     "title": "GOV.UK A to Z style guide",
+     "supports": "house style entries"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/",
+     "title": "GOV.UK writing guidelines",
+     "supports": "user needs, structure, clear language, tone, links, titles, summaries, change notes"
+    }
+   ],
+   "note": "Moved from gov.uk/guidance/content-design to guidance.publishing.service.gov.uk (old URLs redirect).",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:style_mailchimp",
+   "name": "Mailchimp Content Style Guide",
+   "category": "Plain language & style guides",
+   "one_line": "Free brand-content style guide with voice-and-tone, grammar, accessibility and writing-about-people rules; a model for brand guides.",
+   "aliases": [
+    "Mailchimp style"
+   ],
+   "sources": [
+    {
+     "url": "https://styleguide.mailchimp.com/",
+     "title": "Mailchimp Content Style Guide",
+     "supports": "the guide"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/voice-and-tone/",
+     "title": "Mailchimp: Voice and tone",
+     "supports": "voice stays constant, tone shifts with context"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:style_microsoft",
+   "name": "Microsoft Writing Style Guide",
+   "category": "Plain language & style guides",
+   "one_line": "Free tech-writing and UI style reference: warm, crisp, contractions, sentence case, bias-free, global English.",
+   "aliases": [
+    "Microsoft style"
+   ],
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/welcome/",
+     "title": "Microsoft Writing Style Guide",
+     "supports": "the guide"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/top-10-tips-style-voice",
+     "title": "Microsoft Writing Style Guide: Top 10 tips for Microsoft style and voice",
+     "supports": "summary of the voice rules"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:style_sheet",
+   "name": "Project style sheet",
+   "category": "Editing levels",
+   "one_line": "Keep a running list of the piece's or client's decisions (spellings, names, capitals, numbers, terms) and apply it everywhere.",
+   "aliases": [
+    "editorial style sheet",
+    "word list"
+   ],
+   "sources": [
+    {
+     "url": "https://www.the-efa.org/editorial-services-definitions/",
+     "title": "Editorial Freelancers Association: Editorial service definitions",
+     "supports": "copyeditors prepare style sheets that guide consistency"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:verb_pass",
+   "name": "Verb and voice pass",
+   "category": "Self-edit passes",
+   "one_line": "Find passive constructions, hidden verbs (nominalisations) and weak verb + adverb pairs, and rewrite with strong active verbs.",
+   "aliases": [
+    "passive voice audit",
+    "zombie noun hunt"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "use the active voice"
+    },
+    {
+     "url": "https://yoast.com/features/readability-analysis/",
+     "title": "Yoast SEO: Readability analysis",
+     "supports": "passive-voice check; Yoast's threshold is 10% of sentences"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Nominalization",
+     "title": "Nominalization (Wikipedia)",
+     "supports": "hidden verbs"
+    }
+   ],
+   "note": "Passive is right when the actor is unknown or unimportant; the pass is a review, not a ban.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:yoast_readability",
+   "name": "Yoast readability analysis",
+   "category": "Readability scoring",
+   "one_line": "WordPress plugin checks for passive voice, sentence length, subheading distribution, transition words and Flesch score.",
+   "aliases": [
+    "Yoast checks"
+   ],
+   "sources": [
+    {
+     "url": "https://yoast.com/features/readability-analysis/",
+     "title": "Yoast SEO: Readability analysis",
+     "supports": "list of checks and thresholds (passive voice 10% of sentences); Flesch and word complexity English-only"
+    }
+   ],
+   "note": "Tool thresholds are vendor choices, not standards.",
+   "kind": "editing"
+  }
+ ]
+}

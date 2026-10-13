@@ -1,0 +1,513 @@
+{
+ "kind": "genre",
+ "items": [
+  {
+   "id": "genre:recruitment_ad",
+   "name": "Recruitment ad / careers page copy",
+   "category": "Other commercial",
+   "one_line": "Job ads, JDs, EVP lines and careers-page copy that attract the right candidates.",
+   "aliases": [
+    "job ad",
+    "employer brand copy",
+    "careers page",
+    "EVP statement"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr runs a Job Description Writing subcategory; recruitment-copywriting agencies sell job ads, EVPs and career sites",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation",
+     "title": "Fiverr: Writing & Translation category",
+     "supports": "subcategory list read from the page HTML on 2026-10-04 (ad copy, sales copy, email copy, website content, product descriptions, business names & slogans, brand voice & tone, press releases, UX writing, social media copywriting, script writing, job description writing)"
+    },
+    {
+     "url": "https://brandnewcopy.com/sectors/recruitment-copywriter/",
+     "title": "Brand New Copy: Recruitment copywriter",
+     "supports": "agency line for job ads, EVP statements and career sites"
+    }
+   ],
+   "note": "Discriminatory wording (age, gender) must be avoided; India job ads often list CTC bands.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:reddit_post",
+   "name": "Reddit post (organic community post)",
+   "category": "Organic social",
+   "one_line": "Text post written in a subreddit's own norms that gives value first and survives community moderation and downvotes.",
+   "aliases": [
+    "subreddit post",
+    "Reddit text post",
+    "Reddit AMA post"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr's social media copywriting Platform facet lists Reddit (96 gigs on 2026-10-04).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "Fiverr's Platform filter with live gig counts, a SUPPLY signal: Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009, Pinterest 376, Threads 238, Snapchat 123, Reddit 96, Twitter 47, Discord 5, Quora 3"
+    }
+   ],
+   "note": "Undisclosed brand promotion breaks most subreddit rules and Reddit's own policies; disclose affiliation. Reddit threads are now heavily surfaced in Google and AI answers, which raises brand interest.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:release_notes",
+   "name": "Release notes / changelog",
+   "category": "Technical & product documentation",
+   "one_line": "Per-version record of what changed, written so users know what is new, fixed or breaking.",
+   "aliases": [
+    "changelog",
+    "what's new",
+    "patch notes",
+    "version history"
+   ],
+   "value": "medium",
+   "value_evidence": "Routine product-team deliverable, often owned by technical writers or product marketing; rarely commissioned alone.",
+   "sources": [
+    {
+     "url": "https://keepachangelog.com/en/1.1.0/",
+     "title": "Keep a Changelog 1.1.0",
+     "supports": "community convention: Added / Changed / Deprecated / Removed / Fixed / Security sections, newest first"
+    }
+   ],
+   "note": "Lead with user impact, not ticket titles. Group by type; flag breaking changes and migration steps first. App-store 'What's new' text has its own character limit (platform worker).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:repurposed_content",
+   "name": "Repurposed content (video/podcast to blog, thread, carousel)",
+   "category": "Blog & SEO",
+   "one_line": "New pieces cut from one source asset, e.g. a podcast turned into a blog post, a LinkedIn carousel and three short-video scripts, each rewritten for its format.",
+   "aliases": [
+    "content repurposing",
+    "transcript to blog",
+    "atomized content",
+    "one-to-many content"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr podcast-writing gigs already sell episode summaries, show notes and segment timestamps derived from recordings (2026-10-04); repurposing is commonly bundled into social retainers.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/podcast",
+     "title": "Fiverr: Podcast Writing category (Service includes facet read 2026-10-04)",
+     "supports": "Fiverr podcast-writing gigs list deliverables: Episode summary 143, Segment timestamps 135, Relevant links 125, Script writing 114, Show notes 91, Discussion guide 80, Ad break 59 (gig counts, supply signal)"
+    }
+   ],
+   "note": "A transcript pasted into a blog template is not a blog post; each output needs its own hook and structure for its platform.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:research_abstract",
+   "name": "Research abstract",
+   "category": "Academic, grants & admissions",
+   "one_line": "A structured summary of a study (background, methods, results, conclusion) that decides whether it is read or accepted.",
+   "aliases": [
+    "abstract",
+    "conference abstract",
+    "structured abstract"
+   ],
+   "value": "low",
+   "value_evidence": "Usually written by researchers; paid help comes through research-summary and academic-editing services.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/research-summaries",
+     "title": "Fiverr Writing & Translation: Research Summaries",
+     "supports": "research-summary category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Word limits are set by each journal or conference. Structured abstracts use fixed headings; report numbers, not adjectives.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:research_article",
+   "name": "Data-driven / original research post",
+   "category": "Blog & SEO",
+   "one_line": "Article built around original data (survey, scrape, internal numbers) with charts and quotable findings that others cite and link to.",
+   "aliases": [
+    "original research post",
+    "data study",
+    "data-driven article",
+    "research article"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr's Article type facet lists 'Research article' as its own type (1713 gigs on 2026-10-04); Fiverr article gigs also sell 'Data chart' as an add-on.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Methodology box (sample, dates, how collected) is mandatory; every chart needs one sentence saying what it shows. Feeds genre:research_report for the gated long version.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:research_paper_section",
+   "name": "Research paper / thesis section",
+   "category": "Academic, grants & admissions",
+   "one_line": "Introduction, methods, results or discussion sections of a journal paper or thesis, written to the target format.",
+   "aliases": [
+    "manuscript section",
+    "IMRaD paper",
+    "thesis chapter",
+    "dissertation chapter"
+   ],
+   "value": "low",
+   "value_evidence": "Paid academic and medical editing exist; ghostwriting assessed work is barred by marketplaces and universities.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "academic-related work restricted by Upwork policy"
+    }
+   ],
+   "note": "IMRaD structure; follow the journal's author guidelines. Indian universities run plagiarism checks on theses.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:research_report",
+   "name": "Research / state-of report",
+   "category": "Long-form B2B",
+   "one_line": "Designed report that publishes original survey or usage data (e.g. 'State of X 2026') with findings, charts and recommendations, used for PR, links and leads.",
+   "aliases": [
+    "state of report",
+    "benchmark report",
+    "industry report",
+    "survey report",
+    "trends report"
+   ],
+   "value": "medium",
+   "value_evidence": "Content Marketing Institute itself publishes its annual B2B research this way (B2B Content and Marketing Trends: Insights for 2026, published 2025-10-08); Fiverr lists 'Research article' as an article type (1713 gigs on 2026-10-04).",
+   "sources": [
+    {
+     "url": "https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research",
+     "title": "CMI: B2B Content and Marketing Trends: Insights for 2026 (published 2025-10-08)",
+     "supports": "Example of the genre: a survey-based annual research report (fieldwork 2025-06-24 to 2025-08-14) published by a content brand"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Writer usually works from a data analyst's tables; the methodology section (sample size, dates, who was asked) is non-negotiable. Blog spin-offs are genre:research_article.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:resignation_letter",
+   "name": "Resignation letter",
+   "category": "Career & personal",
+   "one_line": "A brief formal letter giving notice, stating the last working day and leaving on good terms.",
+   "aliases": [
+    "resignation email",
+    "notice letter"
+   ],
+   "value": "low",
+   "value_evidence": "Template-driven; no meaningful paid market.",
+   "note": "Date, notice period as per contract, last working day, thanks, handover offer. No grievances in writing.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:restaurant_menu_copy",
+   "name": "Restaurant menu copy",
+   "category": "Other commercial",
+   "one_line": "Dish names and descriptions, section intros and story blurbs that sell the menu.",
+   "aliases": [
+    "menu descriptions",
+    "menu writing",
+    "food menu copy"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr menu gigs are mostly design with descriptions bundled; no standalone category found",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/gigs/food-menu",
+     "title": "Fiverr gig tag: food menu",
+     "supports": "menu gigs are mostly design with dish descriptions bundled (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "FSSAI rules in India require veg/non-veg marking; calorie display rules apply to some chains.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:resume",
+   "name": "Resume / CV",
+   "category": "Career & personal",
+   "one_line": "A one-to-two page record of achievements that gets a candidate shortlisted by an ATS and a recruiter.",
+   "aliases": [
+    "CV",
+    "curriculum vitae",
+    "biodata (job)",
+    "ATS resume"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork reports resume writers as one of the highest-paid freelance writing types by hourly band; Fiverr runs a Resume Writing category.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "resume writers on Upwork typically charge $25-$65 per hour"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/resume-writing",
+     "title": "Fiverr Writing & Translation: Resume Writing",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Bullets = action verb + what + measurable result. ATS-safe: no tables/text boxes for key data, standard headings. India uses 'CV' and 'resume' interchangeably; academic CV is long-form and different.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:rfp_response",
+   "name": "RFP / tender response (commercial)",
+   "category": "Sales enablement",
+   "one_line": "Answers to a buyer's RFP or tender that score on compliance and win on the narrative.",
+   "aliases": [
+    "EOI response",
+    "GeM bid",
+    "RFP / government tender bid response",
+    "RFP response",
+    "RFP writing",
+    "RFQ/RFI response",
+    "bid writing",
+    "proposal response",
+    "technical bid",
+    "tender bid",
+    "tender response"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has an RFP Freelancers hire category; proposal-writer snippets list RFP/RFQ/RFI work",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/rfp-freelancers/",
+     "title": "Upwork: hire RFP Freelancers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.upwork.com/hire/proposal-writers/",
+     "title": "Upwork: hire Proposal Writers",
+     "supports": "dedicated hire category; snippets list RFP/RFQ/RFI work (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.apmp.org/",
+     "title": "Association of Proposal Management Professionals (APMP)",
+     "supports": "professional body and certification for bid and proposal writers"
+    },
+    {
+     "url": "https://www.gem.gov.in/",
+     "title": "Government e Marketplace (GeM)",
+     "supports": "Indian national public procurement portal where bids are submitted"
+    }
+   ],
+   "note": "Compliance matrix first; India government tenders (GeM/CPPP) are form-heavy. [merged from genre:rfp_tender_response: Answer every requirement in the buyer's order and words; compliance matrix first. Indian tenders split technical and financial bids; eligibility documents and formats are fixed by the tender. Missing a mandatory form disqualifies regardless of quality.]",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:rti_application",
+   "name": "RTI application / citizen grievance letter",
+   "category": "Speeches, public affairs & political",
+   "one_line": "A citizen's written request for information under India's Right to Information Act, or a formal grievance to an authority.",
+   "aliases": [
+    "RTI",
+    "RTI application",
+    "grievance letter",
+    "complaint letter",
+    "CPGRAMS complaint"
+   ],
+   "value": "low",
+   "value_evidence": "Citizens and activists draft them; some lawyers and NGOs offer drafting help for a small fee.",
+   "note": "RTI: ask for specific records, not opinions or reasons; one subject; addressed to the PIO of the right department. Grievances: facts, dates, reference numbers, the remedy sought.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:saas_onboarding_email",
+   "name": "Product onboarding emails (SaaS / app)",
+   "category": "Email & CRM",
+   "one_line": "Lifecycle emails that get a new user to the first value moment and to activation.",
+   "aliases": [
+    "onboarding sequence",
+    "activation emails",
+    "trial emails",
+    "lifecycle emails"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Welcome Packet'; CRM platforms publish onboarding message playbooks; mostly written in-house by lifecycle teams",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://clevertap.com/blog/welcome-push-notifications-to-onboard-new-users/",
+     "title": "CleverTap: Welcome push notifications",
+     "supports": "onboarding push sequences as a CRM deliverable"
+    }
+   ],
+   "note": "Triggered by behaviour (did/didn't do X), not by calendar.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:sales_call_script",
+   "name": "Sales / cold-call script",
+   "category": "Sales enablement",
+   "one_line": "Call opener, discovery questions, pitch and objection answers for SDRs, telecallers or appointment setters.",
+   "aliases": [
+    "telemarketing script",
+    "cold call script",
+    "telecalling script",
+    "objection-handling script"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has a Telemarketing Scriptwriting hire category; AWAI lists 'Telemarketing Script' and 'Sales Enablement: Call Script'",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/telemarketing-scriptwriting-freelancers/us/",
+     "title": "Upwork: hire Telemarketing Scriptwriting Freelancers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "India: telecalling teams often need Hindi/Hinglish versions; DND/TCCCPR rules apply to promotional calls.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:sales_deck",
+   "name": "Sales deck copy",
+   "category": "Sales enablement",
+   "one_line": "Slide-by-slide narrative and headlines for a deck reps present or send to prospects.",
+   "aliases": [
+    "sales presentation",
+    "pitch deck (sales)",
+    "capabilities deck",
+    "credentials deck"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Sales Enablement: Sales Deck'; Upwork has a Sales Presentation hire category",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.upwork.com/hire/sales-presentation-freelancers/",
+     "title": "Upwork: hire Sales Presentation professionals",
+     "supports": "snippets list one-pagers, pitch decks and sales enablement assets (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Indian agencies call the agency version a 'credentials deck' or 'creds'.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:sales_funnel_copy",
+   "name": "Sales funnel copy package",
+   "category": "Sales & conversion",
+   "one_line": "All the copy for a funnel: opt-in page, thank-you page, sales page, order bump, upsell and follow-up emails.",
+   "aliases": [
+    "funnel copy",
+    "ClickFunnels copy",
+    "conversion funnel copy"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork has a Sales Funnel Copywriters hire category; Indian agency menus sell 'email & funnel copywriting'",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/sales-funnel-copywriting-freelancers/",
+     "title": "Upwork: hire Sales Funnel Copywriters",
+     "supports": "dedicated hire category; snippets mention webinar scripts, VSLs and funnel emails (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://thegreyhawks.com/copywriting-agency-in-india/",
+     "title": "The Grey Hawks: Copywriting agency in India (service menu)",
+     "supports": "Indian agency menu: brand voice & messaging framework, website & landing page, performance ad copy, email & funnel, scripts for video & commercials"
+    }
+   ],
+   "note": "Sold as a bundle; cards for individual pages (landing page, upsell, emails) cover the parts.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:sales_page",
+   "name": "Sales page / long-form sales letter",
+   "category": "Sales & conversion",
+   "one_line": "One long page that takes a cold or warm reader from problem to purchase of a single offer.",
+   "aliases": [
+    "long-form sales letter",
+    "sales letter",
+    "long-form sales page",
+    "direct response sales page"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Sales Copy (1828 gigs, 2026-10-04); Fiverr Website Content lists 'Sales page'; Upwork has a Sales Letters hire category; AWAI lists it",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/sales-copy",
+     "title": "Fiverr: Sales Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1828 gigs"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://www.upwork.com/hire/sales-letters-freelancers/",
+     "title": "Upwork: hire Sales Letters Specialists",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Offer, proof, guarantee and objection handling carry most of the weight.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:satire_parody",
+   "name": "Satire / parody piece",
+   "category": "Creative: scripts & performance",
+   "one_line": "Humour that exposes a real target (politician, policy, trend) by exaggeration, irony or imitation.",
+   "aliases": [
+    "political satire",
+    "parody",
+    "spoof",
+    "vyangya",
+    "lampoon"
+   ],
+   "value": "medium",
+   "value_evidence": "Political pages and comedy channels commission it.",
+   "note": "Punch at power, not at the powerless. Label it as satire where it could pass for news. Defamation and election-period rules apply in India (compliance cards). Hindi vyangya has its own literary tradition (Harishankar Parsai, Sharad Joshi).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:scheme_explainer",
+   "name": "Government scheme explainer (for citizens)",
+   "category": "Speeches, public affairs & political",
+   "one_line": "Plain-language explainer telling citizens who is eligible for a scheme, what they get and how to apply.",
+   "aliases": [
+    "yojana explainer",
+    "scheme guide",
+    "citizen guide",
+    "how to apply guide"
+   ],
+   "value": "medium",
+   "value_evidence": "Government, MyGov, parties and media all produce scheme explainers; political content teams commission them daily.",
+   "sources": [
+    {
+     "url": "https://www.mygov.in/",
+     "title": "MyGov",
+     "supports": "platform for citizen-facing scheme communication"
+    }
+   ],
+   "note": "Eligibility, benefit, documents needed, how to apply, helpline. Verify every figure against the scheme's official guidelines page; schemes change amounts and dates often.",
+   "kind": "genre"
+  }
+ ]
+}

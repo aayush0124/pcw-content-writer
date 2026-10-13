@@ -1,0 +1,1352 @@
+{
+ "cards": [
+  {
+   "id": "plat:naukri_job_posting",
+   "kind": "platform",
+   "name": "Naukri job posting (Hot Vacancy and Classified)",
+   "status": "current",
+   "summary": "A Naukri job ad is one of two products. Hot Vacancy has no word limit on the job description and adds company branding, job alerts and several response emails. Classified caps each descriptive field (company profile, job profile, desired candidate) at 254 characters and allows 2 response email ids and 1 address. Good copy has one plain job title, a visible CTC that matches the experience asked, and, on Classified, three fields that are each a one or two sentence summary.",
+   "use_for": [
+    "Hot Vacancy ad: a full job description with role, must-haves, CTC band, location and how to apply.",
+    "Classified ad: three tight fields (company profile, job profile, desired candidate) of 254 characters or fewer each.",
+    "Cleaning a job title before posting: one designation, no abbreviations, no stacked roles.",
+    "Rewriting an ad that pulls the wrong applicants by sharpening the desired-candidate field (years, tools, languages, notice period)."
+   ],
+   "avoid": [
+    "A title like 'Sr. Exec / Mgr - Sales & BD (FMCG) URGENT': Naukri's own advice is an appropriate title and 'avoid multiple designations, abbreviations'. Pick the one designation the person will hold ('Area Sales Manager') and move the rest into the description.",
+    "Hiding the pay: Naukri says CTC 'should be at par with exp. & designation and should be visible'. If the client wants to write 'best in industry', ask for a band ('Rs 6-9 LPA') and put the band in the field.",
+    "Pasting a full Hot Vacancy description into a Classified field. The FAQ gives 254 characters per descriptive field and does not say whether longer text is cut or refused, so decide what the 254 must carry and test the field before delivery.",
+    "Treating 'no word limit' on Hot Vacancy as licence to ramble. The FAQ asks for a comprehensive description, not a long one: lead with the role, then must-haves, then pay and how to apply."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://recruiterfaq.naukri.com/category/naukri-job-posting/",
+     "title": "Job Posting Recruiter FAQ - Naukri.com",
+     "supports": "Hot Vacancy vs Classified features and text limits"
+    },
+    {
+     "url": "https://www.naukri.com/faq/recruiter-job-posting",
+     "title": "Job Posting FAQ - Naukri.com",
+     "supports": "job title advice, CTC visibility, email-id limits per posting type"
+    }
+   ],
+   "related": [
+    "genre:job_description",
+    "genre:recruitment_ad",
+    "plat:linkedin_job_post"
+   ],
+   "limits": [
+    {
+     "field": "each descriptive field on a Classified listing (company profile, job profile, desired candidate)",
+     "max": 254,
+     "unit": "chars",
+     "url": "https://recruiterfaq.naukri.com/category/naukri-job-posting/",
+     "checked": "2026-10-05",
+     "quote": "Job advertisement – a limit of 254 characters is kept for the descriptive fields like company profile, job profile, desired candidate etc.",
+     "confidence": "medium (official Naukri recruiter FAQ, undated)"
+    }
+   ],
+   "formatting": [
+    "Hot Vacancy (per the Naukri recruiter FAQ): no word limit on the job description, company branding, job alerts, multiple response email ids.",
+    "Classified: 254 characters per descriptive field (company profile, job profile, desired candidate), 2 response email ids, 1 address.",
+    "Job title: one field; Naukri advises an appropriate title without multiple designations or abbreviations.",
+    "CTC: Naukri's advice is that it should be visible and at par with experience and designation.",
+    "Bold, bullet glyphs, links, emoji and Devanagari handling are not described in the FAQ pages read: unverified. Write plain text with line breaks and check the recruiter-form preview."
+   ],
+   "writing_notes": [
+    "Lint: this platform has ONE lintable limit (254 chars, Classified), so `pcw.py check field.txt --platform plat:naukri_job_posting` needs no --field. Run it once per field, each in its own file: company profile, job profile, desired candidate. Never run the three joined, because the cap is per field and joined text will false-fail. Hot Vacancy has no cap: do not lint it for 254; use the genre:job_description lint instead.",
+    "Order of work: (1) fix one job title, (2) get the CTC band from the client, (3) write the Hot Vacancy description or the three Classified fields, (4) lint each Classified field.",
+    "Classified, write each field as a one or two sentence summary with numbers a candidate can test themselves against. Company profile: size, place, what it sells, one proof point. Job profile: what they will own, how many people or accounts, who they report to. Desired candidate: years, named tools or sectors, languages, notice period.",
+    "Worked example (all three inside the cap). Title: 'Area Sales Manager'. CTC: 'Rs 6-9 LPA'. Company profile (182 chars): 'Pune-based D2C tea brand, 120 people, selling in 18 states through its own site and Amazon.in. Revenue crossed Rs 40 crore last year; now building its first offline field-sales team.' Job profile (183 chars): 'Own the weekly sales plan for 40 distributors across Maharashtra and Goa: onboarding, stock targets, payment follow-up. Reports to the Regional Head. About 3 days a week in the field.' Desired candidate (167 chars): '3-6 years in FMCG or food sales, handled 25+ distributors, fluent in Hindi and Marathi, own two-wheeler. Graduate in any stream. Immediate to 30-day joiners preferred.'",
+    "If a field runs over, cut company history and adjectives first and keep the numbers (distributors, years, states). Do not cut the location or the CTC band.",
+    "Hot Vacancy shape (no cap, still keep it scannable): two-line role summary, 5-6 responsibilities as short lines, must-haves, nice-to-haves, CTC band, location and work pattern, how to apply. Length guidance is in genre:job_description (300-700 words)."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Naukri's recruiter FAQ advises an appropriate job title (avoid multiple designations, abbreviations), a comprehensive job description, and a visible CTC at par with experience and designation to attract candidates.",
+     "url": "https://www.naukri.com/faq/recruiter-job-posting"
+    }
+   ]
+  },
+  {
+   "id": "plat:pratilipi_series",
+   "kind": "platform",
+   "name": "Pratilipi story series (parts and Daily Series)",
+   "status": "current",
+   "summary": "A serial on Pratilipi is published part by part. Daily Series replaced Live Serials: the writer schedules parts in advance, the series shows on the homepage Daily Series widget under the day its next part is due, and readers see the next seven days. A scheduled part gets that visibility only when it has more than 200 words, so every part needs real length and a last line that makes the reader come back tomorrow.",
+   "use_for": [
+    "Writing and scheduling parts of a Hindi or Hinglish romance, family drama, thriller or devotional serial (craft in genre:serialized_fiction).",
+    "Planning a week of scheduled parts so the series appears on seven consecutive days of the widget.",
+    "Scheduling several parts of one series for the same day for a binge drop (Pratilipi allows it).",
+    "Checking that no scheduled part is a short teaser that would lose widget visibility."
+   ],
+   "avoid": [
+    "Scheduling a bridge or teaser part of 200 words or fewer: the widget gives it no visibility. Write a full part with the story moving, not a placeholder.",
+    "Padding to clear the floor with recap. 200 is a minimum, not a target; a typical part runs far longer (genre:serialized_fiction suggests 800-2,500 words as a practice range, not a platform rule). Spend the length on a scene, ending on the cliffhanger.",
+    "Trusting a lint PASS on this card. The 200 is a floor stored as a 'max', so the lint is inverted here: see writing_notes.",
+    "Quoting a title limit, summary limit or free-part rule: Pratilipi's English help did not publish any on 2026-10-05. Check the writer dashboard before promising one to a client."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://english.pratilipi.com/help/daily-series",
+     "title": "Pratilipi Help: Daily Series",
+     "supports": "parts scheduled up to seven days ahead show in the homepage Daily Series widget; parts need more than 200 words; live serials discontinued"
+    }
+   ],
+   "related": [
+    "genre:serialized_fiction",
+    "genre:novel_chapter",
+    "genre:flash_fiction"
+   ],
+   "limits": [
+    {
+     "field": "minimum words in a scheduled part to show in the Daily Series widget",
+     "unit": "words",
+     "url": "https://english.pratilipi.com/help/daily-series",
+     "checked": "2026-10-05",
+     "quote": "Daily series widget on the homepage will only give visibility to the series where the scheduled part has more than 200 words.",
+     "confidence": "high (Pratilipi Help Centre)",
+     "min": 200
+    }
+   ],
+   "formatting": [
+    "Parts are story text; the Daily Series help page does not describe bold, italics, images or line-break handling: unverified.",
+    "Scheduling: a part scheduled up to seven days ahead appears in the homepage Daily Series widget, under the day the next part is due.",
+    "Visibility rule (Pratilipi Help): the widget gives visibility only to a series 'where the scheduled part has more than 200 words'.",
+    "Live Serials are discontinued; Daily Series is the scheduled-part model.",
+    "How the 200 words are counted for Devanagari is not stated. The PCW lint counts whitespace-separated words, which matches the usual way; keep a margin anyway."
+   ],
+   "writing_notes": [
+    "LINT IS INVERTED. The harvested limit is 200 words stored as a max, but Pratilipi's rule is a minimum (more than 200). With one lintable limit, `pcw.py check part.txt --platform plat:pratilipi_series` needs no --field and tests 'max 200'. Read the result backwards: a FAIL line '... words > max 200' is the GOOD result (the part clears the floor); a run with no such FAIL means 200 words or fewer and the part will not show in the widget. Ignore the exit code for this platform.",
+    "Order of work: plan the week's cliffhangers first (one per part), then write each part to its own length, then count words, then schedule. Schedule seven days ahead so the widget shows the full week.",
+    "Each part must end on a turn, not a summary: a reveal, a decision, an arrival, a lie found out. Worked end-of-part line, Devanagari: 'दरवाज़े पर खड़े आदमी ने जैसे ही चेहरा उठाया, मीरा के हाथ से चाय का प्याला छूट गया। वो अर्जुन नहीं था।' Hinglish: 'Darwaze par khade aadmi ne jaise hi chehra uthaya, Meera ke haath se chai ka pyaala chhoot gaya. Woh Arjun nahi tha.'",
+    "Open each part by re-anchoring in one line (where the scene is, who is present) so a reader arriving from the widget without last night's context can follow.",
+    "Part length and tone are genre choices, not platform rules: see genre:serialized_fiction and tone:storyteller_narrative."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Daily Series widget on the Pratilipi homepage only gives visibility to a series where the scheduled part has more than 200 words; parts can be scheduled up to seven days ahead.",
+     "url": "https://english.pratilipi.com/help/daily-series"
+    }
+   ]
+  },
+  {
+   "id": "plat:prnewswire_india_release",
+   "kind": "platform",
+   "name": "PR Newswire India press release (wire distribution)",
+   "status": "current",
+   "summary": "A press release sent through PR Newswire India. The official guide asks for a headline of no more than 100 characters (70 or fewer if possible) in sentence case, and a body of about 300 to 500 words: 300 for a simple announcement, up to 500 for a complex one. The headline should read like the opening of a news story and answer why the reader should care.",
+   "use_for": [
+    "Wire announcement of a funding round, product launch, partnership, report or appointment from an Indian company.",
+    "Headline, summary and body for the release (full structure and craft in genre:press_release).",
+    "Trimming a long internal announcement to the 300-500 word band.",
+    "Choosing the audience keywords a journalist or a search engine would use in the headline."
+   ],
+   "avoid": [
+    "Headlines in Title Case or full of adjectives ('Revolutionizes', 'Groundbreaking'). PR Newswire says capitalise only the first word and proper nouns and use strong action verbs; say what happened in plain words.",
+    "Using the whole 100 characters because the guide allows it. The same guide's FAQ says 70 characters or less if possible, so write to 70 and treat 100 as the ceiling.",
+    "A body past 500 words because the client has more to say. Put extra detail in the attached media kit or a link and keep the release to the news.",
+    "Relying on formal submission rules (editorial review, source named near the top, no advertising tone) that were not read on an official PRN page: ask the PRN account contact before promising an approval turnaround."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.prnewswire.com/in/resources/articles/how-to-write-a-press-release-tips-and-best-practices/",
+     "title": "How to Write a Press Release: Tips and Best Practices - PR Newswire India",
+     "supports": "headline length and case, body word count, SEO advice"
+    }
+   ],
+   "related": [
+    "genre:press_release",
+    "plat:businesswire_release",
+    "genre:media_pitch",
+    "genre:press_kit"
+   ],
+   "limits": [
+    {
+     "field": "headline (recommended)",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://www.prnewswire.com/in/resources/articles/how-to-write-a-press-release-tips-and-best-practices/",
+     "checked": "2026-10-05",
+     "quote": "Craft a headline with no more than 100 characters that uses strong action verbs to answer the question: \"Why should I care?\"",
+     "confidence": "medium (official PR Newswire India guide, 2024-07-03; a recommendation, not a system cap)"
+    },
+    {
+     "field": "release body (recommended)",
+     "max": 500,
+     "unit": "words",
+     "url": "https://www.prnewswire.com/in/resources/articles/how-to-write-a-press-release-tips-and-best-practices/",
+     "checked": "2026-10-05",
+     "quote": "A press release should ideally be around 300 to 500 words.",
+     "confidence": "medium (official PR Newswire India guide, 2024-07-03)"
+    }
+   ],
+   "formatting": [
+    "Headline: sentence case, 'capitalize only the first word and proper nouns' (PR Newswire India guide); audience keywords early; reads like an opening to a news story.",
+    "Body: ideally around 300 to 500 words; the guide is a recommendation, not a system cap.",
+    "Release anatomy (headline, summary, dateline body, boilerplate): standard release structure per genre:press_release. PRN's exact dateline format and any link, bold or HTML rules were not read on an official page: unverified.",
+    "Tone: newsroom register, no advertising voice. This is standard release practice; PRN's formal rule text was not read."
+   ],
+   "writing_notes": [
+    "Lint: two lintable limits, so always pass --field. Headline: `pcw.py check headline.txt --platform plat:prnewswire_india_release --field headline` (tests 100). Body: `--field \"release body\"` (tests 500 words).",
+    "The lint cannot enforce the soft targets. After the headline passes, count it yourself and aim for 70 or fewer. The body check passes anything up to 500 words, including a 150-word stub, so also confirm the body reaches the 300-word floor of the guide.",
+    "Where sources conflict: the guide's body says no more than 100 characters, its FAQ says 70 or less if possible. Trust 70 as the working target (it is the stricter one and is also from PRN) and 100 as the ceiling the lint tests.",
+    "Headline worked example (58 chars, sentence case, proper nouns kept): 'Jaipur CA firm launches GST notice helpdesk for D2C brands'. The version to avoid (80 chars): 'Jaipur-Based Firm Revolutionizes GST Compliance With Groundbreaking New Platform'. It is Title Case, has no news verb and nothing a journalist can check.",
+    "Lead paragraph: who did what, where and when in the first two sentences, then why it matters, then one quote from a named person, then the numbers. Boilerplate last.",
+    "Every number in the body needs a source the client can supply (customers served, rupees raised, cities covered). If the client cannot, cut the number, not the sentence."
+   ]
+  },
+  {
+   "id": "plat:product_hunt_launch",
+   "kind": "platform",
+   "name": "Product Hunt launch (name, tagline, description, first comment)",
+   "status": "current",
+   "summary": "A Product Hunt launch has a name (only the product's name), a tagline of up to 60 characters that says what the product does, a description of up to 500 characters, a gallery, up to three shoutouts, and the maker's first comment. Product Hunt asks for no gimmicks or over-the-top language: a plain, specific line beats a slogan.",
+   "use_for": [
+    "Writing the tagline (60 characters) and description (500 characters) for a SaaS, app, AI tool or Chrome extension launch.",
+    "Drafting the maker's first comment: who built it, why, and what feedback you want.",
+    "Preparing launch-day assets in the sizes the official guide gives (thumbnail under 3 MB, gallery 1270x760).",
+    "Rewriting a tagline that describes the category instead of what the product does."
+   ],
+   "avoid": [
+    "A name field with a descriptor or emoji. The guide says: 'Only the product's name, no description or emojis (unless it is a legit part of the name).' Put the descriptor in the tagline.",
+    "A slogan as tagline ('The future of compliance'). The tagline is 'a very short description of the product', so use a verb and an object.",
+    "Writing the description to the 260 characters older third-party guides quote. The current official guide says 500; the lint uses 500. Still, the first sentence must carry the point.",
+    "Treating shoutouts as unlimited. The guide gives three per product launch, so decide who gets them while preparing, not in the launch-day rush."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.producthunt.com/launch/preparing-for-launch",
+     "title": "Preparing for launch - Product Hunt",
+     "supports": "name, tagline, description, thumbnail, gallery and shoutout rules"
+    }
+   ],
+   "related": [
+    "genre:launch_sequence",
+    "genre:app_store_listing",
+    "plat:g2_profile",
+    "plat:chrome_extension_listing"
+   ],
+   "limits": [
+    {
+     "field": "tagline",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://www.producthunt.com/launch/preparing-for-launch",
+     "checked": "2026-10-05",
+     "quote": "(max 60 characters) - A very short description of the product — no gimmicks or over-the-top language.",
+     "confidence": "high (official Product Hunt launch guide)"
+    },
+    {
+     "field": "description",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://www.producthunt.com/launch/preparing-for-launch",
+     "checked": "2026-10-05",
+     "quote": "(max 500 characters) - This is where you can give more information about what the product is and/or does.",
+     "confidence": "high (official Product Hunt launch guide)"
+    },
+    {
+     "field": "shoutouts per launch",
+     "max": 3,
+     "unit": "count",
+     "url": "https://www.producthunt.com/launch/preparing-for-launch",
+     "checked": "2026-10-05",
+     "quote": "You only get three shoutouts per product launch",
+     "confidence": "high (official Product Hunt launch guide)"
+    }
+   ],
+   "formatting": [
+    "Name: product name only, no description, no emoji unless part of the name.",
+    "Tagline: max 60 characters, a very short description, no gimmicks or over-the-top language.",
+    "Description: max 500 characters, more information on what the product is or does.",
+    "Thumbnail (GIF or not): under 3 MB. Gallery images: 1270x760 recommended (official launch guide).",
+    "Shoutouts: three per product launch. How the description and first comment render links, bold or emoji was not read on the page (the page returned 403 to direct fetch; read through WebFetch): unverified."
+   ],
+   "writing_notes": [
+    "Lint: two lintable limits, so pass --field. `pcw.py check tagline.txt --platform plat:product_hunt_launch --field tagline` (60 chars) and `--field description` (500 chars). The shoutout cap (3) is a count the lint cannot test: count by hand.",
+    "Order of work: tagline first (it is the hardest 60 characters), then the description, then the first comment, then the gallery captions.",
+    "Tagline formula: verb + object + who or how fast. Good (35 chars): 'Draft GST notice replies in minutes'. Bad (41 chars): 'The #1 revolutionary AI GST platform ever', which is a superlative claim, a hashtag-like #1 and no description of what it does.",
+    "Description worked example (258 of 500 chars): 'Upload a GST show-cause notice, answer five questions about your transactions, and get a reply draft with the relevant sections cited, ready for your CA to review. Built by a Jaipur CA firm that has handled notices for D2C brands. Free for your first notice.' Structure: what it does, how it works in one sentence, who built it and why they can, the free entry point.",
+    "Two numbers on description length: the official guide says 500; older third-party guides say 260. Trust 500 because it is the current official page, but write the first sentence so the post still works if a feed shows only the start.",
+    "First comment (a craft note, not a limit in the sources): write as the maker in first person, say why you built it, name one real customer problem with a number, and ask for specific feedback. For an Indian founder, say where you are building from and who the first users were."
+   ]
+  },
+  {
+   "id": "plat:reddit_ads",
+   "kind": "platform",
+   "name": "Reddit ads (promoted post headline and body)",
+   "status": "current",
+   "summary": "A Reddit promoted post is a headline (up to 300 characters per third-party sources), optional body text (up to 40,000), a CTA button and a display URL. It sits in a feed or conversation next to organic posts, so it works when the headline reads like a native post title for that community and fails when it reads like a slogan. Limits here are third-party only: Reddit's own spec page did not render on 2026-10-05.",
+   "use_for": [
+    "Headline plus body for a promoted post aimed at one community (for example an India-focused finance, startup or developer subreddit).",
+    "Rewriting a slogan-style ad headline into a question or specific statement a member would upvote.",
+    "A longer story-style body for a product that needs explaining, with the real point in the first lines.",
+    "Choosing between several headline angles to test: problem, number, question."
+   ],
+   "avoid": [
+    "A slogan headline. Reddit ads appear among posts, so write the headline the way a member would title a post about the same problem, and say who you are.",
+    "Pretending to be a user. Write as the company ('We are a CA firm in Jaipur') and ask a real question you want answered.",
+    "Filling 300 characters because they are allowed. A search summary on 2026-10-05 attributed to Reddit's help centre a recommendation of about 100 characters (80 where truncation matters); it was not read on the page, so it is not recorded as a limit, but writing to 100 costs nothing.",
+    "Quoting the display URL (35) or CTA button (30) limits as fact: one third-party site claims them and nothing else confirms them. Check the Ads Manager form before delivery."
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://business.reddithelp.com/s/article/Reddit-Ad-Unit-Specifications",
+     "title": "Ad Unit Specifications - Reddit Ads Help Center (primary; did not render: Salesforce page returned 'CSS Error' / 401)",
+     "supports": "official spec page to re-check"
+    },
+    {
+     "url": "https://www.theredditmarketingagency.com/reddit-ads-specs",
+     "title": "Reddit Ad Specs (third-party)",
+     "supports": "headline and body limits"
+    },
+    {
+     "url": "https://lettercounter.org/blog/reddit-ads-character-limits/",
+     "title": "Reddit Ads Character Limits (third-party)",
+     "supports": "same 300 / 40,000; also claims display URL 35 and CTA button 30"
+    }
+   ],
+   "related": [
+    "genre:social_ad_copy",
+    "genre:reddit_post",
+    "plat:reddit_post",
+    "trend:reddit_and_forums_in_search"
+   ],
+   "limits": [
+    {
+     "field": "headline",
+     "max": 300,
+     "unit": "chars",
+     "url": "https://www.theredditmarketingagency.com/reddit-ads-specs",
+     "checked": "2026-10-05",
+     "quote": "Headlines up to 300 characters; body text up to 40,000 characters.",
+     "confidence": "low (third-party only; Reddit's help centre did not render on 2026-10-05)"
+    },
+    {
+     "field": "body text (post copy)",
+     "max": 40000,
+     "unit": "chars",
+     "url": "https://www.theredditmarketingagency.com/reddit-ads-specs",
+     "checked": "2026-10-05",
+     "quote": "Headlines up to 300 characters; body text up to 40,000 characters.",
+     "confidence": "low (third-party only)"
+    }
+   ],
+   "formatting": [
+    "Headline: up to 300 characters and body: up to 40,000 characters, both from third-party spec pages (two sources agree). Reddit's help-centre spec page returned an error: re-read it when it renders.",
+    "A promoted post carries a CTA button and a display URL; third-party figures of 30 and 35 characters are unverified.",
+    "Markdown, emoji and link handling in the body were not confirmed on an official page: unverified. Plain sentences and short paragraphs are safe.",
+    "Reddit ads read as posts: community-native voice, no slogan."
+   ],
+   "writing_notes": [
+    "Lint: two lintable limits, so pass --field. `pcw.py check headline.txt --platform plat:reddit_ads --field headline` (300) and `--field \"body text\"` (40,000). Both pass almost anything, so the real target is craft: headline at about 100 characters or fewer, body short.",
+    "Where sources conflict or are missing: 300 and 40,000 are the only numbers any source gives (two third-party pages agree), so the lint uses them. Treat the 100-character figure as a working target, not a Reddit rule.",
+    "Headline worked example (83 chars, honest, a real question, no slogan): 'D2C founders: how many hours does one GST notice reply cost you? We want to cut it.' The slogan version to avoid: 'India's smartest GST tool. Try it today.'",
+    "Body shape: line 1 says who you are and why you are asking; lines 2-4 give the concrete problem with a number; the last line is one ask (try it, give feedback). No hype words; a member reading it should be able to disagree with it.",
+    "Match the community before writing: read the top posts of the target subreddit first and copy its register (Hinglish is natural in some Indian communities, English in others)."
+   ]
+  },
+  {
+   "id": "plat:sharechat_post",
+   "kind": "platform",
+   "name": "ShareChat video post",
+   "status": "current",
+   "summary": "A video post on ShareChat, the Indian-language social app. ShareChat's FAQ gives one hard number: the upload can be at most 50 MB and there is no limit on video length. No caption, tag or hashtag limit is published, and no Moj or Josh help page with limits was found. The practical job is to fit the video under the size cap and write the caption in the viewer's language.",
+   "use_for": [
+    "Caption and hashtags for a Hindi or other Indian-language video posted to ShareChat.",
+    "Planning the export so a long video fits the 50 MB cap (size, not length, is the constraint).",
+    "Re-cutting an Instagram Reel or YouTube Short for ShareChat.",
+    "Writing the first line of a caption in the audience's own language and script."
+   ],
+   "avoid": [
+    "Assuming a Reel export fits. A video exported at 8 Mbit/s runs 60 MB in 60 seconds (8 x 60 / 8), over the cap. Check the file size, then re-encode at a lower bitrate rather than cutting content.",
+    "Reading 'no limit on video length' as 'make it long'. Only the file size is capped, so a long video needs a low bitrate that may look soft; for a mass-audience clip keep it short.",
+    "Inventing caption or hashtag rules from other apps. ShareChat publishes none, so keep the caption short and carry the message in the video.",
+    "Writing every caption in Roman-script Hinglish. The sources say nothing about which script ShareChat viewers prefer; write in the script of the video's spoken language and ask the client."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://sharechat.com/faq/4/53",
+     "title": "ShareChat FAQ: how long a video can be uploaded",
+     "supports": "50 MB maximum upload, no limit on video length"
+    }
+   ],
+   "related": [
+    "genre:short_form_video_script",
+    "plat:instagram_reel",
+    "plat:youtube_shorts",
+    "trend:short_video_india",
+    "trend:rural_vernacular_internet_india"
+   ],
+   "limits": [
+    {
+     "field": "video upload size (stated as 50 MB; bytes = 50 x 1,048,576)",
+     "max": 52428800,
+     "unit": "bytes",
+     "url": "https://sharechat.com/faq/4/53",
+     "checked": "2026-10-05",
+     "quote": "Maximum video size of upload is 50 MB. There is no limit on video length.",
+     "confidence": "high (ShareChat FAQ)"
+    }
+   ],
+   "formatting": [
+    "Video upload: at most 50 MB; no limit on video length (ShareChat FAQ). The card stores 50 MB as 52,428,800 bytes (50 x 1,048,576).",
+    "Caption, hashtag and mention rules: none published by ShareChat; unverified.",
+    "ShareChat is an Indian-language app: write the caption in the audience's language and script.",
+    "Moj and Josh limits: no help page with text or length limits was found on 2026-10-05; do not assume ShareChat numbers apply to them."
+   ],
+   "writing_notes": [
+    "Lint: the only limit is a FILE SIZE in bytes, so `pcw.py check caption.txt --platform plat:sharechat_post` would compare the caption's text bytes to 52,428,800 and always pass. It proves nothing about the video. Check the file itself (for example `ls -l video.mp4` or `ffprobe`).",
+    "Where the number can be read two ways (50 MiB = 52,428,800 bytes, or 50,000,000 bytes), export under 47 MiB (49,283,072 bytes), which is under 50 MB on either reading.",
+    "Bitrate arithmetic (not a platform fact): 49,283,072 bytes is 394 megabits, so a 60-second video can average about 6.6 Mbit/s for video plus audio, and a 3-minute video about 2.2 Mbit/s. Set the export bitrate from this before rendering, not after.",
+    "Caption worked example (49 chars, Devanagari, one line of value and one question): 'दिवाली की सफ़ाई का 5 मिनट वाला जुगाड़। आप क्या करते हैं? कमेंट में बताइए।'",
+    "Keep the caption to the hook and one question; no source gives a limit, so the video does the work and the caption only gives it a reason to be watched and commented on."
+   ]
+  },
+  {
+   "id": "plat:snapchat_ads",
+   "kind": "platform",
+   "name": "Snapchat ads (brand name and headline)",
+   "status": "current",
+   "summary": "Snap ads are full-screen vertical ads (single image or video, collection, story, commercials) that carry a brand name and a short headline. Third-party spec guides give a 34-character headline, a 55-character tile headline for Story ads and a brand name of 25 or 32 characters; Snapchat's own spec page did not render on 2026-10-05, so every number here is low confidence. The headline is a label for the creative, not the pitch.",
+   "use_for": [
+    "Headline for a single image or video ad, collection ad or commercial (34 characters).",
+    "Tile headline for a Story ad (55 characters).",
+    "Choosing the brand name as it will display (shorter than the cap).",
+    "Translating a Meta or Google headline into Snap's much shorter space."
+   ],
+   "avoid": [
+    "Writing to 55 for every ad: 55 is the Story tile headline. Single image/video, collection and commercials take 34.",
+    "A brand name of 26 to 32 characters. Guides disagree (25 in some, 32 in others, even inside one page); write to 25 until Snapchat's page is read.",
+    "An all-caps English headline. Third-party guides say they are not supported (unverified); write sentence case.",
+    "Repeating the brand name as the headline. Third-party guides say the brand name must be the paying advertiser and must differ from the headline (unverified); put the offer or product in the headline."
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://businesshelp.snapchat.com/s/article/story-ad-specs?language=en_US",
+     "title": "Story Ad Specifications - Snapchat Business Help (primary; JS page did not render)",
+     "supports": "official spec page to re-check"
+    },
+    {
+     "url": "https://blog.adnabu.com/snapchat/snapchat-ad-specs/",
+     "title": "The Complete Guide to Snapchat Ad Specs (third-party)",
+     "supports": "headline 34, tile headline 55, brand name 25 or 32 (inconsistent within the page)"
+    },
+    {
+     "url": "https://strikesocial.com/blog/snapchat-ad-specs/",
+     "title": "The complete list of Snapchat ad specs (third-party)",
+     "supports": "brand name 32, headline 34"
+    }
+   ],
+   "related": [
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "plat:snapchat_spotlight",
+    "plat:tiktok_ads",
+    "plat:meta_ads"
+   ],
+   "limits": [
+    {
+     "field": "headline (single image/video, collection, commercials)",
+     "max": 34,
+     "unit": "chars",
+     "url": "https://blog.adnabu.com/snapchat/snapchat-ad-specs/",
+     "checked": "2026-10-05",
+     "quote": "your ad headlines should be of up to 34 characters with spaces.",
+     "confidence": "low (third-party only; Snapchat Business Help did not render on 2026-10-05)"
+    },
+    {
+     "field": "Story ad tile headline",
+     "max": 55,
+     "unit": "chars",
+     "url": "https://blog.adnabu.com/snapchat/snapchat-ad-specs/",
+     "checked": "2026-10-05",
+     "quote": "Story Ads ... Tile headline 55 chars. Brand 32 chars",
+     "confidence": "low (third-party only)"
+    }
+   ],
+   "formatting": [
+    "Fields: brand name and headline are mandatory per third-party guides (unverified).",
+    "Headline cap 34 chars for single image/video, collection and commercials; Story ad tile headline 55 chars; brand name 25 or 32 (sources conflict). Snapchat Business Help did not render: all third-party.",
+    "All-caps English headlines reportedly not supported; brand name must be the paying advertiser and differ from the headline: both unverified.",
+    "Emoji, Devanagari and character counting rules for Snap headlines were not read: unverified. Test in Ads Manager before delivery."
+   ],
+   "writing_notes": [
+    "Lint: two lintable limits, so pass --field. `pcw.py check headline.txt --platform plat:snapchat_ads --field \"headline (single\"` tests the 34-character headline. `--field \"tile headline\"` tests the 55-character Story tile. Do NOT use `--field headline` alone: it matches both fields.",
+    "The brand name is not a recorded limit, so the lint cannot test it. Count by hand and keep it to 25 characters or fewer, because the quoted caps conflict (25 versus 32) and the smaller one is safe under both.",
+    "Worked example, all inside the caps. Brand (15 chars): 'Jaipur Kurta Co'. Headline (28 of 34): 'Festive kurtas, flat 30% off'. Story tile (50 of 55): 'Festive kurtas from Jaipur: flat 30% off this week'.",
+    "34 characters is about five words: lead with the product or the number, drop articles, and let the full-screen vertical creative carry the explanation.",
+    "For Indian audiences write the headline in Hinglish in Roman script ('Festive kurte, flat 30% off') unless the client supplies approved Devanagari; counting rules for Devanagari are unverified."
+   ]
+  },
+  {
+   "id": "plat:snapchat_spotlight",
+   "kind": "platform",
+   "name": "Snapchat Spotlight Snap",
+   "status": "current",
+   "summary": "A Spotlight Snap is a vertical video posted to Snapchat's public Spotlight feed, with an optional description and #topic. Both published numbers are floors, not caps: the video must be 5 seconds or longer to post, and at least 30 seconds long to be eligible to earn revenue through the Snapchat Monetization Program. Snapchat's guidance is a strong first Snap and closed captions; it publishes no character limit for the description.",
+   "use_for": [
+    "Planning a Spotlight video at 30 seconds or more when the client wants to be eligible for Monetization.",
+    "Writing the optional description and #topic for a Spotlight post.",
+    "Re-cutting a 15-second Reel into a 30-second-plus Spotlight version with a stronger first Snap.",
+    "Adding closed captions so the video holds attention without sound."
+   ],
+   "avoid": [
+    "Cutting every video to 15 seconds out of habit: under 30 seconds the video is not eligible to earn. Decide at the brief whether earning matters.",
+    "Padding to 30 seconds with dead air. Length is a floor; add a second beat or a payoff, not slack.",
+    "Burying the hook. Snapchat's Monetization page says dynamic motion and bright colours in the very first Snap hook the audience; open on the strongest image.",
+    "Assuming the description matters more than the video. Snapchat publishes no character limit for it; write one short line plus a #topic."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://help.snapchat.com/hc/en-us/articles/7012288096532-How-do-I-post-Snaps-to-Spotlight",
+     "title": "Snapchat Support: How do I post Snaps to Spotlight?",
+     "supports": "Post button needs age 16+, an enabled region and a video of 5 s or longer; add a description, location or #topic"
+    },
+    {
+     "url": "https://help.snapchat.com/hc/en-us/articles/14669003687444-About-Snapchat-s-Monetization-Program",
+     "title": "Snapchat Support: About Snapchat's Monetization Program",
+     "supports": "Spotlight videos need 30 s to earn; strong first Snap hook and closed captions recommended"
+    }
+   ],
+   "related": [
+    "genre:short_form_video_script",
+    "plat:snapchat_ads",
+    "plat:instagram_reel",
+    "plat:youtube_shorts",
+    "trend:short_video_india"
+   ],
+   "limits": [
+    {
+     "field": "minimum video length to post",
+     "unit": "seconds",
+     "url": "https://help.snapchat.com/hc/en-us/articles/7012288096532-How-do-I-post-Snaps-to-Spotlight",
+     "checked": "2026-10-05",
+     "quote": "your video is 5 seconds or longer",
+     "confidence": "high (Snapchat Support)",
+     "min": 5
+    },
+    {
+     "field": "minimum video length to earn revenue",
+     "unit": "seconds",
+     "url": "https://help.snapchat.com/hc/en-us/articles/14669003687444-About-Snapchat-s-Monetization-Program",
+     "checked": "2026-10-05",
+     "quote": "In order for Spotlight videos to be eligible to earn revenue, they must be at least 30 seconds long.",
+     "confidence": "high (Snapchat Support, Monetization Program)",
+     "min": 30
+    }
+   ],
+   "formatting": [
+    "Post requirements per Snapchat Support: age 16+, an enabled region and a video of 5 seconds or longer.",
+    "The text surface is the optional description, location or #topic, added with the edit pencil.",
+    "Monetization: Spotlight videos must be at least 30 seconds long to be eligible to earn revenue; closed captions are recommended. Other programme conditions were not read.",
+    "Description length, emoji and hashtag-count rules: none published; unverified."
+   ],
+   "writing_notes": [
+    "Lint: both limits are in seconds, which `pcw.py check` cannot measure, so there is nothing for it to test on a text draft. Measure the file: `ffprobe -v error -show_entries format=duration -of csv=p=0 video.mp4`.",
+    "Both limits are floors even though the card stores them as 'max': the video must be at least 5 s to post and at least 30 s to earn. Aim for 32 seconds or more so a trim or encoder rounding cannot drop it under 30 (a practice margin, not a Snapchat number).",
+    "Description worked example (41 chars, Hinglish, one line, one #topic): 'Mumbai local ka roz ka scene 😅 #relatable'. Keep it to one line; the video and its captions carry the content.",
+    "Captions: write on-screen captions for every spoken line (Snapchat recommends closed captions), keep them off the speaker's face and inside the safe area (see plat:instagram_reel for the safe-zone guidance).",
+    "Script the first Snap as the whole pitch in one image or line, then build the remaining seconds around a second beat (genre:short_form_video_script)."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Snapchat's Monetization Program page: Spotlight videos must be at least 30 seconds long to be eligible to earn revenue; dynamic motion and bright colors in the very first Snap hook the audience, and closed captions help keep viewers engaged.",
+     "url": "https://help.snapchat.com/hc/en-us/articles/14669003687444-About-Snapchat-s-Monetization-Program"
+    }
+   ]
+  },
+  {
+   "id": "plat:spotify_podcast_episode",
+   "kind": "platform",
+   "name": "Spotify for Creators podcast episode (description, chapters)",
+   "status": "current",
+   "summary": "The episode description and chapter titles of a podcast or video podcast on Spotify for Creators. Spotify's own writers recommend two or three sentences and say the first 90 characters really count; chapter titles should be under 40 characters, short and clear. A 4,000-character notes limit comes only from a third-party host's help page, so it is a ceiling for distribution, not a target.",
+   "use_for": [
+    "The opening two or three sentences of an episode description, with the hook inside the first 90 characters.",
+    "Chapter titles for a long episode (under 40 characters each).",
+    "Full show notes (links, guest bio, timestamps) kept below 4,000 characters so every directory accepts them (craft in genre:podcast_show_notes).",
+    "Rewriting a description that opens with the show's name or a thank-you."
+   ],
+   "avoid": [
+    "Opening with 'Welcome to episode 42 of...'. Spotify says make the first 90 characters count: lead with the guest, the problem or the number, then the show name.",
+    "Chapter titles as full sentences. The recommendation is under 40 characters, short and clear, so name what the listener gets ('Notice aaye toh pehle kya karein').",
+    "Pasting 4,000 characters of transcript. Spotify's guide recommends two or three sentences; put links and timestamps after a short opening paragraph.",
+    "Quoting 4,000 as Spotify's limit. It comes from a third-party podcast host (RSS.com) and Spotify publishes no number; use it only as the safe ceiling for the RSS feed."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://support.spotify.com/us/creators/article/episode-chapters/",
+     "title": "Spotify Help (Creators): Episode chapters",
+     "supports": "chapter titles under 40 characters, short and clear"
+    },
+    {
+     "url": "https://creators.spotify.com/resources/create/podcast-episode-descriptions",
+     "title": "Spotify for Creators: How to write episode descriptions, according to Spotify writers",
+     "supports": "two or three sentences; make the first 90 characters count"
+    },
+    {
+     "url": "https://help.rss.com/en/support/solutions/articles/44002278172-understanding-the-4000-character-limit-for-podcast-and-episode-notes",
+     "title": "RSS.com Help: the 4000-character limit for podcast and episode notes",
+     "supports": "third-party: 4,000-character notes limit for distribution"
+    }
+   ],
+   "related": [
+    "genre:podcast_show_notes",
+    "genre:podcast_script",
+    "plat:apple_podcasts",
+    "plat:youtube_chapters",
+    "trend:video_podcasts"
+   ],
+   "limits": [
+    {
+     "field": "chapter title (Spotify's recommendation)",
+     "max": 40,
+     "unit": "chars",
+     "url": "https://support.spotify.com/us/creators/article/episode-chapters/",
+     "checked": "2026-10-05",
+     "quote": "Aim for chapter titles under 40 characters.",
+     "confidence": "medium (Spotify Help recommendation, not a hard cap)"
+    },
+    {
+     "field": "episode description",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://help.rss.com/en/support/solutions/articles/44002278172-understanding-the-4000-character-limit-for-podcast-and-episode-notes",
+     "checked": "2026-10-05",
+     "quote": "Understanding the 4000-Character Limit for Podcast and Episode Notes",
+     "confidence": "low (third-party podcast host help page; Spotify publishes no number)"
+    }
+   ],
+   "formatting": [
+    "Description: Spotify's writing guide recommends two or three sentences; the first 90 characters carry the hook.",
+    "Chapters: titles under 40 characters, short and clear (Spotify Help recommendation, not a hard cap).",
+    "Notes ceiling: 4,000 characters per RSS.com's help page (third-party), safe for distribution.",
+    "Links, HTML, line breaks and timestamps in the description are not covered by the sources read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: two lintable limits, so pass --field. `pcw.py check description.txt --platform plat:spotify_podcast_episode --field \"episode description\"` (tests 4,000) and `--field \"chapter title\"` (tests 40) on ONE chapter title per run.",
+    "The 90-character hook and the two-to-three-sentence rule cannot be linted. Check by hand: print the first 90 characters (`python -c \"print(open('d.txt',encoding='utf-8').read()[:90])\"`) and confirm the hook is complete in them.",
+    "Where sources conflict: 4,000 is the only description number any source gives and it is third-party (low); Spotify's own guidance is two or three sentences. Write to the guidance, use 4,000 only as the ceiling for full show notes.",
+    "First-90 worked example (86 chars, hook complete): 'A Jaipur CA on the three GST notice mistakes D2C founders repeat, and the 48-hour fix.'. Then one sentence on the guest and one on what the listener can do after.",
+    "Chapter title examples, all under 40: 'Notice aaye toh pehle kya karein' (32), 'The 48-hour reply plan' (22), 'Mistake 3: missing the deadline' (31).",
+    "Write the description so it works for someone who only listens and has not seen the video."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Spotify for Creators' writing guide: limit the description to two or three sentences and make the first 90 characters count.",
+     "url": "https://creators.spotify.com/resources/create/podcast-episode-descriptions"
+    }
+   ]
+  },
+  {
+   "id": "plat:tiktok_ads",
+   "kind": "platform",
+   "name": "TikTok ads (in-feed ad caption and account name)",
+   "status": "current",
+   "summary": "TikTok in-feed video ads carry an ad caption over the video, an account name and a CTA. TikTok suggests keeping the caption to 100 characters (50 for Chinese, Japanese, Korean) so it is not covered by 'See more', displays at most 4 lines, and limits the account name to one line of 20 characters. Spark Ads reuse the organic post's caption, up to 150 characters. Non-Spark captions cannot carry links, @ or hashtags. TikTok is not available in India, so this surface serves non-India campaigns.",
+   "use_for": [
+    "Ad caption for a non-Spark in-feed ad: hook and CTA inside the first 100 characters.",
+    "Organic caption written to be boosted as a Spark Ad (150 characters, @ and hashtags allowed there).",
+    "Choosing the account name that displays on the ad (20 characters, recommended 4-10).",
+    "Adapting a Reels or Shorts ad caption for a campaign aimed outside India."
+   ],
+   "avoid": [
+    "Using 150 for every ad. 150 is the Spark Ads maximum; the suggested non-Spark length is 100 so 'See more' does not cover the point.",
+    "Putting a link, @mention or hashtag in a non-Spark caption: they are not supported and will not be clickable. Put the action in the CTA button; use @ and hashtags only in the organic caption of a Spark Ad.",
+    "Emoji or '{ }' in the account name, or a name past 10 characters: TikTok recommends 4-10 characters in non-CJK languages and no emojis or braces.",
+    "Briefing TikTok ads for Indian audiences. TikTok is not available in India (harvest note); move the plan to plat:meta_ads, plat:snapchat_ads or plat:youtube_video_ads."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://ads.tiktok.com/help/article/tiktok-auction-in-feed-ads?lang=en",
+     "title": "TikTok Auction In-Feed Ads | TikTok Ads Manager",
+     "supports": "Spark vs non-Spark specs, caption lines, no links/@/hashtags in non-Spark captions, account name"
+    },
+    {
+     "url": "https://ads.tiktok.com/help/article/tiktok-reservation-in-feed-ads-reach-frequency?lang=en",
+     "title": "TikTok reservation in-feed ad specifications (including Reach & Frequency)",
+     "supports": "caption length advice, character counting rules, account name recommendation"
+    }
+   ],
+   "related": [
+    "plat:tiktok_video",
+    "plat:tiktok_profile",
+    "genre:social_ad_copy",
+    "genre:ugc_ad_script",
+    "trend:creator_led_ads",
+    "plat:meta_ads"
+   ],
+   "limits": [
+    {
+     "field": "ad caption shown before 'See more' (suggested, non-CJK)",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://ads.tiktok.com/help/article/tiktok-reservation-in-feed-ads-reach-frequency?lang=en",
+     "checked": "2026-10-05",
+     "quote": "We suggest to keep the ad captions within 50 characters for CN/JP/KR or 100 characters in other languages to avoid being covered by See more",
+     "confidence": "high (official TikTok Ads help)"
+    },
+    {
+     "field": "Spark Ads caption (taken from the organic post)",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://ads.tiktok.com/help/article/tiktok-reservation-in-feed-ads-reach-frequency?lang=en",
+     "checked": "2026-10-05",
+     "quote": "Ad caption for Spark Ads are extracted directly from the organic video captions, and it supports max 150 characters or blank caption.",
+     "confidence": "high (official TikTok Ads help)"
+    },
+    {
+     "field": "caption lines displayed",
+     "max": 4,
+     "unit": "lines",
+     "url": "https://ads.tiktok.com/help/article/tiktok-auction-in-feed-ads?lang=en",
+     "checked": "2026-10-05",
+     "quote": "A maximum of 4 lines can be displayed, including emojis.",
+     "confidence": "high (official TikTok Ads help, last updated June 2026)"
+    },
+    {
+     "field": "account name (nickname), non-CJK",
+     "max": 20,
+     "unit": "chars",
+     "url": "https://ads.tiktok.com/help/article/tiktok-auction-in-feed-ads?lang=en",
+     "checked": "2026-10-05",
+     "quote": "Displays only one line with a maximum of 10 characters (Chinese, Japanese, and Korean) or 20 characters in other languages.",
+     "confidence": "high (official TikTok Ads help, last updated June 2026)"
+    }
+   ],
+   "formatting": [
+    "Non-Spark ad captions render in white in one uniform font and support no clickable links, @ symbols or hashtags.",
+    "Spark Ads use the organic video's caption (max 150 characters, or blank); there @ is clickable.",
+    "At most 4 lines are displayed, including emojis; 100 characters (50 for CN/JP/KR) is the suggested length to avoid 'See more' covering the text.",
+    "Counting: half-width (English) characters count 1, full-width (CN/JP/KR) count 2; punctuation counts; leading and trailing spaces do not.",
+    "Account name: one line, 20 characters (10 CJK), recommended 4-10, no emojis or '{ }'; for app ads it is pulled from the store listing."
+   ],
+   "writing_notes": [
+    "Lint: four lintable limits, so pass --field. Hook-and-CTA window: `--field \"See more\"` (100). Spark: `--field Spark` (150). Lines: `--field \"caption lines\"` (4). Account name: `--field \"account name\"` (20). Example: `pcw.py check cap.txt --platform plat:tiktok_ads --field \"See more\"`.",
+    "The line check counts hard line breaks only. TikTok wraps long lines on the phone, so a one-paragraph caption can still show 3 or 4 lines. Write at most 2 short lines and do not rely on the lint for this.",
+    "Where the numbers differ: 100 is a suggestion, 150 is the Spark maximum, and TikTok does not say a non-Spark caption fails at 101. Trust 100 as the target for the part that must be seen, 150 as the ceiling for Spark.",
+    "Non-Spark worked example (74 of 100 chars, no link, no @, no hashtag, action in the button): 'Sunscreen with no white cast. 30-day money-back. Tap the button to try it.' Account name (9 chars): 'Glow Rani'.",
+    "Everything the viewer must see (the promise and the offer) goes inside the first 100 characters; anything after is optional because 'See more' may cover it."
+   ]
+  },
+  {
+   "id": "plat:tiktok_profile",
+   "kind": "platform",
+   "name": "TikTok profile (name and bio)",
+   "status": "current",
+   "summary": "The TikTok profile has a display name (nickname) of up to 30 characters, changeable only once every 7 days, and a bio. The bio limit is 160 characters on a 2026 TikTok-hosted page (low confidence); older sources say 80. Username (@handle) is separate. Write the bio so its first 80 characters stand alone, so it still works if the account's counter stops at 80.",
+   "use_for": [
+    "Display name for a creator, brand or expert account (30 characters).",
+    "A bio that says who it is for, what the account posts and when.",
+    "Rewriting a profile so the first 80 characters are enough on their own.",
+    "Aligning the TikTok name and bio with the creator's Instagram and YouTube profiles (see genre:social_bio)."
+   ],
+   "avoid": [
+    "Treating the nickname as disposable: it can only be changed once every 7 days, so confirm the exact text with the client before saving.",
+    "Mixing up nickname and @handle. The nickname is the display name (up to 30 characters); the username is a separate handle.",
+    "Writing 160 characters because a 2026 page says so. The only source is a TikTok-hosted discover page excerpt; if the client's counter stops at 80, the bio gets cut mid-phrase. Write the 80-character version first.",
+    "Briefing a TikTok profile for an India-only audience: TikTok is not available in India (harvest note on plat:tiktok_ads). Use plat:instagram_bio instead."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://web.archive.org/web/20251223074614/https://support.tiktok.com/en/getting-started/setting-up-your-profile/changing-your-nickname",
+     "title": "TikTok Support: Changing your nickname (Wayback 2025-12-23)",
+     "supports": "nickname up to 30 characters, changeable once every 7 days, must follow Community Guidelines"
+    },
+    {
+     "url": "https://www.tiktok.com/discover/tiktok-character-limit-update",
+     "title": "TikTok Discover page: TikTok character limit update",
+     "supports": "user-content summary: bio 160 characters, up from 80"
+    }
+   ],
+   "related": [
+    "plat:tiktok_video",
+    "plat:tiktok_ads",
+    "plat:instagram_bio",
+    "genre:social_bio"
+   ],
+   "limits": [
+    {
+     "field": "name (nickname)",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://web.archive.org/web/20251223074614/https://support.tiktok.com/en/getting-started/setting-up-your-profile/changing-your-nickname",
+     "checked": "2026-10-05",
+     "quote": "You can enter up to 30 characters.",
+     "confidence": "high (TikTok Support, read as the Wayback snapshot of 2025-12-23; tiktok.com is blocked from this machine)"
+    },
+    {
+     "field": "bio",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://www.tiktok.com/discover/tiktok-character-limit-update",
+     "checked": "2026-10-05",
+     "quote": "The character limit for a TikTok bio is 160 characters, an increase from the previous 80-character limit.",
+     "confidence": "low (search excerpt of a user-content page on tiktok.com, not a help article; older sources say 80)"
+    }
+   ],
+   "formatting": [
+    "Nickname: up to 30 characters, editable once every 7 days, must follow Community Guidelines (TikTok Support, Wayback snapshot of 2025-12-23).",
+    "Bio: 160 characters per a TikTok-hosted page (low confidence); 80 was the long-standing figure in older sources.",
+    "Username is a separate @handle with its own rules, not covered by these sources.",
+    "Line breaks, links, emoji and Devanagari in the bio were not read on a TikTok help article: unverified; check the in-app counter."
+   ],
+   "writing_notes": [
+    "Lint: two lintable limits, so pass --field. `pcw.py check name.txt --platform plat:tiktok_profile --field name` (30) and `--field bio` (160).",
+    "Where sources conflict (bio 80 versus 160): the lint tests 160, the only figure in the record. The in-app counter overrides every source: paste the bio into the real field. Write the 80-character version first and extend to 160 only if the counter allows it.",
+    "Name worked example (22 of 30): 'Neha | GST in Hinglish'. Bio worked example (72 chars, complete inside 80): 'Jaipur CA | GST notices in simple Hinglish | New video every Tue and Fri'.",
+    "Bio formula: who you are (role and place), what the account posts and for whom, posting rhythm or one CTA. No emoji strings, no 'DM for collabs' unless collabs are the goal.",
+    "Keep the name searchable: the creator's name plus the topic is easier to find than a pun."
+   ]
+  },
+  {
+   "id": "plat:tiktok_video",
+   "kind": "platform",
+   "name": "TikTok video post (caption, length)",
+   "status": "current",
+   "summary": "A TikTok video or photo post and the caption under it. The Content Posting API sets the video caption at 2,200 UTF-16 units, and hashtags and @mentions are matched when separated by spaces or new lines. Photo posts take a title of 90 and a description of 4,000 UTF-16 units. Video length is set per account, so there is no single public maximum. TikTok is not available in India, so this card serves non-India clients.",
+   "use_for": [
+    "Caption for a TikTok video: hook line first, keywords in the text, a few relevant hashtags.",
+    "Title and description for a photo or carousel post (90 and 4,000).",
+    "Checking a Hindi or emoji caption against the API's UTF-16 count.",
+    "Adapting a Reels caption for a TikTok campaign aimed outside India."
+   ],
+   "avoid": [
+    "Trusting the lint's character count for a Hindi or emoji caption. The API counts UTF-16 units, which is not the number of visible characters. Check the real count (see writing_notes) and leave a margin.",
+    "Gluing hashtags to words with no space: the API matches hashtags and mentions 'delimited by spaces or new lines'. Put a space or a line break before each.",
+    "Writing to the 4,000 characters a 2023 creator video claims for in-app captions (unverified). Write to 2,200 so scheduled and in-app posts both fit.",
+    "Quoting a maximum video length. The API's max_video_post_duration_sec differs per account (sample 300); third-party figures of 60 minutes for uploads and 10 minutes in-app are low confidence. Ask the client's account."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://web.archive.org/web/20260813161754/https://developers.tiktok.com/doc/content-posting-api-reference-direct-post",
+     "title": "TikTok for Developers: Content Posting API, Direct Post reference (Wayback 2026-08-13)",
+     "supports": "video caption = 'title', max 2200 UTF-16 runes; hashtags and mentions delimited by spaces or new lines"
+    },
+    {
+     "url": "https://developers.tiktok.com/doc/content-posting-api-reference-query-creator-info",
+     "title": "TikTok for Developers: Query Creator Info",
+     "supports": "max_video_post_duration_sec: longest video the creator can post; differs per user (sample response 300)"
+    },
+    {
+     "url": "https://web.archive.org/web/20260428125243/https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+     "title": "TikTok for Developers: Photo Post reference (Wayback 2026-04-28)",
+     "supports": "photo post title 90 and description 4000 UTF-16 runes"
+    }
+   ],
+   "related": [
+    "plat:tiktok_profile",
+    "plat:tiktok_ads",
+    "genre:short_form_video_script",
+    "trend:hashtags_to_keywords",
+    "plat:instagram_reel"
+   ],
+   "limits": [
+    {
+     "field": "caption (Content Posting API 'title')",
+     "max": 2200,
+     "unit": "chars",
+     "url": "https://web.archive.org/web/20260813161754/https://developers.tiktok.com/doc/content-posting-api-reference-direct-post",
+     "checked": "2026-10-05",
+     "quote": "The video caption. Hashtags (#) and mentions (@) will be matched ... The maximum length is 2200 in UTF-16 runes.",
+     "confidence": "high (TikTok for Developers reference, read as the Wayback snapshot of 2026-08-13; tiktok.com is blocked from this machine)"
+    },
+    {
+     "field": "photo post title (Content Posting API)",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://web.archive.org/web/20260428125243/https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+     "checked": "2026-10-05",
+     "quote": "The post title. The maximum length for photo posts is 90 in UTF-16 runes.",
+     "confidence": "high (TikTok for Developers reference, read as the Wayback snapshot of 2026-04-28; tiktok.com is blocked from this machine)"
+    },
+    {
+     "field": "photo post description (Content Posting API)",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://web.archive.org/web/20260428125243/https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+     "checked": "2026-10-05",
+     "quote": "The post description. The maximum length for photo posts is 4000 in UTF-16 runes.",
+     "confidence": "high (TikTok for Developers reference, read as the Wayback snapshot of 2026-04-28)"
+    }
+   ],
+   "formatting": [
+    "Caption (video): max 2,200 UTF-16 runes; hashtags and mentions are matched when delimited by spaces or new lines (Content Posting API reference).",
+    "Photo post: title max 90, description max 4,000 UTF-16 runes (Photo Post reference).",
+    "Video duration: per account (Query Creator Info: 'Different users have different maximum video-duration privileges').",
+    "Counting is in UTF-16 units: an emoji can cost 2, and Devanagari letters and vowel signs each cost 1, so a Hindi caption uses about as many units as it has code points, more than the characters a reader sees.",
+    "Where the caption is truncated in the feed is not documented in the sources read: put the hook and keyword in the first line."
+   ],
+   "writing_notes": [
+    "Lint: three lintable limits, so pass --field. `pcw.py check cap.txt --platform plat:tiktok_video --field caption` (2,200), `--field \"photo post title\"` (90), `--field \"photo post description\"` (4,000).",
+    "The lint counts VISIBLE characters; the API counts UTF-16 units. For plain English they match; for Devanagari and emoji the lint is more lenient. If the lint prints 'code points > max but N visible characters', treat that WARNING as a FAIL. Exact check: `python -c \"t=open('c.txt',encoding='utf-8').read(); print(len(t.encode('utf-16-le'))//2)\"`.",
+    "Worked example, Hinglish with hashtags on their own line (126 visible chars, 126 UTF-16 units): 'GST notice aaya? Panic mat karo, pehle ye 3 kaam karo. Poora reply format comment mein pooch lo.\n#gst #smallbusiness #hinglish'. Devanagari version (62 visible, 91 UTF-16 units): 'जीएसटी नोटिस आया? घबराइए मत, पहले ये 3 काम कीजिए। पूरा रिप्लाई फ़ॉर्मेट कमेंट में पूछिए। 😊'. The second is why a Hindi caption near the cap needs the exact count.",
+    "Write to 2,200 even if a source says in-app allows more, so API-scheduled and in-app posts both fit.",
+    "Caption craft: hook in the first line, the topic as plain words (trend:hashtags_to_keywords), then a few relevant hashtags; no hashtag block copied between platforms."
+   ]
+  },
+  {
+   "id": "plat:whatsapp_channel",
+   "kind": "platform",
+   "name": "WhatsApp Channel (name, description, updates)",
+   "status": "current",
+   "summary": "A WhatsApp Channel is a one-way broadcast: followers react to updates but do not reply in the channel. The only published limit is the channel name, up to 100 characters, editable at any time. The description is optional and WhatsApp publishes no character limit for it or for updates; third-party figures conflict (255 versus 2,048).",
+   "use_for": [
+    "Channel name and optional description for a brand, creator, newsroom or professional.",
+    "Planning the update style: short, one idea per update (post craft in genre:whatsapp_channel_post).",
+    "Renaming a channel (the name can be edited any time).",
+    "Positioning a channel as an owned audience next to Instagram and a WhatsApp number."
+   ],
+   "avoid": [
+    "Using all 100 characters for a name nobody can say aloud. Put the brand and the topic first (see the example); the cap is a ceiling.",
+    "Quoting a description or update limit as fact. The two third-party figures conflict (255 versus 2,048); write the description to 255 or fewer as a precaution and check the form's counter.",
+    "Writing updates that ask followers to reply in the channel: updates are one-way, followers react. Point replies to a WhatsApp number, a form or a link.",
+    "Copy-pasting Instagram captions as updates. Write each update for a phone chat screen: one idea, first line complete on its own."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://faq.whatsapp.com/214063281402212",
+     "title": "WhatsApp Help Center: How to manage channel info and settings",
+     "supports": "channel name up to 100 characters, editable any time; description editable"
+    },
+    {
+     "url": "https://faq.whatsapp.com/794229125227200",
+     "title": "WhatsApp Help Center: How to create a WhatsApp Channel",
+     "supports": "channel name, optional description, icon"
+    }
+   ],
+   "related": [
+    "genre:whatsapp_channel_post",
+    "genre:whatsapp_broadcast",
+    "plat:whatsapp_status",
+    "plat:whatsapp_message",
+    "trend:whatsapp_conversational_commerce"
+   ],
+   "limits": [
+    {
+     "field": "channel name",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://faq.whatsapp.com/214063281402212",
+     "checked": "2026-10-05",
+     "quote": "Channel name is limited to 100 characters.",
+     "confidence": "high (WhatsApp Help Center)"
+    }
+   ],
+   "formatting": [
+    "Channel name: up to 100 characters, editable any time (WhatsApp Help Center).",
+    "Description: optional and editable; no published character limit.",
+    "Updates are one-way: followers react, they cannot reply in the channel.",
+    "Bold, links, emoji and formatting inside channel updates were not covered by the pages read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: the name is the ONE lintable limit, so `pcw.py check name.txt --platform plat:whatsapp_channel` needs no --field. The description and updates have no published limit, so there is nothing for the lint to test; use the form's counter.",
+    "Name worked example (47 of 100 chars): 'Jaipur CA Desk: GST and tax updates in Hinglish'. Pattern: brand or person, then the topic, then the language.",
+    "Where figures conflict (description 255 versus 2,048, both third-party): no number is trusted. Keep the description to two or three sentences, at most 255 characters, which is safe under both.",
+    "Description pattern: what you post, how often, who it is for. For example: 'GST notices, due dates and rule changes explained in plain Hinglish by a Jaipur CA. Two updates a week.' That is under 255 characters.",
+    "Reactions are the only response, so end updates with a clear next step on another channel (a number to message, a link) when you want replies."
+   ]
+  },
+  {
+   "id": "plat:whatsapp_status",
+   "kind": "platform",
+   "name": "WhatsApp Status update",
+   "status": "current",
+   "summary": "A WhatsApp Status is a text, photo, video or GIF update that disappears after 24 hours and is shown to contacts. The one published number is the video length: at most 90 seconds. WhatsApp's Help Center gives no character limit for a text Status.",
+   "use_for": [
+    "A short promo or reminder for customers who have saved the business number.",
+    "Cutting a Reel or Short to the 90-second Status maximum.",
+    "A one-line text Status with a real deadline.",
+    "Posting a daily or weekly update series that is only seen for 24 hours (see genre:whatsapp_forward for the greeting-forward format)."
+   ],
+   "avoid": [
+    "Uploading a 2-minute Reel: the cap is 90 seconds, so trim before upload.",
+    "Treating Status as a feed with reach beyond contacts: it is shown to contacts, so reach is limited to people who already have the number.",
+    "Long text Status. No limit is documented, but it is read like a poster; keep it to one or two lines.",
+    "Fake deadlines. A 24-hour Status is a natural place for a real deadline ('tonight 11 pm'); use only a true one."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://faq.whatsapp.com/454876960047011",
+     "title": "WhatsApp Help Center: About status",
+     "supports": "text, photo, video and GIF updates that disappear after 24 hours; max duration 90 seconds"
+    }
+   ],
+   "related": [
+    "plat:whatsapp_channel",
+    "plat:whatsapp_message",
+    "genre:whatsapp_forward",
+    "genre:whatsapp_broadcast",
+    "plat:instagram_story",
+    "trend:whatsapp_conversational_commerce"
+   ],
+   "limits": [
+    {
+     "field": "status video length",
+     "max": 90,
+     "unit": "seconds",
+     "url": "https://faq.whatsapp.com/454876960047011",
+     "checked": "2026-10-05",
+     "quote": "The maximum duration for status is 90 seconds.",
+     "confidence": "high (WhatsApp Help Center)"
+    }
+   ],
+   "formatting": [
+    "Status accepts text, photo, video and GIF; it disappears after 24 hours (WhatsApp Help Center).",
+    "Video: at most 90 seconds.",
+    "Text length: no official character limit found on 2026-10-05.",
+    "Links, bold, emoji and Devanagari are not covered by the page read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: the only limit is in seconds, which `pcw.py check` cannot measure, so it checks nothing on a text draft. Measure the video: `ffprobe -v error -show_entries format=duration -of csv=p=0 video.mp4`, and keep it at or under 90 seconds.",
+    "Text Status worked example (88 chars, Hinglish, one real deadline): 'Diwali order band hone mein 3 din baaki. Aaj raat 11 baje tak book karein, kal dispatch.'. One idea, one deadline, one action.",
+    "A Status lasts 24 hours, so write only what is true for the next 24 hours; if the offer ends later, say the day, not 'today'.",
+    "For a 90-second video: first 3 seconds carry the whole point on screen as text, since the point must also work with the sound off (a practice note, not a platform fact).",
+    "Status is a reminder for people who already know the brand; use it to push one product, one deadline or one new Channel post."
+   ]
+  },
+  {
+   "id": "plat:x_ads",
+   "kind": "platform",
+   "name": "X (Twitter) ads (promoted post copy, website and conversation buttons, polls)",
+   "status": "current",
+   "summary": "Promoted posts on X: post copy plus an optional website-button headline, conversation buttons, app buttons or a poll. Post copy is 280 characters and every link costs 23 of them (257 left with one link); with conversation buttons the post copy is 256, the card title 23 and each CTA hashtag 20. A website-button headline is 70 characters and may be truncated on some devices, so the point goes first.",
+   "use_for": [
+    "Post copy for a text, image or video promoted post (280 characters, link included).",
+    "Website-button headline (70) and video website card description (200).",
+    "Conversation-button ads: post copy 256, card title 23, CTA hashtags 20.",
+    "Poll ads: 2-4 options of 25 characters each, which do not count against the post copy."
+   ],
+   "avoid": [
+    "Writing 280 characters of copy and then adding a link: each link takes 23 characters, so one link leaves 257 for words.",
+    "Using the 280 limit for conversation-button ads. Their post copy is 256, the card title 23 and CTA hashtags 20 (21 with the #).",
+    "A website-button headline that hides the point at the end: it may truncate by device and app settings. Put the offer or benefit first.",
+    "Counting Hindi or Hinglish with the English rule without checking: how Devanagari is counted in ad copy is not covered by the sources read. Use the composer's counter."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://business.x.com/en/help/campaign-setup/creative-ad-specifications-old",
+     "title": "X Ads creative specs (business.x.com, published 2026-05-06 per the page header)",
+     "supports": "per-format post copy, headline, poll, hashtag and thank-you text limits"
+    },
+    {
+     "url": "https://docs.x.com/x-ads-api/creatives/reference",
+     "title": "Creatives API Reference - X",
+     "supports": "card field max lengths (titles, CTA hashtags, thank-you text, video website title/description, poll choices)"
+    }
+   ],
+   "related": [
+    "plat:x_post",
+    "genre:social_ad_copy",
+    "plat:meta_ads",
+    "plat:linkedin_ads_sponsored_content"
+   ],
+   "limits": [
+    {
+     "field": "post copy (text, image and video ads)",
+     "max": 280,
+     "unit": "chars",
+     "url": "https://business.x.com/en/help/campaign-setup/creative-ad-specifications-old",
+     "checked": "2026-10-05",
+     "quote": "post copy:280 characters. (Note: each link used reduces character count by 23 characters, electing 257 characters for X copy.)",
+     "confidence": "medium (official X Business page, the '-old' version; the current spec page is behind a bot check)"
+    },
+    {
+     "field": "website-button media headline (image or video)",
+     "max": 70,
+     "unit": "chars",
+     "url": "https://docs.x.com/x-ads-api/creatives/reference",
+     "checked": "2026-10-05",
+     "quote": "The title (headline) that appears under the video when Tweeted. Maximum length: 70 characters.",
+     "confidence": "high (official X Ads API reference)"
+    },
+    {
+     "field": "video website card description (API)",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://docs.x.com/x-ads-api/creatives/reference",
+     "checked": "2026-10-05",
+     "quote": "The description that appears under the video when Tweeted. Maximum length: 200 characters.",
+     "confidence": "high (official X Ads API reference)"
+    },
+    {
+     "field": "conversation-button card title",
+     "max": 23,
+     "unit": "chars",
+     "url": "https://docs.x.com/x-ads-api/creatives/reference",
+     "checked": "2026-10-05",
+     "quote": "The title for the card, which appears below the image and above the CTAs. Maximum length: 23 characters.",
+     "confidence": "high (official X Ads API reference)"
+    },
+    {
+     "field": "conversation-button CTA hashtag",
+     "max": 20,
+     "unit": "chars",
+     "url": "https://docs.x.com/x-ads-api/creatives/reference",
+     "checked": "2026-10-05",
+     "quote": "The Call-To-Action (CTA) hashtag for the first option. Maximum length: 20 characters (not counting the #).",
+     "confidence": "high (official X Ads API reference)"
+    },
+    {
+     "field": "post copy with conversation buttons",
+     "max": 256,
+     "unit": "chars",
+     "url": "https://business.x.com/en/help/campaign-setup/creative-ad-specifications-old",
+     "checked": "2026-10-05",
+     "quote": "post copy:256 characters",
+     "confidence": "medium (official X Business page, '-old' version)"
+    },
+    {
+     "field": "poll option",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://business.x.com/en/help/campaign-setup/creative-ad-specifications-old",
+     "checked": "2026-10-05",
+     "quote": "Each poll option can include up to a maximum of 25 characters of text (which do not count against the 280 ... in post copy).",
+     "confidence": "medium (official X Business page, '-old' version)"
+    }
+   ],
+   "formatting": [
+    "Post copy: 280 characters; each link reduces it by 23 characters (X Business creative specs, the '-old' page).",
+    "Website button: headline up to 70 characters (X Ads API); for video, description up to 200.",
+    "Conversation buttons: post copy 256, card title up to 23, CTA hashtag up to 20 (not counting the #); thank-you text 23 (per the harvest note from the API reference). App titles come from the store listing and cannot be edited.",
+    "Poll ads: 2-4 options of up to 25 characters each; option text does not count against the 280.",
+    "Emoji, hashtags, mentions and line breaks in promoted post copy were not read on the current spec page (it returned a bot check): unverified."
+   ],
+   "writing_notes": [
+    "Lint: several lintable limits, so always pass --field and use a string that matches ONE limit. 280 copy: `--field \"post copy (text\"`. Conversation copy (256): `--field \"with conversation\"`. Website headline (70): `--field \"media headline\"`. Video card description (200): `--field \"video website card\"`. Conversation card title (23): `--field \"card title\"`. CTA hashtag (20): `--field \"CTA hashtag\"` (without the #). Poll option (25): `--field \"poll option\"`. Never `--field \"post copy\"`: it matches both 280 and 256.",
+    "The lint counts every character of a pasted URL, but X charges 23. Before linting copy that has a link, replace each URL with 23 x characters, or check the sum yourself: visible characters plus 23 per link.",
+    "Worked example (one link, charged as 23): copy is 117 characters plus a space plus the 23-character link charge = 141 of 280: 'Diwali gifting sorted: 500+ handmade diyas, free shipping above Rs 999. Order this week and we pack it in a gift box. https://example.in/diyas'. Conversation card title (18 of 23): 'Pick your gift box'. CTA hashtag: '#GiftUnder999' (12 of 20 without #). Poll options (5, 12, 13 of 25): ['Diyas', 'Rangoli kits', 'String lights'].",
+    "Where numbers differ: 280 versus 257 versus 256 are the same rule with different features (no link, one link, conversation buttons). The 70 and 23 figures agree between the X Business '-old' page and the API reference; the 280, 256 and 25 come from the '-old' page only. Re-read the current spec page when it renders.",
+    "Put the point first in both the post copy and the website-button headline: the headline may be truncated by device and app settings."
+   ]
+  },
+  {
+   "id": "plat:youtube_playlist",
+   "kind": "platform",
+   "name": "YouTube playlist (title and description)",
+   "status": "current",
+   "summary": "The title and description of a YouTube playlist, including series and podcast playlists. Titles may be 150 characters and descriptions 5,000, and '<', '>' and the line separator are invalid in both. A playlist title should name the topic, the audience and the language so a viewer knows what the series is before opening it. YouTube Live titles are the video's title, so they follow plat:youtube_title.",
+   "use_for": [
+    "Title and description for a course, series, season or podcast playlist.",
+    "Re-titling an unnamed 'Playlist 3' into a searchable series name.",
+    "A playlist description that says what the series covers, who it is for and the watch order.",
+    "Grouping Shorts or episodes into one playlist with a clear name."
+   ],
+   "avoid": [
+    "Titles like 'Videos' or 'Part 1 to 12'. Use topic, audience and language, in the words a viewer would search.",
+    "Pasting '<' or '>' (for example '<b>' or '< 5 lakh') into a title or description: YouTube lists them, with the line separator U+2028, as invalid characters. Write 'under 5 lakh' instead.",
+    "Quoting 150 as the target. It is a ceiling; most playlist titles read better much shorter.",
+    "Using the playlist title for a live stream: a live broadcast is one video and its title follows plat:youtube_title (100)."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/10232933?hl=en&co=GENIE.Platform%3DDesktop",
+     "title": "YouTube Help: Manage playlists in YouTube Studio",
+     "supports": "title 150 chars, description 5,000 chars; '<', '>' and the line separator are invalid in both"
+    }
+   ],
+   "related": [
+    "plat:youtube_title",
+    "plat:youtube_description",
+    "plat:youtube_channel_description",
+    "genre:youtube_title_description"
+   ],
+   "limits": [
+    {
+     "field": "playlist title",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/10232933?hl=en&co=GENIE.Platform%3DDesktop",
+     "checked": "2026-10-05",
+     "quote": "Playlist titles have a character limit of 150 characters",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "playlist description",
+     "max": 5000,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/10232933?hl=en&co=GENIE.Platform%3DDesktop",
+     "checked": "2026-10-05",
+     "quote": "Playlist descriptions have a character limit of 5,000 characters",
+     "confidence": "high (YouTube Help)"
+    }
+   ],
+   "formatting": [
+    "Title: up to 150 characters. Description: up to 5,000 characters (YouTube Help, Manage playlists in YouTube Studio).",
+    "Invalid in both: '<', '>' and the line separator U+2028.",
+    "Link, line-break and emoji handling in playlist descriptions are not covered by the page read: unverified.",
+    "Playlists include series and podcast playlists; a live broadcast counts as one video."
+   ],
+   "writing_notes": [
+    "Lint: two lintable limits, so pass --field. `pcw.py check title.txt --platform plat:youtube_playlist --field \"playlist title\"` (150) and `--field \"playlist description\"` (5,000).",
+    "The lint does not test invalid characters. Check: `python -c \"import re;print(re.findall('[<>\\u2028]',open('t.txt',encoding='utf-8').read()))\"` must print an empty list.",
+    "Title worked example (57 of 150): 'GST Notice Reply: Step by Step for Small Business (Hindi)'. Topic, audience and language are all in it.",
+    "Description pattern: what the series covers in one sentence, who it is for, the watch order (start with video 1), how often a new video arrives, then links. Keep the first lines complete on their own.",
+    "A playlist name is a search result and a promise: name the audience and the language ('Hindi') when it is not English."
+   ]
+  },
+  {
+   "id": "plat:youtube_shorts",
+   "kind": "platform",
+   "name": "YouTube Shorts (title, length, description links)",
+   "status": "current",
+   "summary": "A vertical YouTube Short: up to 3 minutes long, with a title of up to 100 characters and a description where links are not clickable. YouTube's help says URLs in Shorts descriptions and comments are non-clickable to reduce spam; mentions and hashtags stay clickable. So a Short's call to action must use the channel profile links, a pinned or featured long-form video, or a spoken keyword, never 'link in description'.",
+   "use_for": [
+    "Title for a Short (100 characters) and the on-screen first line it matches.",
+    "A call to action that works without a clickable link: follow, watch the full video, say a keyword.",
+    "Choosing Short length: the cap is 3 minutes, though most briefs ask for 30 to 60 seconds (see genre:short_form_video_script).",
+    "Writing the Shorts description with clickable mentions and hashtags but no reliance on a URL."
+   ],
+   "avoid": [
+    "'Link in description' or 'link in comments': URLs there are non-clickable. Send people to the channel profile link, a featured long-form video or a keyword.",
+    "Assuming 3 minutes is a good length. It is the maximum; the hook and payoff decide the length.",
+    "A title that tries to be a caption. The title is 100 characters at most and should carry the topic and the benefit; the on-screen text carries the hook.",
+    "A long pitch in the description with a URL you want clicked: the URL is dead in a Short. Description length follows plat:youtube_description, but the call to action must live in the video and the profile links."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/10059070?hl=en",
+     "title": "YouTube Help: Get started creating YouTube Shorts",
+     "supports": "Shorts up to 3 minutes; title max 100 characters; max 1080p upload"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/13748639?hl=en",
+     "title": "YouTube Help: Sharing links with your audiences",
+     "supports": "URLs in Shorts comments and Shorts descriptions are non-clickable"
+    }
+   ],
+   "related": [
+    "genre:short_form_video_script",
+    "plat:youtube_title",
+    "plat:youtube_description",
+    "plat:youtube_thumbnail",
+    "plat:instagram_reel",
+    "trend:short_video_india"
+   ],
+   "limits": [
+    {
+     "field": "video length",
+     "max": 180,
+     "unit": "seconds",
+     "url": "https://support.google.com/youtube/answer/10059070?hl=en",
+     "checked": "2026-10-05",
+     "quote": "YouTube's Shorts creation tools makes it easy to create short-form videos that are up to 3 minutes long",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "title",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/10059070?hl=en",
+     "checked": "2026-10-05",
+     "quote": "Add a title (max 100 characters)",
+     "confidence": "high (YouTube Help, Shorts upload steps)"
+    }
+   ],
+   "formatting": [
+    "Length: up to 3 minutes (YouTube Help, Get started creating YouTube Shorts); upload up to 1080p.",
+    "Title: maximum 100 characters.",
+    "Links: URLs in Shorts comments and descriptions are non-clickable. Mentions and hashtags in Shorts descriptions stay clickable; channel profile links are the clickable route (the harvest note says up to 14).",
+    "Description length: the long-form limit, see plat:youtube_description."
+   ],
+   "writing_notes": [
+    "Lint: the title is the ONE lintable limit (the 180-second limit is in seconds and cannot be linted), so `pcw.py check title.txt --platform plat:youtube_shorts` needs no --field. Measure length with `ffprobe -v error -show_entries format=duration -of csv=p=0 short.mp4` and keep it at or under 180 seconds.",
+    "Title worked example (40 of 100): 'GST notice aaye toh pehle ye 3 kaam karo'.",
+    "CTA patterns that work without a link: 'follow for part 2', 'poora video channel par featured hai', 'comment GST aur main format bhej dunga' (a spoken or typed keyword).",
+    "The description can still carry clickable #hashtags and @mentions; write one or two lines and do not include a URL you want clicked.",
+    "Hook and pacing belong to genre:short_form_video_script; this card owns only the limits and the link rule."
+   ]
+  },
+  {
+   "id": "plat:youtube_thumbnail",
+   "kind": "platform",
+   "name": "YouTube thumbnail (text on the image)",
+   "status": "current",
+   "summary": "The custom thumbnail image for a YouTube video or Short and the words written on it. YouTube recommends 3840 x 2160 pixels for videos (16:9) and 2160 x 3840 for Shorts (9:16), with a minimum width of 640 pixels for videos and a minimum height of 640 pixels for Shorts. There is no character limit for thumbnail text; the Thumbnails policy limits what it may say: nothing that misleads about the video, nothing vulgar or lewd.",
+   "use_for": [
+    "Choosing the 2 to 4 words that go on a thumbnail so they add to the title instead of repeating it.",
+    "Briefing a designer on size, aspect and file-size limits for a video or a Short.",
+    "Checking thumbnail text against YouTube's Thumbnails policy.",
+    "Writing Hindi or Hinglish thumbnail text that stays legible at phone size."
+   ],
+   "avoid": [
+    "Repeating the title on the image. Use the title for the full claim and the thumbnail for one word or short phrase that adds tension or the proof.",
+    "A thumbnail that promises something the video does not show: the policy bans thumbnails that mislead viewers into thinking they are about to see something that is not in the video, and borderline ones can be age-restricted or removed.",
+    "Vulgar or lewd language in any language, Hindi and Hinglish slang included: check each word against the policy.",
+    "Uploading a thumbnail over the size cap: 2 MB on mobile for video thumbnails (10 MB for podcasts) and 50 MB on desktop. Export under 2 MB to be safe on both."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/72431?hl=en",
+     "title": "YouTube Help: Add custom thumbnails on YouTube",
+     "supports": "3840x2160 recommended (Shorts 2160x3840), min 640 px, 16:9 for videos and 9:16 for Shorts, 2 MB mobile / 50 MB desktop"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/9229980?hl=en",
+     "title": "YouTube Help: Thumbnails policy",
+     "supports": "no misleading thumbnails, no vulgar or lewd language, no shock imagery"
+    }
+   ],
+   "related": [
+    "plat:youtube_title",
+    "plat:youtube_shorts",
+    "genre:youtube_title_description",
+    "plat:youtube_description"
+   ],
+   "limits": [
+    {
+     "field": "recommended width (video thumbnail)",
+     "max": 3840,
+     "unit": "px",
+     "url": "https://support.google.com/youtube/answer/72431?hl=en",
+     "checked": "2026-10-05",
+     "quote": "Have a resolution of 3840 x 2160 pixels for videos and 2160 x 3840 for Shorts",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "minimum width (video thumbnail)",
+     "unit": "px",
+     "url": "https://support.google.com/youtube/answer/72431?hl=en",
+     "checked": "2026-10-05",
+     "quote": "with a minimum width of 640 pixels for videos and a minimum height of 640 pixels for Shorts.",
+     "confidence": "high (YouTube Help)",
+     "min": 640
+    }
+   ],
+   "formatting": [
+    "Recommended resolution: 3840 x 2160 for videos, 2160 x 3840 for Shorts; minimum width 640 px (videos) or minimum height 640 px (Shorts); 16:9 for videos and 9:16 for Shorts.",
+    "File size: mobile 2 MB for video thumbnails or 10 MB for podcasts; desktop 50 MB for video, Shorts and podcast thumbnails.",
+    "Text: no character limit exists; the Thumbnails policy limits content, not length.",
+    "Custom Shorts thumbnails are added in YouTube Studio on a computer and need a verified account."
+   ],
+   "writing_notes": [
+    "Lint: the limits are in pixels, which `pcw.py check` cannot measure, so it checks nothing here. Check the image: dimensions and file size in an image viewer or `python -c \"from PIL import Image;im=Image.open('t.jpg');print(im.size)\"`.",
+    "Practice rule, not a platform limit: 2 to 4 words of thumbnail text. Shrink the 3840-wide master to a small phone-feed size and read it; if you cannot, cut words.",
+    "Worked example, same Jaipur CA GST video: title 'GST notice aaya? Pehle ye 3 kaam karo' (the full promise), thumbnail text 'NOTICE AAYA?' (two words, the moment of panic). The thumbnail does not repeat the title; both promise the same thing the video delivers.",
+    "Hindi text: use a heavy Devanagari font and check that the top matras are not clipped. Keep the text off the person's face and on the opposite side of the frame from the face.",
+    "Policy check before sending: the words and the image must both be in the video; no vulgar or lewd language; no shock imagery."
+   ]
+  }
+ ]
+}

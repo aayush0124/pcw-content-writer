@@ -1,0 +1,1733 @@
+{
+ "cards": [
+  {
+   "id": "plat:shopify_seo_fields",
+   "kind": "platform",
+   "name": "Shopify product/page SEO title and meta description",
+   "status": "current",
+   "summary": "The two fields behind Shopify's 'Search engine listing preview': a page title (field cap 70 characters, Shopify advises keeping it to 60) and a meta description (160 recommended). A good pair puts the target keyword in the first words of a title that is fully visible in the result, and a natural-sentence description that earns the click.",
+   "use_for": [
+    "Product, collection, page and homepage SEO titles and descriptions for a D2C Shopify store.",
+    "Rewriting the defaults a theme generates (shop name plus content title) into keyword-first titles.",
+    "Batch SEO rewrites of a catalogue where every product needs a unique title and description."
+   ],
+   "avoid": [
+    "Writing to the 70-character cap: Shopify itself says to stay at 60 to avoid shortened titles. Treat 60 as the real limit.",
+    "Leaving the fields blank: the theme then builds the title from the shop name plus the content title, which spends the visible characters on the brand instead of the keyword. Write the title.",
+    "Keyword lists ('oil, mustard oil, cold pressed oil, buy oil'): Shopify's own advice is readable, natural phrases. Write one sentence a buyer would read.",
+    "The same description on every product in a collection. Each page needs its own, with the product-specific fact (size, material, region) in it.",
+    "Assuming the 160 is a hard rule and Google will show it: it is a recommendation, and Google truncates by display width, not by count (see plat:google_search_result)."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords",
+     "title": "Adding keywords to improve SEO - Shopify Help Center",
+     "supports": "70-character title cap, 60 advised, 160-character description recommendation, truncation warning, blank-field default, keyword-near-the-start advice (re-read 2026-10-05)"
+    }
+   ],
+   "related": [
+    "genre:product_description",
+    "genre:category_page",
+    "genre:d2c_brand_store",
+    "genre:homepage_copy",
+    "plat:google_search_result",
+    "trend:ai_overviews_zero_click",
+    "trend:agentic_commerce_product_content"
+   ],
+   "limits": [
+    {
+     "field": "page title",
+     "max": 70,
+     "unit": "chars",
+     "visible": 60,
+     "url": "https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords",
+     "checked": "2026-10-04",
+     "quote": "You can enter up to 70 characters in the title. ... consider keeping your title up to 60 characters.",
+     "confidence": "high (Shopify Help Center)"
+    },
+    {
+     "field": "meta description (recommended)",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords",
+     "checked": "2026-10-04",
+     "quote": "It's recommended that 160 characters is used in the description.",
+     "confidence": "high (Shopify Help Center; recommendation, not a field cap)"
+    }
+   ],
+   "formatting": [
+    "Both fields live in the 'Search engine listing preview' section ('Edit website SEO') of a product, collection or page; the homepage's are under Online Store > Preferences (Shopify Help, re-read 2026-10-05).",
+    "Text beyond the limit is accepted but 'shortened in search engine results' (Shopify Help): going over costs you visibly, it does not block saving.",
+    "The help page describes no markup, line breaks, links or emoji for these fields. Treat both as one line of plain text [inference from the page's silence, not a stated rule: save a test product and read the live result].",
+    "Devanagari titles are not addressed on the help page; if a client wants a Hindi title, test the live listing and count by what the result shows."
+   ],
+   "writing_notes": [
+    "Where the hook lands: only about the first 60 characters of the title are safe (70 is the field cap, 60 is Shopify's advice). Put the primary keyword and the product type in the first words, the brand last. Shopify says 'near the beginning of the title'. Example (54 chars): \"Kachhi Ghani Mustard Oil 1L | Cold Pressed | Sarson Co\".",
+    "Description: one or two natural sentences, 160 characters, with the keyword once, one specific fact (volume, material, origin) and one reason to click (price band, delivery, return window) that is true. Example (127 chars): \"Cold pressed kachhi ghani mustard oil in a 1 L glass bottle, pressed in small batches in Bharatpur. Free shipping above Rs 499.\"",
+    "Which number to trust: title 70 is the field cap; 60 is Shopify's own advice for not being shortened, so write to 60. Description 160 is 'recommended', not a cap, so the same rule applies: land the point inside 160.",
+    "Lint: `pcw.py check --platform plat:shopify_seo_fields` tests the title against the FIRST limit (70) and prints the first 60 characters as the visible text. Run `--field description` for the 160. Both are counted in characters including spaces.",
+    "If the theme appends or prepends the shop name, it can eat into the visible title: after saving, read the rendered title and cut your own words to make room.",
+    "A Hinglish store title is a judgment call: check what the client's buyers actually search for before writing one, and keep Hinglish for on-page copy and social captions by default."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Shopify's own SEO advice: include the most important target keywords near the beginning of the title, and use readable, natural phrases and sentences in the description rather than lists of keywords.",
+     "url": "https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords"
+    }
+   ]
+  },
+  {
+   "id": "plat:sms_encoding_segments",
+   "kind": "platform",
+   "name": "SMS length and encoding (GSM-7 vs UCS-2)",
+   "status": "current",
+   "summary": "How many characters one SMS holds and how longer texts split into billed segments: 160 in GSM-7 or 70 in UCS-2 for a single message, 153 or 67 per segment once it concatenates. One non-GSM character (an emoji, Devanagari, a curly quote) switches the whole message to UCS-2.",
+   "use_for": [
+    "Sizing an SMS before it is sent or registered, so it fits one segment instead of two or three.",
+    "Choosing between Roman-script Hinglish and Devanagari for a bulk campaign, with the segment cost in front of you.",
+    "Budgeting a bulk send: segments, not messages, are billed."
+   ],
+   "avoid": [
+    "Pasting copy from a word processor or Google Docs: a curly (smart) quote is not in GSM-7 and flips the whole message to UCS-2, cutting 160 to 70. Retype the quotes as straight ones.",
+    "An emoji in an SMS: it forces UCS-2 for the entire text. If the client wants emoji, move that message to a channel that supports them (Twilio points to RCS for this; see plat:rcs_business_messaging) or WhatsApp.",
+    "Devanagari for a long message without showing the client the cost: the same sentence needs far more segments than in Roman Hinglish. Offer both and the segment count.",
+    "Treating the 1,600-character figure as a target: it is Twilio's API acceptance limit for the body, not a handset or carrier length, and not a good message."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
+     "title": "How long can a message be? - Twilio glossary",
+     "supports": "GSM-7 160/153, UCS-2 70/67, one UCS-2 character switches the message, curly quotes not in GSM-7, emoji advice (re-read 2026-10-05)"
+    },
+    {
+     "url": "https://www.twilio.com/docs/messaging/api/message-resource",
+     "title": "Messages resource - Twilio API",
+     "supports": "1,600-character body limit (Twilio only)"
+    }
+   ],
+   "related": [
+    "genre:sms_marketing",
+    "plat:sms_india_dlt",
+    "plat:rcs_business_messaging",
+    "comp:trai_tcccpr_2018",
+    "lang:hinglish_roman",
+    "lang:hindi_devanagari"
+   ],
+   "limits": [
+    {
+     "field": "single SMS, GSM-7",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
+     "checked": "2026-10-04",
+     "quote": "limited a single SMS message to 140 bytes in length. This equals 1,120 bits or 160 7-bit characters.",
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+    },
+    {
+     "field": "per segment of a long SMS, GSM-7",
+     "max": 153,
+     "unit": "chars",
+     "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
+     "checked": "2026-10-04",
+     "quote": "GSM-7 messages contain 153 alphanumeric characters.",
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+    },
+    {
+     "field": "single SMS, UCS-2 (any emoji, Devanagari, curly quote)",
+     "max": 70,
+     "unit": "chars",
+     "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
+     "checked": "2026-10-04",
+     "quote": "This reduces the single message character limit from 160 to 70.",
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+    },
+    {
+     "field": "per segment of a long SMS, UCS-2",
+     "max": 67,
+     "unit": "chars",
+     "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
+     "checked": "2026-10-04",
+     "quote": "If the message exceeds 70 characters, it splits the message into two or more messages with 67 characters each.",
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+    },
+    {
+     "field": "message body accepted by Twilio API",
+     "max": 1600,
+     "unit": "chars",
+     "url": "https://www.twilio.com/docs/messaging/api/message-resource",
+     "checked": "2026-10-04",
+     "quote": "Can be up to 1,600 characters in length.",
+     "confidence": "high (Twilio's own API limit; applies to Twilio only)"
+    }
+   ],
+   "formatting": [
+    "SMS carries plain text only: no bold, italics or line styling. [General platform knowledge, not read on a page: verify with your gateway before relying on line breaks or tappable links.]",
+    "The encoding is chosen for the whole message from its worst character: GSM-7 (128 characters, not the same set as ASCII) if every character is in it, otherwise UCS-2 (Twilio glossary, re-read 2026-10-05).",
+    "Curly quotation marks are not in GSM-7; Twilio's Smart Encoding can swap them for straight quotes, but a copywriter should not rely on the gateway to do it.",
+    "Emoji and any Devanagari character force UCS-2. Roman-script Hinglish stays GSM-7 as long as every character is in the GSM-7 set.",
+    "Some symbols may cost two characters even inside GSM-7 (an 'extension table'); the standard (3GPP TS 23.038) was not read, so use your gateway's segment counter for any text with symbols."
+   ],
+   "writing_notes": [
+    "Budget (arithmetic from the per-segment numbers): GSM-7 holds 160 in one segment, 306 in two (2 x 153), 459 in three. UCS-2 holds 70 in one, 134 in two (2 x 67), 201 in three. Each segment is billed.",
+    "India rule of thumb: 150 characters of Roman Hinglish fit one GSM-7 segment; 150 characters of Devanagari take 150/67, about 3 segments. For Hindi bulk SMS, write shorter, not the same length.",
+    "Lint: the FIRST limit is single-SMS GSM-7 = 160 chars, so `pcw.py check --platform plat:sms_encoding_segments draft.txt` tests that. For a Devanagari or emoji draft run `--field UCS-2` (it tests 70 and 67); the checker also prints a UCS-2 notice when it sees Devanagari.",
+    "Write the SMS in this order: the action or offer first, brand and detail after. The sender header already identifies you (see plat:sms_india_dlt), so spend the opening words on what the reader should do.",
+    "Medium confidence: the segment numbers come from Twilio's carrier-gateway documentation, not from the 3GPP standard. Before a large send, run one test text and read the segment count your gateway reports.",
+    "Example that fits one GSM-7 segment (Hinglish, 101 chars): \"Aapka order SC2231 aaj ship hoga. Track karein: sarsonco.in/t/SC2231. Madad ke liye reply karein YES.\" (Fictional brand.)"
+   ]
+  },
+  {
+   "id": "plat:sms_india_dlt",
+   "kind": "platform",
+   "name": "India commercial SMS on DLT (TRAI TCCCPR)",
+   "status": "current",
+   "summary": "In India a commercial SMS must go out under a DLT-registered sender header with content that matches a registered template. Write the template, not the message: fixed text plus a few tagged variables (three normally, 30 characters each), at least 30% fixed content, the right header suffix (-P, -S, -T, -G) and an opt-out in promotional messages.",
+   "use_for": [
+    "Drafting the template text a brand registers on DLT before its first bulk or alert SMS.",
+    "Deciding which fields become variables (name, order id, amount, link) and which stay fixed.",
+    "Choosing promotional vs service vs transactional by what the message actually contains.",
+    "Reviewing a template for the 30%-fixed, 3-variable and whitelisted-link rules before it is submitted."
+   ],
+   "avoid": [
+    "Adding an offer line to a service or transactional template: promotional content mixed in makes the WHOLE message promotional (TRAI 2025 text, as read in the harvest). Keep the offer in its own promotional template.",
+    "Turning every changing detail into a variable: at least 30% of the template characters must be fixed content. Keep the sentence fixed and vary only name, id, amount, link.",
+    "A link, APK, OTT link or call-back number that the sender has not whitelisted: such messages pass scrubbing only if whitelisted.",
+    "Quoting the 6-character header as a TRAI rule: the regulation speaks of an 11-character alphanumeric string; 6 characters (6 letters for service/transactional, 6 digits for promotional) is operator-portal practice reported by SMS vendors (low confidence).",
+    "A promotional template with no opt-out in the same message.",
+    "Putting Devanagari or emoji in a template without checking the segment cost (see plat:sms_encoding_segments)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf",
+     "title": "TRAI Telecom Commercial Communications Customer Preference (Second Amendment) Regulations, 2025",
+     "supports": "11-character header, -P/-S/-T/-G suffixes, 30-character variables, more than three variables only on justified request, 30% fixed content, URL whitelisting, opt-out"
+    },
+    {
+     "url": "https://www.fast2sms.com/help/add-header-sender-id-jio-dlt/",
+     "title": "How to add Header or Sender ID in Jio DLT? (Fast2SMS)",
+     "supports": "operator-portal practice of 6-character headers (third party, low confidence)"
+    },
+    {
+     "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
+     "title": "How long can a message be? - Twilio glossary",
+     "supports": "160-character GSM-7 segment used as the planning length (DLT itself sets no body length)"
+    }
+   ],
+   "related": [
+    "genre:sms_marketing",
+    "comp:trai_tcccpr_2018",
+    "plat:sms_encoding_segments",
+    "plat:rcs_business_messaging",
+    "trend:whatsapp_conversational_commerce",
+    "lang:hinglish_roman"
+   ],
+   "limits": [
+    {
+     "field": "message body, one GSM-7 segment (see plat:sms_encoding_segments)",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
+     "checked": "2026-10-04",
+     "quote": "limited a single SMS message to 140 bytes in length. This equals 1,120 bits or 160 7-bit characters.",
+     "confidence": "medium (Twilio carrier-gateway docs; DLT itself sets no body length)"
+    },
+    {
+     "field": "template variable length",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf",
+     "checked": "2026-10-04",
+     "quote": "Where it is not possible to put ... a variable within the limit of thirty characters, more than one contiguous variable of the same type",
+     "confidence": "high (TRAI TCCCPR (Second Amendment) Regulations, 12 Feb 2025, gazette text)"
+    },
+    {
+     "field": "SMS header string",
+     "max": 11,
+     "unit": "chars",
+     "url": "https://trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf",
+     "checked": "2026-10-04",
+     "quote": "SMS Header for sending Transactional SMS, Service SMS, Promotional SMS and Government SMS from 11-character alphanumeric string, or as directed by the Authority",
+     "confidence": "high (TRAI TCCCPR (Second Amendment) Regulations, 12 Feb 2025, gazette text)"
+    },
+    {
+     "field": "variables per template (more only on justified request)",
+     "max": 3,
+     "unit": "count",
+     "url": "https://trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf",
+     "checked": "2026-10-04",
+     "quote": "allow, in special circumstances and on requisition with reasons and proper justification from Principal Entity, more than three variables in the Content Templates",
+     "confidence": "high (TRAI TCCCPR (Second Amendment) Regulations, 12 Feb 2025, gazette text)"
+    }
+   ],
+   "formatting": [
+    "Plain text with variable slots: the registered template is fixed text plus tagged variables, and the sent message is the template with the variables filled. Placeholder syntax in vendor portals is usually {#var#} [vendor convention, not read in the TRAI text: confirm in your operator portal].",
+    "Header: an alphanumeric string up to 11 characters per the TRAI text; the message type shows as a suffix: -P promotional, -S service, -T transactional, -G government.",
+    "Each variable is pre-tagged for its purpose; one template cannot be linked to more than one header.",
+    "URLs, APKs, OTT links and call-back numbers inside the message pass scrubbing only if whitelisted by the sender in advance.",
+    "A promotional message must carry an opt-out mechanism in the same message; the exact wording is set at registration and was not read.",
+    "Encoding: Roman Hinglish can stay GSM-7 (160 per segment); Devanagari or emoji switch to UCS-2 (70 per segment). See plat:sms_encoding_segments."
+   ],
+   "writing_notes": [
+    "Order of work: (1) decide the message type from the content (any promotion in it = promotional); (2) write the fixed sentence; (3) choose at most three variables; (4) check the fixed share; (5) check the worst-case length against one segment.",
+    "Variable limit: 30 characters each; where content cannot fit in 30, the regulation allows more than one contiguous variable of the same type. More than three variables per template only on a justified request, so design for three.",
+    "Fixed-content test: TRAI requires a minimum of 30% fixed characters. Count the variable slots at their 30-character maximum to stay safe (conservative practice, the counting method is not stated in the text read).",
+    "Worst-case length (arithmetic): three variables at 30 characters take 90, leaving 70 characters of fixed text inside a 160-character segment. Example template: \"Hi {#var#}, your Sarson Co order {#var#} ships today. Track it here: {#var#}\": about 55 fixed characters against 90 at worst, so roughly 38% fixed and well inside 160. (Fictional brand.)",
+    "Lint: `pcw.py check --platform plat:sms_india_dlt` tests the FIRST limit, the 160-character body. Run `--field variable` (matches the 30-character row) for the 30 (put only one variable value in the file) and `--field header` for the 11. Test the FILLED message against the 160, not just the template; the 3-variable count must be checked by hand.",
+    "Header length conflict: TRAI text = 11-character alphanumeric; operator portals and vendors = 6 characters (low confidence). When naming a header in a brief, give the brand's 6-character version and say the portal has the final word.",
+    "Hinglish in Roman script is the norm for Indian consumer SMS and keeps the single-segment budget; offer a Devanagari version only with its segment cost."
+   ]
+  },
+  {
+   "id": "plat:substack_post",
+   "kind": "platform",
+   "name": "Substack post (web + email newsletter)",
+   "status": "current",
+   "summary": "A Substack post publishes to the web and is emailed to subscribers from the same text. The save limit is 1,000,000 characters (no word limit), but the practical ceiling is email size: Gmail clips emails over about 102 KB, and links, images and the publication's header and footer all count toward it.",
+   "use_for": [
+    "Writing a creator, expert or publisher newsletter issue that must read well on the web and in Gmail.",
+    "Deciding how long an issue can be before the email clips and the ending (CTA, paid upgrade) is cut off.",
+    "Turning a long piece into a series when it would clip."
+   ],
+   "avoid": [
+    "Reading the 1,000,000-character figure as a length target: the real cap is Gmail clipping at about 102 KB. Plain prose is cheap; link-heavy and image-heavy issues clip first.",
+    "Putting the paid-upgrade ask, the key link or the sign-off at the very bottom of a long issue: if the email clips, the reader never sees it. Put the one essential action early.",
+    "Many images and embedded links in an already long post: both count toward the email size. Cut links to the ones that earn a click.",
+    "Writing subject-line or preview rules here: those belong to plat:email_subject_line. This card is about the post body."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.substack.com/hc/en-us/articles/360038866571-Why-does-it-say-Your-post-may-be-truncated-in-the-post-editor",
+     "title": "Substack Support: Why does it say Your post may be truncated",
+     "supports": "1,000,000-character save limit, no word limit, Gmail clips emails over about 102 KB, truncation warning in the editor"
+    }
+   ],
+   "related": [
+    "genre:creator_newsletter",
+    "genre:editorial_newsletter",
+    "genre:curated_newsletter",
+    "genre:product_update_newsletter",
+    "plat:gmail_clipping",
+    "plat:email_subject_line",
+    "trend:newsletters_owned_audience",
+    "trend:organic_publisher_traffic_squeeze"
+   ],
+   "limits": [
+    {
+     "field": "post length (save limit)",
+     "max": 1000000,
+     "unit": "chars",
+     "url": "https://support.substack.com/hc/en-us/articles/360038866571-Why-does-it-say-Your-post-may-be-truncated-in-the-post-editor",
+     "checked": "2026-10-04",
+     "quote": "There's no word limit but posts over 1,000,000 characters can't be saved.",
+     "confidence": "high (Substack Support, updated 2026-10-04)"
+    }
+   ],
+   "formatting": [
+    "One body is published twice: on the post's web page and as the email. Both must read well; the email is the one that can be clipped.",
+    "Links, images and the publication's header and footer text all count toward the email size (Substack Support); a long post shows a truncation warning in the editor.",
+    "The Substack support page read does not list which text styles, embeds or footnotes the editor supports: [unverified here; check in the editor] and use the editor's own toolbar rather than Markdown assumptions.",
+    "Devanagari is plain UTF-8 text and is not mentioned on the page. Inference, not a stated rule: Devanagari takes about 3 bytes per character in UTF-8, so a Hindi issue may approach the 102 KB mark at fewer characters than a Roman-script one. Test a long Hindi issue by sending it to a Gmail test account.",
+    "Substack lets you A/B test titles (support article 36026518014100); subject-line craft is covered by plat:email_subject_line."
+   ],
+   "writing_notes": [
+    "Lint: the FIRST (only) limit is 1,000,000 characters, so `pcw.py check --platform plat:substack_post` will essentially never fail. Judge length with the genre card's word range and by sending a test email, not by this number.",
+    "Order the issue for the clip: opening hook and the one thing the issue delivers first; the main link or CTA in the top third; the long reference material and extra links last, where a clip costs least.",
+    "Count what you add: every link, image and embedded card spends email size. A 1,800-word essay with three links and one image is safer than the same words with 25 links.",
+    "Series rule: if an issue needs to be long, split it into parts with a 'next issue' line instead of pushing past the clipping point.",
+    "For Hindi or Hinglish newsletters, keep issues shorter than the English benchmark you would use, and test one real issue in Gmail before committing the client to a length."
+   ]
+  },
+  {
+   "id": "plat:telegram_ads",
+   "kind": "platform",
+   "name": "Telegram Ads (sponsored messages in channels)",
+   "status": "niche",
+   "summary": "A Telegram Ad Platform sponsored message is a text of at most 160 characters (spaces included) with one button, shown in large public channels and bots. Good copy is one plain, specific idea with a clear action, no line breaks or lists, no gimmicks, and at most one link in the text.",
+   "use_for": [
+    "Promoting a Telegram channel or bot (links in the text must point to one) to subscribers of large channels.",
+    "Writing 160-character ad text variants to test against the same button.",
+    "Reviewing an ad against Telegram's editorial rules before it is submitted."
+   ],
+   "avoid": [
+    "Line breaks, bullet points and numbered lists: the guidelines disallow them, so the ad must be one flowing line. Use punctuation to separate ideas.",
+    "'CaPiTaLiZaTiOn', highlighting and gimmicky symbols or emoji: disallowed as excessive or gimmicky. Use sentence case and at most a plain emoji only if it is natural.",
+    "Vague or repetitive copy ('Best channel ever, join now, join now'): the editorial rules reject it. Say what the channel gives, how often, and for whom.",
+    "An in-text link in another format: it must be written @link or t.me/link, point at a Telegram channel or bot, and go to the same place as the ad's own link.",
+    "Using organic channel-post habits (long text, formatting): those belong to plat:telegram_message."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://promote.telegram.org/guidelines",
+     "title": "Telegram Ad Platform guidelines (promote.telegram.org)",
+     "supports": "160-character text including spaces, one optional link in the text, no line breaks/lists, no gimmicky caps or emoji (search summary re-read 2026-10-05, page itself refused a direct fetch)"
+    }
+   ],
+   "related": [
+    "genre:social_ad_copy",
+    "genre:telegram_channel_post",
+    "plat:telegram_message",
+    "comp:asci_code"
+   ],
+   "limits": [
+    {
+     "field": "ad text",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://promote.telegram.org/guidelines",
+     "checked": "2026-10-04",
+     "quote": "The maximum length of the ad text is 160 characters including spaces.",
+     "confidence": "high (Telegram Ad Platform guidelines)"
+    },
+    {
+     "field": "extra links inside ad text",
+     "max": 1,
+     "unit": "count",
+     "url": "https://promote.telegram.org/guidelines",
+     "checked": "2026-10-04",
+     "quote": "ads may also include one optional link in the ad text itself",
+     "confidence": "high (Telegram Ad Platform guidelines)"
+    }
+   ],
+   "formatting": [
+    "Text only: an ad is the text plus a button that opens a link (Telegram Ad Platform guidelines).",
+    "No line breaks, bullet points or numbered lists; no excessive or gimmicky caps, highlighting, spacing or symbols; no intrusive or gimmicky emoji.",
+    "One optional link inside the text itself, in the @link or t.me/link form, leading to the same destination as the ad link and (per the guidelines) to a Telegram channel or bot.",
+    "The 160 counts spaces. How Telegram counts Devanagari or emoji is not stated in the guidelines read: test a Hindi ad in the platform's editor."
+   ],
+   "writing_notes": [
+    "Where the hook lands: the whole text is shown, but 160 characters is two short sentences. Sentence one = what the reader gets and the format; sentence two = who it is for or how often, plus the action that matches the button.",
+    "Lint: `pcw.py check --platform plat:telegram_ads` tests the FIRST limit, the 160-character text. The in-text link counts as characters in the 160. The count rows (links, buttons) cannot be linted: `pcw.py check` compares the count unit with the number of hashtags, so count them by hand.",
+    "Make the action match the button: if the button says Join, do not write 'Subscribe now' as well.",
+    "Example (137 chars, Hinglish): \"Roz subah 3 line mein GST circular ka saar. Koi spam nahi, koi forward nahi. Free channel 'CA Notes Daily' join karein: t.me/canotesdaily\" (fictional channel).",
+    "Test variants by changing one thing: the benefit sentence, or the audience qualifier. Keep punctuation plain; clever formatting is what gets an ad rejected.",
+    "For India campaigns, write the Roman Hinglish version first (the way the audience chats) and a Devanagari version second; count both against 160."
+   ]
+  },
+  {
+   "id": "plat:telegram_bio",
+   "kind": "platform",
+   "name": "Telegram profile bio",
+   "status": "current",
+   "summary": "The 'about' text on a Telegram profile: 70 UTF-8 bytes for ordinary accounts, 140 for Premium (documented client-config values). Because the unit is bytes, a Roman Hinglish bio fits about 70 characters while a Devanagari one may fit only about 23.",
+   "use_for": [
+    "A creator, advisor or brand profile bio on Telegram.",
+    "A bio that tells people who you are and why to message or join, in one line.",
+    "A Hindi or Hinglish bio where the byte budget has to be checked."
+   ],
+   "avoid": [
+    "Counting characters when the limit is UTF-8 bytes: Devanagari is 3 bytes per character, so a 40-character Hindi bio can be over 70 bytes. Count bytes, or write the bio in Roman Hinglish.",
+    "Emoji-heavy bios: each emoji takes several bytes (typically 3 to 4), so three emoji can eat a fifth of the budget.",
+    "Treating 70 and 140 as certain: the live values are served to each client and the docs show them as example config. Test in the app before delivering a bio that sits at the limit.",
+    "Mixing this up with channel or group descriptions: those are separate fields; no limit for them was read for this card."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://core.telegram.org/api/config",
+     "title": "Telegram API: Client configuration",
+     "supports": "about_length_limit_default 70 and about_length_limit_premium 140, defined as UTF-8 length (example config values)"
+    }
+   ],
+   "related": [
+    "genre:social_bio",
+    "genre:personal_brand_statement",
+    "genre:telegram_channel_post"
+   ],
+   "limits": [
+    {
+     "field": "bio (non-Premium)",
+     "max": 70,
+     "unit": "bytes",
+     "url": "https://core.telegram.org/api/config",
+     "checked": "2026-10-04",
+     "quote": "about_length_limit_default The maximum UTF-8 length of bios of non- Premium users (integer); example config: \"about_length_limit_default\": 70",
+     "confidence": "medium (Telegram client API config docs; the value shown is the documented example, the live value is served per client)"
+    },
+    {
+     "field": "bio (Premium)",
+     "max": 140,
+     "unit": "bytes",
+     "url": "https://core.telegram.org/api/config",
+     "checked": "2026-10-04",
+     "quote": "about_length_limit_premium The maximum UTF-8 length of bios of Premium users (integer); example config: \"about_length_limit_premium\": 140",
+     "confidence": "medium (Telegram client API config docs, example value)"
+    }
+   ],
+   "formatting": [
+    "Plain text profile 'about' field. The docs define the limit as UTF-8 length, recorded here as bytes.",
+    "Latin letters, digits and spaces are 1 byte each; Devanagari characters are 3 bytes each; most emoji are 3 to 4 bytes. (UTF-8 property, not a Telegram rule.)",
+    "Whether @usernames and links in a bio become tappable and whether line breaks are kept were not established by the source read: [unverified, check on a live profile]."
+   ],
+   "writing_notes": [
+    "Lint: the FIRST limit is the non-Premium 70 bytes, and `pcw.py check` measures bytes with `len(text.encode('utf-8'))` for this unit. A pure-Devanagari draft fails near 23 characters, which is the point. Use `--field 'bio (Premium)'` to test 140 alone (a bare `--field Premium` also matches the non-Premium row).",
+    "Formula for 70 bytes: what you do + for whom + the action. Example (60 bytes): \"GST notices in simple Hindi | CA, Jaipur | DM to book a call\". (Fictional.)",
+    "Hindi option: pure Devanagari fits only about 23 characters, but mixing in Latin letters, digits and spaces (1 byte each) stretches it. Example (28 characters, 60 bytes): \"जयपुर CA | GST आसान भाषा में\". Test it in the app.",
+    "Spend the bytes on nouns and the offer; drop 'passionate', 'helping', 'welcome to'.",
+    "If the client is Premium the extra 70 bytes is worth one proof point (a number of clients or years), but write the 70-byte version first so it works for non-Premium viewers of the profile too."
+   ]
+  },
+  {
+   "id": "plat:telegram_caption",
+   "kind": "platform",
+   "name": "Telegram media caption",
+   "status": "current",
+   "summary": "The caption under a photo, video, document or audio file on Telegram: 1,024 characters (4,096 if the posting account is Premium), counted after formatting is parsed, and 200 for a story caption. Good copy is a one-line headline, two or three short lines, and one link.",
+   "use_for": [
+    "Captions for image posts and promo creatives on a Telegram channel (offers, news cards, quote cards).",
+    "Deciding when a caption is too long and the post should be a text message with a link preview instead.",
+    "Story captions at 200 characters."
+   ],
+   "avoid": [
+    "Writing to 4,096 for a client who is not Premium: write to 1,024. The 4,096 applies only to a Premium posting account.",
+    "A long article crammed under a picture: the better format is a text message with a link preview (4,096), per the item note. See plat:telegram_message.",
+    "Counting the formatting markup: the limit is counted after entity parsing, so bold or link markup does not count. Count the visible text.",
+    "Using the same copy for the story caption: a story caption is 200 characters (2,048 Premium); cut it down."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://core.telegram.org/bots/api",
+     "title": "Telegram Bot API",
+     "supports": "caption 0-1024 characters after entities parsing"
+    },
+    {
+     "url": "https://core.telegram.org/api/config",
+     "title": "Telegram API: Client configuration",
+     "supports": "caption 1024 default / 4096 Premium, story caption 200 / 2048 (example config values)"
+    }
+   ],
+   "related": [
+    "genre:telegram_channel_post",
+    "genre:photo_caption",
+    "plat:telegram_message",
+    "plat:telegram_bio"
+   ],
+   "limits": [
+    {
+     "field": "media caption (non-Premium)",
+     "max": 1024,
+     "unit": "chars",
+     "url": "https://core.telegram.org/bots/api#sendphoto",
+     "checked": "2026-10-04",
+     "quote": "Photo caption (may also be used when resending photos by file_id), 0-1024 characters after entities parsing",
+     "confidence": "high (Telegram Bot API reference)"
+    },
+    {
+     "field": "media caption (Premium sender)",
+     "max": 4096,
+     "unit": "chars",
+     "url": "https://core.telegram.org/api/config",
+     "checked": "2026-10-04",
+     "quote": "\"caption_length_limit_default\": 1024, \"caption_length_limit_premium\": 4096",
+     "confidence": "high (Telegram client API config docs, example values)"
+    },
+    {
+     "field": "story caption (non-Premium)",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://core.telegram.org/api/config",
+     "checked": "2026-10-04",
+     "quote": "\"story_caption_length_limit_default\": 200, \"story_caption_length_limit_premium\": 2048",
+     "confidence": "high (Telegram client API config docs, example values)"
+    }
+   ],
+   "formatting": [
+    "Counted after entities parsing (Bot API): formatting markup does not count toward the 1,024.",
+    "Telegram text entities (bold, italic, underline, strikethrough, spoiler, code, links, blockquote) are listed in the harvest for message text; captions use the same entity mechanism in the Bot API [not separately read for captions: preview a caption once before relying on a style].",
+    "Premium sender raises the limit to 4,096; story captions are 200 (Premium 2,048). The Premium and story values are documented config examples; the live values are served per client.",
+    "Counting of Devanagari and emoji is not stated in the pages read: test a long Hindi caption in the app before posting."
+   ],
+   "writing_notes": [
+    "Write to 1,024 unless the posting account is known to be Premium. Most captions that work are far shorter: the picture carries the message and the caption adds the action.",
+    "Structure: headline line (what this is) + two or three short lines (proof, price, date) + one link or action line. Example (Hinglish): \"Diwali Combo ab live\\nKurta + dupatta set, Rs 1,499 (MRP 2,199)\\nSirf Sunday raat tak. Order: sarsonco.in/diwali\" (fictional brand).",
+    "No visible cut-off value was read for captions, so put the offer in the first line and do not rely on anything below the third line being seen.",
+    "A story caption needs its own 200-character version: one line and one action. Use `--field story` to test it.",
+    "Lint: `pcw.py check --platform plat:telegram_caption` tests the FIRST limit, 1,024 characters. Strip markup characters before counting, since the platform counts after parsing."
+   ]
+  },
+  {
+   "id": "plat:telegram_message",
+   "kind": "platform",
+   "name": "Telegram text message (chat or channel post)",
+   "status": "current",
+   "summary": "A plain text message or channel post on Telegram: up to 4,096 characters counted after formatting is parsed, with rich entities (bold, italic, underline, strikethrough, spoiler, code, links, blockquote). A poll question is capped at 300 characters. Longer text has to be split into several messages.",
+   "use_for": [
+    "Channel posts and announcements, community updates and broadcasts on Telegram.",
+    "Long-form text that would be too long for a media caption (send as a message with a link preview).",
+    "Poll questions for a channel or group."
+   ],
+   "avoid": [
+    "Writing past 4,096: the message will not send; split it into numbered parts instead of squeezing.",
+    "Counting formatting markup: the count is after entity parsing, so markup characters are free; count visible text.",
+    "Using entities for decoration: a channel post that is bold throughout has no emphasis. Bold one phrase per post.",
+    "Poll questions longer than 300 characters: write the question as one clear sentence."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://core.telegram.org/bots/api",
+     "title": "Telegram Bot API",
+     "supports": "message text 1-4096 characters after entities parsing; poll question 1-300"
+    }
+   ],
+   "related": [
+    "genre:telegram_channel_post",
+    "genre:community_post",
+    "plat:telegram_caption",
+    "plat:telegram_ads"
+   ],
+   "limits": [
+    {
+     "field": "message text",
+     "max": 4096,
+     "unit": "chars",
+     "url": "https://core.telegram.org/bots/api#sendmessage",
+     "checked": "2026-10-04",
+     "quote": "Text of the message to be sent, 1-4096 characters after entities parsing",
+     "confidence": "high (Telegram Bot API reference)"
+    },
+    {
+     "field": "poll question",
+     "max": 300,
+     "unit": "chars",
+     "url": "https://core.telegram.org/bots/api#sendpoll",
+     "checked": "2026-10-04",
+     "quote": "Poll question, 1-300 characters",
+     "confidence": "high (Telegram Bot API reference)"
+    }
+   ],
+   "formatting": [
+    "Counted AFTER entity parsing: markdown or HTML markup does not count toward 4,096.",
+    "Entities supported (harvest note on the Bot API): bold, italic, underline, strikethrough, spoiler, code, links, blockquote.",
+    "Longer text must be split into several messages.",
+    "Line breaks, emoji, #hashtags and @mentions are standard Telegram message features but were not read on a page for this card [general platform knowledge: verify before building a style on them].",
+    "Devanagari and emoji counting is not stated in the Bot API excerpt: test a long Hindi post in a test channel."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check --platform plat:telegram_message` tests the FIRST limit, 4,096 characters. Run `--field poll` to test the 300-character poll question.",
+    "Most good channel posts are far shorter than the cap: a headline line, two to five short lines, one link. Use the cap only for a deliberate long read.",
+    "Open with the point: the first line is what a reader sees in the chat list [general behaviour, not read on a page].",
+    "If the text will be over 4,096, split at a natural break (a heading or a number) and say 'Part 2' at the start of the next message; do not cut a sentence in half.",
+    "Hinglish channels: Roman script posts type faster for the audience and keep copy pasteable; use Devanagari when the channel is Hindi-first. Either counts as characters here."
+   ]
+  },
+  {
+   "id": "plat:threads_post",
+   "kind": "platform",
+   "name": "Threads post",
+   "status": "rising",
+   "summary": "A Threads post holds 500 characters of text, up to 5 links, a carousel of up to 20 images or videos, and one topic tag (1 to 50 characters) instead of a stack of hashtags. Good copy is a conversational, self-contained post that lands its point in the first lines and invites a reply.",
+   "use_for": [
+    "Short text posts for a brand, founder or creator on Threads.",
+    "Conversation starters and opinion posts that need replies.",
+    "Choosing the single topic tag that groups the post."
+   ],
+   "avoid": [
+    "Copying an Instagram caption with ten hashtags: Threads allows ONE topic tag per post. Pick the topic, not a brand slogan.",
+    "A topic tag with a period or ampersand (rejected when set via the API parameter), or in the post text with spaces, @, !, ?, comma, semicolon or colon.",
+    "A link-heavy post: links are capped at 5, and a link attachment does not work with image, video or carousel posts.",
+    "Writing to the 500 limit: a conversational post is usually far shorter. Leave headroom, since how Threads counts emoji and Devanagari was not stated in the source."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/threads/posts",
+     "title": "Threads API: Posts",
+     "supports": "500 characters, 5 links, 20 carousel items, topic tag 1-50 characters, one tag per post, disallowed tag characters, link attachment limits (re-read 2026-10-05)"
+    },
+    {
+     "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
+     "title": "Meta Q2 2026 earnings call transcript",
+     "supports": "status 'rising': Threads crossed 500 million monthly actives (call of 2026-07-29, as quoted in the harvest's trend:threads_growth)"
+    }
+   ],
+   "related": [
+    "genre:threads_post",
+    "genre:newsjacking_post",
+    "genre:ghostwritten_founder_post",
+    "genre:comment_reply",
+    "trend:threads_growth",
+    "trend:hashtags_to_keywords"
+   ],
+   "limits": [
+    {
+     "field": "post text",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/threads/posts",
+     "checked": "2026-10-04",
+     "quote": "Text posts are limited to 500 characters.",
+     "confidence": "high (Meta Threads API docs)"
+    },
+    {
+     "field": "links per post",
+     "max": 5,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/threads/posts",
+     "checked": "2026-10-04",
+     "quote": "The number of links is restricted to 5 or less.",
+     "confidence": "high (Meta Threads API docs)"
+    },
+    {
+     "field": "carousel items",
+     "max": 20,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/threads/posts",
+     "checked": "2026-10-04",
+     "quote": "Carousels are limited to 20 images, videos, or a mix of the two.",
+     "confidence": "high (Meta Threads API docs)"
+    },
+    {
+     "field": "topic tag length",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/threads/posts",
+     "checked": "2026-10-04",
+     "quote": "Topic tags must be at least 1 character and no more than 50 characters long.",
+     "confidence": "high (Meta Threads API docs)"
+    }
+   ],
+   "formatting": [
+    "Topic tags: ONE per post, added with the topic_tag parameter or as a tag inside the post text; 1 to 50 characters. (Meta Threads API page, re-read 2026-10-05.)",
+    "Disallowed in a tag: period and ampersand via the parameter; in in-text tags also spaces, tabs, new lines, @, !, ?, comma, semicolon and colon.",
+    "At most 5 links per post; the link_attachment feature does not work on image, video or carousel posts. Carousels hold up to 20 items.",
+    "Links in post text are clickable and line breaks render: [unverified: general platform knowledge; the Threads API page read says nothing about links being clickable or about line breaks or bold].",
+    "How Threads counts emoji and Devanagari against the 500 is not stated: test a Hindi post in the composer."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check --platform plat:threads_post` tests the FIRST limit, 500 characters. Use `--field topic` for the 50-character tag.",
+    "Where the hook lands: no visible cut-off value was recorded, so write the first line as the hook and make it stand alone; Threads reads like talk, so open with the point or a question, not a headline.",
+    "The one tag: choose the topic a stranger would browse (for example 'GST' or 'D2CIndia'), written without spaces or banned punctuation. Do not spend it on the brand name.",
+    "Example (Hinglish, one tag): \"Founders ko GST notice se darr lagta hai, notice se nahi, deadline se. Reply ki last date calendar mein sabse pehle daalo. #GSTIndia\"",
+    "Ask something a reader can answer in a few words; Threads is a conversation feed.",
+    "Treat this as a conversation. If the idea needs more than 500 characters, post it as a short self-reply chain or move it to a LinkedIn or X long form."
+   ]
+  },
+  {
+   "id": "plat:whatsapp_business_template",
+   "kind": "platform",
+   "name": "WhatsApp Business message template",
+   "status": "current",
+   "summary": "A WhatsApp Cloud API template is a pre-approved message with a header (60 chars), body (1,024), footer (60) and up to 10 buttons (labels 25 chars, at most 2 URL and 1 phone button). Categories are marketing, utility and authentication, and Meta reviews templates before use. Good copy fits the right category and puts the customer's next step in the first lines and the button.",
+   "use_for": [
+    "Writing marketing, utility (order, delivery, appointment) and authentication templates for a Business account.",
+    "Fitting a message into the header, body, footer and button limits.",
+    "Choosing which buttons to include and what they say."
+   ],
+   "avoid": [
+    "Squeezing the full pitch into the body: the body is 1,024 characters but a template reads best when it carries one message. Move detail to the page the button opens.",
+    "More than three buttons: with more than three, only two appear in the delivered message. Keep to one to three so none is hidden.",
+    "Button labels over 25 characters (copy-code and phone-number buttons: 20). Write 'Track order', not 'Click here to track your order status'.",
+    "A promotional message labelled as utility: templates are reviewed by Meta before use, so pick the category honestly.",
+    "Treating this like an ordinary chat message: free-form WhatsApp chats and channels belong to plat:whatsapp_message."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
+     "title": "Template components - WhatsApp Business Management API (Meta for Developers)",
+     "supports": "body 1,024; header text 60; footer 60; button label 25; URL 2,000; 10 buttons; 2 URL; 1 phone; copy-code/phone text 20; two shown above three buttons"
+    }
+   ],
+   "related": [
+    "genre:whatsapp_broadcast",
+    "genre:chatbot_script",
+    "plat:whatsapp_message",
+    "trend:whatsapp_conversational_commerce"
+   ],
+   "limits": [
+    {
+     "field": "body text",
+     "max": 1024,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
+     "checked": "2026-10-04",
+     "quote": "Maximum of 1024 characters.",
+     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)"
+    },
+    {
+     "field": "header text",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
+     "checked": "2026-10-04",
+     "quote": "Maximum 60 characters.",
+     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)"
+    },
+    {
+     "field": "footer text",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
+     "checked": "2026-10-04",
+     "quote": "60 characters maximum.",
+     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)"
+    },
+    {
+     "field": "button label text",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
+     "checked": "2026-10-04",
+     "quote": "25 characters maximum.",
+     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)"
+    },
+    {
+     "field": "URL button URL",
+     "max": 2000,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
+     "checked": "2026-10-04",
+     "quote": "2000 characters maximum.",
+     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)"
+    },
+    {
+     "field": "buttons per template",
+     "max": 10,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
+     "checked": "2026-10-04",
+     "quote": "Templates can have a combination of up to 10 button components in total.",
+     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)"
+    },
+    {
+     "field": "URL buttons per template",
+     "max": 2,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
+     "checked": "2026-10-04",
+     "quote": "Templates are limited to two URL buttons.",
+     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)"
+    },
+    {
+     "field": "phone number buttons per template",
+     "max": 1,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
+     "checked": "2026-10-04",
+     "quote": "Templates are limited to one phone number button.",
+     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)"
+    }
+   ],
+   "formatting": [
+    "Components: header (text up to 60), body (up to 1,024), footer (up to 60), buttons (label up to 25; URL button URL up to 2,000; copy-code and phone-number button text up to 20).",
+    "Button budget: up to 10 button components in total, at most 2 URL buttons and 1 phone-number button; with more than three buttons only two appear in the delivered message.",
+    "Templates are reviewed by Meta before use (item note).",
+    "Variables use numbered placeholders such as {{1}} in the body, and bold/italic characters in templates follow WhatsApp text formatting [both are general platform knowledge, not read on the components page: verify in the template editor].",
+    "Counting of Devanagari and emoji, and whether filled variable values count toward the 1,024, were not stated on the page read: leave headroom and test."
+   ],
+   "writing_notes": [
+    "Write by component: header (one short label or leave it out), body (the message), footer (a short line such as the brand or an opt-out cue), buttons (one primary action first). Count each against its own limit.",
+    "Lint: `pcw.py check --platform plat:whatsapp_business_template` tests the FIRST limit, the 1,024-character body. Run `--field header`, `--field footer` and `--field label` for the others; the count rows (buttons, URL buttons, phone buttons) cannot be linted because `pcw.py check` compares a count unit with the number of hashtags, so count buttons by hand.",
+    "Where the hook lands: no visible cut-off value was recorded for the body, so make line one carry the point (order, delivery, appointment, offer) and name the customer with the first variable.",
+    "Utility example (Hinglish body): \"Namaste {{1}}, aapka order {{2}} kal tak deliver ho jayega. Tracking link neeche button mein hai. Koi dikkat ho to is message ka reply kijiye.\" Button: 'Track order' (11 characters).",
+    "Marketing example: lead with the offer and the end date, and keep it to one idea; put the price band or code in the body and the action in the URL button.",
+    "Roman Hinglish matches how Indian customers write on WhatsApp; use Devanagari when the audience is Hindi-first and check the preview renders it."
+   ]
+  },
+  {
+   "id": "plat:whatsapp_message",
+   "kind": "platform",
+   "name": "WhatsApp text message",
+   "status": "current",
+   "summary": "A free-form WhatsApp text message (chat or broadcast list): the Cloud API accepts up to 4,096 characters, URLs are auto-linked, and *bold*, _italic_, ~strikethrough~ and ```monospace``` formatting is used by senders. Good copy is short, chat-native, and one message per idea with one link.",
+   "use_for": [
+    "Customer chat replies, sales follow-ups and broadcast-list messages written as free-form text.",
+    "Short announcements for communities and groups.",
+    "Formatting a message so key details (date, amount, code) stand out."
+   ],
+   "avoid": [
+    "Treating 4,096 as the app's limit: it is the Cloud API figure. No consumer-app limit, and none for Status text or Channel posts, was found on 2026-10-04.",
+    "Brochure-length messages: chat readers skim. Send one idea and one link per message.",
+    "A footnote asterisk ('*T&C apply') next to another asterisk: two asterisks in a message can turn the text between them bold [inference from the syntax].",
+    "Business-initiated marketing sends written as free-form text: use an approved template (see plat:whatsapp_business_template)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/messages/text-messages",
+     "title": "WhatsApp Cloud API: Text messages",
+     "supports": "body maximum 4,096 characters; URLs auto-hyperlinked; preview_url link preview (re-read 2026-10-05)"
+    }
+   ],
+   "related": [
+    "genre:whatsapp_broadcast",
+    "genre:whatsapp_forward",
+    "genre:whatsapp_channel_post",
+    "genre:chatbot_script",
+    "plat:whatsapp_business_template",
+    "trend:whatsapp_conversational_commerce"
+   ],
+   "limits": [
+    {
+     "field": "text body (Cloud API)",
+     "max": 4096,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/messages/text-messages",
+     "checked": "2026-10-04",
+     "quote": "Maximum 4096 characters.",
+     "confidence": "medium (Meta WhatsApp Cloud API docs; states the API limit, not the consumer app's)"
+    }
+   ],
+   "formatting": [
+    "URLs in the body are automatically hyperlinked by the WhatsApp client (Cloud API doc); set preview_url true to ask for a link preview.",
+    "Text styling uses *bold*, _italic_, ~strikethrough~ and ```monospace```: [unverified: no official WhatsApp page was read; the syntax is consistently reported by third-party guides and the Meta text-message page does not mention it].",
+    "Line breaks and emoji work in chat [general platform knowledge, not read].",
+    "The 4,096 is the Cloud API body limit and may differ in the consumer app."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check --platform plat:whatsapp_message` tests the FIRST (only) limit, 4,096 characters, which a good chat message never approaches.",
+    "Which number to trust: 4,096 is documented for the API, so obey it for messages sent through business tools; for the consumer app no number was found, so keep messages short and test long ones.",
+    "Where the hook lands: no preview length was recorded, so write the first line as the whole point: who, what, by when.",
+    "Use styling for the one thing that must not be missed. Example (Hinglish): \"*Diwali sale shuru!* Kurtas par _flat 20% off_ sirf is Sunday tak. Order: sarsonco.in/diwali\" (fictional brand). Skip bold for whole paragraphs.",
+    "One link per message, placed last so the preview and the text do not compete; Indian audiences expect Roman Hinglish with a casual register."
+   ]
+  },
+  {
+   "id": "plat:x_bio",
+   "kind": "platform",
+   "name": "X profile bio, display name and username",
+   "status": "current",
+   "summary": "The three identity fields on an X profile: bio (160 characters), display name (50) and @username (15, letters, digits and underscore only). Good copy says who you are and for whom in the bio, puts a searchable descriptor in the display name, and keeps the username short and typeable.",
+   "use_for": [
+    "Writing or refreshing an X bio for a founder, creator, brand or journalist.",
+    "Choosing a display name that carries the name plus one descriptor.",
+    "Checking a username against the 15-character and character-set rules."
+   ],
+   "avoid": [
+    "A bio that is a list of titles ('Founder | Speaker | Mentor | Dreamer'): say what you do and for whom, then one proof or a reason to follow.",
+    "A Devanagari or hyphenated username: usernames take only A-Z letters, digits 0-9 and underscore, and stop at 15 characters. Put Hindi in the display name instead.",
+    "Pasting a long LinkedIn About: the bio is 160 characters. Location and website have their own fields, so do not spend bio characters on them.",
+    "Running out of room in the display name: it is 50 characters, which is enough for a name plus a short descriptor but not a tagline."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://help.x.com/en/managing-your-account/how-to-customize-your-profile",
+     "title": "X Help: How to customize your profile",
+     "supports": "bio maximum 160 characters"
+    },
+    {
+     "url": "https://help.x.com/en/managing-your-account/x-username-rules",
+     "title": "X Help: Help with username registration",
+     "supports": "display name 50 characters, username at most 15 characters, allowed username characters"
+    }
+   ],
+   "related": [
+    "genre:social_bio",
+    "genre:personal_brand_statement",
+    "genre:professional_bio",
+    "plat:x_post"
+   ],
+   "limits": [
+    {
+     "field": "bio",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://help.x.com/en/managing-your-account/how-to-customize-your-profile",
+     "checked": "2026-10-04",
+     "quote": "Bio (maximum 160 characters)",
+     "confidence": "high (X Help Center)"
+    },
+    {
+     "field": "display name",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://help.x.com/en/managing-your-account/x-username-rules",
+     "checked": "2026-10-04",
+     "quote": "Your name can be longer (50 characters) or shorter than 4 characters",
+     "confidence": "high (X Help Center)"
+    },
+    {
+     "field": "@username",
+     "max": 15,
+     "unit": "chars",
+     "url": "https://help.x.com/en/managing-your-account/x-username-rules",
+     "checked": "2026-10-04",
+     "quote": "Your username cannot be longer than 15 characters.",
+     "confidence": "high (X Help Center)"
+    }
+   ],
+   "formatting": [
+    "Bio: plain text, up to 160 characters. Display name: up to 50 characters. Username: up to 15 characters, letters A-Z, digits 0-9 and underscore only (X Help).",
+    "Location and website are separate profile fields, not part of the bio.",
+    "Whether @mentions, #hashtags and links typed into a bio become clickable, and how emoji and Devanagari are counted against the 160, were not established by the pages read: [unverified: check on a live profile before relying on them]."
+   ],
+   "writing_notes": [
+    "Formula for 160: what you do + for whom + one proof or number + a reason to follow or an action. Example (107 chars): \"Brand writer in Pune. I turn founder voice notes into posts people reply to. Open for 2 retainer slots. DM.\"",
+    "Display name (50): name plus a descriptor people search for. Example (24 chars): \"Riya Kulkarni | D2C copy\". The username must stay plain: \"riyawrites_pune\" is 15 characters, the maximum.",
+    "Lint: `pcw.py check --platform plat:x_bio` tests the FIRST limit, the 160-character bio. Use `--field \"display name\"` for the 50 and `--field username` for the 15. The checker counts Python characters, so an emoji counts as one.",
+    "Hinglish bio: write it in the language of the posts you will make, so the bio filters the right followers. A Hindi-first account can put the Devanagari name in the display name and the Roman handle in the username.",
+    "Proof beats adjectives: '212 CA firms served' says more than 'trusted by many'. Use a real figure the client can show."
+   ]
+  },
+  {
+   "id": "plat:x_long_post",
+   "kind": "platform",
+   "name": "X Premium longer post",
+   "status": "niche",
+   "summary": "A longer post on X holds up to 25,000 characters and only Premium subscribers can create one; everyone can read it. The help pages disagree (an older page still says 4,000), so 25,000 is the hard cap but writing under 4,000 is safe on both. The point has to land in the first 280 characters.",
+   "use_for": [
+    "A founder or expert essay posted natively on X by a Premium account.",
+    "A post that would otherwise be a long thread, written as one piece.",
+    "Repurposing a newsletter or blog argument for X readers."
+   ],
+   "avoid": [
+    "Writing a 5,000-character post for an account that is not Premium: only Premium subscribers can create longer posts. Confirm the client's subscription first, or deliver a thread (plat:x_thread).",
+    "Burying the point: no X page read says where a long post collapses in the timeline, so assume only the first 280 characters are seen before a reader opens it [assumption, not a stated rule].",
+    "Treating 25,000 as a target: nobody reads a 20,000-character post in a feed. Write what the idea needs.",
+    "Trusting a single help page: the How to Post page still says 'up to 4,000 characters' while About X Premium says 25,000. If the client's composer rejects a long text, check the account's tier and split at 4,000."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://help.x.com/en/using-x/x-premium",
+     "title": "X Help: About X Premium",
+     "supports": "longer posts up to 25,000 characters, Premium subscribers only (fetch refused on 2026-10-05; figure as read in the harvest on 2026-10-04)"
+    },
+    {
+     "url": "https://help.x.com/en/using-x/how-to-post",
+     "title": "X Help: How to post",
+     "supports": "conflicting older figure: up to 4,000 characters; composer switches mode at 280"
+    }
+   ],
+   "related": [
+    "genre:x_post",
+    "genre:x_thread",
+    "genre:ghostwritten_founder_post",
+    "plat:x_post",
+    "plat:x_thread",
+    "trend:thought_leadership_b2b"
+   ],
+   "limits": [
+    {
+     "field": "longer post text",
+     "max": 25000,
+     "unit": "chars",
+     "url": "https://help.x.com/en/using-x/x-premium",
+     "checked": "2026-10-04",
+     "quote": "Longer posts allow subscribers to post up to 25,000 characters.",
+     "confidence": "high (X Help Center, About X Premium)"
+    }
+   ],
+   "formatting": [
+    "Up to 25,000 characters; created only by Premium subscribers, readable by everyone (About X Premium).",
+    "The composer switches mode at 280 characters (How to Post page); no page read states where a long post collapses in the timeline, so no visible length is recorded.",
+    "Premium unlocks text formatting (bold, italic) [general platform knowledge in the harvest note, not quoted from a page read: verify in the composer].",
+    "How the weighted counting of plat:x_post (emoji and URLs) applies to long posts is not stated; leave headroom."
+   ],
+   "writing_notes": [
+    "Which number to trust: 25,000 is the hard cap (the Premium page). The 4,000 on the How to Post page looks stale, but a draft under 4,000 characters satisfies both pages, so use 4,000 as the working ceiling unless the account has been tested with longer text.",
+    "Where the hook lands: the first 280 characters are the only text you can assume is visible. Make them a complete claim and a reason to keep reading, not a throat-clearing opener.",
+    "Structure for a long read: claim (first 280 characters), proof in short paragraphs separated by blank lines, one clear ending line or ask. Break paragraphs often; a wall of text on a phone is not read.",
+    "Lint: `pcw.py check --platform plat:x_long_post` tests the FIRST (only) limit, 25,000 characters. The checker will not catch a draft over the safe 4,000, so count against 4,000 yourself.",
+    "Hindi or Hinglish: Devanagari code points count 1 each in plat:x_post's weighting; for long posts the counting is not documented, so keep Devanagari drafts well under the ceiling."
+   ]
+  },
+  {
+   "id": "plat:x_post",
+   "kind": "platform",
+   "name": "X (Twitter) post",
+   "status": "current",
+   "summary": "A standard X post is 280 weighted characters: Latin and Devanagari code points count 1, emoji and CJK count 2, and any URL counts 23 whatever its length. Good copy is one idea whose first words carry the point, with a link only when the click is the goal.",
+   "use_for": [
+    "Single posts for a brand, founder, news or commentary account.",
+    "Trend-reactive and news-jacking posts, meme captions and short opinions.",
+    "Counting a post correctly when it contains Hindi, emoji or a link."
+   ],
+   "avoid": [
+    "Counting by eye: the limit is weighted. 140 emoji fill a post; a link costs 23 whatever its length.",
+    "Counting Devanagari as 'characters you see': matras and viramas are separate code points and each counts, so a conjunct like क्ष is three. Count code points.",
+    "A thread-length idea squeezed into 280: if it needs more room, use plat:x_thread (or plat:x_long_post for Premium).",
+    "Hashtag stacks: they eat characters and add little. Use at most one, only when it is the topic.",
+    "Planning bold or italic in a standard post: the harvest lists none for standard accounts (unverified, see formatting); use line breaks and plain emphasis."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://docs.x.com/fundamentals/counting-characters",
+     "title": "X API: Counting characters",
+     "supports": "280 weighted characters, URL counts as 23, CJK and emoji weigh 2"
+    },
+    {
+     "url": "https://github.com/twitter/twitter-text/blob/master/config/v3.json",
+     "title": "twitter-text config v3",
+     "supports": "weights: code points 0-4351 weigh 1, default weight 2, URL length 23"
+    }
+   ],
+   "related": [
+    "genre:x_post",
+    "genre:newsjacking_post",
+    "genre:political_social_commentary",
+    "genre:meme_caption",
+    "plat:x_thread",
+    "plat:x_long_post",
+    "plat:x_bio"
+   ],
+   "limits": [
+    {
+     "field": "post text",
+     "max": 280,
+     "unit": "chars",
+     "url": "https://docs.x.com/fundamentals/counting-characters",
+     "checked": "2026-10-04",
+     "quote": "Posts on X can contain up to 280 characters.",
+     "confidence": "high (X developer docs)"
+    },
+    {
+     "field": "URL (any length, counted as)",
+     "max": 23,
+     "unit": "chars",
+     "url": "https://docs.x.com/fundamentals/counting-characters",
+     "checked": "2026-10-04",
+     "quote": "All URLs are wrapped with t.co shortener and count as 23 characters, regardless of the original length",
+     "confidence": "high (X developer docs)"
+    }
+   ],
+   "formatting": [
+    "The 280 is a weighted count: twitter-text config v3 has maxWeightedTweetLength 280 and defaultWeight 200 on a scale of 100. Code points 0-4351 (Latin, and Devanagari U+0900-097F with the other Indic blocks) weigh 1; emoji and CJK weigh 2.",
+    "Every URL is wrapped by the t.co shortener and counts as 23 characters regardless of its original length (X developer docs).",
+    "Hindi matras and viramas are separate code points and each counts.",
+    "Links, #hashtags and @mentions are clickable; no bold or italic in standard posts [formatting facts here are general platform knowledge, not quoted from a page read: verify before relying on them].",
+    "No visible cut-off is recorded for a standard post; the card makes no assumption beyond the 280 cap."
+   ],
+   "writing_notes": [
+    "Count it the X way: (characters, with emoji as 2) + 23 per link. Example (152 counted): \"GST notice aaya? Pehle 3 cheezein check karo: notice ka section, reply ki last date, aur DIN number. Panic baad mein. Checklist: [link]\", 129 characters plus the 23 for the link.",
+    "Lint: `pcw.py check --platform plat:x_post` tests the FIRST limit, 280, by plain `len(text)`. That undercounts emoji (1 instead of 2) and overcounts a pasted link (its full length instead of 23). Hand-correct before trusting a pass or a fail near the limit.",
+    "Hook: no cut-off is recorded, but readers scan, so the first words are the hook. Lead with the claim, the number or the question; no 'Thread:' or 'Let me tell you' openers on a single post.",
+    "One idea, one claim per post. A strong Hinglish post reads the way the audience talks: short sentences, the key noun early.",
+    "Put the link last, and only when the click is the goal. If the post is the content, leave the link out."
+   ]
+  },
+  {
+   "id": "plat:x_thread",
+   "kind": "platform",
+   "name": "X thread",
+   "status": "current",
+   "summary": "An X thread is a chain of connected posts published together; each post is capped at 280 weighted characters (see plat:x_post), and the help page states no maximum number of posts. Good threads make post 1 a complete hook and give each later post one step.",
+   "use_for": [
+    "Breaking a how-to, a case study or a news explainer into stepwise posts.",
+    "Repurposing a newsletter, blog or video into a thread.",
+    "A founder story that needs more room than one post but less than a long post."
+   ],
+   "avoid": [
+    "Writing the thread as one block and splitting later: each post must stand as a unit under 280 weighted characters.",
+    "A weak post 1: the first post is what most people see before deciding to open the thread [general behaviour, not read on a page]. Make it a complete claim plus a reason to read on.",
+    "Padding to hit a round number of posts: no maximum is stated, so stop when the idea ends.",
+    "Putting a link in every post: each URL counts as 23 characters. Put it in the last post or one reply."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://help.x.com/en/using-x/create-a-thread",
+     "title": "X Help: How to create a thread on X",
+     "supports": "thread composer; over-limit text is highlighted; no stated maximum number of posts"
+    },
+    {
+     "url": "https://help.x.com/en/using-x/how-to-post",
+     "title": "X Help: How to post",
+     "supports": "280 characters per post"
+    }
+   ],
+   "related": [
+    "genre:x_thread",
+    "genre:repurposed_content",
+    "genre:ghostwritten_founder_post",
+    "plat:x_post",
+    "plat:x_long_post"
+   ],
+   "limits": [
+    {
+     "field": "each post in the thread",
+     "max": 280,
+     "unit": "chars",
+     "url": "https://help.x.com/en/using-x/how-to-post",
+     "checked": "2026-10-04",
+     "quote": "Compose your message (up to 280 characters) and select Post.",
+     "confidence": "high (X Help Center; the per-post cap applies to each post of a thread)"
+    }
+   ],
+   "formatting": [
+    "Each post in the thread is capped at 280 and is counted on its own with the weighted rules in plat:x_post (emoji weigh 2, a URL counts 23, Devanagari code points weigh 1).",
+    "The thread help page states no maximum number of posts per thread (checked 2026-10-04). If you go over the limit, the text over the limit is highlighted (X Help).",
+    "Links, hashtags and mentions are clickable as in single posts [general platform knowledge, not read]."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check --platform plat:x_thread` tests the FIRST limit, 280, against the WHOLE file, so a full thread will always fail. Save each post as its own file (or paste one at a time) and check them separately.",
+    "Structure: post 1 = the claim or the promise with a number (what the reader will be able to do); posts 2 to n-1 = one step or one proof each; last post = the takeaway and the one action (follow, link, reply).",
+    "Number the posts only if the order matters ('2/9'): the numbers cost characters. Example opener (49 chars): \"GST notice aaye to pehle ye 4 kaam karo (thread):\"",
+    "Write each post so it still makes sense if read alone: a reader often lands on the middle of a thread from a quote or reply.",
+    "Hinglish thread: keep each post to one thought; count emoji as 2 and every link as 23."
+   ]
+  },
+  {
+   "id": "plat:youtube_channel_description",
+   "kind": "platform",
+   "name": "YouTube channel description and keywords",
+   "status": "current",
+   "summary": "The About text of a YouTube channel (1,000 characters) and its channel keywords (500 characters in total, space-separated). Good copy opens with who the channel is for and what they get, adds the schedule and language, and ends with one action.",
+   "use_for": [
+    "Writing or refreshing the About text of a creator, brand or education channel.",
+    "Picking the channel keywords as a short list of natural phrases.",
+    "A Hindi, English or Hinglish channel intro that matches the language of the videos."
+   ],
+   "avoid": [
+    "A generic mission statement ('Welcome to my channel, I make videos'): say who the videos are for, what topics, how often and in which language.",
+    "Counting channel keywords per keyword: the 500 is the total across all keywords, and any excess may be truncated.",
+    "Keyword stuffing in the About text: write sentences; the text appears in the channel information box and is read by people first.",
+    "Copy-pasting a video description: the About text is channel-level, so no single episode's links or timestamps belong in it."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/youtube/v3/docs/channels",
+     "title": "YouTube Data API: Channels",
+     "supports": "description maximum 1,000 characters; channel keywords may be truncated over 500 characters"
+    }
+   ],
+   "related": [
+    "genre:social_bio",
+    "genre:about_page",
+    "genre:youtube_title_description",
+    "genre:elevator_pitch",
+    "lang:hindi_seo",
+    "lang:hinglish_roman"
+   ],
+   "limits": [
+    {
+     "field": "channel description",
+     "max": 1000,
+     "unit": "chars",
+     "url": "https://developers.google.com/youtube/v3/docs/channels",
+     "checked": "2026-10-04",
+     "quote": "The channel description, which appears in the channel information box on your channel page. The property's value has a maximum length of 1000 characters.",
+     "confidence": "high (YouTube Data API reference)"
+    },
+    {
+     "field": "channel keywords (total)",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://developers.google.com/youtube/v3/docs/channels",
+     "checked": "2026-10-04",
+     "quote": "Channel keywords might be truncated if they exceed the maximum allowed length of 500 characters",
+     "confidence": "high (YouTube Data API reference)"
+    }
+   ],
+   "formatting": [
+    "The channel description 'appears in the channel information box on your channel page'; maximum length 1,000 characters (Data API).",
+    "Channel keywords: a space-separated list, 500 characters in total (not per keyword); keywords over the limit might be truncated.",
+    "How multi-word keywords are delimited for channels (video tags use quotation marks) and whether links in the About text are clickable were not read: [unverified, check in YouTube Studio > Customization].",
+    "Devanagari is counted as characters in the API wording for channel text; test a long Hindi About in Studio."
+   ],
+   "writing_notes": [
+    "Structure for 1,000: line 1 = who it is for + what they get; line 2 = topics + schedule + language; line 3 = proof (who checks the content, years, a real number); last line = one action or contact. Example (403 chars): \"Hum GST aur tax ko seedhi Hindi mein samjhate hain, un chhote business owners aur D2C founders ke liye jinke paas full-time CA nahi hai. Har Tuesday aur Friday ek naya video: GST notice, ITC, filing deadlines, aur sahi books rakhne ke tareeke. Hamare saare videos ek practicing CA ke saath check hote hain. Free checklists aur templates ke liye link neeche dekhein. Business enquiries: hello@example.com\" (fictional channel).",
+    "Lint: `pcw.py check --platform plat:youtube_channel_description` tests the FIRST limit, 1,000 characters. Use `--field keywords` to test the keyword list against 500 (write it as one space-separated line).",
+    "The first sentence carries the weight: no visible cut-off was recorded, so assume a viewer reads one or two lines. Put the audience and the promise there.",
+    "Keywords: pick a short set of phrases people would type (topic, language, audience), not every possible word; spend the 500 on phrases, not repetition.",
+    "Match the language of the About text to the language of the videos; for a Hinglish channel, a Roman Hinglish first line with an English keyword list works."
+   ]
+  },
+  {
+   "id": "plat:youtube_chapters",
+   "kind": "platform",
+   "name": "YouTube chapters (description timestamps)",
+   "status": "current",
+   "summary": "Manual chapters are a list of timestamps and titles in the video description: the first must be 00:00, there must be at least three in ascending order, and every chapter must run at least 10 seconds. Good chapter titles are short, specific and keyword-first, and they let a viewer jump to the part they came for.",
+   "use_for": [
+    "Chapter lists for long videos, podcasts, tutorials and explainers.",
+    "Replacing weak automatic chapters (manual chapters override them).",
+    "Giving search and viewers named sections of a long video."
+   ],
+   "avoid": [
+    "Starting at 00:01 or leaving out the first timestamp: YouTube requires the first to be 00:00.",
+    "Fewer than three timestamps or out-of-order ones: the list must have at least three, ascending.",
+    "A chapter shorter than 10 seconds: the minimum length is 10 seconds, so merge tiny sections.",
+    "Vague titles ('Part 2', 'Next'): name what the viewer gets ('Reply ki last date').",
+    "Clickbait titles that do not match the section: viewers who jump and find something else leave."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/9884579?hl=en",
+     "title": "YouTube Help: Video chapters",
+     "supports": "first timestamp 00:00, at least three timestamps ascending, chapters at least 10 seconds, manual chapters override automatic (re-read 2026-10-05)"
+    }
+   ],
+   "related": [
+    "genre:youtube_chapters",
+    "genre:youtube_title_description",
+    "genre:podcast_show_notes",
+    "plat:youtube_description",
+    "trend:video_podcasts",
+    "trend:youtube_on_tv"
+   ],
+   "limits": [
+    {
+     "field": "minimum timestamps",
+     "unit": "count",
+     "url": "https://support.google.com/youtube/answer/9884579?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Your video should have at least three timestamps listed in ascending order.",
+     "confidence": "high (YouTube Help; this is a MINIMUM, not a maximum)",
+     "min": 3
+    },
+    {
+     "field": "minimum chapter length",
+     "unit": "seconds",
+     "url": "https://support.google.com/youtube/answer/9884579?hl=en",
+     "checked": "2026-10-04",
+     "quote": "The minimum length for video chapters is 10 seconds.",
+     "confidence": "high (YouTube Help; this is a MINIMUM, not a maximum)",
+     "min": 10
+    }
+   ],
+   "formatting": [
+    "Write a plain list in the description, one chapter per line: timestamp then title. Timestamps become chapter links (harvest note, plat:youtube_description).",
+    "Rules (YouTube Help): the first timestamp must be 00:00; at least three timestamps in ascending order; the minimum chapter length is 10 seconds.",
+    "A list of manual chapters overrides automatic chapters. Not all videos are eligible for automatic chapters, and creators can switch them off per video ('Allow automatic chapters') or in upload defaults.",
+    "Format for videos over an hour (1:02:15) is general convention, not read on the page: check it in Studio's preview.",
+    "Both limits on this card are MINIMUMS (stored as `min`): at least 3 timestamps, each chapter at least 10 s."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check` does not measure timestamps or seconds, so check by hand: first line 00:00, at least three lines, ascending, each gap at least 10 seconds.",
+    "Arithmetic: three chapters of at least 10 seconds each means a video must run at least 30 seconds for chapters to be possible.",
+    "Title style: three to seven words, the topic or the question first, in the language of the video. Example list for a 12-minute Hinglish video:\n00:00 Intro\n01:10 Notice ka section kaise padhein\n03:45 Reply ki last date\n06:20 Reply draft ka format\n09:05 Common galtiyan",
+    "Place the list in the description with a blank line before it; keep chapters within the real video's timeline. Add the chapter list after the summary and link lines (see plat:youtube_description).",
+    "Make each title a promise a viewer can cash in: if someone jumps to 'Reply ki last date', the last date must be in the first 20 seconds of that chapter.",
+    "Do not number or decorate titles with emoji unless the brand voice wants it; plain text is easier to scan."
+   ]
+  },
+  {
+   "id": "plat:youtube_description",
+   "kind": "platform",
+   "name": "YouTube video description",
+   "status": "current",
+   "summary": "The description box under a YouTube video: 5,000 characters in Help, but the Data API says 5,000 BYTES, which matters for Hindi. Up to three hashtags show by the title (more than 60 and all are ignored), and timestamps become chapters. Good copy leads with a keyword-led summary and the one link that matters.",
+   "use_for": [
+    "Writing the description for a long-form video or a Short.",
+    "Adding the chapter list, a link, credits and up to three relevant hashtags.",
+    "Budgeting a Hindi description by bytes rather than characters."
+   ],
+   "avoid": [
+    "Counting Hindi in characters: Devanagari is 3 bytes per character in UTF-8, so against the API's 5,000-byte limit a pure-Devanagari description tops out near 1,666 characters. Budget by bytes.",
+    "Using < or > anywhere (including '->' arrows or HTML): the API allows all UTF-8 except < and >, and Help says invalid characters are not allowed.",
+    "More than 60 hashtags: YouTube ignores EVERY hashtag on that video or playlist. Use three or fewer.",
+    "Unrelated hashtags to catch searches: misleading or unrelated hashtags may lead to removal of the video or playlist.",
+    "Assuming a link is tappable: URLs are clickable only if the channel meets YouTube's conditions (API note); do not depend on it for a key CTA."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/57404?hl=en",
+     "title": "YouTube Help: Edit video settings",
+     "supports": "5,000-character description"
+    },
+    {
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "title": "YouTube Data API: Videos",
+     "supports": "5,000 bytes, no < or >"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/6390658?hl=en",
+     "title": "YouTube Help: Hashtags",
+     "supports": "up to three hashtags by the title; no spaces; more than 60 ignored; misleading hashtags may be removed (re-read 2026-10-05)"
+    }
+   ],
+   "related": [
+    "genre:youtube_title_description",
+    "genre:youtube_chapters",
+    "genre:podcast_show_notes",
+    "plat:youtube_chapters",
+    "plat:youtube_tags",
+    "lang:hindi_seo",
+    "trend:hashtags_to_keywords",
+    "trend:youtube_on_tv"
+   ],
+   "limits": [
+    {
+     "field": "description",
+     "max": 5000,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/57404?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Video descriptions have a character limit of 5,000 characters and cannot include invalid characters.",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "description (API, UTF-8 bytes)",
+     "max": 5000,
+     "unit": "bytes",
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "checked": "2026-10-04",
+     "quote": "The property value has a maximum length of 5000 bytes and may contain all valid UTF-8 characters except < and > .",
+     "confidence": "high (YouTube Data API reference)"
+    },
+    {
+     "field": "hashtags before all are ignored",
+     "max": 60,
+     "unit": "count",
+     "url": "https://support.google.com/youtube/answer/6390658?hl=en",
+     "checked": "2026-10-04",
+     "quote": "If a video or playlist has more than 60 hashtags, we'll ignore each hashtag on that content.",
+     "confidence": "high (YouTube Help)"
+    }
+   ],
+   "formatting": [
+    "Limits: 5,000 characters (YouTube Help) versus 5,000 bytes (Data API): CONFLICT. Devanagari is 3 bytes per character in UTF-8, so a Hindi description can hit the API limit near 1,666 characters.",
+    "Studio offers bold, italic and strikethrough in the description. < and > are not allowed.",
+    "Hashtags: no spaces (join words, #TwoWords); up to three that YouTube considers most engaging appear by the video title; more than 60 on one video and all are ignored.",
+    "Timestamps in the description become chapter links (see plat:youtube_chapters). URLs are clickable only if the channel meets YouTube's conditions (API note).",
+    "How much of the description shows before the 'more' control was not read on a page: [unverified: assume only the first two lines are seen without a tap]."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check --platform plat:youtube_description` tests the FIRST limit, 5,000 characters. For Hindi run `--field bytes` (the UTF-8 byte count) and `--field hashtags` to test the 60.",
+    "Order: line 1 a keyword-led sentence saying what the viewer gets; line 2 the one link or action; then the chapter list; then credits and secondary links; then up to three hashtags at the end. Example (332 chars, Hinglish):\n\"GST notice aaya hai? CA Neha Sharma (Jaipur) batati hain notice ka section kaise padhein, reply kab tak dena hai aur draft kaise likhein.\nFree checklist: sarsonco.in/gst-checklist\n\n00:00 Intro\n01:10 Notice ka section kaise padhein\n03:45 Reply ki last date\n06:20 Reply draft ka format\n09:05 Common galtiyan\n\n#GST #GSTNotice #TaxIndia\"",
+    "Which number to trust: write to the stricter, the API's 5,000 bytes. For Roman Hinglish it is the same as characters; for Devanagari divide by three (about 1,666 characters).",
+    "Do not paste a keyword list into the description: write sentences, and use plat:youtube_tags only for variants and misspellings.",
+    "Hashtags: choose at most three that describe the video. Put them last so they do not break the summary."
+   ]
+  },
+  {
+   "id": "plat:youtube_post",
+   "kind": "platform",
+   "name": "YouTube community post",
+   "status": "current",
+   "summary": "A text, image, poll or quiz post in a channel's Posts tab. Polls and quizzes take up to four answers; text poll options are 65 characters, image poll captions 36, quiz answers 80 (30 with an image); a post holds up to 10 images. The help page states no limit for the post text itself.",
+   "use_for": [
+    "Community polls to decide the next video topic.",
+    "Quiz posts that test a viewer on the topic of a recent video.",
+    "Short channel updates with an image, between uploads."
+   ],
+   "avoid": [
+    "Writing poll options as full sentences: text options are 65 characters and image captions only 36. Use noun phrases.",
+    "More than four answers: polls and quizzes allow up to four.",
+    "Image-poll captions that explain the picture: with 36 characters, name the option only.",
+    "Quiz answers over 30 characters when an image is added (80 without).",
+    "Assuming no limit means long is good: the help page states none, but Posts are read in a feed, so keep them short."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+     "title": "YouTube Help: Create posts",
+     "supports": "10 images, 4 poll options of 65 characters, image-poll captions 36, quiz answers 80 or 30 with an image"
+    }
+   ],
+   "related": [
+    "genre:youtube_community_post",
+    "genre:interactive_quiz_content",
+    "genre:community_post"
+   ],
+   "limits": [
+    {
+     "field": "images per post",
+     "max": 10,
+     "unit": "count",
+     "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+     "checked": "2026-10-04",
+     "quote": "You can choose to upload up to 10 images with your post.",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "text poll option",
+     "max": 65,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Enter answers in the \"Add option\" fields within 65 characters each. Click Add another option to add up to 4 answers.",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "image poll caption",
+     "max": 36,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Upload images as answers, and add captions within 36 characters in the 'Option' fields.",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "quiz answer (no image / with image: 30)",
+     "max": 80,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/7124474?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Answers can be up to 80 characters each or up to 30 characters if an image is added.",
+     "confidence": "high (YouTube Help)"
+    }
+   ],
+   "formatting": [
+    "Post types: text, image (up to 10 images), poll and quiz (up to four answers each).",
+    "Text poll option up to 65 characters; image poll caption up to 36; quiz answer up to 80, or 30 if an image is added.",
+    "The help page states no character limit for the post text itself (checked 2026-10-04).",
+    "Whether links, hashtags and emoji render in post text, and how Devanagari is counted, were not read: [unverified, test a draft post]."
+   ],
+   "writing_notes": [
+    "Lint: the FIRST limit is a count (10 images), which `pcw.py check` cannot test; it compares counts with hashtags. Use `--field poll` to test 65 and 36 against the draft text, and `--field quiz` for 80 and 30 (write one option per file).",
+    "Poll formula: one question, three or four parallel options, each a noun phrase. Example (Hinglish): question \"Agla video kis topic par banau?\" with options \"Mutual fund SIP kaise shuru karein\" (34 chars) and \"80C tax saving ke asaan tareeke\" (31 chars).",
+    "Image-poll captions (36): the option's name only, for example \"80C ke tareeke\" (14 chars).",
+    "Post copy: a question or one line of news plus the action. The channel's audience sees it between videos, so reference the last upload by name.",
+    "Quiz: one question with one correct answer and two or three plausible wrong ones; keep each answer under 80 (30 with an image)."
+   ]
+  },
+  {
+   "id": "plat:youtube_tags",
+   "kind": "platform",
+   "name": "YouTube video tags",
+   "status": "dated",
+   "summary": "The hidden keyword tags on a YouTube video: 500 characters in total, commas included, with quotation marks added (and counted) around any tag that contains a space. YouTube says tags play a minimal role in discovery, mostly to cover common misspellings, so write a short list of variants and not a keyword dump.",
+   "use_for": [
+    "Adding the spelling variants viewers actually type (Roman Hinglish forms of a Hindi title, brand-name misspellings).",
+    "Filling the tags field on upload when a client expects it, within the 500-character budget.",
+    "Checking a tag list against the character limit."
+   ],
+   "avoid": [
+    "Expecting tags to drive reach: YouTube Help says tags play a minimal role; the title, thumbnail and description matter more. Put the effort there.",
+    "Forgetting the counting: commas count toward the 500 and a tag containing a space is wrapped in quotation marks that also count.",
+    "Repeating the title words in 30 tags: use a few variants and misspellings instead.",
+    "Adding tags unrelated to the video to catch traffic: YouTube's own guidance is that tags mainly cover misspellings, so keep them true to the content."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "title": "YouTube Data API: Videos",
+     "supports": "tags: maximum 500 characters, commas count, a tag with a space is wrapped in quotation marks that count"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/146402?hl=en",
+     "title": "Add tags to your YouTube videos - YouTube Help",
+     "supports": "tags play a minimal role in discovery; useful for commonly misspelled content (search summary of 2026-10-05)"
+    }
+   ],
+   "related": [
+    "genre:youtube_title_description",
+    "plat:youtube_description",
+    "lang:hindi_seo",
+    "lang:hinglish_roman",
+    "trend:hashtags_to_keywords"
+   ],
+   "limits": [
+    {
+     "field": "tags (total, commas count)",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "checked": "2026-10-04",
+     "quote": "The property value has a maximum length of 500 characters. ... commas between items in the list count toward the limit.",
+     "confidence": "high (YouTube Data API reference)"
+    }
+   ],
+   "formatting": [
+    "Tags are not shown to viewers (item note).",
+    "Total length 500 characters across the whole list; commas between items count; a tag containing a space is wrapped in quotation marks and the quotes count (Data API).",
+    "Whether Devanagari tags are counted as characters or bytes was not read for tags (the API says characters); test in Studio."
+   ],
+   "writing_notes": [
+    "Counting rule: sum of the tag lengths, plus one per comma between tags, plus two for every tag that contains a space. Example in the quoted API form: \"gst notice\",\"gst notice reply\",\"gst notice kaise bhare\",gst,\"जीएसटी नोटिस\" counts 75 of 500 by this rule.",
+    "Lint: `pcw.py check --platform plat:youtube_tags` tests the FIRST (only) limit, 500 characters, on the text you paste; paste the list in the quoted API form shown above so the quotes and commas are counted.",
+    "What to include: the exact target phrase first, then Roman Hinglish and misspelled variants, the brand and channel name, and the language. This matches how YouTube describes tags, a help for common misspellings.",
+    "Hindi title: add the Roman form beside the Devanagari one, since viewers may search in either script.",
+    "Keep the rest of the effort for the title, the thumbnail and the description, which YouTube says matter more."
+   ]
+  },
+  {
+   "id": "plat:youtube_title",
+   "kind": "platform",
+   "name": "YouTube video title",
+   "status": "current",
+   "summary": "The title of a YouTube video, long-form or Short: up to 100 characters, any UTF-8 except < and >. No display cut-off was read, so treat 100 as a cap, not a safe length. Good titles put the topic and the promise in the first words and match what the video delivers.",
+   "use_for": [
+    "Titles for long-form videos and Shorts, in English, Hindi or Hinglish.",
+    "Writing several title options to test against one thumbnail.",
+    "Checking a title for the character limit and the forbidden characters."
+   ],
+   "avoid": [
+    "Using < or > (including '->' arrows or '<3'): the API rejects them.",
+    "Treating 100 as a target: no display cut-off was read, so a long title may be cut off on some screens. Keep the topic and the promise at the front.",
+    "A title that promises something the video does not deliver: viewers leave and the title works against you.",
+    "Treating Shorts as a different field: Shorts use the same title field and no separate limit was found."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/57404?hl=en",
+     "title": "YouTube Help: Edit video settings",
+     "supports": "title limit 100 characters"
+    },
+    {
+     "url": "https://developers.google.com/youtube/v3/docs/videos",
+     "title": "YouTube Data API: Videos",
+     "supports": "snippet.title maximum 100 characters, no < or >"
+    }
+   ],
+   "related": [
+    "genre:youtube_title_description",
+    "genre:headline_dek",
+    "genre:youtube_video_script",
+    "genre:short_form_video_script",
+    "lang:hindi_seo"
+   ],
+   "limits": [
+    {
+     "field": "title",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/57404?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Video titles have a character limit of 100 characters and cannot include invalid characters.",
+     "confidence": "high (YouTube Help)"
+    }
+   ],
+   "formatting": [
+    "Up to 100 characters; the API allows all valid UTF-8 characters except < and > (Help: 'invalid characters' are not allowed).",
+    "Shorts use the same title field; no separate title or description limit for Shorts was found on YouTube Help on 2026-10-04.",
+    "No visible cut-off is recorded for titles; how Devanagari and emoji are counted was not read: test in Studio."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check --platform plat:youtube_title` tests the FIRST (only) limit, 100 characters; it does not check for < and >, so scan for them yourself.",
+    "Formula: the topic or question, the specific promise, then an optional qualifier. Example (57 chars): \"GST Notice Aaya? Reply Kaise Karein (Step by Step, Hindi)\".",
+    "Where the hook lands: no official cut-off was read, so write as if a viewer sees about the first 50 characters [practitioner heuristic, not a platform rule] and put the keyword and the promise there.",
+    "Write three to five variants; the title and the thumbnail text share the job, so do not repeat the same words in both.",
+    "Hindi or Hinglish: choose the script the audience searches in and keep proper nouns in Roman if viewers type them that way."
+   ]
+  },
+  {
+   "id": "plat:youtube_video_ads",
+   "kind": "platform",
+   "name": "YouTube / Google video ad text",
+   "status": "current",
+   "summary": "The text that accompanies YouTube video ads: video action campaigns (headline 30, long headline 90, description 90, call to action 10), in-feed video ads (two headline lines of 40, two description lines of 35) and Masthead (recommended 40, 60 and 15). The video carries the message; this text supports it.",
+   "use_for": [
+    "Writing the headline, long headline, description and CTA set for a video action campaign.",
+    "In-feed video ad headlines and descriptions written as separate lines.",
+    "Masthead copy at the recommended lengths."
+   ],
+   "avoid": [
+    "Counting one pool of characters: each format has its own fields. Write to the format you are buying.",
+    "A CTA over 10 characters for video action (15 recommended for Masthead): use a short verb ('Enrol now', 9).",
+    "Relying on the text to carry the offer: in-feed headlines are excluded from desktop and TV watch pages and may not show on mobile, and descriptions do not appear on the desktop watch page or TV. The first seconds of the video must make the offer.",
+    "Treating Masthead figures as hard maxima: Google lists them as recommended lengths.",
+    "Using organic title habits: organic YouTube titles and descriptions belong to plat:youtube_title and plat:youtube_description."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/google-ads/answer/17091270?hl=en",
+     "title": "Video ads specs and format requirements - Google Ads Help",
+     "supports": "text asset tables for each video format"
+    }
+   ],
+   "related": [
+    "genre:video_ad_script",
+    "genre:social_ad_copy",
+    "trend:creator_led_ads",
+    "trend:youtube_on_tv",
+    "comp:asci_code"
+   ],
+   "limits": [
+    {
+     "field": "video action campaign: headline",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091270?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Headline | 30 characters",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "video action campaign: long headline",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091270?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Long headline | 90 characters",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "video action campaign: description",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091270?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Description | 90 characters",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "video action campaign: call to action",
+     "max": 10,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091270?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Call to action | 10 characters",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "in-feed video ad: headline (per line, 2 lines)",
+     "max": 40,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091270?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Headlines | 2 lines | 40 characters per line",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "in-feed video ad: description (per line, 2 lines)",
+     "max": 35,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091270?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Descriptions | 2 lines | 35 characters per line",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "Masthead: headline (recommended)",
+     "max": 40,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091270?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Headline | ≤ 40 characters",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "Masthead: description (recommended)",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091270?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Description | ≤ 60 characters",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "Masthead: call to action (recommended)",
+     "max": 15,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091270?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Call to action | ≤ 15 characters",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Video action campaign: headline 30, long headline 90, description 90, call to action 10 characters.",
+    "In-feed video ad: headlines are two lines of up to 40 characters each; descriptions are two lines of up to 35 characters each.",
+    "Masthead (recommended, not hard maxima): headline up to 40, description up to 60, call to action up to 15.",
+    "Display: in-feed headlines are excluded from desktop and TV watch pages and may not show on mobile; descriptions do not appear on the desktop watch page or TV (same help page).",
+    "How Devanagari and emoji are counted in Google Ads text assets was not read for this page: test in the Google Ads editor."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check --platform plat:youtube_video_ads` tests the FIRST limit only: the video action headline, 30 characters. Name the field for the others: `--field \"long headline\"`, `--field description`, `--field in-feed`, `--field masthead`. Each in-feed line is checked separately: paste one line per file.",
+    "Video action set, written together. Headline (26): \"Learn GST filing in 7 days\". Long headline (74): \"GST filing made simple: a 7-day course for small business owners, in Hindi\". Description (78): \"Live classes, filing templates and a CA doubt-clearing session. Starts Monday.\" CTA (9): \"Enrol now\". (Fictional course.)",
+    "In-feed: two headline lines of up to 40 and two description lines of up to 35, each its own sentence. Example headline (31): \"GST filing, explained in 7 days\"; description lines (31, 28): \"Hindi course for small business\" and \"Live classes. Starts Monday.\"",
+    "Because text may not show, write the offer into the first five seconds of the video and use the text for the reinforcement: price, date, the one next step.",
+    "Keep the CTA a single verb phrase that matches the landing page (Enrol now, Book a demo).",
+    "Hinglish creative can run with a Roman headline; keep the CTA in plain English if the audience reads it that way."
+   ]
+  }
+ ]
+}

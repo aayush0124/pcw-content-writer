@@ -1,0 +1,2057 @@
+{
+ "cards": [
+  {
+   "id": "comp:academic_integrity_ugc_icmje",
+   "kind": "compliance",
+   "name": "Academic and research integrity: UGC (Promotion of Academic Integrity and Prevention of Plagiarism in HEIs) Regulations 2018 and ICMJE authorship and AI-use recommendations",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.ugc.gov.in/pdfnews/7771545_academic-integrity-Regulation2018.pdf",
+     "title": "UGC (Promotion of Academic Integrity and Prevention of Plagiarism in Higher Educational Institutions) Regulations, 2018, Gazette of India, 23 July 2018",
+     "supports": "definition of plagiarism, scope (scripts), originality undertaking, exclusions, similarity levels and penalties"
+    },
+    {
+     "url": "https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html",
+     "title": "ICMJE Recommendations: Defining the Role of Authors and Contributors",
+     "supports": "four authorship criteria; non-author contributors acknowledged; AI-assisted technology disclosure; chatbots not authors"
+    },
+    {
+     "url": "https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html",
+     "title": "ICMJE Recommendations: Use of AI by Authors",
+     "supports": "disclose AI use at submission; humans responsible; AI-generated material not acceptable as primary source; nondisclosure may be misconduct"
+    }
+   ],
+   "status": "current",
+   "summary": "UGC's plagiarism Regulations were notified 23 July 2018 (Gazette text read 2026-10-05; this pass records no check for later amendments) and the ICMJE pages were read the same day. UGC grades text similarity in theses, dissertations, papers and books into levels and makes every student sign an originality undertaking; ICMJE says an author must meet four criteria, a chatbot cannot be an author, and AI use must be disclosed. A writer or editor may help the named author, but must not produce work the author will sign as their own.",
+   "use_for": [
+    "Scoping a paid academic-support job: what an editor may do (language, structure, feedback on the client's own draft) and what is ghostwriting",
+    "Writing or editing thesis summaries, abstracts, journal-article sections and literature reviews for researchers who will sign them",
+    "Medical writing where a writer drafts for named authors and must be acknowledged",
+    "Adding an AI-use disclosure line to a manuscript"
+   ],
+   "avoid": [
+    "Ghostwriting a thesis or dissertation for a client. The student signs an undertaking that the document is their own original work, so the writer makes that undertaking false. Offer feedback, restructuring and language polish on the client's own draft instead.",
+    "Listing ChatGPT or any chatbot as an author. ICMJE says chatbots should not be listed; describe AI writing help in the acknowledgements and AI use in data or figures in the methods.",
+    "Citing AI-generated text as a primary source. ICMJE says that is not acceptable; cite the original paper, dataset or document.",
+    "Paraphrasing copied passages until a similarity tool shows under 10%. UGC defines plagiarism as passing off someone else's work or idea as one's own, and expects the abstract, hypothesis, results and conclusions to show no similarity at all; cite and quote with attribution instead.",
+    "Drafting a paper for named authors without an acknowledgement line for the writer. Unacknowledged ghostwriting conflicts with the ICMJE contributor rules."
+   ],
+   "jurisdiction": "India (UGC, higher educational institutions); international (ICMJE, biomedical journals)",
+   "applies_to": [
+    "genre:thesis_summary",
+    "genre:research_paper_section",
+    "genre:research_article",
+    "genre:research_abstract",
+    "genre:literature_review",
+    "genre:research_report",
+    "genre:medical_regulatory_writing",
+    "genre:ghostwritten_book",
+    "theses and dissertations",
+    "journal manuscripts",
+    "medical writing for named authors"
+   ],
+   "rules": [
+    {
+     "rule": "UGC defines plagiarism as 'the practice of taking someone else's work or idea and passing them as one's own'. The Regulations cover master's and research-level scripts (theses, dissertations, papers, book chapters, books) and exclude assignments, term papers, project reports, course work and essays.",
+     "url": "https://www.ugc.gov.in/pdfnews/7771545_academic-integrity-Regulation2018.pdf"
+    },
+    {
+     "rule": "Every student submitting a thesis or dissertation signs an undertaking that the document was prepared by him or her, is original work and is free of plagiarism; the document is checked with an HEI-approved detection tool.",
+     "url": "https://www.ugc.gov.in/pdfnews/7771545_academic-integrity-Regulation2018.pdf"
+    },
+    {
+     "rule": "Similarity levels: Level 0 is similarity up to 10% (no penalty), Level 1 above 10% to 40%, Level 2 above 40% to 60%, Level 3 above 60%. Quoted work with permission or attribution, references and generic terms are excluded from the count; core parts (abstract, hypothesis, results, conclusions) shall not have any similarities.",
+     "url": "https://www.ugc.gov.in/pdfnews/7771545_academic-integrity-Regulation2018.pdf"
+    },
+    {
+     "rule": "An author must meet all four ICMJE criteria: substantial contribution; drafting or critical review; final approval; agreement to be accountable. Other contributors go in the acknowledgements.",
+     "url": "https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html"
+    },
+    {
+     "rule": "Chatbots (such as ChatGPT) should not be listed as authors. AI-assisted writing help is described in the acknowledgements; AI used in data collection, analysis or figures is described in the methods.",
+     "url": "https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html"
+    },
+    {
+     "rule": "Disclose AI use at submission; humans remain responsible. Referencing AI-generated material as the primary source is not acceptable, and nondisclosure of AI use may require corrective action and may be construed as misconduct.",
+     "url": "https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html"
+    },
+    {
+     "rule": "Medical writers who draft for named authors must be acknowledged; unacknowledged ghostwriting conflicts with the contributor rules (the harvest item's reading of the ICMJE roles page, not a quoted sentence).",
+     "url": "https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html"
+    }
+   ],
+   "penalty": "UGC: no penalty at Level 0; at the top levels a student faces revision, debarment or cancelled registration, and for publications the manuscript is withdrawn with further penalties (the level-by-level split is not recorded in this card: read the Regulations before quoting it). ICMJE: nondisclosure of AI use 'may require corrective action and may be construed as misconduct'.",
+   "checks": [
+    "Is the piece built from the named author's own material, ideas and data, so they can truthfully sign it as their own work?",
+    "If it is a thesis or dissertation, did the job stop at feedback, structure and language editing rather than writing the substance for the student?",
+    "Is every borrowed idea, figure and passage quoted or cited with attribution, with the abstract, hypothesis, results and conclusions in the author's own words?",
+    "Does the byline list only people who meet all four ICMJE criteria, with other contributors (including any medical writer) in the acknowledgements?",
+    "Is no chatbot named as an author?",
+    "If AI helped, does the manuscript say so (acknowledgements for writing help, methods for data or figures)?",
+    "Is no AI-generated claim cited as if it were a primary source?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:admissions_ai_essay_policies",
+    "comp:us_copyright_ai_authorship",
+    "genre:thesis_summary",
+    "genre:research_article",
+    "genre:medical_regulatory_writing",
+    "genre:literature_review"
+   ]
+  },
+  {
+   "id": "comp:admissions_ai_essay_policies",
+   "kind": "compliance",
+   "name": "University admissions rules on AI-written and ghostwritten application essays (UCAS personal statement, Common App fraud policy)",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/a-guide-to-using-ai-and-chatgpt-with-your-personal-statement",
+     "title": "UCAS: A guide to using AI and ChatGPT with your personal statement",
+     "supports": "AI-generated statement could be considered cheating; applicant declaration; Verification Team similarity checks; permitted uses (ideas, structure, checking)"
+    },
+    {
+     "url": "https://www.commonapp.org/fraud-policy",
+     "title": "Common App: Fraud Policy (accordion text read in a browser pane)",
+     "supports": "definition of fraud incl. AI output; actions after a fraud determination"
+    }
+   ],
+   "status": "current",
+   "summary": "UCAS and Common App pages read 2026-10-05 (Common App's text sits in collapsed accordions and was read through a browser). UCAS says copying and submitting an AI-generated personal statement as your own words could be considered cheating, and applicants declare the statement was not copied or provided from another source, including AI software. Common App defines fraud to include passing off another person's work, or the output of an AI platform, as one's own. Individual universities may add stricter rules; check each one.",
+   "use_for": [
+    "Scoping a paid SOP, personal-statement or admissions-essay service so it stays on the coaching side",
+    "Coaching an applicant with questions, structure and edits to their own material",
+    "Writing the process note or terms a statement-coaching service sends to applicants"
+   ],
+   "avoid": [
+    "Writing the substance of the essay for the applicant or inventing experiences, achievements or reasons for applying. Ask questions, pull out the applicant's real stories, suggest structure and edit their own draft.",
+    "Generating the whole statement, or a large part of it, in an AI tool and handing it over. UCAS says copying, pasting and submitting that as the applicant's own words could be considered cheating.",
+    "Reusing one template or one AI draft across several applicants. UCAS's Verification Team runs checks for patterns of similarity.",
+    "Treating UCAS and Common App as the whole picture. A university or programme may set stricter rules; read its own policy first."
+   ],
+   "jurisdiction": "UK (UCAS undergraduate applications); US and member colleges (Common App)",
+   "applies_to": [
+    "genre:college_essay",
+    "genre:statement_of_purpose",
+    "genre:personal_essay",
+    "UCAS personal statement",
+    "Common App essay",
+    "SOP for overseas universities"
+   ],
+   "rules": [
+    {
+     "rule": "UCAS: generating (and then copying, pasting and submitting) all or a large part of a personal statement from an AI tool and presenting it as your own words could be considered cheating by universities and colleges and could affect your chances of an offer.",
+     "url": "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/a-guide-to-using-ai-and-chatgpt-with-your-personal-statement"
+    },
+    {
+     "rule": "UCAS: applicants must now declare that the personal statement has not been copied or provided from another source, including artificial intelligence software.",
+     "url": "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/a-guide-to-using-ai-and-chatgpt-with-your-personal-statement"
+    },
+    {
+     "rule": "UCAS's Verification Team runs checks to detect fraudulent applications and patterns of similarity.",
+     "url": "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/a-guide-to-using-ai-and-chatgpt-with-your-personal-statement"
+    },
+    {
+     "rule": "UCAS's suggested use of AI: to help you make a start and structure, then check your final work.",
+     "url": "https://www.ucas.com/applying/applying-to-university/writing-your-personal-statement/a-guide-to-using-ai-and-chatgpt-with-your-personal-statement"
+    },
+    {
+     "rule": "Common App fraud includes intentionally misrepresenting as one's own original work (1) another person's thoughts, language, ideas, expressions or experiences, or (2) the substantive content or output of an artificial intelligence platform, technology or algorithm.",
+     "url": "https://www.commonapp.org/fraud-policy"
+    }
+   ],
+   "penalty": "UCAS: it could affect your chances of an offer. Common App after a fraud determination: permanent suspension, temporary suspension or termination of the user's account, and disclosure of the fraud to the user's 'My Colleges List'.",
+   "checks": [
+    "Are the experiences, achievements and reasons for applying the applicant's own, supplied by the applicant?",
+    "Did the writer only ask questions, suggest structure or edit the applicant's draft, without writing the substance?",
+    "Is no whole or large part of the statement generated by an AI tool and presented as the applicant's own words?",
+    "Is every experience stated real, and can the applicant speak to it?",
+    "Is the draft distinct from other applicants' drafts, with no shared template paragraphs?",
+    "For a UCAS application, does the applicant know they declare the statement was not copied or provided from another source, including AI software?",
+    "Has the target university's or programme's own policy been checked for stricter rules?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:academic_integrity_ugc_icmje",
+    "genre:college_essay",
+    "genre:statement_of_purpose",
+    "genre:personal_essay"
+   ]
+  },
+  {
+   "id": "comp:amazon_a_plus_content",
+   "kind": "compliance",
+   "name": "Amazon A+ Content guidelines (KDP public page): prohibited claims, prices, reviews, guarantees and time-sensitive words",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://kdp.amazon.com/en_US/help/topic/G4WB7VPPEAREHAAD",
+     "title": "Amazon KDP Help: A+ Content Guidelines (public, no login)",
+     "supports": "top rejection reasons, image and text formatting, claims and awards, content restrictions, consequences"
+    }
+   ],
+   "status": "current",
+   "summary": "Amazon's public KDP help page on A+ Content (read 2026-10-05) lists what A+ modules may not carry: prices, promotions and 'buy now' calls, customer reviews, guarantees, contact details, competitor mentions, time-sensitive words, and unsubstantiated certification, award, '#1/top-rated' or eco claims. The Seller Central (brand) A+ guidelines sit behind a seller login and were not read, so treat this card as the KDP version; expect the seller version to be at least this strict (secondary seller guides list the same core bans).",
+   "use_for": [
+    "Writing A+ modules and Brand Story copy below Amazon listings for books and products",
+    "Pre-submission check of A+ text and image captions before upload",
+    "Rewriting rejected A+ content"
+   ],
+   "avoid": [
+    "Price, discount or promo language ('free', 'bonus', 'affordable') and calls like 'buy now', 'add to cart', 'get yours now', 'shop with us'. Describe what the product is and does; leave selling-by-offer to the listing's own price area.",
+    "Time-sensitive words ('new', 'latest', 'now', 'the best yet') or holiday references. Rewrite as a lasting fact: what it contains, how it works, who it is for.",
+    "'Eco-friendly', 'biodegradable' or 'compostable' wording or symbols, and '#1 rated', 'top-rated' or '100% satisfaction guaranteed'. State the measurable fact with its substantiation instead.",
+    "Pasting reviews, star ratings, a returns or refund line, shipping details, a QR code, a phone number or an email. None of these are allowed in A+.",
+    "A comparison chart against a competitor's product. Compare only your own products."
+   ],
+   "jurisdiction": "Amazon (KDP public help page, en_US; marketplace and Seller Central versions not read)",
+   "applies_to": [
+    "genre:amazon_a_plus_content",
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "genre:brand_story",
+    "Amazon A+ Content modules and Brand Story",
+    "image captions inside A+ modules"
+   ],
+   "rules": [
+    {
+     "rule": "No pricing, promotional details or discounts; no promotion references such as 'affordable', 'bonus' or 'free'; no language directing customers to purchase such as 'buy now', 'add to cart', 'get yours now' or 'shop with us'.",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G4WB7VPPEAREHAAD"
+    },
+    {
+     "rule": "No customer reviews in A+ Content. At most four quotes or endorsements, only from well-known publications or public figures and attributed; no quotes from private individuals.",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G4WB7VPPEAREHAAD"
+    },
+    {
+     "rule": "No time-sensitive words: 'now', 'new', 'latest', 'yet', 'on sale now', 'the latest product', 'the best yet', or references to holidays.",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G4WB7VPPEAREHAAD"
+    },
+    {
+     "rule": "Certification claims ('recommended by, certified, tested, approved, proven, validated') and awards need a note naming the body, study or publication and the year; no awards older than 2 years.",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G4WB7VPPEAREHAAD"
+    },
+    {
+     "rule": "Environmental claims with words like 'eco-friendly', 'biodegradable' and 'compostable', including their symbols, are not allowed; 'recyclable' needs substantiation.",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G4WB7VPPEAREHAAD"
+    },
+    {
+     "rule": "Satisfaction and boastful claims ('100% satisfaction guaranteed', '#1 rated', 'top-rated') are not allowed.",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G4WB7VPPEAREHAAD"
+    },
+    {
+     "rule": "Guarantee information, including references to off-Amazon return or refund policies, is strictly forbidden; no shipping details, QR codes, phone numbers, addresses or email addresses.",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G4WB7VPPEAREHAAD"
+    },
+    {
+     "rule": "No competitor mentions (comparison charts only against your own products) and no mimicking of Amazon logos or page headings.",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G4WB7VPPEAREHAAD"
+    }
+   ],
+   "penalty": "Rejection by Amazon's system, potential removal of the ASIN, or both (KDP A+ Content guidelines).",
+   "checks": [
+    "Is the module free of any price, discount or promotion, and of words like 'free', 'bonus' or 'affordable'?",
+    "Is there no 'buy now', 'add to cart', 'get yours now' or 'shop with us' line?",
+    "Are there no customer reviews, and no more than four attributed quotes from well-known publications or public figures?",
+    "Is the text free of 'new', 'latest', 'now', 'yet', 'the best yet', 'on sale now' and holiday references?",
+    "Does every certification, test, 'proven' or award claim carry a note naming the body, study or publication and year, with no award older than two years?",
+    "Is there no 'eco-friendly', 'biodegradable' or 'compostable' wording or symbol, and is 'recyclable' substantiated?",
+    "Is there no '#1', 'top-rated' or '100% satisfaction guaranteed' claim?",
+    "Is there no guarantee, return or refund reference, shipping detail, QR code, phone number, address or email?",
+    "Does any comparison chart compare only your own products, and does nothing imitate Amazon's logos or headings?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:amazon_in_restricted_products",
+    "plat:amazon_product_listing",
+    "plat:amazon_kdp_book",
+    "genre:amazon_a_plus_content",
+    "genre:marketplace_listing",
+    "comp:ccpa_greenwashing_2024"
+   ]
+  },
+  {
+   "id": "comp:bis_is_19000_online_reviews",
+   "kind": "compliance",
+   "name": "BIS IS 19000:2022 Online Consumer Reviews (India) and the Department of Consumer Affairs framework on fake and deceptive reviews",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1877733",
+     "title": "PIB (Dept of Consumer Affairs), 21 Nov 2022: Centre launches framework for safeguarding and protecting consumer interest from fake and deceptive reviews in e-commerce",
+     "supports": "launch, scope (every online platform publishing consumer reviews), voluntary status, guiding principles, author verification methods, moderation and publication duties"
+    },
+    {
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1882828",
+     "title": "PIB (BIS), 12 Dec 2022: BIS issues standards for organizations publishing consumer reviews",
+     "supports": "applies to sellers collecting reviews from their own customers, contracted third parties and independent third parties"
+    },
+    {
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020665",
+     "title": "PIB (Dept of Consumer Affairs), 15 May 2024: stakeholder consultation on protection of consumers from online fake reviews",
+     "supports": "draft Quality Control Order: prohibitions on biased collection, editing reviews, discouraging negative reviews"
+    }
+   ],
+   "status": "current",
+   "summary": "Status as read 2026-10-05: the Department of Consumer Affairs launched the framework on 21 Nov 2022 and the standard 'will initially be voluntary for compliance by all e-commerce platform' (PIB). On 15 May 2024 the Department consulted on a draft Quality Control Order to make it binding; this pass found no notified QCO (a further web search on 2026-10-06 returned only the 2024 consultation coverage), so do not call it mandatory without checking. The standard's own text is a paid BIS document and was not read: the rules below come from the three PIB press releases.",
+   "use_for": [
+    "Writing testimonial, review and rating sections for a brand's site, D2C store or marketplace listing",
+    "Writing review-request emails and WhatsApp messages",
+    "Briefing a client or an agency on what counts as a fake or deceptive review in India"
+   ],
+   "avoid": [
+    "Writing reviews or testimonials for a client under invented customer names. The standard asks organisations to verify review authors, and once a QCO makes it mandatory a fake review may be treated as an unfair trade practice.",
+    "Polishing, shortening or rewording a real customer's review so it says something it did not. Quote it as written, or mark a clearly cut excerpt.",
+    "Review-request copy that goes only to happy customers ('rate us 5 stars, then we'll send your gift'). Invite every customer the same way.",
+    "Telling a customer not to post a negative review or offering something to remove it. The draft QCO bars discouraging negative reviews.",
+    "Stating that IS 19000 is mandatory. Say it is a voluntary standard, with a mandatory QCO proposed in 2024, unless a notified QCO has been confirmed."
+   ],
+   "jurisdiction": "India (Department of Consumer Affairs framework; BIS standard IS 19000:2022)",
+   "applies_to": [
+    "genre:testimonial_copy",
+    "genre:product_review_article",
+    "genre:affiliate_review",
+    "genre:marketplace_listing",
+    "genre:d2c_brand_store",
+    "genre:product_description",
+    "review request messages",
+    "ratings and review widgets"
+   ],
+   "rules": [
+    {
+     "rule": "Scope: any organisation that publishes consumer reviews online, including suppliers and sellers of products and services that collect reviews from their own customers, contracted third parties and independent third parties (BIS release, PIB 12 Dec 2022). A brand's own review section is therefore in scope.",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1882828"
+    },
+    {
+     "rule": "Review authors are to be verified (by email, phone or SMS, link confirmation or captcha) and the organisation keeps a written code of practice (PIB, 21 Nov 2022).",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1877733"
+    },
+    {
+     "rule": "Proposed in the draft Quality Control Order (consultation of 15 May 2024; no notified QCO found in this pass): the organisation shall not edit reviews to alter their message, and shall not prevent or discourage people from submitting negative reviews.",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020665"
+    },
+    {
+     "rule": "Proposed in the same draft QCO: the organisation shall not publish consumer reviews collected with a bias objective and prejudice.",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2020665"
+    },
+    {
+     "rule": "Once made mandatory, non-compliance 'may be considered as an unfair trade practice' that can be reported to the CCPA (PIB, 21 Nov 2022). Until then the standard is voluntary.",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1877733"
+    }
+   ],
+   "checks": [
+    "Is every review or testimonial quoted a real one from a real customer whose identity the client can verify, with no invented names?",
+    "Is each quoted review reproduced as written, with no rewording that changes its message (cuts clearly marked as excerpts)?",
+    "Does the review-request copy invite all customers equally rather than only the happy ones?",
+    "Is there nothing in the copy that discourages or pays to remove a negative review?",
+    "Can the client point to a written code of practice for collecting and publishing reviews?",
+    "Is IS 19000 described as voluntary unless a notified QCO has been confirmed?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:ccpa_misleading_ads_2022",
+    "comp:ftc_consumer_reviews_rule",
+    "comp:uk_dmcc_schedule20",
+    "comp:endorsement_know_hows",
+    "genre:testimonial_copy",
+    "genre:product_review_article"
+   ]
+  },
+  {
+   "id": "comp:companies_act_s135_csr",
+   "kind": "compliance",
+   "name": "Companies Act, 2013 section 135 + CSR Policy Rules, 2014: corporate social responsibility (Schedule VII, CSR reporting)",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://indiankanoon.org/doc/172276913/",
+     "title": "Indian Kanoon: The Companies Act, 2013 (s.135)",
+     "supports": "s.135 as originally enacted: thresholds, CSR committee, policy disclosure on website, 2% spend, reasons for unspent amount in Board's report (secondary; later amendments not reflected)"
+    },
+    {
+     "url": "https://www.aubsp.com/companies-csr-policy-rules/",
+     "title": "AUBSP: Companies (CSR Policy) Rules, 2014 as amended (Sept 2022)",
+     "supports": "secondary reproduction of amended rule 2(1)(d) exclusions, rule 8 impact assessment, rule 9 website disclosure"
+    },
+    {
+     "url": "https://www.mca.gov.in/Ministry/pdf/CSR2_help.pdf",
+     "title": "MCA: Instruction Kit for eForm CSR-2",
+     "supports": "official MCA form for reporting CSR (page refused fetch with 403 on 2026-10-05; known from search listing only)"
+    }
+   ],
+   "status": "current",
+   "summary": "In force. Section 135 and the CSR Rules were amended in January 2021 (MCA, known from a search listing of mca.gov.in only). The MCA and India Code pages refused the fetch on 2026-10-05, so the text below comes from secondary reproductions (Indian Kanoon carries s.135 as originally enacted; AUBSP carries the CSR Rules as amended, Sept 2022): medium confidence. Thresholds, percentages and penalties are left out on purpose: quote them only from the current India Code text.",
+   "use_for": [
+    "Writing the CSR section of an annual report, an impact story, a CSR web page or the CSR annexure",
+    "Checking that a brand-led social campaign can be described as CSR at all",
+    "Briefing a client on what the CSR policy page and Board's report must disclose"
+   ],
+   "avoid": [
+    "Presenting a sponsorship or a marketing campaign as CSR spend. The Rules exclude activities supported on a sponsorship basis for deriving marketing benefits.",
+    "Counting staff welfare, an employee-only perk, a political donation, normal business activity or activity outside India as CSR. Each is excluded (outside India only with the sports-training exception).",
+    "Writing an impact story about a project that is not under a Schedule VII head in the Board-approved CSR Policy. Check the policy first.",
+    "Quoting the 2%-style spend percentage, a profit threshold or a fine from memory. Quote only from the current India Code text."
+   ],
+   "jurisdiction": "India (Companies Act, 2013 and Companies (CSR Policy) Rules, 2014)",
+   "applies_to": [
+    "genre:esg_csr_report",
+    "genre:annual_report_narrative",
+    "genre:ceo_letter",
+    "genre:case_study",
+    "genre:press_release",
+    "CSR impact stories",
+    "company CSR web page"
+   ],
+   "rules": [
+    {
+     "rule": "The Board-approved CSR Policy must indicate the activities to be undertaken 'as specified in Schedule VII'; the Policy's contents are disclosed in the Board's report and placed on the company's website (s.135(3)-(4); Indian Kanoon, text as originally enacted: secondary).",
+     "url": "https://indiankanoon.org/doc/172276913/"
+    },
+    {
+     "rule": "The Board must disclose the composition of the CSR Committee and the CSR Policy and projects approved by the Board on the company's website (CSR Rules, r.9; AUBSP secondary text).",
+     "url": "https://www.aubsp.com/companies-csr-policy-rules/"
+    },
+    {
+     "rule": "Not CSR (CSR Rules r.2(1)(d); AUBSP secondary text): activities in the normal course of business; activities outside India (except training of Indian sports personnel); any contribution to a political party; activities benefitting the company's own employees; activities supported on a sponsorship basis for deriving marketing benefits; activities done to meet another statutory obligation.",
+     "url": "https://www.aubsp.com/companies-csr-policy-rules/"
+    },
+    {
+     "rule": "If the company does not spend its CSR amount, the Board's report must give the reasons (s.135(5); Indian Kanoon, text as originally enacted: secondary).",
+     "url": "https://indiankanoon.org/doc/172276913/"
+    },
+    {
+     "rule": "Companies with a large CSR obligation must commission an independent impact assessment for big projects (CSR Rules r.8; AUBSP secondary text; the thresholds are not recorded here).",
+     "url": "https://www.aubsp.com/companies-csr-policy-rules/"
+    },
+    {
+     "rule": "CSR spend is also reported to MCA in eForm CSR-2 (MCA instruction kit; the page refused the fetch and is known from a search listing only).",
+     "url": "https://www.mca.gov.in/Ministry/pdf/CSR2_help.pdf"
+    }
+   ],
+   "checks": [
+    "Does every activity called CSR sit under a Schedule VII head in the company's Board-approved CSR Policy?",
+    "Are normal business activity, marketing sponsorship, employee-only benefits, political-party contributions and activity outside India (other than training Indian sports personnel) absent from the CSR claims?",
+    "If an amount was left unspent, does the narrative agree with the Board's report and give the reasons?",
+    "Does the CSR Committee composition, policy and project list in the copy match what the company's website discloses?",
+    "Is every threshold, percentage or legal consequence either left out or checked against the current India Code text?",
+    "Does the impact story avoid presenting a brand-promotion campaign as CSR spend?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "genre:esg_csr_report",
+    "genre:annual_report_narrative",
+    "genre:case_study",
+    "genre:ceo_letter",
+    "comp:sebi_lodr_disclosure"
+   ]
+  },
+  {
+   "id": "comp:companies_act_s42_private_placement",
+   "kind": "compliance",
+   "name": "Companies Act, 2013 section 42: private placement of securities (no public advertising)",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://indiankanoon.org/doc/91454896/",
+     "title": "Indian Kanoon: Section 42 in The Companies Act, 2013",
+     "supports": "current (post-2017 amendment) text of s.42 incl. named offers (sub-s.7) and the ban on public advertisement (sub-s.8); secondary reproduction because India Code and mca.gov.in refused the fetch (403 / no DNS) on 2026-10-05"
+    },
+    {
+     "url": "https://assets.kpmg.com/content/dam/kpmg/in/pdf/2024/06/private-placement-of-securities-need-for-caution.pdf",
+     "title": "KPMG India: Private placement of securities: need for caution (Jun 2024)",
+     "supports": "secondary commentary on enforcement of s.42 (not read in full)"
+    }
+   ],
+   "status": "current",
+   "summary": "In force (text read on Indian Kanoon 2026-10-05; India Code and MCA pages were blocked, so medium confidence). A company raising money by private placement may make only named offers to a recorded group of people and may not advertise the offer to the public in any medium. The prescribed higher number than fifty and the penalty were not read: check the Companies (Prospectus and Allotment of Securities) Rules before quoting either.",
+   "use_for": [
+    "Writing funding-round announcements, founder posts and investor updates for an Indian company",
+    "Checking an investor-pitch landing page or mass email against the no-public-advertising rule",
+    "Deciding when a funding-news press release can go out"
+   ],
+   "avoid": [
+    "A public 'we are raising Rs X crore, DM to invest' post, landing page, influencer push or mass email for a live private round. Section 42(8) bars media, marketing or distribution channels to inform the public at large.",
+    "Broadcasting an investor teaser to a bought or scraped list. Offers go only to named persons whose names the company recorded before the invitation.",
+    "Writing 'anyone can invest' or an open call that implies more than the permitted number of offerees; going over the limit makes it a public offer with full prospectus rules.",
+    "Inviting cash payment. Subscription money goes only by cheque, demand draft or banking channels."
+   ],
+   "jurisdiction": "India (companies offering securities by private placement under the Companies Act, 2013)",
+   "applies_to": [
+    "genre:investor_pitch_deck",
+    "genre:investor_update",
+    "genre:press_release",
+    "genre:ghostwritten_founder_post",
+    "genre:linkedin_post",
+    "genre:landing_page",
+    "genre:promotional_email",
+    "funding announcements"
+   ],
+   "rules": [
+    {
+     "rule": "'No company ... shall release any public advertisements or utilise any media, marketing or distribution channels or agents to inform the public at large' (s.42(8)). In plain words: no ads, social posts, influencer pushes, mass emails or landing pages pitching a live private round.",
+     "url": "https://indiankanoon.org/doc/91454896/"
+    },
+    {
+     "rule": "Offers go only to persons 'whose names are recorded by the company prior to the invitation', and they 'shall receive the offer by name' (s.42(7)): investor letters are addressed, not broadcast.",
+     "url": "https://indiankanoon.org/doc/91454896/"
+    },
+    {
+     "rule": "The offer goes to no more than fifty persons 'or such higher number as may be prescribed' in a financial year (excluding qualified institutional buyers and employees under an ESOP); beyond that it is 'deemed to be an offer to the public' with full prospectus rules (s.42(2) Explanation I, s.42(4)).",
+     "url": "https://indiankanoon.org/doc/91454896/"
+    },
+    {
+     "rule": "Subscription money is accepted only by cheque, demand draft or other banking channels, never cash (s.42(5)).",
+     "url": "https://indiankanoon.org/doc/91454896/"
+    },
+    {
+     "rule": "Copy that announces a round after allotment (a funding-news press release) sits outside the ban; a 'we are raising, invest now' call to the public does not (the harvest item's reading of s.42(8)).",
+     "url": "https://indiankanoon.org/doc/91454896/"
+    }
+   ],
+   "checks": [
+    "Does the piece avoid inviting the public to invest in a live private round (no ads, social posts, influencer content, mass emails or landing pages for it)?",
+    "Is any investor letter addressed to a named person the company recorded before the invitation, rather than broadcast?",
+    "Does the copy avoid language that implies an open or unlimited number of investors?",
+    "Does it ask for payment only by cheque, demand draft or banking channels, never cash?",
+    "If it announces a round, has the allotment already happened, so the piece is news rather than a call to invest?",
+    "Has the permitted number of offerees been checked in the Companies (Prospectus and Allotment of Securities) Rules before any figure is stated?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "genre:investor_pitch_deck",
+    "genre:investor_update",
+    "genre:press_release",
+    "genre:ghostwritten_founder_post",
+    "genre:linkedin_post"
+   ]
+  },
+  {
+   "id": "comp:fcra_and_donation_tax_receipts",
+   "kind": "compliance",
+   "name": "Nonprofit fundraising appeals in India: FCRA 2010 (foreign donations) and the income-tax donation deduction (80G under the 1961 Act, s.133 under the Income-tax Act, 2025)",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jul/doc2026722928801.pdf",
+     "title": "PIB: Foreign Contribution (Regulation) Act: FAQs (22 July 2026)",
+     "supports": "registration / prior permission, single SBI New Delhi FCRA account, barred recipients, FCRA Amendment Bill 2026 (introduced 25 Mar 2026) and FCRA Amendment Rules notified 22 Jun 2026"
+    },
+    {
+     "url": "https://www.mha.gov.in/sites/default/files/2022-07/ForeigD-ForeigD-FCRA_FAQs_1.pdf",
+     "title": "MHA: FAQs on FCRA",
+     "supports": "official FAQ (downloaded, not quoted)"
+    },
+    {
+     "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2025-12/FAQs_80G_Section_mentioned_(final)_to_upload.pdf",
+     "title": "Income Tax Department: FAQs related to Section 80G (Dec 2025)",
+     "supports": "cash limit, Form 10BD / 10BE matching, no 80G under the new tax regime"
+    },
+    {
+     "url": "https://www.incometax.gov.in/iec/foportal/newformpage/forms/form113-114-UM",
+     "title": "Income Tax e-filing: Form 113-114 User Manual",
+     "supports": "from tax year 2026-27 donees file Form 113 under s.354(1) of the Income-tax Act, 2025 for donations qualifying under s.133(1)(b)(ii); donors get Form 114 certificates"
+    },
+    {
+     "url": "https://www.businesstoday.in/india/story/fcra-bill-sent-to-31-member-joint-parliamentary-committee-for-detailed-scrutiny-548783-2026-08-12",
+     "title": "Business Today (secondary news report), 12 Aug 2026: FCRA Bill sent to 31-member Joint Parliamentary Committee",
+     "supports": "status of the FCRA (Amendment) Bill, 2026: referred to a JPC on 12 Aug 2026, not passed (fetched 2026-10-06)"
+    }
+   ],
+   "status": "current",
+   "summary": "As read 2026-10-05: the FCRA 2010 is in force and the FCRA Amendment Rules were notified 22 June 2026; the FCRA (Amendment) Bill, 2026 was introduced in Lok Sabha on 25 March 2026 (PIB FAQ, 22 Jul 2026) and, per a Business Today report of 12 Aug 2026 (secondary), the Lok Sabha referred it that day to a 31-member Joint Parliamentary Committee rather than passing it, with the committee's report due by the last day of the first week of the Winter Session 2026; do not quote the Bill as law. On tax: the Income-tax Act, 2025 governs from tax year 2026-27, where donations qualifying under s.133(1)(b)(ii) are reported by the donee on Form 113 (s.354(1)) and certified to the donor on Form 114; the 1961 Act's s.80G, Form 10BD and Form 10BE still apply to earlier years. An appeal may promise foreign-donor access or a tax benefit only if the NGO meets these conditions.",
+   "use_for": [
+    "Writing donation appeals, donor emails, WhatsApp asks and campaign pages for an Indian NGO",
+    "Writing the tax-benefit line and the payment instructions for NRI and foreign donors",
+    "Checking an NGO's appeal against FCRA and donation-deduction rules before it goes out"
+   ],
+   "avoid": [
+    "'Donate from abroad' or a PayPal-style link in an appeal when the NGO has no FCRA registration or prior permission. Foreign contribution can be received only after registration or prior permission.",
+    "Sending foreign donors to the NGO's ordinary domestic account. All foreign contributions must first arrive in the single FCRA account at SBI New Delhi Main Branch.",
+    "'Tax-free donation' or 'save tax' as a blanket promise. The deduction needs a currently approved donee, a donation statement filed by the donee, a non-cash mode above Rs 2,000, and a donor who has not opted for the new tax regime.",
+    "Quoting the deduction percentage or ceiling from memory. Check the donee's category in the Act in force for the tax year; no source in this card gives the figures.",
+    "Citing s.80G and Forms 10BD / 10BE for a 2026-27 donation. From tax year 2026-27 the 2025 Act's s.133 and Forms 113 / 114 apply."
+   ],
+   "jurisdiction": "India (FCRA 2010; Income-tax Act, 1961 s.80G for earlier years; Income-tax Act, 2025 s.133 from tax year 2026-27)",
+   "applies_to": [
+    "genre:fundraising_appeal",
+    "genre:crowdfunding_page",
+    "genre:grant_proposal",
+    "NGO donor emails and WhatsApp appeals",
+    "donation receipts and thank-you messages"
+   ],
+   "rules": [
+    {
+     "rule": "An association may receive foreign contribution only 'after obtaining registration or prior permission' (PIB FAQ). An appeal that invites foreign money (foreign-passport NRIs, overseas foundations, overseas crowdfunding) is therefore allowed only for an NGO with FCRA registration or prior permission.",
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jul/doc2026722928801.pdf"
+    },
+    {
+     "rule": "'All foreign contributions must first arrive in a single designated FCRA account at the State Bank of India's New Delhi Main Branch' (PIB FAQ): payment details for foreign donors name that account, never the domestic one.",
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jul/doc2026722928801.pdf"
+    },
+    {
+     "rule": "Political parties, election candidates, legislators, public servants, organisations of a political nature and specified news-media persons and entities cannot receive foreign contribution at all (PIB FAQ, citing section 3).",
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jul/doc2026722928801.pdf"
+    },
+    {
+     "rule": "Under the 1961 Act (earlier years), a tax-benefit line is true only if the donee holds a current approval and files the donation statement: 'it is mandatory that the deduction claimed by the donor under Section 80G ... matches with the details submitted by the donee in Form 10BD', and the donor gets a Form 10BE certificate (80G FAQ).",
+     "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2025-12/FAQs_80G_Section_mentioned_(final)_to_upload.pdf"
+    },
+    {
+     "rule": "From tax year 2026-27 donees file Form 113 under s.354(1) of the Income-tax Act, 2025 for donations qualifying under s.133(1)(b)(ii), and donors get Form 114 certificates (e-filing Form 113-114 user manual).",
+     "url": "https://www.incometax.gov.in/iec/foportal/newformpage/forms/form113-114-UM"
+    },
+    {
+     "rule": "'No deduction shall be allowed under Section 80G ... exceeding two thousand rupees unless such sum is paid by any mode other than cash' (80G FAQ Q12).",
+     "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2025-12/FAQs_80G_Section_mentioned_(final)_to_upload.pdf"
+    },
+    {
+     "rule": "The deduction 'cannot be claimed if you opt for the new tax regime' (80G FAQ Q15), so a blanket 'tax-free donation' promise is misleading.",
+     "url": "https://www.incometax.gov.in/iec/foportal/sites/default/files/2025-12/FAQs_80G_Section_mentioned_(final)_to_upload.pdf"
+    }
+   ],
+   "checks": [
+    "If the appeal invites foreign donors, does the NGO hold FCRA registration or prior permission, and do the payment details point to its FCRA account at SBI New Delhi Main Branch?",
+    "Is the appeal free of any request for foreign money by a recipient in a barred category (political party, candidate, legislator, public servant, political organisation, specified news media)?",
+    "Does any tax-benefit line state the donee's current approval registration number rather than just 'tax exempt'?",
+    "Does the copy avoid 'tax-free' as a blanket promise and say the deduction is not available under the new tax regime?",
+    "Does the copy avoid encouraging cash gifts above Rs 2,000 for a deduction?",
+    "Is any deduction percentage or ceiling either left out or checked against the donee's category in the Act for the tax year?",
+    "Does the copy name the right provision and forms for the donation's tax year (80G, Forms 10BD / 10BE for earlier years; s.133, Forms 113 / 114 from 2026-27)?",
+    "Is the FCRA (Amendment) Bill, 2026 left out of the copy as if it were law (a news report of 12 Aug 2026 says it went to a Joint Parliamentary Committee)?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:india_crowdfunding_platform_rules",
+    "comp:dpdp_act_rules",
+    "comp:asci_code",
+    "genre:fundraising_appeal",
+    "genre:crowdfunding_page",
+    "genre:grant_proposal"
+   ]
+  },
+  {
+   "id": "comp:fssai_labelling_display_2020",
+   "kind": "compliance",
+   "name": "Food Safety and Standards (Labelling and Display) Regulations, 2020 (FSSAI): veg / non-veg logo, menu calorie display, front-of-pack name",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VIII_09_09_2025.pdf",
+     "title": "FSSAI: Compendium, Food Safety and Standards (Labelling and Display) Regulations, 2020, Version VIII (09.09.2025)",
+     "supports": "consolidated text: commencement, definitions (Front of Pack), reg 5(1) name of food, 5(4) veg/non-veg symbols and use in advertisements, reg 9 display in food service establishments"
+    }
+   ],
+   "status": "current",
+   "summary": "Consolidated text, Version VIII dated 09.09.2025 (FSSAI compendium), read 2026-10-05; the compendium notes that Chapter 3 (food-service display) compliance applies 'w.e.f 1st July, 2022' per an FSSAI direction. Amendments after 09.09.2025 were not checked. It sets the veg and non-veg logo (also on pamphlets, leaflets and ads), the true name of the food on the front of pack, and calorie display on the menus of larger food-service chains.",
+   "use_for": [
+    "Writing menus, delivery-app item listings, food packaging and food ads that must carry the veg or non-veg logo",
+    "Writing menu copy for a chain with a Central licence or 10 or more outlets (calories per serving and the 2,000 kcal line)",
+    "Naming a new food product: deciding what goes on the front of pack"
+   ],
+   "avoid": [
+    "A food ad, menu or delivery-app creative with no veg or non-veg symbol. The declaration must also appear on pamphlets, leaflets and advertisements in any media.",
+    "A fanciful or coined product name on the front of pack with no description of what the food is. Show the name that gives the true nature of the food; a brand name may be added only within the Advertising and Claims Regulations, 2018.",
+    "Writing 'FSSAI requires a front-of-pack star rating' or HFSS warning. No such rule appears in the consolidated text read; do not present one as mandatory.",
+    "Calorie lines without the serving size, or without the 'average active adult requires 2,000 kcal' reference statement, on a chain menu."
+   ],
+   "jurisdiction": "India (FSSAI)",
+   "applies_to": [
+    "genre:packaging_copy",
+    "genre:restaurant_menu_copy",
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "genre:social_ad_copy",
+    "genre:print_ad_copy",
+    "genre:brochure_copy",
+    "genre:video_ad_script",
+    "food delivery app creatives"
+   ],
+   "rules": [
+    {
+     "rule": "Non-veg is shown as 'a brown colour filled triangle inside a square with brown outline'; veg as 'a green colour filled circle inside a square with green outline' (reg 5(4)(a),(b)).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VIII_09_09_2025.pdf"
+    },
+    {
+     "rule": "The veg or non-veg declaration 'shall also be prominently displayed ... on the pamphlets, leaflets and advertisements in any media' (reg 5(4)(d)); egg-only products may add an egg declaration next to the symbol.",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VIII_09_09_2025.pdf"
+    },
+    {
+     "rule": "The front of pack must carry the name that shows 'the true nature of the food'; a coined, fanciful or brand name may be added only in compliance with the Advertising and Claims Regulations, 2018 (reg 5(1)(c); see comp:fssai_advertising_claims_2018).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VIII_09_09_2025.pdf"
+    },
+    {
+     "rule": "Food service establishments 'having Central license or outlets at 10 or more locations shall mention the calorific value (in kcal per serving and serving size)' against menu items and display 'An average active adult requires 2,000 kcal energy per day, however, calorie needs may vary' (reg 9(1)).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VIII_09_09_2025.pdf"
+    },
+    {
+     "rule": "All food service establishments show allergen information (symbols allowed) and the veg or non-veg logo against items (reg 9(2)); reg 9(3) exempts event caterers operating under 60 days a year, free self-serve condiments and special-order items.",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VIII_09_09_2025.pdf"
+    },
+    {
+     "rule": "Fuller nutrition information is given on request in booklets, handouts or on the website, with a 'deviation of 25 percent' tolerated (reg 9(4)); e-commerce food platforms must carry the same information (reg 9(5)).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VIII_09_09_2025.pdf"
+    },
+    {
+     "rule": "No front-of-pack nutrition rating (star rating or HFSS warning) appears in the Version VIII consolidated text read; do not write that one is mandatory.",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VIII_09_09_2025.pdf"
+    },
+    {
+     "rule": "Pan masala packs and their ads carry a warning covering 50% of the front of pack (Schedule of the compendium).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Comp_Labelling%20Display_Version%20VIII_09_09_2025.pdf"
+    }
+   ],
+   "checks": [
+    "Does every food ad, menu and delivery-app creative show the correct symbol: a green filled circle in a green-outlined square for veg, a brown filled triangle in a brown-outlined square for non-veg?",
+    "Does the front-of-pack name state the true nature of the food, with any coined or brand name added only within the 2018 Advertising and Claims Regulations?",
+    "For a chain with a Central licence or 10 or more outlets, does each menu item show kcal per serving and serving size, with the 2,000 kcal reference line displayed?",
+    "Is allergen information shown, with the veg or non-veg symbol against each menu item?",
+    "Is fuller nutrition information available on request (booklet, handout or website), and the same information carried on e-commerce food platforms?",
+    "Is a front-of-pack star rating or HFSS warning left out of the copy as a requirement?",
+    "For a pan masala pack or ad, is the warning covering 50% of the front of pack present?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:fssai_advertising_claims_2018",
+    "comp:legal_metrology_packaged_commodities",
+    "comp:asci_code",
+    "genre:restaurant_menu_copy",
+    "genre:packaging_copy",
+    "plat:amazon_product_listing"
+   ]
+  },
+  {
+   "id": "comp:ftc_native_advertising",
+   "kind": "compliance",
+   "name": "FTC Enforcement Policy Statement on Deceptively Formatted Advertisements (2015) and Native Advertising: A Guide for Businesses",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.ftc.gov/system/files/documents/public_statements/896923/151222deceptiveenforcement.pdf",
+     "title": "FTC: Commission Enforcement Policy Statement on Deceptively Formatted Advertisements (Dec 22, 2015)",
+     "supports": "full text: deception standard for ad format, net impression, disclosure adequacy"
+    },
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/native-advertising-guide-businesses",
+     "title": "FTC: Native Advertising: A Guide for Businesses (Dec 2015)",
+     "supports": "plain-language guide: acceptable labels, placement, search results, in-feed ads"
+    }
+   ],
+   "status": "current",
+   "summary": "US guidance issued 22 Dec 2015 and still on ftc.gov as current guidance (both pages read 2026-10-05). An ad must not look like independent editorial content, and a label must be clear and placed where people look first. It is guidance on how the FTC applies the deception standard, not a statute.",
+   "use_for": [
+    "Writing advertorials, sponsored articles and in-feed native ads for US audiences",
+    "Choosing the label wording and its position for sponsored content",
+    "Checking a native ad's headline, byline and layout for editorial mimicry"
+   ],
+   "avoid": [
+    "Labels the Guide says may be misread: 'Promoted' and 'Promoted Stories'. 'Presented by', 'Brought to You by' and 'Sponsored by [X]' can read as funding only, not authorship. Use 'Ad', 'Advertisement', 'Paid Advertisement' or 'Sponsored Advertising Content'.",
+    "A label buried in the body or footer. Place it in front of or above the headline, in contrasting text.",
+    "Relying on a small disclosure in the body text to fix a headline that reads like independent news. People may glance only at the headline.",
+    "A byline, layout and house style that copy the host site's reporting with no disclosure, even if every product claim is true."
+   ],
+   "jurisdiction": "United States (FTC)",
+   "applies_to": [
+    "genre:native_ad",
+    "genre:advertorial",
+    "genre:byline_article",
+    "sponsored content and in-feed ads"
+   ],
+   "rules": [
+    {
+     "rule": "'The Commission will find an advertisement deceptive if the ad misleads reasonable consumers as to its nature or source' (including who sponsored it); such an ad is deceptive 'even if the product claims communicated are truthful' (Policy Statement).",
+     "url": "https://www.ftc.gov/system/files/documents/public_statements/896923/151222deceptiveenforcement.pdf"
+    },
+    {
+     "rule": "Deception is judged on the net impression of the whole piece (look, style, byline, layout), not one line; an advertorial styled like the host site's news needs a disclosure (Policy Statement).",
+     "url": "https://www.ftc.gov/system/files/documents/public_statements/896923/151222deceptiveenforcement.pdf"
+    },
+    {
+     "rule": "Labels likely to be understood: 'Ad', 'Advertisement', 'Paid Advertisement', 'Sponsored Advertising Content'. Avoid 'Promoted' and 'Promoted Stories'; 'Presented by', 'Brought to You by' and 'Sponsored by [X]' can read as funding only, not authorship (Business Guide).",
+     "url": "https://www.ftc.gov/business-guidance/resources/native-advertising-guide-businesses"
+    },
+    {
+     "rule": "Place the disclosure 'in front of or above the headline', in contrasting text, where consumers look first; in non-paid search results put it at the beginning of the title tag (Business Guide).",
+     "url": "https://www.ftc.gov/business-guidance/resources/native-advertising-guide-businesses"
+    },
+    {
+     "rule": "A disclosure in the body text may not cure a misleading headline, because consumers may glance only at the headline (Policy Statement).",
+     "url": "https://www.ftc.gov/system/files/documents/public_statements/896923/151222deceptiveenforcement.pdf"
+    }
+   ],
+   "checks": [
+    "Would a reasonable reader know from the look, byline, layout and headline that this is an ad or sponsored content?",
+    "Is the label one of 'Ad', 'Advertisement', 'Paid Advertisement' or 'Sponsored Advertising Content', rather than 'Promoted', 'Presented by', 'Brought to You by' or 'Sponsored by [X]' alone?",
+    "Is the label in front of or above the headline, in contrasting text?",
+    "Does the headline itself avoid presenting the piece as independent editorial?",
+    "Does the byline and layout avoid imitating the host site's news content without disclosure?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:outbrain_taboola_native_ad_policies",
+    "comp:ftc_endorsement_guides",
+    "comp:ftc_consumer_reviews_rule",
+    "genre:native_ad",
+    "genre:advertorial"
+   ]
+  },
+  {
+   "id": "comp:india_crowdfunding_platform_rules",
+   "kind": "compliance",
+   "name": "Indian crowdfunding platform content rules (Ketto, Milaap): truthful medical and cause fundraiser stories, consent, no manufactured vulnerability",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.ketto.org/terms-of-use.php",
+     "title": "Ketto: Terms of Use",
+     "supports": "campaigner duties (true, not misleading, all material facts), deletion for false info, image consent and authenticity guidelines, child protection, AI manipulation ban"
+    },
+    {
+     "url": "https://milaap.org/crowdfunding/terms-of-use",
+     "title": "Milaap: Terms of Use",
+     "supports": "no content the user knows is false, misleading or inaccurate; fund-use responsibility; Milaap branding on campaign collaterals"
+    }
+   ],
+   "status": "current",
+   "summary": "Platform terms, not statute: Ketto's Terms of Use and Milaap's Terms of Use, both read 2026-10-05 (neither page shows an update date). Both make the campaigner responsible for a true, non-misleading story; Ketto also requires consent for every person shown, bars manufactured vulnerability and AI or digital image manipulation that harms authenticity, and sets child-image limits.",
+   "use_for": [
+    "Writing medical and cause fundraiser stories for Ketto, Milaap or a similar platform",
+    "Briefing a beneficiary's family on photos, consent and what the story must disclose",
+    "Pre-launch check of a campaign story, images and video"
+   ],
+   "avoid": [
+    "Invented urgency or inflated figures. Use the real diagnosis, the real hospital, the real amount and what exactly it covers.",
+    "Staged distress (a parent made to cry or fold hands for the camera) and images that make people look more desperate or powerless than they are.",
+    "AI or digital enhancement of campaign images that changes how the person's situation looks. Ketto prohibits it if it negatively affects image authenticity.",
+    "Using a photo or video of a person or child without their, or their parents' or guardians' consent, or paying or rewarding for that consent.",
+    "Naming or showing a child-sexual-abuse survivor. That is barred by law (comp:india_sexual_offence_victim_identity), whatever the platform allows."
+   ],
+   "jurisdiction": "India (platform terms: Ketto, Milaap)",
+   "applies_to": [
+    "genre:crowdfunding_page",
+    "genre:fundraising_appeal",
+    "medical fundraiser stories",
+    "campaign photos and videos"
+   ],
+   "rules": [
+    {
+     "rule": "The campaigner must ensure the campaign description 'is not misleading and describes the need and use of the funds to be raised', and must 'disclose all material facts relating to the beneficiary, purpose and campaign', updating them if they change (for example change of purpose, death of beneficiary) (Ketto).",
+     "url": "https://www.ketto.org/terms-of-use.php"
+    },
+    {
+     "rule": "Ketto 'reserves the right to delete your Campaign' if information is 'false, does not depict the true nature of the Campaign or is misleading in any manner' (Ketto).",
+     "url": "https://www.ketto.org/terms-of-use.php"
+    },
+    {
+     "rule": "Images are used only 'when you have consent from the people depicted or their parents/guardians'; explain how images and stories will be used; no payment or incentive for consent (Ketto).",
+     "url": "https://www.ketto.org/terms-of-use.php"
+    },
+    {
+     "rule": "'Never use images that make people look more desperate or powerless than they are'; Ketto 'does not encourage manufacturing fake vulnerability for the sake of emotional appeal' (Ketto).",
+     "url": "https://www.ketto.org/terms-of-use.php"
+    },
+    {
+     "rule": "Manipulation of images in post-production, or their alteration or enhancement using artificial intelligence or other digital means, is 'strictly prohibited if it negatively affects image authenticity'; content must not 'portray or focus on ailments or deformities egregiously' (Ketto).",
+     "url": "https://www.ketto.org/terms-of-use.php"
+    },
+    {
+     "rule": "Children: Ketto sets specific nudity limits and bars setting up images to make children look more vulnerable (the exact limits are not recorded in this card; read the Ketto terms).",
+     "url": "https://www.ketto.org/terms-of-use.php"
+    },
+    {
+     "rule": "Milaap: users must not submit content they know 'is false, misleading, or inaccurate'; the campaigner alone is responsible for using funds for the stated purpose; campaign marketing collaterals must carry Milaap's logo branding as per its guidelines.",
+     "url": "https://milaap.org/crowdfunding/terms-of-use"
+    }
+   ],
+   "penalty": "Ketto may delete a campaign whose information is false, does not depict the true nature of the campaign or is misleading (Ketto Terms of Use).",
+   "checks": [
+    "Does the story state the real diagnosis or cause, the real hospital or organisation, the real amount and exactly what it covers?",
+    "Are all material facts about the beneficiary and purpose disclosed, with a plan to update the story if the purpose changes or the beneficiary dies?",
+    "Is there consent on record from every person shown (parents or guardians for children), given without payment or incentive?",
+    "Are the images free of AI or digital alteration and of staged distress that makes people look more desperate than they are?",
+    "Does the copy avoid dwelling on ailments or deformities in an egregious way?",
+    "Is any child shown within Ketto's child-image limits, and is no sexual-abuse survivor identifiable?",
+    "Are urgency and figures real, with no invented deadline or inflated amount?",
+    "On Milaap, do the campaign's marketing collaterals carry Milaap's logo branding as its guidelines require?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:india_sexual_offence_victim_identity",
+    "comp:fcra_and_donation_tax_receipts",
+    "comp:dpdp_act_rules",
+    "genre:crowdfunding_page",
+    "genre:fundraising_appeal"
+   ]
+  },
+  {
+   "id": "comp:india_job_ad_non_discrimination",
+   "kind": "compliance",
+   "name": "Job ads and hiring copy in India: Code on Wages, 2019 (no gender discrimination in recruitment), RPwD Act, 2016 s.20 and Transgender Persons (Protection of Rights) Act, 2019",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.labour.gov.in/static/uploads/2025/06/c328da14bbb15fc4ad571dc33e7a4ab3.pdf",
+     "title": "Ministry of Labour: The Code on Wages, 2019 (Gazette text, No. 29 of 2019)",
+     "supports": "s.3: no gender discrimination in wages; no discrimination on the ground of sex while recruiting"
+    },
+    {
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251123703501.pdf",
+     "title": "PIB: Code on Wages, 2019 factsheet (23 Nov 2025)",
+     "supports": "government reading of s.3: no discrimination on the basis of gender, including transgender identity, in recruitment, wages or conditions"
+    },
+    {
+     "url": "https://indiankanoon.org/doc/97660308/",
+     "title": "Indian Kanoon: The Rights of Persons with Disabilities Act, 2016",
+     "supports": "s.20 non-discrimination in employment (Government establishments) and definitions (secondary reproduction)"
+    },
+    {
+     "url": "https://indiankanoon.org/doc/189649946/",
+     "title": "Indian Kanoon: Transgender Persons (Protection of Rights) Act, 2019",
+     "supports": "s.3 prohibition against discrimination incl. employment; s.9 establishments may not discriminate in recruitment (secondary reproduction)"
+    },
+    {
+     "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2192463&reg=48&lang=2",
+     "title": "PIB: Government Makes the Four Labour Codes effective to Simplify and Streamline Labour Laws",
+     "supports": "implementation date of the four Labour Codes (21 Nov 2025) as given in search results; the page refused fetch (403), so only the search summary was read"
+    }
+   ],
+   "status": "current",
+   "summary": "Status as read 2026-10-05: the four Labour Codes, including the Code on Wages, 2019, were implemented with effect from 21 Nov 2025 (a web-search summary of PIB and labour.gov.in pages; the PIB factsheet of 23 Nov 2025 read here does not itself state the date; a second web search on 2026-10-06 returned PIB and labour.gov.in pages giving the same 21 Nov 2025 date, but the PIB release page itself refused the fetch with a 403, so that line was not read directly). The RPwD Act, 2016 and the Transgender Persons (Protection of Rights) Act, 2019 are in force (texts read on Indian Kanoon: secondary, medium confidence). A job post may not restrict, prefer or price a role by sex or gender, must not screen out transgender candidates, and, for Government establishments, must not discriminate on disability.",
+   "use_for": [
+    "Writing job posts, job descriptions and careers-page copy for Indian employers",
+    "Rewriting an old job post that names a gender or a physical filter",
+    "Employer-brand and hiring-campaign copy"
+   ],
+   "avoid": [
+    "'Male candidates only', 'female preferred' or a gender-based pay band, unless a law prohibits or restricts the employment of women in that work. The Code on Wages bars sex discrimination in recruitment for the same or similar work.",
+    "A gender line in a recruitment post that leaves transgender applicants out ('boys or girls'). Write the role by duties and skills.",
+    "'Able-bodied' or appearance filters ('good-looking', 'smart girl for the front desk'). Write job-related abilities: what the person will do and the skills the work needs.",
+    "For a Government establishment: screening out a person with a disability, or leaving out reasonable accommodation. RPwD s.20 applies to Government establishments; the provisions for private employers were not read."
+   ],
+   "jurisdiction": "India (Code on Wages, 2019; RPwD Act, 2016; Transgender Persons (Protection of Rights) Act, 2019)",
+   "applies_to": [
+    "genre:recruitment_ad",
+    "genre:job_description",
+    "careers pages",
+    "employer-brand copy"
+   ],
+   "rules": [
+    {
+     "rule": "No employer may 'make any discrimination on the ground of sex while recruiting any employee for the same work or work of similar nature' or in conditions of employment, unless a law restricts women's employment in that work (Code on Wages, s.3(2)(ii)); and no gender gap in wages for the same or similar work (s.3(1)).",
+     "url": "https://www.labour.gov.in/static/uploads/2025/06/c328da14bbb15fc4ad571dc33e7a4ab3.pdf"
+    },
+    {
+     "rule": "PIB's reading: the Code on Wages s.3 bars discrimination on the basis of gender, including transgender identity, in recruitment, wages and conditions of employment.",
+     "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/nov/doc20251123703501.pdf"
+    },
+    {
+     "rule": "'No establishment shall discriminate against any transgender person in any matter relating to employment including, but not limited to, recruitment, promotion and other related issues' (Transgender Persons Act, s.9); no person or establishment may deny employment or treat a transgender person unfairly in employment (s.3(b)-(c)) (Indian Kanoon: secondary).",
+     "url": "https://indiankanoon.org/doc/189649946/"
+    },
+    {
+     "rule": "'No Government establishment shall discriminate against any person with disability in any matter relating to employment' (RPwD Act, s.20(1)); it must provide 'reasonable accommodation' (s.20(2)); 'No promotion shall be denied to a person merely on the ground of disability' (s.20(3)). The s.20 duty is written for Government establishments (including government companies and aided bodies); private employers fall under other RPwD provisions not read here (Indian Kanoon: secondary).",
+     "url": "https://indiankanoon.org/doc/97660308/"
+    }
+   ],
+   "checks": [
+    "Does the post avoid 'male only', 'female preferred' and other gender restrictions, unless a law restricts or prohibits women's employment in that work?",
+    "Is the pay band the same regardless of gender for the same or similar work?",
+    "Does the post and any application form include transgender candidates, rather than offering only 'male' and 'female'?",
+    "Are requirements written as job-related abilities and skills, not gender, appearance or 'able-bodied' filters?",
+    "For a Government establishment, does the post avoid any disability screen and mention reasonable accommodation?",
+    "Is the careers page itself accessible (see comp:rpwd_act_accessibility)?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:rpwd_act_accessibility",
+    "comp:dpdp_act_rules",
+    "comp:asci_code",
+    "genre:recruitment_ad",
+    "genre:job_description"
+   ]
+  },
+  {
+   "id": "comp:india_personality_rights",
+   "kind": "compliance",
+   "name": "Personality and publicity rights in India: Delhi HC and Bombay HC orders protecting a person's name, voice, image and likeness (incl. AI voice clones and deepfakes)",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://indiankanoon.org/doc/113724486/",
+     "title": "Delhi HC, Anil Kapoor v. Simply Life India & Ors, CS(COMM) 652/2023, order of 20 Sep 2023 (Indian Kanoon copy of the digitally signed order)",
+     "supports": "persona elements protected (name, voice, image, manner of speaking, dialogue, gestures, signature); restraint on AI, deepfake, face-morphing and GIF misuse; free speech carve-out for news, satire, parody and criticism"
+    },
+    {
+     "url": "https://www.scconline.com/blog/post/2024/08/02/bomhc-grants-ad-interim-injunction-to-arijit-singh-to-protect-his-personality-rights/",
+     "title": "SCC Online blog (secondary): Bombay HC ad-interim injunction for Arijit Singh, 26 Jul 2024",
+     "supports": "Bombay HC restrains AI voice cloning of a singer's voice and vocal style"
+    },
+    {
+     "url": "https://www.medianama.com/2026/09/223-delhi-hc-define-personality-rights/",
+     "title": "MediaNama (secondary), Sep 2026: Delhi High Court to define personality rights",
+     "supports": "Delhi HC hearing (Sep 2026) on the scope of personality rights; list of earlier orders (Amitabh Bachchan 2022, Anil Kapoor 2023, Jackie Shroff 2024, Arijit Singh Bombay HC 2024, Sadhguru 2025); court wary of blanket takedowns"
+    }
+   ],
+   "status": "rising",
+   "summary": "Judge-made law, no statute; read 2026-10-05. The Delhi HC order in Anil Kapoor v. Simply Life India (CS(COMM) 652/2023, 20 Sep 2023) was read in full on an Indian Kanoon copy; the Bombay HC Arijit Singh order (26 Jul 2024) and the Delhi HC hearing of Sep 2026 on the scope of the right come from secondary summaries (SCC Online blog, MediaNama). Courts restrain commercial use of a well-known person's name, image, voice, catchphrase or AI-cloned likeness without consent, while leaving news, genuine criticism and authentic satire or parody protected. The law is moving.",
+   "use_for": [
+    "Writing ads, merchandise, ringtones, influencer briefs and AI-video scripts that touch a well-known person",
+    "Checking a satire, parody or fan-content idea before it is scripted",
+    "Briefing a client on why a celebrity look-alike or AI voice is risky"
+   ],
+   "avoid": [
+    "Using a famous person's name, face, voice, catchphrase or manner in an ad, merchandise or product without written consent. Cast an original character or sign the person.",
+    "'In the voice of [celebrity]' VO, an AI cover or an AI face-swap for a promo. Courts have restrained AI tools reproducing a person's voice, face and style.",
+    "Copy that hints a celebrity endorses the brand, will attend, or can be booked through it.",
+    "Satire that sells. Authentic satire or parody is protected, but a post that parodies a star to push a product reads as an endorsement.",
+    "Relying on a parody or fan-content defence without re-checking: a Delhi HC bench was hearing the scope of the right in Sep 2026."
+   ],
+   "jurisdiction": "India (Delhi High Court and Bombay High Court orders; no statute)",
+   "applies_to": [
+    "genre:video_ad_script",
+    "genre:tvc_script",
+    "genre:radio_spot_script",
+    "genre:ai_video_prompt_script",
+    "genre:satire_parody",
+    "genre:meme_caption",
+    "genre:influencer_brief",
+    "genre:social_ad_copy",
+    "genre:event_promotion",
+    "merchandise and ringtones"
+   ],
+   "rules": [
+    {
+     "rule": "Do not use a well-known person's name, image, voice, catchphrase or style in an ad, product, merchandise or ringtone without written consent. The Delhi HC restrained use of 'name, likeness, image, voice, personality or any other aspects of his persona' 'using technological tools such as Artificial Intelligence, Machine Learning, deep fakes, face morphing, GIFs either for monetary gains or otherwise' (Anil Kapoor, para 48). A signature phrase such as 'Jhakaas' was covered too, per case summaries (secondary).",
+     "url": "https://indiankanoon.org/doc/113724486/"
+    },
+    {
+     "rule": "AI voice clones are covered: the Bombay HC restrained AI voice cloning of a singer's voice and vocal style in the Arijit Singh order of 26 Jul 2024 (secondary: SCC Online blog). The harvest item also names a Delhi HC order for Kumar Sanu (Oct 2025) but no source URL is on record for it: verify before citing.",
+     "url": "https://www.scconline.com/blog/post/2024/08/02/bomhc-grants-ad-interim-injunction-to-arijit-singh-to-protect-his-personality-rights/"
+    },
+    {
+     "rule": "Editorial use survives: 'free speech in respect of a well-known person is protected ... right to information, news, satire, parody that is authentic, and also genuine criticism', but not once it 'results in tarnishment, blackening' of the persona (Anil Kapoor, para 38). Satire must read as satire and must not sell a product (the harvest item's reading).",
+     "url": "https://indiankanoon.org/doc/113724486/"
+    },
+    {
+     "rule": "Implied endorsement is the core harm: no copy may suggest that a celebrity endorses, attends or can be 'booked' through the brand (Anil Kapoor, para 39).",
+     "url": "https://indiankanoon.org/doc/113724486/"
+    },
+    {
+     "rule": "The law is moving: a Delhi HC bench was hearing the scope of personality rights in Sep 2026, with earlier orders for Amitabh Bachchan (2022), Anil Kapoor (2023), Jackie Shroff (2024), Arijit Singh (Bombay HC, 2024) and Sadhguru (2025); the court was reported as wary of blanket takedowns (MediaNama, secondary).",
+     "url": "https://www.medianama.com/2026/09/223-delhi-hc-define-personality-rights/"
+    }
+   ],
+   "penalty": "Remedy in the orders cited: an injunction restraining the use (Anil Kapoor, Delhi HC; Arijit Singh, Bombay HC). No damages or fine figure is recorded in this card.",
+   "checks": [
+    "Does the piece avoid any real well-known person's name, image, voice, catchphrase or style unless written consent is on file?",
+    "Is there no AI voice clone, AI face-swap, deepfake or 'in the voice of [celebrity]' element?",
+    "Does no line suggest that a celebrity endorses the brand, attends, or can be booked through it?",
+    "If it is satire, parody or criticism, is it authentic, clearly read as such, free of product-selling and free of tarnishing the person?",
+    "For merchandise, ringtones and listings, is there no celebrity name or photo on the product itself?",
+    "Has the status of the law been rechecked since the Sep 2026 Delhi HC hearing?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:emblems_names_act_1950",
+    "comp:amazon_in_restricted_products",
+    "comp:it_rules_sgi_2026",
+    "comp:asci_ai_sgc_labelling",
+    "comp:endorsement_know_hows",
+    "genre:satire_parody",
+    "genre:influencer_brief"
+   ]
+  },
+  {
+   "id": "comp:india_professional_ad_bans",
+   "kind": "compliance",
+   "name": "Professional-body advertising bans in India: Bar Council of India Rule 36 (advocates), ICAI clauses 6-7 and Website Guidelines (chartered accountants), IMC/NMC ethics regulations (doctors)",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2043470",
+     "title": "PIB (Ministry of Law and Justice), 9 Aug 2024: Regulation for Online Legal Services (Lok Sabha reply)",
+     "supports": "full text of BCI Rule 36; BCI directives of 08.07.2024 to enforce the ban on online platforms"
+    },
+    {
+     "url": "https://icai.org/post/advisory-website-guidelines-of-the-institute",
+     "title": "ICAI Advisory, 14 Oct 2020: Website Guidelines of the Institute (No. M-626/14/2020)",
+     "supports": "clauses (6) and (7) bar solicitation and advertisement; list of prohibited website contents"
+    },
+    {
+     "url": "https://wbconsumers.gov.in/writereaddata/ACT%20&%20RULES/Relevant%20Act%20&%20Rules/Code%20of%20Medical%20Ethics%20Regulations.pdf",
+     "title": "Indian Medical Council (Professional Conduct, Etiquette and Ethics) Regulations, 2002 (West Bengal Consumer Affairs copy; NMC lists the same regulations at nmc.org.in)",
+     "supports": "reg 6.1 Advertising: soliciting unethical, no self-promotion, no endorsements of products, no boasting of cures; permitted formal announcements"
+    },
+    {
+     "url": "https://medicaldialogues.in/health-news/nmc/breaking-news-nmc-puts-its-controversial-registered-medical-practitioner-professional-conduct-regulations-2023-put-on-hold-116314",
+     "title": "Medical Dialogues (secondary), Aug 2023: NMC puts RMP (Professional Conduct) Regulations 2023 on hold",
+     "supports": "2023 regulations held in abeyance; 2002 regulations remain the operative code"
+    }
+   ],
+   "status": "current",
+   "summary": "Status read 2026-10-05: Bar Council of India Rule 36 is in force and was reaffirmed by BCI directives of 08.07.2024 (PIB reply of 9 Aug 2024); the ICAI Website Guidelines (advisory of 14 Oct 2020, revised Feb 2020 per the item) are in force; for doctors the Indian Medical Council 2002 regulations are the operative code because the NMC Registered Medical Practitioner (Professional Conduct) Regulations 2023, notified 2 Aug 2023, were put in abeyance on 23 Aug 2023 (secondary sources: confirm at nmc.org.in before quoting any 2023 social-media rule). Lawyers, CAs and doctors may not solicit work or advertise themselves, so their websites, posts and bios stay factual.",
+   "use_for": [
+    "Writing a law-firm, CA-firm or clinic website, LinkedIn page or bio for a professional who is bound by a body's advertising ban",
+    "Turning a professional's expertise into information and commentary content instead of promotion",
+    "Checking a draft bio, post or reel for solicitation, boasts and endorsements before it goes live"
+   ],
+   "avoid": [
+    "'Hire us', 'book a consultation today' and similar solicitation in a lawyer's or CA's posts. Write information and commentary (what a notice means, what changed) and let the reader find the contact page.",
+    "Client names or logos, case wins, success stories and client lists. Describe the type of matter, without naming the client or implying a result.",
+    "'Best', 'Leading', 'Top' firm, 'best quality services in the market', awards, gradings and media-coverage badges on a CA firm's site. State the services and qualifications plainly.",
+    "Doctor copy that boasts of cases, operations or cures, highlights 'skill, qualification, achievements', or endorses a drug, appliance or product. Limit announcements to the permitted formal ones.",
+    "Assuming a clinic or hospital ad only has to meet the medical council. The Drugs and Magic Remedies Act and the ASCI Code also apply (comp:dmr_act_1954, comp:asci_code)."
+   ],
+   "jurisdiction": "India (Bar Council of India; ICAI; Indian Medical Council / NMC)",
+   "applies_to": [
+    "genre:about_page",
+    "genre:professional_bio",
+    "genre:linkedin_post",
+    "genre:linkedin_profile",
+    "genre:services_page",
+    "genre:homepage_copy",
+    "genre:case_study",
+    "genre:local_business_listing",
+    "genre:blog_post",
+    "genre:instagram_caption",
+    "genre:social_bio",
+    "law firm, CA firm and clinic websites"
+   ],
+   "rules": [
+    {
+     "rule": "Advocates (BCI Rule 36, as quoted in the PIB reply): an advocate 'shall not solicit work or advertise, either directly or indirectly', whether by circulars, advertisements, touts, personal communications, interviews not warranted by personal relations, furnishing or inspiring newspaper comments, or producing his photographs to be published in connection with cases he has been engaged or concerned in.",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2043470"
+    },
+    {
+     "rule": "BCI directives of 08.07.2024 enforce the ban on online platforms; State Bar Councils have sent cease-and-desist notices to online platforms listing lawyers (PIB reply, 9 Aug 2024).",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2043470"
+    },
+    {
+     "rule": "Chartered accountants: clauses (6) and (7) of Part I of the First Schedule to the CA Act bar solicitation and advertisement (ICAI advisory, 14 Oct 2020).",
+     "url": "https://icai.org/post/advisory-website-guidelines-of-the-institute"
+    },
+    {
+     "rule": "A CA website must not show client names or logos, fees or 'free' services, non-passport photos or event galleries, 'Leading Firm', 'Best Firm' or 'Top Firm', claims of liaison with government offices, subjective claims such as 'best quality services in the market', awards, gradings, media coverage, or non-educational videos (ICAI advisory, 14 Oct 2020).",
+     "url": "https://icai.org/post/advisory-website-guidelines-of-the-institute"
+    },
+    {
+     "rule": "Breaching Council guidelines is itself professional misconduct for a chartered accountant (ICAI advisory, 14 Oct 2020, as read in the harvest item).",
+     "url": "https://icai.org/post/advisory-website-guidelines-of-the-institute"
+    },
+    {
+     "rule": "Doctors (IMC 2002, reg 6.1.1): soliciting patients directly or indirectly, by a physician, a group of physicians or institutions or organisations, is unethical; no publicity that invites attention to the doctor's 'skill, qualification, achievements' or results in 'self aggrandizement'; no endorsement of any drug, appliance or commercial product; must not 'boast of cases, operations, cures or remedies'.",
+     "url": "https://wbconsumers.gov.in/writereaddata/ACT%20&%20RULES/Relevant%20Act%20&%20Rules/Code%20of%20Medical%20Ethics%20Regulations.pdf"
+    },
+    {
+     "rule": "Formal press announcements by a doctor are allowed only for starting practice, change of type of practice or address, temporary absence, resumption or succession, and a public declaration of charges (reg 6.1.1); the doctor's own photo on a letterhead or signboard counts as self-advertisement (reg 6.1.2).",
+     "url": "https://wbconsumers.gov.in/writereaddata/ACT%20&%20RULES/Relevant%20Act%20&%20Rules/Code%20of%20Medical%20Ethics%20Regulations.pdf"
+    },
+    {
+     "rule": "The NMC's 2023 professional-conduct regulations were held in abeyance, so the IMC 2002 regulations remain the operative code (Medical Dialogues, secondary).",
+     "url": "https://medicaldialogues.in/health-news/nmc/breaking-news-nmc-puts-its-controversial-registered-medical-practitioner-professional-conduct-regulations-2023-put-on-hold-116314"
+    }
+   ],
+   "penalty": "ICAI: breaching Council guidelines is itself professional misconduct (ICAI advisory). BCI: State Bar Councils have sent cease-and-desist notices to online platforms listing lawyers (PIB, 9 Aug 2024). No sanction for doctors is recorded in this card.",
+   "checks": [
+    "Does the piece read as information or commentary, with no 'hire us', 'book now' or other solicitation by a lawyer, CA or doctor?",
+    "Are client names and logos, case wins, client lists and success stories absent?",
+    "Are 'best', 'leading', 'top' and 'best quality services in the market' claims absent?",
+    "For a CA firm: are fees, 'free' services, awards, gradings, media coverage, government-liaison claims, event galleries, non-passport photos and non-educational videos absent?",
+    "For a doctor: is there no boast of cases, operations or cures, no publicity of skill, qualification or achievements, and no endorsement of a drug, appliance or product?",
+    "Is any announcement limited to the permitted formal list (starting practice, change of type of practice or address, temporary absence, resumption or succession, public declaration of charges)?",
+    "For a doctor, has the current status of the NMC regulations been checked at nmc.org.in?",
+    "For a clinic or hospital, has the copy also been checked against the DMR Act and the ASCI Code?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:dmr_act_1954",
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022",
+    "genre:about_page",
+    "genre:professional_bio",
+    "genre:linkedin_post"
+   ]
+  },
+  {
+   "id": "comp:india_sexual_offence_victim_identity",
+   "kind": "compliance",
+   "name": "Identity of victims of sexual offences and child victims in India: POCSO Act s.23, BNS s.72-73, Supreme Court (Nipun Saxena 2018) and Press Council norms",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.mha.gov.in/sites/default/files/250883_english_01042024.pdf",
+     "title": "Bharatiya Nyaya Sanhita, 2023 (Gazette text, MHA copy)",
+     "supports": "s.72 (printing or publishing the victim's name or identifying matter, exceptions) and s.73 (court proceedings)"
+    },
+    {
+     "url": "https://indiankanoon.org/doc/143288964/",
+     "title": "Supreme Court, Nipun Saxena v. Union of India, 11 Dec 2018 (Indian Kanoon copy)",
+     "supports": "binding directions on not identifying victims 'even in a remote manner'; quotes POCSO s.23 in full; blurred-face example"
+    },
+    {
+     "url": "https://www.presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf",
+     "title": "Press Council of India: Norms of Journalistic Conduct, 2022 edition",
+     "supports": "Caution against Identification; minors born of sexual abuse; privacy of minors in public figures' families; witnesses not to be identified"
+    }
+   ],
+   "status": "current",
+   "summary": "In force as read 2026-10-05: BNS s.72 (which replaced IPC s.228A from 1 July 2024), POCSO Act 2012 s.23, the Supreme Court's directions in Nipun Saxena v. Union of India of 11 Dec 2018, and the Press Council of India's Norms of Journalistic Conduct (2022 edition). News, social and campaign copy about rape, sexual assault or child sexual abuse must not name the victim or give any detail that could identify them, and a child's identity can be disclosed only on a Special Court's written permission.",
+   "use_for": [
+    "Writing news stories, explainers, bulletins, captions and social posts about sexual-offence cases",
+    "Writing justice-campaign, NGO and crowdfunding copy that mentions a survivor",
+    "Checking a draft, thumbnail or hashtag for indirect identification before publishing"
+   ],
+   "avoid": [
+    "Any name, including a first name, a nickname or a hashtag that carries the name, even in an outrage or justice-campaign post. Use 'the survivor' or 'the child'.",
+    "A blurred face with the relatives, neighbours, home or village name still visible, or a recreation that shows the victim's face, home, school or family. The Supreme Court gave these as examples that still identify.",
+    "Identifying details such as 'a 14-year-old from [named school]' or 'she had topped the State Board Examination' with the state named. Generalise or drop the detail.",
+    "Posting or quoting an FIR in these cases, or court proceedings. Only High Court and Supreme Court judgments may be published (BNS s.73).",
+    "A news desk assuming only the reporter is liable. Under POCSO s.23(3) the publisher or owner is jointly liable for staff."
+   ],
+   "jurisdiction": "India (BNS s.72-73; POCSO Act s.23; Supreme Court directions; Press Council norms)",
+   "applies_to": [
+    "genre:news_story",
+    "genre:news_explainer",
+    "genre:feature_article",
+    "genre:news_bulletin_script",
+    "genre:live_blog",
+    "genre:photo_caption",
+    "genre:opinion_column",
+    "genre:editorial",
+    "genre:public_service_announcement",
+    "genre:crowdfunding_page",
+    "genre:political_social_commentary",
+    "genre:x_post",
+    "genre:instagram_caption",
+    "genre:short_form_video_script",
+    "genre:commentary_video_script"
+   ],
+   "rules": [
+    {
+     "rule": "BNS s.72(1): whoever prints or publishes the name or any matter which may make known the identity of any person against whom an offence under section 64, 65, 66, 67, 68, 69, 70 or 71 is alleged or found to have been committed is punishable.",
+     "url": "https://www.mha.gov.in/sites/default/files/250883_english_01042024.pdf"
+    },
+    {
+     "rule": "BNS s.72(2) exceptions: the police acting in good faith for the investigation; the victim's own written authorisation; the next of kin's written authorisation (victim dead, a child or of unsound mind), and then only to a recognised welfare organisation.",
+     "url": "https://www.mha.gov.in/sites/default/files/250883_english_01042024.pdf"
+    },
+    {
+     "rule": "BNS s.73: publishing court proceedings in such cases needs the court's permission, though High Court and Supreme Court judgments may be published.",
+     "url": "https://www.mha.gov.in/sites/default/files/250883_english_01042024.pdf"
+    },
+    {
+     "rule": "POCSO s.23(1): 'No reports in any media shall disclose, the identity of a child including his name, address, photograph, family details, school, neighbourhood ...', unless the Special Court permits it in writing; s.23(2): no report or comment on a child 'without having complete and authentic information' (as quoted by the Supreme Court).",
+     "url": "https://indiankanoon.org/doc/143288964/"
+    },
+    {
+     "rule": "POCSO s.23(3): the publisher or owner of the media is jointly liable for the acts and omissions of staff (as quoted by the Supreme Court).",
+     "url": "https://indiankanoon.org/doc/143288964/"
+    },
+    {
+     "rule": "Nipun Saxena, direction 1: no person can print or publish in print, electronic or social media the name of the victim or 'even in a remote manner' disclose any facts which can lead to the victim being identified. Examples that still identify: a blurred face with relatives, neighbours or the village name visible, or 'she had topped the State Board Examination' with the state named. FIRs in these cases are not to be put in the public domain (direction 3).",
+     "url": "https://indiankanoon.org/doc/143288964/"
+    },
+    {
+     "rule": "Press Council norms (2022 edition): 'the names, photographs of the victims or other particulars directly or indirectly leading to their identity shall not be published' when reporting rape, abduction or kidnap of women or sexual assault on children; children born of sexual abuse 'shall not be identified or photographed'; witnesses are not to be identified.",
+     "url": "https://www.presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf"
+    }
+   ],
+   "penalty": "Printing or publishing is punishable under BNS s.72(1), and the publisher or owner is jointly liable for staff under POCSO s.23(3). The term and fine are not recorded in this card: read the Gazette text before quoting them.",
+   "checks": [
+    "Does the piece avoid the victim's name, including first names, nicknames and hashtags built from the name?",
+    "Does it avoid any photo, recreation or video that shows the victim's face, home, school or family, including a blurred face where relatives, neighbours or the village name remain visible?",
+    "Does it avoid indirect identifiers such as school, neighbourhood, village, or 'topped the board exam in [state]'?",
+    "If the victim is a child, is there no name, address, photograph, family detail, school or neighbourhood, and no reliance on a Special Court's written permission unless it has been seen?",
+    "Does it avoid quoting or posting an FIR, or reporting court proceedings other than a High Court or Supreme Court judgment?",
+    "Does it use 'the survivor' or 'the child' wording?",
+    "Are witnesses and children born of sexual abuse left unidentified?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:india_crowdfunding_platform_rules",
+    "comp:bns_defamation_speech",
+    "comp:dpdp_act_rules",
+    "genre:news_story",
+    "genre:news_explainer",
+    "genre:photo_caption"
+   ]
+  },
+  {
+   "id": "comp:legal_metrology_packaged_commodities",
+   "kind": "compliance",
+   "name": "Legal Metrology (Packaged Commodities) Rules, 2011: mandatory declarations on packages and on e-commerce listings",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/Book_on_Legal_Metrology_Packaged_Commodities_Rules,2011_with_all_amendments_whatsnews.pdf",
+     "title": "Department of Consumer Affairs: Book on Legal Metrology (Packaged Commodities) Rules, 2011 with all amendments",
+     "supports": "consolidated rule 6 text incl. sub-rule (10) e-commerce (G.S.R. 629(E), 23 Jun 2017) and sub-rule (11) unit sale price (G.S.R. 226(E), w.e.f. 1 Oct 2022)"
+    },
+    {
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1770064",
+     "title": "PIB: Centre amends the Legal Metrology (Packaged Commodities) Rules 2011 (Nov 2021)",
+     "supports": "press release on the 2021 amendment (not read in full)"
+    }
+   ],
+   "status": "current",
+   "summary": "In force; text read 2026-10-05 in the Department of Consumer Affairs consolidated book (the latest amendment visible in it is G.S.R. 226(E) of 28 Mar 2022, w.e.f. 1 Oct 2022; the book carries no 'as of' date, so check for later amendments). Every pre-packaged product label, and every e-commerce listing for it, must carry the fixed declarations in rule 6, so a product-page writer fills these fields as well as the marketing description.",
+   "use_for": [
+    "Writing e-commerce product listings (title block, bullets, description, spec fields) for packaged goods in India",
+    "Writing packaging copy and label text",
+    "Checking a D2C product page for missing mandatory declarations"
+   ],
+   "avoid": [
+    "A listing with only a marketing description. Add the mandatory fields: maker, packer or importer, country of origin where imported, generic name, net quantity, MRP and consumer-care contact.",
+    "An MRP without 'inclusive of all taxes' wording, for example 'MRP Rs. 499' alone. Use the Rule's form: 'MRP Rs. xx.xx incl. of all taxes'.",
+    "Net quantity in a non-standard unit ('1 pack', 'family size') alone. State the weight, volume or number in standard units.",
+    "A unit price that is rounded loosely or missing. Show unit sale price in rupees to two decimals per gram or kg, ml or litre, cm or metre, or per number, unless MRP equals the unit price.",
+    "Treating a marketplace hosting the page as responsible. The seller, manufacturer or importer is responsible for the correctness of the declarations the platform only hosts."
+   ],
+   "jurisdiction": "India (Legal Metrology (Packaged Commodities) Rules, 2011)",
+   "applies_to": [
+    "genre:marketplace_listing",
+    "genre:packaging_copy",
+    "genre:product_description",
+    "genre:catalogue_copy",
+    "genre:d2c_brand_store",
+    "e-commerce product pages"
+   ],
+   "rules": [
+    {
+     "rule": "Rule 6(1): every package must bear 'a definite, plain and conspicuous declaration' of: the maker (and the packer, or the importer for imports); country of origin for imported products; common or generic name; net quantity in standard units; month and year of manufacture or pre-packing; retail sale price shown as maximum retail price 'inclusive of all taxes' (illustration: 'MRP Rs. xx.xx incl. of all taxes'); size where relevant; and 'best before' or 'use by' where applicable.",
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/Book_on_Legal_Metrology_Packaged_Commodities_Rules,2011_with_all_amendments_whatsnews.pdf"
+    },
+    {
+     "rule": "Rule 6(2): the name, address, telephone number and e-mail of the person to contact 'in case of consumer complaints'.",
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/Book_on_Legal_Metrology_Packaged_Commodities_Rules,2011_with_all_amendments_whatsnews.pdf"
+    },
+    {
+     "rule": "Rule 6(11) (G.S.R. 226(E), w.e.f. 1 Oct 2022): unit sale price 'in rupees, rounded off to the nearest two decimal place' per gram or kg, ml or litre, cm or metre, or per number; not needed where the MRP equals the unit price.",
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/Book_on_Legal_Metrology_Packaged_Commodities_Rules,2011_with_all_amendments_whatsnews.pdf"
+    },
+    {
+     "rule": "Rule 6(10) (G.S.R. 629(E), 23 Jun 2017): 'the mandatory declarations ..., except the month and year in which the commodity is manufactured or packed, shall be displayed' on the e-commerce listing. On a marketplace, the seller, manufacturer or importer is responsible for their correctness if the platform only hosts the information.",
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/Book_on_Legal_Metrology_Packaged_Commodities_Rules,2011_with_all_amendments_whatsnews.pdf"
+    },
+    {
+     "rule": "Food packages follow FSSAI labelling instead for the maker declaration (rule 6(1) Explanation III; see comp:fssai_labelling_display_2020 and comp:fssai_advertising_claims_2018).",
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/Book_on_Legal_Metrology_Packaged_Commodities_Rules,2011_with_all_amendments_whatsnews.pdf"
+    }
+   ],
+   "checks": [
+    "Does the label or listing carry the maker (and packer or importer), the country of origin for an imported product, the generic name and the net quantity in standard units?",
+    "Is the MRP shown as inclusive of all taxes, in the form 'MRP Rs. xx.xx incl. of all taxes'?",
+    "Is the month and year of manufacture or pre-packing, and 'best before' or 'use by' where applicable, on the package?",
+    "Is there a consumer-complaint contact with name, address, telephone number and e-mail?",
+    "Is the unit sale price shown in rupees to two decimals per gram or kg, ml or litre, cm or metre, or per number, unless the MRP equals the unit price?",
+    "On an e-commerce listing, are all of those declarations shown except the manufacture or packing month and year?",
+    "For a food product, does the maker declaration follow FSSAI labelling?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:fssai_labelling_display_2020",
+    "comp:fssai_advertising_claims_2018",
+    "comp:amazon_in_restricted_products",
+    "plat:amazon_product_listing",
+    "genre:marketplace_listing",
+    "genre:packaging_copy"
+   ]
+  },
+  {
+   "id": "comp:outbrain_taboola_native_ad_policies",
+   "kind": "compliance",
+   "name": "Outbrain and Taboola (Realize) advertiser content policies for native / recommendation-widget ads: headlines, thumbnails, branding text, AI content",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.outbrain.com/advertisers/guidelines/",
+     "title": "Outbrain: Advertising Guidelines (advertisers)",
+     "supports": "Headline and Source Guidelines; banned sensational words; capitalisation, punctuation, no emoji; source name; image rules; landing page; AI-generated content rules"
+    },
+    {
+     "url": "https://www.taboola.com/help/en/articles/3878208-title-thumbnail-and-branding-text-policies",
+     "title": "Taboola Realize Help: Title, Thumbnail and Branding Text Policies (dated August 31, 2026; redirects to realize.com)",
+     "supports": "title rules, thumbnail rules incl. before/after and celebrities, thumbnail minimum size, branding text"
+    }
+   ],
+   "status": "current",
+   "summary": "Both advertiser-policy pages were read 2026-10-05; Taboola's advertiser help now lives under its 'Realize' brand (the title, thumbnail and branding page is dated August 31, 2026 and redirects to realize.com). Native-widget ads are rejected for headlines that mislead, exaggerate or sensationalise, all-caps or excessive punctuation, emoji in titles, before/after images, celebrities used for product endorsement, and source names that hide who the advertiser is.",
+   "use_for": [
+    "Writing headline and thumbnail text for Outbrain and Taboola (Realize) native campaigns",
+    "Rewriting rejected native ads",
+    "Checking a landing page behind a native ad for fake testimonials, fake comments or AI-content problems"
+   ],
+   "avoid": [
+    "'You won't believe', 'real reason', 'reveals' and 'stuns' headlines. Outbrain tells writers to remove these; state the actual finding in the headline.",
+    "A headline that promises more than the landing page delivers. Taboola requires the title to accurately reflect the subject of the landing page.",
+    "ALL CAPS, repeated or aggressive punctuation, or any emoji in the title (Outbrain prohibits emoji of any kind in titles).",
+    "A before/after photo, or a celebrity or politician shown endorsing the product. For Taboola a celebrity needs documented permission.",
+    "A title that is just the product price (Taboola), or a source name that hides who the advertiser is."
+   ],
+   "jurisdiction": "Outbrain and Taboola (Realize) advertiser content policies; global platform rules",
+   "applies_to": [
+    "genre:native_ad",
+    "genre:advertorial",
+    "genre:headline_dek",
+    "genre:display_banner_ad_copy",
+    "native and recommendation-widget ads"
+   ],
+   "rules": [
+    {
+     "rule": "Outbrain prohibits 'Inaccurate, Misleading, or Overly Sensational Headlines', headlines that exaggerate or embellish the content, and 'too good to be true' headlines; its guidance tells writers to remove words such as 'stuns', 'reveals', 'real reason', 'last words', 'years later', 'you won't believe' and similar phrases.",
+     "url": "https://www.outbrain.com/advertisers/guidelines/"
+    },
+    {
+     "rule": "Outbrain style: no excessive capitalisation ('LEARN MORE' is wrong; content-type labels like 'VIDEO:' and acronyms are fine); always capitalise the first letter of the headline; correct grammar; no repeated or aggressive punctuation; 'The use of emojis of any kind is prohibited in the titles'.",
+     "url": "https://www.outbrain.com/advertisers/guidelines/"
+    },
+    {
+     "rule": "Outbrain images: before/after photos and celebrities or politicians used for product endorsement are banned; a celebrity named in a title must match the one in the image.",
+     "url": "https://www.outbrain.com/advertisers/guidelines/"
+    },
+    {
+     "rule": "Outbrain: the source name must accurately show who the advertiser is; fake testimonials, fake comments, fake earned-media logos and auto-refreshing date stamps on landing pages are banned; AI-generated or AI-modified ad content must be 'clearly labelled as AI-generated at the point of first exposure', with no synthetic likenesses or voice clones of real people without consent and disclosure.",
+     "url": "https://www.outbrain.com/advertisers/guidelines/"
+    },
+    {
+     "rule": "Taboola titles: 'Titles must not be misleading and must accurately reflect the subject of the landing page'; they must not be in all capital letters or contain excessive punctuation; must be correctly spelled and grammatical in the targeted territory's language; and must not contain solely the product price.",
+     "url": "https://www.taboola.com/help/en/articles/3878208-title-thumbnail-and-branding-text-policies"
+    },
+    {
+     "rule": "Taboola thumbnails: before/after photos and celebrities or politicians for product endorsement are banned (a celebrity only with documented permission); minimum width 400px, minimum length 350px, maximum 5MB; the branding text under the headline must accurately show who is behind the content.",
+     "url": "https://www.taboola.com/help/en/articles/3878208-title-thumbnail-and-branding-text-policies"
+    }
+   ],
+   "checks": [
+    "Does the headline accurately reflect the landing page and promise nothing the page does not deliver?",
+    "Is the headline free of 'stuns', 'reveals', 'real reason', 'last words', 'years later', 'you won't believe' and similar phrases, and of 'too good to be true' claims?",
+    "Is it free of all-caps words (other than content-type labels like 'VIDEO:' and acronyms), repeated or aggressive punctuation, and with its first letter capitalised and correct grammar?",
+    "Is there no emoji in the title?",
+    "Is the title more than just a product price?",
+    "Is the thumbnail free of before/after images and of a celebrity or politician endorsing the product (or covered by documented permission on Taboola)?",
+    "If a celebrity is named in the title, does the image show that same person?",
+    "Does a Taboola thumbnail meet 400px wide, 350px long and 5MB at most?",
+    "Does the source or branding text show the real advertiser?",
+    "Is the landing page free of fake testimonials, fake comments, fake earned-media logos and auto-refreshing dates, with any AI-generated content labelled at first exposure and no real person's likeness or voice cloned without consent?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:ftc_native_advertising",
+    "comp:asci_code",
+    "comp:india_personality_rights",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_ai_sgc_labelling",
+    "genre:native_ad",
+    "genre:headline_dek"
+   ]
+  },
+  {
+   "id": "comp:rbi_fair_practices_recovery",
+   "kind": "compliance",
+   "name": "RBI Fair Practices Code and recovery-agent conduct for banks and NBFCs (now in the Responsible Business Conduct Directions, 2025)",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12942",
+     "title": "RBI: Reserve Bank of India (Non-Banking Financial Companies - Responsible Business Conduct) Directions, 2025 (Updated as on July 1, 2026)",
+     "supports": "title and update date read on rbi.org.in 2026-10-05; the PDF on rbidocs.rbi.org.in sits behind a CAPTCHA, so its recovery-agent rules (8:00 a.m.-7:00 p.m. calling window, no inappropriate social-media messages) are from a web-search summary only"
+    },
+    {
+     "url": "https://www.rbi.org.in/commonperson/English/Scripts/Notification.aspx?Id=1572",
+     "title": "RBI: Master Circular - Fair Practices Code (NBFCs), 1 Jul 2015",
+     "supports": "vernacular-language communications, no harassment at odd hours (historic text, consolidated into the 2025 Directions)"
+    },
+    {
+     "url": "https://www.rbi.org.in/commonman/English/scripts/Notification.aspx?Id=347",
+     "title": "RBI: Recovery Agents engaged by banks, 24 Apr 2008",
+     "supports": "agent must carry the bank's notice, authorisation letter and identity card; training on hours of calling and privacy"
+    },
+    {
+     "url": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/NT1085404663A577943BBB344A37057621C17.PDF",
+     "title": "RBI/2022-23/108: Responsibilities of regulated entities employing recovery agents (Aug 2022)",
+     "supports": "origin of the 8 a.m.-7 p.m. calling restriction across commercial banks, co-operative banks, NBFCs, ARCs and AIFIs (behind CAPTCHA; known from search summary)"
+    }
+   ],
+   "status": "current",
+   "summary": "Status as read 2026-10-05: RBI consolidated its instructions into entity-wise Directions in 2025, and the NBFC Responsible Business Conduct Directions, 2025 are 'Updated as on July 1, 2026' (rbi.org.in). The Directions' own PDF sat behind a CAPTCHA that was not bypassed, so rules 3 and 4 below come from older RBI texts and a web-search summary: read the current Direction for the entity type (bank, NBFC, co-operative bank) before quoting any of this.",
+   "use_for": [
+    "Writing EMI reminders, overdue-loan SMS, WhatsApp and email copy for a bank or NBFC",
+    "Writing recovery-agent call scripts and IVR messages",
+    "Writing loan-offer copy that must also respect the lender's fair-practices duties"
+   ],
+   "avoid": [
+    "Threats, shaming or any line meant to humiliate publicly ('your family and employer will be told'). RBI bars acts intended to humiliate publicly or intrude on the privacy of family members and friends.",
+    "A collection message that does not say who is writing. Name the lender and, if one is acting, the recovery agency.",
+    "A message in English only for a borrower who reads Hindi or another language. Communicate in the vernacular language or a language the borrower understands.",
+    "Scripting or scheduling calls before 8:00 a.m. or after 7:00 p.m. for an overdue loan.",
+    "Posting about a borrower on social media or sending inappropriate messages, whatever the tone."
+   ],
+   "jurisdiction": "India (RBI-regulated banks and NBFCs; read the Direction for your entity type)",
+   "applies_to": [
+    "genre:sms_marketing",
+    "genre:whatsapp_broadcast",
+    "genre:ivr_on_hold_script",
+    "genre:sales_call_script",
+    "genre:chatbot_script",
+    "genre:transactional_email",
+    "genre:push_notification",
+    "collection and EMI-reminder messages"
+   ],
+   "rules": [
+    {
+     "rule": "'All communications to the borrower shall be in the vernacular language or a language as understood by the borrower' (RBI Master Circular, Fair Practices Code for NBFCs, 1 Jul 2015, para 2A(i)(a); historic text, since consolidated into the 2025 Directions).",
+     "url": "https://www.rbi.org.in/commonperson/English/Scripts/Notification.aspx?Id=1572"
+    },
+    {
+     "rule": "Lenders 'should not resort to undue harassment viz; persistently bothering the borrowers at odd hours, use muscle power for recovery of loans' (same 2015 Master Circular, recovery paragraph; historic text).",
+     "url": "https://www.rbi.org.in/commonperson/English/Scripts/Notification.aspx?Id=1572"
+    },
+    {
+     "rule": "Secondary (web-search summary of RBI/2022-23/108 and the 2025 Directions; the PDFs were behind a CAPTCHA and not read): no intimidation or harassment of any kind, verbal or physical; no acts 'intended to humiliate publicly' or that intrude on the privacy of family members and friends; no inappropriate messages on mobile or social media; no threatening or anonymous calls; no persistent calls before 8:00 a.m. or after 7:00 p.m. for overdue loans.",
+     "url": "https://rbidocs.rbi.org.in/rdocs/notification/PDFs/NT1085404663A577943BBB344A37057621C17.PDF"
+    },
+    {
+     "rule": "The borrower must be told which recovery agency is acting, and the agent carries 'the notice and the authorization letter from the bank along with the identity card' (RBI circular, 24 Apr 2008); collection messages should therefore name the lender and the agency.",
+     "url": "https://www.rbi.org.in/commonman/English/scripts/Notification.aspx?Id=347"
+    }
+   ],
+   "checks": [
+    "Is the message in a language the borrower understands, in the vernacular where needed?",
+    "Does it name the lender and, if an agency is acting, the recovery agency?",
+    "Is it free of threats, abuse, public humiliation and any reference to the borrower's family or friends?",
+    "Is it free of anything meant for social media or an inappropriate mobile message about the borrower?",
+    "Does the script avoid calls before 8:00 a.m. or after 7:00 p.m.?",
+    "Has the current Direction for the entity type (bank, NBFC, co-operative bank) been read before any rule is quoted?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:rbi_digital_lending_2025",
+    "comp:trai_tcccpr_2018",
+    "comp:dpdp_act_rules",
+    "plat:sms_india_dlt",
+    "genre:sms_marketing",
+    "genre:whatsapp_broadcast"
+   ]
+  },
+  {
+   "id": "comp:rera_advertisement_rules",
+   "kind": "compliance",
+   "name": "Real Estate (Regulation and Development) Act, 2016: advertising a real-estate project (registration number, Authority website, carpet area, veracity) and state RERA orders",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://indiankanoon.org/doc/85425648/",
+     "title": "Indian Kanoon: Section 11 in the RERA Act, 2016",
+     "supports": "s.11(2) text: ad must mention Authority website and registration number (secondary; India Code PDF unreachable 2026-10-05)"
+    },
+    {
+     "url": "https://lawsisto.com/Read-Central-Act/1818/THE-REAL-ESTATE-REGULATION-AND-DEVELOPMENT-ACT-2016",
+     "title": "Lawsisto: The Real Estate (Regulation and Development) Act, 2016 (full text)",
+     "supports": "s.2(b) advertisement, s.2(k) carpet area, s.3(1) no advertising before registration, s.12 compensation for false statements (secondary reproduction, read via fetch summary)"
+    },
+    {
+     "url": "https://maharera.maharashtra.gov.in/sites/default/files/final_order_document/FOAdv_Order__Case_No_43_of_2024_0.pdf",
+     "title": "MahaRERA: Suo Motu Advertisement Case No. 43 of 2024",
+     "supports": "quotes MahaRERA Order No. 46/2023 (29.05.2023) and 46A/2023 (25.07.2023): QR code beside registration number and website on every ad after 01.08.2023"
+    },
+    {
+     "url": "https://maharera.maharashtra.gov.in/order",
+     "title": "MahaRERA: Orders and Circulars",
+     "supports": "index of state orders incl. Order No. 46C/2025 on QR code and font size of the registration number (search listing; not read)"
+    }
+   ],
+   "status": "current",
+   "summary": "The Act is in force (central text read on 2026-10-05 only through secondary reproductions because India Code was unreachable: medium confidence); each state has its own RERA rules and authority orders. A builder's ad, brochure, hoarding or social post may run only for a RERA-registered project, must show the registration number and the Authority's website prominently (Maharashtra also requires a QR code), and every claim in it is something the promoter must compensate for if false.",
+   "use_for": [
+    "Writing property ads, brochures, hoardings, reels, WhatsApp forwards and listing pages for an Indian developer",
+    "Writing area, amenity and possession-date copy that must match the registered project",
+    "Pre-launch teaser copy: deciding whether it can run before registration"
+   ],
+   "avoid": [
+    "A 'pre-launch', 'EOI' or 'bookings open soon' teaser before the project is registered. Section 3(1) bars advertising, marketing or inviting purchase of a plot, apartment or building in a project that needs registration without registering it.",
+    "An ad with no registration number or no Authority website address. Put both prominently; in Maharashtra add the QR code beside them.",
+    "Quoting a flat's size as super built-up area. State the carpet area as the Act defines it.",
+    "Promising amenities, possession dates or approvals that the registered project does not show. A buyer who suffers loss from an incorrect or false statement in the ad is compensated by the promoter.",
+    "Copying a Maharashtra ad format into another state. Check the project's own state RERA orders."
+   ],
+   "jurisdiction": "India (central RERA Act, 2016; state RERA rules and authority orders; Maharashtra example)",
+   "applies_to": [
+    "genre:real_estate_listing",
+    "genre:brochure_copy",
+    "genre:ooh_billboard_copy",
+    "genre:print_ad_copy",
+    "genre:social_ad_copy",
+    "genre:landing_page",
+    "genre:whatsapp_broadcast",
+    "genre:short_form_video_script",
+    "genre:video_ad_script"
+   ],
+   "rules": [
+    {
+     "rule": "'Advertisement' means 'any document described or issued as advertisement through any medium and includes any notice, circular or other documents or publicity in any form' (s.2(b)): brochures, hoardings, WhatsApp forwards, reels and listing pages all fall within it (the last part is the harvest item's reading) (Lawsisto, secondary).",
+     "url": "https://lawsisto.com/Read-Central-Act/1818/THE-REAL-ESTATE-REGULATION-AND-DEVELOPMENT-ACT-2016"
+    },
+    {
+     "rule": "'No promoter shall advertise, market, book, sell or offer for sale, or invite persons to purchase in any manner' a plot, apartment or building in a project that needs registration without registering it (s.3(1)): no 'pre-launch' or 'EOI' teasers before registration (Lawsisto, secondary).",
+     "url": "https://lawsisto.com/Read-Central-Act/1818/THE-REAL-ESTATE-REGULATION-AND-DEVELOPMENT-ACT-2016"
+    },
+    {
+     "rule": "'The advertisement or prospectus ... shall mention prominently the website address of the Authority ... and include the registration number obtained from the Authority' (s.11(2)) (Indian Kanoon, secondary).",
+     "url": "https://indiankanoon.org/doc/85425648/"
+    },
+    {
+     "rule": "Carpet area is 'the net usable floor area of an apartment, excluding ... external walls, ... services shafts, exclusive balcony or verandah area and exclusive open terrace area' (s.2(k)); quote sizes as carpet area, not an inflated super built-up figure (Lawsisto, secondary).",
+     "url": "https://lawsisto.com/Read-Central-Act/1818/THE-REAL-ESTATE-REGULATION-AND-DEVELOPMENT-ACT-2016"
+    },
+    {
+     "rule": "A buyer who pays on the basis of the advertisement and suffers loss 'by reason of any incorrect, false statement included therein' must be compensated by the promoter (s.12) (Lawsisto, secondary).",
+     "url": "https://lawsisto.com/Read-Central-Act/1818/THE-REAL-ESTATE-REGULATION-AND-DEVELOPMENT-ACT-2016"
+    },
+    {
+     "rule": "Maharashtra: 'The Promoter shall prominently display QR Code on each and every project promotion/advertisement published after 01.08.2023' beside the MahaRERA registration number and website address (MahaRERA Order No. 46/2023 of 29.05.2023 and 46A/2023 of 25.07.2023, as quoted in Suo Motu Advertisement Case No. 43 of 2024).",
+     "url": "https://maharera.maharashtra.gov.in/sites/default/files/final_order_document/FOAdv_Order__Case_No_43_of_2024_0.pdf"
+    },
+    {
+     "rule": "MahaRERA has since issued Order No. 46C/2025 on the QR code and the font size of the registration number; it appears in MahaRERA's order index (search listing) and was not read, so its content is unconfirmed.",
+     "url": "https://maharera.maharashtra.gov.in/order"
+    }
+   ],
+   "penalty": "Compensation to a buyer who paid on the basis of the advertisement and lost money from an incorrect or false statement in it (s.12, secondary text). Other penalties are not recorded in this card.",
+   "checks": [
+    "Is the project registered with the state RERA before any advertisement, teaser, EOI or booking invitation goes out?",
+    "Does the piece show the RERA registration number and the Authority's website address prominently?",
+    "For a Maharashtra project, is there a QR code beside the registration number and website on every promotion published after 01.08.2023, and has Order 46C/2025 on QR code and font size been checked?",
+    "Are sizes quoted as carpet area as the Act defines it, not an inflated super built-up figure?",
+    "Do amenities, possession dates, approvals and layouts match the registered project?",
+    "Do WhatsApp forwards, reels and listing pages carry the same registration details as the brochure?",
+    "Has the project's own state RERA orders page been checked for rules beyond the central Act?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022",
+    "genre:real_estate_listing",
+    "genre:brochure_copy",
+    "genre:ooh_billboard_copy"
+   ]
+  },
+  {
+   "id": "comp:rpa_s123_corrupt_practices",
+   "kind": "compliance",
+   "name": "Representation of the People Act, 1951 section 123: corrupt practices (religion / caste appeals, promoting enmity, false statements about candidates)",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://indiankanoon.org/doc/70252546/",
+     "title": "Indian Kanoon: Section 123 in The Representation of the People Act, 1951",
+     "supports": "current text of s.123 clauses (1)-(8): bribery, undue influence, appeals on religion etc., enmity, sati, false statements (secondary reproduction; India Code refused fetch 2026-10-05)"
+    }
+   ],
+   "status": "current",
+   "summary": "In force (the statute text of s.123 was read on Indian Kanoon 2026-10-05; India Code refused the fetch, so medium confidence). Section 123 applies to the candidate, the agent or 'any other person with the consent of a candidate or his election agent', which covers an agency or writer producing campaign copy. Election slogans, speeches, ads and posts may not appeal for votes on religion, race, caste, community or language, use religious or national symbols, stoke enmity between groups, or publish false statements of fact about a rival's character.",
+   "use_for": [
+    "Writing election slogans, speeches, manifestos, ads and social posts for a candidate or party",
+    "Checking satire and attack content about rivals before release",
+    "Reviewing giveaway or contest copy that touches voting"
+   ],
+   "avoid": [
+    "'Vote for your own community' or any appeal on religion, race, caste, community or language. Make the case on record, policy and promises.",
+    "Using the national flag, the national emblem or a religious symbol to win votes. (The party symbol allotted under the Act is not a religious or national symbol for this purpose.)",
+    "A stated fact about a rival's personal character or conduct that is false or not checked. Use documented facts, or clearly framed opinion and satire.",
+    "A threat of divine displeasure or spiritual censure. A declaration of public policy or a promise of public action is fine.",
+    "Giveaway, gift or contest copy tied to voting. Bribery covers any gratification to an elector, including entertainment."
+   ],
+   "jurisdiction": "India (Representation of the People Act, 1951)",
+   "applies_to": [
+    "genre:election_manifesto",
+    "genre:political_speech",
+    "genre:campaign_slogan",
+    "genre:political_social_commentary",
+    "genre:social_ad_copy",
+    "genre:satire_parody",
+    "genre:whatsapp_forward",
+    "genre:short_form_video_script",
+    "genre:tvc_script"
+   ],
+   "rules": [
+    {
+     "rule": "No appeal 'to vote or refrain from voting for any person on the ground of his religion, race, caste, community or language', and no use of or appeal to religious symbols or 'national symbols, such as the national flag or the national emblem' to further a candidate's prospects; the party symbol allotted under the Act is not a religious or national symbol for this purpose (s.123(3)).",
+     "url": "https://indiankanoon.org/doc/70252546/"
+    },
+    {
+     "rule": "No 'promotion of, or attempt to promote, feelings of enmity or hatred between different classes ... on grounds of religion, race, caste, community, or language' (s.123(3A)).",
+     "url": "https://indiankanoon.org/doc/70252546/"
+    },
+    {
+     "rule": "No publication 'of any statement of fact which is false', believed false or not believed true, about 'the personal character or conduct of any candidate' or about anyone's candidature or withdrawal, reasonably calculated to hurt their prospects (s.123(4)). Satire and opinion are safer than invented facts (the harvest item's reading).",
+     "url": "https://indiankanoon.org/doc/70252546/"
+    },
+    {
+     "rule": "Threatening voters with 'divine displeasure or spiritual censure' is undue influence, but 'a declaration of public policy, or a promise of public action' is not (s.123(2)).",
+     "url": "https://indiankanoon.org/doc/70252546/"
+    },
+    {
+     "rule": "Bribery covers any gratification to an elector, including entertainment (s.123(1)): giveaway or contest copy tied to voting is out (the last part is the harvest item's reading).",
+     "url": "https://indiankanoon.org/doc/70252546/"
+    }
+   ],
+   "checks": [
+    "Does any slogan, speech line, ad or post avoid asking for votes on religion, race, caste, community or language?",
+    "Is the piece free of religious symbols and of the national flag or emblem used to further the candidate?",
+    "Is it free of any line that promotes enmity or hatred between classes of citizens on those grounds?",
+    "Is every statement of fact about a rival's personal character or conduct true and documented, or clearly opinion or satire?",
+    "Is there no threat of divine displeasure or spiritual censure (a policy promise is fine)?",
+    "Is there no gift, giveaway or contest copy tied to voting?",
+    "Has the piece also been checked against the Model Code of Conduct and the printer-and-publisher imprint rule (comp:eci_mcc, comp:rpa_s127a_election_print)?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:eci_mcc",
+    "comp:rpa_s127a_election_print",
+    "comp:bns_defamation_speech",
+    "comp:eci_ai_content_advisory",
+    "genre:election_manifesto",
+    "genre:political_speech"
+   ]
+  },
+  {
+   "id": "comp:sebi_lodr_disclosure",
+   "kind": "compliance",
+   "name": "SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015: material-event disclosure (Reg 30), annual report MD&A and BRSR",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.sebi.gov.in/legal/regulations/jul-2026/securities-and-exchange-board-of-india-listing-obligations-and-disclosure-requirements-regulations-2015-last-amended-on-july-14-2026-_102974.html",
+     "title": "SEBI: LODR Regulations, 2015 [Last amended on July 14, 2026]",
+     "supports": "official consolidated text page; PDF https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784630770711.pdf read 2026-10-05"
+    },
+    {
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784630770711.pdf",
+     "title": "SEBI: LODR Regulations, 2015 consolidated text (PDF, amended up to July 14, 2026)",
+     "supports": "text of Reg 4, Reg 30(6), 30(8), 30(11), Reg 34(2)(f) and Schedule V Part B, read 2026-10-05"
+    },
+    {
+     "url": "https://www.sebi.gov.in/sebi_data/faqfiles/apr-2025/1745399101865.pdf",
+     "title": "SEBI: FAQs for LODR Regulations (Apr 2025)",
+     "supports": "SEBI's own FAQ on the regulations (not read in full)"
+    }
+   ],
+   "status": "current",
+   "summary": "In force; SEBI's consolidated text is 'Last amended on July 14, 2026' (PDF read 2026-10-05). For a listed company, material events go to the stock exchanges first, within fixed hours, and everything the company puts out (press release, shareholder letter, annual report) must be accurate, not misleading and in simple language.",
+   "use_for": [
+    "Writing press releases, shareholder letters, social posts and CEO letters for a listed company",
+    "Writing the MD&A and BRSR parts of an annual report",
+    "Sequencing a material announcement: exchange filing first, then everything else"
+   ],
+   "avoid": [
+    "Publishing a press release, post or shareholder letter about a material event before the stock-exchange filing. Reg 30 puts the exchange first.",
+    "Promotional or vague language in an exchange or investor disclosure. Reg 4 asks for information that is adequate, accurate, explicit, timely and in simple language.",
+    "Ignoring a media rumour that moves the share price. A top-listed entity must confirm, deny or clarify within 24 hours of a material price movement.",
+    "An MD&A that is a glossy story with no risks, outlook or internal-controls discussion. Cover each head Schedule V Part B lists."
+   ],
+   "jurisdiction": "India (SEBI; listed entities)",
+   "applies_to": [
+    "genre:investor_relations_copy",
+    "genre:annual_report_narrative",
+    "genre:ceo_letter",
+    "genre:press_release",
+    "genre:esg_csr_report",
+    "genre:crisis_statement",
+    "genre:investor_update",
+    "social posts about material events"
+   ],
+   "rules": [
+    {
+     "rule": "Reg 4: the listed entity 'shall refrain from misrepresentation and ensure that the information provided to recognised stock exchange(s) and investors is not misleading', and disseminations must be 'adequate, accurate, explicit, timely and presented in a simple language'.",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784630770711.pdf"
+    },
+    {
+     "rule": "Reg 30(6): material events or information go to the stock exchange(s) first, within 30 minutes of the board meeting closing (3 hours if it closes after market hours), 12 hours if the event emanates from within the company, 24 hours if from outside; a late disclosure must carry an explanation for the delay. A press release, social post or shareholder letter about a material event must not go out before the exchange filing (the last part is the harvest item's reading).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784630770711.pdf"
+    },
+    {
+     "rule": "Reg 30(8): the same events are placed on the company's website.",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784630770711.pdf"
+    },
+    {
+     "rule": "Reg 30(11): top 100, then top 250, listed entities must confirm, deny or clarify a specific mainstream-media rumour within 24 hours of a material price movement; if confirming, they give the current stage (the item gives the cut-offs without dates).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784630770711.pdf"
+    },
+    {
+     "rule": "Schedule V Part B: the annual report includes a Management Discussion and Analysis covering industry structure, opportunities and threats, segment performance, outlook, risks and concerns, internal controls, financial versus operational performance and human-resource developments.",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784630770711.pdf"
+    },
+    {
+     "rule": "Reg 34(2)(f): for the top 1,000 listed entities by market capitalisation, the annual report includes a Business Responsibility and Sustainability Report (BRSR).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784630770711.pdf"
+    }
+   ],
+   "checks": [
+    "Has the stock-exchange filing gone out before any press release, social post or shareholder letter about the material event is published?",
+    "Is every figure and claim accurate, explicit and not misleading, in simple language?",
+    "If a disclosure is late, does it carry the reason for the delay?",
+    "Is the same event on the company website?",
+    "For a top-listed entity facing a media rumour, is there a confirm, deny or clarify response within 24 hours of a material price movement, giving the current stage if confirmed?",
+    "Does the MD&A cover every head: industry structure, opportunities and threats, segment performance, outlook, risks and concerns, internal controls, financial versus operational performance, HR developments?",
+    "If the company is in the top 1,000 by market capitalisation, is a BRSR included?",
+    "Have the filing deadlines been checked against Reg 30(6) before any timing is promised in copy?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:sebi_pit_upsi",
+    "comp:sebi_finfluencer_association",
+    "comp:companies_act_s135_csr",
+    "genre:investor_relations_copy",
+    "genre:annual_report_narrative",
+    "genre:press_release"
+   ]
+  },
+  {
+   "id": "comp:sebi_pit_upsi",
+   "kind": "compliance",
+   "name": "SEBI (Prohibition of Insider Trading) Regulations, 2015: UPSI, fair-disclosure code and trading window",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.sebi.gov.in/legal/regulations/mar-2025/securities-and-exchange-board-of-india-prohibition-of-insider-trading-regulations-2015-last-amended-on-march-12-2025-_92672.html",
+     "title": "SEBI: PIT Regulations, 2015 [Last amended on March 12, 2025]",
+     "supports": "official consolidated text page; PDF https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786963663321.pdf ('Amended upto March 12, 2025', includes amendments w.e.f. June 10, 2025) read 2026-10-05"
+    },
+    {
+     "url": "https://www.sebi.gov.in/sebi_data/faqfiles/apr-2025/1744784643061.pdf",
+     "title": "SEBI: Comprehensive FAQs on PIT Regulations (Apr 2025)",
+     "supports": "SEBI's own FAQ (not read in full)"
+    }
+   ],
+   "status": "current",
+   "summary": "In force; SEBI's consolidated text is 'Amended upto March 12, 2025' and includes amendments effective June 10, 2025 (PDF read 2026-10-05). Unpublished price-sensitive information about a listed company may not be leaked, teased or selectively shared in IR, PR or social copy; it must be released uniformly to everyone at once.",
+   "use_for": [
+    "Writing investor-relations, PR and social copy for a listed company around results and corporate events",
+    "Handling drafts of results, press releases and CEO letters inside the quiet period",
+    "Briefing an agency or ghostwriter on what must not be hinted at before disclosure"
+   ],
+   "avoid": [
+    "A teaser, 'big news coming' post, interview line or analyst-deck slide that hints at results, a dividend, M&A, fund raising, a rating change or a large contract before the exchange disclosure.",
+    "Treating a leak as public. Information reported in the media that is unverified does not become 'generally available'.",
+    "Sharing a results draft widely with the agency, freelancers or the social team. Limit it to people who need it for legitimate purposes, duties or legal obligations.",
+    "Giving UPSI to an analyst in a call or meeting; records of analyst and IR meetings go on the official website."
+   ],
+   "jurisdiction": "India (SEBI; listed companies, insiders and connected persons)",
+   "applies_to": [
+    "genre:investor_relations_copy",
+    "genre:press_release",
+    "genre:ceo_letter",
+    "genre:investor_update",
+    "genre:ghostwritten_founder_post",
+    "genre:linkedin_post",
+    "genre:media_pitch",
+    "genre:interview_qa"
+   ],
+   "rules": [
+    {
+     "rule": "UPSI is information 'not generally available which upon becoming generally available, is likely to materially affect the price', ordinarily including financial results, dividends, changes in capital structure, mergers and acquisitions, large contract wins or losses outside the normal course, changes in key managerial personnel, rating changes, fund raising, and fraud or defaults (Reg 2(1)(n)).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786963663321.pdf"
+    },
+    {
+     "rule": "'No insider shall communicate, provide, or allow access to any unpublished price sensitive information' except for 'legitimate purposes, performance of duties or discharge of legal obligations' (Reg 3(1)).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786963663321.pdf"
+    },
+    {
+     "rule": "'Generally available information' is information accessible on a non-discriminatory basis and 'shall not include unverified event or information reported in print or electronic media' (Reg 2(1)(e)): a news leak does not make it public.",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786963663321.pdf"
+    },
+    {
+     "rule": "Fair-disclosure principles (Schedule A): prompt public disclosure; 'Uniform and universal dissemination ... to avoid selective disclosure'; information shared with analysts must not be UPSI; transcripts or records of analyst and IR meetings go on the official website.",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786963663321.pdf"
+    },
+    {
+     "rule": "The trading window for designated persons is closed from the end of every quarter until 48 hours after results (Schedule B); results-season copy and insider quotes are drafted inside that quiet period, so drafts stay need-to-know (the last part is the harvest item's reading).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1786963663321.pdf"
+    }
+   ],
+   "checks": [
+    "Does the piece avoid hints about results, dividends, M&A, fund raising, rating changes, key-personnel changes, large contracts, fraud or defaults before the exchange disclosure, including teasers and 'big news coming' posts?",
+    "Has the draft been shared only with people who need it for legitimate purposes, duties or legal obligations?",
+    "Is no unverified media report treated as public information?",
+    "Is the same information being released to everyone at once, with any analyst or IR meeting record headed for the website?",
+    "If the piece is drafted in the trading-window quiet period, is it handled as need-to-know?",
+    "Does the piece avoid giving UPSI to an analyst or interviewer?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:sebi_lodr_disclosure",
+    "comp:sebi_finfluencer_association",
+    "genre:investor_relations_copy",
+    "genre:press_release",
+    "genre:ceo_letter",
+    "genre:ghostwritten_founder_post"
+   ]
+  },
+  {
+   "id": "comp:ucpmp_2024_pharma_promotion",
+   "kind": "compliance",
+   "name": "Uniform Code for Pharmaceutical Marketing Practices (UCPMP) 2024: what drug promotion and medical-detailing copy may claim",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://www.novonordisk.co.in/content/dam/nncorp/in/en_in/pdfs/ucpmp-2024.pdf",
+     "title": "UCPMP 2024 (Department of Pharmaceuticals, dated 12th March 2024), copy hosted by Novo Nordisk India",
+     "supports": "full code text: general points, claims and comparisons, promotional material, brand reminders (company-hosted copy of the government code; pharmaceuticals.gov.in not fetched)"
+    },
+    {
+     "url": "https://www.cyrilshroff.com/wp-content/uploads/2024/03/Client-Alert-FAQs-on-UCPMP-2024_2103.pdf",
+     "title": "Cyril Amarchand Mangaldas: FAQs on UCPMP 2024 (Mar 2024)",
+     "supports": "secondary law-firm commentary (not read in full)"
+    }
+   ],
+   "status": "current",
+   "summary": "UCPMP 2024 was issued by the Department of Pharmaceuticals and is dated 12 March 2024; the text was read 2026-10-05 in a copy hosted by a drug company (medium confidence; pharmaceuticals.gov.in was not fetched). A drug's marketing approval itself comes from CDSCO under the New Drugs and Clinical Trials Rules, 2019 (not read in this pass). Pharma promotion to doctors may start only after marketing approval, must be balanced and substantiable, may not call a drug 'safe' without qualification or 'new' after a year, and must carry the prescribing basics.",
+   "use_for": [
+    "Writing medical-detailing leaflets, visual aids, journal ads and brand reminders for prescribers",
+    "Reviewing pharma copy for unqualified 'safe', 'new' and comparison claims",
+    "Writing prescriber-facing mailers"
+   ],
+   "avoid": [
+    "Promotion before the drug has marketing approval, or an indication outside the approval. Promotion must be consistent with the terms of the marketing approval.",
+    "'Safe' with no qualification, or 'no side effects'. Use the evidence: what was studied, in whom, and the adverse reactions.",
+    "'New' on a drug generally available or promoted in India for more than a year.",
+    "Naming a competitor's brand without its prior consent, or belittling another company or a doctor's opinion. Compare factually and fairly, with substantiation.",
+    "Using a prescriber-facing claim in public copy. Public-facing cure claims fall under the Drugs and Magic Remedies Act (comp:dmr_act_1954)."
+   ],
+   "jurisdiction": "India (Department of Pharmaceuticals; drug promotion to healthcare professionals)",
+   "applies_to": [
+    "genre:medical_regulatory_writing",
+    "genre:brochure_copy",
+    "genre:direct_mail_package",
+    "genre:print_ad_copy",
+    "genre:sales_deck",
+    "genre:white_paper",
+    "medical detailing leaflets and brand reminders"
+   ],
+   "rules": [
+    {
+     "rule": "Para 1.2: 'a drug must not be promoted prior to receipt of its marketing approval', and promotion 'must be consistent with the terms of its marketing approval': no off-label indications.",
+     "url": "https://www.novonordisk.co.in/content/dam/nncorp/in/en_in/pdfs/ucpmp-2024.pdf"
+    },
+    {
+     "rule": "Para 1.3: information 'must be balanced, up-to-date, verifiable, must not mislead either directly or by implication' and 'must be capable of substantiation' on request.",
+     "url": "https://www.novonordisk.co.in/content/dam/nncorp/in/en_in/pdfs/ucpmp-2024.pdf"
+    },
+    {
+     "rule": "Paras 2.2-2.3: the word 'safe' must not be used without qualification, and categorical 'no side effects' claims are out; the word 'new' must not be used for a drug generally available or promoted in India for more than a year.",
+     "url": "https://www.novonordisk.co.in/content/dam/nncorp/in/en_in/pdfs/ucpmp-2024.pdf"
+    },
+    {
+     "rule": "Paras 2.4-2.7: comparisons must be factual, fair and substantiable; no competitor brand names without their prior consent; no disparaging other companies or doctors' opinions.",
+     "url": "https://www.novonordisk.co.in/content/dam/nncorp/in/en_in/pdfs/ucpmp-2024.pdf"
+    },
+    {
+     "rule": "Para 3.2: promotional material for prescribers must include the authorisation holder's name and address, the generic names of the active ingredients adjacent to the brand name, dosage and method of use, adverse reactions, warnings, precautions and contraindications, and the date the particulars were last updated.",
+     "url": "https://www.novonordisk.co.in/content/dam/nncorp/in/en_in/pdfs/ucpmp-2024.pdf"
+    },
+    {
+     "rule": "Paras 3.3, 3.6 and 3.9: paid journal pieces must not resemble editorial matter; no names or photographs of healthcare professionals; exposed mailings must not carry matter that reads as advertising to the lay public.",
+     "url": "https://www.novonordisk.co.in/content/dam/nncorp/in/en_in/pdfs/ucpmp-2024.pdf"
+    }
+   ],
+   "checks": [
+    "Is the drug approved for marketing, and does every claim stay within the approved indication?",
+    "Is every statement balanced, up to date, verifiable and substantiable on request?",
+    "Is 'safe' always qualified, and are 'no side effects' claims absent?",
+    "Is 'new' used only for a drug available or promoted in India for a year or less?",
+    "Are comparisons factual and fair, with competitor brands named only with their prior consent and no disparagement?",
+    "Does prescriber-facing material show the authorisation holder's name and address, generic names beside the brand name, dosage and method of use, adverse reactions, warnings, precautions, contraindications and the last-updated date?",
+    "Does a paid journal piece look like an advertisement rather than editorial, with no names or photographs of healthcare professionals, and does an exposed mailing carry nothing that reads as advertising to the lay public?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:dmr_act_1954",
+    "comp:asci_code",
+    "comp:india_professional_ad_bans",
+    "genre:medical_regulatory_writing",
+    "genre:brochure_copy"
+   ]
+  },
+  {
+   "id": "comp:youtube_spam_policy",
+   "kind": "compliance",
+   "name": "YouTube Spam Policy (malicious clickbait, misleading metadata and thumbnails, scams, engagement manipulation, mass-produced AI content)",
+   "as_of": "2026-10-05",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/2801973?hl=en",
+     "title": "YouTube Help: Spam Policy (formerly 'Spam, deceptive practices, and scams policies')",
+     "supports": "full current policy: scope incl. titles, thumbnails, links, comments; examples for each violation type; enforcement (warning, strikes, termination, monetisation)"
+    }
+   ],
+   "status": "current",
+   "summary": "Current page read 2026-10-05. It is now titled 'Spam Policy' (formerly 'Spam, deceptive practices, and scams policies') and sits beside separate Impersonation, External links and Fake engagement policies. YouTube bans titles, thumbnails and descriptions that promise what the video does not deliver, scam and get-rich-quick pitches, engagement bait, comment spam, scraped re-uploads and mass-produced repetitive AI videos.",
+   "use_for": [
+    "Writing YouTube titles, thumbnails text, descriptions and community posts that stay within the policy",
+    "Writing calls to action that ask for likes, comments and subscribes within the rules",
+    "Checking an AI-assisted or high-volume channel plan for mass-production risk"
+   ],
+   "avoid": [
+    "A title or thumbnail that promises a full match, a result or a reveal that the video does not contain. A curiosity title is fine only if the video pays it off.",
+    "Rewards for likes, views or subscribers, sub-for-sub schemes or high volumes of low-effort, repetitive polls. Asking viewers to like, comment or subscribe is fine.",
+    "Get-rich-quick investment pitches, fake job offers or fake customer-support numbers in the copy or description.",
+    "A video made solely to drive viewers off YouTube.",
+    "The same music, AI imagery and AI-read script across many videos with minimal changes, or re-uploads with no original commentary, educational value or unique editing."
+   ],
+   "jurisdiction": "YouTube (global platform policy)",
+   "applies_to": [
+    "genre:youtube_title_description",
+    "genre:youtube_video_script",
+    "genre:youtube_community_post",
+    "genre:youtube_chapters",
+    "genre:faceless_video_script",
+    "genre:comment_reply",
+    "genre:short_form_video_script",
+    "YouTube thumbnails and metadata"
+   ],
+   "rules": [
+    {
+     "rule": "The policy covers more than the video: 'This policy applies to all types of content on YouTube, including unlisted and private content, comments, links, posts and thumbnails'.",
+     "url": "https://support.google.com/youtube/answer/2801973?hl=en"
+    },
+    {
+     "rule": "Malicious clickbait is 'Using maliciously misleading titles, thumbnails, descriptions, or imagery to trick users into clicking on a video that does not deliver what was promised' (example: a title offering a full sports match when the video is a clip). A curiosity title the video pays off is fine; one it does not pay off is not (the last part is the harvest item's reading).",
+     "url": "https://support.google.com/youtube/answer/2801973?hl=en"
+    },
+    {
+     "rule": "'It's okay to ask viewers to like, comment, or subscribe', but not to offer rewards for likes, views or subscribers, run sub-for-sub schemes, or post 'high volumes of low-effort, repetitive polls'.",
+     "url": "https://support.google.com/youtube/answer/2801973?hl=en"
+    },
+    {
+     "rule": "No scam copy: 'get rich quick' investment schemes, fake job offers, fake customer-support numbers; no videos 'created solely to drive users off of YouTube'.",
+     "url": "https://support.google.com/youtube/answer/2801973?hl=en"
+    },
+    {
+     "rule": "'Automated or synthetic mass-production' is banned: using AI 'to churn out high volumes of similar content with minimal changes' (example: the same music and AI imagery with an AI-read script across many videos); re-uploads need 'original commentary, educational value, or unique editing'.",
+     "url": "https://support.google.com/youtube/answer/2801973?hl=en"
+    }
+   ],
+   "penalty": "Removal; a warning, then strikes ('3 strikes within 90 days' can terminate the channel); suspended monetisation (YouTube Help, Spam Policy).",
+   "checks": [
+    "Does the title, thumbnail and description deliver exactly what the video shows?",
+    "Is every promised item (full match, result, reveal) actually in the video?",
+    "Does the call to action ask for a like, comment or subscribe without a reward, a sub-for-sub offer or repetitive polls?",
+    "Is the copy free of get-rich-quick pitches, fake job offers and fake customer-support numbers?",
+    "Is the video made for viewers on YouTube, not solely to drive them off it?",
+    "If AI-assisted or repurposed, does each video differ materially from the others, and does any re-upload add original commentary, educational value or unique editing?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:youtube_altered_synthetic",
+    "comp:youtube_paid_promotion",
+    "comp:google_search_spam_policies",
+    "plat:youtube_title",
+    "plat:youtube_thumbnail",
+    "plat:youtube_description",
+    "genre:youtube_title_description",
+    "trend:scaled_ai_content_enforcement",
+    "trend:original_content_ranking"
+   ]
+  }
+ ]
+}

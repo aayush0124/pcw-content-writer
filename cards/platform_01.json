@@ -1,0 +1,1936 @@
+{
+ "cards": [
+  {
+   "id": "plat:amazon_kdp_book",
+   "kind": "platform",
+   "name": "Amazon KDP book metadata (title, subtitle, description, keywords)",
+   "status": "current",
+   "summary": "The four things KDP asks for on a book: a title and subtitle (fewer than 200 characters together), a description of up to 4,000 characters in which any HTML tags also count, and up to seven keywords or short phrases. Good metadata tells a browsing reader what the book is, who it is for and what they get, in the words that reader would type.",
+   "use_for": [
+    "Title + subtitle pair for a nonfiction ebook or paperback (promise in the title, who/how/when in the subtitle).",
+    "Book description for the Amazon detail page (see genre:kdp_book_description for the writing craft).",
+    "The seven keyword slots: seven different phrases a buyer would type, chosen after the title is fixed.",
+    "Re-writing metadata of a low-selling title without changing the book."
+   ],
+   "avoid": [
+    "Using all 199 title+subtitle characters because the limit allows it: KDP notes customers skim past titles over 60 characters. Put the book's name and the one promise inside the first 60 and let the remainder add detail, not noise.",
+    "Counting only the words you can see in the description: tags cost characters (KDP's own example: <b>test</b> counts as 11, so a bold wrapper costs 7). Spend bold on the opening line and list tags sparingly, and stay under 4,000 with the tags included.",
+    "Seven keywords that are one word repeated seven ways (for example 'GST', 'GST book', 'GST guide'). Use seven different search phrases the reader would type (for example 'show cause notice reply format'); check the exact keyword rules on the KDP page before delivery.",
+    "Assuming a Hindi or Hinglish title is counted the same way: the KDP pages read do not say how Devanagari is counted. Check the counter in the KDP form before handing over."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://kdp.amazon.com/en_US/help/topic/G201097560",
+     "title": "Metadata Guidelines for Books - KDP Help",
+     "supports": "title/subtitle rule"
+    },
+    {
+     "url": "https://kdp.amazon.com/en_US/help/topic/G201189630",
+     "title": "Write a Book Description - KDP Help",
+     "supports": "4000-character limit, HTML counts toward it"
+    },
+    {
+     "url": "https://kdp.amazon.com/en_US/help/topic/G201298500",
+     "title": "Make Your Book More Discoverable with Keywords - KDP Help",
+     "supports": "seven keywords, long-title advice"
+    }
+   ],
+   "related": [
+    "genre:kdp_book_description",
+    "genre:book_blurb",
+    "plat:amazon_product_listing"
+   ],
+   "limits": [
+    {
+     "field": "book description",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G201189630",
+     "checked": "2026-10-04",
+     "quote": "Note that we have a limit of 4000 characters for the description.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "title + subtitle combined (fewer than 200)",
+     "max": 199,
+     "unit": "chars",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G201097560",
+     "checked": "2026-10-04",
+     "quote": "Your title and subtitle together must be fewer than 200 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "keywords or short phrases",
+     "max": 7,
+     "unit": "count",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G201298500",
+     "checked": "2026-10-04",
+     "quote": "Use up to seven keywords or short phrases.",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Description is the only field that takes markup; KDP lists basic HTML as supported: bold, italics, lists and line breaks. Other tags (headings, colours, links) are not listed, so do not rely on them.",
+    "Every HTML tag counts toward the 4,000-character description limit (KDP's example: <b>test</b> = 11 characters).",
+    "Title and subtitle are plain text; together they must be fewer than 200 characters (the limit is recorded as 199).",
+    "Keywords: up to seven keywords or short phrases, entered one per slot.",
+    "Devanagari and emoji handling is not covered by the KDP pages in the harvest: unverified, check the form counter."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check draft.txt --platform plat:amazon_kdp_book` tests the DESCRIPTION against 4,000 chars. Paste the description WITH its HTML tags so the tag cost is counted. For title+subtitle run `--field \"title + subtitle\"` on the two joined into one string (the example below is 106 chars joined; KDP does not say whether the separator counts, so keep a 5-character margin).",
+    "The lint cannot count keyword slots (for 'count' limits it counts hashtags). Count the seven keywords by hand and make them seven different phrases.",
+    "Order of work: fix the title and subtitle first, then choose keywords that the title does not already say, then write the description. Trust the official numbers (4,000 / fewer than 200 / seven); treat 60 characters as the readability target for the title.",
+    "Description shape that works inside 4,000: a bold one-line promise, a short paragraph on the reader's problem, a 4-6 item list of what they get, a line on who it is for and who it is not, then one closing call to action. Aim for roughly 3,500 plain characters so tags and edits still fit.",
+    "Example title/subtitle for a Jaipur CA's guide: title 'The GST Notice Playbook', subtitle 'How Indian D2C founders answer a show-cause notice in 7 days, with reply templates'."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "KDP's keyword guidance notes that customers skim past titles over 60 characters, so the first 60 characters must carry the book's identity.",
+     "url": "https://kdp.amazon.com/en_US/help/topic/G201298500"
+    }
+   ]
+  },
+  {
+   "id": "plat:amazon_product_listing",
+   "kind": "platform",
+   "name": "Amazon product detail page (title, bullets, description, search terms)",
+   "status": "current",
+   "summary": "The seller-written title, bullet points, description and back-end search terms of an Amazon product page. The title can run to 200 characters but Amazon recommends 60 or fewer, and each bullet should open with a one or two word label followed by an explanation of about 100 characters or fewer.",
+   "use_for": [
+    "Title for a new Amazon.in or Amazon.com SKU: brand, product type, the attribute buyers search first.",
+    "Bullet points that answer the buying questions in label + short explanation form.",
+    "Back-end search terms: extra words the buyer types that do not belong in the visible copy.",
+    "Rewriting a listing that has impressions but no orders."
+   ],
+   "avoid": [
+    "Filling the 200-character ceiling: Amazon recommends no more than 60. Put brand, product and the one top attribute in the first 60 so the title still works if it is shortened, and move the rest into bullets.",
+    "Back-end terms written as commas, capitals or sentences, or that repeat words already in the title: Amazon says use all lowercase, separate words with spaces only, skip articles and prepositions, and avoid redundant terms.",
+    "Keyword stuffing (the same keyword repeated for ranking): Amazon's own blog says avoid it. Use each search word once, where it reads naturally.",
+    "Quoting a back-end byte limit, a bullet count or category title rules from memory: those sit on login-only Seller Central pages and were NOT verified here. Check Seller Central for the category before delivering."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://sell.amazon.com/blog/amazon-seo",
+     "title": "Amazon SEO: How to Improve Your Product Rankings - Sell on Amazon blog (2025-09-03)",
+     "supports": "title limit 200 / recommend 60; bullet and back-end keyword guidance"
+    }
+   ],
+   "related": [
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "genre:amazon_a_plus_content",
+    "trend:agentic_commerce_product_content",
+    "plat:etsy_listing"
+   ],
+   "limits": [
+    {
+     "field": "product title (hard limit)",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://sell.amazon.com/blog/amazon-seo",
+     "checked": "2026-10-04",
+     "quote": "Keep in mind the Amazon product title character limit is 200, and we recommend no more than 60.",
+     "confidence": "medium (Amazon's official seller blog, dated 2025-09-03; the Seller Central policy page is behind a login and was not read)"
+    },
+    {
+     "field": "product title (Amazon's recommendation)",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://sell.amazon.com/blog/amazon-seo",
+     "checked": "2026-10-04",
+     "quote": "Keep in mind the Amazon product title character limit is 200, and we recommend no more than 60.",
+     "confidence": "medium (Amazon's official seller blog, dated 2025-09-03; the Seller Central policy page is behind a login and was not read)"
+    },
+    {
+     "field": "bullet point explanation (recommended)",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://sell.amazon.com/blog/amazon-seo",
+     "checked": "2026-10-04",
+     "quote": "start with a one- or two-word description, then offer an explanation in 100 characters or fewer",
+     "confidence": "medium (Amazon's official seller blog, dated 2025-09-03; the Seller Central policy page is behind a login and was not read)"
+    }
+   ],
+   "formatting": [
+    "The sources read describe plain text only (title, bullets, back-end terms). Nothing in them says bold, HTML or emoji render, so write plain text and check the Seller Central category template for anything more.",
+    "Bullet pattern from Amazon's blog: a one- or two-word label, then an explanation in 100 characters or fewer.",
+    "Back-end search terms are not shown to shoppers: lowercase, words separated by spaces only, no articles or prepositions.",
+    "Amazon.in limits were not verified separately: the Amazon blog read is the US one. Hindi or Hinglish in the title is unverified; keep the title in the language the marketplace and category use."
+   ],
+   "writing_notes": [
+    "Two title numbers, one sentence: 200 is the character limit, 60 is Amazon's recommendation. Write to 60 and treat 200 only as the point where the upload is rejected. The lint's default test (`--platform plat:amazon_product_listing`) is the 200 limit; for the 60 add `--field recommendation`.",
+    "Bullets: lint the explanation part only with `--field \"bullet point\"` (100 chars). Amazon's 100 applies to the explanation that follows the label. The bullet COUNT per category is not verified.",
+    "Title example (\"Brew Rani Masala Chai 250g, Small-Batch Assam Tea with Cardamom and Ginger, Pune\" (80 chars)): too long to be the target; a version inside Amazon's 60 is 'Brew Rani Masala Chai 250g, Small-Batch Assam Tea' (49 chars). Everything dropped moves to bullets.",
+    "Bullet example, label then explanation: 'SMALL BATCH: Whole cardamom and dry ginger, roasted in small batches in Pune, packed within 48 hours' (explanation = 87 chars, inside the 100 limit).",
+    "Order of work: list the 15-20 phrases a buyer would type, pick the top one for the title, use the next five in the bullets naturally, put leftovers in back-end terms in lowercase with spaces.",
+    "Every claim in a bullet must be provable on the pack or label (weight, material, ingredient). If the client cannot show it, cut it.",
+    "Backend search terms: Amazon staff on the public Seller Central India forums give two different byte caps (200 bytes in a 2025 reply quoting error 97779, 249 bytes in a 2024 reply). Stay under 200 bytes until the login-only help page confirms; check bytes with `pcw.py check --platform ...` is not possible (no limit row), so count with len(text.encode('utf-8')). (lead fix 2026-10-07)"
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Amazon's seller blog (2025-09-03): back-end search terms use all lowercase, words separated by spaces only, no articles or prepositions, no redundant terms and no keyword stuffing.",
+     "url": "https://sell.amazon.com/blog/amazon-seo"
+    }
+   ]
+  },
+  {
+   "id": "plat:apple_app_store",
+   "kind": "platform",
+   "name": "Apple App Store product page",
+   "status": "current",
+   "summary": "An iOS/macOS app's product page copy: a 30-character name and subtitle, 170 characters of promotional text, a 4,000-character description, a 100-byte keyword field and release notes. Apple's guidance is that the first sentence of the description does most of the work, and keywords belong in the keyword field, not stuffed into the description.",
+   "use_for": [
+    "App name + subtitle pair that says what the app does and the value, not a slogan.",
+    "Promotional text for a sale, launch or festival offer (editable without a new build).",
+    "Description: a concise paragraph, then a short list of main features.",
+    "The 100-byte keyword field for English and Hindi search terms.",
+    "'What's New' release notes and in-app purchase names and descriptions."
+   ],
+   "avoid": [
+    "Generic subtitles such as 'world's best app': Apple tells writers to highlight features or typical uses that resonate with the audience instead.",
+    "Stuffing keywords into the description: Apple says do not add unnecessary keywords to the description to improve search, and do not put specific prices in it. Use the keyword field.",
+    "Treating the keyword limit as 100 characters for Hindi: it is 100 BYTES and a Devanagari character is 3 bytes in UTF-8, so a Hindi keyword field holds roughly 33 characters. Prefer Latin-script Hinglish search terms for most slots.",
+    "Repeating the app or company name in the keyword field, or naming other apps and companies: not allowed per App Store Connect. Apple's guide also says avoid plurals of included words, category names, the word 'app', duplicates and special characters."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information",
+     "title": "Platform version information - App Store Connect Help",
+     "supports": "promotional text, description, keywords, what's new"
+    },
+    {
+     "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-information",
+     "title": "App information - App Store Connect Help",
+     "supports": "name and subtitle"
+    },
+    {
+     "url": "https://developer.apple.com/app-store/product-page/",
+     "title": "Creating your product page - Apple Developer",
+     "supports": "writing guidance per field"
+    },
+    {
+     "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-information",
+     "title": "In-App Purchase information - App Store Connect Help",
+     "supports": "IAP display name and description limits"
+    }
+   ],
+   "related": [
+    "genre:app_store_listing",
+    "genre:release_notes",
+    "plat:google_play_listing"
+   ],
+   "limits": [
+    {
+     "field": "description",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information",
+     "checked": "2026-10-04",
+     "quote": "Limited to 4000 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "app name",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-information",
+     "checked": "2026-10-04",
+     "quote": "The name must be at least two characters and no more than 30 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "subtitle",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-information",
+     "checked": "2026-10-04",
+     "quote": "This can't be longer than 30 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "promotional text",
+     "max": 170,
+     "unit": "chars",
+     "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information",
+     "checked": "2026-10-04",
+     "quote": "This property can't be longer than 170 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "keywords",
+     "max": 100,
+     "unit": "bytes",
+     "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information",
+     "checked": "2026-10-04",
+     "quote": "You can provide up to 100 bytes of content.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "what's new in this version",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information",
+     "checked": "2026-10-04",
+     "quote": "Limited to 4000 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "in-app purchase display name",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-information",
+     "checked": "2026-10-04",
+     "quote": "The display name must be at least two characters and no more than 30 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "in-app purchase description",
+     "max": 45,
+     "unit": "chars",
+     "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-information",
+     "checked": "2026-10-04",
+     "quote": "The description must be no more than 45 characters.",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Description is plain text: no HTML, so no bold or markup. Structure it as Apple suggests: a concise paragraph followed by a short list of main features.",
+    "Promotional text sits at the top of the description, is up to 170 characters, and can be changed at any time without submitting a new version.",
+    "Keywords: comma-separated with no spaces after commas (spaces only inside a multi-word phrase), each term more than two characters, measured in bytes. Commas are ASCII and take 1 byte each; assume they count.",
+    "Name and subtitle are 30 characters each; the subtitle appears below the name throughout the App Store.",
+    "In-app purchase display name is 30 characters, its description 45 characters.",
+    "How Apple counts Devanagari or emoji in the character fields is not stated on the pages read: unverified; test in App Store Connect."
+   ],
+   "writing_notes": [
+    "Lint: the default test is the description (4,000). Use `--field \"app name\"`, `--field subtitle`, `--field \"promotional text\"`, `--field keywords` (counted in UTF-8 bytes, matching Apple's unit), `--field \"what's new\"`, `--field \"purchase display\"`, `--field \"purchase description\"`.",
+    "Sources disagree on one word: Apple's product-page guide describes the keyword field as '100 characters', while App Store Connect Help (the field specification) says 100 bytes. Trust BYTES: it is the field spec, and it only matters for non-Latin text.",
+    "The description's first sentence is what users read without tapping 'more': put the app's job and its user there (for example, who files GST returns on a phone in under 5 minutes). Features list comes after, short.",
+    "Promotional text is the lever you can change fast: use it for a time-limited offer or an upcoming feature, not for permanent claims.",
+    "Subtitle writing: name the use, not the praise. 'GST bills in 2 taps' (19 chars) says more than 'Best billing app' (16 chars).",
+    "Write the keyword field last, from terms NOT already in the name and subtitle; Apple says not to repeat them."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Apple: the first sentence of the description is what users can read without tapping to read more; promotional text appears at the top of the description and can be updated without a new version; do not add unnecessary keywords to the description to improve search.",
+     "url": "https://developer.apple.com/app-store/product-page/"
+    }
+   ]
+  },
+  {
+   "id": "plat:bluesky_bio",
+   "kind": "platform",
+   "name": "Bluesky profile bio and display name",
+   "status": "niche",
+   "summary": "The display name (64 graphemes) and bio (256 graphemes) on a Bluesky profile, with a separate website field. Good copy says who you are, what you post about and why a stranger should follow, in 256 graphemes or fewer (roughly 40 English words).",
+   "use_for": [
+    "A creator, journalist or brand bio on Bluesky.",
+    "A display name that carries the name plus one searchable descriptor.",
+    "Cross-posting a LinkedIn or X bio, trimmed to the Bluesky limit."
+   ],
+   "avoid": [
+    "Pasting an X or Instagram bio unchanged: the unit here is graphemes (256), not the same count as other platforms. Re-count it.",
+    "Putting the profile link inside the bio text: the profile has its own website field (a URI), so keep the bio for words.",
+    "A bio that is only a role title ('Founder | Speaker | Dreamer'). Say what you post about and for whom."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json",
+     "title": "atproto lexicon app.bsky.actor.profile",
+     "supports": "bio 256 graphemes, display name 64 graphemes, pronouns 20"
+    }
+   ],
+   "related": [
+    "genre:social_bio",
+    "plat:bluesky_post"
+   ],
+   "limits": [
+    {
+     "field": "bio (description)",
+     "max": 256,
+     "unit": "chars",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json",
+     "checked": "2026-10-04",
+     "quote": "\"description\": { \"type\": \"string\", \"description\": \"Free-form profile description text.\", \"maxGraphemes\": 256, \"maxLength\": 2560 }",
+     "confidence": "high (official protocol lexicon; graphemes)"
+    },
+    {
+     "field": "display name",
+     "max": 64,
+     "unit": "chars",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json",
+     "checked": "2026-10-04",
+     "quote": "\"displayName\": { \"type\": \"string\", \"maxGraphemes\": 64, \"maxLength\": 640 }",
+     "confidence": "high (official protocol lexicon; graphemes)"
+    },
+    {
+     "field": "pronouns",
+     "max": 20,
+     "unit": "chars",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/actor/profile.json",
+     "checked": "2026-10-04",
+     "quote": "\"pronouns\": { \"type\": \"string\", \"description\": \"Free-form pronouns text.\", \"maxGraphemes\": 20",
+     "confidence": "high (official protocol lexicon; graphemes)"
+    }
+   ],
+   "formatting": [
+    "Bio (description) is free-form text, up to 256 graphemes (the lexicon also caps it at 2,560 bytes); display name up to 64 graphemes; pronouns up to 20 graphemes.",
+    "Graphemes are user-perceived characters: an emoji or a Devanagari conjunct counts as one (item note).",
+    "The profile has a separate website field (format URI).",
+    "Whether links, hashtags or mentions typed in a bio render as clickable is NOT established by the sources read (the lexicon page covers limits only): unverified, check the live profile."
+   ],
+   "writing_notes": [
+    "Lint: the default test is the bio at 256 chars; the lint counts Unicode code points, which are never fewer than graphemes, so a draft that passes the lint fits. A Hindi draft that fails by a small margin may still fit: confirm in the Bluesky editor before cutting. Display name: `--field \"display name\"`; pronouns: `--field pronouns`.",
+    "Formula for 256: who you are (name/role/city) + what you post about + proof or a reason to follow + one line of personality. Example: \"Brand writer in Pune. I turn founder notes into LinkedIn posts that get replies. Open for 3 retainer slots.\" (107 chars).",
+    "Lead with what a stranger scanning a follow list needs: topic first, title second.",
+    "For a Hinglish creator profile, keep the first clause in the language of the posts the account will make, so the bio filters the right followers."
+   ]
+  },
+  {
+   "id": "plat:bluesky_post",
+   "kind": "platform",
+   "name": "Bluesky post",
+   "status": "niche",
+   "summary": "A post on Bluesky (the app.bsky.feed.post record): up to 300 graphemes, 3,000 UTF-8 bytes and up to 8 extra tags beyond hashtags in the text. Posts are plain text with clickable links, mentions and hashtags; there is no bold or italic.",
+   "use_for": [
+    "Short English or Hinglish posts for a brand, newsroom or creator account on Bluesky.",
+    "Thread-style posts where each post stands alone (the limit is per post).",
+    "Link posts that carry one claim and one URL."
+   ],
+   "avoid": [
+    "Counting a Hindi or emoji-heavy post in bytes or code points and cutting it too early: the limit is 300 graphemes, where an emoji or a Devanagari conjunct is one. Check the second limit too: 3,000 bytes (10 bytes per grapheme on average).",
+    "Writing bold or italic markers (**, *): there is no text styling on Bluesky, so they show as literal characters.",
+    "Spending the character budget on a long URL plus a long quote: lead with the claim and keep the link in the same post.",
+    "Hashtag walls: use one or two where they help discovery; the record allows 8 extra tags but that is a ceiling, not a target."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json",
+     "title": "atproto lexicon app.bsky.feed.post",
+     "supports": "300 graphemes / 3000 bytes per post, up to 8 extra tags"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/bluesky-social/atproto/main/lexicons/app/bsky/richtext/facet.json",
+     "title": "atproto lexicon app.bsky.richtext.facet",
+     "supports": "clickable mention, link and tag facets; tag limited to 64 graphemes; facets address UTF-8 byte ranges"
+    }
+   ],
+   "related": [
+    "plat:bluesky_bio",
+    "plat:x_post",
+    "plat:threads_post"
+   ],
+   "limits": [
+    {
+     "field": "post text",
+     "max": 300,
+     "unit": "chars",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json",
+     "checked": "2026-10-04",
+     "quote": "\"text\": { \"type\": \"string\", \"maxLength\": 3000, \"maxGraphemes\": 300",
+     "confidence": "high (official protocol lexicon; unit is graphemes, i.e. user-perceived characters)"
+    },
+    {
+     "field": "post text (UTF-8 bytes)",
+     "max": 3000,
+     "unit": "bytes",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json",
+     "checked": "2026-10-04",
+     "quote": "\"maxLength\": 3000, \"maxGraphemes\": 300",
+     "confidence": "high (official protocol lexicon)"
+    },
+    {
+     "field": "extra tags (beyond in-text hashtags)",
+     "max": 8,
+     "unit": "count",
+     "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json",
+     "checked": "2026-10-04",
+     "quote": "Additional hashtags, in addition to any included in post text and facets.\", \"maxLength\": 8",
+     "confidence": "high (official protocol lexicon)"
+    }
+   ],
+   "formatting": [
+    "Limit is 300 graphemes (user-perceived characters) and 3,000 UTF-8 bytes; the extra-tags field takes up to 8 tags beyond any hashtags in the text.",
+    "Links, mentions and hashtags are clickable because the client attaches 'facets' to the text: the facet lexicon defines mention, link and tag features, and a hashtag facet is limited to 64 graphemes.",
+    "No bold or italic: the facet types read are mention, link and tag only (inference from the lexicon; the original harvest note flagged formatting as general knowledge, so confirm in the composer).",
+    "Line breaks: not covered by the lexicon pages read; preview a multi-line post before delivering."
+   ],
+   "writing_notes": [
+    "Lint: default test is 300 chars; the lint counts code points (never below graphemes), so a pass is safe. The bytes limit: `pcw.py check draft.txt --platform plat:bluesky_post --field bytes`. A Devanagari character is 3 bytes in UTF-8, so 300 graphemes of Hindi use at least 900 bytes and more once conjuncts add code points; the 3,000-byte cap bites only on conjunct-heavy or ZWJ-emoji-heavy text, so run the bytes check on every Hindi post.",
+    "Put the claim in the first line: readers meet the first sentence in a feed. Example (Hinglish, \"GST notice aaya? Pehle 3 cheezein check karo: notice ka section, reply ki last date, aur pichle 12 mahine ke returns. Baaki sab uske baad.\" (138 chars)).",
+    "One post = one idea. A reply or a second post carries the next step; do not compress a thread into 300 characters.",
+    "If a client wants the same copy on X, write a separate cut: do not assume the two limits are equal."
+   ]
+  },
+  {
+   "id": "plat:chrome_extension_listing",
+   "kind": "platform",
+   "name": "Chrome extension description (manifest + Web Store)",
+   "status": "niche",
+   "summary": "The `description` string in a Chrome extension's manifest: plain text, no HTML, no more than 132 characters, shown in the browser and the store listing. The Web Store's detailed description has no stated character limit.",
+   "use_for": [
+    "The one-line description a developer puts in manifest.json.",
+    "The first line of the Chrome Web Store detailed description (same promise, expanded).",
+    "A B2B productivity extension that needs one sentence a finance or ops user understands."
+   ],
+   "avoid": [
+    "HTML, bullets or markdown in the manifest string: it is plain text only. Put structure in the Web Store's detailed description.",
+    "A slogan ('The smartest way to work'). State the verb, the object and the benefit: what the extension does to what.",
+    "Running past 132 characters: the manifest value is a hard cap. Cut adjectives first, keep the verb and object.",
+    "Assuming the Web Store detailed description is unlimited and so unstructured: the guide states no limit, but readers still scan; use a first-line summary and a short feature list."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developer.chrome.com/docs/extensions/reference/manifest/description",
+     "title": "Manifest - Description - Chrome for Developers",
+     "supports": "132-character plain-text limit"
+    }
+   ],
+   "related": [
+    "genre:app_store_listing",
+    "plat:google_play_listing"
+   ],
+   "limits": [
+    {
+     "field": "manifest description",
+     "max": 132,
+     "unit": "chars",
+     "url": "https://developer.chrome.com/docs/extensions/reference/manifest/description",
+     "checked": "2026-10-04",
+     "quote": "A plain text string (no HTML or other formatting; no more than 132 characters) that describes the extension.",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Manifest description: plain text string, no HTML or other formatting, no more than 132 characters.",
+    "Web Store listing guide asks for a detailed description and states no character limit for it (none found when checked).",
+    "Devanagari, emoji and localisation handling are not covered by the page read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check draft.txt --platform plat:chrome_extension_listing` tests the manifest description at 132 chars.",
+    "Formula: [verb] [object] [from/for what] so [benefit]. Example: \"Fills GST invoice fields from your Tally export so you stop retyping the same 14 columns.\" (89 chars).",
+    "Write the detailed description after the manifest line and open it with the same promise, then 4-6 feature lines, then who it is for. There is no limit to hit, so cut for the reader.",
+    "No claims the extension cannot back in its first run (speed, accuracy numbers) unless the client can show the test."
+   ]
+  },
+  {
+   "id": "plat:discord_bio",
+   "kind": "platform",
+   "name": "Discord About Me, display name and username",
+   "status": "current",
+   "summary": "A Discord profile has an About Me of up to 190 characters (counting emoji, markdown and links), a display name of 1-32 characters and a username of 2-32 characters. About Me renders markdown, links and emoji; each server can have its own About Me with the same limit.",
+   "use_for": [
+    "Community manager, moderator or founder profile for a brand's Discord server.",
+    "Per-server About Me that tells members what you can help with in that server.",
+    "Display name and username that match the brand's other handles."
+   ],
+   "avoid": [
+    "Spending the 190 on markdown: `**bold**` adds 4 characters and a pasted URL counts in full. Bold at most one phrase and keep the link short.",
+    "A username written as a pitch: usernames are 2-32 characters and work as an identifier; put the pitch in About Me.",
+    "Writing the same About Me for every server: each server profile has its own 190 characters, so use it for the server's purpose."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.discord.com/hc/en-us/articles/4403147417623-Custom-Profiles",
+     "title": "Discord Support: Custom Profiles",
+     "supports": "About Me 190 chars"
+    },
+    {
+     "url": "https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names",
+     "title": "Discord Support: New Usernames & Display Names",
+     "supports": "display name and username 32 chars"
+    }
+   ],
+   "related": [
+    "genre:social_bio",
+    "plat:discord_message"
+   ],
+   "limits": [
+    {
+     "field": "About Me",
+     "max": 190,
+     "unit": "chars",
+     "url": "https://support.discord.com/hc/en-us/articles/4403147417623-Custom-Profiles",
+     "checked": "2026-10-04",
+     "quote": "Up to 190 characters (this includes emojis, markdown text, and links)",
+     "confidence": "high (Discord Support)"
+    },
+    {
+     "field": "display name",
+     "max": 32,
+     "unit": "chars",
+     "url": "https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names",
+     "checked": "2026-10-04",
+     "quote": "Display names must be at least 1 character and at most 32 characters long",
+     "confidence": "high (Discord Support)"
+    },
+    {
+     "field": "username",
+     "max": 32,
+     "unit": "chars",
+     "url": "https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names",
+     "checked": "2026-10-04",
+     "quote": "Usernames must be at least 2 characters and at most 32 characters long",
+     "confidence": "high (Discord Support)"
+    }
+   ],
+   "formatting": [
+    "About Me: up to 190 characters including emoji, markdown text and links.",
+    "Renders markdown, links and emoji; per-server profiles have their own 190-character About Me.",
+    "Display name 1-32 characters; username 2-32 characters.",
+    "How Discord counts Devanagari or multi-part emoji toward 190 is not stated on the pages read: unverified, check the profile editor counter."
+   ],
+   "writing_notes": [
+    "Lint: default test is About Me at 190 chars; run `--field \"display name\"` or `--field username` for the others. Count the markdown symbols and the full link text: they are part of the 190.",
+    "Pattern: role + what you do for members + how to reach you. Example: \"Pune D2C ops nerd. Weekly GST + shipping tips in #ops-help. Replies in Hinglish, DMs open.\" (90 chars).",
+    "Hinglish works in About Me when the server is Hinglish; match the server's language, not the brand's website."
+   ]
+  },
+  {
+   "id": "plat:discord_message",
+   "kind": "platform",
+   "name": "Discord message",
+   "status": "current",
+   "summary": "A Discord chat message is up to 2,000 characters (4,000 for Nitro subscribers) and renders Discord markdown: bold, italic, underline, headings, lists, code, quotes and spoilers. Bots and webhooks can add up to 10 rich embeds totalling 6,000 characters.",
+   "use_for": [
+    "Announcements, patch notes and event reminders in a community server.",
+    "Moderator and support replies inside a thread or ticket.",
+    "Bot or webhook messages with embeds for launches and alerts."
+   ],
+   "avoid": [
+    "Writing past 2,000 characters for members: the client converts the paste into a .txt file attachment that readers must open. Split into two messages or move the long version to a link.",
+    "Assuming everyone can send 4,000: that cap needs Discord Nitro. Write to 2,000 unless every sender has Nitro.",
+    "A wall of text: markdown headings and lists render, so use a bold first line and a short list.",
+    "Pinging with @everyone for routine news: it works against the community you manage. Reserve it for time-critical notices."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://discord.com/developers/docs/resources/message",
+     "title": "Discord Developer Docs: Message resource",
+     "supports": "2000-char content, 10 embeds / 6000 chars"
+    },
+    {
+     "url": "https://support.discord.com/hc/en-us/articles/360034632292-Sending-Messages",
+     "title": "Discord Support: Sending Messages",
+     "supports": "2000 cap, over-limit pastes become a text file, Nitro 4000"
+    },
+    {
+     "url": "https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline",
+     "title": "Discord Support: Markdown Text 101",
+     "supports": "chat formatting: bold, italic, underline and other markdown"
+    }
+   ],
+   "related": [
+    "genre:community_post",
+    "genre:comment_reply",
+    "plat:discord_bio"
+   ],
+   "limits": [
+    {
+     "field": "message content",
+     "max": 2000,
+     "unit": "chars",
+     "url": "https://discord.com/developers/docs/resources/message",
+     "checked": "2026-10-04",
+     "quote": "content?* string Message contents (up to 2000 characters)",
+     "confidence": "high (Discord developer docs)"
+    },
+    {
+     "field": "message content (Nitro subscriber)",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://support.discord.com/hc/en-us/articles/360034632292-Sending-Messages",
+     "checked": "2026-10-04",
+     "quote": "The character cap per message is 2000. ... You can raise the character cap limit to 4000 when you subscribe to Discord Nitro.",
+     "confidence": "high (Discord Support)"
+    },
+    {
+     "field": "rich embeds per message (bots/webhooks)",
+     "max": 10,
+     "unit": "count",
+     "url": "https://discord.com/developers/docs/resources/message",
+     "checked": "2026-10-04",
+     "quote": "embeds array of embed objects Up to 10 rich embeds (up to 6000 characters)",
+     "confidence": "high (Discord developer docs)"
+    },
+    {
+     "field": "all embeds combined",
+     "max": 6000,
+     "unit": "chars",
+     "url": "https://discord.com/developers/docs/resources/message",
+     "checked": "2026-10-04",
+     "quote": "Up to 10 rich embeds (up to 6000 characters)",
+     "confidence": "high (Discord developer docs)"
+    }
+   ],
+   "formatting": [
+    "Markdown renders: **bold**, *italic*, __underline__, headings (#), lists, `code`, > quotes, ||spoilers||.",
+    "Links auto-embed.",
+    "Messages over 2,000 characters are converted to a .txt file attachment by the client.",
+    "Embeds (bots and webhooks): up to 10 per message, up to 6,000 characters combined.",
+    "How Devanagari and emoji count toward 2,000 is not stated on the pages read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: default test is 2,000 chars; `--field Nitro` tests 4,000; `--field \"all embeds\"` tests 6,000 for the combined embed text.",
+    "Structure for an announcement: bold first line with the fact and the time, then 2-4 short lines, then what the member must do. Example: \"**Maintenance tonight 11 PM-12 AM IST.** Orders placed in that hour sync at 12:15 AM. No action needed from you. Questions: reply in this thread.\" (145 chars).",
+    "Write to 2,000 as the working ceiling unless the sender is confirmed on Nitro, and keep the important line in the first two lines so it survives a skim.",
+    "For a mixed Hindi-English community, post the key line in the server's main language and put the second language in a reply, not the same wall."
+   ]
+  },
+  {
+   "id": "plat:email_subject_line",
+   "kind": "platform",
+   "name": "Email subject line and preview text",
+   "status": "current",
+   "summary": "The subject, from name and preview text a subscriber sees before opening an email. No email standard sets a subject length, so the figures here (60 characters, 9 words, 3 punctuation marks, 1 emoji) are Mailchimp's recommendations, not rules; the only hard cap is the 998-character header line of RFC 5322.",
+   "use_for": [
+    "Subject + preview text pair for a promotional, newsletter or win-back send.",
+    "Cold email subject lines (short, specific, no marketing words).",
+    "Choosing the from-name that the recipient reads first."
+   ],
+   "avoid": [
+    "Treating 60 characters as a rule: it is a third-party recommendation, and visible length varies by client and device with no official figure. Put the hook words first so a cut tail costs nothing.",
+    "Leaving preview text unset: if it is not set, clients pull in the first text of the email, often 'View in browser'. Write it to continue the subject, not repeat it.",
+    "Punctuation and emoji stacking ('!!! 50% OFF !!!'): Mailchimp recommends at most 3 punctuation marks and 1 emoji per subject.",
+    "Assuming a long subject is rejected: RFC 5322 allows lines up to 998 characters (78 recommended); long subjects may be folded onto more lines, so length is a readability problem, not a delivery error."
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://mailchimp.com/help/best-practices-for-email-subject-lines/",
+     "title": "Best Practices for Email Subject Lines - Mailchimp Help",
+     "supports": "9 words / 60 characters, punctuation and emoji guidance"
+    },
+    {
+     "url": "https://mailchimp.com/help/about-preview-text/",
+     "title": "About Preview Text - Mailchimp Help",
+     "supports": "preview text behaviour (no number given)"
+    },
+    {
+     "url": "https://www.rfc-editor.org/rfc/rfc5322.txt",
+     "title": "RFC 5322 Internet Message Format (IETF)",
+     "supports": "998/78 character line limits"
+    }
+   ],
+   "related": [
+    "genre:promotional_email",
+    "genre:cold_email",
+    "genre:editorial_newsletter",
+    "genre:winback_email",
+    "trend:email_deliverability_rules",
+    "plat:gmail_clipping"
+   ],
+   "limits": [
+    {
+     "field": "subject line (recommended)",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://mailchimp.com/help/best-practices-for-email-subject-lines/",
+     "checked": "2026-10-04",
+     "quote": "We recommend you use no more than 9 words and 60 characters.",
+     "confidence": "low (third-party ESP research recommendation, Mailchimp; email standards set no subject length)"
+    },
+    {
+     "field": "subject line words (recommended)",
+     "max": 9,
+     "unit": "words",
+     "url": "https://mailchimp.com/help/best-practices-for-email-subject-lines/",
+     "checked": "2026-10-04",
+     "quote": "We recommend you use no more than 9 words and 60 characters.",
+     "confidence": "low (third-party ESP research recommendation, Mailchimp; email standards set no subject length)"
+    },
+    {
+     "field": "punctuation marks per subject (recommended)",
+     "max": 3,
+     "unit": "count",
+     "url": "https://mailchimp.com/help/best-practices-for-email-subject-lines/",
+     "checked": "2026-10-04",
+     "quote": "it's best to use no more than 3 punctuation marks per subject line",
+     "confidence": "low (third-party ESP research recommendation, Mailchimp; email standards set no subject length)"
+    },
+    {
+     "field": "emojis per subject (recommended)",
+     "max": 1,
+     "unit": "count",
+     "url": "https://mailchimp.com/help/best-practices-for-email-subject-lines/",
+     "checked": "2026-10-04",
+     "quote": "you should use no more than 1 emoji at a time",
+     "confidence": "low (third-party ESP research recommendation, Mailchimp; email standards set no subject length)"
+    },
+    {
+     "field": "any single header line incl. Subject (long subjects may be folded onto more lines)",
+     "max": 998,
+     "unit": "chars",
+     "url": "https://www.rfc-editor.org/rfc/rfc5322.txt",
+     "checked": "2026-10-04",
+     "quote": "Each line of characters MUST be no more than 998 characters, and SHOULD be no more than 78 characters, excluding the CRLF.",
+     "confidence": "high (IETF RFC 5322, the email message format standard)"
+    }
+   ],
+   "formatting": [
+    "Subject is plain text. Mailchimp recommends no more than 9 words, 60 characters, 3 punctuation marks and 1 emoji.",
+    "RFC 5322: each header line must be no more than 998 characters and should be no more than 78, excluding the line break; long subjects may be folded.",
+    "Preview text: if unset, clients show the first text of the email; Mailchimp says most clients limit how much is shown but gives no number, so no preheader length is recorded here.",
+    "Devanagari and emoji rendering in subjects is not covered by the sources read: unverified; test a real send to Gmail and Outlook."
+   ],
+   "writing_notes": [
+    "Lint: default test is the 60-character recommendation. `--field words` tests 9 words. The lint cannot count punctuation marks or emoji for 'count' fields (it counts hashtags), so check those two by hand.",
+    "Conflict handling: 60/9/3/1 are low-confidence ESP guidance; RFC 5322 is the only high-confidence limit. Write to 60 and 9 words as a house default, and let the client's own open-rate data overrule it.",
+    "Write 5 subject variants with different angles (number, question, outcome, name, deadline) and pick one; do not stop at the first.",
+    "Pair them: subject carries the hook, preview carries the proof or the next detail. Example subject \"3 GST notice replies we filed this week\" (39 chars) with preview \"Copy the template that cleared a Rs 4.2 lakh demand, no login needed.\" (69 chars).",
+    "Avoid spam-trigger styling and misleading 'Re:' or 'Fwd:' prefixes; see trend:email_deliverability_rules.",
+    "Preheader / preview text: no inbox provider publishes a cap. Mailchimp's Preview Text field takes up to 150 characters (mailchimp.com/help/create-and-send-regular-email) and Litmus recommends under 90 (litmus.com/blog/the-ultimate-guide-to-preview-text-support); write the point in the first 40-50 characters and pair it with the subject, never repeat it. (lead fix 2026-10-07)"
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Mailchimp: if preview text is not set, email clients pull in the first text from the email (often 'View in browser'); most clients limit how much preview text they show.",
+     "url": "https://mailchimp.com/help/about-preview-text/"
+    }
+   ]
+  },
+  {
+   "id": "plat:etsy_listing",
+   "kind": "platform",
+   "name": "Etsy listing (title, tags, description)",
+   "status": "current",
+   "summary": "An Etsy listing is found mainly through a title of up to 140 characters and up to 13 tags of up to 20 characters each, plus a description. Etsy advises titles under 15 words with no repetition and no subjective words such as 'perfect'.",
+   "use_for": [
+    "Title for a handmade, vintage or digital product, written for the search phrase first.",
+    "13 tags that are 13 different buyer phrases, each within 20 characters.",
+    "Description that answers size, material, use, care and shipping."
+   ],
+   "avoid": [
+    "Subjective words ('perfect', 'best', 'stunning'), repetition, and price or delivery information in the title: Etsy advises against all three. Use material, size, style, occasion.",
+    "Tags that break the character rules: tags may contain only letters, numbers and spaces, with an apostrophe or hyphen allowed inside words but not at the start. Do not use symbols or emoji in tags.",
+    "Using a title symbol more than once: Etsy's API spec allows %, :, & and + only once each in a title.",
+    "Publishing before the title is final: the listing URL is fixed from the title at first publish."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://help.etsy.com/hc/en-gb/articles/115015628707",
+     "title": "How to Create a Listing - Etsy Help",
+     "supports": "title length and title advice"
+    },
+    {
+     "url": "https://help.etsy.com/hc/en-us/articles/360000336307",
+     "title": "How to Use Tags to Get Found in Search - Etsy Help",
+     "supports": "13 tags, 20 characters each, allowed characters"
+    },
+    {
+     "url": "https://www.etsy.com/openapi/generated/oas/3.0.0.json",
+     "title": "Etsy Open API v3 spec",
+     "supports": "allowed characters in titles and tags"
+    }
+   ],
+   "related": [
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "plat:amazon_product_listing"
+   ],
+   "limits": [
+    {
+     "field": "listing title",
+     "max": 140,
+     "unit": "chars",
+     "url": "https://help.etsy.com/hc/en-gb/articles/115015628707",
+     "checked": "2026-10-04",
+     "quote": "A listing's title can be up to 140 characters long.",
+     "confidence": "high (Etsy Help; Cloudflare blocks plain clients, read through the r.jina.ai reader)"
+    },
+    {
+     "field": "tags per listing",
+     "max": 13,
+     "unit": "count",
+     "url": "https://help.etsy.com/hc/en-us/articles/360000336307",
+     "checked": "2026-10-04",
+     "quote": "You can use up to 13 tags per listing.",
+     "confidence": "high (Etsy Help; Cloudflare blocks plain clients, read through the r.jina.ai reader)"
+    },
+    {
+     "field": "characters per tag",
+     "max": 20,
+     "unit": "chars",
+     "url": "https://help.etsy.com/hc/en-us/articles/360000336307",
+     "checked": "2026-10-04",
+     "quote": "Each tag can contain up to 20 characters.",
+     "confidence": "high (Etsy Help; Cloudflare blocks plain clients, read through the r.jina.ai reader)"
+    }
+   ],
+   "formatting": [
+    "Title up to 140 characters; Etsy advises fewer than 15 words.",
+    "Up to 13 tags per listing, each up to 20 characters; letters, numbers and spaces, with ' and - allowed inside words but not at the start.",
+    "Title characters %, :, & and + may each appear only once (Etsy Open API spec).",
+    "Whether Devanagari characters are accepted as 'letters' in tags is not stated in the pages read: unverified, test in the listing form."
+   ],
+   "writing_notes": [
+    "Lint: default test is the title at 140. Test each tag one per file with `--field \"per tag\"` (20 chars). The 13-tag count must be checked by hand.",
+    "Title formula: the main search phrase first, then material, size or style, then the use or occasion. Example: \"Hand Block Printed Cotton Table Runner Jaipur Indigo Dabu Print 12x72 inch Dining Table Decor\" (93 chars).",
+    "Tag formula: 13 different phrases, multi-word where possible, each up to 20 characters (13 x 20 = 260 characters of tag space), for example \"dabu print runner\" (17 chars).",
+    "Write the description after the title and put the facts a buyer asks in DMs first: dimensions, material, colour accuracy, care, production time.",
+    "For Indian sellers shipping abroad, state size in inches and centimetres and mention the handmade process once, without superlatives."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Etsy Help: a title can be up to 140 characters, advice is fewer than 15 words, no repetition, no subjective words, no price or delivery info.",
+     "url": "https://help.etsy.com/hc/en-gb/articles/115015628707"
+    },
+    {
+     "note": "Etsy Help: up to 13 tags of 20 characters each.",
+     "url": "https://help.etsy.com/hc/en-us/articles/360000336307"
+    }
+   ]
+  },
+  {
+   "id": "plat:gmail_clipping",
+   "kind": "platform",
+   "name": "Gmail message clipping (email size)",
+   "status": "current",
+   "summary": "Gmail clips an email whose message size passes about 102 KB and hides the rest behind a 'View entire message' link, which also hides the open-tracking pixel and the footer. The size is the whole HTML source, not the visible words. The 102 KB figure comes from Mailchimp, not from Google.",
+   "use_for": [
+    "Pre-send check of long newsletters and promotional emails built with heavy HTML.",
+    "Deciding when to cut a section, trim inline styles or link out to the web version.",
+    "Keeping the unsubscribe link and footer above the clip line."
+   ],
+   "avoid": [
+    "Judging size by word count: size is the HTML source including tracking URLs and styles. A 600-word email with heavy markup can clip.",
+    "Putting the unsubscribe footer after a long block of content: clipping hides it. Keep the footer and the key call to action high.",
+    "Trusting 102 KB as a precise line: Google publishes no figure and '1 KB' may mean 1,000 or 1,024 bytes. Stay well under 100 KB.",
+    "Writing a Hindi HTML email without checking size: Devanagari takes 3 bytes per character in UTF-8, so Hindi copy costs more than the same number of English characters."
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://mailchimp.com/help/gmail-is-clipping-my-email/",
+     "title": "Gmail is Clipping My Email - Mailchimp Help",
+     "supports": "102KB clipping threshold, what counts toward size"
+    }
+   ],
+   "related": [
+    "genre:promotional_email",
+    "genre:editorial_newsletter",
+    "genre:product_update_newsletter",
+    "plat:email_subject_line"
+   ],
+   "limits": [
+    {
+     "field": "email message size before Gmail clips (source says 102KB)",
+     "max": 102000,
+     "unit": "bytes",
+     "url": "https://mailchimp.com/help/gmail-is-clipping-my-email/",
+     "checked": "2026-10-04",
+     "quote": "Gmail clips emails that have a message size larger than 102KB, and hides the full content behind a \"View entire message\" link.",
+     "confidence": "low (third-party: Mailchimp Help; Google publishes no figure)"
+    }
+   ],
+   "formatting": [
+    "Size counts the whole message HTML, including tracking URLs and styles; the item estimates each character at about 1-2 bytes.",
+    "Gmail hides the clipped part behind a 'View entire message' link; clipping also hides the open-tracking pixel and the footer or unsubscribe link.",
+    "102,000 bytes is the conservative reading of '102KB'."
+   ],
+   "writing_notes": [
+    "Lint: run the check on the final HTML file, not the plain text: `pcw.py check email.html --platform plat:gmail_clipping`. It counts UTF-8 bytes against 102,000. Aim well under 100 KB.",
+    "Treat the number as a ceiling on the template, not on the copy: reuse a lean template, inline only the styles you need, and keep long tracked URLs to a minimum.",
+    "Put the most important call to action inside the first third of the email so a clip never hides it.",
+    "If the content must be long, link to a web page for the long version and keep the email a summary."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Mailchimp: Gmail clips emails with a message size larger than 102KB and hides the full content behind a 'View entire message' link.",
+     "url": "https://mailchimp.com/help/gmail-is-clipping-my-email/"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_ads_app_campaign",
+   "kind": "platform",
+   "name": "Google Ads App campaign text assets",
+   "status": "current",
+   "summary": "Short text lines for an App campaign: headlines of up to 30 characters and descriptions of up to 90, which Google combines with app store assets across Search, Play, YouTube and Display. Every line has to make sense alone and in any combination with the others.",
+   "use_for": [
+    "Headlines that name one feature or one use of the app each.",
+    "Descriptions that finish the thought with a benefit and a reason to install.",
+    "A set of lines for English plus Hindi or Hinglish audiences, written as separate standalone assets."
+   ],
+   "avoid": [
+    "Running one sentence across two lines: Google's own example rejects a headline that exceeds the maximum this way. Each line must be a complete thought.",
+    "Lines that refer to each other ('It does the rest', 'That is why'): lines are combined in any order, so a pronoun can land after the wrong line. Name the app or the thing every time.",
+    "Writing for one placement: the same lines run across Search, Play, YouTube and Display, so avoid text that only works beside a specific image.",
+    "Quoting an asset count (how many headlines to supply) without checking the campaign screen: the help page read states the character limits, not the quantities."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/google-ads/answer/6357595?hl=en",
+     "title": "About assets and ads in App campaigns - Google Ads Help",
+     "supports": "headline and description maximums"
+    }
+   ],
+   "related": [
+    "genre:app_store_listing",
+    "genre:search_ad_copy",
+    "plat:google_play_listing",
+    "plat:apple_app_store"
+   ],
+   "limits": [
+    {
+     "field": "headline",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/6357595?hl=en",
+     "checked": "2026-10-04",
+     "quote": "headlines (maximum 30 characters)",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "description",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/6357595?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Description (maximum 90 characters)",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Headline: maximum 30 characters. Description: maximum 90 characters.",
+    "Plain text assets; each line must work on its own and in any combination with other lines.",
+    "Combined with app store assets; Google picks the arrangement.",
+    "Devanagari counting is not stated on the page read: unverified; check the counter in the campaign editor."
+   ],
+   "writing_notes": [
+    "Lint: default test is the headline (30). Use `--field description` for 90.",
+    "Write 5-6 headlines that each make one distinct claim (a feature, a user, a number, an action) and 3-4 descriptions that each pair a benefit with a reason to act. Example headline \"File GST Returns on Phone\" (25 chars); description \"Make GST bills in 2 taps, share on WhatsApp and track dues. Free to start.\" (74 chars).",
+    "Test every pair by reading line A then line B then line B then line A: if either order breaks the sense, rewrite the second line.",
+    "The headline names the job, the description handles the objection (free, offline, in Hindi). Hindi or Hinglish lines go in as their own standalone assets, not mixed inside an English line."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google App campaigns: each line must make sense alone or in any combination with the other lines; a headline that runs one sentence across two lines is rejected.",
+     "url": "https://support.google.com/google-ads/answer/6357595?hl=en"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_ads_assets",
+   "kind": "platform",
+   "name": "Google Ads sitelink and callout assets",
+   "status": "current",
+   "summary": "Sitelink assets (link text up to 25 characters) and callout assets (text up to 25 characters, up to 10 shown) that expand a Google Search ad; they were called ad extensions. In double-width languages such as Chinese, Japanese and Korean the limit is 12.",
+   "use_for": [
+    "Sitelink link text that names the page behind it (pricing, a form, a service).",
+    "Callouts that state short, concrete reasons to choose the advertiser (fixed fee, 24 hour support).",
+    "Sitelink descriptions (optional) to unlock the expanded sitelink format."
+   ],
+   "avoid": [
+    "Sitelink text that is a mini-headline ('Learn More'): name the page so the click is predictable. 'Fees and Plans' tells the searcher where the link goes.",
+    "Callouts that repeat the headline: use new facts (payment terms, hours, coverage).",
+    "Writing callouts that only work as a set: depending on spacing, browser and device, you can show up to 10 callouts, and which show varies.",
+    "Assuming a sitelink description length: the help page read does not state it, so it is not recorded. Check the asset editor."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/google-ads/answer/2375416?hl=en",
+     "title": "About sitelink assets - Google Ads Help",
+     "supports": "sitelink text limit; descriptions optional but recommended"
+    },
+    {
+     "url": "https://support.google.com/google-ads/answer/6079510?hl=en",
+     "title": "About callout assets - Google Ads Help",
+     "supports": "callout text limit, up to 10 shown"
+    }
+   ],
+   "related": [
+    "genre:search_ad_copy",
+    "plat:google_ads_rsa",
+    "plat:google_ads_pmax"
+   ],
+   "limits": [
+    {
+     "field": "sitelink link text",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/2375416?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Sitelink text is limited to 25 characters in most languages, or 12 characters in double-width languages like Chinese, Japanese, and Korean.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "callout text",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/6079510?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Callout text is limited to 25 characters in most languages, or 12 characters in double-width languages (like Chinese, Japanese, and Korean).",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "callouts shown",
+     "max": 10,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/6079510?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Depending on the character spacing, browser, and device you're using, you can show up to 10 callouts.",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Sitelink text and callout text: 25 characters in most languages, 12 in double-width languages (CJK).",
+    "Up to 10 callouts can show, depending on character spacing, browser and device.",
+    "Sitelink description lines are optional but needed for the expanded sitelink format; their limit is not recorded.",
+    "Devanagari is not named as a double-width language on the pages read, so 25 applies by the pages' own wording; combining-mark counting is unverified."
+   ],
+   "writing_notes": [
+    "Lint: default test is sitelink text (25); callout text uses the same 25: run `--field callout`.",
+    "Sitelinks: \"GST Notice Help\" (15 chars), \"Fees and Plans\" (14 chars), \"Book a Call\" (11 chars). Callouts: \"Fixed Fee\" (9 chars), \"CA-Drafted Replies\" (18 chars), \"Mon-Sat 10 AM-7 PM\" (18 chars).",
+    "Each asset must stand alone because callouts and sitelinks are picked and ordered by Google.",
+    "Write sitelinks and callouts after the headlines so they add new information instead of repeating."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google: depending on character spacing, browser and device you can show up to 10 callouts.",
+     "url": "https://support.google.com/google-ads/answer/6079510?hl=en"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_ads_demand_gen",
+   "kind": "platform",
+   "name": "Google Ads Demand Gen ad text",
+   "status": "current",
+   "summary": "Text for Demand Gen image, carousel and video ads that run in YouTube (including Shorts), Discover, Gmail and Display feeds: headlines up to 40 characters (at least one of 30 or fewer), descriptions up to 90, and a business name up to 25. It replaced Discovery campaigns.",
+   "use_for": [
+    "Feed ads for a product launch or lead offer on YouTube and Discover.",
+    "A set of 1-5 headlines and 1-5 descriptions that each work with any image.",
+    "Business name that matches how the brand is known."
+   ],
+   "avoid": [
+    "Writing every headline at 31-40 characters: at least one headline must be 30 characters or fewer or the ad shows an 'Incomplete' Ad Strength rating and cannot serve on Display. Write one short headline first.",
+    "Using the same line in several slots: you get 1-5 headlines and 1-5 descriptions, so spend each on a different angle.",
+    "Treating it like a search ad: feeds are browsed, not searched. Open with the benefit or the curiosity, not the keyword."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/google-ads/answer/17091672?hl=en",
+     "title": "Demand Gen campaigns specs and format requirements - Google Ads Help",
+     "supports": "text asset maximum lengths and quantities"
+    }
+   ],
+   "related": [
+    "genre:social_ad_copy",
+    "genre:display_banner_ad_copy",
+    "plat:google_ads_pmax",
+    "plat:google_ads_responsive_display"
+   ],
+   "limits": [
+    {
+     "field": "headline",
+     "max": 40,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091672?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Headlines | 40 characters (Note: At least one headline must be 30 characters or fewer ... and ensure the ad can serve on Display.)",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "description",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091672?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Descriptions | 90 characters | 1-5 descriptions",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "business name",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/17091672?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Business name | 25 characters | 1 name",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "headlines per ad",
+     "max": 5,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/17091672?hl=en",
+     "checked": "2026-10-04",
+     "quote": "1-5 headlines",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "descriptions per ad",
+     "max": 5,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/17091672?hl=en",
+     "checked": "2026-10-04",
+     "quote": "1-5 descriptions",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Headline: 40 characters, 1-5 headlines; at least one must be 30 or fewer.",
+    "Description: 90 characters, 1-5 descriptions.",
+    "Business name: 25 characters, 1 name.",
+    "Plain text assets paired with the image, carousel or video the campaign uses."
+   ],
+   "writing_notes": [
+    "Lint: default test is the headline at 40; `--field description` 90; `--field \"business name\"` 25. Remember the separate rule: at least one headline of 30 or fewer, which the lint does not test: check it by hand.",
+    "Write the 30-character headline first; then four longer ones up to 40. Example short \"Pune-roasted masala chai, 250g\" (30 chars), long \"Small-batch chai, delivered pan-India\" (37 chars).",
+    "Description example \"Whole cardamom, dry ginger, small-batch roasting. Try the 250g starter pack.\" (76 chars); business name \"Brew Rani\" (9 chars).",
+    "Feed attention is short: put the proof or the offer in the headline, and the next step in the description."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google: at least one headline must be 30 characters or fewer to avoid an 'Incomplete' Ad Strength rating and to let the ad serve on Display.",
+     "url": "https://support.google.com/google-ads/answer/17091672?hl=en"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_ads_pmax",
+   "kind": "platform",
+   "name": "Google Ads Performance Max text assets",
+   "status": "current",
+   "summary": "Text assets for a Performance Max asset group: headlines of 30 characters (at least one of 15 or fewer), long headlines of 90, descriptions of 90, a business name of 25 and two display URL path fields of 15. Google mixes them across Search, YouTube, Display, Discover, Gmail and Maps.",
+   "use_for": [
+    "A full asset group: 3-15 headlines, 1-5 long headlines, 2-5 descriptions.",
+    "Short and long headlines written for different placements.",
+    "Business name exactly matching the domain or the verified legal business name."
+   ],
+   "avoid": [
+    "Supplying the minimum set: Google recommends 11+ headlines, 2+ long headlines and 4+ descriptions. Write more distinct assets rather than rewording one.",
+    "No short headline: include at least one of 15 characters or fewer for short placements.",
+    "Long headlines that are short: Google says to try to make sure long headlines are at least 30 characters.",
+    "A business name with extra symbols or promotional text: it must exactly match the domain or the verified legal business name.",
+    "Ignoring ad policy: PMax text follows the same editorial policy as responsive search ads (no misused caps or symbols such as FREE!!!)."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/google-ads/answer/14528373?hl=en",
+     "title": "About text assets for Performance Max campaigns - Google Ads Help",
+     "supports": "full text asset table"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en",
+     "title": "Editorial - Google Ads policy",
+     "supports": "PMax text follows the same editorial policy as responsive search ads (capitalisation, punctuation, symbols)"
+    }
+   ],
+   "related": [
+    "genre:search_ad_copy",
+    "genre:display_banner_ad_copy",
+    "plat:google_ads_rsa",
+    "plat:google_merchant_center"
+   ],
+   "limits": [
+    {
+     "field": "headline",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/14528373?hl=en",
+     "checked": "2026-10-04",
+     "quote": "30 characters max; include at least one with 15 characters or less",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "long headline",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/14528373?hl=en",
+     "checked": "2026-10-04",
+     "quote": "90 characters maximum; try to make sure headlines are at least 30 characters long",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "description",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/14528373?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Descriptions | 90 characters maximum",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "business name",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/14528373?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Business name | 25 characters maximum",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "display URL path (each of 2)",
+     "max": 15,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/14528373?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Display URL path | 15 characters maximum each",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "headlines per asset group",
+     "max": 15,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/14528373?hl=en",
+     "checked": "2026-10-04",
+     "quote": "11+ (minimum of 3, maximum of 15)",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "long headlines per asset group",
+     "max": 5,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/14528373?hl=en",
+     "checked": "2026-10-04",
+     "quote": "2+ (minimum of 1, maximum of 5)",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "descriptions per asset group",
+     "max": 5,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/14528373?hl=en",
+     "checked": "2026-10-04",
+     "quote": "4+ (minimum of 2, maximum of 5)",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Headline 30 characters (3-15 per group; 11+ recommended; at least one of 15 or fewer).",
+    "Long headline 90 characters (1-5 per group; 2+ recommended; at least 30 characters each).",
+    "Description 90 characters (2-5 per group; 4+ recommended).",
+    "Business name 25 characters; display URL path 15 characters each (two).",
+    "Same editorial policy as responsive search ads."
+   ],
+   "writing_notes": [
+    "Lint: default test is the headline (30). `--field \"long headline\"` tests 90; `--field description` 90; `--field \"business name\"` 25; `--field path` 15. The 15-character short-headline rule is not tested by the lint: check by hand.",
+    "Write in layers: at least one short headline of 15 or fewer ('Masala Chai', 11 chars), more headlines up to 30 until you reach Google's recommended 11 ('Small-Batch Pune Chai'), long headlines of 30-90 ('Small-batch masala chai roasted in Pune and delivered across India'), and descriptions up to 90 ('Whole cardamom and dry ginger, roasted in small batches. Order the 250g starter pack.').",
+    "Every asset must stand alone and be safe in any combination.",
+    "Each asset carries a different angle (product, proof, offer, audience, action): do not paraphrase the same line.",
+    "Verify the business name against the domain before submitting."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google asks for at least one headline of 15 characters or fewer (short placements) and recommends 11+ headlines.",
+     "url": "https://support.google.com/google-ads/answer/14528373?hl=en"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_ads_responsive_display",
+   "kind": "platform",
+   "name": "Google Ads responsive display ad",
+   "status": "current",
+   "summary": "A Display Network ad that Google assembles from 1-5 short headlines (30 characters), one long headline (90), 1-5 descriptions, a business name and images. Short headlines can appear with or without the description, and the business name shows exactly as entered.",
+   "use_for": [
+    "Display ads for retargeting or awareness where images carry the message.",
+    "A short headline set and a long headline that works alone as the ad's main line.",
+    "A description that adds the offer or the action."
+   ],
+   "avoid": [
+    "Short headlines that depend on the description: short headlines may appear without it, so each must stand alone.",
+    "A long headline that only makes sense next to an image: it must read alone.",
+    "Misspelling or miscapitalising the business name: it displays exactly as entered. Copy the brand's own styling.",
+    "Counting on the help page for description and business-name limits: the 'Create a responsive display ad' page does not state them. The specs page lists description 90 and business name 25."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/google-ads/answer/7005917?hl=en",
+     "title": "Create a responsive display ad - Google Ads Help",
+     "supports": "headline, long headline and description counts"
+    },
+    {
+     "url": "https://support.google.com/google-ads/answer/17090561?hl=en",
+     "title": "Responsive display ads specs and format requirements - Google Ads Help",
+     "supports": "text asset table: headline 30, long headline 90, description 90 (1-5), business name 25"
+    }
+   ],
+   "related": [
+    "genre:display_banner_ad_copy",
+    "plat:google_ads_demand_gen",
+    "plat:google_ads_pmax"
+   ],
+   "limits": [
+    {
+     "field": "short headline",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/7005917?hl=en",
+     "checked": "2026-10-04",
+     "quote": "A short headline (at least 1, or up to 5 headlines, of 30 characters or fewer).",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "long headline",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/7005917?hl=en",
+     "checked": "2026-10-04",
+     "quote": "A long headline (90 characters or fewer).",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "short headlines per ad",
+     "max": 5,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/7005917?hl=en",
+     "checked": "2026-10-04",
+     "quote": "at least 1, or up to 5 headlines",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "descriptions per ad",
+     "max": 5,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/7005917?hl=en",
+     "checked": "2026-10-04",
+     "quote": "A description (at least 1, or up to 5 descriptions).",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Short headline: 30 characters or fewer, 1-5 per ad. Long headline: 90 characters or fewer.",
+    "Description: 1-5 per ad (the specs page lists 90 characters); business name 25 characters (specs page).",
+    "Business name shows exactly as entered.",
+    "Devanagari counting is not stated on the pages read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: default test is the short headline (30). `--field \"long headline\"` tests 90. For the description (90) and business name (25) lint with `--platform plat:google_ads_pmax --field description` / `--field \"business name\"`, which carry the same limits.",
+    "Examples: short \"Chai, Roasted in Pune\" (21 chars), long \"Small-batch masala chai with whole cardamom and ginger, delivered across India\" (78 chars), description \"Order the 250g starter pack today.\" (34 chars).",
+    "Write the long headline first (it is the full message), then cut it into 3-5 short headlines each with one idea.",
+    "Pair each text set with the image brief: the image shows the product, the headline gives the reason."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google: short headlines may appear with or without the description; the business name is shown exactly as entered.",
+     "url": "https://support.google.com/google-ads/answer/7005917?hl=en"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_ads_rsa",
+   "kind": "platform",
+   "name": "Google Ads responsive search ad (RSA)",
+   "status": "current",
+   "summary": "A Google Search text ad that Google assembles from up to 15 headlines (30 characters each) and 4 descriptions (90 characters each), plus two 15-character display URL paths. Up to 3 headlines show at once, so every headline and description must make sense alone and in any combination.",
+   "use_for": [
+    "Search ad sets for a service or product: up to 15 headlines, up to 4 descriptions and 2 paths, with as many distinct angles as you honestly have.",
+    "Headlines covering different angles: service, location, proof, price model, action.",
+    "Pinning one headline only when legal or brand text must appear."
+   ],
+   "avoid": [
+    "Headlines that depend on each other: Google shows up to 3 headlines separated by a vertical pipe in any combination. Write each as a complete claim.",
+    "Heavy pinning: pinning reduces combinations and can lower Ad Strength. Pin only what must be fixed.",
+    "Capitalisation or punctuation used for emphasis (FREE!!!): editorial policy disallows capitals and symbols that aren't used correctly or for their intended purpose.",
+    "Counting a double-width character as one in Korean, Japanese or Chinese: each counts as two. Hindi is not listed as double-width.",
+    "Writing an expanded text ad: they can no longer be created or edited (since 30 June 2022)."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/google-ads/answer/7684791?hl=en",
+     "title": "About responsive search ads - Google Ads Help",
+     "supports": "headline/description counts, pinning, assembly"
+    },
+    {
+     "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
+     "title": "About text ads - Google Ads Help",
+     "supports": "per-field character limits table and double-width rule"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en",
+     "title": "Editorial - Google Ads policy",
+     "supports": "capitalization, punctuation/symbols, repetition rules"
+    }
+   ],
+   "related": [
+    "genre:search_ad_copy",
+    "plat:google_ads_assets",
+    "plat:google_ads_pmax",
+    "plat:microsoft_ads_rsa"
+   ],
+   "limits": [
+    {
+     "field": "headline",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Headline 1 | 30 characters",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "description",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Description 1 | 90 characters",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "display URL path (each of 2)",
+     "max": 15,
+     "unit": "chars",
+     "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Path (2) | 15 characters each",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "headlines per ad",
+     "max": 15,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/7684791?hl=en",
+     "checked": "2026-10-04",
+     "quote": "You'll need to enter a minimum of 3 headlines, but you can enter up to 15.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "descriptions per ad",
+     "max": 4,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/7684791?hl=en",
+     "checked": "2026-10-04",
+     "quote": "You'll need to enter a minimum of 2 descriptions, but you can enter up to 4.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "headlines shown at once",
+     "max": 3,
+     "unit": "count",
+     "url": "https://support.google.com/google-ads/answer/7684791?hl=en",
+     "checked": "2026-10-04",
+     "quote": "can show up to 3 headlines in the traditional headline position",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Headline 30 characters; description 90; display URL path 2 x 15 characters.",
+    "Headlines: minimum 3, maximum 15. Descriptions: minimum 2, maximum 4. Up to 3 headlines show in the headline position.",
+    "Limits are the same in every language, but double-width characters count as two.",
+    "Combining-mark handling for Devanagari is not stated on the pages read: unverified; check the Google Ads counter."
+   ],
+   "writing_notes": [
+    "Lint: default test is the headline (30). `--field description` 90 and `--field path` 15 each. Test each line in its own file.",
+    "Example for a Jaipur CA firm (GST notice handling for D2C brands): headlines \"GST Notice? Reply in 7 Days\" (27 chars); \"CA-Drafted Reply, Fixed Fee\" (27 chars); \"Jaipur CA Firm for D2C Brands\" (29 chars). Description \"CAs read your notice, draft the reply and file it. Fixed fee quoted upfront. Book a call.\" (89 chars). Paths \"gst-notice\" (10 chars), \"jaipur\" (6 chars).",
+    "Use the 15 slots for different angles: the service, who it is for, the fixed-fee model, the location, the proof and the call to action. Do not paraphrase one line fifteen times.",
+    "Check the combinations: read headline 1 | headline 2 | headline 3 in several orders; each must be grammatical and not contradict itself."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google: pinning reduces the combinations Google can test and can lower Ad Strength; up to 3 headlines show, separated by a vertical pipe.",
+     "url": "https://support.google.com/google-ads/answer/7684791?hl=en"
+    },
+    {
+     "note": "Google's editorial policy disallows capitalisation and symbols that are not used correctly or for their intended purpose.",
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_business_profile",
+   "kind": "platform",
+   "name": "Google Business Profile",
+   "status": "current",
+   "summary": "A business's 'From the business' description (up to 750 characters, no URLs or HTML) and its posts on Google Search and Maps. The 1,500-character post cap is evidenced only by community threads, so treat it as an unconfirmed ceiling.",
+   "use_for": [
+    "The business description for a clinic, CA firm, restaurant or shop.",
+    "Update, offer and event posts.",
+    "Local SEO profile refresh."
+   ],
+   "avoid": [
+    "Putting a URL or HTML in the description: Google says the description has no URLs or HTML code.",
+    "Writing the description as an ad: Google says focus on the business rather than promotions, prices or sales. Put offers in posts.",
+    "Writing posts with misspellings, extra characters or text that adds no value: Google's posts policy asks for professional posts.",
+    "Relying on 1,500 as a rule: it comes from a community forum thread, not a help article. Write posts far shorter."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://support.google.com/business/answer/3039617?hl=en",
+     "title": "Edit your Business Profile - Google Business Profile Help",
+     "supports": "description guidelines incl. 750-char limit, no URLs/HTML"
+    },
+    {
+     "url": "https://support.google.com/business/thread/39749391/is-there-a-way-to-post-more-than-1500-characters-in-a-post?hl=en",
+     "title": "Google Business Profile Community thread",
+     "supports": "users hitting the 1,500-character post limit"
+    },
+    {
+     "url": "https://support.google.com/business/answer/7342169?hl=en",
+     "title": "Business Profile posts content policy",
+     "supports": "post quality rules"
+    }
+   ],
+   "related": [
+    "genre:local_business_listing",
+    "genre:local_seo_page",
+    "plat:google_search_result"
+   ],
+   "limits": [
+    {
+     "field": "business description",
+     "max": 750,
+     "unit": "chars",
+     "url": "https://support.google.com/business/answer/3039617?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Do not exceed 750 characters in the description field.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "post (update/offer/event) text",
+     "max": 1500,
+     "unit": "chars",
+     "url": "https://support.google.com/business/thread/39749391/is-there-a-way-to-post-more-than-1500-characters-in-a-post?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Is there a way to post more than 1500 characters in a post?",
+     "confidence": "low (Google Business Profile community forum thread, not a help article)"
+    }
+   ],
+   "formatting": [
+    "Description: up to 750 characters; no URLs or HTML.",
+    "Posts: 1,500 characters per community-thread evidence (low confidence); professional posts policy applies.",
+    "Description focus: the business itself, not promotions, prices or sales.",
+    "Devanagari and emoji counting are not stated in the sources read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: default test is the description (750, official). Post text: `--field post`: 1,500, low-confidence.",
+    "Conflict handling: trust 750 (a Google help page). Treat 1,500 as a loose ceiling.",
+    "Description formula: who you are and where + what you do + who you serve + hours or how to reach you. Example: \"Sharma & Rao Associates is a chartered accountancy firm in C-Scheme, Jaipur. We handle GST registration, returns and notice replies, income tax filing and statutory audits for small businesses and D2C brands. Our team of CAs and article assistants works with clients across Rajasthan. Visit us Monday to Saturday, 10 AM to 7 PM, or call to book a consultation.\" (360 chars).",
+    "State services in the words customers use, not in firm jargon. Put the offer or event in a post with a date, not in the description.",
+    "Write the description in the language customers search in; the sources read do not address language."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google's Business Profile posts content policy asks for professional posts without misspellings, extra characters or text that adds no value.",
+     "url": "https://support.google.com/business/answer/7342169?hl=en"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_merchant_center",
+   "kind": "platform",
+   "name": "Google Merchant Center product data (Shopping)",
+   "status": "current",
+   "summary": "Product title (1-150 characters) and description (1-5,000 characters) in a Google Merchant Center feed, used by Shopping ads, free listings and Performance Max. Google truncates over-length text with a warning, and users usually notice only the first 70 or fewer characters of a title.",
+   "use_for": [
+    "Feed titles that distinguish variants (size, colour, pack).",
+    "Plain-text product descriptions that front-load key facts.",
+    "Feeds for PMax and Shopping where text is read by people and by Google."
+   ],
+   "avoid": [
+    "Promotional text in titles or descriptions: no price, sale price, sale dates, shipping, delivery date, other time-related information, or your company's name in titles, and no promotional text such as price or sale in descriptions.",
+    "Capitals for emphasis, symbols, HTML tags, extra white space: all listed as things not to use.",
+    "Links to your store or other sites, comparisons with other products, or references to product categories in the description.",
+    "Foreign-language words or characters for gimmick: allowed only if the word is well understood internationally. Use the product's real name in the language of the target market.",
+    "Submitting AI-written text in the plain fields: titles and descriptions created with generative AI must go in structured_title and structured_description."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/merchants/answer/6324415?hl=en",
+     "title": "Title [title] - Google Merchant Center Help",
+     "supports": "title limit, truncation, best practice 'Use all 150 characters'"
+    },
+    {
+     "url": "https://support.google.com/merchants/answer/6324468?hl=en",
+     "title": "Description [description] - Google Merchant Center Help",
+     "supports": "description limit, front-load first 160-500 chars"
+    }
+   ],
+   "related": [
+    "genre:product_description",
+    "genre:marketplace_listing",
+    "trend:agentic_commerce_product_content",
+    "plat:google_ads_pmax",
+    "plat:shopify_seo_fields"
+   ],
+   "limits": [
+    {
+     "field": "title",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://support.google.com/merchants/answer/6324415?hl=en",
+     "checked": "2026-10-04",
+     "quote": "[title] : 1–150 characters",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "description",
+     "max": 5000,
+     "unit": "chars",
+     "url": "https://support.google.com/merchants/answer/6324468?hl=en",
+     "checked": "2026-10-04",
+     "quote": "[description] : 1–5,000 characters",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "Title: 1-150 characters; Google truncates an over-length title and issues a warning.",
+    "Description: 1-5,000 characters, plain text only: no HTML or markup; escape symbols with XML entities in feeds.",
+    "Put the most important details first: users usually notice only the first 70 or fewer characters of a title; list the most important description details in the first 160-500 characters.",
+    "Generative AI: use structured_title and structured_description instead of title and description."
+   ],
+   "writing_notes": [
+    "Lint: default test is the title (150). `--field description` tests 5,000.",
+    "Two numbers in tension, one rule: the help page's best practice is to use the available 150 characters, but users usually notice only the first 70. Put identifying words (product type, key attribute) in the first 70 and spend the rest on variant details.",
+    "Title example: \"Masala Chai Tea 250g, Small-Batch Assam Black Tea with Whole Cardamom and Dry Ginger, Loose Leaf Blend\" (102 chars). Note it has no price, no store name, no promo words, no caps for emphasis.",
+    "Description example (plain text, facts first): \"Small-batch masala chai blend, 250g loose leaf. Assam black tea with whole green cardamom and dry ginger, roasted in Pune. Brew one level teaspoon per cup with hot milk and water. Store airtight, away from sunlight.\" (215 chars). State only what the client can prove from the product: ingredients, weight, brewing and care.",
+    "Do not add the store name: Google's rule excludes your company's name from titles. Check Google's category guidance before putting a product brand in the title.",
+    "If AI helps draft the text, tell the feed owner so it is submitted in the structured attributes."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google truncates a title that exceeds 150 characters and issues a warning; users usually notice only the first 70 or fewer characters.",
+     "url": "https://support.google.com/merchants/answer/6324415?hl=en"
+    },
+    {
+     "note": "Description guidance: list the most important details in the first 160-500 characters; descriptions made with generative AI go in structured_description.",
+     "url": "https://support.google.com/merchants/answer/6324468?hl=en"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_play_listing",
+   "kind": "platform",
+   "name": "Google Play store listing",
+   "status": "current",
+   "summary": "An Android app's store listing text: a 30-character name, an 80-character short description (the first text users see on the detail page in the Play Store app) and a 4,000-character full description. Limits apply to full-width and half-width characters alike.",
+   "use_for": [
+    "App name and short description that say what the app does.",
+    "Full description: a lead paragraph then features, who it is for, languages and support.",
+    "Localised listings (English and Hindi) written separately."
+   ],
+   "avoid": [
+    "A short description that is a slogan: it is the first text users see, so state the job and the user ('Make GST bills in 2 taps...').",
+    "Using the full 4,000 as a target: it is a ceiling. Put the strongest paragraph first.",
+    "Assuming Apple's rules apply: Apple has a 100-byte keyword field and plain-text descriptions; Play's help page read lists name, short description and full description only.",
+    "Guessing markup support: the page read states limits only. Markup in the full description is unverified; write plain text."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/googleplay/android-developer/answer/9859152?hl=en",
+     "title": "Create and set up your app - Play Console Help",
+     "supports": "store listing character limits"
+    }
+   ],
+   "related": [
+    "genre:app_store_listing",
+    "plat:apple_app_store",
+    "plat:chrome_extension_listing"
+   ],
+   "limits": [
+    {
+     "field": "full description",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9859152?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Your app's description on Google Play. | 4000 character limit",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "app name (title)",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9859152?hl=en",
+     "checked": "2026-10-04",
+     "quote": "Your app's name on Google Play. | 30 character limit",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "short description",
+     "max": 80,
+     "unit": "chars",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9859152?hl=en",
+     "checked": "2026-10-04",
+     "quote": "The first text users see when looking at your app's detail page on the Play Store app. | 80 character limit",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "formatting": [
+    "App name: 30 characters. Short description: 80 characters. Full description: 4,000 characters.",
+    "Character limits apply to both full-width and half-width characters.",
+    "The short description is the first text users see on the app detail page in the Play Store app.",
+    "Markup and emoji support are not covered by the page read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: default test is the full description (4,000). `--field \"app name\"` 30; `--field short` 80.",
+    "Short description example: \"Make GST bills in 2 taps and track unpaid dues. Built for Indian shopkeepers.\" (77 chars).",
+    "Full description order: lead paragraph (job, user, one proof), feature list, languages and offline behaviour, support line.",
+    "Write the Hindi listing natively from the same brief, not translated word for word; the limits are in characters (full-width and half-width alike)."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google Play Console: the short description is the first text users see when looking at the app's detail page in the Play Store app.",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9859152?hl=en"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_search_result",
+   "kind": "platform",
+   "name": "Google Search result (title link + meta description snippet)",
+   "status": "current",
+   "summary": "The blue title link and the description snippet a page shows in Google's results. Google sets no length limit and truncates by device width, and it may rewrite both. The 60 and 160 character figures are Moz's guidance, not Google's.",
+   "use_for": [
+    "Title tags and meta descriptions for blog posts, landing pages, category and local pages.",
+    "Rewriting titles and snippets on pages with impressions but low clicks.",
+    "Briefing a developer on the SEO title and meta description fields."
+   ],
+   "avoid": [
+    "Quoting 60 and 160 as Google's rules: Google states no limit; they are third-party guidance (Moz). Write as a target, not a hard line.",
+    "Counting characters as if truncation were by characters: it is by pixel width, so wide characters cut earlier than the character count suggests.",
+    "Chasing keywords in the title: Google may rewrite the title link and the snippet, so write ones that describe the page.",
+    "Assuming your description will always show as written: Google may rewrite the snippet."
+   ],
+   "confidence": "low",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/title-link",
+     "title": "Influencing your title links in search results - Google Search Central",
+     "supports": "no limit on <title>; truncated to device width"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/snippet",
+     "title": "Control your snippets in search results - Google Search Central",
+     "supports": "no limit on meta description; truncated as needed"
+    },
+    {
+     "url": "https://moz.com/learn/seo/title-tag",
+     "title": "Title Tag - Moz",
+     "supports": "third-party 50-60 character display guidance"
+    },
+    {
+     "url": "https://moz.com/learn/seo/meta-description",
+     "title": "Meta Description - Moz",
+     "supports": "third-party 120-160 characters / ~680 px guidance"
+    }
+   ],
+   "related": [
+    "genre:blog_post",
+    "genre:landing_page",
+    "genre:category_page",
+    "genre:local_seo_page",
+    "trend:ai_overviews_zero_click",
+    "trend:geo_ai_search",
+    "plat:shopify_seo_fields"
+   ],
+   "limits": [
+    {
+     "field": "title tag (display guidance; Google sets NO limit)",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://moz.com/learn/seo/title-tag",
+     "checked": "2026-10-04",
+     "quote": "If you keep your titles under 60 characters, ... you can expect about 90% of your titles to display correctly in the SERPs.",
+     "confidence": "low (third-party only: Moz guidance; Google states no length limit)"
+    },
+    {
+     "field": "meta description (display guidance; Google sets NO limit)",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://moz.com/learn/seo/meta-description",
+     "checked": "2026-10-04",
+     "quote": "Meta descriptions should be between 50–160 characters or around 680 pixels.",
+     "confidence": "low (third-party only: Moz guidance; Google states no length limit)"
+    }
+   ],
+   "formatting": [
+    "Plain text in <title> and <meta name=description>; no markup.",
+    "Google: no limit on a <title> element; the title link is truncated as needed, typically to fit the device width.",
+    "Google: no limit on a meta description; the snippet is truncated as needed, typically to fit the device width.",
+    "Moz guidance (low): titles under 60 characters, descriptions 50-160 characters or about 680 pixels.",
+    "Devanagari width and truncation are not covered by the sources read: preview Hindi titles in a SERP tool."
+   ],
+   "writing_notes": [
+    "Lint: default test is the Moz 60-character title guidance; `--field \"meta description\"` tests 160. A pass means 'probably not truncated', not 'accepted'.",
+    "Conflict handling: Google says no limit, Moz says 60 and 160. Trust Google that truncation is by pixel width, and use Moz's numbers as a safe proxy, with the key words first.",
+    "Title formula: primary phrase first, then the benefit or the format, then the brand. Example: \"GST Notice Reply Format: 7-Day Checklist | Sharma & Rao CA\" (58 chars).",
+    "Meta description formula: answer the query, add one proof or a next step. Example: \"How to reply to a GST show-cause notice: the documents to gather, the portal steps and a reply template, written by Jaipur CAs.\" (127 chars).",
+    "Write unique titles and descriptions per page; Google may rewrite weak ones."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google Search Central: no limit on how long a <title> element can be, but the title link is truncated as needed, typically to fit the device width.",
+     "url": "https://developers.google.com/search/docs/appearance/title-link"
+    },
+    {
+     "note": "Google Search Central: no limit on how long a meta description can be, but the snippet is truncated as needed, typically to fit the device width.",
+     "url": "https://developers.google.com/search/docs/appearance/snippet"
+    }
+   ]
+  },
+  {
+   "id": "plat:instagram_bio",
+   "kind": "platform",
+   "name": "Instagram profile bio",
+   "status": "current",
+   "summary": "The free-text bio on an Instagram profile: up to 150 characters, visible to anyone. Good bios say who the account is for, what it offers and the one next step.",
+   "use_for": [
+    "A brand or creator bio: audience, offer, proof, next step.",
+    "A Hinglish bio for an Indian D2C brand or local business.",
+    "A rewrite to point to the link in the profile's own link field."
+   ],
+   "avoid": [
+    "Writing a bio that only lists titles. Say what the reader gets.",
+    "Treating a link typed in the bio as the profile link: the profile has separate link slots (unverified, general knowledge).",
+    "Putting private contact details in the bio: Instagram's help page warns that anyone can see it.",
+    "Hashtag stuffing: the 150 characters are better spent on the offer."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://help.instagram.com/728994388226960",
+     "title": "Instagram Help: Add a bio to your Instagram profile",
+     "supports": "bio up to 150 characters"
+    }
+   ],
+   "related": [
+    "genre:social_bio",
+    "genre:link_in_bio_copy",
+    "plat:instagram_caption"
+   ],
+   "limits": [
+    {
+     "field": "bio",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://help.instagram.com/728994388226960",
+     "checked": "2026-10-04",
+     "quote": "You can write a bio of up to 150 characters on your Instagram profile.",
+     "confidence": "high (Instagram Help Center)"
+    }
+   ],
+   "formatting": [
+    "Bio up to 150 characters.",
+    "Anyone can see the bio.",
+    "Links typed in the bio are not the profile link field; the profile has separate link slots. [Unverified: general platform knowledge, not quoted from a page read on 2026-10-04.]",
+    "@mentions and hashtags in the bio are tappable. [Unverified, same caveat.]",
+    "Line-break, emoji and Devanagari counting are not covered by the help page read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: `pcw.py check bio.txt --platform plat:instagram_bio` tests 150 characters (code points); emoji counting on Instagram is unverified, so keep a margin of a few characters.",
+    "Formula: who it is for + what you offer + proof or place + next step. Examples: \"Pune ki small-batch masala chai. Ghar tak delivery, pan-India. Order link neeche.\" (81 chars) and \"Brand writer, Pune | Founder notes to LinkedIn posts | 3 retainer slots open | DM WRITE\" (87 chars).",
+    "Say the CTA in words and point to the link slot ('link neeche').",
+    "Hinglish works when the audience speaks it; keep brand names in Latin script."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,493 @@
+{
+ "kind": "editing",
+ "items": [
+  {
+   "id": "edit:ab_test_copy",
+   "name": "A/B test copy",
+   "category": "SEO & testing",
+   "one_line": "Change one copy element, split traffic randomly, decide the success metric and sample size in advance, and keep the winner only if the difference holds.",
+   "aliases": [
+    "split test",
+    "copy testing"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/A/B_testing",
+     "title": "A/B testing (Wikipedia)",
+     "supports": "method and statistics"
+    },
+    {
+     "url": "https://mailchimp.com/help/about-ab-tests/",
+     "title": "Mailchimp: About A/B tests",
+     "supports": "how email A/B tests on subject line, content, send time work"
+    },
+    {
+     "url": "https://www.optimizely.com/optimization-glossary/ab-testing",
+     "title": "Optimizely: A/B testing glossary",
+     "supports": "web A/B testing practice"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:accessible_writing_check",
+   "name": "Accessible writing check",
+   "category": "Accessibility & inclusion",
+   "one_line": "Check headings are real headings in order, instructions do not rely on colour or position alone, and abbreviations are expanded.",
+   "aliases": [
+    "WAI writing tips",
+    "accessibility copy review"
+   ],
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/tips/writing/",
+     "title": "W3C WAI: Writing for Web Accessibility",
+     "supports": "writing tips: informative titles and headings, clear link text, alt text, simple language, expanded abbreviations"
+    },
+    {
+     "url": "https://developers.google.com/style/accessibility",
+     "title": "Google style guide: Write accessible documentation",
+     "supports": "accessibility rules for writers"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/writing-for-accessibility/",
+     "title": "Mailchimp: Writing for accessibility",
+     "supports": "brand-guide accessibility rules"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:ai_tell_removal",
+   "name": "AI-tell removal",
+   "category": "AI-tell removal",
+   "one_line": "Find and rewrite the patterns that mark text as machine-written: inflated significance, promotional vocabulary, 'not X but Y', reflexive triplets, em-dash and bold overuse, chatbot residue.",
+   "aliases": [
+    "humanising",
+    "de-AI pass",
+    "signs of AI writing"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+     "title": "Wikipedia: Signs of AI writing",
+     "supports": "field guide of patterns: undue emphasis on significance, promotional language, negative parallelisms, rule of three, boldface and em-dash overuse, communication intended for the user"
+    }
+   ],
+   "note": "pcw.py check applies a high-signal subset (AI_TELLS); the full method is the humanizer skill. Wikipedia's page warns that these are signs, not proof.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:alt_text_check",
+   "name": "Alt-text check",
+   "category": "Accessibility & inclusion",
+   "one_line": "Confirm every informative image has alt text that conveys its purpose, decorative images have empty alt, and text-in-images is repeated in copy.",
+   "aliases": [
+    "image accessibility check"
+   ],
+   "sources": [
+    {
+     "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+     "title": "W3C WAI: An alt Decision Tree",
+     "supports": "deciding alt text per image type"
+    },
+    {
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html",
+     "title": "WCAG 2.2 Understanding SC 1.1.1 Non-text Content",
+     "supports": "text alternatives requirement"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:brand_voice_audit",
+   "name": "Brand-voice audit",
+   "category": "Workflow & QA",
+   "one_line": "Score the draft against the brand's voice attributes and tone dimensions; fix lines that drift off-voice.",
+   "aliases": [
+    "voice check",
+    "tone audit"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/tone-of-voice-dimensions/",
+     "title": "NN/g: The Four Dimensions of Tone of Voice",
+     "supports": "funny-serious, formal-casual, respectful-irreverent, enthusiastic-matter-of-fact"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/voice-and-tone/",
+     "title": "Mailchimp: Voice and tone",
+     "supports": "worked example of a brand voice guide"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/brand-voice-above-all-simple-human",
+     "title": "Microsoft Writing Style Guide: Brand voice",
+     "supports": "worked example of voice principles"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:cliche_pass",
+   "name": "Cliché and filler pass",
+   "category": "Self-edit passes",
+   "one_line": "Search for stock phrases, empty intensifiers and filler ('in order to', 'it is important to note') and replace or delete them.",
+   "aliases": [
+    "cliché hunt",
+    "filler purge"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Clich%C3%A9",
+     "title": "Cliché (Wikipedia)",
+     "supports": "definition of overused expressions"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pleonasm",
+     "title": "Pleonasm (Wikipedia)",
+     "supports": "redundant wording"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:client_feedback_rounds",
+   "name": "Client feedback and revision rounds",
+   "category": "Workflow & QA",
+   "one_line": "Agree the number of revision rounds and what counts as a revision vs new scope up front; consolidate feedback into one list per round.",
+   "aliases": [
+    "revision rounds",
+    "feedback consolidation"
+   ],
+   "sources": [
+    {
+     "url": "https://freelancersunion.org/resources/client-issues/",
+     "title": "Freelancers Union: Client issues",
+     "supports": "freelancer guidance on contracts and client problems"
+    }
+   ],
+   "note": "Low-confidence source; the round count is a contract term set per client, there is no standard number.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:cloze_test",
+   "name": "Cloze test",
+   "category": "Readability scoring",
+   "one_line": "Delete every Nth word, ask target readers to fill the gaps; their score measures real comprehension, not formula readability.",
+   "aliases": [
+    "comprehension test"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/cloze-test-reading-comprehension/",
+     "title": "NN/g: Cloze Test for Reading Comprehension",
+     "supports": "method; if users get 60% or more right the text is reasonably comprehensible for that audience"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Cloze_test",
+     "title": "Cloze test (Wikipedia)",
+     "supports": "definition"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:content_audit",
+   "name": "Content audit",
+   "category": "Workflow & QA",
+   "one_line": "Inventory existing pages or posts and judge each for accuracy, quality and performance: keep, update, merge or remove.",
+   "aliases": [
+    "content inventory",
+    "content refresh audit"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/content-audits/",
+     "title": "NN/g: Content Audits",
+     "supports": "how to run a quantitative and qualitative content audit"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Content_audit",
+     "title": "Content audit (Wikipedia)",
+     "supports": "definition"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:copy_edit",
+   "name": "Copy edit",
+   "category": "Editing levels",
+   "one_line": "Correct spelling, grammar, usage, punctuation and consistency against a style guide; check cross-references.",
+   "aliases": [
+    "copyediting",
+    "mechanical edit"
+   ],
+   "sources": [
+    {
+     "url": "https://www.the-efa.org/editorial-services-definitions/",
+     "title": "Editorial Freelancers Association: Editorial service definitions",
+     "supports": "copyediting covers spelling, grammar, usage, punctuation, cross-references and style sheets"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Copy_editing",
+     "title": "Copy editing (Wikipedia)",
+     "supports": "definition"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:cut_ten_percent",
+   "name": "Cut-10% pass",
+   "category": "Self-edit passes",
+   "one_line": "Aim to cut about a tenth of the draft: needless words, repeated points, throat-clearing openers, weak adverbs.",
+   "aliases": [
+    "second draft = first draft minus 10%",
+    "tightening pass"
+   ],
+   "sources": [
+    {
+     "url": "https://annerallen.com/2019/01/stephen-kings-10-rule/",
+     "title": "Anne R. Allen: Stephen King's 10% rule",
+     "supports": "describes King's formula from On Writing (secondary)"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain)",
+     "supports": "rule 13: omit needless words"
+    }
+   ],
+   "note": "The 10% formula comes from Stephen King, On Writing (2000), cited by name; it is a rule of thumb, not a measured target.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:developmental_edit",
+   "name": "Developmental edit",
+   "category": "Editing levels",
+   "one_line": "Big-picture pass on content, structure, argument and fit to the brief before any line work.",
+   "aliases": [
+    "structural edit",
+    "substantive edit",
+    "content edit"
+   ],
+   "sources": [
+    {
+     "url": "https://www.the-efa.org/editorial-services-definitions/",
+     "title": "Editorial Freelancers Association: Editorial service definitions",
+     "supports": "developmental editors deal with content, organisation and genre; deliver an edit letter"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Developmental_editing",
+     "title": "Developmental editing (Wikipedia)",
+     "supports": "definition"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:fact_check",
+   "name": "Fact-check",
+   "category": "Accuracy & originality",
+   "one_line": "List every checkable claim (numbers, names, dates, quotes, causal claims) and confirm each against a primary source before publishing.",
+   "aliases": [
+    "verification pass",
+    "claim check"
+   ],
+   "sources": [
+    {
+     "url": "https://ifcncodeofprinciples.poynter.org/the-commitments",
+     "title": "IFCN Code of Principles: the commitments",
+     "supports": "same standard for every check; best available primary sources; transparent methodology and corrections"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Fact-checking",
+     "title": "Fact-checking (Wikipedia)",
+     "supports": "pre-publication vs post-hoc fact-checking"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:flesch_kincaid_grade",
+   "name": "Flesch-Kincaid Grade Level",
+   "category": "Readability scoring",
+   "one_line": "Estimates the US school grade needed to read the text; pcw.py lint uses it as grade_max.",
+   "aliases": [
+    "FKGL",
+    "grade level"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests",
+     "title": "Flesch-Kincaid readability tests (Wikipedia)",
+     "supports": "grade-level formula, developed with J. Peter Kincaid for the US Navy"
+    },
+    {
+     "url": "https://hemingwayapp.com/help/docs/readability",
+     "title": "Hemingway Editor: Readability",
+     "supports": "Hemingway Editor Plus targets grade 9 by default, described as the US adult average"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:flesch_reading_ease",
+   "name": "Flesch Reading Ease",
+   "category": "Readability scoring",
+   "one_line": "Score 0-100 from sentence length and syllables per word; higher is easier. English only.",
+   "aliases": [
+    "FRE",
+    "Flesch score"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests",
+     "title": "Flesch-Kincaid readability tests (Wikipedia)",
+     "supports": "formula and score table; 60-70 labelled 'Plain English. Easily understood by 13- to 15-year-old students.'"
+    },
+    {
+     "url": "https://readable.com/readability/flesch-reading-ease-flesch-kincaid-grade-level/",
+     "title": "Readable: Flesch Reading Ease and Flesch-Kincaid Grade Level",
+     "supports": "explanation of both scores"
+    }
+   ],
+   "note": "Formula scores ignore meaning and order; use as a flag, not a pass mark. Yoast notes the Flesch score is English-only.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:grammar_tool_pass",
+   "name": "Grammar and spell-checker pass",
+   "category": "Accuracy & originality",
+   "one_line": "Run a grammar/spelling checker set to the right language variety, then judge each suggestion rather than accepting all.",
+   "aliases": [
+    "spellcheck",
+    "LanguageTool pass",
+    "Grammarly pass"
+   ],
+   "sources": [
+    {
+     "url": "https://languagetool.org/",
+     "title": "LanguageTool",
+     "supports": "open-source multilingual grammar and style checker"
+    }
+   ],
+   "note": "Set en-IN / en-GB / en-US deliberately; checkers flag Hinglish and Indian English usages as errors.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:gunning_fog",
+   "name": "Gunning fog index",
+   "category": "Readability scoring",
+   "one_line": "Grade-level estimate from sentence length and share of complex (3+ syllable) words; another flag for dense prose.",
+   "aliases": [
+    "fog index"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gunning_fog_index",
+     "title": "Gunning fog index (Wikipedia)",
+     "supports": "formula and interpretation"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:headline_testing",
+   "name": "Headline testing",
+   "category": "SEO & testing",
+   "one_line": "Write several headline or subject-line variants and test them on a slice of the audience before rolling out the winner.",
+   "aliases": [
+    "subject-line testing",
+    "packaging test"
+   ],
+   "sources": [
+    {
+     "url": "https://www.niemanlab.org/2023/03/negative-words-in-news-headlines-generate-more-clicks-but-sad-words-are-more-effective-than-angry-or-scary-ones/",
+     "title": "Nieman Lab (2023): what Upworthy's headline A/B tests showed",
+     "supports": "large analysis of real headline A/B tests"
+    },
+    {
+     "url": "https://mailchimp.com/help/about-ab-tests/",
+     "title": "Mailchimp: About A/B tests",
+     "supports": "subject-line testing in email"
+    }
+   ],
+   "note": "Headline families are hook: items; this is the testing method only.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:hemingway_check",
+   "name": "Hemingway Editor check",
+   "category": "Readability scoring",
+   "one_line": "Run the draft through Hemingway to flag hard sentences, adverbs, passive voice and complex words, then fix the worst offenders.",
+   "aliases": [
+    "Hemingway app"
+   ],
+   "sources": [
+    {
+     "url": "https://hemingwayapp.com/help/docs/readability",
+     "title": "Hemingway Editor: Readability",
+     "supports": "what the highlights mean; scores are only a guide; default grade 9 target with accessible/technical options"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:inclusive_language",
+   "name": "Inclusive-language review",
+   "category": "Accessibility & inclusion",
+   "one_line": "Remove biased, gendered, ableist or exclusionary wording and describe people the way they describe themselves.",
+   "aliases": [
+    "bias-free language",
+    "conscious language"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/style/inclusive-documentation",
+     "title": "Google style guide: Write inclusive documentation",
+     "supports": "inclusive-language rules and term replacements"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/bias-free-communication",
+     "title": "Microsoft Writing Style Guide: Bias-free communication",
+     "supports": "bias-free writing guidance"
+    },
+    {
+     "url": "https://styleguide.mailchimp.com/writing-about-people/",
+     "title": "Mailchimp: Writing about people",
+     "supports": "person-first, specific, respectful descriptions"
+    },
+    {
+     "url": "https://consciousstyleguide.com/",
+     "title": "Conscious Style Guide",
+     "supports": "curated guidance on conscious language"
+    }
+   ],
+   "kind": "editing"
+  },
+  {
+   "id": "edit:jargon_audit",
+   "name": "Jargon and word-choice audit",
+   "category": "Self-edit passes",
+   "one_line": "Replace jargon, buzzwords and internal terms with the words readers use; define unavoidable technical terms once.",
+   "aliases": [
+    "plain words check",
+    "buzzword purge"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "plain English and words to avoid"
+    },
+    {
+     "url": "https://developers.google.com/style/word-list",
+     "title": "Google developer documentation style guide: Word list",
+     "supports": "preferred and avoided terms"
+    }
+   ],
+   "kind": "editing"
+  }
+ ]
+}

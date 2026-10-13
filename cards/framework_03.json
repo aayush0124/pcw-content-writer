@@ -1,0 +1,662 @@
+{
+ "cards": [
+  {
+   "id": "fw:diataxis",
+   "kind": "framework",
+   "name": "Diataxis (tutorial, how-to guide, reference, explanation)",
+   "status": "current",
+   "summary": "Sort every documentation page into one of four kinds by what the reader needs right now (to learn, to do a task, to look something up, to understand) and keep each page to that one kind. Good Diataxis docs are separate pages that link to each other, not one page that tries to teach, instruct, list and philosophise at once.",
+   "use_for": [
+    "help centres and knowledge bases for a SaaS or fintech product that has grown into one long, muddled FAQ",
+    "developer docs: a quickstart (tutorial), recipes (how-to), endpoint tables (reference) and an architecture page (explanation)",
+    "course and training material where the lesson, the cheat-sheet and the background reading have been mixed together",
+    "auditing existing docs: tag each page with its kind, then split the pages that carry two kinds"
+   ],
+   "avoid": [
+    "A tutorial that stops to explain theory or offer options: the learner loses the thread. Move the 'why' to an explanation page and link to it in one line.",
+    "A reference page that tries to teach or persuade: reference states facts neutrally, in the order the product is organised. Put the teaching in a tutorial.",
+    "A how-to guide that starts from zero ('first, what is GST?'): it is written for a reader who already knows the basics and wants a task done. Give the goal in the title and the steps in order.",
+    "Treating the four kinds as four menu labels only. The value is in the writing rule for each kind; a page titled 'Tutorial' that reads like a manual is still a how-to.",
+    "Using Diataxis for a single marketing page or a short article: it organises a body of documentation, not one piece. For one piece use genre:how_to_article or genre:informational_article."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://diataxis.fr/",
+     "title": "Diataxis (official site)",
+     "supports": "'a systematic approach to technical documentation authoring'; four forms: tutorials, how-to guides, technical reference, explanation; placed in a systematic relationship"
+    },
+    {
+     "url": "https://diataxis.fr/start-here/",
+     "title": "Diataxis: Start here (official site, read 2026-10-06)",
+     "supports": "tutorial = a lesson that takes a student by the hand through a learning experience; how-to guide = practical directions for a real-world goal, for an already-competent user; reference = neutral technical description of facts; explanation = context and background that can take perspectives; blurring the boundaries between the forms is at the heart of many documentation problems"
+    },
+    {
+     "url": "https://diataxis.fr/compass/",
+     "title": "Diataxis: The compass (official site, read 2026-10-06)",
+     "supports": "two questions: does the content inform action or cognition, and does it serve acquisition or application of skill; the four combinations map to tutorial, how-to guide, reference, explanation"
+    },
+    {
+     "url": "https://diataxis.fr/colophon/",
+     "title": "Diataxis: Colophon",
+     "supports": "'Diataxis is the work of Daniele Procida.'"
+    }
+   ],
+   "related": [
+    "genre:developer_tutorial",
+    "genre:how_to_article",
+    "genre:api_reference",
+    "genre:sop_process_doc",
+    "genre:knowledge_base_article",
+    "edit:style_google_dev",
+    "edit:style_microsoft",
+    "tech:step_by_step_instructions"
+   ],
+   "steps": [
+    {
+     "step": "Ask the compass questions of the page (or planned page)",
+     "does": "Does it inform action (do something) or cognition (know something)? Does the reader need it to study and acquire a skill, or to apply a skill at work? The two answers fix the kind: action + study = tutorial; action + work = how-to guide; cognition + work = reference; cognition + study = explanation."
+    },
+    {
+     "step": "Write tutorials as lessons",
+     "does": "Lead a beginner by the hand through one small, finished thing they can do and see working. Give each step a visible result; the learner learns by doing. Leave out options, theory and edge cases and link to them."
+    },
+    {
+     "step": "Write how-to guides as directions to a goal",
+     "does": "Title the page with the goal ('How to reply to a GST notice in the portal'). Assume a competent reader, give the steps in the order they are done, and stop when the goal is reached. Cover the realistic variants, not every possibility."
+    },
+    {
+     "step": "Write reference as neutral facts",
+     "does": "List what exists and how it behaves: parameters, limits, fields, defaults, error codes. Mirror the structure of the product, use consistent patterns, and no persuasion or instruction. Readers consult it, they do not read it."
+    },
+    {
+     "step": "Write explanation as context",
+     "does": "Give the why: background, design decisions, trade-offs, how the parts relate, alternatives. Opinions and perspective are allowed here and nowhere else. Read like a discussion, not a procedure."
+    },
+    {
+     "step": "Cut the cross-kind leakage and link instead",
+     "does": "Scan each page for sentences of a different kind and move them: theory out of the tutorial, steps out of the explanation, advice out of the reference. Replace each with a one-line link so the reader can step across when they choose."
+    },
+    {
+     "step": "Name and navigate by kind",
+     "does": "Group the contents page by the four kinds (or a clear equivalent) so a reader who is stuck on a task finds the how-to and a reader who is new finds the tutorial."
+    }
+   ],
+   "best_for": [
+    "software, API and SaaS documentation that must serve beginners and experts from the same site",
+    "help centres being rebuilt from a pile of mixed articles",
+    "training programmes where lessons, job aids and background reading are all needed"
+   ],
+   "not_for": [
+    "a single article, sales page or press note: use the genre's own structure (genre:how_to_article, genre:informational_article)",
+    "pure marketing content, where AIDA or PAS shapes the persuasion",
+    "fiction or narrative pieces with no reader task"
+   ],
+   "origin": {
+    "who": "Daniele Procida",
+    "url": "https://diataxis.fr/colophon/"
+   },
+   "mini_example": "Docs for a Pune-built invoicing app, split by kind. TUTORIAL: 'Send your first GST invoice' (6 steps, ends with a PDF in your inbox; no talk of tax slabs). HOW-TO: 'Cancel an e-invoice within the allowed window' (goal in the title, 5 steps, one warning). REFERENCE: 'Invoice API: fields, limits, error codes' (a table, no advice). EXPLANATION: 'Why we store invoices as immutable records' (two paragraphs of reasoning and the trade-off). Each page ends with a one-line link to the neighbour that answers the reader's next question.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_03.json#fw:diataxis",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. All 7 steps in order; the compass step applies the card's mapping correctly (cognition + study = explanation, action + work = how-to); one page of each kind written to its rule; ends in final copy (contents grouped Learn / Do / Look up / Understand). Logic slip: the 'First, what is GST?' paragraph is moved into 'Why we reply in writing' and linked as 'New to notices?', so a newcomer lands on a page about reply method; it belongs in the 'What a GST notice means' explanation that the compass step classified and the contents then dropped.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "fw:effie_case_format",
+   "kind": "framework",
+   "name": "Effie case format (challenge and objectives, insights and strategy, bringing it to life, results)",
+   "status": "current",
+   "summary": "The four-section written case an Effie jury scores: the business challenge with measurable objectives, the insight and strategic idea, how the idea was brought to life, and results tied back to every objective with a data source. The skeleton wins because the story is checkable: each claim in the last section answers a promise made in the first.",
+   "use_for": [
+    "award entries for effectiveness awards (genre:award_entry) where the jury scores business results, not just craft",
+    "agency credential and case-study documents that must prove a campaign worked",
+    "internal post-campaign reviews, using the same four sections for a client or CMO",
+    "portfolio write-ups that need more rigour than a 'process and visuals' story"
+   ],
+   "avoid": [
+    "Opening with the creative idea: the form puts the challenge and the objective (with its KPI) first, so the jury reads the idea as an answer to a stated problem.",
+    "Results that do not map to a stated objective, or numbers with no data source and time frame: the form requires every result to correspond to a data source. Give the figure, the period and where it came from.",
+    "Vague objectives ('increase awareness'): write the metric, the baseline and the target ('lift unaided awareness among women 25-34 in Tier-2 cities from 9% to 15% in six months').",
+    "Reporting a rise with no category or competitor context: say what the category did over the same period so the reader can see the result is significant.",
+    "Copying one programme's word limits into another. The limits below come from the 2026 South Africa form; take limits and weights from the entry kit of the programme you are entering (Effie India, Global, Europe)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://effie.org/wp-content/uploads/2026/02/2026-Effie-Awards-SA-Standard-Entry-Form_final.pdf",
+     "title": "2026 Effie Awards South Africa: Standard Entry Form (effie.org)",
+     "supports": "four sections using Effie's Effectiveness Framework: Challenge, Context and Objectives (23.3% of the score, 400 words, 3 charts or visuals); Insights and Strategy (23.3%, 300 + 300 + 200 words); Bringing the Strategy and Idea to Life (23.3%); Results (30%, up to 350 words and 5 charts or visuals, a result for each objective, all results must correspond to a data source); executive summary lines Challenge, Insights, Strategic Idea, Bringing the Strategy and Idea to Life, Results, 20 words maximum per line"
+    },
+    {
+     "url": "https://current.effie.org/downloads/Global_Effie_Entry_Kit.pdf",
+     "title": "Global Effie Awards entry kit (effie.org)",
+     "supports": "the same four scoring sections in the global programme (listed by search; not opened for this card)"
+    }
+   ],
+   "related": [
+    "genre:award_entry",
+    "genre:case_study",
+    "genre:portfolio_case_writeup",
+    "tech:specificity",
+    "tech:numerals",
+    "fw:abt"
+   ],
+   "steps": [
+    {
+     "step": "1. Challenge, context and objectives (about 23% of the score on the 2026 SA form; 400 words, 3 visuals)",
+     "does": "State the business problem and the market context, then the objectives, each with its KPI, baseline, target and time frame. Include category and competitor context so a later result can be judged against it. Name the objective and KPI before any mention of the idea."
+    },
+    {
+     "step": "2. Insights and strategy (about 23%; 300 + 300 + 200 words)",
+     "does": "Show the insight about the audience or category that the data and research supports, then the strategic idea it led to and why that idea suits this challenge. Keep a visible line from insight to idea; do not present the idea as inspiration."
+    },
+    {
+     "step": "3. Bringing the strategy and idea to life (about 23%)",
+     "does": "Show the idea in market: channels, the key executions and why they were chosen, the timeline and budget context where the form asks. Each choice should trace back to the strategy in step 2."
+    },
+    {
+     "step": "4. Results (30%, the heaviest section; up to 350 words and 5 visuals)",
+     "does": "Give one result per objective, in the order the objectives were stated, each with the number, the period, the source and the comparison (previous period, category, competitors). Say what else was running if it could explain the lift, and why the campaign still gets the credit."
+    },
+    {
+     "step": "5. Executive summary lines",
+     "does": "Write one line each for Challenge, Insights, Strategic idea, Bringing it to life and Results, at most 20 words per line. Write them last, after the four sections hold."
+    },
+    {
+     "step": "6. Trace-check before submission",
+     "does": "Take every objective and find its result; take every result and find its source; take every number in the summary and find it in the body. Any gap is a fix, not a footnote."
+    }
+   ],
+   "best_for": [
+    "effectiveness awards where results carry the largest weight",
+    "agency or in-house cases that must show business impact to a CMO or a jury",
+    "any case study where objectives were set in numbers before the work began"
+   ],
+   "not_for": [
+    "craft-only or creativity awards that do not score business results",
+    "campaigns with no measured result: the Results section is the heaviest, so there is nothing to enter yet",
+    "short customer success stories for lead-generation (use genre:case_study with a customer quote and one number)"
+   ],
+   "origin": {
+    "who": "Effie Awards (Effie's Effectiveness Framework)",
+    "url": "https://effie.org/wp-content/uploads/2026/02/2026-Effie-Awards-SA-Standard-Entry-Form_final.pdf"
+   },
+   "mini_example": "Illustrative figures, not a real case. CHALLENGE: Pune cotton-kurta brand 'Sootra' sells mainly through marketplaces; objective 1: lift direct-site orders from 6% to 15% of sales in six months (own analytics); objective 2: raise repeat-purchase rate from 14% to 20% (Shopify cohort report). INSIGHT: repeat buyers reorder when they can match a past size; STRATEGIC IDEA: 'Your fit, remembered'. RESULTS: objective 1: 6% to 17% (Jan to Jun 2026, Shopify; marketplace sales flat in the same period); objective 2: 14% to 22% (cohort report, Jul 2026). Each result names its source and window.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/framework_03.json#fw:effie_case_format",
+    "note": "purpose 1, structure 2, specificity 2, voice 2, craft 1. All six steps in order; objectives with baseline (zero at launch), KPI and source come before any idea; a visible insight -> idea line ('Protein you can count'); executions trace to it (grams on lids, 12:30 pm slot, scale-weighing Reels); one result per objective with source and period slots; summary lines under 20 words; trace-check last. Every result number is a placeholder (allowed, the topic gave none), which leaves the 30% section a template; the card's own mini_example shows labelled illustrative figures would make a stronger demo. 'the campaign still earns the credit because [reason]' restates the card instead of writing the line.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "fw:perfect_webinar",
+   "kind": "framework",
+   "name": "Perfect Webinar (Russell Brunson)",
+   "status": "current",
+   "summary": "A 90-minute sales-webinar script that sells by shifting beliefs rather than listing features: an origin story, one big belief to change (the Big Domino), belief-by-belief teaching in three blocks, then a Stack of everything included and the close. Its source here is the originator's company blog, so treat step times as that company's published version, not a law.",
+   "use_for": [
+    "pitch webinars and masterclasses that sell a course, coaching programme or high-ticket service (genre:webinar_pitch_script)",
+    "a CA, coaching or training business turning a free live session into a paid offer",
+    "re-ordering a flat product demo into a story with a belief to change and a price reveal at the end",
+    "scripting the offer section: building the value stack before the price"
+   ],
+   "avoid": [
+    "Using it for a purely educational webinar: there is no offer to stack. Use genre:webinar_script.",
+    "Teaching everything in the middle blocks. Each block exists to remove one belief that stops the purchase; content that does not serve that belief is cut.",
+    "Choosing a Big Domino the audience does not hold ('you can do it too!'). It must be the single objection that, once removed, makes the smaller ones fall; find it from sales calls and refund reasons (tech:voice_of_customer_mining).",
+    "Inflated stack values and earnings claims: every listed value must be a price the item really sells for, and every result a real, documented one. India: comp:asci_code and comp:ccpa_misleading_ads_2022; for finance or earnings claims check SEBI rules.",
+    "Fake scarcity at the close (a countdown that resets): use a real deadline or a real seat limit (tech:ethical_urgency)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.clickfunnels.com/blog/complete-guide-high-converting-webinar/",
+     "title": "ClickFunnels blog: The Playbook to a High Converting Webinar (updated 2026-03-19; ClickFunnels is Brunson's company, so this is the originator's own blog)",
+     "supports": "90-minute outline: Origin Story 15 min (introduction that captures attention and builds trust), The Vehicle 15 min (the framework and the first major belief), Internal Beliefs 15 min (limiting beliefs about themselves), External Beliefs 15 min (objections about outside factors or resources), Stack and Close 30 min (present the offer, highlight its value, close); one 'big domino' belief whose removal makes the smaller objections fall; the stack is re-stated repeatedly so the price is set against the whole stack of value (read 2026-10-06)"
+    }
+   ],
+   "related": [
+    "genre:webinar_pitch_script",
+    "genre:webinar_script",
+    "genre:vsl_script",
+    "genre:sales_page",
+    "tech:objection_handling",
+    "tech:price_anchoring",
+    "tech:risk_reversal",
+    "comp:asci_code"
+   ],
+   "steps": [
+    {
+     "step": "Origin story (about 15 min)",
+     "does": "Open with who you are and the story of how you found the method: the low point, the discovery, the result. It earns attention and trust and starts moving the audience toward the Big Domino belief. Real facts only; name the year and the numbers."
+    },
+    {
+     "step": "The Vehicle (about 15 min)",
+     "does": "Introduce your framework as the vehicle that gets the audience to the outcome, and take apart the first major belief: the Big Domino, the one belief that, once accepted, makes buying the next step. State it as a sentence the audience can say yes to ('a GST notice is a process, not a verdict')."
+    },
+    {
+     "step": "Internal beliefs (about 15 min)",
+     "does": "Remove the beliefs the audience holds about themselves ('I am not a numbers person', 'I have no time'), each with a short story or proof that the belief is false."
+    },
+    {
+     "step": "External beliefs (about 15 min)",
+     "does": "Remove the beliefs about outside factors and resources ('no one will help a business my size', 'it costs too much'), again with proof or a worked case. In the usual telling the vehicle and the two belief blocks are the three 'secrets'; the ClickFunnels page does not name them, so check Brunson's own training before quoting a name."
+    },
+    {
+     "step": "The Stack (about 30 min together with the close)",
+     "does": "List each component of the offer with what it does and the price it really carries, re-showing the growing stack after each item, then reveal the price against the whole stack. Add the guarantee and the real deadline."
+    },
+    {
+     "step": "Close and questions",
+     "does": "State the one action, repeat the guarantee and deadline, then take questions that are really objections. The close is a clear instruction, not a hint."
+    }
+   ],
+   "best_for": [
+    "paid live or recorded webinars selling a course, programme or service worth a considered decision",
+    "offers where the main blocker is belief ('I can't', 'this won't work for me'), not price",
+    "teams that already have a result or case to base the origin story on"
+   ],
+   "not_for": [
+    "free educational sessions or product training with no offer (genre:webinar_script)",
+    "low-price impulse offers: ninety minutes is out of proportion",
+    "offers whose results or values cannot be documented: the format leans on proof and stacked value, and invented figures are a legal risk"
+   ],
+   "origin": {
+    "who": "Russell Brunson (ClickFunnels)",
+    "when": "ClickFunnels blog version updated 2026-03-19; the harvest note places the full version in Brunson's book Expert Secrets (2017), not read here",
+    "url": "https://www.clickfunnels.com/blog/complete-guide-high-converting-webinar/"
+   },
+   "mini_example": "Illustrative, for a Jaipur CA firm selling a 30-day notice-handling programme. ORIGIN: 'In 2022 a Surat saree trader got a Rs 41 lakh demand on a Friday; here is what we did over the weekend.' BIG DOMINO: 'A GST notice is a process, not a verdict.' INTERNAL: 'I am bad with compliance' vs the three-line reply template. EXTERNAL: 'No CA gives small firms time' vs the WhatsApp support window. STACK: reply workbook, review of your last 6 GSTR-3B returns, 30 days of WhatsApp support; each priced at what it sells for alone, then the total, then the price.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_5.json#fw:perfect_webinar",
+    "note": "ROUND 2: P2 S2 Sp2 V1 C1. All six steps in order with the card's timings. The origin is a labelled illustrative case with a year, a loss and a result (Rs 1.8 lakh lost to an untyped voice note). The Vehicle is now a named method (Bol, Tag, Bhej) carrying the Big Domino 'Minutes are a speaking job, not a typing job'. Each belief block holds one belief with a live proof, and the external proof admits two missed words, which persuades. The Stack runs a total that checks (2,700 to 6,399), reveals Rs 2,499 against it and adds a refund and a real dated deadline (Friday 23 October is a Friday). The data objection is worked in the Q&A with a slot for the fact. Nits (writer): '30-day refund if your first five minutes are unusable' reads as five minutes of time (say 'your first five meetings' minutes'); the close does not repeat the guarantee as the card asks; the stack items say nothing about what they do ('template pack', 'onboarding call'), so the Stack reads as a price list rather than lines a presenter can say. | round 1: weak 7",
+    "judge": "vj_retest_5",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "fw:postmortem_blameless",
+   "kind": "framework",
+   "name": "Blameless postmortem (Google SRE format)",
+   "status": "current",
+   "summary": "Write an incident up as a fixed set of sections: summary, impact, root causes, trigger, resolution, detection, action items with owners, lessons learned and a timestamped timeline, assuming everyone acted in good faith on the information they had. The reader should come away knowing what failed in the system and what will change, never who to blame.",
+   "use_for": [
+    "outage, data-loss, security-event and failed-launch write-ups for an engineering or operations team (genre:incident_report)",
+    "project retrospectives: keep impact, what went well, what went wrong and owned actions; drop the trigger section",
+    "customer-facing incident summaries, written after the incident from the internal version in plain language",
+    "turning a messy chat-channel incident log into a document a manager can act on"
+   ],
+   "avoid": [
+    "Naming a person as the cause ('Rohit pushed a bad config'). Name the system and the decision ('the deploy pipeline accepted a config with no schema check') and ask what made that decision look right at the time.",
+    "Merging trigger and root cause. The trigger is what set the incident off (a deploy, a traffic spike); the root causes are the conditions that let it hurt. Write them in separate sections.",
+    "Action items like 'be more careful' or 'improve monitoring' with no owner. Each item needs a verb, an owner, a due date and a tracker ID.",
+    "A timeline in mixed time zones or with no timestamps; write one zone throughout (for an India team, state IST) and mark the minute each key event happened.",
+    "Using the postmortem as the live outage notice. Updates while the incident is running belong in genre:crisis_statement or a status-page post.",
+    "Hiding embarrassing facts such as a near-miss or luck. The 'where we got lucky' list is where the cheapest prevention shows up."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://sre.google/sre-book/postmortem-culture/",
+     "title": "Google, Site Reliability Engineering, ch. 15 'Postmortem Culture: Learning from Failure' (John Lunney and Sue Lueder)",
+     "supports": "a postmortem is a written record of an incident, its impact, the mitigation, the root cause(s) and the follow-up actions; blameless means assuming everyone had good intentions and did the right thing with the information they had; triggers include user-visible downtime beyond a threshold, data loss, on-call intervention, long resolution time, monitoring failure, any stakeholder request"
+    },
+    {
+     "url": "https://sre.google/sre-book/example-postmortem/",
+     "title": "Google SRE book: Example postmortem",
+     "supports": "section order: Date, Authors, Status, Summary, Impact, Root Causes, Trigger, Resolution, Detection, Action Items, Lessons Learned (what went well, what went wrong, where we got lucky), Timeline, Supporting information"
+    }
+   ],
+   "related": [
+    "genre:incident_report",
+    "genre:crisis_statement",
+    "fw:five_ws_and_h",
+    "tech:plain_language",
+    "tech:active_voice",
+    "tone:technical_precise"
+   ],
+   "steps": [
+    {
+     "step": "Header",
+     "does": "Date of the incident, authors, status (draft, in review, final). One line each."
+    },
+    {
+     "step": "Summary",
+     "does": "Three to five sentences a busy executive can stop at: what broke, for how long, how many users or orders, how it was fixed, what happens next."
+    },
+    {
+     "step": "Impact",
+     "does": "The measured effect: users or customers affected, duration, failed orders or payments, revenue or data at risk, support tickets raised. Use counts and time windows, not 'significant'."
+    },
+    {
+     "step": "Root causes",
+     "does": "The conditions in the system that made the incident possible, stated as causes of the system and process (one or several), not as a person's mistake."
+    },
+    {
+     "step": "Trigger",
+     "does": "The event that set it off (a deploy, a config change, a spike). Keep it apart from the root causes."
+    },
+    {
+     "step": "Resolution and detection",
+     "does": "Resolution: what was done to stop and fix it, in order. Detection: how the team found out (alert, customer report) and how long that took, with any gap in monitoring named."
+    },
+    {
+     "step": "Action items",
+     "does": "A table of follow-ups: action, type (prevent, detect, mitigate), owner, due date, tracker ID. Each one must be something that would have changed this incident."
+    },
+    {
+     "step": "Lessons learned",
+     "does": "Three short lists: what went well, what went wrong, where we got lucky."
+    },
+    {
+     "step": "Timeline",
+     "does": "Timestamped events in one time zone, from first sign to full recovery, including decisions and who was paged. Facts only."
+    },
+    {
+     "step": "Supporting information",
+     "does": "Links to dashboards, logs, chat transcripts and the tracker."
+    }
+   ],
+   "best_for": [
+    "engineering, SRE, IT and operations incidents with a measurable customer effect",
+    "security events once containment is complete",
+    "project and launch retrospectives that need owned actions"
+   ],
+   "not_for": [
+    "the live message to customers while an incident is under way (genre:crisis_statement)",
+    "disciplinary or HR processes, which need a different record and a different process",
+    "a regulator filing, which has its own prescribed form"
+   ],
+   "origin": {
+    "who": "Google SRE team (John Lunney and Sue Lueder, Site Reliability Engineering, ch. 15)",
+    "url": "https://sre.google/sre-book/postmortem-culture/"
+   },
+   "mini_example": "Illustrative. SUMMARY: On 14 Sept 2026, 19:42 to 20:29 IST, UPI checkout failed on a Pune D2C store; 312 orders failed and 187 were recovered by retry. IMPACT: about Rs 4.1 lakh of attempted sales delayed, 41 support tickets. TRIGGER: a payment-gateway SDK update deployed at 19:38. ROOT CAUSES: no staging test of the payment flow; the alert measured homepage uptime, not payment success. ACTION: 'Add a payment-success alert' (owner: Meera, due 30 Sept, tracker PAY-212).",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/framework_03.json#fw:postmortem_blameless",
+    "note": "purpose 1, structure 2, specificity 2, voice 2, craft 1. All ten sections in the card's order; invented scenario labelled illustrative, with the real scheme name kept as a slot (right call for an invented failure); root causes are system and process gaps (no inspection deadline, no applicant status, helpline blind to the queue) kept apart from the portal-update trigger; detection gap named (no queue-age alert); three typed actions with owner, date and ID slots; three lessons lists; IST timeline. Placeholder density ([date], [N] in nearly every line) leaves a summary an executive cannot stop at, and 'before anyone looked' edges toward blame ('before the queue was checked').",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "fw:rumelt_strategy_kernel",
+   "kind": "framework",
+   "name": "Rumelt's kernel of good strategy (diagnosis, guiding policy, coherent action)",
+   "status": "current",
+   "summary": "A strategy has three parts in order: a diagnosis that names the critical challenge, one guiding policy that says how it will be faced (and what is ruled out), and a set of coordinated actions that carry the policy out. It is not a list of goals; a draft with no diagnosis or no real choice is what Rumelt calls bad strategy.",
+   "use_for": [
+    "strategy documents and memos for founders, CMOs and brand teams (genre:okr_strategy_doc)",
+    "the strategy slide or section of an investor or sales deck, where the audience wants to see a choice",
+    "brand-strategy decks: the diagnosis of the market problem before the positioning",
+    "rescuing a 'strategic plan' that is only a list of targets, by finding the missing diagnosis"
+   ],
+   "avoid": [
+    "Goals dressed as strategy ('grow revenue 30%', 'be number one'). A goal is an outcome; the kernel needs the obstacle, the approach and the actions.",
+    "A diagnosis that is a vague mood ('the market is competitive'). Write what is going on, which part matters most, and the evidence in a plain statement.",
+    "A guiding policy that rules nothing out. If it fits every option, it is not a policy; say what you will not do.",
+    "A 'dog's dinner' of unrelated objectives and initiatives. Actions must be feasible, coordinated and reinforce each other, or cut them.",
+    "Fluff: abstract buzzwords ('synergy', 'best-in-class', 'world-class') standing in for a statement of the challenge. Replace each with the concrete thing it hides."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://profilebooks.com/wp-content/uploads/wpallimport/files/PDFs/9781847657466_preview.pdf",
+     "title": "Richard Rumelt, Good Strategy/Bad Strategy (2011), Profile Books preview PDF",
+     "supports": "a good strategy has an essential logical structure, the kernel: a diagnosis, a guiding policy and coherent action; the guiding policy specifies the approach to the obstacles named in the diagnosis; coherent actions are feasible coordinated policies, resource commitments and actions that carry out the guiding policy; chapter 3 names the signs of bad strategy: fluff, not facing the problem, mistaking goals for strategy, bad strategic objectives"
+    },
+    {
+     "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-perils-of-bad-strategy",
+     "title": "Richard Rumelt, 'The perils of bad strategy', McKinsey Quarterly (2011)",
+     "supports": "the author's article version of the kernel and the hallmarks of bad strategy (listed by the harvest; the page timed out and was not read)"
+    }
+   ],
+   "related": [
+    "genre:okr_strategy_doc",
+    "genre:investor_pitch_deck",
+    "genre:messaging_framework",
+    "fw:dunford_positioning",
+    "fw:minto_pyramid",
+    "tech:so_what_test"
+   ],
+   "steps": [
+    {
+     "step": "Diagnosis",
+     "does": "Name the critical challenge in plain words: what is going on, which part of it matters most, and the evidence. Simplify a messy situation into one problem you can act on."
+    },
+    {
+     "step": "Guiding policy",
+     "does": "State the overall approach for dealing with that challenge. It must rule options out; if it could fit any plan it is a vision, not a policy."
+    },
+    {
+     "step": "Coherent action",
+     "does": "List the feasible, coordinated moves (policies, resource commitments, actions) that carry the policy out. Each one should reinforce the others; each needs an owner and a resource."
+    },
+    {
+     "step": "Run the bad-strategy check",
+     "does": "Read the draft for the four signs: fluff, no named challenge, goals mistaken for strategy, a pile of objectives. Fix each by returning to step 1, 2 or 3."
+    }
+   ],
+   "best_for": [
+    "strategy memos, brand-strategy decks and strategy sections of proposals",
+    "choosing where to compete when resources are limited",
+    "diagnosing why a plan reads like a wish list"
+   ],
+   "not_for": [
+    "a short campaign brief or a content calendar: there is no strategic choice to make (use genre:influencer_brief or genre:social_content_calendar)",
+    "day-to-day OKR tracking, which is about measuring outcomes, not choosing an approach",
+    "any piece where the reader wants steps only (use an SOP structure)"
+   ],
+   "origin": {
+    "who": "Richard Rumelt",
+    "when": "Good Strategy/Bad Strategy (2011); article 'The perils of bad strategy' (McKinsey Quarterly, 2011)",
+    "url": "https://profilebooks.com/wp-content/uploads/wpallimport/files/PDFs/9781847657466_preview.pdf"
+   },
+   "mini_example": "Illustrative, for a Bengaluru filter-coffee D2C brand. DIAGNOSIS: monthly sales of Rs 40 lakh are almost all first orders; reach is fine, repeat purchase is the problem. GUIDING POLICY: win the household's morning routine, not the one-time gifter; for this year we ignore the gifting market. ACTIONS: (1) a monthly 250 g subscription; (2) shift paid spend from new-audience reach to lapsed buyers; (3) stop festival gift hampers; (4) roast and ship on a fixed weekly day so every pack is under 10 days old.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_03.json#fw:rumelt_strategy_kernel",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. The diagnosis makes a real call in plain words (speaking reps and a safe place to fail, not grammar; 'a lesson cannot fix a fear of speaking') with its evidence held as a source slot; the guiding policy rules out four named options; four coordinated actions, each with owner and resource, plus a day-1 / day-30 test on one rubric; the bad-strategy check covers all four signs. The check reads as self-certification ('Fluff: none') rather than showing one thing it caught and fixed.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "fw:setup_punchline_tag",
+   "kind": "framework",
+   "name": "Setup, punchline, tag (joke structure)",
+   "status": "current",
+   "summary": "A joke in two moves plus extras: the setup builds a false expectation, the punchline reveals a second meaning that breaks it, and tags add more laughs off the same setup without a new one. The craft is a connector, one thing with two readings, so that the audience commits to the wrong one before the reveal.",
+   "use_for": [
+    "stand-up and open-mic writing (genre:standup_comedy_set)",
+    "one-liners for roast copy, meme captions and a caption twist (genre:meme_caption)",
+    "the joke beats inside a sketch or a reel script, where each beat needs a clean reveal",
+    "tightening any gag that 'almost works' by finding which part is broken: setup, connector or reveal"
+   ],
+   "avoid": [
+    "Putting words after the reveal. The reveal word goes last (tech:punchline_last); anything after it explains the joke and kills the laugh.",
+    "A setup that hints at the second meaning. Keep it short and plain so the audience reads the first meaning with confidence; cut every word not needed to build the false expectation.",
+    "A punchline that only contradicts or is random. It must reinterpret the setup so that the same words now mean something else; otherwise it is a surprise, not a joke.",
+    "A tag that needs new set-up. If you have to add a new fact before it lands, it is a separate joke. A tag follows straight from the punchline.",
+    "Using it as the engine for a 30-second reel. A reel needs a repeatable pattern with escalation: use tech:game_and_heightening and use this structure for the individual beats."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://stand-upcomedy.com/glossary/",
+     "title": "Greg Dean's Stand-Up Comedy Classes: Comedy terms glossary",
+     "supports": "setup is the first of two parts of a one-liner, designed to misdirect the audience to a false expectation; punchline is the second part, meant to get a laugh; a tag is an additional short punchline that follows without a new setup; the connector is one thing with at least two interpretations"
+    },
+    {
+     "url": "https://stand-upcomedy.com/glossary/target-assumption/",
+     "title": "Greg Dean: Target Assumption",
+     "supports": "the Target Assumption is the expected interpretation of the connector that the setup leads to; the reinterpretation in the punchline makes it wrong"
+    }
+   ],
+   "related": [
+    "tech:punchline_last",
+    "tech:game_and_heightening",
+    "tech:wordplay_pun",
+    "tech:callback",
+    "genre:standup_comedy_set",
+    "genre:sketch_comedy",
+    "genre:meme_caption",
+    "lang:hinglish_roman"
+   ],
+   "steps": [
+    {
+     "step": "Choose the connector",
+     "does": "Pick a word, phrase or situation with at least two readings ('return' as tax return or product return, 'forward' as a WhatsApp forward). In Hinglish, a word that means one thing in each language is an especially strong connector."
+    },
+    {
+     "step": "Write the setup",
+     "does": "Build the expected reading with plain, true-sounding facts so the audience commits to it. One or two short sentences; no words that point to the second reading."
+    },
+    {
+     "step": "Write the punchline",
+     "does": "Reveal the second reading in the fewest words, with the reveal word last. It should make the setup mean something new, not just contradict it."
+    },
+    {
+     "step": "Add tags",
+     "does": "Write one to three short additional punchlines that follow directly off the same setup, each needing no new information. Stop when a tag stops landing when read aloud."
+    },
+    {
+     "step": "Trim and test aloud",
+     "does": "Read it aloud to one person. Cut any setup word the misdirection does not need; if they laugh late, the reveal word is not last or the setup tipped it off."
+    }
+   ],
+   "best_for": [
+    "one-liners and short bits of stand-up, memes and roast lines",
+    "finding and fixing the weak part of a joke that is not landing",
+    "Hinglish humour built on code-switch wordplay"
+   ],
+   "not_for": [
+    "long-form comic storytelling where the laugh comes from character and escalation (use tech:game_and_heightening or fw:three_act_structure)",
+    "satire that relies on a sustained argument rather than one reveal (genre:satire_parody)"
+   ],
+   "origin": {
+    "who": "Greg Dean (the Connector / Target Assumption / Reinterpretation model); the words setup and punchline are common stand-up vocabulary",
+    "url": "https://stand-upcomedy.com/glossary/"
+   },
+   "mini_example": "Connector: 'return'. SETUP: Mere CA ne poocha, 'Return kab bharoge?' PUNCHLINE: Maine kaha, 'Sir, Amazon ne pickup hi nahi kiya.' TAG: Courier wala bhi yahi bolta hai: 'Sir, system mein dikh nahi raha.' The audience reads 'return' as income-tax return; the punchline flips it to a product return, and the tag borrows the same portal-glitch excuse without any new set-up.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/framework_03.json#fw:setup_punchline_tag",
+    "note": "purpose 1, structure 2, specificity 2, voice 2, craft 1. Five steps in order with a real connector ('outstanding': praise vs unpaid) and a final bit; the reveal word is last; tag 1 ('Feedback received: outstanding') lands off the same setup with no new information; the cut HR tag correctly applies the card's new-character test. Weaknesses: 'Not you' answers praise of 'your numbers', not of the speaker; 'reconciliation numbers' in the setup tips the finance reading to this audience; tag 2 says 'in the other sense' (explains the joke), is a new pun on 'matched', and for a reconciliation startup 'nobody has ever matched them' undercuts the product. Cut tag 2.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "fw:song_form",
+   "kind": "framework",
+   "name": "Song form (verse, pre-chorus, chorus, bridge; mukhda and antara)",
+   "status": "current",
+   "summary": "The section map a lyric is written to. Western form: verses carry the story, the chorus carries the main message and hook, a bridge brings contrast before the last chorus. Hindi film form: a mukhda (the catchy refrain), an interlude, then two or three antaras, with the mukhda returning after each. In both, the hook section repeats word for word and only the story sections change.",
+   "use_for": [
+    "writing film, web-series and independent song lyrics to a fixed section plan (genre:song_lyrics)",
+    "jingles and brand songs, which usually use one chorus-like hook section (genre:jingle_lyrics)",
+    "planning a song before writing a line: choose the map, then allot the story and the hook to the sections",
+    "diagnosing a lyric that wanders: find which section lacks a job"
+   ],
+   "avoid": [
+    "Changing the chorus or mukhda wording on each return. The refrain repeats exactly; vary the verses or antaras instead.",
+    "A verse or antara that repeats the chorus message. The story sections carry new information and the hook carries the idea.",
+    "An antara whose last line does not lead back into the mukhda. In the Hindi film shape the closing line of each antara sets up the return, by rhyme or by sense.",
+    "Adding a bridge to a very short song such as a jingle. Where there is one hook section and little time, skip it.",
+    "Writing line lengths on paper and ignoring the tune. Fit syllables and stresses to the melody (see genre:song_lyrics notes) and read the lines aloud with the tune.",
+    "Quoting existing lyrics as models. Describe the structure of a famous song instead and write original lines."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://online.berklee.edu/takenote/writing-bridges-for-your-songs-can-be-much-easier/",
+     "title": "Berklee Online Take Note (Andrea Stolpe): How to write a bridge",
+     "supports": "common map: Verse 1, Verse 2 (optional), Pre-chorus (optional), Chorus, Verse 3, Pre-chorus (optional), Chorus, Bridge, Chorus; the bridge typically comes after the second chorus; verses carry the narrative, the chorus the main message and hook, the bridge a contrasting look"
+    },
+    {
+     "url": "https://online.berklee.edu/courses/songwriting-fundamentals",
+     "title": "Berklee Online: Songwriting Fundamentals course",
+     "supports": "the course teaches Verse-Chorus-Bridge, AABA (32-bar form) and Verse/Refrain forms (read from the search summary; page not opened)"
+    },
+    {
+     "url": "https://www.songsofyore.com/where-is-the-mukhada-gone-where-is-antara-gone/",
+     "title": "Songs of Yore (AK, 2025-01-21): Where is the mukhada gone, where is antara gone?",
+     "supports": "classic Hindi film structure: a mukhda with a catchy tune and refrain, then interlude music and two or three antaras with tunes different from the mukhda; each antara ends on a connecting line back into the mukhda (secondary source: Hindi film-music blog)"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Antara_(music)",
+     "title": "Antara (music), Wikipedia",
+     "supports": "in Hindustani classical music the sthayi is the base section the singer returns to and the antara is the verse-like second section (secondary)"
+    }
+   ],
+   "related": [
+    "genre:song_lyrics",
+    "genre:jingle_lyrics",
+    "genre:poetry",
+    "tech:anaphora_repetition",
+    "tech:read_aloud",
+    "lang:hinglish_roman"
+   ],
+   "steps": [
+    {
+     "step": "Pick the map",
+     "does": "Western verse-chorus (Verse 1, optional pre-chorus, Chorus, Verse 2, pre-chorus, Chorus, Bridge, Chorus), AABA 32-bar, or Hindi film (mukhda, interlude, antara 1, mukhda, interlude, antara 2, mukhda). A jingle uses one hook section, sung once or twice."
+    },
+    {
+     "step": "Write the hook section first",
+     "does": "Chorus or mukhda: the one idea, in a short singable phrase, with the title or the key line in it. Everything else exists to set it up or to bring the listener back to it."
+    },
+    {
+     "step": "Write the story sections",
+     "does": "Verses or antaras carry the narrative: new image, new detail, new turn each time, in a consistent line shape. Do not restate the hook."
+    },
+    {
+     "step": "Link back to the hook",
+     "does": "Make the last line of each antara (or the pre-chorus before a chorus) lead into the hook by rhyme or sense so the return feels earned."
+    },
+    {
+     "step": "Add contrast where the form calls for it",
+     "does": "A bridge after the second chorus in the Western map, or the instrumental interlude and the change of tune in the Hindi film map. Give it a different angle on the idea, a new rhyme scheme or a new line length."
+    },
+    {
+     "step": "Repeat the hook exactly, then fit to the tune",
+     "does": "Copy the chorus or mukhda word for word on every return. Sing the lines to the melody and adjust syllables and stresses until each line sits on its beats."
+    }
+   ],
+   "best_for": [
+    "lyrics written to a section plan: film songs, indie songs and brand anthems",
+    "jingles and short ad songs that need one memorable hook",
+    "analysing why a lyric feels shapeless"
+   ],
+   "not_for": [
+    "shayari or ghazal couplets, which have their own structure (genre:shayari)",
+    "free verse and spoken-word poetry (genre:poetry)",
+    "reproducing a copyrighted song: write the structure, never the lines"
+   ],
+   "mini_example": "Original Hinglish song for a chai-stall brand. MUKHDA: Cutting chai, ek kulhad, ek hi baat, / tapri pe tera intezaar, har subah, har raat. ANTARA 1: Local ki bheed mein seat nahi mili, / phir bhi dil mein teri jagah mili. / Patti tez, sugar kam, yeh mera hisaab, / kulhad mein bachi hai bas ek aakhri saugaat. [Mukhda again, word for word.] The antara's last line rhymes with 'baat' and 'raat', so it hands the listener back to the mukhda.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/framework_03.json#fw:song_form",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. Hindi film map stated and followed; mukhda written first with the key line; two antaras with new images (bus window, neem-tulsi, haldi dhoop, pallu) in a steady line shape, each ending on the mukhda's opening phrase to lead back; interlude contrast and shorter antara-2 lines; mukhda repeated word for word. Hindi agrees (ghuli hai dua, boond ... sehlaye, noor na jaye); no skin claims, right for an Ayurvedic brand under ASCI and the DMR Act. 'chehra na ghabraye' is a stiff hook phrase; 'baarish' is the usual Roman spelling.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  }
+ ]
+}

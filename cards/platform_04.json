@@ -1,0 +1,1500 @@
+{
+ "cards": [
+  {
+   "id": "plat:airbnb_listing",
+   "kind": "platform",
+   "name": "Airbnb listing (title and description)",
+   "status": "current",
+   "summary": "A listing's title and description on Airbnb. Airbnb asks for a title of fewer than 50 characters because longer ones are shortened in search, starting with the most important information, in sentence case, with no emojis or repeated symbols. No source read caps the description; Airbnb asks for a brief, specific, realistic description that tells the story of the space.",
+   "use_for": [
+    "Title for a homestay, villa, apartment or room: type of space + place or landmark + one thing that sets it apart.",
+    "The opening of the description: what the space is and who it suits, before any list.",
+    "Rewriting a listing that gets views but few bookings.",
+    "Honest 'good to know' lines about stairs, children, pets and mobility.",
+    "Experience and service titles (these are reviewed before they go live)."
+   ],
+   "avoid": [
+    "Title in ALL CAPS, with emojis or with '!!!' / '***'. Airbnb capitalises only the first word plus proper names and abbreviations, bars emojis and symbols in titles (Content Policy), and allows single special characters but not repeated ones. Separate ideas with commas or one slash.",
+    "A title that saves the best fact for the end. Longer titles are shortened in search, so the tail is what disappears. Put the most important information first.",
+    "A description that repeats the amenities list. Airbnb says lead with what matters and be specific ('a perfect base for exploring the city'); the amenities already have their own section.",
+    "Hiding stairs, no lift, children or mobility limits. Airbnb asks hosts to be upfront about challenges, and misleading information breaches the Content Policy.",
+    "Quoting a 500-character description cap or a 32-character visible title from memory. Both circulate on third-party sites only and were not found on Airbnb's own pages."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.airbnb.com/resources/hosting-homes/a/guidelines-for-writing-your-listing-title-533",
+     "title": "Guidelines for writing your listing title - Airbnb Resource Center",
+     "supports": "title length, sentence case, no emojis or repeated symbols"
+    },
+    {
+     "url": "https://www.airbnb.com/help/article/3021",
+     "title": "Edit your listing's title - Airbnb Help Center",
+     "supports": "no symbols or emojis in titles (Content Policy); title changes take up to an hour; service/experience titles need review"
+    },
+    {
+     "url": "https://www.airbnb.com/resources/hosting-homes/a/sprucing-up-your-listing-description-13",
+     "title": "Writing an effective listing description - Airbnb Resource Center (updated Nov 28, 2023)",
+     "supports": "description guidance: brief, specific, story of the space, realistic"
+    }
+   ],
+   "related": [
+    "genre:hospitality_listing",
+    "tech:front_loading",
+    "tech:specificity",
+    "tech:sensory_detail",
+    "plat:google_business_profile"
+   ],
+   "limits": [
+    {
+     "field": "listing title (recommended; longer titles are shortened in search)",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://www.airbnb.com/resources/hosting-homes/a/guidelines-for-writing-your-listing-title-533",
+     "checked": "2026-10-05",
+     "quote": "Start with the most important information, and try to use fewer than 50 characters. Longer titles are automatically shortened in search results",
+     "confidence": "high (official Airbnb Resource Center, dated Feb 2, 2026)"
+    }
+   ],
+   "formatting": [
+    "Title: plain text in sentence case. Capitalise only the first word plus proper names and abbreviations (neighbourhood, landmark, airport code).",
+    "No emojis or symbols in titles (Content Policy). A single special character is fine; do not repeat one for emphasis (!!!, ***). Separate ideas with commas or a single slash.",
+    "Airbnb shortens longer titles automatically in search results to fit smaller screens, so the end of a long title may not show.",
+    "Title changes take up to an hour to appear; service and experience titles need review before they publish (Airbnb Help Center).",
+    "Description: no official length cap was found (the 500-character figure is third-party only: unverified). Bold, lists and line breaks are not covered by the pages read: unverified; write short plain-text paragraphs and check the host editor.",
+    "Hindi or Hinglish text in a title is not addressed by the sources: unverified; keep titles in the language guests search in."
+   ],
+   "writing_notes": [
+    "Lint: this card has one lintable limit, so `pcw.py check title.txt --platform plat:airbnb_listing` tests the TITLE against 50 characters, no --field needed. Paste only the title. The description has no recorded cap, so the lint does not test its length; judge it by reading.",
+    "Airbnb words the 50 as 'try to use fewer than 50 characters' and says longer titles are shortened in search. Treat 50 as a hard ceiling for writing: anything past it is the part guests will not see.",
+    "Title formula: type of space + place or landmark + one differentiator, in sentence case. Examples: 'Sea-view 2BHK, 5 minutes from Palolem Beach' (43 chars) and 'Courtyard room in a Jaipur haveli, near Hawa Mahal' (50 chars). Wrong: 'BEST LUXURY VILLA!!! 🌴 Goa Stay' (capitals, repeated symbols, emoji, and no fact a guest can use).",
+    "Description order: line 1, the space and who it suits; 2-3 short sentences of specific story (what the morning looks like, what is a short walk away); then the honest limits (stairs, noise, shared areas); house rules last. Do not paste the amenities list again.",
+    "Example 'good to know' line: 'The flat is on the second floor and the building has no lift, so it may not suit guests who find stairs difficult.' Say it plainly; guests who arrive knowing book happier.",
+    "Write specific, checkable facts (walking minutes you have timed, floor, bed sizes). Airbnb asks for realistic descriptions, so do not use 'luxury' or 'best' without something that shows it."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Airbnb: longer titles are automatically shortened in search results to fit smaller screens, so the first words of a title do the work.",
+     "url": "https://www.airbnb.com/resources/hosting-homes/a/guidelines-for-writing-your-listing-title-533"
+    }
+   ]
+  },
+  {
+   "id": "plat:amazon_brand_store",
+   "kind": "platform",
+   "name": "Amazon Brand Store (Stores builder pages and tiles)",
+   "status": "current",
+   "summary": "A Brand Store is a free multi-page storefront built from tiles. The one number Amazon prints for its text is a recommendation: keep header copy under 30 characters so it can be set large enough to read on mobile. Amazon publishes no caps for text-tile or image-with-text fields; the builder enforces its own.",
+   "use_for": [
+    "Header copy on the Store's pages (a short noun-phrase promise).",
+    "Text tile for brand history and mission.",
+    "Image-with-text tile: prefix, heading, body and link text over or beside an image.",
+    "Rewriting a Store so the words survive on a phone."
+   ],
+   "avoid": [
+    "Baking the headline into the image. Amazon says text in an image 'will not be readable by search engines, or by people who rely on screen readers'; use the Image with text tile so the words stay real text.",
+    "A header longer than 30 characters. Amazon's mobile guide asks for under 30 so the type can be big (it also recommends a minimum 90 pt Arial-equivalent font for header copy); a long header forces small type.",
+    "Putting the one essential line in a field that only shows on desktop. Some text fields are not supported in the custom mobile layout; keep the key message in tiles that show on mobile.",
+    "Quoting tile character limits from memory. The Stores spec page publishes none; read the builder's live counter.",
+    "Link text such as 'Click here' on a tile: say the destination ('Shop the masala blends')."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://advertising.amazon.com/resources/ad-specs/stores",
+     "title": "Stores creative guidelines - Ad specs & Requirements | Amazon Ads",
+     "supports": "tile types (text, image with text: prefix, heading, body, link text), image sizes, embedded-text guidance, desktop-only text fields"
+    },
+    {
+     "url": "https://advertising.amazon.com/library/guides/six-tips-to-optimize-your-store-for-mobile",
+     "title": "Six tips to optimize your Brand Store for mobile | Amazon Ads",
+     "supports": "header copy length and font-size advice"
+    },
+    {
+     "url": "https://advertising.amazon.com/library/guides/stores-best-practices",
+     "title": "A comprehensive guide to successful Brand Stores | Amazon Ads",
+     "supports": "text tiles for brand history and mission, byline traffic, logo 400 x 400 px minimum"
+    }
+   ],
+   "related": [
+    "genre:d2c_brand_store",
+    "genre:amazon_a_plus_content",
+    "plat:amazon_product_listing",
+    "plat:amazon_sponsored_brands",
+    "plat:amazon_dsp_display",
+    "genre:brand_story"
+   ],
+   "limits": [
+    {
+     "field": "header copy (recommended, for mobile legibility)",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://advertising.amazon.com/library/guides/six-tips-to-optimize-your-store-for-mobile",
+     "checked": "2026-10-05",
+     "quote": "The copy in the header should be less than 30 characters ... to be legible on mobile",
+     "confidence": "medium (official Amazon Ads guide; a recommendation, not a field cap)"
+    }
+   ],
+   "formatting": [
+    "Tile types that carry words: Text tile (freeform text that can link to a Store page or product detail page) and Image with text tile.",
+    "Image with text, text over image: prefix, heading, body and link text. Text next to image: header and description.",
+    "Header copy: under 30 characters (recommendation); the mobile guide also recommends a minimum 90 pt Arial-equivalent font for header copy.",
+    "Text in the image itself is discouraged: search engines and screen readers cannot read it.",
+    "Some text fields do not appear in the custom mobile layout and show on desktop only.",
+    "Logo: 400 x 400 px minimum (Stores best-practices guide).",
+    "Bold, line breaks, emoji and Hindi text inside tiles are not covered by the pages read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: one lintable limit, so `pcw.py check header.txt --platform plat:amazon_brand_store` tests the header copy against 30 characters. Paste only the header. The other tile fields have no recorded cap, so the lint cannot test them; use the builder's counter.",
+    "Header formula: a noun-phrase promise, not a greeting. 'Small-batch chai from Pune' (26 chars) or 'Chai, blended in Pune' (21 chars). Wrong: 'Welcome to the Official Brew Rani Store' (39 chars, and it says nothing a shopper can use).",
+    "Text tile: brand history and mission (Amazon's best-practices use for it) in 2-4 short sentences, one idea each, ending on what the shopper can do next. Example: 'Brew Rani began with one family recipe for masala chai in Pune. Today we blend small batches of Assam tea with whole cardamom and dry ginger and pack them ourselves.'",
+    "Image-with-text tile: prefix as a short label, heading as the product or collection, body as one line of specs, link text as verb + destination. Example: prefix 'New blend', heading 'Cardamom Kadak', body 'Assam tea, whole cardamom, dry ginger.', link text 'Shop the blend'.",
+    "Write for the phone first: if the line does not fit large on a narrow screen, cut words, do not shrink the font.",
+    "Every product claim on a tile must match the product detail page; if the pack does not show it, do not say it."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Amazon Stores spec: text baked into an image will not be readable by search engines or by people who rely on screen readers, so use the Image with text tile.",
+     "url": "https://advertising.amazon.com/resources/ad-specs/stores"
+    }
+   ]
+  },
+  {
+   "id": "plat:amazon_dsp_display",
+   "kind": "platform",
+   "name": "Amazon DSP display creatives (responsive eCommerce, asset-based, Brand Store creative)",
+   "status": "current",
+   "summary": "Amazon DSP display creatives are built from fields with hard caps. Responsive eCommerce creative: headline 50 characters, disclaimer 60 characters, at most 10 words on a custom image. Asset-based and Brand Store creative: headline 50, brand name 25, body text 100, up to 15 headlines and 5 body texts per asset-based creative. The headline rules matter as much as the numbers: no price or savings claims, no exclamation points, no unsupported superlatives.",
+   "use_for": [
+    "Headline for a responsive eCommerce creative built from a product image.",
+    "Words for a size-specific custom image (10 words at most).",
+    "A set of up to 15 headlines and 5 body texts for an asset-based creative, plus brand name.",
+    "The optional disclaimer line for products that need one."
+   ],
+   "avoid": [
+    "Pricing or savings in the headline ('Rs 99', 'Flat 30% off'). Amazon bars them there. Describe the product or the benefit and let the product data carry the price.",
+    "Forceful phrases and exclamation points ('Don't miss out!') or several punctuation marks or special characters in a row. Write one plain sentence fragment.",
+    "'Best', 'top selling', 'healthiest' and similar claims Amazon will not accept without support. Use a fact that is true and checkable on the product (ingredient, weight, place packed).",
+    "Subscribe & Save messaging in any headline.",
+    "More than 10 words on a custom image, Title Case on it, or more than 2 type variations. Image copy is sentence case.",
+    "Fifteen headlines that are one line reworded fifteen ways. Give each a different angle (ingredient, occasion, place made, gifting) so the set is worth having.",
+    "Assuming the Japan counts (25 headline, 15 brand, 50 body) apply to India. Amazon prints them for Japan; how Devanagari is counted is not stated, so check the console counter for Hindi."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://advertising.amazon.com/resources/ad-specs/ecommerce",
+     "title": "eCommerce display creatives - Guidelines & ad specs | Amazon Ads",
+     "supports": "headline/disclaimer limits and headline rules, custom image word cap, sentence case for image copy"
+    },
+    {
+     "url": "https://advertising.amazon.com/resources/ad-specs/component-based-creative",
+     "title": "Asset-based and Brand Store Creatives - Guidelines & ad spec | Amazon Ads",
+     "supports": "per-field limits and component counts (Brand Store creative 1 of each; asset-based up to 15 headlines, 5 body texts)"
+    }
+   ],
+   "related": [
+    "plat:amazon_sponsored_brands",
+    "plat:amazon_brand_store",
+    "plat:amazon_product_listing",
+    "genre:display_banner_ad_copy",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code"
+   ],
+   "limits": [
+    {
+     "field": "headline (responsive eCommerce creative)",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://advertising.amazon.com/resources/ad-specs/ecommerce",
+     "checked": "2026-10-05",
+     "quote": "Maximum of 50 characters in the headline.",
+     "confidence": "high (official ad spec)"
+    },
+    {
+     "field": "disclaimer (responsive eCommerce creative)",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://advertising.amazon.com/resources/ad-specs/ecommerce",
+     "checked": "2026-10-05",
+     "quote": "Maximum of 60 Characters in the disclaimer.",
+     "confidence": "high (official ad spec)"
+    },
+    {
+     "field": "words on a size-specific custom image",
+     "max": 10,
+     "unit": "words",
+     "url": "https://advertising.amazon.com/resources/ad-specs/ecommerce",
+     "checked": "2026-10-05",
+     "quote": "Total words in the custom image may not exceed 10 words (40 characters in JP).",
+     "confidence": "high (official ad spec)"
+    },
+    {
+     "field": "headline (asset-based / Brand Store creative)",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://advertising.amazon.com/resources/ad-specs/component-based-creative",
+     "checked": "2026-10-05",
+     "quote": "Headline 50 characters ; 25 JP characters",
+     "confidence": "high (official ad spec)"
+    },
+    {
+     "field": "brand name (asset-based / Brand Store creative)",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://advertising.amazon.com/resources/ad-specs/component-based-creative",
+     "checked": "2026-10-05",
+     "quote": "Brand Name 25 characters ; 15 JP characters",
+     "confidence": "high (official ad spec)"
+    },
+    {
+     "field": "body text (asset-based / Brand Store creative)",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://advertising.amazon.com/resources/ad-specs/component-based-creative",
+     "checked": "2026-10-05",
+     "quote": "Body Text 100 characters ; 50 JP characters",
+     "confidence": "high (official ad spec)"
+    },
+    {
+     "field": "headlines per asset-based creative",
+     "max": 15,
+     "unit": "count",
+     "url": "https://advertising.amazon.com/resources/ad-specs/component-based-creative",
+     "checked": "2026-10-05",
+     "quote": "Headline 50 characters ; 25 JP characters 1 15 (columns: Brand store Creative / Asset based Creative components per field)",
+     "confidence": "high (official ad spec)"
+    }
+   ],
+   "formatting": [
+    "Headline: plain text starting with a capital letter (except certain brand names); no multiple punctuation marks or special characters in a row.",
+    "Copy inside custom images: sentence case, at most 2 type variations, at most 10 words.",
+    "Disclaimer: only for products that need one; 60 characters in responsive eCommerce creative.",
+    "CTA: picked from a pre-approved dropdown, not written by the copywriter.",
+    "Component counts: Brand Store creative takes 1 of each field; asset-based creative takes up to 15 headlines and 5 body texts.",
+    "Japan limits are roughly half (25 JP characters for the headline, 15 for brand name, 50 for body).",
+    "Emoji, line breaks and Hindi are not covered by the specs read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: six lintable fields, so always pass --field. `--field \"headline (responsive\"` (50 chars, eCommerce creative), `--field \"headline (asset-based\"` (50 chars), `--field disclaimer` (60), `--field \"words on a size-specific\"` (10 words), `--field \"brand name\"` (25), `--field \"body text\"` (100). Both headline caps are 50; choose the --field that names the ad type you are writing.",
+    "The 15-headlines-per-creative limit is a count the tool cannot test: count them by hand. Check one headline per run, because the lint measures the whole file.",
+    "Headline formula: product + one checkable benefit, no price, no verb of urgency. 'Whole-spice masala chai, 250 g pack' (35 chars). Wrong: 'Don't miss out! Best chai at Rs 99!!' (exclamation, price, superlative).",
+    "Asset-based set, five angles: 'Masala chai with whole cardamom and ginger' (42); 'Assam tea blended in small batches in Pune' (42); 'A kadak cup of chai, made at home' (33); 'Chai for gifting, packed in Pune' (32); 'Cardamom Kadak: a strong morning blend' (38).",
+    "Brand name 'Brew Rani' (9 chars). Body text: 'Small-batch Assam tea with whole cardamom and dry ginger. Packed in Pune and delivered across India.' (100 chars). Disclaimer: 'Image is for illustration only.' (31 chars).",
+    "Custom image copy: 'Chai made the kadak way' (5 words). Aim for 4-6 words so the type stays large.",
+    "Every headline claim has to be true of the product detail page. If the client cannot prove it, cut it."
+   ]
+  },
+  {
+   "id": "plat:amazon_sponsored_brands",
+   "kind": "platform",
+   "name": "Amazon Sponsored Brands ad (headline, logo, products)",
+   "status": "current",
+   "summary": "A Sponsored Brands ad is a search ad with a logo, a custom headline and 3 or more products (Collections), a Store spotlight, or a video of 6 to 45 seconds. Amazon's public pages do not state the headline character cap (the 50 quoted widely is printed officially only for DSP display), but its moderation rules are explicit: sentence case, no more than two repeated ?/! marks or ellipses, and no unproven claims.",
+   "use_for": [
+    "Custom headline for a Collections ad over 3 or more products.",
+    "Headline for a Store spotlight ad (the Store needs at least 4 pages).",
+    "Planning the words and length of a Sponsored Brands video (6 to 45 s, 20 s or less highly recommended).",
+    "Cleaning a headline that Amazon moderation rejected."
+   ],
+   "avoid": [
+    "Title Case, ALL CAPS or mixed case. Amazon rejects them; capitalise only the first word, proper nouns and trademarks.",
+    "Numerals, *, @ or periods in place of letters, or to shorten words ('H8', 'w/out'), unless part of a brand or slogan. Spell the word out.",
+    "'???', '!!!' or long ellipses. The limit is 2 instances per headline.",
+    "Claims the product page does not support. A headline claim needs proof and must match the product detail page.",
+    "Naming specific products in an optimized ad's headline. Amazon says optimized ads must carry general headlines.",
+    "Treating 50 characters as Amazon's Sponsored Brands rule. It is not published for this ad type; draft to 50 as a safe proxy and let the console's live counter decide.",
+    "Writing the headline in a language other than the site's primary language. Ads must be in the primary language of the site; confirm in the console whether Hindi is accepted on Amazon.in before writing it."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://advertising.amazon.com/library/guides/sponsored-brands-display-ads-moderation",
+     "title": "A complete guide to Sponsored Brands and display ads moderation - Amazon Ads",
+     "supports": "headline punctuation, sentence case, special characters, claims substantiation, optimized-ad headline rule"
+    },
+    {
+     "url": "https://advertising.amazon.com/help/GF86HBCNDJUAC5WN",
+     "title": "Create a Sponsored Brands campaign - Amazon Ads help",
+     "supports": "formats: Collections (logo + custom headline + 3 or more products), Brand Gallery, Store spotlight"
+    },
+    {
+     "url": "https://advertising.amazon.com/resources/ad-specs/sponsored-brands-video",
+     "title": "Sponsored Brands video - Ad specs and guidelines",
+     "supports": "ad anatomy (headline text, logo, CTA), video duration"
+    }
+   ],
+   "related": [
+    "plat:amazon_dsp_display",
+    "plat:amazon_brand_store",
+    "plat:amazon_product_listing",
+    "genre:search_ad_copy",
+    "genre:display_banner_ad_copy",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "limits": [
+    {
+     "field": "repeated ?/! marks or ellipses per headline",
+     "max": 2,
+     "unit": "count",
+     "url": "https://advertising.amazon.com/library/guides/sponsored-brands-display-ads-moderation",
+     "checked": "2026-10-05",
+     "quote": "Repeated question (???) or exclamation (!!!) marks or excessive ellipses—generally more than two instances per headline—must not be used.",
+     "confidence": "high (official Amazon Ads moderation guide)"
+    },
+    {
+     "field": "Sponsored Brands video length",
+     "max": 45,
+     "unit": "seconds",
+     "url": "https://advertising.amazon.com/resources/ad-specs/sponsored-brands-video",
+     "checked": "2026-10-05",
+     "quote": "Video duration Between 6 and 45 seconds (20 secs or less highly recommended)",
+     "confidence": "high (official ad spec)"
+    }
+   ],
+   "formatting": [
+    "Headline: plain text in sentence case only (first word, proper nouns, trademarks capitalised).",
+    "No numerals, *, @ or periods used instead of letters or to shorten words (unless part of a brand or slogan, or symbols such as $ and #).",
+    "No more than 2 repeated question marks, exclamation marks or ellipses in one headline.",
+    "Collections: logo + custom headline + 3 or more products. Store spotlight: needs a Store with at least 4 pages. Video: headline text, logo and CTA; 6 to 45 seconds.",
+    "Language: the primary language of the site.",
+    "Emoji, bold, line breaks and Devanagari are not covered by the pages read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: this card has no lintable limit (one count, one duration), so `pcw.py check --platform plat:amazon_sponsored_brands` tests no length. Read the draft against the rules above by eye; count '?', '!' and ellipses by hand (limit 2).",
+    "Conflict on the headline cap: no Amazon page read states one for Sponsored Brands; the 50-character figure is official only for DSP creatives (plat:amazon_dsp_display). Draft to 50 or under so the line survives either way, and read the console counter before delivery.",
+    "Headline formula: the category or need that all the products share, in sentence case, no specific product. 'Small-batch chai blends from Pune' (33 chars) or 'Chai for slow mornings' (22 chars). Wrong: 'BEST CHAI W/OUT SUGAR!!!' (capitals, a symbol shortening 'without', repeated '!').",
+    "Write the headline last: pick the 3 or more products first, then name what they have in common.",
+    "Video: plan the whole message to fit 20 seconds; Amazon says 20 s or less is highly recommended and only allows 6 to 45.",
+    "Any claim ('no added sugar', 'handmade') needs proof on the pack or product page. If it is not there, the claim is out."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Amazon moderation: optimized Sponsored Brands ads must contain general headlines that do not mention specific products.",
+     "url": "https://advertising.amazon.com/library/guides/sponsored-brands-display-ads-moderation"
+    }
+   ]
+  },
+  {
+   "id": "plat:apple_podcasts",
+   "kind": "platform",
+   "name": "Apple Podcasts show and episode (Apple Podcasts Connect)",
+   "status": "current",
+   "summary": "The four text fields in Apple Podcasts Connect: show name up to 150 characters, show description up to 4,000, episode title up to 150, episode description up to 10,000. A show delivered by an RSS feed from another host follows that host's limits, and the industry feed figure is 4,000 for show and episode notes, so notes written under 4,000 work on both.",
+   "use_for": [
+    "Show name and show description when submitting a new show.",
+    "Episode title and episode description for each release.",
+    "Hindi, Hinglish or English show notes that must also work on Spotify and other apps.",
+    "Rewriting a show description so a new listener knows who it is for."
+   ],
+   "avoid": [
+    "Using the 10,000-character episode limit as the target when the show is fed from another host. The host's limit applies; the industry-wide figure is 4,000, so keep episode notes under 4,000 and the same text works everywhere (plat:spotify_podcast_episode).",
+    "A show description that lists past episodes. Say who the show is for, what they get, the format and the cadence.",
+    "A title that spends its first words on the show name or an episode number. Put the topic first; the limit is 150 but the first words are what a listener scans.",
+    "Show notes that only say 'In this episode we talk about...' Name the guest's credential, the question answered and the next step.",
+    "Assuming Devanagari counts like Latin characters. The pages read do not say how Apple counts them; leave a margin."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://podcasters.apple.com/support/897-submit-a-show",
+     "title": "Apple Podcasts for Creators: Submit a new show",
+     "supports": "show name 150, show description 4000"
+    },
+    {
+     "url": "https://podcasters.apple.com/support/825-how-to-create-an-episode",
+     "title": "Apple Podcasts for Creators: Create an episode",
+     "supports": "episode title 150, description 10,000, art 3000x3000"
+    }
+   ],
+   "related": [
+    "plat:spotify_podcast_episode",
+    "genre:podcast_show_notes",
+    "genre:podcast_script",
+    "plat:youtube_description",
+    "trend:video_podcasts"
+   ],
+   "limits": [
+    {
+     "field": "show name",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://podcasters.apple.com/support/897-submit-a-show",
+     "checked": "2026-10-05",
+     "quote": "Name : The name of your show. You can enter up to 150 characters.",
+     "confidence": "high (Apple Podcasts for Creators)"
+    },
+    {
+     "field": "show description",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://podcasters.apple.com/support/897-submit-a-show",
+     "checked": "2026-10-05",
+     "quote": "You can enter up to 4000 characters.",
+     "confidence": "high (Apple Podcasts for Creators, Submit a new show)"
+    },
+    {
+     "field": "episode title",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://podcasters.apple.com/support/825-how-to-create-an-episode",
+     "checked": "2026-10-05",
+     "quote": "Name : An episode title. You can enter up to 150 characters.",
+     "confidence": "high (Apple Podcasts for Creators)"
+    },
+    {
+     "field": "episode description",
+     "max": 10000,
+     "unit": "chars",
+     "url": "https://podcasters.apple.com/support/825-how-to-create-an-episode",
+     "checked": "2026-10-05",
+     "quote": "Description : One or more sentences describing your episode to potential listeners. You can enter up to 10,000 characters.",
+     "confidence": "high (Apple Podcasts for Creators, Create an episode)"
+    }
+   ],
+   "formatting": [
+    "Fields: Name (show, 150 characters), description (show, 4,000), episode name (150), episode description (10,000), all entered in Apple Podcasts Connect.",
+    "Episode art can be 3000 x 3000 pixels (Apple's 'Create an episode' page).",
+    "A show delivered by RSS from another host follows that host's field limits, not Apple's.",
+    "How links, line breaks, bold or timestamps render in the description is not covered by the two Apple pages read: unverified; test in Connect before delivery.",
+    "Hindi and Devanagari counting is unverified: leave at least 10% of the limit free."
+   ],
+   "writing_notes": [
+    "Lint: four lintable fields, so pass --field: `--field \"show name\"` (150), `--field \"show description\"` (4000), `--field \"episode title\"` (150), `--field \"episode description\"` (10000). Paste one field per run.",
+    "Conflict: Apple's Connect limits (4,000 / 10,000) versus the industry feed figure (4,000 for both show and episode notes). Trust Apple for shows hosted in Connect and the other host's cap for shows fed by RSS. When unsure, write episode notes under 4,000.",
+    "Show description shape: who it is for and what they get, then format and cadence, then the host's credential. 'Har hafte 20 minute mein GST aur income tax ki ek asli problem, ek Jaipur CA ke saath. Chhote business owners aur D2C founders ke liye, Hinglish mein, bina jargon ke. Naya episode har Tuesday.' (192 chars, Hinglish in Roman script).",
+    "Show name: the name people will say aloud, not a keyword string. 'Seedha GST' (10 chars). Put the topic words in the first sentence of the description.",
+    "Episode title: topic first, then the payoff. 'GST notice aaya hai? Reply likhne se pehle yeh 3 cheezein dekhein' (65 chars).",
+    "Episode description: first two sentences carry the topic and the payoff, then guest credential, timestamps, links. 'Ek Jaipur CA batati hain ki GST notice milne par pehle kaunse documents nikalein, portal par notice kahan dikhta hai, aur reply ka format kaise banayein. Timestamps neeche hain.' (177 chars before timestamps).",
+    "Hinglish in Roman script suits a Hinglish show; keep one script per field and match the language the audio is in."
+   ]
+  },
+  {
+   "id": "plat:behance_project",
+   "kind": "platform",
+   "name": "Behance project (title, tags, description)",
+   "status": "current",
+   "summary": "A Behance project needs a cover image, a project title and at least 1 creative field before it can publish, and takes up to 10 project tags. Behance publishes no character limit for title or description; its own guidance describes the average project as 10 to 15 images broken up with descriptive text and a compelling title.",
+   "use_for": [
+    "Project title for a portfolio case study.",
+    "Short text blocks between images: the brief, the process, the result.",
+    "Choosing up to 10 tags (discipline, industry, tools).",
+    "Credits and role lines for a team project."
+   ],
+   "avoid": [
+    "A generic title such as 'Branding project 3'. The title is one of three required items; name the client or brand and the job in plain words.",
+    "One long essay above the images. Behance describes projects as images broken up with descriptive text, so put one short block of text beside each image group.",
+    "Ten tags chosen at random. Tags and tools are suggested, not required, so use them for what a hiring manager or client would filter by: discipline, industry, tool.",
+    "Showing client work you have no permission to show. Check the client agreement and any NDA before publishing.",
+    "Quoting a title or description character cap. None is published; do not invent one."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://help.behance.net/hc/en-us/articles/204483954-Guide-Project-Tags",
+     "title": "Behance Help: Project Tags",
+     "supports": "up to 10 project tags"
+    },
+    {
+     "url": "https://help.behance.net/hc/en-us/articles/204483524-FAQ-What-fields-are-required-before-publishing",
+     "title": "Behance Help: What fields are required before publishing?",
+     "supports": "cover image, project title and at least 1 creative field required"
+    },
+    {
+     "url": "https://help.behance.net/hc/en-us/articles/204483684-Guide-Create-Publish-A-Project",
+     "title": "Behance Help: Create & Publish A Project",
+     "supports": "tags and tools suggested, not required; description under Co-owners, Credits, and More"
+    },
+    {
+     "url": "https://help.behance.net/hc/en-us/articles/23707509178011-Guide-Advanced-Project-Settings",
+     "title": "Behance Help: Advanced Project Settings",
+     "supports": "schedule a project up to 90 days in advance"
+    }
+   ],
+   "related": [
+    "genre:portfolio_case_writeup",
+    "genre:case_study",
+    "plat:linkedin_profile",
+    "tech:specificity",
+    "tech:descriptive_subheads"
+   ],
+   "limits": [
+    {
+     "field": "project tags",
+     "max": 10,
+     "unit": "count",
+     "url": "https://help.behance.net/hc/en-us/articles/204483954-Guide-Project-Tags",
+     "checked": "2026-10-05",
+     "quote": "You can add up to 10 Project Tags",
+     "confidence": "high (Behance Help Center)"
+    }
+   ],
+   "formatting": [
+    "Required to publish: a cover image, a project title and at least 1 creative field.",
+    "Project tags: up to 10. Tags and tools are suggested during creation, not required.",
+    "The description sits under 'Co-owners, Credits, and More' in the create-and-publish flow; descriptive text also sits between images.",
+    "A typical project has 10 to 15 images broken up with descriptive text and a compelling title.",
+    "A project can be scheduled up to 90 days ahead.",
+    "Bold, links, lists and Hindi or Hinglish text inside text blocks are not covered by the help pages read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: the only recorded limit is a tag count, and `pcw.py check` cannot count Behance tags (its counter only recognises hashtags, emoji, mentions, links). `check --platform plat:behance_project` therefore tests nothing; count the 10 tags by hand.",
+    "Title formula: brand or project name + the job in plain words. 'Brew Rani: packaging and brand identity for a Pune chai brand' (61 chars; no cap is published, so shorter is better for the cover and for sharing).",
+    "Text block shape, one per image group: a short heading naming the section (The brief, The idea, The result), then 1-3 sentences, then one number or fact. Example: 'The brief. Brew Rani sold only through marketplace pages and needed a pack that reads as small-batch even as a thumbnail.' Add real figures only if the client has confirmed them.",
+    "Ten tags, in this order of priority: 2-3 disciplines, 1-2 industries, 2-3 tools, then style or place. Example: packaging design, brand identity, illustration, tea, FMCG, Pune, Adobe Illustrator, Adobe Photoshop, typography, label design.",
+    "End with a credits block: your role, collaborators, tools and year. A hiring manager scanning for what you did personally should find it in one place.",
+    "Write in first person plural for a studio, first person singular for a solo piece, and keep the verbs concrete (drew, tested, shipped)."
+   ]
+  },
+  {
+   "id": "plat:bing_search_result",
+   "kind": "platform",
+   "name": "Bing search result (title + meta description snippet)",
+   "status": "current",
+   "summary": "How a page's HTML title and meta description appear in Bing, and what Copilot sees. Bing publishes no title cap and may truncate or rewrite either element; the meta description shows roughly 160 characters according to an official 2012 Bing Webmaster post. Current Bing guidelines say missing, duplicate or overly short titles and descriptions can hurt indexing reliability, ranking and eligibility for grounding and citations.",
+   "use_for": [
+    "Title and meta description pairs for service, product and article pages.",
+    "A unique pair for every page of a site that has duplicates.",
+    "A meta description written as a call to action for a page that already ranks.",
+    "Pages that should be quotable in Copilot answers."
+   ],
+   "avoid": [
+    "The same title or description on many pages. Bing says duplicate ones may reduce indexing reliability and ranking.",
+    "Very short titles and descriptions. 'Home' or 'Services' are 'overly short' in Bing's words.",
+    "Putting the brand first on a long title. Bing needs to fit titles in the available space and may truncate long ones, so lead with the words that matter.",
+    "A title that disagrees with the page's heading and content. Bing asks you to align titles with headings and content.",
+    "Treating 160 as a hard rule. It is 'roughly 160 or so' from a 2012 official post; write so the answer lands before the cut."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a",
+     "title": "Webmaster Guidelines - Bing Webmaster Tools",
+     "supports": "titles and meta descriptions matter for indexing, ranking and Copilot grounding; align titles with headings and content"
+    },
+    {
+     "url": "https://blogs.bing.com/webmaster/March-2012/Does-Bing-like-SEO-You-bet-your-ahrefs-we-do",
+     "title": "Does Bing like SEO? You bet your ahrefs we do (Bing Webmaster blog)",
+     "supports": "meta description as a call to action, ~160 visible characters"
+    },
+    {
+     "url": "https://blogs.bing.com/webmaster/2014/06/23/how-does-bing-choose-the-title-for-my-web-page/",
+     "title": "How Does Bing Choose The Title For My Web Page? (Bing Webmaster blog)",
+     "supports": "Bing truncates long titles and may rewrite them from OpenGraph, page text or anchor text"
+    }
+   ],
+   "related": [
+    "plat:google_search_result",
+    "tech:title_tag_writing",
+    "tech:meta_description_writing",
+    "tech:keyword_placement",
+    "trend:geo_ai_search",
+    "genre:services_page"
+   ],
+   "limits": [
+    {
+     "field": "meta description shown in the result (approximate)",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://blogs.bing.com/webmaster/March-2012/Does-Bing-like-SEO-You-bet-your-ahrefs-we-do",
+     "checked": "2026-10-05",
+     "quote": "Those roughly 160 or so characters that appear in the SERP are really a chance to sell your site to the searcher.",
+     "confidence": "medium (official Bing Webmaster blog, 2012)"
+    }
+   ],
+   "formatting": [
+    "Title and description come from the page's HTML title tag and meta description.",
+    "Bing may rewrite a title using OpenGraph, page text or anchor text, and may move the site name to the front to keep it from truncating.",
+    "Long titles are truncated to fit the space; no character cap is published.",
+    "Meta description shows roughly 160 characters in the result (official 2012 post).",
+    "The NOCACHE meta setting limits Copilot to the URL, title and snippet.",
+    "Emoji and Devanagari display in results are not covered by the pages read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: one lintable limit, so `pcw.py check desc.txt --platform plat:bing_search_result` tests the META DESCRIPTION against 160. Bing has no title cap; test a title with the Google card's guidance: `pcw.py check title.txt --platform plat:google_search_result --field \"title tag\"` (60, third-party, a safe proxy).",
+    "Conflict: Google and Bing both set no hard limit; the 60 and 160 numbers are guidance. Write the title to 60 or under and the description to 155 or under so it holds in both, and put the key phrase first.",
+    "Title formula: the page's subject and primary phrase first, brand last. 'GST notice reply for D2C brands | Sharma & Rao CA' (49 chars, inside the 60 proxy).",
+    "Description formula: answer the searcher's question, then one proof or action. 'Got a GST notice? Jaipur CAs read the order, gather the documents and file the reply on the portal. Book a 15-minute call to see your options.' (142 chars). Bing calls it a chance to sell the site: end on a clear next step.",
+    "Write a different pair for each page, and make the title agree with the H1.",
+    "Missing, duplicate or overly short pairs are what Bing's own guidelines warn about, so audit those before polishing the good ones."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Bing Webmaster Guidelines: missing, duplicate or overly short title tags and meta descriptions may reduce indexing reliability, ranking and eligibility for grounding results and citations.",
+     "url": "https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a"
+    },
+    {
+     "note": "Bing truncates long titles and may rewrite them from OpenGraph, page text or anchor text, so the most important words belong at the front.",
+     "url": "https://blogs.bing.com/webmaster/2014/06/23/how-does-bing-choose-the-title-for-my-web-page/"
+    }
+   ]
+  },
+  {
+   "id": "plat:businesswire_release",
+   "kind": "platform",
+   "name": "Business Wire news release (BusinessWire.com distribution)",
+   "status": "current",
+   "summary": "A news release distributed over Business Wire, where the headline becomes the page title tag and the first 160 characters of the body become the meta description in search results. Business Wire's own advice is an 8 to 12 word headline with the primary keyword near the front and the news in the opening lines.",
+   "use_for": [
+    "Headline and opening paragraph of a product launch, funding, appointment or results release.",
+    "A release whose search snippet must make sense on its own.",
+    "Image captions that double as alt text."
+   ],
+   "avoid": [
+    "A headline of 20 words that opens with the company name. Aim for 8 to 12 words with the keyword near the front; the headline is also the title tag.",
+    "A dateline or boilerplate that eats the opening. Business Wire's page does not say whether a dateline counts toward the 160, so keep the news inside the first 120 characters of the body.",
+    "Writing the headline first. Business Wire suggests drafting it after the body so the key point is in it.",
+    "Keyword stuffing. Use the primary keyword in the headline and once in the body.",
+    "Images with no captions. Captions become alt text; write them.",
+    "Quoting a 250-character headline limit or a 2 to 22 word range. A search summary mentioned both; neither was read on an official Business Wire page."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.businesswire.com/help/14-tips-make-your-news-do-more",
+     "title": "14 Tips for Effective News Releases | Business Wire",
+     "supports": "headline as title tag, 8-12 word headline, first 160 characters as meta description, keyword and caption advice"
+    }
+   ],
+   "related": [
+    "genre:press_release",
+    "plat:prnewswire_india_release",
+    "tech:headline_first",
+    "tech:meta_description_writing",
+    "tech:front_loading"
+   ],
+   "limits": [
+    {
+     "field": "opening body text used as meta description",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://www.businesswire.com/help/14-tips-make-your-news-do-more",
+     "checked": "2026-10-05",
+     "quote": "The first 160 characters of your press release body text serve as a meta description when published on BusinessWire.com, visible in search engine results.",
+     "confidence": "high (official Business Wire help page)"
+    },
+    {
+     "field": "headline (recommended)",
+     "max": 12,
+     "unit": "words",
+     "url": "https://www.businesswire.com/help/14-tips-make-your-news-do-more",
+     "checked": "2026-10-05",
+     "quote": "Aim for 8–12 words with your primary keyword near the front",
+     "confidence": "high (official Business Wire help page)"
+    }
+   ],
+   "formatting": [
+    "The headline is published as the page's title tag on BusinessWire.com.",
+    "The first 160 characters of the body text are the meta description when published on BusinessWire.com.",
+    "Image captions are used as alt text.",
+    "Primary keyword in the headline (near the front) and once in the body.",
+    "Business Wire's page does not say how subheadings, bullets, boilerplate, datelines, links or Devanagari are handled: unverified."
+   ],
+   "writing_notes": [
+    "Lint: two lintable fields, so pass --field. `--field headline` (12 words): paste the headline alone. `--field \"opening body\"` (160 chars): paste ONLY the opening sentence or two, since the lint measures the whole file. The 8-word minimum is not tested; count it.",
+    "Conflict: a search summary quoted 250 characters or 2-22 words for headlines; Business Wire's own page says 8 to 12 words. Trust the page.",
+    "Draft order: body first, then headline, then check the first 160 characters stand alone as a search snippet. Headline: 'Brew Rani launches cold-brew chai concentrate across India' (8 words). Opening: 'Brew Rani, a Pune tea brand, today launched a cold-brew chai concentrate, sold online across India from Rs 349 for a 500 ml bottle.' (131 chars).",
+    "Opening formula: who + what + when + one number, in one sentence, no adjectives. Journalists often see only the first line or two.",
+    "Primary keyword: once in the headline, once in the body. Avoid repeating it for ranking.",
+    "Image captions: write each as plain alt text (what is in the picture, who, where)."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Business Wire: the first 160 characters of the body serve as the meta description on BusinessWire.com, and the headline is the title tag, so both are written for search results.",
+     "url": "https://www.businesswire.com/help/14-tips-make-your-news-do-more"
+    }
+   ]
+  },
+  {
+   "id": "plat:facebook_page_intro",
+   "kind": "platform",
+   "name": "Facebook Page intro / description (Page 'about')",
+   "status": "current",
+   "summary": "The short description in a Facebook Page's intro box, edited as 'Description' under Edit Page Info. Meta's Graph API reference limits it to 100 characters; some 2026 third-party guides say the new Pages experience allows 255, so write to 100 and it fits either.",
+   "use_for": [
+    "The Page intro line for a brand, shop or professional firm.",
+    "Rewriting an intro that currently says only the business name.",
+    "Deciding what goes in the intro and what goes in the longer Additional Information field."
+   ],
+   "avoid": [
+    "Writing to 255 because a blog says so. Meta's API reference says 100; a 255-character intro may be cut. Write to 100.",
+    "Opening with 'Welcome to our page'. The intro is one line: what you do and for whom.",
+    "Time-bound facts (offers, dates, prices). They go stale; put them in posts.",
+    "Keyword lists. One plain sentence a person can repeat to a friend works for people and for search."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/graph-api/reference/page/",
+     "title": "Meta Graph API: Page reference",
+     "supports": "'about' field = Description in Edit Page Info, limit 100 characters; 'description' maps to Additional Information"
+    }
+   ],
+   "related": [
+    "plat:instagram_bio",
+    "plat:linkedin_profile",
+    "genre:social_bio",
+    "genre:facebook_post",
+    "plat:google_business_profile"
+   ],
+   "limits": [
+    {
+     "field": "Page description ('about' field)",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/graph-api/reference/page/",
+     "checked": "2026-10-05",
+     "quote": "This value maps to the Description setting in the Edit Page Info user interface. Limit of 100 characters.",
+     "confidence": "high (Meta Graph API Page reference)"
+    }
+   ],
+   "formatting": [
+    "The 'about' field is the Description in Edit Page Info; limit 100 characters (Meta Graph API reference).",
+    "'Additional Information' (the API's 'description' field) is a longer field with no published limit.",
+    "A personal profile's intro bio is a different field: Facebook Help documents it but states no number.",
+    "Emoji, line breaks, links and Hindi are not covered by the sources read: unverified; the edit window shows the count."
+   ],
+   "writing_notes": [
+    "Lint: one lintable limit, so `pcw.py check intro.txt --platform plat:facebook_page_intro` tests the intro against 100 characters. Paste only the intro.",
+    "Conflict: Meta's Graph API reference says 100; third-party guides say 255 for the new Pages experience. Trust Meta's own reference and write to 100.",
+    "Formula: what you do + for whom + where. 'Small-batch masala chai, blended in Pune and delivered across India.' (68 chars); 'Chartered accountants in Jaipur: GST, income tax and audits for small businesses.' (81 chars).",
+    "Put the story, history, hours and offers in Additional Information or in pinned posts, not in the intro.",
+    "Hinglish in Roman script works for a Hinglish brand; keep one script in the line."
+   ]
+  },
+  {
+   "id": "plat:facebook_reel",
+   "kind": "platform",
+   "name": "Facebook Reel (and Facebook video, now all reels)",
+   "status": "current",
+   "summary": "Since June 2025 every video posted to Facebook is shared as a reel, and Meta says reels have no length or format restrictions in the apps. The only length figure Meta prints is for Pages publishing through the Reels API: 3 to 90 seconds, 9:16. No caption cap is published, so on-screen text should follow the Reels-ads safe zone.",
+   "use_for": [
+    "Caption and on-screen text for a Page or profile video.",
+    "Reels scheduled through a tool or the API (90-second ceiling).",
+    "Turning an Instagram Reel or a YouTube Short into a Facebook reel."
+   ],
+   "avoid": [
+    "Planning to the 90-second figure for in-app posting. It is the API number; the newsroom says the app has no length restriction. Use 90 only when a scheduler or API posts the reel.",
+    "Text and logos in the top 14%, the bottom 35% or the 6% side margins. Meta's Reels safe zone says to leave them free of text, logos and key elements.",
+    "Assuming a caption character cap. None is published; keep the caption short and let the video carry the story.",
+    "Carrying over Instagram handles or 'link in bio' unchanged. Say the action that works on Facebook (comment, message, tap the button)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/video-api/guides/reels-publishing/",
+     "title": "Meta Video API: Reels publishing guide",
+     "supports": "API-published Page reels 3 to 90 seconds, 9x16"
+    },
+    {
+     "url": "https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/",
+     "title": "Meta Newsroom, 17 June 2025: Making it Easier to Create Videos on Facebook",
+     "supports": "all Facebook videos become reels; reels have no length or format restrictions"
+    },
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-reels?locale=en_US",
+     "title": "Meta Ads Guide: Instagram Reels ads",
+     "supports": "safe zone: keep text and logos out of the top 14%, bottom 35%, 6% each side"
+    }
+   ],
+   "related": [
+    "plat:instagram_reel",
+    "plat:youtube_shorts",
+    "plat:tiktok_video",
+    "genre:short_form_video_script",
+    "trend:short_video_india"
+   ],
+   "limits": [
+    {
+     "field": "video length (Pages publishing through the Reels API)",
+     "max": 90,
+     "unit": "seconds",
+     "url": "https://developers.facebook.com/docs/video-api/guides/reels-publishing/",
+     "checked": "2026-10-05",
+     "quote": "3 to 90 seconds.",
+     "confidence": "medium (Meta developer guide; the June 2025 change removed the length cap in the apps, the API page still prints 90 s)"
+    }
+   ],
+   "formatting": [
+    "Every video on Facebook is published as a reel (Meta Newsroom, 17 June 2025).",
+    "Apps: no length or format restrictions. Reels API: 3 to 90 seconds, 9:16.",
+    "On-screen text safe zone (Meta's Reels ads guide, the guide for organic reels): keep roughly 14% of the top, 35% of the bottom and 6% of each side free of text and logos. On a 1080x1920 frame that is about 269 px top, 672 px bottom and 65 px each side (arithmetic, not a Meta figure).",
+    "Caption: no limit published. How line breaks, hashtags and links render in Facebook reel captions is not covered by the sources read: unverified.",
+    "Hindi and Devanagari on-screen text are not covered: check on a phone."
+   ],
+   "writing_notes": [
+    "Lint: this card has no lintable limit (the only number is a duration), so `pcw.py check --platform plat:facebook_reel` tests no length. Time the video by hand. You can still run the caption through `check` without --platform for AI-tell warnings.",
+    "Conflict: the Meta newsroom (no length limit in the apps) and the Reels API page (90 seconds). Trust the newsroom for in-app posting and the API page for scheduler or API posting. A cut at 90 seconds or under works on both.",
+    "Text placement: the hook and key words sit in the middle band, between 14% and 65% of the frame height (y 269 to 1248 on 1080x1920).",
+    "Caption shape: line 1 names the subject, then one action. 'GST notice aaya? Pehle yeh 3 documents nikaaliye. Comment 'NOTICE' karein, hum reply format bhej denge.' (103 chars).",
+    "Say something the voice-over does not: the number, the source or the next step.",
+    "Hinglish in Roman script is fine for Indian audiences; keep on-screen text in the same script as the caption."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Meta Newsroom (17 June 2025): all videos on Facebook are shared as reels, and reels have no length or format restrictions.",
+     "url": "https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/"
+    }
+   ]
+  },
+  {
+   "id": "plat:flipkart_listing",
+   "kind": "platform",
+   "name": "Flipkart seller listing (title, key features, description)",
+   "status": "current",
+   "summary": "A Flipkart seller listing: product title, key features, description, specifications and images. Flipkart publishes no title or key-feature character cap on public pages (the Seller Hub catalog form enforces category rules behind login); its one printed number is the 4,000-character package description in the Listing API. Flipkart's guidance is a concise yet descriptive title, spec-style key features and scannable bullets.",
+   "use_for": [
+    "Title in the form brand + product type + key detail.",
+    "Key features written as specs, one per line.",
+    "Description in scannable bullets with keywords used naturally.",
+    "Rewriting a listing that has impressions but no orders."
+   ],
+   "avoid": [
+    "Using 4,000 as a length target. It is the Listing API's package description cap, not the product description. Write short bullets.",
+    "A title that is a keyword dump. Flipkart wants concise but descriptive: brand + product type + key details, with the words buyers search ('Men's Cotton Blue T-shirt Size L').",
+    "Key features written as adjectives ('Premium quality'). List specs ('128 GB storage, 48 MP triple-camera, long-lasting battery').",
+    "Claims that do not match the product. Flipkart says everything must match the product exactly.",
+    "Quoting a Flipkart title cap from memory. None is on a public page; read the Seller Hub form's own message."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://seller.flipkart.com/seller-blog/product-listing-optimisation",
+     "title": "Product Listing Optimization Guide - Flipkart Seller Hub",
+     "supports": "title, description, key features and keyword guidance"
+    },
+    {
+     "url": "https://seller.flipkart.com/api-docs/listing-api-docs/LMAPIRef.html",
+     "title": "Listing Management API Reference For Flipkart Marketplace v3.0",
+     "supports": "field definitions and max lengths for listing payloads"
+    }
+   ],
+   "related": [
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "plat:amazon_product_listing",
+    "plat:etsy_listing",
+    "comp:legal_metrology_packaged_commodities",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "limits": [
+    {
+     "field": "package description (Listing API; shown on the product page)",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://seller.flipkart.com/api-docs/listing-api-docs/LMAPIRef.html",
+     "checked": "2026-10-05",
+     "quote": "The description of the package. It can be used to display additional information to the customer on the product page. Max length: 4000",
+     "confidence": "high (official Flipkart Marketplace API reference)"
+    }
+   ],
+   "formatting": [
+    "Fields in the listing: product title, key features, description, specifications and images.",
+    "Description in scannable bullets with keywords used naturally.",
+    "Package description (Listing API): shown on the product page for additional information; maximum 4,000 characters.",
+    "Bold, HTML, emoji and Hindi in any field are not covered by the public pages read: unverified; Seller Hub's form is the check."
+   ],
+   "writing_notes": [
+    "Lint: the only lintable limit is the package description (4,000 chars), so `pcw.py check --platform plat:flipkart_listing` tests only that. Do not use it for a title or key features: any short text passes a 4,000 limit and proves nothing. Count title length by eye against the category form.",
+    "No title cap is published, so write the shortest version that holds brand, product type and 2-3 key attributes.",
+    "Title: 'Brew Rani Masala Chai 250 g, Assam Tea with Cardamom and Ginger' (63 chars). Key features, one spec per line: 'Blend: Assam tea, whole cardamom, dry ginger'; 'Net quantity: 250 g'; 'Roasted and packed in small batches in Pune'.",
+    "Use the words Indian buyers type ('kurta set', 'ghee', 'dupatta'), not translations. Flipkart suggests its dashboard tools for keyword research.",
+    "Mandatory declarations on a listing (net quantity and the like) are covered by comp:legal_metrology_packaged_commodities; check it for packaged goods.",
+    "Check every spec in the listing against the pack photo before delivering."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Flipkart Seller Hub guidance: use the dashboard tools for keyword research and use keywords naturally in the description.",
+     "url": "https://seller.flipkart.com/seller-blog/product-listing-optimisation"
+    }
+   ]
+  },
+  {
+   "id": "plat:g2_profile",
+   "kind": "platform",
+   "name": "G2 product profile (name, 'What is' overview)",
+   "status": "current",
+   "summary": "A software product's profile on G2, edited in my.G2. The 'What is {product}?' overview takes up to 500 words, and product and vendor names must match the website with no added marketing terms, keywords or trademark symbols. Write the overview as plain, quotable fact.",
+   "use_for": [
+    "The 'What is {product}?' overview.",
+    "Product and vendor name fields.",
+    "A rebrand note (the former name can show in parentheses).",
+    "Rewriting an overview that reads like an ad."
+   ],
+   "avoid": [
+    "Marketing words in the name field ('#1', 'Best', 'Free') or the TM and R symbols. G2 says names match the website without added marketing terms, keywords or trademark symbols.",
+    "Promotional language in the overview ('leading', 'revolutionary'). G2 asks you to avoid it; state what the product does, for whom, and the evidence.",
+    "Filling 500 words because you can. The cap is a ceiling; the first two sentences carry the profile.",
+    "Publishing the 'Optimize for SEO' AI rewrite without reading it. Review what it changes.",
+    "Background details you cannot prove (customer counts, awards). Leave them out."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://documentation.g2.com/docs/product-information",
+     "title": "Product Information - G2 Documentation",
+     "supports": "overview field, banner sizes, product/vendor name rules, AI Trust Tier tags"
+    }
+   ],
+   "related": [
+    "genre:positioning_statement",
+    "genre:elevator_pitch",
+    "plat:product_hunt_launch",
+    "trend:geo_ai_search",
+    "tech:plain_language",
+    "tech:answer_first_paragraph"
+   ],
+   "limits": [
+    {
+     "field": "'What is {product}?' overview",
+     "max": 500,
+     "unit": "words",
+     "url": "https://documentation.g2.com/docs/product-information",
+     "checked": "2026-10-05",
+     "quote": "Provide an overview of your product, including key features, customer value, and general background, in up to 500 words.",
+     "confidence": "high (official G2 documentation)"
+    }
+   ],
+   "formatting": [
+    "Overview: up to 500 words covering key features, customer value and general background.",
+    "Product and vendor names match how they appear on your website, without added marketing terms, keywords or trademark symbols; a rebrand may show the former name in parentheses.",
+    "The overview editor has an 'Optimize for SEO' AI rewrite option.",
+    "Banner image: 1260 x 240 px.",
+    "AI Enabled and AI Verified tags can appear on the profile.",
+    "Headings, lists, bold and links inside the overview are not covered by the documentation page read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: one lintable limit, so `pcw.py check overview.txt --platform plat:g2_profile` tests the overview against 500 words. Paste only the overview. Check the name field by eye.",
+    "Shape: sentence 1 = '[Product] is a [category] for [who].' Then 3-5 plain feature sentences, then customer value with one checkable number, then background (founded, headquarters) only if true.",
+    "Example (fictional product, 34 words): 'InvoiceKhata is invoicing and GST filing software for small businesses in India. It creates GST-ready invoices, tracks payments and reminds customers of dues. Accountants can be invited to prepare returns from the same data.'",
+    "Names: 'InvoiceKhata' is correct; 'InvoiceKhata(TM) - India's #1 GST Software!' breaks G2's rule (symbol, ranking claim, keyword).",
+    "Write sentences a person or an AI assistant could quote as they stand: no pronoun that needs the previous line, no slogan.",
+    "A first-draft target of about 250 words is a practice choice, not a G2 rule; add words only when they add a fact."
+   ]
+  },
+  {
+   "id": "plat:instagram_reel",
+   "kind": "platform",
+   "name": "Instagram Reel (caption, length, on-screen text safe zone)",
+   "status": "current",
+   "summary": "A vertical short video on Instagram: caption up to 2,200 characters and 20 @ tags, recorded or edited in the app up to 20 minutes, 3 seconds to 15 minutes through the API, 9:16 recommended. The caption is a ceiling, and the real constraint is the safe zone: keep text and logos out of the top 14%, bottom 35% and 6% of each side.",
+   "use_for": [
+    "Caption for a Reel: a hook line with the keyword, one proof, one action.",
+    "On-screen text and hook placement in the middle band.",
+    "Choosing the right length ceiling for in-app versus scheduler posting.",
+    "Cutting a long video into a Reel."
+   ],
+   "avoid": [
+    "On-screen text in the top 14%, bottom 35% or 6% side margins. The caption, buttons and profile row cover those areas.",
+    "Treating 2,200 as a target. Write the caption as a short, useful complement to the video.",
+    "Hashtags to the API's 30. The Help Center cap is 5 (see plat:instagram_hashtags); the API page still prints 30.",
+    "Scheduling a 20-minute reel through the API. The API ceiling is 15 minutes and 3 seconds minimum.",
+    "Pasting the voice-over as the caption. Add the number, the source or the next step the video does not give."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "Instagram Platform: IG User Media reference",
+     "supports": "caption 2200 chars / 20 @ tags; API Reels 3 s to 15 min, 9:16 recommended, 300 MB"
+    },
+    {
+     "url": "https://help.instagram.com/2720958398006062",
+     "title": "Instagram Help Center: Record a reel on Instagram",
+     "supports": "in-app reels up to 20 minutes; clips add up to 20 minutes"
+    },
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-reels?locale=en_US",
+     "title": "Meta Ads Guide: Instagram Reels ads",
+     "supports": "safe zone: keep text and logos out of the top 14%, bottom 35%, 6% each side"
+    }
+   ],
+   "related": [
+    "plat:instagram_caption",
+    "plat:instagram_hashtags",
+    "plat:facebook_reel",
+    "genre:short_form_video_script",
+    "trend:short_video_india",
+    "trend:hashtags_to_keywords"
+   ],
+   "limits": [
+    {
+     "field": "caption",
+     "max": 2200,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-05",
+     "quote": "Maximum 2200 characters, 30 hashtags, and 20 @ tags.",
+     "confidence": "high (Meta developer reference, caption parameter; same field as a feed caption)"
+    },
+    {
+     "field": "video length (recorded or edited in the app)",
+     "max": 1200,
+     "unit": "seconds",
+     "url": "https://help.instagram.com/2720958398006062",
+     "checked": "2026-10-05",
+     "quote": "You can record and edit videos up to 20 minutes with Instagram Reels.",
+     "confidence": "high (Instagram Help Center)"
+    },
+    {
+     "field": "video length (published through the API)",
+     "max": 900,
+     "unit": "seconds",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-05",
+     "quote": "Duration: 15 mins maximum, 3 seconds minimum",
+     "confidence": "high (Meta developer reference, Reels specs)"
+    }
+   ],
+   "formatting": [
+    "Caption is the same field as a feed caption: 2,200 characters, 20 @ tags (Meta developer reference).",
+    "Length: in-app, up to 20 minutes; API, 3 seconds minimum to 15 minutes maximum. 9:16 recommended; 300 MB file limit (API).",
+    "Safe zone (Meta's ads guide, applied to organic Reels): keep at least 14% of the top, 35% of the bottom and 6% of each side free of text and logos. On 1080x1920 that is about 269 px top, 672 px bottom and 65 px per side (arithmetic).",
+    "Hashtags: the Help Center cap is 5 per post, and the API text still prints 30 (see plat:instagram_hashtags).",
+    "Line breaks, links, emoji and Devanagari in captions follow plat:instagram_caption: unverified counting, so leave a margin."
+   ],
+   "writing_notes": [
+    "Lint: the caption is the only lintable limit (the two lengths are seconds), so `pcw.py check cap.txt --platform plat:instagram_reel` tests it against 2,200. Time the video by hand.",
+    "Conflict: 20 minutes in the app versus 15 minutes through the API. Trust 20 for manual posting and 15 for scheduler or automation posting; a reel under 15 minutes works for both. Story length, not the cap, should set the cut.",
+    "Hashtags: write to 5 and check with `pcw.py check cap.txt --platform plat:instagram_hashtags`. Place them after the last line.",
+    "Text layout: keep the hook and key words between 14% and 65% of the frame height, which is y 269 to 1248 on a 1080x1920 frame.",
+    "Caption shape: line 1 hook with the search phrase, one proof, one action, 3 tags. 'GST notice aaya hai? Pehle yeh 3 documents nikaaliye. Reply format chahiye to 'NOTICE' comment karein. #GSTIndia #D2CFounders #Jaipur' (133 chars).",
+    "Hinglish in Roman script is the native caption register for Indian brands; keep on-screen text in the same script as the caption."
+   ]
+  },
+  {
+   "id": "plat:instagram_story",
+   "kind": "platform",
+   "name": "Instagram Story (frame text, length, safe zone)",
+   "status": "current",
+   "summary": "A full-screen Instagram Story frame has no caption field in the API, so every word sits on the frame or in a sticker. Video stories through the API run 3 to 60 seconds, 9:16 recommended. Meta's safe zone applies: keep text and logos out of the top 14%, bottom 35% and 6% of each side. No official character limit for Story text or the link sticker label was found.",
+   "use_for": [
+    "On-screen text for a frame or a short frame sequence.",
+    "The action frame: a reply, a DM keyword or a link sticker.",
+    "Event, offer or reminder frames that expire.",
+    "Reusing Reel text in one template that respects the same safe zone."
+   ],
+   "avoid": [
+    "Text in the top 14%, bottom 35% or 6% side margins, where the profile icon and the call-to-action cover it.",
+    "Writing a caption. A Story has none; put the words on the frame.",
+    "A long paragraph on one frame. One idea per frame; split the rest into the next frame.",
+    "Relying on a link-sticker label length. No official limit was found; keep the label short and test it.",
+    "A video story over 60 seconds through the API. Split it into frames."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "Instagram Platform: IG User Media reference",
+     "supports": "Story video 3 to 60 s, 9:16 recommended, 100 MB; image 8 MB"
+    },
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-story?locale=en_US",
+     "title": "Meta Ads Guide: Instagram Stories ads",
+     "supports": "safe zone: keep text and logos out of the top 14%, bottom 35%, 6% each side"
+    }
+   ],
+   "related": [
+    "plat:instagram_reel",
+    "plat:instagram_caption",
+    "genre:instagram_story_copy",
+    "plat:whatsapp_status",
+    "trend:short_video_india"
+   ],
+   "limits": [
+    {
+     "field": "video story length (published through the API)",
+     "max": 60,
+     "unit": "seconds",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-05",
+     "quote": "60 seconds maximum, 3 seconds minimum",
+     "confidence": "high (Meta developer reference, Story video specs)"
+    }
+   ],
+   "formatting": [
+    "No caption field in the API; all words live on the frame or in stickers.",
+    "Video story: 3 to 60 seconds, 9:16 recommended, 100 MB; image 8 MB (API).",
+    "Safe zone (Meta Ads Guide, Stories): leave roughly 14% of the top, 35% of the bottom and 6% on each side free of text and logos. On 1080x1920 that is about 269 px top, 672 px bottom and 65 px per side (arithmetic).",
+    "Character limits for Story text and the link sticker label: none found on 2026-10-05: unverified.",
+    "Devanagari and Hinglish on frame follow the text you place: check on a phone."
+   ],
+   "writing_notes": [
+    "Lint: no lintable limit (the only number is seconds), so `pcw.py check --platform plat:instagram_story` tests no length. Keep each frame to one short line and review it on a phone.",
+    "Sequence shape: frame 1 hook, frames 2 to 4 one point each, last frame one action. Example: 'GST notice aaya?' / 'Step 1: portal par notice kholiye' / 'Step 2: documents ki list banaiye' / 'Reply format chahiye? DM 'NOTICE''.",
+    "Keep text between 14% and 65% of the frame height, which is y 269 to 1248 on a 1080x1920 frame, and inside the 6% side margins (65 px).",
+    "One template for Stories and Reels: the same safe zone covers both.",
+    "Action frame: name the verb ('DM NOTICE', 'tap to book'), not 'check it out'.",
+    "Hinglish in Roman script suits Indian brand Stories; keep one script per frame."
+   ]
+  },
+  {
+   "id": "plat:kickstarter_project",
+   "kind": "platform",
+   "name": "Kickstarter project page (title, subtitle, story)",
+   "status": "current",
+   "summary": "A Kickstarter project title is limited to 60 characters and its subtitle to 135. Kickstarter says the two should 'tell a complete story with just a few words' and be shareable on social; the project image always sits beside them, so it must work without text on top.",
+   "use_for": [
+    "Project title plus subtitle (blurb) for a reward-based campaign.",
+    "Rewriting a title that says only the product's invented name.",
+    "A subtitle that must work as a social share line."
+   ],
+   "avoid": [
+    "A title that is only an invented name. Add a plain descriptor so a stranger knows what is being made.",
+    "A subtitle that repeats the title. It should add who it is for and what is different.",
+    "Hype words ('revolutionary', 'ultimate') in either. Use the specific fact that makes it new.",
+    "Text on the project image to carry the message. The image sits next to the title and subtitle, so it should work without words.",
+    "Relying on the Creator Handbook for field rules; its pages sat behind a bot check (403) when read."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://updates.kickstarter.com/level-up-your-campaign-in-2024/",
+     "title": "10 Ways To Level Up Your Campaign Page - Kickstarter",
+     "supports": "title and subtitle limits, project image guidance"
+    },
+    {
+     "url": "https://updates.kickstarter.com/how-to-create-a-great-kickstarter-publishing-project-page/",
+     "title": "How to Create a Great Kickstarter Publishing Project Page",
+     "supports": "same 60/135 limits; campaign length advice"
+    }
+   ],
+   "related": [
+    "genre:crowdfunding_page",
+    "genre:tagline_slogan",
+    "tech:logline",
+    "plat:product_hunt_launch",
+    "genre:launch_sequence"
+   ],
+   "limits": [
+    {
+     "field": "project title",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://updates.kickstarter.com/level-up-your-campaign-in-2024/",
+     "checked": "2026-10-05",
+     "quote": "Kickstarter allows up to 60 characters for your project title and 135 for your subtitle",
+     "confidence": "high (official Kickstarter page, published 2023-10-25)"
+    },
+    {
+     "field": "subtitle (blurb)",
+     "max": 135,
+     "unit": "chars",
+     "url": "https://updates.kickstarter.com/level-up-your-campaign-in-2024/",
+     "checked": "2026-10-05",
+     "quote": "Kickstarter allows up to 60 characters for your project title and 135 for your subtitle",
+     "confidence": "high (official Kickstarter page, published 2023-10-25)"
+    }
+   ],
+   "formatting": [
+    "Title: plain text, up to 60 characters. Subtitle: plain text, up to 135 characters (Kickstarter's campaign-page guide).",
+    "The project image always appears next to the title and subtitle.",
+    "Title and subtitle are meant to be shareable on social, so they must read on their own.",
+    "Story-body formatting (headings, images, video, GIFs) is not covered by the pages read: unverified; the Creator Handbook was blocked."
+   ],
+   "writing_notes": [
+    "Lint: two lintable fields, so pass --field one at a time: `--field \"project title\"` (60) or `--field subtitle` (135).",
+    "Title formula: name + plain descriptor. 'Dhun: a pocket-sized tanpura for daily riyaaz' (45 chars).",
+    "Subtitle formula: what it is + who it is for + what is different. 'A rechargeable electronic tanpura that fits in a kurta pocket, made in Pune for students who practise anywhere' (110 chars).",
+    "Write the pair together, then check each alone: a stranger who sees only the title, subtitle and image should be able to say what is being made.",
+    "Hindi or Hinglish titles are not addressed by the sources: unverified. Write the pair in English and put any Hindi in the story body.",
+    "Keep claims inside what the prototype and the plan can deliver; a subtitle is a promise to backers."
+   ]
+  },
+  {
+   "id": "plat:linkedin_connection_note",
+   "kind": "platform",
+   "name": "LinkedIn connection request note (personalized invitation)",
+   "status": "current",
+   "summary": "The optional personal message on a LinkedIn invitation: up to 200 characters, and free accounts can add a personalised note to only three requests a month (Premium members can personalise unlimited invitations). Spend the three on the highest-value people and make each one a reason to accept, not a pitch.",
+   "use_for": [
+    "A note to a speaker, prospect, hiring manager or peer you have a specific reason to know.",
+    "Choosing which three requests a month deserve a note.",
+    "A follow-up note after an event."
+   ],
+   "avoid": [
+    "Pitching in the invitation. The note earns the accept; hold the offer for after it (genre:cold_linkedin_dm).",
+    "A generic 'I'd like to add you to my professional network'. Name the post, event or shared context.",
+    "Using the three free notes on cold sales. They are a scarce quota; save them for the highest-value requests.",
+    "Writing to 300 characters. Third-party pages quote 300 for Premium; LinkedIn Help says only 'up to 200'.",
+    "Mail-merge gaps ('Hi , ...'). Send a note only when every field is filled and checked."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a563153",
+     "title": "LinkedIn Help: Personalize invitations to connect",
+     "supports": "200-character note; free members 3 personalized notes a month; Premium unlimited (request limits still apply)"
+    }
+   ],
+   "related": [
+    "genre:cold_linkedin_dm",
+    "plat:linkedin_inmail",
+    "plat:linkedin_profile",
+    "tech:personalization_tokens",
+    "tech:specificity"
+   ],
+   "limits": [
+    {
+     "field": "personalized note",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a563153",
+     "checked": "2026-10-05",
+     "quote": "Each message can be up to 200 characters",
+     "confidence": "high (LinkedIn Help)"
+    },
+    {
+     "field": "personalized notes per month (free account)",
+     "max": 3,
+     "unit": "count",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a563153",
+     "checked": "2026-10-05",
+     "quote": "You can add a personalized message to up to three connection requests per month",
+     "confidence": "high (LinkedIn Help; Premium members can personalize unlimited invitations)"
+    }
+   ],
+   "formatting": [
+    "Plain text, up to 200 characters per note (LinkedIn Help).",
+    "Free members: a personalised message on up to 3 connection requests a month. Premium: unlimited personalised invitations (request limits still apply).",
+    "Links, emoji, line breaks and Devanagari in the note are not covered by the Help page read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: one lintable limit (the 3 per month is a count the tool cannot test), so `pcw.py check note.txt --platform plat:linkedin_connection_note` tests 200 characters. Paste only the note.",
+    "Conflict: LinkedIn Help says 200; third-party pages say 300 for Premium. Trust LinkedIn Help and write to 200.",
+    "Formula: one specific shared context + the reason you want to connect, no ask. 'Hi Meera, I read your post on GST notices for D2C brands. I handle the books for three Pune D2C founders and would like to follow your work.' (140 chars).",
+    "Keep the ask for the message after they accept. A request with a pitch in it tends to be ignored.",
+    "Use English for senior B2B contacts; Hinglish only for peers you already know and in your own voice.",
+    "Quota: pick the three highest-value requests for the month, and send the rest without a note."
+   ]
+  },
+  {
+   "id": "plat:linkedin_inmail",
+   "kind": "platform",
+   "name": "LinkedIn InMail message",
+   "status": "current",
+   "summary": "A paid LinkedIn message to someone you are not connected to: a required subject line up to 200 characters and a body up to 2,000. An older Help page gives 1,900 for the body and says the composer's live counter changes colour to push shorter messages, so write under 1,900.",
+   "use_for": [
+    "Recruiter outreach to a passive candidate.",
+    "Sales Navigator outreach to a named decision-maker.",
+    "Speaker, partner or press invitations to a stranger."
+   ],
+   "avoid": [
+    "A generic subject ('Opportunity', 'Quick question'). The subject is required and is the first thing read; make it specific to the person.",
+    "Filling 2,000 characters. The counter pushes shorter messages; four to six sentences is enough.",
+    "Opening with your company's story. Open with why this person.",
+    "Several asks in one message. One easy yes ('reply yes') is enough.",
+    "Writing to 2,000 when an older Help page says 1,900. Write under 1,900 to fit both."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a546814",
+     "title": "LinkedIn Help: Send an InMail Message",
+     "supports": "subject 200 chars, body 2000 chars"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a411986",
+     "title": "LinkedIn Help: InMail character limits",
+     "supports": "older page: subject 200, body 1900; live character counter that changes colour as the message grows"
+    }
+   ],
+   "related": [
+    "genre:cold_linkedin_dm",
+    "genre:cold_email",
+    "plat:linkedin_connection_note",
+    "plat:email_subject_line",
+    "tech:single_cta_email",
+    "tech:subject_preheader_pairing"
+   ],
+   "limits": [
+    {
+     "field": "subject line",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a546814",
+     "checked": "2026-10-05",
+     "quote": "InMail messages can have up to 200 characters in the subject line and up to 2000 characters in the body.",
+     "confidence": "high (LinkedIn Help)"
+    },
+    {
+     "field": "body",
+     "max": 2000,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a546814",
+     "checked": "2026-10-05",
+     "quote": "InMail messages can have up to 200 characters in the subject line and up to 2000 characters in the body.",
+     "confidence": "high (LinkedIn Help, updated about 6 months before check)"
+    }
+   ],
+   "formatting": [
+    "Subject line is required: up to 200 characters. Body: up to 2,000 characters (LinkedIn Help).",
+    "An older Help page gives 1,900 for the body and describes a live counter that changes colour as the message grows.",
+    "Links, bold, emoji and line breaks are not covered by the pages read: unverified; use short paragraphs and plain text."
+   ],
+   "writing_notes": [
+    "Lint: two lintable fields, so pass --field. `--field subject` (200) and `--field body` (2000). Paste one field per run. The lint's limit is 2,000; also keep the body under 1,900 by reading the `chars` figure in the check output.",
+    "Conflict: 2,000 (current Help page) versus 1,900 (older page). Trust 2,000 as the ceiling and 1,900 as the safe target.",
+    "Subject: specific to the person and the reason. 'Your Brew Rani packaging work: a brand designer role in Pune' (60 chars).",
+    "Body shape: why this person; what the role or offer is; one proof or detail; one easy ask. 'Hi Rohan, your Brew Rani label redesign is the reason I am writing. We are a Pune D2C tea brand hiring one brand designer for packaging and marketplace creative. The role is hybrid, reports to the founder and starts with a paid two-week trial project. If it sounds worth a conversation, reply yes and I will send the brief and the pay range.' (341 chars).",
+    "Do not offer what you cannot deliver: if you say you will send the pay range, send it.",
+    "English by default for a stranger in a senior role; shift to Hinglish only if their own posts do."
+   ]
+  },
+  {
+   "id": "plat:linkedin_job_post",
+   "kind": "platform",
+   "name": "LinkedIn job post (title and description)",
+   "status": "current",
+   "summary": "A job listing on LinkedIn: the title up to 200 characters and the description from 100 to 25,000 characters in a limited set of HTML tags. These are the Job Posting API's limits for partners and ATS integrations; the on-site composer is not documented separately.",
+   "use_for": [
+    "Job title for a role posted through an ATS or the API.",
+    "A description that candidates can scan in a few seconds.",
+    "Rewriting an old description so it survives LinkedIn's HTML filter."
+   ],
+   "avoid": [
+    "A title stuffed with city, salary and 'urgent hiring'. The field takes 200 characters; use the role name candidates search for, with level.",
+    "Pasting from Word or a web page with unsupported HTML. Unsupported tags are ignored, so the formatting disappears.",
+    "Discriminatory wording (gender, age, disability). See comp:india_job_ad_non_discrimination.",
+    "Treating 25,000 as a target. A description should be as long as it takes to describe the work.",
+    "A description under 100 characters. The API requires at least 100."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/talent/job-postings/api/job-posting-api-schema?view=li-lts-2025-10",
+     "title": "Microsoft Learn: LinkedIn Job Posting API schema",
+     "supports": "title 200 chars; description 100 to 25,000 chars, limited HTML"
+    }
+   ],
+   "related": [
+    "genre:job_description",
+    "genre:recruitment_ad",
+    "plat:naukri_job_posting",
+    "comp:india_job_ad_non_discrimination",
+    "tech:bulleted_lists",
+    "tech:plain_language"
+   ],
+   "limits": [
+    {
+     "field": "job title",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/linkedin/talent/job-postings/api/job-posting-api-schema?view=li-lts-2025-10",
+     "checked": "2026-10-05",
+     "quote": "Represents the title of the job posting that will be published. Character limit: 200",
+     "confidence": "high (LinkedIn Job Posting API schema, Microsoft Learn)"
+    },
+    {
+     "field": "job description",
+     "max": 25000,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/linkedin/talent/job-postings/api/job-posting-api-schema?view=li-lts-2025-10",
+     "checked": "2026-10-05",
+     "quote": "Character limit: 100 ~ 25,000, limited set of HTML tags accepted, non-support HTML tags will be ignored.",
+     "confidence": "high (LinkedIn Job Posting API schema, Microsoft Learn; minimum 100)"
+    }
+   ],
+   "formatting": [
+    "API schema: title up to 200 characters; description 100 to 25,000 characters.",
+    "Only a limited set of HTML tags is accepted and unsupported tags are ignored; lists and bold are the safe ones.",
+    "The on-site job composer's formatting is not documented separately: unverified.",
+    "Emoji and Devanagari handling is not stated: unverified."
+   ],
+   "writing_notes": [
+    "Lint: two lintable fields, so pass --field: `--field \"job title\"` (200) or `--field \"job description\"` (25000). The 100-character minimum is not tested; count it.",
+    "The limits are the API schema; the on-site composer may differ. Check the live composer before delivery.",
+    "Title formula: role + level, in the words candidates type. 'Senior content writer (B2B SaaS)' (32 chars).",
+    "Description shape: 2 lines on what the person will do and why it matters, bulleted responsibilities, must-haves versus nice-to-haves, location and work mode, pay range if the client agrees. HTML-safe example (315 chars): <p>You will write the product pages, case studies and launch emails for a Bengaluru SaaS company selling to finance teams.</p><ul><li>Write 4 to 6 pieces a month, from brief to published</li><li>Interview customers and turn the answers into case studies</li><li>Work with product managers on release notes</li></ul>",
+    "Use plain lists and bold only when posting through an ATS, since other tags are ignored.",
+    "Check every line against comp:india_job_ad_non_discrimination.",
+    "Conflict: LinkedIn's Recruiter help page says job descriptions are limited to 10,000 characters, while the API schema allows 25,000. Write to 10,000 so the post fits either route (https://www.linkedin.com/help/sales-navigator/answer/1749). (lead fix 2026-10-07)"
+   ]
+  },
+  {
+   "id": "plat:linkedin_profile",
+   "kind": "platform",
+   "name": "LinkedIn member profile (headline and About)",
+   "status": "current",
+   "summary": "A member's headline and About. About is capped at 2,600 characters (LinkedIn's Talent Blog) and shows only its opening lines before 'see more', with no official visible-character count. The headline appears in search, under every comment and in invitations; the 220 figure is third-party only, since LinkedIn Help states no number.",
+   "use_for": [
+    "Headline: what you do + for whom + proof.",
+    "About: who you help, how, with evidence, and how to reach you.",
+    "A ghostwritten profile for a founder or executive.",
+    "Rewriting a profile that lists only a job title."
+   ],
+   "avoid": [
+    "A headline that is only a job title. It appears under every comment you write; say what you do and for whom.",
+    "Using the full 220 characters. Third-party guides say only the first 60 to 70 show in some places (unverified), so put the role and audience first.",
+    "An About that opens with 'I am a passionate...'. The opening lines are all most readers see; open with who you help and the result.",
+    "Presenting 220 as an official limit. LinkedIn Help states none; check the live counter in the Edit intro window.",
+    "Claims you cannot back up. Numbers in an About must be ones the person can confirm."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/business/talent/blog/product-tips/linkedin-profile-summaries-that-we-love-and-how-to-boost-your-own",
+     "title": "LinkedIn Talent Blog: LinkedIn profile summaries that we love",
+     "supports": "About/summary 2,600 characters max"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a542926",
+     "title": "LinkedIn Help: Edit Your Headline",
+     "supports": "headline = text below your name, shown in search results; edited in the Edit intro window; no limit stated"
+    },
+    {
+     "url": "https://howmanywords.app/blog/linkedin-character-limits",
+     "title": "howmanywords.app: LinkedIn character limits 2026",
+     "supports": "third-party: headline 220, About 2,600"
+    }
+   ],
+   "related": [
+    "genre:linkedin_profile",
+    "genre:professional_bio",
+    "genre:personal_brand_statement",
+    "plat:linkedin_post",
+    "genre:ghostwritten_founder_post",
+    "trend:linkedin_creator_economy"
+   ],
+   "limits": [
+    {
+     "field": "About (summary)",
+     "max": 2600,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/business/talent/blog/product-tips/linkedin-profile-summaries-that-we-love-and-how-to-boost-your-own",
+     "checked": "2026-10-05",
+     "quote": "It's an open-ended space (sort of; 2,600 characters max) where you give an overview of your professional life.",
+     "confidence": "medium (LinkedIn's own Talent Blog, not the Help Center)"
+    },
+    {
+     "field": "headline",
+     "max": 220,
+     "unit": "chars",
+     "url": "https://howmanywords.app/blog/linkedin-character-limits",
+     "checked": "2026-10-05",
+     "quote": "LinkedIn Character Limits 2026: Post 3,000, Headline 220, About 2,600",
+     "confidence": "low (third-party only; LinkedIn Help 'Edit Your Headline' a542926 states no number)"
+    }
+   ],
+   "formatting": [
+    "Headline: the text below the member's name, shown in search results; edited in the Edit intro window (LinkedIn Help). No limit is stated by LinkedIn; 220 is third-party.",
+    "About: an open-ended summary, 2,600 characters at most (LinkedIn Talent Blog). Only its opening lines show before 'see more'; no official visible-character number.",
+    "Line breaks, bullets, emoji and Devanagari in About are not covered by the pages read: unverified."
+   ],
+   "writing_notes": [
+    "Lint: two lintable fields, so pass --field: `--field headline` (220, low confidence, third-party) or `--field About` (2600, medium). Paste one field per run.",
+    "Conflict: no LinkedIn page states a headline limit; the 220 is third-party. Use it as a ceiling, but write the first 60 to 70 characters so they work alone.",
+    "Headline formula: what you do + for whom + proof or place. 'Chartered Accountant | GST notices and audits for D2C brands | Jaipur' (69 chars); 'Brand designer for D2C food brands | Packaging, marketplace creative' (68 chars).",
+    "About opening: who you help + the result, then the situation you solve. 'I help D2C founders in India reply to a GST notice without losing a week of sales. Most of my clients are founders doing Rs 5-50 crore in revenue who get their first notice and do not know who to call.' (201 chars). Then proof, how you work, and one contact line ('DM me GST').",
+    "Write the About in first person for a personal profile. A ghostwriter should take facts and numbers from an interview, never invent them.",
+    "English for B2B profiles; use Hindi or Hinglish only when the audience is Hindi-first."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "LinkedIn Help: the headline is the text below your name and is shown in search results, so it works as a search snippet for the member.",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a542926"
+    }
+   ]
+  }
+ ]
+}

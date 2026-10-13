@@ -1,0 +1,536 @@
+{
+ "kind": "technique",
+ "items": [
+  {
+   "id": "tech:content_freshness_update",
+   "name": "Substantive freshness updates",
+   "category": "SEO & AI search",
+   "one_line": "Update a page by changing what is out of date (facts, prices, screenshots) and say what changed; never just bump the date.",
+   "aliases": [
+    "content refresh",
+    "historical optimisation"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "warns against changing page dates to seem fresh when content has not substantially changed"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/change-notes/",
+     "title": "GOV.UK: Write change notes",
+     "supports": "telling users what changed on an updated page"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/publication-dates",
+     "title": "Google Search Central: Influence your byline dates",
+     "supports": "how Google reads visible and structured publication / updated dates"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:contractions",
+   "name": "Contractions for a conversational voice",
+   "category": "Line craft & rhetoric",
+   "one_line": "Use everyday contractions (you'll, it's) to sound human, but spell out negatives where misreading costs something.",
+   "aliases": [
+    "conversational tone"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "use contractions like 'you'll' but avoid negative contractions like 'can't' or 'don't'"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/word-choice/use-contractions",
+     "title": "Microsoft Writing Style Guide: Use contractions",
+     "supports": "Microsoft recommends contractions for a friendly tone"
+    }
+   ],
+   "note": "GOV.UK and Microsoft disagree on negative contractions; follow the client's style guide.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:cta_writing",
+   "name": "Call-to-action writing",
+   "category": "Persuasion & proof",
+   "one_line": "One clear, verb-led instruction that names the action and the payoff, repeated where the reader is ready.",
+   "aliases": [
+    "CTA",
+    "call to action"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Call_to_action_(marketing)",
+     "title": "Call to action (marketing) (Wikipedia)",
+     "supports": "definition of a CTA"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:curse_of_knowledge_fix",
+   "name": "Curse-of-knowledge fix",
+   "category": "Persuasion & proof",
+   "one_line": "Rewrite for someone who does not know what you know: define the term, add the missing step, show the example.",
+   "aliases": [
+    "write for the newcomer",
+    "expert blind spot"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Curse_of_knowledge",
+     "title": "Curse of knowledge (Wikipedia)",
+     "supports": "experts struggle to imagine not knowing"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:cut_qualifiers",
+   "name": "Cut qualifiers, hedges and weasel words",
+   "category": "Line craft & rhetoric",
+   "one_line": "Delete 'very', 'really', 'quite', 'some say' and unattributed claims; keep a hedge only where the uncertainty is real.",
+   "aliases": [
+    "cut adverbs",
+    "remove hedges",
+    "omit needless words"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hedge_(linguistics)",
+     "title": "Hedge (linguistics) (Wikipedia)",
+     "supports": "hedges lessen the force of a statement"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Weasel_word",
+     "title": "Weasel word (Wikipedia)",
+     "supports": "vague attributions that create an impression of a claim"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Concision",
+     "title": "Concision (Wikipedia)",
+     "supports": "eliminating redundancy while keeping meaning"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 13: omit needless words"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:decoy_pricing",
+   "name": "Decoy option",
+   "category": "Persuasion & proof",
+   "one_line": "Add a clearly weaker third option next to the target plan so the target reads as the obvious pick.",
+   "aliases": [
+    "decoy effect",
+    "asymmetric dominance"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Decoy_effect",
+     "title": "Decoy effect (Wikipedia)",
+     "supports": "an asymmetrically dominated option shifts preference"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:descriptive_subheads",
+   "name": "Descriptive subheads",
+   "category": "Structure & scannability",
+   "one_line": "Write headings that say what the section tells the reader, so the headings alone summarise the piece.",
+   "aliases": [
+    "subheadings",
+    "informative headings"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/style/headings",
+     "title": "Google developer documentation style guide: Headings",
+     "supports": "heading guidance"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/formatting-long-form-content/",
+     "title": "NN/g: Formatting long-form content",
+     "supports": "headings and formatting help users scan long pages"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:descriptive_url_slug",
+   "name": "Descriptive URL slug",
+   "category": "SEO & AI search",
+   "one_line": "Use short, readable words in the URL that describe the page, not IDs or dates that will go stale.",
+   "aliases": [
+    "URL slug",
+    "permalink"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/crawling-indexing/url-structure",
+     "title": "Google Search Central: URL structure best practices",
+     "supports": "use simple, descriptive words in URLs"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:dialogue",
+   "name": "Dialogue",
+   "category": "Storytelling",
+   "one_line": "Let people speak in short, real-sounding lines that reveal character or move the story, instead of reporting what they said.",
+   "aliases": [
+    "quoted speech",
+    "scene dialogue"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dialogue",
+     "title": "Dialogue (Wikipedia)",
+     "supports": "dialogue as a literary and dramatic form"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:eeat_first_hand_experience",
+   "name": "First-hand experience signals (E-E-A-T)",
+   "category": "SEO & AI search",
+   "one_line": "Show you actually did, used or visited the thing: original photos, test results, specific numbers, who wrote it and why.",
+   "aliases": [
+    "E-E-A-T",
+    "experience signals",
+    "people-first content"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "asks whether content demonstrates first-hand expertise; Who, How and Why questions"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:empty_state_copy",
+   "name": "Empty-state copy",
+   "category": "UX writing",
+   "one_line": "When a screen has no data yet, say why it is empty and give the one action that fills it.",
+   "aliases": [
+    "empty states",
+    "zero-data state"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/empty-state-interface-design/",
+     "title": "NN/g: Designing Empty States in Complex Applications",
+     "supports": "empty states should communicate status, teach and offer a direct path"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:error_message_structure",
+   "name": "Error-message structure",
+   "category": "UX writing",
+   "one_line": "Say what went wrong in plain words, why if useful, and exactly how to fix it, next to the problem, without blame.",
+   "aliases": [
+    "error copy",
+    "error messages"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/error-message-guidelines/",
+     "title": "NN/g: Error-Message Guidelines",
+     "supports": "visibility, communication and efficiency guidelines for error messages"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:ethical_comment_prompt",
+   "name": "Ethical comment prompt",
+   "category": "Social & video",
+   "one_line": "End with a genuine, specific question people want to answer, not 'comment YES' or 'tag a friend' bait.",
+   "aliases": [
+    "engagement question",
+    "conversation starter"
+   ],
+   "sources": [
+    {
+     "url": "https://about.fb.com/news/2017/12/news-feed-fyi-fighting-engagement-bait-on-facebook/",
+     "title": "Meta: Fighting Engagement Bait on Facebook (2017)",
+     "supports": "Facebook demotes posts that goad people into likes, shares and comments"
+    }
+   ],
+   "note": "Engagement bait is demoted on Facebook per Meta's 2017 announcement; other platforms' current treatment needs checking per platform.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:ethical_scarcity",
+   "name": "Ethical scarcity",
+   "category": "Persuasion & proof",
+   "one_line": "State a real limit (stock, seats, batch size) plainly and specifically; never invent one.",
+   "aliases": [
+    "limited availability",
+    "real scarcity"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "Scarcity is one of the seven principles"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Scarcity_(social_psychology)",
+     "title": "Scarcity (social psychology) (Wikipedia)",
+     "supports": "why perceived scarcity raises value"
+    },
+    {
+     "url": "https://www.ftc.gov/reports/bringing-dark-patterns-light",
+     "title": "FTC staff report: Bringing Dark Patterns to Light",
+     "supports": "fake scarcity and urgency are treated as dark patterns"
+    }
+   ],
+   "note": "Fake low-stock or fake 'only 2 left' counters are dark patterns; pair with the relevant comp: items.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:ethical_urgency",
+   "name": "Ethical urgency (real deadlines)",
+   "category": "Persuasion & proof",
+   "one_line": "Give a true reason to act now (a dated deadline, price change, cohort start) and say what happens after it.",
+   "aliases": [
+    "deadline urgency",
+    "real urgency"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ftc.gov/reports/bringing-dark-patterns-light",
+     "title": "FTC staff report: Bringing Dark Patterns to Light",
+     "supports": "fake countdown timers and false urgency are dark patterns"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Dark_pattern",
+     "title": "Dark pattern (Wikipedia)",
+     "supports": "catalogue of manipulative urgency patterns to avoid"
+    }
+   ],
+   "note": "Countdown timers that reset, and 'today only' that runs every day, are the failure mode.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:f_pattern_scanning",
+   "name": "Writing for the F-pattern",
+   "category": "Structure & scannability",
+   "one_line": "Assume readers scan the top and left edge; put meaning in headings, first lines and first words to beat the F-pattern.",
+   "aliases": [
+    "F-shaped reading",
+    "scan pattern"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/",
+     "title": "NN/g: F-Shaped Pattern of Reading on the Web",
+     "supports": "eyetracking finding and how to design text against it"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/text-scanning-patterns-eyetracking/",
+     "title": "NN/g: Text Scanning Patterns",
+     "supports": "other scanning patterns (layer-cake, spotted, etc.)"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:faq_block",
+   "name": "FAQ block",
+   "category": "SEO & AI search",
+   "one_line": "Answer real follow-up questions in a short Q-and-A section at the end of a page, in the reader's own wording.",
+   "aliases": [
+    "FAQ section",
+    "FAQ schema"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/updates",
+     "title": "Google Search Central: Latest documentation updates",
+     "supports": "FAQ rich result deprecated: no longer appears in Google Search starting May 7, 2026; docs removed June 2026"
+    }
+   ],
+   "note": "Since May 2026 FAQ markup no longer produces a Google rich result; write FAQs for readers (and answer extraction), not for the rich result.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:features_to_benefits",
+   "name": "Features to benefits",
+   "category": "Persuasion & proof",
+   "one_line": "Translate each feature (what it is) into the outcome it gives the reader (what it does for them), and lead with the outcome.",
+   "aliases": [
+    "benefit-led copy",
+    "FAB (features, advantages, benefits)"
+   ],
+   "sources": [
+    {
+     "url": "https://my.copyblogger.com/wp-content/uploads/2020/08/Copywriting-101.pdf",
+     "title": "Copyblogger: Copywriting 101 (ebook)",
+     "supports": "move past what a product is to what it does for the buyer"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:first_line_above_fold",
+   "name": "First line above the fold",
+   "category": "Social & video",
+   "one_line": "Make the opening line of a post or caption complete and compelling on its own, because the rest hides behind 'see more'.",
+   "aliases": [
+    "above the fold",
+    "pre-truncation line",
+    "hook line"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/",
+     "title": "NN/g: First 2 Words, a signal for the scanning eye",
+     "supports": "readers decide from the first words whether to continue"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "title": "LinkedIn Help: Post and share updates",
+     "supports": "how posts are composed and displayed"
+    }
+   ],
+   "note": "Truncation lengths per platform belong to plat: items; hook families belong to hook: items (worker fw_hook).",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:foreshadowing",
+   "name": "Foreshadowing (plant and payoff)",
+   "category": "Storytelling",
+   "one_line": "Plant a detail early that pays off later, and cut details that never pay off.",
+   "aliases": [
+    "Chekhov's gun",
+    "setup and payoff",
+    "plant and payoff"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Foreshadowing",
+     "title": "Foreshadowing (Wikipedia)",
+     "supports": "definition of the device"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Chekhov%27s_gun",
+     "title": "Chekhov's gun (Wikipedia)",
+     "supports": "every planted element should pay off"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:form_labels_helper_text",
+   "name": "Form labels and helper text",
+   "category": "UX writing",
+   "one_line": "Use a visible label for every field and put format hints in helper text, not in placeholder text that disappears.",
+   "aliases": [
+    "field labels",
+    "microcopy",
+    "hint text"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/form-design-placeholders/",
+     "title": "NN/g: Placeholders in Form Fields Are Harmful",
+     "supports": "placeholder text as labels hurts usability"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:freewriting",
+   "name": "Freewriting",
+   "category": "Research & process",
+   "one_line": "Write nonstop for a set time without editing to get raw material and find what you think.",
+   "aliases": [
+    "free writing",
+    "stream of consciousness draft"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Free_writing",
+     "title": "Free writing (Wikipedia)",
+     "supports": "definition and method"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:front_loading",
+   "name": "Front-loading",
+   "category": "Line craft & rhetoric",
+   "one_line": "Put the most important words at the start of every heading, link, bullet, sentence and paragraph.",
+   "aliases": [
+    "frontload",
+    "key words first"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-structure/",
+     "title": "GOV.UK: Create a clear structure",
+     "supports": "frontload your content: put the most important information first"
+    },
+    {
+     "url": "https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/",
+     "title": "NN/g: First 2 Words, a signal for the scanning eye",
+     "supports": "scanners read the first words of lines"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:future_pacing",
+   "name": "Future pacing",
+   "category": "Persuasion & proof",
+   "one_line": "Walk the reader through a specific moment after they have the result, in present tense, so the outcome feels concrete.",
+   "aliases": [
+    "imagine-this passage",
+    "visualisation"
+   ],
+   "sources": [
+    {
+     "url": "https://medium.com/@olsenrec/how-to-use-future-pacing-to-help-your-prospect-imagine-a-better-life-f2262f41acfb",
+     "title": "How to use future pacing to help your prospect imagine a better life (Medium)",
+     "supports": "practitioner description; term borrowed from NLP (secondary, low confidence) [403 to scripted fetch; URL seen in search results 2026-10-04]"
+    }
+   ],
+   "note": "The term comes from NLP, which has weak scientific support; treat it as a craft move, not a proven mechanism. Never future-pace results the product cannot deliver.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:hashtag_strategy",
+   "name": "Hashtag selection",
+   "category": "Social & video",
+   "one_line": "Use a few specific, relevant hashtags that describe the content, not long lists of generic ones.",
+   "aliases": [
+    "hashtags"
+   ],
+   "sources": [
+    {
+     "url": "https://later.com/blog/ultimate-guide-to-using-instagram-hashtags/",
+     "title": "Later: Instagram hashtags guide",
+     "supports": "practitioner guidance on fewer, relevant hashtags (secondary)"
+    }
+   ],
+   "note": "Search results report Instagram enforcing a cap on hashtags per post from Dec 2025; that is a platform limit to verify in plat: items, not here.",
+   "kind": "technique"
+  }
+ ]
+}

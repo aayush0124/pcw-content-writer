@@ -1,0 +1,441 @@
+{
+ "kind": "genre",
+ "items": [
+  {
+   "id": "genre:hospitality_listing",
+   "name": "Hotel / homestay / travel listing copy",
+   "category": "Other commercial",
+   "one_line": "Property and experience descriptions for OTAs, Airbnb and hotel sites that drive bookings.",
+   "aliases": [
+    "Airbnb description",
+    "hotel description",
+    "OTA listing",
+    "tour package description"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr has an Airbnb-description gig tag; hospitality descriptions are sold as listing work",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/gigs/airbnb-description",
+     "title": "Fiverr gig tag: Airbnb description",
+     "supports": "gig tag page for rental listing descriptions (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Field limits differ per OTA; check the platform before writing.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:how_to_article",
+   "name": "How-to / tutorial article",
+   "category": "Blog & SEO",
+   "one_line": "Step-by-step article that gets the reader from problem to a finished task, with ordered steps and checks.",
+   "aliases": [
+    "tutorial",
+    "step-by-step guide",
+    "instructional article"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr's Article type facet shows 'Instructional/How-to' as the third-largest article type on 2026-10-04 (3138 gigs, a supply signal).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Pairs with hook:how_to. Steps must be testable; screenshots or a tool list are part of the deliverable.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:influencer_brief",
+   "name": "Influencer campaign brief",
+   "category": "Advertising",
+   "one_line": "The document that tells a paid creator the objective, key messages, deliverables, do/don'ts and disclosure rules.",
+   "aliases": [
+    "creator brief",
+    "KOL brief",
+    "influencer marketing brief"
+   ],
+   "value": "medium",
+   "value_evidence": "Influencer platforms publish brief templates as a standard campaign document; written by agencies and brand teams on every paid creator campaign",
+   "sources": [
+    {
+     "url": "https://www.meltwater.com/en/blog/influencer-marketing-brief-template",
+     "title": "Meltwater: How to write an influencer brief",
+     "supports": "brief sections: objectives, audience, deliverables, key messages, do/don'ts, disclosure, timelines"
+    }
+   ],
+   "note": "In India the brief must carry ASCI disclosure instructions for paid or gifted content.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:infographic_copy",
+   "name": "Infographic copy",
+   "category": "Long-form B2B",
+   "one_line": "Headline, data points, labels and source line for an infographic, written so the visual tells one story at a glance.",
+   "aliases": [
+    "infographic script",
+    "data visual copy"
+   ],
+   "value": "low",
+   "value_evidence": "Upwork lists infographics among technical-writer projects (2026-01-21); usually bundled with design work.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "Every number needs a source line on the graphic. Social carousels of data are genre:carousel_copy.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:informational_article",
+   "name": "Informational / explainer article",
+   "category": "Blog & SEO",
+   "one_line": "Article that explains what something is, how it works or why it matters, for a reader who is still learning.",
+   "aliases": [
+    "informational content",
+    "educational article",
+    "what-is article"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr's Article type facet shows 'Informational' as the second-largest article type on 2026-10-04 (3483 gigs), with 'Educational' listed separately (858).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Top-of-funnel search intent; most exposed to AI-overview answer substitution, so lead with the direct answer then add what an AI summary cannot (examples, data, local context).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:instagram_caption",
+   "name": "Instagram caption",
+   "category": "Organic social",
+   "one_line": "Text under an Instagram post or reel: a first line that stops the scroll, a body that adds value or story, a CTA and hashtags.",
+   "aliases": [
+    "IG caption",
+    "reel caption",
+    "post caption"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr's social media copywriting Platform facet shows Instagram as the largest platform on 2026-10-04 (1910 gigs, a supply signal).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "Fiverr's Platform filter with live gig counts, a SUPPLY signal: Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009, Pinterest 376, Threads 238, Snapchat 123, Reddit 96, Twitter 47, Discord 5, Quora 3"
+    }
+   ],
+   "note": "Limits live in plat:instagram_caption. For Indian creator pages captions are often Hinglish; the first line is what shows before 'more'.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:instagram_story_copy",
+   "name": "Instagram Story text and sticker copy",
+   "category": "Organic social",
+   "one_line": "Short on-screen text, poll/quiz sticker prompts and link-sticker CTAs across a sequence of Story frames.",
+   "aliases": [
+    "IG story copy",
+    "story frames",
+    "story sequence"
+   ],
+   "value": "low",
+   "value_evidence": "Bundled into Instagram management; no separate marketplace facet found on 2026-10-04.",
+   "note": "One idea per frame; keep text inside the safe zone away from UI and faces.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:interactive_quiz_content",
+   "name": "Interactive quiz / personality quiz content",
+   "category": "Blog & SEO",
+   "one_line": "Questions, answer options and result descriptions for a shareable quiz that entertains, segments the audience or recommends a product.",
+   "aliases": [
+    "personality quiz",
+    "BuzzFeed-style quiz",
+    "product finder quiz"
+   ],
+   "value": "low",
+   "value_evidence": "No dedicated marketplace category found on 2026-10-04; built inside quiz tools by marketing teams.",
+   "note": "Every result must feel like a win for the person who gets it.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:internal_announcement",
+   "name": "Internal announcement / employee comms",
+   "category": "PR & corporate comms",
+   "one_line": "All-staff email or intranet post announcing a change, launch, policy or leadership news.",
+   "aliases": [
+    "internal comms",
+    "employee announcement",
+    "all-hands email",
+    "change communication"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has an Internal Communications hire category; Fiverr Email Copy lists 'Internal updates'; AWAI lists Employee/HR materials",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/internal-communications-freelancers/us/chicago-il/",
+     "title": "Upwork: hire Internal Communications Specialists",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "kind": "genre"
+  },
+  {
+   "id": "genre:internal_faq",
+   "name": "Internal FAQ",
+   "category": "Business documents",
+   "one_line": "A question-and-answer document that pre-empts what employees or partners will ask about a change, policy or launch.",
+   "aliases": [
+    "employee FAQ",
+    "launch FAQ",
+    "Q&A document",
+    "PR/FAQ (internal)"
+   ],
+   "value": "low",
+   "value_evidence": "Written in-house by HR, comms or product teams.",
+   "note": "Write the hard questions people will actually ask, answer each in the first sentence. Owner and last-updated date at top.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:internal_memo",
+   "name": "Internal memo / business email (internal)",
+   "category": "Business documents",
+   "one_line": "A short internal message that informs or asks colleagues for a decision, readable in one pass.",
+   "aliases": [
+    "memo",
+    "office memorandum",
+    "circular"
+   ],
+   "value": "low",
+   "value_evidence": "Everyday workplace writing; taught, not commissioned.",
+   "note": "Subject line states the ask. Bottom line up front, then context, then next steps with owners and dates. Indian government 'office memorandum' has its own fixed format.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:internal_newsletter",
+   "name": "Internal / employee newsletter",
+   "category": "Newsletters",
+   "one_line": "Recurring update for employees that explains company news, recognises people and makes leadership decisions understandable.",
+   "aliases": [
+    "employee newsletter",
+    "internal comms newsletter",
+    "staff bulletin"
+   ],
+   "value": "low",
+   "value_evidence": "Upwork lists internal communications among business-writer projects (2026-01-21); mostly done by in-house comms teams.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "Confidentiality: nothing that cannot survive being forwarded outside the company.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:interview_qa",
+   "name": "Interview Q&A article",
+   "category": "Journalism",
+   "one_line": "Interview presented as edited questions and answers, with a short intro that says who the subject is and why they matter now.",
+   "aliases": [
+    "Q&A",
+    "Q and A interview",
+    "interview article",
+    "AMA writeup"
+   ],
+   "value": "low",
+   "value_evidence": "No dedicated Upwork or Fiverr writing category was found for Q&A articles on 2026-10-04; usually bundled into blog, podcast or newsletter work.",
+   "note": "Answers are edited for clarity and length but never changed in meaning; get the subject's approval when the brief promises it.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:investor_pitch_deck",
+   "name": "Investor pitch deck copy",
+   "category": "Sales enablement",
+   "one_line": "Narrative and slide copy that takes an investor from problem to market to traction to the ask.",
+   "aliases": [
+    "Pitch deck copy (startup / investor)",
+    "fundraising deck",
+    "investor deck",
+    "pitch deck",
+    "startup deck",
+    "startup pitch deck"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has a Pitch Deck Writers hire category with an India listing",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/pitch-decks-freelancers/in/",
+     "title": "Upwork: Pitch Deck Writers in India",
+     "supports": "dedicated hire category, India listing (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.sequoiacap.com/article/writing-a-business-plan/",
+     "title": "Sequoia: Writing a business plan (pitch guide)",
+     "supports": "pitch outline: company purpose in one declarative sentence, problem, solution, why now, market, competition, product, business model, team, financials"
+    },
+    {
+     "url": "https://www.ycombinator.com/library/4T-how-to-design-a-better-pitch-deck",
+     "title": "YC Startup Library: How to design a better pitch deck",
+     "supports": "YC guidance on pitch-deck content and legibility"
+    }
+   ],
+   "note": "Unsure: may be a business document (genre_pro_creative). [merged from genre:pitch_deck_copy: One idea per slide, headline states the takeaway. Company purpose in one sentence (Sequoia). Numbers must match the data room.]",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:investor_relations_copy",
+   "name": "Investor relations copy",
+   "category": "PR & corporate comms",
+   "one_line": "Earnings release text, investor presentation narrative, IR website copy and shareholder letters.",
+   "aliases": [
+    "IR copy",
+    "earnings release",
+    "investor presentation copy"
+   ],
+   "value": "low",
+   "value_evidence": "Sold by corporate-communications specialists (Upwork corporate communications category); mostly in-house or IR agencies",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/corporate-communications-freelancers/us/",
+     "title": "Upwork: hire Corporate Communications Experts",
+     "supports": "dedicated hire category; snippets list crisis, internal and external communications (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Disclosure law (SEBI LODR in India) governs what can be said and when.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:investor_update",
+   "name": "Investor update",
+   "category": "Business documents",
+   "one_line": "A regular (monthly or quarterly) note from a founder to investors: metrics, wins, misses, asks.",
+   "aliases": [
+    "monthly investor update",
+    "board update"
+   ],
+   "value": "low",
+   "value_evidence": "Founders write these themselves; little external paid demand.",
+   "note": "Same structure every time: headline metrics vs last period, highlights, lowlights, priorities, specific asks. Bad news early and plain.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:ivr_on_hold_script",
+   "name": "IVR / on-hold message script",
+   "category": "Sales enablement",
+   "one_line": "Words callers hear in phone menus, hold queues and after-hours greetings.",
+   "aliases": [
+    "on-hold message",
+    "IVR script",
+    "auto attendant script",
+    "phone greeting"
+   ],
+   "value": "low",
+   "value_evidence": "On-hold/IVR vendors sell scripted, voiced messages; Indian telephony vendors publish IVR script libraries",
+   "sources": [
+    {
+     "url": "https://www.holdcom.com/script-samples/",
+     "title": "Holdcom: on-hold and IVR script samples",
+     "supports": "vendor selling scripted, voiced on-hold/IVR messages"
+    },
+    {
+     "url": "https://exotel.com/blog/ivr-script/",
+     "title": "Exotel: IVR scripts and prompts",
+     "supports": "Indian telephony vendor's IVR script library"
+    }
+   ],
+   "note": "Bilingual menus are common in India; keep each menu option short and number-first.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:jingle_lyrics",
+   "name": "Jingle / ad lyrics",
+   "category": "Advertising",
+   "one_line": "Short sung brand line or song written to be remembered and hummed.",
+   "aliases": [
+    "jingle",
+    "sonic slogan",
+    "ad song lyrics"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr Jingles & Intros is a Music & Audio subcategory where lyric writing is bundled with production; Indian agencies sell jingles with radio",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/music-audio/jingles-intros",
+     "title": "Fiverr: Jingles & Intros subcategory",
+     "supports": "own Music & Audio subcategory; gigs bundle lyric/script writing with production (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://ommadvertising.com/",
+     "title": "OMM Advertising (Kolkata): full-service ad agency",
+     "supports": "Indian agency selling newspaper, TV, radio and outdoor ads incl. audio scripts and jingles (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Usually commissioned with a composer; the writer's part is the hook line and singable syllable count.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:job_description",
+   "name": "Job description / job post",
+   "category": "Business documents",
+   "one_line": "A role description that attracts the right applicants and filters out the wrong ones.",
+   "aliases": [
+    "JD",
+    "job ad",
+    "job posting",
+    "vacancy notice"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr runs a dedicated Job Description Writing category.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/job-description-writing-services",
+     "title": "Fiverr Writing & Translation: Job Description Writing",
+     "supports": "category exists on the Writing & Translation menu (seen 2026-10-04)"
+    }
+   ],
+   "note": "Title people search for, the why of the role, outcomes in the first year, must-haves vs nice-to-haves, pay band where possible, how to apply. Avoid gendered or age-coded words.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:katha_narration",
+   "name": "Katha / mythological story narration",
+   "category": "Indian cultural & devotional",
+   "one_line": "Story narration of mythology, folk tales or saints' lives in a kathavachak style, for audio, video or live recitation.",
+   "aliases": [
+    "katha",
+    "pauranik kahani",
+    "mythology story",
+    "dharmik katha",
+    "folk tale narration"
+   ],
+   "value": "medium",
+   "value_evidence": "Audio and video platforms in India run large mythology catalogues; Pocket FM's popular shows include mythology titles.",
+   "sources": [
+    {
+     "url": "https://www.medianews4u.com/pocket-fm-brings-ai-powered-audio-storytelling-to-india-with-30000-series-live/",
+     "title": "medianews4u (2025-09-17): Pocket FM brings AI-powered audio storytelling to India",
+     "supports": "over 30,000 AI audio series live; over 33,000 Indian users publish audio series each month; top writers projected to cross Rs 10 lakh a year"
+    }
+   ],
+   "note": "Name the source text (Ramayana, Mahabharata, Puranas, regional versions) and do not present invented episodes as scripture. Narrator voice: warm, rhetorical questions, moral at the end.",
+   "kind": "genre"
+  }
+ ]
+}

@@ -1,0 +1,2441 @@
+{
+ "kind": "genre",
+ "worker": "genre_commercial",
+ "as_of": "2026-10-04",
+ "source": "Fiverr Writing & Translation subcategory pages (gig counts + filters read from page HTML 2026-10-04), Upwork hire categories (snippet-only, fetchers refused), AWAI 2026 copywriting pricing guide, Indian agency rate cards/service menus, ESP/CRM vendor docs",
+ "items": [
+  {
+   "id": "genre:search_ad_copy",
+   "name": "Search ad copy (Google / Bing text ads)",
+   "category": "Advertising",
+   "one_line": "Headlines and descriptions for keyword-triggered text ads that win the click against the ads beside them.",
+   "aliases": [
+    "PPC ad copy",
+    "Google Ads copy",
+    "RSA copy",
+    "SEM copy"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Ad Copy (627 gigs, 2026-10-04) filters by 'Search engines'; AWAI's 2026 pricing guide lists PPC/AdWords campaigns",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ad-copy",
+     "title": "Fiverr: Ad Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 627 gigs; placement filter = Social media, Search engines, Mobile, Video, Billboards, Outdoor signage"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Responsive search ads are assembled by the system from separate headlines and descriptions, so each line must stand alone; limits live in plat:google_ads_rsa."
+  },
+  {
+   "id": "genre:social_ad_copy",
+   "name": "Social ad copy (Meta, LinkedIn, X, YouTube)",
+   "category": "Advertising",
+   "one_line": "Primary text, headline and CTA for paid social placements that stop the scroll and send the click.",
+   "aliases": [
+    "Facebook ad copy",
+    "Instagram ad copy",
+    "Meta ad copy",
+    "LinkedIn ad copy",
+    "paid social copy",
+    "performance ad copy"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Ad Copy filters 'Social media' first; Upwork has an Ad Copy hire category; AWAI lists Social Media Ad Campaign; Indian agency menus sell 'ad copy for performance campaigns'",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ad-copy",
+     "title": "Fiverr: Ad Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 627 gigs; placement filter = Social media, Search engines, Mobile, Video, Billboards, Outdoor signage"
+    },
+    {
+     "url": "https://www.upwork.com/hire/ad-copy-freelancers/",
+     "title": "Upwork: hire Ad Copy Freelancers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://thegreyhawks.com/copywriting-agency-in-india/",
+     "title": "The Grey Hawks: Copywriting agency in India (service menu)",
+     "supports": "Indian agency menu: brand voice & messaging framework, website & landing page, performance ad copy, email & funnel, scripts for video & commercials"
+    }
+   ],
+   "note": "Meta ad copy has separate primary text, headline and description fields, each truncated differently per placement; clients expect several variants per ad set for testing."
+  },
+  {
+   "id": "genre:display_banner_ad_copy",
+   "name": "Display / banner ad copy",
+   "category": "Advertising",
+   "one_line": "A few words on a fixed-size banner that must read in a glance next to unrelated content.",
+   "aliases": [
+    "banner ad copy",
+    "programmatic ad copy",
+    "responsive display ad copy"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI's 2026 pricing guide lists 'Banner Ad or Text Ad'; Fiverr Ad Copy filters 'Mobile' and 'Custom graphics'",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ad-copy",
+     "title": "Fiverr: Ad Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 627 gigs; placement filter = Social media, Search engines, Mobile, Video, Billboards, Outdoor signage"
+    }
+   ],
+   "note": "Copy is written to a layout (headline, sub-line, CTA button) and usually bought bundled with design."
+  },
+  {
+   "id": "genre:print_ad_copy",
+   "name": "Print ad copy (newspaper / magazine)",
+   "category": "Advertising",
+   "one_line": "Headline, body and sign-off for a press ad that must work on a page full of competing news.",
+   "aliases": [
+    "press ad",
+    "space ad",
+    "newspaper ad copy",
+    "magazine ad copy"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI's 2026 pricing guide lists 'Print/Space Ad'; Indian full-service agencies still sell newspaper ad creation and booking",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://ommadvertising.com/",
+     "title": "OMM Advertising (Kolkata): full-service ad agency",
+     "supports": "Indian agency selling newspaper, TV, radio and outdoor ads incl. audio scripts and jingles (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "India: regional-language newspaper ads remain a large buy; copy often written in English and transcreated."
+  },
+  {
+   "id": "genre:ooh_billboard_copy",
+   "name": "OOH / billboard copy",
+   "category": "Advertising",
+   "one_line": "Outdoor ad line read at speed from a distance: one idea, very few words, brand visible.",
+   "aliases": [
+    "outdoor ad copy",
+    "hoarding copy",
+    "transit ad copy",
+    "DOOH copy"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Ad Copy lists 'Billboards' and 'Outdoor signage' as placement filters; Indian agencies sell outdoor campaigns",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ad-copy",
+     "title": "Fiverr: Ad Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 627 gigs; placement filter = Social media, Search engines, Mobile, Video, Billboards, Outdoor signage"
+    },
+    {
+     "url": "https://ommadvertising.com/",
+     "title": "OMM Advertising (Kolkata): full-service ad agency",
+     "supports": "Indian agency selling newspaper, TV, radio and outdoor ads incl. audio scripts and jingles (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "In India 'hoarding' is the common term; regional-language OOH is common outside metros."
+  },
+  {
+   "id": "genre:radio_spot_script",
+   "name": "Radio / audio ad script",
+   "category": "Advertising",
+   "one_line": "Timed script for a radio or streaming-audio spot where sound, voice and repetition carry the brand.",
+   "aliases": [
+    "radio commercial",
+    "radio ad script",
+    "audio ad",
+    "streaming audio ad",
+    "RJ mention script"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Radio Commercial Script' and a direct-response radio variant; Fiverr has an Audio Script sub-subcategory",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing/audio-script",
+     "title": "Fiverr: Script Writing > Audio Script",
+     "supports": "own sub-subcategory for audio scripts; gigs offer radio commercial scripts (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://ommadvertising.com/",
+     "title": "OMM Advertising (Kolkata): full-service ad agency",
+     "supports": "Indian agency selling newspaper, TV, radio and outdoor ads incl. audio scripts and jingles (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Write for the ear: brand and offer repeated, phone number or URL said slowly; India FM spots are often bilingual."
+  },
+  {
+   "id": "genre:jingle_lyrics",
+   "name": "Jingle / ad lyrics",
+   "category": "Advertising",
+   "one_line": "Short sung brand line or song written to be remembered and hummed.",
+   "aliases": [
+    "jingle",
+    "sonic slogan",
+    "ad song lyrics"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr Jingles & Intros is a Music & Audio subcategory where lyric writing is bundled with production; Indian agencies sell jingles with radio",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/music-audio/jingles-intros",
+     "title": "Fiverr: Jingles & Intros subcategory",
+     "supports": "own Music & Audio subcategory; gigs bundle lyric/script writing with production (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://ommadvertising.com/",
+     "title": "OMM Advertising (Kolkata): full-service ad agency",
+     "supports": "Indian agency selling newspaper, TV, radio and outdoor ads incl. audio scripts and jingles (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Usually commissioned with a composer; the writer's part is the hook line and singable syllable count."
+  },
+  {
+   "id": "genre:tvc_script",
+   "name": "TV / OTT / CTV commercial script (TVC)",
+   "category": "Advertising",
+   "one_line": "Shot-by-shot script for a broadcast or streaming TV spot: visuals, VO, supers and sound, to a fixed duration.",
+   "aliases": [
+    "TVC script",
+    "TV commercial script",
+    "ad film script",
+    "OTT ad script",
+    "CTV ad script"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI's 2026 pricing guide lists 'TV Commercial Script'; Fiverr Video Script sub-subcategory covers ads and commercials; Indian agencies sell ad film scripts",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing/video-script",
+     "title": "Fiverr: Script Writing > Video Script",
+     "supports": "own sub-subcategory for video scripts incl. ads/commercials (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://thegreyhawks.com/copywriting-agency-in-india/",
+     "title": "The Grey Hawks: Copywriting agency in India (service menu)",
+     "supports": "Indian agency menu: brand voice & messaging framework, website & landing page, performance ad copy, email & funnel, scripts for video & commercials"
+    }
+   ],
+   "note": "Two-column (video | audio) format is standard; India 'ad film' scripts usually go through a storyboard and agency/client approval rounds."
+  },
+  {
+   "id": "genre:video_ad_script",
+   "name": "Digital video ad script (YouTube, Reels, pre-roll)",
+   "category": "Advertising",
+   "one_line": "Script for a paid online video ad that must hook before the skip and land brand and offer early.",
+   "aliases": [
+    "YouTube ad script",
+    "pre-roll script",
+    "bumper ad script",
+    "Reels ad script",
+    "performance video script"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Ad Copy lists a 'Video' placement and Fiverr runs a Video Script sub-subcategory; Indian agency menus sell scripts for video & commercials",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ad-copy",
+     "title": "Fiverr: Ad Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 627 gigs; placement filter = Social media, Search engines, Mobile, Video, Billboards, Outdoor signage"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing/video-script",
+     "title": "Fiverr: Script Writing > Video Script",
+     "supports": "own sub-subcategory for video scripts incl. ads/commercials (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://thegreyhawks.com/copywriting-agency-in-india/",
+     "title": "The Grey Hawks: Copywriting agency in India (service menu)",
+     "supports": "Indian agency menu: brand voice & messaging framework, website & landing page, performance ad copy, email & funnel, scripts for video & commercials"
+    }
+   ],
+   "note": "Not organic explainers or reels (genre_content owns those); this is paid media with a CTA and a fixed spot length."
+  },
+  {
+   "id": "genre:ugc_ad_script",
+   "name": "UGC ad script / creator ad brief",
+   "category": "Advertising",
+   "one_line": "Script or beat sheet a creator films as a native-looking testimonial-style ad.",
+   "aliases": [
+    "UGC script",
+    "creator ad script",
+    "TikTok ad script",
+    "testimonial-style ad script"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr ad-script gig tag is dominated by UGC and TikTok ad scripts; UGC marketplaces publish hook-first script briefs for brands",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/gigs/ad-script",
+     "title": "Fiverr gig tag: ad script",
+     "supports": "gig tag page whose gigs offer UGC, TikTok and video ad scripts (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.ugcroster.com/blog/brands/how-to-write-hook-first-ugc-script-brief",
+     "title": "UGC Roster: Hook-first UGC script brief",
+     "supports": "brands brief UGC creators with hook-first scripts"
+    }
+   ],
+   "note": "Hook-problem-demo-CTA beats in the creator's own words; disclosure rules for paid creator content apply (comp: cards)."
+  },
+  {
+   "id": "genre:influencer_brief",
+   "name": "Influencer campaign brief",
+   "category": "Advertising",
+   "one_line": "The document that tells a paid creator the objective, key messages, deliverables, do/don'ts and disclosure rules.",
+   "aliases": [
+    "creator brief",
+    "KOL brief",
+    "influencer marketing brief"
+   ],
+   "value": "medium",
+   "value_evidence": "Influencer platforms publish brief templates as a standard campaign document; written by agencies and brand teams on every paid creator campaign",
+   "sources": [
+    {
+     "url": "https://www.meltwater.com/en/blog/influencer-marketing-brief-template",
+     "title": "Meltwater: How to write an influencer brief",
+     "supports": "brief sections: objectives, audience, deliverables, key messages, do/don'ts, disclosure, timelines"
+    }
+   ],
+   "note": "In India the brief must carry ASCI disclosure instructions for paid or gifted content."
+  },
+  {
+   "id": "genre:advertorial",
+   "name": "Advertorial / sponsored article",
+   "category": "Advertising",
+   "one_line": "Paid placement written in the host publication's editorial style that still sells.",
+   "aliases": [
+    "sponsored content",
+    "paid article",
+    "brand feature",
+    "native article"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has an Advertorial Specialists hire category; AWAI's 2026 pricing guide lists 'Advertorial'",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/advertorial-freelancers/",
+     "title": "Upwork: hire Advertorial Specialists",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Must be labelled as paid; India media label these 'Advt.', 'Brand Desk' or 'Partner content'."
+  },
+  {
+   "id": "genre:native_ad",
+   "name": "Native ad (Taboola / Outbrain style)",
+   "category": "Advertising",
+   "one_line": "Headline and thumbnail copy for recommendation-widget ads that link to an advertorial or landing page.",
+   "aliases": [
+    "content recommendation ad",
+    "discovery ad",
+    "chumbox ad"
+   ],
+   "value": "low",
+   "value_evidence": "Upwork has a Native Advertising hire category whose snippets name Taboola/Outbrain-style platforms",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/native-advertising-freelancers/us/",
+     "title": "Upwork: hire Native Advertising Freelancers",
+     "supports": "dedicated hire category; snippets name Taboola/Outbrain-style native platforms (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Headline must match the landing page; clickbait headlines get rejected by the networks' policies."
+  },
+  {
+   "id": "genre:direct_mail_package",
+   "name": "Direct mail package (letter, postcard, self-mailer)",
+   "category": "Advertising",
+   "one_line": "Printed sales or lead-gen mailing: envelope teaser, letter, reply device, or a postcard / magalog.",
+   "aliases": [
+    "direct mail",
+    "DM letter",
+    "postcard mailer",
+    "magalog",
+    "self-mailer"
+   ],
+   "value": "low",
+   "value_evidence": "AWAI's 2026 pricing guide lists five direct-mail project types; Upwork has a Direct Marketers hire category",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.upwork.com/hire/direct-marketers/",
+     "title": "Upwork: hire Direct Marketers",
+     "supports": "dedicated hire category; snippets list direct mail (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Rare in India outside banking, insurance and B2B; the structures still underpin long-form sales pages."
+  },
+  {
+   "id": "genre:podcast_ad_read",
+   "name": "Podcast ad read / host-read talking points",
+   "category": "Advertising",
+   "one_line": "Advertiser copy or talking points a podcast host turns into a personal endorsement.",
+   "aliases": [
+    "host-read ad",
+    "podcast sponsorship script",
+    "audio sponsorship read"
+   ],
+   "value": "low",
+   "value_evidence": "Podcast networks and ad marketplaces publish advertiser guides for writing host-read scripts",
+   "sources": [
+    {
+     "url": "https://blog.gumball.fm/how-to-write-host-read-ad-as-a-brand/",
+     "title": "Gumball: How to write a host-read ad script (2022-08-18)",
+     "supports": "brands hand hosts talking points, with offer code and URL read twice"
+    },
+    {
+     "url": "https://www.acast.com/en/news-and-insights/how-to-write-a-podcast-ad-script-that-converts",
+     "title": "Acast: How to write a podcast ad script",
+     "supports": "podcast network guidance for advertiser-written scripts"
+    }
+   ],
+   "note": "Talking points beat verbatim scripts except where legal wording is required; promo code and URL repeated."
+  },
+  {
+   "id": "genre:topical_ad",
+   "name": "Topical / moment-marketing ad",
+   "category": "Advertising",
+   "one_line": "Fast brand reaction to news, a match or a festival, built on one witty line plus the brand.",
+   "aliases": [
+    "topical",
+    "moment marketing",
+    "brand topical",
+    "real-time marketing"
+   ],
+   "value": "medium",
+   "value_evidence": "Indian agency social retainers routinely include topicals (qualitative; no market list found)",
+   "note": "India-specific staple (Amul-style). Unsure if this is ad or organic social; merge may move it to genre_content."
+  },
+  {
+   "id": "genre:sales_page",
+   "name": "Sales page / long-form sales letter",
+   "category": "Sales & conversion",
+   "one_line": "One long page that takes a cold or warm reader from problem to purchase of a single offer.",
+   "aliases": [
+    "long-form sales letter",
+    "sales letter",
+    "long-form sales page",
+    "direct response sales page"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Sales Copy (1828 gigs, 2026-10-04); Fiverr Website Content lists 'Sales page'; Upwork has a Sales Letters hire category; AWAI lists it",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/sales-copy",
+     "title": "Fiverr: Sales Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1828 gigs"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://www.upwork.com/hire/sales-letters-freelancers/",
+     "title": "Upwork: hire Sales Letters Specialists",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Offer, proof, guarantee and objection handling carry most of the weight."
+  },
+  {
+   "id": "genre:vsl_script",
+   "name": "VSL (video sales letter) script",
+   "category": "Sales & conversion",
+   "one_line": "A sales letter delivered as a video: hook, story, mechanism, offer, close, usually with on-screen text.",
+   "aliases": [
+    "video sales letter",
+    "VSL",
+    "sales video script"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork has a Video Sales Letter Specialists hire category; Fiverr has a VSL-script gig tag; AWAI lists 'Long-Form VSL Script'",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/video-sales-letter-freelancers/",
+     "title": "Upwork: hire Video Sales Letter Specialists",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.fiverr.com/gigs/vsl-script",
+     "title": "Fiverr gig tag: VSL script",
+     "supports": "gig tag page for VSL scripts (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Read-aloud rhythm matters: short lines, one idea per slide."
+  },
+  {
+   "id": "genre:webinar_pitch_script",
+   "name": "Webinar / masterclass pitch script",
+   "category": "Sales & conversion",
+   "one_line": "Script for a live or automated webinar that teaches, then transitions into an offer.",
+   "aliases": [
+    "masterclass script",
+    "teleseminar script",
+    "Perfect Webinar script"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Teleseminar/Webinar Script'; Upwork sales-funnel copywriter snippets list webinar scripts and webinar landing pages",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.upwork.com/hire/sales-funnel-copywriting-freelancers/",
+     "title": "Upwork: hire Sales Funnel Copywriters",
+     "supports": "dedicated hire category; snippets mention webinar scripts, VSLs and funnel emails (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "India: very common for course creators and edtech 'free masterclass' funnels."
+  },
+  {
+   "id": "genre:sales_funnel_copy",
+   "name": "Sales funnel copy package",
+   "category": "Sales & conversion",
+   "one_line": "All the copy for a funnel: opt-in page, thank-you page, sales page, order bump, upsell and follow-up emails.",
+   "aliases": [
+    "funnel copy",
+    "ClickFunnels copy",
+    "conversion funnel copy"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork has a Sales Funnel Copywriters hire category; Indian agency menus sell 'email & funnel copywriting'",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/sales-funnel-copywriting-freelancers/",
+     "title": "Upwork: hire Sales Funnel Copywriters",
+     "supports": "dedicated hire category; snippets mention webinar scripts, VSLs and funnel emails (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://thegreyhawks.com/copywriting-agency-in-india/",
+     "title": "The Grey Hawks: Copywriting agency in India (service menu)",
+     "supports": "Indian agency menu: brand voice & messaging framework, website & landing page, performance ad copy, email & funnel, scripts for video & commercials"
+    }
+   ],
+   "note": "Sold as a bundle; cards for individual pages (landing page, upsell, emails) cover the parts."
+  },
+  {
+   "id": "genre:upsell_oto_page",
+   "name": "Upsell / one-time-offer (OTO) page",
+   "category": "Sales & conversion",
+   "one_line": "Post-purchase page that offers a related add-on while the buyer is still in buying mode.",
+   "aliases": [
+    "OTO page",
+    "upsell page",
+    "downsell page",
+    "order bump copy"
+   ],
+   "value": "low",
+   "value_evidence": "Sold inside sales-funnel packages rather than alone (Upwork sales funnel category)",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/sales-funnel-copywriting-freelancers/",
+     "title": "Upwork: hire Sales Funnel Copywriters",
+     "supports": "dedicated hire category; snippets mention webinar scripts, VSLs and funnel emails (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Short, congratulatory, one-click yes/no."
+  },
+  {
+   "id": "genre:order_form_checkout_copy",
+   "name": "Order form / checkout copy",
+   "category": "Sales & conversion",
+   "one_line": "Words on the order page and cart that restate the offer, remove last doubts and reduce drop-off.",
+   "aliases": [
+    "order page copy",
+    "checkout copy",
+    "cart copy"
+   ],
+   "value": "low",
+   "value_evidence": "AWAI's 2026 pricing guide lists 'Order Page/Shopping Cart Sequence' as a project",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Overlaps UX microcopy; guarantee, trust badges and price restatement are the levers."
+  },
+  {
+   "id": "genre:launch_sequence",
+   "name": "Product launch sequence (pre-launch to close)",
+   "category": "Sales & conversion",
+   "one_line": "Coordinated emails, pages and posts that build anticipation, open the cart and close it.",
+   "aliases": [
+    "launch copy",
+    "launch campaign",
+    "cart open/close emails",
+    "PLF sequence"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Email Copy lists 'New product announcement' and 'Email Sequences'; launch work is sold inside funnel packages",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    },
+    {
+     "url": "https://www.upwork.com/hire/sales-funnel-copywriting-freelancers/",
+     "title": "Upwork: hire Sales Funnel Copywriters",
+     "supports": "dedicated hire category; snippets mention webinar scripts, VSLs and funnel emails (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Card should pair with launch frameworks (fw:) rather than restate them."
+  },
+  {
+   "id": "genre:offer_stack",
+   "name": "Offer stack / offer page",
+   "category": "Sales & conversion",
+   "one_line": "Write-up of the full offer: core product, bonuses, guarantee, price anchor and deadline, as it appears on the sales page.",
+   "aliases": [
+    "offer write-up",
+    "value stack",
+    "grand slam offer copy"
+   ],
+   "value": "low",
+   "value_evidence": "Usually a section of a sales page or VSL, not bought alone (no market list found)",
+   "note": "Unsure: may be better as a technique (tech:) than a genre."
+  },
+  {
+   "id": "genre:pricing_page",
+   "name": "Pricing page copy",
+   "category": "Sales & conversion",
+   "one_line": "Plan names, plan descriptions, feature tables and FAQs that help a buyer pick a tier.",
+   "aliases": [
+    "plans page",
+    "pricing table copy"
+   ],
+   "value": "medium",
+   "value_evidence": "Sold within SaaS website-copy packages (B2B SaaS rate cards sell full websites and landing pages)",
+   "sources": [
+    {
+     "url": "https://www.mightyfinecopy.com/services",
+     "title": "Mighty Fine Copy: B2B SaaS copywriting rate card",
+     "supports": "fixed-price lines for brand messaging guide, landing page, full website copy"
+    }
+   ],
+   "note": "Plan naming and who-it's-for lines matter more than feature lists."
+  },
+  {
+   "id": "genre:comparison_page",
+   "name": "Competitor comparison / alternatives page",
+   "category": "Sales & conversion",
+   "one_line": "Bottom-of-funnel page that compares the product with a named rival or targets '[rival] alternatives' searches.",
+   "aliases": [
+    "Alternatives page ([competitor] alternatives)",
+    "alternatives page",
+    "best X alternatives",
+    "competitor alternatives page",
+    "competitor comparison page",
+    "vs page"
+   ],
+   "value": "medium",
+   "value_evidence": "SaaS copywriting agencies sell comparison and 'alternative' pages as a service line",
+   "sources": [
+    {
+     "url": "https://skale.so/saas-marketing/copywriting-agencies/",
+     "title": "Skale: SaaS copywriting agencies",
+     "supports": "SaaS agencies sell competitor comparison and 'alternative' pages as a service line"
+    },
+    {
+     "url": "https://optiseon.com/blog/b2b-saas-seo-playbook-2026/",
+     "title": "Optiseon: B2B SaaS SEO in 2026: the playbook that drives pipeline",
+     "supports": "Agency playbook naming comparison, alternatives, integration and use-case pages as the bottom-of-funnel page types B2B SaaS teams prioritise in 2026 (third-party, low confidence)"
+    }
+   ],
+   "note": "Claims about competitors must be fair and checkable (comparative advertising rules). [merged from genre:alternatives_page: Honest pros/cons for each alternative; pages that claim a win on every axis lose trust and citation.]"
+  },
+  {
+   "id": "genre:crowdfunding_page",
+   "name": "Crowdfunding campaign page",
+   "category": "Sales & conversion",
+   "one_line": "Kickstarter / Indiegogo / Ketto-style page and updates that turn visitors into backers or donors.",
+   "aliases": [
+    "Kickstarter copy",
+    "Indiegogo copy",
+    "campaign story",
+    "Ketto campaign"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr has a Crowdfunding > Campaign Creation subcategory where copywriting is a listed option",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/online-marketing/crowdfunding/campaign-creation",
+     "title": "Fiverr: Crowdfunding > Campaign Creation",
+     "supports": "own subcategory; campaign copywriting is a listed option (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "India: Ketto and Milaap campaigns are mostly medical/cause fundraising (overlaps fundraising appeal)."
+  },
+  {
+   "id": "genre:cold_email",
+   "name": "Cold email (B2B outbound)",
+   "category": "Email & CRM",
+   "one_line": "Unsolicited first-touch email (and follow-ups) that earns a reply from a stranger.",
+   "aliases": [
+    "outbound email",
+    "prospecting email",
+    "cold outreach email",
+    "lead generation email"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Email Copy lists 'Lead generation/Cold emailing' and 'Follow-Up Emails'; AWAI lists cold prospecting and follow-up email templates",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Short, plain text, one ask; deliverability and anti-spam rules matter as much as the words."
+  },
+  {
+   "id": "genre:cold_linkedin_dm",
+   "name": "Cold LinkedIn DM / connection message",
+   "category": "Email & CRM",
+   "one_line": "Short connection note and follow-up messages that start a sales conversation on LinkedIn.",
+   "aliases": [
+    "LinkedIn outreach message",
+    "InMail",
+    "connection request note",
+    "social selling DM"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork LinkedIn Specialists snippets list outreach and lead generation via Sales Navigator",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/linkedin-freelancers/",
+     "title": "Upwork: hire LinkedIn Specialists",
+     "supports": "snippets list LinkedIn outreach / lead generation (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Character limits on connection notes are tight; see plat: cards. Personal, not pitch-first."
+  },
+  {
+   "id": "genre:welcome_email_series",
+   "name": "Welcome email series",
+   "category": "Email & CRM",
+   "one_line": "Automated emails right after sign-up that set expectations and move the new subscriber to a first action.",
+   "aliases": [
+    "welcome sequence",
+    "welcome flow"
+   ],
+   "value": "high",
+   "value_evidence": "Klaviyo names the welcome series the first flow to build; Fiverr Email Copy lists 'Welcome emails'",
+   "sources": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "recommends building welcome series, abandoned cart, post-purchase and winback flows first; separate email and SMS welcome flows"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    }
+   ],
+   "note": "Usually several emails in an ESP automation; Klaviyo recommends separate email and SMS welcome flows."
+  },
+  {
+   "id": "genre:email_sequence_nurture",
+   "name": "Nurture / drip email sequence",
+   "category": "Email & CRM",
+   "one_line": "A planned series of automated emails that warms a lead over days or weeks toward a sale.",
+   "aliases": [
+    "drip campaign",
+    "nurture sequence",
+    "autoresponder sequence",
+    "email funnel"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Email Copy lists 'Email Sequences'; AWAI lists 'Autoresponder/Funnel Emails (Series)'",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Card should cover sequence mapping (goal per email, spacing, exit conditions), not only single-email craft."
+  },
+  {
+   "id": "genre:promotional_email",
+   "name": "Promotional / offer email",
+   "category": "Email & CRM",
+   "one_line": "Campaign email announcing a sale, offer or new product to an existing list.",
+   "aliases": [
+    "promo email",
+    "campaign email",
+    "broadcast email",
+    "product announcement email",
+    "sale email"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Email Copy lists 'Special offers' and 'New product announcement'; AWAI lists 'Stand-Alone Email'",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Subject line and preheader do most of the work; see plat:email_subject."
+  },
+  {
+   "id": "genre:abandoned_cart_email",
+   "name": "Abandoned cart / browse abandonment email",
+   "category": "Email & CRM",
+   "one_line": "Triggered email that brings back a shopper who left items in the cart or viewed without buying.",
+   "aliases": [
+    "cart recovery email",
+    "abandoned checkout email",
+    "browse abandonment email"
+   ],
+   "value": "high",
+   "value_evidence": "Klaviyo names abandoned cart among the first flows every store should build",
+   "sources": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "recommends building welcome series, abandoned cart, post-purchase and winback flows first; separate email and SMS welcome flows"
+    },
+    {
+     "url": "https://www.klaviyo.com/blog/abandoned-cart-email",
+     "title": "Klaviyo: Abandoned cart emails best practices",
+     "supports": "abandoned cart as a standard ecommerce flow"
+    }
+   ],
+   "note": "Often paired with SMS/WhatsApp reminders in India; discount in the first reminder trains customers to abandon."
+  },
+  {
+   "id": "genre:winback_email",
+   "name": "Win-back / re-engagement email",
+   "category": "Email & CRM",
+   "one_line": "Email that re-activates lapsed customers or cold subscribers before they are suppressed.",
+   "aliases": [
+    "re-engagement email",
+    "reactivation email",
+    "lapsed customer email",
+    "sunset email"
+   ],
+   "value": "medium",
+   "value_evidence": "Klaviyo lists winback among the core flows to build first",
+   "sources": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "recommends building welcome series, abandoned cart, post-purchase and winback flows first; separate email and SMS welcome flows"
+    }
+   ]
+  },
+  {
+   "id": "genre:post_purchase_email",
+   "name": "Post-purchase / review request email",
+   "category": "Email & CRM",
+   "one_line": "Thank-you, how-to-use and review-request emails after an order that drive reviews and the second purchase.",
+   "aliases": [
+    "review request email",
+    "post-purchase flow",
+    "thank-you email",
+    "cross-sell email"
+   ],
+   "value": "medium",
+   "value_evidence": "Klaviyo lists the post-purchase flow among the first four to build; Fiverr Website Content lists 'Reviews' and 'Testimonials' as page types",
+   "sources": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "recommends building welcome series, abandoned cart, post-purchase and winback flows first; separate email and SMS welcome flows"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    }
+   ],
+   "note": "Review-request wording must not offer rewards for positive-only reviews (fake-review rules)."
+  },
+  {
+   "id": "genre:saas_onboarding_email",
+   "name": "Product onboarding emails (SaaS / app)",
+   "category": "Email & CRM",
+   "one_line": "Lifecycle emails that get a new user to the first value moment and to activation.",
+   "aliases": [
+    "onboarding sequence",
+    "activation emails",
+    "trial emails",
+    "lifecycle emails"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Welcome Packet'; CRM platforms publish onboarding message playbooks; mostly written in-house by lifecycle teams",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://clevertap.com/blog/welcome-push-notifications-to-onboard-new-users/",
+     "title": "CleverTap: Welcome push notifications",
+     "supports": "onboarding push sequences as a CRM deliverable"
+    }
+   ],
+   "note": "Triggered by behaviour (did/didn't do X), not by calendar."
+  },
+  {
+   "id": "genre:transactional_email",
+   "name": "Transactional email copy",
+   "category": "Email & CRM",
+   "one_line": "Order confirmations, receipts, password resets and shipping updates written to be clear and on-brand.",
+   "aliases": [
+    "system email",
+    "triggered email",
+    "order confirmation email"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Email Copy lists 'Transactional emails' as an email type",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    }
+   ],
+   "note": "Clarity first; adding marketing content to a transactional message can change how the law treats it (check comp: cards)."
+  },
+  {
+   "id": "genre:sms_marketing",
+   "name": "SMS marketing copy",
+   "category": "Email & CRM",
+   "one_line": "Short promotional or reminder text message with one offer and one link.",
+   "aliases": [
+    "promotional SMS",
+    "bulk SMS copy",
+    "text message marketing"
+   ],
+   "value": "medium",
+   "value_evidence": "Klaviyo treats SMS as its own flow channel; Upwork lists SMS freelance jobs",
+   "sources": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "recommends building welcome series, abandoned cart, post-purchase and winback flows first; separate email and SMS welcome flows"
+    },
+    {
+     "url": "https://www.upwork.com/freelance-jobs/sms/",
+     "title": "Upwork: SMS freelance jobs",
+     "supports": "job listing page for SMS work (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "India: promotional SMS needs DLT-registered sender header and template; see plat:sms_india_dlt."
+  },
+  {
+   "id": "genre:whatsapp_broadcast",
+   "name": "WhatsApp marketing broadcast / template message",
+   "category": "Email & CRM",
+   "one_line": "Approved WhatsApp Business template message for offers, reminders and re-engagement.",
+   "aliases": [
+    "WhatsApp campaign",
+    "WhatsApp broadcast message",
+    "WhatsApp template",
+    "WABA marketing message"
+   ],
+   "value": "medium",
+   "value_evidence": "Indian WhatsApp vendors publish occasion-wise promotional message libraries for brands (vendor content, low confidence)",
+   "sources": [
+    {
+     "url": "https://watease.com/blog/top-50-whatsapp-promotional-messages-india",
+     "title": "WatEase: WhatsApp promotional messages (India)",
+     "supports": "India WhatsApp vendor's library of promotional broadcast copy by occasion (Diwali, flash sale, win-back); low confidence, vendor content"
+    }
+   ],
+   "note": "Marketing templates need Meta approval before sending and are billed per conversation; India-heavy channel."
+  },
+  {
+   "id": "genre:push_notification",
+   "name": "Push notification / in-app message copy",
+   "category": "Email & CRM",
+   "one_line": "Title and body for app or web push and in-app messages that bring a user back to act.",
+   "aliases": [
+    "push copy",
+    "in-app message",
+    "app notification copy",
+    "web push"
+   ],
+   "value": "medium",
+   "value_evidence": "CleverTap (Indian-founded engagement platform) publishes mobile copywriting and onboarding-push playbooks; mostly in-house CRM teams",
+   "sources": [
+    {
+     "url": "https://clevertap.com/blog/mobile-copywriting/",
+     "title": "CleverTap: Mobile copywriting tips",
+     "supports": "Indian-founded engagement platform's guide to push and in-app copy"
+    },
+    {
+     "url": "https://clevertap.com/blog/welcome-push-notifications-to-onboard-new-users/",
+     "title": "CleverTap: Welcome push notifications",
+     "supports": "onboarding push sequences as a CRM deliverable"
+    }
+   ],
+   "note": "Title and body truncate differently by OS; personalisation tokens need fallbacks."
+  },
+  {
+   "id": "genre:fundraising_appeal",
+   "name": "Nonprofit fundraising appeal",
+   "category": "Other commercial",
+   "one_line": "Donation ask by email, letter or page that moves a supporter to give now.",
+   "aliases": [
+    "donation appeal",
+    "fundraising email",
+    "appeal letter",
+    "donor letter",
+    "year-end appeal"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Email Copy lists 'Fundraising Emails'; Upwork has a Grant Writers hire category for the institutional side",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    },
+    {
+     "url": "https://www.upwork.com/hire/grant-writers/",
+     "title": "Upwork: hire Grant Writers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "India: 80G tax-exemption wording and FCRA limits on foreign donations affect the ask. Grant proposals may belong to genre_pro_creative."
+  },
+  {
+   "id": "genre:homepage_copy",
+   "name": "Homepage copy",
+   "category": "Web & UX",
+   "one_line": "Above-the-fold promise plus the sections that route each visitor type to the right next page.",
+   "aliases": [
+    "home page copy",
+    "website homepage",
+    "website copy"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Website Content (4310 gigs, 2026-10-04) lists 'Homepage'; India rate tables price web pages separately; AWAI lists home page copy",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://eloritescontent.com/research/content-writing-services-prices-usa-india/",
+     "title": "Elorites: Content Writing Services Prices 2026, India & USA (updated 2026-06-10)",
+     "supports": "India per-word rate tables by industry with separate rows for web pages, FAQ content, brochures and marketing material"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Usually sold inside a full website-copy package with About, Services and Contact pages."
+  },
+  {
+   "id": "genre:landing_page",
+   "name": "Landing page copy",
+   "category": "Web & UX",
+   "one_line": "Single-purpose page built for one campaign and one conversion (sign-up, lead, purchase).",
+   "aliases": [
+    "campaign landing page",
+    "squeeze page",
+    "lead capture page",
+    "opt-in page",
+    "LP copy"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Website Content lists 'Landing page' first; AWAI lists sales/landing and lead-gen landing pages; SaaS rate cards sell 'landing page in a day'",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.mightyfinecopy.com/services",
+     "title": "Mighty Fine Copy: B2B SaaS copywriting rate card",
+     "supports": "fixed-price lines for brand messaging guide, landing page, full website copy"
+    }
+   ],
+   "note": "Message match with the ad or email that sent the traffic is the first check."
+  },
+  {
+   "id": "genre:about_page",
+   "name": "About page / company bio",
+   "category": "Web & UX",
+   "one_line": "The page that makes a business credible and human: who is behind it, why, and why trust them.",
+   "aliases": [
+    "about us page",
+    "company bio",
+    "our story page"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Website Content lists 'Bio/About us' as a page type",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    }
+   ]
+  },
+  {
+   "id": "genre:services_page",
+   "name": "Services page",
+   "category": "Web & UX",
+   "one_line": "Page per service (or a hub) that explains the offer, who it is for, process, proof and how to start.",
+   "aliases": [
+    "service page",
+    "what we do page",
+    "practice area page"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Website Content lists 'Service page'; India rate tables price web pages per word",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://eloritescontent.com/research/content-writing-services-prices-usa-india/",
+     "title": "Elorites: Content Writing Services Prices 2026, India & USA (updated 2026-06-10)",
+     "supports": "India per-word rate tables by industry with separate rows for web pages, FAQ content, brochures and marketing material"
+    }
+   ],
+   "note": "Local-service pages double as SEO pages; the SEO side belongs to genre_content cards."
+  },
+  {
+   "id": "genre:faq_page",
+   "name": "FAQ page",
+   "category": "Web & UX",
+   "one_line": "Questions and answers that remove purchase objections and cut support load.",
+   "aliases": [
+    "FAQs",
+    "frequently asked questions"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Website Content lists 'FAQs'; India rate tables have a separate FAQ-content row; AWAI lists FAQs",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://eloritescontent.com/research/content-writing-services-prices-usa-india/",
+     "title": "Elorites: Content Writing Services Prices 2026, India & USA (updated 2026-06-10)",
+     "supports": "India per-word rate tables by industry with separate rows for web pages, FAQ content, brochures and marketing material"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Each answer should stand alone (people and AI answer engines read one at a time)."
+  },
+  {
+   "id": "genre:testimonial_copy",
+   "name": "Testimonial collection & testimonial page copy",
+   "category": "Web & UX",
+   "one_line": "Questions that draw specific customer quotes, and the edited testimonials / reviews page built from them.",
+   "aliases": [
+    "testimonial page",
+    "reviews page",
+    "customer quote collection",
+    "testimonial interview script"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr Website Content lists 'Testimonials' and 'Reviews' as page types; AWAI lists 'Testimonial'",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Edit for clarity only; invented or materially altered testimonials breach consumer law (comp: cards)."
+  },
+  {
+   "id": "genre:ux_microcopy",
+   "name": "UX writing / microcopy",
+   "category": "Web & UX",
+   "one_line": "Interface words: buttons, labels, hints, tooltips, empty states and confirmations.",
+   "aliases": [
+    "microcopy",
+    "UI copy",
+    "content design",
+    "empty state copy",
+    "interface copy"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr UX Writing (122 gigs, 2026-10-04) splits work by Website, Mobile app, Software/Dashboard, Chatbot; AWAI lists UX copywriting",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ux-writing",
+     "title": "Fiverr: UX Writing subcategory",
+     "supports": "page search data on 2026-10-04: num_found 122 gigs; product filter = Website, Mobile app, Software/Dashboard, Chatbot; add-on Voice & tone guidelines"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Most paid demand is in-house 'UX writer' / 'content designer' roles; freelance listings are few."
+  },
+  {
+   "id": "genre:onboarding_flow_copy",
+   "name": "In-product onboarding flow copy",
+   "category": "Web & UX",
+   "one_line": "Welcome screens, setup steps, tooltips and checklists that get a new user to first value.",
+   "aliases": [
+    "onboarding screens",
+    "product tour copy",
+    "first-run experience copy"
+   ],
+   "value": "low",
+   "value_evidence": "Sold inside UX-writing work for apps and dashboards (Fiverr UX Writing product filter)",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ux-writing",
+     "title": "Fiverr: UX Writing subcategory",
+     "supports": "page search data on 2026-10-04: num_found 122 gigs; product filter = Website, Mobile app, Software/Dashboard, Chatbot; add-on Voice & tone guidelines"
+    }
+   ],
+   "note": "Pairs with genre:saas_onboarding_email for the off-product side."
+  },
+  {
+   "id": "genre:error_messages",
+   "name": "Error message copy",
+   "category": "Web & UX",
+   "one_line": "Messages that say what went wrong, why, and exactly how to fix it, without blaming the user.",
+   "aliases": [
+    "error states",
+    "validation messages",
+    "system alerts"
+   ],
+   "value": "low",
+   "value_evidence": "Part of UX writing engagements, not bought alone (Fiverr UX Writing)",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ux-writing",
+     "title": "Fiverr: UX Writing subcategory",
+     "supports": "page search data on 2026-10-04: num_found 122 gigs; product filter = Website, Mobile app, Software/Dashboard, Chatbot; add-on Voice & tone guidelines"
+    }
+   ]
+  },
+  {
+   "id": "genre:chatbot_script",
+   "name": "Chatbot / conversational script",
+   "category": "Web & UX",
+   "one_line": "Dialogue flows, bot replies, fallbacks and hand-offs for a website, WhatsApp or app chatbot.",
+   "aliases": [
+    "conversation design",
+    "bot script",
+    "conversational copy",
+    "WhatsApp bot flow"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr UX Writing filters 'Chatbot'; AWAI lists 'Chatbot'; job boards carry a Conversation Design category",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ux-writing",
+     "title": "Fiverr: UX Writing subcategory",
+     "supports": "page search data on 2026-10-04: num_found 122 gigs; product filter = Website, Mobile app, Software/Dashboard, Chatbot; add-on Voice & tone guidelines"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.ziprecruiter.com/Jobs/Conversation-Design",
+     "title": "ZipRecruiter: Conversation Design jobs",
+     "supports": "job-board category for conversation designers (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "LLM bots now need system-prompt and persona writing as well as scripted flows."
+  },
+  {
+   "id": "genre:local_business_listing",
+   "name": "Local business listing description (Google Business Profile, Justdial)",
+   "category": "Web & UX",
+   "one_line": "Business description, services and posts on map and directory listings that win local enquiries.",
+   "aliases": [
+    "Google Business Profile description",
+    "GMB description",
+    "Justdial listing",
+    "directory listing copy"
+   ],
+   "value": "low",
+   "value_evidence": "AWAI lists 'Company Description: Google My Business, Review Sites, Directories'",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Unsure: may sit with local SEO in genre_content."
+  },
+  {
+   "id": "genre:product_description",
+   "name": "Product description (D2C / ecommerce)",
+   "category": "Ecommerce",
+   "one_line": "Benefit-led copy on a product page that answers the buyer's questions and makes the add-to-cart easy.",
+   "aliases": [
+    "product copy",
+    "PDP copy",
+    "product page copy",
+    "ecommerce copy"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Product Descriptions had the most gigs of the copy subcategories checked (4945, 2026-10-04); AWAI lists product page copy",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Often bulk work (hundreds of SKUs) with an SEO title and bullets; tone follows the brand voice guide."
+  },
+  {
+   "id": "genre:marketplace_listing",
+   "name": "Marketplace listing (Amazon, Flipkart, Myntra, Meesho)",
+   "category": "Ecommerce",
+   "one_line": "Title, bullets, description and backend keywords written to each marketplace's style rules.",
+   "aliases": [
+    "Amazon listing",
+    "Flipkart listing",
+    "listing optimisation",
+    "product listing"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Product Descriptions lists 'Marketplaces' as a platform filter",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    }
+   ],
+   "note": "Each marketplace has its own title length and banned-claim rules; numbers belong on plat: cards."
+  },
+  {
+   "id": "genre:amazon_a_plus_content",
+   "name": "Amazon A+ content / Brand Story",
+   "category": "Ecommerce",
+   "one_line": "Module-based enhanced description (images + short text blocks, comparison chart) for brand-registered sellers.",
+   "aliases": [
+    "A+ content",
+    "Enhanced Brand Content",
+    "EBC",
+    "Brand Story module"
+   ],
+   "value": "medium",
+   "value_evidence": "Amazon's seller forums document A+ as a separate module-based description; sold as a listing add-on by marketplace agencies",
+   "sources": [
+    {
+     "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/119bb4cc3cf0a4b4e8d75e94b7c836ee",
+     "title": "Amazon Seller Forums: guide to A+ modules",
+     "supports": "A+ content (Enhanced Product Description, Brand Story) is a separate module-based description for Brand Registry sellers; forum, low confidence"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    }
+   ],
+   "note": "Text is short and sits inside images; module text limits must be checked on Seller Central."
+  },
+  {
+   "id": "genre:category_page",
+   "name": "Category / collection page copy",
+   "category": "Ecommerce",
+   "one_line": "Intro and supporting copy on a product-listing page that helps shoppers choose and helps search engines rank.",
+   "aliases": [
+    "collection page copy",
+    "PLP copy",
+    "category description"
+   ],
+   "value": "low",
+   "value_evidence": "AWAI lists 'Category Page Update: SEO and Sales-Conversion Copy'",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ]
+  },
+  {
+   "id": "genre:d2c_brand_store",
+   "name": "Brand store / D2C shop copy",
+   "category": "Ecommerce",
+   "one_line": "Copy for an Amazon Brand Store, Shopify storefront or Instagram shop: brand intro, collections, trust strip.",
+   "aliases": [
+    "Amazon Brand Store copy",
+    "Shopify store copy",
+    "social shop copy"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr Product Descriptions lists 'Social media shops' and 'E-Commerce stores' as platforms",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    }
+   ],
+   "note": "Overlaps homepage copy for D2C brands."
+  },
+  {
+   "id": "genre:app_store_listing",
+   "name": "App store listing copy",
+   "category": "Ecommerce",
+   "one_line": "App name, subtitle, short and full description and screenshot captions for Google Play / App Store.",
+   "aliases": [
+    "ASO copy",
+    "Play Store description",
+    "App Store description"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Product Descriptions lists 'App store' as a platform filter",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    }
+   ],
+   "note": "Field limits differ between Apple and Google; ASO keyword rules apply."
+  },
+  {
+   "id": "genre:packaging_copy",
+   "name": "Packaging & label copy",
+   "category": "Ecommerce",
+   "one_line": "On-pack words: name, claims, benefit line, usage, back-of-pack story, alongside mandatory declarations.",
+   "aliases": [
+    "pack copy",
+    "label copy",
+    "back-of-pack copy",
+    "carton copy"
+   ],
+   "value": "low",
+   "value_evidence": "Usually written by brand agencies inside packaging design projects (no separate market list found)",
+   "note": "India: Legal Metrology (Packaged Commodities) and FSSAI labelling rules decide the mandatory panel; claims need substantiation."
+  },
+  {
+   "id": "genre:catalogue_copy",
+   "name": "Catalogue / product brochure copy",
+   "category": "Ecommerce",
+   "one_line": "Product-range copy for print or PDF catalogues used by distributors, dealers and B2B buyers.",
+   "aliases": [
+    "catalog copy",
+    "product catalogue",
+    "dealer catalogue"
+   ],
+   "value": "low",
+   "value_evidence": "India rate tables price brochures separately (manufacturing industry row)",
+   "sources": [
+    {
+     "url": "https://eloritescontent.com/research/content-writing-services-prices-usa-india/",
+     "title": "Elorites: Content Writing Services Prices 2026, India & USA (updated 2026-06-10)",
+     "supports": "India per-word rate tables by industry with separate rows for web pages, FAQ content, brochures and marketing material"
+    }
+   ],
+   "note": "Heavy on specs and consistent formatting; common for Indian manufacturers and exporters."
+  },
+  {
+   "id": "genre:brand_naming",
+   "name": "Brand / business naming",
+   "category": "Brand",
+   "one_line": "A shortlist of names for a company, product or app, screened for meaning, sound and availability.",
+   "aliases": [
+    "business name",
+    "product naming",
+    "company naming"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Business Names & Slogans (1233 gigs, 2026-10-04) splits naming by Company, Product, Website/App",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/business-names-and-slogans",
+     "title": "Fiverr: Business Names & Slogans subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1233 gigs; filter = Company, Product, Website/App, Slogan, Book/Movie, Tagline; add-ons Domain research, Trademark check, Social media handles"
+    }
+   ],
+   "note": "Deliverable includes rationale and checks (domain, trademark, social handles); the writer flags, a lawyer clears."
+  },
+  {
+   "id": "genre:tagline_slogan",
+   "name": "Tagline / slogan",
+   "category": "Brand",
+   "one_line": "A short line that carries the brand's promise or attitude and survives repetition.",
+   "aliases": [
+    "slogan",
+    "tagline",
+    "strapline",
+    "brand line",
+    "campaign line"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Business Names & Slogans lists 'Slogan' and 'Tagline' as separate deliverables",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/business-names-and-slogans",
+     "title": "Fiverr: Business Names & Slogans subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1233 gigs; filter = Company, Product, Website/App, Slogan, Book/Movie, Tagline; add-ons Domain research, Trademark check, Social media handles"
+    }
+   ],
+   "note": "Tagline = brand-level and long-lived; campaign line = one campaign."
+  },
+  {
+   "id": "genre:brand_voice_guide",
+   "name": "Brand voice & tone guide",
+   "category": "Brand",
+   "one_line": "Document that defines how the brand sounds, with do/don't word lists and before/after examples.",
+   "aliases": [
+    "tone of voice guide",
+    "voice guidelines",
+    "brand language guide"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Brand Voice & Tone (371 gigs, 2026-10-04) lists 'Voice & tone guidelines'; Indian agency menus lead with brand voice",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/tone-of-voice",
+     "title": "Fiverr: Brand Voice & Tone subcategory",
+     "supports": "page search data on 2026-10-04: num_found 371 gigs; deliverable filter = Brand narrative, Mission & vision statement, Voice & tone guidelines, Target audience & positioning, Business name & slogan, Brand design guidelines"
+    },
+    {
+     "url": "https://thegreyhawks.com/copywriting-agency-in-india/",
+     "title": "The Grey Hawks: Copywriting agency in India (service menu)",
+     "supports": "Indian agency menu: brand voice & messaging framework, website & landing page, performance ad copy, email & funnel, scripts for video & commercials"
+    }
+   ]
+  },
+  {
+   "id": "genre:messaging_framework",
+   "name": "Brand messaging framework / message house",
+   "category": "Brand",
+   "one_line": "Internal document of positioning, value proposition, audience, pillars and proof points that all copy is written from.",
+   "aliases": [
+    "messaging guide",
+    "message house",
+    "key message copy platform",
+    "messaging matrix"
+   ],
+   "value": "medium",
+   "value_evidence": "B2B rate cards sell a fixed-price brand messaging guide; AWAI lists 'Key Message Copy Platform'",
+   "sources": [
+    {
+     "url": "https://www.mightyfinecopy.com/services",
+     "title": "Mighty Fine Copy: B2B SaaS copywriting rate card",
+     "supports": "fixed-price lines for brand messaging guide, landing page, full website copy"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://jansencomm.com/brand-messaging/",
+     "title": "Jansen Communications: Brand messaging services",
+     "supports": "brand messaging packages list tagline, value proposition, mission, tone of voice, elevator pitch, manifesto"
+    }
+   ]
+  },
+  {
+   "id": "genre:positioning_statement",
+   "name": "Positioning statement / value proposition",
+   "category": "Brand",
+   "one_line": "One internal statement of who the product is for, what it is, and why it beats the alternative.",
+   "aliases": [
+    "positioning",
+    "value proposition",
+    "UVP"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Brand Voice & Tone lists 'Target audience & positioning' as a deliverable",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/tone-of-voice",
+     "title": "Fiverr: Brand Voice & Tone subcategory",
+     "supports": "page search data on 2026-10-04: num_found 371 gigs; deliverable filter = Brand narrative, Mission & vision statement, Voice & tone guidelines, Target audience & positioning, Business name & slogan, Brand design guidelines"
+    }
+   ],
+   "note": "Internal; the public lines (tagline, homepage hero) are written from it."
+  },
+  {
+   "id": "genre:brand_story",
+   "name": "Brand story / brand narrative",
+   "category": "Brand",
+   "one_line": "The founding story and point of view a brand tells consistently across its About page, decks and ads.",
+   "aliases": [
+    "brand narrative",
+    "origin story",
+    "founder story"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Brand Voice & Tone lists 'Brand narrative' as a deliverable",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/tone-of-voice",
+     "title": "Fiverr: Brand Voice & Tone subcategory",
+     "supports": "page search data on 2026-10-04: num_found 371 gigs; deliverable filter = Brand narrative, Mission & vision statement, Voice & tone guidelines, Target audience & positioning, Business name & slogan, Brand design guidelines"
+    }
+   ]
+  },
+  {
+   "id": "genre:brand_manifesto",
+   "name": "Brand manifesto",
+   "category": "Brand",
+   "one_line": "Short, rousing statement of what the brand believes and fights for, used internally and in launch films.",
+   "aliases": [
+    "brand belief statement",
+    "manifesto film script"
+   ],
+   "value": "low",
+   "value_evidence": "Listed inside brand messaging packages; copywriters' association guides treat it as a commissioned piece",
+   "sources": [
+    {
+     "url": "https://jansencomm.com/brand-messaging/",
+     "title": "Jansen Communications: Brand messaging services",
+     "supports": "brand messaging packages list tagline, value proposition, mission, tone of voice, elevator pitch, manifesto"
+    },
+    {
+     "url": "https://www.procopywriters.co.uk/2019/05/how-to-write-an-effective-brand-manifesto/",
+     "title": "ProCopywriters: How to write an effective brand manifesto",
+     "supports": "UK copywriters' association guide treating the manifesto as a commissioned piece"
+    }
+   ]
+  },
+  {
+   "id": "genre:mission_vision_values",
+   "name": "Mission, vision & values statements",
+   "category": "Brand",
+   "one_line": "Short statements of purpose, future state and operating values that staff and customers can repeat.",
+   "aliases": [
+    "mission statement",
+    "vision statement",
+    "core values",
+    "purpose statement"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr Brand Voice & Tone lists 'Mission & vision statement'; usually bundled, rarely bought alone",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/tone-of-voice",
+     "title": "Fiverr: Brand Voice & Tone subcategory",
+     "supports": "page search data on 2026-10-04: num_found 371 gigs; deliverable filter = Brand narrative, Mission & vision statement, Voice & tone guidelines, Target audience & positioning, Business name & slogan, Brand design guidelines"
+    }
+   ]
+  },
+  {
+   "id": "genre:elevator_pitch",
+   "name": "Elevator pitch / boilerplate description",
+   "category": "Brand",
+   "one_line": "A few sentences describing what the company does, for intros, bios, press boilerplate and profiles.",
+   "aliases": [
+    "30-second pitch",
+    "Elevator pitch",
+    "company boilerplate",
+    "elevator speech",
+    "one-liner",
+    "short company description"
+   ],
+   "value": "low",
+   "value_evidence": "Listed as a standard item inside brand messaging packages",
+   "sources": [
+    {
+     "url": "https://jansencomm.com/brand-messaging/",
+     "title": "Jansen Communications: Brand messaging services",
+     "supports": "brand messaging packages list tagline, value proposition, mission, tone of voice, elevator pitch, manifesto"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Elevator_pitch",
+     "title": "Elevator pitch - Wikipedia",
+     "supports": "Short description explaining who it is for, what it does, why it is needed and how it gets done"
+    }
+   ],
+   "note": "The press-release boilerplate is usually this text."
+  },
+  {
+   "id": "genre:press_release",
+   "name": "Press release",
+   "category": "PR & corporate comms",
+   "one_line": "Newsworthy announcement written in news style for journalists and wire distribution.",
+   "aliases": [
+    "news release",
+    "media release",
+    "press note"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Press Releases (3627 gigs, 2026-10-04); Upwork Press Release Writers hire category; India rate guides price press releases separately",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/writing-press-releases",
+     "title": "Fiverr: Press Releases subcategory",
+     "supports": "page search data on 2026-10-04: num_found 3627 gigs; add-ons Format press release, Submit press release, Research PR ideas"
+    },
+    {
+     "url": "https://www.upwork.com/hire/press-release-writers/",
+     "title": "Upwork: hire Press Release Writers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://textuar.com/blog/content-writing-services-price-india/",
+     "title": "Textuar: Content Writing Services in India 2026 price guide",
+     "supports": "India rate guide; cites an agency pricing press releases and ad scripts as separate line items"
+    }
+   ],
+   "note": "Inverted pyramid, dateline, quotes, boilerplate, media contact; 'press note' is the common Indian term."
+  },
+  {
+   "id": "genre:media_pitch",
+   "name": "Media pitch (to journalists)",
+   "category": "PR & corporate comms",
+   "one_line": "Short personalised email that offers a journalist a story, angle or spokesperson.",
+   "aliases": [
+    "pitch email",
+    "story pitch",
+    "PR pitch"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has a Media Pitches hire category",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/media-pitches-freelancers/us/",
+     "title": "Upwork: hire Media Pitches Freelancers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Pitch the angle, not the press release; one journalist, one reason it fits their beat."
+  },
+  {
+   "id": "genre:crisis_statement",
+   "name": "Crisis / holding statement",
+   "category": "PR & corporate comms",
+   "one_line": "First public statement in a crisis that acknowledges, states facts known, and commits to next steps without admitting what isn't known.",
+   "aliases": [
+    "holding statement",
+    "crisis communication statement",
+    "incident statement"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork PR specialists list holding statements, response plans and talking points as crisis work",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/public-relations-specialist/",
+     "title": "Upwork: hire Public Relations Specialists",
+     "supports": "snippet lists holding statements, response plans, talking points and spokesperson guidance as crisis work (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.upwork.com/hire/corporate-communications-freelancers/us/",
+     "title": "Upwork: hire Corporate Communications Experts",
+     "supports": "dedicated hire category; snippets list crisis, internal and external communications (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Usually reviewed by legal; speed beats polish."
+  },
+  {
+   "id": "genre:apology_statement",
+   "name": "Public apology statement",
+   "category": "PR & corporate comms",
+   "one_line": "Brand or leader apology that names the harm, owns it, and says what changes.",
+   "aliases": [
+    "corporate apology",
+    "brand apology",
+    "public apology"
+   ],
+   "value": "low",
+   "value_evidence": "Written inside crisis-communications engagements (Upwork corporate communications category)",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/corporate-communications-freelancers/us/",
+     "title": "Upwork: hire Corporate Communications Experts",
+     "supports": "dedicated hire category; snippets list crisis, internal and external communications (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Non-apologies ('we regret if anyone was offended') backfire on Indian social media fast."
+  },
+  {
+   "id": "genre:ceo_letter",
+   "name": "CEO / founder letter",
+   "category": "PR & corporate comms",
+   "one_line": "Letter in a leader's voice to customers, staff or shareholders on a milestone, change or crisis.",
+   "aliases": [
+    "founder letter",
+    "chairman's letter",
+    "shareholder letter",
+    "letter to customers"
+   ],
+   "value": "medium",
+   "value_evidence": "Written within annual-report and corporate-comms work (Upwork report writers and corporate communications categories)",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/report-writers/",
+     "title": "Upwork: hire Report Writers",
+     "supports": "snippets list annual and sustainability reports (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.upwork.com/hire/corporate-communications-freelancers/us/",
+     "title": "Upwork: hire Corporate Communications Experts",
+     "supports": "dedicated hire category; snippets list crisis, internal and external communications (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Ghostwritten; must sound like the leader. Chairman's message is a standard annual-report section in India."
+  },
+  {
+   "id": "genre:annual_report_narrative",
+   "name": "Annual report narrative",
+   "category": "PR & corporate comms",
+   "one_line": "The non-financial story of the year: chairman's message, highlights, strategy and business review sections.",
+   "aliases": [
+    "annual report copy",
+    "integrated report narrative",
+    "MD&A narrative"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Annual Report'; Upwork report writers list annual reports",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.upwork.com/hire/report-writers/",
+     "title": "Upwork: hire Report Writers",
+     "supports": "snippets list annual and sustainability reports (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "India: listed companies' reports carry statutory sections; the writer owns the narrative, not the financials."
+  },
+  {
+   "id": "genre:esg_csr_report",
+   "name": "ESG / CSR / sustainability report copy",
+   "category": "PR & corporate comms",
+   "one_line": "Narrative and disclosure copy for sustainability, CSR and BRSR reports.",
+   "aliases": [
+    "sustainability report",
+    "CSR report",
+    "BRSR narrative",
+    "impact report"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork sustainability freelancers list ESG/CSR report writing; SEBI makes BRSR mandatory for the largest listed companies",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/sustainability-freelancers/",
+     "title": "Upwork: hire Sustainability Freelancers",
+     "supports": "snippets list ESG/CSR report writing (GRI, SASB) (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://cleartax.in/s/brsr-reporting",
+     "title": "ClearTax: BRSR reporting in India",
+     "supports": "SEBI's BRSR is mandatory for the largest listed companies and filed with the annual report (secondary source)"
+    }
+   ],
+   "note": "Greenwashing risk: every claim needs data behind it."
+  },
+  {
+   "id": "genre:internal_announcement",
+   "name": "Internal announcement / employee comms",
+   "category": "PR & corporate comms",
+   "one_line": "All-staff email or intranet post announcing a change, launch, policy or leadership news.",
+   "aliases": [
+    "internal comms",
+    "employee announcement",
+    "all-hands email",
+    "change communication"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has an Internal Communications hire category; Fiverr Email Copy lists 'Internal updates'; AWAI lists Employee/HR materials",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/internal-communications-freelancers/us/chicago-il/",
+     "title": "Upwork: hire Internal Communications Specialists",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 1782 gigs; email-type filter = Welcome emails, Lead generation/Cold emailing, Newsletters, Email Sequences, Special offers, New product announcement, Follow-Up Emails, Transactional emails, Curated content, Internal updates, Fundraising Emails"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ]
+  },
+  {
+   "id": "genre:investor_relations_copy",
+   "name": "Investor relations copy",
+   "category": "PR & corporate comms",
+   "one_line": "Earnings release text, investor presentation narrative, IR website copy and shareholder letters.",
+   "aliases": [
+    "IR copy",
+    "earnings release",
+    "investor presentation copy"
+   ],
+   "value": "low",
+   "value_evidence": "Sold by corporate-communications specialists (Upwork corporate communications category); mostly in-house or IR agencies",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/corporate-communications-freelancers/us/",
+     "title": "Upwork: hire Corporate Communications Experts",
+     "supports": "dedicated hire category; snippets list crisis, internal and external communications (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Disclosure law (SEBI LODR in India) governs what can be said and when."
+  },
+  {
+   "id": "genre:press_kit",
+   "name": "Press kit / media kit",
+   "category": "PR & corporate comms",
+   "one_line": "Pack of fact sheet, boilerplate, bios, key messages and FAQs that journalists use to cover a company.",
+   "aliases": [
+    "media kit",
+    "fact sheet",
+    "newsroom copy"
+   ],
+   "value": "low",
+   "value_evidence": "Bundled with press-release work (Fiverr press release add-ons; no separate market list found)",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/writing-press-releases",
+     "title": "Fiverr: Press Releases subcategory",
+     "supports": "page search data on 2026-10-04: num_found 3627 gigs; add-ons Format press release, Submit press release, Research PR ideas"
+    }
+   ],
+   "note": "'Media kit' also means an influencer's rate card; keep the two apart."
+  },
+  {
+   "id": "genre:award_entry",
+   "name": "Award entry / award submission",
+   "category": "PR & corporate comms",
+   "one_line": "Written case for an awards jury: objective, insight, idea, execution and results, inside strict word limits.",
+   "aliases": [
+    "award submission",
+    "awards writing",
+    "Effie entry",
+    "case submission"
+   ],
+   "value": "low",
+   "value_evidence": "Dedicated award-entry writing agencies exist; Effie entries are judged on a written case",
+   "sources": [
+    {
+     "url": "https://boost-awards.co.uk/award-writing/",
+     "title": "Boost Awards: Award writing",
+     "supports": "dedicated award-entry writing agency"
+    },
+    {
+     "url": "https://effie.org/partners/united-states/entry-details/",
+     "title": "Effie Awards: entry details",
+     "supports": "entries are written cases judged on objective, insight, idea and results"
+    }
+   ],
+   "note": "Results must be provable; juries penalise vague claims."
+  },
+  {
+   "id": "genre:one_pager",
+   "name": "One-pager / sell sheet",
+   "category": "Sales enablement",
+   "one_line": "Single page that sums up a product or service for a buyer: problem, solution, proof, next step.",
+   "aliases": [
+    "sell sheet",
+    "one-sheet",
+    "product sheet",
+    "datasheet copy"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Sales Enablement: One-Sheet or Sell Sheet'; Upwork sales-presentation snippets list one-pagers",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.upwork.com/hire/sales-presentation-freelancers/",
+     "title": "Upwork: hire Sales Presentation professionals",
+     "supports": "snippets list one-pagers, pitch decks and sales enablement assets (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ]
+  },
+  {
+   "id": "genre:sales_deck",
+   "name": "Sales deck copy",
+   "category": "Sales enablement",
+   "one_line": "Slide-by-slide narrative and headlines for a deck reps present or send to prospects.",
+   "aliases": [
+    "sales presentation",
+    "pitch deck (sales)",
+    "capabilities deck",
+    "credentials deck"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Sales Enablement: Sales Deck'; Upwork has a Sales Presentation hire category",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.upwork.com/hire/sales-presentation-freelancers/",
+     "title": "Upwork: hire Sales Presentation professionals",
+     "supports": "snippets list one-pagers, pitch decks and sales enablement assets (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Indian agencies call the agency version a 'credentials deck' or 'creds'."
+  },
+  {
+   "id": "genre:investor_pitch_deck",
+   "name": "Investor pitch deck copy",
+   "category": "Sales enablement",
+   "one_line": "Narrative and slide copy that takes an investor from problem to market to traction to the ask.",
+   "aliases": [
+    "Pitch deck copy (startup / investor)",
+    "fundraising deck",
+    "investor deck",
+    "pitch deck",
+    "startup deck",
+    "startup pitch deck"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has a Pitch Deck Writers hire category with an India listing",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/pitch-decks-freelancers/in/",
+     "title": "Upwork: Pitch Deck Writers in India",
+     "supports": "dedicated hire category, India listing (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.sequoiacap.com/article/writing-a-business-plan/",
+     "title": "Sequoia: Writing a business plan (pitch guide)",
+     "supports": "pitch outline: company purpose in one declarative sentence, problem, solution, why now, market, competition, product, business model, team, financials"
+    },
+    {
+     "url": "https://www.ycombinator.com/library/4T-how-to-design-a-better-pitch-deck",
+     "title": "YC Startup Library: How to design a better pitch deck",
+     "supports": "YC guidance on pitch-deck content and legibility"
+    }
+   ],
+   "note": "Unsure: may be a business document (genre_pro_creative). [merged from genre:pitch_deck_copy: One idea per slide, headline states the takeaway. Company purpose in one sentence (Sequoia). Numbers must match the data room.]"
+  },
+  {
+   "id": "genre:battle_card",
+   "name": "Competitive battle card",
+   "category": "Sales enablement",
+   "one_line": "Internal sheet that arms reps with how to win against a named competitor: traps, objections, proof.",
+   "aliases": [
+    "battlecard",
+    "competitive card",
+    "kill sheet"
+   ],
+   "value": "low",
+   "value_evidence": "AWAI lists 'Sales Enablement: Battlecard'",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Internal; accuracy about rivals matters even though it is not public."
+  },
+  {
+   "id": "genre:services_proposal",
+   "name": "Sales proposal for services",
+   "category": "Sales enablement",
+   "one_line": "Proposal that restates the client's problem, proposes scope, timeline, price and why us.",
+   "aliases": [
+    "Business proposal",
+    "agency proposal",
+    "business proposal",
+    "client proposal",
+    "project proposal",
+    "quotation proposal",
+    "quotation write-up",
+    "sales proposal",
+    "statement of work"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has Proposal Writers and Business Proposal Writers hire categories; AWAI lists 'Sales Proposals'",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/proposal-writers/",
+     "title": "Upwork: hire Proposal Writers",
+     "supports": "dedicated hire category; snippets list RFP/RFQ/RFI work (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business writer projects include business proposals; rate band $25-$50 per hour"
+    }
+   ],
+   "note": " [merged from genre:business_proposal: Client problem first, then approach, scope, deliverables, timeline, team/credentials, price, terms, next step. Mirror the client's own words from the brief.]"
+  },
+  {
+   "id": "genre:rfp_response",
+   "name": "RFP / tender response (commercial)",
+   "category": "Sales enablement",
+   "one_line": "Answers to a buyer's RFP or tender that score on compliance and win on the narrative.",
+   "aliases": [
+    "EOI response",
+    "GeM bid",
+    "RFP / government tender bid response",
+    "RFP response",
+    "RFP writing",
+    "RFQ/RFI response",
+    "bid writing",
+    "proposal response",
+    "technical bid",
+    "tender bid",
+    "tender response"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has an RFP Freelancers hire category; proposal-writer snippets list RFP/RFQ/RFI work",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/rfp-freelancers/",
+     "title": "Upwork: hire RFP Freelancers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.upwork.com/hire/proposal-writers/",
+     "title": "Upwork: hire Proposal Writers",
+     "supports": "dedicated hire category; snippets list RFP/RFQ/RFI work (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.apmp.org/",
+     "title": "Association of Proposal Management Professionals (APMP)",
+     "supports": "professional body and certification for bid and proposal writers"
+    },
+    {
+     "url": "https://www.gem.gov.in/",
+     "title": "Government e Marketplace (GeM)",
+     "supports": "Indian national public procurement portal where bids are submitted"
+    }
+   ],
+   "note": "Compliance matrix first; India government tenders (GeM/CPPP) are form-heavy. [merged from genre:rfp_tender_response: Answer every requirement in the buyer's order and words; compliance matrix first. Indian tenders split technical and financial bids; eligibility documents and formats are fixed by the tender. Missing a mandatory form disqualifies regardless of quality.]"
+  },
+  {
+   "id": "genre:sales_call_script",
+   "name": "Sales / cold-call script",
+   "category": "Sales enablement",
+   "one_line": "Call opener, discovery questions, pitch and objection answers for SDRs, telecallers or appointment setters.",
+   "aliases": [
+    "telemarketing script",
+    "cold call script",
+    "telecalling script",
+    "objection-handling script"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has a Telemarketing Scriptwriting hire category; AWAI lists 'Telemarketing Script' and 'Sales Enablement: Call Script'",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/telemarketing-scriptwriting-freelancers/us/",
+     "title": "Upwork: hire Telemarketing Scriptwriting Freelancers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "India: telecalling teams often need Hindi/Hinglish versions; DND/TCCCPR rules apply to promotional calls."
+  },
+  {
+   "id": "genre:ivr_on_hold_script",
+   "name": "IVR / on-hold message script",
+   "category": "Sales enablement",
+   "one_line": "Words callers hear in phone menus, hold queues and after-hours greetings.",
+   "aliases": [
+    "on-hold message",
+    "IVR script",
+    "auto attendant script",
+    "phone greeting"
+   ],
+   "value": "low",
+   "value_evidence": "On-hold/IVR vendors sell scripted, voiced messages; Indian telephony vendors publish IVR script libraries",
+   "sources": [
+    {
+     "url": "https://www.holdcom.com/script-samples/",
+     "title": "Holdcom: on-hold and IVR script samples",
+     "supports": "vendor selling scripted, voiced on-hold/IVR messages"
+    },
+    {
+     "url": "https://exotel.com/blog/ivr-script/",
+     "title": "Exotel: IVR scripts and prompts",
+     "supports": "Indian telephony vendor's IVR script library"
+    }
+   ],
+   "note": "Bilingual menus are common in India; keep each menu option short and number-first."
+  },
+  {
+   "id": "genre:brochure_copy",
+   "name": "Brochure / corporate collateral copy",
+   "category": "Other commercial",
+   "one_line": "Copy for a printed or PDF brochure, company profile or leave-behind.",
+   "aliases": [
+    "company profile",
+    "corporate brochure",
+    "leaflet copy",
+    "flyer copy"
+   ],
+   "value": "medium",
+   "value_evidence": "India rate tables price brochures as their own row; AWAI lists 'Brochure (3+ Panels)'",
+   "sources": [
+    {
+     "url": "https://eloritescontent.com/research/content-writing-services-prices-usa-india/",
+     "title": "Elorites: Content Writing Services Prices 2026, India & USA (updated 2026-06-10)",
+     "supports": "India per-word rate tables by industry with separate rows for web pages, FAQ content, brochures and marketing material"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "India: 'company profile' PDFs are a common SME commission."
+  },
+  {
+   "id": "genre:real_estate_listing",
+   "name": "Real estate listing / project copy",
+   "category": "Other commercial",
+   "one_line": "Property description, project brochure and ad copy that gets the right buyers to enquire.",
+   "aliases": [
+    "property listing",
+    "property description",
+    "real estate copy",
+    "project brochure copy"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Product Descriptions lists 'Property listings/Real estate' as a platform filter",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    }
+   ],
+   "note": "India: RERA registration number and carpet-area disclosure rules shape project ads."
+  },
+  {
+   "id": "genre:hospitality_listing",
+   "name": "Hotel / homestay / travel listing copy",
+   "category": "Other commercial",
+   "one_line": "Property and experience descriptions for OTAs, Airbnb and hotel sites that drive bookings.",
+   "aliases": [
+    "Airbnb description",
+    "hotel description",
+    "OTA listing",
+    "tour package description"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr has an Airbnb-description gig tag; hospitality descriptions are sold as listing work",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/gigs/airbnb-description",
+     "title": "Fiverr gig tag: Airbnb description",
+     "supports": "gig tag page for rental listing descriptions (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Field limits differ per OTA; check the platform before writing."
+  },
+  {
+   "id": "genre:restaurant_menu_copy",
+   "name": "Restaurant menu copy",
+   "category": "Other commercial",
+   "one_line": "Dish names and descriptions, section intros and story blurbs that sell the menu.",
+   "aliases": [
+    "menu descriptions",
+    "menu writing",
+    "food menu copy"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr menu gigs are mostly design with descriptions bundled; no standalone category found",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/gigs/food-menu",
+     "title": "Fiverr gig tag: food menu",
+     "supports": "menu gigs are mostly design with dish descriptions bundled (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "FSSAI rules in India require veg/non-veg marking; calorie display rules apply to some chains."
+  },
+  {
+   "id": "genre:event_promotion",
+   "name": "Event promotion & invitation copy",
+   "category": "Other commercial",
+   "one_line": "Event page, invitation, reminder and promo copy that sells tickets or fills seats.",
+   "aliases": [
+    "event invitation",
+    "event page copy",
+    "conference promo",
+    "webinar invite"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Event Materials' and 'Trade Show Materials'; ticketing platforms publish event copywriting guides",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.eventbrite.com/blog/ultimate-copywriting-guide-events/",
+     "title": "Eventbrite: Ultimate guide to copywriting for events",
+     "supports": "ticketing platform guide to event pages, invitations and promo emails"
+    }
+   ]
+  },
+  {
+   "id": "genre:recruitment_ad",
+   "name": "Recruitment ad / careers page copy",
+   "category": "Other commercial",
+   "one_line": "Job ads, JDs, EVP lines and careers-page copy that attract the right candidates.",
+   "aliases": [
+    "employer brand copy",
+    "careers page",
+    "EVP statement",
+    "job ad"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr runs a Job Description Writing subcategory; recruitment-copywriting agencies sell job ads, EVPs and career sites",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation",
+     "title": "Fiverr: Writing & Translation category",
+     "supports": "subcategory list read from the page HTML on 2026-10-04 (ad copy, sales copy, email copy, website content, product descriptions, business names & slogans, brand voice & tone, press releases, UX writing, social media copywriting, script writing, job description writing)"
+    },
+    {
+     "url": "https://brandnewcopy.com/sectors/recruitment-copywriter/",
+     "title": "Brand New Copy: Recruitment copywriter",
+     "supports": "agency line for job ads, EVP statements and career sites"
+    }
+   ],
+   "note": "Discriminatory wording (age, gender) must be avoided; India job ads often list CTC bands."
+  },
+  {
+   "id": "genre:trade_show_materials",
+   "name": "Trade show / exhibition materials",
+   "category": "Other commercial",
+   "one_line": "Booth graphics lines, standees, handouts and demo scripts for expos and exhibitions.",
+   "aliases": [
+    "exhibition copy",
+    "booth copy",
+    "standee copy",
+    "expo collateral"
+   ],
+   "value": "low",
+   "value_evidence": "AWAI lists 'Trade Show Materials' as a project type",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Booth lines must read from a distance, like OOH."
+  }
+ ]
+}

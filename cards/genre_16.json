@@ -1,0 +1,437 @@
+{
+ "cards": [
+  {
+   "id": "genre:incident_report",
+   "kind": "genre",
+   "name": "Incident report / postmortem write-up",
+   "status": "current",
+   "summary": "The written record after an outage, security event or project failure: what happened, who and what was affected, why it was possible, how it was fixed and detected, and owned actions so it does not recur. A good one is blameless, measured in counts and timestamps, and ends in action items a lead can approve in one meeting.",
+   "use_for": [
+    "internal postmortem after a production outage, failed payment run, data issue or failed launch",
+    "security-event write-up once containment is complete, for the security lead and leadership",
+    "customer-facing incident summary written after the incident, derived from the internal version",
+    "project retrospective write-up that needs owned actions (drop the trigger section)",
+    "turning a chat log, alert history and ticket trail into one document a manager can act on"
+   ],
+   "avoid": [
+    "Blaming a person or stopping at 'human error'. Name the system gap and the decision, and ask what made the action look right at the time (fw:postmortem_blameless).",
+    "Vague impact ('some users', 'significant'). Give counts, a duration, money or data at risk and tickets raised, with the time window.",
+    "Fusing trigger and root cause into one sentence. The trigger is what set it off; the root causes are why it could hurt.",
+    "Action items with no owner or date ('improve monitoring'). Each one needs a verb, an owner, a due date and a tracker ID.",
+    "Using it as the live outage notice. While the incident runs, post a holding statement or status update (genre:crisis_statement); the postmortem comes after.",
+    "Leaking internal hostnames, names of junior staff or security-sensitive detail in the customer version. Write what customers need: when, what they saw, what changed.",
+    "A timeline from memory. Build it from logs, alert history and the chat export, in one time zone."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://sre.google/sre-book/postmortem-culture/",
+     "title": "Google SRE book, ch. 15 'Postmortem Culture: Learning from Failure'",
+     "supports": "a postmortem is a written record of an incident, its impact, the actions taken to mitigate or resolve it, the root cause(s) and the follow-up actions; blameless; triggers such as user-visible downtime, data loss, on-call intervention, monitoring failure"
+    },
+    {
+     "url": "https://sre.google/sre-book/example-postmortem/",
+     "title": "Google SRE book: Example postmortem",
+     "supports": "a complete worked example with Summary, Impact, Root Causes, Trigger, Resolution, Detection, Action Items, Lessons Learned, Timeline"
+    },
+    {
+     "url": "https://postmortems.pagerduty.com/",
+     "title": "PagerDuty Postmortem Documentation",
+     "supports": "a successful postmortem process is based on a culture of honesty, learning and accountability; blameless postmortems; audience is on-call practitioners and managers"
+    },
+    {
+     "url": "https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf",
+     "title": "CERT-In (MeitY), Directions under section 70B(6) of the IT Act, 28 April 2022",
+     "supports": "service providers, intermediaries, data centres, body corporate and government organisations must report the cyber incidents listed in Annexure I to CERT-In within 6 hours of noticing or being told of them (read 2026-10-06; whether the directions have since been amended was not checked)"
+    },
+    {
+     "url": "https://www.bls.gov/ooh/media-and-communication/technical-writers.htm",
+     "title": "BLS Occupational Outlook Handbook: Technical Writers",
+     "supports": "nearest paid category: median annual wage for technical writers $90,390 in May 2025 (does not measure incident-report demand)"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/technical-writer-salary",
+     "title": "AmbitionBox: Technical Writer salary in India",
+     "supports": "average salary for a Technical Writer Rs 8.5 lakh per year (10.1k salaries, updated 4 Oct 2026); adjacent category, not incident reports specifically"
+    }
+   ],
+   "related": [
+    "genre:crisis_statement",
+    "genre:technical_design_doc",
+    "genre:sop_process_doc",
+    "genre:business_report",
+    "genre:knowledge_base_article",
+    "edit:plain_language_check"
+   ],
+   "buyers": [
+    "engineering and SRE teams at startups and SaaS companies",
+    "IT, security and operations managers in banks, fintechs and enterprises",
+    "managed-service and DevOps consultancies that owe clients a written incident account",
+    "CTOs and product heads who need a customer-facing summary after an outage"
+   ],
+   "value": "low",
+   "value_why": "Low. The sources are in-house practice guides (Google SRE book; PagerDuty's guide for on-call practitioners and managers), and no freelance market category for incident write-ups was found, so paid demand for writers is assumed small. The nearest paid category is technical writing: BLS gives a US median of $90,390 for technical writers in May 2025 and AmbitionBox an Indian average of Rs 8.5 lakh a year (updated 4 Oct 2026), but neither measures incident-report work.",
+   "goal": "The engineering lead reads it, agrees on what happened and why, and approves the action items and their owners (the customer version: the customer knows the impact window, the cause and what changed).",
+   "structure": [
+    {
+     "part": "Header",
+     "does": "Incident title, date, authors, status (draft, in review, final) and severity if the team uses one. Nothing else.",
+     "length": "3-5 lines"
+    },
+    {
+     "part": "Summary",
+     "does": "What broke, for how long, who was affected (with a count), how it was fixed and what happens next. A reader who stops here has the whole story.",
+     "length": "3-5 sentences, 60-120 words"
+    },
+    {
+     "part": "Impact",
+     "does": "The measured effect: users or customers affected, failed transactions or orders, duration, money or data at risk, support tickets, and what was not affected (e.g. no data loss). Time window in the same zone as the timeline.",
+     "length": "3-6 lines"
+    },
+    {
+     "part": "Root causes",
+     "does": "The conditions in the system and process that let the incident happen and made it worse, each as a short statement about a system, a process or a missing safeguard, never a person.",
+     "length": "2-5 items, 1-2 sentences each"
+    },
+    {
+     "part": "Trigger",
+     "does": "The single event that set it off (a release, a config change, a traffic spike, an expired certificate), with its time. Kept apart from the root causes.",
+     "length": "1-3 sentences"
+    },
+    {
+     "part": "Resolution and detection",
+     "does": "Resolution: what was done, in order, to stop and fix it. Detection: how the team learned of it (alert, customer report) and the minutes between start and detection, with the monitoring gap named.",
+     "length": "4-8 lines for resolution, 2-4 lines for detection"
+    },
+    {
+     "part": "Action items",
+     "does": "A table: action, type (prevent, detect or mitigate), owner, due date, tracker ID. Each action should be something that would have changed this incident.",
+     "length": "4-8 rows"
+    },
+    {
+     "part": "Lessons learned",
+     "does": "Three short lists: what went well, what went wrong, where we got lucky.",
+     "length": "2-4 bullets per list"
+    },
+    {
+     "part": "Timeline",
+     "does": "Timestamped events in one named time zone from the first sign to full recovery, including decisions and who was paged. Facts only, no adjectives.",
+     "length": "8-20 lines"
+    },
+    {
+     "part": "Supporting information",
+     "does": "Links to dashboards, logs, the chat export and tracker items.",
+     "length": "2-5 lines"
+    }
+   ],
+   "length": {
+    "min": 350,
+    "max": 1400,
+    "unit": "words",
+    "note": "Internal postmortem: 500-1,100 words plus the timeline; a small incident sits at the short end. The customer-facing summary is a separate piece of about 120-250 words (impact window, plain-language cause, what changed). Severity, number of root causes and number of actions drive the length."
+   },
+   "frameworks": [
+    "fw:postmortem_blameless",
+    "fw:five_ws_and_h",
+    "fw:bluf"
+   ],
+   "techniques": [
+    "tech:specificity",
+    "tech:numerals",
+    "tech:active_voice",
+    "tech:plain_language",
+    "tech:tldr_summary",
+    "tech:consistent_terminology"
+   ],
+   "tones": [
+    "tone:technical_precise",
+    "tone:calm_reassuring"
+   ],
+   "compliance": [
+    "comp:dpdp_act_rules",
+    "comp:sebi_lodr_disclosure"
+   ],
+   "checklist": [
+    "Does the document name one time zone (IST or UTC) and give timestamps for first failure, detection, mitigation and full recovery?",
+    "Does the summary stand alone in five sentences or fewer, with what broke, how long, how many were affected and how it was fixed?",
+    "Is the impact measured in counts, durations and money or data at risk, with no 'significant' or 'some'?",
+    "Are trigger and root causes in separate sections, with the root causes about systems and process rather than people?",
+    "Does it say how the incident was detected and how many minutes that took?",
+    "Does every action item have a verb, an owner, a due date and a tracker ID?",
+    "Does it list what went well, what went wrong and where the team got lucky?",
+    "Is the language blameless: no person named as the cause and no 'human error' as an explanation?",
+    "Is the timeline chronological and made of facts, not interpretation?",
+    "If personal data, a cyber incident or a listed company is involved, does it say who checked the notification duties (CERT-In, data protection, stock-exchange disclosure)?"
+   ],
+   "pitfalls": [
+    "Writing the report as a defence of the team. Readers trust an account that admits the monitoring gap and the near-miss; put them in 'what went wrong' and 'where we got lucky'.",
+    "Listing a dozen action items. Pick the four to eight that would have changed the outcome; log the rest in the tracker.",
+    "Putting the root cause as 'a bug in the release'. A bug is the trigger; ask why tests, review, canary or alerting did not catch it.",
+    "Mixing IST and UTC in the timeline, or saying 'last night'. Use one zone and the date.",
+    "Publishing before actions have owners and dates: an unowned action item is a wish.",
+    "Treating notification duties as someone else's problem. For a cyber incident, the CERT-In directions of 28 April 2022 require listed incidents to be reported within 6 hours of noticing; if personal data is involved, check comp:dpdp_act_rules; a listed company checks comp:sebi_lodr_disclosure. The security or legal lead decides, and the report records the decision.",
+    "Sending the internal version to customers. Write a separate, shorter summary in plain language that leaves out internal names and security detail."
+   ],
+   "lint": {
+    "min_words": 250,
+    "max_words": 1600,
+    "max_sentence_words": 35,
+    "require": [
+     {
+      "label": "states the impact",
+      "regex": "(?i)\\bimpact"
+     },
+     {
+      "label": "names root causes",
+      "regex": "(?i)root causes?|contributing (cause|factor)s?"
+     },
+     {
+      "label": "names the trigger",
+      "regex": "(?i)\\btrigger"
+     },
+     {
+      "label": "has action items with owners",
+      "regex": "(?i)action items?|follow-up actions?|\\bowner"
+     },
+     {
+      "label": "has timestamps",
+      "regex": "\\b\\d{1,2}:\\d{2}\\b"
+     },
+     {
+      "label": "names a time zone",
+      "regex": "(?i)\\b(ist|utc|gmt|pst|pdt|est|edt|cet)\\b"
+     }
+    ],
+    "ban": [
+     {
+      "label": "blame language",
+      "regex": "(?i)\\b(careless(ly)?|negligen(t|ce)|incompeten(t|ce)|human error)\\b|[’']s fault"
+     },
+     {
+      "label": "PR boilerplate",
+      "regex": "(?i)any inconvenience|we take [^.]{0,40}seriously"
+     },
+     {
+      "label": "dramatic adjectives",
+      "regex": "(?i)unprecedented|catastrophic|devastating"
+     }
+    ],
+    "max_exclamations": 0,
+    "max_emoji": 0,
+    "max_hashtags": 0
+   },
+   "exemplar_brief": "Internal postmortem for Neerpay (fictional), a Bengaluru UPI bill-payment startup, after a payment outage on 14 September 2026. Facts to use: a release at 19:38 IST changed the retry-limit config of the payment-gateway client and skipped the canary stage; first failed payment 19:42 IST; first customer complaint on support chat 19:51; first alert 19:56 (the only alert watched API 5xx errors, not payment success rate); rollback started 20:21; success rate normal at 20:29; 62,000 payment attempts failed; 214 double-debits auto-reversed by 22:10; 1,240 support tickets; no data lost; security lead confirmed it is not a reportable cyber incident. Actions: canary for config changes (Platform, 30 Sept, PAY-301); payment-success alert (SRE, 25 Sept, PAY-302); runbook rewrite (Payments, 5 Oct, PAY-303); double-debit support macro (Support, 22 Sept, PAY-304); config review checklist (Release manager, 28 Sept, PAY-305). Audience: CTO, engineering leads, head of support. English; 600-900 words; goal: the CTO approves the five actions and owners.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_16.json#genre:incident_report",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. Every brief fact used exactly and the derived minutes are right (47-min failure window, 9 and 14 min to complaint and alert, 25 min alert to rollback, 8 min rollback); 14 Sep 2026 is a Monday (checked). Header, standalone summary with a BLUF decision line, measured impact including 'not affected' and the security lead's cyber-reporting call, system-level root causes kept apart from the trigger, detection gap named, all five actions typed with owner, date and ID, three lessons lists, one-zone IST timeline. Placeholders only where the brief was silent (money at risk, why the canary was skipped). Writer slip: 'no control would have stopped a change that did affect data' is an unsupported claim in 'where we got lucky'; put it as a question for the review.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:influencer_media_kit",
+   "kind": "genre",
+   "name": "Influencer media kit / rate card",
+   "status": "current",
+   "summary": "A short document a creator sends brands: who they are, how big and what kind of audience they have, how engaged it is, what past collaborations achieved, and what a brand can buy, optionally with rates. A good one is three pages or fewer, every number comes from the platform's own insights on a stated date, and the next step is obvious.",
+   "use_for": [
+    "a creator's first-contact kit sent with a pitch email or WhatsApp message to a brand manager",
+    "refreshing a kit each quarter with new insights, collaborations and rates",
+    "a rate card for deliverables (Reel, story set, static post, YouTube integration) with usage and exclusivity as separate lines",
+    "a talent manager's one-page profile for each creator on a roster"
+   ],
+   "avoid": [
+    "Rounding up numbers, quoting peak figures as averages or counting bought followers. Every figure must come from the platform's own insights with a date or window; a brand will check, and an inflated figure is a misrepresentation.",
+    "A follower count alone. Add average Reel reach, engagement rate (with its formula) and the audience split by city, age, gender and language, which is what a brand buys.",
+    "An undefined 'engagement rate'. Say what is counted and what it is divided by (reach or followers) and use the same formula for every platform.",
+    "Listing a dozen past brands with no results. Pick three to five collaborations and give one measured result each, or write 'result not shared' where the brand did not allow it.",
+    "Bundling usage rights, exclusivity and boosting into one price. Show the deliverable, then usage rights, exclusivity and whitelisting or boosting as separate lines.",
+    "Skipping the disclosure line. Indian brands expect ASCI-compliant labels on paid posts (comp:asci_influencer); say that paid posts carry the label.",
+    "A beautiful template with no copy. The design is not the work product here; the facts and the structure are."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://later.com/blog/influencer-media-kit/",
+     "title": "Later (Nikki Canning, updated 2025-06-04): How to Make a Media Kit for Influencers",
+     "supports": "a media kit is a business card, CV and portfolio of work in one document; sections: bio, social stats, audience demographics, blog or website, previous partnerships and testimonials"
+    },
+    {
+     "url": "https://influencermarketinghub.com/influencer-media-kit/",
+     "title": "Influencer Marketing Hub (2024-09-02): How to Create an Influencer Media Kit",
+     "supports": "a document showcasing an influencer's skills, audience and previous collaborations to potential brand partners; sections end with collaboration options and pricing rates; whether to print rates is a polarizing point; keep it brief, ideally three pages"
+    },
+    {
+     "url": "https://www.fiverr.com/robin_leon/design-an-influencer-media-kit-template-canva-branding-kit-social-media-template",
+     "title": "Fiverr gig: influencer media kit template (seen in a 2026-10-05 search, listed at $35)",
+     "supports": "media kits are bought as a freelance deliverable (demand signal only; usually design-led)"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI: Guidelines for Influencer Advertising in Digital Media",
+     "supports": "any material connection to a brand needs an upfront disclosure label from the permitted list; advertiser and influencer are both responsible (as summarised in comp:asci_influencer)"
+    }
+   ],
+   "related": [
+    "genre:press_kit",
+    "genre:influencer_brief",
+    "genre:sponsored_creator_post",
+    "genre:personal_brand_statement",
+    "genre:portfolio_case_writeup",
+    "genre:testimonial_copy",
+    "trend:creator_led_ads",
+    "trend:short_video_india"
+   ],
+   "buyers": [
+    "individual creators from nano to macro, who pay for a kit to land paid work",
+    "creator managers and talent agencies building a roster",
+    "small influencer-marketing agencies that package creators for brands",
+    "brands that ask creators for a standard profile and need it written clearly"
+   ],
+   "value": "low",
+   "value_why": "Low. The only market signal found is a $35 Fiverr gig for a media-kit template (seen in a 2026-10-05 search, design-led) and how-to guides from creator platforms (Later, updated 2025-06-04; Influencer Marketing Hub, 2024-09-02). No separate paid writing category was found, so the kit is best treated as an add-on to creator management, design or brand-deal work.",
+   "goal": "A brand manager decides to engage and replies with a brief, a rate query or a call request.",
+   "structure": [
+    {
+     "part": "Header and identity line",
+     "does": "Name, niche, city, languages of the content, platform handles and one contact line. A brand should know who this is and what they make in five seconds.",
+     "length": "2-3 lines"
+    },
+    {
+     "part": "Bio and positioning",
+     "does": "Who you are, what you make, why people follow, and which kind of brand you fit best. Specific (the city, the format, the audience), first person or third person, one voice throughout.",
+     "length": "40-70 words"
+    },
+    {
+     "part": "Audience and reach snapshot",
+     "does": "Followers or subscribers, average Reel or video reach over a stated window, engagement rate with its formula, and the audience split by city, age, gender and language, each from the platform's insights with the date.",
+     "length": "5-9 lines or a table"
+    },
+    {
+     "part": "Past collaborations and proof",
+     "does": "Three to five brand collaborations, each with the brand, the format and one measured result (clicks, orders on a code, reach, saves). One or two real testimonials with name and role, only with permission.",
+     "length": "1-2 lines per collaboration; testimonial 1-2 lines"
+    },
+    {
+     "part": "Collaboration options",
+     "does": "What a brand can buy: Reel, story set, static post, YouTube integration, event appearance. Say what the brand gets in each and any limits (number of revisions, turnaround).",
+     "length": "4-6 lines"
+    },
+    {
+     "part": "Rates (optional)",
+     "does": "A price per deliverable, then separate lines for usage rights, exclusivity and whitelisting or boosting, with the validity date and whether taxes are extra. If rates are not printed, say how to ask and how fast you reply.",
+     "length": "5-9 lines"
+    },
+    {
+     "part": "Disclosure and working terms",
+     "does": "State that paid posts carry the required disclosure label, the usual turnaround and the number of revision rounds.",
+     "length": "2-3 lines"
+    },
+    {
+     "part": "Contact and next step",
+     "does": "One email address and one WhatsApp or phone route, a single action ('send a brief') and a response time.",
+     "length": "2-3 lines"
+    }
+   ],
+   "length": {
+    "min": 200,
+    "max": 650,
+    "unit": "words",
+    "note": "Text of the whole kit. Influencer Marketing Hub's guide says to keep a media kit to about three pages at most; three pages with a stats table, past collaborations and a rate table is roughly 300-500 words. A kit without printed rates sits at the short end."
+   },
+   "frameworks": [
+    "fw:four_cs",
+    "fw:fab"
+   ],
+   "techniques": [
+    "tech:specificity",
+    "tech:numerals",
+    "tech:social_proof",
+    "tech:testimonial_placement",
+    "tech:features_to_benefits",
+    "tech:cta_writing"
+   ],
+   "platforms": [
+    "plat:instagram_bio",
+    "plat:youtube_channel_description"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:data_driven"
+   ],
+   "compliance": [
+    "comp:asci_influencer",
+    "comp:endorsement_know_hows",
+    "comp:meta_branded_content",
+    "comp:youtube_paid_promotion"
+   ],
+   "checklist": [
+    "Can a brand manager find the niche, platform sizes and a contact route on the first page?",
+    "Does every number carry a source (platform insights) and a date or time window?",
+    "Is the engagement rate defined (what is counted, divided by what) and the same for every platform?",
+    "Is the audience given by city, age, gender and language, taken from insights rather than guessed?",
+    "Does each past collaboration name the brand, the format and one measured result, or say the result was not shared?",
+    "Does each collaboration option say what the brand gets?",
+    "If rates are printed, are usage rights, exclusivity and boosting or whitelisting separate lines, with a validity date and a note on taxes?",
+    "Does it state that paid posts carry the required disclosure label?",
+    "Is there one clear next step with a contact route and a response time?",
+    "Are testimonials real, attributed and used with permission, and are there no guarantees of sales or virality?"
+   ],
+   "pitfalls": [
+    "Using a single peak Reel as the 'average'. Use the average over a stated window, such as the last 30 days.",
+    "Quoting audience demographics from memory or a third-party tool when the platform's insights are available. Screenshot the insights and cite the date.",
+    "Printing rates that look final but leave rights open. Say what the price includes (for example 30 days of the brand using the Reel on its own channels) and price paid-ad use separately.",
+    "Leaving out the audience language mix. For a Hinglish or Hindi creator, a brand needs to know the split, since it decides whether the creator suits a Tier-2 or national campaign.",
+    "Forgetting to update. A kit with stale insights and last year's rates signals an inactive creator; put an 'updated' date at the top.",
+    "Copying a template's sample numbers or placeholder text into a live kit."
+   ],
+   "lint": {
+    "min_words": 150,
+    "max_words": 650,
+    "max_sentence_words": 28,
+    "require": [
+     {
+      "label": "has a contact route",
+      "regex": "(?i)@|e-?mail|whatsapp|contact|write to"
+     },
+     {
+      "label": "dates the stats",
+      "regex": "(?i)as of|updated|last (7|14|28|30|60|90) days|\\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]* 20\\d\\d"
+     },
+     {
+      "label": "states the paid-post disclosure",
+      "regex": "(?i)disclos|paid partnership|#ad\\b|sponsored"
+     },
+     {
+      "label": "lists what a brand can buy",
+      "regex": "(?i)reel|stories|story|static post|video|integration"
+     }
+    ],
+    "ban": [
+     {
+      "label": "guaranteed outcome",
+      "regex": "(?i)guarantee[ds]? (sales|results|viral|virality|conversions|roi|reach)"
+     },
+     {
+      "label": "placeholder text",
+      "regex": "(?i)lorem ipsum|\\[insert|\\bTBD\\b"
+     }
+    ],
+    "max_exclamations": 2,
+    "max_emoji": 4,
+    "max_hashtags": 4
+   },
+   "exemplar_brief": "Media kit text (three pages at most, to be set in a PDF template) for Meher Siddiqui, a Lucknow street-food and home-cooking creator who posts Reels in Hinglish. Use these facts and no others: Instagram 142K followers; average Reel reach 61K over the last 30 days and engagement 5.4% (likes, comments, saves and shares divided by reach), both from Instagram Insights as of 1 Oct 2026; audience 58% women, 71% aged 18-34, top cities Lucknow, Delhi and Kanpur, 83% watch in Hindi or Hinglish; YouTube 28K subscribers. Past work: a 12-outlet Lucknow chaat chain (1 Reel and 3 Stories, 4,100 link clicks); a Kanpur masala brand (2 Reels, 380 orders on her code in 21 days). Testimonial, used with permission: 'Meher's Reel brought us a queue on a Tuesday afternoon.' (Rajiv Tandon, owner of the chaat chain). Rates: Reel Rs 18,000; story set of 3 Rs 6,000; YouTube integration of 60-90 seconds Rs 30,000; 30 days of organic use on the brand's channels included; paid-ad use and whitelisting Rs 9,000 per 30 days; 30-day exclusivity adds 25%; taxes extra; valid to 31 Dec 2026. Working terms (demo): she replies to every brief within 24 hours, Monday to Saturday; turnaround 7 days from an approved brief; 2 revision rounds included. Contact: meher@example.in, WhatsApp +91 90000 00000. Audience: brand managers at food, kitchen and FMCG brands in North India. English with a light Hinglish line; 250-450 words; goal: a brand manager replies with a brief or a call request.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_16.json#genre:influencer_media_kit",
+    "note": "purpose 2, structure 2, specificity 2, voice 2, craft 1. Only brief facts used; stats sourced and dated (Insights, 1 Oct 2026), ER formula stated, audience by gender / age / city / language, two collaborations with measured results, the permitted testimonial, rates with usage, whitelisting and exclusivity as separate lines plus validity and taxes, a correct worked example (Rs 24,000 -> Rs 30,000 with 25%), ASCI-valid labels (Ad / Collaboration) plus the paid-partnership tag, one next step. Options list a price but not what the brand gets per deliverable. CARD FIX: exemplar_brief -> add a reply time (and turnaround / revision rounds): the brief says 'use these facts and no others' while the card's checklist requires a response time, which forced the [reply time] slot. | CARD FIXED 2026-10-07 (fix_genre_d): exemplar_brief now supplies a reply time (24 hours, Monday to Saturday), turnaround (7 days) and revision rounds (2), so no [reply time] slot is needed; re-judge pending.",
+    "judge": "vj_tail",
+    "date": "2026-10-07"
+   }
+  }
+ ]
+}

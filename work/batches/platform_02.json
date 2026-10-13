@@ -1,0 +1,1157 @@
+{
+ "kind": "platform",
+ "items": [
+  {
+   "id": "plat:instagram_caption",
+   "name": "Instagram feed post caption",
+   "category": "Instagram",
+   "one_line": "The text under an Instagram photo, video or carousel post.",
+   "limits": [
+    {
+     "field": "caption",
+     "max": 2200,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-04",
+     "quote": "Maximum 2200 characters, 30 hashtags, and 20 @ tags.",
+     "confidence": "high (Meta developer reference, caption parameter)"
+    },
+    {
+     "field": "@ mentions per caption",
+     "max": 20,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-04",
+     "quote": "Maximum 2200 characters, 30 hashtags, and 20 @ tags.",
+     "confidence": "high (Meta developer reference, caption parameter)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "Instagram Platform: IG User Media reference",
+     "supports": "caption 2200 chars, 20 @ tags (and the older 30-hashtag figure)"
+    }
+   ],
+   "note": "Hashtag cap: see plat:instagram_hashtags (the API reference still prints 30; Instagram cut it to 5 in Dec 2025). Links in captions are not clickable; hashtags and @mentions are tappable. Line breaks render. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:instagram_carousel",
+   "name": "Instagram carousel post",
+   "category": "Instagram",
+   "one_line": "One Instagram feed post holding several photos and videos that people swipe through.",
+   "limits": [
+    {
+     "field": "photos and videos per carousel (app)",
+     "max": 20,
+     "unit": "count",
+     "url": "https://help.instagram.com/269314186824048",
+     "checked": "2026-10-04",
+     "quote": "You can share a post with up to 20 photos and videos as a single post, also known as a carousel, to your Instagram feed.",
+     "confidence": "high (Instagram Help Center)"
+    },
+    {
+     "field": "items per carousel (Graph API publishing)",
+     "max": 10,
+     "unit": "count",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-04",
+     "quote": "Carousels can have up to 10 total images, vidoes, or a mix of the two.",
+     "confidence": "high (Meta developer reference)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.instagram.com/269314186824048",
+     "title": "Instagram Help: Share multiple photos or videos as a single post",
+     "supports": "up to 20 items in the app; one caption and one comment thread for the whole post"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "Instagram Platform: IG User Media reference",
+     "supports": "API carousels up to 10 items"
+    }
+   ],
+   "note": "CONFLICT by route: 20 when posted in the app, 10 when published through the Graph API (schedulers). One orientation applies to every slide. Caption limits are those of plat:instagram_caption; comments and likes apply to the whole post. In feed only the first slide shows, with dots below, so slide 1 carries the hook.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:instagram_comment",
+   "name": "Instagram comment",
+   "category": "Instagram",
+   "one_line": "A comment under an Instagram post or Reel (including the creator's own first comment).",
+   "limits": [
+    {
+     "field": "@mentions per comment",
+     "max": 5,
+     "unit": "count",
+     "url": "https://help.instagram.com/161863397286564",
+     "checked": "2026-10-04",
+     "quote": "You can't include more than 5 @mentions",
+     "confidence": "high (Instagram Help Center)"
+    },
+    {
+     "field": "hashtags per comment",
+     "max": 30,
+     "unit": "count",
+     "url": "https://help.instagram.com/161863397286564",
+     "checked": "2026-10-04",
+     "quote": "You can't include more than 30 hashtags in a single comment.",
+     "confidence": "high (Instagram Help Center; see conflict note)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.instagram.com/161863397286564",
+     "title": "Instagram Help: I get an error when trying to add a comment",
+     "supports": "max 5 @mentions, max 30 hashtags per comment, no duplicate comments"
+    }
+   ],
+   "note": "CONFLICT: this page still allows 30 hashtags per comment, while the hashtag page (help.instagram.com/351460621611097) caps a post at 5 and says more than 5 means \"your comment won't post\". Do not move hashtags into the first comment to dodge the post cap; write to 5. The same comment cannot be posted repeatedly (including emoji). Instagram filters certain words and phrases.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:instagram_hashtags",
+   "name": "Instagram hashtags per post or Reel",
+   "category": "Instagram",
+   "one_line": "How many hashtags one Instagram post, Reel or carousel may carry.",
+   "limits": [
+    {
+     "field": "hashtags per post",
+     "max": 5,
+     "unit": "count",
+     "url": "https://help.instagram.com/351460621611097",
+     "checked": "2026-10-04",
+     "quote": "You can use up to 5 tags on a post. If you include more than 5 tags on a single photo/video, your comment won't post.",
+     "confidence": "high (Instagram Help Center, read in the live page 2026-10-04)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.instagram.com/351460621611097",
+     "title": "Instagram Help: Use hashtags on Instagram",
+     "supports": "cap of 5 hashtags per post"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "Instagram Platform: IG User Media reference",
+     "supports": "older figure: 30 hashtags per caption"
+    }
+   ],
+   "note": "CONFLICT: the Help Center (current) says 5; the Instagram Graph API media reference still says \"Maximum 2200 characters, 30 hashtags, and 20 @ tags.\" Write to 5. The cut from 30 to 5 was announced by Instagram in December 2025 (press coverage: digitaltrends.com, 2025-12; not an Instagram page). Hashtags are tappable and lead to hashtag pages.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:linkedin_ads_sponsored_content",
+   "name": "LinkedIn Sponsored Content ads (single image, carousel)",
+   "category": "Paid social & video ads",
+   "one_line": "Paid LinkedIn feed ads: introductory text above the creative plus a headline and description below it.",
+   "aliases": [
+    "LinkedIn single image ad",
+    "LinkedIn carousel ad",
+    "LinkedIn sponsored post"
+   ],
+   "limits": [
+    {
+     "field": "introductory text (single image)",
+     "max": 3000,
+     "unit": "chars",
+     "visible": 150,
+     "url": "https://www.linkedin.com/help/lms/answer/a426534/single-image-ads-advertising-specifications?lang=en",
+     "checked": "2026-10-04",
+     "quote": "Use up to 150 characters including spaces, emojis, and punctuation to avoid truncation (3,000 character maximum).",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "headline (single image)",
+     "max": 200,
+     "unit": "chars",
+     "visible": 70,
+     "url": "https://www.linkedin.com/help/lms/answer/a426534/single-image-ads-advertising-specifications?lang=en",
+     "checked": "2026-10-04",
+     "quote": "Use up to 70 characters to avoid truncation (200 character maximum).",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "description (single image)",
+     "max": 300,
+     "unit": "chars",
+     "visible": 100,
+     "url": "https://www.linkedin.com/help/lms/answer/a426534/single-image-ads-advertising-specifications?lang=en",
+     "checked": "2026-10-04",
+     "quote": "Use 100 characters to avoid truncation (300 character maximum).",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "emojis in introductory text",
+     "max": 10,
+     "unit": "count",
+     "url": "https://www.linkedin.com/help/lms/answer/a426534/single-image-ads-advertising-specifications?lang=en",
+     "checked": "2026-10-04",
+     "quote": "You can use up to 10 emojis.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "introductory text (carousel)",
+     "max": 255,
+     "unit": "chars",
+     "visible": 150,
+     "url": "https://www.linkedin.com/help/lms/answer/a426534/single-image-ads-advertising-specifications?lang=en",
+     "checked": "2026-10-04",
+     "quote": "Introductory text - Use up to 150 characters to avoid truncation on some devices (a maximum of 255 characters)",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "carousel cards",
+     "max": 10,
+     "unit": "count",
+     "url": "https://www.linkedin.com/help/lms/answer/a426534/single-image-ads-advertising-specifications?lang=en",
+     "checked": "2026-10-04",
+     "quote": "Use a minimum of two cards and a maximum of ten cards.",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/lms/answer/a426534/single-image-ads-advertising-specifications?lang=en",
+     "title": "Single image ads advertising specifications - LinkedIn Marketing Solutions Help",
+     "supports": "intro text, headline, description, carousel limits"
+    }
+   ],
+   "note": "URLs longer than 23 characters in introductory text are converted to a short link. The description only displays when the image is under 200 px wide or on the LinkedIn Audience Network. Carousel card headlines truncate after two lines. Organic LinkedIn posts belong to plat_social.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:linkedin_article",
+   "name": "LinkedIn article (and newsletter edition)",
+   "category": "LinkedIn",
+   "one_line": "A long-form article published with LinkedIn's publishing tool, standalone or as a newsletter edition.",
+   "limits": [
+    {
+     "field": "SEO title (truncated in search results above)",
+     "max": 60,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a6244140",
+     "checked": "2026-10-04",
+     "quote": "If your SEO title is over 60 characters, it will be truncated.",
+     "confidence": "medium (LinkedIn Help, last updated about 3 years before 2026-10-04)"
+    },
+    {
+     "field": "SEO description (suggested length)",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a6244140",
+     "checked": "2026-10-04",
+     "quote": "We suggest utilizing keywords, summarizing your writing, and aiming to write between 140-160 characters.",
+     "confidence": "medium (LinkedIn Help, a recommendation not a hard cap, page about 3 years old)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a6244140",
+     "title": "LinkedIn Help: SEO settings for articles or Newsletters published on LinkedIn",
+     "supports": "SEO title truncated over 60 chars; SEO description 140-160 suggested"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a522427",
+     "title": "LinkedIn Help: Write and publish articles on LinkedIn",
+     "supports": "article publishing (no length limit stated)"
+    }
+   ],
+   "note": "LinkedIn Help pages read on 2026-10-04 (a522427 articles, a517925 and a596833 newsletters) state no character limit for the article headline, body, newsletter name or newsletter description; none recorded. Articles render headings, bold, italic, lists, quotes, links and embeds. The SEO title and description replace the article title and opening lines only in search-engine results. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:linkedin_conversation_ads",
+   "name": "LinkedIn Conversation Ads (sponsored messaging)",
+   "category": "Paid social & video ads",
+   "one_line": "Choose-your-path sponsored InMail: an intro message with CTA buttons that branch to follow-up messages.",
+   "aliases": [
+    "LinkedIn sponsored messaging",
+    "LinkedIn InMail ad",
+    "Message ads"
+   ],
+   "limits": [
+    {
+     "field": "intro message",
+     "max": 8000,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a426057",
+     "checked": "2026-10-04",
+     "quote": "Use up to 8,000 characters, including spaces, emojis, and punctuation.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "CTA button text",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a426057",
+     "checked": "2026-10-04",
+     "quote": "Call-to-action (CTA) button text | Use up to 25 characters, including spaces and punctuation.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "CTA buttons per message",
+     "max": 5,
+     "unit": "count",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a426057",
+     "checked": "2026-10-04",
+     "quote": "Five CTA buttons per message and 50 buttons per conversation.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "emojis per message",
+     "max": 10,
+     "unit": "count",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a426057",
+     "checked": "2026-10-04",
+     "quote": "You can use up to 10 emojis in the Intro message field.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "custom footer & terms",
+     "max": 20000,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a426057",
+     "checked": "2026-10-04",
+     "quote": "Use up to 20,000 characters, including spaces and punctuation.",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a426057",
+     "title": "Conversation ads advertising specifications - LinkedIn Help",
+     "supports": "message, CTA and footer limits"
+    }
+   ],
+   "note": "HTML and rich-text formatting count toward the 8,000 limit. LinkedIn's composer shows a feedback recommendation above 500 characters because 'fewer characters can drive higher engagement'. A 'Not Interested' CTA is required and counts as one of the five buttons.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:linkedin_document_post",
+   "name": "LinkedIn document (PDF carousel) post",
+   "category": "LinkedIn",
+   "one_line": "A LinkedIn post with an uploaded PDF, PPT or DOC that readers page through (the 'carousel' format).",
+   "limits": [
+    {
+     "field": "pages per document",
+     "max": 300,
+     "unit": "count",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a564109",
+     "checked": "2026-10-04",
+     "quote": "The file size cannot exceed 100 MB. The page limit is 300 pages. The word count limit is one million words.",
+     "confidence": "high (LinkedIn Help, last updated about 2 weeks before 2026-10-04)"
+    },
+    {
+     "field": "words per document",
+     "max": 1000000,
+     "unit": "words",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a564109",
+     "checked": "2026-10-04",
+     "quote": "The word count limit is one million words.",
+     "confidence": "high (LinkedIn Help)"
+    },
+    {
+     "field": "post text above the document",
+     "max": 3000,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "checked": "2026-10-04",
+     "quote": "The character limit for a post is 3,000 characters.",
+     "confidence": "high (LinkedIn Help)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a564109",
+     "title": "LinkedIn Help: Media file types supported on LinkedIn",
+     "supports": "100 MB, 300 pages, one million words; DOC/DOCX/PPT/PPTX/PDF"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a518909",
+     "title": "LinkedIn Help: Upload and share documents on LinkedIn",
+     "supports": "100MB and 300 pages"
+    }
+   ],
+   "note": "File size cap 100 MB. Supported: PPT, PPTX, DOC, DOCX, PDF. Text on the slides is read inside the viewer, so the post text still needs its own hook.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:linkedin_post",
+   "name": "LinkedIn post (member or Page)",
+   "category": "LinkedIn",
+   "one_line": "A text post shared from the LinkedIn share box, from a member or a LinkedIn Page.",
+   "limits": [
+    {
+     "field": "post text",
+     "max": 3000,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "checked": "2026-10-04",
+     "quote": "The character limit for a post is 3,000 characters.",
+     "confidence": "high (LinkedIn Help, last updated about 2 weeks before 2026-10-04)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a528176",
+     "title": "LinkedIn Help: Post and share updates",
+     "supports": "3,000-character post limit; longer text should be an article"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/compliance/integrations/shares/ugc-post-api",
+     "title": "LinkedIn UGC Post API",
+     "supports": "API: maximum length of the text of a UGC Post is 3000 characters"
+    }
+   ],
+   "note": "Help: \"If your post exceeds 3000 characters, you can instead write an article\". The API doc agrees: \"The maximum length of the text of a UGC Post is 3000 characters.\" No official LinkedIn page states where the feed truncates with \"...see more\"; any figure for that is third-party, so none is recorded. Line breaks render; no native bold/italic; links are clickable but the first one generates a preview card; hashtags and @mentions are clickable. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:linkedin_text_ads",
+   "name": "LinkedIn Text Ads",
+   "category": "Paid social & video ads",
+   "one_line": "Small desktop right-rail LinkedIn ads with a short headline and one line of description.",
+   "aliases": [
+    "LinkedIn right rail ad"
+   ],
+   "limits": [
+    {
+     "field": "ad description",
+     "max": 75,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/lms/answer/a423705",
+     "checked": "2026-10-04",
+     "quote": "Ad description: | Use up to 75 characters, including spaces",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "ad headline",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/lms/answer/a423705",
+     "checked": "2026-10-04",
+     "quote": "Ad headline: | Use up to 25 characters, including spaces",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/lms/answer/a423705",
+     "title": "Text Ads - Advertising Specifications - LinkedIn Help",
+     "supports": "headline and description limits"
+    }
+   ],
+   "note": "Destination URL up to 500 characters (same page).",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:mastodon_bio",
+   "name": "Mastodon profile bio, display name and fields (default server)",
+   "category": "Mastodon",
+   "one_line": "The bio (note), display name and custom profile fields of a Mastodon account.",
+   "limits": [
+    {
+     "field": "bio (note)",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"accounts\" : { \"max_display_name_lenth\" : 30 , \"max_note_length\" : 500",
+     "confidence": "high (official Mastodon docs example of the instance config; each server can change it)"
+    },
+    {
+     "field": "display name",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"max_display_name_lenth\" : 30",
+     "confidence": "high (official Mastodon docs example; the key is misspelt 'lenth' in the docs)"
+    },
+    {
+     "field": "custom profile fields",
+     "max": 4,
+     "unit": "count",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"max_profile_fields\" : 4 , \"profile_field_name_limit\" : 255 , \"profile_field_value_limit\" : 255",
+     "confidence": "high (official Mastodon docs example)"
+    },
+    {
+     "field": "profile field value",
+     "max": 255,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "profile_field_value_limit Description: The maximum size of a profile field value, in characters.",
+     "confidence": "high (official Mastodon docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "title": "Mastodon docs: Instance entity",
+     "supports": "accounts config: note 500, display name 30, 4 profile fields of 255"
+    }
+   ],
+   "note": "Per-server values: read GET /api/v2/instance configuration.accounts before writing.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:mastodon_post",
+   "name": "Mastodon post (status), default server",
+   "category": "Mastodon",
+   "one_line": "A status on a Mastodon server running the default configuration.",
+   "limits": [
+    {
+     "field": "status text",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"statuses\" : { \"max_characters\" : 500 , \"max_media_attachments\" : 4 , \"characters_reserved_per_url\" : 23 }",
+     "confidence": "high (official Mastodon docs example of the instance config; each server can change it)"
+    },
+    {
+     "field": "URL (counted as)",
+     "max": 23,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"characters_reserved_per_url\" : 23",
+     "confidence": "high (official Mastodon docs example)"
+    },
+    {
+     "field": "media alt text (description)",
+     "max": 1500,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"media_attachments\" : { \"description_limit\" : 1500",
+     "confidence": "high (official Mastodon docs example)"
+    },
+    {
+     "field": "poll option",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "checked": "2026-10-04",
+     "quote": "\"polls\" : { \"max_options\" : 4 , \"max_characters_per_option\" : 50",
+     "confidence": "high (official Mastodon docs example)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://docs.joinmastodon.org/entities/Instance/",
+     "title": "Mastodon docs: Instance entity",
+     "supports": "configuration.statuses.max_characters = 500 in the documented default"
+    }
+   ],
+   "note": "The 500 is per server: read GET /api/v2/instance configuration.statuses.max_characters for the actual server before writing. Links, hashtags and @mentions are clickable; a content-warning field exists. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:medium_story",
+   "name": "Medium story (title, subtitle, shortform) and publication newsletter",
+   "category": "Blogging platforms",
+   "one_line": "A story on Medium, plus the newsletter attached to a Medium publication.",
+   "limits": [
+    {
+     "field": "shortform threshold (story classified as shortform at or below)",
+     "max": 150,
+     "unit": "words",
+     "url": "https://help.medium.com/hc/en-us/articles/1500001252562-About-shortform-content",
+     "checked": "2026-10-04",
+     "quote": "Shortform on Medium is a post that is 150 words or less. This excludes kickers, titles, subtitles, and image captions.",
+     "confidence": "high (Medium Help, updated 2026-07-09; a classification threshold, not a cap)"
+    },
+    {
+     "field": "publication newsletter name",
+     "max": 50,
+     "unit": "chars",
+     "url": "https://help.medium.com/hc/en-us/articles/115004682167-Newsletter",
+     "checked": "2026-10-04",
+     "quote": "It can be no less than 3 characters, no more than 50 characters.",
+     "confidence": "high (Medium Help, updated 2025-09-23)"
+    },
+    {
+     "field": "publication newsletter description",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://help.medium.com/hc/en-us/articles/115004682167-Newsletter",
+     "checked": "2026-10-04",
+     "quote": "It can be no less than 10 characters, no more than 200 characters.",
+     "confidence": "high (Medium Help, updated 2025-09-23)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.medium.com/hc/en-us/articles/1500001252562-About-shortform-content",
+     "title": "Medium Help: About shortform content",
+     "supports": "shortform = 150 words or less"
+    },
+    {
+     "url": "https://help.medium.com/hc/en-us/articles/115004682167-Newsletter",
+     "title": "Medium Help: Newsletter",
+     "supports": "name 3-50 chars, description 10-200 chars"
+    },
+    {
+     "url": "https://help.medium.com/hc/en-us/articles/214895188-Custom-titles-subtitles",
+     "title": "Medium Help: Custom titles & subtitles",
+     "supports": "separate display title/subtitle for previews and social; no length limit stated"
+    }
+   ],
+   "note": "Medium's help pages state no character limit for story titles or subtitles (checked 2026-10-04); a custom display title/subtitle can be set for previews and social shares. Read time is computed from word count (Medium Help: Read time).",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:meta_ads",
+   "name": "Meta ads (Facebook + Instagram) ad copy",
+   "category": "Paid social & video ads",
+   "one_line": "Primary text, headline and description fields of ads served on Facebook and Instagram placements.",
+   "aliases": [
+    "Facebook ads",
+    "Instagram ads",
+    "Meta Ads Manager copy"
+   ],
+   "limits": [
+    {
+     "field": "primary text, Instagram feed (recommended)",
+     "max": 125,
+     "unit": "chars",
+     "url": "https://www.facebook.com/business/ads-guide/update/image/instagram-feed",
+     "checked": "2026-10-04",
+     "quote": "Primary Text: 125 characters",
+     "confidence": "high (official Meta Ads Guide; JS page read through a fetch tool; recommended lengths, not hard caps)"
+    },
+    {
+     "field": "headline, Instagram feed (recommended)",
+     "max": 40,
+     "unit": "chars",
+     "url": "https://www.facebook.com/business/ads-guide/update/image/instagram-feed",
+     "checked": "2026-10-04",
+     "quote": "Headline: 40 characters",
+     "confidence": "high (official Meta Ads Guide; JS page read through a fetch tool; recommended lengths, not hard caps)"
+    },
+    {
+     "field": "hashtags, Instagram feed (maximum)",
+     "max": 30,
+     "unit": "count",
+     "url": "https://www.facebook.com/business/ads-guide/update/image/instagram-feed",
+     "checked": "2026-10-04",
+     "quote": "Maximum Number of Hashtags: 30",
+     "confidence": "high (official Meta Ads Guide; JS page read through a fetch tool; recommended lengths, not hard caps)"
+    },
+    {
+     "field": "primary text, Facebook feed (recommended upper end of 50-150)",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://www.facebook.com/business/ads-guide/update/image/facebook-feed",
+     "checked": "2026-10-04",
+     "quote": "Primary Text: 50-150 characters",
+     "confidence": "high (official Meta Ads Guide; JS page read through a fetch tool; recommended lengths, not hard caps)"
+    },
+    {
+     "field": "headline, Facebook feed (recommended)",
+     "max": 27,
+     "unit": "chars",
+     "url": "https://www.facebook.com/business/ads-guide/update/image/facebook-feed",
+     "checked": "2026-10-04",
+     "quote": "Headline: 27 characters",
+     "confidence": "high (official Meta Ads Guide; JS page read through a fetch tool; recommended lengths, not hard caps)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/image/facebook-feed",
+     "title": "Awareness Image Ad Specs on Facebook Feed | Facebook Ads Guide",
+     "supports": "text recommendations for FB feed image ads"
+    },
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/image/instagram-feed",
+     "title": "Awareness Image Ad Specs on Instagram Feed | Facebook Ads Guide",
+     "supports": "text recommendations for IG feed image ads"
+    }
+   ],
+   "note": "Meta publishes per-placement RECOMMENDED lengths, not hard caps; the numbers differ by placement and objective, so check the Ads Guide page for the exact placement before trimming. CONFLICT: third-party guides repeat one '125 / 40 / 30' rule for all placements; Meta's own Facebook Feed page says 50-150 primary text and a 27-character headline (Meta's page preferred). The Ads Guide is a JavaScript app that refuses plain HTTP clients; figures were read through a fetch tool, and a description-field length was not shown for these placements (not recorded).",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:microsoft_ads_rsa",
+   "name": "Microsoft Advertising responsive search ad",
+   "category": "Paid search ads",
+   "one_line": "Bing/Microsoft Search text ad built from 3-15 headlines and 2-4 descriptions, same shape as Google's RSA.",
+   "aliases": [
+    "Bing Ads",
+    "Microsoft Ads RSA"
+   ],
+   "limits": [
+    {
+     "field": "headline (final, after dynamic text)",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "no more than 30 final characters are allowed after substitution",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "description (final, after dynamic text)",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "no more than 90 final characters are allowed after substitution",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "path 1 / path 2 (each)",
+     "max": 15,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "No more than 15 final (not dynamic text) characters can be input.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "final URL domain + both paths",
+     "max": 67,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "The domain portion of the URL in combination with the path 1 and path 2 strings cannot exceed 67 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "headlines per ad",
+     "max": 15,
+     "unit": "count",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "Responsive search ads allow you to set between 3-15 unique ad headlines (a.k.a. \"titles\") and 2-4 ad descriptions within a single ad.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "descriptions per ad",
+     "max": 4,
+     "unit": "count",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "between 3-15 unique ad headlines (a.k.a. \"titles\") and 2-4 ad descriptions within a single ad",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
+     "title": "Responsive Search Ad Record - Bulk - Microsoft Advertising API (Microsoft Learn)",
+     "supports": "per-field limits incl. double-width and emoji rules"
+    }
+   ],
+   "note": "Double-width characters (Korean, Japanese, Chinese AND emojis) halve the limits: headline 15, description 45, path 7 final characters (same page). Input can be up to 1,000 characters including dynamic text strings like {keyword}; the 30/90/15 apply after substitution, else default text is used. Source is the API reference; the Microsoft Advertising help centre is a JS app and was not read.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:microsoft_audience_ads",
+   "name": "Microsoft Advertising audience (responsive) ads",
+   "category": "Paid social & video ads",
+   "one_line": "Native/display ads on the Microsoft Audience Network (MSN, Outlook, Edge) built from headlines, long headlines and descriptions.",
+   "aliases": [
+    "Microsoft Audience Network ad",
+    "responsive ad Microsoft"
+   ],
+   "limits": [
+    {
+     "field": "headline",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "The upperlimit of headlines is 15. And the length of each headline is limited to 30 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "long headline",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "The upperlimit of long headlines is 5. And the length of each headline is limited to 90 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "description",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "The upper limit of descriptions is 5. The length of the string is limited to 90 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "business name",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "The length of the string is limited to 25 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "headlines per ad",
+     "max": 15,
+     "unit": "count",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "The upperlimit of headlines is 15.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "long headlines per ad",
+     "max": 5,
+     "unit": "count",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "The upperlimit of long headlines is 5.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "descriptions per ad",
+     "max": 5,
+     "unit": "count",
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-ad?view=bingads-13",
+     "checked": "2026-10-04",
+     "quote": "The upper limit of descriptions is 5.",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-ad?view=bingads-13",
+     "title": "Responsive Ad Record - Bulk - Microsoft Advertising API (Microsoft Learn)",
+     "supports": "audience ad text asset limits"
+    }
+   ],
+   "note": "Source is Microsoft's API reference; the business name may appear depending on placement.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:pinterest_pin",
+   "name": "Pinterest Pin title and description",
+   "category": "Pinterest",
+   "one_line": "The title, description, alt text and link of an organic Pinterest Pin.",
+   "limits": [
+    {
+     "field": "title",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://github.com/pinterest/api-description/blob/main/v5/openapi.yaml",
+     "checked": "2026-10-04",
+     "quote": "PinCreate ... title: type: string maxLength: 100",
+     "confidence": "high (Pinterest's official API v5 OpenAPI spec)"
+    },
+    {
+     "field": "description",
+     "max": 800,
+     "unit": "chars",
+     "url": "https://github.com/pinterest/api-description/blob/main/v5/openapi.yaml",
+     "checked": "2026-10-04",
+     "quote": "PinCreate ... description: type: string maxLength: 800",
+     "confidence": "high (Pinterest's official API v5 OpenAPI spec)"
+    },
+    {
+     "field": "alt text",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://github.com/pinterest/api-description/blob/main/v5/openapi.yaml",
+     "checked": "2026-10-04",
+     "quote": "PinCreate ... alt_text: type: string maxLength: 500",
+     "confidence": "high (Pinterest's official API v5 OpenAPI spec)"
+    },
+    {
+     "field": "destination link",
+     "max": 2048,
+     "unit": "chars",
+     "url": "https://github.com/pinterest/api-description/blob/main/v5/openapi.yaml",
+     "checked": "2026-10-04",
+     "quote": "PinCreate ... link: type: string maxLength: 2048",
+     "confidence": "high (Pinterest's official API v5 OpenAPI spec)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/pinterest/api-description/blob/main/v5/openapi.yaml",
+     "title": "Pinterest API v5 OpenAPI description (PinCreate schema)",
+     "supports": "title 100, description 800, alt_text 500, link 2048"
+    }
+   ],
+   "note": "API schema limits. Pinterest's in-app editor has been reported (third-party) to cap descriptions at 500 characters; not verified on a Pinterest page here, so write to 500 when the Pin is made in the app and up to 800 via the API. Pin descriptions are searchable text; hashtags are allowed but not required. [Formatting facts in this note are general platform knowledge, not quoted from a page read on 2026-10-04; verify before relying on them.]",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:push_notification_apns",
+   "name": "iOS push notification (Apple Push Notification service)",
+   "category": "Messaging",
+   "one_line": "Remote notification (alert title, subtitle, body) delivered to iPhone, iPad, Mac and Watch.",
+   "aliases": [
+    "iOS push",
+    "APNs",
+    "Apple notification"
+   ],
+   "limits": [
+    {
+     "field": "remote notification payload",
+     "max": 4096,
+     "unit": "bytes",
+     "url": "https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification",
+     "checked": "2026-10-04",
+     "quote": "For all other remote notifications, the maximum payload size is 4 KB (4096 bytes).",
+     "confidence": "high (Apple developer docs; JS page read as markdown through the r.jina.ai reader)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developer.apple.com/documentation/usernotifications/generating-a-remote-notification",
+     "title": "Generating a remote notification - Apple Developer Documentation",
+     "supports": "payload size limits, alert keys"
+    }
+   ],
+   "note": "VoIP notifications allow 5 KB (5120 bytes) (same page). Apple sets no separate character limit on the alert title or body; everything in the JSON payload counts toward the 4 KB.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:push_notification_fcm",
+   "name": "Push notification via Firebase Cloud Messaging (Android, iOS, web)",
+   "category": "Messaging",
+   "one_line": "Title + body notification delivered to an app user's lock screen or notification shade.",
+   "aliases": [
+    "push notification",
+    "FCM",
+    "app push",
+    "Android notification"
+   ],
+   "limits": [
+    {
+     "field": "total message payload (API)",
+     "max": 4096,
+     "unit": "bytes",
+     "url": "https://firebase.google.com/docs/cloud-messaging/customize-messages/set-message-type",
+     "checked": "2026-10-04",
+     "quote": "Maximum payload for both message types is 4096 bytes",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "message sent from the Firebase console",
+     "max": 1000,
+     "unit": "chars",
+     "url": "https://firebase.google.com/docs/cloud-messaging/customize-messages/set-message-type",
+     "checked": "2026-10-04",
+     "quote": "except when sending messages from the Firebase console, which enforces a 1000 character limit.",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://firebase.google.com/docs/cloud-messaging/customize-messages/set-message-type",
+     "title": "Firebase Cloud Messaging message types - Firebase docs",
+     "supports": "payload size limits"
+    }
+   ],
+   "note": "Neither FCM nor Android documents a hard title/body character limit; what is visible depends on the device, OS and whether the notification is expanded. Visible-length figures in third-party push blogs (e.g. ~40-50 character titles) are not from a platform source and are not recorded here.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:rcs_business_messaging",
+   "name": "RCS Business Messaging (Google RBM)",
+   "category": "Messaging",
+   "one_line": "Branded rich messages in the Android Messages app: text, rich cards, carousels and suggestion chips.",
+   "aliases": [
+    "RCS",
+    "RBM",
+    "RCS for Business",
+    "rich SMS"
+   ],
+   "limits": [
+    {
+     "field": "text message",
+     "max": 3072,
+     "unit": "chars",
+     "url": "https://developers.google.com/business-communications/rcs-business-messaging/guides/build/messages/send",
+     "checked": "2026-10-04",
+     "quote": "The text portion of the message has its own limit of 3072 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "rich card title",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://developers.google.com/business-communications/rcs-business-messaging/reference/rest/v1/phones.agentMessages",
+     "checked": "2026-10-04",
+     "quote": "(Optional) Title of the card. Maximum 200 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "rich card description",
+     "max": 2000,
+     "unit": "chars",
+     "url": "https://developers.google.com/business-communications/rcs-business-messaging/reference/rest/v1/phones.agentMessages",
+     "checked": "2026-10-04",
+     "quote": "(Optional) Description of the card. Maximum 2000 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "suggestion (reply/action) text",
+     "max": 25,
+     "unit": "chars",
+     "url": "https://developers.google.com/business-communications/rcs-business-messaging/guides/build/messages/send",
+     "checked": "2026-10-04",
+     "quote": "Each suggestion has a maximum of 25 characters.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "suggestions per message",
+     "max": 11,
+     "unit": "count",
+     "url": "https://developers.google.com/business-communications/rcs-business-messaging/guides/build/messages/send",
+     "checked": "2026-10-04",
+     "quote": "A single text message supports a maximum of 11 suggestions in total.",
+     "confidence": "high (official help/developer docs)"
+    },
+    {
+     "field": "rich cards per carousel",
+     "max": 10,
+     "unit": "count",
+     "url": "https://developers.google.com/business-communications/rcs-business-messaging/guides/build/messages/send",
+     "checked": "2026-10-04",
+     "quote": "Carousels can contain a minimum of two and a maximum of ten rich cards.",
+     "confidence": "high (official help/developer docs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/business-communications/rcs-business-messaging/guides/build/messages/send",
+     "title": "Send messages - RCS Business Messaging (Google for Developers)",
+     "supports": "text, suggestion, carousel limits"
+    },
+    {
+     "url": "https://developers.google.com/business-communications/rcs-business-messaging/reference/rest/v1/phones.agentMessages",
+     "title": "REST resource phones.agentMessages - RBM API reference",
+     "supports": "card title and description maxima"
+    }
+   ],
+   "note": "Whole AgentMessage max 250 KB. Emoji and multi-byte characters count as 2-4 or more (guide). A rich card holds up to 4 suggested replies/actions. Indian RCS business traffic may also fall under TRAI commercial-communication rules (not checked here).",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:reddit_community_description",
+   "name": "Reddit community description and name",
+   "category": "Reddit",
+   "one_line": "The short description and the name of a subreddit.",
+   "limits": [
+    {
+     "field": "community description",
+     "max": 500,
+     "unit": "chars",
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484546290068-Community-settings",
+     "checked": "2026-10-04",
+     "quote": "markdown/formatting will not work here and you can only write up to 500 characters",
+     "confidence": "high (Reddit Help)"
+    },
+    {
+     "field": "community name",
+     "max": 21,
+     "unit": "chars",
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484258409492-How-to-create-a-community",
+     "checked": "2026-10-04",
+     "quote": "The community name must be between 3 and 21 characters and cannot be edited after the community is created.",
+     "confidence": "high (Reddit Help)"
+    },
+    {
+     "field": "sidebar text widget",
+     "max": 10000,
+     "unit": "chars",
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484474697748-Sidebar-Widgets",
+     "checked": "2026-10-04",
+     "quote": "Text - Add up to 10,000 characters of text, with markdown formatting options.",
+     "confidence": "high (Reddit Help)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484546290068-Community-settings",
+     "title": "Reddit Help: Community settings",
+     "supports": "description 500 chars, no markdown"
+    },
+    {
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484258409492-How-to-create-a-community",
+     "title": "Reddit Help: How to create a community",
+     "supports": "name 3-21 chars"
+    },
+    {
+     "url": "https://support.reddithelp.com/hc/en-us/articles/15484474697748-Sidebar-Widgets",
+     "title": "Reddit Help: Sidebar Widgets",
+     "supports": "text widget 10,000 chars"
+    }
+   ],
+   "note": "Description is plain text (no markdown); sidebar text widgets accept markdown.",
+   "kind": "platform"
+  },
+  {
+   "id": "plat:reddit_post",
+   "name": "Reddit post (title + text body)",
+   "category": "Reddit",
+   "one_line": "A Reddit submission: title plus optional markdown text body.",
+   "limits": [
+    {
+     "field": "title",
+     "max": 300,
+     "unit": "chars",
+     "url": "https://www.reddit.com/dev/api/#POST_api_submit",
+     "checked": "2026-10-04",
+     "quote": "title title of the submission. up to 300 characters long",
+     "confidence": "high (Reddit API documentation, /api/submit)"
+    },
+    {
+     "field": "text body (non-Premium)",
+     "max": 40000,
+     "unit": "chars",
+     "url": "https://support.reddithelp.com/hc/en-us/articles/360043034412-What-is-a-Reddit-Premium-subscription",
+     "checked": "2026-10-04",
+     "quote": "80,000 characters in post body (up from 40,000 for non-premium users)",
+     "confidence": "high (Reddit Help, updated 2026-10-04)"
+    },
+    {
+     "field": "text body (Premium)",
+     "max": 80000,
+     "unit": "chars",
+     "url": "https://support.reddithelp.com/hc/en-us/articles/360043034412-What-is-a-Reddit-Premium-subscription",
+     "checked": "2026-10-04",
+     "quote": "80,000 characters in post body (up from 40,000 for non-premium users)",
+     "confidence": "high (Reddit Help, updated 2026-10-04)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.reddit.com/dev/api/",
+     "title": "Reddit API documentation",
+     "supports": "submission title up to 300 characters"
+    },
+    {
+     "url": "https://support.reddithelp.com/hc/en-us/articles/360043034412-What-is-a-Reddit-Premium-subscription",
+     "title": "Reddit Help: What is a Reddit Premium subscription?",
+     "supports": "post body 40,000 / 80,000 (Premium)"
+    },
+    {
+     "url": "https://support.reddithelp.com/hc/en-us/articles/42961314311700-Changelog-November-4-2025",
+     "title": "Reddit Help: Changelog November 4, 2025",
+     "supports": "date the 80,000 Premium body limit arrived"
+    }
+   ],
+   "note": "Body renders Reddit markdown (bold, italic, headings, lists, links, tables, spoilers; see Reddit's Formatting Guide). Titles do not render markdown. Each subreddit may add its own title/body rules (post guidance, flair). Comment length was not found on an official Reddit page; no limit recorded.",
+   "kind": "platform"
+  }
+ ]
+}

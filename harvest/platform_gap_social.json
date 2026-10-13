@@ -1,0 +1,871 @@
+{
+ "kind": "platform",
+ "worker": "gap_plat_social",
+ "as_of": "2026-10-05",
+ "source": "Gap-fill wave 1b: short vertical video, Facebook organic, LinkedIn member surfaces, Stories/YouTube/WhatsApp/Threads/podcast/creator surfaces; limits read on the platform's own help centre, developer docs or newsroom on 2026-10-05 and quoted; third-party or search-excerpt only where marked.",
+ "items": [
+  {
+   "id": "plat:instagram_reel",
+   "name": "Instagram Reel (caption, length, on-screen text safe zone)",
+   "category": "Instagram",
+   "one_line": "A vertical short video on Instagram: the caption under it, how long it may run, and where on-screen text survives the UI.",
+   "aliases": [
+    "IG Reels",
+    "Instagram Reels caption"
+   ],
+   "limits": [
+    {
+     "field": "caption",
+     "max": 2200,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-05",
+     "quote": "Maximum 2200 characters, 30 hashtags, and 20 @ tags.",
+     "confidence": "high (Meta developer reference, caption parameter; same field as a feed caption)"
+    },
+    {
+     "field": "video length (recorded or edited in the app)",
+     "max": 1200,
+     "unit": "seconds",
+     "url": "https://help.instagram.com/2720958398006062",
+     "checked": "2026-10-05",
+     "quote": "You can record and edit videos up to 20 minutes with Instagram Reels.",
+     "confidence": "high (Instagram Help Center)"
+    },
+    {
+     "field": "video length (published through the API)",
+     "max": 900,
+     "unit": "seconds",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-05",
+     "quote": "Duration: 15 mins maximum, 3 seconds minimum",
+     "confidence": "high (Meta developer reference, Reels specs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "Instagram Platform: IG User Media reference",
+     "supports": "caption 2200 chars / 20 @ tags; API Reels 3 s to 15 min, 9:16 recommended, 300 MB"
+    },
+    {
+     "url": "https://help.instagram.com/2720958398006062",
+     "title": "Instagram Help Center: Record a reel on Instagram",
+     "supports": "in-app reels up to 20 minutes; clips add up to 20 minutes"
+    },
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-reels?locale=en_US",
+     "title": "Meta Ads Guide: Instagram Reels ads",
+     "supports": "safe zone: keep text and logos out of the top 14%, bottom 35%, 6% each side"
+    }
+   ],
+   "note": "Safe zone (Meta's ads guide, the only place Meta publishes one; it fits organic Reels because the same caption, buttons and profile row cover the frame): \"Consider leaving at least 14% of the top, 35% of the bottom, and 6% on each side of your asset free from text ...\" On a 1080x1920 frame that is roughly the top 269 px and bottom 672 px (arithmetic, not a Meta figure). Aspect: API says 9:16 recommended. Hashtag cap: see plat:instagram_hashtags (cut to 5 in Dec 2025; the API text still prints 30). Caption text is the same field as plat:instagram_caption. Hook and on-screen text must sit in the middle band."
+  },
+  {
+   "id": "plat:youtube_shorts",
+   "name": "YouTube Shorts (title, length, description links)",
+   "category": "YouTube",
+   "one_line": "A vertical YouTube Short: its title, how long it may run, and what the description can and cannot do.",
+   "aliases": [
+    "Shorts",
+    "YT Shorts"
+   ],
+   "limits": [
+    {
+     "field": "video length",
+     "max": 180,
+     "unit": "seconds",
+     "url": "https://support.google.com/youtube/answer/10059070?hl=en",
+     "checked": "2026-10-05",
+     "quote": "YouTube's Shorts creation tools makes it easy to create short-form videos that are up to 3 minutes long",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "title",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/10059070?hl=en",
+     "checked": "2026-10-05",
+     "quote": "Add a title (max 100 characters)",
+     "confidence": "high (YouTube Help, Shorts upload steps)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/10059070?hl=en",
+     "title": "YouTube Help: Get started creating YouTube Shorts",
+     "supports": "Shorts up to 3 minutes; title max 100 characters; max 1080p upload"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/13748639?hl=en",
+     "title": "YouTube Help: Sharing links with your audiences",
+     "supports": "URLs in Shorts comments and Shorts descriptions are non-clickable"
+    }
+   ],
+   "note": "Links: \"To reduce spam and scam attempts, URLs placed in YouTube Shorts comments and Shorts descriptions are non-clickable.\" (YouTube Help 13748639). Mentions and hashtags in Shorts descriptions stay clickable per the same page's table; channel profile links (up to 14) are the clickable route. So a Short's CTA must point to the channel profile link, a pinned long-form video or a spoken keyword, never 'link in description'. Description length is the long-form limit: see plat:youtube_description; title see plat:youtube_title."
+  },
+  {
+   "id": "plat:facebook_page_intro",
+   "name": "Facebook Page intro / description (Page 'about')",
+   "category": "Facebook",
+   "one_line": "The short description shown in a Facebook Page's intro box, edited under Edit Page Info.",
+   "aliases": [
+    "Facebook Page bio",
+    "Page description",
+    "Page about"
+   ],
+   "limits": [
+    {
+     "field": "Page description ('about' field)",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://developers.facebook.com/docs/graph-api/reference/page/",
+     "checked": "2026-10-05",
+     "quote": "This value maps to the Description setting in the Edit Page Info user interface. Limit of 100 characters.",
+     "confidence": "high (Meta Graph API Page reference)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/graph-api/reference/page/",
+     "title": "Meta Graph API: Page reference",
+     "supports": "'about' field = Description in Edit Page Info, limit 100 characters; 'description' maps to Additional Information"
+    }
+   ],
+   "note": "Third-party guides (2026) say the new Pages experience allows 255 characters in the Page bio; Meta's own API reference says 100 for the Description field. Write to 100 so it fits either. The longer 'Additional Information' field (API 'description') has no published limit. Personal-profile intro bio: Facebook Help 1090724464274188 documents the field but states no number."
+  },
+  {
+   "id": "plat:facebook_reel",
+   "name": "Facebook Reel (and Facebook video, now all reels)",
+   "category": "Facebook",
+   "one_line": "A video posted to a Facebook profile or Page, which since 2025 is always published as a reel.",
+   "aliases": [
+    "Facebook Reels",
+    "Facebook video"
+   ],
+   "limits": [
+    {
+     "field": "video length (Pages publishing through the Reels API)",
+     "max": 90,
+     "unit": "seconds",
+     "url": "https://developers.facebook.com/docs/video-api/guides/reels-publishing/",
+     "checked": "2026-10-05",
+     "quote": "3 to 90 seconds.",
+     "confidence": "medium (Meta developer guide; the June 2025 change removed the length cap in the apps, the API page still prints 90 s)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/video-api/guides/reels-publishing/",
+     "title": "Meta Video API: Reels publishing guide",
+     "supports": "API-published Page reels 3 to 90 seconds, 9x16"
+    },
+    {
+     "url": "https://about.fb.com/news/2025/06/making-it-easier-create-videos-facebook/",
+     "title": "Meta Newsroom, 17 June 2025: Making it Easier to Create Videos on Facebook",
+     "supports": "all Facebook videos become reels; reels have no length or format restrictions"
+    }
+   ],
+   "note": "Meta newsroom (June 17, 2025): \"all videos on Facebook will be shared as reels ... Reels on Facebook will also not have any length or format restrictions.\" So in the apps a reel can be any length and any orientation; the 90-second figure is only the Reels publishing API. No caption limit is published for reels; Meta's Reels-ads safe zone (top 14%, bottom 35%, sides 6%, see plat:instagram_reel) is the guide for on-screen text."
+  },
+  {
+   "id": "plat:linkedin_profile",
+   "name": "LinkedIn member profile (headline and About)",
+   "category": "LinkedIn",
+   "one_line": "A LinkedIn member's headline under their name and the About summary on their profile.",
+   "aliases": [
+    "LinkedIn headline",
+    "LinkedIn About section",
+    "LinkedIn summary"
+   ],
+   "limits": [
+    {
+     "field": "About (summary)",
+     "max": 2600,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/business/talent/blog/product-tips/linkedin-profile-summaries-that-we-love-and-how-to-boost-your-own",
+     "checked": "2026-10-05",
+     "quote": "It's an open-ended space (sort of; 2,600 characters max) where you give an overview of your professional life.",
+     "confidence": "medium (LinkedIn's own Talent Blog, not the Help Center)"
+    },
+    {
+     "field": "headline",
+     "max": 220,
+     "unit": "chars",
+     "url": "https://howmanywords.app/blog/linkedin-character-limits",
+     "checked": "2026-10-05",
+     "quote": "LinkedIn Character Limits 2026: Post 3,000, Headline 220, About 2,600",
+     "confidence": "low (third-party only; LinkedIn Help 'Edit Your Headline' a542926 states no number)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/business/talent/blog/product-tips/linkedin-profile-summaries-that-we-love-and-how-to-boost-your-own",
+     "title": "LinkedIn Talent Blog: LinkedIn profile summaries that we love",
+     "supports": "About/summary 2,600 characters max"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a542926",
+     "title": "LinkedIn Help: Edit Your Headline",
+     "supports": "headline = text below your name, shown in search results; edited in the Edit intro window; no limit stated"
+    },
+    {
+     "url": "https://howmanywords.app/blog/linkedin-character-limits",
+     "title": "howmanywords.app: LinkedIn character limits 2026",
+     "supports": "third-party: headline 220, About 2,600"
+    }
+   ],
+   "note": "Headline is shown in search results, under every comment and in invitations, where third-party guides say only the first 60-70 characters show (not an official figure). The About box shows its opening lines before 'see more'; LinkedIn publishes no visible-character number. Help a547248 lists the intro fields: Name, Headline, Current position, Education, Location, Industry, Contact info."
+  },
+  {
+   "id": "plat:linkedin_connection_note",
+   "name": "LinkedIn connection request note (personalized invitation)",
+   "category": "LinkedIn",
+   "one_line": "The optional personal message attached to a LinkedIn invitation to connect.",
+   "aliases": [
+    "LinkedIn invitation message",
+    "connection request message"
+   ],
+   "limits": [
+    {
+     "field": "personalized note",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a563153",
+     "checked": "2026-10-05",
+     "quote": "Each message can be up to 200 characters",
+     "confidence": "high (LinkedIn Help)"
+    },
+    {
+     "field": "personalized notes per month (free account)",
+     "max": 3,
+     "unit": "count",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a563153",
+     "checked": "2026-10-05",
+     "quote": "You can add a personalized message to up to three connection requests per month",
+     "confidence": "high (LinkedIn Help; Premium members can personalize unlimited invitations)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a563153",
+     "title": "LinkedIn Help: Personalize invitations to connect",
+     "supports": "200-character note; free members 3 personalized notes a month; Premium unlimited (request limits still apply)"
+    }
+   ],
+   "note": "Third-party pages still quote 300 characters for Premium notes; LinkedIn's Help page (updated about 5 months before 2026-10-05) says only 'up to 200 characters' and that Premium members can personalize unlimited invitations. Write to 200. A free sender gets three notes a month, so the note goes to the highest-value requests only."
+  },
+  {
+   "id": "plat:linkedin_inmail",
+   "name": "LinkedIn InMail message",
+   "category": "LinkedIn",
+   "one_line": "A paid LinkedIn message to a member you are not connected to: a required subject line plus a body.",
+   "aliases": [
+    "InMail",
+    "Recruiter InMail",
+    "Sales Navigator InMail"
+   ],
+   "limits": [
+    {
+     "field": "subject line",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a546814",
+     "checked": "2026-10-05",
+     "quote": "InMail messages can have up to 200 characters in the subject line and up to 2000 characters in the body.",
+     "confidence": "high (LinkedIn Help)"
+    },
+    {
+     "field": "body",
+     "max": 2000,
+     "unit": "chars",
+     "url": "https://www.linkedin.com/help/linkedin/answer/a546814",
+     "checked": "2026-10-05",
+     "quote": "InMail messages can have up to 200 characters in the subject line and up to 2000 characters in the body.",
+     "confidence": "high (LinkedIn Help, updated about 6 months before check)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a546814",
+     "title": "LinkedIn Help: Send an InMail Message",
+     "supports": "subject 200 chars, body 2000 chars"
+    },
+    {
+     "url": "https://www.linkedin.com/help/linkedin/answer/a411986",
+     "title": "LinkedIn Help: InMail character limits",
+     "supports": "older page: subject 200, body 1900; live character counter that changes colour as the message grows"
+    }
+   ],
+   "note": "An older Help page (a411986, 'InMail character limits', updated about 2 years ago) gives 1900 for the body and says the composer shows a live counter that changes colour to push shorter messages. Write under 1900 to fit both. Subject line is required."
+  },
+  {
+   "id": "plat:linkedin_job_post",
+   "name": "LinkedIn job post (title and description)",
+   "category": "LinkedIn",
+   "one_line": "A job listing on LinkedIn: the job title and the description body candidates read.",
+   "aliases": [
+    "LinkedIn job description",
+    "LinkedIn job listing"
+   ],
+   "limits": [
+    {
+     "field": "job title",
+     "max": 200,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/linkedin/talent/job-postings/api/job-posting-api-schema?view=li-lts-2025-10",
+     "checked": "2026-10-05",
+     "quote": "Represents the title of the job posting that will be published. Character limit: 200",
+     "confidence": "high (LinkedIn Job Posting API schema, Microsoft Learn)"
+    },
+    {
+     "field": "job description",
+     "max": 25000,
+     "unit": "chars",
+     "url": "https://learn.microsoft.com/en-us/linkedin/talent/job-postings/api/job-posting-api-schema?view=li-lts-2025-10",
+     "checked": "2026-10-05",
+     "quote": "Character limit: 100 ~ 25,000, limited set of HTML tags accepted, non-support HTML tags will be ignored.",
+     "confidence": "high (LinkedIn Job Posting API schema, Microsoft Learn; minimum 100)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/talent/job-postings/api/job-posting-api-schema?view=li-lts-2025-10",
+     "title": "Microsoft Learn: LinkedIn Job Posting API schema",
+     "supports": "title 200 chars; description 100 to 25,000 chars, limited HTML"
+    }
+   ],
+   "note": "Limits are the API schema used by job-posting partners and ATS integrations; the on-site job composer is not documented separately. Description needs at least 100 characters. Only a limited set of HTML tags survives (lists, bold); others are ignored."
+  },
+  {
+   "id": "plat:instagram_story",
+   "name": "Instagram Story (frame text, length, safe zone)",
+   "category": "Instagram",
+   "one_line": "A full-screen 24-hour Instagram Story frame: on-screen text and stickers instead of a caption.",
+   "aliases": [
+    "IG Stories",
+    "Instagram Stories"
+   ],
+   "limits": [
+    {
+     "field": "video story length (published through the API)",
+     "max": 60,
+     "unit": "seconds",
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "checked": "2026-10-05",
+     "quote": "60 seconds maximum, 3 seconds minimum",
+     "confidence": "high (Meta developer reference, Story video specs)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
+     "title": "Instagram Platform: IG User Media reference",
+     "supports": "Story video 3 to 60 s, 9:16 recommended, 100 MB; image 8 MB"
+    },
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-story?locale=en_US",
+     "title": "Meta Ads Guide: Instagram Stories ads",
+     "supports": "safe zone: keep text and logos out of the top 14%, bottom 35%, 6% each side"
+    }
+   ],
+   "note": "Safe zone (Meta Ads Guide, Stories): \"Consider leaving roughly 14% of the top, 35% of the bottom, and 6% on each side of your asset free from text ...\" (so the profile icon and call-to-action do not cover key elements). A Story has no caption field in the API; all words live on the frame or in stickers. No official character limit for Story text or the link sticker label was found on 2026-10-05."
+  },
+  {
+   "id": "plat:tiktok_video",
+   "name": "TikTok video post (caption, length)",
+   "category": "TikTok",
+   "one_line": "A TikTok video (or photo/carousel post) and the caption under it, where hashtags and @mentions live.",
+   "aliases": [
+    "TikTok caption",
+    "TikTok description"
+   ],
+   "limits": [
+    {
+     "field": "caption (Content Posting API 'title')",
+     "max": 2200,
+     "unit": "chars",
+     "url": "https://web.archive.org/web/20260813161754/https://developers.tiktok.com/doc/content-posting-api-reference-direct-post",
+     "checked": "2026-10-05",
+     "quote": "The video caption. Hashtags (#) and mentions (@) will be matched ... The maximum length is 2200 in UTF-16 runes.",
+     "confidence": "high (TikTok for Developers reference, read as the Wayback snapshot of 2026-08-13; tiktok.com is blocked from this machine)"
+    },
+    {
+     "field": "photo post title (Content Posting API)",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://web.archive.org/web/20260428125243/https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+     "checked": "2026-10-05",
+     "quote": "The post title. The maximum length for photo posts is 90 in UTF-16 runes.",
+     "confidence": "high (TikTok for Developers reference, read as the Wayback snapshot of 2026-04-28; tiktok.com is blocked from this machine)"
+    },
+    {
+     "field": "photo post description (Content Posting API)",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://web.archive.org/web/20260428125243/https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+     "checked": "2026-10-05",
+     "quote": "The post description. The maximum length for photo posts is 4000 in UTF-16 runes.",
+     "confidence": "high (TikTok for Developers reference, read as the Wayback snapshot of 2026-04-28)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://web.archive.org/web/20260813161754/https://developers.tiktok.com/doc/content-posting-api-reference-direct-post",
+     "title": "TikTok for Developers: Content Posting API, Direct Post reference (Wayback 2026-08-13)",
+     "supports": "video caption = 'title', max 2200 UTF-16 runes; hashtags and mentions delimited by spaces or new lines"
+    },
+    {
+     "url": "https://developers.tiktok.com/doc/content-posting-api-reference-query-creator-info",
+     "title": "TikTok for Developers: Query Creator Info",
+     "supports": "max_video_post_duration_sec: longest video the creator can post; differs per user (sample response 300)"
+    },
+    {
+     "url": "https://web.archive.org/web/20260428125243/https://developers.tiktok.com/doc/content-posting-api-reference-photo-post",
+     "title": "TikTok for Developers: Photo Post reference (Wayback 2026-04-28)",
+     "supports": "photo post title 90 and description 4000 UTF-16 runes"
+    }
+   ],
+   "note": "Length is per account: the API's max_video_post_duration_sec is \"The longest video duration in seconds that the TikTok creator can post. Different users have different maximum video-duration privileges.\" (sample response shows 300). No single public maximum was readable on 2026-10-05; third-party guides say uploads up to 60 minutes and in-app recording up to 10 minutes (low). The API counts UTF-16 units, so emoji and some Indic conjuncts cost more than one. A 2023 creator video claims the in-app caption grew to 4,000 characters (unverified); write to 2200 so scheduled and in-app posts both fit."
+  },
+  {
+   "id": "plat:tiktok_profile",
+   "name": "TikTok profile (name and bio)",
+   "category": "TikTok",
+   "one_line": "The display name (nickname) and bio text at the top of a TikTok profile.",
+   "aliases": [
+    "TikTok bio",
+    "TikTok nickname"
+   ],
+   "limits": [
+    {
+     "field": "name (nickname)",
+     "max": 30,
+     "unit": "chars",
+     "url": "https://web.archive.org/web/20251223074614/https://support.tiktok.com/en/getting-started/setting-up-your-profile/changing-your-nickname",
+     "checked": "2026-10-05",
+     "quote": "You can enter up to 30 characters.",
+     "confidence": "high (TikTok Support, read as the Wayback snapshot of 2025-12-23; tiktok.com is blocked from this machine)"
+    },
+    {
+     "field": "bio",
+     "max": 160,
+     "unit": "chars",
+     "url": "https://www.tiktok.com/discover/tiktok-character-limit-update",
+     "checked": "2026-10-05",
+     "quote": "The character limit for a TikTok bio is 160 characters, an increase from the previous 80-character limit.",
+     "confidence": "low (search excerpt of a user-content page on tiktok.com, not a help article; older sources say 80)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://web.archive.org/web/20251223074614/https://support.tiktok.com/en/getting-started/setting-up-your-profile/changing-your-nickname",
+     "title": "TikTok Support: Changing your nickname (Wayback 2025-12-23)",
+     "supports": "nickname up to 30 characters, changeable once every 7 days, must follow Community Guidelines"
+    },
+    {
+     "url": "https://www.tiktok.com/discover/tiktok-character-limit-update",
+     "title": "TikTok Discover page: TikTok character limit update",
+     "supports": "user-content summary: bio 160 characters, up from 80"
+    }
+   ],
+   "note": "Nickname \"can only be changed once every 7 days\" (same TikTok Support page). Username is a separate @handle. Bio limit: no TikTok help article readable on 2026-10-05; 80 was the long-standing figure and 2026 sources say 160. Write the bio so its first 80 characters stand alone."
+  },
+  {
+   "id": "plat:youtube_playlist",
+   "name": "YouTube playlist (title and description)",
+   "category": "YouTube",
+   "one_line": "The title and description of a YouTube playlist, including series and podcast playlists.",
+   "aliases": [
+    "YouTube playlist title"
+   ],
+   "limits": [
+    {
+     "field": "playlist title",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/10232933?hl=en&co=GENIE.Platform%3DDesktop",
+     "checked": "2026-10-05",
+     "quote": "Playlist titles have a character limit of 150 characters",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "playlist description",
+     "max": 5000,
+     "unit": "chars",
+     "url": "https://support.google.com/youtube/answer/10232933?hl=en&co=GENIE.Platform%3DDesktop",
+     "checked": "2026-10-05",
+     "quote": "Playlist descriptions have a character limit of 5,000 characters",
+     "confidence": "high (YouTube Help)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/10232933?hl=en&co=GENIE.Platform%3DDesktop",
+     "title": "YouTube Help: Manage playlists in YouTube Studio",
+     "supports": "title 150 chars, description 5,000 chars; '<', '>' and the line separator are invalid in both"
+    }
+   ],
+   "note": "Titles and descriptions \"cannot include invalid characters (\"<\", \">\", and the line separator \"\\u2028\")\" (same page). YouTube Live: the Live API says a broadcast \"represents exactly one YouTube video\" and its title is the video's title, so live titles follow plat:youtube_title (100)."
+  },
+  {
+   "id": "plat:youtube_thumbnail",
+   "name": "YouTube thumbnail (text on the image)",
+   "category": "YouTube",
+   "one_line": "The custom thumbnail image for a YouTube video or Short, and the words written on it.",
+   "aliases": [
+    "YouTube thumbnail text",
+    "Shorts thumbnail"
+   ],
+   "limits": [
+    {
+     "field": "recommended width (video thumbnail)",
+     "max": 3840,
+     "unit": "px",
+     "url": "https://support.google.com/youtube/answer/72431?hl=en",
+     "checked": "2026-10-05",
+     "quote": "Have a resolution of 3840 x 2160 pixels for videos and 2160 x 3840 for Shorts",
+     "confidence": "high (YouTube Help)"
+    },
+    {
+     "field": "minimum width (video thumbnail)",
+     "unit": "px",
+     "url": "https://support.google.com/youtube/answer/72431?hl=en",
+     "checked": "2026-10-05",
+     "quote": "with a minimum width of 640 pixels for videos and a minimum height of 640 pixels for Shorts.",
+     "confidence": "high (YouTube Help)",
+     "min": 640
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/72431?hl=en",
+     "title": "YouTube Help: Add custom thumbnails on YouTube",
+     "supports": "3840x2160 recommended (Shorts 2160x3840), min 640 px, 16:9 for videos and 9:16 for Shorts, 2 MB mobile / 50 MB desktop"
+    },
+    {
+     "url": "https://support.google.com/youtube/answer/9229980?hl=en",
+     "title": "YouTube Help: Thumbnails policy",
+     "supports": "no misleading thumbnails, no vulgar or lewd language, no shock imagery"
+    }
+   ],
+   "note": "No character limit exists for thumbnail text; the policy limits what it may say. Thumbnails policy bans \"A thumbnail that misleads viewers to think they're about to view something that's not in the video\" and \"Vulgar or lewd language\"; borderline thumbnails can be age-restricted or removed. File size: \"Mobile: 2 MB for video thumbnails or 10 MB for podcasts. Desktop: 50MB for video, Shorts, and podcast thumbnails.\" Custom Shorts thumbnails are added in YouTube Studio on a computer and need a verified account."
+  },
+  {
+   "id": "plat:whatsapp_status",
+   "name": "WhatsApp Status update",
+   "category": "WhatsApp",
+   "one_line": "A 24-hour WhatsApp Status: text, photo, video or GIF shown to contacts.",
+   "aliases": [
+    "WhatsApp Status",
+    "WhatsApp story"
+   ],
+   "limits": [
+    {
+     "field": "status video length",
+     "max": 90,
+     "unit": "seconds",
+     "url": "https://faq.whatsapp.com/454876960047011",
+     "checked": "2026-10-05",
+     "quote": "The maximum duration for status is 90 seconds.",
+     "confidence": "high (WhatsApp Help Center)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://faq.whatsapp.com/454876960047011",
+     "title": "WhatsApp Help Center: About status",
+     "supports": "text, photo, video and GIF updates that disappear after 24 hours; max duration 90 seconds"
+    }
+   ],
+   "note": "\"WhatsApp Status allows you to share text, photo, video, and GIF updates that disappear after 24 hours.\" No official character limit for text Status was found on 2026-10-05."
+  },
+  {
+   "id": "plat:whatsapp_channel",
+   "name": "WhatsApp Channel (name, description, updates)",
+   "category": "WhatsApp",
+   "one_line": "A one-way WhatsApp broadcast channel: its name, description and the updates posted to followers.",
+   "aliases": [
+    "WhatsApp Channels",
+    "WhatsApp channel update"
+   ],
+   "limits": [
+    {
+     "field": "channel name",
+     "max": 100,
+     "unit": "chars",
+     "url": "https://faq.whatsapp.com/214063281402212",
+     "checked": "2026-10-05",
+     "quote": "Channel name is limited to 100 characters.",
+     "confidence": "high (WhatsApp Help Center)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://faq.whatsapp.com/214063281402212",
+     "title": "WhatsApp Help Center: How to manage channel info and settings",
+     "supports": "channel name up to 100 characters, editable any time; description editable"
+    },
+    {
+     "url": "https://faq.whatsapp.com/794229125227200",
+     "title": "WhatsApp Help Center: How to create a WhatsApp Channel",
+     "supports": "channel name, optional description, icon"
+    }
+   ],
+   "note": "Description is optional; WhatsApp publishes no character limit for it or for channel updates (third-party figures conflict: 255 vs 2,048). Updates are one-way: followers react, they do not reply in the channel."
+  },
+  {
+   "id": "plat:apple_podcasts",
+   "name": "Apple Podcasts show and episode (Apple Podcasts Connect)",
+   "category": "Podcasts",
+   "one_line": "The show name, show description, episode title and episode description entered in Apple Podcasts Connect.",
+   "aliases": [
+    "Apple Podcasts Connect",
+    "podcast show notes (Apple)"
+   ],
+   "limits": [
+    {
+     "field": "show name",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://podcasters.apple.com/support/897-submit-a-show",
+     "checked": "2026-10-05",
+     "quote": "Name : The name of your show. You can enter up to 150 characters.",
+     "confidence": "high (Apple Podcasts for Creators)"
+    },
+    {
+     "field": "show description",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://podcasters.apple.com/support/897-submit-a-show",
+     "checked": "2026-10-05",
+     "quote": "You can enter up to 4000 characters.",
+     "confidence": "high (Apple Podcasts for Creators, Submit a new show)"
+    },
+    {
+     "field": "episode title",
+     "max": 150,
+     "unit": "chars",
+     "url": "https://podcasters.apple.com/support/825-how-to-create-an-episode",
+     "checked": "2026-10-05",
+     "quote": "Name : An episode title. You can enter up to 150 characters.",
+     "confidence": "high (Apple Podcasts for Creators)"
+    },
+    {
+     "field": "episode description",
+     "max": 10000,
+     "unit": "chars",
+     "url": "https://podcasters.apple.com/support/825-how-to-create-an-episode",
+     "checked": "2026-10-05",
+     "quote": "Description : One or more sentences describing your episode to potential listeners. You can enter up to 10,000 characters.",
+     "confidence": "high (Apple Podcasts for Creators, Create an episode)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://podcasters.apple.com/support/897-submit-a-show",
+     "title": "Apple Podcasts for Creators: Submit a new show",
+     "supports": "show name 150, show description 4000"
+    },
+    {
+     "url": "https://podcasters.apple.com/support/825-how-to-create-an-episode",
+     "title": "Apple Podcasts for Creators: Create an episode",
+     "supports": "episode title 150, description 10,000, art 3000x3000"
+    }
+   ],
+   "note": "These are the Apple Podcasts Connect fields (hosted on Apple). Shows delivered by an RSS feed from another host follow that host's limits; the industry-wide feed figure is 4,000 for show and episode notes (see plat:spotify_podcast_episode). Episode art can be 3000 x 3000 pixels."
+  },
+  {
+   "id": "plat:spotify_podcast_episode",
+   "name": "Spotify for Creators podcast episode (description, chapters)",
+   "category": "Podcasts",
+   "one_line": "The episode description and chapter titles of a podcast or video podcast published through Spotify for Creators.",
+   "aliases": [
+    "Spotify episode description",
+    "Spotify show notes"
+   ],
+   "limits": [
+    {
+     "field": "chapter title (Spotify's recommendation)",
+     "max": 40,
+     "unit": "chars",
+     "url": "https://support.spotify.com/us/creators/article/episode-chapters/",
+     "checked": "2026-10-05",
+     "quote": "Aim for chapter titles under 40 characters.",
+     "confidence": "medium (Spotify Help recommendation, not a hard cap)"
+    },
+    {
+     "field": "episode description",
+     "max": 4000,
+     "unit": "chars",
+     "url": "https://help.rss.com/en/support/solutions/articles/44002278172-understanding-the-4000-character-limit-for-podcast-and-episode-notes",
+     "checked": "2026-10-05",
+     "quote": "Understanding the 4000-Character Limit for Podcast and Episode Notes",
+     "confidence": "low (third-party podcast host help page; Spotify publishes no number)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://support.spotify.com/us/creators/article/episode-chapters/",
+     "title": "Spotify Help (Creators): Episode chapters",
+     "supports": "chapter titles under 40 characters, short and clear"
+    },
+    {
+     "url": "https://creators.spotify.com/resources/create/podcast-episode-descriptions",
+     "title": "Spotify for Creators: How to write episode descriptions, according to Spotify writers",
+     "supports": "two or three sentences; make the first 90 characters count"
+    },
+    {
+     "url": "https://help.rss.com/en/support/solutions/articles/44002278172-understanding-the-4000-character-limit-for-podcast-and-episode-notes",
+     "title": "RSS.com Help: the 4000-character limit for podcast and episode notes",
+     "supports": "third-party: 4,000-character notes limit for distribution"
+    }
+   ],
+   "note": "Spotify's own writing guide: a Spotify copywriter \"recommends limiting your podcast descriptions to two or three sentences\" and to cut filler so \"those first 90 characters really count\". Put the hook in the first 90 characters; keep the full notes under 4,000 so every directory accepts them."
+  },
+  {
+   "id": "plat:behance_project",
+   "name": "Behance project (title, tags, description)",
+   "category": "Portfolio",
+   "one_line": "A portfolio project on Behance: cover, title, creative fields, tags and the text between images.",
+   "aliases": [
+    "Behance case study",
+    "Behance portfolio project"
+   ],
+   "limits": [
+    {
+     "field": "project tags",
+     "max": 10,
+     "unit": "count",
+     "url": "https://help.behance.net/hc/en-us/articles/204483954-Guide-Project-Tags",
+     "checked": "2026-10-05",
+     "quote": "You can add up to 10 Project Tags",
+     "confidence": "high (Behance Help Center)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.behance.net/hc/en-us/articles/204483954-Guide-Project-Tags",
+     "title": "Behance Help: Project Tags",
+     "supports": "up to 10 project tags"
+    },
+    {
+     "url": "https://help.behance.net/hc/en-us/articles/204483524-FAQ-What-fields-are-required-before-publishing",
+     "title": "Behance Help: What fields are required before publishing?",
+     "supports": "cover image, project title and at least 1 creative field required"
+    },
+    {
+     "url": "https://help.behance.net/hc/en-us/articles/204483684-Guide-Create-Publish-A-Project",
+     "title": "Behance Help: Create & Publish A Project",
+     "supports": "tags and tools suggested, not required; description under Co-owners, Credits, and More"
+    },
+    {
+     "url": "https://help.behance.net/hc/en-us/articles/23707509178011-Guide-Advanced-Project-Settings",
+     "title": "Behance Help: Advanced Project Settings",
+     "supports": "schedule a project up to 90 days in advance"
+    }
+   ],
+   "note": "\"Before publishing, you must upload or select a Cover Image and set a Project Title You'll also need to select at least 1 Creative Field\". Behance Project Basics: \"The average project will typically have 10-15 images broken up with descriptive text and a compelling title.\" No character limit for title or description is published. Projects can be scheduled up to 90 days ahead."
+  },
+  {
+   "id": "plat:pratilipi_series",
+   "name": "Pratilipi story series (parts and Daily Series)",
+   "category": "Reading apps",
+   "one_line": "A serialised story on Pratilipi published part by part, which can be scheduled into the homepage Daily Series list.",
+   "aliases": [
+    "Pratilipi series",
+    "Pratilipi daily series"
+   ],
+   "limits": [
+    {
+     "field": "minimum words in a scheduled part to show in the Daily Series widget",
+     "unit": "words",
+     "url": "https://english.pratilipi.com/help/daily-series",
+     "checked": "2026-10-05",
+     "quote": "Daily series widget on the homepage will only give visibility to the series where the scheduled part has more than 200 words.",
+     "confidence": "high (Pratilipi Help Centre)",
+     "min": 200
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://english.pratilipi.com/help/daily-series",
+     "title": "Pratilipi Help: Daily Series",
+     "supports": "parts scheduled up to seven days ahead show in the homepage Daily Series widget; parts need more than 200 words; live serials discontinued"
+    }
+   ],
+   "note": "Daily Series replaced Live Serials: writers schedule parts in advance and the series shows under the day the next part is due; readers see the next seven days. Several parts of one series can be scheduled for the same day. A part of 200 words or fewer gets no widget visibility, so each part needs real length and a cliffhanger end. No title or summary limit and no free-part rule were found in Pratilipi's English help on 2026-10-05."
+  },
+  {
+   "id": "plat:snapchat_spotlight",
+   "name": "Snapchat Spotlight Snap",
+   "category": "Snapchat",
+   "one_line": "A vertical video Snap submitted to Snapchat's public Spotlight feed, with an optional description and #topic.",
+   "aliases": [
+    "Spotlight",
+    "Snapchat Spotlight video"
+   ],
+   "limits": [
+    {
+     "field": "minimum video length to post",
+     "unit": "seconds",
+     "url": "https://help.snapchat.com/hc/en-us/articles/7012288096532-How-do-I-post-Snaps-to-Spotlight",
+     "checked": "2026-10-05",
+     "quote": "your video is 5 seconds or longer",
+     "confidence": "high (Snapchat Support)",
+     "min": 5
+    },
+    {
+     "field": "minimum video length to earn revenue",
+     "unit": "seconds",
+     "url": "https://help.snapchat.com/hc/en-us/articles/14669003687444-About-Snapchat-s-Monetization-Program",
+     "checked": "2026-10-05",
+     "quote": "In order for Spotlight videos to be eligible to earn revenue, they must be at least 30 seconds long.",
+     "confidence": "high (Snapchat Support, Monetization Program)",
+     "min": 30
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://help.snapchat.com/hc/en-us/articles/7012288096532-How-do-I-post-Snaps-to-Spotlight",
+     "title": "Snapchat Support: How do I post Snaps to Spotlight?",
+     "supports": "Post button needs age 16+, an enabled region and a video of 5 s or longer; add a description, location or #topic"
+    },
+    {
+     "url": "https://help.snapchat.com/hc/en-us/articles/14669003687444-About-Snapchat-s-Monetization-Program",
+     "title": "Snapchat Support: About Snapchat's Monetization Program",
+     "supports": "Spotlight videos need 30 s to earn; strong first Snap hook and closed captions recommended"
+    }
+   ],
+   "note": "Both numbers are floors, not caps. The text surface is the optional description plus a #topic (\"Tap the edit pencil to add a description, location, or #topic\"); Snapchat publishes no character limit for it. Monetization page: \"Dynamic motion and bright colors in your very first Snap hook your audience and closed captions provide context that help keep them engaged.\""
+  },
+  {
+   "id": "plat:sharechat_post",
+   "name": "ShareChat video post",
+   "category": "Indian short video",
+   "one_line": "A video posted on ShareChat, the Indian-language social app.",
+   "aliases": [
+    "ShareChat"
+   ],
+   "limits": [
+    {
+     "field": "video upload size (stated as 50 MB; bytes = 50 x 1,048,576)",
+     "max": 52428800,
+     "unit": "bytes",
+     "url": "https://sharechat.com/faq/4/53",
+     "checked": "2026-10-05",
+     "quote": "Maximum video size of upload is 50 MB. There is no limit on video length.",
+     "confidence": "high (ShareChat FAQ)"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://sharechat.com/faq/4/53",
+     "title": "ShareChat FAQ: how long a video can be uploaded",
+     "supports": "50 MB maximum upload, no limit on video length"
+    }
+   ],
+   "note": "ShareChat's FAQ: \"There is no limit on video length.\" No caption or tag limit is published. No Moj or Josh help page with text or length limits turned up in one search on 2026-10-05."
+  }
+ ]
+}

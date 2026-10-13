@@ -1,0 +1,1786 @@
+{
+ "cards": [
+  {
+   "id": "comp:amazon_in_restricted_products",
+   "kind": "compliance",
+   "name": "Amazon.in Seller Central restricted products policy (listing claims, national symbols, eminent personalities)",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://sellercentral.amazon.in/help/hub/reference/external/200164330",
+     "title": "Amazon Seller Central (India): Restricted products",
+     "supports": "list of restricted categories incl. national flag, State Emblem, eminent personalities, OTC and homeopathic products"
+    },
+    {
+     "url": "https://sellercentral.amazon.in/help/hub/reference/external/G200164470",
+     "title": "Amazon Seller Central (India): Cosmetics, skin, and hair care",
+     "supports": "no disease claims without regulator approval; no products prohibited from advertising under the DMR Act"
+    },
+    {
+     "url": "https://sellercentral.amazon.in/help/hub/reference/external/GYFA3YSS8MSJPT23",
+     "title": "Amazon Seller Central (India): Products with the name or pictorial representation of eminent Indian personalities",
+     "supports": "ban on non-media products bearing the PM, President, Gandhi, Nehru and others"
+    }
+   ],
+   "status": "current",
+   "summary": "Amazon.in's own Seller Central help pages (read 2026-10-04; the pages carry no 'last updated' date) govern every listing title, bullet, description and A+ module on the Indian store: no claim that a product diagnoses, cures, mitigates, treats or prevents disease unless the regulator approved it, no product banned from advertising under the Drugs and Magic Remedies Act, and no non-media product bearing the national flag, State Emblem or the listed eminent personalities. The pages also say all listings must comply with all laws and regulations. Amazon.com's US equivalent was not read.",
+   "use_for": [
+    "Writing Amazon.in titles, bullets, descriptions and A+ / Brand Story modules for cosmetic, skin, hair-care, wellness and ayurvedic products",
+    "Pre-listing check of a D2C product that is about to be sold on Amazon.in",
+    "Deciding whether a patriotic or leader-themed product (flag print, PM or Gandhi image) can be listed at all"
+   ],
+   "avoid": [
+    "'Cures eczema' or 'treats dandruff' in a bullet. Write what the product does for care or appearance ('helps moisturise dry skin', 'formulated for oily scalp') and leave disease out.",
+    "Pasting the brand website's claims into A+ content unchecked. A claim that sits on your own site can still breach the marketplace page; re-check every health line against the category page.",
+    "Listing a T-shirt, mug or poster with the PM's, Gandhi's or Kalam's face or the national flag. Rewording the title does not fix it; the design itself is restricted for non-media products.",
+    "Assuming one page covers every category. OTC drugs, homeopathic products and 'Distorted India map' have their own restricted pages; open the page for the product's category before writing."
+   ],
+   "jurisdiction": "Amazon.in",
+   "applies_to": [
+    "genre:marketplace_listing",
+    "genre:amazon_a_plus_content",
+    "genre:product_description",
+    "genre:packaging_copy",
+    "Amazon.in listing titles, bullets, A+ content, images"
+   ],
+   "rules": [
+    {
+     "rule": "Do not claim that a product is intended for the diagnosis, cure, mitigation, treatment or prevention of disease in humans or animals unless the food and drugs regulatory authorities approved the claim (Cosmetics, skin and hair care page). Write 'helps moisturise', not 'cures eczema'.",
+     "url": "https://sellercentral.amazon.in/help/hub/reference/external/G200164470"
+    },
+    {
+     "rule": "Do not list a product that is prohibited from being advertised under the Drugs and Magic Remedies (Objectionable Advertisement) Act, 1954 (Cosmetics page; see comp:dmr_act_1954 for what that Act bans).",
+     "url": "https://sellercentral.amazon.in/help/hub/reference/external/G200164470"
+    },
+    {
+     "rule": "Do not sell non-media products printed with the name or picture of the Prime Minister, the President, Mahatma Gandhi, Nehru, Lal Bahadur Shastri, Chhatrapati Shivaji Maharaj, A.P.J. Abdul Kalam, Indira Gandhi or the others on Amazon's list.",
+     "url": "https://sellercentral.amazon.in/help/hub/reference/external/GYFA3YSS8MSJPT23"
+    },
+    {
+     "rule": "Do not sell non-media products bearing a pictorial representation or colourable imitation of the Indian National Flag or the State Emblem (restricted products list; mirrors comp:emblems_names_act_1950).",
+     "url": "https://sellercentral.amazon.in/help/hub/reference/external/200164330"
+    },
+    {
+     "rule": "OTC drugs, homeopathic products and 'Distorted India map' each have a separate restricted page: open the category page before writing a listing in those categories.",
+     "url": "https://sellercentral.amazon.in/help/hub/reference/external/200164330"
+    }
+   ],
+   "checks": [
+    "Is every health or beauty line free of any claim to diagnose, cure, mitigate, treat or prevent a disease or condition?",
+    "Is each benefit phrased as care or appearance ('helps moisturise') rather than a medical outcome?",
+    "Is the product outside the Drugs and Magic Remedies Act's banned advertising areas (sexual capacity, conception, miscarriage, menstrual disorders, scheduled diseases: comp:dmr_act_1954)?",
+    "If the product or its image carries the national flag, the State Emblem or a listed leader's name or face, is it a media product (book, film, print) rather than a non-media product?",
+    "If the product is OTC, homeopathic or an India map product, has that category's restricted page been opened and followed?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:dmr_act_1954",
+    "comp:emblems_names_act_1950",
+    "comp:asci_code",
+    "plat:amazon_product_listing",
+    "genre:marketplace_listing",
+    "genre:amazon_a_plus_content"
+   ]
+  },
+  {
+   "id": "comp:cable_tv_advertising_code",
+   "kind": "compliance",
+   "name": "Cable Television Networks Rules, 1994 rule 7: Advertising Code (TV and cable ads)",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf",
+     "title": "Ministry of Information and Broadcasting: Programme and Advertising Codes prescribed under the Cable Television Network Rules, 1994 (Rule 6 and Rule 7), as on 02.01.2025",
+     "supports": "full text of rule 7 sub-rules (1)-(12)"
+    }
+   ],
+   "status": "current",
+   "summary": "Rule 7 of the Cable Television Networks Rules, 1994 (the Advertising Code), text as on 2 Jan 2025 from the Ministry of Information and Broadcasting PDF read 2026-10-04, applies to ads carried on TV and cable channels; later amendments were not checked. Digital-only ads fall under the ASCI Code and CCPA rules instead. Political ads on TV during elections additionally need MCMC certification (comp:eci_mcc).",
+   "use_for": [
+    "Writing or checking a TVC script for a cable or TV channel",
+    "Adapting a digital or social ad for TV (the TV version must pass rule 7, the digital one need not)",
+    "Pre-clearing health, 'miracle result' and leader-endorsement ideas before storyboarding"
+   ],
+   "avoid": [
+    "Reusing a reel or YouTube ad on TV unchanged. Check it against rule 7 line by line first; the digital version never had to pass it.",
+    "A 'miraculous' or 'magical' result line ('baal wapas, guaranteed'). Rule 7(5) bars suggesting special, miraculous or supernatural properties that are hard to prove; show a measurable, provable benefit instead.",
+    "A leader's face or a national symbol as the sales hook. Rule 7(2)(v) bars exploiting the national emblem or a national leader's personality; use a neutral spokesperson.",
+    "Festival or devotional imagery used to carry the sale. The ad's object must stay commercial, not wholly or mainly religious or political, and nothing may hurt religious sentiments (7(3), 7(3A))."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:tvc_script",
+    "cable and TV channel ads",
+    "TV spots and OTT/CTV ads carried by cable channels"
+   ],
+   "rules": [
+    {
+     "rule": "No ad may deride any race, caste, colour, creed or nationality (rule 7(2)(i)).",
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf"
+    },
+    {
+     "rule": "No ad may exploit the national emblem, any part of the Constitution, or the person or personality of a national leader or a State dignitary (rule 7(2)(v)).",
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf"
+    },
+    {
+     "rule": "No ad may project a derogatory image of women (rule 7(2)(vi)) or exploit dowry or child marriage (7(2)(vii)).",
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf"
+    },
+    {
+     "rule": "No ad may promote tobacco, alcohol or infant milk substitutes; brand extensions are allowed only under the strict conditions the Code sets (rule 7(2)(viii)).",
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf"
+    },
+    {
+     "rule": "No ad whose objects are wholly or mainly of a religious or political nature (rule 7(3)), and no references which hurt religious sentiments (7(3A)).",
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf"
+    },
+    {
+     "rule": "No ad may suggest that the product has some special, miraculous or supernatural property or quality which is difficult of being proved (rule 7(5)).",
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf"
+    },
+    {
+     "rule": "An ad that violates the ASCI Code shall not be carried (rule 7(9); see comp:asci_code), and ads must be clearly distinguishable from the programme (rule 7(10)).",
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf"
+    },
+    {
+     "rule": "Advertising time is capped at twelve minutes per hour, of which up to ten minutes may be commercial ads (rule 7(11)); this limits spot count and length, not wording.",
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf"
+    }
+   ],
+   "checks": [
+    "Is the ad free of any line or image that derides a race, caste, colour, creed or nationality?",
+    "Is the national emblem, any part of the Constitution, and any national leader or State dignitary absent from the ad?",
+    "Are women shown without a derogatory image, and are dowry and child marriage not used for effect?",
+    "Is the product something other than tobacco, alcohol or an infant milk substitute (or a brand extension that meets the Code's conditions)?",
+    "Is the ad's object commercial, with no references that could hurt religious sentiments?",
+    "Is every benefit claim provable, with no special, miraculous or supernatural property implied?",
+    "Does the ad also pass the ASCI Code (comp:asci_code)?",
+    "Is the ad clearly distinguishable from the programme around it?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:asci_code",
+    "comp:emblems_names_act_1950",
+    "comp:eci_mcc",
+    "comp:ccpa_misleading_ads_2022",
+    "genre:tvc_script"
+   ]
+  },
+  {
+   "id": "comp:ccpa_greenwashing_2024",
+   "kind": "compliance",
+   "name": "CCPA Guidelines for Prevention and Regulation of Greenwashing or Misleading Environmental Claims, 2024",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://ccpa.doca.gov.in/files/Greenwashing_Guidelines.pdf",
+     "title": "Central Consumer Protection Authority, F. No. CCPA/28/2023-CCPA (Reg.): Guidelines for Prevention and Regulation of Greenwashing or Misleading Environmental Claims, 2024 (signed scan)",
+     "supports": "clauses 2 (definitions), 3 (application), 4 (prohibition), 5 (substantiation), 6 (disclosures), 7 (aspirational claims), Annexure 1 illustrations"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/The_Guidelines_for_Prevention_and_Regulation_of_Greenwashing_or_Misleading_Environmental_Claims,_2024_whatsnews.pdf",
+     "title": "Department of Consumer Affairs 'What's new': same Guidelines PDF",
+     "supports": "official copy of the same signed document"
+    }
+   ],
+   "status": "current",
+   "summary": "Guidelines issued by the Central Consumer Protection Authority under the Consumer Protection Act, 2019 as a furtherance of comp:ccpa_misleading_ads_2022; the signed scanned PDF (read 2026-10-04 as page images) carries no notification date and the PIB release was not read, so the exact 2024 issue date is NOT confirmed here. They govern environmental claims in Indian ads, labels and listings: qualifiers, independent evidence and disclosure are required, and vague, selective or imagery-only green claims are banned.",
+   "use_for": [
+    "Writing or checking any 'eco-friendly', 'sustainable', 'natural', 'plastic-free', 'recyclable', 'carbon-neutral' or 'net-zero' claim on a pack, listing, ad or landing page",
+    "Packaging and D2C product copy for personal care, home care, apparel and FMCG with a green angle",
+    "Reviewing influencer or creator briefs that carry sustainability claims"
+   ],
+   "avoid": [
+    "'Eco-friendly packaging' with nothing behind it. Say exactly what: 'bottle made from [X]% recycled PET, certified by [named body]', filling the slots only from the client's certificate, and link or QR the evidence.",
+    "'Recyclable' on a pack without saying whether the pack or the product is recyclable; the Annexure calls that ambiguity misleading. Name the part and the condition.",
+    "'Greener than the competition!' The comparative claim must state what exactly is being compared (energy, water, plastic weight) against what.",
+    "Leaf icons, green earth graphics or invented eco-seals used to imply eco-friendliness. Use only recognised, real certifications and name them.",
+    "'Net-zero by 2030' as an ad line without a clear, actionable plan behind it. Cut the date or cite the plan.",
+    "Over-applying the rule: obvious puffery, generic colour schemes and a company mission statement not tied to a product are outside it (cl. 2(f)), so do not strip harmless brand colour."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:packaging_copy",
+    "genre:product_description",
+    "genre:marketplace_listing",
+    "genre:d2c_brand_store",
+    "genre:social_ad_copy",
+    "genre:print_ad_copy",
+    "genre:landing_page",
+    "genre:sponsored_creator_post",
+    "any ad, label or listing that makes an environmental claim"
+   ],
+   "rules": [
+    {
+     "rule": "Generic terms such as 'clean', 'green', 'eco-friendly', 'good for the planet', 'minimal impact', 'cruelty-free', 'carbon-neutral', 'natural', 'organic', 'pure', 'sustainable' and 'regenerative' shall not be used without adequate, accurate and accessible qualifiers and substantiation (cl. 5(a)).",
+     "url": "https://ccpa.doca.gov.in/files/Greenwashing_Guidelines.pdf"
+    },
+    {
+     "rule": "All environmental claims must be supported by accessible, verifiable evidence based on independent studies or third-party certifications (cl. 5(c)).",
+     "url": "https://ccpa.doca.gov.in/files/Greenwashing_Guidelines.pdf"
+    },
+    {
+     "rule": "Specific claims (compostable, recyclable, plastic-free, climate-positive, net-zero and similar) need disclosure of the certification or evidence behind them (cl. 6(5)); a QR code or URL can carry the detail (cl. 6(1)).",
+     "url": "https://ccpa.doca.gov.in/files/Greenwashing_Guidelines.pdf"
+    },
+    {
+     "rule": "State whether the claim covers the product, packaging, process, use or disposal (cl. 6(3)); 'recyclable' on a package is misleading if it is unclear whether the package or the product is recyclable (Annexure illustration).",
+     "url": "https://ccpa.doca.gov.in/files/Greenwashing_Guidelines.pdf"
+    },
+    {
+     "rule": "A comparative green claim must disclose exactly what specific aspects are being compared (cl. 6(4)); 'greener than the competition!' is the Annexure's misleading example. Do not cherry-pick research (cl. 6(2)).",
+     "url": "https://ccpa.doca.gov.in/files/Greenwashing_Guidelines.pdf"
+    },
+    {
+     "rule": "Aspirational claims such as 'net-zero by 2030' are allowed only with clear and actionable plans (cl. 7).",
+     "url": "https://ccpa.doca.gov.in/files/Greenwashing_Guidelines.pdf"
+    },
+    {
+     "rule": "Do not use green imagery that implies eco-friendliness without substance, and do not use non-existent or unrecognised eco-seals (Annexure 1, items 5-6).",
+     "url": "https://ccpa.doca.gov.in/files/Greenwashing_Guidelines.pdf"
+    }
+   ],
+   "checks": [
+    "Does every environmental word ('eco-friendly', 'green', 'natural', 'sustainable' and the like) carry a plain qualifier saying exactly what is meant?",
+    "Is there a named independent study or third-party certification behind each green claim, and can the reader reach it (printed, QR or URL)?",
+    "Does the copy say whether the claim covers the product, the packaging, the process, use or disposal?",
+    "If the copy compares with competitors or 'regular' products, does it say which aspect is compared?",
+    "Is any future target ('net-zero by ...') backed by a clear, actionable plan the client can show?",
+    "Are all leaf, globe or seal graphics real, recognised certifications rather than decoration implying eco claims?",
+    "Is the research cited complete rather than cherry-picked?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code",
+    "comp:endorsement_know_hows",
+    "genre:packaging_copy",
+    "genre:product_description"
+   ]
+  },
+  {
+   "id": "comp:copyright_act_s52_fair_dealing",
+   "kind": "compliance",
+   "name": "Copyright Act, 1957 (India) section 52: fair dealing and other acts that are not infringement",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://copyright.gov.in/Documents/CopyrightRules1957.pdf",
+     "title": "Copyright Office, Government of India: The Copyright Act, 1957 (14 of 1957), as amended (text incl. Act 27 of 2012)",
+     "supports": "s.52(1)(a) fair dealing purposes, s.52(1)(m) reproduction of articles on current topics, acknowledgment proviso, s.57 author's special rights"
+    }
+   ],
+   "status": "current",
+   "summary": "In force: the Copyright Act, 1957 (as amended, official Copyright Office text read 2026-10-04); s.52(1)(a) was substituted by Act 27 of 2012 w.e.f. 21-6-2012 (footnote in the official PDF). Indian law has no open-ended 'fair use': a work may be used without permission only for the listed purposes, criticism and review need an acknowledgment naming the work and its author, and the author's moral rights survive. The Act does not define how much quoting is 'fair'; courts decide case by case (no case law checked here).",
+   "use_for": [
+    "Reaction, commentary, review and video-essay scripts that quote or show someone else's work",
+    "News explainers and bulletins that reproduce current-affairs material",
+    "Memes, parody edits and newsjacking posts built on someone else's image, clip or text",
+    "Repurposed content that embeds third-party clips, screenshots or lines"
+   ],
+   "avoid": [
+    "A 'just a reaction' or entertainment-only use of a full clip. The list names private use, criticism or review, and reporting of current events; quote only what the critique or news report needs, and add your own analysis around it.",
+    "Showing a clip, screenshot or quoted line with no credit. Name the work by its title and, unless anonymous, its author on every quoted line, clip or screenshot.",
+    "Assuming a meme or parody edit is safe because it is funny. The author can still claim authorship and restrain distortion, mutilation or modification that harms honour or reputation (s.57).",
+    "Treating a periodical's right to reproduce articles on current topics as unlimited; it falls away where the author expressly reserved the right.",
+    "Using this card as a safe harbour for marketing. Selling a product with someone else's work is not on the list; get a licence."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:commentary_video_script",
+    "genre:critical_review",
+    "genre:video_essay_script",
+    "genre:meme_caption",
+    "genre:satire_parody",
+    "genre:newsjacking_post",
+    "genre:repurposed_content",
+    "genre:news_story",
+    "genre:news_explainer",
+    "genre:news_bulletin_script"
+   ],
+   "rules": [
+    {
+     "rule": "A fair dealing with any work, not being a computer programme, is allowed only for (i) private or personal use, including research; (ii) criticism or review, whether of that work or of any other work; (iii) the reporting of current events and current affairs (s.52(1)(a)). Entertainment, marketing or 'just a reaction' use is not on the list.",
+     "url": "https://copyright.gov.in/Documents/CopyrightRules1957.pdf"
+    },
+    {
+     "rule": "The proviso to s.52(1) makes several exceptions, including criticism or review under (a)(ii), apply only if the use is accompanied by an acknowledgment identifying the work by its title and, unless anonymous, its author: credit every quoted line, clip or screenshot.",
+     "url": "https://copyright.gov.in/Documents/CopyrightRules1957.pdf"
+    },
+    {
+     "rule": "A periodical may reproduce an article on current economic, political, social or religious topics unless the author expressly reserved the right (s.52(1)(m)).",
+     "url": "https://copyright.gov.in/Documents/CopyrightRules1957.pdf"
+    },
+    {
+     "rule": "Independently of copyright, the author may claim authorship and restrain distortion, mutilation or modification of the work that is prejudicial to honour or reputation (s.57): memes and parody edits can still be challenged.",
+     "url": "https://copyright.gov.in/Documents/CopyrightRules1957.pdf"
+    }
+   ],
+   "checks": [
+    "Is every use of someone else's work for criticism or review, for reporting current events or current affairs, or for private research, rather than to entertain or to sell?",
+    "Is only as much of the work quoted or shown as the critique or news report needs?",
+    "Does each quoted line, clip or screenshot carry an acknowledgment naming the work and its author?",
+    "Does the piece add the writer's own criticism or reporting around the material, rather than just replaying it?",
+    "Does the edit leave the original work undistorted (no changes that could harm the author's honour or reputation)?",
+    "Is any reproduced periodical article free of an express reservation of rights by its author?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:endorsement_know_hows",
+    "comp:bns_defamation_speech",
+    "comp:asci_code",
+    "genre:commentary_video_script",
+    "genre:critical_review"
+   ]
+  },
+  {
+   "id": "comp:dmr_act_1954",
+   "kind": "compliance",
+   "name": "Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://indiankanoon.org/doc/1929849/",
+     "title": "Indian Kanoon (secondary reproduction of statute text): The Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954 (Act No. 21 of 1954)",
+     "supports": "ss.2 (definitions: advertisement, drug, magic remedy, taking part in publication), 3, 4, 5 and 7 (penalty)"
+    },
+    {
+     "url": "https://www.indiacode.nic.in/handle/123456789/1412",
+     "title": "India Code: Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954",
+     "supports": "official statute database entry (returned an error page and 504 timeouts to fetch and browser on 2026-10-04)"
+    }
+   ],
+   "status": "current",
+   "summary": "Criminal law in force since 1954 (Act 21 of 1954). Statute text was read on Indian Kanoon, a secondary but verbatim reproduction (medium confidence), because the official India Code page returned an error page and 504 timeouts on 2026-10-04. The Schedule of diseases was NOT in that copy: read it on India Code before naming a disease in any ad. 'Drug' is wide enough to catch many ayurvedic, wellness and 'booster' products, and the copywriter, influencer and publisher are exposed, not only the brand.",
+   "use_for": [
+    "Health, wellness, ayurvedic, supplement and 'booster' ad and listing copy",
+    "Influencer and creator briefs for health, sexual-wellness and women's-health products",
+    "Anything sold as a talisman, mantra, kavacha or charm with claimed powers",
+    "Checking labels, packaging and online listings, which count as advertisements"
+   ],
+   "avoid": [
+    "'Cures [scheduled disease]', 'prevents', 'treats' on any product. Describe what the product contains or how it is meant to be used (e.g. 'a daily tulsi tonic') and leave out the disease and the outcome.",
+    "Any line suggesting a drug improves sexual capacity, helps conception or miscarriage, or corrects menstrual disorder. Cut it; there is no safe softened version in the statute text read.",
+    "A 'proven' or 'clinically tested' line you cannot back. Section 4 bans drug ads that give a false impression of the drug's true character or make a false claim.",
+    "Treating a supplement or ayurvedic product as 'not a drug'. The definition covers any non-food article intended to affect the structure or any organic function of the body.",
+    "Assuming the brand carries all the risk. Printing or publishing counts as taking part, so check the copy yourself even when the client has approved it."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:product_description",
+    "genre:marketplace_listing",
+    "genre:social_ad_copy",
+    "genre:sponsored_creator_post",
+    "genre:influencer_brief",
+    "genre:video_ad_script",
+    "genre:tvc_script",
+    "genre:print_ad_copy",
+    "genre:radio_spot_script",
+    "genre:packaging_copy",
+    "genre:landing_page",
+    "genre:sales_page",
+    "genre:vsl_script",
+    "genre:whatsapp_broadcast"
+   ],
+   "rules": [
+    {
+     "rule": "[secondary source: Indian Kanoon reprint of the statute; the India Code page failed on 2026-10-04] Section 3: no person shall take any part in the publication of any advertisement referring to any drug in terms which suggest or are calculated to lead to the use of that drug for miscarriage or prevention of conception, for the 'maintenance or improvement of the capacity of human beings for sexual pleasure', for correction of menstrual disorder, or for the 'diagnosis, cure, mitigation, treatment or prevention' of any disease in the Schedule. The Schedule was not in the copy read.",
+     "url": "https://indiankanoon.org/doc/1929849/"
+    },
+    {
+     "rule": "[secondary source: Indian Kanoon reprint of the statute; the India Code page failed on 2026-10-04] Section 4: no drug advertisement that 'gives a false impression regarding the true character of the drug', 'makes a false claim', or is 'otherwise false or misleading in any material particular'.",
+     "url": "https://indiankanoon.org/doc/1929849/"
+    },
+    {
+     "rule": "[secondary source: Indian Kanoon reprint of the statute; the India Code page failed on 2026-10-04] Section 2(b)(iii): 'drug' includes any article other than food 'intended to affect or influence in any way the structure or any organic function of the body', so many ayurvedic, wellness and 'booster' products are covered. Section 2(a): 'advertisement' includes labels and any announcement by light, sound or smoke.",
+     "url": "https://indiankanoon.org/doc/1929849/"
+    },
+    {
+     "rule": "[secondary source: Indian Kanoon reprint of the statute; the India Code page failed on 2026-10-04] Section 5: no advertisement for a 'magic remedy' (a 'talisman, mantra, kavacha, and any other charm') claiming such powers.",
+     "url": "https://indiankanoon.org/doc/1929849/"
+    },
+    {
+     "rule": "[secondary source: Indian Kanoon reprint of the statute; the India Code page failed on 2026-10-04] Section 2(d): 'taking any part in the publication' includes printing it, so the copywriter, influencer and publisher are exposed, not only the brand.",
+     "url": "https://indiankanoon.org/doc/1929849/"
+    }
+   ],
+   "penalty": "[secondary source: Indian Kanoon reprint] Section 7: imprisonment up to six months, or fine, or both, on first conviction; up to one year, or fine, or both, on a subsequent conviction (the amount of the fine was not given in the reading).",
+   "checks": [
+    "Does any line say or suggest that the product helps with miscarriage, prevents conception, improves sexual capacity or corrects a menstrual disorder?",
+    "Is every disease named in the piece checked against the Act's Schedule on India Code, and is none promised as cured, treated or prevented?",
+    "Is the piece free of any false or exaggerated claim about what the product is or does ('clinically proven', 'guaranteed')?",
+    "If the product is a talisman, mantra, kavacha or charm, is it free of any claimed power to cure or achieve the listed outcomes?",
+    "Does the same wording appear on the label and listing, and has it been checked there too?",
+    "Has the writer or influencer personally checked the copy rather than relying on the brand's sign-off?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:amazon_in_restricted_products",
+    "comp:asci_code",
+    "comp:fssai_advertising_claims_2018",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_influencer",
+    "genre:product_description"
+   ]
+  },
+  {
+   "id": "comp:emblems_names_act_1950",
+   "kind": "compliance",
+   "name": "Emblems and Names (Prevention of Improper Use) Act, 1950: national flag, PM, President and government names in ads",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://thc.nic.in/Central%20Governmental%20Acts/Emblems%20and%20Names%20(%20Prevention%20of%20Improper%20Use)%20Act,1950.pdf",
+     "title": "High Court of Tripura judges' library scan (EBC edition): The Emblems and Names (Prevention of Improper Use) Act, 1950 (Act 12 of 1950), with Rules 1982 and the Schedule",
+     "supports": "ss.2-3 and the Schedule items 1-11 as amended (read as page images 2026-10-04)"
+    }
+   ],
+   "status": "current",
+   "summary": "In force since 1950 (Act 12 of 1950); the Schedule has been amended by notifications up to 2011 according to the footnotes of the scanned publisher edition (hosted by the Tripura High Court, read as images 2026-10-04; the India Code copy was not reachable, so medium-high confidence). Without permission, nobody may use a Schedule name or emblem (national flag, Government of India or State emblem and seal, the President, the Prime Minister of India, Mahatma Gandhi and others, names suggesting government patronage) for trade, business, calling or profession, in a trade mark or in a design. Political-party and government publicity is not trade and falls under election law (comp:eci_mcc).",
+   "use_for": [
+    "Brand, product and campaign copy that wants to use the flag, the PM, the President or a national leader",
+    "Brand naming and packaging with 'Govt.', 'Sarkari', 'Rashtriya', 'Bharat Sarkar' style words",
+    "Independence Day, Republic Day and national-moment ads from brands",
+    "Influencer posts that show the PM's photo or the flag next to a product"
+   ],
+   "avoid": [
+    "The PM's, President's or Gandhi's picture or name beside a product or price offer. Use a neutral visual and say what the offer is.",
+    "The national flag as a pack or ad device on a commercial product. A 'colourable imitation' is also caught, so do not stylise the flag into a logo or pack device, and ask the client's legal team before using tricolour styling.",
+    "'Govt. approved', 'Sarkari' or any name that suggests government patronage, unless the client holds the permission. Use only the true certification or licence the client actually holds.",
+    "Assuming the Act stops political speech. Party and government publicity is not 'trade, business, calling or profession'; election rules apply there, not this Act.",
+    "Reading this card as the full list. The Schedule has more items than the ones named here; check the Schedule for any other name or emblem before using it commercially."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:print_ad_copy",
+    "genre:social_ad_copy",
+    "genre:ooh_billboard_copy",
+    "genre:brand_naming",
+    "genre:tagline_slogan",
+    "genre:packaging_copy",
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "genre:topical_ad",
+    "genre:sponsored_creator_post",
+    "brand ads on Independence Day and Republic Day"
+   ],
+   "rules": [
+    {
+     "rule": "[read in a High Court library scan of a publisher's edition, not India Code] Section 3: no person shall, except in cases and under conditions prescribed by the Central Government, use, or continue to use, for the purpose of any trade, business, calling or profession, or in the title of any patent, or in any trade mark or design, any name or emblem specified in the Schedule, or any colourable imitation of it, without permission.",
+     "url": "https://thc.nic.in/Central%20Governmental%20Acts/Emblems%20and%20Names%20(%20Prevention%20of%20Improper%20Use)%20Act,1950.pdf"
+    },
+    {
+     "rule": "[read in a High Court library scan of a publisher's edition, not India Code] The Schedule includes the Indian National Flag (item 3), the name, emblem or seal of the Government of India or of any State (item 4), and the President, the Governor, the Republic or Union of India (item 6).",
+     "url": "https://thc.nic.in/Central%20Governmental%20Acts/Emblems%20and%20Names%20(%20Prevention%20of%20Improper%20Use)%20Act,1950.pdf"
+    },
+    {
+     "rule": "[read in a High Court library scan of a publisher's edition, not India Code] The Schedule also includes any name which may suggest or be calculated to suggest government patronage (item 7), and Rashtrapati, Rashtrapati Bhavan and Raj Bhavan (item 9).",
+     "url": "https://thc.nic.in/Central%20Governmental%20Acts/Emblems%20and%20Names%20(%20Prevention%20of%20Improper%20Use)%20Act,1950.pdf"
+    },
+    {
+     "rule": "[read in a High Court library scan of a publisher's edition, not India Code] The Schedule includes the name or pictorial representation of Chhatrapati Shivaji Maharaj, Mahatma Gandhi, Pandit Jawaharlal Nehru and Smt Indira Gandhi 'or the Prime Minister of India' (item 9-A), and of Lal Bahadur Shastri (item 9-B).",
+     "url": "https://thc.nic.in/Central%20Governmental%20Acts/Emblems%20and%20Names%20(%20Prevention%20of%20Improper%20Use)%20Act,1950.pdf"
+    },
+    {
+     "rule": "[read in a High Court library scan of a publisher's edition, not India Code] The Schedule also includes government medals and decorations (item 10) and the UN, WHO, UNESCO and ICAO emblems.",
+     "url": "https://thc.nic.in/Central%20Governmental%20Acts/Emblems%20and%20Names%20(%20Prevention%20of%20Improper%20Use)%20Act,1950.pdf"
+    },
+    {
+     "rule": "[read in a High Court library scan of a publisher's edition, not India Code] In practice for a brand, agency or influencer: no PM photo, no national flag, and no 'Govt. approved' or 'Sarkari' style names in commercial ads or brand names. Political-party and government publicity is not trade, business, calling or profession, so it falls under election law (comp:eci_mcc) instead.",
+     "url": "https://thc.nic.in/Central%20Governmental%20Acts/Emblems%20and%20Names%20(%20Prevention%20of%20Improper%20Use)%20Act,1950.pdf"
+    }
+   ],
+   "checks": [
+    "Is the national flag, or any imitation of it, absent from the commercial ad, pack and brand name?",
+    "Are the PM, the President and every named national leader (Gandhi, Nehru, Shivaji Maharaj, Indira Gandhi, Shastri) absent by name and picture from the commercial piece?",
+    "Is the brand or product name free of words that suggest government patronage ('Govt.', 'Sarkari', 'Rashtrapati')?",
+    "Are government or State emblems, seals, medals and UN/WHO/UNESCO/ICAO emblems absent unless the client holds written permission?",
+    "If the piece is political-party or government publicity rather than trade, has election law (comp:eci_mcc) been checked instead?",
+    "If the piece will also run on TV, has comp:cable_tv_advertising_code been checked (no exploiting the national emblem or a national leader)?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:cable_tv_advertising_code",
+    "comp:amazon_in_restricted_products",
+    "comp:eci_mcc",
+    "comp:asci_code",
+    "genre:topical_ad"
+   ]
+  },
+  {
+   "id": "comp:fssai_advertising_claims_2018",
+   "kind": "compliance",
+   "name": "Food Safety and Standards (Advertising and Claims) Regulations, 2018 (FSSAI)",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Advertising_Claims_Regulations_04_03_2021.pdf",
+     "title": "FSSAI: Compendium of Food Safety and Standards (Advertising and Claims) Regulations, 2018 (Version I, 02.03.2021)",
+     "supports": "regs 4 (general principles), 5-9 (nutrition and health claims, Schedule V words), 10 (prohibited claims), 11 (approval of claims)"
+    }
+   ],
+   "status": "current",
+   "summary": "Food Safety and Standards (Advertising and Claims) Regulations, 2018: notified 19 Nov 2018 (No. 1-94/FSSAI/SP(Claims and Advertisements)/2017), compliance due by 1 Jul 2019. The rules below come from FSSAI's own compendium, read 2026-10-04, which is 'Version I (02.03.2021)': later amendments, if any, are not reflected and were not checked, so confidence is medium. They cover food and beverage ads and labels: claims must be truthful and scientifically substantiated, words like natural, fresh, pure, original, traditional and authentic have legal conditions, disease claims and 'recommended by doctors' lines are banned, and no ad may run down another maker's product.",
+   "use_for": [
+    "Food and beverage ads, labels, packs, D2C listings and landing pages",
+    "Influencer and creator posts about food, drinks, snacks, supplements-as-food and health foods",
+    "Menu, hoarding and delivery-app copy that uses 'pure', 'homemade', 'authentic' or 'traditional'",
+    "Comparative food ads and 'better than X' lines"
+   ],
+   "avoid": [
+    "'Pure ghee', 'natural', 'fresh', 'original' or 'authentic' written as free adjectives. Each has legal conditions in the regulations; check the condition (and the product's standard) before using the word, or drop it and state a verifiable fact.",
+    "'Traditional' on a recipe the brand launched last year. The compendium ties 'traditional' to a food that has existed for a generation (thirty years).",
+    "'Homemade' or 'home cooked' on factory output, where it may mislead; the regulations say such wording shall not be used. Say who makes it and how.",
+    "'Cures diabetes', 'prevents heart disease' or 'recommended by doctors'. Disease prevention, alleviation, treatment and cure claims are barred unless specifically permitted, and so are 'recommended by' professional lines. State the nutrient or fact, not the disease.",
+    "'Unlike other namkeens, ours is not harmful' or any line that scares readers off similar foods or undermines another maker's product.",
+    "A misleading brand name left bare. A brand name that may mislead needs the 3 mm disclaimer '*This is only a brand name or trade mark and does not represent its true nature'.",
+    "Using the FSSAI logo or licence number as a selling point; the regulations bar using them to promote sale."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:product_description",
+    "genre:packaging_copy",
+    "genre:marketplace_listing",
+    "genre:restaurant_menu_copy",
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "genre:tvc_script",
+    "genre:print_ad_copy",
+    "genre:d2c_brand_store",
+    "genre:sponsored_creator_post",
+    "genre:influencer_brief",
+    "genre:landing_page",
+    "food and beverage ads and labels"
+   ],
+   "rules": [
+    {
+     "rule": "Claims must be truthful, unambiguous, meaningful and not misleading, and nutrition or health attributes must be scientifically substantiated by validated methods (reg 4(1), 4(6)).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Advertising_Claims_Regulations_04_03_2021.pdf"
+    },
+    {
+     "rule": "Do not encourage or condone excess consumption, suggest that a balanced diet is not enough, undermine the importance of healthy lifestyles, or portray a food as a meal replacement unless permitted (reg 4(2), 4(3), 4(10), 4(11)).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Advertising_Claims_Regulations_04_03_2021.pdf"
+    },
+    {
+     "rule": "'Natural', 'fresh', 'pure', 'original', 'traditional' (a food that has existed for a generation, thirty years), 'authentic', 'genuine' and 'real' may be used only under the conditions in the regulations; 'home-made' or 'home cooked' wording that may mislead shall not be used; a misleading brand name needs the 3 mm disclaimer '*This is only a brand name or trade mark and does not represent its true nature' (reg 4(7), Schedule V).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Advertising_Claims_Regulations_04_03_2021.pdf"
+    },
+    {
+     "rule": "No claim that a food helps the prevention, alleviation, treatment or cure of a disease unless specifically permitted; no 'recommended by the medical or nutrition or health professionals' wording; no fear-arousing claims about similar foods (reg 10(1), 10(2), 10(5)).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Advertising_Claims_Regulations_04_03_2021.pdf"
+    },
+    {
+     "rule": "No advertisement that undermines the products of any other manufacturer (reg 10(7)).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Advertising_Claims_Regulations_04_03_2021.pdf"
+    },
+    {
+     "rule": "Claims in ads must match the label (reg 4(12)); the FSSAI logo and licence number may not be used to promote sale (reg 4(9)).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Advertising_Claims_Regulations_04_03_2021.pdf"
+    },
+    {
+     "rule": "Reduction-of-disease-risk claims need prior FSSAI approval (reg 11).",
+     "url": "https://fssai.gov.in/upload/uploadfiles/files/Compendium_Advertising_Claims_Regulations_04_03_2021.pdf"
+    }
+   ],
+   "checks": [
+    "Is every claim truthful, unambiguous and backed by a validated method or a named basis the client can show?",
+    "Is each use of 'natural', 'fresh', 'pure', 'original', 'traditional', 'authentic', 'genuine', 'real' or 'homemade' checked against its condition in the regulations?",
+    "Is the piece free of any promise to prevent, treat or cure a disease, and of any 'recommended by doctors/nutritionists' line?",
+    "Does the piece avoid encouraging excess consumption or suggesting a normal balanced diet is insufficient?",
+    "Does the ad avoid running down any other maker's product or scaring readers about similar foods?",
+    "Does the wording in the ad match the wording and claims on the label?",
+    "If the brand name could mislead about the food's nature, does the pack carry the brand-name disclaimer?",
+    "Is any 'reduces the risk of [disease]' claim covered by an FSSAI approval the client can show?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:dmr_act_1954",
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:amazon_in_restricted_products",
+    "comp:asci_influencer",
+    "genre:packaging_copy",
+    "genre:product_description"
+   ]
+  },
+  {
+   "id": "comp:gdpr_marketing_consent",
+   "kind": "compliance",
+   "name": "GDPR lawful basis and consent for marketing (Regulation (EU) 2016/679 Articles 6, 7 and 21)",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://gdpr-info.eu/art-6-gdpr/",
+     "title": "gdpr-info.eu: Art. 6 GDPR Lawfulness of processing",
+     "supports": "Art 6(1)(a) consent for specific purposes; Art 6(1)(f) legitimate interests"
+    },
+    {
+     "url": "https://gdpr-info.eu/art-7-gdpr/",
+     "title": "gdpr-info.eu: Art. 7 GDPR Conditions for consent",
+     "supports": "consent request clearly distinguishable, plain language, withdrawal as easy as giving, no bundling with a contract"
+    },
+    {
+     "url": "https://gdpr-info.eu/art-21-gdpr/",
+     "title": "gdpr-info.eu: Art. 21 GDPR Right to object",
+     "supports": "absolute right to object to direct marketing, to be flagged at the first communication"
+    }
+   ],
+   "status": "current",
+   "summary": "In force: Regulation (EU) 2016/679 (GDPR). Article text was read on gdpr-info.eu, an unofficial but verbatim reprint, on 2026-10-04, so confidence is medium. For marketing to EU residents: you need a lawful basis (consent or legitimate interests), consent must be specific, separate from other matters, in plain language and as easy to withdraw as to give, and an objection to direct marketing is absolute. Email and SMS marketing also need the national ePrivacy rules implementing Directive 2002/58/EC Art 13 (UK: comp:uk_pecr); that point is a pointer from the harvest note, not from the three articles.",
+   "use_for": [
+    "Opt-in checkbox, sign-up form and lead-magnet copy aimed at EU residents",
+    "Email and SMS campaigns, welcome and nurture sequences going to EU subscribers",
+    "Unsubscribe and 'you can object any time' footer lines",
+    "Reviewing 'free download' pages that bundle marketing consent"
+   ],
+   "avoid": [
+    "A pre-ticked box or a marketing clause buried inside the terms. Write a separate, unticked opt-in in plain language, e.g. 'Send me offers by email', clearly apart from other matters.",
+    "'Download the guide' only after agreeing to marketing the guide does not need. Do not make a service or download conditional on marketing consent that the service does not need (Art 7(4)).",
+    "An unsubscribe that takes three steps or a login. It must be as easy to withdraw consent as to give it: one click in every message.",
+    "Relying on 'legitimate interests' for marketing to children. Article 6(1)(f) names children specifically as a case where those interests can be overridden.",
+    "Continuing to market after someone objects. Objection to direct marketing is absolute; the data may no longer be processed for that purpose.",
+    "Hiding the right to object in the privacy policy only. It must be explicitly brought to the person's attention at the first communication, clearly and separately."
+   ],
+   "jurisdiction": "EU",
+   "applies_to": [
+    "genre:promotional_email",
+    "genre:cold_email",
+    "genre:email_sequence_nurture",
+    "genre:welcome_email_series",
+    "genre:winback_email",
+    "genre:abandoned_cart_email",
+    "genre:post_purchase_email",
+    "genre:lead_magnet_content",
+    "genre:ebook_lead_magnet",
+    "genre:landing_page",
+    "genre:order_form_checkout_copy",
+    "genre:sms_marketing",
+    "genre:creator_newsletter",
+    "marketing aimed at EU residents"
+   ],
+   "rules": [
+    {
+     "rule": "[text read on gdpr-info.eu, an unofficial but verbatim reprint of the Regulation] Consent counts as a lawful basis only when given for one or more specific purposes (Art 6(1)(a)).",
+     "url": "https://gdpr-info.eu/art-6-gdpr/"
+    },
+    {
+     "rule": "[text read on gdpr-info.eu, an unofficial but verbatim reprint of the Regulation] Without consent the brand must rely on another basis such as legitimate interests, which fail where overridden by the interests or fundamental rights of the person, in particular where the data subject is a child (Art 6(1)(f)).",
+     "url": "https://gdpr-info.eu/art-6-gdpr/"
+    },
+    {
+     "rule": "[text read on gdpr-info.eu, an unofficial but verbatim reprint of the Regulation] A consent request inside a document that covers other matters must be clearly distinguishable from them, in clear and plain language (Art 7(2)): a separate, unticked marketing opt-in, never buried in terms.",
+     "url": "https://gdpr-info.eu/art-7-gdpr/"
+    },
+    {
+     "rule": "[text read on gdpr-info.eu, an unofficial but verbatim reprint of the Regulation] It shall be as easy to withdraw consent as to give it (Art 7(3)): every email or message carries an easy opt-out.",
+     "url": "https://gdpr-info.eu/art-7-gdpr/"
+    },
+    {
+     "rule": "[text read on gdpr-info.eu, an unofficial but verbatim reprint of the Regulation] Do not make a service or download conditional on marketing consent that the service does not need (Art 7(4)).",
+     "url": "https://gdpr-info.eu/art-7-gdpr/"
+    },
+    {
+     "rule": "[text read on gdpr-info.eu, an unofficial but verbatim reprint of the Regulation] A person's objection to direct marketing is absolute: the personal data shall no longer be processed for such purposes, and the right must be explicitly brought to the person's attention, clearly and separately, at the first communication (Art 21(2)-(4)).",
+     "url": "https://gdpr-info.eu/art-21-gdpr/"
+    }
+   ],
+   "checks": [
+    "Is the marketing opt-in a separate, unticked box in plain language, clearly distinguishable from terms and other matters?",
+    "Does the consent text name the specific purpose (e.g. 'offers by email') rather than a vague 'updates and more'?",
+    "Is the download, trial or purchase available without agreeing to marketing the service does not need?",
+    "Does every email or message carry a withdrawal route as easy as the sign-up (one click)?",
+    "Is the right to object to direct marketing stated clearly and separately in the first message?",
+    "Is a person who has objected excluded from all further marketing for that purpose?",
+    "If the audience may include children, is the copy relying on consent or checked against the child-interest limit on legitimate interests?",
+    "For email or SMS, has the national ePrivacy rule (or comp:uk_pecr for the UK) been checked as well?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:uk_pecr",
+    "comp:dpdp_act_rules",
+    "comp:can_spam",
+    "comp:eu_dsa_ad_transparency",
+    "genre:promotional_email",
+    "genre:email_sequence_nurture",
+    "trend:email_deliverability_rules"
+   ]
+  },
+  {
+   "id": "comp:gigw_3",
+   "kind": "compliance",
+   "name": "Guidelines for Indian Government Websites and Apps (GIGW) 3.0",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://guidelines.india.gov.in/introduction/",
+     "title": "NIC / India Portal: Guidelines for Indian Government Websites and apps (GIGW 3.0), Introduction (last updated Sep 25, 2026)",
+     "supports": "history (2009, 2.0 in 2019, 3.0), joint formulation with STQC and CERT-In, CQW certification expectation"
+    },
+    {
+     "url": "https://guidelines.india.gov.in/accessibility-guidelines-and-attributes/",
+     "title": "GIGW 3.0: Accessibility guidelines and attributes",
+     "supports": "success criteria adopted from WCAG 2.1, with 'Government organisation action' for each (e.g. 5.2.1 text alternatives, 5.2.3 captions, 5.2.30 link purpose, 5.2.38-39 language)"
+    }
+   ],
+   "status": "current",
+   "summary": "Current on the official GIGW portal (page 'Last Updated: Sep 25, 2026', read 2026-10-04); GIGW 3.0's own release date was not shown on the pages read. It applies to government websites, portals, web apps and mobile apps, so it binds content written for ministries, departments, PSUs and government-hosted sites. Its accessibility criteria are adopted from WCAG 2.1, each with a content-owner ('Government organisation') action, and organisations are expected to be assessed and certified by STQC. General standard behind it: comp:wcag_22; the statute: comp:rpwd_act_accessibility.",
+   "use_for": [
+    "Copy, alt text, captions and link text for ministry, department and PSU websites and apps",
+    "Scheme explainers, press notes and PSA pages that sit on a government-hosted site",
+    "Bilingual Hindi-English pages where the language of each part must be marked",
+    "Briefs from government clients that ask for GIGW or CQW compliance"
+   ],
+   "avoid": [
+    "Alt text that says 'Picture', 'image' or 'photo'. GIGW says that description of a graphic does not serve any purpose; write what the picture shows or does ('Minister handing a cheque to a self-help group member').",
+    "A decorative image given explanatory alt text. Decorative images get a blank alt.",
+    "'Click here' and 'Read more' links. The purpose of each link must be clear from the link text or its context.",
+    "A video or audio with no captions or transcript. Captions for pre-recorded audio in synchronised media, transcripts for audio-only.",
+    "A Hindi block on an English page with no language marking. Page language and changes of language must be programmatically identified; tell the developer which passages are Hindi."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:government_press_note",
+    "genre:scheme_explainer",
+    "genre:alt_text",
+    "genre:faq_page",
+    "genre:photo_caption",
+    "genre:ux_microcopy",
+    "genre:error_messages",
+    "genre:homepage_copy",
+    "Indian government websites, portals and apps"
+   ],
+   "rules": [
+    {
+     "rule": "The accessibility criteria have been adopted from the W3C Web Content Accessibility Guidelines (WCAG 2.1); each names a 'Government organisation action' (the content owner) and a 'Developer action'.",
+     "url": "https://guidelines.india.gov.in/accessibility-guidelines-and-attributes/"
+    },
+    {
+     "rule": "5.2.1: a meaningful explanatory text equivalent must be specified for images and other non-text content; using the description 'Picture' to explain a graphic does not serve any purpose. Decorative images get a blank alt.",
+     "url": "https://guidelines.india.gov.in/accessibility-guidelines-and-attributes/"
+    },
+    {
+     "rule": "5.2.3: captions for all pre-recorded audio in synchronised media; 5.2.2: transcripts for audio-only content.",
+     "url": "https://guidelines.india.gov.in/accessibility-guidelines-and-attributes/"
+    },
+    {
+     "rule": "5.2.30: the purpose of each link must be clear from the link text or its context.",
+     "url": "https://guidelines.india.gov.in/accessibility-guidelines-and-attributes/"
+    },
+    {
+     "rule": "5.2.38-5.2.39: the page language, and changes of language within the page, must be programmatically identified (matters for bilingual Hindi-English pages).",
+     "url": "https://guidelines.india.gov.in/accessibility-guidelines-and-attributes/"
+    },
+    {
+     "rule": "Organisations are expected to assess their sites against GIGW 3.0 and obtain CQW certification from the STQC Directorate.",
+     "url": "https://guidelines.india.gov.in/introduction/"
+    }
+   ],
+   "checks": [
+    "Does every informative image have alt text that says what it shows or does, not 'picture' or 'image'?",
+    "Do decorative images carry a blank alt rather than a description?",
+    "Do all pre-recorded videos have captions and all audio-only items a transcript?",
+    "Can each link's purpose be understood from its text or its sentence ('Read the scheme guidelines', not 'Click here')?",
+    "Are the language of the page and each switch between Hindi and English marked for the developer?",
+    "Has the client been told that the site is expected to be assessed against GIGW 3.0 and certified by STQC?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:wcag_22",
+    "comp:rpwd_act_accessibility",
+    "tech:image_alt_text",
+    "edit:alt_text_check",
+    "edit:accessible_writing_check",
+    "genre:scheme_explainer",
+    "genre:government_press_note"
+   ]
+  },
+  {
+   "id": "comp:irdai_insurance_ads",
+   "kind": "compliance",
+   "name": "IRDAI rules for insurance advertisements (Master Circular on Protection of Policyholders' Interests, 2024)",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://www.caalley.com/irdai_mc/MC_Protection_of_Policyholders_interests_2024.pdf",
+     "title": "IRDAI/PP&GR/CIR/MISC/117/9/2024 dated 5 Sep 2024: Master Circular on Protection of Policyholders' Interests, 2024 (copy hosted by CAalley, a third-party site)",
+     "supports": "'Advertisements' section of the customer information sheets; pilot-product publicity disclosures"
+    }
+   ],
+   "status": "current",
+   "summary": "STATUS PARTLY CONFIRMED. The Master Circular on Protection of Policyholders' Interests, 2024 (IRDAI/PP&GR/CIR/MISC/117/9/2024, dated 5 Sep 2024) is the text read, from a third-party copy on CAalley because irdai.gov.in was not reachable on 2026-10-04: medium confidence. Whether IRDAI's earlier stand-alone Insurance Advertisements and Disclosure Regulations, 2021 are still in force or were subsumed in the 2024 overhaul was NOT confirmed; read irdai.gov.in before advising an insurer. Influencers talking about insurance must also show their IRDAI licence upfront (comp:asci_influencer).",
+   "use_for": [
+    "Insurer and distribution-channel ads, reels and social posts about a named insurance product",
+    "Banners, pamphlets, newspaper and TV/radio ads for insurance",
+    "Closing lines and disclaimers on any insurance explainer that mentions a product"
+   ],
+   "avoid": [
+    "A product post, reel caption or banner with no insurer name and no UIN. Both must appear wherever a product is advertised; keep a standard footer block.",
+    "Writing the ad as if it is the full terms. The circular says information in ads is indicative and may not give complete details of the product; do not claim completeness.",
+    "Ending on a bonus or return promise. Point the prospect to the product prospectus and the customised benefit illustration instead (the item's advice: do not close on a guaranteed-return promise).",
+    "Publicity for a pilot product that does not say so. All sales and publicity material must disclose that the product is a pilot and close-ended.",
+    "Leaving an influencer's licence off the creative; see comp:asci_influencer."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:social_ad_copy",
+    "genre:instagram_caption",
+    "genre:short_form_video_script",
+    "genre:video_ad_script",
+    "genre:tvc_script",
+    "genre:radio_spot_script",
+    "genre:print_ad_copy",
+    "genre:display_banner_ad_copy",
+    "genre:brochure_copy",
+    "genre:landing_page",
+    "genre:sponsored_creator_post",
+    "genre:influencer_brief",
+    "insurance ads and social media circulations"
+   ],
+   "rules": [
+    {
+     "rule": "(source: third-party copy of the circular on CAalley, not irdai.gov.in) Insurers and distribution channels may advertise on TV, radio, 'social media circulations', newspapers and pamphlets; the information in such ads is 'indicative and may not provide complete details of the product'.",
+     "url": "https://www.caalley.com/irdai_mc/MC_Protection_of_Policyholders_interests_2024.pdf"
+    },
+    {
+     "rule": "(source: third-party copy of the circular on CAalley, not irdai.gov.in) Insurance advertisements carry the registered name of the insurer and the unique identification number (UIN) of the insurance product, wherever an insurance product is advertised: put both in every product post, reel caption and banner.",
+     "url": "https://www.caalley.com/irdai_mc/MC_Protection_of_Policyholders_interests_2024.pdf"
+    },
+    {
+     "rule": "(source: third-party copy of the circular on CAalley, not irdai.gov.in) The prospect should read the prospectus of the product along with the customised benefit illustration before buying: close with a pointer to them.",
+     "url": "https://www.caalley.com/irdai_mc/MC_Protection_of_Policyholders_interests_2024.pdf"
+    },
+    {
+     "rule": "(source: third-party copy of the circular on CAalley, not irdai.gov.in) For pilot products, all sales and publicity material must disclose that the product is a pilot and close-ended.",
+     "url": "https://www.caalley.com/irdai_mc/MC_Protection_of_Policyholders_interests_2024.pdf"
+    }
+   ],
+   "checks": [
+    "Does every product post, reel caption, banner or ad name the insurer exactly as registered?",
+    "Does it show the product's UIN?",
+    "Does the closing line send the reader to the prospectus and customised benefit illustration?",
+    "Is the piece free of any guaranteed-return promise and of any suggestion that it gives the product's complete details?",
+    "If the product is a pilot, does every sales and publicity item say it is a pilot and close-ended?",
+    "If an influencer fronts the piece, is their IRDAI licence shown upfront (comp:asci_influencer)?",
+    "Has the client confirmed whether the 2021 stand-alone advertisement regulations still apply (status not confirmed here)?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:asci_influencer",
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:sebi_finfluencer_association",
+    "comp:endorsement_know_hows",
+    "genre:social_ad_copy"
+   ]
+  },
+  {
+   "id": "comp:meta_advertising_standards",
+   "kind": "compliance",
+   "name": "Meta Advertising Standards (Facebook, Instagram, Messenger, WhatsApp ads): personal attributes and health claims",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/",
+     "title": "Meta Transparency Center: Introduction to the Advertising Standards",
+     "supports": "principles, review process, advertiser responsibility for local law and self-regulatory codes"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/",
+     "title": "Meta Transparency Center: Privacy Violations and Personal Attributes (change log latest Jun 27, 2024)",
+     "supports": "ban on asserting or implying personal attributes, with allowed and disallowed copy examples"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/",
+     "title": "Meta Transparency Center: Health and Wellness (change log latest Jul 22, 2026)",
+     "supports": "18+ targeting for weight-loss/cosmetic ads, no inferiority statements, no cure claims for listed diseases, no clickbait timed outcomes"
+    }
+   ],
+   "status": "current",
+   "summary": "Meta's own Transparency Center pages (read in a browser 2026-10-04; change logs: Privacy Violations and Personal Attributes latest Jun 27, 2024, Health and Wellness latest Jul 22, 2026) apply to ads on Facebook, Instagram, Messenger and WhatsApp. Ad copy must not assert or imply a viewer's personal attributes, must not attack appearance or promise cures or timed results for weight-loss, cosmetic and health products, and must follow local law and self-regulatory codes. Branded content and political ads: comp:meta_branded_content, comp:meta_siep_ads.",
+   "use_for": [
+    "Facebook and Instagram ad copy, headlines and video scripts, especially health, beauty, weight-loss, finance and counselling offers",
+    "Targeted ads where a line speaks directly to the viewer's situation",
+    "Boosted creator posts and partnership ads that run as Meta ads"
+   ],
+   "avoid": [
+    "'Are you diabetic?' 'Tired of your thyroid?' 'Are you in debt?' Lines that assert or imply a personal attribute (health, financial status, religion, age and others) are rejected. Name the offer instead: 'Diabetes diet plans by a registered dietitian', 'Debt counselling service'. 'You/your' is fine only when no attribute is attached.",
+    "'Lose 8 kg in 30 days' or other promises of a specific outcome within a set timeframe without disclaimers or qualifiers; Meta treats that as clickbait. Describe the programme and what it includes.",
+    "Before-and-after framing or lines that say the viewer's body is inferior. Weight-loss, diet and cosmetic ads may not contain statements of inferiority about physical appearance.",
+    "'Cures', 'heals' or 'eliminates' for diabetes, thyroid, psoriasis, cancer, HIV and the other listed conditions. Describe support or management (symptom-management claims are outside this particular rule) and still check the Indian rules.",
+    "Assuming Meta approval equals Indian legal clearance. Advertisers must also follow local laws and self-regulatory codes: in India that means comp:asci_code, comp:dmr_act_1954 and comp:fssai_advertising_claims_2018 on top."
+   ],
+   "jurisdiction": "Meta",
+   "applies_to": [
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "genre:ugc_ad_script",
+    "genre:display_banner_ad_copy",
+    "Facebook, Instagram, Messenger and WhatsApp ads",
+    "boosted creator posts and partnership ads"
+   ],
+   "rules": [
+    {
+     "rule": "Ads must not contain content that asserts or implies personal attributes, including race, religion, age, sexual orientation, gender identity, disability, physical or mental health, 'vulnerable financial status', voting status, criminal record or name. Meta's own examples allow a plain service name such as 'Depression counseling' but reject a question aimed at the reader's condition ('Depression getting you down? ...') and 'Are you bankrupt?'-style lines.",
+     "url": "https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/"
+    },
+    {
+     "rule": "Weight-loss, diet and cosmetic ads must target people aged 18 and over, and may not contain statements of inferiority about physical appearance.",
+     "url": "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/"
+    },
+    {
+     "rule": "No claims to cure, heal or eliminate the conditions on Meta's list: Diabetes, Herpes, Thyroid, Psoriasis, Ebola, Cancer, Autism, Alzheimer's, Parkinson's, ALS and HIV. Symptom-management claims are outside this rule.",
+     "url": "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/"
+    },
+    {
+     "rule": "No clickbait: sensational language with exaggerated or extreme claims, or promises of specific outcomes within a set timeframe without disclaimers or qualifiers.",
+     "url": "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/"
+    },
+    {
+     "rule": "Advertisers must comply with all local laws, regulations and, where applicable, self-regulatory advertising codes.",
+     "url": "https://transparency.meta.com/policies/ad-standards/"
+    }
+   ],
+   "checks": [
+    "Does the copy talk about the product or service rather than assert or imply anything about the viewer's health, finances, religion, age, disability or other attribute?",
+    "Where the copy says 'you' or 'your', is no personal attribute attached to it?",
+    "Is the piece free of 'cure', 'heal' or 'eliminate' claims for the conditions on Meta's list?",
+    "Is there any promise of a specific result in a fixed time, and if so does it carry a disclaimer or qualifier (better: remove it)?",
+    "For weight-loss, diet or cosmetic ads: is the audience set to 18+ and is the copy free of statements that the viewer's appearance is inferior?",
+    "Has the copy also passed the Indian rules that apply (ASCI Code, DMR Act, FSSAI claims)?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:meta_branded_content",
+    "comp:meta_siep_ads",
+    "comp:meta_ai_labels",
+    "comp:asci_code",
+    "comp:dmr_act_1954",
+    "comp:fssai_advertising_claims_2018",
+    "plat:meta_ads",
+    "genre:social_ad_copy"
+   ]
+  },
+  {
+   "id": "comp:meta_siep_ads",
+   "kind": "compliance",
+   "name": "Meta policy on ads about social issues, elections or politics (authorisation and 'Paid for by' disclaimer, incl. India)",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/SIEP-advertising/SIEP/",
+     "title": "Meta Transparency Center: Ads about Social Issues, Elections or Politics (change log latest Jul 1, 2026)",
+     "supports": "authorisation requirement, Paid for by disclaimer, AI disclosure, automated AI detection from 1 Jun 2026, country rules for India"
+    }
+   ],
+   "status": "current",
+   "summary": "Meta's policy page on ads about social issues, elections or politics (change log latest entry Jul 1, 2026; page read in a browser 2026-10-04) is in force. Anyone running a Meta ad by or about a candidate, party, election, referendum, get-out-the-vote campaign or any social issue must complete Meta's authorisation and carry a verified 'Paid for by' disclaimer, must disclose realistic AI-made or AI-edited media, and in India must not discourage voting or question an election's legitimacy. India's authorisation steps sit in Meta's Business Help Center (facebook.com/id), which was not read.",
+   "use_for": [
+    "Facebook and Instagram ads from or about a political party, candidate or leader",
+    "Advocacy, PSA-style and nonprofit ads about a social issue",
+    "Election, referendum and get-out-the-vote creative",
+    "Any ad that uses photorealistic AI imagery, video or audio of a real or realistic person or event"
+   ],
+   "avoid": [
+    "Running a party or issue ad from an unauthorised account. Authorisation comes first, then the verified 'Paid for by' disclaimer; without the disclaimer the ad is disapproved and still goes into the Ad Library.",
+    "A realistic AI clip of a leader saying something they did not say, with no disclosure. Disclose photorealistic or realistic-audio AI media that depicts a real person saying or doing something they did not, a realistic person or event that does not exist, or a fake recording of a real event; Meta rejects ads that do not disclose, and from 1 Jun 2026 also auto-detects and labels 'AI Info'.",
+    "'Don't bother voting, it is rigged' or 'results are already decided' lines in India. Ads must not discourage people from voting, call into question the legitimacy of an upcoming or ongoing election, or claim victory prematurely.",
+    "Treating Meta approval as clearance of Indian election rules. The advertiser must still follow local disclaimer, blackout-period and spending rules; in India check comp:eci_mcc (MCMC pre-certification) and comp:eci_ai_content_advisory.",
+    "Assuming a news publisher's ad is automatically exempt. The exemption covers news publishers Meta has identified; a brand or party page is not one."
+   ],
+   "jurisdiction": "Meta",
+   "applies_to": [
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "genre:ugc_ad_script",
+    "genre:campaign_slogan",
+    "genre:public_service_announcement",
+    "genre:fundraising_appeal",
+    "Meta ads about elections, politics or social issues"
+   ],
+   "rules": [
+    {
+     "rule": "Any advertiser located in or targeting people in designated countries must complete Meta's authorisation for ads made by, on behalf of or about a candidate, political figure or party; about any election, referendum or 'get out the vote' campaign; or about any social issue. News publishers identified by Meta are exempt.",
+     "url": "https://transparency.meta.com/policies/ad-standards/SIEP-advertising/SIEP/"
+    },
+    {
+     "rule": "Such ads need a verified 'Paid for by' disclaimer; without it the ad is disapproved and is still added to the Ad Library.",
+     "url": "https://transparency.meta.com/policies/ad-standards/SIEP-advertising/SIEP/"
+    },
+    {
+     "rule": "Advertisers must also disclose photorealistic images, video or realistic audio made or edited with third-party generative AI that depict a real person saying or doing something they did not, a realistic person or event that does not exist, or a fake recording of a real event; non-disclosure means rejection, with penalties for repeat failures. From June 1, 2026 Meta also auto-detects such content and shows an 'AI Info' label.",
+     "url": "https://transparency.meta.com/policies/ad-standards/SIEP-advertising/SIEP/"
+    },
+    {
+     "rule": "In India (with the US, Brazil, Israel, Mexico and the UK) ads must not discourage people from voting or call into question the legitimacy of an upcoming or ongoing election, or contain premature claims of election victory.",
+     "url": "https://transparency.meta.com/policies/ad-standards/SIEP-advertising/SIEP/"
+    },
+    {
+     "rule": "The advertiser must still comply with local disclaimer, blackout-period and spending rules; in India pair this with comp:eci_mcc (MCMC pre-certification) and comp:eci_ai_content_advisory.",
+     "url": "https://transparency.meta.com/policies/ad-standards/SIEP-advertising/SIEP/"
+    }
+   ],
+   "penalty": "Per the Meta page: an ad without a verified 'Paid for by' disclaimer is disapproved (and still added to the Ad Library); an ad that does not disclose realistic AI-made or AI-edited media is rejected, with penalties for repeat failures (the page gives no amounts).",
+   "checks": [
+    "Is the advertiser account authorised by Meta for ads about elections, politics or social issues?",
+    "Does the ad carry a verified 'Paid for by' disclaimer?",
+    "If the ad uses photorealistic AI images, video or realistic audio of a real or realistic person or event, is that AI use disclosed in the ad settings?",
+    "Is the ad free of any line that discourages voting, questions the legitimacy of the election, or claims victory before the result?",
+    "Has the copy been checked for Indian election rules (comp:eci_mcc, comp:eci_ai_content_advisory), including MCMC pre-certification where required?",
+    "If the ad is about a social issue (not a candidate), has it still been treated as in scope for authorisation?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:eci_mcc",
+    "comp:eci_ai_content_advisory",
+    "comp:meta_advertising_standards",
+    "comp:meta_ai_labels",
+    "comp:google_election_ads",
+    "comp:rpa_s127a_election_print",
+    "plat:meta_ads",
+    "trend:ai_disclosure_rules"
+   ]
+  },
+  {
+   "id": "comp:rbi_digital_lending_2025",
+   "kind": "compliance",
+   "name": "Reserve Bank of India (Digital Lending) Directions, 2025",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12848",
+     "title": "RBI notification RBI/2025-26/36, DOR.STR.REC.19/21.07.001/2025-26 dated 8 May 2025: Reserve Bank of India (Digital Lending) Directions, 2025",
+     "supports": "commencement (para 2), multi-lender display and dark-pattern ban (para 6), disclosures and KFS (para 8), consent for data (para 12)"
+    }
+   ],
+   "status": "current",
+   "summary": "Reserve Bank of India (Digital Lending) Directions, 2025: RBI notification RBI/2025-26/36 dated 8 May 2025, read on RBI's own site 2026-10-04. In force immediately except para 6 (multi-lender display) from 1 Nov 2025 and para 17 (DLA directory) from 15 Jun 2025 (para 2). They consolidate the 2 Sep 2022 digital lending guidelines; whether RBI has since folded them into a later consolidated master direction was not checked. For fintech, loan-app and finfluencer copy: show lender name, APR and repayment side by side, avoid dark patterns that push one lender, and take explicit, purpose-stated consent before collecting data. Dark patterns are defined by reference to comp:ccpa_dark_patterns_2023.",
+   "use_for": [
+    "Loan-app, lending-service-provider and fintech marketplace copy: offer screens, banners, push notifications and onboarding text",
+    "Loan comparison pages and ads that show several lenders",
+    "Consent and permission screens in lending apps",
+    "Finfluencer and affiliate content that promotes a named loan app"
+   ],
+   "avoid": [
+    "Advertising a loan without the lender's name. The offer view must name the lender; write 'Loan from [lender name]', not an app-only banner.",
+    "A teaser 'flat' or 'starting from' rate. Quote the APR with amount, tenor, monthly repayment and penal charges so the borrower can compare fairly.",
+    "'Best loan for you' or a highlighted default that pushes one lender when several are shown. Content must be unbiased and objective; rank only on a publicly pre-disclosed metric.",
+    "Urgency and nudges that steer the choice ('only 2 minutes left, take this offer'): the Directions bar dark or deceptive patterns in promoting a product.",
+    "'Allow contacts and gallery for faster approval' CTAs. Data is collected only with prior and explicit consent, with the purpose disclosed at each stage (the item note reads this as ruling out contact-list or gallery access CTAs).",
+    "Hiding the Key Fact Statement or the cooling-off exit. Tell the borrower both exist; the exit period is not less than one day."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:comparison_table_copy",
+    "genre:comparison_page",
+    "genre:affiliate_review",
+    "genre:app_store_listing",
+    "genre:landing_page",
+    "genre:social_ad_copy",
+    "genre:sponsored_creator_post",
+    "genre:push_notification",
+    "genre:ux_microcopy",
+    "genre:onboarding_flow_copy",
+    "genre:sms_marketing",
+    "loan apps and lending service providers"
+   ],
+   "rules": [
+    {
+     "rule": "Where a lending service provider works with several lenders, the content it displays shall be unbiased, objective and shall not directly or indirectly promote or push a product of a particular regulated entity, including through dark patterns or deceptive patterns; ranking is allowed only on a publicly pre-disclosed metric (para 6(iv); para 6 applies from 1 Nov 2025).",
+     "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12848"
+    },
+    {
+     "rule": "The loan-offer view must name the lender and show amount, tenor, APR, monthly repayment and penal charges in a way that enables the borrower to make a fair comparison (para 6(iii)): never advertise a loan without the lender's name, and quote APR, not a teaser 'flat' rate.",
+     "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12848"
+    },
+    {
+     "rule": "The borrower gets a Key Fact Statement and a cooling-off exit of not less than one day (paras 8 and 10).",
+     "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12848"
+    },
+    {
+     "rule": "Data may be collected only with prior and explicit consent, with its purpose disclosed at each stage (para 12).",
+     "url": "https://www.rbi.org.in/scripts/FS_Notification.aspx?Id=12848"
+    }
+   ],
+   "checks": [
+    "Does every loan offer or ad name the lender?",
+    "Are amount, tenor, APR, monthly repayment and penal charges shown together, with APR rather than a flat-rate teaser?",
+    "If several lenders are shown, is ranking based on a metric that is disclosed publicly, with no lender pushed through default selection or nudging?",
+    "Is the copy free of dark or deceptive patterns (false urgency, hidden costs, misleading defaults: comp:ccpa_dark_patterns_2023)?",
+    "Does the app tell the borrower about the Key Fact Statement and the cooling-off exit?",
+    "Does every data permission ask explicitly, state its purpose at that step, and avoid bundling contacts or gallery access into approval?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:ccpa_dark_patterns_2023",
+    "comp:asci_code",
+    "comp:sebi_finfluencer_association",
+    "comp:asci_influencer",
+    "comp:dpdp_act_rules",
+    "genre:comparison_table_copy"
+   ]
+  },
+  {
+   "id": "comp:rpa_s127a_election_print",
+   "kind": "compliance",
+   "name": "Representation of the People Act, 1951 section 127A: printer and publisher on election pamphlets and posters",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://indiankanoon.org/doc/132896081/",
+     "title": "Indian Kanoon (secondary reproduction of statute text): Section 127A in The Representation of the People Act, 1951",
+     "supports": "full text of s.127A(1)-(4)"
+    },
+    {
+     "url": "https://legislative.gov.in/electionlawsrelated/representation-people-act-1951-act-no-43-1951",
+     "title": "Legislative Department, Ministry of Law and Justice: Representation of the People Act, 1951 (Act No. 43 of 1951)",
+     "supports": "official landing page for the Act (page body did not load for the fetch client on 2026-10-04)"
+    }
+   ],
+   "status": "current",
+   "summary": "In force (Representation of the People Act, 1951, section 127A). Section text was read on Indian Kanoon, a secondary but verbatim reproduction, on 2026-10-04; the Legislative Department page returned no body to the fetch client, so confidence in currency is medium. Every printed election pamphlet or poster must bear, on its face, the names and addresses of its printer and publisher, backed by a signed, attested publisher declaration sent with a copy to the election authorities. The section speaks of printed documents; digital campaign ads go through ECI's MCMC pre-certification (comp:eci_mcc) and platform disclaimers (comp:meta_siep_ads, comp:google_election_ads).",
+   "use_for": [
+    "Posters, pamphlets, hand-bills, placards and print ads made for a candidate during an election",
+    "Final-artwork checklists for campaign printers and designers",
+    "Briefing a party's IT cell on what must be on a print file before it goes to press"
+   ],
+   "avoid": [
+    "Sending poster artwork to press with no imprint line. The printer and publisher names and addresses are part of the copy on the face of the piece; add 'Printed by [name, address]. Published by [name, address].' to every file.",
+    "Treating the line as design clutter and shrinking or cropping it out. It must be on the face of the document.",
+    "Forgetting the paperwork. The publisher gives the printer a signed identity declaration attested by two persons personally known to him, and the printer sends a copy with the document to the Chief Electoral Officer or the district magistrate.",
+    "Assuming a meeting-date notice or routine instruction to workers needs the same treatment. The section excludes those; everything meant to promote or prejudice a candidate's election is covered.",
+    "Applying this section to a Reel or a Facebook ad. Digital campaign material follows the MCMC and platform rules instead."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:campaign_slogan",
+    "genre:print_ad_copy",
+    "genre:ooh_billboard_copy",
+    "genre:direct_mail_package",
+    "election pamphlets, hand-bills, placards and posters"
+   ],
+   "rules": [
+    {
+     "rule": "[secondary source: Indian Kanoon reprint of the section; the Legislative Department page returned no body] Section 127A(1): no person shall print or publish, or cause to be printed or published, any election pamphlet or poster which does not bear on its face the names and addresses of the printer and the publisher.",
+     "url": "https://indiankanoon.org/doc/132896081/"
+    },
+    {
+     "rule": "[secondary source: Indian Kanoon reprint of the section; the Legislative Department page returned no body] Section 127A(2): the publisher gives the printer a signed declaration of identity, attested by two persons to whom he is personally known, and the printer sends a copy of it with the document to the Chief Electoral Officer (state capital) or the district magistrate.",
+     "url": "https://indiankanoon.org/doc/132896081/"
+    },
+    {
+     "rule": "[secondary source: Indian Kanoon reprint of the section; the Legislative Department page returned no body] Section 127A(3): 'printing' is any process for multiplying copies other than copying by hand; an 'election pamphlet or poster' is any printed material for the purpose of promoting or prejudicing the election of a candidate, excluding mere meeting-date notices and routine instructions to workers.",
+     "url": "https://indiankanoon.org/doc/132896081/"
+    }
+   ],
+   "penalty": "[secondary source: Indian Kanoon reprint] Section 127A(4): imprisonment up to six months, or fine up to two thousand rupees, or both.",
+   "checks": [
+    "Does the face of the poster or pamphlet carry the printer's name and address?",
+    "Does it also carry the publisher's name and address?",
+    "Is the imprint line on the face of the piece at the printed size, not cropped or hidden by the layout?",
+    "Has the publisher signed and had attested the identity declaration, and will the printer send a copy to the Chief Electoral Officer or the district magistrate?",
+    "Is the piece actually printed (poster, pamphlet, hand-bill, placard) as opposed to digital, which needs the MCMC and platform route?",
+    "If it also runs as a digital ad, have comp:eci_mcc and comp:meta_siep_ads been checked?"
+   ],
+   "confidence": "medium",
+   "related": [
+    "comp:eci_mcc",
+    "comp:meta_siep_ads",
+    "comp:google_election_ads",
+    "comp:eci_ai_content_advisory",
+    "genre:campaign_slogan",
+    "genre:election_manifesto"
+   ]
+  },
+  {
+   "id": "comp:rpwd_act_accessibility",
+   "kind": "compliance",
+   "name": "Rights of Persons with Disabilities Act, 2016: accessibility of information, media and services (ss.40, 42, 46, 89)",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://cdnbbsr.s3waas.gov.in/s3e58aea67b01fa747687f038dfde066f6/uploads/2023/10/202310161053958942.pdf",
+     "title": "Department of Empowerment of Persons with Disabilities (linked from depwd.gov.in/en/acts): The Rights of Persons with Disabilities Act, 2016 (No. 49 of 2016), gazette text",
+     "supports": "text of ss.40, 42, 46 and 89"
+    },
+    {
+     "url": "https://depwd.gov.in/en/acts/",
+     "title": "Department of Empowerment of Persons with Disabilities: Acts and Rules",
+     "supports": "links to the Act, the RPwD Rules and the RPwD (Amendment) Rules, 2023 on accessibility standards for ICT products and services (that PDF timed out on 2026-10-04)"
+    }
+   ],
+   "status": "current",
+   "summary": "Rights of Persons with Disabilities Act, 2016 (Act No. 49 of 2016, dated 27 Dec 2016), gazette text read 2026-10-04 from the Department of Empowerment of Persons with Disabilities. Government must ensure audio, print and electronic media content is in accessible format with audio description, sign language and closed captions, and government and private service providers must follow the accessibility rules framed under it. The 2023 amendment rules on accessibility standards for ICT products and services are listed on the DEPwD site, but their PDF could not be downloaded, so which standard they prescribe is NOT confirmed here.",
+   "use_for": [
+    "Government and PSU explainers, PSAs and videos that need captions, audio description and sign-language versions",
+    "Alt text, transcripts and plain text equivalents for web and social content",
+    "Briefs from government and large brands that carry accessibility clauses"
+   ],
+   "avoid": [
+    "A government video script with no plan for captions, audio description or sign-language interpretation. Write the captions with the script and describe key visuals in the narration where possible.",
+    "Images with no alt text and audio-only pieces with no transcript. Add both; see comp:wcag_22 and comp:gigw_3 for the technical criteria.",
+    "Assuming the Act only binds government. Section 46 reaches service providers whether Government or private, once accessibility rules are framed under section 40.",
+    "Claiming a specific ICT accessibility standard under the 2023 rules. That standard was not confirmed; cite WCAG and GIGW only as the standards they are."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:alt_text",
+    "genre:scheme_explainer",
+    "genre:government_press_note",
+    "genre:public_service_announcement",
+    "genre:explainer_video_script",
+    "genre:news_bulletin_script",
+    "genre:faq_page",
+    "captioned video and audio-described content"
+   ],
+   "rules": [
+    {
+     "rule": "Section 40: the Central Government frames accessibility standards for, among others, 'information and communications, including appropriate technologies and systems'.",
+     "url": "https://cdnbbsr.s3waas.gov.in/s3e58aea67b01fa747687f038dfde066f6/uploads/2023/10/202310161053958942.pdf"
+    },
+    {
+     "rule": "Section 42: the appropriate Government shall take measures to ensure that (i) all contents available in audio, print and electronic media are in accessible format, and (ii) persons with disabilities have access to electronic media by providing audio description, sign language interpretation and close captioning.",
+     "url": "https://cdnbbsr.s3waas.gov.in/s3e58aea67b01fa747687f038dfde066f6/uploads/2023/10/202310161053958942.pdf"
+    },
+    {
+     "rule": "Section 46: service providers, whether Government or private, shall provide services in accordance with the rules on accessibility framed under section 40, within two years of those rules.",
+     "url": "https://cdnbbsr.s3waas.gov.in/s3e58aea67b01fa747687f038dfde066f6/uploads/2023/10/202310161053958942.pdf"
+    }
+   ],
+   "penalty": "Section 89: contravening the Act or its rules carries a fine up to ten thousand rupees for a first contravention, and fifty thousand to five lakh rupees for subsequent contraventions (gazette text read 2026-10-04).",
+   "checks": [
+    "Does every video have captions, and is there a plan for audio description and sign-language interpretation where the client is a government body?",
+    "Does every informative image have alt text, and every audio-only piece a transcript?",
+    "Is the content available in an accessible format, not only as an image or scanned PDF?",
+    "Has the client's brief been checked for accessibility clauses, and for GIGW 3.0 (comp:gigw_3) where it is a government site?",
+    "Is the piece free of any claim about the 2023 ICT accessibility rules' standard (not confirmed)?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:gigw_3",
+    "comp:wcag_22",
+    "tech:image_alt_text",
+    "edit:alt_text_check",
+    "edit:accessible_writing_check",
+    "genre:alt_text",
+    "genre:scheme_explainer"
+   ]
+  },
+  {
+   "id": "comp:tcpa_47cfr_64_1200",
+   "kind": "compliance",
+   "name": "US TCPA rules for marketing calls and texts (47 CFR 64.1200)",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
+     "title": "eCFR: 47 CFR 64.1200 Delivery restrictions",
+     "supports": "current text: (a)(2) written consent for telemarketing robocalls/robotexts, (a)(10) revocation, (c) calling hours and national do-not-call, (f) definitions"
+    }
+   ],
+   "status": "current",
+   "summary": "Current eCFR text of 47 CFR 64.1200 (text read 2026-10-04). US autodialled or prerecorded marketing calls and texts to mobiles need the recipient's prior express written consent, telephone solicitations must respect the national Do-Not-Call registry and 8 a.m. to 9 p.m. local time, and any reasonable opt-out such as replying STOP must be honoured. The FCC has phased in and delayed parts of its 2024 consent-revocation order, so check the eCFR 'effective' notes before quoting a date: the dates are not confirmed here. For India SMS see comp:trai_tcccpr_2018; for EU and UK see comp:gdpr_marketing_consent and comp:uk_pecr.",
+   "use_for": [
+    "SMS and text marketing campaigns to US mobile numbers",
+    "Opt-in checkbox, form and keyword-join copy for US audiences",
+    "Telemarketing and prerecorded-call scripts for the US",
+    "Reply-to-STOP and opt-out confirmation copy"
+   ],
+   "avoid": [
+    "Opt-in text hidden in terms or made a condition of purchase. Write the consent line plainly, name the seller and the number, and keep it separate from the purchase.",
+    "A vague checkbox ('keep me posted') for telemarketing. The written agreement must clearly authorise the seller to send telemarketing to a named number, with a clear and conspicuous disclosure.",
+    "Ignoring 'stop', 'quit', 'end', 'revoke', 'opt out', 'cancel' or 'unsubscribe' replies, or making people use one exact keyword. These replies are valid revocations, any reasonable method counts, and requests must be honoured within a reasonable time not to exceed ten business days.",
+    "Scheduling sends at all hours. No telephone solicitation before 8 a.m. or after 9 p.m. at the recipient's location, or to numbers on the national do-not-call registry."
+   ],
+   "jurisdiction": "US",
+   "applies_to": [
+    "genre:sms_marketing",
+    "genre:sales_call_script",
+    "genre:order_form_checkout_copy",
+    "genre:landing_page",
+    "US call and text campaigns",
+    "opt-in checkbox copy"
+   ],
+   "rules": [
+    {
+     "rule": "No call or text that includes or introduces an advertisement or constitutes telemarketing may be sent using an autodialer or an artificial or prerecorded voice to a mobile number without prior express written consent (64.1200(a)(2)); texts are treated as calls (the section refers to a 'text message, including a short message service (SMS) call').",
+     "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200"
+    },
+    {
+     "rule": "Prior express written consent is a signed written agreement (an e-signature is allowed) that clearly authorises the seller to send telemarketing to a named number, with a clear and conspicuous disclosure (64.1200(f)); the opt-in checkbox copy is legal text, to be written plainly and never made a condition of purchase.",
+     "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200"
+    },
+    {
+     "rule": "Revocation: replies such as 'stop', 'quit', 'end', 'revoke', 'opt out', 'cancel' or 'unsubscribe' are per se valid, any reasonable method counts, and requests must be honoured within a reasonable time not to exceed ten business days (64.1200(a)(10); check the eCFR for the effective dates of the 2024 revocation order, not confirmed here).",
+     "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200"
+    },
+    {
+     "rule": "No telephone solicitation before 8 a.m. or after 9 p.m. at the recipient's location, or to numbers on the national do-not-call registry (64.1200(c)).",
+     "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200"
+    }
+   ],
+   "checks": [
+    "Does every US recipient have a signed written agreement (e-signature allowed) clearly authorising telemarketing texts or calls to their number?",
+    "Is the opt-in text plain, specific to the named seller and number, and not a condition of purchase?",
+    "Do replies such as 'stop', 'quit', 'end', 'revoke', 'opt out', 'cancel' and 'unsubscribe' all stop the messages?",
+    "Is the opt-out processed within the legal time (no more than ten business days), with the current effective dates checked on eCFR?",
+    "Is every send scheduled between 8 a.m. and 9 p.m. in the recipient's time zone?",
+    "Are numbers on the national do-not-call registry excluded from telephone solicitation?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:trai_tcccpr_2018",
+    "comp:uk_pecr",
+    "comp:gdpr_marketing_consent",
+    "comp:can_spam",
+    "comp:coppa",
+    "genre:sms_marketing",
+    "plat:sms_encoding_segments"
+   ]
+  },
+  {
+   "id": "comp:trade_marks_comparative_ads",
+   "kind": "compliance",
+   "name": "Trade Marks Act, 1999 sections 29(8) and 30(1): comparative advertising using a rival's trade mark",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://www.ipindia.gov.in/tm-act-1999",
+     "title": "Office of the Controller General of Patents, Designs and Trade Marks (IP India): The Trade Marks Act, 1999",
+     "supports": "text of s.29(6)-(9) and s.30(1)"
+    }
+   ],
+   "status": "current",
+   "summary": "Trade Marks Act, 1999 sections 29(8) and 30(1), in force (IP India page read 2026-10-04; amendments after that page's version were not checked). A comparative ad may name a rival's registered mark only if the use is in accordance with honest practices and does not take unfair advantage of, or harm, the mark's distinctive character or reputation. Indian courts have read these sections in many comparative-ad cases; no case law was harvested here. The ASCI Code adds a non-denigration rule (comp:asci_code), and FSSAI bans food ads that undermine another maker's products (comp:fssai_advertising_claims_2018).",
+   "use_for": [
+    "'Us vs them' ads, comparison pages and comparison tables that name a competitor",
+    "Search ads and social ads that bid on or mention a rival's brand",
+    "Voice-over and radio copy that says a rival's name",
+    "Reviewing newsjacking or moment-marketing posts that poke at a competitor"
+   ],
+   "avoid": [
+    "Mocking or denigrating the rival ('Brand X is a joke'). Compare verifiable facts only: price, specifications, tested results with the test named.",
+    "Borrowing the rival's logo, colours or tagline for effect. Name the rival plainly in text instead; copying its get-up risks taking unfair advantage of its reputation (s.29(8)).",
+    "Assuming a voice-over is safe because nothing is shown. Spoken use of a word mark counts as use of the mark, so a radio line naming the rival is covered by the same rules.",
+    "Vague superiority ('better than the leading brand') that you cannot prove. Say what is compared and have the evidence ready.",
+    "Treating this card as a licence for comparative food claims: FSSAI separately bars food ads that undermine another maker's products."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:comparison_page",
+    "genre:comparison_table_copy",
+    "genre:video_ad_script",
+    "genre:tvc_script",
+    "genre:print_ad_copy",
+    "genre:social_ad_copy",
+    "genre:search_ad_copy",
+    "genre:radio_spot_script",
+    "genre:topical_ad",
+    "ads that name a competitor"
+   ],
+   "rules": [
+    {
+     "rule": "A registered trade mark is infringed by any advertising of that trade mark if the advertising (a) takes unfair advantage of and is contrary to honest practices in industrial or commercial matters, or (b) is detrimental to its distinctive character, or (c) is against the reputation of the trade mark (s.29(8)).",
+     "url": "https://www.ipindia.gov.in/tm-act-1999"
+    },
+    {
+     "rule": "Use of a registered mark for the purpose of identifying goods or services as those of the proprietor is not infringement if the use is in accordance with honest practices and is not such as to take unfair advantage of, or be detrimental to, the distinctive character or repute of the trade mark (s.30(1)).",
+     "url": "https://www.ipindia.gov.in/tm-act-1999"
+    },
+    {
+     "rule": "Spoken use of a word mark counts as use of the mark, so a voice-over naming the rival is covered (s.29(9)).",
+     "url": "https://www.ipindia.gov.in/tm-act-1999"
+    },
+    {
+     "rule": "Use of a mark in advertising is use of the mark (s.29(6)(d)).",
+     "url": "https://www.ipindia.gov.in/tm-act-1999"
+    }
+   ],
+   "checks": [
+    "Does every comparison rest on a verifiable fact (price, specification or a named test) that the client can document?",
+    "Is the rival named plainly in text or voice, with no copying of its logo, colours or tagline?",
+    "Is the tone free of mockery or denigration of the rival or its product?",
+    "Does the ad avoid taking unfair advantage of the rival's reputation or harming its distinctive character?",
+    "For voice-over, radio and video, has the spoken rival name been checked as a use of the mark?",
+    "Does the piece also pass the ASCI Code (comp:asci_code), and for food the FSSAI rule on undermining other products?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:asci_code",
+    "comp:fssai_advertising_claims_2018",
+    "comp:ccpa_misleading_ads_2022",
+    "genre:comparison_page",
+    "genre:comparison_table_copy",
+    "genre:battle_card"
+   ]
+  },
+  {
+   "id": "comp:trai_tcccpr_2018",
+   "kind": "compliance",
+   "name": "TRAI Telecom Commercial Communications Customer Preference Regulations, 2018 (TCCCPR, DLT) and Second Amendment Regulations, 2025",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://trai.gov.in/sites/default/files/2025-01/RegulationUcc19072018.pdf",
+     "title": "TRAI notification dated 19 July 2018: Telecom Commercial Communications Customer Preference Regulations, 2018 (6 of 2018)",
+     "supports": "definitions of header, consent template, content template; preference time bands; consent revocation duties"
+    },
+    {
+     "url": "https://www.trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf",
+     "title": "TRAI notification dated 12 February 2025: TCCCPR (Second Amendment) Regulations, 2025 (1 of 2025)",
+     "supports": "commencement, -P/-S/-T/-G header suffixes, opt-out in every promotional message, mixed content treated as promotional, URL/APK/call-back whitelisting, template rules"
+    },
+    {
+     "url": "https://trai.gov.in/tcccpr",
+     "title": "TRAI: TCCCPR page",
+     "supports": "links to the principal regulation and directions"
+    }
+   ],
+   "status": "current",
+   "summary": "TRAI's Telecom Commercial Communications Customer Preference Regulations, 2018 (notified 19 Jul 2018) and the TCCCPR (Second Amendment) Regulations, 2025 (notified 12 Feb 2025; in force 'after thirty days from the date of their publication in the Official Gazette', with some regulations after sixty days per reg. 1(3) of the 2025 text; the gazette publication date was not read). Both TRAI PDFs were read 2026-10-04. Every commercial SMS or call in India goes out under a registered header and a registered content template on TRAI's DLT system; promotional messages need consent or an unblocked preference; since 2025 headers carry -P/-S/-T/-G suffixes and each promotional message carries an opt-out. WhatsApp Business messaging is governed by Meta's policies, not by DLT (not harvested here).",
+   "use_for": [
+    "Writing SMS templates for promotional, service, transactional and government messages",
+    "Voice-call and IVR scripts for commercial outreach",
+    "Consent-capture wording for promotional SMS",
+    "Checking that OTP and order-update messages do not carry offers"
+   ],
+   "avoid": [
+    "Slipping an offer into an OTP or order update ('Your OTP is 123456. Use code SAVE10 on your next order'). If promotional content is mixed with a transactional or service message, the whole message is treated as promotional.",
+    "A promo SMS with no opt-out line. Each promotional message needs an opt-out mechanism in the same message.",
+    "A template that is almost all variables. The 2025 explanatory note says at least 30% of a template must stay fixed and more than three variables needs justification; write the fixed part first.",
+    "Sending a free-text variant that does not match a registered template. The message body must match a registered content template, sent from the registered header.",
+    "Raw or unregistered links, APK files and call-back numbers in the text. They must be whitelisted by the sender."
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:sms_marketing",
+    "genre:sales_call_script",
+    "India commercial SMS (DLT headers and templates)",
+    "OTP and service messages",
+    "commercial voice calls"
+   ],
+   "rules": [
+    {
+     "rule": "A header is an alphanumeric string of maximum eleven characters registered to the sender, and every message body must match a registered content template (2018 definitions).",
+     "url": "https://trai.gov.in/sites/default/files/2025-01/RegulationUcc19072018.pdf"
+    },
+    {
+     "rule": "The 2025 explanatory note adds that at least 30% of a template must stay fixed, more than three variables needs justification, and templates unused for 90 days are deactivated.",
+     "url": "https://www.trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf"
+    },
+    {
+     "rule": "Headers must show the message type by suffix: '-P', '-S', '-T' and '-G' for Promotional, Service, Transactional and Government messages (2025 amendment).",
+     "url": "https://www.trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf"
+    },
+    {
+     "rule": "The sender shall give an opt-out mechanism to the recipient in the same message, and if promotional content is mixed with any type of Transactional or Service message, that message shall be treated as a Promotional message (2025 amendment).",
+     "url": "https://www.trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf"
+    },
+    {
+     "rule": "Promotional messages may reach only people who have not blocked the category, or who gave explicit digital consent through a registered consent template that clearly mentions the purpose of the consent and details of the sender (2018 definition; repeated in the 2025 text).",
+     "url": "https://trai.gov.in/sites/default/files/2025-01/RegulationUcc19072018.pdf"
+    },
+    {
+     "rule": "Links, APKs, OTT links and call-back numbers in messages must be whitelisted by the sender (2025 amendment).",
+     "url": "https://www.trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf"
+    }
+   ],
+   "checks": [
+    "Is the message sent from a registered header, with the right suffix (-P, -S, -T or -G) for its type?",
+    "Does the text match a registered content template, with at least 30% fixed text and no more than three variables unless justified?",
+    "Does every promotional message carry an opt-out in the same message?",
+    "Is any offer, code or upsell absent from OTP, service and transactional messages?",
+    "Do promotional recipients have explicit consent captured through a registered consent template, or have they not blocked the category?",
+    "Are all links, APKs and call-back numbers whitelisted by the sender?"
+   ],
+   "confidence": "high",
+   "related": [
+    "plat:sms_india_dlt",
+    "plat:sms_encoding_segments",
+    "comp:dpdp_act_rules",
+    "comp:tcpa_47cfr_64_1200",
+    "comp:uk_pecr",
+    "genre:sms_marketing",
+    "plat:whatsapp_business_template"
+   ]
+  },
+  {
+   "id": "comp:uk_dmcc_schedule20",
+   "kind": "compliance",
+   "name": "UK Digital Markets, Competition and Consumers Act 2024 Schedule 20: commercial practices always considered unfair (incl. fake reviews)",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20",
+     "title": "legislation.gov.uk: Digital Markets, Competition and Consumers Act 2024, Schedule 20 (latest available revised text)",
+     "supports": "full text of paragraphs 1-32 and commencement notes (in force 6.4.2025 by S.I. 2025/272)"
+    }
+   ],
+   "status": "current",
+   "summary": "In force: Schedule 20 to the UK Digital Markets, Competition and Consumers Act 2024 lists 32 commercial practices (paragraphs 1-32) that are unfair in all circumstances. Every paragraph read was in force from 6 April 2025 (S.I. 2025/272, per the commencement notes on legislation.gov.uk, read in a browser 2026-10-04). Several are pure copy problems: fake or secretly incentivised reviews, unlabelled paid editorial, false 'limited time' claims, false cure claims, misleading 'free', posing as a consumer and direct appeals to children. The ad-rule companion is comp:uk_cap_code.",
+   "use_for": [
+    "Reviews, testimonials, review requests and review pages aimed at UK consumers",
+    "Advertorials, sponsored articles, native ads and creator posts for UK audiences",
+    "Countdown, 'ends tonight' and 'free' offers in UK promotions",
+    "Health and beauty claims in UK ads"
+   ],
+   "avoid": [
+    "Writing, buying or commissioning a review that is not based on a genuine experience, or one that hides that it was incentivised. AI-written reviews count: 'writing' includes creating by any means.",
+    "Showing only five-star reviews or pushing positives above negatives. Publishing reviews in a misleading way includes hiding negatives or giving positives greater prominence.",
+    "A sponsored article styled as independent editorial. The paid promotion must be made clear in the content or by images or sounds the consumer can clearly identify.",
+    "'Offer ends tonight' when it does not. A false claim that a product is only available for a limited time, made to elicit an immediate decision, is on the list; use real end dates only.",
+    "'Free trial' where the consumer pays anything beyond the unavoidable cost of responding and delivery. 'Free', 'gratis' and 'without charge' are allowed only if that holds.",
+    "Claims that a product prevents or treats disease, restores a physiological function or modifies a person's appearance when that is false; remove or evidence them.",
+    "Posing as a consumer in a thread or comment (para 25), speaking directly to children to buy (para 30), or using a trust mark you are not authorised to use (para 3)."
+   ],
+   "jurisdiction": "UK",
+   "applies_to": [
+    "genre:testimonial_copy",
+    "genre:affiliate_review",
+    "genre:product_review_article",
+    "genre:best_of_roundup",
+    "genre:advertorial",
+    "genre:native_ad",
+    "genre:sponsored_creator_post",
+    "genre:ugc_ad_script",
+    "genre:post_purchase_email",
+    "genre:promotional_email",
+    "genre:landing_page",
+    "genre:sales_page",
+    "genre:social_ad_copy",
+    "genre:comment_reply",
+    "genre:product_description",
+    "genre:offer_stack",
+    "genre:launch_sequence"
+   ],
+   "rules": [
+    {
+     "rule": "Para 13: never write, submit or commission a fake consumer review (one that purports to be, but is not, based on a person's genuine experience) or a review that conceals the fact it has been incentivised; publishing reviews in a misleading way, including by hiding negatives or giving positives greater prominence, is also covered. 'Writing' includes creating by any means, so AI-written reviews count.",
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20"
+    },
+    {
+     "rule": "Para 12: paid promotion inside editorial content must be made clear in the content or by images or sounds clearly identifiable by the consumer (advertorials, sponsored articles).",
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20"
+    },
+    {
+     "rule": "Para 7: no false claim that a product is only available for a limited time, made to elicit an immediate decision.",
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20"
+    },
+    {
+     "rule": "Para 19: no false claims that a product can prevent or treat disease, restore a physiological function, or modify a person's appearance.",
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20"
+    },
+    {
+     "rule": "Para 23: 'free', 'gratis' or 'without charge' only if the consumer pays nothing beyond the unavoidable cost of responding and of delivery.",
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20"
+    },
+    {
+     "rule": "Para 25: no posing as a consumer (for example fake grassroots posts).",
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20"
+    },
+    {
+     "rule": "Para 30: no direct appeal to children to buy, or to pester parents.",
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20"
+    },
+    {
+     "rule": "Para 3: no unauthorised trust marks. Para 14 (summarised in the harvest as fear claims about safety): read the paragraph text before writing a safety warning into an ad.",
+     "url": "https://www.legislation.gov.uk/ukpga/2024/13/schedule/20"
+    }
+   ],
+   "checks": [
+    "Is every review or testimonial based on a genuine experience, free of fake or AI-invented reviews?",
+    "Is any incentive (free product, payment, discount) behind a review disclosed in the review?",
+    "Are negative reviews shown as readily as positive ones, with no positives given greater prominence?",
+    "Is any paid promotion inside editorial-style content clearly labelled in the content itself?",
+    "Is every 'limited time' or 'ends tonight' claim true, with a real end date?",
+    "Is 'free' used only where the consumer pays nothing beyond the unavoidable cost of responding and delivery?",
+    "Are all disease-prevention, treatment, function-restoring and appearance-changing claims true and evidenced?",
+    "Is the piece free of posing as a consumer, direct appeals to children, and unauthorised trust marks?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:uk_cap_code",
+    "comp:ftc_consumer_reviews_rule",
+    "comp:ftc_endorsement_guides",
+    "comp:uk_pecr",
+    "comp:endorsement_know_hows",
+    "genre:testimonial_copy",
+    "genre:advertorial"
+   ]
+  },
+  {
+   "id": "comp:wcag_22",
+   "kind": "compliance",
+   "name": "W3C Web Content Accessibility Guidelines (WCAG) 2.2: success criteria that govern published copy",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://www.w3.org/TR/WCAG22/",
+     "title": "W3C Recommendation 12 December 2024: Web Content Accessibility Guidelines (WCAG) 2.2",
+     "supports": "text of SC 1.1.1, 1.2.2, 1.2.4, 1.4.3, 2.4.2, 2.4.4, 2.4.6, 3.1.1, 3.1.2, 3.1.5 with levels"
+    }
+   ],
+   "status": "current",
+   "summary": "W3C Recommendation WCAG 2.2, dated 12 December 2024 (read 2026-10-04), is the current global web accessibility standard. It is a standard, not a law by itself: laws and procurement rules point to it (India's GIGW 3.0 adopts WCAG 2.1 criteria: comp:gigw_3). For writers the criteria that bite are: a text alternative for every image, captions on video, link text that says where it goes, descriptive page titles and headings, a declared page language and declared changes of language, readable text, and sufficient colour contrast.",
+   "use_for": [
+    "Alt text, captions, transcripts and link text for web pages, blogs, landing pages and help centres",
+    "Page titles, headings and form labels",
+    "Bilingual Hindi-English pages (language of each passage)",
+    "Text-on-image and thumbnail copy where contrast matters"
+   ],
+   "avoid": [
+    "Alt text that says 'image of'. Write what the image shows or does ('Founder packing a Jaipur block-print kurta into a courier bag'). GIGW 3.0 (comp:gigw_3) gives purely decorative images a blank alt.",
+    "'Click here', 'read more' and 'learn more' as the whole link. Make the link text, or its sentence, say where it goes ('Download the GST filing checklist').",
+    "A page title like 'Home' or 'Untitled'. The page title must describe topic or purpose, and headings and labels must describe topic or purpose too.",
+    "Hindi or Hinglish blocks inside an English page with no language marking. Each passage in another language needs its language declared, except proper names, technical terms and words that have become vernacular.",
+    "Dense advanced text with no simpler version. At Level AAA, text needing more than lower-secondary reading ability should come with supplemental content or a simpler version.",
+    "Light-grey text on a photo or pastel thumbnail. Text contrast should be at least 4.5:1 (3:1 for large text)."
+   ],
+   "jurisdiction": "Global",
+   "applies_to": [
+    "genre:alt_text",
+    "genre:ux_microcopy",
+    "genre:error_messages",
+    "genre:landing_page",
+    "genre:homepage_copy",
+    "genre:blog_post",
+    "genre:knowledge_base_article",
+    "genre:faq_page",
+    "genre:explainer_video_script",
+    "genre:user_manual",
+    "genre:scheme_explainer",
+    "genre:link_in_bio_copy",
+    "web pages, apps and video with captions"
+   ],
+   "rules": [
+    {
+     "rule": "SC 1.1.1 (Level A): all non-text content presented to the user has a text alternative that serves the equivalent purpose: write alt text that says what the image shows or does, not 'image'.",
+     "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+     "rule": "SC 1.2.2 (Level A): captions are provided for all prerecorded audio content in synchronised media; SC 1.2.4 (Level AA): captions for live audio.",
+     "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+     "rule": "SC 2.4.4 (Level A): the purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context: no bare 'click here' or 'read more'.",
+     "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+     "rule": "SC 2.4.2 (Level A): web pages have titles that describe topic or purpose; SC 2.4.6 (Level AA): headings and labels describe topic or purpose.",
+     "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+     "rule": "SC 3.1.1 (Level A): the language of the page can be programmatically determined; SC 3.1.2 (Level AA): the language of each passage can be too, except for proper names, technical terms and words that have become vernacular.",
+     "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+     "rule": "SC 3.1.5 Reading Level (Level AAA): when text requires reading ability more advanced than the lower secondary education level, supplemental content or a simpler version is provided.",
+     "url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+     "rule": "SC 1.4.3 (Level AA): text contrast of at least 4.5:1 (3:1 for large text), which matters for text on images and thumbnails.",
+     "url": "https://www.w3.org/TR/WCAG22/"
+    }
+   ],
+   "checks": [
+    "Does every informative image have alt text that says what it shows or does, with purely decorative images given a blank alt, as GIGW 3.0 prescribes?",
+    "Do all prerecorded videos have captions (and live ones live captions where required)?",
+    "Can each link's purpose be understood from its text or its sentence?",
+    "Does the page title describe the topic, and do headings and labels describe their sections?",
+    "Is the page language declared, and is each Hindi or other-language passage marked as such (except proper names, technical terms and vernacular words)?",
+    "If the text is above lower-secondary reading level, is there a simpler version or supporting summary?",
+    "Do text and its background meet 4.5:1 contrast (3:1 for large text), including text on images and thumbnails?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:gigw_3",
+    "comp:rpwd_act_accessibility",
+    "tech:image_alt_text",
+    "tech:plain_language",
+    "edit:alt_text_check",
+    "edit:accessible_writing_check",
+    "edit:reading_level_wcag",
+    "genre:alt_text"
+   ]
+  },
+  {
+   "id": "comp:x_paid_partnerships",
+   "kind": "compliance",
+   "name": "X (Twitter) Paid Partnerships Policy",
+   "as_of": "2026-10-04",
+   "sources": [
+    {
+     "url": "https://help.x.com/en/rules-and-policies/paid-partnerships-policy",
+     "title": "X Help Center: Paid Partnerships Policy",
+     "supports": "definition of paid partnership, disclosure toggle, legal compliance, prohibited industries, country rules (Australia, EU, UK)"
+    }
+   ],
+   "status": "current",
+   "summary": "X's Paid Partnerships Policy page (read in a browser 2026-10-04; the page shows no date) is the platform's own text. Creators posting paid, gifted, affiliate or ambassador content on X must switch on the 'Paid Partnership' content disclosure, follow local advertising law, and may not promote listed industries (health and wellness supplements, weight loss, pharma, alcohol, political or social-issue content and more) through paid partnerships. For India also follow comp:asci_influencer: the label goes in the post itself, not only in the platform toggle (that point is from the harvest note, not from X's page).",
+   "use_for": [
+    "Sponsored, gifted, affiliate, discount-code and ambassador posts and threads on X",
+    "Influencer briefs that include an X deliverable",
+    "Deciding whether a product category can run as a paid partnership on X at all"
+   ],
+   "avoid": [
+    "A gifted-product post with no disclosure because 'there was no payment'. Products gifted by or on behalf of a brand count as a paid partnership.",
+    "An affiliate link or discount code with no label. A commission through affiliate links or discount codes counts too; switch on 'Paid Partnership' in Content Disclosure settings and, for India, also put the label in the post text.",
+    "Making the reader click through to understand the offer. The product, service or call to action must be clearly promoted without requiring users to click additional links.",
+    "Taking a health supplement, weight-loss, pharma, alcohol or political brief as an X paid partnership. Those categories are not eligible; offer another platform or format.",
+    "A UK own-brand post by someone with a commercial interest and no disclosure. That also needs one.",
+    "Assuming the toggle covers the law. Creators remain responsible for complying with all applicable laws and regulations."
+   ],
+   "jurisdiction": "X",
+   "applies_to": [
+    "genre:sponsored_creator_post",
+    "genre:x_post",
+    "genre:x_thread",
+    "genre:influencer_brief",
+    "paid, gifted, affiliate and ambassador posts on X"
+   ],
+   "rules": [
+    {
+     "rule": "A paid partnership includes products gifted by or on behalf of a brand, monetary or in-kind compensation, a commission from sales (for instance through affiliate links or discount codes), and brand-ambassador agreements.",
+     "url": "https://help.x.com/en/rules-and-policies/paid-partnerships-policy"
+    },
+    {
+     "rule": "Paid-partnership posts must have the 'Paid Partnership' disclosure on, set in Content Disclosure settings when posting; X then labels the post.",
+     "url": "https://help.x.com/en/rules-and-policies/paid-partnerships-policy"
+    },
+    {
+     "rule": "You are responsible for ensuring that any Paid Partnership you post complies with all applicable laws and regulations, and the product, service or call to action must be clearly promoted without requiring users to click on any additional links.",
+     "url": "https://help.x.com/en/rules-and-policies/paid-partnerships-policy"
+    },
+    {
+     "rule": "Not eligible for paid partnerships globally: adult products, alcohol, contraceptives, dating, drugs including CBD, 'Geo-political, political, social issues or crises for commercial purposes', health and wellness supplements, pharma and medicine, tobacco and vapes, weapons, and weight-loss products.",
+     "url": "https://help.x.com/en/rules-and-policies/paid-partnerships-policy"
+    },
+    {
+     "rule": "In Australia, the EU and the UK, financial products (loans, investments, crypto, buy-now-pay-later) and gambling are also not eligible.",
+     "url": "https://help.x.com/en/rules-and-policies/paid-partnerships-policy"
+    },
+    {
+     "rule": "UK: own-brand posts by someone with a commercial interest also need a disclosure.",
+     "url": "https://help.x.com/en/rules-and-policies/paid-partnerships-policy"
+    }
+   ],
+   "checks": [
+    "Is the post gifted, paid, affiliate, discount-code or ambassador content, and is the 'Paid Partnership' disclosure switched on?",
+    "Is the product category outside the not-eligible list (supplements, weight loss, pharma, alcohol, political and social-issue content and the rest)?",
+    "For Australia, EU or UK audiences, is it also outside financial products and gambling?",
+    "Does the post promote the product or call to action clearly within the post, without needing extra clicks to understand it?",
+    "For India, is the disclosure also written in the post itself (comp:asci_influencer)?",
+    "Is the post checked against the advertising law of the market it targets?"
+   ],
+   "confidence": "high",
+   "related": [
+    "comp:asci_influencer",
+    "comp:endorsement_know_hows",
+    "comp:meta_branded_content",
+    "comp:youtube_paid_promotion",
+    "comp:ftc_endorsement_guides",
+    "plat:x_post",
+    "genre:sponsored_creator_post"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,222 @@
+{
+ "cards": [
+  {
+   "id": "edit:hindi_proofread",
+   "kind": "editing",
+   "name": "Hindi and Hinglish proofreading pass (matras, nukta, anusvara/chandrabindu, real-word errors)",
+   "status": "current",
+   "summary": "A dedicated proofread for Devanagari copy against the Central Hindi Directorate's standard orthography: punctuation, anusvara and chandrabindu, nukta policy, ऑ for English sounds, matras, real-word slips that spell-check passes, address forms and gender agreement. English proofreading will not catch any of these, so Hindi copy gets its own pass before it goes to a client.",
+   "use_for": [
+     "Hindi captions, reel on-screen text, ad copy and subtitles before they are published or sent for VO",
+     "Hindi press notes, newsletters and web copy for a client, where a wrong matra reads as carelessness",
+     "Hinglish in Devanagari and in Roman script: fixing inconsistent spellings across a piece",
+     "checking machine or AI-drafted Hindi, which often has valid words in the wrong place"
+   ],
+   "avoid": [
+     "Trusting a spell-checker or an ASR read-back alone. Both pass real words used wrongly (नई for नहीं, की for कि); a human read of the final text catches what they miss.",
+     "Silently 'correcting' a creator's or brand's nukta spelling. Urdu-flavoured copy may keep it (see lang:urdu_influenced_hindi); the rule is one method per piece, not a purge.",
+     "Converting every चंद्रबिंदु to anusvara to look tidy. The two can change meaning (हँस, to laugh, and हंस, a swan); only convert where the standard says so.",
+     "Mixing the Hindi danda with a Latin full stop or a pipe ('|'). Use the danda (।, U+0964) for Hindi sentences throughout.",
+     "Using the English em dash in Hindi text. Use a comma, brackets or a new sentence.",
+     "Proofreading in the document and not on the final surface. Fonts, subtitle tools and design apps can break conjuncts and matras: read the rendered output."
+   ],
+   "steps": [
+     "Fix the policy before you read: Devanagari only, or mixed with Roman Hinglish? One nukta method for the whole piece (standard or Urdu-flavoured). Which English words stay Roman and which are written in Devanagari. The form of address (आप for formal copy). Get these from the brand sheet or edit:style_sheet; if none exists, write the choice at the top of your notes and apply it everywhere.",
+     "Mechanical hygiene: the sentence-ending mark is the danda । (U+0964), not '.' or '|' (Mozilla Hindi guide). No English em dash. No stray zero-width joiner or non-joiner left from copy-paste. Numerals: Latin digits by default (Mozilla), unless the brand sheet says Devanagari digits.",
+     "Anusvara and chandrabindu (CHD 2024). For a nasal followed by a consonant of its own class, write the anusvara dot: गंगा, चंचल, पंडित. Do not use it where the nasal is doubled (अन्न, सम्मेलन) or the next consonant is of a different class (अन्य, उन्मुख). Where a vowel sign already sits above the headline, the chandrabindu is written as an anusvara for space (नहीं, में, क्यों). Elsewhere keep चंद्रबिंदु where the nasalisation changes the word.",
+     "Nukta: it is not part of the standard Hindi alphabet and is not needed in Urdu words Hindi has absorbed (कलम, किला, दाग); it stays when transliterating Urdu text. Check that the piece uses one method and uses it consistently, word by word.",
+     "English sounds: the 'o' of college is written with the ardhachandra ऑ (कॉलेज, हॉल, मॉल, ऑफिस). Check every borrowed word with that vowel.",
+     "Matras and conjuncts: look for ि/ी and ु/ू swaps, a missing or extra halant, and conjuncts that have fused wrongly. Read slowly, word by word, from the end of the paragraph to the start so the meaning does not carry your eye over the error.",
+     "Real-word errors (valid words, wrong word): नई/नहीं, की/कि, है/हैं, में/मैं, and gender, number or tense endings that no longer match the subject after an edit. Search the file for each pair and check every hit in context.",
+     "Address and agreement: after आप use अपने, not आपके, for the reader's own things: आप अपने खाते में लॉगिन करें, not आप आपके खाते में लॉगिन करें (Microsoft Hindi guide). Use one level of respect throughout (tech:hindi_address_register); check verbs agree in gender, number and respect.",
+     "Hinglish in Roman script: one spelling per word across the whole piece (hai or he, nahi or nahin, kya or kyaa) and the same as the brand sheet. Search the file for the variants you used and keep one.",
+     "Read the final text aloud, or run a word-level ASR or TTS read-back for voice-over copy, then read the rendered caption or design on a phone. Log what changed so the writer can fix the habit, not just the instance."
+   ],
+   "checks": [
+     "Does every Hindi sentence end with the danda । (no '.' or '|')?",
+     "Is there one nukta method across the piece, applied to every word?",
+     "Are anusvara and chandrabindu used by the standard's rules (गंगा, अन्न, नहीं) and not converted wholesale?",
+     "Are English 'o' sounds written with ऑ (कॉलेज, ऑफिस)?",
+     "Has every matra pair (ि/ी, ु/ू) and every conjunct been checked word by word?",
+     "Have नई/नहीं, की/कि, है/हैं and में/मैं been searched and read in context?",
+     "Does आप always go with अपने (never आपके for the reader's own thing), at one level of respect?",
+     "Is every Roman-script Hinglish word spelled one way throughout?",
+     "Was the final rendered version (caption, design, subtitle file) read, not just the draft?"
+   ],
+   "confidence": "medium",
+   "sources": [
+     {
+       "url": "https://www.chd.education.gov.in/sites/default/files/devanagari-lipi.pdf",
+       "title": "Central Hindi Directorate (Ministry of Education), Devanagari Lipi evam Hindi Vartani ka Manakikaran, 2024 edition",
+       "supports": "anusvara and chandrabindu both remain because they change meaning; anusvara for a nasal plus same-class consonant (गंगा, चंचल, पंडित), not for a doubled nasal (अन्न, सम्मेलन) or a different class (अन्य, उन्मुख); chandrabindu written as anusvara where a vowel sign sits above the headline (नहीं, में, क्यों); nukta not part of the standard alphabet and not needed in absorbed Urdu words (कलम, किला, दाग) but kept when transliterating Urdu; ऑ for the English 'o' of college (कॉलेज, हॉल, मॉल, ऑफिस). The PDF's text layer is partly garbled; the harvest read it by eye on 2026-10-05"
+     },
+     {
+       "url": "https://aka.ms/hindi-styleguide",
+       "title": "Microsoft Hindi Localization Style Guide",
+       "supports": "common error आप आपके: it should always be आप अपने, हम अपने; avoid the English em dash in Hindi; verbs inflect for gender, number and degree of respect"
+     },
+     {
+       "url": "https://mozilla-l10n.github.io/styleguides/hi-IN/",
+       "title": "Mozilla style guide: Hindi (hi-IN)",
+       "supports": "purna viram (।) rather than '.' or '|'; आप not तुम in formal copy; Latin digits by default"
+     }
+   ],
+   "related": [
+     "lang:hindi_devanagari",
+     "lang:urdu_influenced_hindi",
+     "lang:hinglish_roman",
+     "lang:hinglish_devanagari",
+     "tech:hindi_address_register",
+     "edit:proofread"
+   ]
+  },
+  {
+   "id": "edit:style_india_government",
+   "kind": "editing",
+   "name": "Government of India drafting style (Central Secretariat Manual of Office Procedure)",
+   "status": "current",
+   "summary": "The Government of India's own rules for official drafting: language that is clear, concise and incapable of misconstruction, the right form for the message (letter, demi-official letter, office memorandum), and Hindi and English issued together where the Official Languages Act requires it. Use it when copy has to read as an official document, and keep the sentences plain inside the fixed form.",
+   "use_for": [
+     "official letters, office memoranda, notices and replies written for a ministry, department, PSU or public body",
+     "government press notes and scheme explainers that must follow official conventions (genre:government_press_note, genre:scheme_explainer)",
+     "checking a draft for the faults the manual names: long sentences, abruptness, redundancy, circumlocution, superlatives, repetition",
+     "deciding whether a document needs a Hindi and an English version"
+   ],
+   "avoid": [
+     "Opening every letter with 'I am directed to say' by reflex. The manual notes it distances the writer from the reader and prefers a more direct format.",
+     "Treating 'sarkari' as permission for circumlocution. The manual itself asks for clear, concise wording; keep the fixed form, shorten the sentences.",
+     "Superlatives and hype in a press note ('historic', 'unprecedented', 'unmatched'). The manual lists superlatives among the faults to avoid; state the fact and the figure instead.",
+     "A salutation or subscription on an office memorandum. It is written in the third person and carries only the name and designation of the signing officer.",
+     "Using the first-person, personal tone of a demi-official letter in a formal letter, or the formal letter's 'Sir/Madam ... Yours faithfully' in a demi-official one.",
+     "Issuing a document in English only when the Official Languages Act requires both languages, or replying in English to a communication received in Hindi."
+   ],
+   "steps": [
+     "Choose the form by what the document is. A letter begins 'Sir/Madam' and ends 'Yours faithfully'. A demi-official letter is written in the first person in a personal and friendly tone, to a named officer. An office memorandum is written in the third person and has no salutation or subscription except the name and designation of the signing officer.",
+     "Write the heading block first: the subject line, and the last reference number and date if there is one. A reader should know the subject and where it sits in the file before the first sentence.",
+     "Open directly with what is being communicated or decided. Skip the distancing formula 'I am directed to say' unless the form of the department requires it.",
+     "Draft in language that is clear, concise and incapable of misconstruction: one idea per sentence, defined terms used the same way every time, exact dates, amounts and section numbers. Cut lengthy sentences, abruptness, redundancy, circumlocution, superlatives and repetition.",
+     "For a long communication, end with a short summary of the decision or request and the action required of the reader.",
+     "Decide the language. The Official Languages Act, 1963 (as amended) requires resolutions, general orders, rules, notifications, administrative or other reports and press communiques of the Central Government to be issued in both Hindi and English. Under the Official Language Rules, 1976, a reply to a Hindi communication from a Central Government office is in Hindi, and the person signing a document covered by the bilingual clause makes sure it is issued in both languages.",
+     "Check the Hindi side separately: formal tatsam administrative vocabulary, the आप form, and the Hindi proofreading pass in edit:hindi_proofread.",
+     "For web content, add the accessibility and quality criteria in comp:gigw_3; for a plain-language comparison and technique, use edit:style_gov_uk.",
+     "Check the edition. The wording above was read in the 13th edition (2010) on darpg.gov.in; PIB says the current edition is the 16th (2022). Confirm any sentence you quote against the current text before telling a client 'the manual says'."
+   ],
+   "checks": [
+     "Is the form right for the document (letter, demi-official letter or office memorandum), with the matching opening and closing, or none for a memorandum?",
+     "Are the subject line and the last reference number and date at the top?",
+     "Does the first sentence say what is being communicated, without the distancing formula?",
+     "Is every sentence short and free of superlatives, redundancy and repetition?",
+     "Are defined terms, dates, amounts and references exact and used the same way each time?",
+     "Does a long communication end with a summary?",
+     "If the document is a resolution, order, rule, notification, report or press communique of the Central Government, is it issued in Hindi and English?",
+     "Has the Hindi version been proofread against edit:hindi_proofread?"
+   ],
+   "confidence": "medium",
+   "sources": [
+     {
+       "url": "https://www.darpg.gov.in/static/uploads/2025/10/e4360b9fcbc0a1a94649c758541051a0.pdf",
+       "title": "DARPG, Central Secretariat Manual of Office Procedure, 13th edition (September 2010), hosted on darpg.gov.in",
+       "supports": "drafts should be clear, concise and incapable of misconstruction; avoid lengthy sentences, abruptness, redundancy, circumlocution, superlatives and repetition; 'I am directed to say' is not required at the start because it distances the reader, a more direct format is preferred; long communications end with a summary; mention the subject and the last reference number and date; letter = 'Sir/Madam' ... 'Yours faithfully'; demi-official letter = first person, personal and friendly; office memorandum = third person with no salutation or subscription except the name and designation of the signing officer"
+     },
+     {
+       "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1848407",
+       "title": "PIB (DARPG release, 2022): CSMOP 2022 launch",
+       "supports": "the Central Secretariat Manual of Office Procedure 2022 is the 16th edition of the CSMOP first published in 1955"
+     },
+     {
+       "url": "https://rajbhasha.gov.in/sites/default/files/olact1963eng.pdf",
+       "title": "The Official Languages Act, 1963 (as amended 1967), Department of Official Language",
+       "supports": "both Hindi and English are to be used for resolutions, general orders, rules, notifications, administrative or other reports or press communiques issued by the Central Government or a Ministry, Department or office, and its corporations and companies"
+     },
+     {
+       "url": "https://rajbhasha.gov.in/en/official-language-rules-1976",
+       "title": "Official Language Rules, 1976 (Department of Official Language)",
+       "supports": "communications from a Central Government office in reply to communications in Hindi shall be in Hindi; the person signing a document covered by the Act's bilingual clause must ensure it is issued both in Hindi and in English"
+     }
+   ],
+   "related": [
+     "tone:sarkari_formal",
+     "genre:government_press_note",
+     "genre:scheme_explainer",
+     "comp:gigw_3",
+     "edit:style_gov_uk",
+     "edit:hindi_proofread",
+     "edit:plain_language_check"
+   ]
+  },
+  {
+   "id": "edit:test_send_preview",
+   "kind": "editing",
+   "name": "Test send and real-app preview (mobile and desktop)",
+   "status": "current",
+   "summary": "Before hand-off, preview the piece inside the real tool and send a real test to your own phone and a desktop client, then check truncation, line breaks, links, personalisation and rendering exactly as the reader will see them. Most last-minute errors (a cut-off subject line, a broken link, a blank first name, a button below the fold) appear only here, not in the editor.",
+   "use_for": [
+     "email campaigns and flows: subject line, preheader, body, buttons, merge tags",
+     "social posts and Reels captions, read on a phone from a draft or private surface before they go live",
+     "ads, using the platform's placement preview and a preview on a device",
+     "WhatsApp templates and SMS copy sent to a team handset before a broadcast"
+   ],
+   "avoid": [
+     "Proofreading only in the editor. Check the text in the same format the reader gets (see edit:proofread).",
+     "Assuming merge tags work in a test send. In Mailchimp contact-specific merge tags and dynamic content do not populate in a test email, so also use the preview with live merge-tag info, and test the fallback for an empty name field.",
+     "Sending 'tests' to the real list or publishing a post live to look at it. Send only to named test addresses or use draft, scheduled or private surfaces.",
+     "Spending the test quota on one-word changes. Batch your fixes first: Mailchimp's free plan allows 12 tests per email and 24 in 24 hours, paid plans 70 per email and 200 in 24 hours, and each recipient counts.",
+     "Checking only the desktop view. Look at the client's own device split in analytics before deciding which view matters most; do not assume.",
+     "Treating a preview as a guarantee. Meta describes ad previews as examples whose rendering can vary by device and placement; confirm on a real device."
+   ],
+   "steps": [
+     "Name the surface: which inbox, feed, ad placement or handset will the reader use, and which devices and clients does the audience actually use (client analytics, not a guess)?",
+     "Preview inside the tool in mobile and desktop modes. In an email tool, turn on live merge-tag info so personalised fields show real values (Mailchimp's Preview mode has Desktop and Mobile toggles).",
+     "Send a real test to your own phone and to a desktop client; add Gmail and Outlook if the client's list uses both. Remember that tests can count toward the plan's send limits.",
+     "Read the first screen on the phone like a stranger: sender name, subject and preheader as truncated, the first two lines of body, and whether the main button is visible without scrolling.",
+     "Check rendering: line breaks, emoji, Devanagari matras and conjuncts in the client's font, bold and links, images blocked, dark mode, and alt text for images.",
+     "Click every link: use the tool's link checker where there is one, then tap the main links on the phone. Confirm each destination, the UTM parameters, the unsubscribe link and the landing page on mobile.",
+     "Test personalisation: a contact with a full name, one with an empty first name (is the fallback sensible?) and one with a long name.",
+     "For social posts, save as a draft, schedule to a private surface or post to a test account and read it on the phone before posting. For ads, use the placement previews, then 'preview on device'.",
+     "For a large or high-stakes send, run an inbox preview across many clients (Mailchimp offers Litmus-powered inbox previews on paid plans).",
+     "Record what you checked in the hand-off note: devices and clients tested, what you changed, and anything you could not test."
+   ],
+   "checks": [
+     "Was the piece previewed in both mobile and desktop views inside the real tool?",
+     "Was a real test sent to a phone and to a desktop client (Gmail and Outlook if the list uses both)?",
+     "Do the subject line and preheader read correctly where the client truncates them?",
+     "Is the first screen on the phone clear, with the main button visible?",
+     "Were all links clicked, including UTMs and the unsubscribe link?",
+     "Were merge tags and their fallbacks checked with real and empty values?",
+     "Do emoji, Hindi script, bold and line breaks render properly, and does dark mode still read?",
+     "Does the hand-off note say what was tested and what was not?"
+   ],
+   "confidence": "medium",
+   "sources": [
+     {
+       "url": "https://mailchimp.com/help/preview-and-test-your-email-campaign/",
+       "title": "Mailchimp Help: Preview and Test Your Email",
+       "supports": "Preview mode shows desktop and mobile views; test emails show the email in an inbox and can be shared; contact-specific merge tags and dynamic content do not work in test emails, so preview with live merge-tag info; Link Checker; test emails count toward the monthly send limit"
+     },
+     {
+       "url": "https://mailchimp.com/help/about-test-email-sending-limits/",
+       "title": "Mailchimp Help: About Test Email Sending Limits",
+       "supports": "free plan 12 tests per email and 24 total in 24 hours; paid plans 70 per email and 200 total in 24 hours; each recipient of a test counts"
+     },
+     {
+       "url": "https://mailchimp.com/help/test-with-inbox-preview/",
+       "title": "Mailchimp Help: Test with Inbox Preview",
+       "supports": "Litmus-powered screenshots of the email in different email clients and devices, on paid plans (from the search-result summary)"
+     },
+     {
+       "url": "https://www.facebook.com/business/help/832459417176147",
+       "title": "Meta Business Help Centre: About ad previews in Meta Ads Manager",
+       "supports": "preview an unpublished ad across placements and send a preview to a device; previews are examples and rendering can vary by device and placement (wording from the search-result summary; medium confidence)"
+     }
+   ],
+   "related": [
+     "edit:proofread",
+     "edit:pre_publish_qa",
+     "plat:email_subject_line",
+     "tech:subject_preheader_pairing",
+     "tech:personalization_tokens",
+     "tech:mobile_line_breaks"
+   ]
+  }
+ ]
+}

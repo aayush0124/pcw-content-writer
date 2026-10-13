@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Backups and scratch (never tracked)
+*.bak*
+*.pre-*
+*.prewrite*
+*.tmp
+*.log
+
+# Agent intermediates: only the batch files (validate needs them), the gap log, the agent briefs
+# and the lead's small state/tool files are tracked
+work/*
+!work/batches/
+!work/gaps.jsonl
+!work/BRIEF_*.md
+!work/lead/
+work/lead/*
+!work/lead/STATE.md
+!work/lead/status.py
+!work/lead/collect_fixes.py
+
+# Media, renders, vendor presets and project files
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.pdf
+*.zip
+*.ffx
+*.mogrt
+*.cube
+*.look
+*.prfpset
+*.abr
+*.atn
+*.grd
+*.pat
+*.asl
+*.csh
+*.aia
+*.aep
+*.prproj
+*.psd
+*.ai
+*.cdr
+*.exe
+*.dll
+*.msi
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

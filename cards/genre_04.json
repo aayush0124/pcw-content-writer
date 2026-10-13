@@ -1,0 +1,3141 @@
+{
+ "cards": [
+  {
+   "id": "genre:developer_tutorial",
+   "kind": "genre",
+   "name": "Developer tutorial / quickstart",
+   "status": "current",
+   "summary": "A step-by-step walkthrough in which every command and code block runs as written, in order, on a stated setup, and the reader ends with a working result they can see. Good ones state prerequisites and versions first, show the expected output after each step, and explain only what the reader needs to take the next step.",
+   "use_for": [
+    "SDK or API quickstart ('Create your first payment link with the Python SDK')",
+    "Codelab or workshop handout for a developer-relations launch",
+    "'Build X with Y' tutorial on a company engineering blog",
+    "Onboarding guide for an internal platform new engineers must use"
+   ],
+   "avoid": [
+    "Explaining concepts at length inside a step: keep each step to one action and one result, and link out to an explanation page.",
+    "Writing a tutorial when the reader already knows the tool and wants one task done: that is a how-to (genre:how_to_article) or a troubleshooting entry (genre:troubleshooting_guide).",
+    "Listing every option, flag and parameter: that is reference (genre:api_reference); a tutorial picks one path and sticks to it."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://diataxis.fr/tutorials/",
+     "title": "Diataxis: Tutorials",
+     "supports": "a tutorial is learning by doing under guidance; each step gives a visible result; tell the learner what output to expect; minimise explanation and link it out; it must work reliably for every user; differs from a how-to guide, which serves task completion"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "technical writing covers how-to guides and tutorials"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/technical-writer-salary",
+     "title": "AmbitionBox: Technical Writer salary in India (updated 2026-10-04)",
+     "supports": "average Technical Writer salary Rs 8.5 lakh per year, about double a content writer"
+    },
+    {
+     "url": "https://www.bls.gov/ooh/media-and-communication/technical-writers.htm",
+     "title": "BLS Occupational Outlook Handbook: Technical Writers",
+     "supports": "median annual wage for technical writers $90,390 in May 2025"
+    }
+   ],
+   "related": [
+    "genre:readme",
+    "genre:api_reference",
+    "genre:how_to_article",
+    "genre:troubleshooting_guide",
+    "edit:style_google_dev"
+   ],
+   "buyers": [
+    "Developer-relations and docs teams at API, fintech and cloud companies",
+    "Developer-tool and AI-platform startups launching an SDK",
+    "Engineering blogs and coding edtech platforms",
+    "Technical-writing agencies"
+   ],
+   "value": "medium",
+   "value_why": "Upwork lists tutorials and how-to guides under technical writing (2026-01-21), and technical writing pays above general content: AmbitionBox India average Technical Writer Rs 8.5 lakh/yr (Oct 2026), BLS US median $90,390 (May 2025). Held at medium because tutorials usually come as one part of a docs retainer, not as stand-alone commissions.",
+   "goal": "Run every step and reach the stated working result on the first try, then follow the next-step link.",
+   "structure": [
+    {
+     "part": "Title + outcome line",
+     "does": "Names what the reader will build or do and with which tool ('Send your first WhatsApp template message with the X Python SDK'); one line under it says what works at the end.",
+     "length": "title up to 12 words; 1-2 sentences"
+    },
+    {
+     "part": "Prerequisites",
+     "does": "Accounts, API keys, OS, runtime and package versions, prior knowledge assumed; a 'last tested with' line.",
+     "length": "3-8 bullets"
+    },
+    {
+     "part": "Setup",
+     "does": "Create the project and install dependencies with the exact commands, then show the output that proves it worked.",
+     "length": "1-2 steps"
+    },
+    {
+     "part": "Core steps",
+     "does": "Numbered steps, each = one imperative action, one complete code block, which file it goes in, the expected output, and at most 2-3 sentences of why.",
+     "length": "3-10 steps, 40-150 words each plus code"
+    },
+    {
+     "part": "Run it",
+     "does": "The full run with the complete expected output: the 'it works' moment.",
+     "length": "1 step"
+    },
+    {
+     "part": "Troubleshooting",
+     "does": "The errors a tester actually hit, exact error text then the fix.",
+     "length": "2-4 entries"
+    },
+    {
+     "part": "Next steps",
+     "does": "Links to the concept explanation, the how-to for the next task and the API reference; optionally the full final code or repo link.",
+     "length": "2-4 bullets"
+    }
+   ],
+   "length": {
+    "min": 500,
+    "max": 2500,
+    "unit": "words",
+    "note": "Prose words, excluding code. A quickstart is one path in 3-6 steps (low end); a concept-teaching tutorial or codelab runs longer. The number of steps the minimum working result needs sets the length, not a word target."
+   },
+   "frameworks": [
+    "fw:bluf",
+    "fw:feynman_technique"
+   ],
+   "techniques": [
+    "tech:step_by_step_instructions",
+    "tech:consistent_terminology",
+    "tech:curse_of_knowledge_fix",
+    "tech:chunking",
+    "tech:descriptive_subheads",
+    "tech:plain_language"
+   ],
+   "hooks": [
+    "hook:how_to",
+    "hook:keyword_front_loaded"
+   ],
+   "tones": [
+    "tone:technical_precise",
+    "tone:conversational"
+   ],
+   "checklist": [
+    "Does the prerequisites section name every runtime, package and account, with version numbers?",
+    "Does every step start with one imperative action (Install, Create, Run, Add)?",
+    "Is every code block complete enough to paste and run, with placeholders clearly marked (YOUR_API_KEY) and no '...' gaps?",
+    "Does every step that produces output show the expected output?",
+    "Is it clear which file each snippet goes into and where in that file?",
+    "Is the same term used for the same thing throughout (not 'project' in step 2 and 'workspace' in step 5)?",
+    "Is there a troubleshooting section quoting exact error text?",
+    "Does it end with next-step links rather than a recap of what was just done?",
+    "Are secrets shown only as placeholders, never as real-looking keys?",
+    "Has someone run it end to end from a clean machine or new account?"
+   ],
+   "pitfalls": [
+    "Untested steps: the writer's machine already had a dependency, so step 3 fails for a fresh reader. Run it in a clean container or new account and record the exact versions in prerequisites.",
+    "Silent steps like 'Configure the client': every step needs the literal command or code.",
+    "Version drift: an SDK method gets renamed and the tutorial breaks quietly. Pin versions and add 'Last tested with v2.3 on <date>'.",
+    "Copy-paste traps: smart quotes, line numbers or the shell prompt ($, >) inside the copyable block. Keep prompts and output outside the code the reader copies.",
+    "Teaching the whole product: a quickstart that detours into architecture loses the reader. One path; link the concept page.",
+    "For Indian developers, examples can use Rs amounts, +91 numbers and local services, but keep instructions in plain English and never translate code identifiers."
+   ],
+   "lint": {
+    "min_words": 300,
+    "max_words": 5000,
+    "max_sentence_words": 35,
+    "require": [
+     {
+      "label": "states prerequisites",
+      "regex": "(?i)prerequisite|before you begin|you('ll| will) need|requirements|आवश्यकता|ज़रूरत"
+     },
+     {
+      "label": "points to next steps",
+      "regex": "(?i)next step|what's next|where to go next|learn more|आगे"
+     }
+    ],
+    "ban": [
+     {
+      "label": "condescending ease words",
+      "regex": "(?i)\\b(simply|obviously|trivially)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Quickstart for a Bengaluru payments-API startup: 'Create your first payment link with the Python SDK', for backend developers at Indian D2C brands who know Python but have never used the API; English; 700-1,100 words plus code; goal: a working payment link printed in the terminal, then a click through to the webhooks how-to.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:developer_tutorial",
+    "note": "Clean one-path quickstart: versioned prerequisites, every step one imperative action with file and position named, pinned install with expected output, a real 'it works' run, four troubleshooting entries with exact error text, and the webhooks how-to as the first next-step link. Only nit: the sample customer number is a real-looking mobile number; use an obviously fake one. Clean-machine 'last tested' date correctly left as a placeholder.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:devotional_content",
+   "kind": "genre",
+   "name": "Devotional content (aarti, bhajan, stuti, vrat katha text)",
+   "status": "current",
+   "summary": "Devotional text for Hindu and other faith audiences: aarti and chalisa texts with their meaning, original bhajans and stutis, vrat katha retellings, mantra explainers and festival lore. Good devotional writing quotes traditional texts exactly, marks what is scripture and what is retelling, and speaks with warmth and reverence without promising miracles.",
+   "use_for": [
+    "Festival-day posts, reels and WhatsApp cards for a devotional page (Navratri, Chhath, Janmashtami)",
+    "Vrat katha retold for an app or a YouTube audio track",
+    "Verse-by-verse meaning of the Hanuman Chalisa or an aarti",
+    "Original bhajan or stuti lyrics for a devotional channel or singer",
+    "Temple history and darshan-guide copy for a trust or pilgrimage operator"
+   ],
+   "avoid": [
+    "Inventing verses, 'lost' stories or miracles and presenting them as scripture: name the source text and label any retelling or interpretation as such.",
+    "Promising results ('chant this 11 times and get the job'): describe the belief in the tradition's own terms ('bhakt maante hain...') and stop there.",
+    "Pasting lyrics of modern film or label bhajans: they are copyrighted; use traditional public-domain texts or write original lines.",
+    "Jokes or satire about a deity inside a devotional brief: wrong genre, and it can attract a legal complaint (comp:bns_defamation_speech).",
+    "Mixing sampradaya details (Vaishnava vs Shaiva practice, regional vrat dates) without checking: confirm with the client's panchang or priest."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.business-standard.com/companies/start-ups/appsforbharat-raises-rs-175-crore-series-c-to-expand-devotion-platform-125063001067_1.html",
+     "title": "Business Standard (2025-06-30): AppsForBharat raises Rs 175 crore Series C to scale Sri Mandir platform",
+     "supports": "investor money is flowing into Indian devotional (faith-tech) platforms that run on devotional content"
+    }
+   ],
+   "related": [
+    "genre:katha_narration",
+    "genre:festival_greeting",
+    "genre:rashifal_horoscope",
+    "lang:sanskrit_iast",
+    "trend:short_video_india",
+    "trend:rural_vernacular_internet_india"
+   ],
+   "buyers": [
+    "Faith-tech apps (puja booking, devotional audio and video)",
+    "Devotional YouTube, Instagram and WhatsApp channel pages",
+    "Temples, trusts and pilgrimage operators",
+    "Music labels and bhajan singers commissioning original lyrics",
+    "Brands running festival campaigns (sweets, puja samagri, jewellery)"
+   ],
+   "value": "medium",
+   "value_why": "Faith-tech platforms built on devotional content are raising venture money: AppsForBharat (Sri Mandir) raised Rs 175 crore in a Series C (Business Standard, 2025-06-30). Most paid work is page and app content at volume rather than premium one-off pieces.",
+   "goal": "Feel the bhakti bhaav and do the devotional act: recite, sing, keep the vrat, visit, or share it with family.",
+   "structure": [
+    {
+     "part": "Invocation",
+     "does": "Opens with the deity's name and a traditional salutation ('जय माता दी'), then one line naming the occasion or the text.",
+     "length": "1-2 lines"
+    },
+    {
+     "part": "Context",
+     "does": "Which text and tradition this comes from and when it is recited (tithi, weekday, festival), so the reader can place it.",
+     "length": "2-4 sentences"
+    },
+    {
+     "part": "Core text",
+     "does": "The traditional verses exactly as in a standard edition the client approves (Devanagari, with IAST or simple roman if the audience needs it), or the original bhajan/stuti. Keep verse numbers.",
+     "length": "as the text requires"
+    },
+    {
+     "part": "Meaning or katha",
+     "does": "Bhavarth verse by verse in simple Hindi or English, or the katha retold scene by scene; mark clearly where interpretation begins.",
+     "length": "60-120 words per verse or scene"
+    },
+    {
+     "part": "Practice",
+     "does": "Vidhi, samagri, timing, do's and don'ts as the tradition describes them, attributed to the named text or to the client's priest.",
+     "length": "3-8 bullets"
+    },
+    {
+     "part": "Closing",
+     "does": "Blessing line or jaykara, then a gentle CTA (save it for the vrat day, share with family, follow for daily aarti).",
+     "length": "1-3 lines"
+    }
+   ],
+   "length": {
+    "min": 60,
+    "max": 2500,
+    "unit": "words",
+    "note": "A reel caption or festival card is 60-200 words; a full chalisa explainer with verse-by-verse meaning runs into thousands. The text being explained sets the length."
+   },
+   "frameworks": [
+    "fw:pixar_story_spine",
+    "fw:five_ws_and_h"
+   ],
+   "techniques": [
+    "tech:anaphora_repetition",
+    "tech:read_aloud",
+    "tech:sensory_detail",
+    "tech:plain_language"
+   ],
+   "hooks": [
+    "hook:question",
+    "hook:hinglish_question"
+   ],
+   "platforms": [
+    "plat:instagram_caption",
+    "plat:youtube_description",
+    "plat:whatsapp_business_template"
+   ],
+   "tones": [
+    "tone:devotional_bhakti",
+    "tone:storyteller_narrative",
+    "tone:calm_reassuring"
+   ],
+   "languages": [
+    "lang:hindi_devanagari",
+    "lang:sanskrit_iast",
+    "lang:hinglish_roman"
+   ],
+   "compliance": [
+    "comp:bns_defamation_speech",
+    "comp:asci_code"
+   ],
+   "checklist": [
+    "Are traditional verses word-for-word identical to a standard printed edition, with no paraphrase passed off as the original?",
+    "Is the source text named wherever a story, rule or benefit is attributed to scripture?",
+    "Is every retelling or interpretation marked as such?",
+    "Are dates, tithis and muhurat taken from the client's panchang, or left out?",
+    "Is there no promise of material results (job, money, cure) from a ritual?",
+    "Are deity names and Sanskrit terms spelled one consistent way throughout?",
+    "Is there nothing that belittles another deity, sampradaya or faith?",
+    "Do original lyrics avoid any line lifted from a copyrighted film or label bhajan?",
+    "Does it close with a jaykara, blessing or gentle CTA?"
+   ],
+   "pitfalls": [
+    "AI-made 'shlokas' that look like Sanskrit but exist in no text: never compose Sanskrit verse and attribute it. Quote a standard edition, or label new lines as an original composition.",
+    "Wrong vrat or festival dates: dates vary by region and panchang. Ask the client which calendar they follow, or leave the date out.",
+    "Sanskritised Hindi the audience can't follow: keep the verses as they are, but write the bhavarth in everyday Hindi (lang:hindustani_everyday).",
+    "Encyclopaedia tone: write as a bhakt speaking to bhakts, warm and personal, while keeping every fact accurate.",
+    "Hashtag-stuffed captions on a devotional post read as spam: 3-5 specific tags at most, after the text."
+   ],
+   "lint": {
+    "min_words": 50,
+    "max_words": 3000,
+    "ban": [
+     {
+      "label": "promise of guaranteed results",
+      "regex": "(?i)guarantee|गारंटी|100% (result|fal|फल)"
+     }
+    ]
+   },
+   "exemplar_brief": "Instagram + WhatsApp post for a Varanasi-based puja-booking app on day 1 of Shardiya Navratri (Maa Shailputri): one line of context, the traditional dhyana mantra quoted exactly in Devanagari with roman transliteration, a 4-line bhavarth in simple Hindi, a 3-line vidhi, a jaykara and a soft CTA to book a Navratri puja; Hindi (Devanagari); 150-250 words.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:devotional_content",
+    "note": "The Shailputri dhyana mantra matches the standard printed text; the IAST is serviceable but mixes conventions (vanchhita, mid-line capital). Bhavarth is marked as meaning and the four lines are natural. The three-step vidhi is attributed to tradition, there is a jaykara and a soft CTA, no date is given (panchang rule) and there are 3 tags. Nits: 'safed phool ... bhog lagayein' should be 'phool arpit karein, ghee ka bhog'. 'Bio mein link' only works on Instagram, so the WhatsApp version needs its own CTA line.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:direct_mail_package",
+   "kind": "genre",
+   "name": "Direct mail package (letter, postcard, self-mailer)",
+   "status": "niche",
+   "summary": "A printed mailing that has to survive the walk from letterbox to bin: an envelope teaser or postcard face that gets it opened or read, a letter that sells one offer to one reader, and a reply device that makes responding easy. Good packages read like a personal letter, are specific, and have a single response path.",
+   "use_for": [
+    "Bank, NBFC or insurer cross-sell and renewal mailers",
+    "B2B mailers to CFOs, doctors or clinic owners with an invitation or sample",
+    "Donor and alumni appeal letters for an NGO or school",
+    "Real-estate or local-service postcards to a housing society",
+    "'Lumpy' mail with an object inside for account-based marketing"
+   ],
+   "avoid": [
+    "Writing it like a brochure, all features and no letter voice: write from one named person to one reader.",
+    "Several offers or ways to respond: one offer, one real deadline, one response path (call, QR, reply card).",
+    "Cheap one-time offers to a cold postal list in India, where good lists are thin: test WhatsApp (genre:whatsapp_broadcast) or email first.",
+    "Envelopes or notices styled like a government, court or bank-official letter: misleading, and against the ASCI code."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; lists direct-mail project types"
+    },
+    {
+     "url": "https://www.upwork.com/hire/direct-marketers/",
+     "title": "Upwork: hire Direct Marketers",
+     "supports": "dedicated hire category listing direct mail (snippet-only)"
+    }
+   ],
+   "related": [
+    "genre:sales_page",
+    "genre:fundraising_appeal",
+    "genre:brochure_copy",
+    "genre:promotional_email",
+    "genre:whatsapp_broadcast"
+   ],
+   "buyers": [
+    "Banks, NBFCs and insurers",
+    "B2B companies running account-based marketing",
+    "NGOs, schools and universities (donor and alumni appeals)",
+    "Real-estate developers and local service businesses",
+    "Direct-response agencies"
+   ],
+   "value": "low",
+   "value_why": "AWAI's 2026 pricing guide still lists direct-mail project types and Upwork runs a Direct Marketers hire category, but demand in India is thin outside banking, insurance and B2B. The skill mostly earns its money today inside long-form sales pages and fundraising letters.",
+   "goal": "Respond through the one response path (call, scan the QR, return the reply card) before the deadline.",
+   "structure": [
+    {
+     "part": "Envelope or postcard face",
+     "does": "A teaser line that earns the open, or a plain personal-looking envelope for a letter meant to feel personal. A postcard face carries headline, image and offer, readable at a glance.",
+     "length": "0-15 words"
+    },
+    {
+     "part": "Letter opening",
+     "does": "Salutation by name where the data allows; the first lines speak to the reader's situation or make a specific promise, never the company history.",
+     "length": "1-3 sentences"
+    },
+    {
+     "part": "Body",
+     "does": "Develops the one offer: the problem, what is offered, proof (named client, number, testimonial), price, why now. Short paragraphs; subheads in long letters.",
+     "length": "250-900 words for a 1-2 page letter"
+    },
+    {
+     "part": "Offer and call to action",
+     "does": "Exact offer, a real deadline date, how to respond (phone, QR with short URL, reply card) and what happens next.",
+     "length": "60-120 words"
+    },
+    {
+     "part": "Signature",
+     "does": "A real, named person with a title.",
+     "length": "2 lines"
+    },
+    {
+     "part": "P.S.",
+     "does": "Restates the main benefit and the deadline for readers who skim to the end.",
+     "length": "1-2 sentences"
+    },
+    {
+     "part": "Reply device or postcard back",
+     "does": "Pre-filled name and address, tick-box choices, the offer restated, QR code and short URL, return instructions; works even if separated from the letter.",
+     "length": "30-80 words"
+    }
+   ],
+   "length": {
+    "min": 40,
+    "max": 2500,
+    "unit": "words",
+    "note": "Postcards run 40-120 words; a one-page letter 300-500; long letters for considered purchases or donations run several pages. The price and unfamiliarity of the offer drive length."
+   },
+   "frameworks": [
+    "fw:aida",
+    "fw:pppp",
+    "fw:pas",
+    "fw:problem_promise_proof_proposal"
+   ],
+   "techniques": [
+    "tech:ps_line",
+    "tech:one_reader_rule",
+    "tech:you_focus",
+    "tech:risk_reversal",
+    "tech:ethical_urgency",
+    "tech:personalization_tokens"
+   ],
+   "hooks": [
+    "hook:you_direct_address",
+    "hook:offer_price",
+    "hook:personal_story"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:friendly_warm"
+   ],
+   "compliance": [
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:dpdp_act_rules"
+   ],
+   "checklist": [
+    "Is there exactly one offer and one primary response path?",
+    "Does the letter's first line talk about the reader's situation or the offer, not the company?",
+    "Is the deadline a real date rather than 'hurry'?",
+    "Is there at least one specific proof point (named customer, number or guarantee)?",
+    "Is the letter signed by a named person with a title?",
+    "Does a P.S. restate the offer or the deadline?",
+    "Does the reply device repeat the offer and work on its own if separated?",
+    "Is all online response given as a QR code or short URL, with no 'click' language in print?",
+    "Are personalisation fields marked ([First name]) with a stated fallback?",
+    "Is nothing on the envelope or postcard styled like a government or legal notice?"
+   ],
+   "pitfalls": [
+    "Company-first openings ('Founded in 1998, XYZ...'): rewrite the first line around the reader's problem or the offer.",
+    "Merge-field disasters ('Dear [FNAME]', wrong gender, wrong title): specify a fallback for every field in the copy deck ('Dear Dr Sharma' falls back to 'Dear Doctor').",
+    "A postcard carrying a paragraph on the front: the face gets a glance, so put headline, offer and response there and detail on the back.",
+    "No way to measure response: give each mailing its own phone extension, short URL or QR so the client can count replies.",
+    "Translated English letters for Hindi or Marathi readers: transcreate the greeting and the proof (local names, local places), not just the words."
+   ],
+   "lint": {
+    "min_words": 40,
+    "max_words": 2500,
+    "require": [
+     {
+      "label": "has a print response path",
+      "regex": "(?i)call|scan|reply|return|visit|whatsapp|order|book|apply|send|कॉल|स्कैन"
+     }
+    ],
+    "ban": [
+     {
+      "label": "screen language in print",
+      "regex": "(?i)click (here|below|the link)"
+     }
+    ]
+   },
+   "exemplar_brief": "One-page direct-mail letter plus reply card from a Pune physiotherapy clinic chain to residents aged 50+ in nearby housing societies, offering a free knee-and-back screening this month with a named senior physiotherapist; English with a one-line Marathi greeting allowed; letter 300-450 words + reply card 40-60 words; goal: call or scan the QR to book a slot before the stated date.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:direct_mail_package",
+    "note": "Reader-first opening about stairs and puja-sitting pain; one offer, phone as the primary path with QR as backup, real dates whose weekdays are right (Mon 19, Sat 24, Sat 31 Oct 2026), a named physio placeholder with title, a P.S. restating offer and deadline, and a reply card that works on its own. Merge field has a Marathi fallback. Nits: the envelope is called 'plain' but carries a teaser. No per-mailing extension or short URL for response tracking.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:display_banner_ad_copy",
+   "kind": "genre",
+   "name": "Display / banner ad copy",
+   "status": "current",
+   "summary": "Copy for fixed-size or responsive display ads: a headline, an optional sub-line and a button, read at a glance beside unrelated content. Good banner copy names one benefit or offer, adds what the image cannot show, makes the click obvious, and fits every asset limit of the ad network.",
+   "use_for": [
+    "Google responsive display ad assets (short headlines, long headline, descriptions)",
+    "Retargeting banners for an e-commerce sale",
+    "Standard banner-size sets for a launch (rectangle, leaderboard, mobile banner)",
+    "App-install and lead-generation display ads"
+   ],
+   "avoid": [
+    "A paragraph on a banner: if it needs explaining, it belongs on the landing page (genre:landing_page).",
+    "Words that repeat the image ('Shoes' over a picture of shoes): let the words carry the offer, proof or benefit.",
+    "Unproven superlatives ('India's No.1'): ASCI requires substantiation and a banner has no room for it; use a specific fact you can prove.",
+    "Fake system-alert or close-button styling ('Your phone has a virus'): deceptive, and rejected by networks (comp:google_ads_misrepresentation)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "lists 'Banner Ad or Text Ad' as a priced copywriting project type"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ad-copy",
+     "title": "Fiverr: Ad Copy subcategory",
+     "supports": "627 gigs on 2026-10-04; placement filter includes Mobile"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork In-Demand Skills 2026 (2026-02-04)",
+     "supports": "Display Advertising (+26%) among the fastest-growing Sales & Marketing skills"
+    }
+   ],
+   "related": [
+    "genre:social_ad_copy",
+    "genre:search_ad_copy",
+    "genre:ooh_billboard_copy",
+    "genre:landing_page",
+    "genre:abandoned_cart_email"
+   ],
+   "buyers": [
+    "Performance-marketing agencies",
+    "E-commerce and D2C brands running retargeting",
+    "Banks and fintech app-install advertisers",
+    "Programmatic and ad-tech teams"
+   ],
+   "value": "medium",
+   "value_why": "AWAI's 2026 pricing guide lists 'Banner Ad or Text Ad' as a project type, Fiverr's Ad Copy category filters mobile placements, and Upwork In-Demand Skills 2026 names Display Advertising (+26%) among the fastest-growing marketing skills. Usually bought bundled with design, so the writing alone is priced low.",
+   "goal": "Click through to the landing page, or at least register the brand and offer, from a single glance.",
+   "structure": [
+    {
+     "part": "Headline",
+     "does": "The one benefit or offer in plain words, key word first because small sizes and responsive layouts truncate.",
+     "length": "2-6 words, within the network's character limit"
+    },
+    {
+     "part": "Sub-line or description",
+     "does": "Proof, qualifier or detail: price, deadline, who it is for. Dropped on the smallest sizes.",
+     "length": "4-12 words"
+    },
+    {
+     "part": "CTA button",
+     "does": "Verb + object that matches what the landing page lets the user do ('Shop the sale', 'Get your quote').",
+     "length": "1-3 words"
+    },
+    {
+     "part": "Brand and legal line",
+     "does": "Brand name and any mandatory disclaimer ('T&C apply', financial-product warnings), legible at the smallest size.",
+     "length": "as required"
+    },
+    {
+     "part": "Variants",
+     "does": "For responsive ads, 3-5 headlines and descriptions on different angles (offer, benefit, proof, deadline); each must make sense combined with any other because the network mixes them.",
+     "length": "3-5 per field"
+    }
+   ],
+   "length": {
+    "min": 5,
+    "max": 120,
+    "unit": "words",
+    "note": "One banner is 5-20 words; a responsive asset set with variants runs 60-120. The network's character limits (plat:google_ads_responsive_display) and the smallest size in the set decide it."
+   },
+   "frameworks": [
+    "fw:slap",
+    "fw:four_us"
+   ],
+   "techniques": [
+    "tech:front_loading",
+    "tech:button_labels",
+    "tech:cta_writing",
+    "tech:word_budget",
+    "tech:specificity"
+   ],
+   "hooks": [
+    "hook:offer_price",
+    "hook:short_punchy",
+    "hook:urgency_deadline"
+   ],
+   "platforms": [
+    "plat:google_ads_responsive_display",
+    "plat:google_ads_pmax",
+    "plat:microsoft_audience_ads"
+   ],
+   "tones": [
+    "tone:minimalist_understated",
+    "tone:playful_witty"
+   ],
+   "compliance": [
+    "comp:asci_code",
+    "comp:google_ads_editorial",
+    "comp:google_ads_misrepresentation",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "checklist": [
+    "Does each headline make sense on its own and when paired with any description?",
+    "Is every asset within the network's character limit?",
+    "Is the offer or key word in the first three words?",
+    "Is there exactly one CTA, phrased as a verb?",
+    "Does the CTA match what the landing page actually lets the user do?",
+    "Is every claim (price, % off, ranking) true and provable?",
+    "Do the words add something the image doesn't already show?",
+    "Does the smallest size still carry headline + CTA without the sub-line?",
+    "Is any mandatory disclaimer included?"
+   ],
+   "pitfalls": [
+    "One copy for every size: a leaderboard and a mobile banner need different cuts. Write the smallest version first, then expand.",
+    "Combinable assets that clash: responsive ads mix headlines and descriptions, so 'Sale ends Sunday' next to 'New arrivals every day' reads oddly. Check each pairing.",
+    "Hard-coded prices that go stale after the sale: use the client's product feed or keep the price out.",
+    "Hinglish on a banner works for mass D2C ('Sale shuru, stock khatam hone se pehle') but keep the button in the language of the landing page.",
+    "Exclamation marks and capitals for energy: networks restrict gimmicky punctuation and capitals (comp:google_ads_editorial); let the offer do the work."
+   ],
+   "lint": {
+    "max_words": 120,
+    "max_sentence_words": 12,
+    "max_exclamations": 2,
+    "ban": [
+     {
+      "label": "screen-reader-hostile CTA",
+      "regex": "(?i)click here"
+     },
+     {
+      "label": "unsubstantiated no.1 claim",
+      "regex": "(?i)\\b(no\\.? ?1|number one)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Google responsive display asset set for a Jaipur block-print bedsheet D2C brand's Diwali sale (flat 30% off until a stated date), retargeting shoppers who abandoned a cart; English with one Hinglish variant; 5 short headlines, 1 long headline, 3 descriptions and a CTA, each within the limits in plat:google_ads_responsive_display; goal: return to the cart and buy.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:display_banner_ad_copy",
+    "note": "All assets are within RDA limits. The offer is in the first words, the angles differ (offer, cart reminder, origin, deadline, Hinglish), the pairings combine cleanly, there is one verb CTA and a legal line. The 8 Nov end date matches Diwali 2026. Risk: description 2 says 'Your cart is saved at the sale price'. That claim about cart behaviour must be true on the client's store, or Google misrepresentation applies. The Hinglish headline would read more naturally as 'Jo cart mein hai, ab 30% off'.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:documentary_narration",
+   "kind": "genre",
+   "name": "Documentary / long-form narration script",
+   "status": "current",
+   "summary": "Narration written to picture after the paper edit: it gives the viewer what the footage and interviews cannot (time, place, context, stakes, transitions) and stays silent when pictures and voices carry the story. Good narration is written for the ear, says less than you expect, and never describes what is already on screen.",
+   "use_for": [
+    "YouTube mini-documentaries on history, business or civic stories",
+    "Brand, CSR or NGO impact films",
+    "Archive-led explainer documentaries",
+    "Narrated segments inside a long-form channel episode"
+   ],
+   "avoid": [
+    "Narrating the image ('Here we see the river'): add what the picture cannot show (when, why it matters, what changed).",
+    "Wall-to-wall VO: leave room for interviews, natural sound and music; cut any line the edit already says.",
+    "Writing before the paper edit: you will write lines no shot supports. Wait for the selects, or mark the draft 'to be timed to picture'.",
+    "Opinion presented as fact in a factual documentary: attribute it, or move the piece to genre:video_essay_script."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/scriptwriting-freelancers/",
+     "title": "Upwork: Best Freelance Scriptwriters for Hire",
+     "supports": "Upwork runs a dedicated hire page for scriptwriters"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writer projects include narrated video; $30-$56 per hour"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/script-writer-salary",
+     "title": "AmbitionBox: Script Writer salary in India (updated 2026-10-03)",
+     "supports": "average Script Writer salary Rs 5 lakh per year with 1 year of experience"
+    }
+   ],
+   "related": [
+    "genre:video_essay_script",
+    "genre:youtube_video_script",
+    "genre:faceless_video_script",
+    "trend:youtube_on_tv",
+    "trend:ai_disclosure_rules"
+   ],
+   "buyers": [
+    "YouTube documentary and explainer channels",
+    "Production houses and OTT unscripted teams",
+    "Brands and CSR teams commissioning impact films",
+    "NGOs and foundations",
+    "Political and government content teams producing long-form video"
+   ],
+   "value": "low",
+   "value_why": "Part of Upwork's scriptwriting category (script writers $30-$56/hr on Upwork, 2026-01-21; AmbitionBox India Script Writer average Rs 5 lakh/yr, Oct 2026), but documentary-specific narration is a niche commission.",
+   "goal": "Keep watching to the end, understanding what happened and why it matters.",
+   "structure": [
+    {
+     "part": "Cold open",
+     "does": "The strongest scene or interview bite first, then one narration line that states the film's question or stakes.",
+     "length": "20-60 seconds; 1-3 VO lines"
+    },
+    {
+     "part": "Title and setup",
+     "does": "Place, time, who we follow and what is at stake: only the context the next scene needs.",
+     "length": "30-90 seconds"
+    },
+    {
+     "part": "Acts or chapters",
+     "does": "Each act turns on a question; narration bridges scenes (time jumps, places, numbers), sets up interview bites and then gets out of their way.",
+     "length": "2-5 acts; VO in short blocks between bites"
+    },
+    {
+     "part": "Turn",
+     "does": "The moment of change, usually carried by interviews, archive and sound with minimal VO.",
+     "length": "1-3 minutes"
+    },
+    {
+     "part": "Resolution",
+     "does": "What changed and where things stand now, with dates; one reflective line, no moral lecture.",
+     "length": "30-90 seconds"
+    },
+    {
+     "part": "End cards",
+     "does": "Current status, sources, disclaimers (reconstructions, AI-generated visuals) and credits.",
+     "length": "2-5 cards"
+    }
+   ],
+   "length": {
+    "min": 120,
+    "max": 3000,
+    "unit": "words",
+    "note": "VO words only. Narration covers part of the runtime, so a 5-minute mini-doc may need a few hundred words and a 20-minute film a couple of thousand; how much the interviews carry decides it. Time every block with a read-aloud against the cut."
+   },
+   "frameworks": [
+    "fw:three_act_structure",
+    "fw:youtube_intro_hook_promise_preview",
+    "fw:nested_loops"
+   ],
+   "techniques": [
+    "tech:write_for_voiceover",
+    "tech:but_therefore",
+    "tech:open_loop",
+    "tech:show_dont_tell",
+    "tech:read_aloud",
+    "tech:onscreen_text_vs_vo"
+   ],
+   "hooks": [
+    "hook:in_medias_res_opener",
+    "hook:curiosity_gap"
+   ],
+   "platforms": [
+    "plat:youtube_chapters",
+    "plat:youtube_description"
+   ],
+   "tones": [
+    "tone:storyteller_narrative",
+    "tone:journalistic_neutral"
+   ],
+   "languages": [
+    "lang:hindi_voiceover_tts",
+    "lang:hindustani_everyday"
+   ],
+   "compliance": [
+    "comp:youtube_altered_synthetic",
+    "comp:it_rules_sgi_2026",
+    "comp:bns_defamation_speech"
+   ],
+   "checklist": [
+    "Is the script in two columns (picture | sound/VO), with every VO line paired to a shot or sequence?",
+    "Does no line merely describe what is visible on screen?",
+    "Is every fact, number and date checkable against a listed source?",
+    "Can each sentence be said in one breath at speaking pace?",
+    "Are interview bites set up without the narration repeating them?",
+    "Does the cold open state the film's question within the first minute?",
+    "Are numbers written for the ear (rounded where precision doesn't matter)?",
+    "Are reconstructions, archive and AI-generated visuals labelled?",
+    "Does the ending say where things stand now rather than moralise?"
+   ],
+   "pitfalls": [
+    "Encyclopaedia voice with long subordinate clauses that trip the narrator: read every line aloud at pace and split anything you run out of breath on.",
+    "Telling the audience how to feel ('In a heartbreaking turn...'): let the bite or the image do it; narration supplies facts.",
+    "Hindi VO with translated-English syntax or heavy Sanskritised words: write spoken Hindi (lang:hindustani_everyday) and test it with the narrator or TTS.",
+    "Numbers in a row: one number per sentence, and put the key figure on screen as a text card.",
+    "Unlabelled AI reconstructions in a factual film: label them; India's 2026 IT Rules on synthetic content and YouTube's altered-content disclosure apply."
+   ],
+   "lint": {
+    "min_words": 120,
+    "max_words": 3000,
+    "max_sentence_words": 28,
+    "ban": [
+     {
+      "label": "narrating the picture or the video itself",
+      "regex": "(?i)\\b(as (we|you) can see|here we see|in this video)\\b|जैसा कि आप देख"
+     }
+    ]
+   },
+   "exemplar_brief": "Two-column narration script (picture | VO) for a 5-minute YouTube mini-documentary by a Patna-based history channel on the 1934 Bihar earthquake and how Munger and Patna rebuilt, built from archive photos and two historian interviews; Hindi (Devanagari) for a human narrator; 450-650 words of VO; goal: viewers watch to the end and subscribe for the next episode.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_04.json#genre:documentary_narration",
+    "note": "Facts check out: 15 Jan 1934 was a Monday, the epicentre was in Nepal near Everest at about M8, Munger and Muzaffarpur were worst hit, Rajendra Prasad was released on 17 Jan and set up the Bihar Central Relief Committee, Patna was capital of Bihar and Orissa from 1912, and the GSI 1939 memoir is real. The spoken Hindi is strong ('har naksha kisi ki zameen par khinchta hai'), the cold open poses the question, and bites are set up and then left alone. The end card labels the archive with no AI visuals. Deductions: rows are PICTURE/SOUND/VO stacks rather than a true two-column table, and the rebuild content (the film's core) waits entirely on interview placeholders. The Patna section repeats itself ('prashasan yahin se chalta tha' twice).",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:ebook_lead_magnet",
+   "kind": "genre",
+   "name": "Marketing ebook (gated content)",
+   "status": "current",
+   "summary": "A designed, multi-chapter guide given free in exchange for an email or phone number, which teaches one problem well enough that the right reader trusts the brand and the wrong reader self-selects out. Good ones deliver a framework, checklist, benchmark or case the reader cannot get from a search result, and end in one clear next step.",
+   "use_for": [
+    "B2B SaaS or fintech top-of-funnel guide ('GST e-invoicing playbook for mid-size manufacturers')",
+    "Consultancy, CA or law-firm credibility piece promoted through LinkedIn ads",
+    "Edtech or coaching guide that feeds a webinar",
+    "Benchmark report built on the client's own data"
+   ],
+   "avoid": [
+    "Rewriting the top search results into chapters: AI answers give that away free. Add first-hand data, templates, cases or the client's own method.",
+    "A one-page checklist dressed up as an ebook: if one page does the job, write genre:lead_magnet_content.",
+    "A product brochure behind a form: readers who feel tricked unsubscribe. Teach first; sell in the last chapter.",
+    "Asking for more fields than needed or skipping consent wording: under DPDP, say what you will send and collect only what you need."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "ghostwriting projects include ebooks; ghostwriter $20-$45/hr band"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/book-and-ebook-writing",
+     "title": "Fiverr: Book & eBook Writing category",
+     "supports": "add-ons include outline, eBook formatting, topic research"
+    },
+    {
+     "url": "https://www.the-efa.org/rates/",
+     "title": "EFA 2026 Rate Chart (2026-03-18)",
+     "supports": "Ghostwriting > Business/marketing: 50 cents-$1.00 per word, $87.50-$125.00 per hour"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "asks whether content provides original information, research or analysis and first-hand expertise, and flags content that mainly summarises what others say"
+    }
+   ],
+   "related": [
+    "genre:lead_magnet_content",
+    "genre:white_paper",
+    "genre:landing_page",
+    "genre:email_sequence_nurture",
+    "trend:non_commodity_content",
+    "trend:ai_overviews_zero_click"
+   ],
+   "buyers": [
+    "B2B SaaS and fintech marketing teams",
+    "Consultancies, CA and law firms, agencies",
+    "Edtech and coaching businesses",
+    "Content-marketing agencies (white-label)"
+   ],
+   "value": "medium",
+   "value_why": "Upwork lists ebooks among ghostwriting projects ($20-$45/hr, 2026-01-21) and Fiverr sells ebook outlines, research and formatting as add-ons; the EFA 2026 chart puts business/marketing ghostwriting at 50 cents-$1 per word. Original data and expertise are what get paid now that AI-written ebooks crowd the low end.",
+   "goal": "Hand over their email for it, read past chapter one, and take the one next step (book a call, start a trial, join the webinar).",
+   "structure": [
+    {
+     "part": "Title and subtitle",
+     "does": "A specific outcome for a specific reader ('The GST Notice Playbook: the 6 notice types D2C founders get and how to answer each').",
+     "length": "title up to 10 words; subtitle up to 20"
+    },
+    {
+     "part": "Introduction",
+     "does": "The problem in the reader's words, who it is for and not for, what they will be able to do by the end, and why the author is credible (first-hand cases, numbers).",
+     "length": "250-400 words"
+    },
+    {
+     "part": "Chapters",
+     "does": "One idea or step per chapter, each with something the reader can apply: framework, worked example, checklist, template, Indian case. Descriptive subheads and callouts for skimmers.",
+     "length": "3-7 chapters, 400-1,200 words each"
+    },
+    {
+     "part": "One-page summary",
+     "does": "Recap or checklist the reader can print or screenshot.",
+     "length": "150-300 words"
+    },
+    {
+     "part": "Next step",
+     "does": "Bridges from what they learned to the product or service, with one CTA and one proof point.",
+     "length": "150-300 words"
+    },
+    {
+     "part": "About and sources",
+     "does": "Author or firm credentials, contact, and a reference for every statistic.",
+     "length": "100-200 words"
+    }
+   ],
+   "length": {
+    "min": 2000,
+    "max": 10000,
+    "unit": "words",
+    "note": "Working range; topic depth and funnel stage decide. Under about 1,500 words it is a checklist or guide, not an ebook. Usually commissioned with its landing page and a short delivery email sequence."
+   },
+   "frameworks": [
+    "fw:pas",
+    "fw:scqa"
+   ],
+   "techniques": [
+    "tech:descriptive_subheads",
+    "tech:tldr_summary",
+    "tech:bold_for_skimmers",
+    "tech:specificity",
+    "tech:eeat_first_hand_experience",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:how_to",
+    "hook:number_list",
+    "hook:ultimate_guide"
+   ],
+   "tones": [
+    "tone:authoritative",
+    "tone:data_driven",
+    "tone:conversational"
+   ],
+   "compliance": [
+    "comp:dpdp_act_rules",
+    "comp:asci_code"
+   ],
+   "checklist": [
+    "Does the title promise a specific outcome for a specific reader?",
+    "Does the introduction say who it is for and what they will be able to do after reading?",
+    "Does every chapter contain at least one usable artefact (framework, checklist, template or worked example)?",
+    "Is there first-hand material (client data, a real case, the author's process) a search result would not give?",
+    "Does every statistic carry a named source and year?",
+    "Do the subheads alone give the reader the argument?",
+    "Is selling confined to the final chapter, with one CTA?",
+    "Is there a one-page summary or checklist?",
+    "For Indian readers, are amounts in Rs with lakh/crore formatting and examples set in India?"
+   ],
+   "pitfalls": [
+    "Padding chapters ('What is GST?') the target reader doesn't need: start where their problem starts.",
+    "Stat soup from unsourced 'studies': every number gets a source and year, or it goes.",
+    "A pitch in every chapter: at most one soft mention per chapter; the CTA lives at the end.",
+    "A wall of text handed to the designer: mark callouts, tables and checklists in the copy deck so layout can follow the argument.",
+    "A gated asset with no follow-up: write the delivery and nurture emails with it (genre:email_sequence_nurture)."
+   ],
+   "lint": {
+    "min_words": 1500,
+    "max_words": 12000,
+    "max_avg_sentence_words": 22,
+    "require": [
+     {
+      "label": "has a next-step CTA",
+      "regex": "(?i)book|call|demo|consult|sign up|register|start|try|contact|whatsapp|बुक|संपर्क"
+     }
+    ]
+   },
+   "exemplar_brief": "Gated ebook for a Jaipur CA firm: 'GST notices for D2C founders: 6 common notice types and how to respond to each', for founders of D2C brands doing Rs 5-50 crore revenue; English; 3,000-3,800 words across an introduction, 6 short chapters, a one-page checklist and a CTA chapter; goal: book a 20-minute GST health-check call.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_1.json#genre:ebook_lead_magnet",
+    "note": "ROUND 2: P2 S2 Sp2 V2 C1. Now complete at 3,119 words: a real-reader intro that says who it is not for, six chapters in one repeatable shape each with an artefact (reconciliation sheet, monthly three-way check, missing-returns tracker, 7-working-day plan, refund reply pack, DRC-06 skeleton), a one-page triage table plus 10 checks, one CTA chapter. Round 1's errors are fixed (88C/88D thresholds, Rule 59(6) and s.79, DRC-01 as the SCN summary, s.74A from FY 2024-25) and the interest sums check. Writer errors to fix before release: s.62(2) now gives 60 days (extendable by 60 with an added fee, Finance Act 2023), not 30, to file and have a best-judgment order withdrawn; revocation in REG-21 is within 90 days of the cancellation order (Rule 23 as amended in 2022), not 30; the Rs 5 crore e-invoicing threshold could be stated rather than tagged [verify]. | round 1: weak 6",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:editorial",
+   "kind": "genre",
+   "name": "Editorial (publication's institutional opinion)",
+   "status": "current",
+   "summary": "An unsigned argument that states a publication's or board's official position on one issue and asks someone (government, regulator, public) to act. Good editorials take a clear side early, rest it on verified facts, deal fairly with the strongest counter-argument, and end with a specific demand rather than a vague hope.",
+   "use_for": [
+    "A newspaper or digital outlet's lead editorial on a policy or event",
+    "An association's or institution's official position in its journal or newsletter",
+    "A trade magazine's editor-page lead on a new regulation",
+    "Campus newspaper editorial-board pieces"
+   ],
+   "avoid": [
+    "Writing in the first person or telling a personal story: that is a signed column (genre:opinion_column).",
+    "Fence-sitting ('only time will tell'): an editorial must say what should happen.",
+    "Re-reporting the news at length: summarise the peg in a sentence or two and argue.",
+    "Attacking a person's character, religion or caste: argue the policy (comp:bns_defamation_speech)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://pressbooks.nvcc.edu/eng121/chapter/types-of-news-stories/",
+     "title": "Jasmine Roberts, Introduction to Journalism I (NVCC Pressbooks, CC BY-NC 4.0, 2023): Types of news stories",
+     "supports": "the editorial is an argument representing an editorial board's official view"
+    },
+    {
+     "url": "https://www.the-efa.org/rates/",
+     "title": "EFA 2026 Rate Chart (2026-03-18)",
+     "supports": "Ghostwriting > Journalism 23-29.5 cents per word"
+    }
+   ],
+   "related": [
+    "genre:opinion_column",
+    "genre:news_story",
+    "genre:policy_brief",
+    "genre:news_explainer",
+    "edit:fact_check"
+   ],
+   "buyers": [
+    "Newspapers and digital news outlets (edit-page desks)",
+    "Trade associations and industry journals",
+    "Think tanks and institutional newsletters",
+    "University and school publications"
+   ],
+   "value": "low",
+   "value_why": "Written in-house by editorial-board staff (the board's official view, per NVCC's Introduction to Journalism); no freelance marketplace category was found. The EFA 2026 chart lists journalism ghostwriting at 23-29.5 cents per word, the low end of ghostwriting.",
+   "goal": "Accept the board's position and support or demand the specific action it calls for.",
+   "structure": [
+    {
+     "part": "Headline",
+     "does": "States the position or the demand, not just the topic ('Desilt Patna's drains before the monsoon, not after').",
+     "length": "6-12 words"
+    },
+    {
+     "part": "Peg and position",
+     "does": "One or two sentences on what prompted the editorial, then the board's stance, both in the first paragraph.",
+     "length": "40-80 words"
+    },
+    {
+     "part": "Argument",
+     "does": "Two or three reasons, each resting on a verified fact, figure or precedent; strongest first.",
+     "length": "200-450 words"
+    },
+    {
+     "part": "Counter-argument",
+     "does": "The best opposing case stated fairly, then answered.",
+     "length": "60-150 words"
+    },
+    {
+     "part": "Demand and close",
+     "does": "Who must do what, by when if possible; a final line that restates the position crisply.",
+     "length": "50-100 words"
+    }
+   ],
+   "length": {
+    "min": 350,
+    "max": 900,
+    "unit": "words",
+    "note": "The edit-page slot fixes the length; a lead editorial is usually the longest on the page and digital editorials often run shorter. Ask the desk for the slot."
+   },
+   "frameworks": [
+    "fw:toulmin_model",
+    "fw:oreo",
+    "fw:classical_arrangement"
+   ],
+   "techniques": [
+    "tech:objection_handling",
+    "tech:specificity",
+    "tech:paragraph_inverted_pyramid",
+    "tech:antithesis",
+    "tech:cut_qualifiers"
+   ],
+   "hooks": [
+    "hook:contrarian",
+    "hook:command"
+   ],
+   "tones": [
+    "tone:authoritative",
+    "tone:data_driven"
+   ],
+   "languages": [
+    "lang:hindi_devanagari",
+    "lang:indian_english"
+   ],
+   "compliance": [
+    "comp:bns_defamation_speech",
+    "comp:ap_ai_standards"
+   ],
+   "checklist": [
+    "Is the board's position stated in the first paragraph?",
+    "Is the piece free of first-person singular ('I', 'my', 'मैं')?",
+    "Does each argument rest on a fact, figure or precedent checked against its primary source?",
+    "Is the strongest counter-argument stated fairly and answered?",
+    "Does the close name who should do what (and by when, where possible)?",
+    "Is the news peg summarised in two sentences or fewer?",
+    "Is there no attack on anyone's identity, religion or caste?",
+    "Does the headline state the position rather than the topic?"
+   ],
+   "pitfalls": [
+    "A hedged conclusion ('Both sides have merit'): pick one and say why.",
+    "A strawman counter-argument: readers who hold that view stop reading. State it at its strongest.",
+    "Figures from memory: check every number against the budget document, court order or official dataset before filing.",
+    "For Hindi papers, ornate or calqued Hindi ('इस बात को सुनिश्चित किया जाना चाहिए'): write the argument in clean standard Hindi with short sentences and active verbs."
+   ],
+   "lint": {
+    "min_words": 300,
+    "max_words": 1000,
+    "max_avg_sentence_words": 24,
+    "ban": [
+     {
+      "label": "fence-sitting close",
+      "regex": "(?i)only time will tell|remains to be seen|समय ही बताएगा"
+     }
+    ]
+   },
+   "exemplar_brief": "Lead editorial for a Patna-based Hindi digital news outlet arguing that the city's municipal corporation should publish ward-wise drain-desilting progress before the monsoon; general readers in Patna; Hindi (Devanagari); 450-600 words; goal: readers back the demand and share the piece.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:editorial",
+    "note": "Position-as-headline, peg plus stance in paragraph one, then three reasons, strongest first: 2019 waterlogging, public money with RTI s.4 proactive disclosure, and ward-level scrutiny. The counter-argument (exposure of shortfalls, paper inflation) is stated fairly and answered with verifiable data. The close names who (commissioner and mayor), what (a ward table with contractor and spend) and when (7 days, then every Friday until the monsoon). Clean standard Hindi with local 'udahi'; no first person singular. Public facts used are correct: 75 wards, the Sept 2019 flooding, a mid-June monsoon. Peg date left as a placeholder by design.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:editorial_newsletter",
+   "kind": "genre",
+   "name": "Editorial email newsletter",
+   "status": "current",
+   "summary": "A recurring email issue readers open for the writing itself: an essay, analysis or annotated roundup in a consistent voice and format. Good issues deliver one clear idea (or a tightly edited set of items) per send, carry a subject line that earns the open honestly, and follow a structure readers learn to trust.",
+   "use_for": [
+    "A founder's or company's weekly insight newsletter (Substack, beehiiv, LinkedIn newsletter)",
+    "A media brand's daily or weekly analysis email",
+    "An expert's paid newsletter",
+    "A B2B industry briefing that keeps a brand in the inbox"
+   ],
+   "avoid": [
+    "Using it as a promo blast: offers and launches go to genre:promotional_email; the newsletter stays value-first with at most one labelled sponsor or house-ad block.",
+    "Pasting a blog post with 'read more' links: write for the inbox so the email is complete on its own.",
+    "Link dumps without a take: if curation is the product, write genre:curated_newsletter.",
+    "Changing the format every issue: readers come back for a known shape."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "email and newsletter writing is its own job type, 'Ongoing newsletters' among projects, $15-$40/hr band"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork In-Demand Skills 2026 (2026-02-04)",
+     "supports": "Email Marketing among the top-10 most in-demand Sales & Marketing skills"
+    }
+   ],
+   "related": [
+    "genre:creator_newsletter",
+    "genre:curated_newsletter",
+    "genre:promotional_email",
+    "plat:substack_post",
+    "trend:newsletters_owned_audience",
+    "trend:email_deliverability_rules"
+   ],
+   "buyers": [
+    "Founders and executives (ghostwritten)",
+    "B2B companies and agencies",
+    "Media startups and independent journalists",
+    "Creators building free or paid newsletters"
+   ],
+   "value": "high",
+   "value_why": "Upwork lists email and newsletter writing as its own job type with 'Ongoing newsletters' among projects ($15-$40/hr, 2026-01-21), and Upwork In-Demand Skills 2026 puts Email Marketing in the top-10 marketing skills. It is recurring by nature, so it sells as a retainer.",
+   "goal": "Open it, read to the end, and come back next issue (reply, forward, or click the one featured link).",
+   "structure": [
+    {
+     "part": "Subject line + preheader",
+     "does": "The subject names the issue's idea specifically; the preheader adds a second reason to open; the sender name never changes.",
+     "length": "subject 4-9 words; preheader 6-12 words"
+    },
+    {
+     "part": "Opening",
+     "does": "Gets straight into the idea with a scene, a number or a question; no 'Welcome to issue 47'.",
+     "length": "30-80 words"
+    },
+    {
+     "part": "Main piece",
+     "does": "One idea developed with evidence and the writer's view; subheads once it passes about 600 words.",
+     "length": "300-1,200 words"
+    },
+    {
+     "part": "Recurring sections (optional)",
+     "does": "Fixed blocks readers expect: three links with one-line takes, a reader question, a chart of the week.",
+     "length": "100-400 words"
+    },
+    {
+     "part": "Sponsor or house ad (optional)",
+     "does": "One clearly labelled block, written in the newsletter's voice.",
+     "length": "40-80 words"
+    },
+    {
+     "part": "Sign-off + ask",
+     "does": "Personal sign-off and one ask: reply, forward, share or upgrade.",
+     "length": "20-50 words"
+    }
+   ],
+   "length": {
+    "min": 300,
+    "max": 2500,
+    "unit": "words",
+    "note": "Daily briefs sit at the low end, weekly essays at 800-2,000 words. Keep the HTML small enough to avoid Gmail clipping (plat:gmail_clipping)."
+   },
+   "frameworks": [
+    "fw:scqa",
+    "fw:what_so_what_now_what",
+    "fw:prep"
+   ],
+   "techniques": [
+    "tech:subject_preheader_pairing",
+    "tech:sender_name",
+    "tech:one_reader_rule",
+    "tech:open_loop",
+    "tech:single_cta_email",
+    "tech:anchor_text"
+   ],
+   "hooks": [
+    "hook:curiosity_gap",
+    "hook:descriptive_subject_line",
+    "hook:contrarian"
+   ],
+   "platforms": [
+    "plat:email_subject_line",
+    "plat:substack_post",
+    "plat:gmail_clipping",
+    "plat:medium_story"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:founder_candid",
+    "tone:data_driven"
+   ],
+   "compliance": [
+    "comp:can_spam",
+    "comp:dpdp_act_rules",
+    "comp:uk_pecr",
+    "comp:asci_code"
+   ],
+   "checklist": [
+    "Does the draft include a subject line and a preheader that don't repeat each other?",
+    "Does the first sentence start the idea instead of greeting or apologising?",
+    "Is there one main idea a reader could sum up in a sentence?",
+    "Does every claim or number link to its source?",
+    "Is any sponsored block labelled as sponsored?",
+    "Is link text descriptive (no 'click here')?",
+    "Is there exactly one primary ask at the end?",
+    "Does the issue follow the newsletter's fixed section format?",
+    "Would the email make sense to a reader who never clicks a link?"
+   ],
+   "pitfalls": [
+    "Throat-clearing intros ('Hope you had a great week!'): open with the idea.",
+    "Image-heavy templates that clip in Gmail or land in Promotions: keep it text-led with few images.",
+    "Subject lines the body doesn't pay off: a one-time open spike, then unsubscribes. The subject must describe the real content.",
+    "Hinglish creator newsletters: fine in Roman script if the voice is consistent, but keep subject lines in the script most of the list reads."
+   ],
+   "lint": {
+    "min_words": 250,
+    "max_words": 2500,
+    "require": [
+     {
+      "label": "subject line marked",
+      "regex": "(?im)^\\s*(subject( line)?|विषय)\\s*:"
+     }
+    ],
+    "ban": [
+     {
+      "label": "non-descriptive link text",
+      "regex": "(?i)click here"
+     }
+    ]
+   },
+   "exemplar_brief": "Weekly issue of 'Paisa Pulse', the newsletter of a Mumbai fintech founder, explaining one idea: why zero-MDR UPI makes it hard for payment apps to earn from UPI payments, for startup operators and finance-curious professionals; English with light Hinglish; 700-1,000 words plus subject line and preheader; goal: read to the end and reply with a question.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:editorial_newsletter",
+    "note": "Subject and preheader do different jobs. It opens on a chai-stall scene with no greeting, keeps one idea (who pays for zero-MDR UPI), clearly labels the illustration, gives a candid 'My view', fixed 'three reads' links and a single reply ask. The Hinglish is light and natural. Fact precision: s.10A came in via the Finance (No. 2) Act 2019. The PPI wallet interchange is 0.5-1.1 percent by merchant category, so 1.1 percent is the ceiling, not a flat fee (writer did flag [verify]). One read link is a pure placeholder.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:elearning_course_script",
+   "kind": "genre",
+   "name": "E-learning course / training module script",
+   "status": "current",
+   "summary": "The script and storyboard for one training module: measurable objectives, short screens or scenes that each teach one point, narration written for the ear, on-screen text that supports rather than repeats it, and knowledge checks tied to each objective. Good modules change what the learner does on the job, not just what they have seen.",
+   "use_for": [
+    "Corporate compliance and soft-skills modules (POSH awareness, data privacy, customer handling)",
+    "Product training for channel partners and field sales",
+    "LMS onboarding modules",
+    "Government or NGO training for frontline workers, often in Hindi",
+    "Narrated slide-based or AI-avatar video lessons"
+   ],
+   "avoid": [
+    "Starting from content ('everything about our product'): write 3-5 'learner will be able to...' objectives first and cut anything that serves none of them.",
+    "Narration that reads the screen text aloud: the screen carries keywords and visuals, the VO explains.",
+    "Quizzes that test trivia ('In which year was the policy introduced?'): test decisions in a realistic scenario.",
+    "A single lesson for a public creator course: use genre:course_lesson_script."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "instructional designer listed among 14 freelance writing types; $20-$45 per hour"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/elearning-content-development",
+     "title": "Fiverr Writing & Translation: E-Learning Content Development",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "related": [
+    "genre:course_lesson_script",
+    "genre:sop_process_doc",
+    "genre:explainer_video_script",
+    "genre:interactive_quiz_content",
+    "trend:ai_video_scripting_demand"
+   ],
+   "buyers": [
+    "L&D teams in IT services, banking, insurance, pharma and retail",
+    "E-learning vendors and instructional-design agencies",
+    "Edtech companies",
+    "Government programmes and NGOs running training"
+   ],
+   "value": "medium",
+   "value_why": "Upwork lists instructional designer as a freelance writing type ($20-$45/hr, 2026-01-21) and Fiverr runs an E-Learning Content Development category. Corporate work comes as multi-module contracts, and AI video tools add script work (trend:ai_video_scripting_demand).",
+   "goal": "Do the target task correctly on the job, with the module's assessment as the proof.",
+   "structure": [
+    {
+     "part": "Module header",
+     "does": "Title, audience, duration and 3-5 measurable objectives using observable verbs (identify, calculate, choose, respond).",
+     "length": "50-120 words"
+    },
+    {
+     "part": "Hook",
+     "does": "A realistic workplace situation or consequence the learner recognises.",
+     "length": "1 screen or 30-60 seconds"
+    },
+    {
+     "part": "Content chunks",
+     "does": "One concept per screen or scene, in storyboard columns: screen no. | visual and on-screen text | narration | interaction | developer notes. Each chunk maps to an objective.",
+     "length": "4-12 screens; 40-120 narration words per screen"
+    },
+    {
+     "part": "Practice scenario",
+     "does": "The learner applies the concept: branching choice or case, with feedback for every option.",
+     "length": "1-3 interactions"
+    },
+    {
+     "part": "Knowledge check",
+     "does": "Questions mapped to objectives, plausible distractors based on real mistakes, and feedback explaining why for right and wrong answers.",
+     "length": "1-2 questions per objective"
+    },
+    {
+     "part": "Summary and job aid",
+     "does": "Key takeaways, a downloadable checklist, and where to get help.",
+     "length": "1-2 screens"
+    }
+   ],
+   "length": {
+    "min": 400,
+    "max": 3500,
+    "unit": "words",
+    "note": "Screen count and narration drive length; microlearning stays to a few minutes, full modules run longer. Agree the module duration first and budget narration words from a timed read-aloud."
+   },
+   "frameworks": [
+    "fw:feynman_technique",
+    "fw:what_so_what_now_what"
+   ],
+   "techniques": [
+    "tech:chunking",
+    "tech:write_for_voiceover",
+    "tech:onscreen_text_vs_vo",
+    "tech:step_by_step_instructions",
+    "tech:plain_language",
+    "tech:curse_of_knowledge_fix"
+   ],
+   "hooks": [
+    "hook:question",
+    "hook:can_you_spot"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:calm_reassuring",
+    "tone:conversational"
+   ],
+   "languages": [
+    "lang:hindi_voiceover_tts",
+    "lang:global_plain_english",
+    "lang:transcreation"
+   ],
+   "checklist": [
+    "Are there 3-5 objectives, each with an observable verb (not 'understand' or 'know')?",
+    "Does every screen map to at least one objective?",
+    "Does every objective have at least one knowledge-check question?",
+    "Does narration differ from on-screen text (VO explains, screen shows keywords)?",
+    "Does every quiz option have feedback explaining why it is right or wrong?",
+    "Are scenarios set in the learner's real workplace, with Indian names, roles and tools where relevant?",
+    "Can each narration block be read aloud naturally in one take?",
+    "Could a developer build each screen from the storyboard without guessing (visual, interaction, branching)?",
+    "Is there a summary or job aid at the end?"
+   ],
+   "pitfalls": [
+    "'Understand the policy' objectives that cannot be tested: rewrite as 'choose the correct escalation path for a customer complaint'.",
+    "Screens copied from the policy PDF: keep the screen to keywords and a visual, and move detail to the job aid.",
+    "Obviously wrong distractors: write wrong options that reflect mistakes people actually make.",
+    "Hindi modules translated word for word from English: transcreate scenarios and examples (lang:transcreation), and keep technical terms in the form learners actually say.",
+    "No feedback on wrong answers: 'Incorrect, try again' teaches nothing; explain the consequence of that choice."
+   ],
+   "lint": {
+    "min_words": 350,
+    "max_words": 3500,
+    "max_sentence_words": 30,
+    "require": [
+     {
+      "label": "states learning objectives",
+      "regex": "(?i)objective|you will be able to|you'll be able to|will be able to|by the end of|उद्देश्य|सीख पाएंगे|कर पाएंगे"
+     },
+     {
+      "label": "has a knowledge check",
+      "regex": "(?i)question|quiz|knowledge check|check your|प्रश्न|सवाल"
+     }
+    ]
+   },
+   "exemplar_brief": "Script + storyboard for one 10-minute e-learning module for a Lucknow-based NBFC's new loan-collection agents: 'Calling a borrower who has missed an EMI: respectful, compliant collection calls'; 3-4 objectives, 8-10 screens with narration, one branching call scenario, 4 knowledge-check questions with feedback; Hindi (Devanagari) narration with English UI labels; 900-1,400 words; goal: agents choose compliant, respectful responses in the scenario.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_04.json#genre:elearning_course_script",
+    "note": "Developer-ready storyboard: 4 observable objectives, a realistic Aminabad hook, 10 screens each mapped to objectives, and a two-part branching call with feedback on every option. The job aid and grievance route are present, and the 8am-7pm window matches RBI's recovery-agent directions. Deductions: Q2 is labelled objective 2 but tests objective 1 (third party picks up), so objective 2 ('paise nahi hain' response) has no knowledge-check question. Objectives are phrased as commands ('bataen') after 'kar payenge'. Option B line 'Bete ki sehat ke liye dua. Aap seedha bataiye' is clunky and a little brusque for the respectful model answer.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:election_manifesto",
+   "kind": "genre",
+   "name": "Election manifesto",
+   "status": "current",
+   "summary": "A party's or candidate's published promises for an election, organised by sector or voter group, each specific enough to be checked later and, per ECI guidelines, accompanied by its rationale and a broad indication of how it will be funded. Good manifestos are readable by ordinary voters, consistent with the Constitution, and distil into a few headline promises for posters and speeches.",
+   "use_for": [
+    "A party's sankalp patra or ghoshna patra for a state or national election",
+    "An independent candidate's constituency manifesto",
+    "Municipal or panchayat election vision documents",
+    "Student-union or professional-body election manifestos",
+    "Summary versions: a 10-point leaflet, a WhatsApp card series, speech talking points"
+   ],
+   "avoid": [
+    "Vague promises ('we will develop the state'): name the measure, the number and the deadline.",
+    "Costly promises with no funding logic: ECI guidelines ask manifestos to broadly indicate the ways and means; add a funding line per costly promise.",
+    "Appeals to caste or communal feeling, or anything repugnant to the Constitution: the MCC prohibits it; argue on policy.",
+    "Releasing in the prohibitory period before polling: check the ECI compendium and the client's legal cell."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://ceoelection.bihar.gov.in/pdf/Compendium_MCC.pdf",
+     "title": "ECI Compendium of Instructions on Model Code of Conduct (hosted by CEO Bihar)",
+     "supports": "Part VIII manifesto guidelines (ECI letter 437/6/Manifesto/2013, 19.02.2014): nothing repugnant to the Constitution; manifesto should reflect the rationale for promises and broadly indicate the ways and means to meet the financial requirement; MCC general conduct on criticism of other parties"
+    },
+    {
+     "url": "https://www.the-efa.org/rates/",
+     "title": "EFA 2026 Rate Chart (2026-03-18)",
+     "supports": "Other Consulting (grant writing, pitch development, proposal development, strategic communications): $87.50-135.00 per hour"
+    }
+   ],
+   "related": [
+    "genre:political_speech",
+    "genre:policy_document",
+    "genre:campaign_slogan",
+    "genre:scheme_explainer",
+    "comp:eci_mcc"
+   ],
+   "buyers": [
+    "Party manifesto committees and research cells",
+    "Political consultancies and campaign agencies",
+    "Independent candidates",
+    "Student and professional bodies holding elections"
+   ],
+   "value": "medium",
+   "value_why": "Every party issues one per election and ECI regulates its content (MCC Part VIII). Drafting runs through party committees and political consultancies on campaign retainers, not open marketplaces; the EFA 2026 strategic-communications consulting rate ($87.50-135/hr) is the nearest priced benchmark.",
+   "goal": "Believe the party or candidate has a credible plan for their concerns, remember a few headline promises, and vote for it.",
+   "structure": [
+    {
+     "part": "Cover and title",
+     "does": "Name of the document, party or candidate, election and year, and a one-line vision.",
+     "length": "title + 1 line"
+    },
+    {
+     "part": "Leader's foreword",
+     "does": "A signed message: the moment, the vision, the commitment to voters. Short and personal.",
+     "length": "250-500 words"
+    },
+    {
+     "part": "Headline promises",
+     "does": "The 5-10 flagship promises on one page, one line each, specific and countable.",
+     "length": "1 page, 60-150 words"
+    },
+    {
+     "part": "Sector chapters",
+     "does": "Per sector or voter group (farmers, youth, women, health, infrastructure): the current situation in one paragraph, then numbered promises; each costly promise with its rationale and funding route.",
+     "length": "300-1,200 words each"
+    },
+    {
+     "part": "Record or critique",
+     "does": "Incumbent: delivery figures with official sources. Challenger: factual gaps in the record. Policy only, never private lives.",
+     "length": "300-800 words"
+    },
+    {
+     "part": "Implementation and funding",
+     "does": "Timelines, the mechanism that will deliver, and the broad fiscal plan.",
+     "length": "200-600 words"
+    },
+    {
+     "part": "Closing appeal",
+     "does": "Restates the vision and asks for the vote.",
+     "length": "50-150 words"
+    }
+   ],
+   "length": {
+    "min": 300,
+    "max": 30000,
+    "unit": "words",
+    "note": "Full state or national manifestos run long; constituency manifestos and summary leaflets are short. Writers draft chapter by chapter, so a single draft is usually one chapter or the headline page."
+   },
+   "frameworks": [
+    "fw:problem_promise_proof_proposal",
+    "fw:duarte_sparkline"
+   ],
+   "techniques": [
+    "tech:specificity",
+    "tech:rule_of_three",
+    "tech:parallelism",
+    "tech:plain_language",
+    "tech:numerals"
+   ],
+   "hooks": [
+    "hook:bold_promise",
+    "hook:number_list"
+   ],
+   "tones": [
+    "tone:inspirational",
+    "tone:authoritative"
+   ],
+   "languages": [
+    "lang:hindi_devanagari",
+    "lang:regional_indian_languages"
+   ],
+   "compliance": [
+    "comp:eci_mcc",
+    "comp:eci_ai_content_advisory",
+    "comp:bns_defamation_speech",
+    "comp:google_election_ads"
+   ],
+   "checklist": [
+    "Is every promise specific enough to verify later (number, scope, deadline)?",
+    "Does each costly promise state its rationale and a funding route?",
+    "Is there no appeal on the basis of caste, religion or community?",
+    "Is each promise within the powers of the body being elected (a municipal manifesto doesn't promise central schemes)?",
+    "Are record or performance claims sourced to official data?",
+    "Is criticism of opponents limited to their policies, programmes and record?",
+    "Is there a one-page list of headline promises that stands alone?",
+    "Is it written in the voters' language and register, with each scheme explained in one line?",
+    "Are AI-generated images or synthetic content labelled as ECI directions require?"
+   ],
+   "pitfalls": [
+    "Copy-paste from the last manifesto: journalists and opponents compare versions. Update the data and drop delivered or dead promises.",
+    "Numbers that don't add up: a promise costing more than the relevant budget head invites ridicule. Ask the policy cell to cost every flagship promise.",
+    "Bureaucratic Hindi ('सुनिश्चित किया जाएगा' in every line): vary the verbs, write the way leaders speak, keep sentences short.",
+    "Personal attacks on rival leaders: the MCC confines criticism to policies, programmes and past record."
+   ],
+   "lint": {
+    "min_words": 300,
+    "max_words": 30000,
+    "max_exclamations": 3,
+    "require": [
+     {
+      "label": "names a funding route",
+      "regex": "(?i)fund|budget|financ|cost|crore|lakh|revenue|खर्च|बजट|वित्त|करोड़|राजस्व"
+     }
+    ]
+   },
+   "exemplar_brief": "Youth-employment chapter of a fictional regional party's 2027 Uttar Pradesh assembly election sankalp patra: a one-paragraph situation summary, 6-8 numbered promises with rationale and a funding route for each costly one, and a one-line headline promise for the cover page; Hindi (Devanagari); 700-1,100 words; goal: a first-time voter finds the plan specific and credible.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:election_manifesto",
+    "note": "Situation in one paragraph naming three problems; seven numbered promises, each with deadline or scope, a 'kyon' and a 'kharch' line. The arithmetic reconciles (3,600 + 900 + 150 + 300 = 4,950 crore), FRBM is respected, every promise sits within state powers, there are no caste or religion appeals, and the Hindi is direct rather than bureaucratic. Deduction: the cover-page line ('samay par bharti, samay par natije, kaam milne tak sahara') is a slogan, not the specific, countable headline promise the card asks for (e.g. '10 lakh yuvaon ko Rs 3,000 bhatta, 12 mahine mein bharti').",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:elevator_pitch",
+   "kind": "genre",
+   "name": "Elevator pitch / boilerplate description",
+   "status": "current",
+   "summary": "A few sentences that say who the company helps, with what, and why it is different, written to be said aloud in an intro or pasted as a press boilerplate and profile description. Good ones use the customer's words, carry one concrete proof point and no category buzzwords, and come as a matched set (one line, 30 seconds spoken, ~100-word boilerplate) that all say the same thing.",
+   "use_for": [
+    "Press-release 'About' boilerplate",
+    "Founder's spoken intro at events, investor meetings and podcasts",
+    "LinkedIn company About, Google Business Profile and directory descriptions",
+    "Company overview in tenders and RFP responses",
+    "Sales team's one-line intro for calls and emails"
+   ],
+   "avoid": [
+    "Buzzword stacks ('AI-powered end-to-end innovative solutions provider'): say what you do in words a customer would use.",
+    "Different versions saying different things across channels: write one master set and derive every profile from it.",
+    "Pasting the internal positioning statement as public copy: build from genre:positioning_statement, but in plain, speakable language.",
+    "Personal career intros: use genre:professional_bio or genre:personal_brand_statement."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://jansencomm.com/brand-messaging/",
+     "title": "Jansen Communications: Brand messaging services",
+     "supports": "brand messaging packages list tagline, value proposition, mission, tone of voice, elevator pitch, manifesto"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Elevator_pitch",
+     "title": "Elevator pitch - Wikipedia",
+     "supports": "short description explaining who it is for, what it does, why it is needed and how it gets done"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork In-Demand Skills 2026 (2026-02-04)",
+     "supports": "Brand Strategy (+26%) among the fastest-growing Sales & Marketing skills"
+    }
+   ],
+   "related": [
+    "genre:positioning_statement",
+    "genre:press_release",
+    "genre:about_page",
+    "genre:messaging_framework",
+    "genre:tagline_slogan",
+    "trend:geo_ai_search"
+   ],
+   "buyers": [
+    "Startup and SME founders",
+    "PR agencies writing press boilerplates",
+    "Brand and messaging consultancies",
+    "B2B sales and marketing teams"
+   ],
+   "value": "low",
+   "value_why": "Rarely bought alone: it is a standard item inside brand-messaging packages (Jansen Communications lists it with tagline, value proposition and mission). Brand Strategy (+26%) is among Upwork's fastest-growing skills for 2026, and that is the package it ships in.",
+   "goal": "Understand in one hearing what the company does and for whom, then ask a follow-up question or remember it well enough to refer someone.",
+   "structure": [
+    {
+     "part": "Who it is for",
+     "does": "The specific customer and their situation ('D2C brands doing Rs 5-50 crore a year').",
+     "length": "1 clause"
+    },
+    {
+     "part": "What it does",
+     "does": "The problem solved or outcome, in the customer's words, not a feature list.",
+     "length": "1 sentence"
+    },
+    {
+     "part": "What is different",
+     "does": "The mechanism or difference a competitor could not claim in the same words.",
+     "length": "1 sentence"
+    },
+    {
+     "part": "Proof",
+     "does": "One concrete number, named client or credential.",
+     "length": "1 clause or sentence"
+    },
+    {
+     "part": "Close",
+     "does": "Spoken: an invitation to continue ('Who handles GST notices at your brand?'). Boilerplate: founded year, HQ, scale, website, media contact.",
+     "length": "1-2 sentences"
+    }
+   ],
+   "length": {
+    "min": 15,
+    "max": 150,
+    "unit": "words",
+    "note": "Deliver a set: a one-liner (up to about 20 words), a 30-second spoken version (time it aloud), and a boilerplate of about 100 words. Profile field limits may cut it further."
+   },
+   "frameworks": [
+    "fw:moore_positioning_statement",
+    "fw:jobs_to_be_done",
+    "fw:usp"
+   ],
+   "techniques": [
+    "tech:specificity",
+    "tech:plain_language",
+    "tech:read_aloud",
+    "tech:voice_of_customer_mining",
+    "tech:features_to_benefits"
+   ],
+   "hooks": [
+    "hook:audience_callout",
+    "hook:specificity"
+   ],
+   "platforms": [
+    "plat:google_business_profile",
+    "plat:youtube_channel_description",
+    "plat:x_bio"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:corporate_b2b",
+    "tone:founder_candid"
+   ],
+   "compliance": [
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "checklist": [
+    "Does it name a specific customer group?",
+    "Does it state the outcome in words a customer would use?",
+    "Is there at least one concrete proof point (number, named client or credential)?",
+    "Is it free of stacked buzzwords ('innovative', 'cutting-edge', 'one-stop', 'end-to-end')?",
+    "Can the spoken version be said aloud in about 30 seconds without running out of breath?",
+    "Do the one-liner, spoken and boilerplate versions say the same thing?",
+    "Does the boilerplate carry the facts a journalist needs (founded, HQ, scale, website)?",
+    "Is every superlative ('largest', 'first') substantiated or removed?"
+   ],
+   "pitfalls": [
+    "Category-first openings ('We are a leading SaaS platform...'): start with the customer and the problem.",
+    "Too many audiences in one line: write for the primary customer and make separate variants for investors or recruits.",
+    "Spoken Hindi or Hinglish versions translated literally: rewrite them the way the founder actually talks in that room.",
+    "Stale numbers in boilerplates: date every figure and review the set each quarter.",
+    "AI assistants and journalists quote boilerplates verbatim (trend:geo_ai_search): make the first sentence a self-contained factual definition of what the company is."
+   ],
+   "lint": {
+    "min_words": 12,
+    "max_words": 250,
+    "max_sentence_words": 30,
+    "ban": [
+     {
+      "label": "buzzword stack",
+      "regex": "(?i)\\b(leading provider|cutting-edge|best-in-class|world-class|one-stop|synerg\\w*|innovative solutions?)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Messaging set for a Jaipur CA firm that handles GST notices for D2C founders doing Rs 5-50 crore revenue: a one-line description (up to 20 words), a 30-second spoken intro for a founders' meetup, and a press-release boilerplate of 80-110 words; English; goal: a founder hearing it asks 'how does that work?'.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/retest_1.json#genre:elevator_pitch",
+    "note": "ROUND 2: P2 S2 Sp2 V2 C1. The D2C mechanism (rebuilding the month from marketplace payout reports, returns and cancelled COD parcels) now runs through all three versions, so they say the same thing; the spoken intro opens on a question every founder recognises ('a sales figure you did not recognise'), runs about 80 words and closes on a conversation question; the boilerplate is 85 words with a self-contained first sentence and journalist slots. Proof is a slot because the brief gives none. Nit (writer): the one-liner switches from 'We' to 'your'. | round 1: weak 7",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:email_sequence_nurture",
+   "kind": "genre",
+   "name": "Nurture / drip email sequence",
+   "status": "current",
+   "summary": "A planned series of automated emails that moves a lead from first interest to a sales conversation or purchase over days or weeks. Good sequences are mapped before they are written: each email has one job, one CTA and a reason to exist at that point; timing, behaviour branches and exit rules are specified; and every email is worth reading even if the reader never buys.",
+   "use_for": [
+    "Nurture after an ebook download or webinar for B2B leads",
+    "Free-trial-to-paid SaaS sequences beyond the welcome emails",
+    "Course or coaching pre-launch sequences",
+    "Long-cycle lead nurture for real estate or higher education",
+    "Re-engaging cold leads before list cleaning"
+   ],
+   "avoid": [
+    "Writing emails one at a time without a map: agree the sequence map (goal, trigger, delay, exit) first.",
+    "Every email a pitch: alternate value emails (case, how-to, objection answer) with asks.",
+    "No exit rules: people who buy or book must leave the sequence at once; 'Still thinking?' sent to a new customer loses trust.",
+    "The first emails right after sign-up are genre:welcome_email_series; cart recovery is genre:abandoned_cart_email."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/email-copy",
+     "title": "Fiverr: Email Copy subcategory",
+     "supports": "1,782 gigs on 2026-10-04; email-type filter includes Email Sequences and Follow-Up Emails"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "lists 'Autoresponder/Funnel Emails (Series)' as a priced project type"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork In-Demand Skills 2026 (2026-02-04)",
+     "supports": "Email Marketing and Marketing Automation in the top-10 most in-demand Sales & Marketing skills"
+    }
+   ],
+   "related": [
+    "genre:welcome_email_series",
+    "genre:promotional_email",
+    "genre:abandoned_cart_email",
+    "genre:ebook_lead_magnet",
+    "trend:email_deliverability_rules",
+    "trend:whatsapp_conversational_commerce"
+   ],
+   "buyers": [
+    "B2B SaaS and services marketing teams",
+    "Course creators, coaches and edtech",
+    "D2C brands",
+    "Real-estate developers and education counsellors",
+    "Email-marketing agencies"
+   ],
+   "value": "high",
+   "value_why": "Fiverr's Email Copy category filters 'Email Sequences', AWAI lists 'Autoresponder/Funnel Emails (Series)', and Upwork In-Demand Skills 2026 puts Email Marketing and Marketing Automation in the top-10 Sales & Marketing skills. Sold as a multi-email package, so it prices above single emails.",
+   "goal": "Take the sequence's one conversion action (book a call, start a paid plan, buy) when ready, and keep opening until then.",
+   "structure": [
+    {
+     "part": "Sequence map",
+     "does": "A table agreed before any copy: email no., trigger and delay, job (deliver, teach, prove, answer objection, ask), subject, CTA, branch or exit rule.",
+     "length": "1 table, one row per email"
+    },
+    {
+     "part": "Email 1: deliver and set expectations",
+     "does": "Delivers what they signed up for, says what is coming and how often, asks for one small action (reply, save the sender).",
+     "length": "80-200 words"
+    },
+    {
+     "part": "Value emails",
+     "does": "Each teaches one thing tied to the buyer's problem (a how-to, a case, a myth busted) with a soft CTA.",
+     "length": "120-350 words each"
+    },
+    {
+     "part": "Proof and objection emails",
+     "does": "A case study with numbers, a testimonial, and answers to the top one or two objections (price, time, trust).",
+     "length": "150-350 words each"
+    },
+    {
+     "part": "Offer email(s)",
+     "does": "The clear offer, a real reason or deadline for acting now, risk reversal, one CTA.",
+     "length": "150-300 words"
+    },
+    {
+     "part": "Last email",
+     "does": "A short final note: deadline reminder or 'should I stop emailing about this?', then the lead moves to the regular newsletter.",
+     "length": "50-120 words"
+    }
+   ],
+   "length": {
+    "min": 400,
+    "max": 5000,
+    "unit": "words",
+    "note": "Whole sequence, every email with subject, preheader, body and CTA. A short B2B nurture is a handful of emails; launch and long-cycle sequences run longer. The length of the buying decision sets the count and the gaps."
+   },
+   "frameworks": [
+    "fw:schwartz_awareness_levels",
+    "fw:pas",
+    "fw:bab",
+    "fw:aida"
+   ],
+   "techniques": [
+    "tech:subject_preheader_pairing",
+    "tech:single_cta_email",
+    "tech:open_loop",
+    "tech:objection_handling",
+    "tech:social_proof",
+    "tech:plain_text_email",
+    "tech:personalization_tokens"
+   ],
+   "hooks": [
+    "hook:curiosity_gap",
+    "hook:personalised_subject_line",
+    "hook:descriptive_subject_line",
+    "hook:case_study_title"
+   ],
+   "platforms": [
+    "plat:email_subject_line",
+    "plat:gmail_clipping"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:friendly_warm",
+    "tone:founder_candid"
+   ],
+   "compliance": [
+    "comp:can_spam",
+    "comp:dpdp_act_rules",
+    "comp:uk_pecr",
+    "comp:ccpa_dark_patterns_2023"
+   ],
+   "checklist": [
+    "Is there a sequence map with trigger, delay, job, CTA and exit rule for every email?",
+    "Does each email have exactly one primary CTA?",
+    "Does every email have a subject line and a preheader?",
+    "Do at least half the emails give value without asking for the sale?",
+    "Is there an exit rule that removes people who convert?",
+    "Is every deadline or scarcity claim a real limit?",
+    "Does every email carry an unsubscribe line and identify the sender?",
+    "Does every personalisation token have a fallback?",
+    "Does each email make sense if it is the only one the reader opens?",
+    "Does the last email say what happens next (moved to the newsletter, or emails stop)?"
+   ],
+   "pitfalls": [
+    "The same shape every time (story then pitch): readers learn to skip. Vary it: a plain-text note, a case, an FAQ, a one-line question.",
+    "Fake urgency ('Only 3 seats left!' on an evergreen course): a dark pattern under the CCPA 2023 guidelines, and sequence readers see it repeat.",
+    "Spacing that ignores the buying cycle: a flat buyer deciding over months does not need daily email. Space by decision length.",
+    "Heavy HTML templates with many links and images: a plain-text style reads as personal and is kinder to deliverability (trend:email_deliverability_rules).",
+    "Pasting the same copy into WhatsApp: WhatsApp needs opt-in, an approved template and a shorter conversational version (genre:whatsapp_broadcast)."
+   ],
+   "lint": {
+    "min_words": 300,
+    "max_words": 5000,
+    "require": [
+     {
+      "label": "subject lines marked",
+      "regex": "(?im)^\\s*(subject( line)?|विषय)\\s*:"
+     },
+     {
+      "label": "unsubscribe line",
+      "regex": "(?i)unsubscribe|opt out|opt-out|सदस्यता"
+     }
+    ],
+    "ban": [
+     {
+      "label": "spam-trigger phrases",
+      "regex": "(?i)\\b(act now|earn money fast|guaranteed income)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "5-email nurture sequence for a Jaipur CA firm, sent over 14 days to D2C founders (Rs 5-50 crore revenue) who downloaded its GST-notice ebook: a sequence map table, then each email with subject, preheader, body, one CTA and an unsubscribe line, ending with an invitation to a free 20-minute GST health check; English; 900-1,400 words in total; goal: book the call.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:email_sequence_nurture",
+    "note": "Full map with send day, job, subject, CTA and exit; every email has subject, preheader, one CTA, sender, unsubscribe and a token fallback. Shapes vary (deliver/ask reply, a 10-minute check, a case, an objection, an offer), the 'already have an accountant' objection is handled well, and the 20th GSTR-3B date for monthly filers is real urgency, not fake. The last email says what happens next. Nits: email 3 rests entirely on a client case placeholder (by design), and 'the notice was rarely about money owed' generalises from one case. Email 2 omits that DRC-01B/01C only trigger above the notified threshold.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:error_messages",
+   "kind": "genre",
+   "name": "Error message copy",
+   "status": "current",
+   "summary": "Short interface messages that say what went wrong, why if it helps, and exactly how to fix it, shown next to the problem in plain words without blaming the user. Good error copy keeps the user's input and gets them moving again; a message that only says something failed is a dead end.",
+   "use_for": [
+    "Form validation (sign-up, KYC, checkout)",
+    "Payment failures and UPI timeouts",
+    "Network, server and 404 states",
+    "API and CLI error strings developers read",
+    "Permission-denied and no-results states"
+   ],
+   "avoid": [
+    "Codes and jargon ('Error 0x80070005', 'Invalid input'): say what is wrong in the user's terms and show the fix; put the code in a secondary line for support.",
+    "Blame ('You entered an invalid PAN'): describe the requirement neutrally ('PAN has 10 characters, like ABCDE1234F').",
+    "Jokes on serious failures (money debited, order not placed): be calm, say whether they were charged and what happens next.",
+    "Errors shown while the user is still typing: validate when they leave the field or submit."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/error-message-guidelines/",
+     "title": "Nielsen Norman Group: Error-Message Guidelines (2023-05-14)",
+     "supports": "display errors close to the source; use human-readable language; concisely and precisely describe the issue; offer constructive advice; positive tone, don't blame the user; preserve the user's input; avoid prematurely displaying errors"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ux-writing",
+     "title": "Fiverr: UX Writing subcategory",
+     "supports": "122 gigs on 2026-10-04; products Website, Mobile app, Software/Dashboard, Chatbot"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/ux-writer-salary",
+     "title": "AmbitionBox: UX Writer salary in India (updated 2026-08-21)",
+     "supports": "average UX Writer salary Rs 15.1 lakh per year"
+    }
+   ],
+   "related": [
+    "genre:ux_microcopy",
+    "genre:order_form_checkout_copy",
+    "genre:onboarding_flow_copy",
+    "genre:troubleshooting_guide",
+    "edit:accessible_writing_check"
+   ],
+   "buyers": [
+    "Product and design teams at SaaS, fintech and e-commerce companies",
+    "UX-writing and content-design agencies",
+    "Developer-tool companies (CLI and API errors)",
+    "Government digital services"
+   ],
+   "value": "low",
+   "value_why": "Bought as part of UX-writing engagements rather than alone (Fiverr UX Writing, 122 gigs on 2026-10-04). The skill sits inside a well-paid in-house role: AmbitionBox India average UX Writer salary Rs 15.1 lakh/yr (Aug 2026).",
+   "goal": "Understand what went wrong and fix it, or know what happens next, without contacting support or abandoning the task.",
+   "structure": [
+    {
+     "part": "Placement note",
+     "does": "Where the message appears: next to the field or element that caused it; page-level errors at the top with links to each field.",
+     "length": "1 line per message"
+    },
+    {
+     "part": "What happened",
+     "does": "The problem in the user's terms.",
+     "length": "3-10 words"
+    },
+    {
+     "part": "Why (optional)",
+     "does": "Only when it helps fix it or reassures ('Your bank didn't respond in time').",
+     "length": "0-12 words"
+    },
+    {
+     "part": "How to fix or what happens next",
+     "does": "The specific action, with the expected format or an example; or what the system is doing and when (refund timing).",
+     "length": "5-20 words"
+    },
+    {
+     "part": "Action",
+     "does": "Button or link that performs the fix ('Try again', 'Use another UPI ID'), with the user's input kept.",
+     "length": "1-4 words"
+    },
+    {
+     "part": "Reference (optional)",
+     "does": "Error code or reference ID in secondary text for support.",
+     "length": "1 line"
+    }
+   ],
+   "length": {
+    "min": 3,
+    "max": 700,
+    "unit": "words",
+    "note": "One inline message is roughly 5-25 words; a draft usually covers the set of states for one flow, which is where the upper bound comes from. A bilingual EN+HI set doubles the count: about 500-650 words for 8-10 states."
+   },
+   "frameworks": [
+    "fw:bluf",
+    "fw:what_so_what_now_what"
+   ],
+   "techniques": [
+    "tech:error_message_structure",
+    "tech:plain_language",
+    "tech:positive_form",
+    "tech:button_labels",
+    "tech:form_labels_helper_text",
+    "tech:consistent_terminology"
+   ],
+   "tones": [
+    "tone:calm_reassuring",
+    "tone:empathetic_supportive",
+    "tone:minimalist_understated"
+   ],
+   "languages": [
+    "lang:localization_qa",
+    "lang:hindi_devanagari"
+   ],
+   "checklist": [
+    "Does each message say what went wrong in the user's terms, with no raw code or bare 'invalid input'?",
+    "Does each message say how to fix it or what happens next?",
+    "Is every message free of blame words ('invalid', 'illegal', 'you failed')?",
+    "Does every format error show the expected format or an example?",
+    "Is each action button a specific verb?",
+    "For money errors, does it say whether the user was charged and when any refund arrives?",
+    "Is each message readable in one glance (one or two short sentences)?",
+    "Are exclamation marks and jokes absent?",
+    "Is terminology identical to the rest of the UI ('UPI ID' everywhere, not 'VPA' in one place)?",
+    "Is the error stated in text, not only by red colour or an icon?"
+   ],
+   "pitfalls": [
+    "A single 'Something went wrong' for everything: list the top failure causes with engineering and write a specific message for each; keep the generic one as a last resort with retry and a support route.",
+    "Forms that clear on error: ask engineering to keep the input; no copy can make up for retyping.",
+    "Word-for-word Hindi ('अमान्य इनपुट') that nobody understands: write what to do ('मोबाइल नंबर 10 अंकों का होना चाहिए').",
+    "Over-apologising or cute copy on a failed payment: people worry about money; be direct and specific.",
+    "Messages that expose internals (stack traces, table names): a security risk. Log the detail and show a reference ID."
+   ],
+   "lint": {
+    "max_words": 700,
+    "max_sentence_words": 20,
+    "max_exclamations": 0,
+    "ban": [
+     {
+      "label": "jargon or blame",
+      "regex": "(?i)\\b(invalid input|illegal (input|entry|value)|fatal error|you failed)\\b|अमान्य इनपुट"
+     }
+    ]
+   },
+   "exemplar_brief": "Error-message set for a Bengaluru UPI payments app's 'Send money' flow: 8-10 states (wrong UPI ID format, UPI ID not found, insufficient balance, bank server down, payment timed out with money debited, daily limit reached, wrong UPI PIN, no internet), each with message, action button and helper text, in English and Hindi (Devanagari); under 25 words per message; goal: the user fixes the problem or knows exactly when their money comes back.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:error_messages",
+    "note": "8 states, each with what happened, the fix or next step, a specific verb button and helper text, and input kept. Money states say whether the user was charged; the timeout state says 'Don't pay again' with a reversal date, consistent with RBI's T+1 rule for failed UPI debits. No blame words, and the Hindi is natural ('bhugtan atka hai'). Nits: EN uses 'Rs' while HI uses the rupee sign; '{n} tries' needs a singular form; 'add money first' is wallet wording for a bank account. The max_words fail is the card's fault, not the piece's. CARD FIX: lint.max_words -> 700 and length.max -> 700, with length.note adding 'a bilingual EN+HI set doubles the count: about 500-650 words for 8-10 states'. | CARD FIXED 2026-10-07 (fix_genre_b): lint.max_words and length.max raised to 700; length.note now says a bilingual EN+HI set runs about 500-650 words for 8-10 states; re-judge pending.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:esg_csr_report",
+   "kind": "genre",
+   "name": "ESG / CSR / sustainability report copy",
+   "status": "current",
+   "summary": "Narrative and disclosure copy for sustainability, CSR and BRSR reports: the leadership letter, materiality and strategy narrative, pillar chapters, programme stories and the text around data tables. Good ESG copy ties every claim to a figure, baseline, boundary and period, reports setbacks alongside wins, and never lets a green adjective stand in for data.",
+   "use_for": [
+    "BRSR narrative sections in a listed company's annual report",
+    "Standalone sustainability or ESG reports",
+    "CSR annual reports and programme impact stories",
+    "Corporate foundation and NGO impact reports",
+    "ESG pages on a corporate website"
+   ],
+   "avoid": [
+    "Unquantified green claims ('eco-friendly', 'sustainable', 'carbon neutral'): give the metric, scope, baseline and verification, or drop the claim.",
+    "Reporting only wins: missed targets and material risks stated plainly build credibility; omissions read as greenwashing.",
+    "Brochure tone in a disclosure document: factual, measured prose; keep storytelling for the impact case studies.",
+    "Producing or estimating disclosure numbers: the writer narrates data supplied and signed off by the sustainability and finance teams."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/sustainability-freelancers/",
+     "title": "Upwork: hire Sustainability Freelancers",
+     "supports": "ESG/CSR report writing (GRI, SASB) listed among sustainability freelance services (snippet-only)"
+    },
+    {
+     "url": "https://cleartax.in/s/brsr-reporting",
+     "title": "ClearTax: BRSR reporting in India",
+     "supports": "SEBI's BRSR is mandatory for the largest listed companies and filed with the annual report (secondary source)"
+    },
+    {
+     "url": "https://www.the-efa.org/rates/",
+     "title": "EFA 2026 Rate Chart (2026-03-18)",
+     "supports": "Ghostwriting > Business/marketing: 50 cents-$1.00 per word, $87.50-$125.00 per hour"
+    }
+   ],
+   "related": [
+    "genre:annual_report_narrative",
+    "genre:ceo_letter",
+    "genre:investor_relations_copy",
+    "genre:case_study",
+    "edit:fact_check"
+   ],
+   "buyers": [
+    "Listed companies' sustainability, CSR and investor-relations teams",
+    "ESG consultancies and report-design agencies",
+    "Corporate foundations and NGOs",
+    "Annual-report agencies"
+   ],
+   "value": "medium",
+   "value_why": "Upwork's sustainability freelancers list ESG/CSR report writing, and SEBI makes BRSR mandatory for the largest listed companies, giving India a fixed annual buyer pool (ClearTax, secondary). The EFA 2026 business/marketing ghostwriting rate (50 cents-$1 per word) is the nearest price benchmark.",
+   "goal": "Trust that the company's sustainability claims are real and material, and (for investors and raters) find each disclosure with its data.",
+   "structure": [
+    {
+     "part": "Leadership message",
+     "does": "The year's ESG priorities, progress against stated targets with numbers, one honest setback, commitments ahead.",
+     "length": "400-800 words"
+    },
+    {
+     "part": "About this report",
+     "does": "Reporting period, boundary (which entities and sites), frameworks used, assurance status, contact.",
+     "length": "150-300 words"
+    },
+    {
+     "part": "Materiality",
+     "does": "Material topics, how they were identified (stakeholder engagement), and why each matters to the business.",
+     "length": "300-700 words"
+    },
+    {
+     "part": "Pillar chapters",
+     "does": "Per topic: policy, target, performance with year-on-year data against the baseline, actions taken, what is next. Tables carry the numbers; prose explains them.",
+     "length": "500-1,500 words per pillar"
+    },
+    {
+     "part": "CSR and impact stories",
+     "does": "Specific programmes: place, beneficiaries, spend, measured outcome, and a short beneficiary story used with consent.",
+     "length": "200-400 words each"
+    },
+    {
+     "part": "Data annex and index",
+     "does": "Labels, footnotes and framework index wording around the client's tables.",
+     "length": "as needed"
+    }
+   ],
+   "length": {
+    "min": 400,
+    "max": 25000,
+    "unit": "words",
+    "note": "A BRSR narrative section or CSR chapter runs a few thousand words; standalone sustainability reports run far longer. Writers deliver chapter by chapter, and the data tables come from the client."
+   },
+   "frameworks": [
+    "fw:what_so_what_now_what",
+    "fw:star",
+    "fw:inverted_pyramid"
+   ],
+   "techniques": [
+    "tech:specificity",
+    "tech:plain_language",
+    "tech:consistent_terminology",
+    "tech:numerals",
+    "tech:cut_qualifiers",
+    "tech:sme_interview"
+   ],
+   "tones": [
+    "tone:corporate_b2b",
+    "tone:data_driven"
+   ],
+   "compliance": [
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code"
+   ],
+   "checklist": [
+    "Does every environmental or social claim carry a number, unit, period and boundary?",
+    "Are year-on-year comparisons made against a stated baseline year?",
+    "Are missed targets and negative trends reported rather than omitted?",
+    "Is every figure traceable to the client's signed-off data table?",
+    "Are words like 'green', 'eco-friendly', 'sustainable' and 'net zero' either defined with data and scope or removed?",
+    "Are the reporting boundary and framework stated?",
+    "Are beneficiary stories specific (place, programme, outcome) and used with consent?",
+    "Is the assurance status stated accurately?",
+    "Is technical terminology (for example Scope 1, 2 and 3 emissions) used consistently and correctly?"
+   ],
+   "pitfalls": [
+    "Greenwashing by adjective ('our eco-friendly packaging'): replace with the measured fact and its scope and period, or cut it.",
+    "Net-zero or 'carbon neutral' claims without the pathway: state the target year, the scopes covered and the role of offsets, or don't make the claim.",
+    "Cherry-picked baselines that flatter the trend: use the baseline the company committed to, and explain any change.",
+    "CSR as photo-op: listing spend and events without outcomes. Report what changed for beneficiaries and how it was measured.",
+    "Hindi or regional summaries for local stakeholders: translate the facts precisely and add no promotional flourish missing from the English."
+   ],
+   "lint": {
+    "min_words": 400,
+    "max_words": 25000,
+    "max_avg_sentence_words": 24,
+    "ban": [
+     {
+      "label": "absolute green claim",
+      "regex": "(?i)\\b(100% (green|sustainable|eco-friendly)|planet-friendly|guilt-free|zero impact)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Environment chapter narrative for the BRSR section of a fictional mid-cap Gujarat textile manufacturer's annual report: energy, water and waste performance against an FY2022-23 baseline, using an illustrative data table the writer includes and labels as sample data, one missed water target explained, and next year's targets; English for investors and ESG raters; 900-1,300 words; goal: a rater finds every claim backed by a figure, period and boundary.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:esg_csr_report",
+    "note": "Rater-ready. Period, baseline (FY2022-23, not restated), boundary (3 units plus office, Scope 3 excluded), framework (BRSR P6) and assurance slot are all stated. The sample table is internally consistent: I recomputed every intensity and percentage change and the target arithmetic. The missed water target is explained with a gap of about 76 ML, matching 62 + 13. The negative is reported plainly and the target carried forward, not reset, with owners. No green adjectives. Nit: voice switches between 'the Company' and 'we'.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:eulogy",
+   "kind": "genre",
+   "name": "Eulogy",
+   "status": "current",
+   "summary": "A short spoken tribute at a funeral, memorial or shraddhanjali sabha that honours one life through specific memories rather than adjectives. Good eulogies are personal, exact about names and relationships, allow one moment of warmth or gentle humour, and end with what the person leaves behind.",
+   "use_for": [
+    "A family member's tribute at a funeral or shraddhanjali sabha",
+    "A colleague's or company's tribute at a condolence meeting",
+    "A tribute to a community, school or institution leader",
+    "A written version for a memorial booklet or social post"
+   ],
+   "avoid": [
+    "A chronological CV ('born in 1948, joined the bank in 1971...'): choose three stories that show who they were.",
+    "Settling scores or airing family conflict: the room is grieving; keep to what honours the person.",
+    "Inside jokes the room can't follow: explain in one line or pick another story.",
+    "A published death report or notice: use genre:obituary or genre:obituary_notice; a note to the family is genre:condolence_message."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/speech-writing",
+     "title": "Fiverr Writing & Translation: Speechwriting",
+     "supports": "personal speeches sold under speechwriting"
+    }
+   ],
+   "related": [
+    "genre:obituary",
+    "genre:obituary_notice",
+    "genre:condolence_message",
+    "genre:wedding_speech"
+   ],
+   "buyers": [
+    "Families, directly or through a speechwriter",
+    "Companies and institutions holding condolence meetings",
+    "Community organisations, schools and associations"
+   ],
+   "value": "low",
+   "value_why": "Occasional one-off commissions sold under speechwriting (Fiverr Speechwriting); most eulogies are written by family members.",
+   "goal": "Feel the person's presence in the room for a few minutes and leave with a memory of who they were.",
+   "structure": [
+    {
+     "part": "Opening",
+     "does": "Who the speaker is and their relationship to the person; one line on what they want to share.",
+     "length": "2-3 sentences"
+    },
+    {
+     "part": "Who they were",
+     "does": "A defining trait shown through one specific story (a place, an action, words they used).",
+     "length": "100-200 words"
+    },
+    {
+     "part": "Two or three stories",
+     "does": "Specific moments, each showing a different side of the person; one may carry gentle humour.",
+     "length": "100-200 words each"
+    },
+    {
+     "part": "What they gave others",
+     "does": "What family, colleagues or the community carry forward; their values seen in action.",
+     "length": "60-120 words"
+    },
+    {
+     "part": "Farewell",
+     "does": "A goodbye to them or to the room; a line, prayer or saying they loved; thanks for coming if the speaker is family.",
+     "length": "2-4 sentences"
+    }
+   ],
+   "length": {
+    "min": 250,
+    "max": 1000,
+    "unit": "words",
+    "note": "Read it aloud with a timer: organisers usually give each speaker a few minutes, and grief slows delivery. More speakers means shorter."
+   },
+   "frameworks": [
+    "fw:three_act_structure",
+    "fw:what_so_what_now_what"
+   ],
+   "techniques": [
+    "tech:anecdote_lead",
+    "tech:show_dont_tell",
+    "tech:sensory_detail",
+    "tech:callback",
+    "tech:read_aloud",
+    "tech:specificity"
+   ],
+   "tones": [
+    "tone:empathetic_supportive",
+    "tone:storyteller_narrative",
+    "tone:calm_reassuring"
+   ],
+   "languages": [
+    "lang:hindustani_everyday",
+    "lang:hinglish_roman",
+    "lang:indian_english"
+   ],
+   "checklist": [
+    "Are names, dates, relationships and places confirmed with the family?",
+    "Are there at least two specific stories (place, action or words), not just adjectives?",
+    "Does the speaker say who they are and how they knew the person?",
+    "Is there nothing that embarrasses the family or airs a dispute?",
+    "Does any humour come from affection for the person, at no one's expense?",
+    "Does it end with what the person leaves behind or a farewell?",
+    "Does a read-aloud fit the time the organisers gave?",
+    "Is it written in the speaker's own voice and language mix?",
+    "Are religious references (prayer, shloka, verse) right for the family's faith and tradition?"
+   ],
+   "pitfalls": [
+    "Adjective lists ('kind, generous, hardworking'): turn each into a moment. 'Every Sunday he took the 7 a.m. bus to teach maths at the village school' says generous better.",
+    "A register the speaker never uses: if they speak Hindi-English mix at home, the eulogy should too; stiff formal Hindi sounds borrowed.",
+    "Running long: cut to fit with room for pauses; a speaker who breaks down needs slack.",
+    "Unchecked facts: a wrong grandchild's name or year is remembered. Verify every name with the family twice.",
+    "A string of borrowed quotations: one verse or saying the person actually loved means more."
+   ],
+   "lint": {
+    "min_words": 200,
+    "max_words": 1100,
+    "max_sentence_words": 28,
+    "max_exclamations": 1,
+    "max_emoji": 0,
+    "max_hashtags": 0
+   },
+   "exemplar_brief": "Eulogy to be read by a granddaughter at the shraddhanjali sabha in Indore for her grandfather, a retired government-school headmaster who played the harmonium; the room is family, former students and neighbours; Hinglish leaning Hindi, in Roman script, written for her to read aloud; 450-600 words; goal: the room recognises him in the stories and leaves with a memory to keep.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:eulogy",
+    "note": "Feels like a real granddaughter speaking. Natural Roman Hinglish leaning Hindi, written in breath lines. Three distinct stories show different sides (the sticking harmonium key with 'ungli ki jaldbaazi', fees paid quietly from salary, the watch ten minutes fast as affectionate humour). There is a lovely callback farewell, thanks to the room and a fitting 'Om Shanti'. Stand-in stories and names are flagged for the family to confirm, as the brief gives none. Nit: 'Hedmaster' should be spelled 'Headmaster'.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:event_promotion",
+   "kind": "genre",
+   "name": "Event promotion & invitation copy",
+   "status": "current",
+   "summary": "Copy that fills seats or sells tickets: the event page, invitation, social posts, reminders and last-call messages. Good event copy puts what, who it is for, why attend, when, where and price in the first screen, backs it with proof (named speakers, past attendees), and moves the reader to register before a real deadline.",
+   "use_for": [
+    "Conference and summit event pages",
+    "Webinar invitations and reminder emails",
+    "Workshop, comedy or concert ticket pages",
+    "Corporate and community invitations (launches, meetups, felicitations)",
+    "Reminder and last-call WhatsApp and SMS messages"
+   ],
+   "avoid": [
+    "Leading with the agenda or the organiser's history: lead with what the attendee gets.",
+    "Fake scarcity ('Only 5 seats left!' for an empty hall): a dark pattern; use real deadlines such as early-bird end or registration close.",
+    "Missing logistics (time zone, venue directions, session language, refunds): people drop off at the last step.",
+    "The post-event write-up: that is genre:event_recap_post."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "lists 'Event Materials' and 'Trade Show Materials' as priced project types"
+    },
+    {
+     "url": "https://www.eventbrite.com/blog/ultimate-copywriting-guide-events/",
+     "title": "Eventbrite: Ultimate guide to copywriting for events",
+     "supports": "ticketing platform guide to event pages, invitations and promo emails"
+    }
+   ],
+   "related": [
+    "genre:event_recap_post",
+    "genre:webinar_script",
+    "genre:landing_page",
+    "genre:trade_show_materials",
+    "genre:whatsapp_broadcast",
+    "trend:whatsapp_conversational_commerce"
+   ],
+   "buyers": [
+    "Event organisers and ticketed-experience businesses",
+    "B2B marketing teams (webinars, summits, launches)",
+    "Colleges, associations and community groups",
+    "Artists, comedians and venues",
+    "Event-marketing agencies"
+   ],
+   "value": "medium",
+   "value_why": "AWAI's 2026 pricing guide lists 'Event Materials' and 'Trade Show Materials' as project types, and ticketing platforms such as Eventbrite publish event-copywriting guides for organisers. Steady demand, usually bundled with event marketing.",
+   "goal": "Register or buy a ticket before the deadline, and then actually show up.",
+   "structure": [
+    {
+     "part": "Headline",
+     "does": "The payoff or experience, not just the event name ('File your own ITR in one Saturday morning').",
+     "length": "6-14 words"
+    },
+    {
+     "part": "Key facts block",
+     "does": "Date, time with time zone, venue or online format, price, language, who it is for.",
+     "length": "5-7 lines"
+    },
+    {
+     "part": "Why attend",
+     "does": "Specific takeaways or experiences in benefit terms.",
+     "length": "3-5 bullets, 8-20 words each"
+    },
+    {
+     "part": "Speakers, performers or proof",
+     "does": "Names with a one-line credential; real past-attendee numbers or quotes.",
+     "length": "30-60 words per person"
+    },
+    {
+     "part": "Agenda (if relevant)",
+     "does": "Session titles that each promise something specific.",
+     "length": "3-10 items"
+    },
+    {
+     "part": "Registration CTA",
+     "does": "One button with price or 'free' and the deadline; what happens after registering (confirmation, calendar invite, joining link).",
+     "length": "20-50 words"
+    },
+    {
+     "part": "FAQ and logistics",
+     "does": "Parking, accessibility, refunds, recording, dress code.",
+     "length": "4-8 Q&As"
+    },
+    {
+     "part": "Reminders",
+     "does": "Confirmation, day-before reminder, hour-before reminder with link or directions, last call for unsold seats.",
+     "length": "20-80 words each"
+    }
+   ],
+   "length": {
+    "min": 60,
+    "max": 1600,
+    "unit": "words",
+    "note": "An event page runs a few hundred words; invitations, posts and reminders are short. Ticket price and travel effort decide how much persuasion the page needs."
+   },
+   "frameworks": [
+    "fw:aida",
+    "fw:five_ws_and_h"
+   ],
+   "techniques": [
+    "tech:cta_writing",
+    "tech:ethical_urgency",
+    "tech:ethical_scarcity",
+    "tech:social_proof",
+    "tech:features_to_benefits",
+    "tech:specificity"
+   ],
+   "hooks": [
+    "hook:audience_callout",
+    "hook:urgency_deadline",
+    "hook:fomo",
+    "hook:how_to"
+   ],
+   "platforms": [
+    "plat:whatsapp_business_template",
+    "plat:instagram_caption",
+    "plat:email_subject_line",
+    "plat:sms_india_dlt"
+   ],
+   "tones": [
+    "tone:enthusiastic_hype",
+    "tone:friendly_warm",
+    "tone:corporate_b2b"
+   ],
+   "compliance": [
+    "comp:ccpa_dark_patterns_2023",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:dpdp_act_rules"
+   ],
+   "checklist": [
+    "Are date, time (with time zone if online), venue or format and price all in the first screen?",
+    "Does the headline promise a specific payoff or experience?",
+    "Does it say who the event is for?",
+    "Are speakers or performers named with a credential?",
+    "Is there one registration CTA, worded the same each time it appears?",
+    "Is every deadline or seat limit real?",
+    "Does it say what happens after registering?",
+    "Are refunds, recording and accessibility covered?",
+    "Do reminders include the joining link or venue directions?"
+   ],
+   "pitfalls": [
+    "Session titles that say nothing ('Panel discussion', 'Fireside chat'): name the question each session answers.",
+    "Stock adjectives ('exciting', 'insightful', 'power-packed'): replace with what attendees will leave with.",
+    "Time-zone slips for online events with NRI or global audiences: state IST plus the one or two zones most of the audience uses.",
+    "Email invites pasted into WhatsApp: rewrite short, with the link and one line of why; commercial WhatsApp messages need opt-in and an approved template.",
+    "Free events with high no-shows: remind people what they will miss and make the calendar invite one tap."
+   ],
+   "lint": {
+    "min_words": 60,
+    "max_words": 1600,
+    "max_exclamations": 3,
+    "require": [
+     {
+      "label": "has a registration CTA",
+      "regex": "(?i)register|book|rsvp|ticket|sign up|join|reserve|apply|रजिस्टर|बुक"
+     }
+    ]
+   },
+   "exemplar_brief": "Event page plus a 3-message WhatsApp reminder sequence for a Saturday-morning in-person workshop in Indore, 'File your own ITR in 3 hours', run by a local CA firm for salaried professionals aged 25-40; Rs 499 ticket, 40 seats, early-bird price until a stated date; English for the page, Hinglish for WhatsApp; page 350-550 words, reminders 40-80 words each; goal: buy a ticket and attend.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/retest_1.json#genre:event_promotion",
+    "note": "ROUND 2: P2 S2 Sp2 V2 C2. Round 1's season error is fixed: Saturday 10 July 2027, before the 31 July due date, early bird to Saturday 26 June, reminder on Friday 9 July (weekdays all correct). Payoff headline, key facts up top, four benefit bullets, a time-boxed agenda ending in e-verification, one CTA worded the same each time, what happens after booking, an opt-in line, the never-share-your-OTP FAQ, and three natural Hinglish reminders (62-67 words) with the checklist, a login check, parking and a gate contact. Nits (writer): 'Rs 499 until 26 June, then [regular price]' reads the brief's Rs 499 as the early-bird price, which the brief leaves ambiguous; 'Seats sirf 40 hain, isliye samay par aaiye' is a non-sequitur. | round 1: weak 7",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:event_recap_post",
+   "kind": "genre",
+   "name": "Event recap post",
+   "status": "current",
+   "summary": "An article or social post published soon after a conference, launch or meetup that gives people who missed it the two or three takeaways that matter, with attributed quotes, numbers and photos, and gives attendees something to share. Good recaps are organised by insight, not agenda order, and include the writer's first-hand observations.",
+   "use_for": [
+    "Company blog or LinkedIn recap of a conference the team hosted or attended",
+    "Community meetup or hackathon recap",
+    "Product-launch event recap for the press page",
+    "Internal recap of an offsite or town hall",
+    "Takeaways thread or carousel"
+   ],
+   "avoid": [
+    "Agenda replay ('First X spoke about... then Y...'): lead with the takeaways and group them by theme.",
+    "Quotes from memory or unchecked auto-transcripts: verify against the recording, and get speaker approval when the brief asks for it.",
+    "Publishing weeks later: recaps are timely; publish while attendees are still talking about it.",
+    "Turning it into a sales pitch: one closing line about the client, at most."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "asks whether content provides original information or reporting and demonstrates first-hand expertise, and flags content that mainly summarises what others say"
+    }
+   ],
+   "related": [
+    "genre:event_promotion",
+    "genre:linkedin_post",
+    "genre:carousel_copy",
+    "genre:x_thread",
+    "trend:non_commodity_content",
+    "trend:linkedin_creator_economy"
+   ],
+   "buyers": [
+    "B2B marketing and developer-relations teams",
+    "Event organisers producing post-event content",
+    "Communities and associations",
+    "Agencies covering events for brands"
+   ],
+   "value": "low",
+   "value_why": "No dedicated marketplace category found on 2026-10-04; produced in-house by marketing teams or bundled into event coverage. Its worth is first-hand material, the kind Google's people-first content guidance asks for.",
+   "goal": "Get the key takeaways in a few minutes and, if they missed it, want to attend next time.",
+   "structure": [
+    {
+     "part": "Headline",
+     "does": "The biggest takeaway or a number, plus the event name.",
+     "length": "8-14 words"
+    },
+    {
+     "part": "Lede",
+     "does": "What, when, where and who in one or two sentences, then why it mattered.",
+     "length": "40-80 words"
+    },
+    {
+     "part": "Takeaways",
+     "does": "Two to five insights, each with a subhead, a supporting quote or data point attributed to a named speaker, and the writer's own observation.",
+     "length": "100-250 words each"
+    },
+    {
+     "part": "Moments",
+     "does": "One or two specific scenes (a demo, a debate, an audience question), with captioned photos.",
+     "length": "50-150 words"
+    },
+    {
+     "part": "What's next",
+     "does": "Links to recordings and slides, the next event date, a soft CTA.",
+     "length": "30-80 words"
+    }
+   ],
+   "length": {
+    "min": 150,
+    "max": 1500,
+    "unit": "words",
+    "note": "A social recap is a few hundred words; a blog recap runs longer. The number of real takeaways decides it, not the length of the agenda."
+   },
+   "frameworks": [
+    "fw:inverted_pyramid",
+    "fw:what_so_what_now_what"
+   ],
+   "techniques": [
+    "tech:descriptive_subheads",
+    "tech:specificity",
+    "tech:eeat_first_hand_experience",
+    "tech:tldr_summary",
+    "tech:sensory_detail"
+   ],
+   "hooks": [
+    "hook:number_list",
+    "hook:news_announcement"
+   ],
+   "platforms": [
+    "plat:x_thread",
+    "plat:instagram_caption"
+   ],
+   "tones": [
+    "tone:journalistic_neutral",
+    "tone:conversational"
+   ],
+   "checklist": [
+    "Does the opening give the main takeaway rather than the agenda?",
+    "Is every quote attributed to a named speaker and checked against the recording or notes?",
+    "Does each takeaway carry a specific number, example or quote?",
+    "Is there at least one first-hand observation from the writer?",
+    "Are takeaways grouped by theme rather than session order?",
+    "Are links to recordings or slides included where they exist?",
+    "Are the event name, date and place in the first paragraph?",
+    "Is promotion of the client limited to a short closing line?"
+   ],
+   "pitfalls": [
+    "'It was an amazing event with insightful sessions' openers: delete and start with the insight.",
+    "Misquotes: paraphrase when unsure, and flag quotes awaiting speaker approval.",
+    "Photo captions without names: caption who and what, and get permission for close-ups of attendees.",
+    "Hinglish community recaps are fine, but keep speaker names, titles and numbers exact."
+   ],
+   "lint": {
+    "min_words": 120,
+    "max_words": 1600,
+    "ban": [
+     {
+      "label": "empty event adjectives",
+      "regex": "(?i)\\b(amazing event|insightful sessions?|power-packed)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Company-blog recap by 'LedgerLoop' (demo name), a Bengaluru B2B SaaS startup, of 'Fintech Product Night', a meetup it hosted for founders and product managers who missed it; English; 600-900 words; goal: readers get the takeaways and sign up for the next meetup. Event notes (speaker approvals received, quotes may be used verbatim): Thursday 24 September 2026, 6:30-9 pm, a co-working space in Indiranagar, Bengaluru; 140 registered, 96 attended. (1) Neha Rao, head of product at a payments company: 'We moved the autopay explainer before the PIN screen, and first-debit failures fell from 17% to 9% in two months.' (2) Imran Qureshi, risk lead at a lending startup: 40% of KYC drop-offs happen at the selfie step; a retry with on-screen guidance cut them by a third. (3) Deepa Menon, founder of a Kochi invoice-discounting startup: 'Only 3 of 10 small businesses ask about the rate; 9 of 10 ask on which day the money lands.' (4) Arjun Sethi, product manager at a neobank: Hindi and Kannada screens lifted Tier 2 activation from 31% to 38%. Scene: Imran's live demo froze for 30 seconds on the venue Wi-Fi; he switched to his phone hotspot and the room clapped when it loaded. Recording: youtu.be/demo-recap and slides at ledgerloop.example/slides (demo links). Next meetup: Thursday 5 November 2026.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_04.json#genre:event_recap_post",
+    "note": "Opens on the takeaway rather than the agenda. Four themed takeaways each have a quote slot marked pending approval and a crisp 'My take'. There is a scene, recording and slides links, and a single sign-up CTA; the draft note forbids publishing unapproved quotes. Deductions: the headline names compliance, but that is takeaway 3, not the lead. The scene contains an unmarked invented direct quote ('it depends who picks up the phone') and invented audience behaviour, attributed to a panelist. The brief gave no event content, so the takeaways themselves are stand-ins. CARD FIX: exemplar_brief -> add 6-10 lines of event notes (date, venue, headcount, 3-4 speakers each with one claim and one number, one scene) so the writer recaps rather than invents. | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now supplies the event notes (date, venue, headcount, 4 speakers each with a claim and a number, one scene, links, next date); re-judge pending.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:executive_summary",
+   "kind": "genre",
+   "name": "Executive summary",
+   "status": "current",
+   "summary": "A one-to-two-page standalone summary at the front of a report, proposal or plan that lets a decision-maker act without reading the rest. Good executive summaries lead with the recommendation or ask, give the reasons and key numbers behind it, state cost, risk and timeline, and are written last so they match the document exactly.",
+   "use_for": [
+    "Front of a business plan, feasibility study or research report",
+    "Proposal or RFP response summary",
+    "Board or management paper",
+    "Consulting or audit deliverable",
+    "Grant proposal summary"
+   ],
+   "avoid": [
+    "Writing an introduction ('This report examines...'): state the finding and the recommendation.",
+    "Teasing ('Read on to learn...'): it must stand alone; nothing the decision needs may be missing, and nothing may appear that the body doesn't support.",
+    "Background first: one or two sentences of context at most, then the answer.",
+    "A one-page sales leave-behind: that is genre:one_pager."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business writer projects include executive summaries"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/proposal-writer-salary",
+     "title": "AmbitionBox: Proposal Writer salary in India (updated 2026-09-27)",
+     "supports": "average Proposal Writer salary Rs 8.5 lakh per year"
+    },
+    {
+     "url": "https://www.the-efa.org/rates/",
+     "title": "EFA 2026 Rate Chart (2026-03-18)",
+     "supports": "Other Consulting (grant writing, pitch development, proposal development, strategic communications): $87.50-135.00 per hour"
+    }
+   ],
+   "related": [
+    "genre:business_report",
+    "genre:business_plan",
+    "genre:rfp_response",
+    "genre:one_pager",
+    "genre:policy_brief",
+    "genre:white_paper"
+   ],
+   "buyers": [
+    "Consultancies and research firms",
+    "Startups (business plans, investor documents)",
+    "Corporate strategy and finance teams",
+    "NGOs and grant applicants",
+    "Proposal and bid teams"
+   ],
+   "value": "medium",
+   "value_why": "Upwork lists executive summaries among business-writing projects (2026-01-21); it usually comes inside a report, proposal or plan engagement. Comparable roles price well: AmbitionBox India Proposal Writer average Rs 8.5 lakh/yr (Sep 2026); EFA 2026 lists proposal development at $87.50-135/hr.",
+   "goal": "Make the decision (approve, fund, choose), or know exactly what is being asked, after reading only the summary.",
+   "structure": [
+    {
+     "part": "Bottom line",
+     "does": "The recommendation, finding or ask, with the headline number (cost, return, saving).",
+     "length": "1-2 sentences, 30-60 words"
+    },
+    {
+     "part": "Context",
+     "does": "The situation and problem, only as much as the decision needs.",
+     "length": "40-80 words"
+    },
+    {
+     "part": "Reasons",
+     "does": "Usually three points supporting the recommendation, each with its evidence number.",
+     "length": "3 bullets or short paragraphs, 30-60 words each"
+    },
+    {
+     "part": "Options considered (optional)",
+     "does": "The alternatives and why they lose, a line each.",
+     "length": "40-100 words"
+    },
+    {
+     "part": "Cost, risk and timeline",
+     "does": "What it takes, what could go wrong with its mitigation, and key dates.",
+     "length": "50-120 words"
+    },
+    {
+     "part": "Decision required",
+     "does": "Exactly what the reader must decide or approve, and by when.",
+     "length": "1-2 sentences"
+    }
+   ],
+   "length": {
+    "min": 150,
+    "max": 800,
+    "unit": "words",
+    "note": "One page for most documents, two at most for long reports. Past two pages it has become a second report."
+   },
+   "frameworks": [
+    "fw:bluf",
+    "fw:minto_pyramid",
+    "fw:scqa"
+   ],
+   "techniques": [
+    "tech:paragraph_inverted_pyramid",
+    "tech:rule_of_three",
+    "tech:specificity",
+    "tech:numerals",
+    "tech:cut_qualifiers",
+    "tech:unhide_verbs"
+   ],
+   "tones": [
+    "tone:authoritative",
+    "tone:corporate_b2b",
+    "tone:data_driven"
+   ],
+   "languages": [
+    "lang:india_locale_formats"
+   ],
+   "checklist": [
+    "Is the recommendation or ask in the first two sentences?",
+    "Could a reader decide without opening the full document?",
+    "Is every number identical to the corresponding number in the body?",
+    "Is every finding in the summary supported in the body?",
+    "Are cost, risk and timeline stated?",
+    "Does it end with the decision required and a date?",
+    "Is it free of 'This report will...' and 'read on' phrasing?",
+    "Does it fit on one page (two at most)?",
+    "Is jargon defined or removed for a non-specialist decision-maker?"
+   ],
+   "pitfalls": [
+    "Written first and never updated: write it last, then re-check every number against the final body.",
+    "Hedging on every line ('may potentially', 'could possibly'): state the confidence level once, then write cleanly.",
+    "Narrating the process ('We conducted 24 interviews and analysed...'): one clause of method, then results.",
+    "Nominalisations ('implementation of the optimisation of...'): turn nouns back into verbs (tech:unhide_verbs).",
+    "Indian boards often read on phones: short paragraphs, the ask in bold, lakh/crore used consistently (lang:india_locale_formats)."
+   ],
+   "lint": {
+    "min_words": 120,
+    "max_words": 900,
+    "max_avg_sentence_words": 22,
+    "ban": [
+     {
+      "label": "introduction instead of summary",
+      "regex": "(?i)this (report|document|proposal|paper) (will|aims to|seeks to)|read on to"
+     }
+    ]
+   },
+   "exemplar_brief": "Executive summary for a feasibility report recommending that a Nagpur dairy cooperative invest Rs 4.2 crore in a solar-powered bulk milk-chilling network across 12 villages; readers are the cooperative's board; English; 350-500 words, one page; goal: the board approves phase 1 at its meeting on Thursday 12 November 2026. Report findings to carry (all figures are in the body): collection is 24,000 litres a day across the 12 villages; spoilage and rejection are 6.0% now (1,440 litres a day) and would fall to 1.5% (360 litres), saving 1,080 litres a day; at an average procurement price of Rs 34 a litre that is Rs 1.34 crore a year; annual operation and maintenance costs Rs 18 lakh, so the net saving is Rs 1.16 crore a year and payback is 3.6 years. Funding mix for Rs 4.2 crore: 40% state dairy-development grant (applied for, Rs 1.68 crore), 35% bank loan (Rs 1.47 crore), 25% the cooperative's own funds (Rs 1.05 crore). Phase 1 is 5 villages at Rs 1.75 crore, installed within 5 months of approval and before summer 2027; phase 2 is 7 villages at Rs 2.45 crore. Options considered: grid-powered chillers (Rs 3.3 crore, plus Rs 31 lakh a year in power, and daily outages in 4 villages) and doing nothing (6.0% spoilage continues). Main risk: grant release is delayed; mitigation: phase 1 can be funded from the loan and own funds alone.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_04.json#genre:executive_summary",
+    "note": "Recommendation and bolded ask come in the first two sentences. Phase 1 is sized as one-third of villages and money (4 villages, Rs 1.4 crore of 4.2), which reconciles, and the three reasons are well chosen. Options are ranked with a reason each, every risk has a mitigation, and it ends with the exact decision and tender authority. No 'this report will'. Deductions: the bottom line carries only the cost, not the return or payback the card's 'Bottom line' asks for (a placeholder belonged there). Every decision number is a placeholder because the brief supplies no report findings. CARD FIX: exemplar_brief -> state the report's headline findings (current spoilage percent, annual saving in Rs lakh, payback in years, funding mix) so the summary can carry the numbers a board decides on. | CARD FIXED 2026-10-07 (fix_genre_b): exemplar_brief now states the report's headline findings (spoilage %, annual saving, payback, funding mix, phasing, options, risk) with reconciled arithmetic and a dated decision; re-judge pending.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  },
+  {
+   "id": "genre:expert_roundup",
+   "kind": "genre",
+   "name": "Expert roundup post",
+   "status": "current",
+   "summary": "An article built from short answers by several named experts to one sharp question, grouped into themes, with the writer's synthesis of where they agree, where they disagree and what the reader should do. Good roundups use real, permissioned, attributed quotes from people with first-hand experience of the question; the synthesis is the product.",
+   "use_for": [
+    "SEO and thought-leadership posts ('7 D2C founders on the one change that cut their CAC')",
+    "Annual predictions or trends pieces",
+    "Relationship-building with industry voices ahead of PR or partnerships",
+    "A newsletter section or carousel of expert tips"
+   ],
+   "avoid": [
+    "A list of quotes with no synthesis: add themes, a verdict and a takeaway.",
+    "Fabricated, AI-generated or 'adapted' quotes: every quote comes from the named person, with permission. Invented quotes deceive readers and expose the client.",
+    "Experts picked for follower count: pick practitioners who have done the thing.",
+    "Questions too broad ('What's the future of marketing?'): ask a specific question that draws different, concrete answers."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "asks whether content provides original information and first-hand expertise, and whether it mainly summarises what others say without adding much value"
+    }
+   ],
+   "related": [
+    "genre:best_of_roundup",
+    "genre:thought_leadership_article",
+    "genre:interview_qa",
+    "genre:listicle",
+    "trend:non_commodity_content",
+    "trend:scaled_ai_content_enforcement"
+   ],
+   "buyers": [
+    "Content-marketing teams at SaaS and B2B companies",
+    "SEO and link-building agencies",
+    "PR agencies",
+    "Media and newsletter publishers"
+   ],
+   "value": "low",
+   "value_why": "No dedicated marketplace category found on 2026-10-04; produced in-house or bundled into link-building and PR-led content. Real expert input is the original, first-hand material Google's helpful-content guidance asks for, which keeps the format useful as AI summaries commoditise generic posts.",
+   "goal": "Take away a clear, multi-source answer to the question, act on the synthesised advice, and see the publisher as the one who convened the experts.",
+   "structure": [
+    {
+     "part": "Headline",
+     "does": "Number of experts plus the specific question or outcome.",
+     "length": "8-14 words"
+    },
+    {
+     "part": "Intro",
+     "does": "Why the question matters now, who was asked and how they were chosen, the exact question, and the one-line headline finding.",
+     "length": "80-150 words"
+    },
+    {
+     "part": "Synthesis",
+     "does": "The three or four patterns across answers, where experts disagreed, and the writer's verdict.",
+     "length": "150-300 words"
+    },
+    {
+     "part": "Answers by theme",
+     "does": "Each: name, role, organisation, link; the quote edited for length only, with approval; a one-line takeaway from the writer.",
+     "length": "50-150 words per expert"
+    },
+    {
+     "part": "Practical takeaways",
+     "does": "A checklist or next steps distilled from the answers.",
+     "length": "60-150 words"
+    },
+    {
+     "part": "Method note and CTA",
+     "does": "How and when quotes were gathered, disclosure of any commercial relationships, then a CTA (subscribe, share).",
+     "length": "30-80 words"
+    }
+   ],
+   "length": {
+    "min": 600,
+    "max": 4000,
+    "unit": "words",
+    "note": "The expert count drives it: 5-8 experts make a tight post, 15+ a long resource. Cap quote length rather than cutting experts."
+   },
+   "frameworks": [
+    "fw:what_so_what_now_what",
+    "fw:prep"
+   ],
+   "techniques": [
+    "tech:sme_interview",
+    "tech:eeat_first_hand_experience",
+    "tech:descriptive_subheads",
+    "tech:tldr_summary",
+    "tech:authority_proof"
+   ],
+   "hooks": [
+    "hook:number_list",
+    "hook:social_proof",
+    "hook:question"
+   ],
+   "tones": [
+    "tone:journalistic_neutral",
+    "tone:conversational"
+   ],
+   "compliance": [
+    "comp:asci_code",
+    "comp:google_search_spam_policies"
+   ],
+   "checklist": [
+    "Is every quote attributed to a named person with role and organisation?",
+    "Has every expert approved their quote, or is it clearly marked pending approval?",
+    "Does the intro state the exact question asked and how experts were chosen?",
+    "Is there a synthesis that names agreements, disagreements and a verdict?",
+    "Are answers grouped by theme rather than alphabet or fame?",
+    "Does each answer add something no other answer said?",
+    "Are paid or commercial relationships with featured experts disclosed?",
+    "Is there a practical takeaway list at the end?"
+   ],
+   "pitfalls": [
+    "Ten experts saying the same thing: cut duplicates or merge them in one line ('Four founders said...').",
+    "Over-edited quotes that no longer sound like the person: edit for length and clarity only, then send back for approval.",
+    "Self-promotional answers: ask experts for an example from their own work, and trim product plugs.",
+    "A narrow panel: for an Indian audience, include voices beyond the big metros and a mix of genders where the topic allows.",
+    "'Roundups' stitched from public quotes or AI: that is the scaled, low-value pattern search spam policies target. Collect original answers."
+   ],
+   "lint": {
+    "min_words": 500,
+    "max_words": 4500,
+    "require": [
+     {
+      "label": "states the question asked",
+      "regex": "(?i)asked|the question|पूछा|सवाल"
+     }
+    ]
+   },
+   "exemplar_brief": "Expert roundup for a Mumbai D2C growth agency's blog: '7 Indian D2C founders on the one change that cut their customer acquisition cost', for early-stage D2C founders; the writer drafts the intro, synthesis and takeaways and edits the answers; English; 1,200-1,800 words; goal: readers apply one tactic and subscribe to the agency's newsletter. Interview notes (demo founders, interviewed 14-25 September 2026, quotes approved; each gave one change, CAC before and after, and the approved quote shown): (1) Aditi Sharma, founder, skincare, Delhi: customer unboxing videos instead of studio shots; Rs 820 to Rs 560 in 3 months. Approved quote: 'A studio shot shows what we want people to think. A customer unboxing shows what actually arrives, and that is what made strangers trust us.' (2) Rohan Iyer, co-founder, coffee, Chennai: Rs 49 sampling sachet as the first order; Rs 640 to Rs 410 in 2 months. Approved quote: 'Nobody wants to pay full price for coffee they have never tasted. A Rs 49 sachet as the first order lets them taste it first, so the full bag stops being a gamble.' (3) Fatima Khan, founder, modest fashion, Hyderabad: WhatsApp cart recovery within 30 minutes; Rs 950 to Rs 780 in 6 weeks. Approved quote: 'Most carts die in the first hour. A WhatsApp nudge at 30 minutes brought back more buyers than any new ad we ran.' (4) Karan Malhotra, founder, protein snacks, Pune: cut Meta ads to 3 broad audiences; Rs 710 to Rs 520 in 8 weeks. Approved quote: 'Slicing audiences made us feel precise, not profitable. With three broad audiences, the creative does the targeting.' (5) Sneha Pillai, founder, baby care, Kochi: 5% prepaid discount; Rs 880 to Rs 700 (after returns) in 10 weeks. Approved quote: 'Offering 5% off for paying upfront moved buyers to prepaid. I count CAC after returns, because a sale that comes back is not a customer.' (6) Vikram Rathore, co-founder, ethnic menswear, Jaipur: founder-led Instagram Lives twice a week; Rs 1,050 to Rs 730 in 4 months. Approved quote: 'Twice a week I go live, show the kurtas and answer questions as they come. People buy from someone they have watched, not from an ad they scrolled past.' (7) Nisha Deshpande, founder, pet food, Nagpur: free gift instead of 20% off on the first order; Rs 760 to Rs 540 in 6 weeks. Approved quote: 'A 20% discount trains people to wait for the next sale. A free gift on the first order felt like a welcome, and our CAC came down.' Disagreement to use: Karan says creative beats targeting; Fatima says fixing after the click beats any ad change. Disclosure: Aditi and Rohan are clients of the agency.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_1.json#genre:expert_roundup",
+    "note": "ROUND 2: P2 S2 Sp2 V1 C1. Uses all seven notes correctly; every cut checks (36, 32, 30, 29, 27, 20, 18%); the client disclosure appears in the intro, at each client's answer and in the method note; the Karan/Fatima disagreement gets a cautious verdict; themes, a numbers table, start-by-situation advice and takeaways follow (round 1's denominator slip is fixed). But the seven answers are '[Approved quote, 25-40 words]' slots, so no expert speaks and the answers section reads as the table restated seven times. Nit (writer): Karan's audience cut sits under 'Change what people see', which it is not. Fault: card (the brief says 'quotes approved' and asks the writer to edit the answers, but supplies no answer text). CARD FIX: exemplar_brief -> after each founder's note add the approved quote itself, one or two sentences in the founder's voice (e.g. Fatima: 'Most carts die in the first hour. A WhatsApp nudge at 30 minutes brought back more buyers than any new ad we ran.'), so the answers can be edited rather than left as slots. | round 1: weak 7 | CARD FIXED 2026-10-13 (lead fix5): exemplar_brief now carries each founder's approved quote after the note; re-judge pending.",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:explainer_video_script",
+   "kind": "genre",
+   "name": "Explainer video script",
+   "status": "current",
+   "summary": "A short VO script, usually 60-120 seconds, that explains a product, idea or process in an order a viewer can follow: the problem they recognise, how it works in simple steps, what they get, and one action. Good explainers carry one metaphor or visual idea, write every line for the ear with its visual beside it, and cut everything that doesn't serve the single message.",
+   "use_for": [
+    "SaaS or app product explainer for a homepage or store listing",
+    "Government scheme or process explainer (how to apply)",
+    "Fintech or insurance concept explainer ('How term insurance works')",
+    "Internal process or policy explainer",
+    "Short-form explainer reels"
+   ],
+   "avoid": [
+    "Feature tours: pick the two or three features that solve the stated problem.",
+    "Narration written without visuals: use a two-column script so every line has a picture.",
+    "Paid placements: once it sells in a paid slot it is an ad (genre:video_ad_script) and ad codes apply.",
+    "Long-form teaching: past a few minutes it becomes genre:youtube_video_script or genre:elearning_course_script."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writer projects include 'Product demos and explainer videos'; $30-$56/hr band"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork In-Demand Skills 2026 (2026-02-04)",
+     "supports": "AI Video Generation & Editing (+329%) is the fastest-growing Design & Creative skill"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/script-writer-salary",
+     "title": "AmbitionBox: Script Writer salary in India (updated 2026-10-03)",
+     "supports": "average Script Writer salary Rs 5 lakh per year with 1 year of experience"
+    }
+   ],
+   "related": [
+    "genre:video_ad_script",
+    "genre:faceless_video_script",
+    "genre:short_form_video_script",
+    "genre:scheme_explainer",
+    "trend:ai_video_scripting_demand",
+    "trend:short_video_india"
+   ],
+   "buyers": [
+    "SaaS, fintech and app companies",
+    "Animation and video production studios",
+    "Government departments and NGOs (scheme explainers)",
+    "Edtech and L&D teams",
+    "Creative and marketing agencies"
+   ],
+   "value": "high",
+   "value_why": "Upwork's script-writer job type lists 'Product demos and explainer videos' ($30-$56/hr, 2026-01-21), and Upwork In-Demand Skills 2026 reports AI Video Generation & Editing as the fastest-growing Design & Creative skill (+329%), which multiplies script work. AmbitionBox India Script Writer average Rs 5 lakh/yr (Oct 2026).",
+   "goal": "Understand how the product or idea works and take the one next step (sign up, download, apply, message).",
+   "structure": [
+    {
+     "part": "Hook and problem",
+     "does": "The viewer's problem in a relatable moment, in the opening seconds.",
+     "length": "5-10 seconds; 1-2 lines"
+    },
+    {
+     "part": "Stakes",
+     "does": "Why the problem matters: cost, time or risk.",
+     "length": "5-10 seconds"
+    },
+    {
+     "part": "Solution",
+     "does": "Names the product or idea and its promise in one line.",
+     "length": "about 5 seconds"
+    },
+    {
+     "part": "How it works",
+     "does": "Three simple steps or one extended metaphor, each line paired with a visual.",
+     "length": "25-50 seconds"
+    },
+    {
+     "part": "Benefits and proof",
+     "does": "What changes for the viewer; one number or customer line.",
+     "length": "10-20 seconds"
+    },
+    {
+     "part": "CTA",
+     "does": "One action, said aloud and shown on screen (URL, app name, number).",
+     "length": "5-10 seconds"
+    }
+   ],
+   "length": {
+    "min": 90,
+    "max": 350,
+    "unit": "words",
+    "note": "VO words. 60-120 seconds is a craft convention, not a sourced limit; confirm the duration with the client and budget words from a timed read-aloud at the narrator's pace, leaving pauses for visuals."
+   },
+   "frameworks": [
+    "fw:pas",
+    "fw:storybrand_sb7",
+    "fw:abt",
+    "fw:feynman_technique"
+   ],
+   "techniques": [
+    "tech:write_for_voiceover",
+    "tech:onscreen_text_vs_vo",
+    "tech:metaphor_analogy",
+    "tech:rule_of_three",
+    "tech:read_aloud",
+    "tech:features_to_benefits",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:problem_solution",
+    "hook:question",
+    "hook:this_is_why",
+    "hook:hinglish_question"
+   ],
+   "platforms": [
+    "plat:youtube_description",
+    "plat:instagram_caption"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:conversational",
+    "tone:playful_witty"
+   ],
+   "languages": [
+    "lang:hindi_voiceover_tts",
+    "lang:hinglish_roman",
+    "lang:english_subtitles"
+   ],
+   "compliance": [
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:it_rules_sgi_2026"
+   ],
+   "checklist": [
+    "Does the script state the viewer's problem in the first two lines?",
+    "Is it in two columns with a visual for every VO line?",
+    "Does it explain how it works in three steps or fewer, or through one metaphor?",
+    "Is there exactly one CTA, both said and shown?",
+    "Does a timed read-aloud fit the agreed duration with room for pauses?",
+    "Is on-screen text shorter than the VO and not a word-for-word repeat?",
+    "Are claims (savings, speed, numbers) provable?",
+    "Is jargon replaced or explained in one line?",
+    "Would a viewer with the sound off still get the message from on-screen text?"
+   ],
+   "pitfalls": [
+    "Opening with the company ('At XYZ, we believe...'): open with the viewer's moment.",
+    "Too many messages: if the client wants five features explained, propose a short series instead.",
+    "Hindi or Hinglish VO in English word order: write it as people speak and test it with the narrator or TTS (lang:hindi_voiceover_tts).",
+    "Metaphors that need explaining: test the metaphor on someone outside the industry first.",
+    "Visuals the budget can't make: ask for the style frame first and describe shots the studio or AI tool can actually produce."
+   ],
+   "lint": {
+    "min_words": 80,
+    "max_words": 400,
+    "max_sentence_words": 22,
+    "require": [
+     {
+      "label": "has a CTA",
+      "regex": "(?i)download|sign up|visit|apply|try|start|book|call|install|join|message|whatsapp|डाउनलोड|आवेदन|भेजें|कॉल"
+     }
+    ]
+   },
+   "exemplar_brief": "90-second animated explainer for a Pune agritech app that lets small farmers book a soil test and receive a fertiliser plan on WhatsApp; audience: farmers in Maharashtra and their smartphone-savvy children; Hindi (Devanagari) VO, two-column script (visual | VO + on-screen text); 180-240 words of VO; goal: viewers send 'Hi' to the WhatsApp number shown on screen.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_04.json#genre:explainer_video_script",
+    "note": "Opens on the farmer's moment ('Papa, kabhi mitti se poocha hai?') with stakes in money and yield. The product and promise come in one line, then a doctor-pulse metaphor and exactly three steps (book on WhatsApp, sample pickup, plan with which fertiliser, how much, when), each paired with a visual. A proof slot follows, and one CTA ('Hi bhejiye') is said and shown. Spoken Hindi is natural and the VO fits 90 seconds. Deductions: every on-screen text line ends in a stray full stop ('fasal wahi?.'); 'hamara aadmi' should be 'hamare karyakarta'; 'baba' fits rural Maharashtra better than 'papa'.",
+    "judge": "vj_genre_04",
+    "date": "2026-10-06"
+   }
+  }
+ ]
+}

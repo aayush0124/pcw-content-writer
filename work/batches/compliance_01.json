@@ -1,0 +1,454 @@
+{
+ "kind": "compliance",
+ "items": [
+  {
+   "id": "comp:ap_ai_standards",
+   "name": "Associated Press standards around generative AI (newsroom AI disclosure norm)",
+   "category": "General",
+   "one_line": "A benchmark newsroom policy: AP staff do not use generative AI to create publishable content, treat AI output as unvetted source material, and do not transmit AI images that falsely depict reality.",
+   "aliases": [
+    "AP AI policy",
+    "newsroom AI disclosure",
+    "journalism AI standards"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ap.org/the-definitive-source/behind-the-news/standards-around-generative-ai/",
+     "title": "Associated Press: Standards around generative AI",
+     "supports": "no AI for publishable content, AI output as unvetted source material, AI image rules"
+    }
+   ],
+   "note": "AP's published standard (first issued Aug 2023; page read 2026-10-04). Use as the norm for news, explainer and political-information copy: (1) AP staff 'do not use it to create publishable content'. (2) 'Any output from a generative AI tool should be treated as unvetted source material': every AI-suggested fact, quote or number gets verified against a primary source before publishing. (3) AP will not transmit AI-generated images 'suspected or proven to be false depictions of reality'; an AI illustration that is itself the news may run only if clearly labelled. Pair with comp:eu_ai_act_art50 (public-interest text disclosure in the EU) and comp:it_rules_sgi_2026 (India).",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:asci_ai_sgc_labelling",
+   "name": "ASCI Guidelines for Responsible Labelling of Synthetically Generated Content in Advertising (2026)",
+   "category": "India",
+   "one_line": "ASCI's risk-based AI rule for ads: fabricated AI testimonials, AI-exaggerated results and unconsented likenesses are banned even with a label; AI influencers, voice clones, fabricated settings and unbuilt products must be labelled; AI-written copy needs no label.",
+   "aliases": [
+    "ASCI AI guidelines",
+    "ASCI SGC labelling",
+    "AI ad label India",
+    "Video created using AI"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2026/09/Guidelines-for-Responsible-Labelling-of-Synthetically-Generated-Content-in-Advertising.pdf",
+     "title": "ASCI: Guidelines for Responsible Labelling of Synthetically Generated Content in Advertising (Board of Governors, 17 Sep 2026)",
+     "supports": "final text: prohibited uses, mandatory labelling cases, no-label cases, label wording, effective 3 months after publication"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2026/05/asci-ai-labelling-guidelines.pdf",
+     "title": "ASCI: Draft Guidelines for Responsible Labelling of Synthetically Generated Content in Advertising (8 May 2026)",
+     "supports": "draft consulted May-June 2026"
+    },
+    {
+     "url": "https://www.medianews4u.com/asci-issues-guidelines-for-labelling-ai-generated-content-in-advertising/",
+     "title": "MediaNews4U (trade press, 29 Sep 2026): ASCI issues guidelines for labelling AI-generated content in advertising",
+     "supports": "final guidelines released after consultation"
+    }
+   ],
+   "note": "FINAL text signed 17 Sep 2026; 'shall come into effect on the expiration of 3 months from the date of their publication', i.e. about mid/late Dec 2026 (ASCI PDF read 2026-10-04). Rules: (1) banned even with a label: AI-fabricated endorsements or testimonials attributed to real people, AI before-after or result visuals that exaggerate product results, fake locations or facilities shown as real, deepfakes or anyone's likeness without consent, unauthorised copyrighted work (clause 1). (2) Label required: AI influencers/ambassadors, a real person's face or voice replicated even with consent for personalised messages, fabricated events or settings that affect understanding of performance, products that do not exist yet, AI sound effects tied to a core feature, and sponsored AI chatbot recommendations ('Sponsored by [Brand]') (clause 2). (3) Labels: platform labels or wording such as 'Audio/Video created using AI' / 'Audio/Video enhanced using AI' (clause 4). (4) No label: colour/light/noise fixes, decorative backgrounds and jingles, obvious fantasy, AI-generated or AI-enhanced ad COPY, subtitles and translations (clause 3).",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:asci_code",
+   "name": "ASCI Code for Self-Regulation of Advertising Content in India",
+   "category": "India",
+   "one_line": "India's self-regulatory ad code: ads must be truthful and substantiated, decent, not promote harmful products or situations, and fair to competitors.",
+   "aliases": [
+    "ASCI Code",
+    "Advertising Standards Council of India code"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ascionline.in/the-asci-code/",
+     "title": "ASCI: The ASCI Code",
+     "supports": "four chapters; Chapter I clause 1 substantiation; Chapter III children; Chapter IV clause 1.5 denigration, clause 3 imitation; page updated 29 Apr 2024"
+    }
+   ],
+   "note": "In force (page last updated 29 Apr 2024, read via fetch summary 2026-10-04). Four chapters: I Truthful and Honest Representation; II Non-offensive to Public; III Against Harmful Products/Services/Situations; IV Fair in Competition. Rules: (1) every claim about objectively ascertainable fact must be capable of substantiation, so write only claims the client can prove on paper (Ch I.1). (2) Comparative copy may compare but must not unfairly denigrate, attack or discredit competitors directly or by implication (Ch IV.1.5). (3) Do not imitate another advertiser's earlier layout, copy, slogans or visuals (Ch IV.3). (4) Ads aimed at children must not contain anything that could cause physical, mental or moral harm or encourage dangerous acts (Ch III). ASCI guidelines (influencer, AI labelling) sit on top of this Code. ASCI is self-regulatory, but its complaints are routinely escalated to CCPA/regulators.",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:asci_influencer",
+   "name": "ASCI Guidelines for Influencer Advertising in Digital Media (incl. virtual influencers, health and finance influencers)",
+   "category": "India",
+   "one_line": "Every influencer post with any material connection to the brand must carry an upfront disclosure label; virtual influencers must say they are not human; finance and health influencers must state qualifications.",
+   "aliases": [
+    "ASCI influencer guidelines",
+    "#ad rules India",
+    "finfluencer ASCI addendum"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI: Guidelines for Influencer Advertising in Digital Media (with Addendum I 15.07.2021 and Addendum II 17.08.2023)",
+     "supports": "full text: disclosure criteria, placement, permitted labels, video timing, virtual influencers, due diligence, health/BFSI qualifications"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2022/09/press-release-influencer-guidelines-2021.pdf",
+     "title": "ASCI press release: final Guidelines for Influencer Advertising",
+     "supports": "guidelines apply to posts published on or after 14 June 2021"
+    }
+   ],
+   "note": "In force since 14 June 2021; Addendum II (health and finance influencers) dated 17 Aug 2023 (read in the PDF 2026-10-04). Rules: (1) disclose whenever there is ANY material connection, including free or discounted products, even if the review is honest (guideline 1.1). (2) Permitted labels only: Advertisement, Ad, Sponsored, Collaboration, Partnership, Employee, Free gift, Affiliate, Instagram 'Paid Partnership' tag, YouTube 'Includes Paid Promotion' tag; in English or the ad's own language (1.3). (3) Upfront and prominent: not only in bio, not at the end, not behind MORE, not buried in hashtags; platform tool is in addition to, not instead of, your own label (1.2). (4) Picture/video posts with no text: superimpose the label; video <=15 s: label >=3 s; 15 s to 2 min: 1/3 of length; >=2 min: whole section where the brand is discussed; live streams: announce at start and end; audio: start, end and around every break (1.2e-g). (5) Virtual influencer must additionally disclose upfront that the audience is not interacting with a real human (1.4). (6) BFSI stock/investment talk: SEBI registration number stated with name; other finance: IRDAI licence, CA, CS etc.; health/nutrition: medical degree, nurse, dietician etc.; qualification shown upfront (Addendum II). Both advertiser and influencer are responsible (1.5).",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:bns_defamation_speech",
+   "name": "Bharatiya Nyaya Sanhita, 2023: defamation (s.356), promoting enmity (s.196), outraging religious feelings (s.299), statements conducing to public mischief (s.353)",
+   "category": "India",
+   "one_line": "India's criminal code sections that satire, political and commentary copy must clear: defamation with its good-faith opinion exceptions, and the offences for promoting group enmity, insulting religion and spreading alarming falsehoods.",
+   "aliases": [
+    "BNS defamation",
+    "section 356 BNS",
+    "IPC 499 successor",
+    "hurting religious sentiments law"
+   ],
+   "sources": [
+    {
+     "url": "https://www.mha.gov.in/sites/default/files/250883_english_01042024.pdf",
+     "title": "Ministry of Home Affairs: The Bharatiya Nyaya Sanhita, 2023 (No. 45 of 2023, Act text)",
+     "supports": "text of ss.196, 299, 353 and 356 with Explanations and Exceptions"
+    },
+    {
+     "url": "https://www.indiacode.nic.in/handle/123456789/20062",
+     "title": "India Code: Bharatiya Nyaya Sanhita, 2023",
+     "supports": "official statute database entry (PDF timed out for the fetch client)"
+    }
+   ],
+   "note": "BNS (Act 45 of 2023, assented 25 Dec 2023) replaced the IPC; section numbers below read from the Act text on 2026-10-04 (the PRS Bill PDF uses DIFFERENT clause numbers, do not cite it). Rules: (1) s.356(1) defamation = any spoken, written or visual imputation about a person made intending or knowing it will harm their reputation; it can cover a company or group (Expl. 2) and a deceased person (Expl. 1). s.356(2): simple imprisonment up to two years, or fine, or both, or community service. (2) Satire and commentary live inside the Exceptions: true imputation for the public good (Exc. 1); good-faith opinion on a public servant's public conduct (Exc. 2) or on anyone's conduct on a public question (Exc. 3), 'and no further' than that conduct; good-faith opinion on a work submitted to public judgment (Exc. 6). So attack the act, the vote, the policy, the speech; never invent facts or private-life allegations. (3) s.196: no words or visuals promoting enmity between religious, racial, language, regional, caste or community groups. (4) s.299: no deliberate, malicious insult to a religion or religious beliefs (up to three years). (5) s.353: no false statement, rumour or report likely to cause public fear or alarm. Criminal defamation is a live risk for political satire pages in India.",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:can_spam",
+   "name": "CAN-SPAM Act (US commercial email)",
+   "category": "US",
+   "one_line": "US law for commercial email: honest headers and subject lines, the message identified as an ad, a physical postal address, and a working opt-out honoured promptly.",
+   "aliases": [
+    "CAN-SPAM",
+    "US email marketing law"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+     "title": "FTC: CAN-SPAM Act: A Compliance Guide for Business",
+     "supports": "the main requirements, opt-out timing, liability of the sender and the hired agency"
+    }
+   ],
+   "note": "In force since 2004 (FTC guide read 2026-10-04). Rules quoted from the guide: (1) no false or misleading header information; (2) 'The subject line must accurately reflect the content of the message'; (3) 'disclose clearly and conspicuously that your message is an advertisement'; (4) include 'your valid physical postal address'; (5) opt-out must work for at least 30 days after sending and be honoured 'within 10 business days', with no fee or extra data demanded. You 'can't contract away your legal responsibility' by hiring an agency; the guide gives penalties of up to $53,088 per violating email (inflation-adjusted, re-check before quoting).",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:ccpa_coaching_ads_2024",
+   "name": "CCPA Guidelines for Prevention of Misleading Advertisement in Coaching Sector, 2024",
+   "category": "India",
+   "one_line": "Ed-tech and coaching ads may not promise guaranteed selection, ranks, marks or jobs, must disclose the topper's rank, course and whether it was paid, and need the student's written consent to use their name or photo.",
+   "aliases": [
+    "coaching ad guidelines",
+    "edtech advertising India",
+    "topper ads"
+   ],
+   "sources": [
+    {
+     "url": "https://ccpa.doca.gov.in/files/Guidelines%20for%20Prevention%20of%20Misleading%20Advertisement%20in%20Coaching%20Sector,%202024.pdf",
+     "title": "CCPA notification (13 Nov 2024): Guidelines for Prevention of Misleading Advertisement in Coaching Sector, 2024",
+     "supports": "clauses 3 (misleading claims) and 4 (obligations, consent for topper photos)"
+    }
+   ],
+   "note": "Notified 13 Nov 2024 (CCPA PDF read 2026-10-04). Rules: (1) no false claims of selections, rank or success rate, and no 'guaranteed selection', job security, promotion, salary increase or admission promises (cl. 3). (2) When a successful candidate appears, disclose rank secured, name and duration of the course, and whether the course was paid (cl. 4(1)(a)). (3) Disclaimers in the same font as the claim, displayed prominently (cl. 4(1)(b)). (4) No name, photo, testimonial or video of a successful candidate without written consent taken after selection (cl. 4(2)). (5) No false urgency or false popularity (cl. 3(e)).",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:ccpa_dark_patterns_2023",
+   "name": "CCPA Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+   "category": "India",
+   "one_line": "Bans 13 specified dark patterns on platforms selling in India, several of them pure copy problems: false urgency, confirm shaming, disguised ads, trick questions, nagging, bait and switch, drip pricing.",
+   "aliases": [
+    "dark patterns India",
+    "false urgency rule",
+    "confirm shaming"
+   ],
+   "sources": [
+    {
+     "url": "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+     "title": "Gazette of India (30 Nov 2023): Guidelines for Prevention and Regulation of Dark Patterns, 2023",
+     "supports": "definitions and illustrations in Annexure 1"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/guidelines.php",
+     "title": "CCPA: Guidelines and Advisories",
+     "supports": "guidelines in force; separate advisory asking e-commerce platforms to self-audit for dark patterns"
+    }
+   ],
+   "note": "Notified 30 Nov 2023 under the Consumer Protection Act, 2019 (gazette PDF read 2026-10-04); applies to platforms, advertisers and sellers. Copy rules from Annexure 1: (1) False urgency: no fake scarcity or popularity ('Only 2 rooms left! 30 others are looking at this right now' is the gazette's own illustration) and no fake time-limited 'exclusive' sales. (2) Confirm shaming: no guilt or fear lines on the decline button (gazette examples: 'I will stay unsecured', 'charity is for rich, I don't care'). (3) Disguised advertisement: ads must not pose as user content or news articles; the seller or advertiser must disclose that content is an ad. (4) Trick questions: no double negatives or confusing opt-out wording. (5) Nagging: no repeated asks for app download, phone number or notifications without a way to say no. Also: bait and switch, drip pricing, basket sneaking, forced action, subscription trap, interface interference.",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:ccpa_misleading_ads_2022",
+   "name": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements for Misleading Advertisements, 2022 (Consumer Protection Act, 2019)",
+   "category": "India",
+   "one_line": "Binding Indian rules under the Consumer Protection Act, 2019 for every ad in any medium: truthful, substantiated claims; honest 'free' offers; disclaimers that clarify but never contradict; no surrogate ads; endorsements that reflect genuine use and disclose material connections.",
+   "aliases": [
+    "CCPA misleading ads guidelines",
+    "Consumer Protection Act 2019 advertising",
+    "misleading advertisement India"
+   ],
+   "sources": [
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "Gazette of India: CCPA notification dated 9 June 2022, Guidelines for Prevention of Misleading Advertisements and Endorsements for Misleading Advertisements, 2022",
+     "supports": "full text: clauses 4 (valid ads), 5 (bait), 6 (surrogate), 7 (free claims), 8 (children), 11 (disclaimers), 12 (duties), 13 (endorser due diligence), 14 (material connection)"
+    },
+    {
+     "url": "https://ccpa.doca.gov.in/guidelines.php",
+     "title": "CCPA: Guidelines and Advisories",
+     "supports": "list of CCPA guidelines currently published"
+    }
+   ],
+   "note": "In force since notification on 9 June 2022, issued under section 18 of the Consumer Protection Act, 2019 (gazette PDF read 2026-10-04). Rules: (1) objectively factual claims and comparisons must be capable of substantiation; cite source and date when a claim rests on research (cl. 12(a)-(b)). (2) 'Free' only if the consumer pays nothing beyond unavoidable response/delivery cost; no 'free trial' for money-back offers (cl. 7). (3) No vague 'up to' or 'prices from as low as' framing for guarantees and prices; state the fixed period or price (cl. 12(e)(i)). (4) Disclaimers: same language and same font as the claim, in sync with a voice-over, and they may clarify but must not contradict the claim or hide material information (cl. 11). (5) No surrogate or indirect ads for products whose ads are banned (cl. 6). (6) Endorsements must reflect the endorser's genuine, reasonably current opinion based on adequate information or experience, and any material connection must be fully disclosed (cl. 13-14). Obvious humour or hyperbole is allowed if clearly not literal (proviso to cl. 12). Penalty amounts sit in the Act: not quoted here.",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:coppa",
+   "name": "COPPA Rule (Children's Online Privacy Protection Rule, 16 CFR Part 312)",
+   "category": "US",
+   "one_line": "US rule for sites, apps and channels directed to children under 13: no collecting their personal information without verifiable parental consent.",
+   "aliases": [
+    "COPPA",
+    "kids content US"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312",
+     "title": "eCFR: 16 CFR Part 312 Children's Online Privacy Protection Rule",
+     "supports": "rule text"
+    },
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions",
+     "title": "FTC: Complying with COPPA: Frequently Asked Questions",
+     "supports": "when content is 'directed to children', obligations of channel owners"
+    }
+   ],
+   "note": "In force; amended rule finalised by the FTC in 2025 (see the FTC COPPA page for the amendment's effective and compliance dates; not confirmed here). Copy rules: (1) if content is directed to under-13s, do not write CTAs that collect personal information (comments with names, sign-ups, contests) without verifiable parental consent; (2) on YouTube, kids content must be set 'made for kids', which limits comments and personalised ads (FTC FAQ). Treat any kids brief for a US audience as a legal review item.",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:dpdp_act_rules",
+   "name": "Digital Personal Data Protection Act, 2023 and DPDP Rules, 2025",
+   "category": "India",
+   "one_line": "India's data protection law: personal data (including phone numbers and emails used for marketing) needs specific consent through a clear, separate notice; children's data needs verifiable parental consent.",
+   "aliases": [
+    "DPDP Act",
+    "DPDPA",
+    "DPDP Rules 2025"
+   ],
+   "sources": [
+    {
+     "url": "https://www.pib.gov.in/PressNoteDetails.aspx?NoteId=156054&ModuleId=3&reg=3&lang=2",
+     "title": "PIB explainer (17 Nov 2025): DPDP Rules, 2025 Notified",
+     "supports": "Rules notified 14 Nov 2025; eighteen-month phased compliance; separate clear consent notice with specific purpose; verifiable parental consent for children; penalty ceilings"
+    },
+    {
+     "url": "https://www.lexology.com/library/detail.aspx?g=7e3af947-10aa-4712-bc1e-54179a613409",
+     "title": "Lexology (law-firm summary): DPDP Rules, 2025: operationalising consent, security and governance obligations",
+     "supports": "phase dates: Rules 1, 2, 17-21 at once; consent managers about Nov 2026; main obligations about May 2027"
+    }
+   ],
+   "note": "Act enacted 11 Aug 2023; Rules notified 14 Nov 2025 with an eighteen-month phased compliance period (PIB, read 2026-10-04). Per law-firm summaries (medium confidence) the core notice and consent duties bite from about May 2027 and consent-manager registration from about Nov 2026: so as of 2026-10-04 most duties are announced but not yet enforceable. Copy rules: (1) every lead form or opt-in needs a separate consent notice, 'clear and easy to understand', stating the specific purpose (PIB). (2) Purpose-specific consent: a purchase or a download is not consent to marketing. (3) Children's data needs verifiable parental consent (PIB), so no data-capturing CTAs aimed at kids. (4) Penalty ceilings in the Act are high (PIB lists up to Rs 250 crore for security failures, up to Rs 200 crore for breach-notice or children's violations, up to Rs 50 crore for other violations).",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:eci_ai_content_advisory",
+   "name": "Election Commission of India directions on labelling AI-generated / synthetic campaign content (Jan 2025, Oct 2025, Apr 2026)",
+   "category": "India",
+   "one_line": "ECI requires parties, candidates and campaigners to label AI-generated or digitally altered campaign images, audio and video, name who made it, and remove misleading synthetic content within three hours.",
+   "aliases": [
+    "ECI deepfake advisory",
+    "ECI AI label",
+    "AI-Generated label election"
+   ],
+   "sources": [
+    {
+     "url": "https://www.newsonair.gov.in/eci-directs-political-parties-to-label-ai-generated-synthetic-content-in-campaigns",
+     "title": "All India Radio News (16 Jan 2025): ECI directs political parties to label AI-generated synthetic content in campaigns",
+     "supports": "Jan 2025 advisory and label wording"
+    },
+    {
+     "url": "https://www.newsonair.gov.in/ec-issues-fresh-guidelines-on-ai-and-synthetic-content-use-in-bihar-poll-campaigns",
+     "title": "All India Radio News (25 Oct 2025): EC issues fresh guidelines on AI and synthetic content use in Bihar poll campaigns",
+     "supports": "Oct 2025 advisory"
+    },
+    {
+     "url": "https://www.businesstoday.in/india/story/eci-mandates-clear-labelling-of-ai-generated-content-in-political-campaigns-499535-2025-10-24",
+     "title": "Business Today (24 Oct 2025): ECI mandates clear labelling of AI generated content in political campaigns",
+     "supports": "label covers at least 10% of visible area, top of screen for video, first 10% of audio, creator named, 3-hour takedown, records"
+    },
+    {
+     "url": "https://www.medianama.com/2026/04/223-eci-orders-3-hour-takedown-rule-ai-fake-content-elections/",
+     "title": "MediaNama (Apr 2026): ECI orders 3-hour takedown rule for AI and fake content in elections",
+     "supports": "22 Apr 2026 directions for Assam, Kerala, Tamil Nadu, Puducherry, West Bengal polls; label wording plus originating entity"
+    }
+   ],
+   "note": "Advisories dated Jan 2025 and 24 Oct 2025, reiterated 22 Apr 2026 for the 2026 assembly polls (news reports of ECI/PIB releases, read 2026-10-04; ECI's own PDF not read: medium confidence). Rules: (1) label every AI-generated or significantly altered campaign image, video or audio 'AI-Generated', 'Digitally Enhanced' or 'Synthetic Content'. (2) Per the Oct 2025 advisory the label should cover at least 10% of the visible display area, sit at the top of the screen for video, and occupy the first 10% of duration for audio (Business Today). (3) Disclose the entity responsible in metadata or caption. (4) Misleading synthetic content on party channels must come down within 3 hours of notice; parties keep records of AI material. (5) Never fabricate a rival leader's voice, face or statement: it also falls under comp:it_rules_sgi_2026.",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:eci_mcc",
+   "name": "ECI Model Code of Conduct, MCMC pre-certification of political ads, and social media instructions",
+   "category": "India",
+   "one_line": "During elections, every political ad on TV, radio, e-papers, bulk SMS, voice calls, websites and social media needs prior certification from the district or state Media Certification and Monitoring Committee (MCMC), and campaign speech is bound by the Model Code of Conduct.",
+   "aliases": [
+    "MCC",
+    "MCMC certification",
+    "ECI social media guidelines",
+    "political ad pre-certification"
+   ],
+   "sources": [
+    {
+     "url": "https://www.newsonair.gov.in/ec-mandates-pre-certification-of-political-ads-on-electronic-and-digital-media",
+     "title": "All India Radio News (21 Mar 2026): EC mandates pre-certification of political ads on electronic and digital media",
+     "supports": "media covered, District vs State MCMC, social media accounts in affidavit, social media spend statement within 75 days"
+    },
+    {
+     "url": "https://www.business-standard.com/elections/assembly-election/eci-political-parties-ads-certification-mcmc-social-media-rules-candidates-125101400427_1.html",
+     "title": "Business Standard (14 Oct 2025): ECI makes pre-certification mandatory for political ads on social media",
+     "supports": "same rule applied to the Oct-Nov 2025 Bihar polls"
+    },
+    {
+     "url": "https://www.eci.gov.in/mcc/",
+     "title": "Election Commission of India: Model Code of Conduct",
+     "supports": "MCC text and instructions (landing page; not read in this harvest)"
+    }
+   ],
+   "note": "Applied in every recent election, most recently by the ECI order reported 21 Mar 2026 for the 2026 assembly polls (AIR News, read 2026-10-04). Rules: (1) no political ad on any internet-based media or social media by a party or candidate without MCMC pre-certification; candidates apply to the District MCMC, state-headquartered parties to the State MCMC (AIR News). (2) Candidates declare their authentic social media accounts in the nomination affidavit, and parties report internet/social media campaign spend to ECI within 75 days of the poll (AIR News). (3) MCC rules on content (no appeals to caste or communal feelings, no criticism of private life, no unverified allegations) apply to digital posts too: read the ECI MCC text before writing campaign copy (primary not read here). Ghost-writing for a party during an election = get the MCMC certificate number before the post goes live.",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:endorsement_know_hows",
+   "name": "Department of Consumer Affairs 'Endorsement Know-hows!' for celebrities, influencers and virtual influencers (2023)",
+   "category": "India",
+   "one_line": "Government of India guide: celebrities, influencers and virtual influencers must disclose any material connection in simple words like 'advertisement', 'sponsored' or 'paid promotion', and should not endorse what they have not used or checked.",
+   "aliases": [
+    "Endorsement Know-hows",
+    "DoCA influencer guidelines",
+    "government influencer guidelines India"
+   ],
+   "sources": [
+    {
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1892527",
+     "title": "PIB (20 Jan 2023): Centre releases endorsement guidelines for Celebs and Social Media Influencers",
+     "supports": "release date, what counts as material connection, disclosure wording, due diligence"
+    },
+    {
+     "url": "https://consumeraffairs.nic.in/sites/default/files/filefield_paths/Endorsement_Know-Hows.pdf",
+     "title": "Department of Consumer Affairs: Endorsement Know-hows! (PDF)",
+     "supports": "the guide itself (download failed in this harvest; content taken from the PIB release)"
+    }
+   ],
+   "note": "Released 20 Jan 2023 by the Department of Consumer Affairs under the Consumer Protection Act, 2019 (PIB, read 2026-10-04). Rules: (1) disclose any material connection: money, trips or hotel stays, media barters, coverage and awards, free products with or without conditions, discounts, gifts, and any family, personal or employment relationship (PIB). (2) Disclosures must be prominent and 'extremely hard to miss' (PIB). (3) Use simple, clear words such as 'advertisement', 'sponsored' or 'paid promotion' (PIB). (4) Do not endorse a product or service you have not personally used or experienced or on which you have not done due diligence (PIB). Applies to virtual influencers too.",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:eu_ai_act_art50",
+   "name": "EU AI Act (Regulation (EU) 2024/1689) Article 50: transparency for AI-generated content",
+   "category": "EU-UK",
+   "one_line": "Deployers who publish deepfakes, or AI-generated text meant to inform the public on matters of public interest, must disclose that it is AI-generated; providers must mark synthetic output machine-readably.",
+   "aliases": [
+    "AI Act Article 50",
+    "EU deepfake disclosure",
+    "AI Act transparency"
+   ],
+   "sources": [
+    {
+     "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+     "title": "EUR-Lex: Regulation (EU) 2024/1689 (Artificial Intelligence Act)",
+     "supports": "Article 50 text and Article 113 dates of application"
+    },
+    {
+     "url": "https://artificialintelligenceact.eu/article/50/",
+     "title": "artificialintelligenceact.eu (Future of Life Institute reference site): Article 50 Transparency Obligations",
+     "supports": "Art 50 text read 2026-10-04: deep-fake disclosure, public-interest text disclosure unless human review/editorial responsibility, satire/art limitation"
+    }
+   ],
+   "note": "Article 50 applies from 2 August 2026 under Article 113 (EUR-Lex; Art 50 text read 2026-10-04 on the reference site). Rules for writers serving EU audiences: (1) deployers of a deep fake (AI image, audio or video resembling real persons, objects, places or events that would falsely appear authentic) 'shall disclose that the content has been artificially generated or manipulated'; for evidently artistic, creative, satirical or fictional work the duty is limited to disclosing it 'in an appropriate manner that does not hamper the display or enjoyment of the work' (Art 50(4)). (2) AI-generated or manipulated 'text which is published with the purpose of informing the public on matters of public interest' must be disclosed, unless it 'has undergone a process of human review or editorial control' and someone holds editorial responsibility (Art 50(4)). (3) Disclosure must be clear and distinguishable at the latest at first exposure (Art 50(5)). (4) Providers must machine-mark synthetic output (Art 50(2)). The 2025-26 'Digital Omnibus' package proposed changes to AI Act timelines; whether Art 50 dates moved was NOT confirmed in this harvest.",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:eu_dsa_ad_transparency",
+   "name": "EU Digital Services Act (Regulation (EU) 2022/2065) Article 26: advertising transparency on online platforms",
+   "category": "EU-UK",
+   "one_line": "On EU online platforms every ad must be identifiable as an ad in real time, showing on whose behalf it runs, who paid, and the main targeting parameters; platforms must let users declare their posts as commercial communications.",
+   "aliases": [
+    "DSA Article 26",
+    "DSA ad transparency",
+    "commercial communication declaration"
+   ],
+   "sources": [
+    {
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R2065",
+     "title": "EUR-Lex: Regulation (EU) 2022/2065 (Digital Services Act)",
+     "supports": "Article 26 text"
+    }
+   ],
+   "note": "DSA obligations for online platforms apply since 17 Feb 2024 (EUR-Lex text read 2026-10-04 for Art 26; date of application from Art 93, not re-read). Rules: (1) ads shown to EU users must be clearly identifiable as ads, with the advertiser and payer named (Art 26(1)). (2) Platforms must offer a function for users to declare that their content is or contains commercial communications, and then label it (Art 26(2)): for an EU-facing influencer post, switch on the platform's paid-partnership tool. (3) No ads targeted on special-category data such as religion or political opinions (Art 26(3)).",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:ftc_consumer_reviews_rule",
+   "name": "FTC Trade Regulation Rule on the Use of Consumer Reviews and Testimonials (16 CFR Part 465, 2024)",
+   "category": "US",
+   "one_line": "Bans fake or AI-invented reviews and testimonials, bought reviews, undisclosed insider reviews, review suppression and fake social-media indicators such as bought followers or views.",
+   "aliases": [
+    "FTC fake reviews rule",
+    "16 CFR 465"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2024/08/federal-trade-commission-announces-final-rule-banning-fake-reviews-testimonials",
+     "title": "FTC press release: Federal Trade Commission Announces Final Rule Banning Fake Reviews and Testimonials (14 Aug 2024)",
+     "supports": "what the rule bans, including AI-generated fake reviews and fake social media indicators"
+    },
+    {
+     "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465",
+     "title": "eCFR: 16 CFR Part 465 Use of Consumer Reviews and Testimonials",
+     "supports": "rule text"
+    }
+   ],
+   "note": "Final rule announced 14 Aug 2024 by a 5-0 vote; 'effective 60 days after the date it's published in the Federal Register' (FTC release read 2026-10-04; widely reported as 21 Oct 2024, not re-checked in the Federal Register). Rules from the FTC release: (1) no reviews or testimonials that misrepresent that they are by someone who does not exist, 'such as AI-generated fake reviews', or by someone with no actual experience of the product. (2) Insider reviews by officers, managers, employees or agents need clear and conspicuous disclosure of the connection. (3) No review suppression by threats or intimidation. (4) No buying or selling 'fake indicators of social media influence, such as followers or views generated by a bot or hijacked account'. Civil penalties apply to knowing violators.",
+   "kind": "compliance"
+  },
+  {
+   "id": "comp:ftc_endorsement_guides",
+   "name": "FTC Guides Concerning the Use of Endorsements and Testimonials in Advertising (16 CFR Part 255, revised 2023)",
+   "category": "US",
+   "one_line": "US rule set for influencer and testimonial copy: honest opinions only, no claims the brand could not make itself, and a clear, unavoidable disclosure of any material connection.",
+   "aliases": [
+    "FTC Endorsement Guides",
+    "16 CFR 255",
+    "FTC influencer disclosure"
+   ],
+   "sources": [
+    {
+     "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255",
+     "title": "eCFR: 16 CFR Part 255 Guides Concerning Use of Endorsements and Testimonials in Advertising",
+     "supports": "current text of the Guides"
+    },
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+     "title": "FTC: Disclosures 101 for Social Media Influencers",
+     "supports": "plain-language disclosure rules for influencers: placement, wording, video and live"
+    },
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides",
+     "title": "FTC: FTC's Endorsement Guides: What People Are Asking",
+     "supports": "FAQ on material connections, affiliate links, reviews, platform tools"
+    }
+   ],
+   "note": "Revised Guides adopted by the FTC in June 2023 and in force (eCFR current text, checked 2026-10-04). For a copywriter: (1) an endorsement must reflect the endorser's honest opinion and cannot convey a claim the advertiser could not substantiate itself (Part 255). (2) Any material connection (payment, free product, family/employment, affiliate commission) must be disclosed clearly and conspicuously, i.e. hard to miss, in the endorsement itself, not only on a profile page (Disclosures 101). (3) Use simple, clear words like 'advertisement', 'ad', 'sponsored'; 'Don't use vague or confusing terms like \"sp,\" \"spon,\" or \"collab,\"' and 'Don't assume that a platform's disclosure tool is good enough' (Disclosures 101). (4) In video, say it in the video, not just the description; in live streams, repeat it periodically (Disclosures 101). Penalty figures not taken from memory: check the FTC page before quoting any.",
+   "kind": "compliance"
+  }
+ ]
+}

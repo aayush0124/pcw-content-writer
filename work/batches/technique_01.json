@@ -1,0 +1,545 @@
+{
+ "kind": "technique",
+ "items": [
+  {
+   "id": "tech:active_voice",
+   "name": "Active voice",
+   "category": "Line craft & rhetoric",
+   "one_line": "Put the doer first and the action in a verb ('We reviewed the claim', not 'The claim was reviewed').",
+   "aliases": [
+    "active verbs"
+   ],
+   "sources": [
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/",
+     "title": "GOV.UK: Use clear language",
+     "supports": "use the active voice; it is more direct and keeps sentences short"
+    },
+    {
+     "url": "https://developers.google.com/style/voice",
+     "title": "Google developer documentation style guide: Active voice",
+     "supports": "prefer active voice"
+    },
+    {
+     "url": "https://digital.gov/guides/plain-language",
+     "title": "digital.gov plain language guide",
+     "supports": "US federal plain language guidance (plainlanguage.gov now redirects here)"
+    },
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 10: use the active voice"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:alliteration",
+   "name": "Alliteration",
+   "category": "Line craft & rhetoric",
+   "one_line": "Repeat an opening sound across nearby words to make a phrase stick (sparingly: headlines, taglines, names).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Alliteration",
+     "title": "Alliteration (Wikipedia)",
+     "supports": "definition of the device"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:anaphora_repetition",
+   "name": "Anaphora and deliberate repetition",
+   "category": "Line craft & rhetoric",
+   "one_line": "Repeat the same opening words across successive lines to build rhythm and emphasis.",
+   "aliases": [
+    "anaphora",
+    "epistrophe",
+    "repetition"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anaphora_(rhetoric)",
+     "title": "Anaphora (rhetoric) (Wikipedia)",
+     "supports": "repetition at the start of successive clauses"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Epistrophe",
+     "title": "Epistrophe (Wikipedia)",
+     "supports": "repetition at the end of successive clauses"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:anchor_text",
+   "name": "Descriptive anchor text (internal links)",
+   "category": "SEO & AI search",
+   "one_line": "Make link text say where the link goes ('2026 GST rate table', not 'click here'), concise and relevant to the target.",
+   "aliases": [
+    "link text",
+    "internal linking anchor text"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+     "title": "Google Search Central: Link best practices",
+     "supports": "write good, descriptive anchor text"
+    },
+    {
+     "url": "https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/add-links/",
+     "title": "GOV.UK: Write effective links",
+     "supports": "link text should describe the destination"
+    },
+    {
+     "url": "https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html",
+     "title": "WCAG 2.2 Understanding 2.4.4 Link Purpose (In Context)",
+     "supports": "link purpose must be clear from the link text or its context"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:anecdote_lead",
+   "name": "Anecdote lead",
+   "category": "Storytelling",
+   "one_line": "Open with a short true story about one person, then widen to the point it illustrates.",
+   "aliases": [
+    "anecdotal lede",
+    "delayed lede",
+    "feature lead"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lead_paragraph",
+     "title": "Lead paragraph (Wikipedia)",
+     "supports": "lead types in journalism, including feature-style leads"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Anecdote",
+     "title": "Anecdote (Wikipedia)",
+     "supports": "what an anecdote is"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:answer_first_paragraph",
+   "name": "Answer-first paragraph",
+   "category": "SEO & AI search",
+   "one_line": "Under a question-shaped heading, answer it directly in the first one or two sentences, then expand.",
+   "aliases": [
+    "snippet bait",
+    "direct answer",
+    "answer engine optimisation"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/featured-snippets",
+     "title": "Google Search Central: Featured snippets",
+     "supports": "how featured snippets are drawn from page text"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/ai-features",
+     "title": "Google Search Central: AI features and your website",
+     "supports": "no additional requirements or special optimisation for AI Overviews / AI Mode; standard SEO best practices apply"
+    }
+   ],
+   "note": "Google states there is no special optimisation for AI Overviews; answer-first writing is a clarity move that also suits snippets. Claims that it 'guarantees' AI citations are unsourced.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:antithesis",
+   "name": "Antithesis",
+   "category": "Line craft & rhetoric",
+   "one_line": "Set two opposed ideas side by side in balanced phrases to sharpen a point.",
+   "aliases": [
+    "contrast line"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Antithesis",
+     "title": "Antithesis (Wikipedia)",
+     "supports": "juxtaposition of contrasting ideas in parallel structure"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+     "title": "Wikipedia: Signs of AI writing",
+     "supports": "lists negative parallelism ('not X, but Y') as an AI tell"
+    }
+   ],
+   "note": "The formula 'It's not X, it's Y' is a listed AI tell when used reflexively.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:authority_proof",
+   "name": "Authority proof",
+   "category": "Persuasion & proof",
+   "one_line": "Borrow credibility from credentials, experts, certifications, media mentions or hard data placed where doubt peaks.",
+   "aliases": [
+    "credibility markers",
+    "expert endorsement"
+   ],
+   "sources": [
+    {
+     "url": "https://www.influenceatwork.com/7-principles-of-persuasion/",
+     "title": "Cialdini: Seven Principles of Persuasion (Influence at Work)",
+     "supports": "Authority is one of the seven principles"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:awareness_level_matching",
+   "name": "Match copy to awareness level",
+   "category": "Persuasion & proof",
+   "one_line": "Decide whether the reader is unaware, problem-aware, solution-aware, product-aware or most aware, and open where they are.",
+   "aliases": [
+    "Schwartz awareness levels",
+    "stages of awareness",
+    "market sophistication"
+   ],
+   "sources": [
+    {
+     "url": "https://selzee.com/eugene-schwartz-5-levels-of-awareness",
+     "title": "Eugene Schwartz 5 levels of awareness explained (Selzee)",
+     "supports": "summary of the five levels from Breakthrough Advertising (1966) (secondary)"
+    }
+   ],
+   "note": "Originates in Eugene Schwartz, Breakthrough Advertising (1966), cited by name. Could also be filed as a framework (fw_hook worker); merge decides.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:big_idea",
+   "name": "Big idea",
+   "category": "Persuasion & proof",
+   "one_line": "Build the whole piece around one fresh, simple central idea that makes the offer memorable and different.",
+   "aliases": [
+    "the big idea",
+    "central concept"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Big_Idea_(marketing)",
+     "title": "Big Idea (marketing) (Wikipedia)",
+     "supports": "definition and Ogilvy association"
+    },
+    {
+     "url": "https://copychief.com/big-idea/",
+     "title": "CopyChief: WANTED, the Big Idea (direct response style)",
+     "supports": "how direct-response writers use the big idea"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:bold_for_skimmers",
+   "name": "Bold for skimmers",
+   "category": "Structure & scannability",
+   "one_line": "Bold a few key phrases that carry the meaning on their own; never whole sentences or every other line.",
+   "aliases": [
+    "highlighting",
+    "emphasis"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/formatting-long-form-content/",
+     "title": "NN/g: Formatting long-form content",
+     "supports": "bolding and formatting to support scanning"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+     "title": "Wikipedia: Signs of AI writing",
+     "supports": "overuse of boldface is a listed AI tell"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:bucket_brigade",
+   "name": "Bucket brigades",
+   "category": "Line craft & rhetoric",
+   "one_line": "Short conversational bridge phrases ('Here's why.' 'The catch?') that carry the reader over a paragraph break.",
+   "aliases": [
+    "bucket brigade",
+    "bridge phrases"
+   ],
+   "sources": [
+    {
+     "url": "https://copyhackers.com/engage-bucket-brigade-technique/",
+     "title": "Copyhackers: How to engage with the bucket brigade technique",
+     "supports": "definition and use"
+    },
+    {
+     "url": "https://backlinko.com/copywriting-guide",
+     "title": "Backlinko: Copywriting, 7 fundamentals",
+     "supports": "Brian Dean's use of bucket brigades in blog posts"
+    }
+   ],
+   "note": "Overuse reads as formula; several stock bucket-brigade openers ('Here's the thing') overlap with AI-tell lists (see pcw.py AI_TELLS).",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:bulleted_lists",
+   "name": "Bulleted and numbered lists",
+   "category": "Structure & scannability",
+   "one_line": "Turn a run of parallel items or steps into a list; number steps, bullet unordered items, keep each item parallel.",
+   "aliases": [
+    "bullets",
+    "lists"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/style/lists",
+     "title": "Google developer documentation style guide: Lists",
+     "supports": "when to use numbered vs bulleted lists"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/scannable-content/",
+     "title": "Microsoft Writing Style Guide: Scannable content",
+     "supports": "lists and headings for scannability"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:but_therefore",
+   "name": "But / therefore links",
+   "category": "Storytelling",
+   "one_line": "Join story beats with 'but' or 'therefore' (cause and complication), never 'and then', so events drive each other.",
+   "aliases": [
+    "South Park rule",
+    "causal chain"
+   ],
+   "sources": [
+    {
+     "url": "https://www.aerogrammestudio.com/2014/03/06/writing-advice-from-south-parks-trey-parker-and-matt-stone/",
+     "title": "Aerogramme Studio: Writing advice from South Park's Trey Parker and Matt Stone",
+     "supports": "the 'but/therefore' rule from their NYU class visit"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=vGUNqq3jVLg",
+     "title": "Writing Advice from Matt Stone & Trey Parker @ NYU (video)",
+     "supports": "primary recording of the advice"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:button_labels",
+   "name": "Front-loaded button labels",
+   "category": "UX writing",
+   "one_line": "Label buttons with a specific verb phrase that says what happens ('Save draft', 'Pay ₹499'), not 'OK' or 'Submit'.",
+   "aliases": [
+    "button copy",
+    "command labels",
+    "action labels"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/ui-copy/",
+     "title": "NN/g: UI Copy, guidelines for command names",
+     "supports": "command labels should be specific and start with the important word"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:callback",
+   "name": "Callback",
+   "category": "Storytelling",
+   "one_line": "Bring back an earlier line, image or joke near the end so the piece feels closed and the reader feels rewarded.",
+   "aliases": [
+    "callback joke",
+    "bookend",
+    "kicker callback"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Callback_(comedy)",
+     "title": "Callback (comedy) (Wikipedia)",
+     "supports": "a joke referring back to an earlier one"
+    }
+   ],
+   "note": "Covers both the story callback and the comic callback named in the brief.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:captions_subtitles",
+   "name": "Captions and subtitle writing",
+   "category": "Social & video",
+   "one_line": "Write on-video captions as short, well-timed lines broken at natural phrase boundaries, edited for reading speed.",
+   "aliases": [
+    "subtitles",
+    "closed captions",
+    "burned-in captions"
+   ],
+   "sources": [
+    {
+     "url": "https://www.bbc.co.uk/accessibility/forproducts/guides/subtitles/",
+     "title": "BBC Subtitle Guidelines",
+     "supports": "line-break, timing and length guidance; two lines maximum recommended for landscape/square video"
+    },
+    {
+     "url": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/217350977-English-USA-Timed-Text-Style-Guide",
+     "title": "Netflix English (USA) Timed Text Style Guide",
+     "supports": "industry subtitle style rules"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:character_with_a_want",
+   "name": "Character with a want",
+   "category": "Storytelling",
+   "one_line": "Give the person in the story a clear desire and an obstacle, so the reader has something to root for.",
+   "aliases": [
+    "want and obstacle",
+    "goal-driven character"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Protagonist",
+     "title": "Protagonist (Wikipedia)",
+     "supports": "the protagonist as the character whose goals drive the story"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Character_arc",
+     "title": "Character arc (Wikipedia)",
+     "supports": "change a character undergoes in pursuing a goal"
+    }
+   ],
+   "note": "In brand stories the customer is the character with the want, not the brand.",
+   "kind": "technique"
+  },
+  {
+   "id": "tech:chiasmus",
+   "name": "Chiasmus",
+   "category": "Line craft & rhetoric",
+   "one_line": "Reverse the order of key words in a second clause (AB, BA) for a memorable, quotable line.",
+   "aliases": [
+    "reversal line"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chiasmus",
+     "title": "Chiasmus (Wikipedia)",
+     "supports": "definition of the device"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:chunking",
+   "name": "Chunking",
+   "category": "Structure & scannability",
+   "one_line": "Break content into small, labelled groups (short paragraphs, lists, sections) so the reader can process and find it.",
+   "aliases": [
+    "content chunking"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/chunking/",
+     "title": "NN/g: How Chunking Helps Content Processing",
+     "supports": "definition and methods"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:cliffhanger",
+   "name": "Cliffhanger",
+   "category": "Structure & scannability",
+   "one_line": "End a section, email or episode at an unresolved moment so the reader comes back for the next one.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cliffhanger",
+     "title": "Cliffhanger (Wikipedia)",
+     "supports": "definition of the device"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:concrete_nouns_strong_verbs",
+   "name": "Concrete nouns and strong verbs",
+   "category": "Line craft & rhetoric",
+   "one_line": "Prefer nouns you can picture and verbs that carry the action over abstract nouns plus weak verbs and adjectives.",
+   "aliases": [
+    "strong verbs",
+    "concrete language"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gutenberg.org/ebooks/37134",
+     "title": "Strunk, The Elements of Style (1920 ed., public domain, Project Gutenberg)",
+     "supports": "rule 12: use definite, specific, concrete language"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Nominalization",
+     "title": "Nominalization (Wikipedia)",
+     "supports": "abstract nouns made from verbs weaken prose"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:confirmation_dialog_copy",
+   "name": "Confirmation-dialog copy",
+   "category": "UX writing",
+   "one_line": "Ask only before destructive or costly actions, state the consequence, and label the buttons with the actual actions.",
+   "aliases": [
+    "are-you-sure dialog"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/confirmation-dialog/",
+     "title": "NN/g: Confirmation Dialogs Can Prevent User Errors (If Not Overused)",
+     "supports": "when to use confirmation dialogs and how to word them"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:conflict_and_stakes",
+   "name": "Conflict and stakes",
+   "category": "Storytelling",
+   "one_line": "Give the story an obstacle and make clear what is lost if the character fails.",
+   "aliases": [
+    "stakes",
+    "tension"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Conflict_(narrative)",
+     "title": "Conflict (narrative) (Wikipedia)",
+     "supports": "conflict as the engine of narrative"
+    }
+   ],
+   "kind": "technique"
+  },
+  {
+   "id": "tech:consistent_terminology",
+   "name": "Consistent terminology",
+   "category": "UX writing",
+   "one_line": "Call one thing by one name everywhere (UI, help, emails); keep a word list and do not vary terms for style.",
+   "aliases": [
+    "term consistency",
+    "controlled vocabulary"
+   ],
+   "sources": [
+    {
+     "url": "https://www.nngroup.com/articles/consistency-and-standards/",
+     "title": "NN/g: Consistency and Standards (usability heuristic #4)",
+     "supports": "users should not wonder whether different words mean the same thing"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+     "title": "Wikipedia: Signs of AI writing",
+     "supports": "elegant variation (swapping synonyms for the same thing) is a listed tell"
+    }
+   ],
+   "kind": "technique"
+  }
+ ]
+}

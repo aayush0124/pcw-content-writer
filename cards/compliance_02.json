@@ -1,0 +1,1380 @@
+{
+ "cards": [
+  {
+   "id": "comp:ftc_health_claims",
+   "kind": "compliance",
+   "name": "FTC Health Products Compliance Guidance (health claim substantiation)",
+   "status": "current",
+   "summary": "US Federal Trade Commission guidance (issued Dec 2022; page read 2026-10-04): in force as the FTC's current published position, but guidance rather than a statute with section numbers. Any health-benefit claim in an ad that reaches US consumers needs competent and reliable scientific evidence before it runs, and the ad is judged by what a reasonable consumer takes away, not by what the marketer meant.",
+   "use_for": [
+    "supplement, wellness, skincare, fitness and diet ads, landing pages and product pages aimed at US buyers",
+    "influencer and affiliate posts that make a health claim for a US audience",
+    "health or finance-adjacent explainers where a product is promoted at the end",
+    "reviewing a client's old claims before a US launch"
+   ],
+   "avoid": [
+    "Treating a testimonial ('I lost 8 kg in a month') or a doctor's quote as the proof: the guidance says testimonials and expert endorsements do not replace evidence for the claim; ask the client for the study instead.",
+    "Fixing an over-claim with a small disclaimer ('results may vary'): a disclosure fails if a significant minority of consumers still take a misleading claim from the ad, so cut the claim to what the evidence shows.",
+    "Assuming the Indian rules are enough for a US campaign: for Indian audiences use comp:ccpa_misleading_ads_2022 and comp:asci_code; for the US this card applies.",
+    "Using this card as legal advice: it is a writer's checklist; send a borderline disease or cure claim to the client's counsel."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance",
+     "title": "FTC: Health Products Compliance Guidance",
+     "supports": "substantiation standard, RCTs, net impression of disclosures, testimonials and expert endorsements"
+    }
+   ],
+   "related": [
+    "comp:ftc_endorsement_guides",
+    "comp:ftc_consumer_reviews_rule",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code",
+    "comp:meta_advertising_standards",
+    "comp:dmr_act_1954"
+   ],
+   "jurisdiction": "US",
+   "applies_to": [
+    "genre:product_description",
+    "genre:landing_page",
+    "genre:sales_page",
+    "genre:vsl_script",
+    "genre:social_ad_copy",
+    "genre:advertorial",
+    "genre:sponsored_creator_post",
+    "genre:affiliate_review",
+    "genre:testimonial_copy",
+    "genre:promotional_email",
+    "health, wellness and supplement claims aimed at US consumers"
+   ],
+   "rules": [
+    {
+     "rule": "A claim that a product or service gives a health benefit must be backed by 'competent and reliable scientific evidence' before the ad runs.",
+     "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance"
+    },
+    {
+     "rule": "Randomized, controlled human clinical trials (RCTs) are the most reliable form of evidence and are generally what experts require, so ask for human trial evidence, not lab, animal or ingredient-level studies, for the claim as worded.",
+     "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance"
+    },
+    {
+     "rule": "Judge each claim by what reasonable consumers take away from the whole ad (headline, image, name, testimonial, fine print), not by what the marketer meant.",
+     "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance"
+    },
+    {
+     "rule": "A disclosure or qualifier does not rescue a misleading claim: it fails if a significant minority of consumers still take the misleading claim from the ad (net impression).",
+     "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance"
+    },
+    {
+     "rule": "Testimonials and expert endorsements do not substitute for evidence: a customer story or a doctor's quote cannot support a health claim the evidence itself does not support.",
+     "url": "https://www.ftc.gov/business-guidance/resources/health-products-compliance-guidance"
+    }
+   ],
+   "checks": [
+    "Can the client name the human, controlled study that supports each health-benefit claim exactly as the copy words it?",
+    "If a reader sees only the headline and the image, would they believe a stronger benefit than the evidence shows?",
+    "Does any disclaimer or small print contradict or quietly walk back the main claim?",
+    "Is a testimonial or a doctor's endorsement the only proof offered for a health benefit?",
+    "Does the name, image or hashtag imply a benefit (cure, prevention, treatment) that no claim sentence states but the evidence does not cover?",
+    "Is this a US-facing piece, and if it also runs in India, has it been checked against comp:ccpa_misleading_ads_2022 and the ASCI Code?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:google_ads_editorial",
+   "kind": "compliance",
+   "name": "Google Ads Editorial policy (capitalisation, punctuation and symbols, repetition, spacing, style and spelling)",
+   "status": "current",
+   "summary": "Google Ads platform policy, current as read 2026-10-04. Ad text must read like clean, informational Search copy: no gimmicky capitals, symbols, repetition or spacing, no phone numbers in the text, standard spelling and grammar, and a business name that is the domain or a recognised advertiser name. Each sub-policy has its own detail page that this card did not read, so the exact limits on exclamation marks and specific symbols are UNCONFIRMED here: check the detail page when one matters.",
+   "use_for": [
+    "writing headlines and descriptions for responsive search ads, Demand Gen and Performance Max text assets",
+    "reviewing an ad group for repeated lines before it is submitted",
+    "cleaning up a client's disapproved ads",
+    "briefing a junior on why 'FREE!!! BUY NOW' ads get rejected"
+   ],
+   "avoid": [
+    "Capitals, symbols or spacing used to shout or decorate ('BUY NOW', '***SALE***', 'Sale-Sale-Sale'): write the offer in normal sentence or title case and let the number or benefit carry the weight.",
+    "Padding an ad group with the same line in slightly different forms: the policy bars repetition across assets in the same ad group, so write distinct angles (price, speed, proof, location).",
+    "Putting the phone number in the headline or description: use the call extension or call asset instead.",
+    "Putting a slogan or offer in the business name field: it must be the domain or a recognised advertiser name with no promotional language."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en",
+     "title": "Google Advertising Policies Help: Editorial",
+     "supports": "list of disallowed editorial practices"
+    }
+   ],
+   "related": [
+    "comp:google_ads_misrepresentation",
+    "genre:search_ad_copy",
+    "plat:google_ads_rsa",
+    "plat:google_ads_pmax",
+    "plat:google_ads_demand_gen",
+    "comp:linkedin_ads_policy"
+   ],
+   "jurisdiction": "Google Ads",
+   "applies_to": [
+    "genre:search_ad_copy",
+    "genre:display_banner_ad_copy",
+    "genre:social_ad_copy",
+    "Google Ads responsive search, Demand Gen and Performance Max text assets"
+   ],
+   "rules": [
+    {
+     "rule": "Capitalisation must be used correctly and for its intended purpose: no capitals for emphasis such as FREE or BUY NOW.",
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en"
+    },
+    {
+     "rule": "Punctuation and symbols must be used correctly and for their intended purpose; invalid characters are not allowed. The sub-policy detail page holds the specific limits (not read here).",
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en"
+    },
+    {
+     "rule": "No non-standard, gimmicky or unnecessary repetition of names, words or phrases, and no repeating the same text across assets in the same ad group.",
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en"
+    },
+    {
+     "rule": "Do not omit a space or add extra spaces.",
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en"
+    },
+    {
+     "rule": "No phone numbers in ad text.",
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en"
+    },
+    {
+     "rule": "Use commonly accepted spelling and grammar, and keep the style consistent with the clear, informational presentation style of Search.",
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en"
+    },
+    {
+     "rule": "The business name field must be the domain or a recognised advertiser name, with no promotional language.",
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en"
+    }
+   ],
+   "checks": [
+    "Is any word in capitals for emphasis (FREE, BUY NOW, SALE) rather than because it is a normal spelling?",
+    "Does every punctuation mark and symbol do its ordinary job, with no decorative symbols or stray characters?",
+    "Is any word, name or phrase repeated within an asset, or is any line reused across assets in the same ad group?",
+    "Are all spaces correct, with none missing and none doubled?",
+    "Is there a phone number anywhere in the headlines or descriptions?",
+    "Is the spelling and grammar standard, and does the copy read as clear informational Search copy rather than a shout?",
+    "Is the business name the domain or the recognised advertiser name, with no offer words?",
+    "Where the copy uses an exclamation mark or a special symbol, has it been checked against that sub-policy's own detail page?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:google_ads_misrepresentation",
+   "kind": "compliance",
+   "name": "Google Ads Misrepresentation policy",
+   "status": "current",
+   "summary": "Google Ads platform policy, current as read 2026-10-04. Ads may not hide or misstate who the advertiser is, give a false impression of cost, use clickbait or the fear of death, accident, illness, arrest or bankruptcy to force a quick decision, imitate buttons or system messages, or present an improbable result as the likely outcome. The policy also lists an 'unavailable offers' sub-policy whose text this card did not read.",
+   "use_for": [
+    "any Google Search, YouTube or Display ad that quotes a price, an outcome or a deadline",
+    "ads for loans, coaching, courses, health and insurance where results are tempting to exaggerate",
+    "checking that an ad and its landing page say the same thing",
+    "reviewing an ad that a client wants built to look like a notification or a button"
+   ],
+   "avoid": [
+    "Quoting the best-case result as the headline ('Lose 10 kg in 7 days', 'Earn Rs 1 lakh a month'): the policy bars improbable results as the likely outcome even when the result is possible; state a typical result or drop the number.",
+    "Fear hooks built on a negative life event ('Your family is unprotected if you die tomorrow'): the policy bars using death, accidents, illness, arrests or bankruptcy to pressure immediate action; lead with the benefit and the plain facts.",
+    "A price that only holds with hidden conditions: show the full cost the buyer will actually pay, or say what the condition is in the same line.",
+    "Fake 'Download' or 'Play' buttons and system-alert styling in ad images: design the ad so it is plainly an ad."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en",
+     "title": "Google Advertising Policies Help: Misrepresentation",
+     "supports": "sub-policies: misleading representation, dishonest pricing, clickbait, misleading ad design, manipulated media, unreliable claims, unavailable offers"
+    }
+   ],
+   "related": [
+    "comp:google_ads_editorial",
+    "comp:ccpa_dark_patterns_2023",
+    "comp:ccpa_misleading_ads_2022",
+    "genre:search_ad_copy",
+    "plat:google_ads_rsa",
+    "plat:youtube_video_ads"
+   ],
+   "jurisdiction": "Google Ads",
+   "applies_to": [
+    "genre:search_ad_copy",
+    "genre:display_banner_ad_copy",
+    "genre:video_ad_script",
+    "genre:social_ad_copy",
+    "genre:landing_page",
+    "genre:native_ad",
+    "Google Ads and YouTube ad text, images and landing pages"
+   ],
+   "rules": [
+    {
+     "rule": "Do not make misleading statements or omissions about your identity, affiliations or qualifications.",
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en"
+    },
+    {
+     "rule": "Do not show pricing that creates a false or misleading impression of the cost.",
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en"
+    },
+    {
+     "rule": "No clickbait tactics or sensationalist text or imagery, and no use of negative life events such as death, accidents, illness, arrests or bankruptcy to pressure the user into acting immediately.",
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en"
+    },
+    {
+     "rule": "Do not design an ad so that it hides that it is an ad: no fake buttons, no fake system notifications, and no mismatch between the ad and its landing page.",
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en"
+    },
+    {
+     "rule": "Do not entice users with an improbable result, even if the result is possible, as the likely outcome.",
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en"
+    },
+    {
+     "rule": "Do not use manipulated media to deceive.",
+     "url": "https://support.google.com/adspolicy/answer/6020955?hl=en"
+    }
+   ],
+   "checks": [
+    "Does the ad say clearly who the advertiser is, with no inflated claim about qualifications or affiliations?",
+    "Is the full cost the buyer will pay visible, with every condition stated?",
+    "Does the headline show a typical result rather than a best-case one?",
+    "Does the copy or image use death, accident, illness, arrest or bankruptcy to push an immediate click?",
+    "Is the headline sensational beyond what the landing page delivers (clickbait)?",
+    "Could any button, icon or alert-style element in the ad be mistaken for a real system message or control?",
+    "Does the landing page match the ad's offer, price and claim?",
+    "Is every image or video real, or has any manipulated media been used to deceive?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:google_ai_content_guidance",
+   "kind": "compliance",
+   "name": "Google Search guidance on AI-generated content",
+   "status": "current",
+   "summary": "Google Search guidance (blog post of 8 Feb 2023, still linked from Search Central and checked 2026-10-04): in force as Google's stated position, though it is guidance, not a law. Google judges content on whether it helps people, not on how it was made: appropriate use of AI is not against its guidelines, while using AI or automation mainly to manipulate rankings is spam.",
+   "use_for": [
+    "deciding how much AI drafting is acceptable for an SEO blog, pillar page or service page",
+    "writing the 'how this was made' note or byline for AI-assisted articles",
+    "briefing an editor on what to check before AI-assisted copy is published under a client's name",
+    "answering a client who asks 'will Google penalise AI content?'"
+   ],
+   "avoid": [
+    "Shipping AI drafts unedited in bulk to cover keywords: that is the spam case; edit for facts, first-hand detail and a real reader need.",
+    "Giving an AI tool the author byline, or inventing a human expert (AI headshot, made-up name or credentials) to make AI copy look expert-written: Google treats fabricated creator profiles as deception; use a real, accountable author and say how AI was used.",
+    "Adding a disclosure on every page by reflex: Google suggests it where readers would reasonably expect to know how the content was made; place it where it helps, not as boilerplate.",
+    "Promising a client rankings from AI content: the guidance promises nothing about ranking."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content",
+     "title": "Google Search Central Blog (8 Feb 2023): Google Search's guidance about AI-generated content",
+     "supports": "appropriate use of AI is not against guidelines; automation to manipulate rankings is spam; consider 'Who, How, Why' disclosures; giving AI an author byline is probably not the best way to make AI use clear (read via search-result summary of the post on 2026-10-04)"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+     "title": "Google Search Central: Creating helpful, reliable, people-first content",
+     "supports": "people-first content, the Who/How/Why questions, disclosure of automation where reasonably expected, and fabricated creator profiles as deception"
+    }
+   ],
+   "related": [
+    "comp:google_search_spam_policies",
+    "trend:scaled_ai_content_enforcement",
+    "trend:ai_disclosure_rules",
+    "trend:non_commodity_content",
+    "edit:ai_tell_removal",
+    "genre:blog_post"
+   ],
+   "jurisdiction": "Google Search (global)",
+   "applies_to": [
+    "genre:blog_post",
+    "genre:topic_cluster_article",
+    "genre:pillar_page",
+    "genre:programmatic_seo_page",
+    "genre:content_refresh",
+    "genre:ultimate_guide",
+    "genre:local_seo_page",
+    "genre:informational_article",
+    "genre:faq_answer_article",
+    "AI-assisted web copy meant to rank in Google Search"
+   ],
+   "rules": [
+    {
+     "rule": "Appropriate use of AI or automation is not against Google's guidelines; content is judged on helpfulness and quality (E-E-A-T style), not on whether AI wrote it.",
+     "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content"
+    },
+    {
+     "rule": "Using automation, including AI generation, with the primary purpose of manipulating search rankings is a violation of Google's spam policies.",
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+    },
+    {
+     "rule": "Where readers would reasonably expect to know how content was made, say so (the 'How' of Who, How, Why): the guidance asks whether the use of automation, including AI generation, is self-evident to visitors through disclosures or other ways.",
+     "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
+    },
+    {
+     "rule": "Do not give an AI tool an author byline: Google says doing so is probably not the best way to make clear that AI was part of creation. Do not fabricate creator profiles (AI-generated headshots, made-up names, false credentials) to make content look written by human experts.",
+     "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content"
+    }
+   ],
+   "checks": [
+    "Does the piece exist because a reader needs it, not to cover a keyword?",
+    "Has a named human checked the facts, numbers and examples and added first-hand detail?",
+    "Is the byline a real, accountable person with a profile page, and is no AI tool or invented expert listed as author?",
+    "Where a reader would reasonably expect it, does the page say how the content was made, including AI help?",
+    "Is this one of many near-identical pages produced from a template or prompt, with no real difference between them?",
+    "Has anyone promised the client a ranking result because of AI use?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:google_election_ads",
+   "kind": "compliance",
+   "name": "Google Election Ads policy and advertiser verification (incl. India)",
+   "status": "current",
+   "summary": "Google platform policy, current as read 2026-10-04 on the verification page: anyone who wants to run Election Ads through Google Ads or Display & Video 360 must first be verified, and verified advertisers' election ads must say who paid for them. India is a listed verification location, but the verification page gives no India-specific rules; those sit on Google's Political content page, which this card did not read, so India specifics are UNCONFIRMED: confirm them before any Indian campaign. During Indian elections the ECI Model Code of Conduct and pre-certification also apply (comp:eci_mcc).",
+   "use_for": [
+    "writing election-period ads for a party, candidate or issue campaign on Google Search, Display or YouTube",
+    "briefing a political client on what must be in place before the ad copy is submitted",
+    "checking that ad copy carries the who-paid disclosure",
+    "deciding whether an issue ad counts as an election ad and needs verification"
+   ],
+   "avoid": [
+    "Writing the copy before verification is sorted: an unverified advertiser's election ads cannot run, so ask the client for the verification status first.",
+    "Treating a political piece as an ordinary brand ad to dodge the process: if it is an election ad, run it through verification and the paid-for-by disclosure.",
+    "Assuming Google's rules replace the ECI's: Indian election ads also need the certification in comp:eci_mcc during elections.",
+    "Supplying false details to get verified: the policy says false information leads to revoked verification and possible suspension."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://support.google.com/adspolicy/answer/9002729?hl=en",
+     "title": "Google Advertising Policies Help: Apply for Election Ads verification",
+     "supports": "verification required before running Election Ads; disclosure of who paid; false information leads to revocation and suspension; transparency report and political ads library"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6014595?hl=en",
+     "title": "Google Advertising Policies Help: Political content",
+     "supports": "country-specific election ads rules, including India (not read for this card)"
+    }
+   ],
+   "related": [
+    "comp:eci_mcc",
+    "comp:eci_ai_content_advisory",
+    "comp:meta_siep_ads",
+    "comp:rpa_s127a_election_print",
+    "comp:linkedin_ads_policy",
+    "plat:youtube_video_ads"
+   ],
+   "jurisdiction": "Google Ads and YouTube (India and other regions with election-ad verification)",
+   "applies_to": [
+    "genre:campaign_slogan",
+    "genre:video_ad_script",
+    "genre:display_banner_ad_copy",
+    "genre:social_ad_copy",
+    "genre:search_ad_copy",
+    "genre:topical_ad",
+    "election ads on Google Ads, Display & Video 360 and YouTube"
+   ],
+   "rules": [
+    {
+     "rule": "Google requires verification for advertisers who want to run Election Ads using Google Ads and Display & Video 360: no verification, no election ads.",
+     "url": "https://support.google.com/adspolicy/answer/9002729?hl=en"
+    },
+    {
+     "rule": "All Election Ads by verified advertisers in regions where verification is required must carry a disclosure that identifies who paid for the ad.",
+     "url": "https://support.google.com/adspolicy/answer/9002729?hl=en"
+    },
+    {
+     "rule": "Do not give false information in the verification process: verification will be revoked and the account may be suspended.",
+     "url": "https://support.google.com/adspolicy/answer/9002729?hl=en"
+    },
+    {
+     "rule": "UNCONFIRMED here: country-specific election-ad rules for India (historically including an ECI/MCMC pre-certificate) are on Google's Political content page, which was not read for this card; read it before a campaign.",
+     "url": "https://support.google.com/adspolicy/answer/6014595?hl=en"
+    }
+   ],
+   "penalty": "If the Election Ads policy is violated or false information is given in verification, the advertiser's verification is revoked and the account may be suspended (Google verification page).",
+   "checks": [
+    "Is the advertiser Election Ads verified in the region where the ad will run?",
+    "Does every election ad carry the disclosure that names who paid for it?",
+    "Are the verification details the client supplied true and current?",
+    "Has the India-specific section of Google's Political content policy been read for this campaign?",
+    "If the ad runs during an Indian election, has the ECI/MCMC certification in comp:eci_mcc been obtained before it goes live?",
+    "Does the copy also meet the ordinary Google Ads rules in comp:google_ads_misrepresentation?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:google_search_spam_policies",
+   "kind": "compliance",
+   "name": "Google Search spam policies (scaled content abuse, site reputation abuse, and others)",
+   "status": "current",
+   "summary": "Google Search Central policy, current page checked 2026-10-04 (scaled content abuse, site reputation abuse and expired domain abuse were added in March 2024). Pages made mainly to rank rather than to help people can rank lower or drop out of results: mass-produced pages by AI or humans, third-party or sponsored content parked on a strong host site, keyword stuffing, hidden text and doorway pages.",
+   "use_for": [
+    "planning programmatic or template SEO pages and deciding how many are justified",
+    "guest posts, sponsored articles and 'contributor' sections on a strong publisher domain",
+    "briefing writers on keyword use so a page reads naturally",
+    "explaining to a client why 500 near-identical city pages are a risk"
+   ],
+   "avoid": [
+    "Spinning up hundreds of pages from one template with only the city or keyword swapped: each page needs information a reader cannot get from the others, or do fewer pages.",
+    "Buying a sponsored article or a third-party section on a high-authority site to borrow its ranking: that is the site reputation abuse pattern; publish on your own site or mark and qualify the link.",
+    "Repeating the keyword to hit a density target: write for the reader and use the term where it belongs.",
+    "Hidden text or pages made only to funnel visitors elsewhere: never."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+     "title": "Google Search Central: Spam policies for Google web search",
+     "supports": "definitions of scaled content abuse, site reputation abuse, keyword stuffing, doorway abuse, expired domain abuse; consequence of violation; link qualification"
+    }
+   ],
+   "related": [
+    "comp:google_ai_content_guidance",
+    "trend:scaled_ai_content_enforcement",
+    "genre:programmatic_seo_page",
+    "genre:guest_post",
+    "genre:advertorial",
+    "genre:local_seo_page"
+   ],
+   "jurisdiction": "Google Search (global)",
+   "applies_to": [
+    "genre:programmatic_seo_page",
+    "genre:local_seo_page",
+    "genre:topic_cluster_article",
+    "genre:blog_post",
+    "genre:guest_post",
+    "genre:advertorial",
+    "genre:content_refresh",
+    "genre:comparison_article",
+    "SEO content produced at volume, with or without AI"
+   ],
+   "rules": [
+    {
+     "rule": "Do not generate many pages for the primary purpose of manipulating search rankings and not helping users, whether the pages are produced by AI, by humans or by a mix (scaled content abuse).",
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+    },
+    {
+     "rule": "Do not publish sponsored or third-party content on a host site mainly to exploit the host's already-established ranking signals (site reputation abuse).",
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+    },
+    {
+     "rule": "No keyword stuffing, hidden text or doorway pages.",
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+    },
+    {
+     "rule": "Paid or sponsored links are not a violation as long as they are qualified with rel=\"nofollow\" or rel=\"sponsored\" on the link.",
+     "url": "https://developers.google.com/search/docs/essentials/spam-policies"
+    }
+   ],
+   "penalty": "Sites that violate the policies may rank lower in results or not appear in results at all (Google Search Central spam policies page).",
+   "checks": [
+    "Does each page tell a reader something the other pages in the set do not?",
+    "Is the number of pages justified by real reader demand rather than by the number of keyword variations?",
+    "Is any sponsored or third-party content sitting on a strong host domain mainly to borrow its ranking?",
+    "Does the copy use the target keyword naturally, with no stuffing and no hidden text?",
+    "Is any page a doorway whose only job is to send people to another page?",
+    "Are paid or sponsored links marked rel=\"sponsored\" or rel=\"nofollow\"?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:it_rules_sgi_2026",
+   "kind": "compliance",
+   "name": "IT (Intermediary Guidelines and Digital Media Ethics Code) Amendment Rules, 2026: synthetically generated information",
+   "status": "current",
+   "summary": "IN FORCE in India: notified by G.S.R. 120(E) dated 10 Feb 2026 and in force from 20 Feb 2026 (date from a Freshfields law-firm summary; MeitY consolidated text read 2026-10-04). Realistic AI-generated or altered audio, images and video ('synthetically generated information', SGI) must be prominently labelled, platforms must make big-platform uploaders declare it, and fake realistic depictions of real people are in the class platforms must block. A Second Amendment was only a draft in March 2026 (date blank); its status is UNCONFIRMED, so check MeitY for the current text before a launch.",
+   "use_for": [
+    "scripting AI-generated or AI-altered reels, ads, explainers and micro-dramas that will be posted in India",
+    "briefing a client who wants a synthetic spokesperson, a cloned voice or a recreated scene",
+    "satire and political commentary that uses realistic AI audio or video of real people",
+    "deciding where the label goes and whether an upload declaration is needed"
+   ],
+   "avoid": [
+    "Burying the label in a hashtag or the last line of the caption: the rule asks for a prominent label that is easy to notice, with a prominent spoken disclosure at the start for audio, so put it on screen or at the start of the audio.",
+    "Realistic fake quotes, speeches or events attributed to a real person, even as a joke: that is the content class platforms must block; make it obviously unreal or do not make it.",
+    "Assuming text-only copy is covered: the definition covers audio, visual and audio-visual content, so a plain-text script is outside it, but the video made from it may not be.",
+    "Treating routine editing as SGI and over-labelling everything: good-faith editing, colour and noise fixes, templates, and accessibility or translation edits that do not change meaning are excluded.",
+    "Quoting a penalty to a client from this card: none is stated in its sources, so send the question to the client's counsel."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf",
+     "title": "MeitY: IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 [updated as on 10.02.2026]",
+     "supports": "rule 2(1)(wa) SGI definition and exclusions; rule 3(3) labelling and metadata; rule 4(1A) SSMI user declaration; 3-hour and 2-hour takedown substitutions by G.S.R. 120(E) dated 10.02.2026"
+    },
+    {
+     "url": "https://egazette.gov.in/WriteReadData/2026/269993.pdf",
+     "title": "Gazette of India: G.S.R. 120(E), IT Amendment Rules, 2026",
+     "supports": "official gazette notification"
+    },
+    {
+     "url": "https://www.meity.gov.in/static/uploads/2026/03/30591fc6e322dcbcc9dae84a0f02e9e7.pdf",
+     "title": "MeitY: draft IT (Intermediary Guidelines and Digital Media Ethics Code) Second Amendment Rules, 2026 (March 2026, date blank)",
+     "supports": "a further amendment was in draft in March 2026 (intermediaries to follow MeitY advisories/SOPs); final status not confirmed"
+    },
+    {
+     "url": "https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/india-targets-deepfakes-and-ai-generated-content-key-changes-under-meitys-2026-102mjwn",
+     "title": "Freshfields (law firm summary): key changes under MeitY's 2026 amendments",
+     "supports": "in force 20 Feb 2026"
+    }
+   ],
+   "related": [
+    "comp:asci_ai_sgc_labelling",
+    "comp:eci_ai_content_advisory",
+    "comp:meta_ai_labels",
+    "comp:youtube_altered_synthetic",
+    "trend:ai_disclosure_rules",
+    "comp:bns_defamation_speech"
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:short_form_video_script",
+    "genre:ai_video_prompt_script",
+    "genre:faceless_video_script",
+    "genre:video_ad_script",
+    "genre:tvc_script",
+    "genre:ugc_ad_script",
+    "genre:micro_drama_episode_script",
+    "genre:satire_parody",
+    "genre:political_social_commentary",
+    "genre:sponsored_creator_post",
+    "genre:audio_series_script",
+    "genre:radio_spot_script",
+    "AI-generated or altered audio, images and video posted in India"
+   ],
+   "rules": [
+    {
+     "rule": "SGI means audio, visual or audio-visual content artificially created or altered so that it appears real and a person or event looks indistinguishable from reality (rule 2(1)(wa)). Text-only copy is outside it. Routine good-faith editing, colour or noise fixes, templates, and accessibility or translation edits that do not change meaning are excluded.",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    },
+    {
+     "rule": "Lawful SGI must be prominently labelled so the label is easy to notice, or carry a prominently prefixed audio disclosure for audio, plus a permanent metadata or identifier where technically feasible; the label must not be removable (rule 3(3)).",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    },
+    {
+     "rule": "SGI that falsely shows a real person's identity, voice, conduct or statement, or a real event, in a way likely to deceive, is in the class platforms must block (rule 3(3)(a)(i)(IV)). Harvest reading: make no realistic fake quote or fake event of a real person, even as satire, unless it is clearly unreal and labelled.",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    },
+    {
+     "rule": "On significant social media intermediaries the uploader must declare whether the content is SGI and the platform must verify the declaration (rule 4(1A)).",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    },
+    {
+     "rule": "Government or court takedown windows are now three hours (previously 36 hours) under the substitutions made by G.S.R. 120(E) of 10 Feb 2026, so contested content can disappear fast. A two-hour substitution also appears in the amendment; its scope was not read for this card.",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    }
+   ],
+   "checks": [
+    "Is any audio, image or video in the piece realistic AI-generated or AI-altered content that makes a person or event look real?",
+    "If yes, is a label visible on screen where a viewer will notice it (or spoken at the start for audio), and not only in a hashtag or the caption's last line?",
+    "Is the label built so it cannot easily be stripped (part of the video or embedded as metadata), not a removable sticker?",
+    "Does the piece show a real person saying or doing something they did not say or do, or a real event that did not happen?",
+    "If a real person's voice or face is synthetic, has the person given written consent and is the piece clearly unreal and labelled?",
+    "Has the uploader ticked the platform's AI or SGI declaration when posting on a large social platform?",
+    "Are the edits only routine good-faith ones (colour, noise, translation or accessibility changes that keep the meaning), so no label is needed?",
+    "Has MeitY's site been checked for the current rules, given that a Second Amendment was a March 2026 draft whose status is unconfirmed?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:linkedin_ads_policy",
+   "kind": "compliance",
+   "name": "LinkedIn Advertising Policies",
+   "status": "current",
+   "summary": "LinkedIn platform policy, current page read 2026-10-04. Ads must carry factual support for every claim, disclose pertinent partnerships and avoid unrealistic health claims; political ads and affiliate advertising are prohibited outright; ad text must follow the 'standard text' rule on spelling, grammar, punctuation, emojis, capitalisation and hashtags.",
+   "use_for": [
+    "writing Sponsored Content, Text Ads and Conversation Ads for LinkedIn campaigns",
+    "reviewing a B2B ad's claims before the client signs it off",
+    "advising a client who wants to run a party, candidate, law or affiliate promotion on LinkedIn",
+    "ads for wellness, diet or health products on LinkedIn"
+   ],
+   "avoid": [
+    "Any ad for or against a candidate, party, law or regulation, even as thought leadership: political ads are prohibited on LinkedIn; use organic posts under the platform's other rules, not ads.",
+    "Affiliate-style ads ('Sign up with my code for a commission'): prohibited; run a direct offer from the advertiser.",
+    "Unsourced superlatives ('India's #1 payroll tool') and swipes at competitors: every claim needs factual support, so keep the source on file or drop the claim.",
+    "Emoji strings, ALL CAPS, stray hashtags: the standard text rule bars excessive emojis, capitalisation and unrelated hashtags."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.linkedin.com/legal/ads-policy",
+     "title": "LinkedIn: Advertising Policies",
+     "supports": "prohibited content (political, affiliate, health claims, fraud and deception) and standard text rule"
+    }
+   ],
+   "related": [
+    "comp:ccpa_misleading_ads_2022",
+    "comp:google_ads_editorial",
+    "comp:meta_advertising_standards",
+    "plat:linkedin_ads_sponsored_content",
+    "plat:linkedin_text_ads",
+    "plat:linkedin_conversation_ads"
+   ],
+   "jurisdiction": "LinkedIn Ads (global)",
+   "applies_to": [
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "genre:carousel_copy",
+    "genre:recruitment_ad",
+    "LinkedIn Sponsored Content, Text Ads and Conversation Ads"
+   ],
+   "rules": [
+    {
+     "rule": "Any claims in the ad must have factual support; make no deceptive claims about competitors; do not imply an endorsement without permission; disclose any pertinent partnerships.",
+     "url": "https://www.linkedin.com/legal/ads-policy"
+    },
+    {
+     "rule": "Political ads are prohibited, including ads for or against a candidate, party, law or regulation.",
+     "url": "https://www.linkedin.com/legal/ads-policy"
+    },
+    {
+     "rule": "Ads related to affiliate advertising are prohibited.",
+     "url": "https://www.linkedin.com/legal/ads-policy"
+    },
+    {
+     "rule": "No unrealistic or misleading claims about health improvements, including diet and weight loss.",
+     "url": "https://www.linkedin.com/legal/ads-policy"
+    },
+    {
+     "rule": "Standard Text: no incorrect spelling, grammar or punctuation, excessive emojis, excessive capitalisation or unrelated hashtags.",
+     "url": "https://www.linkedin.com/legal/ads-policy"
+    }
+   ],
+   "checks": [
+    "Does every claim in the ad have a source or proof the client can produce?",
+    "Does the ad avoid false or unfair statements about named competitors?",
+    "Does the ad imply that a person or company endorses the product without their permission?",
+    "Is any partnership or sponsorship relevant to the claim disclosed?",
+    "Is the ad free of any message for or against a candidate, party, law or regulation?",
+    "Is the ad a direct advertiser offer rather than an affiliate promotion?",
+    "If it touches health, diet or weight loss, are the claims realistic and not misleading?",
+    "Is the text free of spelling and grammar errors, emoji strings, shouting capitals and unrelated hashtags?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:meta_ai_labels",
+   "kind": "compliance",
+   "name": "Meta labelling of AI-generated and manipulated content ('AI info')",
+   "status": "current",
+   "summary": "Meta policy for Facebook, Instagram and Threads, announced Apr 2024 and updated Jul 2024 (label renamed 'AI info') and later in 2024 (the label for AI-edited content moved into the post menu); Meta newsroom page read 2026-10-04. It is a 2024 announcement, so check Meta's current help-centre wording for any later change. Meta adds 'AI info' labels when it detects industry AI indicators or the uploader discloses AI, adds a more prominent label to high-risk deceptive media, and removes content that breaks other rules whoever made it.",
+   "use_for": [
+    "reels, posts and ads on Instagram, Facebook and Threads that use AI-generated or AI-altered video, audio or images",
+    "telling a client or creator when to use Meta's AI disclosure tool at upload",
+    "writing a script or caption that stays accurate about what is synthetic",
+    "pairing with India's legal label duty for the same upload"
+   ],
+   "avoid": [
+    "Uploading AI video without using Meta's disclosure tool and hoping detection misses it: Meta also labels from C2PA and IPTC-style indicators, so disclose at upload yourself.",
+    "Assuming the platform label meets Indian law: Meta's tool is a platform step; India's IT Rules 2026 also require a prominent label (comp:it_rules_sgi_2026).",
+    "Thinking a label makes a deceptive piece safe: content that breaks Community Standards is removed whoever made it, AI or not.",
+    "Realistic AI media about a matter of public importance: if it risks materially deceiving the public, Meta may add a more prominent label, so expect reach loss and design the piece to be plainly synthetic."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/",
+     "title": "Meta Newsroom (Apr 2024, updated Jul and Sep 2024): Our Approach to Labeling AI-Generated Content and Manipulated Media",
+     "supports": "AI info labels, detection via industry indicators, self-disclosure, prominent labels for high-risk content, label moved to menu for AI-edited content"
+    }
+   ],
+   "related": [
+    "comp:it_rules_sgi_2026",
+    "comp:asci_ai_sgc_labelling",
+    "comp:youtube_altered_synthetic",
+    "comp:eu_ai_act_art50",
+    "trend:ai_disclosure_rules",
+    "comp:meta_advertising_standards"
+   ],
+   "jurisdiction": "Meta (Facebook, Instagram, Threads)",
+   "applies_to": [
+    "genre:short_form_video_script",
+    "genre:ai_video_prompt_script",
+    "genre:faceless_video_script",
+    "genre:instagram_caption",
+    "genre:facebook_post",
+    "genre:threads_post",
+    "genre:video_ad_script",
+    "genre:ugc_ad_script",
+    "AI-generated video, audio and images posted on Meta platforms"
+   ],
+   "rules": [
+    {
+     "rule": "Disclose AI-generated video, audio or images at upload using Meta's disclosure tool; Meta also adds labels when it detects C2PA or IPTC-style AI indicators in the file.",
+     "url": "https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/"
+    },
+    {
+     "rule": "If altered media creates a particularly high risk of materially deceiving the public on a matter of importance, Meta may add a more prominent label.",
+     "url": "https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/"
+    },
+    {
+     "rule": "AI does not excuse rule-breaking: content that violates Meta's Community Standards is removed whoever made it.",
+     "url": "https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/"
+    }
+   ],
+   "checks": [
+    "Does the upload contain realistic AI-generated or AI-altered video, audio or images?",
+    "If yes, has the uploader used Meta's AI disclosure option at upload?",
+    "Does the piece avoid presenting synthetic material as real footage of a real event?",
+    "Could the piece materially deceive the public on a matter of importance, such as an election or a disaster?",
+    "Would the piece break Community Standards even if it were not AI-made?",
+    "If posted in India, does it also carry the prominent label required by comp:it_rules_sgi_2026?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:meta_branded_content",
+   "kind": "compliance",
+   "name": "Meta branded content policies and the 'Paid partnership' label (Instagram, Facebook)",
+   "status": "current",
+   "summary": "PARTLY UNCONFIRMED. Meta's own branded content page could not be read by the fetch tools on 2026-10-04 (HTTP 400/404, and the Instagram help page returned no body). What is sourced from the text: ASCI lists the Instagram 'Paid Partnership' tag as a permitted disclosure label (guideline 1.3a) and says a platform tool is used in addition to the creator's own clear label, not instead of it (1.2d). Search-result summaries of Meta's help pages on the same date say creators must use the branded content tool to tag the business partner for branded content and that some sectors (including real-money gambling, pharmacy, crypto and politics) need Meta's written pre-authorisation for the partner: UNCONFIRMED until read on the page in a browser.",
+   "use_for": [
+    "Instagram and Facebook sponsored creator posts, reels and collab captions",
+    "influencer briefs that say how the brand will be tagged",
+    "checking that a creator's post carries both the platform tag and their own clear label in India",
+    "flagging a campaign for a regulated or restricted category before the brief goes out"
+   ],
+   "avoid": [
+    "Relying on the Paid partnership tag alone: ASCI and the FTC both say the platform tool is in addition to the creator's own label; put 'Ad' or 'Collaboration' up front too.",
+    "Writing to Meta's specific rules (prohibited branded content, political branded content, restricted categories) from this card: read Meta's branded content policy page in a browser first.",
+    "Briefing a creator for a restricted category (for example a real-money app, covered by comp:online_gaming_act_2025) without checking the law: Indian law may bar it regardless of Meta's pre-authorisation."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI Guidelines for Influencer Advertising in Digital Media",
+     "supports": "'Paid Partnership' tag on Instagram is a permitted disclosure label (1.3a); platform tools are in addition to the creator's own disclosure (1.2d)"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/",
+     "title": "Meta Transparency Center: Advertising Standards",
+     "supports": "Meta's ad and branded content policy hub (page could not be read by fetch tools: HTTP 400/404)"
+    },
+    {
+     "url": "https://help.instagram.com/1695974997209192",
+     "title": "Instagram Help Center: Branded Content Policies",
+     "supports": "branded content tool and paid partnership label (read only through a search-result summary on 2026-10-04; page body not fetched)"
+    }
+   ],
+   "related": [
+    "comp:asci_influencer",
+    "comp:ftc_endorsement_guides",
+    "comp:endorsement_know_hows",
+    "comp:youtube_paid_promotion",
+    "comp:meta_advertising_standards",
+    "trend:creator_led_ads"
+   ],
+   "jurisdiction": "Meta (Instagram, Facebook); India via ASCI",
+   "applies_to": [
+    "genre:sponsored_creator_post",
+    "genre:influencer_brief",
+    "genre:instagram_caption",
+    "genre:ugc_ad_script",
+    "genre:short_form_video_script",
+    "genre:facebook_post",
+    "Instagram and Facebook branded content"
+   ],
+   "rules": [
+    {
+     "rule": "In India, the Instagram 'Paid Partnership' tag is a permitted disclosure label for influencer advertising (ASCI guideline 1.3a).",
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf"
+    },
+    {
+     "rule": "A platform tool is used in addition to the creator's own clear disclosure, not instead of it (ASCI guideline 1.2d).",
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf"
+    },
+    {
+     "rule": "UNCONFIRMED from Meta's own page: creators posting content for a brand in exchange for something of value must tag the business partner with Meta's branded content (paid partnership) tool.",
+     "url": "https://help.instagram.com/1695974997209192"
+    },
+    {
+     "rule": "UNCONFIRMED from Meta's own page: some sectors need Meta's written pre-authorisation for the sponsoring partner (search summary names real-money gambling, pharmacies, prescription drugs, crypto, drug and alcohol treatment, and government, elections and politics). Read Meta's Advertising Standards hub before writing to any restricted category.",
+     "url": "https://transparency.meta.com/policies/ad-standards/"
+    }
+   ],
+   "checks": [
+    "Is the brand tagged with the paid partnership (branded content) tool on the post?",
+    "Does the creator's own caption or video also carry a clear label ('Ad', 'Sponsored', 'Collaboration') up front, not only the platform tag?",
+    "Does the campaign category (gambling, pharmacy, crypto, politics) need Meta's pre-authorisation, and has that been checked on Meta's page?",
+    "Has the category been checked against Indian law as well, for example comp:online_gaming_act_2025 or comp:sebi_finfluencer_association?",
+    "Has someone read Meta's branded content policy page in a browser before the brief names any Meta-specific rule?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:online_gaming_act_2025",
+   "kind": "compliance",
+   "name": "Promotion and Regulation of Online Gaming Act, 2025: ban on advertising online money games",
+   "status": "current",
+   "summary": "Indian Act gazetted 22 Aug 2025 with the President's assent; its section 6 bars any ad, in any media, that directly or indirectly promotes an online money game. Commencement: the Act text brings it into force on the date the Central Government notifies (s.1(3)). The harvest read on 2026-10-04 did not find that notification, but SCC Online (23 Apr 2026) and other press and law-firm reports say the Centre notified commencement on 22 Apr 2026 with the Act in force from 1 May 2026; the gazette notification itself was not read, so treat the 1 May 2026 date as secondary-sourced and confirm it in the gazette before quoting it to a client.",
+   "use_for": [
+    "checking a brief from any fantasy, rummy, poker, betting-style or other real-money app before a word is written",
+    "influencer reels, referral codes, affiliate links and 'surrogate' content that would promote a real-money game",
+    "advising a client whether an e-sports or free social game ad is safe to run",
+    "reviewing a creator's past content before a brand signs them"
+   ],
+   "avoid": [
+    "Taking the job because the app calls itself a game of skill: the section 6 ban covers online money games whether skill or chance, so check the stake, not the label.",
+    "Surrogate content, 'tips' videos, referral-code posts and affiliate links for a real-money app: the ban reaches anyone who makes, causes to be made, aids, abets or induces such an ad, directly or indirectly; decline the brief.",
+    "Writing for e-sports or free social games without checking that the product is not a money game: only those categories sit outside the ban, so confirm with the client in writing before drafting.",
+    "Quoting the 1 May 2026 date as settled: it is secondary-sourced here; confirm in the gazette."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.meity.gov.in/static/uploads/2025/10/8a7f103cefc68ed8aaa2ebc9a2ed7c13.pdf",
+     "title": "MeitY: The Promotion and Regulation of Online Gaming Act, 2025 (Act text, President's assent and gazette 22.08.2025)",
+     "supports": "section 6 advertisement prohibition, section 9(2) punishment, section 1(3) commencement by notification"
+    },
+    {
+     "url": "https://www.scconline.com/blog/post/2026/04/23/meity-notified-enforcement-of-promotion-regulation-online-gaming-act-2025/",
+     "title": "SCC Online (23 Apr 2026): MeitY notified enforcement of the Promotion and Regulation of Online Gaming Act, 2025",
+     "supports": "report that the Act came into force on 1 May 2026 by notifications of 22 Apr 2026 (secondary source; gazette notification not read)"
+    }
+   ],
+   "related": [
+    "comp:asci_code",
+    "comp:asci_influencer",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:meta_branded_content",
+    "comp:sebi_finfluencer_association",
+    "genre:sponsored_creator_post"
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:sponsored_creator_post",
+    "genre:influencer_brief",
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "genre:short_form_video_script",
+    "genre:ugc_ad_script",
+    "genre:tvc_script",
+    "genre:sponsored_integration_script",
+    "genre:app_store_listing",
+    "any ad, referral or affiliate content for a real-money app"
+   ],
+   "rules": [
+    {
+     "rule": "No person shall make, cause to be made, aid, abet, induce or otherwise be involved in the making of an ad, in any media, that directly or indirectly promotes or induces any person to play an online money game (s.6).",
+     "url": "https://www.meity.gov.in/static/uploads/2025/10/8a7f103cefc68ed8aaa2ebc9a2ed7c13.pdf"
+    },
+    {
+     "rule": "Harvest reading of s.6: it covers influencer reels, referral codes, affiliate links and surrogate content for real-money apps. The harvest summary names fantasy, rummy, poker and any stake-based game, skill or chance; read the Act's own definition before treating a game as outside it.",
+     "url": "https://www.meity.gov.in/static/uploads/2025/10/8a7f103cefc68ed8aaa2ebc9a2ed7c13.pdf"
+    },
+    {
+     "rule": "E-sports and free online social games are the permitted categories: confirm the game is not a money game before writing about it.",
+     "url": "https://www.meity.gov.in/static/uploads/2025/10/8a7f103cefc68ed8aaa2ebc9a2ed7c13.pdf"
+    },
+    {
+     "rule": "The Act comes into force on the date the Central Government notifies (s.1(3)); the commencement notification was not read for this card, so confirm it before citing a date.",
+     "url": "https://www.meity.gov.in/static/uploads/2025/10/8a7f103cefc68ed8aaa2ebc9a2ed7c13.pdf"
+    }
+   ],
+   "penalty": "Contravening s.6 is punishable with imprisonment up to two years, or a fine up to fifty lakh rupees, or both (s.9(2)).",
+   "checks": [
+    "Does the product let players stake money or something of value on the outcome (a money game)?",
+    "If yes, does the piece promote it in any way, including a referral code, an affiliate link, a 'tips' video or a surrogate brand ad?",
+    "If the client says it is a free or e-sports game, has someone confirmed that no stake or paid entry on the outcome is involved?",
+    "Has anyone (writer, creator, editor) been asked to produce or push content that induces play of a money game?",
+    "Has the commencement notification been checked in the gazette before the in-force date is quoted?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:sebi_finfluencer_association",
+   "kind": "compliance",
+   "name": "SEBI restrictions on association with unregistered finfluencers (Intermediaries Amendment Regulations 2024 + circular of 29 Jan 2025, updated 8 May 2026)",
+   "status": "current",
+   "summary": "IN FORCE in India: SEBI regulations gazetted 29 Aug 2024, clarified by the circular of 29 Jan 2025 and updated on 8 May 2026 (SEBI PDF read 2026-10-04). A SEBI-regulated broker, AMC, adviser or exchange may not pay, refer clients to or otherwise associate with a creator who gives securities advice or return/performance claims without SEBI registration; pure investor education is exempt, but FAQ 8 as revised on 8 May 2026 bars an educator from using price data of the preceding thirty days (earlier: three months) to name a security in a way that points to future price, advice or recommendation.",
+   "use_for": [
+    "briefs and scripts for brokers, AMCs, advisers and exchanges that use creators",
+    "vetting a finance creator before a SEBI-regulated client works with them",
+    "writing investor-education reels, explainers and webinars that mention stocks or funds",
+    "influencer briefs for any trading app or mutual fund"
+   ],
+   "avoid": [
+    "Scripts with 'returns' or 'performance' claims ('this fund gave 30%'), express or implied, from a creator: the association rule bars regulated entities from linking with creators who make them without permission; keep to education and the product's mandatory disclosures.",
+    "'Education' videos that name a stock, even by code name, and show its last month's price move: FAQ 8 (revised 8 May 2026) bars using the preceding thirty days of market price data to name a security in a way that indicates future price, advice or recommendation; keep the lesson to the concept and do not name the security.",
+    "Hiring a finance creator without checking SEBI registration: a regulated client cannot sponsor, pay or refer clients to an unregistered adviser; ask for the registration number up front.",
+    "Quoting the old three-month window: FAQ 8 was changed to thirty days on 8 May 2026."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784884437684.pdf",
+     "title": "SEBI circular SEBI/HO/MIRSD/MIRSD-PoD-1/P/CIR/2025/11 dated 29 Jan 2025, updated on 8 May 2026",
+     "supports": "regulations gazetted 29 Aug 2024; two prohibited activities; education exemption; FAQ 8 price-data rule changed from three months to thirty days on 8 May 2026"
+    },
+    {
+     "url": "https://www.sebi.gov.in/legal/circulars/jan-2025/details-clarifications-on-provisions-related-to-association-of-persons-regulated-by-the-board-miis-and-their-agents-with-persons-engaged-in-prohibited-activities_91356.html",
+     "title": "SEBI: Details/clarifications on provisions related to association of persons regulated by the Board, MIIs and their agents with persons engaged in prohibited activities",
+     "supports": "circular landing page"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI Guidelines for Influencer Advertising in Digital Media (with Addendum II of 17 Aug 2023)",
+     "supports": "Addendum II: health and finance influencers; creator's SEBI registration, if any, goes upfront (per the harvest note)"
+    }
+   ],
+   "related": [
+    "comp:asci_influencer",
+    "comp:endorsement_know_hows",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code",
+    "genre:influencer_brief",
+    "genre:sponsored_creator_post"
+   ],
+   "jurisdiction": "India",
+   "applies_to": [
+    "genre:influencer_brief",
+    "genre:sponsored_creator_post",
+    "genre:short_form_video_script",
+    "genre:youtube_video_script",
+    "genre:video_ad_script",
+    "genre:ugc_ad_script",
+    "genre:sponsored_integration_script",
+    "genre:podcast_ad_read",
+    "genre:webinar_script",
+    "genre:social_ad_copy",
+    "creator content for brokers, AMCs, advisers and exchanges"
+   ],
+   "rules": [
+    {
+     "rule": "A SEBI-regulated client cannot sponsor, pay, refer clients to or otherwise associate with a creator who (i) gives advice or recommendations on securities without SEBI registration or (ii) makes express or implied claims of returns or performance without permission (para 2).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784884437684.pdf"
+    },
+    {
+     "rule": "Pure investor education is exempt, but under FAQ 8 as revised on 8 May 2026 an educator must not use market price data of the preceding THIRTY DAYS (earlier: three months) to name a security, even by code name, in a way that indicates future price, advice or recommendation.",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784884437684.pdf"
+    },
+    {
+     "rule": "For a broker or AMC brief: keep 'returns' and 'performance' claims out of creator scripts (harvest reading of para 2).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1784884437684.pdf"
+    },
+    {
+     "rule": "The creator's SEBI registration, if any, goes upfront in the content, per ASCI Addendum II for finance influencers (see comp:asci_influencer).",
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf"
+    }
+   ],
+   "checks": [
+    "Is the creator SEBI-registered for any advice or recommendation the script gives, and is the registration number shown upfront?",
+    "Does the script avoid claims of returns or performance, express or implied?",
+    "Does an education piece name a security, even by code name or hint, using market price data from the last thirty days?",
+    "Does any line read as advice or a recommendation to buy, sell or hold a named security?",
+    "Is the regulated client paying, referring clients to or otherwise associated with a creator who is not registered and gives advice?",
+    "Is the piece clearly labelled as an ad or collaboration, with the disclosures in comp:asci_influencer?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:uk_cap_code",
+   "kind": "compliance",
+   "name": "UK CAP Code (Non-broadcast Advertising) and ASA influencer guidance",
+   "status": "current",
+   "summary": "IN FORCE in the UK (CAP Code section 02 page read 2026-10-04). Marketing, including influencer posts, advertorials and marketing emails, must be obviously identifiable as marketing; the ASA enforces the Code. Rules 2.3 and 2.4 reflect prohibited practices in Schedule 20 of the Digital Markets, Competition and Consumers Act 2024, so a breach can also be a statutory issue. Misleading-claim and substantiation rules sit in CAP section 3, which this card did not read.",
+   "use_for": [
+    "UK influencer and creator briefs and captions",
+    "advertorials, sponsored articles and native ads for a UK audience",
+    "marketing emails and newsletters sent to UK readers",
+    "checking where and how an 'Ad' label appears on a UK post"
+   ],
+   "avoid": [
+    "Hiding the label in a hashtag cluster or after a 'more' break: the influencers' guide asks for an upfront label such as 'Ad'; put it in the first line.",
+    "Presenting a sponsored piece as the writer's own independent opinion: rule 2.3 bars marketers from falsely claiming or implying they act as a consumer; make the commercial intent clear.",
+    "An advertorial dressed as editorial: rule 2.4 requires clear marking such as 'advertisement feature'.",
+    "An email whose subject line looks personal but is a promotion: unsolicited marketing email must be identifiable as marketing without opening it.",
+    "Using this card for claim substantiation: that sits in CAP section 3, not read here."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.asa.org.uk/type/non_broadcast/code_section/02.html",
+     "title": "ASA/CAP: CAP Code section 02 Recognition of marketing communications",
+     "supports": "rules 2.1, 2.3, 2.4 and the link to DMCCA Schedule 20"
+    },
+    {
+     "url": "https://www.asa.org.uk/resource/influencers-guide.html",
+     "title": "ASA/CAP and CMA: Influencers' guide to making clear that ads are ads",
+     "supports": "influencer disclosure guidance (first edition 28 Sep 2018, second 2 Feb 2020)"
+    }
+   ],
+   "related": [
+    "comp:uk_dmcc_schedule20",
+    "comp:uk_pecr",
+    "comp:ftc_endorsement_guides",
+    "comp:asci_influencer",
+    "comp:eu_dsa_ad_transparency"
+   ],
+   "jurisdiction": "UK",
+   "applies_to": [
+    "genre:sponsored_creator_post",
+    "genre:influencer_brief",
+    "genre:advertorial",
+    "genre:native_ad",
+    "genre:promotional_email",
+    "genre:instagram_caption",
+    "genre:affiliate_review",
+    "genre:sponsored_integration_script",
+    "genre:podcast_ad_read",
+    "genre:social_ad_copy"
+   ],
+   "rules": [
+    {
+     "rule": "Rule 2.1: marketing communications must be obviously identifiable as such; unsolicited marketing email must be identifiable as marketing without being opened.",
+     "url": "https://www.asa.org.uk/type/non_broadcast/code_section/02.html"
+    },
+    {
+     "rule": "Rule 2.3: marketers must not falsely claim or imply they are acting as a consumer, and must make their commercial intent clear.",
+     "url": "https://www.asa.org.uk/type/non_broadcast/code_section/02.html"
+    },
+    {
+     "rule": "An influencer post made for a brand needs an upfront label such as 'Ad' (ASA/CAP and CMA influencers' guide).",
+     "url": "https://www.asa.org.uk/resource/influencers-guide.html"
+    },
+    {
+     "rule": "Rule 2.4: advertorials must be clearly marked, for example 'advertisement feature'.",
+     "url": "https://www.asa.org.uk/type/non_broadcast/code_section/02.html"
+    },
+    {
+     "rule": "Rules 2.3 and 2.4 reflect prohibited practices in Schedule 20 of the Digital Markets, Competition and Consumers Act 2024 (CAP note), so a breach can also be a statutory issue.",
+     "url": "https://www.asa.org.uk/type/non_broadcast/code_section/02.html"
+    }
+   ],
+   "checks": [
+    "Is the piece obviously identifiable as marketing at first glance?",
+    "Does an influencer or creator post carry an upfront label such as 'Ad' in the first line or on screen, not only in hashtags or after a 'more' break?",
+    "Does the creator avoid posing as an independent consumer when paid or gifted?",
+    "Is an advertorial or sponsored article clearly marked, for example 'advertisement feature'?",
+    "Can a reader tell a marketing email is marketing from the subject line and sender, without opening it?",
+    "Have the claims in the piece been checked against CAP section 3 on misleading advertising and substantiation?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:uk_pecr",
+   "kind": "compliance",
+   "name": "UK Privacy and Electronic Communications Regulations (PECR) regulation 22: email and text marketing",
+   "status": "current",
+   "summary": "IN FORCE in the UK (ICO guide read 2026-10-04). Marketing emails and texts to individuals need specific consent, except the 'soft opt-in' for a business's own existing customers about similar products; every message must show who is sending it and give a valid opt-out address. B2B emails to corporate addresses follow lighter rules (see the ICO). EU rules differ (ePrivacy Directive 2002/58/EC Art 13 with GDPR consent) and are not covered by this card.",
+   "use_for": [
+    "writing promotional, win-back, abandoned-cart and nurture emails or texts to UK individuals",
+    "deciding whether a UK list can be emailed at all before the copy is written",
+    "writing the opt-out line and sender identity in UK marketing messages",
+    "advising an Indian D2C brand that is starting to email UK customers"
+   ],
+   "avoid": [
+    "Emailing a bought-in or scraped UK list: the soft opt-in is never available for bought-in lists; mail only people who gave specific consent or are existing customers.",
+    "Using the soft opt-in for a product unlike what the person bought: it covers similar products only, and only if the person had a simple opt-out when their details were collected and has one in every message.",
+    "A vague sender name or a missing opt-out line: do not disguise or conceal your identity, and give a valid contact address for opt-outs.",
+    "Assuming 'it is B2B so anything goes': corporate addresses follow lighter rules, not no rules; read the ICO guide first."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/",
+     "title": "ICO: Guide to PECR, Electronic mail marketing",
+     "supports": "regulation 22 summary, soft opt-in conditions, identity and contact address"
+    }
+   ],
+   "related": [
+    "comp:gdpr_marketing_consent",
+    "comp:can_spam",
+    "comp:tcpa_47cfr_64_1200",
+    "comp:trai_tcccpr_2018",
+    "comp:uk_cap_code",
+    "trend:email_deliverability_rules"
+   ],
+   "jurisdiction": "UK",
+   "applies_to": [
+    "genre:promotional_email",
+    "genre:cold_email",
+    "genre:winback_email",
+    "genre:abandoned_cart_email",
+    "genre:email_sequence_nurture",
+    "genre:welcome_email_series",
+    "genre:post_purchase_email",
+    "genre:launch_sequence",
+    "genre:sms_marketing"
+   ],
+   "rules": [
+    {
+     "rule": "Do not send marketing emails or texts to individuals without specific consent.",
+     "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/"
+    },
+    {
+     "rule": "The soft opt-in applies only to people who bought or negotiated to buy a similar product from you and were given a simple opt-out when their details were collected and in every message; it never applies to bought-in lists.",
+     "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/"
+    },
+    {
+     "rule": "Do not disguise or conceal your identity, and provide a valid contact address for opt-outs.",
+     "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/"
+    },
+    {
+     "rule": "Emails to corporate addresses follow lighter rules; check the ICO guide before relying on that.",
+     "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/"
+    }
+   ],
+   "checks": [
+    "Does each UK individual on the list have specific consent to marketing, or qualify for the soft opt-in?",
+    "If relying on the soft opt-in, did the person buy or negotiate to buy a similar product from us, and were they offered a simple opt-out at collection and in every message?",
+    "Is any part of the list bought-in or scraped?",
+    "Does the message clearly say who is sending it, with no disguised or false sender name?",
+    "Does every message give a valid address or link to opt out?",
+    "If the recipients are corporate addresses, has the ICO guidance for them been checked?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:us_copyright_ai_authorship",
+   "kind": "compliance",
+   "name": "US Copyright Office: Copyright and Artificial Intelligence report (Part 2 Copyrightability, 2025)",
+   "status": "current",
+   "summary": "US Copyright Office report published 29 Jan 2025 (USCO page read 2026-10-04); it states the Office's view, not a statute or a court ruling. As the Office summarises it, prompts alone do not give users enough control over the output to make them its authors, while using AI to assist rather than stand in for human creativity does not remove copyright protection, so AI-drafted copy a client wants to own needs real human creative contribution. Confidence is medium: the landing page states only that Part 2 addresses copyrightability of generative-AI outputs, and the conclusions above come from a search-result summary of the report (the PDF could not be opened by the fetch tool).",
+   "use_for": [
+    "telling a client who will own AI-assisted books, scripts, lyrics, brand copy and images",
+    "contract wording for deliverables partly drafted by AI",
+    "keeping a record of human selection, arrangement and rewriting on AI-assisted work",
+    "briefs that use an AI voice or face clone of a real person"
+   ],
+   "avoid": [
+    "Promising a client full copyright in unedited AI output: tell them it may not be ownable; rewrite, select and arrange so the human contribution is real and recorded.",
+    "Calling AI output an 'original copyright work' in a contract without that human contribution: describe what the human did instead.",
+    "Throwing away the drafts: keep versions showing human selection, arrangement and rewriting; they are the evidence.",
+    "Cloning a real person's voice or face without written consent: Part 1 of the report (digital replicas, 31 Jul 2024) is the US reference; get consent first.",
+    "Reading this card as the law for India or the UK: it is a US view only."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.copyright.gov/ai/",
+     "title": "U.S. Copyright Office: Copyright and Artificial Intelligence",
+     "supports": "Part 1 digital replicas (31 Jul 2024), Part 2 copyrightability of generative-AI outputs (29 Jan 2025), Part 3 training (pre-publication 9 May 2025)"
+    },
+    {
+     "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf",
+     "title": "U.S. Copyright Office: Copyright and Artificial Intelligence, Part 2: Copyrightability",
+     "supports": "report text: prompts alone do not provide sufficient human control to make users the authors of AI output; AI used to assist rather than stand in for human creativity does not affect protection (read through a search-result summary only)"
+    }
+   ],
+   "related": [
+    "comp:copyright_act_s52_fair_dealing",
+    "comp:it_rules_sgi_2026",
+    "comp:eu_ai_act_art50",
+    "trend:ai_assisted_writing_mainstream",
+    "trend:ai_disclosure_rules",
+    "genre:ghostwritten_book"
+   ],
+   "jurisdiction": "US",
+   "applies_to": [
+    "genre:ghostwritten_book",
+    "genre:kdp_book_description",
+    "genre:novel_chapter",
+    "genre:short_story",
+    "genre:song_lyrics",
+    "genre:poetry",
+    "genre:screenplay_feature",
+    "genre:ai_video_prompt_script",
+    "genre:faceless_video_script",
+    "genre:brand_story",
+    "AI-assisted work a client wants to own or register in the US"
+   ],
+   "rules": [
+    {
+     "rule": "US copyright protects human authorship; purely AI-generated output is not protected. The Office's Part 2 conclusion, as summarised, is that prompts alone do not give users enough control over the output to be its authors, while AI used to assist rather than replace human creativity does not remove protection.",
+     "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf"
+    },
+    {
+     "rule": "Practical rule (harvest guidance, not the Office's text): tell clients unedited AI output may not be ownable, and keep drafts that show human selection, arrangement and rewriting.",
+     "url": "https://www.copyright.gov/ai/"
+    },
+    {
+     "rule": "Practical rule (harvest guidance): never present AI output as 'original copyright work' in a contract without that human contribution.",
+     "url": "https://www.copyright.gov/ai/"
+    },
+    {
+     "rule": "Part 1 (digital replicas, 31 Jul 2024) is the US reference for AI voice and likeness clones; practical rule: get written consent for any real person's voice or face.",
+     "url": "https://www.copyright.gov/ai/"
+    }
+   ],
+   "checks": [
+    "Has a human written, selected, arranged or substantially rewritten the AI-assisted parts the client wants to own?",
+    "Are the drafts and edit history kept to show that human contribution?",
+    "Does the contract avoid calling unedited AI output an 'original copyright work'?",
+    "Has the client been told that purely AI-generated output may not be protected in the US?",
+    "Does the piece use a real person's voice or face, and is there written consent?",
+    "Is the client's market the US, or does a different country's rule need checking?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:youtube_altered_synthetic",
+   "kind": "compliance",
+   "name": "YouTube disclosure of altered or synthetic content",
+   "status": "current",
+   "summary": "YouTube platform policy, current page read 2026-10-04. Creators must disclose, using 'AI use' under Attributes in YouTube Studio, realistic content that is generated or meaningfully altered with AI: a real person made to say or do something they did not, altered footage of a real event or place, a realistic scene that did not happen, or AI music that is the main focus. No disclosure is needed for clearly unrealistic content or minor edits. India adds a separate legal labelling duty (comp:it_rules_sgi_2026).",
+   "use_for": [
+    "YouTube long-form, Shorts and ad scripts that use AI video, AI voice or recreated scenes",
+    "briefing a channel on what to tick at upload",
+    "deciding whether an AI-assisted script, thumbnail or voice-over needs disclosure",
+    "pairing the platform tick with India's legal label for the same video"
+   ],
+   "avoid": [
+    "Skipping the tick because the video is a 'recreation' or 'what if': a realistic scene that did not occur, or a real person shown doing what they did not do, must be disclosed.",
+    "Over-disclosing everything: no disclosure is needed for clearly unrealistic content, beauty, colour or lighting filters, AI help with outline, script, thumbnail, title or captions, idea generation, or cloning your own voice for voice-overs or dubs.",
+    "Treating the tick as the whole job in India: the platform label does not replace the legal label under comp:it_rules_sgi_2026.",
+    "Fearing the tick: YouTube says disclosure will not limit a video's audience or its eligibility to earn money; the risk is in not disclosing."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/14328491",
+     "title": "YouTube Help: Disclosing use of altered or synthetic content",
+     "supports": "when disclosure is required and when it is not (clearly unrealistic, minor edits, beauty filters)"
+    }
+   ],
+   "related": [
+    "comp:it_rules_sgi_2026",
+    "comp:meta_ai_labels",
+    "comp:asci_ai_sgc_labelling",
+    "comp:eu_ai_act_art50",
+    "trend:ai_disclosure_rules",
+    "comp:youtube_paid_promotion"
+   ],
+   "jurisdiction": "YouTube (platform)",
+   "applies_to": [
+    "genre:youtube_video_script",
+    "genre:short_form_video_script",
+    "genre:faceless_video_script",
+    "genre:ai_video_prompt_script",
+    "genre:explainer_video_script",
+    "genre:video_essay_script",
+    "genre:documentary_narration",
+    "genre:micro_drama_episode_script",
+    "genre:news_bulletin_script",
+    "genre:satire_parody",
+    "genre:video_ad_script",
+    "genre:youtube_title_description"
+   ],
+   "rules": [
+    {
+     "rule": "Disclose GenAI content that makes a real person appear to say or do something they did not do, alters footage of a real event or place, generates a realistic scene that did not actually occur, or creates music that is the main focus of the video; disclose via 'AI use' under Attributes in YouTube Studio.",
+     "url": "https://support.google.com/youtube/answer/14328491"
+    },
+    {
+     "rule": "No disclosure is needed for clearly unrealistic content or minor edits: beauty, colour or lighting filters; AI help with outline, script, thumbnail, title or captions; idea generation; cloning one's own voice for voice-overs or dubs.",
+     "url": "https://support.google.com/youtube/answer/14328491"
+    },
+    {
+     "rule": "YouTube may add the label itself for content made with its own AI tools, content carrying C2PA metadata, or content its systems detect.",
+     "url": "https://support.google.com/youtube/answer/14328491"
+    },
+    {
+     "rule": "Disclosure does not limit a video's audience or affect its eligibility to earn money.",
+     "url": "https://support.google.com/youtube/answer/14328491"
+    }
+   ],
+   "penalty": "Creators who consistently fail to disclose risk labels being added, content removal, or suspension from the YouTube Partner Program (YouTube Help page).",
+   "checks": [
+    "Does the video make a real person appear to say or do something they did not?",
+    "Does it alter footage of a real event or place?",
+    "Does it contain a realistic scene that did not actually happen?",
+    "Is AI-generated music the main focus of the video?",
+    "If any answer is yes, has 'AI use' been selected under Attributes in YouTube Studio?",
+    "Is the AI use limited to scripts, titles, thumbnails, captions, idea generation, minor filters or the creator's own cloned voice, so no tick is needed?",
+    "If the video is posted in India, does it also carry the legal label required by comp:it_rules_sgi_2026?"
+   ],
+   "as_of": "2026-10-04"
+  },
+  {
+   "id": "comp:youtube_paid_promotion",
+   "kind": "compliance",
+   "name": "YouTube paid product placements, endorsements and sponsorships policy",
+   "status": "current",
+   "summary": "YouTube platform policy, current page read 2026-10-04. For a video with paid product placement, an endorsement or a sponsorship, the creator selects the paid promotion option in video details, which shows a disclosure label at the beginning of the video; the creator and the brand are still responsible for following local law. ASCI accepts the 'Includes Paid Promotion' tag as a label, and the FTC still wants the disclosure said in the video itself.",
+   "use_for": [
+    "YouTube sponsored integrations, dedicated brand videos and Shorts with a paid brand mention",
+    "briefs that tell a creator what to tick and what to say on screen",
+    "writing a spoken or on-screen disclosure line for a sponsored segment",
+    "checking branded content against YouTube's other policies before upload"
+   ],
+   "avoid": [
+    "Relying on the YouTube label alone: ASCI and the FTC both treat a platform tool as an addition to the creator's own clear disclosure; say it in the video and in the description too.",
+    "Burying the disclosure in the description: the FTC wants it said in the video itself, and ASCI wants it upfront and prominent.",
+    "Assuming the box makes the content compliant: branded content must also meet YouTube's Community Guidelines, Google Ads policies and all applicable legal requirements, which the creator and the brand are responsible for.",
+    "Forgetting the box for gifted or free-product videos: the policy covers any commercial relationship, and ASCI counts free or discounted products as a material connection, so tick the box and label the post."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/154235",
+     "title": "YouTube Help: Paid product placements, endorsements and sponsorships",
+     "supports": "the disclosure checkbox, what counts as paid promotion, creator and brand responsibilities"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI Guidelines for Influencer Advertising in Digital Media",
+     "supports": "YouTube 'Includes Paid Promotion' tag is a permitted disclosure label; platform tool is in addition to the creator's own label (per the harvest note on comp:asci_influencer)"
+    },
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+     "title": "FTC: Disclosures 101 for Social Media Influencers",
+     "supports": "in video, say the disclosure in the video, not just the description (per the harvest note on comp:ftc_endorsement_guides)"
+    }
+   ],
+   "related": [
+    "comp:asci_influencer",
+    "comp:ftc_endorsement_guides",
+    "comp:endorsement_know_hows",
+    "comp:meta_branded_content",
+    "comp:x_paid_partnerships",
+    "trend:creator_led_ads"
+   ],
+   "jurisdiction": "YouTube (platform); local law applies",
+   "applies_to": [
+    "genre:youtube_video_script",
+    "genre:sponsored_integration_script",
+    "genre:sponsored_creator_post",
+    "genre:podcast_ad_read",
+    "genre:short_form_video_script",
+    "genre:influencer_brief",
+    "genre:affiliate_review",
+    "genre:youtube_title_description"
+   ],
+   "rules": [
+    {
+     "rule": "For branded content, sponsorships, endorsements or other commercial relationships, select the paid promotion option in video details; this adds a disclosure label that appears at the beginning of the video.",
+     "url": "https://support.google.com/youtube/answer/154235"
+    },
+    {
+     "rule": "Branded content must also comply with YouTube's Community Guidelines and Google Ads policies, and the creator and the partners are responsible for understanding and complying with all applicable legal requirements.",
+     "url": "https://support.google.com/youtube/answer/154235"
+    },
+    {
+     "rule": "Age and geography restrictions for branded content appear only after selecting Yes under Paid promotion.",
+     "url": "https://support.google.com/youtube/answer/154235"
+    },
+    {
+     "rule": "In India, ASCI accepts the 'Includes Paid Promotion' tag as a label; the platform tool is in addition to the creator's own label.",
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf"
+    },
+    {
+     "rule": "In the US, the FTC still wants the disclosure said in the video itself, not only in the description or a platform tool.",
+     "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers"
+    }
+   ],
+   "checks": [
+    "Is there any payment, free product, sponsorship or other commercial relationship behind the video?",
+    "If yes, has the paid promotion option been selected in video details?",
+    "Does the creator also say or show the disclosure in the video itself, early and clearly, not only in the description?",
+    "Does the description carry a clear disclosure too, near the top?",
+    "Does the sponsored segment also meet YouTube's Community Guidelines and Google Ads policies?",
+    "Have the local-law rules for the audience's country (ASCI in India, FTC in the US, CAP in the UK) been checked?"
+   ],
+   "as_of": "2026-10-04"
+  }
+ ]
+}

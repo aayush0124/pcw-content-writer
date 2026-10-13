@@ -1,0 +1,504 @@
+{
+ "kind": "genre",
+ "items": [
+  {
+   "id": "genre:screenplay_feature",
+   "name": "Feature film screenplay",
+   "category": "Creative: scripts & performance",
+   "one_line": "A full-length film script in industry format: scene headings, action, character cues and dialogue.",
+   "aliases": [
+    "screenplay",
+    "film script",
+    "movie script",
+    "spec script",
+    "shooting script"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork lists script writing with a stated hourly band; Fiverr runs a Scriptwriting category; Indian film work runs through producers and the Screenwriters Association.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writers charge $30-$56 per hour on Upwork"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing",
+     "title": "Fiverr Writing & Translation: Scriptwriting",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Industry format: Courier font, scene headings INT./EXT. LOCATION - DAY/NIGHT, action in present tense, character cue above dialogue; use screenwriting software templates for margins. Hindi films often deliver in Roman-script Hindi or Devanagari with English scene directions. Register the script before sending it out.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:search_ad_copy",
+   "name": "Search ad copy (Google / Bing text ads)",
+   "category": "Advertising",
+   "one_line": "Headlines and descriptions for keyword-triggered text ads that win the click against the ads beside them.",
+   "aliases": [
+    "PPC ad copy",
+    "Google Ads copy",
+    "RSA copy",
+    "SEM copy"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Ad Copy (627 gigs, 2026-10-04) filters by 'Search engines'; AWAI's 2026 pricing guide lists PPC/AdWords campaigns",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ad-copy",
+     "title": "Fiverr: Ad Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 627 gigs; placement filter = Social media, Search engines, Mobile, Video, Billboards, Outdoor signage"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Responsive search ads are assembled by the system from separate headlines and descriptions, so each line must stand alone; limits live in plat:google_ads_rsa.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:serialized_fiction",
+   "name": "Serialized fiction / web novel episodes",
+   "category": "Creative: fiction & poetry",
+   "one_line": "Fiction published in short daily or weekly parts on reading apps, built to keep readers unlocking the next part.",
+   "aliases": [
+    "web serial",
+    "Pratilipi series",
+    "episodic fiction",
+    "web novel"
+   ],
+   "value": "medium",
+   "value_evidence": "Pratilipi pays authors from premium series whose later parts are locked behind coins and subscriptions (Pratilipi's own FAQ).",
+   "sources": [
+    {
+     "url": "https://english.pratilipi.com/blog/faqs-for-new-premium-feature-ev6nkgoaucz1bzz",
+     "title": "Pratilipi: FAQs for New Premium Feature",
+     "supports": "premium series model: early parts free, later parts locked, authors earn from unlocks"
+    },
+    {
+     "url": "https://thenewpublishingstandard.com/2025/04/03/pratilipi-reviving-vernacular-mass-literature-in-india-through-self-publishing/",
+     "title": "The New Publishing Standard (2025-04-03): Pratilipi reviving vernacular mass literature",
+     "supports": "scale of Indian-language serialized fiction"
+    }
+   ],
+   "note": "Indian-language market (Hindi, Marathi, Malayalam, Bengali and more) is large. Every part ends on a hook; romance, family drama, revenge and fantasy dominate. Long series earn more than one-offs.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:services_page",
+   "name": "Services page",
+   "category": "Web & UX",
+   "one_line": "Page per service (or a hub) that explains the offer, who it is for, process, proof and how to start.",
+   "aliases": [
+    "service page",
+    "what we do page",
+    "practice area page"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Website Content lists 'Service page'; India rate tables price web pages per word",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    },
+    {
+     "url": "https://eloritescontent.com/research/content-writing-services-prices-usa-india/",
+     "title": "Elorites: Content Writing Services Prices 2026, India & USA (updated 2026-06-10)",
+     "supports": "India per-word rate tables by industry with separate rows for web pages, FAQ content, brochures and marketing material"
+    }
+   ],
+   "note": "Local-service pages double as SEO pages; the SEO side belongs to genre_content cards.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:services_proposal",
+   "name": "Sales proposal for services",
+   "category": "Sales enablement",
+   "one_line": "Proposal that restates the client's problem, proposes scope, timeline, price and why us.",
+   "aliases": [
+    "Business proposal",
+    "agency proposal",
+    "business proposal",
+    "client proposal",
+    "project proposal",
+    "quotation proposal",
+    "quotation write-up",
+    "sales proposal",
+    "statement of work"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has Proposal Writers and Business Proposal Writers hire categories; AWAI lists 'Sales Proposals'",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/proposal-writers/",
+     "title": "Upwork: hire Proposal Writers",
+     "supports": "dedicated hire category; snippets list RFP/RFQ/RFI work (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business writer projects include business proposals; rate band $25-$50 per hour"
+    }
+   ],
+   "note": " [merged from genre:business_proposal: Client problem first, then approach, scope, deliverables, timeline, team/credentials, price, terms, next step. Mirror the client's own words from the brief.]",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:shayari",
+   "name": "Shayari (Hindi/Urdu couplets)",
+   "category": "Creative: fiction & poetry",
+   "one_line": "Urdu/Hindi verse in couplets (sher) and forms like ghazal, nazm and rubai, used in posts, speeches and greetings.",
+   "aliases": [
+    "sher",
+    "ghazal",
+    "nazm",
+    "do line shayari",
+    "status shayari"
+   ],
+   "value": "low",
+   "value_evidence": "Huge consumer demand on social media and WhatsApp but mostly unpaid; paid when written for brands, films or speeches.",
+   "sources": [
+    {
+     "url": "https://www.rekhta.org/",
+     "title": "Rekhta",
+     "supports": "largest online archive of Urdu poetry and its forms (ghazal, nazm, sher)"
+    }
+   ],
+   "note": "Ghazal rules: matla, maqta, radif, qafiya and one consistent bahr (metre). Attribute every quoted sher to its poet; never pass off a known poet's sher as original.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:short_film_script",
+   "name": "Short-film script",
+   "category": "Creative: scripts & performance",
+   "one_line": "A complete short film in screenplay format, built around one idea, for festivals, brands or YouTube.",
+   "aliases": [
+    "short film",
+    "festival short script",
+    "branded short film"
+   ],
+   "value": "low",
+   "value_evidence": "Mostly self-funded or festival work; paid when brands commission short films.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing",
+     "title": "Fiverr Writing & Translation: Scriptwriting",
+     "supports": "scriptwriting category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Same format as a feature screenplay. One location and few characters keep it producible. Festivals cap running time; check each festival's rules.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:short_form_video_script",
+   "name": "Short-form video script (Reels / Shorts / TikTok)",
+   "category": "Video & audio scripts",
+   "one_line": "15-90 second vertical video script: a hook in the first seconds, one tight idea, on-screen text cues and a payoff or loop.",
+   "aliases": [
+    "reel script",
+    "Shorts script",
+    "TikTok script",
+    "vertical video script"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork's script writer type ($30-$56/hr band, 2026-01-21) covers social video; third-party 2026 rate guides price short-form scripts as their own tier (Fueler, low confidence); Fiverr's scriptwriting facet shows Hindi as a top seller language (867 gigs on 2026-10-04).",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    },
+    {
+     "url": "https://fueler.io/blog/freelance-scriptwriter-rates-short-vs-long-form",
+     "title": "Fueler: Freelance Scriptwriter Rates 2026: Short vs Long Form",
+     "supports": "Third-party rate guide that prices short-form (Reels/TikTok/Shorts) scripts separately from long-form scripts (low confidence)"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing",
+     "title": "Fiverr: Scriptwriting category",
+     "supports": "Scriptwriting is a Fiverr subcategory; Hindi is among the top seller languages on the facet (867 gigs on 2026-10-04)"
+    }
+   ],
+   "note": "Duration range is a platform-practice convention; check plat: cards for real limits. Daily creator reels in Hinglish or Hindi are this genre.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:short_story",
+   "name": "Short story",
+   "category": "Creative: fiction & poetry",
+   "one_line": "Self-contained fiction built around one change in one character, for magazines, anthologies, contests or audio platforms.",
+   "aliases": [
+    "short fiction",
+    "kahani"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr's Creative Writing category covers it; paid markets exist but rates are low and competitive.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/creative-writing",
+     "title": "Fiverr Writing & Translation: Creative Writing",
+     "supports": "category exists on the Writing & Translation menu"
+    }
+   ],
+   "note": "Word-count bands (flash, short story, novelette) are set by each market's guidelines; read them before writing. Hindi kahani tradition (Premchand) favours social realism.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:sketch_comedy",
+   "name": "Sketch comedy script",
+   "category": "Creative: scripts & performance",
+   "one_line": "A short comic scene built on one game (the funny pattern) that escalates to a button ending.",
+   "aliases": [
+    "comedy sketch",
+    "skit",
+    "spoof sketch"
+   ],
+   "value": "low",
+   "value_evidence": "Commissioned by comedy channels and brands; small market.",
+   "note": "Find the game, heighten it, end on a button. Short runtime for online release.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:sms_marketing",
+   "name": "SMS marketing copy",
+   "category": "Email & CRM",
+   "one_line": "Short promotional or reminder text message with one offer and one link.",
+   "aliases": [
+    "promotional SMS",
+    "bulk SMS copy",
+    "text message marketing"
+   ],
+   "value": "medium",
+   "value_evidence": "Klaviyo treats SMS as its own flow channel; Upwork lists SMS freelance jobs",
+   "sources": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "recommends building welcome series, abandoned cart, post-purchase and winback flows first; separate email and SMS welcome flows"
+    },
+    {
+     "url": "https://www.upwork.com/freelance-jobs/sms/",
+     "title": "Upwork: SMS freelance jobs",
+     "supports": "job listing page for SMS work (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "India: promotional SMS needs DLT-registered sender header and template; see plat:sms_india_dlt.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:social_ad_copy",
+   "name": "Social ad copy (Meta, LinkedIn, X, YouTube)",
+   "category": "Advertising",
+   "one_line": "Primary text, headline and CTA for paid social placements that stop the scroll and send the click.",
+   "aliases": [
+    "Facebook ad copy",
+    "Instagram ad copy",
+    "Meta ad copy",
+    "LinkedIn ad copy",
+    "paid social copy",
+    "performance ad copy"
+   ],
+   "value": "high",
+   "value_evidence": "Fiverr Ad Copy filters 'Social media' first; Upwork has an Ad Copy hire category; AWAI lists Social Media Ad Campaign; Indian agency menus sell 'ad copy for performance campaigns'",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ad-copy",
+     "title": "Fiverr: Ad Copy subcategory",
+     "supports": "page search data on 2026-10-04: num_found 627 gigs; placement filter = Social media, Search engines, Mobile, Video, Billboards, Outdoor signage"
+    },
+    {
+     "url": "https://www.upwork.com/hire/ad-copy-freelancers/",
+     "title": "Upwork: hire Ad Copy Freelancers",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://thegreyhawks.com/copywriting-agency-in-india/",
+     "title": "The Grey Hawks: Copywriting agency in India (service menu)",
+     "supports": "Indian agency menu: brand voice & messaging framework, website & landing page, performance ad copy, email & funnel, scripts for video & commercials"
+    }
+   ],
+   "note": "Meta ad copy has separate primary text, headline and description fields, each truncated differently per placement; clients expect several variants per ad set for testing.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:social_bio",
+   "name": "Social profile bio",
+   "category": "Organic social",
+   "one_line": "The few lines on a profile (Instagram, X, YouTube, LinkedIn headline/About) that say who this is, what the follower gets and where to click.",
+   "aliases": [
+    "Instagram bio",
+    "profile bio",
+    "channel description",
+    "creator bio"
+   ],
+   "value": "low",
+   "value_evidence": "Fiverr sells LinkedIn profile writing as its own subcategory (linkedin-profile-services slug); other bios are small add-ons.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation",
+     "title": "Fiverr: Writing & Translation category index (read 2026-10-04)",
+     "supports": "Fiverr subcategory slugs include articles-blogposts, website-content, script-writing, podcast, social-media-copywriting, case-study-writing, book-and-ebook-writing, content-strategy, research-summaries, elearning-content-development, linkedin-profile-services"
+    }
+   ],
+   "note": "LinkedIn profile rewrites for job seekers are career documents (genre_pro_creative); this card is the creator/brand bio.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:social_content_calendar",
+   "name": "Social media content calendar (with post copy)",
+   "category": "Organic social",
+   "one_line": "Month or week plan of posts per platform with dates, formats, hooks and drafted captions, delivered as a sheet or doc.",
+   "aliases": [
+    "content calendar",
+    "posting plan",
+    "social media plan"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr social media copywriting gigs offer 'Content calendar' as an inclusion (801 gigs on 2026-10-04).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (Platform facet read 2026-10-04)",
+     "supports": "Fiverr's Platform filter with live gig counts, a SUPPLY signal: Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009, Pinterest 376, Threads 238, Snapchat 123, Reddit 96, Twitter 47, Discord 5, Quora 3"
+    }
+   ],
+   "note": "Planning deliverable more than a writing form; included because clients commission it together with the copy. Unsure whether it belongs as a genre.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:song_lyrics",
+   "name": "Song lyrics",
+   "category": "Creative: fiction & poetry",
+   "one_line": "Words written to be sung: hook/chorus (mukhda), verses (antara) and bridge, fitted to a melody or meter.",
+   "aliases": [
+    "lyrics",
+    "songwriting",
+    "geet",
+    "rap lyrics",
+    "devotional song lyrics"
+   ],
+   "value": "medium",
+   "value_evidence": "SWA registers songs as a category for its lyricist members; film and indie-music lyric writing is paid work in India.",
+   "sources": [
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Synopsis, Story, Script, Plot, Screenplay, Dialogue and Song for members, online or at its Mumbai office"
+    }
+   ],
+   "note": "Hindi film songs use mukhda and antara structure. Write to the meter and stress of the tune. Never reproduce existing lyrics. Ad jingles belong to the commercial worker.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:sop_process_doc",
+   "name": "Standard operating procedure (SOP) / process document",
+   "category": "Technical & product documentation",
+   "one_line": "Step-by-step procedure an employee follows so a recurring task is done the same safe, compliant way every time.",
+   "aliases": [
+    "work instruction",
+    "process documentation",
+    "runbook",
+    "playbook"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork lists policies and training materials under business and technical writing; regulated industries (pharma, food, manufacturing) require written SOPs.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business-writing projects include company policies and training materials; technical-writing projects include policies"
+    }
+   ],
+   "note": "Do not confuse with the admissions 'statement of purpose' (genre:statement_of_purpose), also called SOP in India. Structure: purpose, scope, roles, definitions, procedure steps, records, revision history. Imperative verbs.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:sponsored_creator_post",
+   "name": "Sponsored creator post / brand collab caption",
+   "category": "Creator & affiliate",
+   "one_line": "Caption, script points and disclosure for a creator's paid brand collaboration, written in the creator's voice so it lands as content, not an ad.",
+   "aliases": [
+    "brand collab post",
+    "paid partnership caption",
+    "influencer post copy",
+    "sponsored post"
+   ],
+   "value": "medium",
+   "value_evidence": "Indian disclosure rules exist specifically for influencer collaborations (ASCI influencer guidelines), showing the volume of this work; no single marketplace category isolates it.",
+   "note": "Unsure scope: paid but organic-format. Disclosure label (e.g. #ad / Paid partnership tag) is mandatory; see comp:asci_influencer and comp:ftc_endorsements. Brand-written ad scripts (UGC ads) are genre_commercial.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:sponsored_integration_script",
+   "name": "Sponsored integration / sponsor read script",
+   "category": "Video & audio scripts",
+   "one_line": "The 30-90 second segment inside a creator's video or podcast that introduces a sponsor in the creator's own voice and discloses it.",
+   "aliases": [
+    "sponsor read",
+    "brand integration script"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr podcast-writing gigs list 'Ad break' writing as a deliverable (59 gigs on 2026-10-04); Upwork's script type lists commercial and advertising scripts.",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/podcast",
+     "title": "Fiverr: Podcast Writing category (Service includes facet read 2026-10-04)",
+     "supports": "Fiverr podcast-writing gigs list deliverables: Episode summary 143, Segment timestamps 135, Relevant links 125, Script writing 114, Show notes 91, Discussion guide 80, Ad break 59 (gig counts, supply signal)"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "Unsure scope: paid copy inside organic content; overlaps genre:podcast_ad_read (genre_commercial), which the merge may keep instead. Disclosure is mandatory; see comp:asci_influencer.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:stage_play",
+   "name": "Stage play / nukkad natak script",
+   "category": "Creative: scripts & performance",
+   "one_line": "Script for live theatre, from proscenium plays to Indian street theatre (nukkad natak) with chorus and direct address.",
+   "aliases": [
+    "play script",
+    "nukkad natak",
+    "street play",
+    "one-act play",
+    "theatre script"
+   ],
+   "value": "low",
+   "value_evidence": "Small paid market; street plays are commissioned by NGOs, colleges and awareness campaigns.",
+   "note": "Stage format puts character names above dialogue and directions in brackets or italics. Nukkad natak: loud short lines, songs and slogans, audience participation, short running time.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:standup_comedy_set",
+   "name": "Stand-up comedy set",
+   "category": "Creative: scripts & performance",
+   "one_line": "A performer's set of bits (premise, setup, punchline, tags) written for live delivery and recorded specials.",
+   "aliases": [
+    "stand-up set",
+    "comedy bit",
+    "open-mic set",
+    "comedy special"
+   ],
+   "value": "low",
+   "value_evidence": "Comedians mostly write their own material; paid writing is for specials, hosts, roasts and corporate shows.",
+   "note": "Indian stand-up is largely Hinglish. Jokes about religion, communities or public figures carry legal risk in India (compliance cards). Test lines live; tag after the punch.",
+   "kind": "genre"
+  }
+ ]
+}

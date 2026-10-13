@@ -1,0 +1,3381 @@
+{
+ "cards": [
+  {
+   "id": "genre:screenplay_feature",
+   "kind": "genre",
+   "name": "Feature film screenplay",
+   "status": "current",
+   "summary": "A full-length film told only through what can be seen and heard, in industry format: scene headings, present-tense action, character cues and dialogue. Good looks like a protagonist whose want is clear early, scenes that each change something, dialogue with subtext, and pages a reader turns fast because nothing on them is novel-style explanation.",
+   "use_for": [
+    "Spec scripts written to sell or to enter screenwriting contests and fellowships",
+    "Commissioned feature drafts for a producer or director who owns the idea (writer-for-hire)",
+    "Hindi and regional-language features where action is in English and dialogue in Roman or Devanagari script",
+    "Rewrites and polishes of an existing draft (structure pass, dialogue pass)"
+   ],
+   "avoid": [
+    "Selling a story before it is written as a script: write genre:film_treatment or genre:synopsis first",
+    "Series episodes: use genre:web_series_episode (act breaks and series arc differ)",
+    "Under about 40 minutes of screen time: use genre:short_film_script",
+    "AI-generated films assembled shot by shot: use genre:ai_video_prompt_script"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Screenplay",
+     "title": "Wikipedia: Screenplay (read 2026-10-04)",
+     "supports": "rule of thumb that one page equals roughly one minute of screen time; standard font is 12 point, 10 pitch Courier; spec script = written to sell with no upfront payment; shooting script adds numbered scenes after the film is approved"
+    },
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Synopsis, Story, Script, Plot, Screenplay, Dialogue and Song for members, online or at its Mumbai office"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writers charge $30-$56 per hour on Upwork"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/script-writer-salary",
+     "title": "AmbitionBox: Script Writer salary (updated 2026-10-03)",
+     "supports": "average Script Writer salary Rs 5 lakh per year with 1 year of experience (400 salaries)"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing",
+     "title": "Fiverr Writing & Translation: Scriptwriting",
+     "supports": "scriptwriting is a Fiverr subcategory"
+    }
+   ],
+   "related": [
+    "genre:film_treatment",
+    "genre:synopsis",
+    "genre:short_film_script",
+    "genre:web_series_episode",
+    "genre:character_bio",
+    "genre:song_lyrics"
+   ],
+   "buyers": [
+    "Film producers and production houses (development teams)",
+    "Directors developing their own project",
+    "OTT platforms' film development teams",
+    "Screenwriting contests and fellowships (the writer submits)",
+    "Script consultants commissioning rewrites"
+   ],
+   "value": "medium",
+   "value_why": "Upwork lists script writers at $30-$56/hr (2026-01-21); AmbitionBox puts the average Indian Script Writer salary at Rs 5 lakh a year at 1 year of experience (2026-10-03); Fiverr runs a Scriptwriting category. Feature work in India runs through producers and SWA-registered writers, so the buyer pool is real but small and relationship-led.",
+   "goal": "The producer, director or contest reader reads to the last page and asks for a meeting, an option or the next draft.",
+   "structure": [
+    {
+     "part": "Title page",
+     "does": "Title, 'Written by' with the writer's name, contact details and draft date. No images, no logline essay, no cast wish-list.",
+     "length": "1 page"
+    },
+    {
+     "part": "Act one: setup and inciting incident",
+     "does": "Opens on the protagonist doing something that shows who they are; establishes world, tone and want; the event that knocks their life off balance; ends on the decision that commits them to the story.",
+     "length": "About the first quarter of the pages"
+    },
+    {
+     "part": "Act two: confrontation",
+     "does": "Escalating obstacles, each caused by the last; a midpoint turn that changes the goal or raises the stakes; subplots (often the relationship story) that test the protagonist; ends on the lowest point.",
+     "length": "About the middle half"
+    },
+    {
+     "part": "Act three: climax and resolution",
+     "does": "The protagonist acts on what they learned; the climax resolves the central conflict through their choice; a final image that shows the change.",
+     "length": "About the last quarter"
+    },
+    {
+     "part": "Every scene (the working unit)",
+     "does": "Scene heading INT./EXT. LOCATION - DAY/NIGHT; action lines of what the camera sees and hears, present tense, 1-4 lines per paragraph; character cue in capitals above each speech; enters late, leaves early, and ends with something changed.",
+     "length": "Usually under 3 pages"
+    },
+    {
+     "part": "Song situations (Indian features)",
+     "does": "Where a song sits, a short action block naming the song situation, who sings and what changes during it; the lyric itself is a separate deliverable unless the brief asks.",
+     "length": "A few lines per song"
+    }
+   ],
+   "length": {
+    "min": 90,
+    "max": 150,
+    "unit": "count",
+    "note": "Pages in standard format (Courier 12 pt). One page is roughly one minute of screen time (rule of thumb), so write to the runtime the producer or contest names; Hindi features with songs often run longer than Hollywood features. For the verify wave, the deliverable is an opening excerpt (5-10 pages)."
+   },
+   "frameworks": [
+    "fw:three_act_structure",
+    "fw:save_the_cat",
+    "fw:heros_journey",
+    "fw:dan_harmon_story_circle"
+   ],
+   "techniques": [
+    "tech:show_dont_tell",
+    "tech:character_with_a_want",
+    "tech:conflict_and_stakes",
+    "tech:dialogue",
+    "tech:foreshadowing",
+    "tech:in_medias_res"
+   ],
+   "hooks": [
+    "hook:in_medias_res_opener"
+   ],
+   "languages": [
+    "lang:hinglish_roman",
+    "lang:hindi_devanagari",
+    "lang:hindi_romanisation_schemes"
+   ],
+   "compliance": [
+    "comp:copyright_act_s52_fair_dealing",
+    "comp:bns_defamation_speech"
+   ],
+   "checklist": [
+    "Does every scene start with a heading in the form INT./EXT. LOCATION - DAY/NIGHT?",
+    "Is all action in present tense and limited to what can be seen or heard (no thoughts, no backstory paragraphs)?",
+    "Is each character's name in capitals the first time they appear, with a short visual or behavioural tag?",
+    "Is the protagonist's want clear by the end of act one, and is there an inciting incident before it?",
+    "Does each scene end with something changed (information, power, relationship, plan)?",
+    "Is the dialogue free of characters telling each other things both already know?",
+    "Is it free of camera directions (CLOSE ON, PAN, ANGLE) except where a shot is the story point?",
+    "Are action paragraphs 4 lines or fewer?",
+    "Does the climax turn on the protagonist's own choice, not luck or a rescue?",
+    "Does the page count fit the runtime in the brief at about a page a minute?"
+   ],
+   "pitfalls": [
+    "Novel-style action ('She remembers the summer her father left and feels a familiar ache'): the camera cannot film a memory. Show a behaviour instead: 'She turns her father's watch face-down on the table.'",
+    "Directing on the page with CLOSE UP and DOLLY IN in a spec script: readers skip it and directors resent it. Imply the shot with a short action line of its own.",
+    "On-the-nose dialogue where characters state their feelings: give them something else to talk about and let the subtext carry the feeling.",
+    "Formatting by hand in a word processor: margins drift and the page-per-minute estimate breaks. Use screenwriting software's standard template.",
+    "Writing full song lyrics into the scene: give the song situation; lyrics are genre:song_lyrics and usually the lyricist's job.",
+    "Real, living people portrayed with invented scandal: that is defamation risk under BNS s.356; fictionalise names and facts or stick to the public record.",
+    "Circulating the script before registering it: register with SWA (members) or keep dated drafts before sending it out."
+   ],
+   "lint": {
+    "min_words": 300,
+    "max_words": 30000,
+    "max_sentence_words": 40,
+    "require": [
+     {
+      "label": "has scene headings (INT./EXT.)",
+      "regex": "(?im)^\\s*(int|ext)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Opening 6-8 pages (about 1,200-1,800 words) of a spec feature screenplay for a Hindi family drama pitched to a Mumbai production house: a retired Patna railway clerk secretly enrols in a college entrance exam the same year as his grandson; scene headings and action in English, dialogue in Roman-script Hindi; standard screenplay format; must establish the protagonist, the comic-tender tone and the inciting incident.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_12.json#genre:screenplay_feature",
+    "note": "Opening 1,427 words, clean format (INT./EXT., present-tense action, caps intros with tags). Want and inciting incident land (CUET 'no upper age limit' line, he applies secretly); planted 1976 ABSENT admit card pays off; comic-tender tone holds; ends on a hook (Bittu's text). Slips: 'Father ka naam rukho' should be 'ruko'; a tube light has no 'half power'. Writer fixes only.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:search_ad_copy",
+   "kind": "genre",
+   "name": "Search ad copy (Google / Bing text ads)",
+   "status": "current",
+   "summary": "The headlines, descriptions and display paths of a responsive search ad, written so that any combination the system assembles still makes sense, matches the searcher's keyword and gives a reason to click this ad over the three beside it. Good looks like a full set of distinct headlines (keyword, benefit, proof, offer, CTA), descriptions that each work alone, and claims the landing page backs up.",
+   "use_for": [
+    "New Google Ads or Microsoft Advertising responsive search ads, one set per ad group",
+    "Refreshing low Ad Strength ads with more unique headlines",
+    "Local service ads for clinics, coaching institutes, CA and law-adjacent firms, home services",
+    "SaaS and D2C brand, competitor and category keyword ad groups"
+   ],
+   "avoid": [
+    "Social placements (Meta, LinkedIn): use genre:social_ad_copy",
+    "Image banners: use genre:display_banner_ad_copy",
+    "The page the click lands on: write genre:landing_page and make the ad promise match it",
+    "Sitelinks and callouts on their own: see plat:google_ads_assets"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/google-ads/answer/7684791?hl=en",
+     "title": "Google Ads Help: About responsive search ads (read 2026-10-04)",
+     "supports": "'Assets can be shown in any order, so make sure they make sense individually or in combinations'; pinning reduces the headlines that can match a search, 'isn't recommended for most advertisers and can affect ad strength'; include at least one keyword in headlines; provide as many unique headlines as you can; 3-15 headlines and 2-4 descriptions; up to 3 headlines shown"
+    },
+    {
+     "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
+     "title": "Google Ads Help: text ad character limits",
+     "supports": "headline 30 characters, description 90 characters, two display paths of 15 characters each"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
+     "title": "Microsoft Advertising: Responsive Search Ad (Bulk API docs)",
+     "supports": "3-15 headlines of up to 30 final characters, 2-4 descriptions of up to 90; paths 15 characters; domain plus paths up to 67 characters"
+    },
+    {
+     "url": "https://support.google.com/adspolicy/answer/6021546?hl=en",
+     "title": "Google Ads policy: Editorial",
+     "supports": "no gimmicky capitalisation or punctuation, no unnecessary repetition, no phone numbers in ad text"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ad-copy",
+     "title": "Fiverr: Ad Copy subcategory",
+     "supports": "627 gigs on 2026-10-04 with a placement filter that includes Search engines"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "PPC / AdWords campaigns listed as a priced copywriting project type"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/copywriter-salary",
+     "title": "AmbitionBox: Copywriter salary (updated 2026-10-03)",
+     "supports": "average Copywriter salary in India Rs 6.7 lakh per year (3k salaries)"
+    }
+   ],
+   "related": [
+    "genre:landing_page",
+    "genre:social_ad_copy",
+    "genre:display_banner_ad_copy",
+    "trend:ai_overviews_zero_click",
+    "trend:chatgpt_ads"
+   ],
+   "buyers": [
+    "PPC and performance-marketing agencies",
+    "Local service businesses (clinics, coaching institutes, CA firms, home services)",
+    "D2C and ecommerce brands",
+    "SaaS companies",
+    "Education and admissions teams"
+   ],
+   "value": "high",
+   "value_why": "Fiverr's Ad Copy subcategory (627 gigs, 2026-10-04) filters by 'Search engines'; AWAI's 2026 pricing guide lists PPC campaigns as their own project; AmbitionBox puts the average Indian copywriter at Rs 6.7 lakh a year. Usually bought per ad group or bundled into monthly PPC management.",
+   "goal": "The searcher who typed this keyword clicks this ad, and is the kind of person who will convert on the landing page.",
+   "structure": [
+    {
+     "part": "Intent line (working note, not published)",
+     "does": "Ad group keyword, what the searcher wants right now, the landing page's promise and the single offer. Every asset is checked against this line.",
+     "length": "1-2 lines"
+    },
+    {
+     "part": "Keyword headlines",
+     "does": "Repeat or closely echo the ad group keyword so the ad looks like the answer to the query.",
+     "length": "2-3 headlines, 30 characters each max"
+    },
+    {
+     "part": "Benefit and differentiator headlines",
+     "does": "What the searcher gets and why this provider: speed, price, location, credential, guarantee.",
+     "length": "4-5 headlines"
+    },
+    {
+     "part": "Proof and offer headlines",
+     "does": "A number (years, clients, rating with its source), the price or from-price, a real deadline.",
+     "length": "3-4 headlines"
+    },
+    {
+     "part": "CTA and brand headlines",
+     "does": "Action verb plus what happens next ('Upload Your Notice Today'); one brand-name headline.",
+     "length": "2-3 headlines"
+    },
+    {
+     "part": "Descriptions",
+     "does": "Each is a complete mini-ad: benefit, proof or detail, CTA. None depends on another being shown.",
+     "length": "4 descriptions, 90 characters each max"
+    },
+    {
+     "part": "Display paths",
+     "does": "Two short words that echo the keyword or category (/gst-notice/reply).",
+     "length": "2 paths, 15 characters each max"
+    }
+   ],
+   "length": {
+    "min": 5,
+    "max": 21,
+    "unit": "count",
+    "note": "Assets per ad: 3-15 headlines (30 characters each) and 2-4 descriptions (90 characters each) plus 2 paths. Google asks for as many unique headlines as you can give, so the professional deliverable is the full 15 + 4 + 2."
+   },
+   "frameworks": [
+    "fw:four_us",
+    "fw:fab",
+    "fw:usp"
+   ],
+   "techniques": [
+    "tech:search_intent_matching",
+    "tech:word_budget",
+    "tech:front_loading",
+    "tech:specificity",
+    "tech:features_to_benefits",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:keyword_front_loaded",
+    "hook:offer_price",
+    "hook:specificity",
+    "hook:social_proof",
+    "hook:question"
+   ],
+   "platforms": [
+    "plat:google_ads_rsa",
+    "plat:microsoft_ads_rsa",
+    "plat:google_ads_assets"
+   ],
+   "compliance": [
+    "comp:google_ads_editorial",
+    "comp:google_ads_misrepresentation",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code"
+   ],
+   "checklist": [
+    "Is every headline 30 characters or fewer and every description 90 or fewer (count spaces)?",
+    "Does at least one headline contain the ad group's keyword or its close variant?",
+    "Does each headline make sense on its own and next to any other two?",
+    "Are all headlines different in meaning, not the same claim reworded?",
+    "Is there at least one headline with a specific number (price, years, count, time)?",
+    "Does each description end with an action the searcher can take?",
+    "Do the offer, price and deadline match the landing page word for word?",
+    "Is the copy free of phone numbers, ALL-CAPS words and repeated punctuation?",
+    "Is every superlative or rating backed by a source the client can show?",
+    "If any asset is pinned, is there a stated reason (legal disclaimer, brand rule)?"
+   ],
+   "pitfalls": [
+    "Headlines written as a sequence ('Got a GST Notice?' / 'Don't Panic' / 'We Can Help'): the system shows them in any order, so 'Don't Panic' alone means nothing. Make each line carry its own meaning: 'GST Notice Reply in 24 Hours'.",
+    "Fifteen headlines that all repeat the keyword: Google asks for unique headlines and the editorial policy rejects unnecessary repetition. Use 2-3 keyword lines and spend the rest on benefits, proof and offer.",
+    "'Best CA in Jaipur' or '#1 Coaching' with no proof: misleading-claim risk under CCPA 2022 and Google's misrepresentation policy. Use a checkable fact: '1,200+ GST Replies Filed'.",
+    "Pinning headlines to positions 1, 2 and 3 to force a 'perfect' sentence: Google says it reduces matching and can lower Ad Strength. Pin only a mandatory disclaimer.",
+    "'FREE CONSULTATION!!!': gimmicky caps and punctuation get disapproved. Write 'Free 15-Min Consultation'.",
+    "An offer in the ad that the landing page does not show: visitors bounce and it reads as bait. Check the page before writing the offer line."
+   ],
+   "lint": {
+    "min_words": 20,
+    "max_words": 400,
+    "max_sentence_words": 18,
+    "max_exclamations": 1,
+    "max_emoji": 0,
+    "require": [
+     {
+      "label": "has a CTA verb",
+      "regex": "(?i)\\b(book|call|get|buy|order|shop|try|start|apply|enrol|enroll|download|visit|claim|compare|join|register|sign up|schedule|upload|request)\\b|करें|पाएं|बुक"
+     }
+    ],
+    "ban": [
+     {
+      "label": "phone number in ad text",
+      "regex": "(?i)(\\+91[\\s-]?)?\\b[6-9]\\d{4}[\\s-]?\\d{5}\\b"
+     },
+     {
+      "label": "weak 'click here' CTA",
+      "regex": "(?i)\\bclick here\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Google responsive search ad for a Jaipur CA firm's GST notice reply service, ad group keyword 'gst notice reply'; audience: small-business owners in Jaipur who have just received a GST notice; English; 15 headlines (30 characters max each), 4 descriptions (90 characters max each) and 2 display paths, character count shown after each line; offer: fixed fee from Rs 4,999 and a first response within 24 hours; goal: click through to the 'Upload your notice' landing page.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_12.json#genre:search_ad_copy",
+    "note": "15/4/2 assets, every count verified (all within 30/90/15). Keyword in H1-3, offer and 24 h match the brief, each description ends on an action, no caps or phone. Placeholders [N] and [Firm Name] fair (not supplied). Weaker: near-duplicate headlines (H2/H3; H9/H11/H12 all 'got a notice'), H7 'Built for Small Businesses' generic; proof thin beyond the fee.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:serialized_fiction",
+   "kind": "genre",
+   "name": "Serialized fiction / web novel episodes",
+   "status": "current",
+   "summary": "Fiction released part by part on reading apps (Pratilipi and similar), where each part must satisfy on its own and end on a hook strong enough that the reader waits, pays or unlocks to continue. Good looks like a fast re-entry, one real turn per part, consistent characters across dozens of parts, and a cliffhanger timed to the app's free-to-paid boundary.",
+   "use_for": [
+    "Hindi, Marathi, Bengali, Tamil and other Indian-language series on reading apps",
+    "Romance, family drama, revenge, thriller and fantasy series meant to run for many parts",
+    "Ghostwritten series for authors building a premium-series income",
+    "Planning and writing the parts around a paywall (the free opening run and the first locked part)"
+   ],
+   "avoid": [
+    "One-sitting stories: use genre:short_story or genre:flash_fiction",
+    "Scripts for vertical video series: use genre:micro_drama_episode_script",
+    "Audio-first series: use genre:audio_series_script",
+    "A conventional novel manuscript for a publisher: use genre:novel_chapter"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://english.pratilipi.com/blog/faqs-for-new-premium-feature-ev6nkgoaucz1bzz",
+     "title": "Pratilipi: FAQs for New Premium Feature (read 2026-10-04)",
+     "supports": "'The first 15 parts will be free. Once the 16th part gets published, it will be auto opted in under the premium subscription programme'; readers wait, subscribe or unlock individual episodes with Pratilipi coins; writers with 'golden badge' status qualify; premium earnings shown monthly"
+    },
+    {
+     "url": "https://thenewpublishingstandard.com/2025/04/03/pratilipi-reviving-vernacular-mass-literature-in-india-through-self-publishing/",
+     "title": "The New Publishing Standard (2025-04-03): Pratilipi reviving vernacular mass literature",
+     "supports": "scale of Indian-language serialized fiction"
+    }
+   ],
+   "related": [
+    "genre:micro_drama_episode_script",
+    "genre:novel_chapter",
+    "genre:short_story",
+    "genre:worldbuilding_bible",
+    "genre:character_bio",
+    "trend:rural_vernacular_internet_india",
+    "trend:micro_dramas"
+   ],
+   "buyers": [
+    "Authors self-publishing on reading apps (the main 'client')",
+    "Ghostwriting clients who publish under their own name",
+    "Reading and audio-story apps commissioning series",
+    "Producers optioning popular series for screen adaptation"
+   ],
+   "value": "medium",
+   "value_why": "Pratilipi pays from premium series whose parts after the free run are locked behind waiting, coins or subscription (Pratilipi FAQ), so long, consistent series earn and one-offs do not. The Indian-language market is large (TNPS 2025). Per-part ghostwriting rates are low; the money is in volume and series length.",
+   "goal": "The reader opens, waits for or unlocks the next part, and keeps doing it part after part.",
+   "structure": [
+    {
+     "part": "Re-entry (recap bridge)",
+     "does": "Grounds the reader in who, where and what is at stake through a line of action or thought, not a 'pichhle part mein' summary block.",
+     "length": "1-3 sentences"
+    },
+    {
+     "part": "Payoff of the last hook",
+     "does": "Answers or partly answers the previous part's cliffhanger, often with a twist that opens a new question.",
+     "length": "150-300 words"
+    },
+    {
+     "part": "Development",
+     "does": "One new complication, reveal or relationship turn, played in scene with dialogue; moves the series arc one step.",
+     "length": "400-900 words"
+    },
+    {
+     "part": "Turn",
+     "does": "A decision, discovery or arrival that changes the situation for the next part.",
+     "length": "100-200 words"
+    },
+    {
+     "part": "End hook",
+     "does": "Stops at the moment of maximum question: a threat, a reveal half-heard, a choice not yet made, a person at the door. Never on a resolution.",
+     "length": "Last 1-3 lines"
+    },
+    {
+     "part": "Series plan (before part 1)",
+     "does": "Arc in blocks of parts, character list with relations and names fixed, the big reveals placed; on Pratilipi, the strongest hook of the opening run lands at the end of part 15, just before the first locked part.",
+     "length": "1-2 pages, kept updated"
+    }
+   ],
+   "length": {
+    "min": 800,
+    "max": 2500,
+    "unit": "words",
+    "note": "Per part. A practice range for phone reading in one sitting, not a platform rule (Pratilipi's premium FAQ sets the free-part count, not a word count). Match what the top series in the same genre and language on the app do, and keep part length steady so readers learn the rhythm."
+   },
+   "frameworks": [
+    "fw:nested_loops",
+    "fw:three_act_structure",
+    "fw:pixar_story_spine"
+   ],
+   "techniques": [
+    "tech:cliffhanger",
+    "tech:open_loop",
+    "tech:foreshadowing",
+    "tech:conflict_and_stakes",
+    "tech:character_with_a_want",
+    "tech:dialogue"
+   ],
+   "hooks": [
+    "hook:in_medias_res_opener"
+   ],
+   "tones": [
+    "tone:romantic",
+    "tone:storyteller_narrative"
+   ],
+   "languages": [
+    "lang:hindi_devanagari",
+    "lang:hindustani_everyday",
+    "lang:regional_indian_languages"
+   ],
+   "compliance": [
+    "comp:copyright_act_s52_fair_dealing"
+   ],
+   "checklist": [
+    "Does the part open in a scene (action or dialogue), not in a summary of earlier parts?",
+    "Is the recap no longer than 3 sentences and woven into the action?",
+    "Does the part pay off (at least partly) the previous part's hook?",
+    "Does exactly one thing change in this part (a reveal, a decision, a new obstacle)?",
+    "Does it end on an unresolved question rather than a resolution?",
+    "Are character names, relations and earlier facts consistent with the series plan?",
+    "Does the dialogue sound like the characters' region, age and class?",
+    "Is the point of view stable inside each scene?",
+    "Is the part length close to the series' usual part length?"
+   ],
+   "pitfalls": [
+    "Ending a part when a scene naturally ends (everyone goes to sleep): readers stop there too. Cut the part one beat earlier, at the knock, the message, the slap.",
+    "A 'previously' block of 200 words at the top of every part: regulars skip it and it slows newcomers. Use one line of action that carries the context.",
+    "Padding to hit length (long descriptions of clothes and weather): readers on phones skim and drop. Spend the words on scenes with conflict.",
+    "Names and relations drifting over 80 parts (the mausi becomes a bua): keep a character sheet and check it each part.",
+    "Lifting a TV serial's or a known novel's plot: readers notice and report it. Use familiar tropes, not someone else's story.",
+    "Irregular publishing: serial readers follow schedules. Write a buffer of parts before launch."
+   ],
+   "lint": {
+    "min_words": 600,
+    "max_words": 3500,
+    "max_sentence_words": 35,
+    "max_avg_sentence_words": 18
+   },
+   "exemplar_brief": "Part 1 of a Hindi (Devanagari) revenge-romance series for Pratilipi: a Lucknow bank clerk's daughter takes a job as a tutor in the household of the family that ruined her father; 1,200-1,800 words; must introduce the heroine, the old wrong and the household, use everyday Hindustani dialogue, and end on a cliffhanger that makes the reader open part 2.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_12.json#genre:serialized_fiction",
+    "note": "Opens in scene at the gate, old wrong (forged signatures on the Khanna Builders loan) woven in, household (Savitri, Tanu, Aarav) set fast, almirah drawer 'बैंक, अमीनाबाद' plants the arc, cliffhanger on the engraved watch is strong. Natural Hindustani dialogue; 1,233 words, inside 1,200-1,800. Slip: 'हमारे घर की अख़बारों में ऐसी थू-थू' word order (should be 'अख़बारों में हमारे घर की').",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:services_page",
+   "kind": "genre",
+   "name": "Services page",
+   "status": "current",
+   "summary": "One page per service (or a hub that routes to them) that tells a prospect exactly what the service is, who it is for, what is included, how it runs, what it costs or how pricing works, the proof, and how to start. Good looks like a prospect who can self-qualify in 30 seconds of skimming and knows what happens after they click.",
+   "use_for": [
+    "Service firms' individual service pages (CA, legal-adjacent, clinics, agencies, IT services, interiors)",
+    "A services hub page that routes visitors to each service page",
+    "Rewriting a vague 'What we do' page into pages that convert and rank",
+    "Practice-area pages for professional firms (within their professional body's advertising rules)"
+   ],
+   "avoid": [
+    "A single campaign offer with paid traffic: use genre:landing_page",
+    "City-by-city pages built for local search: use genre:local_seo_page",
+    "The company story: use genre:about_page",
+    "Product SKUs: use genre:product_description"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: 4,310 gigs; page-type filter includes 'Service page'"
+    },
+    {
+     "url": "https://eloritescontent.com/research/content-writing-services-prices-usa-india/",
+     "title": "Elorites: Content Writing Services Prices 2026, India & USA (updated 2026-06-10)",
+     "supports": "India per-word rate tables by industry with separate rows for web pages"
+    }
+   ],
+   "related": [
+    "genre:landing_page",
+    "genre:local_seo_page",
+    "genre:homepage_copy",
+    "genre:pricing_page",
+    "genre:case_study",
+    "genre:faq_page",
+    "trend:geo_ai_search",
+    "trend:non_commodity_content"
+   ],
+   "buyers": [
+    "Professional service firms (CA, CS, consulting, architecture)",
+    "Clinics and healthcare practices",
+    "Marketing, design and IT service agencies",
+    "Home and local services (interiors, pest control, repairs)",
+    "Web design agencies writing client sites"
+   ],
+   "value": "high",
+   "value_why": "Fiverr's Website Content subcategory (4,310 gigs on 2026-10-04) lists 'Service page' as its own page type, and Indian rate tables price web pages per word (Elorites 2026). Usually sold as a set of pages with the homepage.",
+   "goal": "A right-fit prospect contacts or books (consultation, site visit, quote) and a wrong-fit prospect sees quickly that it is not for them.",
+   "structure": [
+    {
+     "part": "Hero",
+     "does": "Service name in plain words, who it is for and the outcome; a subhead with scope or a proof point; one primary CTA button.",
+     "length": "Headline 6-12 words, subhead 15-30 words"
+    },
+    {
+     "part": "The situation",
+     "does": "The prospect's problem or trigger moment in their own words (from enquiries, calls, reviews).",
+     "length": "40-100 words"
+    },
+    {
+     "part": "What's included (and not)",
+     "does": "Countable deliverables and the boundaries of scope, so the prospect can compare like with like.",
+     "length": "5-10 bullets, plus 2-4 exclusions"
+    },
+    {
+     "part": "How it works",
+     "does": "Numbered steps with time per step and what the client must provide.",
+     "length": "3-6 steps, 15-30 words each"
+    },
+    {
+     "part": "Proof",
+     "does": "A short result with numbers, a named testimonial (name, role, city, with permission), credentials or registrations that matter for this service.",
+     "length": "1-3 items, 30-80 words each"
+    },
+    {
+     "part": "Pricing",
+     "does": "A fixed fee, a from-price, or the 3-4 factors that set the price, plus taxes.",
+     "length": "30-80 words"
+    },
+    {
+     "part": "FAQ and fit",
+     "does": "Real objections (time, cost, risk, 'do I need this?') and who this is not for.",
+     "length": "4-8 questions, 25-60 words per answer"
+    },
+    {
+     "part": "Closing CTA",
+     "does": "The same single action, plus what happens after the click (reply time, who calls, what to keep ready).",
+     "length": "2-3 lines"
+    }
+   ],
+   "length": {
+    "min": 400,
+    "max": 1200,
+    "unit": "words",
+    "note": "Simple local services sit at the low end; B2B and regulated services need more proof and FAQ. Length follows the number of real objections, not an SEO word target."
+   },
+   "frameworks": [
+    "fw:pas",
+    "fw:storybrand_sb7",
+    "fw:fab",
+    "fw:jobs_to_be_done"
+   ],
+   "techniques": [
+    "tech:descriptive_subheads",
+    "tech:features_to_benefits",
+    "tech:specificity",
+    "tech:social_proof",
+    "tech:objection_handling",
+    "tech:faq_block",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:audience_callout",
+    "hook:problem_solution"
+   ],
+   "platforms": [
+    "plat:google_search_result"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:authoritative",
+    "tone:corporate_b2b"
+   ],
+   "compliance": [
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code"
+   ],
+   "checklist": [
+    "Does the headline name the service and who it is for in plain words?",
+    "Does the page list what is included and at least two things that are not?",
+    "Are the process steps numbered with a time or turnaround for each?",
+    "Is there at least one proof point with a specific number or a named client?",
+    "Does the page state a price, a from-price or the factors that set the price?",
+    "Do the FAQs answer objections a real prospect raised, not filler questions?",
+    "Is there one primary CTA, repeated, with what happens after the click?",
+    "Can a skimmer understand the offer from the subheads alone?",
+    "Is it free of fluff phrases ('one-stop solution', 'world-class', 'cutting-edge')?"
+   ],
+   "pitfalls": [
+    "'We offer a wide range of tax solutions tailored to your needs': says nothing. Name the deliverables: 'GSTR-1 and GSTR-3B filing every month, reconciliation with your books, notice replies'.",
+    "All services on one page: neither the prospect nor search engines can tell what you do best. Give each service its own page and link them from a hub.",
+    "No price at all: prospects assume it is expensive and leave. Give a from-price or explain what moves the price.",
+    "Anonymous testimonials ('Great service! - R.K.'): read as invented. Use name, role and city with written permission, and a concrete result.",
+    "City names stuffed into every paragraph: reads as spam. Location targeting belongs on genre:local_seo_page.",
+    "Lawyers, doctors and CAs writing promotional claims their professional body restricts: check the professional body's advertising rules before writing outcome promises or 'best' claims."
+   ],
+   "lint": {
+    "min_words": 250,
+    "max_words": 1500,
+    "max_sentence_words": 30,
+    "require": [
+     {
+      "label": "has a CTA",
+      "regex": "(?i)\\b(book|call|contact|schedule|request|enquire|enquiry|whatsapp|talk to|get a quote|get started|consult)\\b|संपर्क|बुक"
+     }
+    ],
+    "ban": [
+     {
+      "label": "fluff phrase",
+      "regex": "(?i)\\b(one[- ]stop (shop|solution)|world[- ]class|best[- ]in[- ]class|cutting[- ]edge|wide range of solutions)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Services page for a Pune interior design studio's turnkey 2BHK/3BHK interiors service; audience: salaried couples who have just taken possession of a new flat in Hinjewadi, Wakad or Kharadi; English; 600-900 words; include what's included and excluded, a 5-step process with timelines, a from-price, two short client results, 5 FAQs; goal: book a free site visit.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_12.json#genre:services_page",
+    "note": "Hero, situation in the buyer's words (EMI started, notice period running), 10 inclusions + 3 exclusions, 5 timed steps with client inputs, price factors, 5 FAQs incl. who it is not for, one WhatsApp CTA with what happens next. From-price and results placeholders are by design. Flaw: FAQ 'Do we have to be in Pune?' mismatches an audience already living there (should be 'on site').",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:services_proposal",
+   "kind": "genre",
+   "name": "Sales proposal for services",
+   "status": "current",
+   "summary": "A document sent after a discovery call or brief that restates the client's problem in their words, proposes a scope, timeline and price, shows why this team, and asks for a decision. Good looks like a client who can approve it from the first page, scope tight enough to prevent disputes, and a price presented as a choice, not a shock.",
+   "use_for": [
+    "Agency and consultancy proposals after a discovery call",
+    "Freelancer proposals for retainer or project work",
+    "Statements of work that turn an agreed proposal into scope",
+    "Quotation write-ups for B2B services (events, IT, design, training)"
+   ],
+   "avoid": [
+    "Formal tenders and RFPs with a mandated response format: use genre:rfp_response",
+    "First contact with a prospect who has not asked: use genre:cold_email",
+    "Presentation-first pitches: use genre:sales_deck",
+    "Research or grant funding: use genre:grant_proposal"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/proposal-writers/",
+     "title": "Upwork: hire Proposal Writers",
+     "supports": "dedicated hire category (title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business writer projects include business proposals; rate band $25-$50 per hour"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "'Sales Proposals' listed as a priced copywriting project"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/proposal-writer-salary",
+     "title": "AmbitionBox: Proposal Writer salary (updated 2026-09-27)",
+     "supports": "average Proposal Writer salary in India Rs 8.5 lakh per year (413 salaries)"
+    },
+    {
+     "url": "https://www.the-efa.org/rates/",
+     "title": "EFA 2026 Rate Chart (published 2026-03-18)",
+     "supports": "Other Consulting (examples include proposal development): $87.50-135.00 per hour"
+    }
+   ],
+   "related": [
+    "genre:rfp_response",
+    "genre:executive_summary",
+    "genre:case_study",
+    "genre:one_pager",
+    "genre:sales_deck",
+    "genre:offer_stack"
+   ],
+   "buyers": [
+    "Marketing, design and tech agencies",
+    "Consultancies and training firms",
+    "Freelancers and solo consultants",
+    "Event, architecture and interior firms",
+    "B2B sales teams selling services"
+   ],
+   "value": "medium",
+   "value_why": "Upwork has Proposal Writer hire categories and lists business proposals at $25-$50/hr (2026-01-21); AWAI prices Sales Proposals as a project; AmbitionBox puts Indian proposal writers at Rs 8.5 lakh a year average (2026-09-27); the EFA 2026 chart rates proposal development consulting at $87.50-135/hr.",
+   "goal": "The client approves the scope and price (signs, replies 'go ahead', or books the closing call by the date named).",
+   "structure": [
+    {
+     "part": "Cover",
+     "does": "Client name, project name, date, validity date, sender. Nothing else.",
+     "length": "1 page or header block"
+    },
+    {
+     "part": "Executive summary",
+     "does": "Client's goal in their words, the recommended approach in one or two sentences, total price, timeline and the decision needed.",
+     "length": "100-200 words"
+    },
+    {
+     "part": "Our understanding",
+     "does": "The problem, constraints and success measures restated from the brief or call, so the client sees they were heard.",
+     "length": "150-300 words"
+    },
+    {
+     "part": "Scope and approach",
+     "does": "Phases with countable deliverables, what is excluded, and assumptions (revisions, approvals, inputs the client provides).",
+     "length": "300-800 words or a table"
+    },
+    {
+     "part": "Timeline",
+     "does": "Milestones with dates or week numbers and the client dependencies that move them.",
+     "length": "Table of 4-8 rows"
+    },
+    {
+     "part": "Team and proof",
+     "does": "Named people who will do the work, one relevant result with numbers, client logos only with permission.",
+     "length": "150-300 words"
+    },
+    {
+     "part": "Investment",
+     "does": "Single fee or 2-3 options with what each includes; taxes (GST), payment schedule, what changes the price.",
+     "length": "100-250 words"
+    },
+    {
+     "part": "Terms and next step",
+     "does": "Key terms (IP, cancellation, validity) in plain bullets; the exact next action and date ('Reply to approve by 18 October to start on 1 November').",
+     "length": "5-10 bullets + 2 lines"
+    }
+   ],
+   "length": {
+    "min": 600,
+    "max": 3000,
+    "unit": "words",
+    "note": "Small freelance projects fit in 2-3 pages; multi-phase agency retainers run longer. The executive summary must work alone because many approvers read only that."
+   },
+   "frameworks": [
+    "fw:scqa",
+    "fw:problem_promise_proof_proposal",
+    "fw:minto_pyramid",
+    "fw:bluf"
+   ],
+   "techniques": [
+    "tech:voice_of_customer_mining",
+    "tech:specificity",
+    "tech:price_anchoring",
+    "tech:decoy_pricing",
+    "tech:risk_reversal",
+    "tech:objection_handling"
+   ],
+   "tones": [
+    "tone:corporate_b2b",
+    "tone:authoritative",
+    "tone:founder_candid"
+   ],
+   "checklist": [
+    "Does the document restate the client's problem before it talks about the sender?",
+    "Does the executive summary state the price, the timeline and the decision needed?",
+    "Is every deliverable countable (8 posts a month, 2 revision rounds)?",
+    "Are exclusions and assumptions listed?",
+    "Does the timeline show what the client must provide and when?",
+    "Is the price clear, including taxes and payment schedule?",
+    "Are there no more than 3 pricing options?",
+    "Is the proof relevant to this client's industry or problem, with a number?",
+    "Does it end with a specific next step and a date?",
+    "Is the client's name, brand and brief detail correct everywhere (no leftovers from another proposal)?"
+   ],
+   "pitfalls": [
+    "Opening with three pages of 'About us': the client is looking for their problem. Put the understanding and recommendation first; credentials after.",
+    "Vague scope ('social media management'): becomes unlimited work and a dispute. Write counts, rounds and exclusions.",
+    "Price hidden on the last page with no context: anchor it to the outcome and options, and show it in the summary.",
+    "Five packages: decision paralysis. Offer one recommendation, or three options with the middle one recommended.",
+    "Promising outcomes you do not control ('guaranteed 500 leads a month'): promise activities and measures, and state what drives results.",
+    "Copy-pasting an old proposal: one wrong client name ends the deal. Search for the previous client's name before sending."
+   ],
+   "lint": {
+    "min_words": 400,
+    "max_words": 4000,
+    "max_sentence_words": 35,
+    "require": [
+     {
+      "label": "states a price",
+      "regex": "(?i)(\\brs\\.?\\s?\\d|\\binr\\b|₹|\\$\\s?\\d|\\bfee\\b|\\bprice\\b|\\binvestment\\b|शुल्क)"
+     },
+     {
+      "label": "names a next step",
+      "regex": "(?i)next step|to proceed|approve|sign|confirm|kick-?off|book"
+     }
+    ],
+    "ban": [
+     {
+      "label": "proposal filler",
+      "regex": "(?i)\\b(synerg(y|ies)|best[- ]in[- ]class|world[- ]class|one[- ]stop)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Proposal from a Bengaluru content agency to a Hyderabad dental chain (12 clinics) that asked for monthly Instagram and Google Business Profile content; English; 900-1,300 words; restate their brief's problem (low reviews, no posting for 6 months), scope with exclusions, a 3-month timeline, two pricing options with GST noted, one relevant case result, and a next step to approve by a named date.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_12.json#genre:services_proposal",
+    "note": "Exec summary has price, timeline and decision date; countable scope, exclusions, assumptions, dependency timeline; GST maths and all weekdays check out (16 Oct Fri, 2 Nov Mon, 29 Jan 2027 Fri). Fix: exec summary says the system 'asks every happy patient for a review' while the exclusions say asking only happy patients breaks Google's policy (review gating); change to 'every patient'. Case-result placeholder is by design.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:shayari",
+   "kind": "genre",
+   "name": "Shayari (Hindi/Urdu couplets)",
+   "status": "current",
+   "summary": "Verse in the Urdu-Hindi tradition built from the sher (a couplet whose two lines share one metre), used alone as do-line shayari or strung into ghazals and nazms for posts, speeches, greetings and brand campaigns. Good looks like two lines in the same metre where the second line turns or completes the first, fresh images over stock words, and honest attribution of anything quoted.",
+   "use_for": [
+    "Original do-line shayari for brand campaigns (festivals, jewellery, tea, ethnic wear)",
+    "Shers for speeches, anchoring scripts and wedding toasts",
+    "Ghazals for music albums, events or a poet's collection",
+    "Status, Instagram and WhatsApp shayari for creator pages"
+   ],
+   "avoid": [
+    "Free verse or English poetry: use genre:poetry",
+    "Words to a tune with mukhda and antara: use genre:song_lyrics",
+    "A festival greeting that only needs warm prose: use genre:festival_greeting",
+    "Quoting a famous sher in a paid ad without checking rights: brands should commission originals"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ghazal",
+     "title": "Wikipedia: Ghazal (read 2026-10-04)",
+     "supports": "each sher is two lines with identical metre; matla = first sher, both lines carry qafiya and radif; maqta = last sher, often with the poet's pen name (takhallus); radif = refrain at the end of both matla lines and every second line; qafiya = rhyme just before the radif; every line follows the same metre; most ghazals have 7-12 couplets and no fewer than five"
+    },
+    {
+     "url": "https://www.rekhta.org/",
+     "title": "Rekhta",
+     "supports": "largest online archive of Urdu poetry and its forms (ghazal, nazm, sher), useful for checking whether a sher already exists and who wrote it"
+    }
+   ],
+   "related": [
+    "genre:poetry",
+    "genre:song_lyrics",
+    "genre:festival_greeting",
+    "genre:wedding_speech",
+    "genre:political_speech",
+    "genre:whatsapp_forward"
+   ],
+   "buyers": [
+    "Brands running festival and emotional campaigns",
+    "Speech clients: politicians, anchors, wedding families",
+    "Instagram and WhatsApp creator pages",
+    "Music producers and singers (ghazal albums)",
+    "Film and web-series writers needing a character's sher"
+   ],
+   "value": "low",
+   "value_why": "Huge consumer demand on social media and WhatsApp but mostly unpaid or written by fans; paid when written for brands, films, events or speeches (harvest note).",
+   "goal": "The listener reacts ('wah') and repeats or shares the sher; in a brand or speech, the couplet carries the message and is remembered.",
+   "structure": [
+    {
+     "part": "Lead-in (speech or post use)",
+     "does": "One line that sets the occasion or feeling so the sher lands ('Maa ke liye do line...').",
+     "length": "0-1 line"
+    },
+    {
+     "part": "First line (misra-e-ula)",
+     "does": "Sets the image or situation and holds back the turn; establishes the metre.",
+     "length": "1 line"
+    },
+    {
+     "part": "Second line (misra-e-sani)",
+     "does": "Turns, answers or deepens the first in the same metre; the strongest word lands at the end.",
+     "length": "1 line, same metre"
+    },
+    {
+     "part": "Ghazal form (when asked)",
+     "does": "Matla with qafiya and radif in both lines; further shers each complete in themselves, second lines ending on the same qafiya + radif; maqta last, often with the takhallus.",
+     "length": "At least 5 shers, usually 7-12"
+    },
+    {
+     "part": "Attribution or caption",
+     "does": "For a quoted sher, the poet's name. For a brand post, the brand line goes in the caption, outside the sher.",
+     "length": "1 line"
+    }
+   ],
+   "length": {
+    "min": 2,
+    "max": 24,
+    "unit": "lines",
+    "note": "A do-line shayari is 2 lines; a qita 4; a ghazal at least 5 shers (10+ lines) and usually 7-12 shers. Brand and speech briefs almost always want 2-4 lines."
+   },
+   "frameworks": [
+    "fw:abt"
+   ],
+   "techniques": [
+    "tech:antithesis",
+    "tech:punchline_last",
+    "tech:metaphor_analogy",
+    "tech:read_aloud",
+    "tech:sensory_detail",
+    "tech:wordplay_pun"
+   ],
+   "tones": [
+    "tone:romantic",
+    "tone:nostalgic",
+    "tone:inspirational"
+   ],
+   "languages": [
+    "lang:urdu_influenced_hindi",
+    "lang:hindi_devanagari",
+    "lang:hindi_romanisation_schemes"
+   ],
+   "compliance": [
+    "comp:copyright_act_s52_fair_dealing",
+    "comp:bns_defamation_speech"
+   ],
+   "checklist": [
+    "Read aloud, do both lines of each sher fall into the same metre?",
+    "Does the second line turn, answer or sharpen the first rather than repeat it?",
+    "In a ghazal, do both matla lines and every second line end on the same qafiya and radif?",
+    "Is the sher original (searched on Rekhta and the web for its key phrase)?",
+    "Is every quoted sher credited to its poet?",
+    "Is the register consistent (no stray English word or mixed tu/tum/aap unless deliberate)?",
+    "Are nuqta and spellings correct in Devanagari (ज़िंदगी, ख़्वाब) when the brief uses Devanagari?",
+    "Is the brand name kept out of the sher itself unless the brief asks for it?",
+    "Is it free of insult to any religion or community?"
+   ],
+   "pitfalls": [
+    "Viral 'Gulzar' or 'Ghalib' shayari that the poet never wrote: misattribution embarrasses the brand or speaker. Check Rekhta before crediting anyone.",
+    "Passing off a known poet's sher as original: plagiarism, and possibly copyright infringement for a living or recently deceased poet. Commission or write originals for paid use.",
+    "Rhyme without metre (two lines that rhyme but trip when read aloud): count and read aloud; trim or swap words until the stress pattern matches.",
+    "Stock vocabulary (dil, dard, aansoo, mehfil) with no image: listeners have heard it a thousand times. Anchor the sher in a concrete thing: a chai glass, a train window, a mother's thimble.",
+    "Forcing the brand name into the misra: breaks the metre and the mood. Let the sher carry the feeling and the caption carry the brand.",
+    "Romanised shayari with inconsistent spelling: pick one informal scheme and keep it.",
+    "Metre: a long syllable (e.g. ईद, दर्द, देख, सुकून) counts as two beats mid-line in Urdu prosody; scan each line by hand against the chosen bahr, do not trust a syllable counter."
+   ],
+   "lint": {
+    "min_words": 8,
+    "max_words": 300,
+    "max_sentence_words": 20,
+    "max_hashtags": 5
+   },
+   "exemplar_brief": "Four original do-line shers in Urdu-influenced Hindi (Devanagari, with Roman transliteration below each) for a Lucknow chikankari brand's Eid campaign on Instagram; audience: women 25-45 in Lucknow, Delhi and Hyderabad; theme: the hands that stitch; each sher in one consistent metre; brand name kept out of the shers and placed in a one-line caption after each.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/retest_4.json#genre:shayari",
+    "note": "ROUND 2: P2 S2 Sp2 V2 C2. Mutaqarib (122 x 4) holds in all eight misras on a hand scan, with no overlong syllables to argue over, so round 1's metre fault is gone. The images are concrete and on theme: the gharara everyone sees and the labour no one does; a needle in the palm where henna should be on chaand raat; the festivity resting on her needle; a prayer for the woman awake till sahar. Nuqta correct, transliteration consistent, brand only in the captions. Nits (writer): 'चितेरी' means a painter, not a chikan embroiderer ('कारीगर' would be exact); 'सुई उस हथेली' drops its postposition. | round 1: weak 6",
+    "judge": "vj_retest_134",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:short_film_script",
+   "kind": "genre",
+   "name": "Short-film script",
+   "status": "current",
+   "summary": "A complete short film in screenplay format, built around one character, one situation and one change, producible on a small budget. Good looks like a story that starts late, uses few locations and speaking parts, turns on a single choice or reveal, and ends on an image that shows the change without a speech.",
+   "use_for": [
+    "Festival shorts and film-school projects",
+    "Branded short films for festivals and causes (Diwali, Women's Day, Raksha Bandhan)",
+    "YouTube short-film channels and creator collectives",
+    "AI-generated short films that still need a real script before prompts",
+    "NGO and awareness films"
+   ],
+   "avoid": [
+    "Feature-length stories: use genre:screenplay_feature",
+    "Vertical episodic series: use genre:micro_drama_episode_script",
+    "Ads under a minute with a product message: use genre:video_ad_script or genre:tvc_script",
+    "Pitching the idea before writing: use genre:synopsis or genre:film_treatment"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Academy_Award_for_Best_Live_Action_Short_Film",
+     "title": "Wikipedia: Academy Award for Best Live Action Short Film (read 2026-10-04)",
+     "supports": "the Academy defines a short film as 'not more than 40 minutes, including all credits'"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Screenplay",
+     "title": "Wikipedia: Screenplay (read 2026-10-04)",
+     "supports": "one page equals roughly one minute of screen time; standard 12 pt Courier"
+    },
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Story, Script, Screenplay and Dialogue for members"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing",
+     "title": "Fiverr Writing & Translation: Scriptwriting",
+     "supports": "scriptwriting category exists on the Writing & Translation menu"
+    }
+   ],
+   "related": [
+    "genre:screenplay_feature",
+    "genre:film_treatment",
+    "genre:micro_drama_episode_script",
+    "genre:ai_video_prompt_script",
+    "genre:brand_story",
+    "trend:ai_video_scripting_demand"
+   ],
+   "buyers": [
+    "Independent filmmakers and film students",
+    "Brands commissioning festive or cause films",
+    "YouTube short-film channels",
+    "NGOs and awareness campaigns",
+    "AI-film creators and studios"
+   ],
+   "value": "low",
+   "value_why": "Mostly self-funded or festival work; paid when brands commission short films (harvest). Script writing in general bills $30-$56/hr on Upwork (2026-01-21), but short-film fees are small unless a brand is paying.",
+   "goal": "The viewer feels one complete change in one sitting; in a branded short, the brand truth lands without the film feeling like an ad.",
+   "structure": [
+    {
+     "part": "Opening image",
+     "does": "Drops us into the character doing something specific in their world; sets tone in the first half page.",
+     "length": "Under 1 page"
+    },
+    {
+     "part": "Setup",
+     "does": "One protagonist, one want, ideally one main location; the normal that is about to break.",
+     "length": "About the first fifth"
+    },
+    {
+     "part": "Inciting turn",
+     "does": "The event that forces a choice; arrives early because there is no time to wander.",
+     "length": "A short scene"
+    },
+    {
+     "part": "Escalation",
+     "does": "One to three beats, each raising the cost of the choice.",
+     "length": "The middle half"
+    },
+    {
+     "part": "Climax or reveal",
+     "does": "The choice is made or the truth is revealed, by the character's action.",
+     "length": "1-2 pages"
+    },
+    {
+     "part": "Final image",
+     "does": "Shows the change without explaining it; in brand films the product sits inside the story and the name comes on the end card.",
+     "length": "Under half a page"
+    }
+   ],
+   "length": {
+    "min": 3,
+    "max": 40,
+    "unit": "count",
+    "note": "Pages, at about one page per screen minute. The Academy caps a short at 40 minutes including credits; festivals and online slots set their own lower caps, so write to the runtime in the brief and check each festival's rules."
+   },
+   "frameworks": [
+    "fw:three_act_structure",
+    "fw:pixar_story_spine",
+    "fw:kishotenketsu",
+    "fw:dan_harmon_story_circle"
+   ],
+   "techniques": [
+    "tech:show_dont_tell",
+    "tech:character_with_a_want",
+    "tech:twist_reveal",
+    "tech:foreshadowing",
+    "tech:dialogue",
+    "tech:conflict_and_stakes"
+   ],
+   "languages": [
+    "lang:hinglish_roman",
+    "lang:hindi_devanagari"
+   ],
+   "compliance": [
+    "comp:asci_code",
+    "comp:copyright_act_s52_fair_dealing"
+   ],
+   "checklist": [
+    "Is there one protagonist with one clear want?",
+    "Does the inciting event happen within the first couple of pages?",
+    "Is it producible: few locations, few speaking parts, no crowds or stunts unless the brief allows?",
+    "Does each scene turn something?",
+    "Does the ending show the change through an image or action rather than a speech?",
+    "Is the page count close to the runtime in the brief?",
+    "Is it in standard screenplay format with INT./EXT. scene headings?",
+    "For a brand short: does the product sit inside the story, with the brand name kept for the end card?"
+   ],
+   "pitfalls": [
+    "A feature idea squeezed into 10 minutes: rushed and shallow. Pick one incident from that story and tell only that.",
+    "A twist that cheats (hidden information the audience could not have known): plant it early so the reveal re-reads the film.",
+    "Night exteriors, rain, crowds and five locations in a self-funded short: the film never gets made. Write for what the director can actually shoot.",
+    "Characters explaining the theme in the last scene ('Maa, aaj samjha...'): cut the speech and end on the action that proves it.",
+    "Brand film that stops for a product demo: viewers feel the ad and leave. Let the product solve a story problem once, naturally.",
+    "Using a film song or famous score in the script as written-in music: rights cost money. Describe the feel; leave music to the producer."
+   ],
+   "lint": {
+    "min_words": 300,
+    "max_words": 9000,
+    "max_sentence_words": 40,
+    "require": [
+     {
+      "label": "has scene headings (INT./EXT.)",
+      "regex": "(?im)^\\s*(int|ext)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Complete 5-6 page short-film script (5-6 minutes) for a Diwali branded short by a Kanpur sweets brand: an elderly widower and the delivery boy who brings his late wife's favourite order every year; one flat plus a stairwell; two speaking characters; scene directions in English, dialogue in Roman-script Hindi; the sweets box appears in the story, the brand name only on the end card.",
+   "verified": {
+    "verdict": "pass",
+    "score": 10,
+    "sample": "gallery/genre_12.json#genre:short_film_script",
+    "note": "One flat + stairwell, two speaking parts, brand only on the end card, box inside the story. Plants pay off (tablets under the napkin, 'kam cheeni', the 11-minute delay matching the clock), inciting question at the door, choice by action (laddoo off Savitri's plate, the third plate), ending is an image with no speech. Natural Roman Hindi; the tum-to-tu shift at the laddoo reads as deliberate warmth.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:short_form_video_script",
+   "kind": "genre",
+   "name": "Short-form video script (Reels / Shorts / TikTok)",
+   "status": "current",
+   "summary": "A vertical video script, usually 15-90 seconds, laid out beat by beat with spoken lines, on-screen text and visuals: a hook in the first seconds, one tight idea, a payoff the hook promised, and a single CTA or a loop back to the start. Good looks like a script that sounds spoken, where every beat has a visual change and nothing is there to fill time.",
+   "use_for": [
+    "Creator Reels and YouTube Shorts (education, finance, fitness, food, tech)",
+    "Brand organic short videos and founder-to-camera clips",
+    "Hindi and Hinglish voice-over scripts for faceless or AI-voiced reels",
+    "Series formats (myth vs fact, 3 mistakes, day-in-the-life) planned as batches"
+   ],
+   "avoid": [
+    "Paid ads made by creators: use genre:ugc_ad_script",
+    "Longer to-camera YouTube videos: use genre:talking_head_script or genre:youtube_video_script",
+    "Fully AI-generated visual videos: pair with genre:ai_video_prompt_script",
+    "Scripted episodic drama: use genre:micro_drama_episode_script"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/15424877?hl=en",
+     "title": "YouTube Help: Shorts up to three minutes (read 2026-10-04)",
+     "supports": "'You can now create YouTube Shorts up to three minutes in length'; square or vertical videos up to three minutes are categorised as Shorts, 16:9 is not"
+    },
+    {
+     "url": "https://yourstory.com/2026/01/indias-internet-user-base-crosses-950-million-2025-iamai-report",
+     "title": "YourStory on IAMAI-Kantar (2026-01-29)",
+     "supports": "in 2025, 588 million (61%) Indian internet users consumed short-video content, rural users marginally outnumbering urban"
+    },
+    {
+     "url": "https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/",
+     "title": "Social Media Today: Instagram limits hashtag use (2025-12-18)",
+     "supports": "Instagram: 'Using fewer (up to 5) more targeted hashtags ... can improve both your content's performance'"
+    },
+    {
+     "url": "https://www.socialmediatoday.com/news/instagram-updates-algorithm-to-benefit-original-creators/819016/",
+     "title": "Social Media Today: Instagram updates algorithm to benefit original creators (2026-04-30)",
+     "supports": "Instagram stops recommending content from aggregator accounts whose posts are mostly re-posts"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writer $30-$56 per hour on Upwork"
+    },
+    {
+     "url": "https://fueler.io/blog/freelance-scriptwriter-rates-short-vs-long-form",
+     "title": "Fueler: Freelance Scriptwriter Rates 2026: Short vs Long Form",
+     "supports": "third-party guide pricing short-form scripts as their own tier (low confidence)"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/script-writing",
+     "title": "Fiverr: Scriptwriting category",
+     "supports": "Hindi among the top seller languages on the facet (867 gigs on 2026-10-04)"
+    }
+   ],
+   "related": [
+    "genre:talking_head_script",
+    "genre:faceless_video_script",
+    "genre:ugc_ad_script",
+    "genre:instagram_caption",
+    "genre:explainer_video_script",
+    "trend:short_video_india",
+    "trend:hashtags_to_keywords",
+    "trend:original_content_ranking"
+   ],
+   "buyers": [
+    "Creators and personal brands (finance, fitness, education, tech)",
+    "D2C and consumer brands",
+    "Social media agencies selling monthly reel packages",
+    "Coaches, clinics and local businesses",
+    "Civic, news and political pages"
+   ],
+   "value": "high",
+   "value_why": "Upwork's script writer band ($30-$56/hr, 2026-01-21) covers social video; AmbitionBox puts Indian script writers at Rs 5 lakh a year at entry (2026-10-03); Fiverr's scriptwriting facet shows Hindi as a top seller language (867 gigs). IAMAI-Kantar counts 588 million Indian short-video viewers in 2025, so consumer brands default to this brief.",
+   "goal": "The viewer watches to the end (or rewatches the loop) and then saves, shares, follows or does the one action named.",
+   "structure": [
+    {
+     "part": "Hook",
+     "does": "Spoken line, first-frame on-screen text and the opening visual all point at the same tension or payoff. No greeting, no channel intro.",
+     "length": "0-3 seconds; spoken line 12 words or fewer"
+    },
+    {
+     "part": "Setup",
+     "does": "Why this matters to this viewer, or the situation the tip, story or joke sits in.",
+     "length": "3-10 seconds, 1-2 lines"
+    },
+    {
+     "part": "Body beats",
+     "does": "One idea delivered in 2-5 beats; each beat has its own visual change (cut, prop, text card, angle); a re-hook line midway in videos over 30 seconds.",
+     "length": "10-50 seconds"
+    },
+    {
+     "part": "Payoff",
+     "does": "Delivers exactly what the hook promised: the answer, the reveal, the punchline, the result.",
+     "length": "5-10 seconds"
+    },
+    {
+     "part": "CTA or loop",
+     "does": "One action (save, follow for part 2, comment a real answer), or a last line that runs back into the first line for a rewatch.",
+     "length": "2-3 seconds"
+    },
+    {
+     "part": "Production column and caption",
+     "does": "Per beat: on-screen text (keywords, not the full VO), visual or B-roll note, SFX or music cue. Then a caption with search keywords and at most 5 hashtags.",
+     "length": "1 line per beat + caption"
+    }
+   ],
+   "length": {
+    "min": 40,
+    "max": 220,
+    "unit": "words",
+    "note": "Spoken words for 15-90 seconds; time it by reading aloud at the creator's real pace, since Hindi and Hinglish VO pace varies by speaker. YouTube allows Shorts up to three minutes, but most briefs ask for 30-60 seconds."
+   },
+   "frameworks": [
+    "fw:hook_retain_reward",
+    "fw:shorts_loop",
+    "fw:pas",
+    "fw:prep"
+   ],
+   "techniques": [
+    "tech:onscreen_text_vs_vo",
+    "tech:pattern_interrupt",
+    "tech:retention_rehook",
+    "tech:loopable_ending",
+    "tech:write_for_voiceover",
+    "tech:open_loop",
+    "tech:captions_subtitles"
+   ],
+   "hooks": [
+    "hook:mistake_warning",
+    "hook:hinglish_galti_mat_karna",
+    "hook:hinglish_question",
+    "hook:pov",
+    "hook:myth_busting",
+    "hook:nobody_tells_you"
+   ],
+   "platforms": [
+    "plat:instagram_caption",
+    "plat:instagram_hashtags",
+    "plat:youtube_title",
+    "plat:youtube_description"
+   ],
+   "tones": [
+    "tone:desi_casual_hinglish",
+    "tone:conversational",
+    "tone:enthusiastic_hype",
+    "tone:tough_love_coach"
+   ],
+   "languages": [
+    "lang:hinglish_roman",
+    "lang:hindi_voiceover_tts",
+    "lang:hindi_subtitles"
+   ],
+   "compliance": [
+    "comp:asci_influencer",
+    "comp:meta_ai_labels",
+    "comp:youtube_altered_synthetic",
+    "comp:it_rules_sgi_2026"
+   ],
+   "checklist": [
+    "Is the first spoken line 12 words or fewer and does it name a tension or payoff?",
+    "Is there on-screen text planned for the first frame?",
+    "Does the script carry one idea only?",
+    "Does every beat have a visual change noted?",
+    "Does the payoff deliver exactly what the hook promised?",
+    "Is there one CTA (or a deliberate loop), not three?",
+    "Read aloud with a timer, does it fit the target duration?",
+    "Does the VO sound like speech in the target language (natural Hinglish, not translated English)?",
+    "Does the caption carry search keywords and no more than 5 hashtags?",
+    "Are facts, numbers and claims checkable, with the source noted for the editor?"
+   ],
+   "pitfalls": [
+    "'Hey guys, welcome back, aaj ki video mein...': the viewer is gone before the point. Open on the tension: 'GST notice aaya? Pehle ye mat karna.'",
+    "A hook that promises more than the video delivers ('ye trick aapko crorepati bana degi'): viewers drop and the account learns to distrust. Promise only what the payoff shows.",
+    "Five tips in 30 seconds: none land. One idea, or three at most with a visual per tip.",
+    "On-screen text that repeats the VO word for word: viewers read ahead and swipe. Put the keyword or number on screen, say the rest.",
+    "Reposting someone else's clip with a caption: Instagram stops recommending aggregator content. Add your own footage, voice or commentary.",
+    "Trending film audio on a brand account: rights trouble. Use the platform's commercial-use library or original audio.",
+    "AI-generated realistic faces or voices with no label: label synthetic media as the platform and IT Rules 2026 require.",
+    "Linting the whole script file against a cap meant for the spoken VO: the production table, caption and editor's source notes are required parts and inflate the count. Lint the VO column from its own file (spoken lines only); the whole-file caps (700 words, 30 words per sentence or table cell) are only a safety net, so keep each visual-direction cell to 30 words or fewer."
+   ],
+   "lint": {
+    "min_words": 30,
+    "max_words": 700,
+    "max_sentence_words": 30,
+    "max_hashtags": 5,
+    "ban": [
+     {
+      "label": "slow intro",
+      "regex": "(?i)\\b(hey guys|hello friends|welcome back to (my|the) channel|in this video,? (i|we) will)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "45-second Instagram Reel script for a Jaipur CA's personal-finance page: '3 GST mistakes that get first-time Shopify sellers a notice'; audience: new D2C sellers in India; Hinglish (Roman script) VO with short English on-screen text; table with VO, on-screen text and visual per beat; hook within the first 3 seconds; CTA: save it for filing day; caption with keywords and at most 5 hashtags.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_12.json#genre:short_form_video_script",
+    "note": "Hook 10 words with matching first-frame text, one idea, 3 beats each with a visual change, re-hook in beat 2, payoff restates the 3 checks, single save CTA, 5 hashtags, disclaimer. GST facts correct (GSTR-1 vs 3B match, ITC capped at 2B, inter-State = IGST). Setup line slightly filler. Both lint fails are card faults: the VO column alone is 110 words and passes. CARD FIX: lint -> apply max_words (260) to the spoken VO only, or raise whole-file max_words to ~700 and max_sentence_words to 30, because the production table, caption and editor's sources are required parts and visual-direction cells run 20+ words. | CARD FIXED 2026-10-07 (fix_genre_d): lint.max_words 260 -> 700 and max_sentence_words 20 -> 30 (cap meant for spoken VO), added pitfall to lint the VO column from its own file; re-judge pending.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:short_story",
+   "kind": "genre",
+   "name": "Short story",
+   "status": "current",
+   "summary": "Self-contained fiction built around one change in one character, told mostly in scenes, for magazines, anthologies, contests, audio apps or brand storytelling. Good looks like an opening in a specific moment, rising pressure, a choice the character makes, and a last image that shows what changed without stating the moral.",
+   "use_for": [
+    "Literary magazine and anthology submissions (Hindi kahani, Indian English fiction)",
+    "Story contests and themed issues",
+    "Audio story apps that need narratable stories",
+    "Brand storytelling commissions and children's or school publications",
+    "Ghostwritten stories for collections"
+   ],
+   "avoid": [
+    "Under the market's flash limit: use genre:flash_fiction",
+    "Stories released in parts with cliffhangers: use genre:serialized_fiction",
+    "True first-person experience: use genre:personal_essay",
+    "Mythological retellings for narration: use genre:katha_narration"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/creative-writing",
+     "title": "Fiverr Writing & Translation: Creative Writing",
+     "supports": "creative writing (including short stories) is a Fiverr category"
+    }
+   ],
+   "related": [
+    "genre:flash_fiction",
+    "genre:serialized_fiction",
+    "genre:personal_essay",
+    "genre:novel_chapter",
+    "genre:audio_series_script",
+    "genre:childrens_picture_book"
+   ],
+   "buyers": [
+    "Literary magazines and anthologies (the writer submits)",
+    "Story contests",
+    "Audio story apps and podcasts",
+    "Brands commissioning story-led content",
+    "Ghostwriting clients and publishers of collections"
+   ],
+   "value": "low",
+   "value_why": "Fiverr's Creative Writing category covers it; paid markets exist but rates are low and competitive (harvest). Most money comes from contests, anthologies and brand commissions, not per-word magazine fees.",
+   "goal": "The reader finishes, feels the character's change by the last line, and remembers the story.",
+   "structure": [
+    {
+     "part": "Opening scene",
+     "does": "A specific person in a specific moment with a want or tension already present; place made concrete with one or two sensory details.",
+     "length": "First 100-250 words"
+    },
+    {
+     "part": "Complications",
+     "does": "Two or three escalating obstacles, each caused by the last, played as scenes with dialogue.",
+     "length": "About half the story"
+    },
+    {
+     "part": "Crisis",
+     "does": "The point where the character must choose and cannot go back.",
+     "length": "1 scene"
+    },
+    {
+     "part": "Climax",
+     "does": "The choice or revelation, through action.",
+     "length": "1 scene"
+    },
+    {
+     "part": "Final image",
+     "does": "Shows the change through a gesture, object or line of dialogue; no moral spelled out.",
+     "length": "A paragraph or less"
+    }
+   ],
+   "length": {
+    "min": 1000,
+    "max": 8000,
+    "unit": "words",
+    "note": "Each market sets its own bands (flash, short story, novelette) in its guidelines; read them before writing. Contest and magazine briefs usually name a ceiling."
+   },
+   "frameworks": [
+    "fw:freytags_pyramid",
+    "fw:pixar_story_spine",
+    "fw:kishotenketsu",
+    "fw:three_act_structure"
+   ],
+   "techniques": [
+    "tech:show_dont_tell",
+    "tech:sensory_detail",
+    "tech:character_with_a_want",
+    "tech:in_medias_res",
+    "tech:dialogue",
+    "tech:foreshadowing"
+   ],
+   "hooks": [
+    "hook:in_medias_res_opener"
+   ],
+   "tones": [
+    "tone:storyteller_narrative",
+    "tone:nostalgic"
+   ],
+   "languages": [
+    "lang:hindi_devanagari",
+    "lang:indian_english",
+    "lang:hindustani_everyday",
+    "lang:bhojpuri_awadhi_flavour"
+   ],
+   "checklist": [
+    "Is there one central character whose change is clear by the end?",
+    "Does it open inside a scene rather than with background or weather?",
+    "Is the point of view consistent throughout?",
+    "Is the place specific (a named town, street, trade, food) rather than 'a city'?",
+    "Does each scene raise the pressure on the character?",
+    "Does dialogue sound like this character's region, age and class?",
+    "Does the ending show the change through action or image, without a stated moral?",
+    "Is it within the market's word limit?"
+   ],
+   "pitfalls": [
+    "Summary instead of scenes ('Over the years Ramesh grew bitter'): the reader is told, not moved. Dramatise one moment that proves the bitterness.",
+    "Ending on a lesson ('Us din use samajh aaya ki...'): a habit borrowed from school-textbook kahani. End on the action and trust the reader.",
+    "Too many characters for the length: readers lose track. Keep two or three that matter.",
+    "Twist endings that undo the story (it was a dream, he was dead all along) without planting: plant clues early or drop the twist.",
+    "Generic setting and names: specificity is what makes Indian fiction travel. Name the mohalla, the trade, the dish.",
+    "Ignoring submission guidelines (word limit, simultaneous submissions, format): many markets reject unread."
+   ],
+   "lint": {
+    "min_words": 800,
+    "max_words": 9000,
+    "max_avg_sentence_words": 22
+   },
+   "exemplar_brief": "Short story (2,000-2,500 words) in Hindi (Devanagari) for a literary magazine's monsoon issue: a Bhagalpur silk weaver's teenage son must choose between the family loom and a Surat factory job; contemporary social realism; third person, one point of view; ending shows the choice through an action, not a speech.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_12.json#genre:short_story",
+    "note": "Opens in scene (bailing the loom pit), one POV, three escalating pressures (the knot penalty, the Rs 450 Surat copy sold in seconds, Rahmat chacha's loom sold for scrap), crisis at the night loom, choice shown by folding the Surat ticket under the loom leg; no moral. Natural Hindustani. Writer fault: 1,864 words is short of the brief's 2,000 floor (needs one more scene); slight POV leak ('दोनों जानते थे').",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:sketch_comedy",
+   "kind": "genre",
+   "name": "Sketch comedy script",
+   "status": "current",
+   "summary": "A short comic scene built on one game (the single funny pattern), established against a normal base reality, heightened in bigger steps, and ended on a button. Good looks like a premise you can say in one sentence, every beat bigger than the last, and an ending that lands a laugh instead of fading out.",
+   "use_for": [
+    "Comedy channel sketches for YouTube and Instagram",
+    "Brand and topical sketches (moment marketing)",
+    "Office, college and corporate event sketches",
+    "Satire sketches for political or civic pages (punching at acts and policies)",
+    "Sketch segments inside shows and live events"
+   ],
+   "avoid": [
+    "Solo performer material: use genre:standup_comedy_set",
+    "Written parody articles: use genre:satire_parody",
+    "Multi-episode comedy series: use genre:web_series_episode",
+    "A one-line joke on a meme template: use genre:meme_caption"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.ambitionbox.com/profile/script-writer-salary",
+     "title": "AmbitionBox: Script Writer salary (updated 2026-10-03)",
+     "supports": "average Indian Script Writer salary Rs 5 lakh per year at 1 year of experience; context for comedy writing as script work"
+    }
+   ],
+   "related": [
+    "genre:standup_comedy_set",
+    "genre:satire_parody",
+    "genre:short_form_video_script",
+    "genre:topical_ad",
+    "genre:web_series_episode",
+    "trend:short_video_india"
+   ],
+   "buyers": [
+    "Comedy channels and creator collectives",
+    "Brands doing topical and moment marketing",
+    "OTT and TV comedy shows",
+    "Corporate and college event organisers",
+    "Satire pages"
+   ],
+   "value": "low",
+   "value_why": "Commissioned by comedy channels and brands; a small market (harvest). Comedy writers are usually paid as script writers (AmbitionBox Rs 5 lakh a year entry average) or per sketch.",
+   "goal": "The audience laughs harder as the sketch goes on, and shares or quotes the premise.",
+   "structure": [
+    {
+     "part": "Base reality",
+     "does": "Where we are, who these people are, what normal looks like, fast, so the unusual thing reads as unusual.",
+     "length": "First 10-15 seconds, 2-4 lines"
+    },
+    {
+     "part": "First unusual thing",
+     "does": "Reveals the game: the one funny pattern (an HR manager who runs appraisals like a game show).",
+     "length": "1 beat"
+    },
+    {
+     "part": "Straight man's reaction",
+     "does": "A character reacts like a normal person would, which confirms the game for the audience.",
+     "length": "1-2 lines"
+    },
+    {
+     "part": "Heightening",
+     "does": "Plays the same game again at higher stakes each time; each beat bigger, stranger or more personal, not a repeat.",
+     "length": "3 beats or more"
+    },
+    {
+     "part": "Peak",
+     "does": "The most extreme version, or a reversal where the game turns on the person running it.",
+     "length": "1 beat"
+    },
+    {
+     "part": "Button",
+     "does": "A final line or action that ends on a laugh: a callback, a twist, a last escalation.",
+     "length": "1 line"
+    }
+   ],
+   "length": {
+    "min": 45,
+    "max": 300,
+    "unit": "seconds",
+    "note": "Online sketches run short (under 2 minutes for Reels and Shorts); TV, stage and YouTube sketches run longer. A script page is roughly a minute of screen time."
+   },
+   "frameworks": [
+    "fw:three_act_structure",
+    "fw:abt"
+   ],
+   "techniques": [
+    "tech:callback",
+    "tech:punchline_last",
+    "tech:rule_of_three",
+    "tech:dialogue",
+    "tech:pattern_interrupt",
+    "tech:wordplay_pun"
+   ],
+   "hooks": [
+    "hook:pov",
+    "hook:pattern_interrupt"
+   ],
+   "tones": [
+    "tone:playful_witty",
+    "tone:satirical_vyangya",
+    "tone:deadpan",
+    "tone:desi_casual_hinglish"
+   ],
+   "languages": [
+    "lang:hinglish_roman"
+   ],
+   "compliance": [
+    "comp:bns_defamation_speech",
+    "comp:copyright_act_s52_fair_dealing"
+   ],
+   "checklist": [
+    "Can the game be stated in one sentence?",
+    "Is base reality set before the first unusual thing?",
+    "Is each beat a bigger version of the game, not the same joke again?",
+    "Is there at least one character reacting straight?",
+    "Do the punchlines sit at the end of lines?",
+    "Does it end on a button rather than a fade-out?",
+    "Is it shootable with the cast and location in the brief?",
+    "Does the satire target acts, policies or institutions, not a community or religion?"
+   ],
+   "pitfalls": [
+    "A funny situation with random jokes and no game: laughs flatten after the first minute. Find the one pattern and play only that.",
+    "Repeating the beat at the same level: the second time is less funny than the first. Raise the stakes or the absurdity each time.",
+    "No ending ('...and they all laugh'): write a button, often a callback to the first beat.",
+    "Long setup before the first laugh: online viewers swipe. Get to the unusual thing within the first lines.",
+    "Parodying a real person with invented facts or private-life allegations: defamation risk under BNS s.356. Exaggerate their public acts and words instead.",
+    "Jokes that target a caste, religion or community: legal risk under BNS ss.196 and 299 and a brand-safety failure. Punch at power and systems."
+   ],
+   "lint": {
+    "min_words": 80,
+    "max_words": 1200,
+    "max_sentence_words": 30
+   },
+   "exemplar_brief": "90-second sketch for a Hinglish comedy channel on Instagram and YouTube: an IT company in Gurugram where HR runs annual appraisal meetings like a TV quiz show with lifelines; three characters, one meeting room; Hinglish dialogue in Roman script in script format with character names and brief action lines; heighten the game at least three times and end on a button.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_12.json#genre:sketch_comedy",
+    "note": "Game stated in one line, base reality fast, three lifeline heightenings (fifty-fifty, phone-a-manager six feet away, empty-chair audience poll), reversal (Kunal's own lifeline: an offer letter), callback button 'Kaun Kunal?'. Shootable with 3 actors, 1 room. Hindi slips: 'lifeline' is feminine, so 'Doosri/Teesri lifeline' and 'lifeline ... hoti hain'; 'kitno' should be 'kitnon'.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:sms_marketing",
+   "kind": "genre",
+   "name": "SMS marketing copy",
+   "status": "current",
+   "summary": "A short promotional or reminder text with the brand name, one offer or update, one action and the opt-out, written to fit one segment and to pass India's DLT template scrubbing. Good looks like 160 plain characters or fewer that a customer can act on at a glance, with nothing that reads like a fraud message.",
+   "use_for": [
+    "Sale, launch and restock alerts to opted-in customers",
+    "Appointment, renewal and event reminders (service messages)",
+    "Abandoned-cart and win-back nudges inside SMS flows",
+    "Writing and registering DLT content templates with their variable parts"
+   ],
+   "avoid": [
+    "Rich media, buttons or a two-way chat flow: use genre:whatsapp_broadcast (and plat:rcs_business_messaging where available)",
+    "OTPs and order updates with no promotion: write them as transactional templates (see genre:transactional_email for tone)",
+    "App users who have notifications on: genre:push_notification is cheaper",
+    "Anyone who has not opted in: do not send"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://trai.gov.in/sites/default/files/2025-02/Regulation_12022025.pdf",
+     "title": "TRAI Telecom Commercial Communications Customer Preference (Amendment) Regulations, 12 Feb 2025",
+     "supports": "header suffixes -P, -S, -T, -G mark Promotional, Service, Transactional, Government; at least 30% of a content template must be fixed content; variables pre-tagged, 30 characters each, more than three only on justified request; URLs and call-back numbers must be whitelisted; a promotional message must carry an opt-out mechanism; promotional content inside a service/transactional message makes it promotional"
+    },
+    {
+     "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
+     "title": "Twilio: What is the SMS character limit?",
+     "supports": "160 GSM-7 characters per single SMS (153 per segment when split); any UCS-2 character (emoji, Devanagari, curly quote) cuts it to 70 (67 per segment)"
+    },
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "welcome, abandoned cart, post-purchase and winback flows first; separate email and SMS welcome flows"
+    },
+    {
+     "url": "https://www.upwork.com/freelance-jobs/sms/",
+     "title": "Upwork: SMS freelance jobs",
+     "supports": "job listing page for SMS work (snippet-only, 2026-10-04)"
+    }
+   ],
+   "related": [
+    "genre:whatsapp_broadcast",
+    "genre:push_notification",
+    "genre:abandoned_cart_email",
+    "genre:promotional_email",
+    "genre:winback_email",
+    "trend:whatsapp_conversational_commerce"
+   ],
+   "buyers": [
+    "D2C and retail brands",
+    "Clinics, diagnostic labs and salons",
+    "Ed-tech and coaching institutes",
+    "Real estate developers",
+    "CRM and retention agencies running SMS flows"
+   ],
+   "value": "medium",
+   "value_why": "Klaviyo treats SMS as its own flow channel (2026-03-30) and Upwork lists SMS freelance jobs; the copy is short, so it is usually sold inside CRM retainers or flow builds rather than per message.",
+   "goal": "The recipient taps the link, replies or shows up, and does not opt out.",
+   "structure": [
+    {
+     "part": "Brand name",
+     "does": "The brand as the first words of the body, even though the DLT header already identifies the sender, because many phones show only the first line.",
+     "length": "2-4 words"
+    },
+    {
+     "part": "Offer or update",
+     "does": "One concrete thing: amount, item, appointment, date. Numbers as numerals.",
+     "length": "1 short sentence"
+    },
+    {
+     "part": "Reason to act now",
+     "does": "A real deadline or limit with a date or time, or the appointment slot.",
+     "length": "3-8 words"
+    },
+    {
+     "part": "Action",
+     "does": "One whitelisted link (brand domain or registered short link), a reply keyword, or a number to call.",
+     "length": "1 link or 1 instruction"
+    },
+    {
+     "part": "Opt-out",
+     "does": "The opt-out instruction required in promotional messages (India TRAI 2025). India: use a route that works from a one-way alphanumeric DLT header, either an opt-out link on a whitelisted domain or the number or keyword registered on DLT for opt-out requests; do not tell people to reply to the header. 'Reply STOP' is for US and UK long codes only.",
+     "length": "A few words"
+    },
+    {
+     "part": "Template marking (India)",
+     "does": "Mark which parts are variable (name, amount, date, link) so the template can be registered; keep at least 30% fixed text.",
+     "length": "Working note"
+    }
+   ],
+   "length": {
+    "min": 60,
+    "max": 160,
+    "unit": "chars",
+    "note": "One segment is 160 GSM-7 characters; a single emoji, curly apostrophe or any Devanagari character switches the message to UCS-2 and 70 characters per message (67 per segment), so Hindi in Devanagari costs about double. Go to two segments only when the brief accepts the cost."
+   },
+   "frameworks": [
+    "fw:four_us",
+    "fw:bluf"
+   ],
+   "techniques": [
+    "tech:word_budget",
+    "tech:front_loading",
+    "tech:specificity",
+    "tech:ethical_urgency",
+    "tech:cta_writing",
+    "tech:personalization_tokens"
+   ],
+   "hooks": [
+    "hook:offer_price",
+    "hook:urgency_deadline",
+    "hook:news_announcement"
+   ],
+   "platforms": [
+    "plat:sms_india_dlt",
+    "plat:sms_encoding_segments",
+    "plat:rcs_business_messaging"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:urgent"
+   ],
+   "languages": [
+    "lang:hinglish_roman",
+    "lang:india_locale_formats"
+   ],
+   "compliance": [
+    "comp:dpdp_act_rules",
+    "comp:tcpa_47cfr_64_1200",
+    "comp:uk_pecr",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "checklist": [
+    "Does the brand name appear in the first few words?",
+    "Is there exactly one offer or update and one action?",
+    "Is the value specific (amount, item, date)?",
+    "Is any deadline real and dated?",
+    "Does it fit 160 characters with GSM-7 characters only, or 70 if Unicode is deliberate?",
+    "Does a promotional message include the opt-out instruction?",
+    "Is the link on a whitelisted brand or registered short-link domain?",
+    "Does the text match the registered DLT template, with variables marked?",
+    "Is it free of fraud-like phrasing (KYC, account blocked, you have won)?"
+   ],
+   "pitfalls": [
+    "One emoji or a curly apostrophe ('It’s') in an otherwise plain message: the whole SMS drops to 70-character segments and costs two to three times as much. Use straight quotes and no emoji unless the brief pays for Unicode.",
+    "A fresh bit.ly link in the body: India's scrubbing blocks URLs that are not whitelisted. Use the brand's registered short link.",
+    "Editing the wording after the DLT template is approved: messages that do not match the template fail delivery. Re-register or send the approved text.",
+    "Slipping an offer into an order-update template: TRAI treats the whole message as promotional. Keep promotions in promotional templates.",
+    "'Your account will be blocked, update KYC now': reads exactly like the scams customers are warned about. State the brand, the real reason and the date plainly.",
+    "No opt-out to save characters: required for promotional SMS. Budget for it first."
+   ],
+   "lint": {
+    "min_words": 8,
+    "max_words": 45,
+    "max_emoji": 0,
+    "max_exclamations": 1,
+    "require": [
+     {
+      "label": "has a link or action",
+      "regex": "(?i)https?://|\\b[a-z0-9-]+\\.(in|com|co|ly|me|io|shop|store)/|\\b(reply|call|sms|visit|missed call|walk in|book)\\b"
+     },
+     {
+      "label": "has an opt-out",
+      "regex": "(?i)\\b(stop|opt[- ]?out|unsubscribe)\\b|बंद"
+     }
+    ],
+    "ban": [
+     {
+      "label": "fraud-like phrasing",
+      "regex": "(?i)\\b(you (have )?won|lottery|kyc (update|expired|pending)|account (will be )?(blocked|suspended))\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Promotional SMS for a Pune D2C chai brand's Diwali sale to past buyers who opted in; DLT-registered promotional template; English, GSM-7 characters only (no emoji, straight quotes); one segment of 160 characters or fewer including the brand name, the offer (25% off gift boxes till 2 November), one branded short link and the opt-out instruction; mark the variable parts and give the character count.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_12.json#genre:sms_marketing",
+    "note": "111 chars GSM-7, brand first, one offer, dated deadline (Mon 2 Nov 2026 checks), one link, {#var#} marking with 30-char worst case (151) and fixed-share maths, -P header noted. Flaw: 'Reply STOP to opt out' does not work in India, where alphanumeric DLT headers are one-way. CARD FIX: structure 'Opt-out' does -> for India, give an opt-out route that works from a one-way header (an opt-out link, or the number/keyword registered on DLT); keep 'Reply STOP' for US/UK long codes only. | CARD FIXED 2026-10-07 (fix_genre_d): structure 'Opt-out' now gives an India route that works from a one-way DLT header (opt-out link or DLT-registered number/keyword); 'Reply STOP' only for US/UK long codes; re-judge pending.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:social_ad_copy",
+   "kind": "genre",
+   "name": "Social ad copy (Meta, LinkedIn, X, YouTube)",
+   "status": "current",
+   "summary": "The primary text, headline, description and CTA button for paid social placements, written in sets of variants that each test a different angle on one audience. Good looks like a hook and the offer inside the visible first line, a headline that survives truncation, claims the brand can prove, and no copy that tells the viewer what they are (Meta's personal-attributes rule).",
+   "use_for": [
+    "Meta (Facebook and Instagram) feed, Stories and Reels ad copy",
+    "LinkedIn Sponsored Content for B2B lead generation",
+    "YouTube in-feed and video action campaign text",
+    "Variant sets for creative testing (angles, offers, awareness levels)",
+    "Copy layered onto creator content run as partnership ads"
+   ],
+   "avoid": [
+    "The video's spoken script: use genre:video_ad_script or genre:ugc_ad_script",
+    "Keyword-triggered text ads: use genre:search_ad_copy",
+    "Organic posts: use genre:instagram_caption, genre:linkedin_post or genre:facebook_post",
+    "Banner images on display networks: use genre:display_banner_ad_copy"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/image/instagram-feed",
+     "title": "Meta Ads Guide: Instagram feed image ad",
+     "supports": "recommended primary text 125 characters; headline 40 characters; maximum 30 hashtags"
+    },
+    {
+     "url": "https://www.facebook.com/business/ads-guide/update/image/facebook-feed",
+     "title": "Meta Ads Guide: Facebook feed image ad",
+     "supports": "recommended primary text 50-150 characters; headline 27 characters"
+    },
+    {
+     "url": "https://www.linkedin.com/help/lms/answer/a426534/single-image-ads-advertising-specifications?lang=en",
+     "title": "LinkedIn: Single image ads specifications",
+     "supports": "introductory text: up to 150 characters to avoid truncation, 3,000 maximum; headline 70 to avoid truncation, 200 maximum; description 100, 300 maximum; up to 10 emojis"
+    },
+    {
+     "url": "https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/",
+     "title": "Meta Advertising Standards: personal attributes",
+     "supports": "ads must not assert or imply personal attributes such as health, religion, financial status or sexual orientation"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/ad-copy",
+     "title": "Fiverr: Ad Copy subcategory",
+     "supports": "627 gigs on 2026-10-04; placement filter lists Social media first"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork In-Demand Skills 2026 (2026-02-04)",
+     "supports": "fastest-growing Sales & Marketing skills include Social Media Strategy (+36%) and Display Advertising (+26%)"
+    },
+    {
+     "url": "https://www.buzzincontent.com/news/meta-builds-single-creator-marketing-hub-to-move-creator-content-into-paid-ads-12065075",
+     "title": "BuzzInContent: Meta builds single Creator Marketing Hub (2026-06-23)",
+     "supports": "Meta merging Creator Marketplace and Partnership Ads Hub to turn creator content into partnership ads"
+    },
+    {
+     "url": "https://thegreyhawks.com/copywriting-agency-in-india/",
+     "title": "The Grey Hawks: Copywriting agency in India (service menu)",
+     "supports": "Indian agency menus sell 'performance ad copy'"
+    }
+   ],
+   "related": [
+    "genre:ugc_ad_script",
+    "genre:video_ad_script",
+    "genre:search_ad_copy",
+    "genre:landing_page",
+    "genre:display_banner_ad_copy",
+    "trend:creator_led_ads",
+    "trend:ai_disclosure_rules"
+   ],
+   "buyers": [
+    "D2C and ecommerce brands",
+    "Performance-marketing agencies",
+    "B2B SaaS and services (LinkedIn)",
+    "Ed-tech, coaching and admissions teams",
+    "Real estate developers and app companies"
+   ],
+   "value": "high",
+   "value_why": "Fiverr's Ad Copy subcategory (627 gigs, 2026-10-04) lists Social media as its first placement; Upwork has an Ad Copy hire category and its In-Demand Skills 2026 report puts Display Advertising (+26%) and Social Media Strategy (+36%) among the fastest-growing marketing skills; Indian agencies sell performance ad copy as a line item.",
+   "goal": "The right viewer stops scrolling, taps the CTA, and arrives at the landing page already expecting what it offers.",
+   "structure": [
+    {
+     "part": "Angle note (working, not published)",
+     "does": "Audience, awareness level and the single angle this variant tests: pain, desire, proof, offer, objection or identity.",
+     "length": "1 line per variant"
+    },
+    {
+     "part": "Primary text: visible opening",
+     "does": "Hook plus the core promise or offer, inside what shows before 'more' (Meta recommends 125 characters for Instagram feed; LinkedIn shows about 150).",
+     "length": "1-2 lines, 125-150 characters"
+    },
+    {
+     "part": "Primary text: body (optional)",
+     "does": "For warm or high-consideration audiences: proof, specifics, one objection answered, then the action.",
+     "length": "2-6 short lines"
+    },
+    {
+     "part": "Headline",
+     "does": "The offer or main benefit in a few words, readable on its own under the image.",
+     "length": "27 characters (Facebook feed), 40 (Instagram feed), 70 visible on LinkedIn"
+    },
+    {
+     "part": "Description (where shown)",
+     "does": "Supporting detail: price, delivery, free trial, rating with its source.",
+     "length": "Up to about 100 characters"
+    },
+    {
+     "part": "CTA button and variant set",
+     "does": "The platform button that matches the stage (Shop Now, Learn More, Sign Up, Get Quote); 3-5 variants per ad set, each a different angle.",
+     "length": "1 button choice per variant"
+    }
+   ],
+   "length": {
+    "min": 15,
+    "max": 150,
+    "unit": "words",
+    "note": "Per variant. Cold audiences get short copy whose first line carries everything; retargeting and B2B lead-gen can run longer primary text. LinkedIn allows 3,000 characters but truncates near 150."
+   },
+   "frameworks": [
+    "fw:pas",
+    "fw:aida",
+    "fw:bab",
+    "fw:schwartz_awareness_levels"
+   ],
+   "techniques": [
+    "tech:first_line_above_fold",
+    "tech:awareness_level_matching",
+    "tech:specificity",
+    "tech:social_proof",
+    "tech:loss_aversion_framing",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:audience_callout",
+    "hook:problem_solution",
+    "hook:offer_price",
+    "hook:social_proof",
+    "hook:before_after",
+    "hook:pov"
+   ],
+   "platforms": [
+    "plat:meta_ads",
+    "plat:linkedin_ads_sponsored_content",
+    "plat:youtube_video_ads",
+    "plat:telegram_ads"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:desi_casual_hinglish",
+    "tone:corporate_b2b"
+   ],
+   "compliance": [
+    "comp:meta_advertising_standards",
+    "comp:linkedin_ads_policy",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code",
+    "comp:asci_ai_sgc_labelling",
+    "comp:meta_siep_ads"
+   ],
+   "checklist": [
+    "Do the hook and the offer sit inside the first 125 characters of primary text?",
+    "Is each headline within the placement's recommended length?",
+    "Does each variant test a different angle, not the same line reworded?",
+    "Is there one action, matching the CTA button?",
+    "Does the offer match the landing page exactly?",
+    "Is the copy free of statements that assert the viewer's health, religion, finances or other personal attributes?",
+    "Is every claim (results, 'clinically tested', ratings) one the brand can document?",
+    "Does creator content run as an ad carry the paid-partnership disclosure?",
+    "Is realistic AI-generated imagery or voice labelled as the policy requires?",
+    "Are hashtags absent or 3 or fewer?"
+   ],
+   "pitfalls": [
+    "'Are you overweight? Lose 10 kg in 30 days': asserts a personal attribute and promises a timed health result; Meta rejects it and CCPA treats it as misleading. Write 'For anyone starting a fitness habit after 30' and sell the routine, not a guaranteed number.",
+    "Key offer after the 'more' cut: most viewers never tap. Lead with it.",
+    "Five variants that only swap synonyms: the test learns nothing. Vary the angle (pain vs proof vs price).",
+    "The organic caption with 25 hashtags pasted into the ad: hashtags send clicks away from your ad. Drop them.",
+    "LinkedIn ad written like an Instagram reel caption: B2B buyers want the outcome, the proof and the next step in plain business language.",
+    "Political or social-issue ads run without authorisation and a 'Paid for by' disclaimer: Meta rejects them, and in India they also need election-period pre-certification (see comp:eci_mcc)."
+   ],
+   "lint": {
+    "min_words": 10,
+    "max_words": 600,
+    "max_sentence_words": 25,
+    "max_hashtags": 3,
+    "max_exclamations": 3,
+    "ban": [
+     {
+      "label": "asserts a personal attribute",
+      "regex": "(?i)\\b(are you|r u)\\s+(fat|overweight|obese|diabetic|depressed|divorced|bankrupt|in debt|gay|lonely|unemployed|infertile)\\b|\\bother (diabetics|singles|divorcees) like you\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Meta ad copy (Instagram and Facebook feed) for a Pune D2C millet-snack brand's trial pack (Rs 299, free shipping) aimed at working parents aged 28-40 in metro cities who do not know the brand; English with a light Hinglish touch; 3 variants with different angles (the kids' tiffin problem, ingredient proof, the trial price), each with primary text whose first 125 characters carry the hook and offer, a headline of 27 characters or fewer and a CTA button choice; goal: clicks to the trial-pack page. Product facts (demo, invented for this exercise): baked jowar-ragi puffs in masala, tomato and plain; ingredients as printed on the pack: jowar 60%, ragi 25%, rice bran oil, rock salt, spices; no maida, no palm oil; the trial pack holds 6 x 25 g packs.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/retest_6.json#genre:social_ad_copy",
+    "note": "ROUND 3: P2 S2 Sp2 V2 C1. The new product facts fix round 2's faults: every opening names the product (baked jowar-ragi puffs, 6 packs, Rs 299, free shipping), the proof variant's hook is the printed ingredient list itself ('No maida, no palm oil'), and each body adds a reason instead of repeating the price (25 g packs that fit a tiffin and three flavours; 'exactly as printed'; under Rs 50 a pack). Three real angles; openings 97/123/110 characters and headlines 27/21/27, re-checked against 125 and 27; no health, taste or personal-attribute claim; light, natural Hinglish ('7 baje tiffin ka sawaal: aaj kya rakhein?'). Nits (writer): description 1 ('Pune millet-snack brand.') carries no supporting detail and description 3 repeats its headline; variant 2's Learn More button does not match its 'Get the trial pack' line; 'Try before you stock up' is echoed in Hinglish two lines later. Card proven. | round 2: weak 7 | round 1: weak 7",
+    "judge": "vj_retest_6",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:social_bio",
+   "kind": "genre",
+   "name": "Social profile bio",
+   "status": "current",
+   "summary": "The few lines on a creator's or brand's profile that say who this is, what a follower will get, why to trust it and where to tap, inside each platform's character limit. Good looks like a visitor who knows in one glance whether to follow, with the searchable words for what the account does in the name or first line.",
+   "use_for": [
+    "Instagram, X, Threads, Bluesky and Telegram bios for creators and brands",
+    "YouTube channel descriptions (the longer 'About' text)",
+    "Launch or rebrand bio sets across every platform at once",
+    "Bios for local businesses, clinics, coaches and home businesses"
+   ],
+   "avoid": [
+    "Job-seeker LinkedIn headline and About: use genre:linkedin_profile",
+    "Speaker or author bios in third person: use genre:professional_bio or genre:author_bio",
+    "The page behind the bio link: use genre:link_in_bio_copy",
+    "Google Business Profile and Justdial descriptions: use genre:local_business_listing"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://help.instagram.com/728994388226960",
+     "title": "Instagram Help: edit your profile",
+     "supports": "'You can write a bio of up to 150 characters on your Instagram profile.'"
+    },
+    {
+     "url": "https://help.x.com/en/managing-your-account/how-to-customize-your-profile",
+     "title": "X Help: customise your profile",
+     "supports": "Bio (maximum 160 characters)"
+    },
+    {
+     "url": "https://help.x.com/en/managing-your-account/x-username-rules",
+     "title": "X Help: username rules",
+     "supports": "display name up to 50 characters; username up to 15"
+    },
+    {
+     "url": "https://developers.google.com/youtube/v3/docs/channels",
+     "title": "YouTube Data API: channels resource",
+     "supports": "channel description maximum 1,000 characters; channel keywords up to 500 characters"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation",
+     "title": "Fiverr: Writing & Translation category index (read 2026-10-04)",
+     "supports": "LinkedIn profile writing is its own subcategory (linkedin-profile-services); other bios are small add-ons"
+    }
+   ],
+   "related": [
+    "genre:link_in_bio_copy",
+    "genre:linkedin_profile",
+    "genre:professional_bio",
+    "genre:personal_brand_statement",
+    "genre:elevator_pitch",
+    "trend:hashtags_to_keywords"
+   ],
+   "buyers": [
+    "Creators and personal brands",
+    "Small and home businesses",
+    "Coaches, consultants and clinics",
+    "D2C brands",
+    "Social media agencies setting up client handles"
+   ],
+   "value": "low",
+   "value_why": "Fiverr sells LinkedIn profile writing as its own subcategory, but creator and brand bios are small add-ons to social packages (harvest). Worth doing well because every other post sends visitors here.",
+   "goal": "A profile visitor understands who this is and what they get, then follows or taps the link.",
+   "structure": [
+    {
+     "part": "Name field / display name",
+     "does": "Name plus what the account does, in the words people search ('Ritu | Eggless Cakes Hyderabad').",
+     "length": "A few words; X allows 50 characters"
+    },
+    {
+     "part": "Line 1: the promise",
+     "does": "What the follower gets or who it helps, in plain words.",
+     "length": "1 line, 6-12 words"
+    },
+    {
+     "part": "Line 2: proof or differentiator",
+     "does": "A number, credential, location or niche that makes it believable and specific.",
+     "length": "1 line"
+    },
+    {
+     "part": "Line 3: personality or language cue (optional)",
+     "does": "One touch of voice: the Hinglish phrase, the running joke, the posting rhythm ('New recipe every Sunday').",
+     "length": "1 line"
+    },
+    {
+     "part": "CTA to the link",
+     "does": "One action that names what the link gives ('Order for Sunday below', 'Free GST checklist').",
+     "length": "1 line"
+    },
+    {
+     "part": "Long-form variant (YouTube About)",
+     "does": "Expands the same promise: what the channel covers, upload rhythm, who it is for, business contact; key search terms in the first two sentences.",
+     "length": "Up to 1,000 characters"
+    }
+   ],
+   "length": {
+    "min": 60,
+    "max": 160,
+    "unit": "chars",
+    "note": "Instagram bio 150 characters, X bio 160 (official help pages); YouTube channel descriptions run up to 1,000. Deliver one version per platform with the character count, not one bio pasted everywhere."
+   },
+   "frameworks": [
+    "fw:usp",
+    "fw:moore_positioning_statement"
+   ],
+   "techniques": [
+    "tech:word_budget",
+    "tech:front_loading",
+    "tech:specificity",
+    "tech:you_focus",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:audience_callout"
+   ],
+   "platforms": [
+    "plat:instagram_bio",
+    "plat:x_bio",
+    "plat:youtube_channel_description",
+    "plat:bluesky_bio",
+    "plat:telegram_bio"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:minimalist_understated",
+    "tone:playful_witty"
+   ],
+   "checklist": [
+    "Does the first line say what the account does or gives, in plain words?",
+    "Is it clear who it is for?",
+    "Is there one specific proof point or differentiator?",
+    "Is each version within its platform's character limit, with the count shown?",
+    "Is there exactly one CTA, and does it say what the link gives?",
+    "Do the words someone would search for (what, where) appear in the name field or first line?",
+    "Is it free of hashtag stacks and follow-for-follow lines?",
+    "Does it read cleanly on a phone with line breaks?"
+   ],
+   "pitfalls": [
+    "'Dreamer | Believer | Achiever' or a quote: tells the visitor nothing about what they get. Replace with the promise and the niche.",
+    "Every service listed with slashes: nothing sticks. Lead with the one thing most followers come for.",
+    "Three CTAs (DM, WhatsApp, link): visitors do none. Pick the one that matches the account's goal.",
+    "An expired offer left in the bio ('Diwali sale live!' in March): signals a dead account. Date-check bios monthly.",
+    "Same 150-character Instagram bio pasted into YouTube's 1,000-character About: wastes the search space. Write the long version.",
+    "A row of 10 emojis: reads as noise and costs characters. One or two that carry meaning, at most."
+   ],
+   "lint": {
+    "min_words": 5,
+    "max_words": 180,
+    "max_sentence_words": 20,
+    "max_hashtags": 2,
+    "ban": [
+     {
+      "label": "follow-for-follow or promo-for-sale line",
+      "regex": "(?i)\\b(follow for follow|f4f|l4l|dm for (paid )?promotion)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Instagram bio (150 characters max) with a name-field line, plus an X bio (160 characters max), for a Hyderabad home baker selling eggless custom cakes on 2-day pre-order; audience: local parents planning kids' birthdays; English with one Hinglish touch allowed; each bio says what she makes, for whom, the area served and one CTA pointing to the order link; character count shown under each.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_12.json#genre:social_bio",
+    "note": "Name field carries the search words (Eggless Cakes Hyderabad); bio says what, for whom, where, the 2-day pre-order and one CTA naming what the link gives; counts shown and within 150/160; one Hinglish touch, one meaningful emoji. Functional rather than memorable: 20 spare characters could carry a differentiator (themes, area served).",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:social_content_calendar",
+   "kind": "genre",
+   "name": "Social media content calendar (with post copy)",
+   "status": "current",
+   "summary": "A week or month plan of posts per platform with dates, formats, content pillars, hooks and fully drafted captions, delivered as a sheet the client can approve and the team can publish from. Good looks like a short strategy header, a balanced mix that serves one goal, and rows complete enough that nobody has to ask what to post or what it says.",
+   "use_for": [
+    "Monthly social retainers for clinics, local businesses, D2C brands and coaches",
+    "Launch-month plans that sequence teaser, launch and follow-up posts",
+    "Festival-season planning with dates checked for the year",
+    "Handing a client's in-house team a plan plus ready captions"
+   ],
+   "avoid": [
+    "A single post: use genre:instagram_caption, genre:linkedin_post or genre:facebook_post",
+    "Reel scripts in full: write them with genre:short_form_video_script and link them from the row",
+    "Long-range content strategy without post copy: that is a strategy document, not this deliverable",
+    "Paid campaign flighting: use genre:social_ad_copy and the media plan"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/social-media-copywriting",
+     "title": "Fiverr: Social Media Copywriting category (read 2026-10-04)",
+     "supports": "'Content calendar' offered as a gig inclusion (801 gigs); platform facet counts Instagram 1910, Facebook 1663, LinkedIn 1338, TikTok 1009"
+    },
+    {
+     "url": "https://www.upwork.com/press/releases/upworks-in-demand-skills-2026-demand-for-top-ai-skills-more-than-doubles-as-ai-is-embedded-into-everyday-work",
+     "title": "Upwork In-Demand Skills 2026 (2026-02-04)",
+     "supports": "Social Media Strategy (+36%) among the fastest-growing Sales & Marketing skills"
+    },
+    {
+     "url": "https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/",
+     "title": "Social Media Today: Instagram limits hashtag use (2025-12-18)",
+     "supports": "Instagram recommends up to 5 targeted hashtags"
+    },
+    {
+     "url": "https://www.socialmediatoday.com/news/instagram-updates-algorithm-to-benefit-original-creators/819016/",
+     "title": "Social Media Today: Instagram updates algorithm to benefit original creators (2026-04-30)",
+     "supports": "accounts that mostly re-post others' content stop being recommended"
+    }
+   ],
+   "related": [
+    "genre:instagram_caption",
+    "genre:short_form_video_script",
+    "genre:carousel_copy",
+    "genre:facebook_post",
+    "genre:linkedin_post",
+    "genre:festival_greeting",
+    "trend:original_content_ranking",
+    "trend:hashtags_to_keywords"
+   ],
+   "buyers": [
+    "Social media agencies and freelancers on retainers",
+    "Clinics, restaurants and local businesses",
+    "D2C brands",
+    "Coaches and creators",
+    "B2B companies planning LinkedIn"
+   ],
+   "value": "medium",
+   "value_why": "Fiverr social media copywriting gigs offer 'Content calendar' as an inclusion (801 gigs, 2026-10-04), and Upwork's In-Demand Skills 2026 lists Social Media Strategy at +36%. Usually priced as a monthly retainer with the copy.",
+   "goal": "The client approves the month in one round, and the team publishes each row as written without coming back with questions.",
+   "structure": [
+    {
+     "part": "Strategy header",
+     "does": "The month's one goal, audience, 3-4 content pillars with their share of posts, platforms and frequency, the metric to watch.",
+     "length": "100-200 words"
+    },
+    {
+     "part": "Key dates",
+     "does": "Launches, sales, festivals and awareness days that matter to this audience, each checked for this year's date.",
+     "length": "A short list"
+    },
+    {
+     "part": "Calendar rows",
+     "does": "One row per post: date, platform, format (reel, carousel, static, story), pillar, hook or title, CTA, keywords and up to 5 hashtags, asset owner, status.",
+     "length": "1 row per post"
+    },
+    {
+     "part": "Drafted copy",
+     "does": "The full caption for every post in scope (or the first two weeks plus hooks for the rest, if the scope says so), written natively per platform.",
+     "length": "40-200 words per caption"
+    },
+    {
+     "part": "Repurposing notes",
+     "does": "How one idea travels: the reel that becomes a carousel, the carousel that becomes a LinkedIn post.",
+     "length": "A few lines"
+    },
+    {
+     "part": "Inputs and approvals",
+     "does": "What the client must send (photos, offers, doctor quotes) and by when; who approves.",
+     "length": "3-6 bullets"
+    }
+   ],
+   "length": {
+    "min": 8,
+    "max": 40,
+    "unit": "count",
+    "note": "Posts per month across platforms. Set by the client's production capacity (who shoots the reels) more than by any algorithm; a plan the team cannot shoot is a failed calendar."
+   },
+   "frameworks": [
+    "fw:schwartz_awareness_levels",
+    "fw:topic_cluster"
+   ],
+   "techniques": [
+    "tech:native_formatting",
+    "tech:hashtag_strategy",
+    "tech:first_line_above_fold",
+    "tech:ethical_comment_prompt",
+    "tech:specificity",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:question",
+    "hook:myth_busting",
+    "hook:number_list",
+    "hook:hinglish_question"
+   ],
+   "platforms": [
+    "plat:instagram_caption",
+    "plat:instagram_carousel",
+    "plat:instagram_hashtags",
+    "plat:linkedin_post"
+   ],
+   "tones": [
+    "tone:friendly_warm",
+    "tone:desi_casual_hinglish"
+   ],
+   "compliance": [
+    "comp:asci_influencer",
+    "comp:meta_branded_content",
+    "comp:copyright_act_s52_fair_dealing"
+   ],
+   "checklist": [
+    "Does the header state one goal, the pillars and the posting frequency?",
+    "Does every row have date, platform, format, pillar, hook, caption and CTA?",
+    "Does the mix of pillars match the shares stated in the header?",
+    "Are festival and event dates checked for this year?",
+    "Does each caption fit its platform (no Instagram hashtag block pasted onto LinkedIn)?",
+    "Are there 5 or fewer hashtags per Instagram post?",
+    "Is it free of engagement bait ('comment YES', 'tag 3 friends')?",
+    "Is the plan shootable with the assets and people the client has?",
+    "Are inputs and approval deadlines listed?",
+    "Is all content original or credited (no reposted memes or clips)?"
+   ],
+   "pitfalls": [
+    "A topic list ('Mon: motivation, Wed: tip, Fri: product') with no copy: the client paid for posts, not a timetable. Draft every caption in scope.",
+    "Thirty festival greetings and three useful posts: greeting posts get little reach for most brands. Keep festivals that connect to the offer and fill the rest with pillar content.",
+    "Same caption across Instagram, LinkedIn and Facebook: each platform reads differently. Rewrite the first line and the CTA per platform.",
+    "Hashtag blocks of 20-30: Instagram now recommends up to 5. Use keywords in the caption for search.",
+    "Wrong festival dates from last year's calendar: lunar festivals move. Check every date for the current year.",
+    "Daily reels for a two-person clinic with no videographer: the plan collapses in week one. Match frequency to capacity."
+   ],
+   "lint": {
+    "min_words": 300,
+    "max_words": 8000,
+    "ban": [
+     {
+      "label": "engagement bait",
+      "regex": "(?i)\\b(comment|type)\\s+['\"]?(yes|amen|haan|done|1)\\b|\\btag (a|your|\\d+|two|three) friends?\\b|\\blike (this )?if you\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "October content calendar for a Jaipur dental clinic's Instagram and Facebook: 12 posts (4 reels, 4 carousels, 4 static) across 3 pillars (kids' dental care, cosmetic dentistry myths, clinic trust), including one Diwali-sweets-and-kids'-teeth post; English and Hinglish captions; a 150-word strategy header, then a table with date, platform, format, pillar, hook, full caption, CTA and up to 5 hashtags per post; inputs-needed list at the end.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_12.json#genre:social_content_calendar",
+    "note": "Header with one goal, pillars and shares, frequency; 12 rows exactly 4/4/4 by format and pillar; all weekdays correct; Diwali 2026 (Sun 8 Nov) checked; per-row full caption, Facebook opener, one WhatsApp CTA, max 4 hashtags; dental facts standard (first visit by age 1, rice-grain/pea toothpaste) and flagged for the dentist; no engagement bait; inputs and approval dates. Minor: repurposing note says the two myth carousels share a four-slide layout but one is 5 slides; plan starts 12 Oct, not 1 Oct.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:song_lyrics",
+   "kind": "genre",
+   "name": "Song lyrics",
+   "status": "current",
+   "summary": "Words written to be sung: a hook or chorus (the mukhda in Hindi film songs), verses (antaras) and sometimes a bridge or rap verse, fitted to a melody's metre and stresses. Good looks like a mukhda people can sing back after one listen, antaras that match each other syllable for syllable, natural word order in the rhyme, and concrete images instead of stock words.",
+   "use_for": [
+    "Independent and label releases (pop, romantic, rap, folk-fusion)",
+    "Film and web-series songs written to a situation",
+    "Devotional songs and bhajans for music producers",
+    "Wedding and sangeet songs, anthems for institutions and events",
+    "Lyrics for AI-music tools that still need a structured, singable lyric"
+   ],
+   "avoid": [
+    "Short brand jingles and sonic logos: use genre:jingle_lyrics",
+    "Spoken couplets for posts and speeches: use genre:shayari",
+    "Page poetry: use genre:poetry",
+    "Traditional aartis and stutis whose text is fixed: use genre:devotional_content"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Song (along with Synopsis, Story, Script, Screenplay, Dialogue) for members, online or at its Mumbai office"
+    }
+   ],
+   "related": [
+    "genre:jingle_lyrics",
+    "genre:shayari",
+    "genre:poetry",
+    "genre:devotional_content",
+    "genre:screenplay_feature"
+   ],
+   "buyers": [
+    "Independent singers and composers",
+    "Music labels and producers",
+    "Film and web-series producers",
+    "Devotional music channels",
+    "Families and event planners commissioning personal songs"
+   ],
+   "value": "medium",
+   "value_why": "SWA registers songs as a category for its lyricist members; film and indie-music lyric writing is paid work in India (harvest). Fees vary widely by project; most demand is from independent artists and devotional producers.",
+   "goal": "The singer can sing it naturally on the tune, and the listener remembers and sings the hook after a listen or two.",
+   "structure": [
+    {
+     "part": "Mukhda / chorus",
+     "does": "The title phrase and the song's emotional centre; simplest words in the song; repeated after every antara.",
+     "length": "2-4 lines"
+    },
+    {
+     "part": "Antara 1 / verse 1",
+     "does": "The situation: who, where, what is happening, through concrete images; leads back into the mukhda.",
+     "length": "4-8 lines"
+    },
+    {
+     "part": "Antara 2 / verse 2",
+     "does": "Develops or turns the story (time passes, the stakes change); same syllable pattern and rhyme scheme as antara 1.",
+     "length": "4-8 lines, matching antara 1"
+    },
+    {
+     "part": "Bridge or rap verse (optional)",
+     "does": "A change of view, rhythm or intensity before the final chorus.",
+     "length": "2-8 lines"
+    },
+    {
+     "part": "Final mukhda",
+     "does": "The hook again, sometimes with one changed word that lands the story's end.",
+     "length": "2-4 lines"
+    },
+    {
+     "part": "Syllable and stress map",
+     "does": "Syllable count per line (and stressed syllables when a melody exists), so the composer and singer can check the fit.",
+     "length": "Working notes beside each line"
+    }
+   ],
+   "length": {
+    "min": 12,
+    "max": 40,
+    "unit": "lines",
+    "note": "Set by the song's duration and form: a radio-length song is usually mukhda plus two antaras; film and devotional songs vary. Count against a sung read-through."
+   },
+   "frameworks": [
+    "fw:abt",
+    "fw:freytags_pyramid"
+   ],
+   "techniques": [
+    "tech:read_aloud",
+    "tech:anaphora_repetition",
+    "tech:sensory_detail",
+    "tech:metaphor_analogy",
+    "tech:alliteration",
+    "tech:callback"
+   ],
+   "tones": [
+    "tone:romantic",
+    "tone:nostalgic",
+    "tone:devotional_bhakti",
+    "tone:inspirational"
+   ],
+   "languages": [
+    "lang:hindi_devanagari",
+    "lang:urdu_influenced_hindi",
+    "lang:hinglish_roman",
+    "lang:hindi_romanisation_schemes"
+   ],
+   "compliance": [
+    "comp:copyright_act_s52_fair_dealing",
+    "comp:us_copyright_ai_authorship"
+   ],
+   "checklist": [
+    "Does the mukhda contain the title or hook phrase, and does it repeat?",
+    "Do the antaras match each other in syllable count line for line?",
+    "Are syllable counts marked for each line?",
+    "Read aloud to a beat, do stressed syllables fall on natural word stress?",
+    "Is there one emotional idea carried through the song?",
+    "Are there concrete images, not only stock words (dil, pyaar, sapne)?",
+    "Do rhymes keep natural word order?",
+    "Is every line original (no borrowed lines from existing songs)?",
+    "Are long held notes on open vowels rather than consonant clusters (when the melody is known)?"
+   ],
+   "pitfalls": [
+    "Reproducing or lightly altering existing film lyrics: copyright infringement and instantly spotted. Write original lines; refer to a famous song only by name as a feel reference.",
+    "Page poetry that cannot be sung (long words, tongue-twister clusters on held notes): read it aloud to a beat and swap words until it flows.",
+    "Antara 2 with a different line count or syllable pattern from antara 1: it will not fit the same tune. Match them line for line.",
+    "Rhyme forcing unnatural grammar ('dil mera tujhko chahe gaya'): rewrite the line to rhyme in normal word order.",
+    "A different idea in every antara: the song loses its centre. Keep one emotion and develop it.",
+    "Lyrics generated with AI and delivered as fully the writer's own: authorship and copyright claims weaken; disclose AI assistance to the client and rewrite substantially."
+   ],
+   "lint": {
+    "min_words": 40,
+    "max_words": 450,
+    "max_sentence_words": 16,
+    "max_hashtags": 0
+   },
+   "exemplar_brief": "Original Hindi indie-pop love song (Devanagari with Roman transliteration) for a Delhi singer-songwriter, about long-distance love over late-night video calls between Delhi and Bengaluru; mukhda of 4 lines with the title phrase in its first line, two antaras of 6 lines each with matching syllable patterns, mukhda repeats after each antara; syllable count marked at the end of every line; no lines borrowed from existing songs.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/retest_5.json#genre:song_lyrics",
+    "note": "ROUND 2: P2 S2 Sp2 V2 C1. Re-counted every line: the mukhda is 13 x 4 and both antaras run 13, 13, 13, 13, 8, 13, as marked. The title 'Buffering mein bhi tum' sits in line 1 and is fresh. The antaras now rhyme in three couplets each in natural word order (baarish/aazmaish, screen/yaqeen, jaata/bhaata; calendar/safar, saamaan/armaan, baad/fariyaad), and the mukhda adds ghar/par. The images are concrete (the frozen half-laugh, the 2% battery, the screen under the razaai, the red-circled date, the light bag and the heavy armaan, the doorbell instead of hello-hello), and antara 2 turns the story into the trip. The final mukhda lands the ending ('is kamre mein ek hi ghar', 'ab tum ho yahin par'). Nits (writer): 'sirf ek hi chhota saamaan' pads to the count (sirf + hi + chhota); 'doori hai bas ek aazmaish' is the one stock line; battery is counted as 3 syllables though it is often sung as 'bait-ri', so the composer should check it. | round 1: weak 7",
+    "judge": "vj_retest_5",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:sop_process_doc",
+   "kind": "genre",
+   "name": "Standard operating procedure (SOP) / process document",
+   "status": "current",
+   "summary": "A controlled document that tells a trained employee exactly how to do a recurring task, step by step, so it is done the same safe, compliant way every time and leaves the records an auditor will check. Good looks like a header with version and owner, one action per numbered step starting with a verb, warnings before the step they protect, and a clear rule for what to do when a step cannot be followed.",
+   "use_for": [
+    "Regulated operations: pharma, food, labs, hospitals, manufacturing QA",
+    "Startup and franchise operations that need consistency across shifts and branches",
+    "Customer support, finance and HR processes (refunds, month-end close, onboarding)",
+    "Runbooks for recurring technical operations",
+    "ISO and audit preparation where written procedures are evidence"
+   ],
+   "avoid": [
+    "The admissions 'statement of purpose' (also called SOP in India): use genre:statement_of_purpose",
+    "Customer-facing product instructions: use genre:user_manual or genre:knowledge_base_article",
+    "Rules and entitlements without steps: use genre:policy_document",
+    "Diagnosing faults: use genre:troubleshooting_guide"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.law.cornell.edu/cfr/text/21/211.100",
+     "title": "21 CFR 211.100 (US drug GMP): written procedures; deviations (read 2026-10-04)",
+     "supports": "'There shall be written procedures for production and process control...'; written procedures 'shall be followed ... and shall be documented at the time of performance. Any deviation from the written procedures shall be recorded and justified.'"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "business-writing projects include company policies and training materials; technical-writing projects include policies"
+    },
+    {
+     "url": "https://www.bls.gov/ooh/media-and-communication/technical-writers.htm",
+     "title": "BLS Occupational Outlook Handbook: Technical Writers (read 2026-08-27)",
+     "supports": "median annual wage for technical writers $90,390 in May 2025"
+    },
+    {
+     "url": "https://www.ambitionbox.com/profile/technical-writer-salary",
+     "title": "AmbitionBox: Technical Writer salary (updated 2026-10-04)",
+     "supports": "average Technical Writer salary in India Rs 8.5 lakh per year (10.1k salaries)"
+    }
+   ],
+   "related": [
+    "genre:user_manual",
+    "genre:knowledge_base_article",
+    "genre:policy_document",
+    "genre:troubleshooting_guide",
+    "genre:b2b_playbook",
+    "genre:statement_of_purpose"
+   ],
+   "buyers": [
+    "Quality and compliance teams in pharma, food and manufacturing",
+    "Hospitals, labs and clinics",
+    "Operations heads at startups, franchises and cloud kitchens",
+    "BPO and customer-support managers",
+    "ISO and audit consultants"
+   ],
+   "value": "medium",
+   "value_why": "Upwork lists policies and training materials under business and technical writing; regulated industries must have written procedures (21 CFR 211.100 for US drug manufacturing). Technical writing pays above general content: BLS median $90,390 (May 2025), AmbitionBox Rs 8.5 lakh a year in India.",
+   "goal": "A trained employee completes the task correctly without asking anyone, and the required record exists afterwards.",
+   "structure": [
+    {
+     "part": "Header block",
+     "does": "Title, SOP number, version, effective date, owner, approver, next review date.",
+     "length": "Table of 6-8 fields"
+    },
+    {
+     "part": "Purpose and scope",
+     "does": "Why the procedure exists in one sentence; what, where and who it covers, and what it does not.",
+     "length": "2-5 sentences"
+    },
+    {
+     "part": "Roles and responsibilities",
+     "does": "Who performs, who checks, who approves, by role title, not person name.",
+     "length": "3-6 bullets"
+    },
+    {
+     "part": "Definitions, materials and safety",
+     "does": "Terms and abbreviations; tools, materials, system access and protective equipment needed before starting.",
+     "length": "Short lists"
+    },
+    {
+     "part": "Procedure",
+     "does": "Numbered steps, one action each, starting with an imperative verb; decision points as 'If X, go to step N'; expected result where it helps; warnings and cautions placed before the step.",
+     "length": "5-30 steps, each 1-2 sentences"
+    },
+    {
+     "part": "Records",
+     "does": "Which form, log or system entry is completed, by whom, where it is stored and for how long.",
+     "length": "2-5 bullets"
+    },
+    {
+     "part": "Deviations and exceptions",
+     "does": "What to do when a step cannot be followed: stop, who to inform, how to record and justify it.",
+     "length": "2-4 sentences"
+    },
+    {
+     "part": "References and revision history",
+     "does": "Related SOPs and forms; a table of version, date, change, author.",
+     "length": "Table"
+    }
+   ],
+   "length": {
+    "min": 400,
+    "max": 3000,
+    "unit": "words",
+    "note": "Driven by the number of steps and decision points. A task that needs more than about 30 steps usually splits into two SOPs."
+   },
+   "frameworks": [
+    "fw:five_ws_and_h",
+    "fw:bluf"
+   ],
+   "techniques": [
+    "tech:step_by_step_instructions",
+    "tech:active_voice",
+    "tech:consistent_terminology",
+    "tech:plain_language",
+    "tech:sme_interview",
+    "tech:chunking"
+   ],
+   "tones": [
+    "tone:technical_precise"
+   ],
+   "languages": [
+    "lang:global_plain_english",
+    "lang:hindi_devanagari"
+   ],
+   "checklist": [
+    "Does the header carry SOP number, version, effective date, owner and approver?",
+    "Is the purpose one sentence and the scope explicit about exclusions?",
+    "Does every step contain one action and start with a verb?",
+    "Is each step assigned to a role?",
+    "Do warnings and cautions appear before the step they protect?",
+    "Are decision points written as 'If..., go to step N'?",
+    "Are the records named, with where they are stored?",
+    "Does it say what to do when a step cannot be followed?",
+    "Is each term used the same way throughout?",
+    "Could a new trained employee follow it without asking anyone (walk-through tested)?"
+   ],
+   "pitfalls": [
+    "Writing the ideal process from a manager's description: the floor does it differently and the SOP is ignored. Watch the task done, interview the person who does it, then write.",
+    "Several actions in one step ('Clean, sanitise and log the shelves'): steps get skipped. Split into one action per number.",
+    "Passive voice ('The room should be cleaned'): nobody owns it. Write 'Shift supervisor: clean the room'.",
+    "Vague words ('properly', 'as appropriate', 'in a timely manner'): cannot be audited. Give the measure: 'within 15 minutes', 'until the indicator strip turns green'.",
+    "Safety warning after the step: the harm has already happened. Put it before.",
+    "No version control: two versions circulate and the old one gets followed. Add the header and revision table and retire old copies."
+   ],
+   "lint": {
+    "min_words": 150,
+    "max_words": 4000,
+    "max_sentence_words": 25,
+    "require": [
+     {
+      "label": "has numbered steps",
+      "regex": "(?im)^\\s*\\d+[\\.)]\\s"
+     }
+    ],
+    "ban": [
+     {
+      "label": "unauditable vague wording",
+      "regex": "(?i)\\b(as appropriate|in a timely manner|properly|adequately)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "SOP for a Gurugram cloud-kitchen chain: end-of-shift cleaning and sanitising of the walk-in cold room, for kitchen staff and shift supervisors; English with the key safety warnings repeated in Hindi (Devanagari); 600-900 words; header block, purpose, scope, roles, materials and protective equipment, 10-15 numbered steps with expected results, records (sign-off checklist and where it is filed), deviations, revision history.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_12.json#genre:sop_process_doc",
+    "note": "Full header, one-line purpose, scope with exclusions, roles, PPE, 15 role-assigned verb-first steps with expected results and 'go to' branches, warnings before their steps and repeated in correct Devanagari, records, deviations, revision table; clean-rinse-sanitise order is right; dates check (2 Nov 2026 and 3 May 2027 are Mondays). Gaps: 'Never work alone' has no second person assigned in Roles; steps 1, 3 and 14 carry two actions.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:sponsored_creator_post",
+   "kind": "genre",
+   "name": "Sponsored creator post / brand collab caption",
+   "status": "current",
+   "summary": "The caption, talking points and disclosure for a creator's paid brand collaboration, written in the creator's own voice so it reads as their content while being clearly labelled as paid. Good looks like a disclosure in the first line, a real moment of use only this creator could describe, claims limited to what the brand can substantiate, and one action with a code or link.",
+   "use_for": [
+    "Instagram feed and Reel captions for paid or gifted collaborations",
+    "Talking points the brand gives a creator (must-say, must-not-say)",
+    "LinkedIn and YouTube community posts for creator partnerships",
+    "Affiliate and discount-code posts",
+    "Rewriting brand-drafted captions so they sound like the creator"
+   ],
+   "avoid": [
+    "The sponsor segment inside a long video or podcast: use genre:sponsored_integration_script",
+    "Brand-owned ads made with creators: use genre:ugc_ad_script",
+    "The brief the brand sends to creators: use genre:influencer_brief",
+    "Long written product reviews with affiliate links: use genre:affiliate_review"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI Guidelines for Influencer Advertising in Digital Media (with Addendum II, 2023)",
+     "supports": "disclose any material connection including free products; permitted labels: Advertisement, Ad, Sponsored, Collaboration, Partnership, Employee, Free gift, Affiliate, Instagram 'Paid Partnership' tag, YouTube 'Includes Paid Promotion'; label upfront and prominent, not only in bio, not at the end, not behind MORE, not buried in hashtags; platform tool in addition to the creator's own label; health and finance influencers state qualifications upfront"
+    },
+    {
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1892527",
+     "title": "PIB: Department of Consumer Affairs 'Endorsement Know-hows!' (2023-01-20)",
+     "supports": "material connections (money, trips, free products, discounts, gifts) must be disclosed by celebrities and influencers"
+    },
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+     "title": "FTC: Disclosures 101 for Social Media Influencers",
+     "supports": "use simple words like 'ad' or 'sponsored'; avoid vague terms like 'sp', 'spon' or 'collab'; do not rely only on a platform's tool"
+    },
+    {
+     "url": "https://www.buzzincontent.com/news/meta-builds-single-creator-marketing-hub-to-move-creator-content-into-paid-ads-12065075",
+     "title": "BuzzInContent: Meta builds single Creator Marketing Hub (2026-06-23)",
+     "supports": "brands increasingly convert creator posts into partnership ads"
+    }
+   ],
+   "related": [
+    "genre:influencer_brief",
+    "genre:ugc_ad_script",
+    "genre:instagram_caption",
+    "genre:sponsored_integration_script",
+    "genre:affiliate_review",
+    "trend:creator_led_ads"
+   ],
+   "buyers": [
+    "Brands and their influencer agencies",
+    "Creators and talent managers",
+    "Influencer-marketing platforms",
+    "D2C brands running seeding programmes"
+   ],
+   "value": "medium",
+   "value_why": "India has influencer-specific disclosure rules (ASCI, the Consumer Affairs Endorsement Know-hows), which shows the volume of this work; no single marketplace category isolates it (harvest). Brands now convert creator posts into paid partnership ads (Meta, 2026), raising the stakes on the copy.",
+   "goal": "Followers engage with the post as the creator's content (save, click the link, use the code) and know it is a paid partnership.",
+   "structure": [
+    {
+     "part": "Disclosure",
+     "does": "A permitted label in the first line, above the 'more' cut ('Ad | Paid partnership with @brand'), plus the platform's paid-partnership tag.",
+     "length": "2-6 words"
+    },
+    {
+     "part": "Hook in the creator's voice",
+     "does": "Opens the way this creator always opens: a moment, a confession, a question from their audience.",
+     "length": "1-2 lines"
+    },
+    {
+     "part": "Real use",
+     "does": "How the creator actually used the product, with one detail only a real user would know (time of day, the routine it replaced).",
+     "length": "2-4 lines"
+    },
+    {
+     "part": "Honest proof",
+     "does": "What worked, in the creator's words, using only claims the brand has substantiated; one honest limit or 'who it's not for' if the creator would say it.",
+     "length": "1-3 lines"
+    },
+    {
+     "part": "Offer and CTA",
+     "does": "Code or link, what it gives, deadline.",
+     "length": "1-2 lines"
+    },
+    {
+     "part": "Mentions, hashtags and talking points",
+     "does": "Brand handle, up to 5 hashtags; for video, 3-6 bullet talking points with must-say claims and don'ts, not a word-for-word script.",
+     "length": "1 line + bullets"
+    }
+   ],
+   "length": {
+    "min": 40,
+    "max": 250,
+    "unit": "words",
+    "note": "Caption length follows the creator's usual style; a creator who writes two lines should not suddenly post 250 words for a brand. Talking points are separate from the caption."
+   },
+   "frameworks": [
+    "fw:bab",
+    "fw:star_story_solution"
+   ],
+   "techniques": [
+    "tech:first_line_above_fold",
+    "tech:eeat_first_hand_experience",
+    "tech:liking_and_unity",
+    "tech:specificity",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:personal_story",
+    "hook:pov",
+    "hook:before_after",
+    "hook:challenge_test"
+   ],
+   "platforms": [
+    "plat:instagram_caption",
+    "plat:instagram_hashtags",
+    "plat:youtube_post",
+    "plat:linkedin_post"
+   ],
+   "tones": [
+    "tone:desi_casual_hinglish",
+    "tone:conversational",
+    "tone:friendly_warm"
+   ],
+   "languages": [
+    "lang:hinglish_roman",
+    "lang:indian_english"
+   ],
+   "compliance": [
+    "comp:asci_influencer",
+    "comp:endorsement_know_hows",
+    "comp:ftc_endorsement_guides",
+    "comp:meta_branded_content",
+    "comp:sebi_finfluencer_association",
+    "comp:asci_ai_sgc_labelling"
+   ],
+   "checklist": [
+    "Is a permitted disclosure label in the first line, visible without tapping 'more'?",
+    "Is the platform's paid-partnership tag noted in addition to the written label?",
+    "Does it sound like this creator (their openings, slang, sentence length), not the brand's website?",
+    "Is there one specific detail of real use?",
+    "Are all product claims from the brand's approved, substantiated list?",
+    "For health, nutrition or finance topics, is the creator's relevant qualification stated upfront, or the claim removed?",
+    "Is there one CTA with the code or link and what it gives?",
+    "Are there 5 or fewer hashtags?",
+    "Does it avoid disparaging competitors by name?",
+    "If any visual or voice is AI-generated, is it labelled?"
+   ],
+   "pitfalls": [
+    "'#ad' hidden among 20 hashtags at the end: ASCI says not at the end, not buried in hashtags. Put 'Ad' or 'Paid partnership' in the first line.",
+    "'#sp' or '#spon' as the only label: the FTC calls these vague and ASCI does not list them. Use 'Ad', 'Sponsored' or 'Paid partnership'.",
+    "Brand website copy in the creator's mouth ('This revolutionary formula delivers holistic nourishment'): followers smell it and engagement drops. Rewrite in the creator's own words and rhythm.",
+    "'Been using it for months' when the product arrived last week: a false endorsement. Say what is true: 'Two weeks in, here's what I noticed.'",
+    "A fitness creator saying a supplement 'cures' anything, or a finance creator promising returns: needs qualifications under ASCI Addendum II and may break SEBI rules. Cut the claim.",
+    "Gifted product posted with no label because 'it wasn't paid': ASCI counts free products as a material connection. Label it 'Free gift' or 'Collaboration'."
+   ],
+   "lint": {
+    "min_words": 25,
+    "max_words": 320,
+    "max_hashtags": 5,
+    "require": [
+     {
+      "label": "has a disclosure label",
+      "regex": "(?i)\\b(ad|advertisement|sponsored|paid partnership|collaboration|partnership|free gift|affiliate|gifted)\\b|विज्ञापन"
+     }
+    ],
+    "ban": [
+     {
+      "label": "vague disclosure tag",
+      "regex": "(?i)#(sp|spon)\\b"
+     }
+    ]
+   },
+   "exemplar_brief": "Instagram caption plus 5 talking points for a Bengaluru fitness creator's paid collaboration with a Mysuru millet-protein brand; audience: her followers, office-goers aged 22-35; Hinglish (Roman script) in her casual voice; 80-150 words; 'Ad' label in the first line in addition to the Paid partnership tag; one honest limitation; discount code with a 7-day deadline; claims limited to the brand's approved list (12 g protein per serving).",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/retest_5.json#genre:sponsored_creator_post",
+    "note": "ROUND 2: P2 S2 Sp2 V1 C1. The first line is 'Ad | Paid partnership with [@brand]', with a tag note. The hook is in her voice. The real-use moment is now concrete without invention (4 baje, the samosa trolley, the pack in the drawer in place of biscuits). The only claim is the approved 12 g, and the limit comes in her voice ('Mera rule: yeh snack hai, khaane ki jagah nahi'). The code runs till Thursday 22 October 11:59 pm, 7 days from a Thursday post (22 October 2026 is a Thursday). There are 3 hashtags, the caption is 102 words, and the 5 talking points give must-says and don'ts. The taste or crunch detail is a slot, which is right: only the creator can supply it. Nits (writer): the slot is written as a full instruction inside the caption instead of a short [taste in her words] mark; the second limit sentence ('12 g ek serving ka hai, poore din ka nahi') is the label hedge again, and the brief asks for one limit. | round 1: weak 7",
+    "judge": "vj_retest_5",
+    "date": "2026-10-13"
+   }
+  },
+  {
+   "id": "genre:sponsored_integration_script",
+   "kind": "genre",
+   "name": "Sponsored integration / sponsor read script",
+   "status": "current",
+   "summary": "The 30-90 second segment inside a creator's video or podcast that introduces a sponsor in the creator's own voice, discloses it out loud, ties it to the episode's topic and gives one action. Good looks like a bridge from the content so the read does not feel like a cut to an ad, one personal use moment, approved claims only, and a clean return to the episode.",
+   "use_for": [
+    "YouTube video integrations (pre-roll position or mid-video)",
+    "Video and audio podcast host-read sponsor segments",
+    "Talking points for creators who prefer to ad-lib",
+    "Livestream sponsor mentions (repeated through the stream)"
+   ],
+   "avoid": [
+    "A standalone caption for an Instagram collab: use genre:sponsored_creator_post",
+    "A brand-produced ad that runs as media: use genre:video_ad_script or genre:radio_spot_script",
+    "Podcast ad reads written by the brand for many shows: see genre:podcast_ad_read",
+    "The episode itself: use genre:youtube_video_script or genre:podcast_script"
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/youtube/answer/154235",
+     "title": "YouTube Help: Paid product placements, endorsements and sponsorships (read 2026-10-04)",
+     "supports": "select the paid promotion option for sponsorships; it 'adds a disclosure label that appears at the beginning of your video'; creators and partners remain responsible for legal requirements"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/08/GUIDELINES-FOR-INFLUENCER-ADVERTISING-IN-DIGITAL-MEDIA.pdf",
+     "title": "ASCI Guidelines for Influencer Advertising in Digital Media (with Addendum II, 2023)",
+     "supports": "video label timing: up to 15 s, at least 3 s; 15 s to 2 min, a third of the length; 2 min or longer, the whole section where the brand is discussed; live streams: announce at start and end; audio: at the start, end and around every break; finance and health influencers state qualifications"
+    },
+    {
+     "url": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+     "title": "FTC: Disclosures 101 for Social Media Influencers",
+     "supports": "in video, say the disclosure in the video itself, not only in the description; repeat it periodically in live streams"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/podcast",
+     "title": "Fiverr: Podcast Writing category (read 2026-10-04)",
+     "supports": "podcast-writing gigs list 'Ad break' as a deliverable (59 gigs)"
+    },
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writer $30-$56 per hour; script projects include commercial and advertising scripts"
+    }
+   ],
+   "related": [
+    "genre:podcast_ad_read",
+    "genre:sponsored_creator_post",
+    "genre:youtube_video_script",
+    "genre:podcast_script",
+    "genre:influencer_brief",
+    "trend:video_podcasts",
+    "trend:creator_led_ads"
+   ],
+   "buyers": [
+    "YouTube creators and their managers",
+    "Podcast hosts and networks",
+    "Brands and agencies preparing integration talking points",
+    "Creator-economy agencies (MCNs)"
+   ],
+   "value": "medium",
+   "value_why": "Fiverr podcast-writing gigs list 'Ad break' writing as a deliverable (59 gigs, 2026-10-04); Upwork's script type covers commercial scripts at $30-$56/hr. Video podcasts and creator-led ads are growing in 2026, so integrations are a standing need for creators who sell sponsorships.",
+   "goal": "The viewer or listener stays through the segment instead of skipping, understands why the creator uses the product, and uses the code or link.",
+   "structure": [
+    {
+     "part": "Bridge and spoken disclosure",
+     "does": "Links from the episode's topic and says plainly that this part is sponsored ('Is video ko sponsor kiya hai ...').",
+     "length": "1-2 lines, about 5-8 seconds"
+    },
+    {
+     "part": "Problem link",
+     "does": "Names the viewer's problem that connects the topic to the product.",
+     "length": "1-2 lines, 10-15 seconds"
+    },
+    {
+     "part": "Product and personal use",
+     "does": "What it is in one line, then how the creator uses it, with one on-screen demo moment.",
+     "length": "15-30 seconds"
+    },
+    {
+     "part": "One benefit and the offer",
+     "does": "The single benefit most relevant to this audience (approved claim), the offer, code and deadline.",
+     "length": "10-15 seconds"
+    },
+    {
+     "part": "CTA",
+     "does": "Where to go (link in description or pinned comment) and the code said twice.",
+     "length": "5 seconds"
+    },
+    {
+     "part": "Return to content",
+     "does": "A line that hands back to the episode so viewers do not drop.",
+     "length": "1 line"
+    },
+    {
+     "part": "Production notes",
+     "does": "On-screen label for the whole segment (ASCI: the brand section in videos of 2 minutes or more), paid promotion box ticked, description text with link and disclosure.",
+     "length": "3-5 bullets"
+    }
+   ],
+   "length": {
+    "min": 30,
+    "max": 90,
+    "unit": "seconds",
+    "note": "Set by the sponsor contract. Time it by reading aloud at the creator's pace; Hinglish and Hindi delivery speed varies by creator."
+   },
+   "frameworks": [
+    "fw:pas",
+    "fw:bab",
+    "fw:fab"
+   ],
+   "techniques": [
+    "tech:transitions",
+    "tech:write_for_voiceover",
+    "tech:features_to_benefits",
+    "tech:liking_and_unity",
+    "tech:onscreen_text_vs_vo",
+    "tech:cta_writing"
+   ],
+   "hooks": [
+    "hook:personal_story",
+    "hook:problem_solution"
+   ],
+   "platforms": [
+    "plat:youtube_description",
+    "plat:youtube_chapters"
+   ],
+   "tones": [
+    "tone:conversational",
+    "tone:calm_reassuring",
+    "tone:desi_casual_hinglish"
+   ],
+   "languages": [
+    "lang:hinglish_roman",
+    "lang:hindi_voiceover_tts"
+   ],
+   "compliance": [
+    "comp:youtube_paid_promotion",
+    "comp:asci_influencer",
+    "comp:ftc_endorsement_guides",
+    "comp:endorsement_know_hows",
+    "comp:sebi_finfluencer_association"
+   ],
+   "checklist": [
+    "Is the sponsorship said out loud in the first line of the segment?",
+    "Do the production notes include an on-screen label and the paid promotion setting?",
+    "Does the segment connect to the episode's topic?",
+    "Is there one personal use moment the creator can honestly say?",
+    "Is there one benefit, not a feature list?",
+    "Are all claims from the brand's approved list, with no guaranteed returns or cures?",
+    "Is the code or link said at least twice?",
+    "Read aloud, does it fit the contracted duration?",
+    "Is there a line that returns to the episode?"
+   ],
+   "pitfalls": [
+    "'But first, a word from our sponsor' followed by brand copy read flat: the skip button wins. Bridge from the topic and keep the creator's normal voice.",
+    "Disclosure only in the description: the FTC wants it said in the video, and ASCI wants the label on screen for the brand section. Say it and show it.",
+    "Reading six features from the brand deck: viewers retain one. Pick the benefit that matters to this audience.",
+    "Finance or health claims ('guaranteed 12% returns', 'boosts immunity') from a creator without the qualification: breaks ASCI Addendum II and may break SEBI rules. Use approved, factual claims only.",
+    "A 2-minute read in a 10-minute video: the audience leaves. Hold to the contracted length.",
+    "Mid-roll placed before the video has delivered anything: viewers leave before the read. Place it after the first payoff."
+   ],
+   "lint": {
+    "min_words": 50,
+    "max_words": 260,
+    "max_sentence_words": 25,
+    "require": [
+     {
+      "label": "spoken disclosure",
+      "regex": "(?i)\\b(sponsor(ed|s)?|paid (promotion|partnership)|advertisement|partnered|partnership|collaboration)\\b|स्पॉन्सर|प्रायोजित|विज्ञापन"
+     }
+    ]
+   },
+   "exemplar_brief": "60-second sponsor read inside a Hindi personal-finance YouTube video on emergency-fund basics, for a UPI-based recurring-deposit app; creator voice: calm, explains like a friend; Hinglish VO in Roman script; spoken disclosure in the first line plus an on-screen label for the whole segment; one demo moment (setting up a Rs 500 weekly auto-save); approved claims only, no return guarantees; promo code and description link said twice; ends with a line returning to the video topic.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_12.json#genre:sponsored_integration_script",
+    "note": "Bridge from the topic then spoken 'ye ad hai' in the opening line, on-screen label throughout, problem framed in the creator's calm voice ('dikkat plan ki nahi, yaad rakhne ki hai'), Rs 500 weekly UPI demo, one benefit, code said 3x and link 2x, clean return line ('kitna amount rakhna chahiye?'), no rate or return claim. Personal-use placeholder is correct since none was supplied.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:stage_play",
+   "kind": "genre",
+   "name": "Stage play / nukkad natak script",
+   "status": "current",
+   "summary": "A script for live performance, from proscenium plays to India's street theatre (nukkad natak), where a small cast with no set draws a crowd, shows a social problem through quick scenes, talks to the audience directly and ends on a slogan or pledge. Good looks like short loud-friendly lines, a chorus and songs that hold an open-air crowd, a story instead of a lecture, and one clear action at the end.",
+   "use_for": [
+    "NGO and CSR awareness campaigns (cyber fraud, health, voting, sanitation, gender)",
+    "College dramatics society and inter-college competition plays",
+    "Government and civic awareness drives in markets, bastis and campuses",
+    "One-act plays for schools, festivals and corporate events",
+    "Full-length plays for theatre groups"
+   ],
+   "avoid": [
+    "Filmed short stories: use genre:short_film_script",
+    "A single performer's comedy: use genre:standup_comedy_set",
+    "Short filmed comic scenes: use genre:sketch_comedy",
+    "Radio or broadcast awareness messages: use genre:public_service_announcement"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://swaindia.org/pdf/script-registration.pdf",
+     "title": "Screenwriters Association (India): Script registration guidelines",
+     "supports": "SWA registers Story, Script and Dialogue for members (protect the play before circulating it)"
+    },
+    {
+     "url": "https://www.mha.gov.in/sites/default/files/250883_english_01042024.pdf",
+     "title": "Bharatiya Nyaya Sanhita, 2023 (MHA text)",
+     "supports": "s.356 defamation (including spoken imputations), s.196 promoting enmity between groups, s.299 insulting religious beliefs"
+    }
+   ],
+   "related": [
+    "genre:public_service_announcement",
+    "genre:sketch_comedy",
+    "genre:short_film_script",
+    "genre:political_speech",
+    "genre:katha_narration",
+    "trend:rural_vernacular_internet_india"
+   ],
+   "buyers": [
+    "NGOs and CSR teams",
+    "College dramatics societies",
+    "Government awareness campaigns",
+    "Theatre groups and directors",
+    "Schools and corporate event organisers"
+   ],
+   "value": "low",
+   "value_why": "Small paid market; street plays are commissioned by NGOs, colleges and awareness campaigns (harvest). Fees are modest and often bundled with performance.",
+   "goal": "The live audience stays to the end, reacts or joins in, and leaves able to repeat the message and do the one action.",
+   "structure": [
+    {
+     "part": "Gathering (nukkad)",
+     "does": "Drumbeat, clapping, a chant or song by the full cast to pull passers-by into a circle; names the issue in a slogan.",
+     "length": "1-2 minutes"
+    },
+    {
+     "part": "Sutradhar's opening",
+     "does": "A narrator addresses the crowd directly, sets up the character and the problem in their own street language.",
+     "length": "4-8 short lines"
+    },
+    {
+     "part": "Story scenes",
+     "does": "3-5 quick scenes with recognisable characters (the vegetable seller, the caller, the son); the chorus becomes crowd, wall, phone or chorus voice; freezes and tableaux mark the turns.",
+     "length": "2-3 minutes each"
+    },
+    {
+     "part": "Confrontation and questions",
+     "does": "The consequence lands; the sutradhar stops the action and asks the audience what the character should do.",
+     "length": "1-2 minutes"
+    },
+    {
+     "part": "Solution and pledge",
+     "does": "The practical action (what to say, whom to call), a slogan the crowd repeats, a closing song.",
+     "length": "2-3 minutes"
+    },
+    {
+     "part": "Proscenium form (when asked)",
+     "does": "Acts and scenes with character names above dialogue and stage directions in brackets or italics; set, light and sound cues kept minimal.",
+     "length": "Per the running time in the brief"
+    }
+   ],
+   "length": {
+    "min": 800,
+    "max": 6000,
+    "unit": "words",
+    "note": "A nukkad natak runs short because the crowd is standing in the open; a one-act or full-length stage play runs longer. Write to the running time in the brief and time a read-through with the cast."
+   },
+   "frameworks": [
+    "fw:monroes_motivated_sequence",
+    "fw:three_act_structure",
+    "fw:freytags_pyramid"
+   ],
+   "techniques": [
+    "tech:dialogue",
+    "tech:anaphora_repetition",
+    "tech:rhetorical_question",
+    "tech:rule_of_three",
+    "tech:callback",
+    "tech:conflict_and_stakes"
+   ],
+   "tones": [
+    "tone:satirical_vyangya",
+    "tone:inspirational",
+    "tone:storyteller_narrative"
+   ],
+   "languages": [
+    "lang:hindi_devanagari",
+    "lang:hindustani_everyday",
+    "lang:bhojpuri_awadhi_flavour",
+    "lang:regional_indian_languages"
+   ],
+   "compliance": [
+    "comp:bns_defamation_speech",
+    "comp:eci_mcc"
+   ],
+   "checklist": [
+    "Does a nukkad script open with a crowd-gathering chant or song before any dialogue?",
+    "Are most lines short enough to shout clearly in the open air?",
+    "Does the sutradhar or a character address the audience directly at least twice?",
+    "Is there at least one moment where the audience is asked to respond?",
+    "Is the issue shown through a character's story rather than explained in a speech?",
+    "Are character names above dialogue and stage directions in brackets?",
+    "Can the props be carried by the cast (a dupatta, a phone, a stick)?",
+    "Does it end with one practical action and a slogan the crowd can repeat?",
+    "Does it fit the running time in the brief?"
+   ],
+   "pitfalls": [
+    "Long speeches by a 'wise' character: crowds drift away. Break the message into exchanges, chants and questions.",
+    "A lecture with no story: people watch a person get cheated, not a list of rules. Build the play on one character's mistake and recovery.",
+    "Quiet, subtle scenes and whispered lines: they die outdoors. Write for volume and big physical action.",
+    "Message in formal Hindi or English for a market crowd: write in the street's language and code-mixing.",
+    "Naming a real official, company or community as the villain: defamation and enmity risk under BNS. Use types, not real names.",
+    "Election-period plays on political themes performed for a party: check the Model Code of Conduct and local permissions first."
+   ],
+   "lint": {
+    "min_words": 300,
+    "max_words": 9000,
+    "max_sentence_words": 25
+   },
+   "exemplar_brief": "15-minute nukkad natak script in Hindi (Devanagari) for a Patna NGO's anti-cyber-fraud campaign at markets and college gates: a vegetable seller loses her savings to a fake 'KYC update' call; cast of 6 with a sutradhar and chorus; opening crowd-gathering chant, 4 short scenes, a moment where the audience is asked what she should do, and a closing pledge with the cyber-crime helpline number the NGO supplies and a repeatable slogan.",
+   "verified": {
+    "verdict": "pass",
+    "score": 9,
+    "sample": "gallery/genre_12.json#genre:stage_play",
+    "note": "Gathering chant, sutradhar addresses the crowd 3+ times, 4 scenes (market, fake KYC call, bank, replay done right), audience asked mid-call and at the freeze, pledge, repeatable slogan 'रुको! सोचो! फ़ोन काटो!', props the cast can carry, Bihari-flavoured 'हमरा'. Facts right: banks never ask OTP/PIN for KYC; 1930 is the national cyber-fraud helpline, kept as an NGO-supplied placeholder per the brief. About 1,100 words should play 12-15 min with crowd work; time it.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  },
+  {
+   "id": "genre:standup_comedy_set",
+   "kind": "genre",
+   "name": "Stand-up comedy set",
+   "status": "current",
+   "summary": "A performer's set of bits, each built from a premise with an attitude, a setup, a punchline that lands on the last word, and tags, linked by segues and callbacks and written for this comedian's voice. Good looks like an early laugh, specific details from the performer's life, punches at power rather than communities, and a closer that ties back to earlier material.",
+   "use_for": [
+    "Open-mic and club sets for new and working comics (writing and punch-up)",
+    "Material for hosts, award shows and corporate events",
+    "Roast jokes (with the subject's consent)",
+    "Brand content in a stand-up format and Reels cut from sets"
+   ],
+   "avoid": [
+    "Multi-character comic scenes: use genre:sketch_comedy",
+    "Written satire articles: use genre:satire_parody",
+    "Emceeing an event with running order and introductions: use genre:anchoring_script",
+    "Speeches that only need a few light lines: use genre:keynote_speech or genre:wedding_speech"
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.mha.gov.in/sites/default/files/250883_english_01042024.pdf",
+     "title": "Bharatiya Nyaya Sanhita, 2023 (MHA text)",
+     "supports": "s.356 defamation, s.196 promoting enmity between groups, s.299 deliberate insult to religious beliefs: the legal risk around jokes on communities, religion and real people"
+    }
+   ],
+   "related": [
+    "genre:sketch_comedy",
+    "genre:satire_parody",
+    "genre:anchoring_script",
+    "genre:short_form_video_script",
+    "genre:meme_caption",
+    "trend:short_video_india"
+   ],
+   "buyers": [
+    "Comedians (punch-up, specials)",
+    "Hosts and anchors",
+    "Corporate and award-show producers",
+    "Roast organisers",
+    "Brands and creators using stand-up formats"
+   ],
+   "value": "low",
+   "value_why": "Comedians mostly write their own material; paid writing is for specials, hosts, roasts and corporate shows (harvest).",
+   "goal": "The audience laughs at each punch, the laughs build across the set, and the comedian can perform it as their own.",
+   "structure": [
+    {
+     "part": "Opener",
+     "does": "A quick, high-certainty laugh that establishes who the comic is (often addressing how they look, sound or where they are from).",
+     "length": "First 30 seconds"
+    },
+    {
+     "part": "Bit: premise",
+     "does": "The topic plus an attitude (weird, scary, stupid, hard) and why: 'Bengaluru landlords interview tenants like they're adopting a child.'",
+     "length": "1 line"
+    },
+    {
+     "part": "Bit: setup",
+     "does": "Only the facts the audience needs, in specific details, pointing them toward a wrong assumption.",
+     "length": "1-4 lines"
+    },
+    {
+     "part": "Bit: punchline and tags",
+     "does": "The reveal that breaks the assumption, with the funny word last; then 2-4 tags, extra punches off the same setup; an act-out where it plays.",
+     "length": "1 line + 2-4 tags"
+    },
+    {
+     "part": "Segues",
+     "does": "Short links that move from one bit to the next without 'so anyway'.",
+     "length": "1-2 lines"
+    },
+    {
+     "part": "Closer",
+     "does": "The strongest bit or a callback chain to earlier bits; ends on a big laugh and the comic's name.",
+     "length": "1-3 minutes"
+    }
+   ],
+   "length": {
+    "min": 300,
+    "max": 3600,
+    "unit": "seconds",
+    "note": "Open-mic slots are short, club spots longer, an hour special the top end. Time the set on stage, not on paper; marked pauses and act-outs take longer than reading."
+   },
+   "frameworks": [
+    "fw:abt",
+    "fw:nested_loops"
+   ],
+   "techniques": [
+    "tech:punchline_last",
+    "tech:callback",
+    "tech:rule_of_three",
+    "tech:read_aloud",
+    "tech:vulnerability_confession",
+    "tech:specificity",
+    "tech:wordplay_pun"
+   ],
+   "hooks": [
+    "hook:personal_story",
+    "hook:contrarian"
+   ],
+   "tones": [
+    "tone:playful_witty",
+    "tone:deadpan",
+    "tone:sarcastic",
+    "tone:desi_casual_hinglish"
+   ],
+   "languages": [
+    "lang:hinglish_roman"
+   ],
+   "compliance": [
+    "comp:bns_defamation_speech"
+   ],
+   "checklist": [
+    "Does the opener get to a laugh within the first few lines?",
+    "Does each bit have a premise with an attitude, not just a topic?",
+    "Does each punchline end on the funny word?",
+    "Are there tags after the main punches?",
+    "Are pauses and act-outs marked for performance?",
+    "Is the material specific to this performer's life and voice?",
+    "Is there at least one callback, ideally in the closer?",
+    "Does it fit the slot time when performed?",
+    "Does it avoid targeting a religion, caste or community, and avoid invented claims about real people?",
+    "Is every joke original (no lifted viral jokes)?"
+   ],
+   "pitfalls": [
+    "'Have you noticed how traffic is bad?' with no attitude: a topic is not a premise. Add the angle: 'Bengaluru traffic is the only thing in my life that has a clear five-year plan.'",
+    "Punchline buried mid-sentence ('...which is why, funnily enough, my landlord, by the way, ...'): rewrite so the reveal word is last.",
+    "Explaining the joke after it: kills the laugh. Trust the audience and tag instead.",
+    "Lifting a viral joke or another comic's premise: comedians and audiences spot it, and the writer's credibility ends there. Write from the performer's own life.",
+    "Jokes about a religion, caste or community: legal risk under BNS ss.196 and 299, and Indian comedians have faced FIRs over material. Punch at systems, power and yourself.",
+    "Roasting a real person's private life with invented claims: defamation risk. Keep to public acts and get consent for roasts."
+   ],
+   "lint": {
+    "min_words": 150,
+    "max_words": 9000,
+    "max_sentence_words": 30
+   },
+   "exemplar_brief": "5-minute Hinglish stand-up set (open-mic length) for a 27-year-old Indore-born software tester now living in Bengaluru, on moving to Bengaluru and dealing with landlords; two bits, each with a premise, setup, punchline and at least 2 tags; one act-out; a callback in the closer; [PAUSE] and [ACT-OUT] cues marked; no jokes on religion, caste or community.",
+   "verified": {
+    "verdict": "pass",
+    "score": 8,
+    "sample": "gallery/genre_12.json#genre:standup_comedy_set",
+    "note": "Opener reaches the tester/bug persona fast; two bits with attitude premises, setups, punches and 3 tags each, [PAUSE]/[ACT-OUT] marked, the landlord-interview act-out works ('Ye to mere HR ne bhi nahi poochha!'), closer is a bug-report callback ending on 'Cannot reproduce.' Weaker: Bengaluru deposit material is well-trodden, tag 2 (FD nominee) is muddled, the bit-2 punch ends on 'padegi' rather than 'change request'.",
+    "judge": "vj_genre_12",
+    "date": "2026-10-07"
+   }
+  }
+ ]
+}

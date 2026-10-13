@@ -1,0 +1,481 @@
+{
+ "kind": "genre",
+ "items": [
+  {
+   "id": "genre:abandoned_cart_email",
+   "name": "Abandoned cart / browse abandonment email",
+   "category": "Email & CRM",
+   "one_line": "Triggered email that brings back a shopper who left items in the cart or viewed without buying.",
+   "aliases": [
+    "cart recovery email",
+    "abandoned checkout email",
+    "browse abandonment email"
+   ],
+   "value": "high",
+   "value_evidence": "Klaviyo names abandoned cart among the first flows every store should build",
+   "sources": [
+    {
+     "url": "https://help.klaviyo.com/hc/en-us/articles/115002774932",
+     "title": "Klaviyo Help: Getting started with flows (updated 2026-03-30)",
+     "supports": "recommends building welcome series, abandoned cart, post-purchase and winback flows first; separate email and SMS welcome flows"
+    },
+    {
+     "url": "https://www.klaviyo.com/blog/abandoned-cart-email",
+     "title": "Klaviyo: Abandoned cart emails best practices",
+     "supports": "abandoned cart as a standard ecommerce flow"
+    }
+   ],
+   "note": "Often paired with SMS/WhatsApp reminders in India; discount in the first reminder trains customers to abandon.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:about_page",
+   "name": "About page / company bio",
+   "category": "Web & UX",
+   "one_line": "The page that makes a business credible and human: who is behind it, why, and why trust them.",
+   "aliases": [
+    "about us page",
+    "company bio",
+    "our story page"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Website Content lists 'Bio/About us' as a page type",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/website-content",
+     "title": "Fiverr: Website Content subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4310 gigs; page-type filter = Landing page, Bio/About us, Homepage, Product page, Sales page, Generic content, FAQs, Contact us, Blog post, Privacy policy, Service page, Reviews, Testimonials, Terms & conditions, Press release"
+    }
+   ],
+   "kind": "genre"
+  },
+  {
+   "id": "genre:advertorial",
+   "name": "Advertorial / sponsored article",
+   "category": "Advertising",
+   "one_line": "Paid placement written in the host publication's editorial style that still sells.",
+   "aliases": [
+    "sponsored content",
+    "paid article",
+    "brand feature",
+    "native article"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork has an Advertorial Specialists hire category; AWAI's 2026 pricing guide lists 'Advertorial'",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/advertorial-freelancers/",
+     "title": "Upwork: hire Advertorial Specialists",
+     "supports": "dedicated hire category (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    },
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Must be labelled as paid; India media label these 'Advt.', 'Brand Desk' or 'Partner content'.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:affiliate_review",
+   "name": "Affiliate review / affiliate article",
+   "category": "Creator & affiliate",
+   "one_line": "Review or recommendation article whose links earn a commission, written to help a buyer choose and click through.",
+   "aliases": [
+    "affiliate marketing article",
+    "money page",
+    "affiliate content"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr's Article type facet lists 'Affiliate marketing' as its own article type (323 gigs on 2026-10-04).",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Must carry a clear affiliate disclosure near the top (comp:asci_influencer, comp:ftc_endorsements). Evidence of real use (photos, measurements) is what separates it from thin affiliate content.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:ai_video_prompt_script",
+   "name": "AI video / film prompt-script (shot-by-shot)",
+   "category": "Creative: scripts & performance",
+   "one_line": "A shot-by-shot script written as prompts for AI video generators: subject, action, camera, lens, light and audio per shot.",
+   "aliases": [
+    "AI film script",
+    "shot list for AI video",
+    "Seedance/Veo/Kling prompt",
+    "text-to-video prompt"
+   ],
+   "value": "medium",
+   "value_evidence": "Upwork's 2026 script-writer description names scripts for AI-generated or animated videos as a common project.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "script writing projects include scripts for AI-generated or animated videos; writers must understand avatars and text-to-video platforms"
+    }
+   ],
+   "note": "Each shot is self-contained (models do not remember earlier shots unless referenced); keep character and wardrobe descriptors identical across shots; state duration and aspect ratio. See also genre:system_prompt.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:alt_text",
+   "name": "Image alt text and accessible descriptions",
+   "category": "Organic social",
+   "one_line": "Short text description of an image for screen readers and search, added to web images and to social posts that support it.",
+   "aliases": [
+    "alt text",
+    "image description",
+    "accessibility text"
+   ],
+   "value": "low",
+   "value_evidence": "Usually a small add-on to web or social work; no dedicated marketplace category found on 2026-10-04.",
+   "note": "Unsure scope (may sit with UX microcopy in genre_commercial). Describe what matters in context; do not start with 'image of'; keyword stuffing alt text is spam.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:amazon_a_plus_content",
+   "name": "Amazon A+ content / Brand Story",
+   "category": "Ecommerce",
+   "one_line": "Module-based enhanced description (images + short text blocks, comparison chart) for brand-registered sellers.",
+   "aliases": [
+    "A+ content",
+    "Enhanced Brand Content",
+    "EBC",
+    "Brand Story module"
+   ],
+   "value": "medium",
+   "value_evidence": "Amazon's seller forums document A+ as a separate module-based description; sold as a listing add-on by marketplace agencies",
+   "sources": [
+    {
+     "url": "https://sellercentral.amazon.com/seller-forums/discussions/t/119bb4cc3cf0a4b4e8d75e94b7c836ee",
+     "title": "Amazon Seller Forums: guide to A+ modules",
+     "supports": "A+ content (Enhanced Product Description, Brand Story) is a separate module-based description for Brand Registry sellers; forum, low confidence"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    }
+   ],
+   "note": "Text is short and sits inside images; module text limits must be checked on Seller Central.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:anchoring_script",
+   "name": "Anchoring / emcee script (events)",
+   "category": "Speeches, public affairs & political",
+   "one_line": "The compere's running script for an event: opening, introductions, link lines between acts, shayari, audience engagement and close.",
+   "aliases": [
+    "emcee script",
+    "compering script",
+    "MC script",
+    "sanchalan"
+   ],
+   "value": "low",
+   "value_evidence": "Indian schools, colleges, corporates and weddings need anchoring scripts for every event; mostly written by the anchor or event company.",
+   "note": "Bilingual Hindi-English is standard; a shayari or quote to open and to introduce each guest is expected in India. Confirm guest names, titles and order of protocol with the organiser.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:annual_report_narrative",
+   "name": "Annual report narrative",
+   "category": "PR & corporate comms",
+   "one_line": "The non-financial story of the year: chairman's message, highlights, strategy and business review sections.",
+   "aliases": [
+    "annual report copy",
+    "integrated report narrative",
+    "MD&A narrative"
+   ],
+   "value": "medium",
+   "value_evidence": "AWAI lists 'Annual Report'; Upwork report writers list annual reports",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    },
+    {
+     "url": "https://www.upwork.com/hire/report-writers/",
+     "title": "Upwork: hire Report Writers",
+     "supports": "snippets list annual and sustainability reports (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "India: listed companies' reports carry statutory sections; the writer owns the narrative, not the financials.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:api_reference",
+   "name": "API reference documentation",
+   "category": "Technical & product documentation",
+   "one_line": "Endpoint-by-endpoint (or function-by-function) reference a developer scans to call an API correctly.",
+   "aliases": [
+    "API docs",
+    "SDK reference",
+    "endpoint reference"
+   ],
+   "value": "high",
+   "value_evidence": "Technical writing is a BLS-tracked occupation; API docs are the developer-facing slice of it (see Google developer documentation style guide).",
+   "sources": [
+    {
+     "url": "https://www.bls.gov/ooh/media-and-communication/technical-writers.htm",
+     "title": "US BLS Occupational Outlook Handbook: Technical Writers",
+     "supports": "technical writer occupation and pay"
+    },
+    {
+     "url": "https://developers.google.com/style",
+     "title": "Google developer documentation style guide",
+     "supports": "industry style guide used for API and developer docs"
+    }
+   ],
+   "note": "Each entry: purpose, request (method, path, parameters with type/required/default), example request, response schema, example response, errors. Generated-from-spec (OpenAPI) skeleton plus human-written descriptions is the norm; never invent parameters.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:apology_statement",
+   "name": "Public apology statement",
+   "category": "PR & corporate comms",
+   "one_line": "Brand or leader apology that names the harm, owns it, and says what changes.",
+   "aliases": [
+    "corporate apology",
+    "brand apology",
+    "public apology"
+   ],
+   "value": "low",
+   "value_evidence": "Written inside crisis-communications engagements (Upwork corporate communications category)",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/hire/corporate-communications-freelancers/us/",
+     "title": "Upwork: hire Corporate Communications Experts",
+     "supports": "dedicated hire category; snippets list crisis, internal and external communications (page refuses fetchers; title/description seen in search results 2026-10-04, snippet-only)"
+    }
+   ],
+   "note": "Non-apologies ('we regret if anyone was offended') backfire on Indian social media fast.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:app_store_listing",
+   "name": "App store listing copy",
+   "category": "Ecommerce",
+   "one_line": "App name, subtitle, short and full description and screenshot captions for Google Play / App Store.",
+   "aliases": [
+    "ASO copy",
+    "Play Store description",
+    "App Store description"
+   ],
+   "value": "medium",
+   "value_evidence": "Fiverr Product Descriptions lists 'App store' as a platform filter",
+   "sources": [
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/product-description",
+     "title": "Fiverr: Product Descriptions subcategory",
+     "supports": "page search data on 2026-10-04: num_found 4945 gigs; platform filter = E-Commerce stores, Marketplaces, Social media shops, Websites, Property listings/Real estate, App store"
+    }
+   ],
+   "note": "Field limits differ between Apple and Google; ASO keyword rules apply.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:audio_series_script",
+   "name": "Audio series / audio drama script",
+   "category": "Creative: scripts & performance",
+   "one_line": "Episodic script for listen-only stories (audio series, radio drama), where narration and dialogue carry everything.",
+   "aliases": [
+    "audio drama",
+    "Pocket FM series",
+    "Kuku FM story",
+    "radio play",
+    "audio fiction"
+   ],
+   "value": "high",
+   "value_evidence": "Pocket FM reports tens of thousands of AI audio series live and tens of thousands of Indian users publishing monthly, with a paid writer programme (medianews4u, 2025-09-17).",
+   "sources": [
+    {
+     "url": "https://www.medianews4u.com/pocket-fm-brings-ai-powered-audio-storytelling-to-india-with-30000-series-live/",
+     "title": "medianews4u (2025-09-17): Pocket FM brings AI-powered audio storytelling to India",
+     "supports": "over 30,000 AI audio series live; over 33,000 Indian users publish audio series each month; top writers projected to cross Rs 10 lakh a year"
+    }
+   ],
+   "note": "Write for the ear: name the speaker often, signal scene changes with sound cues, avoid visual-only action. Indian apps favour long-running Hindi serials with a cliffhanger every episode.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:author_bio",
+   "name": "Author bio",
+   "category": "Publishing",
+   "one_line": "A short third-person bio for book jackets, retailer author pages, festival programmes and bylines.",
+   "aliases": [
+    "about the author",
+    "author page bio",
+    "byline bio"
+   ],
+   "value": "low",
+   "value_evidence": "Usually bundled with blurb or launch packages rather than sold alone.",
+   "sources": [
+    {
+     "url": "https://janefriedman.com/query-letters/",
+     "title": "Jane Friedman: How to Write a Query Letter That Gets Manuscript Requests",
+     "supports": "query anatomy: housekeeping, story description (150-300 words), comps, bio (50-100 words); whole query about 200 to 450 words"
+    }
+   ],
+   "note": "Write two lengths (one line, one paragraph). Credentials relevant to this book first, one human detail last. Query-letter bios stay short (Jane Friedman's guide).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:award_entry",
+   "name": "Award entry / award submission",
+   "category": "PR & corporate comms",
+   "one_line": "Written case for an awards jury: objective, insight, idea, execution and results, inside strict word limits.",
+   "aliases": [
+    "award submission",
+    "awards writing",
+    "Effie entry",
+    "case submission"
+   ],
+   "value": "low",
+   "value_evidence": "Dedicated award-entry writing agencies exist; Effie entries are judged on a written case",
+   "sources": [
+    {
+     "url": "https://boost-awards.co.uk/award-writing/",
+     "title": "Boost Awards: Award writing",
+     "supports": "dedicated award-entry writing agency"
+    },
+    {
+     "url": "https://effie.org/partners/united-states/entry-details/",
+     "title": "Effie Awards: entry details",
+     "supports": "entries are written cases judged on objective, insight, idea and results"
+    }
+   ],
+   "note": "Results must be provable; juries penalise vague claims.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:b2b_playbook",
+   "name": "Playbook / practical guide (B2B)",
+   "category": "Long-form B2B",
+   "one_line": "Step-by-step operational guide (templates, checklists, worked examples) that shows a buyer exactly how to do a job, often gated.",
+   "aliases": [
+    "B2B playbook",
+    "marketing playbook",
+    "field guide",
+    "toolkit"
+   ],
+   "value": "medium",
+   "value_evidence": "Sold inside the same gated-content and ghostwriting work as ebooks and white papers (Upwork ghostwriting and business-writing project lists, 2026-01-21); no separate category.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    }
+   ],
+   "note": "More action, less argument than a white paper; every chapter should end in something the reader can do on Monday.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:battle_card",
+   "name": "Competitive battle card",
+   "category": "Sales enablement",
+   "one_line": "Internal sheet that arms reps with how to win against a named competitor: traps, objections, proof.",
+   "aliases": [
+    "battlecard",
+    "competitive card",
+    "kill sheet"
+   ],
+   "value": "low",
+   "value_evidence": "AWAI lists 'Sales Enablement: Battlecard'",
+   "sources": [
+    {
+     "url": "https://www.awai.com/copywriting-projects/",
+     "title": "AWAI: 80 In-Demand Copywriting Projects (updated 2026-02-02)",
+     "supports": "copywriting pricing guide naming each project type with its own fee guideline; project names checked in the page HTML 2026-10-04"
+    }
+   ],
+   "note": "Internal; accuracy about rivals matters even though it is not public.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:best_of_roundup",
+   "name": "Best-of roundup (ranked product list)",
+   "category": "Blog & SEO",
+   "one_line": "Ranked list of the best products or tools for a use case, each with why it made the list, who it suits and its trade-off.",
+   "aliases": [
+    "best X for Y",
+    "buying guide",
+    "gift guide",
+    "top picks roundup"
+   ],
+   "value": "high",
+   "value_evidence": "Core affiliate-site format; Google's own review guidance addresses ranked lists directly, requiring enough useful content for them to stand alone (last updated 2025-12-10).",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews",
+     "title": "Google Search Central: Write high quality reviews (last updated 2025-12-10)",
+     "supports": "Google's own checklist for reviews: firsthand evidence, quantitative measurements, pros and cons, comparison to alternatives, justify 'best' picks; ranked lists must have enough useful content to stand on their own"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Every 'best' needs firsthand evidence; disclose affiliate links.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:blog_post",
+   "name": "Blog post (general / SEO blog article)",
+   "category": "Blog & SEO",
+   "one_line": "A standalone article on a brand or creator site that answers one reader question and earns search or social traffic.",
+   "aliases": [
+    "blog article",
+    "SEO article",
+    "web article",
+    "content writing"
+   ],
+   "value": "high",
+   "value_evidence": "Upwork lists blog/web content writing as its own freelance job type with a typical $15-$35/hr band (Upwork, 2026-01-21); Fiverr's Articles & Blog Posts is a top-level writing subcategory with thousands of gigs per article type.",
+   "sources": [
+    {
+     "url": "https://www.upwork.com/resources/types-of-freelance-writing",
+     "title": "Upwork: 14 Types of Freelance Writing Jobs and What They Pay (published 2026-01-21)",
+     "supports": "Upwork's own list of freelance writing job types with typical hourly rate bands charged on Upwork (blog/web content $15-$35/hr, content writer $15-$40/hr, ghostwriter $20-$45/hr, script writer $30-$56/hr, email & newsletter $15-$40/hr; newswriters $34-$62/hr citing Glassdoor) and project lists per type"
+    },
+    {
+     "url": "https://www.fiverr.com/categories/writing-translation/articles-blogposts",
+     "title": "Fiverr: Articles & Blog Posts category (Article type facet read 2026-10-04)",
+     "supports": "Fiverr's Article type filter with live gig counts, a SUPPLY signal (how many sellers offer it): Long-form article 3494, Informational 3483, Instructional/How-to 3138, News story 1738, Research article 1713, First-person narrative 1507, Listicle 1243, Review 679, Affiliate marketing 323, Opinion piece 280, Technical article 254"
+    }
+   ],
+   "note": "Umbrella card; the format cards below (how-to, listicle, guide, comparison, review, glossary) are its sub-shapes. Cheapest and most AI-commoditised tier; value now sits in original data, first-hand experience and SEO/AEO structure.",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:book_blurb",
+   "name": "Book blurb / back-cover copy",
+   "category": "Publishing",
+   "one_line": "The few paragraphs on the back cover or jacket flap that make a browser open the book.",
+   "aliases": [
+    "back cover copy",
+    "jacket copy",
+    "flap copy",
+    "blurb"
+   ],
+   "value": "medium",
+   "value_evidence": "Reedsy lists blurb optimisation among its marketing services for authors.",
+   "sources": [
+    {
+     "url": "https://reedsy.com/",
+     "title": "Reedsy marketplace",
+     "supports": "author-services marketplace covering editing, design, marketing (incl. blurb) and ghostwriting"
+    }
+   ],
+   "note": "Fiction: protagonist, want, obstacle, stakes, no ending. Nonfiction: reader problem, promise, proof, author credibility. Endorsement quotes on a cover must be real and permissioned.",
+   "kind": "genre"
+  }
+ ]
+}

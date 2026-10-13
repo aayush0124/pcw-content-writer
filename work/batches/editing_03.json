@@ -1,0 +1,112 @@
+{
+ "kind": "editing",
+ "items": [
+  {
+   "id": "edit:hindi_proofread",
+   "name": "Hindi and Hinglish proofreading pass (matras, nukta, anusvara/chandrabindu, real-word errors)",
+   "category": "Self-edit passes",
+   "one_line": "A dedicated proofread for Devanagari copy against the Central Hindi Directorate standard: matras and conjuncts, anusvara vs chandrabindu, nukta policy, ऑ for English sounds, danda, consistent address forms, and valid words that are the wrong word.",
+   "aliases": [
+    "Hindi proofreading",
+    "vartani check",
+    "मानक वर्तनी जाँच",
+    "Devanagari proofread",
+    "Hindi spell check"
+   ],
+   "sources": [
+    {
+     "url": "https://www.chd.education.gov.in/sites/default/files/devanagari-lipi.pdf",
+     "title": "Central Hindi Directorate (Ministry of Education), 'Devanagari Lipi evam Hindi Vartani ka Manakikaran', 2024 edition",
+     "supports": "read 2026-10-05 (PDF text layer partly garbled, read by eye): anusvara and anunasik (chandrabindu) both stay in use because they change meaning; for a nasal + same-class consonant use anusvara for uniformity (गंगा, चंचल, पंडित), but not when the nasal is doubled (अन्न, सम्मेलन) or followed by a different class (अन्य, उन्मुख); where a vowel sign sits above the headline, chandrabindu is written as anusvara for space (नहीं, में, क्यों); nukta is not part of the standard Hindi alphabet and is not needed in Urdu words Hindi has absorbed (कलम, किला, दाग), but stays when transliterating Urdu text; English 'o' as in college is written with ardhachandra ऑ (कॉलेज, हॉल, मॉल, ऑफिस)"
+    },
+    {
+     "url": "https://aka.ms/hindi-styleguide",
+     "title": "Microsoft Hindi Localization Style Guide (hin-ind-StyleGuide.pdf)",
+     "supports": "'It's a common error to use आप आपके खाते ... it should be always आप अपने, हम अपने, and वो अपने'; avoid the English em dash in Hindi, use commas or parentheses or a new sentence; verbs inflect for gender, number and 'degree of respect'"
+    },
+    {
+     "url": "https://mozilla-l10n.github.io/styleguides/hi-IN/",
+     "title": "Mozilla style guide: Hindi (hi-IN)",
+     "supports": "purna viram (।) not '.' or '|'; आप not तुम in formal copy; Latin digits by default"
+    }
+   ],
+   "note": "Pass order: (1) Unicode hygiene: danda is U+0964, no pipe or Latin full stop; one nukta method throughout; no stray ZWJ/ZWNJ. (2) Standard spelling per CHD 2024 (rules above). Brand or creator copy may keep nukta for Urdu flavour (see lang:urdu_influenced_hindi) but must be consistent within a piece. (3) Matras: ि/ी and ु/ू swaps, missing halant in conjuncts. (4) Real-word errors that spell-check passes: नई/नहीं, की/कि, है/हैं type slips; ASR and TTS read-backs catch some, a human read catches the rest. (5) Grammar of address and reflexive (आप अपने), gender/number agreement. (6) Hinglish in Roman script: one spelling per word across the piece (hai/he, nahi/nahin), consistent with the brand sheet. Related: lang:hindi_devanagari, tech:hindi_address_register, edit:proofread.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:style_india_government",
+   "name": "Government of India drafting style (Central Secretariat Manual of Office Procedure)",
+   "category": "Plain language & style guides",
+   "one_line": "The Government of India's own rules for official drafting: clear, concise wording that cannot be misread, the right form of communication (letter, demi-official letter, office memorandum), and bilingual Hindi-English issue where the Official Languages Act requires it.",
+   "aliases": [
+    "CSMOP",
+    "Manual of Office Procedure",
+    "sarkari drafting rules",
+    "GoI office procedure",
+    "noting and drafting"
+   ],
+   "sources": [
+    {
+     "url": "https://www.darpg.gov.in/static/uploads/2025/10/e4360b9fcbc0a1a94649c758541051a0.pdf",
+     "title": "DARPG, Central Secretariat Manual of Office Procedure, 13th edition (September 2010), hosted on darpg.gov.in",
+     "supports": "General instructions for drafting: 'A draft should carry the message sought to be conveyed in a language that is clear, concise and incapable of misconstruction'; 'Lengthy sentences, abruptness, redundancy, circumlocution, superlatives and repetition ... should be avoided'; the formula 'I am directed to say' is not required at the start because it distances the reader, a more direct format is preferred; long communications should end with a summary; mention the subject and the last reference number and date. Forms: a letter begins 'Sir/Madam' and ends 'Yours faithfully'; a demi-official letter is 'written in the first person in a personal and friendly tone'; an office memorandum 'is written in the third person and bears no salutation or subscription except the name and designation of the officer signing it'"
+    },
+    {
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1848407",
+     "title": "PIB (DARPG release, 2022): CSMOP 2022 launch",
+     "supports": "'The Central Secretariat Manual of Office Procedure 2022 is the 16th Edition of the CSMOP first published in 1955'"
+    },
+    {
+     "url": "https://rajbhasha.gov.in/sites/default/files/olact1963eng.pdf",
+     "title": "The Official Languages Act, 1963 (as amended 1967), Department of Official Language",
+     "supports": "both Hindi and English 'shall be used for resolutions, general orders, rules, notifications, administrative or other reports or press communiques issued ... by the Central Government' (and its corporations/companies)"
+    },
+    {
+     "url": "https://rajbhasha.gov.in/en/official-language-rules-1976",
+     "title": "Official Language Rules, 1976 (Department of Official Language)",
+     "supports": "'communications from a Central Government office in reply to communications in Hindi shall be in Hindi'; the person signing a document covered by the Act's bilingual clause must ensure it is issued both in Hindi and in English"
+    }
+   ],
+   "note": "No official PIB or Government of India editorial style guide for press releases or web copy was found on 2026-10-05 (one web search returned only generic press-release guides and AP style); CSMOP is the official drafting manual and is used here. The drafting wording above was read in the 13th edition (2010) on darpg.gov.in; the current edition is the 16th (2022) per PIB, and whether every sentence carried over was not checked. For government web content also see comp:gigw_3; for UK-style plain-language comparison see edit:style_gov_uk. Deliverables: genre:government_press_note, genre:scheme_explainer, official letters; tone: tone:sarkari_formal.",
+   "kind": "editing"
+  },
+  {
+   "id": "edit:test_send_preview",
+   "name": "Test send and real-app preview (mobile and desktop)",
+   "category": "Workflow & QA",
+   "one_line": "Before hand-off, send the piece to yourself or preview it inside the real tool, on a phone and on a desktop, and check truncation, line breaks, links, personalisation and rendering exactly as the reader will see them.",
+   "aliases": [
+    "send a test",
+    "test email",
+    "seed test",
+    "preview on device",
+    "inbox preview",
+    "render check"
+   ],
+   "sources": [
+    {
+     "url": "https://mailchimp.com/help/preview-and-test-your-email-campaign/",
+     "title": "Mailchimp Help: Preview and Test Your Email",
+     "supports": "Preview mode: 'Click Desktop or Mobile to see how your finished email design will look on these devices'; test emails show how the email appears in your inbox and can be shared with colleagues; 'Contact-specific merge tags and dynamic content won't work in test emails', so preview with live merge-tag info on; use Link Checker; test emails count toward the monthly send limit"
+    },
+    {
+     "url": "https://mailchimp.com/help/about-test-email-sending-limits/",
+     "title": "Mailchimp Help: About Test Email Sending Limits",
+     "supports": "Free plan '12 tests per email' and '24 total tests in a 24-hour period'; paid '70 tests per email' and '200 total tests in a 24-hour period'; each recipient of a test counts"
+    },
+    {
+     "url": "https://mailchimp.com/help/test-with-inbox-preview/",
+     "title": "Mailchimp Help: Test with Inbox Preview",
+     "supports": "Litmus-powered screenshots of the email in different email clients and devices (paid plans; from the search result summary)"
+    },
+    {
+     "url": "https://www.facebook.com/business/help/832459417176147",
+     "title": "Meta Business Help Centre: About ad previews in Meta Ads Manager",
+     "supports": "preview an unpublished ad across placements and send a preview to a device; previews are examples and rendering can vary by device and placement (page body did not load in the fetch tool; wording from the search result summary, medium confidence)"
+    }
+   ],
+   "note": "Steps: (1) preview in the tool on mobile and desktop views; (2) send a real test to your own phone and a desktop client (and to Gmail and Outlook if the list uses both); (3) check subject + preheader truncation, first-screen copy, line breaks and emoji rendering, every link and UTM, merge tags/fallbacks, dark mode, alt text; (4) for social posts, draft or schedule to a private/test surface and read it on the phone before posting; (5) for ads, use the platform's placement preview, then 'preview on device'. Record what you checked in the hand-off note. Relates to edit:proofread (which says to proofread on the final format) and plat:email_subject_line.",
+   "kind": "editing"
+  }
+ ]
+}

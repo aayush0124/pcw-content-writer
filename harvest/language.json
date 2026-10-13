@@ -1,0 +1,544 @@
+{
+ "kind": "language",
+ "worker": "tone_lang",
+ "as_of": "2026-10-04",
+ "source": "Mozilla hi-IN and Microsoft localisation/global-English style guides, Govt of India e-Gov localisation best practices (L10N-eGov v5.7), Unicode/Wikipedia references for scripts, numbering and transliteration, linguistics and India-internet reports",
+ "items": [
+  {
+   "id": "lang:us_english",
+   "name": "US English",
+   "category": "English varieties",
+   "one_line": "American spelling and conventions: -or, -ize, -er, single l (traveled), license for noun and verb, month-day-year dates.",
+   "aliases": [
+    "American English",
+    "en-US"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences",
+     "title": "American and British English spelling differences (Wikipedia)",
+     "supports": "American patterns: color, organize, center, traveled, license (noun and verb), anemia"
+    }
+   ],
+   "note": "Use for US-market clients, SaaS docs written to a US style guide, and Google Ads aimed at the US. Do not mix with UK/Indian spellings inside one piece."
+  },
+  {
+   "id": "lang:uk_english",
+   "name": "UK English",
+   "category": "English varieties",
+   "one_line": "British spelling: -our, -ise (or Oxford -ize), -re, doubled l (travelled), licence/practice as nouns vs license/practise as verbs.",
+   "aliases": [
+    "British English",
+    "en-GB",
+    "Commonwealth English",
+    "Oxford spelling"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences",
+     "title": "American and British English spelling differences (Wikipedia)",
+     "supports": "British patterns; Oxford spelling keeps -ize; Commonwealth countries normally follow British usage"
+    }
+   ],
+   "note": "Oxford spelling (-ize with other British forms) is a legitimate house style; pick one and apply it throughout."
+  },
+  {
+   "id": "lang:indian_english",
+   "name": "Indian English",
+   "category": "English varieties",
+   "one_line": "British-based spelling with -ise, lakh/crore for Indian money, and India-specific vocabulary that global readers may not know.",
+   "aliases": [
+    "en-IN",
+    "Indian English usage"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Indian_English",
+     "title": "Indian English (Wikipedia)",
+     "supports": "follows British spelling; lakh/crore in formal publications; Indianisms such as prepone, do the needful, pass out (graduate), emphatic 'only'"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/American_and_British_English_spelling_differences",
+     "title": "American and British English spelling differences (Wikipedia)",
+     "supports": "India strongly prefers -ise over -ize"
+    }
+   ],
+   "note": "Indianisms are fine for Indian audiences but flag them (prepone, do the needful, 'multiple equipments') when the reader is global; that is a mistake list for the card."
+  },
+  {
+   "id": "lang:india_locale_formats",
+   "name": "Indian number, currency and date formats",
+   "category": "Locale conventions",
+   "one_line": "Lakh/crore and 2-digit grouping (12,34,56,789), the rupee sign U+20B9, and day-month-year dates for Indian readers.",
+   "aliases": [
+    "lakh crore",
+    "Indian numbering system",
+    "INR formatting",
+    "Indian date format"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Indian_numbering_system",
+     "title": "Indian numbering system (Wikipedia)",
+     "supports": "lakh = 100,000, crore = 10 million; digits grouped in pairs after the first three; Indian publications use lakh/crore for rupee amounts, international units for foreign currency"
+    },
+    {
+     "url": "https://egovstandards.gov.in/sites/default/files/2021-07/Best%20Practices%20for%20Localisation%20of%20e-Governance%20Applications%20in%20Indian%20Languages%20Ver5.7.pdf",
+     "title": "Best Practices for Localisation of e-Governance Applications in Indian Languages, v5.7 (Govt of India, L10N-eGov, Jan 2014)",
+     "supports": "rupee sign must be stored as U+20B9; India date shown as DD-MM-YY; English (Latin) digits recommended where numbers are computed"
+    },
+    {
+     "url": "https://mozilla-l10n.github.io/styleguides/hi-IN/",
+     "title": "Mozilla style guide: Hindi (hi-IN)",
+     "supports": "Hindi dates written day-month-year with the month in Devanagari; times with colon"
+    }
+   ],
+   "note": "Never write 'Rs 10 lakhs crore'-style hybrids; choose lakh/crore (Indian readers) or million/billion (global) per piece. Applies to English, Hindi and Hinglish copy."
+  },
+  {
+   "id": "lang:global_plain_english",
+   "name": "Global / plain English for non-native readers",
+   "category": "English varieties",
+   "one_line": "Short, literal, idiom-free English that survives machine translation and second-language reading.",
+   "aliases": [
+    "global English",
+    "international English",
+    "plain language",
+    "translation-ready English"
+   ],
+   "sources": [
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/global-communications/",
+     "title": "Microsoft Style Guide: Global communications",
+     "supports": "assume readers whose first language is not English and content that will be machine-translated; defines translation vs localization; points to plainlanguage.gov and the Global English Style Guide (Kohl, 2008)"
+    },
+    {
+     "url": "https://developers.google.com/style/tone",
+     "title": "Google developer documentation style guide: voice and tone",
+     "supports": "global audience: simple consistent language, minimal culture-specific references, no figurative language"
+    },
+    {
+     "url": "https://egovstandards.gov.in/sites/default/files/2021-07/Best%20Practices%20for%20Localisation%20of%20e-Governance%20Applications%20in%20Indian%20Languages%20Ver5.7.pdf",
+     "title": "Best Practices for Localisation of e-Governance Applications in Indian Languages, v5.7",
+     "supports": "avoid slang, colloquialisms and obscure phrasing in source text: hard to translate, can offend"
+    }
+   ],
+   "note": "The right base text when the same script will be translated into Hindi or regional languages."
+  },
+  {
+   "id": "lang:hindi_devanagari",
+   "name": "Hindi in Devanagari (standard)",
+   "category": "Hindi & Hindustani",
+   "one_line": "Standard written Hindi: aap-form politeness, purna viram (।) not a dot or pipe, Latin digits by default, day-month-year dates, brand names kept as-is.",
+   "aliases": [
+    "Hindi",
+    "hi-IN",
+    "मानक हिंदी",
+    "shuddh Hindi"
+   ],
+   "sources": [
+    {
+     "url": "https://mozilla-l10n.github.io/styleguides/hi-IN/",
+     "title": "Mozilla style guide: Hindi (hi-IN)",
+     "supports": "use आप/यह/वह not तुम/ये/वे; avoid curt imperatives (ढूँढें not ढूँढो); purna viram (।) not '.' or '|'; Latin digits 0-9 not ०-९; brand names neither translated nor transliterated; dates like 25 सितम्बर 2016"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Danda",
+     "title": "Danda (Wikipedia)",
+     "supports": "danda U+0964 and double danda U+0965; Hindi uses them together with Western punctuation"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hindustani_language",
+     "title": "Hindustani language (Wikipedia)",
+     "supports": "standard Hindi is the Sanskritised register of Hindustani; grammar and core vocabulary are shared with Urdu"
+    }
+   ],
+   "note": "Mozilla's 'aap' rule is for UI/formal copy; reels and Hinglish creator copy often use 'tum'/'tu' by design (that is a tone choice). Type the danda as U+0964, never a pipe or the letter l."
+  },
+  {
+   "id": "lang:hindustani_everyday",
+   "name": "Everyday Hindustani register (bolchaal Hindi)",
+   "category": "Hindi & Hindustani",
+   "one_line": "The spoken middle register shared by Hindi and Urdu speakers: common words, no heavy Sanskrit or Persian, the language of Bollywood dialogue.",
+   "aliases": [
+    "bolchaal ki Hindi",
+    "colloquial Hindi",
+    "Hindustani",
+    "Bollywood Hindi"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hindustani_language",
+     "title": "Hindustani language (Wikipedia)",
+     "supports": "colloquial Hindustani avoids high-register Sanskrit- or Perso-Arabic-derived words; Bollywood films use this neutral vernacular"
+    }
+   ],
+   "note": "Default register for Hindi reels and VO. Swap tatsam words (e.g. formal Sanskrit terms) for the everyday word unless the piece is devotional or official."
+  },
+  {
+   "id": "lang:urdu_influenced_hindi",
+   "name": "Urdu-influenced Hindi (shayari register, nuqta)",
+   "category": "Hindi & Hindustani",
+   "one_line": "Hindi coloured with Perso-Arabic vocabulary for shayari, romance and poetic captions; nuqta letters (क़ ख़ ग़ ज़ फ़) mark the borrowed sounds.",
+   "aliases": [
+    "Urdu-mixed Hindi",
+    "shayari Hindi",
+    "nuqta Hindi",
+    "Hindustani with Urdu"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nuqta",
+     "title": "Nuqta (Wikipedia)",
+     "supports": "nuqta (U+093C) marks Perso-Arabic sounds in Devanagari; its use in Hindi is optional and inconsistent; precomposed nuqta letters also exist"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hindustani_language",
+     "title": "Hindustani language (Wikipedia)",
+     "supports": "Urdu register draws on Persian and Arabic vocabulary; grammar is shared with Hindi"
+    }
+   ],
+   "note": "Nuqta changes meaning in a few pairs and matters for TTS pronunciation; be consistent within one piece and prefer the combining U+093C sequence or precomposed letters consistently, not a mix."
+  },
+  {
+   "id": "lang:hinglish_roman",
+   "name": "Hinglish in Roman script",
+   "category": "Hinglish & code-mixing",
+   "one_line": "Hindi-English code-mixing typed in Latin letters, the dominant script for Hindi speakers online.",
+   "aliases": [
+    "Hinglish",
+    "Romanised Hindi",
+    "Roman Hindi",
+    "Hindi in English letters"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hinglish",
+     "title": "Hinglish (Wikipedia)",
+     "supports": "Hinglish = code-switching between colloquial Hindi and English, in writing usually Romanised; a cited YouTube-comment study found Romanised Hindi far ahead of Devanagari; Google added Hinglish support to Gboard and Search"
+    }
+   ],
+   "note": "No standard spelling exists, so pick one spelling per word and keep it (hai/hain, nahi/nahin, kya). Spell for how the audience types, not scholarly transliteration."
+  },
+  {
+   "id": "lang:sanskrit_iast",
+   "name": "Sanskrit shlokas in devotional content (Devanagari + IAST)",
+   "category": "Devotional & classical",
+   "one_line": "Quote shlokas in Devanagari with danda/double-danda verse marks and, when romanised, use lossless IAST diacritics.",
+   "aliases": [
+    "IAST",
+    "shloka transliteration",
+    "ISO 15919",
+    "Sanskrit romanisation"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration",
+     "title": "International Alphabet of Sanskrit Transliteration (Wikipedia)",
+     "supports": "IAST is a lossless romanisation: macrons for long vowels, underdots for retroflexes, ś ṣ ṃ ḥ; ISO 15919 follows it closely; standard in scholarly publishing"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Danda",
+     "title": "Danda (Wikipedia)",
+     "supports": "in Sanskrit, danda and double danda are the only punctuation: double danda closes a verse, single danda a half-verse"
+    }
+   ],
+   "note": "Copy the shloka from a reliable edition and cite chapter/verse; a single wrong matra changes meaning. For reels, show Devanagari plus a plain Hindi/English meaning rather than IAST."
+  },
+  {
+   "id": "lang:hinglish_devanagari",
+   "name": "Hinglish in Devanagari (English words in Hindi script)",
+   "category": "Hinglish & code-mixing",
+   "one_line": "Hindi sentences that keep everyday English words but write them in Devanagari (मोबाइल, डॉक्टर, ऑफ़र).",
+   "aliases": [
+    "Devanagari Hinglish",
+    "transliterated English",
+    "code-mixed Hindi"
+   ],
+   "sources": [
+    {
+     "url": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/115003196707-Hindi-Timed-Text-Style-Guide",
+     "title": "Netflix Hindi Timed Text Style Guide",
+     "supports": "English words used in a mostly Hindi line of dialogue need no identifiers but should be transliterated (into Devanagari)"
+    },
+    {
+     "url": "https://www.chd.education.gov.in/sites/default/files/devanagari-lipi.pdf",
+     "title": "Devanagari Lipi evam Hindi Vartani ka Manakikaran, Central Hindi Directorate, 2024 edition",
+     "supports": "standard Devanagari includes the ardhachandra sign ऑ for English sounds, with डॉक्टर as the example (text layer of the PDF is partly garbled; read from the alphabet section)"
+    },
+    {
+     "url": "https://aclanthology.org/W14-3914/",
+     "title": "Bali et al. 2014, 'I am borrowing ya mixing?' (ACL CodeSwitch workshop)",
+     "supports": "the common pattern is a Hindi grammatical frame with English words inserted (23.7% of Hindi matrices vs 7.2% the other way); borrowing vs mixing is a continuum"
+    }
+   ],
+   "note": "Use ऑ for the English 'o' in doctor/office/coffee. Keep brand names in Latin script (Mozilla hi-IN rule). This is the script TTS engines read best for Hindi VO; Roman Hinglish confuses Hindi voices."
+  },
+  {
+   "id": "lang:hindi_voiceover_tts",
+   "name": "Hindi for voice-over and TTS",
+   "category": "Hindi & Hindustani",
+   "one_line": "Write Hindi scripts so a TTS engine says them right: numbers, dates, symbols and abbreviations spelled out as words, English terms in Devanagari, punctuation for pauses.",
+   "aliases": [
+    "TTS Hindi",
+    "VO script Hindi",
+    "text normalisation",
+    "SSML"
+   ],
+   "sources": [
+    {
+     "url": "https://www.cs.unc.edu/~mbansal/papers/ssw6isca07_tts.pdf",
+     "title": "Raj, Sarkar, Pammi, Yuvaraj, Bansal, Prahallad, Black: Text Processing for Text-to-Speech Systems in Indian Languages (SSW6, 2007)",
+     "supports": "covers font-to-akshara mapping, pronunciation rules for aksharas, and normalising non-standard words (numbers, abbreviations, dates, currency, addresses) into standard words before synthesis"
+    },
+    {
+     "url": "https://docs.cloud.google.com/text-to-speech/docs/ssml",
+     "title": "Google Cloud Text-to-Speech: SSML",
+     "supports": "say-as (cardinal, ordinal, characters, date, currency, telephone), sub alias and break let a script force how a token is read and where pauses fall"
+    },
+    {
+     "url": "https://www.chd.education.gov.in/sites/default/files/devanagari-lipi.pdf",
+     "title": "Devanagari Lipi evam Hindi Vartani ka Manakikaran, Central Hindi Directorate, 2024",
+     "supports": "has a chapter on uniform spelling of Hindi number words (संख्यावाचक शब्दों की एकरूपता), the reference for writing numbers out"
+    }
+   ],
+   "note": "Write 2,500 as ढाई हज़ार, ₹ as रुपये, % as प्रतिशत, PM as पीएम or प्रधानमंत्री. Local pipeline observation (unsourced, from this machine's F5 bake-off notes): F5 tends to drop a line's first word, so a sacrificial lead word and a per-word ASR read-back are used; treat that as engine-specific."
+  },
+  {
+   "id": "lang:hindi_seo",
+   "name": "Hindi and Hinglish SEO",
+   "category": "Search & discovery",
+   "one_line": "Write Hindi pages for how Indians actually search: Devanagari pages ranked on visible text, Roman-script Hinglish queries, one language per page.",
+   "aliases": [
+    "Hindi search",
+    "Indic SEO",
+    "vernacular SEO",
+    "Hinglish keywords"
+   ],
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+     "title": "Google Search Central: Managing multi-regional and multilingual sites",
+     "supports": "Google determines page language from visible content, not the lang attribute or URL; separate URLs per language; avoid side-by-side translations"
+    },
+    {
+     "url": "https://www.iamai.in/sites/default/files/research/Kantar_%20IAMAI%20report_2024_.pdf",
+     "title": "IAMAI and Kantar, Internet in India 2024",
+     "supports": "870 million users (98% of internet users) accessed the internet in Indic languages in 2024; 57% of urban users prefer Indic-language content; online search is among the activities done in Indic languages (chart)"
+    },
+    {
+     "url": "https://www.searchenginejournal.com/google-translated-serps/427428/",
+     "title": "Search Engine Journal: Google Updates Indian Searches With Translated Results (2021)",
+     "supports": "Google translates English result titles and snippets into Hindi and other Indian languages because local-language content is scarce"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hinglish",
+     "title": "Hinglish (Wikipedia)",
+     "supports": "a cited YouTube-comment study found Romanised Hindi far more common than Devanagari; Google supports Hinglish in Gboard and Search"
+    }
+   ],
+   "note": "Research both scripts for each keyword (e.g. 'sarkari yojana' and 'सरकारी योजना'). Exact Indic search-share numbers by script were not found in a primary source."
+  },
+  {
+   "id": "lang:transcreation",
+   "name": "Transcreation (vs translation)",
+   "category": "Translation & localisation",
+   "one_line": "Recreate the message for a new language and culture so it lands with the same intent, tone and emotion, changing words, references and imagery as needed.",
+   "aliases": [
+    "creative translation",
+    "marketing localisation",
+    "adaptation"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Transcreation",
+     "title": "Transcreation (Wikipedia)",
+     "supports": "keeps intent, style, tone and context; adapts imagery and culture; used in marketing, ads, games; Spider-Man: India as an example"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/style-guide/global-communications/",
+     "title": "Microsoft Style Guide: Global communications",
+     "supports": "translation changes the language; localization adapts content to a locale's language, cultural and political expectations and is done by people who know that culture"
+    },
+    {
+     "url": "https://assets.kpmg.com/content/dam/kpmg/in/pdf/2017/04/Indian-languages-Defining-Indias-Internet.pdf",
+     "title": "KPMG and Google, Indian Languages: Defining India's Internet (April 2017)",
+     "supports": "Indian-language users show higher propensity to respond to digital ads in their own language and see local-language content as more reliable"
+    }
+   ],
+   "note": "Hooks, puns, rhymes and CTAs need transcreation; legal text, specs and prices need literal translation plus review."
+  },
+  {
+   "id": "lang:localization_qa",
+   "name": "Localisation QA",
+   "category": "Translation & localisation",
+   "one_line": "Check translated or transcreated copy against an error typology before it ships: terminology, accuracy, conventions, style, locale, audience fit, layout.",
+   "aliases": [
+    "LQA",
+    "translation QA",
+    "MQM review"
+   ],
+   "sources": [
+    {
+     "url": "https://themqm.org/error-types-2/typology/",
+     "title": "MQM (Multidimensional Quality Metrics) error typology",
+     "supports": "seven top-level dimensions: terminology, accuracy, linguistic conventions, style, locale conventions, audience appropriateness, design and markup; MQM Core vs Full"
+    },
+    {
+     "url": "https://egovstandards.gov.in/sites/default/files/2021-07/Best%20Practices%20for%20Localisation%20of%20e-Governance%20Applications%20in%20Indian%20Languages%20Ver5.7.pdf",
+     "title": "Best Practices for Localisation of e-Governance Applications in Indian Languages, v5.7 (Govt of India, Jan 2014)",
+     "supports": "Unicode storage, rupee sign U+20B9, locale date format, Latin digits for computed numbers, avoid slang and disputed maps in source content"
+    }
+   ],
+   "note": "For Indic text add script checks: danda typed correctly, matras and conjuncts render in the target font, nuqta consistent, no Latin lookalike characters."
+  },
+  {
+   "id": "lang:regional_indian_languages",
+   "name": "Regional Indian languages (overview)",
+   "category": "Regional Indian languages",
+   "one_line": "India's next-largest languages after Hindi, each with its own script; content for them is transcreated by a native writer, not run through Hindi.",
+   "aliases": [
+    "Indic languages",
+    "vernacular",
+    "Eighth Schedule languages",
+    "Marathi",
+    "Bengali",
+    "Tamil",
+    "Telugu",
+    "Gujarati",
+    "Kannada",
+    "Malayalam",
+    "Punjabi",
+    "Odia",
+    "Urdu"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Languages_of_India",
+     "title": "Languages of India (Wikipedia, Census 2011 table)",
+     "supports": "first-language speakers 2011: Bengali 97.2M (Bengali script), Marathi 83.0M (Devanagari), Telugu 81.1M, Tamil 69.0M, Gujarati 55.5M, Urdu 50.8M (Perso-Arabic), Kannada 43.7M, Odia 37.5M, Malayalam 34.8M, Punjabi 33.1M (Gurmukhi); 22 Eighth Schedule languages"
+    },
+    {
+     "url": "https://www.iamai.in/sites/default/files/research/Kantar_%20IAMAI%20report_2024_.pdf",
+     "title": "IAMAI and Kantar, Internet in India 2024",
+     "supports": "98% of internet users accessed Indic-language content in 2024; urban preference split by language is charted"
+    },
+    {
+     "url": "https://egovstandards.gov.in/sites/default/files/2021-07/Best%20Practices%20for%20Localisation%20of%20e-Governance%20Applications%20in%20Indian%20Languages%20Ver5.7.pdf",
+     "title": "Best Practices for Localisation of e-Governance Applications in Indian Languages, v5.7",
+     "supports": "22 official languages and 12 scripts; Unicode and CLDR locale data per language"
+    }
+   ],
+   "note": "Marathi shares Devanagari with Hindi but not its spelling or vocabulary; never pass Hindi off as Marathi. Sources found support script and speaker counts only, so writing rules per language are left to native reviewers (one combined item for that reason)."
+  },
+  {
+   "id": "lang:bhojpuri_awadhi_flavour",
+   "name": "Bhojpuri / Awadhi flavour for Bihar and UP audiences",
+   "category": "Hindi & Hindustani",
+   "one_line": "Sprinkle Bhojpuri or Awadhi words, idioms and rhythm into Hindi copy for eastern UP, Bihar and Jharkhand audiences, written in Devanagari.",
+   "aliases": [
+    "Bhojpuri",
+    "Awadhi",
+    "Purvanchali",
+    "Bihari flavour",
+    "desi boli"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bhojpuri_language",
+     "title": "Bhojpuri language (Wikipedia)",
+     "supports": "spoken in eastern UP, western Bihar, northwestern Jharkhand and diaspora; about 50.5 million speakers in Census 2011 with more counted under Hindi; Devanagari is the main script (historically Kaithi); large cinema and music industry"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Awadhi_language",
+     "title": "Awadhi language (Wikipedia)",
+     "supports": "spoken in the Awadh region of UP; grouped under Hindi by the government; Ramcharitmanas is in Awadhi"
+    }
+   ],
+   "note": "Flavour, not full dialect, unless the writer is a native speaker: a full Bhojpuri script written by a non-speaker reads as mockery. Satire using a dialect to mock its speakers is a risk."
+  },
+  {
+   "id": "lang:gulf_nri_english",
+   "name": "English for Gulf NRI audiences",
+   "category": "English varieties",
+   "one_line": "Indian-English copy aimed at the large Indian workforce in the UAE, Saudi Arabia, Oman, Kuwait, Qatar and Bahrain.",
+   "aliases": [
+    "NRI English",
+    "Gulf Indian audience",
+    "GCC Indian diaspora"
+   ],
+   "sources": [
+    {
+     "url": "https://www.mea.gov.in/images/attach/NRIs-and-PIOs_1.pdf",
+     "title": "Ministry of External Affairs (India): Population of Overseas Indians (table, undated in the text layer)",
+     "supports": "NRIs: UAE 3,419,875; Saudi Arabia 2,592,166; Kuwait 1,028,274; Oman 779,351; Qatar 745,775; Bahrain 323,292"
+    }
+   ],
+   "note": "Audience size is sourced; no style guide for this variety was found, so writing rules here are unsourced. A search summary gave different country figures from the MEA table; use the MEA table."
+  },
+  {
+   "id": "lang:english_subtitles",
+   "name": "Simplified English for subtitles and captions",
+   "category": "Subtitles & captions",
+   "one_line": "Condense spoken English to a readable line: short lines, clean line breaks, numbers rule, reading-speed limit.",
+   "aliases": [
+    "subtitle English",
+    "captions",
+    "timed text"
+   ],
+   "sources": [
+    {
+     "url": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/217350977-English-USA-Timed-Text-Style-Guide",
+     "title": "Netflix English (USA) Timed Text Style Guide",
+     "supports": "42 characters per line, max two lines; up to 20 characters per second for adults, 17 for children; numbers 0-10 written out, above 10 as digits; break after punctuation and before conjunctions/prepositions; favour reduction and condensing for reading speed"
+    }
+   ],
+   "note": "These are Netflix's numbers; social-platform caption limits are the platform worker's kind."
+  },
+  {
+   "id": "lang:hindi_subtitles",
+   "name": "Hindi subtitles and on-screen text",
+   "category": "Subtitles & captions",
+   "one_line": "Hindi timed text: short lines, reading-speed limit, small numbers written out, English words transliterated into Devanagari.",
+   "aliases": [
+    "Hindi captions",
+    "Hindi timed text",
+    "Hindi SRT"
+   ],
+   "sources": [
+    {
+     "url": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/115003196707-Hindi-Timed-Text-Style-Guide",
+     "title": "Netflix Hindi Timed Text Style Guide",
+     "supports": "42 characters per line; up to 22 characters per second for adults, 18 for children; numbers 1-10 written out, above 10 as digits; English words in a Hindi line transliterated; on-screen text only when plot-pertinent"
+    }
+   ],
+   "note": "For reel burn-in captions use the same reading-speed logic; keep Devanagari conjuncts on one line (do not break inside a word)."
+  },
+  {
+   "id": "lang:hindi_romanisation_schemes",
+   "name": "Romanising Hindi: Hunterian, IAST/ISO 15919 and informal Hinglish spelling",
+   "category": "Hinglish & code-mixing",
+   "one_line": "Pick the romanisation for the job: Hunterian for names and places, IAST/ISO 15919 when it must be reversible, informal Hinglish spelling for social copy.",
+   "aliases": [
+    "transliteration",
+    "Hunterian",
+    "ITRANS",
+    "Harvard-Kyoto",
+    "Roman Hindi spelling"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Devanagari_transliteration",
+     "title": "Devanagari transliteration (Wikipedia)",
+     "supports": "Hunterian is India's national romanisation for geographic names but does not mark retroflex vs dental; IAST is losslessly reversible; ITRANS and Harvard-Kyoto are ASCII schemes; informal romanised Hindi dominates online"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration",
+     "title": "International Alphabet of Sanskrit Transliteration (Wikipedia)",
+     "supports": "IAST diacritics and its relation to ISO 15919"
+    }
+   ],
+   "note": "Social copy never uses diacritics; keep one informal spelling per word across a series (a house spelling list)."
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "kind": "genre",
+ "items": [
+  {
+   "id": "genre:incident_report",
+   "name": "Incident report / postmortem write-up",
+   "category": "Technical & product documentation",
+   "one_line": "The written record after an outage, security event or project failure: what happened, who and what was affected, why, how it was fixed and detected, and owned actions so it does not recur.",
+   "aliases": [
+    "postmortem",
+    "post-mortem",
+    "post-incident review",
+    "PIR",
+    "RCA document",
+    "root cause analysis",
+    "project retrospective write-up"
+   ],
+   "value": "low",
+   "value_evidence": "Written in-house by engineers and on-call teams (Google SRE book; PagerDuty's guide is aimed at on-call practitioners and managers); no freelance market category was searched or found, so paid writing demand is assumed small.",
+   "sources": [
+    {
+     "url": "https://sre.google/sre-book/postmortem-culture/",
+     "title": "Google SRE book, ch. 15 'Postmortem Culture: Learning from Failure'",
+     "supports": "'A postmortem is a written record of an incident, its impact, the actions taken ..., the root cause(s), and the follow-up actions ...'; blameless; triggers such as user-visible downtime, data loss, on-call intervention, monitoring failure"
+    },
+    {
+     "url": "https://sre.google/sre-book/example-postmortem/",
+     "title": "Google SRE book: Example postmortem",
+     "supports": "a complete worked example with Summary, Impact, Root Causes, Trigger, Resolution, Detection, Action Items, Lessons Learned, Timeline"
+    },
+    {
+     "url": "https://postmortems.pagerduty.com/",
+     "title": "PagerDuty Postmortem Documentation",
+     "supports": "'a successful postmortem process is based on a culture of honesty, learning, and accountability'; blameless postmortems; audience is on-call practitioners and managers"
+    }
+   ],
+   "note": "Structure: fw:postmortem_blameless. Two audiences: the internal version (full technical detail, timeline, action items with owners) and an optional customer-facing summary (plain language, impact window, what changed, no internal names); the live outage notice is genre:crisis_statement. Tone: factual, past tense, blameless; times in one zone. In India, a cyber incident may also need reporting to CERT-In; check the current CERT-In directions before writing any public statement (not researched here).",
+   "kind": "genre"
+  },
+  {
+   "id": "genre:influencer_media_kit",
+   "name": "Influencer media kit / rate card",
+   "category": "Creator & affiliate",
+   "one_line": "A short document a creator sends brands: who they are, audience size and demographics, engagement, past collaborations and results, collaboration options and (optionally) rates.",
+   "aliases": [
+    "creator media kit",
+    "rate card",
+    "influencer one-sheet",
+    "creator deck",
+    "brand collaboration kit"
+   ],
+   "value": "low",
+   "value_evidence": "Sold as a gig on Fiverr (e.g. 'design an influencer media kit template' at $35, seen in a 2026-10-05 search) and covered by creator-platform guides (Later 2025, Influencer Marketing Hub 2024); usually bundled with design, no separate writing category found.",
+   "sources": [
+    {
+     "url": "https://later.com/blog/influencer-media-kit/",
+     "title": "Later (Nikki Canning, updated 2025-06-04): How to Make a Media Kit for Influencers",
+     "supports": "'Think of your influencer media kit as your business card, CV, and portfolio of work all in one document'; sections: bio, social stats, audience demographics, blog or website, previous partnerships and testimonials"
+    },
+    {
+     "url": "https://influencermarketinghub.com/influencer-media-kit/",
+     "title": "Influencer Marketing Hub (2024-09-02): How to Create an Influencer Media Kit",
+     "supports": "definition: 'a document that showcases an influencer's skills, audience, and previous collaborations to potential brand partners'; sections end with suggested collaboration options and pricing rates; whether to print rates is 'a polarizing point'; 'Keep your media kit brief; ideally, limit it to three pages'"
+    },
+    {
+     "url": "https://www.fiverr.com/robin_leon/design-an-influencer-media-kit-template-canva-branding-kit-social-media-template",
+     "title": "Fiverr gig: influencer media kit template",
+     "supports": "media kits are bought as a freelance deliverable (demand signal only)"
+    }
+   ],
+   "note": "Not the corporate press kit (genre:press_kit). Every number must come from the platform's own insights on a stated date (followers, reach, engagement, audience split by city/age/gender); rounding up or using bought followers is a misrepresentation to the brand. Rate card lines are per deliverable (reel, story set, static post, YouTube integration) plus usage rights, exclusivity and whitelisting/boosting as separate lines. Indian brands will ask for ASCI disclosure compliance (comp:asci_influencer): state that paid posts carry the label. Bilingual or Hinglish creators should state language mix of the audience.",
+   "kind": "genre"
+  }
+ ]
+}
