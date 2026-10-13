@@ -1,0 +1,206 @@
+{
+ "kind": "compliance",
+ "worker": "gap_c_global_b",
+ "as_of": "2026-10-13",
+ "source": "gap wave C (UK online safety, children's code, business messaging and app-store metadata): official legislation, regulator and platform policy pages fetched and read 2026-10-13 with WebFetch (verbatim quotes requested); secondary sources named as such in notes",
+ "items": [
+  {
+   "id": "comp:apple_app_review_metadata",
+   "name": "Apple App Store Review Guidelines 2.3 Accurate Metadata and 5.2 Intellectual Property: what app names, subtitles, keywords, descriptions, screenshots and What's New text may contain",
+   "category": "Platform policy",
+   "one_line": "Apple's review rules for App Store listing copy: metadata must reflect the app's core experience, the app name is limited to 30 characters, no prices, trademarks, other apps or unverifiable claims in names and subtitles, 'For Kids' is reserved for the Kids Category, and What's New must describe significant changes.",
+   "aliases": [
+    "App Store Review Guidelines 2.3",
+    "Apple accurate metadata",
+    "App Store metadata rejection",
+    "guideline 2.3.7"
+   ],
+   "sources": [
+    {
+     "url": "https://developer.apple.com/app-store/review/guidelines/",
+     "title": "App Review Guidelines (Apple Developer)",
+     "supports": "2.3 intro, 2.3.1 misleading marketing, 2.3.2 in-app purchase disclosure, 2.3.3 screenshots, 2.3.4 previews, 2.3.7 name/keywords/subtitle and the 30-character rule, 2.3.8 4+ metadata and 'For Kids', 2.3.10 other platforms, 2.3.12 What's New, 5.2.1 trademarks and copycat names, 5.2.4 Apple endorsement"
+    },
+    {
+     "url": "https://developer.apple.com/news/",
+     "title": "Apple Developer News: posts 'Updated App Review Guidelines now available' (13 Nov 2025, 6 Feb 2026) and 'Updated Apple Developer Program License Agreement and App Review Guidelines now available' (8 Jun 2026)",
+     "supports": "revision dates; 4.1(c) added 13 Nov 2025 (no other developer's icon, brand or product name without approval)"
+    }
+   ],
+   "note": "Status as read 2026-10-13: the guidelines page shows no 'last updated' date; Apple Developer News lists revisions on 13 Nov 2025, 6 Feb 2026 and 8 Jun 2026 (the June post gives no itemised list). Field limits (name, subtitle, keywords, promotional text, description) live in plat:apple_app_store: cross-reference, do not repeat. Rules for a copywriter: (1) 2.3: metadata, including 'your app description, screenshots, and previews accurately reflect the app's core experience' and must be kept up to date with new versions. (2) 2.3.1: promoting 'content or services that it does not actually offer' or 'a false price' is grounds for removal, inside or outside the App Store. (3) 2.3.7: 'App names must be limited to 30 characters'; do not pack metadata with 'trademarked terms, popular app names, pricing information, or other irrelevant phrases'; subtitles must not 'reference other apps, or make unverifiable product claims'; Apple 'may modify inappropriate keywords at any time'. (4) 2.3.8: icons, screenshots and previews must suit a 4+ rating; 'Use of terms like \"For Kids\" and \"For Children\" in app metadata is reserved in the App Store for the Kids Category.' (5) 2.3.2: description and screenshots must say whether featured items or subscriptions 'require additional purchases'; 2.3.3: screenshots 'should show the app in use, and not merely the title art, login page, or splash screen'; 2.3.10: no names or imagery of 'other mobile platforms or alternative app marketplaces' in metadata. (6) 2.3.12: 'Apps must clearly describe new features and product changes in their \"What's New\" text'; generic text is allowed only for bug fixes, security and performance updates. (7) 5.2.1: no 'misleading, false, or copycat representations, names, or metadata'; 5.2.4: do not 'suggest or imply that Apple is a source or supplier of the App'; 4.1(c) (Developer News, 13 Nov 2025): no other developer's icon, brand or product name in your icon or name without their approval."
+  },
+  {
+   "id": "comp:google_play_metadata_policy",
+   "name": "Google Play Developer Program Policy: Metadata and User Ratings, Reviews and Installs (store listing and promotion)",
+   "category": "Platform policy",
+   "one_line": "Google Play's store-listing rules: honest, relevant metadata suitable for all audiences, no ranking, price, promotion or Play-program words in the title, icon or developer name, no emojis, repeated special characters or ALL CAPS, no unattributed testimonials, and no incentivised or fake ratings and reviews.",
+   "aliases": [
+    "Google Play metadata policy",
+    "Play Store listing policy",
+    "store listing and promotion",
+    "Google Play ratings and reviews policy"
+   ],
+   "sources": [
+    {
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898842",
+     "title": "Metadata (Play Console Help, Developer Program Policy)",
+     "supports": "opening rule, title/icon/developer-name bans, emojis and ALL CAPS, unattributed testimonials, common violations, best practices and key considerations, 30-character title"
+    },
+    {
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898684",
+     "title": "User Ratings, Reviews, and Installs (Play Console Help, Developer Program Policy)",
+     "supports": "ban on manipulating ratings, reviews or installs; incentives for ratings; posing as users; reviews with coupons, codes or links"
+    },
+    {
+     "url": "https://support.google.com/googleplay/android-developer/answer/17134731",
+     "title": "Policy announcement: July 15, 2026 (Play Console Help)",
+     "supports": "latest policy announcement read; it does not change the Metadata or ratings policies"
+    },
+    {
+     "url": "https://support.google.com/googleplay/android-developer/answer/17492799?hl=en",
+     "title": "Play Console technical quality requirements (Play Console Help, announced 26 Aug 2026)",
+     "supports": "changing an app's category to one that does not reflect its core functionality is a Metadata policy violation"
+    }
+   ],
+   "note": "Status as read 2026-10-13: both policy pages show no 'last updated' date (footer only). The 15 Jul 2026 policy announcement does not touch store listing, metadata or user ratings; the technical quality requirements announced 26 Aug 2026 add that 'changing your app's category to one that does not accurately reflect its core functionality' breaks the Metadata policy. Field limits (title, short description, full description) live in plat:google_play_listing: cross-reference, do not repeat. Rules for a copywriter: (1) 'App metadata like titles, icons, and descriptions must be honest, relevant, and suitable for all audiences'; Google does not allow 'misleading, improperly formatted, non-descriptive, irrelevant, excessive, or inappropriate metadata'. (2) Title, icon and developer name: 'Don't use text or image in the app title, icon, or developer name that indicate store performance or ranking', price or promotional information, or Google Play programs; listed examples include 'App of the year', '#1', 'Popular', '10% off', 'free for limited time only', 'Editor's choice' and 'New'. (3) 'Don't use emojis, emoticons, or repeated special characters in these metadata elements'; 'Avoid ALL CAPS unless it is part of your brand name'. (4) Description: 'We also don't allow unattributed or anonymous user testimonials in the app's description'; no data comparisons of apps or brands, no word blocks or keyword lists; 'Excessive length, detail, improper formatting, or repetition can result in a violation of this policy'; do not use 'a celebrity's name or a brand's logo without permission'. (5) Ratings and reviews: 'We prohibit any manipulation of ratings, reviews, or install counts', including incentivising feedback; 'Don't offer rewards or incentives for ratings or reviews', and do not ask users to post reviews containing coupons, game codes, emails or links."
+  },
+  {
+   "id": "comp:uk_online_safety_act",
+   "name": "UK Online Safety Act 2023: duties on user-to-user and search services (clear and accessible terms of service, age limits) and the false and threatening communications offences",
+   "category": "EU-UK",
+   "one_line": "UK law, enforced by Ofcom, that binds services letting users post content and search services with UK links: terms of service must explain protections in clear, accessible language at the youngest user's reading age, and anyone sending knowingly false harmful messages or threats commits an offence.",
+   "aliases": [
+    "OSA 2023",
+    "Online Safety Act",
+    "Ofcom online safety codes",
+    "false communications offence",
+    "threatening communications offence"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/online-safety-act-explainer/online-safety-act-explainer",
+     "title": "Online Safety Act: explainer (GOV.UK, DSIT, updated 24 April 2025)",
+     "supports": "who the Act applies to, UK-links reach, Part 5 pornography providers, age limits in terms of service, Category 1 terms, offences in force 31 January 2024, Part 5 duty from 17 January 2025"
+    },
+    {
+     "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/important-dates-for-online-safety-compliance",
+     "title": "Important dates for Online Safety compliance (Ofcom, last updated 24 August 2026)",
+     "supports": "illegal content codes in force 17 March 2025; protection of children codes in force 25 July 2025; Part 5 age assurance January 2025; CSEA reporting 7 April 2026; categorised services register July 2026"
+    },
+    {
+     "url": "https://www.ofcom.org.uk/online-safety/information-for-industry/guide-for-services/codes-of-practice",
+     "title": "Illegal content duties under the Online Safety Act (Ofcom, last updated 25 June 2026)",
+     "supports": "terms of service must be clear and accessible; links the current user-to-user code"
+    },
+    {
+     "url": "https://www.ofcom.org.uk/siteassets/resources/documents/online-safety/information-for-industry/illegal-harms/illegal-content-codes-of-practice-for-user-to-user-services-24-feb.pdf?v=391889",
+     "title": "Illegal content Codes of Practice for user-to-user services (Ofcom, issued 24 February 2025, in force 17 March 2025)",
+     "supports": "measure ICU G1 (what terms must contain) and ICU G3 (easy to find, readable layout, youngest-user reading age, assistive technology)"
+    },
+    {
+     "url": "https://www.cps.gov.uk/legal-guidance/communications-offences",
+     "title": "Communications offences (Crown Prosecution Service legal guidance, updated 29 June 2026)",
+     "supports": "elements of the false communications offence (s.179) and threatening communications offence (s.181); Part 10 in force from 31 January 2024"
+    }
+   ],
+   "note": "Status as read 2026-10-13: in force in stages. The criminal offences 'came into effect on 31 January 2024' (GOV.UK explainer; CPS says Part 10 'came into force from 31 January 2024'). Ofcom's dates page (updated 24 Aug 2026): Part 5 pornography publishers must use highly effective age assurance from January 2025 (government commenced the duty 17 Jan 2025); 'Illegal content Codes of Practice comes into force' 17 Mar 2025; 'Protection of Children Codes of Practice come into force' 25 Jul 2025; CSEA reporting duty 7 Apr 2026; register of categorised services due July 2026 (TBC). The Act text on legislation.gov.uk returned a bot challenge and was not read (not bypassed): rules below come from GOV.UK, Ofcom and CPS pages. Rules for a copywriter: (1) Scope: 'The Act's duties apply to search services and services that allow users to post content online', including providers outside the UK 'should they have links to the UK' (GOV.UK). (2) Terms of service: Ofcom wants terms 'clear and accessible'; under code measure ICU G3 the protection provisions must be 'clearly signposted for the general public', 'laid out and formatted in a way that helps United Kingdom users read and understand them', 'written to a reading age comprehensible for the youngest individual permitted to use the service without the consent of a parent or guardian', and usable with keyboard navigation and screen readers (Ofcom code). Under ICU G1 they must say how users are protected from illegal content, how reported content is swiftly taken down, any proactive technology used, and how complaints are handled. (3) Age limits: social media companies must 'enforce their age limits consistently' and state their age-assurance measures in the terms; Category 1 services must 'uphold their terms of service' (GOV.UK). (4) False communications offence: sending a message that 'conveys information that the person knows to be false', intending it to 'cause non-trivial psychological or physical harm', with no reasonable excuse (CPS). (5) Threatening communications offence: a message that 'conveys a threat of death or serious harm', sent intending or reckless as to whether the reader fears it will be carried out; serious harm includes grievous bodily harm, rape, assault by penetration or 'serious financial loss' (CPS). The exemption of recognised news publishers from the false communications offence was not confirmed on any page read."
+  },
+  {
+   "id": "comp:uk_childrens_code",
+   "name": "ICO Age Appropriate Design Code (Children's code): transparency, published terms and community standards, default settings and nudge techniques, with the Data (Use and Access) Act 2025 children's higher protection matters duty",
+   "category": "EU-UK",
+   "one_line": "UK statutory code for online services likely to be accessed by children: privacy information, terms and community standards must be concise, prominent and in age-suited language with bite-sized just-in-time notices, settings high privacy by default, and no nudges towards giving more data or weaker privacy.",
+   "aliases": [
+    "Age appropriate design code",
+    "AADC",
+    "Children's code",
+    "ICO children's code",
+    "children's higher protection matters"
+   ],
+   "sources": [
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/services-covered-by-this-code/",
+     "title": "Services covered by this code (ICO, Age appropriate design code)",
+     "supports": "scope: information society services likely to be accessed by children in the UK, not only services directed at children"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/about-this-code/",
+     "title": "About this code (ICO)",
+     "supports": "statutory code under s.123 DPA 2018; laid 11 June 2020, issued 12 August 2020, in force 2 September 2020"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/4-transparency/",
+     "title": "Standard 4: Transparency (ICO)",
+     "supports": "concise, prominent, age-suited language; bite-sized just-in-time notices; clear terms and community standards; child-friendly explanations beside legal drafting; formats"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/6-policies-and-community-standards/",
+     "title": "Standard 6: Policies and community standards (ICO)",
+     "supports": "uphold your own published terms, policies and community standards"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/7-default-settings/",
+     "title": "Standard 7: Default settings (ICO)",
+     "supports": "high privacy by default; optional uses individually activated; no nudging to lower privacy"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/13-nudge-techniques/",
+     "title": "Standard 13: Nudge techniques (ICO)",
+     "supports": "no nudges to give unnecessary data, turn off protections or lie about age; pro-privacy and wellbeing nudges"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default/",
+     "title": "Data protection by design and by default (ICO guidance, last updated 5 February 2026)",
+     "supports": "DUAA added the children's higher protection matters duty; same scope as the code; conforming to the code is likely compliance"
+    },
+    {
+     "url": "https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/the-data-use-and-access-act-2025-what-does-it-mean-for-organisations/",
+     "title": "The Data Use and Access Act 2025 (DUAA): what does it mean for organisations? (ICO, updated 19 June 2026)",
+     "supports": "all DUAA data protection provisions now in force; children and online services requirement"
+    }
+   ],
+   "note": "Status as read 2026-10-13: statutory code under section 123 of the DPA 2018, 'laid before Parliament on 11 June 2020 and issued on 12 August 2020'; it 'comes into force on 2 September 2020' with a 12-month transition (ICO, About this code). Change: the Data (Use and Access) Act 2025 added a 'children's higher protection matters' duty to the UK GDPR data protection by design rules (ICO guidance updated 5 Feb 2026); the ICO says on 19 June 2026 that 'all data protection provisions in the Data (Use and Access) Act 2025 are now in force'. The duty 'applies to the same online services that are in scope of our children's code' and 'if you already conform to the code, you are likely to comply with this duty'. No change to the code's own standards was shown on the code pages read. Rules for a copywriter: (1) Scope: 'information society services likely to be accessed by children' in the UK, including apps, games, social media, streaming, news, educational and retail sites; 'It is not restricted to services specifically directed at children.' (2) Standard 4: privacy information, terms, policies and community standards 'must be concise, prominent, and in clear language suited to the age of the child', plus 'bite-sized' explanations at the point a data use is activated (a just-in-time notice), with a prompt to speak to an adult where risk calls for it; information must not 'promise protections or standards that are not routinely upheld'; legal terms may carry child-friendly explanations alongside; use diagrams, cartoons, video, icons and layered text, tailored by age. (3) Standard 6: 'Uphold your own published terms, policies and community standards'. (4) Standard 7: 'Settings must be high privacy by default' unless there is a compelling reason; optional uses must be individually activated by the child, and copy must not nudge towards a lower privacy option. (5) Standard 13: 'Do not use nudge techniques to lead or encourage children to provide unnecessary personal data or turn off privacy protections'; no exploiting colours, imagery or affirmation needs, no pre-selected older age range; pro-privacy and wellbeing nudges (breaks, pause and save) are encouraged."
+  },
+  {
+   "id": "comp:whatsapp_business_messaging_policy",
+   "name": "WhatsApp Business Messaging Policy, template categories and the AI Providers clause of the Meta Terms for WhatsApp Business Platform",
+   "category": "Platform policy",
+   "one_line": "Meta's rules for business messages on WhatsApp: message people only after opt-in, honour every opt-out, start conversations only with an approved template used for its category, reply freely only inside the 24-hour customer service window, never ask for card or ID numbers, keep off the prohibited goods list, and no general-purpose AI assistants as the main product.",
+   "aliases": [
+    "WhatsApp Business Policy",
+    "WhatsApp opt-in rules",
+    "WhatsApp template categories",
+    "24-hour customer service window",
+    "WhatsApp AI chatbot ban"
+   ],
+   "sources": [
+    {
+     "url": "https://whatsappbusiness.com/policy/",
+     "title": "WhatsApp Business Messaging Policy (Business Policy page, last updated September 23, 2026; business.whatsapp.com/policy redirects here)",
+     "supports": "opt-in, opt-out, templates and 24-hour window, escalation paths, sensitive identifiers, prohibited and regulated goods, offensive content, Commerce Policy, government and political use, opt-in best practices"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines",
+     "title": "Template category guidelines (Meta for Developers, WhatsApp Business Platform)",
+     "supports": "authentication, utility and marketing definitions; mixed content counts as marketing; Meta changes misfiled templates to MARKETING"
+    },
+    {
+     "url": "https://www.facebook.com/legal/Meta-Terms-for-WhatsApp-Business-Platform?locale=en_US",
+     "title": "Meta Terms for WhatsApp Business Platform (Last Modified September 23, 2026; whatsapp.com/legal/business-solution-terms redirects here)",
+     "supports": "section 4.7 AI Providers prohibition"
+    },
+    {
+     "url": "https://techcrunch.com/2025/10/18/whatssapp-changes-its-terms-to-bar-general-purpose-chatbots-from-its-platform/",
+     "title": "TechCrunch, 18 Oct 2025 (updated 15 Jan 2026): WhatsApp changes its terms to bar general-purpose chatbots (secondary)",
+     "supports": "secondary source for the 15 January 2026 effective date and that businesses using AI for customer service are not affected"
+    },
+    {
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/changelog",
+     "title": "WhatsApp changelog (Meta for Developers)",
+     "supports": "AI Providers pricing update 12 May 2026; coupon codes up to 20 characters (3 Dec 2025)"
+    }
+   ],
+   "note": "Status as read 2026-10-13: policy page 'Last updated: September 23, 2026'; the AI Providers clause sits in the Meta Terms for WhatsApp Business Platform (section 4.7, 'Last Modified: September 23, 2026'); its 15 Jan 2026 start date comes only from news coverage (TechCrunch, secondary), not an official page. Template field limits live in plat:whatsapp_business_template: cross-reference, do not repeat. Rules for a copywriter: (1) Opt-in: message people only if they gave you their number or username and you have 'opt-in permission from the recipient confirming that they wish to receive subsequent messages or calls from you'; best practice is 'separate opt-in by specific message category' and to 'Clearly communicate the value of receiving this information.' (2) Opt-out: 'You must respect all requests (either on or off WhatsApp) by a person to block, discontinue, or otherwise opt out of communications from you'; 'Do not confuse, deceive, defraud, mislead, spam, or surprise people with your communications.' (3) Templates and the window: 'You may only initiate conversations using an approved Message Template', used 'only for its designated purpose'; free replies are allowed inside 'the 24-hour customer service window, which opens and resets with each user message'; outside it, templates only. Automated replies 'must also have available prompt, clear, and direct escalation paths' (human agent, phone, email, web, store or form). (4) Categories (Meta developer docs): 'Only authentication templates can be used to send a one-time passcode'; 'URLs, media, and emojis are not allowed' in authentication templates; utility templates are 'typically triggered by a user action or request' and 'non-promotional'; mixed utility and promo content is marketing, and Meta can change a misfiled template to MARKETING. (5) Content: 'Don't share or ask people to share full length individual payment card numbers, financial account numbers, personal ID card numbers, or other sensitive identifiers'; no impersonation of another business; no offensive or sexually explicit content; no discrimination; no promoting listed restricted goods (firearms, alcohol and tobacco, drugs, medical and healthcare products, currency and ICOs, real-money gambling, adult services, dating, multi-level marketing, payday loans and debt collection) except the country-limited Regulated Verticals; catalogs and selling follow the Meta Commerce Policy; the Platform may not be used by political parties, candidates or campaigns. (6) AI: providers of LLMs and general-purpose AI assistants are 'strictly prohibited from accessing or using the WhatsApp Business Platform' to offer them 'when such technologies are the primary (rather than incidental or ancillary) functionality' (Meta terms); TechCrunch reports this 'doesn't affect businesses that are using AI to serve customers'."
+  }
+ ]
+}

@@ -1,0 +1,2427 @@
+{
+ "cards": [
+  {
+   "id": "comp:apple_app_review_metadata",
+   "kind": "compliance",
+   "name": "Apple App Store Review Guidelines 2.3 Accurate Metadata and 5.2 Intellectual Property: what app names, subtitles, keywords, descriptions, screenshots and What's New text may contain",
+   "status": "current",
+   "summary": "Apple's review rules for every word on an App Store product page. Metadata must accurately reflect the app's core experience; the app name is limited to 30 characters; names, subtitles and keywords may not carry prices, trademarks, other app names or unverifiable claims; screenshots must show the app in use and suit a 4+ audience; 'For Kids' and 'For Children' are reserved for the Kids Category; What's New must describe significant changes. Field lengths sit in plat:apple_app_store.",
+   "use_for": [
+    "Writing an iOS app name, subtitle, keyword field, description and promotional text",
+    "Writing screenshot captions and app preview overlays",
+    "Writing What's New release notes for an App Store update",
+    "Reviewing a listing after an App Review metadata rejection"
+   ],
+   "avoid": [
+    "Price or promo words in the name or subtitle ('FitPal: Free Workouts 50% Off'). Name the app and its job instead ('FitPal: Home Workout Planner').",
+    "Competitor or trademark stuffing in keywords or subtitle ('like Strava', 'better than Headspace'). Use generic category words only.",
+    "Unverifiable superlatives in the subtitle ('The world's most accurate sleep tracker'). Write a checkable benefit ('Tracks sleep stages from your watch').",
+    "Using 'For Kids' or 'For Children' in any metadata unless the app is in the Kids Category.",
+    "Screenshots that are just a splash screen, logo or login page, or that hide paid content. Show the app in use and say when a featured item needs an in-app purchase.",
+    "'Bug fixes and improvements' in What's New when the update adds a feature or changes pricing. List the significant changes.",
+    "Naming Android, another platform or an alternative app marketplace in metadata, or implying Apple endorses the app."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developer.apple.com/app-store/review/guidelines/",
+     "title": "App Review Guidelines (Apple Developer)",
+     "supports": "guidelines 2.3, 2.3.1-2.3.13 and 5.2"
+    },
+    {
+     "url": "https://developer.apple.com/news/",
+     "title": "Apple Developer News: guideline revision posts (13 Nov 2025, 6 Feb 2026, 8 Jun 2026)",
+     "supports": "revision dates; 4.1(c) other developers' icons, brands and product names"
+    }
+   ],
+   "related": [
+    "plat:apple_app_store",
+    "comp:google_play_metadata_policy",
+    "genre:app_store_listing",
+    "genre:release_notes",
+    "comp:uk_childrens_code",
+    "comp:coppa",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:uk_cap_code"
+   ],
+   "jurisdiction": "Global platform policy (Apple App Store, all storefronts)",
+   "applies_to": [
+    "genre:app_store_listing",
+    "genre:release_notes",
+    "app name, subtitle and keyword field",
+    "screenshot captions and app preview overlays",
+    "in-app purchase display names and descriptions",
+    "in-app event metadata"
+   ],
+   "rules": [
+    {
+     "rule": "Metadata, including 'your app description, screenshots, and previews', must accurately reflect the app's core experience and be kept up to date with new versions (2.3).",
+     "url": "https://developer.apple.com/app-store/review/guidelines/"
+    },
+    {
+     "rule": "'App names must be limited to 30 characters'; do not pack metadata with 'trademarked terms, popular app names, pricing information, or other irrelevant phrases' (2.3.7).",
+     "url": "https://developer.apple.com/app-store/review/guidelines/"
+    },
+    {
+     "rule": "Subtitles must not 'reference other apps, or make unverifiable product claims'; names, subtitles, screenshots and previews should not include prices or terms not specific to that metadata type (2.3.7).",
+     "url": "https://developer.apple.com/app-store/review/guidelines/"
+    },
+    {
+     "rule": "Icons, screenshots and previews must suit a 4+ rating; 'For Kids' and 'For Children' in metadata are 'reserved in the App Store for the Kids Category' (2.3.8).",
+     "url": "https://developer.apple.com/app-store/review/guidelines/"
+    },
+    {
+     "rule": "Description, screenshots and previews must make clear whether featured items 'require additional purchases' (2.3.2); screenshots 'should show the app in use' (2.3.3).",
+     "url": "https://developer.apple.com/app-store/review/guidelines/"
+    },
+    {
+     "rule": "No names, icons or imagery of 'other mobile platforms or alternative app marketplaces' in metadata unless approved functionality exists; no irrelevant information (2.3.10).",
+     "url": "https://developer.apple.com/app-store/review/guidelines/"
+    },
+    {
+     "rule": "'Apps must clearly describe new features and product changes in their \"What's New\" text'; generic text only for bug fixes, security and performance updates (2.3.12).",
+     "url": "https://developer.apple.com/app-store/review/guidelines/"
+    },
+    {
+     "rule": "No 'misleading, false, or copycat representations, names, or metadata' (5.2.1); do not imply Apple is a source or supplier or endorses the app (5.2.4); no other developer's icon, brand or product name without approval (4.1(c), added 13 Nov 2025).",
+     "url": "https://developer.apple.com/news/"
+    }
+   ],
+   "penalty": "Misleading marketing or a false price 'is grounds for removal of your app from the App Store' and termination of the developer account; 'Egregious or repeated behavior is grounds for removal from the Apple Developer Program' (2.3.1).",
+   "checks": [
+    "Is the app name 30 characters or fewer, unique, and free of prices, promo words and other apps' names?",
+    "Is every claim in the subtitle and description true of the current version and checkable?",
+    "Is the keyword field free of trademarks, competitor names and irrelevant terms?",
+    "Do the description and screenshots say which featured items need an in-app purchase?",
+    "Do the screenshots show the app in use and suit a 4+ audience?",
+    "Is 'For Kids' or 'For Children' used only if the app is in the Kids Category?",
+    "Does the What's New text name each significant new feature or change?",
+    "Is there no mention of other mobile platforms or app marketplaces, and no implied Apple endorsement?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:ayush_drug_advertisement_rule_170",
+   "kind": "compliance",
+   "name": "Ayush (Ayurvedic, Siddha, Unani) drug advertisements: Drugs Rules rule 170, its 2024 omission and the Supreme Court orders of 2024-2025",
+   "status": "current",
+   "summary": "Status as read 2026-10-13: Rule 170 (State pre-approval and a Unique Identification Number for every Ayurvedic, Siddha or Unani drug ad, plus a ban on disease-cure ads) stands omitted. The Ministry of Ayush omitted it by notification of 1 Jul 2024; the Supreme Court stayed that on 27 Aug 2024 and vacated the stay on 11 Aug 2025, leaving parties free to challenge the omission. No pre-approval number is needed now, but cure claims remain illegal under the DMR Act and the D&C Act misbranding rule, and the former rule's rejection list is still a sound red-flag checklist.",
+   "use_for": [
+    "Ads, product pages and creator scripts for Ayurvedic, Siddha, Unani and herbal medicine brands",
+    "Answering a client who asks whether an Ayush ad still needs State approval",
+    "Pre-publication claim review for Ayush products"
+   ],
+   "avoid": [
+    "Telling a client 'Rule 170 is gone, so we can claim anything': cure claims for scheduled diseases stay banned by the DMR Act (comp:dmr_act_1954), and a false claim makes an Ayush drug misbranded (s.33E).",
+    "Citing the 2024 stay as if it were current: the Court vacated it on 11 Aug 2025.",
+    "Calling the omission final: the Court reserved liberty to challenge it, so recheck before giving a legal opinion.",
+    "Using a celebrity's or a government official's photo or testimonial, or naming a government body, in an Ayush drug ad: the former rule listed these as grounds for rejection and they invite ASCI and DMR complaints.",
+    "Sexual-performance, 'size', height or rejuvenation claims for any Ayush product: listed in the former rule and in Schedule J (comp:drugs_cosmetics_act_claims)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.livelaw.in/pdf_upload/2483220222025-08-11-617783.pdf",
+     "title": "Supreme Court of India, order of 11 Aug 2025 in W.P.(C) No. 645/2022 with W.P.(C) No. 400/2025 (signed order; copy hosted by LiveLaw because the court's servers refused connections on 2026-10-13)",
+     "supports": "omission notification of 01.07.2024; text of former Rule 170; 27.08.2024 stay; disposal, liberty and vacation of the stay"
+    },
+    {
+     "url": "https://www.livelaw.in/amp/top-stories/supreme-court-vacates-stay-on-ayush-ministrys-notification-that-permitted-advertisements-of-ayurvedic-unani-siddha-drugs-300536",
+     "title": "LiveLaw report, 11 Aug 2025 (secondary)",
+     "supports": "date and effect of the order"
+    },
+    {
+     "url": "https://cdsco.gov.in/opencms/export/sites/CDSCO_WEB/Pdf-documents/acts_rules/2016DrugsandCosmeticsAct1940Rules1945.pdf",
+     "title": "CDSCO: Drugs and Cosmetics Act, 1940, s.33E",
+     "supports": "misbranded Ayurvedic, Siddha or Unani drugs"
+    }
+   ],
+   "related": [
+    "comp:dmr_act_1954",
+    "comp:drugs_cosmetics_act_claims",
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_influencer"
+   ],
+   "jurisdiction": "India (Ministry of Ayush; Drugs Rules, 1945; Supreme Court of India)",
+   "applies_to": [
+    "genre:product_description",
+    "genre:marketplace_listing",
+    "genre:packaging_copy",
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "genre:tvc_script",
+    "genre:sponsored_creator_post",
+    "genre:ugc_ad_script",
+    "Ayurvedic, Siddha and Unani drug ads"
+   ],
+   "rules": [
+    {
+     "rule": "Status: the Ministry of Ayush notification of 01.07.2024 under the Drugs (Fourth Amendment) Rules, 2024 'had omitted Rule 170'; on 11 Aug 2025 the Supreme Court said the 'interim order dated 27.08.2024 stands vacated' (order para 9).",
+     "url": "https://www.livelaw.in/pdf_upload/2483220222025-08-11-617783.pdf"
+    },
+    {
+     "rule": "The same para reserves liberty to parties with 'any grievance with regard to the omission of Rule 170', so a fresh challenge elsewhere is possible: recheck before relying on the omission.",
+     "url": "https://www.livelaw.in/pdf_upload/2483220222025-08-11-617783.pdf"
+    },
+    {
+     "rule": "History: the 27.08.2024 order had kept the rule alive ('Rule 170 shall remain on the statute book and in force') until further orders; that order no longer operates.",
+     "url": "https://www.livelaw.in/pdf_upload/2483220222025-08-11-617783.pdf"
+    },
+    {
+     "rule": "The former Rule 170 barred ASU drug ads 'for the use of diagnosis, cure, mitigation, treatment or prevention of any disease, disorder, syndrome or condition' and required a Unique Identification Number from the State Licensing Authority for other ads.",
+     "url": "https://www.livelaw.in/pdf_upload/2483220222025-08-11-617783.pdf"
+    },
+    {
+     "rule": "Its rejection grounds remain a useful red-flag list: vulgarity or obscenity; sexual-organ or performance enhancement; 'photographs or testimonials of celebrities or government officials'; references to a government body; a false impression; 'a misleading or exaggerated claim'.",
+     "url": "https://www.livelaw.in/pdf_upload/2483220222025-08-11-617783.pdf"
+    },
+    {
+     "rule": "Still in force: an Ayurvedic, Siddha or Unani drug is misbranded if its label or anything accompanying it 'makes any false claim for the drug' or is false or misleading (Act s.33E(c)).",
+     "url": "https://cdsco.gov.in/opencms/export/sites/CDSCO_WEB/Pdf-documents/acts_rules/2016DrugsandCosmeticsAct1940Rules1945.pdf"
+    }
+   ],
+   "checks": [
+    "Does the ad avoid saying or implying that the product diagnoses, cures, mitigates, treats or prevents any disease, disorder or condition?",
+    "Does it avoid sexual-enhancement, size, height and rejuvenation claims?",
+    "Is there no celebrity or government-official photo or testimonial, and no reference to a government body that suggests endorsement?",
+    "Is every benefit claim modest, true and backed by the classical text or study the client holds?",
+    "If the advice says 'no State pre-approval needed', has the status of Rule 170 been rechecked on the date of publication?",
+    "Has the copy also been checked against the DMR Act schedule (comp:dmr_act_1954)?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:california_ccpa_cpra",
+   "kind": "compliance",
+   "name": "California Consumer Privacy Act (CCPA) as amended by the CPRA (Proposition 24), and the California CCPA Regulations (Cal. Code Regs. tit. 11): notices, privacy policy and opt-out link wording",
+   "status": "current",
+   "summary": "Status as read 2026-10-13: in force; the regulations are marked effective 1 January 2026 after the 2025 package (approved 22 September 2025) added automated decisionmaking, risk assessment and cybersecurity audit rules and updated the existing ones. For a writer, California fixes the words as well as the content: plain-language notices, exact link titles, symmetric choice buttons, and a privacy policy dated and updated at least every 12 months. Not to be confused with India's Central Consumer Protection Authority (the comp:ccpa_ ids).",
+   "use_for": [
+    "Privacy policies and Notices at Collection for sites, apps and forms used by Californians",
+    "Footer links, cookie and consent banners, preference centres and opt-out pages",
+    "Sign-up form and checkout microcopy where personal information is collected",
+    "Pre-use Notices for automated decisionmaking used in significant decisions"
+   ],
+   "avoid": [
+    "Rewording the link titles ('Privacy settings', 'Opt out'). Use exactly “Do Not Sell or Share My Personal Information” and “Limit the Use of My Sensitive Personal Information”, or the single ‘Your Privacy Choices’ link with the opt-out icon.",
+    "A banner with only 'Accept All' and 'More Information'. Give equal options, 'Accept All' and 'Decline All', in the same size and colour.",
+    "'Yes' and 'Ask me later' as the only answers. There must be a real 'No'.",
+    "Yes/No toggles next to the do-not-sell statement (a double negative), or bare on/off switches. Write the choice out: 'Stop selling or sharing my information: On'.",
+    "Countdown pressure on a consent choice ('Consent in 5 minutes to keep your discount') when the discount is not really time-limited. The regulations call this misleading.",
+    "Legalese such as 'pursuant to applicable statutory provisions we may process'. Write 'We use your email to send order updates. We keep it for 2 years after your last order.'",
+    "A Notice at Collection link that drops the reader at the top of a long policy. Link to the exact section with categories, purposes, sale or sharing, and retention."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://cppa.ca.gov/regulations/",
+     "title": "California Privacy Protection Agency (CalPrivacy): Laws and Regulations page",
+     "supports": "Proposition 24 amended the CCPA and created the agency; CCPA statute and regulations both marked effective January 1, 2026; preliminary rulemaking topics incl. Notices & Disclosures"
+    },
+    {
+     "url": "https://cppa.ca.gov/regulations/ccpa_updates.html",
+     "title": "CalPrivacy: CCPA Updates, Insurance, Cybersecurity Audits, Risk Assessments, and ADMT Regulations (rulemaking page)",
+     "supports": "adopted by the Board July 24, 2025; approved by the Office of Administrative Law September 22, 2025; effective date January 1, 2026"
+    },
+    {
+     "url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf",
+     "title": "CalPrivacy: California Consumer Privacy Act Regulations, Cal. Code Regs. tit. 11, div. 6, ch. 1, effective 1/1/2026 (PDF; the file name says statute but the document is the regulations)",
+     "supports": "sections 7003 (plain language, accessibility, link styling), 7004 (symmetry, dark patterns), 7010-7015 (privacy policy, Notice at Collection, link titles, Alternative Opt-out Link), 7025(c)(6) (opt-out signal status), 7200 and 7220 (ADMT Pre-use Notice, compliance by January 1, 2027)"
+    },
+    {
+     "url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf",
+     "title": "CalPrivacy: California Consumer Privacy Act of 2018 (Civil Code 1798.100 et seq.), effective 01/01/2026, AB 137 and AB 566 update",
+     "supports": "1798.130(a)(5) privacy policy update at least once every 12 months; 1798.135(a) link titles; 1798.155 and 1798.199.90 fines as CPI-adjusted"
+    },
+    {
+     "url": "https://cppa.ca.gov/regulations/cpi_adjustment.html",
+     "title": "CalPrivacy: CCPA monetary thresholds, CPI adjustment",
+     "supports": "2025 amounts: business revenue threshold USD 26,625,000; fines not more than USD 2,663 per violation or USD 7,988 per intentional violation or violation involving known under-16s"
+    }
+   ],
+   "related": [
+    "comp:gdpr_marketing_consent",
+    "comp:coppa",
+    "comp:wcag_22",
+    "comp:ccpa_dark_patterns_2023",
+    "genre:ux_microcopy",
+    "genre:order_form_checkout_copy",
+    "edit:plain_language_check",
+    "edit:jargon_audit",
+    "comp:uk_childrens_code"
+   ],
+   "jurisdiction": "US: California (Civil Code 1798.100 et seq.; Cal. Code Regs. tit. 11, div. 6, ch. 1)",
+   "applies_to": [
+    "genre:ux_microcopy",
+    "genre:order_form_checkout_copy",
+    "genre:landing_page",
+    "genre:homepage_copy",
+    "genre:onboarding_flow_copy",
+    "genre:faq_page",
+    "privacy policies",
+    "notices at collection",
+    "cookie and consent banners",
+    "opt-out and preference pages",
+    "ADMT pre-use notices"
+   ],
+   "rules": [
+    {
+     "rule": "Disclosures must be ‘easy to read and understandable’ and ‘use plain, straightforward language and avoid technical or legal jargon’ (reg 7003(a)).",
+     "url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+    },
+    {
+     "rule": "Notices must be readable on smaller screens, in the languages the business ordinarily uses with Californians, and reasonably accessible to people with disabilities, following standards such as WCAG 2.1 online (reg 7003(b)).",
+     "url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+    },
+    {
+     "rule": "Notice at Collection, at or before collection: categories of personal information (incl. sensitive), purposes, whether each is sold or shared, retention per category or criteria, opt-out link and privacy-policy link (reg 7012(e)); without it ‘the business shall not collect’ (7012(d)).",
+     "url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+    },
+    {
+     "rule": "Privacy policy: online and offline practices, categories collected, sources, purposes, sale or sharing, every CCPA right and how to use it, and the ‘Date the privacy policy was last updated’ (reg 7011(e)); a conspicuous link using the word ‘privacy’ (7011(d)).",
+     "url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+    },
+    {
+     "rule": "The privacy-policy disclosures must be updated ‘at least once every 12 months’ (Civil Code 1798.130(a)(5)).",
+     "url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf"
+    },
+    {
+     "rule": "Link titles are fixed: “Do Not Sell or Share My Personal Information” and “Limit the Use of My Sensitive Personal Information” (Civil Code 1798.135(a)), placed in the homepage header or footer (reg 7013(c), 7014(c)).",
+     "url": "https://cppa.ca.gov/pdf/20260101_ccpa_statute.pdf"
+    },
+    {
+     "rule": "Alternative single link: titled ‘Your Privacy Choices’ or ‘Your California Privacy Choices’, with the opt-out icon adjacent (reg 7015(b)); links at least the size and colour of neighbouring links (7003(c)).",
+     "url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+    },
+    {
+     "rule": "Choices must be symmetrical: ‘Accept All’ with ‘Decline All’; ‘Yes’ with ‘No’, not ‘Ask me later’; no double negatives, no false-urgency countdowns (reg 7004(a)); dark-pattern consent ‘shall not constitute consumer consent’ (7004(b)).",
+     "url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+    },
+    {
+     "rule": "ADMT Pre-use Notice: a ‘plain language explanation of the specific purpose’, not generic wording such as ‘to make a significant decision’ (reg 7220(c)(1)); existing ADMT use must comply ‘no later than January 1, 2027’ (Article 11).",
+     "url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+    },
+    {
+     "rule": "The site must show whether an opt-out preference signal was processed, for example ‘Opt-Out Request Honored’ (reg 7025(c)(6)).",
+     "url": "https://cppa.ca.gov/regulations/pdf/ccpa_statute_eff_20260101.pdf"
+    },
+    {
+     "rule": "The 2025 package was approved by the Office of Administrative Law on September 22, 2025, effective January 1, 2026.",
+     "url": "https://cppa.ca.gov/regulations/ccpa_updates.html"
+    },
+    {
+     "rule": "A ‘Notices & Disclosures’ pre-rulemaking topic closed for comment on May 20, 2026; it is not a proposed regulation yet.",
+     "url": "https://cppa.ca.gov/regulations/"
+    }
+   ],
+   "penalty": "Administrative fines and civil penalties, CPI-adjusted for 2025 to not more than USD 2,663 per violation or USD 7,988 per intentional violation or violation involving consumers known to be under 16 (CalPrivacy monetary thresholds page; Civil Code 1798.155 and 1798.199.90).",
+   "checks": [
+    "Is every notice in plain language with no legal or technical jargon, readable on a phone, and accessible online?",
+    "Does the Notice at Collection list categories, purposes, sold or shared status and retention for each category, with links to the opt-out notice and the privacy policy?",
+    "Does the privacy policy show the date it was last updated, within the last 12 months?",
+    "Are the link titles exactly “Do Not Sell or Share My Personal Information” and “Limit the Use of My Sensitive Personal Information”, or the ‘Your Privacy Choices’ link with the icon?",
+    "Do consent and opt-out choices offer equal options with equal visual weight, no double negatives and no false urgency?",
+    "If automated decisionmaking is used for significant decisions, does a Pre-use Notice explain the specific purpose in plain language and how to opt out or appeal?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:consumer_protection_ecommerce_rules_2020",
+   "kind": "compliance",
+   "name": "Consumer Protection (E-Commerce) Rules, 2020 (as amended 2021 and by the Amendment Rules, 2026)",
+   "status": "current",
+   "summary": "In force since 23 Jul 2020; amended on 17 May 2021 (incorporation only) and by the Amendment Rules, 2026 dated 9 Sep 2026, which apply from 1 January (2027 per secondary reports; the year did not extract from the official PDF). Every listing must show seller details, a single total price with its break-up, country of origin, expiry or best-before date, and accurate return, refund, warranty, delivery and grievance information; sellers may not post reviews posing as consumers or misrepresent goods. From the 2026 amendment, any announced price cut shows the prior price (lowest of the previous 30 days) and sponsored listings are clearly labelled. The 2021 draft amendments (flash sales, mis-selling) were a consultation draft, not law.",
+   "use_for": [
+    "Marketplace listings, D2C product pages and category pages",
+    "Sale banners, price-drop emails, SMS and WhatsApp offers",
+    "Seller 'About' pages, return and refund policy copy, checkout and cart microcopy",
+    "Review-request and ratings copy"
+   ],
+   "avoid": [
+    "'Was Rs 2,999, now Rs 999' when the item never sold at Rs 2,999 in the last 30 days: from the 2026 amendment the shown prior price must be the lowest price of the previous 30 days.",
+    "'Rs 499*' with delivery, handling and a 'platform fee' added at checkout: show the total in a single figure with its break-up on the listing.",
+    "Writing reviews as the seller or seeding five-star reviews from staff accounts: sellers and inventory platforms may not pose as consumers (see also comp:bis_is_19000_online_reviews).",
+    "Unlabelled 'Top picks' or 'Recommended' rows that are paid placements: label them as sponsored, clearly and prominently.",
+    "Pre-ticked 'Add gift wrap' or 'Add protection plan' boxes: consent must be an explicit, affirmative action.",
+    "Writing 'Imported' without the country: name the country of origin in full."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "http://consumeraffairs.gov.in/public/upload/files/E%20commerce%20rules_1732703966.pdf",
+     "title": "Consumer Protection (E-Commerce) Rules, 2020, G.S.R. 462(E), 23 Jul 2020",
+     "supports": "rules 4, 6 and 7: disclosures, fake-review and price-manipulation bans, consent"
+    },
+    {
+     "url": "http://consumeraffairs.gov.in/public/upload/files/Consumer%20Protection%20(E-Commerce)%20(Amendment)%20Rules,%202021_1732704241.pdf",
+     "title": "Consumer Protection (E-Commerce) (Amendment) Rules, 2021, G.S.R. 328(E), 17 May 2021",
+     "supports": "only rule 4(1) changed"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/E_Commerce_Amendment_Rules_2026_2026-09-11_18-12-39.pdf",
+     "title": "Consumer Protection (E-Commerce) (Amendment) Rules, 2026, dated 9 Sep 2026",
+     "supports": "prior price, sponsored listings, search manipulation, seller details, ranking parameters, invoice, dark-pattern audit"
+    },
+    {
+     "url": "https://consumeraffairs.gov.in/pages/consumer-protection-acts",
+     "title": "Department of Consumer Affairs: acts and rules page",
+     "supports": "list of notified instruments"
+    },
+    {
+     "url": "https://prsindia.org/files/bills_acts/bills_parliament/2021/CommentseCommerce_Rules2020_upto_21July2021.pdf",
+     "title": "PRS copy of the 2021 call for comments on draft amendments (secondary host)",
+     "supports": "the 2021 changes were a consultation draft"
+    }
+   ],
+   "related": [
+    "comp:legal_metrology_packaged_commodities",
+    "comp:ccpa_dark_patterns_2023",
+    "comp:bis_is_19000_online_reviews",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:fssai_labelling_display_2020",
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "comp:eu_prior_price_rule",
+    "comp:ondc_listing_policy",
+    "plat:meesho_listing",
+    "plat:indiamart_listing"
+   ],
+   "jurisdiction": "India (Department of Consumer Affairs; Consumer Protection Act, 2019)",
+   "applies_to": [
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "genre:d2c_brand_store",
+    "genre:category_page",
+    "genre:promotional_email",
+    "genre:sms_marketing",
+    "genre:whatsapp_broadcast",
+    "genre:testimonial_copy",
+    "sale banners",
+    "checkout, cart and return-policy copy"
+   ],
+   "rules": [
+    {
+     "rule": "Seller listings show 'total price in single figure' with the break-up of compulsory and voluntary charges (delivery, handling, conveyance, tax), expiry date where applicable, country of origin, importer details, grievance officer, and return, refund and 'costs of return shipping' information (rule 6(5)).",
+     "url": "http://consumeraffairs.gov.in/public/upload/files/E%20commerce%20rules_1732703966.pdf"
+    },
+    {
+     "rule": "No seller or inventory e-commerce entity shall 'falsely represent itself as a consumer and post reviews' or misrepresent the quality or features of goods (rules 6(2), 7(2)); ads must match the goods' 'actual characteristics, access and usage conditions' (rules 6(4)(c), 7(3)).",
+     "url": "http://consumeraffairs.gov.in/public/upload/files/E%20commerce%20rules_1732703966.pdf"
+    },
+    {
+     "rule": "No price manipulation imposing an 'unjustified price' (rule 4(11)(a)); consent only by explicit, affirmative action, never automatically 'including in the form of pre-ticked checkboxes' (rule 4(9)).",
+     "url": "http://consumeraffairs.gov.in/public/upload/files/E%20commerce%20rules_1732703966.pdf"
+    },
+    {
+     "rule": "2026 amendment: an announced price reduction shows the prior price, meaning 'the lowest price of a good or service thirty days prior to the announcement of price reduction'.",
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/E_Commerce_Amendment_Rules_2026_2026-09-11_18-12-39.pdf"
+    },
+    {
+     "rule": "2026 amendment: sponsored listings 'distinctly identified with clear and prominent disclosures'; no misleading users 'by manipulating search result or search indexes'; ranking parameters explained in plain language; seller name on the invoice in the platform name's font size.",
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/E_Commerce_Amendment_Rules_2026_2026-09-11_18-12-39.pdf"
+    },
+    {
+     "rule": "2026 amendment: listings add best-before or use-before date, delivery and return-shipping cost and any GSTIN or MSME registration number; imported goods name the country of origin in full as under the Legal Metrology (Packaged Commodities) Rules.",
+     "url": "https://consumeraffairs.gov.in/public/upload/admin/cmsfiles/whatsnews/E_Commerce_Amendment_Rules_2026_2026-09-11_18-12-39.pdf"
+    },
+    {
+     "rule": "Status: the Department's rules page lists the 2020 Rules, a corrigendum, the 2021 amendment and the 2026 amendment; the 2021 notified amendment only replaced rule 4(1), and the wider June-July 2021 changes were a draft for comments.",
+     "url": "https://consumeraffairs.gov.in/pages/consumer-protection-acts"
+    }
+   ],
+   "checks": [
+    "Does the listing show a single total price with the break-up of every charge the buyer will pay?",
+    "Are seller details, country of origin (in full), expiry or best-before date, and return, refund, return-shipping cost, warranty and delivery terms all on the page?",
+    "Does every 'was' or struck-through price equal the lowest price of the previous 30 days?",
+    "Are paid or sponsored placements labelled clearly and prominently?",
+    "Are all reviews and ratings from real buyers, with none written by the seller or its staff?",
+    "Are all add-ons opt-in, with no pre-ticked boxes?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:cotpa_tobacco_advertising",
+   "kind": "compliance",
+   "name": "Cigarettes and Other Tobacco Products Act, 2003 (COTPA) and COTPA Rules, 2004: tobacco advertising ban, indirect advertising, and health spots and warnings in films, TV and OTT",
+   "status": "current",
+   "summary": "In force. Nobody may take part in any ad that directly or indirectly promotes tobacco, or promote a tobacco brand in return for a sponsorship, gift or prize; using a tobacco name, colours, layout or smoking situations to sell anything else is indirect advertising. Films, TV programmes and OTT content that show tobacco must run 30-second anti-tobacco health spots, a static 'Tobacco kills'-type warning and a 20-second disclaimer in the content's language, and OTT content may show no tobacco brand or product placement.",
+   "use_for": [
+    "Screenplays, web-series, micro-drama and podcast scripts that show smoking or chewing tobacco",
+    "Briefs and scripts for brands that share a name with a tobacco brand",
+    "Event, sports and sponsorship copy",
+    "Creator content showing cigarettes, hookah or chewing tobacco"
+   ],
+   "avoid": [
+    "A creator reel where someone lights a cigarette 'for the vibe' with the pack in frame: anyone who takes part in an ad that indirectly promotes tobacco is caught by s.5(1). Cut the product or the scene.",
+    "Naming an event or trophy after a chewing-tobacco brand ('Brand X Gold Cup'): promoting a tobacco brand in exchange for a sponsorship, gift or prize is banned (s.5(3)).",
+    "A 'lifestyle' apparel or music campaign in a cigarette brand's colours and pack layout: that is indirect advertising under rule 2(e).",
+    "An OTT script with a real cigarette brand on the table: rule 11 bars brand display and 'any form of tobacco product placement', and trailers may not show tobacco at all.",
+    "English-only warnings on a Hindi show: health spots and warnings must be in the content's own language (or its dub or subtitle language)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Acts-Rules-Regulations/COTPA-2003-English-Version.pdf",
+     "title": "MoHFW NTCP: COTPA 2003 English version (scanned gazette copy)",
+     "supports": "s.3(a) and s.5"
+    },
+    {
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Acts-Rules-Regulations/GSR-345(E).pdf",
+     "title": "MoHFW: G.S.R. 345(E), 31 May 2005 (COTPA Rules amendment)",
+     "supports": "rule 2(e) indirect advertisement; rule 4 point-of-sale boards"
+    },
+    {
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Acts-Rules-Regulations/GSR-708(E).pdf",
+     "title": "MoHFW: G.S.R. 708(E), in force from 2 Oct 2012 (films and TV)",
+     "supports": "rules 7 and 8: health spots, static warning, disclaimer, language"
+    },
+    {
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Cigarettes%20and%20other%20Tobacco%20Products%20(Prohibition%20of%20Advertisement%20and%20Regulation%20of%20Trade%20and%20Commerce,%20Production,%20Supply%20and%20Distribution)%20Amendment%20Rules,%202023.pdf",
+     "title": "MoHFW: G.S.R. 400(E), 31 May 2023 (OTT rule 11)",
+     "supports": "online curated content duties and brand-placement ban"
+    }
+   ],
+   "related": [
+    "comp:surrogate_advertising_india",
+    "comp:cable_tv_advertising_code",
+    "comp:it_rules_2021_digital_news_code",
+    "comp:asci_code",
+    "genre:screenplay_feature",
+    "genre:web_series_episode"
+   ],
+   "jurisdiction": "India (Ministry of Health and Family Welfare; COTPA 2003 and COTPA Rules, 2004)",
+   "applies_to": [
+    "genre:screenplay_feature",
+    "genre:web_series_episode",
+    "genre:short_film_script",
+    "genre:micro_drama_episode_script",
+    "genre:podcast_script",
+    "genre:tvc_script",
+    "genre:social_ad_copy",
+    "genre:sponsored_creator_post",
+    "genre:event_promotion",
+    "genre:ooh_billboard_copy",
+    "sponsorship and event naming"
+   ],
+   "rules": [
+    {
+     "rule": "No tobacco producer or distributor may advertise, no one controlling a medium may carry a tobacco ad, and no person shall 'take part in any advertisement which directly or indirectly suggests or promotes the use or consumption' of tobacco (s.5(1)).",
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Acts-Rules-Regulations/COTPA-2003-English-Version.pdf"
+    },
+    {
+     "rule": "'Advertisement' includes any visible representation by notice, circular, label, wrapper or other document, and any announcement made orally or by light, sound, smoke or gas (s.3(a)).",
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Acts-Rules-Regulations/COTPA-2003-English-Version.pdf"
+    },
+    {
+     "rule": "No promotion of tobacco, or of 'any trade mark or brand name' of tobacco, in exchange for a sponsorship, gift, prize or scholarship (s.5(3)); the only ad exceptions are on the pack and at the entrance or inside a shop selling tobacco (s.5(2) proviso).",
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Acts-Rules-Regulations/COTPA-2003-English-Version.pdf"
+    },
+    {
+     "rule": "Indirect advertisement (rule 2(e), 2005): using a tobacco name or brand to market other goods, services or events; marketing tobacco under a brand known for other goods; using colours, layout or presentation associated with a tobacco product; using tobacco and smoking situations to advertise other goods.",
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Acts-Rules-Regulations/GSR-345(E).pdf"
+    },
+    {
+     "rule": "New films and TV programmes showing tobacco need an editorial justification to the CBFC, health spots of at least thirty seconds at the beginning and middle, a static warning at the bottom of the screen while tobacco is shown, and a 20-second disclaimer at the beginning and middle (rule 8, from 2 Oct 2012).",
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Acts-Rules-Regulations/GSR-708(E).pdf"
+    },
+    {
+     "rule": "Warnings are black on white: 'Smoking causes cancer' or 'Smoking kills' for smoking, 'Tobacco causes cancer' or 'Tobacco kills' for smokeless tobacco, in the language of the film or of its dub or subtitles (rule 8(4)-(5)).",
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Acts-Rules-Regulations/GSR-708(E).pdf"
+    },
+    {
+     "rule": "OTT (rule 11, 2023): online curated content, which includes films, series, documentaries and podcasts, showing tobacco carries the same spots, static 'Tobacco causes cancer' or 'Tobacco kills' warning and 20-second disclaimer in its language, and may not show 'any form of tobacco product placement' or tobacco in promotional materials.",
+     "url": "https://ntcp.mohfw.gov.in/assets/document/Cigarettes%20and%20other%20Tobacco%20Products%20(Prohibition%20of%20Advertisement%20and%20Regulation%20of%20Trade%20and%20Commerce,%20Production,%20Supply%20and%20Distribution)%20Amendment%20Rules,%202023.pdf"
+    }
+   ],
+   "checks": [
+    "Is there no ad, post or brand integration that directly or indirectly promotes a tobacco product?",
+    "Is no event, prize, scholarship or sponsorship named after or promoting a tobacco brand?",
+    "Does a campaign for a product that shares a tobacco brand's name avoid that brand's colours, layout and smoking situations?",
+    "If a script shows tobacco, has the writer flagged the editorial justification, 30-second health spots, static warning and 20-second disclaimer in the content's language?",
+    "In OTT or podcast content and its trailers, is every tobacco brand, pack and product placement kept off screen?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:drugs_cosmetics_act_claims",
+   "kind": "compliance",
+   "name": "Drugs and Cosmetics Act, 1940 + Drugs Rules, 1945 (rule 106, Schedule J) + Cosmetics Rules, 2020 (rule 36): what drug and cosmetic labels, ads and listings may not claim",
+   "status": "current",
+   "summary": "In force (CDSCO texts read 2026-10-13). No drug's label, ad, listing or insert may claim, or convey the idea, that it prevents or cures any of the 51 Schedule J conditions, and nothing about a cosmetic may convey a false or misleading idea. A skincare or haircare product that claims to treat, heal or cure is making a drug claim and stops being a cosmetic. Good copy describes what the product is, how to use it and what it does to appearance, with evidence on file for every claim.",
+   "use_for": [
+    "Product descriptions and marketplace listings for OTC medicines, ayurvedic or herbal products, skincare, haircare and oral care",
+    "Packaging and label copy for drugs and cosmetics",
+    "Social, video and TV ads and influencer briefs for health and beauty brands",
+    "Reviewing a client's claim list before a launch"
+   ],
+   "avoid": [
+    "Writing 'regrows hair', 'stops greying', 'cures diabetes', 'increases height', 'boosts memory' or 'makes skin fairer' for any drug, ayurvedic medicine or supplement-style product: all are Schedule J conditions. Write what it is and how to use it instead ('a herbal hair oil for regular scalp massage').",
+    "Calling a cosmetic 'clinically proven to treat acne' or saying it 'heals eczema': CDSCO says a product with a drug claim is not a cosmetic. Use appearance language ('helps skin look clearer') and only with proof.",
+    "Relying on implication: before-and-after photos, a testimonial saying 'my sugar is normal now', or a name like 'GlucoCure' still convey the idea of a cure, which rule 106 bars.",
+    "Treating this card as the whole picture: the DMR Act, 1954 separately bans ads for its scheduled diseases in any medium (comp:dmr_act_1954), and the ASCI Code and CCPA rules test every claim.",
+    "Inventing 'dermatologist approved', 'No. 1' or percentage results: rule 36 bars any false or misleading idea, so each claim needs a study or certificate the client can show."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/drug_rules/Drugs%20Rules%201945_2024%2009.pdf",
+     "title": "CDSCO: The Drugs Rules, 1945, compiled version as amended vide G.S.R. 360(E) dated 01-07-2024",
+     "supports": "rule 106(1)-(2) and the Schedule J list"
+    },
+    {
+     "url": "https://www.cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/cos_rules/Cosmetics%20Rules%202020.pdf",
+     "title": "CDSCO: The Cosmetics Rules, 2020",
+     "supports": "rule 34 labelling, rule 36 false or misleading claims, rule 37 hair-dye caution"
+    },
+    {
+     "url": "https://cdsco.gov.in/opencms/export/sites/CDSCO_WEB/Pdf-documents/acts_rules/2016DrugsandCosmeticsAct1940Rules1945.pdf",
+     "title": "CDSCO: Drugs and Cosmetics Act, 1940 (compilation to 31 Dec 2016)",
+     "supports": "s.3(aaa) cosmetic definition; s.17, s.17C and s.33E misbranding"
+    },
+    {
+     "url": "https://cdsco.gov.in/opencms/export/sites/CDSCO_WEB/Pdf-documents/cosmetics/Frequently-Asked-Questions-FAQcosmeticia.pdf",
+     "title": "CDSCO: FAQ on cosmetics, Q.54",
+     "supports": "products with a drug claim are not cosmetics"
+    }
+   ],
+   "related": [
+    "comp:dmr_act_1954",
+    "comp:ayush_drug_advertisement_rule_170",
+    "comp:ucpmp_2024_pharma_promotion",
+    "comp:legal_metrology_packaged_commodities",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:asci_code",
+    "comp:fssai_advertising_claims_2018",
+    "genre:product_description",
+    "genre:packaging_copy",
+    "comp:consumer_protection_ecommerce_rules_2020"
+   ],
+   "jurisdiction": "India (Central Drugs Standard Control Organisation; Drugs and Cosmetics Act, 1940; Drugs Rules, 1945; Cosmetics Rules, 2020)",
+   "applies_to": [
+    "genre:product_description",
+    "genre:marketplace_listing",
+    "genre:packaging_copy",
+    "genre:d2c_brand_store",
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "genre:tvc_script",
+    "genre:ugc_ad_script",
+    "genre:sponsored_creator_post",
+    "genre:influencer_brief",
+    "health, pharmacy and beauty product pages"
+   ],
+   "rules": [
+    {
+     "rule": "No drug may claim to prevent or cure a Schedule J disease or ailment, nor 'convey to the intending user thereof any idea that it may prevent or cure' one (Drugs Rules rule 106(1)). Implied claims count.",
+     "url": "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/drug_rules/Drugs%20Rules%201945_2024%2009.pdf"
+    },
+    {
+     "rule": "Schedule J lists 51 conditions, including AIDS, cancer, diabetes, high/low blood pressure, obesity, baldness, hair colour change and new hair growth, premature greying, fairness of the skin, premature ageing, power to rejuvenate, height, brain capacity and memory, vision, jaundice and liver disorders, piles, kidney and gall-bladder stones, and sexual performance or organ size.",
+     "url": "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/drug_rules/Drugs%20Rules%201945_2024%2009.pdf"
+    },
+    {
+     "rule": "No drug may claim, or convey the idea, that it may procure or assist to procure miscarriage in women (rule 106(2)).",
+     "url": "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/drug_rules/Drugs%20Rules%201945_2024%2009.pdf"
+    },
+    {
+     "rule": "A drug (s.17(c)) or an Ayurvedic, Siddha or Unani drug (s.33E(c)) is misbranded if its label, container or 'anything accompanying the drug' makes 'any false claim for the drug' or is false or misleading in any particular.",
+     "url": "https://cdsco.gov.in/opencms/export/sites/CDSCO_WEB/Pdf-documents/acts_rules/2016DrugsandCosmeticsAct1940Rules1945.pdf"
+    },
+    {
+     "rule": "'No cosmetic may purport or claim to purport or convey any idea which is false or misleading to the intending user' (Cosmetics Rules rule 36); a false or misleading statement on the label or anything accompanying a cosmetic makes it misbranded (Act s.17C(c)).",
+     "url": "https://www.cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/cos_rules/Cosmetics%20Rules%202020.pdf"
+    },
+    {
+     "rule": "A cosmetic is for 'cleansing, beautifying, promoting attractiveness, or altering the appearance' (Act s.3(aaa)); CDSCO FAQ Q.54: 'Products having drug claim do not come under the definition of cosmetic'.",
+     "url": "https://cdsco.gov.in/opencms/export/sites/CDSCO_WEB/Pdf-documents/cosmetics/Frequently-Asked-Questions-FAQcosmeticia.pdf"
+    },
+    {
+     "rule": "Cosmetic labels carry the rule 34 particulars: name, manufacturer and address (or 'Made in' country), use-before or expiry, batch number, manufacturing licence number, net contents and safety directions where a hazard exists; hair dyes add the rule 37 caution legend in English and local languages.",
+     "url": "https://www.cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/cos_rules/Cosmetics%20Rules%202020.pdf"
+    }
+   ],
+   "checks": [
+    "Does the copy avoid every claim, image, name or testimonial suggesting that a drug or Ayush product prevents or cures a Schedule J condition?",
+    "Does the copy avoid any suggestion that a product can cause or assist miscarriage?",
+    "For a cosmetic, is every claim about appearance (cleansing, beautifying, looking better) rather than treating, healing or curing a condition?",
+    "Is every claim on the label, listing, insert or ad true, and can the client show the evidence for it?",
+    "Does cosmetic label copy include the rule 34 particulars, and a hair dye the rule 37 caution in English and the local language?",
+    "Has the same claim also been checked against the DMR Act schedule (comp:dmr_act_1954)?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:eu_prior_price_rule",
+   "kind": "compliance",
+   "name": "EU prior-price rule for discount copy: Price Indication Directive 98/6/EC Article 6a (inserted by Directive (EU) 2019/2161)",
+   "status": "current",
+   "summary": "Status as read 2026-10-13: applies since 28 May 2022. Any EU announcement that the price of a good has been reduced must show the trader's lowest price in at least the previous 30 days, and since the CJEU judgment in Case C-330/23 (26 September 2024) the advertised percentage or 'price highlight' claim must be calculated from that prior price. Good discount copy shows the 30-day low as the reference and computes the percentage from it.",
+   "use_for": [
+    "Sale banners, percentage-off badges and crossed-out 'was' prices on EU-facing shops",
+    "Black Friday, end-of-season and flash-sale emails, ads and social posts for EU consumers",
+    "Product-page and marketplace price copy where a reduction is announced",
+    "Briefing a client on why the 'was' price in their template is wrong"
+   ],
+   "avoid": [
+    "Using the last selling price or the RRP as the 'was' price. If the 30-day low was EUR 100 and you write '50 % off', show EUR 100 as the prior price, even if yesterday's price was EUR 160 (Commission guidance example).",
+    "Raising a price for two weeks and then announcing a cut. The prior price is still the lowest price in the 30 days before the reduction, including any earlier promotional price.",
+    "Computing '30 % off' from a higher reference while the small print shows the 30-day low. The CJEU ruled the percentage must be based on the prior price.",
+    "'Up to 70 % off' when only a few items reach 70 %. The guidance says this can still mislead under the UCPD (comp:eu_ucpd).",
+    "An RRP comparison laid out like a reduction ('RRP EUR 80, now EUR 50, save 38 %'). If shoppers read it as a reduction, Article 6a and the UCPD both apply. Label it plainly: 'Recommended retail price EUR 80. Our price EUR 50.'",
+    "Assuming the rule covers services or apps. Article 6a covers goods only; discount copy for services and digital content is judged under the UCPD instead."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://publications.europa.eu/resource/celex/01998L0006-20220528",
+     "title": "EU Publications Office: Directive 98/6/EC (Price Indication Directive), consolidated text of 28.05.2022",
+     "supports": "Article 6a(1)-(5): prior price, 30-day period, Member State options for perishables, new goods, progressive reductions"
+    },
+    {
+     "url": "https://publications.europa.eu/resource/celex/52021XC1229%2806%29",
+     "title": "EU Publications Office: Commission Notice, Guidance on the interpretation and application of Article 6a of Directive 98/6/EC, OJ C 526, 29.12.2021",
+     "supports": "what counts as a price reduction announcement, goods only, worked percentage example, general announcements, loyalty and personalised discounts, interplay with the UCPD"
+    },
+    {
+     "url": "https://publications.europa.eu/resource/celex/62023CJ0330",
+     "title": "EU Publications Office: Judgment of the Court of Justice (Eighth Chamber), 26 September 2024, Case C-330/23",
+     "supports": "a percentage reduction or a promotional price statement must be determined on the basis of the prior price"
+    },
+    {
+     "url": "https://publications.europa.eu/resource/celex/32019L2161",
+     "title": "EU Publications Office: Directive (EU) 2019/2161, OJ L 328, 18.12.2019",
+     "supports": "inserted Article 6a; application from 28 May 2022"
+    }
+   ],
+   "related": [
+    "comp:eu_ucpd",
+    "tech:price_anchoring",
+    "tech:ethical_urgency",
+    "genre:promotional_email",
+    "genre:product_description",
+    "genre:marketplace_listing",
+    "genre:display_banner_ad_copy",
+    "comp:consumer_protection_ecommerce_rules_2020"
+   ],
+   "jurisdiction": "European Union (all Member States, via national transposition of Directive 98/6/EC Article 6a)",
+   "applies_to": [
+    "genre:promotional_email",
+    "genre:product_description",
+    "genre:marketplace_listing",
+    "genre:d2c_brand_store",
+    "genre:display_banner_ad_copy",
+    "genre:social_ad_copy",
+    "genre:sms_marketing",
+    "genre:catalogue_copy",
+    "price-reduction announcements for goods sold to EU consumers, online and in store"
+   ],
+   "rules": [
+    {
+     "rule": "‘Any announcement of a price reduction shall indicate the prior price applied by the trader’ for a determined period before the reduction (Article 6a(1)).",
+     "url": "https://publications.europa.eu/resource/celex/01998L0006-20220528"
+    },
+    {
+     "rule": "The prior price is the ‘lowest price applied by the trader during a period of time not shorter than 30 days prior to the application of the price reduction’ (Article 6a(2)).",
+     "url": "https://publications.europa.eu/resource/celex/01998L0006-20220528"
+    },
+    {
+     "rule": "Member State options, so check the national law: different rules for goods ‘liable to deteriorate or expire rapidly’ (6a(3)); a shorter period for goods on the market under 30 days (6a(4)); for progressively increased reductions, the price before the first reduction (6a(5)).",
+     "url": "https://publications.europa.eu/resource/celex/01998L0006-20220528"
+    },
+    {
+     "rule": "CJEU, Case C-330/23, judgment of 26 September 2024: a reduction announced ‘in the form of a percentage, or in the form of a promotional statement intended to highlight the advantageous nature of the announced price’ must be determined from the prior price.",
+     "url": "https://publications.europa.eu/resource/celex/62023CJ0330"
+    },
+    {
+     "rule": "Commission guidance 2021: covers ‘20 % off’, crossed-out ‘was’ prices and announcements like ‘sales’ price, ‘special offers’ or ‘Black Friday offers’; the 30-day low includes earlier promotional prices.",
+     "url": "https://publications.europa.eu/resource/celex/52021XC1229%2806%29"
+    },
+    {
+     "rule": "Commission guidance 2021: goods only, not services or digital content; out of scope but still under the UCPD are ‘best/lowest prices’ claims, RRP or competitor comparisons, tied offers and genuine loyalty or personalised discounts.",
+     "url": "https://publications.europa.eu/resource/celex/52021XC1229%2806%29"
+    },
+    {
+     "rule": "Commission guidance 2021: a general banner such as ‘20 % off on everything today’ need not carry the prior price, but each price tag or online price section must; extra reference prices must be clearly explained.",
+     "url": "https://publications.europa.eu/resource/celex/52021XC1229%2806%29"
+    },
+    {
+     "rule": "Article 6a was inserted by Directive (EU) 2019/2161, applied from 28 May 2022.",
+     "url": "https://publications.europa.eu/resource/celex/32019L2161"
+    }
+   ],
+   "penalty": "Set by each Member State; penalties must be effective, proportionate and dissuasive (Article 8 of the consolidated Directive 98/6/EC).",
+   "checks": [
+    "Does every announced reduction on a good show the trader's lowest price in at least the previous 30 days as the reference price?",
+    "Is the advertised percentage or amount calculated from that 30-day prior price, not from the last or recommended price?",
+    "Did the 30-day check include any earlier promotional price in the window?",
+    "Where a general banner announces the sale, does each product's price tag or online price show its prior price?",
+    "Is any extra reference price (RRP, regular price) clearly labelled for what it is?",
+    "Does an 'up to X %' claim reflect a meaningful share of items at that rate?",
+    "Has the national rule been checked for perishables, new arrivals or progressive reductions?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:eu_ucpd",
+   "kind": "compliance",
+   "name": "EU Unfair Commercial Practices Directive 2005/29/EC as amended by the Omnibus Directive (EU) 2019/2161: misleading actions, misleading omissions and the Annex I blacklist",
+   "status": "current",
+   "summary": "Status as read 2026-10-13: the EU's general rulebook for business-to-consumer marketing, in force in every Member State through national law; the Omnibus Directive (EU) 2019/2161 changes have applied since 28 May 2022, and Directive (EU) 2024/825 added greenwashing bans that apply from 27 September 2026. Good EU-facing copy is true in its overall impression, names the price with taxes and the seller, labels every paid placement, and never uses a fake 'free', a false countdown or an invented review.",
+   "use_for": [
+    "Writing or reviewing any ad, landing page, product page, promotional email or social post aimed at EU consumers",
+    "Influencer briefs and captions for EU audiences (disclosure of paid, gifted and affiliate content)",
+    "Review sections, review-request emails and customer-review widgets on EU-facing shops",
+    "Sale, free-gift, limited-time and eco claims for EU campaigns"
+   ],
+   "avoid": [
+    "A literally true line that leaves a false impression (a 'clinically tested' badge on a product that failed the test, or a small-print note that reverses the headline). Article 6(1) catches deception by overall presentation even when each fact is correct.",
+    "'Free' on anything that needs a paid handling, packaging or admin fee. Write 'Free sample, you pay only standard postage of EUR 2.90' or drop the word.",
+    "'Only 2 hours left!' on an offer that will run again tomorrow. A false very-limited-time claim is blacklisted (Annex I point 7). Use a real end date and keep it (tech:ethical_urgency).",
+    "Advertising a hero price you cannot stock in reasonable quantities (bait advertising, point 5). State the stock or the limit: '200 units at this price'.",
+    "Writing reviews yourself, buying them, or showing only 5-star reviews. Point 23c bans false or misrepresented reviews; say on the page how reviews are checked (Article 7(6)).",
+    "An influencer caption with #ad buried after ten hashtags or behind 'more'. The 2021 Commission guidance calls that inadequate; put 'Ad' or 'Paid partnership with Kesar Loom' first.",
+    "From 27 September 2026: 'eco-friendly', 'green' or 'climate neutral thanks to offsets' as a bare claim. Replace with a specific, provable fact: 'Bottle made from 100 % recycled PET'."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://publications.europa.eu/resource/celex/02005L0029-20220528",
+     "title": "EU Publications Office: Directive 2005/29/EC, consolidated text of 28.05.2022 (incorporating Directive (EU) 2019/2161)",
+     "supports": "Articles 6 and 7 (misleading actions and omissions, incl. new 7(4a) ranking and 7(6) reviews), Article 13 penalties, Annex I points 5, 7, 11, 11a, 17, 20, 22, 23b, 23c"
+    },
+    {
+     "url": "https://publications.europa.eu/resource/celex/32019L2161",
+     "title": "EU Publications Office: Directive (EU) 2019/2161 (Omnibus / Modernisation Directive), OJ L 328, 18.12.2019",
+     "supports": "transposition by 28 November 2021, application from 28 May 2022"
+    },
+    {
+     "url": "https://publications.europa.eu/resource/celex/32024L0825",
+     "title": "EU Publications Office: Directive (EU) 2024/825 (empowering consumers for the green transition), amending Directive 2005/29/EC",
+     "supports": "application from 27 September 2026; new Annex I points 2a (sustainability labels), 4a (generic environmental claims), 4b, 4c (offsetting-based neutral claims), 10a, 23d onwards"
+    },
+    {
+     "url": "https://publications.europa.eu/resource/celex/52021XC1229%2805%29",
+     "title": "EU Publications Office: Commission Notice, Guidance on the interpretation and application of Directive 2005/29/EC, OJ C 526, 29.12.2021",
+     "supports": "section 3.4 use of the claim 'free'; 4.2.4 user reviews (reasonable and proportionate steps, misrepresentation examples); 4.2.6 influencer marketing disclosure"
+    }
+   ],
+   "related": [
+    "comp:eu_prior_price_rule",
+    "comp:eu_dsa_ad_transparency",
+    "comp:uk_dmcc_schedule20",
+    "comp:ftc_consumer_reviews_rule",
+    "comp:ftc_endorsement_guides",
+    "comp:bis_is_19000_online_reviews",
+    "comp:ccpa_greenwashing_2024",
+    "tech:ethical_urgency",
+    "tech:ethical_scarcity",
+    "genre:advertorial",
+    "genre:testimonial_copy",
+    "genre:influencer_brief",
+    "comp:consumer_protection_ecommerce_rules_2020",
+    "comp:european_accessibility_act"
+   ],
+   "jurisdiction": "European Union (all Member States, via national transposition of Directive 2005/29/EC as amended)",
+   "applies_to": [
+    "genre:landing_page",
+    "genre:sales_page",
+    "genre:product_description",
+    "genre:promotional_email",
+    "genre:social_ad_copy",
+    "genre:instagram_caption",
+    "genre:influencer_brief",
+    "genre:advertorial",
+    "genre:native_ad",
+    "genre:testimonial_copy",
+    "genre:post_purchase_email",
+    "genre:marketplace_listing",
+    "genre:best_of_roundup",
+    "business-to-consumer marketing aimed at EU consumers"
+   ],
+   "rules": [
+    {
+     "rule": "Misleading action: a practice is misleading if it deceives the average consumer, ‘including overall presentation’, ‘even if the information is factually correct’, about price, main characteristics, expected results and similar elements (Article 6(1)).",
+     "url": "https://publications.europa.eu/resource/celex/02005L0029-20220528"
+    },
+    {
+     "rule": "Misleading omission: hiding material information or giving it ‘in an unclear, unintelligible, ambiguous or untimely manner’, or not identifying the commercial intent, is misleading (Article 7(2)).",
+     "url": "https://publications.europa.eu/resource/celex/02005L0029-20220528"
+    },
+    {
+     "rule": "An invitation to purchase must give the main characteristics, the trader's identity and address, and ‘the price inclusive of taxes’ plus delivery charges or the fact that they may apply (Article 7(4)).",
+     "url": "https://publications.europa.eu/resource/celex/02005L0029-20220528"
+    },
+    {
+     "rule": "Where a trader shows consumer reviews, information on whether and how it checks they come from real users or buyers is material (Article 7(6), added by the Omnibus); search tools must explain their main ranking parameters (Article 7(4a)).",
+     "url": "https://publications.europa.eu/resource/celex/02005L0029-20220528"
+    },
+    {
+     "rule": "Blacklisted in all circumstances (Annex I): bait advertising (point 5); ‘Falsely stating that a product will only be available for a very limited time’ (7); unlabelled paid editorial (11); undisclosed paid ranking in search results (11a); false cure claims (17).",
+     "url": "https://publications.europa.eu/resource/celex/02005L0029-20220528"
+    },
+    {
+     "rule": "Blacklisted: describing a product as ‘gratis’, ‘free’, ‘without charge’ if the consumer pays anything beyond unavoidable response and delivery costs (point 20); falsely representing oneself as a consumer (22).",
+     "url": "https://publications.europa.eu/resource/celex/02005L0029-20220528"
+    },
+    {
+     "rule": "Blacklisted (Omnibus): claiming reviews come from real users without ‘reasonable and proportionate steps to check’ (23b); submitting or commissioning ‘false consumer reviews or endorsements’, or misrepresenting reviews (23c).",
+     "url": "https://publications.europa.eu/resource/celex/02005L0029-20220528"
+    },
+    {
+     "rule": "Commission guidance 2021: no charge for packaging, handling or administration on a free offer (section 3.4); ‘Publishing only positive reviews and deleting the negative ones’ is misrepresentation (section 4.2.4).",
+     "url": "https://publications.europa.eu/resource/celex/52021XC1229%2805%29"
+    },
+    {
+     "rule": "Commission guidance 2021: influencer disclosure fails when shown as ‘hashtags at the end of a lengthy disclaimer; merely tagging a trader’ or behind ‘read more’; free products and affiliate commission count as payment (section 4.2.6).",
+     "url": "https://publications.europa.eu/resource/celex/52021XC1229%2805%29"
+    },
+    {
+     "rule": "From 27 September 2026 (Directive (EU) 2024/825): new blacklist points ban generic environmental claims without ‘recognised excellent environmental performance relevant to the claim’ (4a), offsetting-based neutral claims (4c) and uncertified sustainability labels (2a).",
+     "url": "https://publications.europa.eu/resource/celex/32024L0825"
+    },
+    {
+     "rule": "The Omnibus changes had to be applied by Member States from 28 May 2022.",
+     "url": "https://publications.europa.eu/resource/celex/32019L2161"
+    }
+   ],
+   "penalty": "Set by each Member State. In coordinated cross-border enforcement the maximum fine must be ‘at least 4 % of the trader’s annual turnover in the Member State or Member States concerned’, or at least EUR 2 million where turnover data is unavailable (Article 13, as amended).",
+   "checks": [
+    "Is the overall impression of the piece true, not just each sentence, with no small print that contradicts the headline?",
+    "Does every invitation to purchase show the total price including taxes, the delivery charges (or that they apply), and who the seller is?",
+    "Is every paid, gifted or affiliate placement labelled at the start, not buried in hashtags or behind a 'more' link?",
+    "Is the word 'free' used only where the consumer pays nothing beyond unavoidable postage or response cost?",
+    "Is every deadline, countdown or last-chance claim real, with the offer genuinely ending then?",
+    "Are all quoted reviews real, unedited and not bought, and does the page say how reviews are checked?",
+    "From 27 September 2026: is every environmental claim specific and provable, with no bare 'eco', 'green' or offset-based 'carbon neutral' claim?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:european_accessibility_act",
+   "kind": "compliance",
+   "name": "European Accessibility Act, Directive (EU) 2019/882: accessibility requirements for products and services, incl. e-commerce, e-books, consumer banking and passenger transport information",
+   "status": "current",
+   "summary": "Status as read 2026-10-13: in application since 28 June 2025 for covered products placed on the market and consumer services provided after that date, with transition periods to 2030. For writers it means EU-facing e-commerce, e-book, consumer-banking and passenger-transport content must be understandable, perceivable, available as text that assistive technology can use and backed by text alternatives, and service providers must publish how they meet the requirements. Microenterprises providing services are exempt.",
+   "use_for": [
+    "Product pages, checkout and help copy for e-commerce sites and apps selling to EU consumers",
+    "Accessibility statements and the accessibility section of terms and conditions",
+    "E-book metadata (accessibility features) and e-book production briefs",
+    "Consumer-banking information pages, app microcopy and passenger-transport travel information"
+   ],
+   "avoid": [
+    "Product images, size charts or infographics with no text alternative. Annex I asks for an alternative presentation of non-textual content; write alt text or put the key facts in text (genre:alt_text).",
+    "Key information only inside an image, a scanned PDF or an uncaptioned video. Provide it in a text format that assistive technology can read.",
+    "Consumer-banking explanations at a legal-document reading level. The Act caps complexity at CEFR level B2 (upper intermediate): short sentences, everyday words, defined terms.",
+    "Leaving the accessibility statement to legal boilerplate. Annex V needs a general description of the service in accessible formats and how the requirements are met; write it in plain language.",
+    "Telling a 15-person shop it is exempt. The exemption covers microenterprises providing services: fewer than 10 persons and turnover or balance sheet not over EUR 2 million.",
+    "Treating the Act as a WCAG certificate. It sets requirements (perceivable, operable, understandable, robust); use WCAG (comp:wcag_22) as the working checklist, but do not claim the Directive names it."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://publications.europa.eu/resource/celex/32019L0882",
+     "title": "EU Publications Office: Directive (EU) 2019/882 on the accessibility requirements for products and services, OJ L 151, 7.6.2019",
+     "supports": "Article 2 scope and exclusions, Article 3 definitions (microenterprise, e-commerce services), Article 4(5) microenterprise exemption, Article 13 and Annex V service information, Annex I Sections I, III and IV, Article 30 penalties, Articles 31-32 application and transitional dates"
+    }
+   ],
+   "related": [
+    "comp:wcag_22",
+    "comp:rpwd_act_accessibility",
+    "comp:gigw_3",
+    "genre:alt_text",
+    "edit:accessible_writing_check",
+    "edit:alt_text_check",
+    "edit:plain_language_check",
+    "edit:reading_level_wcag",
+    "comp:eu_ucpd"
+   ],
+   "jurisdiction": "European Union (all Member States, via national transposition of Directive (EU) 2019/882)",
+   "applies_to": [
+    "genre:product_description",
+    "genre:d2c_brand_store",
+    "genre:order_form_checkout_copy",
+    "genre:ux_microcopy",
+    "genre:alt_text",
+    "genre:knowledge_base_article",
+    "genre:faq_page",
+    "genre:onboarding_flow_copy",
+    "accessibility statements",
+    "e-book metadata",
+    "consumer banking information",
+    "passenger transport websites, apps, e-tickets and travel information"
+   ],
+   "rules": [
+    {
+     "rule": "Member States ‘shall apply those measures from 28 June 2025’ (Article 31); the Act covers products ‘placed on the market after 28 June 2025’ and services ‘provided to consumers after 28 June 2025’ (Article 2).",
+     "url": "https://publications.europa.eu/resource/celex/32019L0882"
+    },
+    {
+     "rule": "Transition: service contracts agreed before 28 June 2025 may continue no longer than five years from that date; products already used to provide services may be used until 28 June 2030 (Article 32).",
+     "url": "https://publications.europa.eu/resource/celex/32019L0882"
+    },
+    {
+     "rule": "Services covered include e-commerce, consumer banking, ‘e-books and dedicated software’, electronic communications, access to audiovisual media, and the websites, apps, e-tickets and travel information of air, bus, rail and waterborne passenger transport (Article 2(2)).",
+     "url": "https://publications.europa.eu/resource/celex/32019L0882"
+    },
+    {
+     "rule": "Not covered: pre-recorded time-based media and office files published before 28 June 2025, third-party content the operator neither funds, develops nor controls, and archives not updated after that date (Article 2(4)).",
+     "url": "https://publications.europa.eu/resource/celex/32019L0882"
+    },
+    {
+     "rule": "Service information must be available ‘via more than one sensory channel’, ‘presented in an understandable way’, in text formats usable for assistive formats, with an alternative presentation for non-textual content (Annex I Section III(b)).",
+     "url": "https://publications.europa.eu/resource/celex/32019L0882"
+    },
+    {
+     "rule": "Websites and apps must be accessible by making them ‘perceivable, operable, understandable and robust’ (Annex I Section III(c)).",
+     "url": "https://publications.europa.eu/resource/celex/32019L0882"
+    },
+    {
+     "rule": "Consumer banking information must be understandable ‘without exceeding a level of complexity superior to level B2 (upper intermediate)’ of the CEFR (Annex I Section IV(e)).",
+     "url": "https://publications.europa.eu/resource/celex/32019L0882"
+    },
+    {
+     "rule": "E-commerce must provide accessibility information on the products and services sold when the responsible operator supplies it; e-books must give accessibility metadata (Annex I Section IV(f) and (g)).",
+     "url": "https://publications.europa.eu/resource/celex/32019L0882"
+    },
+    {
+     "rule": "Service providers explain how the service meets the requirements in ‘the general terms and conditions, or equivalent document’, made available in written and oral format and accessibly (Article 13(2), Annex V).",
+     "url": "https://publications.europa.eu/resource/celex/32019L0882"
+    },
+    {
+     "rule": "‘Microenterprises providing services shall be exempt’ from the service accessibility requirements (Article 4(5)); a microenterprise employs fewer than 10 persons with turnover or balance sheet not over EUR 2 million (Article 3).",
+     "url": "https://publications.europa.eu/resource/celex/32019L0882"
+    }
+   ],
+   "penalty": "Set by each Member State; penalties must be ‘effective, proportionate and dissuasive’ and take account of the extent of non-compliance and the number of persons affected (Article 30).",
+   "checks": [
+    "Does every image, icon, chart or video that carries information have a text alternative or captions?",
+    "Is all key product, price, checkout and help information available as real text, not only inside images or scanned PDFs?",
+    "For consumer-banking copy: is the language at or below CEFR B2 (short sentences, everyday words, defined terms)?",
+    "Is there a plain-language accessibility statement, or a section in the terms, explaining how the service meets the requirements?",
+    "For e-books: does the metadata describe the accessibility features?",
+    "If the client claims the microenterprise exemption, does it provide services and have fewer than 10 persons and turnover or balance sheet not over EUR 2 million?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:google_news_policies",
+   "kind": "compliance",
+   "name": "Google News policies (Publisher Center) and the Search feature policies that govern news surfaces",
+   "status": "current",
+   "summary": "Google News, Top stories, the News tab and Discover only show content that meets Search policies plus three news rules: ads and sponsored content disclosed, previews that match the article, and transparency about who wrote and published it. Good copy has a dated byline, an honest headline and image, labelled sponsorship, and no manipulated media.",
+   "use_for": [
+    "Writing headlines, standfirsts and images for a news site that wants Top stories and Google News traffic",
+    "Writing author bios, about pages and contact pages for a news site",
+    "Labelling sponsored articles, affiliate pieces and brand partnerships on a news site",
+    "Checking an explainer or fact-check that uses edited images or video"
+   ],
+   "avoid": [
+    "A preview that promises what the story does not deliver: 'Shocking truth about your EPF account revealed' over a routine rate update. Write 'EPF interest rate set at [rate] for [year]: what changes for you'.",
+    "No byline or date, or an anonymous 'Team Admin' author. Give a real author name, a bio, the publish date and the update date.",
+    "Sponsored or affiliate content dressed as independent reporting. Label it ('Sponsored', 'In partnership with [brand]', 'We earn a commission') and keep ads smaller than the content.",
+    "Edited or AI-generated images or video that show an event that did not happen, used as if real. Label illustrations clearly or drop them.",
+    "Hiding who owns the site or which government or interest group it is tied to.",
+    "Treating Top stories as a format with its own length rules: Google states none; write a concise, accurate headline and see plat:google_search_result for title display."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/news/publisher-center/answer/6204050",
+     "title": "Google News policies - Publisher Center Help",
+     "supports": "eligibility, feature policies list, Ads & sponsored content, Misleading content, Transparency"
+    },
+    {
+     "url": "https://support.google.com/websearch/answer/10622781",
+     "title": "Content policies for Google Search",
+     "supports": "Deceptive practices, Manipulated media, Medical content definitions"
+    },
+    {
+     "url": "https://support.google.com/news/publisher-center/answer/9607025",
+     "title": "News content across Google - Publisher Center Help",
+     "supports": "Top stories selected automatically; comply with Google News content policies"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/structured-data/article",
+     "title": "Article structured data - Google Search Central",
+     "supports": "no markup requirement for Top stories; concise title; 50K-pixel image recommendation"
+    }
+   ],
+   "related": [
+    "plat:google_discover",
+    "plat:google_search_result",
+    "comp:google_search_spam_policies",
+    "comp:google_ai_content_guidance",
+    "comp:pci_norms_journalistic_conduct",
+    "genre:news_story",
+    "genre:headline_dek"
+   ],
+   "jurisdiction": "Global (Google platform policy for Google News, Top stories, the News tab of Search and other news surfaces)",
+   "applies_to": [
+    "genre:news_story",
+    "genre:news_explainer",
+    "genre:headline_dek",
+    "genre:fact_check",
+    "genre:advertorial",
+    "genre:affiliate_review",
+    "author bios, about and contact pages of news sites",
+    "sponsored content labels"
+   ],
+   "rules": [
+    {
+     "rule": "Eligibility: content should follow best practices for article pages and must not violate Search overall policies, spam policies or the Search feature policies (dangerous, deceptive, harassing, hateful, manipulated media, medical, sexually explicit, violent extremist, violent and gory, vulgar).",
+     "url": "https://support.google.com/news/publisher-center/answer/6204050"
+    },
+    {
+     "rule": "Ads and sponsored content: ads 'shouldn't exceed your content'; sponsored content must not be concealed or misrepresented as editorial; sponsorship, including ownership or affiliate interest, payment or material support, 'should be clearly disclosed to readers'.",
+     "url": "https://support.google.com/news/publisher-center/answer/6204050"
+    },
+    {
+     "rule": "Misleading content: no preview content that misleads users to engage by promising details which are not reflected in the underlying content.",
+     "url": "https://support.google.com/news/publisher-center/answer/6204050"
+    },
+    {
+     "rule": "Transparency: provide 'Clear dates and bylines', information about the authors, publication and publisher, the company or network behind the content, and contact information.",
+     "url": "https://support.google.com/news/publisher-center/answer/6204050"
+    },
+    {
+     "rule": "Deceptive practices: no impersonation, no hiding ownership or primary purpose, no concealing country of origin or government or political interest group affiliation, no concealed coordination that misrepresents editorial independence.",
+     "url": "https://support.google.com/websearch/answer/10622781"
+    },
+    {
+     "rule": "Manipulated media: no audio, video or image manipulated to deceive by representing actions or events 'that verifiably didn't take place'; medical content that contradicts scientific or medical consensus is not allowed.",
+     "url": "https://support.google.com/websearch/answer/10622781"
+    },
+    {
+     "rule": "Top stories: publishers are considered automatically if they produce high-quality content and comply with Google News content policies; Article markup is optional, and Google asks only for a concise title.",
+     "url": "https://support.google.com/news/publisher-center/answer/9607025"
+    }
+   ],
+   "penalty": "Google may remove violating content from its news surfaces; for repeated or egregious violations a site may no longer be eligible to appear on them, and violations can show as manual actions in Search Console under Security & Manual actions.",
+   "checks": [
+    "Does the article show a named author, a bio or author page, and publish and update dates?",
+    "Do the headline, image and snippet promise only what the article delivers?",
+    "Is any sponsorship, affiliate interest or ownership link disclosed to readers on the page?",
+    "Do ads take up less of the page than the content?",
+    "Are edited or AI-generated images and video labelled, and none presented as a real event that did not happen?",
+    "Can a reader find who owns the site and how to contact it?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:google_play_metadata_policy",
+   "kind": "compliance",
+   "name": "Google Play Developer Program Policy: Metadata and User Ratings, Reviews and Installs (store listing and promotion)",
+   "status": "current",
+   "summary": "Google Play's rules for listing copy and review requests. Titles, icons and descriptions must be honest, relevant and suitable for all audiences; the title, icon and developer name may not carry ranking, price, promotion or Play-program words; no emojis, repeated special characters or ALL CAPS (except a brand name); no unattributed testimonials or keyword lists; and no incentivised, fake or forced ratings and reviews. No metadata change was found in the 2026 policy announcements read; field lengths sit in plat:google_play_listing.",
+   "use_for": [
+    "Writing a Play Store title, short description and full description",
+    "Writing text that appears on the app icon, feature graphic or screenshots",
+    "Writing in-app rating prompts, review-request push notifications and emails",
+    "Fixing a listing after a Metadata policy rejection"
+   ],
+   "avoid": [
+    "Ranking or award words in the title, icon or developer name ('#1 Budget App', 'App of the Year', 'Best of Play'). Name the app and its function: 'PaisaPlan: Budget Tracker'.",
+    "Price and promo words in those fields ('Free', '50% off', 'free for limited time only') and Play-program words ('Editor's Choice', 'New').",
+    "Emojis, kaomoji, repeated symbols or ALL CAPS in the title or developer name ('🔥BEST VPN!!!'). Use plain words; capitals only where the brand itself is written that way.",
+    "Anonymous praise in the description ('Amazing app! - a user'). Use attributed testimonials or none.",
+    "Keyword blocks, word lists and competitor comparisons in the description. Write short, readable paragraphs about real features.",
+    "'Rate us 5 stars and get 100 coins'. No rewards or incentives for ratings or reviews; ask every user the same neutral way ('Enjoying PaisaPlan? Tell us what you think').",
+    "Asking users to post reviews containing coupon codes, game codes, emails or links."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898842",
+     "title": "Metadata (Play Console Help, Developer Program Policy)",
+     "supports": "metadata rules, common violations, key considerations"
+    },
+    {
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898684",
+     "title": "User Ratings, Reviews, and Installs (Play Console Help)",
+     "supports": "no manipulation or incentivised ratings"
+    },
+    {
+     "url": "https://support.google.com/googleplay/android-developer/answer/17134731",
+     "title": "Policy announcement: July 15, 2026 (Play Console Help)",
+     "supports": "latest announcement read; no Metadata change"
+    }
+   ],
+   "related": [
+    "plat:google_play_listing",
+    "comp:apple_app_review_metadata",
+    "genre:app_store_listing",
+    "genre:push_notification",
+    "comp:google_ads_editorial",
+    "comp:ftc_consumer_reviews_rule",
+    "comp:bis_is_19000_online_reviews",
+    "comp:uk_dmcc_schedule20"
+   ],
+   "jurisdiction": "Global platform policy (Google Play, all markets)",
+   "applies_to": [
+    "genre:app_store_listing",
+    "genre:push_notification",
+    "Play Store title, short description and full description",
+    "text on icons, feature graphics and screenshots",
+    "developer name",
+    "in-app rating and review prompts"
+   ],
+   "rules": [
+    {
+     "rule": "'App metadata like titles, icons, and descriptions must be honest, relevant, and suitable for all audiences'; no misleading, improperly formatted, irrelevant, excessive or inappropriate metadata.",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898842"
+    },
+    {
+     "rule": "'Don't use text or image in the app title, icon, or developer name that indicate store performance or ranking', price or promotional information, or Google Play programs.",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898842"
+    },
+    {
+     "rule": "'Don't use emojis, emoticons, or repeated special characters in these metadata elements'; 'Avoid ALL CAPS unless it is part of your brand name.'",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898842"
+    },
+    {
+     "rule": "'We also don't allow unattributed or anonymous user testimonials in the app's description'; data comparisons of apps or brands and word blocks are listed violations.",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898842"
+    },
+    {
+     "rule": "'Excessive length, detail, improper formatting, or repetition can result in a violation of this policy'; do not use a celebrity's name or a brand's logo without permission.",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898842"
+    },
+    {
+     "rule": "'We prohibit any manipulation of ratings, reviews, or install counts', including incentivising feedback; 'Don't offer rewards or incentives for ratings or reviews.'",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898684"
+    },
+    {
+     "rule": "Do not submit or encourage reviews containing inappropriate content such as affiliates, coupons, game codes, email addresses or links (listed violation).",
+     "url": "https://support.google.com/googleplay/android-developer/answer/9898684"
+    }
+   ],
+   "checks": [
+    "Are the title, icon text and developer name free of ranking, award, price, promo and Play-program words?",
+    "Are the title and developer name free of emojis, repeated symbols and ALL CAPS (other than the brand's own spelling)?",
+    "Does the description describe real features accurately, without keyword lists, competitor comparisons or anonymous testimonials?",
+    "Is the description short and readable rather than long and repetitive?",
+    "Is any celebrity name or brand logo used only with permission?",
+    "Does every rating or review prompt ask neutrally, with no reward, coins, discount or forced pop-up?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:housing_com_listing_policy",
+   "kind": "compliance",
+   "name": "Housing.com terms for listing properties (REP warranties: rights, RERA compliance, accurate location, specifications and price)",
+   "status": "current",
+   "summary": "Status as read 2026-10-13 (Housing.com Terms of Use, no update date shown): anyone who lists on Housing.com (a REP: landlord, agent, developer or other service provider) warrants that they have the rights to list, that the listing complies with the RERA Act 2016, and that location, specifications and price are current and accurate. Housing.com does not verify listings and tells buyers to check projects on the state RERA website, so the writer carries the accuracy.",
+   "use_for": [
+    "Property descriptions for rent or sale posted on Housing.com by an owner, broker or builder.",
+    "Project listings that must carry the RERA registration number.",
+    "Checking a listing's photos and text for rights before upload."
+   ],
+   "avoid": [
+    "Copying another portal's photos or a developer's brochure text without permission: REPs warrant they are not infringing anyone's intellectual property.",
+    "Rounding the price down or the area up 'to attract leads': the REP warrants location, specifications and price are current, up to date and accurate. Update the listing when the price changes.",
+    "Leaving out the RERA registration number on a project listing: the REP warrants RERA compliance for its advertisements (see comp:rera_advertisement_rules for what the Act requires)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://housing.com/terms-of-use",
+     "title": "Housing.com Terms of Use: Representations and Warranties by REPs; disclaimers on completeness and authenticity of listings",
+     "supports": "rights to list, RERA 2016 compliance for listings and advertisements, accuracy of location, specifications and price, grant of rights to reuse listing details, platform does not verify content, buyers told to verify on the state RERA website"
+    }
+   ],
+   "related": [
+    "genre:real_estate_listing",
+    "comp:rera_advertisement_rules",
+    "plat:99acres_listing",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "jurisdiction": "India (Housing.com platform terms; RERA Act 2016 applies through them)",
+   "applies_to": [
+    "genre:real_estate_listing",
+    "Housing.com property listings and advertisements"
+   ],
+   "rules": [
+    {
+     "rule": "By listing, each REP warrants it has 'all rights to list the said properties' without violating anyone's rights, including intellectual property: use only owned or licensed photos and text.",
+     "url": "https://housing.com/terms-of-use"
+    },
+    {
+     "rule": "Each REP warrants compliance with the Real Estate (Regulation and Development) Act 2016 for the services offered and 'the listings / advertisements they are posting on this platform'.",
+     "url": "https://housing.com/terms-of-use"
+    },
+    {
+     "rule": "Each REP warrants that listed details 'are current, up-to-date and accurate, including the location, property specifications and price'.",
+     "url": "https://housing.com/terms-of-use"
+    },
+    {
+     "rule": "Listing details may be used or shared by Housing.com on other websites and platforms of Housing.com, associates or third parties: write copy that stays true out of context.",
+     "url": "https://housing.com/terms-of-use"
+    },
+    {
+     "rule": "Housing.com says it 'does not filter or verify' advertiser content and asks users to verify project details from the RERA website of the state where the project is registered.",
+     "url": "https://housing.com/terms-of-use"
+    }
+   ],
+   "checks": [
+    "Does the client own or hold a licence for every photo and line of text in the listing?",
+    "For a project, does the description give the RERA registration number (and Authority website) exactly as registered?",
+    "Do location, carpet area, configuration and price match the client's current documents?",
+    "Would every sentence still be true if the listing were shown on another site without the photos?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:indecent_representation_women_act_1986",
+   "kind": "compliance",
+   "name": "Indecent Representation of Women (Prohibition) Act, 1986",
+   "status": "current",
+   "summary": "Criminal law in force since 1986 (text read 2026-10-13 in a Government of Tripura transcription because India Code refused the connection). No one may publish, arrange or take part in any advertisement, or produce, sell or circulate any book, film, photograph or figure, that depicts a woman's figure, form or body in a way that is indecent, derogatory to or denigrating women, or likely to deprave or corrupt public morality. Good practice: show women as people using the product, never as decoration or bait, and never pair a body shot with a double meaning.",
+   "use_for": [
+    "Print, outdoor, packaging and social ad concepts that feature women",
+    "Photo and video shoot briefs, storyboards and creator scripts",
+    "Reviewing 'bold' or 'edgy' campaign ideas before production"
+   ],
+   "avoid": [
+    "A model posed as decoration on a product with no link to her (a bikini shot on a cement bag or tyre ad): likely to be read as derogatory or denigrating depiction under s.2.",
+    "A tagline with a double meaning paired with a close-up of a woman's body ('Feel the curves' for a motorbike): the depiction plus copy is what the Act judges.",
+    "Relying on 'it is art' for an ad: the public-good, art, religious and monument exceptions sit in s.4 (books, paintings, films etc.); s.3, the advertisement ban, has none.",
+    "Thinking only the brand is exposed: anyone who publishes, arranges or takes part in the publication is covered, and company officers in charge are liable unless they prove due diligence.",
+    "Forgetting labels and packs: 'advertisement' includes labels, wrappers and any visible representation."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://socialwelfare.tripura.gov.in/sites/default/files/Women%20Act1986.pdf",
+     "title": "Government of Tripura, Social Welfare: text of the Indecent Representation of Women (Prohibition) Act, 1986 (state transcription; secondary to India Code)",
+     "supports": "s.2 definitions, s.3 and s.4 bans and exceptions, s.6 penalty, s.7 companies, s.8 cognizable and bailable"
+    },
+    {
+     "url": "https://www.indiacode.nic.in/handle/123456789/1768",
+     "title": "India Code record for Act 60 of 1986",
+     "supports": "official record; returned HTTP 403 and timed out on 2026-10-13, not read"
+    }
+   ],
+   "related": [
+    "comp:cable_tv_advertising_code",
+    "comp:asci_code",
+    "comp:meta_advertising_standards",
+    "comp:it_rules_2021_digital_news_code",
+    "comp:pci_norms_journalistic_conduct"
+   ],
+   "jurisdiction": "India (central Act 60 of 1986; Ministry of Women and Child Development)",
+   "applies_to": [
+    "genre:print_ad_copy",
+    "genre:ooh_billboard_copy",
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "genre:tvc_script",
+    "genre:packaging_copy",
+    "genre:catalogue_copy",
+    "genre:sponsored_creator_post",
+    "genre:ugc_ad_script",
+    "photo and video shoot briefs"
+   ],
+   "rules": [
+    {
+     "rule": "'Indecent representation of women' is any depiction of a woman's figure, form or body, or any part of it, so as to be 'indecent, or derogatory to, or denigrating women', or likely to deprave, corrupt or injure public morality or morals (s.2).",
+     "url": "https://socialwelfare.tripura.gov.in/sites/default/files/Women%20Act1986.pdf"
+    },
+    {
+     "rule": "'No person shall publish, or cause to be published, or arrange or take part in the publication or exhibition of' an advertisement containing indecent representation of women 'in any form' (s.3).",
+     "url": "https://socialwelfare.tripura.gov.in/sites/default/files/Women%20Act1986.pdf"
+    },
+    {
+     "rule": "'Advertisement' includes any notice, circular, label, wrapper or other document and 'any visible representation made by means of any light, sound, smoke or gas' (s.2).",
+     "url": "https://socialwelfare.tripura.gov.in/sites/default/files/Women%20Act1986.pdf"
+    },
+    {
+     "rule": "No one may produce, sell, hire out, distribute, circulate or post any book, pamphlet, paper, slide, film, writing, drawing, painting, photograph, representation or figure containing it (s.4); exceptions cover public-good science, literature, art or learning, bona fide religious use, monuments and temples, and CBFC-governed films.",
+     "url": "https://socialwelfare.tripura.gov.in/sites/default/files/Women%20Act1986.pdf"
+    },
+    {
+     "rule": "Company offences: every person in charge of the company's business is deemed guilty with the company unless the offence was without their knowledge or they used all due diligence (s.7); offences are cognizable and bailable (s.8).",
+     "url": "https://socialwelfare.tripura.gov.in/sites/default/files/Women%20Act1986.pdf"
+    }
+   ],
+   "penalty": "As printed in the transcription read (s.6): first conviction, imprisonment up to two years and fine up to two thousand rupees; second or later conviction, imprisonment of six months to five years and fine of ten thousand to one lakh rupees. Check India Code before quoting in a legal document.",
+   "checks": [
+    "Does every woman in the visual have a real role connected to the product rather than serving as decoration or bait?",
+    "Is the copy free of double meanings that sexualise the woman shown?",
+    "Would the depiction read as indecent, derogatory or denigrating to women to an ordinary viewer?",
+    "Has the same check been applied to packs, labels, thumbnails and creator content, not only the main ad?",
+    "Has the concept also been checked against the ASCI Code and, for TV, the Cable TV Advertising Code?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:it_rules_2021_digital_news_code",
+   "kind": "compliance",
+   "name": "IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, Part III and Appendix: Code of Ethics for digital news publishers and online curated content (OTT)",
+   "status": "current",
+   "summary": "Part III of the IT Rules 2021, run by the Ministry of Information and Broadcasting, puts digital news publishers under the PCI Norms and the Programme Code and makes OTT platforms rate every title U, U/A 7+, U/A 13+, U/A 16+ or A with a content descriptor, all backed by a three-tier grievance system. Rule 9(1) and 9(3) are under an interim stay from 2021 and the challenges sit in the Delhi High Court, so the safe course is to follow the code anyway and describe its legal status precisely.",
+   "use_for": [
+    "Advising a digital news portal, news YouTube channel or news app on the ethics code it is meant to follow",
+    "Writing OTT rating cards, content descriptors and synopses",
+    "Writing OTT trailer, promo and poster copy that carries the rating",
+    "Drafting a publisher's grievance-redressal page and replies to grievances",
+    "Explaining to a client what is and is not stayed in Part III"
+   ],
+   "avoid": [
+    "Telling a client the Code of Ethics is struck down. Say: rule 9(1) and 9(3) are under an interim stay of 2021, the challenges are pending in the Delhi High Court, and the PCI Norms and the general law still apply.",
+    "Telling a client the Code is fully enforceable through rule 9 today. That overstates it while the stay stands.",
+    "Assuming a solo creator is a 'publisher'. The definition leaves out an individual not publishing in the course of systematic business, professional or commercial activity; a news channel run as a business is covered.",
+    "An OTT promo with no rating, or a descriptor that hides the content ('a gripping drama' for a title with strong violence). Show the rating and an honest descriptor: 'U/A 16+: violence, strong language'.",
+    "A grievance reply that sits for weeks. The rules set fifteen days at each level, with an acknowledgement within twenty-four hours.",
+    "Using this card for AI-labelling duties: those are comp:it_rules_sgi_2026."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf",
+     "title": "MeitY: IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 [updated as on 10.02.2026]",
+     "supports": "rules 2, 8-12, 18-19, Appendix and Schedule"
+    },
+    {
+     "url": "https://indiankanoon.org/doc/89846076/",
+     "title": "Bombay High Court, interim order of 14 Aug 2021 on two petitions challenging the IT Rules 2021 (Indian Kanoon copy of the court text)",
+     "supports": "stay of operation of sub-rules (1) and (3) of rule 9"
+    },
+    {
+     "url": "https://indiankanoon.org/doc/98424657/",
+     "title": "Supreme Court of India, order of 22 Mar 2024 in the Union's transfer petitions (Indian Kanoon copy of the court text)",
+     "supports": "challenges transferred to the Delhi High Court"
+    },
+    {
+     "url": "https://internetfreedom.in/delhihc-it-rules-2021-november/",
+     "title": "Internet Freedom Foundation (secondary), 12 Nov 2024",
+     "supports": "Delhi High Court hearing Part III challenges separately; next date 13 Jan 2025"
+    }
+   ],
+   "related": [
+    "comp:it_rules_sgi_2026",
+    "comp:pci_norms_journalistic_conduct",
+    "comp:nbdsa_code_of_ethics",
+    "comp:cable_tv_advertising_code",
+    "comp:bns_defamation_speech",
+    "genre:web_series_episode",
+    "comp:indecent_representation_women_act_1986",
+    "comp:cotpa_tobacco_advertising"
+   ],
+   "jurisdiction": "India (Ministry of Information and Broadcasting administers Part III; rule 9(1) and 9(3) under interim stay since 14 Aug 2021; challenges pending in the Delhi High Court)",
+   "applies_to": [
+    "genre:news_story",
+    "genre:news_explainer",
+    "genre:news_bulletin_script",
+    "genre:youtube_video_script",
+    "genre:web_series_episode",
+    "genre:synopsis",
+    "OTT rating cards, content descriptors, trailers and promos",
+    "publisher grievance-redressal pages"
+   ],
+   "rules": [
+    {
+     "rule": "Status: on 14 Aug 2021 the Bombay High Court, as interim relief, directed 'stay of operation of sub-rules (1) and (3) of Rule 9'; on 22 Mar 2024 the Supreme Court transferred the High Court challenges to the Delhi High Court.",
+     "url": "https://indiankanoon.org/doc/98424657/"
+    },
+    {
+     "rule": "Who is a news publisher: an online paper, news portal, news aggregator, news agency or similar, but not newspapers, replica e-papers, or an individual not transmitting content 'in the course of systematic business, professional or commercial activity' (rule 2(1)(t)).",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    },
+    {
+     "rule": "News code (Appendix I): the PCI Norms of Journalistic Conduct, the Programme Code under section 5 of the Cable Television Networks (Regulation) Act, 1995, and no content prohibited by law.",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    },
+    {
+     "rule": "OTT ratings (Appendix II): U, U/A 7+, U/A 13+, U/A 16+ and A; the rating and a content descriptor are shown 'at the beginning of every programme', and publishers strive to show the rating in promotional material; parental locks for U/A 13+ and above, age verification for A.",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    },
+    {
+     "rule": "OTT general principles: take due caution with content on sovereignty and integrity, security of the State, friendly relations with foreign countries and public order, and with the activities, beliefs or views of any racial or religious group.",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    },
+    {
+     "rule": "Grievances (rule 10): acknowledge within twenty-four hours; decide within fifteen days; the complainant may appeal to the self-regulating body within fifteen days, which decides within fifteen days; then appeal to the Ministry oversight mechanism within fifteen days.",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    },
+    {
+     "rule": "Housekeeping: a Grievance Officer based in India with contact details shown on the site or app (rule 11), a monthly compliance report on grievances (rule 18), and records of content kept for at least sixty days (rule 19).",
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf"
+    }
+   ],
+   "penalty": "Under rule 12 the self-regulating body may warn, censure, admonish or reprimand the publisher, require an apology or a warning card or disclaimer, and for OTT direct reclassification or changes to descriptors and synopsis; rule 9(2) keeps consequential action under any other law that is contravened. The three-tier structure itself (rule 9(3)) is under the 2021 interim stay.",
+   "checks": [
+    "Does the client fall within 'publisher of news and current affairs content' or online curated content, rather than an individual outside systematic business activity?",
+    "Does the news copy pass the PCI Norms checks in comp:pci_norms_journalistic_conduct?",
+    "Does every OTT title, trailer and promo show its rating (U, U/A 7+, U/A 13+, U/A 16+ or A) and an honest content descriptor?",
+    "Is the site or app showing a grievance mechanism and an India-based Grievance Officer?",
+    "Do grievance replies go out within fifteen days, with an acknowledgement within twenty-four hours?",
+    "Does any statement about the law say that rule 9(1) and 9(3) are under interim stay and the challenge is pending, rather than 'in force' or 'struck down'?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:nbdsa_code_of_ethics",
+   "kind": "compliance",
+   "name": "NBDSA Code of Ethics and Broadcasting Standards and its specific guidelines (News Broadcasters & Digital Association)",
+   "status": "current",
+   "summary": "The NBDA Code of Ethics, its specific guidelines and the NBDSA complaint regime bind member news channels and their digital news platforms in India. Good TV and digital news copy puts accuracy before speed, labels file footage and reconstructions, keeps facts apart from opinion, does not prejudge court cases or glamorise crime and suicide, and keeps debates free of derogatory or communal remarks.",
+   "use_for": [
+    "Writing a TV news bulletin, anchor link, ticker or graphic for an NBDA member channel",
+    "Scripting a debate intro, panel brief or anchor questions",
+    "Writing crime, court and disaster packages for broadcast and the channel's website or app",
+    "Writing an on-air or online correction",
+    "Answering a viewer complaint at the first (broadcaster) level"
+   ],
+   "avoid": [
+    "Speed over accuracy: running an unverified WhatsApp claim as 'BREAKING'. Attribute it, verify it, or hold it; if it was wrong, correct it promptly and clearly on air and online.",
+    "Old footage without a label: write 'FILE' with the date of first broadcast on archive visuals.",
+    "A reconstruction or AI recreation shown as real: mark it clearly as a reconstruction.",
+    "Prejudging a trial: 'Watch how the accused planned the murder'. Write 'Police allege the accused planned the attack; the case is in court'.",
+    "Close-ups of bodies, looped violent visuals, or the method of a suicide or a crime that viewers could copy.",
+    "Anchor lines that mock a community or a faith, or that put allegations to a panelist as facts. Ask about the evidence and name its source.",
+    "Assuming the code binds every channel: it binds NBDA Members and Associate Members only; others still face the Programme Code and the general law."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.nbdanewdelhi.com/assets/uploads/pdf/1_CODE_OF_ETHICS_BROADCASTING_STANDARDS_1_4_081.pdf",
+     "title": "NBDA: Code of Ethics & Broadcasting Standards (PDF)",
+     "supports": "accuracy and balance before speed; errors corrected promptly and clearly; impartiality; privacy; victims not identified; sting operations as a last resort"
+    },
+    {
+     "url": "https://www.nbdanewdelhi.com/assets/uploads/pdf/5_SPECIFIC_GUIDELINES_COVERING_REPORTAGE_10-2-091.pdf",
+     "title": "NBDA: Specific Guidelines Covering Reportage (10.2.2009, 6.12.2019)",
+     "supports": "accuracy, impartiality, crime and violence, privacy, racial and religious harmony, sting operations"
+    },
+    {
+     "url": "https://www.nbdanewdelhi.com/assets/uploads/pdf/79_Specific_Guidelines_for_Anchors_conducting_Programmes_including_Debates_28_10_22.pdf",
+     "title": "NBDSA: Specific Guidelines for Anchors conducting Programmes including Debates (28.10.2022)",
+     "supports": "debate and anchor conduct"
+    },
+    {
+     "url": "https://www.nbdanewdelhi.com/guide-to-complaint-redressal",
+     "title": "NBDA: Guide to the Complaints Process of the NBDSA",
+     "supports": "two-tier procedure and 15-day time limits"
+    },
+    {
+     "url": "https://www.nbdanewdelhi.com/assets/uploads/pdf/4_News_Broadcasting_Digital_Standards_Regulations.pdf",
+     "title": "NBDA: News Broadcasting & Digital Standards Regulations (20.06.2024, amended 03.12.2024)",
+     "supports": "scope and graded penalties"
+    }
+   ],
+   "related": [
+    "comp:pci_norms_journalistic_conduct",
+    "comp:it_rules_2021_digital_news_code",
+    "comp:india_sexual_offence_victim_identity",
+    "comp:cable_tv_advertising_code",
+    "comp:bns_defamation_speech",
+    "genre:news_bulletin_script"
+   ],
+   "jurisdiction": "India (self-regulation by the News Broadcasters & Digital Association; binds its Members and Associate Members)",
+   "applies_to": [
+    "genre:news_bulletin_script",
+    "genre:news_story",
+    "genre:news_explainer",
+    "genre:headline_dek",
+    "TV news tickers, graphics and anchor links",
+    "debate and panel programme scripts",
+    "digital news sites, apps and social handles of NBDA members"
+   ],
+   "rules": [
+    {
+     "rule": "Accuracy before speed: 'Errors must be corrected promptly and clearly, whether in the use of pictures, a news report, a caption, a graphic or a script' (Code, principles of self regulation).",
+     "url": "https://www.nbdanewdelhi.com/assets/uploads/pdf/1_CODE_OF_ETHICS_BROADCASTING_STANDARDS_1_4_081.pdf"
+    },
+    {
+     "rule": "Sourcing and labels: gather information first-hand from more than one source where possible, attribute agency reports, report allegations accurately as made, label archive material 'file' with the date of first broadcast, mark reconstructions, and keep facts apart from opinion (Reportage guidelines, fundamental standard F and section 1).",
+     "url": "https://www.nbdanewdelhi.com/assets/uploads/pdf/5_SPECIFIC_GUIDELINES_COVERING_REPORTAGE_10-2-091.pdf"
+    },
+    {
+     "rule": "Crime and courts: do not glamorise crime or condone suicide, do not depict techniques that may tempt imitation, do not prejudge a matter that is or is likely to be sub judice, do not show close-ups of dead or mutilated bodies, and do not identify victims of sexual crimes against women and children (Reportage section 3).",
+     "url": "https://www.nbdanewdelhi.com/assets/uploads/pdf/5_SPECIFIC_GUIDELINES_COVERING_REPORTAGE_10-2-091.pdf"
+    },
+    {
+     "rule": "Privacy: do not disclose the location of a person's home or family without permission; interview the injured, victims or grieving only with prior consent (Reportage section 5).",
+     "url": "https://www.nbdanewdelhi.com/assets/uploads/pdf/5_SPECIFIC_GUIDELINES_COVERING_REPORTAGE_10-2-091.pdf"
+    },
+    {
+     "rule": "Harmony: avoid racial and religious stereotyping and content that may create religious intolerance or disharmony (Reportage section 9).",
+     "url": "https://www.nbdanewdelhi.com/assets/uploads/pdf/5_SPECIFIC_GUIDELINES_COVERING_REPORTAGE_10-2-091.pdf"
+    },
+    {
+     "rule": "Anchors and debates: make no 'derisive or derogatory statements about individuals, communities or religious beliefs and practices'; do not project allegations as facts without verification from a credible source, and disclose that source.",
+     "url": "https://www.nbdanewdelhi.com/assets/uploads/pdf/79_Specific_Guidelines_for_Anchors_conducting_Programmes_including_Debates_28_10_22.pdf"
+    },
+    {
+     "rule": "Complaints: first to the broadcaster or digital publisher within 15 days of the broadcast; it must respond within 15 days; then to the NBDSA within 15 days of the reply or of the deadline passing.",
+     "url": "https://www.nbdanewdelhi.com/guide-to-complaint-redressal"
+    }
+   ],
+   "penalty": "Graded by repeat violation (Regulations, amended 03.12.2024): warning, admonition, censure, disapproval, regret or apology, and/or fines up to Rs 2 lacs (first), Rs 5 lacs (second), Rs 10 lacs (third) and 1% of annual turnover, not more than 'Rs.25 lakhs, in any given matter' (fourth); on a fourth violation a programme can be suspended for up to one week or an anchor for up to one month; a violating item is to be removed or edited on digital platforms and social media.",
+   "checks": [
+    "Is every claim attributed, and checked with more than one source where possible?",
+    "Is archive footage labelled 'file' with its original date, and every reconstruction marked?",
+    "Are facts kept apart from opinion, analysis and comment in the script and the graphics?",
+    "Does the crime or court copy avoid prejudging guilt, glamorising crime, or showing imitable methods and close-ups of bodies?",
+    "Is no victim of a sexual crime against a woman or child identifiable from name, picture, address or other detail?",
+    "Do anchor lines and panel briefs avoid derogatory remarks about any community or religion, and avoid stating allegations as facts?",
+    "Is there a correction ready to run promptly and clearly if any fact turns out wrong?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:ondc_listing_policy",
+   "kind": "compliance",
+   "name": "ONDC retail catalogue rules (item descriptor, statutory fields and attributes in the network's retail API spec)",
+   "status": "current",
+   "summary": "Status as read 2026-10-13: ONDC's retail rules are a technical spec on GitHub (retail 1.2.5 validation schema and draft-1.x notes), not a prose policy. Every item must carry a name, a symbol image, a short description, a long description and images, plus statutory packaged-commodity fields; no length limit is published, so each buyer app decides how much text it shows. Write a short description that works alone and a long description that adds facts.",
+   "use_for": [
+    "Writing item name, short_desc and long_desc for a seller app that publishes to ONDC.",
+    "Preparing a catalogue sheet for a D2C brand going live on ONDC buyer apps.",
+    "Checking that packaged-goods and food listings carry the statutory fields the network schema expects."
+   ],
+   "avoid": [
+    "Leaving short_desc or long_desc empty, or pasting the name into both: both are required, and buyer apps may show either.",
+    "Writing a 300-word short description because no cap is published. Each buyer app truncates in its own way; keep short_desc to one plain sentence and put detail in long_desc.",
+    "A placeholder or 'image coming soon' picture: ONDC's grocery notes say send no image rather than a placeholder.",
+    "Free-text attribute values ('navy-ish blue'): ONDC says valid attribute values improve discoverability; use the suggested enum value ('Navy Blue')."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://github.com/ONDC-Official/log-validation-utility/blob/master/schema/Retail_1.2.5/RET/on_search.ts",
+     "title": "ONDC-Official log-validation-utility: retail 1.2.5 on_search catalogue schema",
+     "supports": "required item descriptor fields (name, symbol, short_desc, long_desc, images), item code format, packaged-commodity and prepackaged-food statutory fields, no maxLength on text fields"
+    },
+    {
+     "url": "https://github.com/ONDC-Official/ONDC-RET-Specifications/blob/draft-1.x/api/components/notes/on_search/on_search_Grocery.yaml",
+     "title": "ONDC-RET-Specifications (draft-1.x): grocery catalogue notes",
+     "supports": "no placeholder images, veg / non_veg / egg enum, unit-of-measure enum, category-to-attribute mapping"
+    },
+    {
+     "url": "https://github.com/ONDC-Official/ONDC-RET-Specifications/blob/draft-1.x/api/components/notes/on_search/on_search_Fashion.yaml",
+     "title": "ONDC-RET-Specifications (draft-1.x): fashion catalogue notes",
+     "supports": "item attributes with valid values improve discoverability; suggestive colour enums"
+    }
+   ],
+   "related": [
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "genre:catalogue_copy",
+    "comp:legal_metrology_packaged_commodities",
+    "comp:fssai_labelling_display_2020",
+    "plat:flipkart_listing",
+    "plat:meesho_listing",
+    "comp:consumer_protection_ecommerce_rules_2020"
+   ],
+   "jurisdiction": "India (ONDC network, retail domain; spec published by ONDC on GitHub)",
+   "applies_to": [
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "genre:catalogue_copy",
+    "ONDC seller-app catalogue fields (item name, short_desc, long_desc, images)"
+   ],
+   "rules": [
+    {
+     "rule": "Every item descriptor must include name, symbol, short_desc, long_desc and images (required list in the retail 1.2.5 validation schema). None of these text fields has a maxLength in the schema.",
+     "url": "https://github.com/ONDC-Official/log-validation-utility/blob/master/schema/Retail_1.2.5/RET/on_search.ts"
+    },
+    {
+     "rule": "Packaged goods carry a statutory block whose required fields are manufacturer or packer name, manufacturer or packer address, common or generic name of the commodity, and month and year of manufacture, packing or import (validation schema). Fill them to match the pack.",
+     "url": "https://github.com/ONDC-Official/log-validation-utility/blob/master/schema/Retail_1.2.5/RET/on_search.ts"
+    },
+    {
+     "rule": "Prepackaged food has fields for nutritional info, additives info, ingredients info and FSSAI licence numbers (brand owner, importer, other) in the validation schema; fill them from the label.",
+     "url": "https://github.com/ONDC-Official/log-validation-utility/blob/master/schema/Retail_1.2.5/RET/on_search.ts"
+    },
+    {
+     "rule": "If no image is available, seller apps 'shouldn't send image (instead of sending placeholder image)' (grocery notes); veg or non-veg is an enum value ('veg', 'non_veg', and 'egg' in some categories).",
+     "url": "https://github.com/ONDC-Official/ONDC-RET-Specifications/blob/draft-1.x/api/components/notes/on_search/on_search_Grocery.yaml"
+    },
+    {
+     "rule": "Item attributes 'populating with valid values will enable better discoverability on buyer NPs' (fashion notes); colour and similar attributes use suggestive enums.",
+     "url": "https://github.com/ONDC-Official/ONDC-RET-Specifications/blob/draft-1.x/api/components/notes/on_search/on_search_Fashion.yaml"
+    },
+    {
+     "rule": "An item code, when given, follows 'type:code' where 1 = EAN, 2 = ISBN, 3 = GTIN, 4 = HSN, 5 = others (validation schema error message).",
+     "url": "https://github.com/ONDC-Official/log-validation-utility/blob/master/schema/Retail_1.2.5/RET/on_search.ts"
+    }
+   ],
+   "checks": [
+    "Does every item have a non-empty name, short_desc and long_desc, with short_desc readable on its own in one sentence?",
+    "Does long_desc add facts (material, size, use, care) rather than repeat the name?",
+    "For packaged goods, are manufacturer or packer name and address, generic name and month and year of manufacture, packing or import filled and matching the pack?",
+    "For food, are veg or non-veg, ingredients, nutrition and FSSAI licence number filled from the label?",
+    "Are attribute values taken from ONDC's suggested enums where one exists?",
+    "Is there no placeholder image anywhere in the catalogue?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:pci_norms_journalistic_conduct",
+   "kind": "compliance",
+   "name": "Press Council of India Norms of Journalistic Conduct (2022 edition)",
+   "status": "current",
+   "summary": "The Press Council of India's 2022 Norms are the ethics code Indian newspapers, news agencies and journalists are judged against, and the IT Rules 2021 name them as the news code for digital news publishers too. Good copy states only checked facts, carries the other side, uses headlines the story can carry, and treats suicide, crime, courts, caste and religion with restraint.",
+   "use_for": [
+    "Writing or subbing a news story, explainer or headline for an Indian print or digital news brand",
+    "Checking a crime, court or FIR-based story before it runs",
+    "Writing a correction, a clarification or a right-of-reply note",
+    "Labelling an advertorial, a sponsored supplement or a marketing initiative in a newspaper",
+    "Briefing a YouTube or Instagram news-explainer team on the ethics an Indian newsroom is held to"
+   ],
+   "avoid": [
+    "A headline the story cannot carry: 'Builder cheated 500 families' over a report of one FIR. Write 'FIR accuses Pune builder of cheating 500 flat buyers', and say in the copy that the report rests on the FIR and the court will decide.",
+    "A caste or religion tag that plays no part in the event: '[caste name] youth held for phone theft'. Write 'Youth held for phone theft in Nagpur'.",
+    "A suicide story with the method, the exact place, a photo or video, or a sensational headline, or one played prominently and repeated. Report the fact plainly and briefly.",
+    "Calling an accused guilty before a verdict ('the killer', 'the fraudster'). Write 'the accused' and 'police allege'.",
+    "Paid or sponsored copy laid out like news without the 'Advertisement/Advertorials' heading, or a sponsored supplement without 'Marketing Initiative' on it.",
+    "Ignoring a rejoinder from the person a story hurt. Publish it promptly, with due prominence, free of cost; add a brief editor's note only when you hold documents that contradict it.",
+    "Using this card for victim identity in sexual offences: that is comp:india_sexual_offence_victim_identity."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf",
+     "title": "Press Council of India: Norms of Journalistic Conduct, Edition 2022 (PDF)",
+     "supports": "norms 1, 2, 4, 9, 17, 29, 39(b), 41 and 43(a); Part D complaint procedure"
+    },
+    {
+     "url": "https://presscouncil.nic.in/Norms.aspx",
+     "title": "Press Council of India: Norms / Guidelines page",
+     "supports": "2022 edition listed as current, with further norms approved on 17.11.2023 and 28.03.2024 (not read)"
+    },
+    {
+     "url": "https://www.meity.gov.in/static/uploads/2026/02/550681ab908f8afb135b0ad42816a1c9.pdf",
+     "title": "MeitY: IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 [updated as on 10.02.2026]",
+     "supports": "Appendix I applies the PCI Norms to publishers of news and current affairs content"
+    }
+   ],
+   "related": [
+    "comp:india_sexual_offence_victim_identity",
+    "comp:it_rules_2021_digital_news_code",
+    "comp:nbdsa_code_of_ethics",
+    "comp:bns_defamation_speech",
+    "edit:fact_check",
+    "genre:news_story",
+    "genre:headline_dek"
+   ],
+   "jurisdiction": "India (Press Council of India, under the Press Council Act, 1978; also named in Appendix I of the IT Rules 2021 for digital news publishers)",
+   "applies_to": [
+    "genre:news_story",
+    "genre:news_explainer",
+    "genre:headline_dek",
+    "genre:feature_article",
+    "genre:editorial",
+    "genre:opinion_column",
+    "genre:fact_check",
+    "genre:advertorial",
+    "genre:obituary",
+    "print newspapers and news agencies",
+    "digital news portals (through the IT Rules 2021 Appendix, under interim stay)"
+   ],
+   "rules": [
+    {
+     "rule": "Accuracy and fairness: eschew 'inaccurate, baseless, graceless, misleading or distorted material', report all sides of the core issue, and never set out rumours and surmises as facts (norm 1).",
+     "url": "https://presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf"
+    },
+    {
+     "rule": "A report based on an FIR that is critical of a person must say in the same report that it rests only on the FIR and that the court will decide its truth, and must carry the affected party's version (norm 1).",
+     "url": "https://presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf"
+    },
+    {
+     "rule": "Headlines: avoid provocative and sensational headings; 'Headings must reflect and justify the matter printed under them'; a heading with an allegation names its source or carries quotation marks (norm 17).",
+     "url": "https://presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf"
+    },
+    {
+     "rule": "Caste and community: avoid caste identification, and an accused or victim 'shall not be described by his caste or community' when it has nothing to do with the offence (norm 4).",
+     "url": "https://presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf"
+    },
+    {
+     "rule": "Corrections: publish suo motu, promptly and with due prominence, with an apology for a serious lapse (norm 9). Right of reply: publish the affected person's contradiction or rejoinder promptly, with due prominence and free of cost (norm 41).",
+     "url": "https://presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf"
+    },
+    {
+     "rule": "Suicide: do not publish such stories prominently or repeat them, sensationalise or normalise suicide, describe the method, give site details, use sensational headlines, or use photographs, video footage or social media links (norm 39(b)).",
+     "url": "https://presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf"
+    },
+    {
+     "rule": "Crime and courts: an accused is presumed innocent until the court pronounces guilt, and reports should not induce the public to believe in the person's complicity (norm 43(a)).",
+     "url": "https://presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf"
+    },
+    {
+     "rule": "Advertorials similar to news carry the heading 'Advertisement/Advertorials' in bold at sub-heading size (norm 2); a supplement or special edition says 'Marketing Initiative' on it (norm 29).",
+     "url": "https://presscouncil.nic.in/WriteReadData/Pdf/Norms2022.pdf"
+    }
+   ],
+   "checks": [
+    "Is every claim checked and attributed, with no rumour presented as fact?",
+    "If the story rests on an FIR, does it say so, say the court will decide, and carry the accused party's version?",
+    "Does the headline reflect what the copy actually establishes, with any allegation attributed or in quotation marks?",
+    "Is every caste, religion or community reference necessary to the story, and absent where it plays no part in the offence?",
+    "Does an accused stay 'the accused' until a court verdict?",
+    "For a suicide report: no method, no exact location, no photo or video, no sensational headline, and no prominent play?",
+    "Is any paid or sponsored content labelled 'Advertisement/Advertorials' or 'Marketing Initiative'?",
+    "Is there a route to publish a correction or a rejoinder promptly and with due prominence?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:sebi_amfi_mf_advertising",
+   "kind": "compliance",
+   "name": "SEBI (Mutual Funds) Regulations, 2026 Advertisement Code (Fifth Schedule) + Master Circular for Mutual Funds (20 Mar 2026) + AMFI rules for mutual fund distributors' communication",
+   "status": "current",
+   "summary": "In force: the SEBI (Mutual Funds) Regulations, 2026 apply from 1 Apr 2026, the Master Circular is dated 20 Mar 2026 and AMFI's Master Circular for distributors is dated 14 Jan 2026. Any communication by or for a mutual fund or AMC that may influence an investment decision is an ad: it must be fair, plain and consistent with the scheme documents, carry the exact 14-word standard warning, use no celebrities, testimonials, rankings or projections, and show performance only in SEBI's fixed format. Distributors add name, ARN and the AMFI tagline, use AMC creative as supplied and keep social content educational.",
+   "use_for": [
+    "AMC campaigns: SIP, NFO, category and brand ads in print, TV, digital and outdoor",
+    "Mutual fund distributor (MFD) social posts, reels, YouTube scripts, WhatsApp broadcasts and websites",
+    "Creator and finfluencer briefs for an AMC or MFD",
+    "Fact sheets and performance ads"
+   ],
+   "avoid": [
+    "'Double your money in 5 years with Acme Flexi Cap', 'guaranteed', 'as safe as an FD': projections and assurances are barred. Describe the objective and risk instead.",
+    "A celebrity face, a 'No. 1 fund' line or a star rating in a mutual fund ad: the Fifth Schedule bans celebrities, testimonials and any ranking.",
+    "Shortening, paraphrasing or Hinglish-rewording the standard warning ('MF mein risk hai, padh lo'): use the exact sentence, translate it faithfully in a vernacular ad, and in video both show and voice it (about five seconds).",
+    "Quoting only the best year: performance ads show CAGR for 1, 3 and 5 years and since inception, Rs 10,000 point-to-point, regular or direct plan and benchmarks, and a scheme under six months old shows no past performance.",
+    "An MFD reel saying 'Buy Acme Small Cap today' or a self-designed scheme creative: distributors use AMC material as supplied and keep social content educational; scheme advice needs SEBI investment-adviser registration (comp:sebi_ia_ra_advertisement_code).",
+    "An MFD calling itself 'wealth adviser' or 'financial planner', or offering 'free portfolio review' to win clients."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1783933012694.pdf",
+     "title": "SEBI (Mutual Funds) Regulations, 2026, amended up to July 7, 2026: reg 2(c), reg 28, Fifth Schedule",
+     "supports": "definition of advertisement and the Advertisement Code"
+    },
+    {
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/mar-2026/1774024028162.pdf",
+     "title": "SEBI Master Circular for Mutual Funds, March 20, 2026, Chapter 14 and para 21.13.5",
+     "supports": "performance-advertisement format; SIF standard warning"
+    },
+    {
+     "url": "https://www.amfiindia.com/uploads/AMFI_Master_Cicular_for_MF_Ds_3c7f5ee44f.pdf",
+     "title": "AMFI Master Circular for Mutual Fund Distributors, January 14, 2026",
+     "supports": "tagline with name and ARN; no indicative returns; AMC material only; naming rules"
+    },
+    {
+     "url": "https://www.amfiindia.com/Themes/Theme1/downloads/FAQsonRoleofMFDsAdvts.pdf",
+     "title": "AMFI FAQs on Do's and Don'ts for MFDs",
+     "supports": "MFD social media and YouTube rules; no free-advice lures"
+    }
+   ],
+   "related": [
+    "comp:sebi_ia_ra_advertisement_code",
+    "comp:sebi_finfluencer_association",
+    "comp:asci_influencer",
+    "comp:asci_code",
+    "comp:irdai_insurance_ads",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "jurisdiction": "India (SEBI; AMFI)",
+   "applies_to": [
+    "genre:social_ad_copy",
+    "genre:video_ad_script",
+    "genre:tvc_script",
+    "genre:print_ad_copy",
+    "genre:ooh_billboard_copy",
+    "genre:promotional_email",
+    "genre:whatsapp_broadcast",
+    "genre:sms_marketing",
+    "genre:landing_page",
+    "genre:youtube_video_script",
+    "genre:short_form_video_script",
+    "genre:sponsored_creator_post",
+    "mutual fund distributor posts and websites"
+   ],
+   "rules": [
+    {
+     "rule": "An advertisement is 'any communication issued by or on behalf of the mutual fund or asset management company that may influence the investment decision' of an investor (reg 2(c)).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1783933012694.pdf"
+    },
+    {
+     "rule": "Ads must be 'accurate, true, fair, clear, complete, unambiguous and concise' and consistent with the SID, SAI and KIM; no statements 'based on assumption/projections', no testimonials or 'any ranking based on any criteria', no exaggerated slogans, no unfair comparisons (Fifth Schedule (a)-(h)).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1783933012694.pdf"
+    },
+    {
+     "rule": "'No celebrities shall form part of the advertisement' (Fifth Schedule (e)).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1783933012694.pdf"
+    },
+    {
+     "rule": "Standard warning, no words added or removed: 'Mutual Fund investments are subject to market risks, read all scheme related documents carefully.' Vernacular ads carry it in that language; audio-visual ads show and voice it, e.g. 'fourteen (14) words running for at least five (5) seconds' (Fifth Schedule (i)-(k)).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/jul-2026/1783933012694.pdf"
+    },
+    {
+     "rule": "Performance ads: CAGR for at least 1, 3 and 5 years and since inception, point-to-point returns on Rs 10,000, computed to the last month-end; state regular or direct plan; scheme and additional benchmarks; the fund manager's other schemes; 'Where the scheme has been in existence for less than six months, past performance shall not be provided' (Master Circular 14.2).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/mar-2026/1774024028162.pdf"
+    },
+    {
+     "rule": "Specialized Investment Fund ads carry their own fixed warning, which begins 'Investments in Specialized Investment Fund involves relatively higher risk including potential loss of capital, liquidity risk and market volatility.' (Master Circular 21.13.5).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/mar-2026/1774024028162.pdf"
+    },
+    {
+     "rule": "Distributors show 'AMFI-registered Mutual Fund Distributor' with their name and ARN (at least font size 12 in print, legible in all other communication); do 'not provide any indicative portfolio or indicative yield or indicative return'; use AMC marketing material as supplied; may not use 'Adviser' or 'Wealth Manager' in their name unless SEBI-registered.",
+     "url": "https://www.amfiindia.com/uploads/AMFI_Master_Cicular_for_MF_Ds_3c7f5ee44f.pdf"
+    },
+    {
+     "rule": "MFD YouTube and social media: educational content only, no scheme-specific recommendations or performance claims, disclose MFD status and ARN; no lures of rebates, gifts, 'free advise' or 'free portfolio review' (AMFI FAQ Q.8-Q.9).",
+     "url": "https://www.amfiindia.com/Themes/Theme1/downloads/FAQsonRoleofMFDsAdvts.pdf"
+    }
+   ],
+   "checks": [
+    "Does the piece carry the standard warning word for word (in the ad's language), and in video both on screen and in voice-over?",
+    "Is it free of celebrities, testimonials, rankings, star ratings and 'No. 1' claims?",
+    "Is it free of projections, 'guaranteed', 'assured', 'safe' or target-return language?",
+    "If it shows performance, does it use CAGR for 1, 3, 5 years and since inception, Rs 10,000 point-to-point, plan type, benchmarks, and no figures for a scheme under six months old?",
+    "Is every statement consistent with the scheme's SID, SAI and KIM and its riskometer?",
+    "For a distributor: are name, ARN and 'AMFI-registered Mutual Fund Distributor' shown, is the scheme creative the AMC's own, and is social content educational rather than a scheme recommendation?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:sebi_ia_ra_advertisement_code",
+   "kind": "compliance",
+   "name": "SEBI advertisement code for Investment Advisers and Research Analysts (Master Circulars of February 6, 2026; first issued by circulars of April 2023)",
+   "status": "current",
+   "summary": "In force (Master Circulars for Investment Advisers and for Research Analysts, both dated 6 Feb 2026). Every communication by or for a SEBI-registered adviser or research analyst that may influence investment decisions, social posts and messages included, must show the registered name and SEBI registration number, carry the fixed standard warning and disclaimers, and be approved in advance by the supervisory body. It may never promise or imply assured, minimum or target returns or accuracy, use superlatives, unverified past performance, misleading testimonials or the SEBI logo.",
+   "use_for": [
+    "Websites, landing pages and app copy for SEBI-registered investment advisers (RIAs) and research analysts",
+    "Social posts, reels, YouTube scripts, Telegram and WhatsApp messages and newsletters by advisers and analysts",
+    "Briefing an adviser who wants a creator or agency campaign"
+   ],
+   "avoid": [
+    "'Our calls hit 92% accuracy', 'Target 30% in 6 months', 'Earn Rs 50,000 a month from the market': assured, target and accuracy claims are banned outright.",
+    "'India's No. 1 SEBI RIA' or 'Top analyst': superlatives are banned; state a factual award from an independent body instead.",
+    "A SEBI logo, a 'SEBI approved' badge or 'SEBI certified returns': the logo is barred and registration is no guarantee of performance.",
+    "A reel or SMS with no registration number or warning: when space is short, link to the official website that carries all the details.",
+    "Client stories like 'I tripled my money with their tips': testimonials must not mislead, and performance claims need PaRRVA verification.",
+    "'Free stock tips' that lead into a paid plan: a report or service may be called free only if it is free without condition."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770375291405.pdf",
+     "title": "SEBI Master Circular for Investment Advisers, February 06, 2026, para 10",
+     "supports": "advertisement code and brand-name rules for IAs"
+    },
+    {
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770375507051.pdf",
+     "title": "SEBI Master Circular for Research Analysts, February 06, 2026",
+     "supports": "the same code for RAs with RA disclaimer wording"
+    }
+   ],
+   "related": [
+    "comp:sebi_finfluencer_association",
+    "comp:sebi_amfi_mf_advertising",
+    "comp:asci_influencer",
+    "comp:asci_code",
+    "comp:ccpa_misleading_ads_2022"
+   ],
+   "jurisdiction": "India (SEBI; supervisory body for IAs and RAs)",
+   "applies_to": [
+    "genre:landing_page",
+    "genre:social_ad_copy",
+    "genre:short_form_video_script",
+    "genre:youtube_video_script",
+    "genre:creator_newsletter",
+    "genre:telegram_channel_post",
+    "genre:whatsapp_broadcast",
+    "genre:sms_marketing",
+    "genre:promotional_email",
+    "genre:webinar_pitch_script",
+    "research reports and adviser websites"
+   ],
+   "rules": [
+    {
+     "rule": "Scope: all communications by or on behalf of the IA or RA that may influence investment decisions, including email, text messaging, messaging platforms, 'social media platforms', radio, TV and video (IA Master Circular 10.1(a)).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770375291405.pdf"
+    },
+    {
+     "rule": "Show the name as registered with SEBI, registered office address, SEBI registration number, logo or brand name and CIN if any; on SMS, pop-ups or social media without room for these, give a hyperlink to the official website that carries them (10.1(b)(i), (vi)).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770375291405.pdf"
+    },
+    {
+     "rule": "Standard warning in at least 10-point font, unchanged: 'Investment in securities market are subject to market risks. Read all the related documents carefully before investing'; in audio-visual ads, e.g. '20 words running for at least 10 seconds'; translated accurately in non-English ads.",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770375291405.pdf"
+    },
+    {
+     "rule": "Securities shown as examples need 'The securities quoted are for illustration only and are not recommendatory'; ads carry the disclaimer that SEBI registration, enlistment with the supervisory body and NISM certification 'in no way guarantee performance' or assure returns (RA wording names BSE).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770375507051.pdf"
+    },
+    {
+     "rule": "Banned: statements 'based on assumptions or projections'; 'Any misleading or deceptive testimonials'; calling a service free unless free without condition; any assured or risk-free return, and no implied 'minimum returns or target return or percentage accuracy' (10.1(c)).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770375291405.pdf"
+    },
+    {
+     "rule": "Banned: past performance or risk-return metrics unless verified by the Past Risk and Return Verification Agency (PaRRVA); superlatives such as 'Best', 'No. 1', 'Top Adviser', 'Leading' (factual independent awards allowed); discrediting other intermediaries.",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770375291405.pdf"
+    },
+    {
+     "rule": "'Advertisements shall not include SEBI Logo'; prior approval from the SEBI-recognised supervisory body; no games or competitions with prizes; no ads while suspended; keep a copy for five years (10.1(c)-(d)).",
+     "url": "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770375291405.pdf"
+    }
+   ],
+   "checks": [
+    "Does the piece show the SEBI-registered name and registration number, or link to a website page that shows them with the address and disclaimers?",
+    "Is the standard warning present word for word, at least 10-point in print, and both shown and voiced in video?",
+    "Is it free of assured, minimum, target, accuracy and 'risk-free' claims, stated or implied?",
+    "Is it free of superlatives, the SEBI logo, unverified past-performance figures and misleading testimonials?",
+    "If securities are named as examples, is the 'illustration only' disclaimer present?",
+    "Has the supervisory body approved the ad before publication, and is a copy kept for five years?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:surrogate_advertising_india",
+   "kind": "compliance",
+   "name": "Surrogate and brand-extension advertising in India (alcohol, tobacco, betting): CCPA 2022 guideline 6, Cable TV Advertising Code brand-extension proviso, ASCI brand-extension qualification criteria and the 2024-2025 advisories",
+   "status": "current",
+   "summary": "As read 2026-10-13: an ad that uses another product (soda, music, glassware, a 'news' or 'gaming' app) to keep a liquor, tobacco or betting brand in view is a surrogate ad, banned by CCPA guideline 6 and, on TV, by the Cable TV Code. A real brand extension may be advertised only if the ad shows only that product, makes no reference to the banned one and borrows none of its colours, layout or situations; ASCI and the TV code also test whether the extension really sells. Influencers who promote betting, directly or by surrogate, share the liability.",
+   "use_for": [
+    "Briefs, scripts and social copy for brand extensions of liquor or tobacco companies (soda, water, glassware, music, apparel)",
+    "Sports, event and IPL-season sponsorship copy",
+    "Influencer and creator scripts for gaming, fantasy and 'news' apps",
+    "Reviewing a client's campaign for surrogate risk before it airs"
+   ],
+   "avoid": [
+    "'Acme Club Soda, for the moments after 9 pm' shot in a bar with amber glasses and the whisky label's colours: every cue points at the liquor. Show the soda being sold and used as soda, in its own design.",
+    "Running a brand-extension ad for a product nobody can buy: ASCI treats an extension that fails its turnover and investment tests as 'a surrogate created to advertise a restricted category'.",
+    "An ad budget far larger than the extension's sales (ASCI caps it at 200% of sales in years 1 and 2, falling to 30% after year 4).",
+    "Creator reels for a 'free fantasy app' or 'sports news app' that is the front of a betting site: the MIB told influencers to refrain from promoting offshore betting, 'including surrogate advertisements', and posts or accounts can be removed.",
+    "Assuming 'we only showed the company name' always protects you: the CCPA proviso protects mere use of a shared name only if nothing else in the ad is objectionable."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf",
+     "title": "CCPA Guidelines for Prevention of Misleading Advertisements and Endorsements for Misleading Advertisements, 2022",
+     "supports": "definition 2(h) and guideline 6"
+    },
+    {
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf",
+     "title": "MIB: Programme and Advertising Code as on 02.01.2025, rule 7(2)(viii)",
+     "supports": "brand-extension conditions and certification on TV"
+    },
+    {
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/12/Guidelines-for-Qualification-of-brand-extension-1.pdf",
+     "title": "ASCI: Guidelines for Qualification of Brand Extension Product or Service (23 Nov 2023)",
+     "supports": "qualification tests and ad-budget caps"
+    },
+    {
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2011879",
+     "title": "PIB (CCPA), 06 Mar 2024: advisory on advertising and endorsement of illegal activities",
+     "supports": "celebrities and influencers equally liable for promoting betting"
+    },
+    {
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2015952",
+     "title": "PIB (MIB), 21 Mar 2024: influencers cautioned against endorsing offshore betting",
+     "supports": "includes surrogate ads; removal of posts or accounts"
+    }
+   ],
+   "related": [
+    "comp:ccpa_misleading_ads_2022",
+    "comp:cable_tv_advertising_code",
+    "comp:cotpa_tobacco_advertising",
+    "comp:online_gaming_act_2025",
+    "comp:asci_code",
+    "comp:asci_influencer",
+    "comp:endorsement_know_hows"
+   ],
+   "jurisdiction": "India (CCPA under the Consumer Protection Act, 2019; MIB Cable TV rules; ASCI self-regulation)",
+   "applies_to": [
+    "genre:tvc_script",
+    "genre:video_ad_script",
+    "genre:social_ad_copy",
+    "genre:sponsored_creator_post",
+    "genre:influencer_brief",
+    "genre:ugc_ad_script",
+    "genre:ooh_billboard_copy",
+    "genre:event_promotion",
+    "genre:topical_ad",
+    "genre:podcast_ad_read",
+    "sports and event sponsorship copy"
+   ],
+   "rules": [
+    {
+     "rule": "No surrogate or indirect ad for goods whose advertising is prohibited or restricted, made 'by circumventing such prohibition or restriction and portraying it to be an advertisement for other goods' (CCPA 2022, guideline 6(1); definition 2(h)).",
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf"
+    },
+    {
+     "rule": "An ad is surrogate if it 'indicates or suggests directly or indirectly' the banned product, or 'uses any brand name, logo, colour, layout and presentation associated with' it (guideline 6(2)).",
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf"
+    },
+    {
+     "rule": "Proviso: 'mere use of a brand name or company name' shared with a banned product is not surrogate if the ad is not otherwise objectionable under the guidelines.",
+     "url": "https://consumeraffairs.gov.in/public/upload/files/CCPA_Notification_1732707665.pdf"
+    },
+    {
+     "rule": "On TV and cable, a brand-extension ad must depict only the product advertised, make no direct or indirect reference to the prohibited product, carry no 'nuances or phrases promoting prohibited products', and use no associated colours, layout, presentation or typical situations (rule 7(2)(viii)).",
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf"
+    },
+    {
+     "rule": "TV brand extensions also need a Chartered Accountant's certificate of real distribution and proportionate spend, an MIB finding of genuine brand extension and CBFC certification before telecast (rule 7(2)(viii), second proviso).",
+     "url": "https://mib.gov.in/sites/default/files/2025-01/programme-and-advertising-code-as-on-02.01.2025.pdf"
+    },
+    {
+     "rule": "ASCI test: the extension is registered (GST, FDA, FSSAI, TM); over two years old, turnover above Rs 5 crore a year nationally or Rs 1 crore per state; newer, one of Rs 20 lakh a month, Rs 10 crore of exclusive fixed assets, long-term supply contracts, or turnover above 10% of the restricted brand's.",
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/12/Guidelines-for-Qualification-of-brand-extension-1.pdf"
+    },
+    {
+     "rule": "ASCI ad-budget cap: not more than 200% of the extension's sales in years 1 and 2, 100% in year 3, 50% in year 4 and 30% after, counting media, celebrity fees and production.",
+     "url": "https://www.ascionline.in/wp-content/uploads/2023/12/Guidelines-for-Qualification-of-brand-extension-1.pdf"
+    },
+    {
+     "rule": "Betting: the CCPA warns that celebrities and influencers promoting online betting are 'equally liable for participating in an illegal activity' (advisory of 06 Mar 2024).",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2011879"
+    },
+    {
+     "rule": "The MIB advised influencers to refrain from promoting offshore betting and gambling, 'including surrogate advertisements'; non-compliance may lead to 'removal or disabling of social media posts or accounts' (21 Mar 2024).",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2015952"
+    }
+   ],
+   "checks": [
+    "Does the ad show only the product actually being sold, with no bottle, glass, bar, smoke, pack or play-money cue for the banned product?",
+    "Is it free of the banned brand's colours, layout, typography, jingles, taglines and typical situations?",
+    "Can the client show the extension is on sale at scale (ASCI turnover or investment test) and that ad spend is within the ASCI cap?",
+    "For TV, has the advertiser got the CA certificate, the MIB brand-extension clearance and CBFC certification?",
+    "Does any creator or celebrity script avoid promoting betting or gambling platforms, directly or through a surrogate app or brand?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:uk_childrens_code",
+   "kind": "compliance",
+   "name": "ICO Age Appropriate Design Code (Children's code): transparency, published terms and community standards, default settings and nudge techniques, with the Data (Use and Access) Act 2025 children's higher protection matters duty",
+   "status": "current",
+   "summary": "The ICO's statutory code (in force since 2 September 2020) for any online service likely to be accessed by children in the UK, not only services made for children. For a writer it governs privacy notices, terms, community standards, consent prompts and settings copy: concise, prominent, age-suited language, bite-sized just-in-time explanations, high-privacy defaults and no nudging. The Data (Use and Access) Act 2025 added a children's higher protection matters duty with the same scope (ICO: all its data protection provisions in force as of 19 June 2026).",
+   "use_for": [
+    "Writing privacy notices, terms and community standards for apps, games, edtech, streaming and retail sites that children may use",
+    "Writing just-in-time notices at the moment a feature starts using a child's data (location, camera, sharing)",
+    "Writing settings, consent and sign-up screens, including age questions",
+    "Reviewing button labels and prompts for nudges that steer a child to share more"
+   ],
+   "avoid": [
+    "One long adult privacy policy and nothing else. Add short, age-suited explanations where the data use happens: 'Turning this on shows your town to friends. Ask a grown-up if you are not sure.'",
+    "Promising protections the product does not deliver ('a moderator checks every message'). The code says information must not promise protections or standards that are not routinely upheld.",
+    "Nudging copy and design: a big bright 'Yes, share!' beside a tiny grey 'no thanks', or 'Most kids turn this on'. Give both choices equal weight and neutral words ('Share my location' / 'Keep it private').",
+    "Pre-selecting an older age band on an age question, or offering no option for the child's true age. Use a neutral, empty age picker.",
+    "Settings copy that defaults to sharing or treats lower privacy as the normal choice. Write the high-privacy option as the default and explain what changes if the child switches it.",
+    "Assuming the code only matters for children's brands: it covers services 'likely to be accessed by children' such as games, social apps and general retail sites."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/services-covered-by-this-code/",
+     "title": "Services covered by this code (ICO)",
+     "supports": "scope"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/about-this-code/",
+     "title": "About this code (ICO)",
+     "supports": "legal status and dates"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/4-transparency/",
+     "title": "Standard 4: Transparency (ICO)",
+     "supports": "concise, prominent, age-suited information; bite-sized notices; child-friendly explanations"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/13-nudge-techniques/",
+     "title": "Standard 13: Nudge techniques (ICO)",
+     "supports": "no nudges to more data, weaker privacy or a false age"
+    },
+    {
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default/",
+     "title": "Data protection by design and by default (ICO, last updated 5 February 2026)",
+     "supports": "DUAA children's higher protection matters duty"
+    }
+   ],
+   "related": [
+    "comp:uk_online_safety_act",
+    "comp:coppa",
+    "comp:gdpr_marketing_consent",
+    "comp:ccpa_dark_patterns_2023",
+    "comp:dpdp_act_rules",
+    "comp:apple_app_review_metadata",
+    "edit:plain_language_check",
+    "edit:reading_level_wcag",
+    "genre:ux_microcopy",
+    "genre:onboarding_flow_copy",
+    "comp:california_ccpa_cpra"
+   ],
+   "jurisdiction": "United Kingdom (ICO statutory code under the Data Protection Act 2018; UK GDPR as amended by the Data (Use and Access) Act 2025)",
+   "applies_to": [
+    "privacy notices and just-in-time notices",
+    "terms, policies and community standards",
+    "settings, consent and sign-up screens",
+    "age questions and parental prompts",
+    "genre:ux_microcopy",
+    "genre:onboarding_flow_copy",
+    "genre:push_notification",
+    "genre:app_store_listing",
+    "genre:game_narrative"
+   ],
+   "rules": [
+    {
+     "rule": "Scope: 'information society services likely to be accessed by children' in the UK, including apps, games, social media, streaming, news, educational and retail sites; 'It is not restricted to services specifically directed at children.'",
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/services-covered-by-this-code/"
+    },
+    {
+     "rule": "Privacy information, terms, policies and community standards 'must be concise, prominent, and in clear language suited to the age of the child', with 'bite-sized' explanations when a data use is activated.",
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/4-transparency/"
+    },
+    {
+     "rule": "Information must not 'promise protections or standards that are not routinely upheld'; legally drafted terms can carry child-friendly explanations alongside; use diagrams, cartoons, video, icons and layered text tailored to age (Standard 4).",
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/4-transparency/"
+    },
+    {
+     "rule": "'Uphold your own published terms, policies and community standards' (Standard 6).",
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/6-policies-and-community-standards/"
+    },
+    {
+     "rule": "Settings must be high privacy by default unless there is a compelling reason; optional uses are individually activated by the child, and users should not be nudged towards a lower privacy option (Standard 7).",
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/7-default-settings/"
+    },
+    {
+     "rule": "'Do not use nudge techniques to lead or encourage children to provide unnecessary personal data or turn off privacy protections'; no nudges that might lead children to lie about their age (Standard 13).",
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/childrens-code-guidance-and-resources/age-appropriate-design-a-code-of-practice-for-online-services/13-nudge-techniques/"
+    },
+    {
+     "rule": "Data (Use and Access) Act 2025: services in scope of the code must take the 'children's higher protection matters' into account when designing data protection; conforming to the code is likely to comply (ICO).",
+     "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/guide-to-accountability-and-governance/data-protection-by-design-and-by-default/"
+    }
+   ],
+   "penalty": "Not conforming to the code means 'you may find it difficult to demonstrate compliance with the law and you may invite regulatory action' (ICO, About this code).",
+   "checks": [
+    "Is every privacy notice, term and community standard short, easy to find and written in words the youngest likely user understands?",
+    "Is there a bite-sized explanation at each point where a feature starts using a child's data?",
+    "Does the copy avoid promising any safety or privacy protection the service does not routinely deliver?",
+    "Are the yes and no options for any data or privacy choice given equal weight and neutral wording?",
+    "Is the high-privacy option the default and described as the normal choice?",
+    "Does the age question start empty, with the child's true age available?",
+    "For an older-child audience, does the copy explain consequences rather than just push a choice?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:uk_online_safety_act",
+   "kind": "compliance",
+   "name": "UK Online Safety Act 2023: duties on user-to-user and search services (clear and accessible terms of service, age limits) and the false and threatening communications offences",
+   "status": "current",
+   "summary": "UK law, regulated by Ofcom, for any service with UK links that lets users post content, plus search services. For a writer it means two things: terms of service and safety policies must be clear, easy to find and written at the reading age of the youngest permitted user, and nobody may send knowingly false messages meant to cause harm or messages that threaten death or serious harm. Offences in force since 31 Jan 2024, illegal content duties since 17 Mar 2025, children's safety duties since 25 Jul 2025.",
+   "use_for": [
+    "Writing or rewriting terms of service, community guidelines and content policies for an app, forum, marketplace or social platform with UK users",
+    "Writing the safety, reporting and complaints sections of a help centre",
+    "Checking satire, prank, hoax or 'shock' campaign copy that will reach UK audiences",
+    "Briefing a product team on what Ofcom expects user-facing policy text to look like"
+   ],
+   "avoid": [
+    "Terms written for lawyers only. Do not bury the reporting and takedown process in clause 14.3 of a 9,000-word document; give it its own signposted heading and write it at the youngest permitted user's reading age (for a 13+ app: 'If you see something illegal, tap Report. We review reports and remove illegal posts quickly.').",
+    "Terms that promise more than the service does. Category 1 services must uphold their terms, and every service must enforce its age limits consistently: do not write 'we check every account's age' unless the product actually does.",
+    "Hoax or fake-news style marketing ('BREAKING: the city's water supply is poisoned, buy our filter now'). A message the sender knows is false, sent to cause non-trivial harm, can be the false communications offence. Use clearly signalled fiction or a real, sourced fact instead.",
+    "Threat-flavoured copy, even as a joke ('Reply or we'll find you'). A message conveying a threat of death or serious harm, including serious financial loss, can be the threatening communications offence. Write the urgency without the threat.",
+    "Assuming a non-UK company is outside the Act. It reaches services with links to the UK; check before telling a client it does not apply."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.gov.uk/government/publications/online-safety-act-explainer/online-safety-act-explainer",
+     "title": "Online Safety Act: explainer (GOV.UK, updated 24 April 2025)",
+     "supports": "scope, UK-links reach, age limits in terms of service, Category 1 terms, offences in force 31 January 2024"
+    },
+    {
+     "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/important-dates-for-online-safety-compliance",
+     "title": "Important dates for Online Safety compliance (Ofcom, last updated 24 August 2026)",
+     "supports": "illegal content codes in force 17 March 2025; protection of children codes in force 25 July 2025; later milestones"
+    },
+    {
+     "url": "https://www.ofcom.org.uk/siteassets/resources/documents/online-safety/information-for-industry/illegal-harms/illegal-content-codes-of-practice-for-user-to-user-services-24-feb.pdf?v=391889",
+     "title": "Illegal content Codes of Practice for user-to-user services (Ofcom, issued 24 February 2025)",
+     "supports": "ICU G1 terms content and ICU G3 clarity and accessibility"
+    },
+    {
+     "url": "https://www.cps.gov.uk/legal-guidance/communications-offences",
+     "title": "Communications offences (CPS legal guidance, updated 29 June 2026)",
+     "supports": "elements of the false and threatening communications offences"
+    }
+   ],
+   "related": [
+    "comp:uk_childrens_code",
+    "comp:uk_cap_code",
+    "comp:uk_pecr",
+    "comp:wcag_22",
+    "comp:bns_defamation_speech",
+    "comp:it_rules_sgi_2026",
+    "edit:plain_language_check",
+    "edit:reading_level_wcag",
+    "genre:knowledge_base_article",
+    "genre:satire_parody"
+   ],
+   "jurisdiction": "United Kingdom (Online Safety Act 2023; Ofcom is the online safety regulator; offences prosecuted under Part 10)",
+   "applies_to": [
+    "terms of service",
+    "community guidelines and content policies",
+    "reporting, takedown and complaints copy",
+    "age-limit and age-check explanations",
+    "genre:knowledge_base_article",
+    "genre:onboarding_flow_copy",
+    "genre:ux_microcopy",
+    "genre:community_post",
+    "genre:satire_parody",
+    "genre:social_ad_copy"
+   ],
+   "rules": [
+    {
+     "rule": "Scope: 'The Act's duties apply to search services and services that allow users to post content online', including services run from outside the UK 'should they have links to the UK' (GOV.UK explainer).",
+     "url": "https://www.gov.uk/government/publications/online-safety-act-explainer/online-safety-act-explainer"
+    },
+    {
+     "rule": "Terms must say how users are protected from illegal content, how reported illegal content is swiftly taken down, what proactive technology is used and how complaints are handled (Ofcom code measure ICU G1).",
+     "url": "https://www.ofcom.org.uk/siteassets/resources/documents/online-safety/information-for-industry/illegal-harms/illegal-content-codes-of-practice-for-user-to-user-services-24-feb.pdf?v=391889"
+    },
+    {
+     "rule": "Those provisions must be easy to find ('clearly signposted for the general public'), laid out to help UK users read them, 'written to a reading age comprehensible for the youngest individual permitted to use the service', and usable with keyboard navigation and screen readers (ICU G3).",
+     "url": "https://www.ofcom.org.uk/siteassets/resources/documents/online-safety/information-for-industry/illegal-harms/illegal-content-codes-of-practice-for-user-to-user-services-24-feb.pdf?v=391889"
+    },
+    {
+     "rule": "Social media companies must 'enforce their age limits consistently' and specify their age-limit measures in the terms of service; Category 1 services must 'uphold their terms of service' (GOV.UK explainer).",
+     "url": "https://www.gov.uk/government/publications/online-safety-act-explainer/online-safety-act-explainer"
+    },
+    {
+     "rule": "False communications offence: sending a message that 'conveys information that the person knows to be false', intended to 'cause non-trivial psychological or physical harm', without reasonable excuse (CPS).",
+     "url": "https://www.cps.gov.uk/legal-guidance/communications-offences"
+    },
+    {
+     "rule": "Threatening communications offence: a message that 'conveys a threat of death or serious harm', sent intending or reckless as to fear it will be carried out; serious harm includes 'serious financial loss' (CPS).",
+     "url": "https://www.cps.gov.uk/legal-guidance/communications-offences"
+    },
+    {
+     "rule": "Dates: offences 'came into effect on 31 January 2024'; illegal content codes in force 17 March 2025; protection of children codes in force 25 July 2025 (GOV.UK, Ofcom).",
+     "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/important-dates-for-online-safety-compliance"
+    }
+   ],
+   "checks": [
+    "Does the policy explain how users are protected from illegal content, how reports are handled and how to complain, under its own clear heading?",
+    "Is that section signposted so a visitor who has not signed up can find it?",
+    "Is it written at the reading age of the youngest user the service allows without parental consent?",
+    "Does every age-limit or safety promise in the copy match what the product actually does?",
+    "Is the text usable with a screen reader and keyboard navigation (real headings, no text baked into images)?",
+    "Is the piece free of claims the writer knows are false that could cause someone real harm, and of any threat of death, serious injury or serious financial loss, even as a joke?"
+   ],
+   "as_of": "2026-10-13"
+  },
+  {
+   "id": "comp:whatsapp_business_messaging_policy",
+   "kind": "compliance",
+   "name": "WhatsApp Business Messaging Policy, template categories and the AI Providers clause of the Meta Terms for WhatsApp Business Platform",
+   "status": "current",
+   "summary": "Meta's rules for every business message on WhatsApp (policy page last updated 23 Sep 2026). Message only people who opted in, honour every opt-out, open conversations only with an approved template used for its own category, reply freely only inside the 24-hour customer service window, give automated chats a human escalation path, never ask for card or ID numbers, and keep restricted goods out. A separate clause bars providers of general-purpose AI assistants from using the Platform when the AI is the main product (in force from 15 Jan 2026 per news coverage).",
+   "use_for": [
+    "Writing WhatsApp marketing, utility and authentication templates for a business",
+    "Writing the opt-in line on a checkout, form or ad that collects WhatsApp numbers",
+    "Scripting WhatsApp chatbots and auto-replies",
+    "Checking whether a client's product or campaign may be messaged on WhatsApp at all"
+   ],
+   "avoid": [
+    "Messaging a bought or scraped number list. Opt-in must come from the recipient; write an opt-in line that names the message types ('Send me order updates and offers on WhatsApp').",
+    "Dressing a promotion as a utility message ('Your order shipped! Plus 20% off your next buy'). Mixed content counts as marketing and Meta can recategorise the template; keep the update clean and send the offer as a marketing template.",
+    "Anything but the code in an authentication template: no links, media or emoji, and no upsell.",
+    "Bot scripts with no way out. Automated replies need a prompt, clear path to a human, phone, email, web or store support; write 'Type AGENT to talk to a person' into the flow.",
+    "Asking customers to type a full card number, bank account number or ID number in chat. Send a secure link to the business's own payment or KYC page instead.",
+    "Templates that hide the opt-out or ignore 'STOP'. Every opt-out request, on or off WhatsApp, must be honoured.",
+    "Promoting restricted categories (alcohol, tobacco, drugs, medical products, real-money gaming, dating, MLM, payday loans and more) unless the Regulated Vertical rules allow it in that country.",
+    "Using the WhatsApp Business Platform for a political party, candidate or campaign: the policy prohibits it."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://whatsappbusiness.com/policy/",
+     "title": "WhatsApp Business Messaging Policy (last updated September 23, 2026)",
+     "supports": "opt-in, opt-out, templates and 24-hour window, escalation, sensitive identifiers, prohibited goods, political use"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines",
+     "title": "Template category guidelines (Meta for Developers)",
+     "supports": "authentication, utility and marketing definitions; mixed content is marketing"
+    },
+    {
+     "url": "https://www.facebook.com/legal/Meta-Terms-for-WhatsApp-Business-Platform?locale=en_US",
+     "title": "Meta Terms for WhatsApp Business Platform (Last Modified September 23, 2026)",
+     "supports": "section 4.7 AI Providers"
+    },
+    {
+     "url": "https://techcrunch.com/2025/10/18/whatssapp-changes-its-terms-to-bar-general-purpose-chatbots-from-its-platform/",
+     "title": "TechCrunch, 18 Oct 2025, updated 15 Jan 2026 (secondary)",
+     "supports": "15 January 2026 effective date; customer-service AI not affected"
+    }
+   ],
+   "related": [
+    "plat:whatsapp_business_template",
+    "plat:whatsapp_message",
+    "genre:whatsapp_broadcast",
+    "genre:chatbot_script",
+    "trend:whatsapp_conversational_commerce",
+    "comp:trai_tcccpr_2018",
+    "comp:dpdp_act_rules",
+    "comp:uk_pecr",
+    "comp:meta_advertising_standards",
+    "comp:online_gaming_act_2025"
+   ],
+   "jurisdiction": "Global platform policy (Meta: WhatsApp Business App and WhatsApp Business Platform); applies alongside local law such as India's DPDP Act or UK PECR",
+   "applies_to": [
+    "genre:whatsapp_broadcast",
+    "genre:chatbot_script",
+    "genre:order_form_checkout_copy",
+    "WhatsApp message templates (marketing, utility, authentication)",
+    "opt-in lines on forms, checkout and ads",
+    "auto-replies and customer-service flows"
+   ],
+   "rules": [
+    {
+     "rule": "Contact people only if they gave you their number or username and you have 'opt-in permission from the recipient confirming that they wish to receive subsequent messages or calls from you'.",
+     "url": "https://whatsappbusiness.com/policy/"
+    },
+    {
+     "rule": "'You must respect all requests (either on or off WhatsApp) by a person to block, discontinue, or otherwise opt out of communications from you'; best practice is separate opt-in per message category.",
+     "url": "https://whatsappbusiness.com/policy/"
+    },
+    {
+     "rule": "'You may only initiate conversations using an approved Message Template', used 'only for its designated purpose'; free-form replies only inside 'the 24-hour customer service window, which opens and resets with each user message'.",
+     "url": "https://whatsappbusiness.com/policy/"
+    },
+    {
+     "rule": "Automation is allowed in the window but 'must also have available prompt, clear, and direct escalation paths' such as an in-chat human agent, phone, email or web support.",
+     "url": "https://whatsappbusiness.com/policy/"
+    },
+    {
+     "rule": "'Don't share or ask people to share full length individual payment card numbers, financial account numbers, personal ID card numbers, or other sensitive identifiers.'",
+     "url": "https://whatsappbusiness.com/policy/"
+    },
+    {
+     "rule": "No impersonating another business, no offensive or sexually explicit content, no discrimination, and no promoting listed restricted goods and services except country-limited Regulated Verticals; selling via catalogs follows the Meta Commerce Policy.",
+     "url": "https://whatsappbusiness.com/policy/"
+    },
+    {
+     "rule": "Categories: 'Only authentication templates can be used to send a one-time passcode'; utility templates are 'non-promotional'; templates with mixed content 'are also considered marketing' (Meta developer docs).",
+     "url": "https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines"
+    },
+    {
+     "rule": "AI Providers are 'strictly prohibited from accessing or using the WhatsApp Business Platform' to offer AI when it is 'the primary (rather than incidental or ancillary) functionality' (Meta terms, s.4.7).",
+     "url": "https://www.facebook.com/legal/Meta-Terms-for-WhatsApp-Business-Platform?locale=en_US"
+    }
+   ],
+   "penalty": "If content or actions violate the terms or policies, 'we may limit or remove your access to our services' (WhatsApp Business Messaging Policy); Meta can also pause or reject any template.",
+   "checks": [
+    "Has every recipient opted in to this type of message, and does the opt-in wording name the message types?",
+    "Is the template in the right category, with no promotional line inside a utility or authentication template?",
+    "Does an authentication template carry only the code and its context, with no link, media or emoji?",
+    "Is any free-form reply going out inside 24 hours of the customer's last message?",
+    "Does the bot or auto-reply flow show a way to reach a human or other support channel?",
+    "Is the copy free of requests for full card, bank account or ID numbers?",
+    "Is the product or offer outside the prohibited and restricted list, or allowed as a Regulated Vertical in that country?",
+    "Does the message tell people how to stop receiving this category of message?"
+   ],
+   "as_of": "2026-10-13"
+  }
+ ]
+}

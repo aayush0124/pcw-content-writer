@@ -1,0 +1,521 @@
+{
+ "cards": [
+  {
+   "id": "plat:99acres_listing",
+   "kind": "platform",
+   "name": "99acres property listing (description, photos, advertiser terms)",
+   "status": "current",
+   "summary": "A 99acres property ad is a structured listing (property profile fields) plus a free-text description of under 5,000 words and up to 50 photos. The advertiser warrants that every detail is accurate and that it holds the rights to the photos and text, and posts only as the owner or an authorised agent. Good descriptions state carpet area, configuration, floor, facing, amenities and nearby infrastructure as facts, and carry the RERA registration number for a project.",
+   "use_for": [
+    "Owner, broker or builder ad descriptions for sale or rent on 99acres.",
+    "Briefing a photographer on what 99acres rejects (overlays, unrelated or imaginary images).",
+    "Rewriting an ad so it states checkable facts (carpet area, floor, possession status, RERA number) instead of adjectives.",
+    "Cleaning listing photos and video before upload."
+   ],
+   "avoid": [
+    "Contact number, email, company or owner name, address, website or a watermark on photos: the 99acres FAQ says such photos are not uploaded. Buyers contact through the platform.",
+    "'Artistic and imaginary photographs' or a photo of a different property type: use real photos of this property only.",
+    "Treating 5,000 words as a target. It is a ceiling printed in a 2023 guide, not advice to write long. Put the facts in the first lines and keep the rest short.",
+    "Writing '99acres verified' to imply clear title or correct area: the verified tag only confirms the property exists as advertised.",
+    "Advertising a project without its RERA registration number: in June 2025 Bihar RERA penalised a property portal that showed registered projects without their registration numbers and also advertised unregistered ones. Put the number and the Authority website in the description (comp:rera_advertisement_rules)."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://www.99acres.com/articles/step-by-step-guide-to-post-your-property-on-99acres.html",
+     "title": "Step-by-step guide to post your property on 99acres (updated 10 Apr 2023)",
+     "supports": "description under 5,000 words, what to describe (features, amenities, society facilities, nearby infrastructure), photo tips"
+    },
+    {
+     "url": "https://www.99acres.com/faq/what-should-i-keep-in-mind-while-uploading-property-photographs-on-99acres.html",
+     "title": "What should I keep in mind while uploading property photographs on 99acres? - 99acres FAQ",
+     "supports": "photo relevance, banned overlays (contact number, email, names, address, watermark, website), artistic or imaginary photos rejected, JPEG / PNG 10 KB to 5 MB, up to 50 photos"
+    },
+    {
+     "url": "https://www.99acres.com/info/terms-and-conditions",
+     "title": "99acres.com Terms & Conditions: Submission and Administration of Listings (effective from 20 March 2026)",
+     "supports": "rights to descriptions and photographs, accuracy warranty, authorised-agent rule, 99acres may modify or remove listings, AI and human moderation, video community guidelines, meaning of the verified tag, RERDA compliance"
+    },
+    {
+     "url": "https://rera.bihar.gov.in/Order/241%202018.pdf",
+     "title": "Real Estate Regulatory Authority, Bihar: suo motu Case No. RERA/SM/241/2018, order dated 26.06.2025",
+     "supports": "a property portal held to have advertised unregistered projects and registered projects without the RERA registration number; penalty under section 62"
+    }
+   ],
+   "related": [
+    "genre:real_estate_listing",
+    "comp:rera_advertisement_rules",
+    "comp:housing_com_listing_policy",
+    "comp:ccpa_misleading_ads_2022",
+    "plat:airbnb_listing"
+   ],
+   "limits": [
+    {
+     "field": "property description",
+     "max": 5000,
+     "unit": "words",
+     "url": "https://www.99acres.com/articles/step-by-step-guide-to-post-your-property-on-99acres.html",
+     "checked": "2026-10-13",
+     "quote": "describe your property in less than 5,000 words to increase its visibility",
+     "confidence": "medium (official 99acres posting guide, updated 10 Apr 2023; the form behind login may count characters instead)"
+    },
+    {
+     "field": "photographs per listing advertisement",
+     "max": 50,
+     "unit": "count",
+     "url": "https://www.99acres.com/faq/what-should-i-keep-in-mind-while-uploading-property-photographs-on-99acres.html",
+     "checked": "2026-10-13",
+     "quote": "Up to 50 photographs can be uploaded for each listing advertisement.",
+     "confidence": "medium (official 99acres FAQ, undated)"
+    }
+   ],
+   "formatting": [
+    "Fields: property profile (structured details entered step by step), amenities and features (selectable), free-text description, photos, optional video.",
+    "Photos: JPEG or PNG, 10 KB to 5 MB each, up to 50 per listing; must match the property type posted.",
+    "Videos are screened by people and technology before going live and are hosted on a third-party video service.",
+    "Bold, bullets, emoji and Hindi in the description are not covered by the public pages read: unverified. Write plain sentences with line breaks and check the preview."
+   ],
+   "writing_notes": [
+    "Lint: the only lintable limit is the description (5,000 words), so `python pcw.py check description.txt --platform plat:99acres_listing` needs no --field. It will pass almost anything, so also lint against the genre: `python pcw.py check description.txt --genre genre:real_estate_listing`. Count photos by hand (50 or fewer).",
+    "Description order: (1) configuration and carpet area ('2 BHK, 712 sq ft carpet area'), (2) floor, facing, parking, (3) status (ready to move, or possession date) and RERA registration number with the Authority website for a project, (4) 3-5 features and society amenities, (5) what is nearby, with distances.",
+    "Example for an invented project: '2 BHK, 712 sq ft carpet area, 9th of 14 floors, east facing, one covered parking. Ready to move. RERA Reg. No. P5XXXXXXXXX (see the state RERA website). Modular kitchen, two balconies, gym, pool and play area in the society. School 1.2 km, metro 1.8 km.' Replace the placeholder number with the real one; never invent it.",
+    "Quote area as carpet area, the RERA measure; if the client gives only super built-up area, ask for carpet area rather than guessing a conversion.",
+    "Only use photos and text the client owns or licensed, because the terms make the advertiser warrant rights from the photographer or copyright owner."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "99acres' posting guide says describing the property in less than 5,000 words is meant 'to increase its visibility', and that listing more amenities improves the odds of attracting buyers.",
+     "url": "https://www.99acres.com/articles/step-by-step-guide-to-post-your-property-on-99acres.html"
+    },
+    {
+     "note": "99acres runs quality checks before photos go live and rejects inappropriate ones; listing content is moderated by AI tools with human review.",
+     "url": "https://www.99acres.com/faq/what-should-i-keep-in-mind-while-uploading-property-photographs-on-99acres.html"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_discover",
+   "kind": "platform",
+   "name": "Google Discover (feed card: title and large image)",
+   "status": "current",
+   "summary": "Discover is Google's interest-based feed in the Google app and Chrome; a card is the page title, a snippet and one large image. Google publishes no title length, only image minimums (at least 1200 px wide, more than 300,000 pixels) and a firm line against clickbait and sensational previews.",
+   "use_for": [
+    "Writing headlines for news, explainer and evergreen articles that should earn Discover traffic",
+    "Choosing and briefing the lead image (og:image) for an article",
+    "Checking a headline and image pair against Google's clickbait and sensationalism guidance",
+    "Planning Web Stories that also appear in Discover (see plat:google_web_stories)"
+   ],
+   "avoid": [
+    "Clickbait or withheld information: 'You won't believe what this Bengaluru startup did next'. Write 'Bengaluru startup cuts delivery time to 12 minutes with dark stores'.",
+    "Headlines that play on morbid curiosity, titillation or outrage about a crash, a crime or a celebrity.",
+    "A site logo, a text-heavy graphic or a small image as the card image. Use a relevant photo at least 1200 px wide, in 16x9, with the subject safe from cropping.",
+    "Forgetting max-image-preview:large (or AMP): without it the large image may not show.",
+    "Assuming a character limit: Google sets none for Discover, so keep the title true to the story and front-load the subject."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/google-discover",
+     "title": "Get on Discover - Google Search Central (updated 2026-03-09)",
+     "supports": "image specification, title guidance, eligibility, Follow feed"
+    },
+    {
+     "url": "https://support.google.com/websearch/answer/9982767",
+     "title": "Discover content policies - Google Search Help",
+     "supports": "Discover feature policies: Ads & sponsored content, Misleading content, Transparency"
+    }
+   ],
+   "related": [
+    "comp:google_news_policies",
+    "plat:google_web_stories",
+    "plat:google_search_result",
+    "hook:curiosity_gap",
+    "genre:headline_dek",
+    "genre:news_story"
+   ],
+   "limits": [
+    {
+     "field": "card image width (large image)",
+     "min": 1200,
+     "unit": "px",
+     "url": "https://developers.google.com/search/docs/appearance/google-discover",
+     "checked": "2026-10-13",
+     "quote": "At least 1200 px wide",
+     "confidence": "high (official Google Search Central doc, updated 2026-03-09)"
+    },
+    {
+     "field": "card image total pixels (width x height)",
+     "min": 300000,
+     "unit": "px",
+     "url": "https://developers.google.com/search/docs/appearance/google-discover",
+     "checked": "2026-10-13",
+     "quote": "High resolution of more than 300,000 total pixels",
+     "confidence": "high (official Google Search Central doc, updated 2026-03-09)"
+    }
+   ],
+   "formatting": [
+    "A card is preview content: the page title, a snippet and an image (Google's policy names title, snippets and images as the preview).",
+    "Large image: needs the max-image-preview:large setting or AMP; name the image in schema.org markup or the og:image meta tag; 16x9 recommended, and Google may crop automatically.",
+    "No published character limit for the title or snippet.",
+    "Web Stories can also appear in Discover (see plat:google_web_stories)."
+   ],
+   "writing_notes": [
+    "Lint: both Discover limits are in px, so `pcw.py check` has nothing to lint for this platform. Check the image by hand: width at least 1200 px, width times height over 300,000 (1280x720 = 921,600 passes), 16x9 crop keeps the subject. For a length sanity check on the headline, lint it against the search title instead: `python pcw.py check title.txt --platform plat:google_search_result --field title`.",
+    "Write the title to 'capture the essence of the content': subject + what happened + why it matters to this reader. Example: 'Mumbai local trains: new AC services from Monday, fares unchanged'.",
+    "Turn a curiosity hook into a specific promise the article keeps: not 'This one habit is ruining your sleep' but 'Late-evening chai and sleep: what a 2025 study of 1,200 adults found'.",
+    "No sensational framing of tragedies: 'Pune bus crash: 4 dead, police probe brakes' rather than 'Horror on the highway: you won't believe the footage'.",
+    "Pick an image that shows the story (people, place, product), not the logo or a slide full of text; brief the designer for a 1200 px wide 16x9 crop with the subject centred."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Content is automatically eligible if Google indexes it and it meets the Discover content policies; Discover shows topics that align with a person's interests, and older content may appear if it is still helpful and relevant.",
+     "url": "https://developers.google.com/search/docs/appearance/google-discover"
+    },
+    {
+     "note": "Google's advice for appearing more often: avoid clickbait and sensationalism, use titles that capture the essence of the content, provide timely or uniquely insightful content, and include compelling large images.",
+     "url": "https://developers.google.com/search/docs/appearance/google-discover"
+    },
+    {
+     "note": "Followers of a site see its content in the Following feed unless it violates Search overall policies or the listed Search feature policies.",
+     "url": "https://support.google.com/websearch/answer/9982767"
+    }
+   ]
+  },
+  {
+   "id": "plat:google_web_stories",
+   "kind": "platform",
+   "name": "Google Web Stories (AMP stories on Google Search and Discover)",
+   "status": "current",
+   "summary": "Web Stories are tappable full-screen AMP pages that Google shows as single results in Search and in Discover. Google asks for a title under 90 characters (ideally under 70), little text per page (most pages at 180 characters or fewer to stay eligible for richer results), short video, a 3:4 poster at least 640x853 px and a square logo of at least 96x96 px.",
+   "use_for": [
+    "Turning a news story, explainer, recipe or travel guide into a Web Story",
+    "Writing the story title, page captions and the closing call to action",
+    "Repurposing an Instagram or YouTube carousel or reel into a Web Story",
+    "Briefing a designer on poster, logo and video specifications"
+   ],
+   "avoid": [
+    "Walls of text: a page with a 400-character paragraph. Split it across pages, keep most pages at 180 characters or fewer.",
+    "Text burned into images or video (including the poster): it gets cropped or blocked on some screens. Keep text as real text; for a video-only story put the exact on-screen text in the amp-video title attribute.",
+    "A copied Instagram ending such as 'Tap the link in bio' or 'Swipe up'. Use a Web Story call to action the reader can actually follow on the page.",
+    "A story that is really an ad, or one that sends readers to another site for the essential information. Affiliate links only as a minor part.",
+    "Someone else's photos, clips or music without permission.",
+    "Stating a page count rule as Google's: no page count appears on the Google Search Central pages read on 2026-10-13."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
+     "title": "Best practices for creating Web Stories - Google Search Central (updated 2026-06-09)",
+     "supports": "title length, text per page, video and audio length, poster and logo sizes"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-content-policy",
+     "title": "Web Story Content Policies on Google (updated 2025-12-10)",
+     "supports": "180-character text-heavy rule and content policies"
+    },
+    {
+     "url": "https://developers.google.com/search/docs/appearance/enable-web-stories",
+     "title": "Enable Web Stories on Google - Google Search Central (updated 2026-07-01)",
+     "supports": "required metadata, canonical, indexing, regions"
+    }
+   ],
+   "related": [
+    "plat:google_discover",
+    "comp:google_news_policies",
+    "genre:carousel_copy",
+    "genre:repurposed_content",
+    "genre:news_explainer"
+   ],
+   "limits": [
+    {
+     "field": "story title",
+     "max": 90,
+     "unit": "chars",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
+     "checked": "2026-10-13",
+     "quote": "Keep titles shorter than 90 characters.",
+     "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"
+    },
+    {
+     "field": "story title, recommended descriptive length",
+     "max": 70,
+     "unit": "chars",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
+     "checked": "2026-10-13",
+     "quote": "We recommend using a descriptive title that is shorter than 70 characters.",
+     "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"
+    },
+    {
+     "field": "text per page, content policy (majority of pages)",
+     "max": 180,
+     "unit": "chars",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-content-policy",
+     "checked": "2026-10-13",
+     "quote": "Web Stories may not be eligible if the majority of pages have more than 180 characters of text.",
+     "confidence": "high (official Web Story Content Policies, updated 2025-12-10)"
+    },
+    {
+     "field": "text per page, design best practice",
+     "max": 280,
+     "unit": "chars",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
+     "checked": "2026-10-13",
+     "quote": "Consider reducing text to approximately 280 characters per page (the length of a tweet).",
+     "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"
+    },
+    {
+     "field": "video per page, recommended",
+     "max": 15,
+     "unit": "seconds",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
+     "checked": "2026-10-13",
+     "quote": "We recommend videos that are less than 15 seconds per page, or 60 seconds maximum.",
+     "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"
+    },
+    {
+     "field": "video per page, maximum",
+     "max": 60,
+     "unit": "seconds",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
+     "checked": "2026-10-13",
+     "quote": "We recommend videos that are less than 15 seconds per page, or 60 seconds maximum.",
+     "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"
+    },
+    {
+     "field": "audio clip length",
+     "min": 5,
+     "unit": "seconds",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
+     "checked": "2026-10-13",
+     "quote": "Use high-quality audio clips that are at least 5 seconds long",
+     "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"
+    },
+    {
+     "field": "poster image (poster-portrait-src) width",
+     "min": 640,
+     "unit": "px",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
+     "checked": "2026-10-13",
+     "quote": "at least 640x853px and use an aspect ratio of 3:4",
+     "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"
+    },
+    {
+     "field": "poster image (poster-portrait-src) height",
+     "min": 853,
+     "unit": "px",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
+     "checked": "2026-10-13",
+     "quote": "at least 640x853px and use an aspect ratio of 3:4",
+     "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"
+    },
+    {
+     "field": "publisher logo (publisher-logo-src) width and height",
+     "min": 96,
+     "unit": "px",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices",
+     "checked": "2026-10-13",
+     "quote": "at least 96x96 px and aspect ratio of 1:1",
+     "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"
+    }
+   ],
+   "formatting": [
+    "Required metadata on every story: title, publisher, publisher-logo-src (square, at least 96x96 px) and poster-portrait-src (3:4, at least 640x853 px).",
+    "Each story is a valid AMP page with a canonical link to itself; link stories from the site and add them to the sitemap.",
+    "Text should be real text on the page, inside the safe area, not burned into images or video; add alt text on images.",
+    "Full-bleed images and video are recommended; video under 15 seconds per page, 60 seconds at most; audio clips at least 5 seconds.",
+    "Appears as a single result in Search everywhere Search is available, and in Discover, where Google says it is most likely in the United States, India and Brazil."
+   ],
+   "writing_notes": [
+    "Lint (four lintable char limits): put the title in its own file and run `python pcw.py check title.txt --platform plat:google_web_stories --field \"story title\"` (checks both 90 and 70). Put each page's text in its own file and run `python pcw.py check page03.txt --platform plat:google_web_stories --field \"text per page\"` (checks 180 and 280). Never lint pages joined together: the caps are per page. Video, audio, poster and logo limits are in seconds and px: check them by hand in the editor.",
+    "Write to 180 characters, not 280: the content policy can drop a story from richer Search results if most pages pass 180.",
+    "Title example (65 characters): 'Monsoon in Kerala: 7 stops for a 5-day trip on a Rs 25,000 budget'. Descriptive, under 70, says what the reader gets.",
+    "Page example (108 characters): 'Day 1, Kochi: the backwaters at 6 am, before the tourist boats start. Rs 400 gets you a shikara for an hour.'",
+    "Build a narrative arc page to page (set-up, steps or stops, payoff) and make the cover page carry the promise; Google's own storytelling advice is video first, then images and text.",
+    "News Web Stories still follow the news ethics cards: comp:pci_norms_journalistic_conduct and comp:google_news_policies."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "Google treats a Web Story as a web page: the same SEO best practices apply, the story must be indexable (no noindex) and should be in the sitemap.",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices"
+    },
+    {
+     "note": "For eligibility on richer experiences such as the carousel view, stories must also meet the Web Story content policies; egregious violations can stop a site appearing on those experiences permanently.",
+     "url": "https://developers.google.com/search/docs/appearance/web-stories-content-policy"
+    }
+   ]
+  },
+  {
+   "id": "plat:indiamart_listing",
+   "kind": "platform",
+   "name": "IndiaMART seller product listing (title, specifications, description, photos)",
+   "status": "current",
+   "summary": "An IndiaMART product listing is a B2B catalogue entry: title, specifications, description, price with unit, and photos, all checked against each other by AI and manual audits. The 2026 approval guidelines set an ideal title of up to 5 words and photos of at least 1000 x 1000 px; an older help article caps the title at 70 characters. Good listings read like a spec sheet: one product, one value per spec, SI units, no sales words.",
+   "use_for": [
+    "Writing a product title a buyer searches for: product type plus 1-3 identifying attributes ('3 Ply Elastic Surgical Mask').",
+    "Turning a manufacturer's brochure into single-value specifications in SI units.",
+    "Writing the description: usage, features and applications, consistent with title, specs and photo.",
+    "Cleaning listings rejected for mismatch, subjective words, location in the title or contact details."
+   ],
+   "avoid": [
+    "Sales words in the title: 'best seller' and 'lowest price' are named as not allowed. Write 'Mini Sewing Machine', not 'Mini Sewing Machine Best Seller'.",
+    "Business terms and places in the title: 'A5 Sheets Manufacturers' and 'American Tourister Bag in Delhi' are IndiaMART's own bad examples. Put the city in the company profile, not the product name.",
+    "Several products in one title or one photo ('Dell Laptop (i3, i5, i7 & i9)'): make one listing per variant.",
+    "Ranges and vague values in specs ('Capacity: 5000-10000 mAH', 'Brand: All Brands'): give one value per field, such as 'Capacity: 10000 mAh'.",
+    "Phone numbers, emails or websites in the description or photo: IndiaMART rejects listings with personal information. Buyers reach the seller through the platform.",
+    "Repeating the title and specs as the description. Expand on use, features and applications instead."
+   ],
+   "confidence": "high",
+   "sources": [
+    {
+     "url": "https://help.indiamart.com/knowledge-base/indiamart-product-approval-guidelines/",
+     "title": "IndiaMART Product Approval Guidelines for Sellers (Guidelines 2026, updated 15 Sep 2026)",
+     "supports": "title errors table (spelling, duplicate words, multiple products, business terms, subjective words, length, all caps, location), specification rules, description rules, photo rules, price unit, mismatch audits, banned and personal-information content, rejection consequences"
+    },
+    {
+     "url": "https://help.indiamart.com/knowledge-base/write-product-title/",
+     "title": "What is an effective way to write the product title? - IndiaMART help",
+     "supports": "70-character title rule, title case, numerals, brand name use"
+    },
+    {
+     "url": "https://help.indiamart.com/knowledge-base/product-addition-guidelines/",
+     "title": "What are the guidelines for Product Addition - IndiaMART help",
+     "supports": "unique description, no company contact details, no other products, bullets for specs, no copied text, trademarks only with permission"
+    },
+    {
+     "url": "https://help.indiamart.com/knowledge-base/add-product-images/",
+     "title": "How to add product images on IndiaMART - IndiaMART help",
+     "supports": "older image guidance: square 500 x 500, product covers 60-70% on white, no watermarks, logos, prices or timestamps, real photos not drawings"
+    }
+   ],
+   "related": [
+    "genre:marketplace_listing",
+    "genre:catalogue_copy",
+    "genre:product_description",
+    "plat:flipkart_listing",
+    "plat:amazon_product_listing",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:consumer_protection_ecommerce_rules_2020"
+   ],
+   "limits": [
+    {
+     "field": "product title (ideal length)",
+     "max": 5,
+     "unit": "words",
+     "url": "https://help.indiamart.com/knowledge-base/indiamart-product-approval-guidelines/",
+     "checked": "2026-10-13",
+     "quote": "Keep ideal title within 5 words and not more than 1 word",
+     "confidence": "high (official IndiaMART Product Approval Guidelines, updated 15 Sep 2026; the wording means more than one word and up to five)"
+    },
+    {
+     "field": "product title",
+     "max": 70,
+     "unit": "chars",
+     "url": "https://help.indiamart.com/knowledge-base/write-product-title/",
+     "checked": "2026-10-13",
+     "quote": "Product title must be under 70 characters including the spaces",
+     "confidence": "medium (official IndiaMART help article, updated 6 Mar 2025; older than the 2026 approval guidelines)"
+    },
+    {
+     "field": "product photo size (minimum)",
+     "min": 1000,
+     "unit": "px",
+     "url": "https://help.indiamart.com/knowledge-base/indiamart-product-approval-guidelines/",
+     "checked": "2026-10-13",
+     "quote": "Upload clear, high-resolution photos (minimum 1000 × 1000 pixels)",
+     "confidence": "high (official IndiaMART Product Approval Guidelines, updated 15 Sep 2026; an older 2025 help article says 500 x 500 square)"
+    }
+   ],
+   "formatting": [
+    "Fields: product name (title), category, description, price or price on request with a unit (for example per kg or per piece), specifications, photos and an optional video.",
+    "Title case: first letter of each word capital, no all-caps words, but keep a brand's own format (HP, BMW).",
+    "Numerals, not words: 'Pack of 5', not 'Pack of Five'. Standard chemical symbols where needed (Fe, Al).",
+    "Specifications: one value per field, SI units with a space before the unit ('0.5 mm', '150 MPa').",
+    "Description: bullet points on separate lines for specifications (product addition guidelines).",
+    "Photos: at least 1000 x 1000 px, white or clean background, product fills 70% or more, a unique photo per product, no screenshots, no watermarks, logos, prices or timestamps, real photos not drawings."
+   ],
+   "writing_notes": [
+    "Lint the title: `python pcw.py check title.txt --platform plat:indiamart_listing --field title` tests both title limits at once (5 words ideal, under 70 characters). Without --field the tool asks you to choose. The photo minimum (px) is checked by hand in an image viewer.",
+    "Title formula: [Brand if any] + product type + 1-3 key attributes (material, type, model, size). 'Stainless Steel Pressure Cooker 5 Litre' is 6 words: cut to 'Steel Pressure Cooker 5 Litre' to meet the 5-word ideal.",
+    "Spec block example: 'Material: Stainless Steel 304', 'Capacity: 5 L', 'Lid Type: Outer Lid', 'Base: Induction Compatible'. No 'Customized', 'Standard' or 'All' as a value.",
+    "Description (3-5 short lines): what it is used for, who buys it (hotels, caterers, retailers), two or three features that a buyer can verify, applications. Every number must match the specs and the photo, because IndiaMART audits mismatches.",
+    "Never copy a competitor's description: IndiaMART asks for unique text and forbids copied product information and unauthorised trademarks or logos."
+   ],
+   "algorithm_notes": [
+    {
+     "note": "IndiaMART says quality signals directly impact ranking and discovery, and listings that fail its AI and manual audits are removed from category pages, search, the product page or even the seller's own catalog.",
+     "url": "https://help.indiamart.com/knowledge-base/indiamart-product-approval-guidelines/"
+    },
+    {
+     "note": "Title, photo, specifications, price and description are checked against each other and against the mapped category; a mismatch (for example a title saying top load and a photo showing front load) is a rejection reason.",
+     "url": "https://help.indiamart.com/knowledge-base/indiamart-product-approval-guidelines/"
+    }
+   ]
+  },
+  {
+   "id": "plat:meesho_listing",
+   "kind": "platform",
+   "name": "Meesho supplier catalog listing (products per catalog, images, description)",
+   "status": "current",
+   "summary": "A Meesho supplier catalog groups 1 to 9 products (designs or colours of one product type) under one listing. Meesho's public supplier pages publish that one number plus image and description rules: a clear JPEG front image with no logo or watermark, and a brief description in simple words, with price, GST percentage, HSN code and weight compulsory. Good copy names fabric, fit, size and pattern plainly, in words a first-time online buyer understands.",
+   "use_for": [
+    "Grouping a range (for example 6 kurti prints in one fabric) into one catalog of 9 or fewer products.",
+    "Writing the short product description in the Supplier Panel: fabric, style or fit, size, print or pattern, bottom type.",
+    "Briefing a photographer or editor on Meesho's image rules before a catalog shoot.",
+    "Fixing a catalog that Meesho rejected for images or missing details."
+   ],
+   "avoid": [
+    "Putting the brand logo, a watermark or a 'Best Price' badge on product images: Meesho asks for images 'in JPEG format without any logo or watermark'. Keep the image to the product alone.",
+    "A cropped or partial first image, or a staged prop beside the product: Meesho says do not add partial product images or images with any prop. Lead with the full front view.",
+    "Long marketing paragraphs ('Elevate your ethnic wardrobe with timeless elegance'). Meesho asks for a brief description 'using simple words': write 'Cotton blend straight kurti, knee length, 3/4 sleeves, printed' instead.",
+    "Uploading 12 designs as one catalog: the page allows a maximum of 9 products. Split into two catalogs of 6.",
+    "Quoting a Meesho title or description character cap from memory or an agency blog: none is printed on Meesho's public pages. Read the Supplier Panel template's own message."
+   ],
+   "confidence": "medium",
+   "sources": [
+    {
+     "url": "https://supplier.meesho.com/sell-online/kurtis",
+     "title": "Sell Kurtis Online - Meesho Supplier",
+     "supports": "1 to 9 products per catalog, JPEG images without logo or watermark, no partial or prop images, compulsory price, GST, HSN and weight, what a good description covers"
+    },
+    {
+     "url": "https://supplier.meesho.com/sell-online/home-decor",
+     "title": "Sell Home Decor Online - Meesho Supplier",
+     "supports": "same catalog size, image and description rules for another category"
+    }
+   ],
+   "related": [
+    "genre:marketplace_listing",
+    "genre:product_description",
+    "plat:flipkart_listing",
+    "plat:amazon_product_listing",
+    "comp:legal_metrology_packaged_commodities",
+    "comp:ccpa_misleading_ads_2022",
+    "comp:consumer_protection_ecommerce_rules_2020"
+   ],
+   "limits": [
+    {
+     "field": "products per catalog",
+     "max": 9,
+     "unit": "count",
+     "url": "https://supplier.meesho.com/sell-online/kurtis",
+     "checked": "2026-10-13",
+     "quote": "You can upload a minimum of 1 and a maximum of 9 products to create the kurti catalog.",
+     "confidence": "medium (official Meesho supplier category page; footer dated 2015-22, same sentence on the home decor page)"
+    }
+   ],
+   "formatting": [
+    "Fields named on Meesho's public pages: category, catalog of 1 to 9 products, product images (front image first, more images recommended), product description, price, GST percentage, HSN code, weight.",
+    "Images: JPEG, no logo, no watermark, no partial product, no props; the front image can be changed after upload.",
+    "Upload: one catalog at a time or in bulk through a category Excel template (per the category page).",
+    "Bold, HTML, emoji, line breaks and Hindi text in the description are not covered by the public pages read: unverified. Write plain text and check the Supplier Panel preview."
+   ],
+   "writing_notes": [
+    "Lint: this card has no lintable limit (its one number counts products per catalog), so `python pcw.py check draft.txt --platform plat:meesho_listing` tests nothing useful. Count products by hand (1 to 9 per catalog) and lint the description with `python pcw.py check draft.txt --genre genre:product_description`.",
+    "Order of work: (1) pick the category template, (2) group designs into catalogs of 9 or fewer, (3) fill price, GST percentage, HSN code and weight, (4) write the description, (5) check images against the JPEG, no-logo, no-watermark, no-prop rules.",
+    "Description pattern for apparel (from Meesho's kurti page): fabric, style / type / fit / shape, size, print / pattern, bottom type. Example for an invented brand: 'Fabric: Cotton blend. Style: Straight kurti, knee length, round neck, 3/4 sleeves. Sizes: S to XXL (size chart in images). Print: Small floral block print. Bottom: Not included.'",
+    "Use the buyer's words: 'kurti', 'saree', 'bedsheet', not 'ethnic tunic' or 'linen ensemble'. Meesho's own instruction is simple words.",
+    "Claims and declarations still apply: check comp:legal_metrology_packaged_commodities for the declarations a packaged-goods listing must carry, and do not write 'pure silk' or '100% cotton' unless the label says so (comp:ccpa_misleading_ads_2022)."
+   ]
+  }
+ ]
+}

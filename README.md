@@ -98,15 +98,15 @@ The table is written by `python pipeline.py run docs` from `pipeline.py status`;
 <!-- pipeline-status:begin -->
 | stage | kind | state | numbers |
 |---|---|---|---|
-| harvest | agent | ok | 851 items from 23 files, 1450 cited sources (compliance 79, editing 45, framework 67, genre 290, hook 54, language 21, platform 103, technique 127, tone 35, trend 30) |
-| batches | code | ok | 851/851 items batched |
-| cards | agent | ok | 851 cards, 0 harvest items without a card (compliance 79, editing 45, framework 67, genre 290, hook 54, language 21, platform 103, technique 127, tone 35, trend 30) |
+| harvest | agent | ok | 879 items from 30 files, 1556 cited sources (compliance 102, editing 45, framework 67, genre 290, hook 54, language 21, platform 108, technique 127, tone 35, trend 30) |
+| batches | code | ok | 879/879 items batched |
+| cards | agent | ok | 879 cards, 0 harvest items without a card (compliance 102, editing 45, framework 67, genre 290, hook 54, language 21, platform 108, technique 127, tone 35, trend 30) |
 | validate | code | ok | 0 issues |
 | dupes | code | ok | 4 name collisions left for the critic |
 | samples | agent | ok | 411/411 genre, hook and framework cards have a demo piece |
 | judge | agent | ok | 411/411 judged: pass 409, weak 1, wrong 0; 79 cards rewritten after judging |
 | fixes | code | ok | 0 cards with an open CARD FIX note |
-| critic | agent | ok | zz_critic.json as of 2026-10-13: 14 gaps, 8 weak cards, 10 doubts, 9 next steps; 0 gaps logged since |
+| critic | agent | ok | zz_critic.json as of 2026-10-13: 14 gaps, 8 weak cards, 11 doubts, 10 next steps; 0 gaps logged since |
 <!-- pipeline-status:end -->
 
 Technique, editing, tone, language, platform, compliance and trend cards are validated against their cited sources

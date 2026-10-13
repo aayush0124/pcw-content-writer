@@ -2,17 +2,45 @@
  "critic": {
   "date": "2026-10-13",
   "scope": "PCW.md, all 851 cards (keyword sweeps over every card plus its harvest item), work/gaps.jsonl (48 lines), pcw.py dupes, every platform limit (289 rows: field, number, confidence, checked date), trend evidence dates and compliance as_of dates, and 43 cards read in full: 30 from a seeded random sample (random.Random(20261013), 3 per kind across all 10 kinds) plus 13 deliberate picks (plat:instagram_reel, plat:instagram_hashtags, plat:x_long_post, plat:sms_india_dlt, comp:dpdp_act_rules, comp:it_rules_sgi_2026, comp:asci_ai_sgc_labelling, trend:chatgpt_ads, lang:hinglish_roman, tone:sarkari_formal, edit:ai_tell_removal, tech:awareness_level_matching, genre:interview_qa). hook:testimonial came up in both.",
-  "inventory": "851 harvest items, 851 cards (genre 290, technique 127, platform 103, compliance 79, framework 67, hook 54, editing 45, tone 35, trend 30, language 21), validate 0 issues. Genre, hook and framework cards: 411/411 judged, pass 409, weak 1, wrong 0, not_tested 1. The other 440 cards are validated against their cited sources only.",
+  "inventory": "851 harvest items, 851 cards (genre 290, technique 127, platform 103, compliance 79, framework 67, hook 54, editing 45, tone 35, trend 30, language 21), validate 0 issues. Genre, hook and framework cards: 411/411 judged, pass 409, weak 1, wrong 0, not_tested 1. The other 440 cards are validated against their cited sources only. Gap wave C (2026-10-13) then added 28 items and cards (compliance 23, platform 5: cards/compliance_05.json, cards/platform_06.json), validated against their cited sources and not demo-tested; gaps 1-7 below carry a 'covered' note.",
   "method": "Gaps are things a professional Indian and global content writer is likely to be asked for in 2026 that no card covers (zero or passing keyword hits). Weak cards are cards whose own text is contradicted, under-sourced or untested. Doubts are limits on what the verification actually proves."
  },
  "gaps": [
-  "Indian commerce surfaces with no platform card: Meesho, Myntra and Nykaa seller listings (named only inside genre:marketplace_listing and genre:product_description), quick-commerce listings (Blinkit, Zepto, Instamart), B2B listings (IndiaMART and ONDC: zero hits), Justdial (named in genre cards only), property portals (99acres, MagicBricks, Housing.com: zero hits) and OTA hotel listings beyond plat:airbnb_listing.",
-  "News distribution surfaces: zero hits for Google Discover, Google News, Web Stories, 60-word news apps (Inshorts style) and Dailyhunt. genre:news_story, genre:live_blog and genre:news_explainer have no card for the headline, image and description rules of the surfaces that carry them.",
-  "Indian news-media rules: no compliance card for the Press Council of India Norms of Journalistic Conduct (one passing mention), the NBDSA code (zero hits) or the Digital Media Ethics Code in Part III of the IT Rules 2021 for digital news publishers (named only in the title of comp:it_rules_sgi_2026). Scripts have nothing on CBFC certification (zero hits).",
-  "Indian sector ad codes not harvested: Drugs and Cosmetics Act and Rules for cosmetic and Ayush claims (zero hits for the Act), AMFI / SEBI mutual-fund advertisement rules and SEBI investment-adviser and research-analyst ad rules (zero hits; comp:sebi_finfluencer_association covers only the association ban), COTPA tobacco and surrogate advertising (passing mentions only), the Indecent Representation of Women (Prohibition) Act 1986 (zero hits), and the Consumer Protection (E-Commerce) Rules 2020 listing disclosures such as seller details and country of origin (zero hits).",
-  "Global consumer and privacy law not harvested: the EU Unfair Commercial Practices Directive and the Price Indication Directive's prior-price rule for discount copy, California CCPA/CPRA and other US state privacy laws, the UK Online Safety Act and the ICO Children's code, and prize-promotion / sweepstakes rules (US states; India's Prize Competition Act 1955). All zero hits.",
-  "Accessibility law outside India: the European Accessibility Act (applies from 28 June 2025) and the ADA have zero hits; only WCAG 2.2, GIGW 3.0 and the RPwD Act are carded.",
-  "Platform policies a writer hits daily: no card for the WhatsApp Business Messaging Policy (opt-in, template categories), Apple App Store Review Guidelines on accurate metadata, or the Google Play metadata policy, although genre:app_store_listing, plat:apple_app_store and plat:google_play_listing exist.",
+  {
+   "gap": "Indian commerce surfaces with no platform card: Meesho, Myntra and Nykaa seller listings (named only inside genre:marketplace_listing and genre:product_description), quick-commerce listings (Blinkit, Zepto, Instamart), B2B listings (IndiaMART and ONDC: zero hits), Justdial (named in genre cards only), property portals (99acres, MagicBricks, Housing.com: zero hits) and OTA hotel listings beyond plat:airbnb_listing.",
+   "covered": "2026-10-13: plat:meesho_listing, plat:indiamart_listing, plat:99acres_listing, comp:ondc_listing_policy, comp:housing_com_listing_policy",
+   "still_open": "Myntra, Nykaa, Blinkit, Zepto and Swiggy Instamart publish no listing rules that can be read without a seller login (checked 2026-10-13: seller pages are login-only, registration pages or prerequisite lists), so they have no card; MagicBricks refused every fetch; Meesho and Housing.com publish no character cap; ONDC's public specs set no length limit on item names or descriptions; Justdial and OTA hotel listings were not harvested."
+  },
+  {
+   "gap": "News distribution surfaces: zero hits for Google Discover, Google News, Web Stories, 60-word news apps (Inshorts style) and Dailyhunt. genre:news_story, genre:live_blog and genre:news_explainer have no card for the headline, image and description rules of the surfaces that carry them.",
+   "covered": "2026-10-13: plat:google_discover, plat:google_web_stories, comp:google_news_policies",
+   "still_open": "Google states no Google News or Top stories length limit ('no markup requirement'), so that surface is a compliance card only; Google's pages give no Web Story page count; 60-word news apps (Inshorts style) and Dailyhunt were not harvested."
+  },
+  {
+   "gap": "Indian news-media rules: no compliance card for the Press Council of India Norms of Journalistic Conduct (one passing mention), the NBDSA code (zero hits) or the Digital Media Ethics Code in Part III of the IT Rules 2021 for digital news publishers (named only in the title of comp:it_rules_sgi_2026). Scripts have nothing on CBFC certification (zero hits).",
+   "covered": "2026-10-13: comp:pci_norms_journalistic_conduct, comp:nbdsa_code_of_ethics, comp:it_rules_2021_digital_news_code",
+   "still_open": "CBFC certification for scripts is still uncarded; the PCI norm additions approved on 17.11.2023 and 28.03.2024 were not read; the current status of the Part III challenges in the Delhi High Court rests on a secondary source (Nov 2024)."
+  },
+  {
+   "gap": "Indian sector ad codes not harvested: Drugs and Cosmetics Act and Rules for cosmetic and Ayush claims (zero hits for the Act), AMFI / SEBI mutual-fund advertisement rules and SEBI investment-adviser and research-analyst ad rules (zero hits; comp:sebi_finfluencer_association covers only the association ban), COTPA tobacco and surrogate advertising (passing mentions only), the Indecent Representation of Women (Prohibition) Act 1986 (zero hits), and the Consumer Protection (E-Commerce) Rules 2020 listing disclosures such as seller details and country of origin (zero hits).",
+   "covered": "2026-10-13: comp:drugs_cosmetics_act_claims, comp:ayush_drug_advertisement_rule_170, comp:sebi_amfi_mf_advertising, comp:sebi_ia_ra_advertisement_code, comp:cotpa_tobacco_advertising, comp:surrogate_advertising_india, comp:indecent_representation_women_act_1986, comp:consumer_protection_ecommerce_rules_2020",
+   "still_open": "Penalties under the Drugs and Cosmetics Act, COTPA and the SEBI codes were not sourced (cards leave them out); the Ayush omission notification itself was not read (status comes from the Supreme Court order of 11 Aug 2025); India Code refused fetches, so the 1986 Act was read in a state-government transcription; the E-Commerce Amendment Rules 2026 start date (1 Jan 2027) comes from secondary reports; no notified CCPA surrogate-ad rules beyond the 2022 guidelines were found."
+  },
+  {
+   "gap": "Global consumer and privacy law not harvested: the EU Unfair Commercial Practices Directive and the Price Indication Directive's prior-price rule for discount copy, California CCPA/CPRA and other US state privacy laws, the UK Online Safety Act and the ICO Children's code, and prize-promotion / sweepstakes rules (US states; India's Prize Competition Act 1955). All zero hits.",
+   "covered": "2026-10-13: comp:eu_ucpd, comp:eu_prior_price_rule, comp:california_ccpa_cpra, comp:uk_online_safety_act, comp:uk_childrens_code",
+   "still_open": "Other US state privacy laws and prize-promotion / sweepstakes rules (US states; India's Prize Competition Act 1955) are still uncarded; legislation.gov.uk returned a bot challenge, so the Online Safety Act rules come from GOV.UK, Ofcom and CPS pages; EUR-Lex returned empty pages, so EU texts were read on publications.europa.eu."
+  },
+  {
+   "gap": "Accessibility law outside India: the European Accessibility Act (applies from 28 June 2025) and the ADA have zero hits; only WCAG 2.2, GIGW 3.0 and the RPwD Act are carded.",
+   "covered": "2026-10-13: comp:european_accessibility_act",
+   "still_open": "The ADA (US) is still uncarded."
+  },
+  {
+   "gap": "Platform policies a writer hits daily: no card for the WhatsApp Business Messaging Policy (opt-in, template categories), Apple App Store Review Guidelines on accurate metadata, or the Google Play metadata policy, although genre:app_store_listing, plat:apple_app_store and plat:google_play_listing exist.",
+   "covered": "2026-10-13: comp:whatsapp_business_messaging_policy, comp:apple_app_review_metadata, comp:google_play_metadata_policy",
+   "still_open": "The effective date of WhatsApp's AI Providers clause (15 Jan 2026) comes from a secondary report only; Apple's and Google's policy pages show no last-updated date."
+  },
   "Genres with no card (zero keyword hits): sponsored newsletter placement (newsletter ad), event or creator sponsorship proposal, assessment items and MCQs for ed-tech, online course landing page or course description, product recall and safety notice, Indian newspaper public notice, open letter and letter to the editor.",
   "Deliverables covered only by language cards: a subtitle file (SRT) as its own deliverable and a narration-only voice-over script (lang:english_subtitles, lang:hindi_subtitles and the video-script genres carry the rules; no genre card has a goal, structure or lint for them).",
   "Platform rows missing on existing cards: plat:tiktok_video records only the Content Posting API caption (2,200 UTF-16 units), not the in-app caption length; plat:threads_post has the 500-character post but nothing on longer text attachments, if Threads offers them; no cards for Instagram or YouTube Live, Instagram broadcast channels, Meta's business AI agents, or ChatGPT ad formats (trend:chatgpt_ads covers the trend, not the surface).",
@@ -41,7 +69,8 @@
   "Dated compliance that is moving now: ASCI's AI-labelling guidelines (signed 17 Sep 2026, effective about three months after publication), the IT Rules SGI Second Amendment (a March 2026 draft, status unconfirmed), DPDP Rules phases (consent managers about Nov 2026, main duties about May 2027, from a law-firm summary), EU AI Act Art. 50 after the Digital Omnibus proposal, Online Gaming Act 2025 commencement (secondary source) and the Income-tax Act 2025 renumbering of 80G.",
   "Trends close to their half-life: trend:chatgpt_ads (12 months, US-only evidence from Jan-Feb 2026) and trend:llm_readable_content_myths (12 months) need a re-check by early 2027; trend:hashtags_to_keywords' older evidence (2025-07-10) is already more than 12 months old.",
   "Genre value tiers rest on marketplace category counts and salary-site figures read on one day (Fiverr, Upwork, AmbitionBox, BLS). They rank demand roughly; they are not market sizing.",
-  "About 20 language cards mark some rules 'house practice, unsourced'. That is honest, but those rules are a writer's convention, not sourced fact."
+  "About 20 language cards mark some rules 'house practice, unsourced'. That is honest, but those rules are a writer's convention, not sourced fact.",
+  "Wave C (2026-10-13) items that are moving or rest on a weaker reading: the E-Commerce Amendment Rules 2026 (start 1 Jan 2027, from secondary reports), Ayush rule 170 (omitted, but the Supreme Court left a fresh challenge open), EU Directive 2024/825 (applies from 27 Sep 2026, not yet in the consolidated UCPD read), IT Rules Part III (rule 9(1) and 9(3) under a 2021 interim stay), the SEBI (Mutual Funds) Regulations 2026 (new numbering from 1 Apr 2026); conflicting official limits kept side by side: Web Stories text per page (180 in the content policy, 280 in best practices), IndiaMART titles (ideally 5 words in 2026 guidelines, under 70 characters in a 2025 help article); the 99acres description cap is printed as 5,000 words in a 2023 guide and may be characters in the live form."
  ],
  "tool_limits": [
   "pcw.py check counts visible characters only when the optional regex module is installed (otherwise code points), and does not implement X's weighted counting (links count 23) or TikTok's UTF-16 count; the platform cards say how to check those by hand.",
@@ -50,19 +79,43 @@
   "Readability grades and the AI-tell list are English-only; Hindi and Hinglish drafts need a read-aloud pass."
  ],
  "next_steps": [
-  {"step": "Close the two open verdicts: rewrite genre:interview_qa's exemplar_brief with 600-900 words of transcript and re-judge once; re-test hook:testimonial with a brief-supplied, clearly hypothetical customer quote."},
-  {"step": "Fix the three confidence and consistency faults: resolve plat:meta_ads' 30-hashtag row against plat:instagram_hashtags; re-read the Telegram Ad Platform guidelines and About X Premium in a browser and set confidence from what the pages say; read RBI's 2025 Responsible Business Conduct Directions PDF for comp:rbi_fair_practices_recovery."},
-  {"step": "Re-judge the passing cards whose lint or structure changed after their verdict (about 14 of the 76 marked 're-judge pending'), with fresh samples; the brief-only fixes can wait for the next full round."},
-  {"step": "India gap harvest: compliance cards for the Drugs and Cosmetics Rules (cosmetic and Ayush claims), AMFI / SEBI mutual-fund and adviser ad rules, COTPA and surrogate ads, the 1986 Indecent Representation Act, the E-Commerce Rules 2020, the PCI norms, the NBDSA code and IT Rules Part III; platform cards for Meesho, Myntra, Nykaa, quick-commerce, IndiaMART / ONDC, property portals and OTA listings."},
-  {"step": "Global gap harvest: EU UCPD and the prior-price rule, the European Accessibility Act, CCPA/CPRA, the UK Online Safety Act and Children's code, prize-promotion law, the WhatsApp Business Messaging Policy, Apple's metadata guideline and Google Play's metadata policy; surface cards for Google Discover, Google News and Web Stories."},
-  {"step": "Genre gap cards, then sample and judge them like the rest: newsletter sponsorship ad, sponsorship proposal, assessment items / MCQs, course landing page, recall and safety notice, public notice, open letter / letter to the editor, SRT deliverable, narration-only VO script."},
-  {"step": "Test the untested kinds through the genre tests: in the next verify round, each brief names the platform, tone, language and compliance cards the piece must obey, and the judge scores whether the limits were met and the legal checklist passed. That turns source-only cards into exercised ones without a separate wave."},
-  {"step": "Keep it current: re-check the dated compliance items monthly and the volatile platform limits quarterly (the list in doubtful), bumping as_of and checked; re-read trend evidence when a card passes its half-life."},
-  {"step": "Grow work/gaps.jsonl from real writing jobs (the pcw skill appends a line whenever no card fits) and decide the near-duplicate pairs from how often writers pick the wrong one."}
+  {
+   "step": "Close the two open verdicts: rewrite genre:interview_qa's exemplar_brief with 600-900 words of transcript and re-judge once; re-test hook:testimonial with a brief-supplied, clearly hypothetical customer quote."
+  },
+  {
+   "step": "Fix the three confidence and consistency faults: resolve plat:meta_ads' 30-hashtag row against plat:instagram_hashtags; re-read the Telegram Ad Platform guidelines and About X Premium in a browser and set confidence from what the pages say; read RBI's 2025 Responsible Business Conduct Directions PDF for comp:rbi_fair_practices_recovery."
+  },
+  {
+   "step": "Re-judge the passing cards whose lint or structure changed after their verdict (about 14 of the 76 marked 're-judge pending'), with fresh samples; the brief-only fixes can wait for the next full round."
+  },
+  {
+   "step": "India gap harvest: compliance cards for the Drugs and Cosmetics Rules (cosmetic and Ayush claims), AMFI / SEBI mutual-fund and adviser ad rules, COTPA and surrogate ads, the 1986 Indecent Representation Act, the E-Commerce Rules 2020, the PCI norms, the NBDSA code and IT Rules Part III; platform cards for Meesho, Myntra, Nykaa, quick-commerce, IndiaMART / ONDC, property portals and OTA listings.",
+   "covered": "2026-10-13: wave C (see gaps 1-4); open parts are in each gap's still_open"
+  },
+  {
+   "step": "Global gap harvest: EU UCPD and the prior-price rule, the European Accessibility Act, CCPA/CPRA, the UK Online Safety Act and Children's code, prize-promotion law, the WhatsApp Business Messaging Policy, Apple's metadata guideline and Google Play's metadata policy; surface cards for Google Discover, Google News and Web Stories.",
+   "covered": "2026-10-13: wave C (see gaps 2, 5-7); open parts are in each gap's still_open"
+  },
+  {
+   "step": "Link the existing cards to the wave C cards (the wave added new files only): genre:marketplace_listing and genre:product_description -> plat:meesho_listing, plat:indiamart_listing, comp:consumer_protection_ecommerce_rules_2020; genre:real_estate_listing -> plat:99acres_listing, comp:housing_com_listing_policy; genre:news_story, genre:news_explainer and genre:news_bulletin_script -> comp:pci_norms_journalistic_conduct, comp:nbdsa_code_of_ethics, plat:google_discover; genre:app_store_listing, plat:apple_app_store and plat:google_play_listing -> comp:apple_app_review_metadata, comp:google_play_metadata_policy; plat:whatsapp_business_template -> comp:whatsapp_business_messaging_policy; comp:dmr_act_1954 -> comp:ayush_drug_advertisement_rule_170. Until then pcw.py brief does not show the new legal checks for those genres."
+  },
+  {
+   "step": "Genre gap cards, then sample and judge them like the rest: newsletter sponsorship ad, sponsorship proposal, assessment items / MCQs, course landing page, recall and safety notice, public notice, open letter / letter to the editor, SRT deliverable, narration-only VO script."
+  },
+  {
+   "step": "Test the untested kinds through the genre tests: in the next verify round, each brief names the platform, tone, language and compliance cards the piece must obey, and the judge scores whether the limits were met and the legal checklist passed. That turns source-only cards into exercised ones without a separate wave."
+  },
+  {
+   "step": "Keep it current: re-check the dated compliance items monthly and the volatile platform limits quarterly (the list in doubtful), bumping as_of and checked; re-read trend evidence when a card passes its half-life."
+  },
+  {
+   "step": "Grow work/gaps.jsonl from real writing jobs (the pcw skill appends a line whenever no card fits) and decide the near-duplicate pairs from how often writers pick the wrong one."
+  }
  ],
  "resolved": [
   "2026-10-13: the re-test of weak and fixed cards is complete. First round 349 pass / 60 weak / 1 wrong; after card fixes and up to three re-test rounds (gallery/retest_1..6.json), 409 pass / 1 weak / 0 wrong / 1 not_tested.",
   "2026-10-05 to 2026-10-07: the gap-fill harvest carded most of the 2026-10-04/05 gap log: WCAG 2.2, GIGW 3.0 and the RPwD Act; FTC native advertising; SEBI LODR and PIT; private placement; Amazon A+; RPA s.123 and s.127A; Legal Metrology; trade marks and comparative ads; FCRA, 80G and CSR; RBI recovery conduct; copyright s.52; RERA; BIS IS 19000; FSSAI labelling; academic integrity; professional ad bans; personality rights; survivor identity; Outbrain / Taboola; YouTube spam policy; crowdfunding and admissions rules; job-ad non-discrimination; fw:effie_case_format, fw:diataxis, fw:rumelt_strategy_kernel, fw:setup_punchline_tag, fw:song_form; tech:branching_narrative, tech:logline, tech:fascination_bullets, tech:game_and_heightening; edit:test_send_preview; tone:sarkari_formal; genre:influencer_media_kit, genre:incident_report; plat:airbnb_listing, plat:naukri_job_posting, plat:linkedin_connection_note, plat:amazon_brand_store, plat:kickstarter_project, plat:linkedin_profile, plat:instagram_reel, plat:youtube_shorts, plat:tiktok_video, plat:behance_project, plat:pratilipi_series, plat:businesswire_release, plat:product_hunt_launch, plat:snapchat_ads.",
-  "2026-10-05 to 2026-10-07: logged card fixes applied: lang:urdu_influenced_hindi nukta rule (CHD 2024), lang:hindi_devanagari 'aap apne' rule, plat:youtube_chapters minimums stored as min, the Income-tax Act 2025 renumbering of 80G on comp:fcra_and_donation_tax_receipts, the preview-text note on plat:email_subject_line, the LinkedIn job-post and Amazon backend-terms conflicts recorded on their cards, and the cross-links for award_entry, webinar_pitch_script, okr_strategy_doc and press_kit."
+  "2026-10-05 to 2026-10-07: logged card fixes applied: lang:urdu_influenced_hindi nukta rule (CHD 2024), lang:hindi_devanagari 'aap apne' rule, plat:youtube_chapters minimums stored as min, the Income-tax Act 2025 renumbering of 80G on comp:fcra_and_donation_tax_receipts, the preview-text note on plat:email_subject_line, the LinkedIn job-post and Amazon backend-terms conflicts recorded on their cards, and the cross-links for award_entry, webinar_pitch_script, okr_strategy_doc and press_kit.",
+  "2026-10-13: gap wave C carded the critic's India sector-code, news-media, Indian commerce and global law / store-policy gaps: 28 harvest items (harvest/compliance_gap_c..g.json, platform_gap_news.json, platform_gap_india_commerce.json; about 100 distinct official or primary source URLs read that day) -> cards/compliance_05.json (23) and cards/platform_06.json (5). New lintable limits: Web Stories title (90 / 70 chars) and text per page (180 / 280 chars), IndiaMART title (70 chars, 5 words), 99acres description (5,000 words)."
  ]
 }

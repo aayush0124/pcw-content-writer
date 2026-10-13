@@ -1,0 +1,49 @@
+{
+ "kind": "platform",
+ "worker": "gap_c_news",
+ "as_of": "2026-10-13",
+ "source": "gap wave C (news distribution surfaces): Google Search Central docs and Google help pages fetched and read 2026-10-13 (curl), every number quoted in the page's own words; Google News / Top stories has no published limit and is folded into comp:google_news_policies",
+ "items": [
+  {
+   "id": "plat:google_discover",
+   "name": "Google Discover (feed card: title and large image)",
+   "category": "Search & SEO",
+   "one_line": "Google's personalised feed of articles and Web Stories in the Google app and Chrome; each card is the page title plus a large image, so the title must capture the story and the image should be at least 1200 px wide.",
+   "aliases": ["Discover feed", "Google feed", "Articles for you", "Google Discover card"],
+   "limits": [
+    {"field": "card image width (large image)", "min": 1200, "unit": "px", "url": "https://developers.google.com/search/docs/appearance/google-discover", "checked": "2026-10-13", "quote": "At least 1200 px wide", "confidence": "high (official Google Search Central doc, updated 2026-03-09)"},
+    {"field": "card image total pixels (width x height)", "min": 300000, "unit": "px", "url": "https://developers.google.com/search/docs/appearance/google-discover", "checked": "2026-10-13", "quote": "High resolution of more than 300,000 total pixels", "confidence": "high (official Google Search Central doc, updated 2026-03-09)"}
+   ],
+   "sources": [
+    {"url": "https://developers.google.com/search/docs/appearance/google-discover", "title": "Get on Discover - Google Search Central (updated 2026-03-09)", "supports": "eligibility (indexed + content policies), title and clickbait guidance, image specifications (1200 px wide, more than 300,000 pixels, 16x9), max-image-preview:large, og:image / schema.org image, no logos or text-heavy images, Follow feed, 16-month performance report"},
+    {"url": "https://support.google.com/websearch/answer/9982767", "title": "Discover content policies - Google Search Help", "supports": "Search feature policies apply; Discover-specific policies on Ads & sponsored content, Misleading content and Transparency; removal and manual actions"}
+   ],
+   "note": "No title length is published for Discover: the doc gives guidance only. Title rules (official doc): avoid clickbait that uses 'misleading or exaggerated details in preview content (title, snippets, or images)' or withholds crucial information; 'Use page titles and headlines that capture the essence of the content'; avoid sensationalism that caters to 'morbid curiosity, titillation, or outrage'. Image rules: large images need the max-image-preview:large setting (or AMP); name the image in schema.org markup or the og:image tag; 16x9 aspect ratio (Google may crop automatically); avoid a site logo or text-heavy image as the card image. Content can be older if still helpful; eligibility needs indexing plus the Discover content policies, which repeat the Google News rules on sponsored content, misleading previews and transparency (dates, bylines, author and publisher information, contact details). Violations can remove content from Discover and Discover surfaces such as Articles for you in Chrome."
+  },
+  {
+   "id": "plat:google_web_stories",
+   "name": "Google Web Stories (AMP stories on Google Search and Discover)",
+   "category": "Search & SEO",
+   "one_line": "Tappable full-screen AMP stories that appear as single results in Google Search and in the Discover feed; short titles, little text per page, short video, a 3:4 poster image and a square logo.",
+   "aliases": ["Web Story", "AMP story", "Google web story", "visual stories"],
+   "limits": [
+    {"field": "story title", "max": 90, "unit": "chars", "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices", "checked": "2026-10-13", "quote": "Keep titles shorter than 90 characters.", "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"},
+    {"field": "story title, recommended descriptive length", "max": 70, "unit": "chars", "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices", "checked": "2026-10-13", "quote": "We recommend using a descriptive title that is shorter than 70 characters.", "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"},
+    {"field": "text per page, content policy (majority of pages)", "max": 180, "unit": "chars", "url": "https://developers.google.com/search/docs/appearance/web-stories-content-policy", "checked": "2026-10-13", "quote": "Web Stories may not be eligible if the majority of pages have more than 180 characters of text.", "confidence": "high (official Web Story Content Policies, updated 2025-12-10)"},
+    {"field": "text per page, design best practice", "max": 280, "unit": "chars", "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices", "checked": "2026-10-13", "quote": "Consider reducing text to approximately 280 characters per page (the length of a tweet).", "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"},
+    {"field": "video per page, recommended", "max": 15, "unit": "seconds", "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices", "checked": "2026-10-13", "quote": "We recommend videos that are less than 15 seconds per page, or 60 seconds maximum.", "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"},
+    {"field": "video per page, maximum", "max": 60, "unit": "seconds", "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices", "checked": "2026-10-13", "quote": "We recommend videos that are less than 15 seconds per page, or 60 seconds maximum.", "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"},
+    {"field": "audio clip length", "min": 5, "unit": "seconds", "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices", "checked": "2026-10-13", "quote": "Use high-quality audio clips that are at least 5 seconds long", "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"},
+    {"field": "poster image (poster-portrait-src) width", "min": 640, "unit": "px", "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices", "checked": "2026-10-13", "quote": "at least 640x853px and use an aspect ratio of 3:4", "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"},
+    {"field": "poster image (poster-portrait-src) height", "min": 853, "unit": "px", "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices", "checked": "2026-10-13", "quote": "at least 640x853px and use an aspect ratio of 3:4", "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"},
+    {"field": "publisher logo (publisher-logo-src) width and height", "min": 96, "unit": "px", "url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices", "checked": "2026-10-13", "quote": "at least 96x96 px and aspect ratio of 1:1", "confidence": "high (official Google Search Central best practices, updated 2026-06-09)"}
+   ],
+   "sources": [
+    {"url": "https://developers.google.com/search/docs/appearance/web-stories-creation-best-practices", "title": "Best practices for creating Web Stories - Google Search Central (updated 2026-06-09)", "supports": "title length, text per page, video and audio length, poster and logo sizes, platform-specific CTAs, burned-in text, alt text, title attribute for video-only stories"},
+    {"url": "https://developers.google.com/search/docs/appearance/web-stories-content-policy", "title": "Web Story Content Policies on Google (updated 2025-12-10)", "supports": "180-character text-heavy rule, copyright, low-quality assets, narrative, incomplete stories, overly commercial stories and affiliate links"},
+    {"url": "https://developers.google.com/search/docs/appearance/enable-web-stories", "title": "Enable Web Stories on Google - Google Search Central (updated 2026-07-01)", "supports": "required metadata (publisher-logo-src, poster-portrait-src, title, publisher), valid AMP, canonical, indexing; Discover appearance most likely in the United States, India and Brazil"}
+   ],
+   "note": "Two Google text numbers disagree: the best-practice page suggests about 280 characters per page, while the content policy says a story may lose eligibility for richer Search experiences if most pages exceed 180 characters; write to 180. Page count: no number appears on the Google Search Central pages read today; a Google Creators guide quoted in search snippets (minimum 4 pages, ideally under 30) returned 404 or redirected to the Creators home page on 2026-10-13, so it is unverified and not a limit here. Required metadata on every story: publisher-logo-src, poster-portrait-src, title and publisher. Content policy: no copyrighted material without permission, no stretched or pixelated assets, a binding narrative from page to page, no story that needs a click to another site for essential information, no story whose sole goal is to advertise (affiliate links only as a minor part). Best practices: remove platform-specific calls to action (Instagram, Snapchat, YouTube) when repurposing, avoid burned-in text (and text in the poster image), add alt text, and for video-only stories put the exact on-screen text in the title attribute of the amp-video element."
+  }
+ ]
+}

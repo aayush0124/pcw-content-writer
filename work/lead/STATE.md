@@ -3,7 +3,7 @@
 Live numbers: `python pipeline.py status` (per stage) and `python work/lead/status.py` (per batch).
 
 ## Done
-- Harvest 851 items (23 files, 1450 cited sources) -> 851 cards in 10 kinds; `pcw.py validate` 0 issues.
+- Harvest 879 items (30 files, 1556 cited sources) -> 879 cards in 10 kinds; `pcw.py validate` 0 issues (2026-10-13 gap wave C added 28 compliance/platform cards).
 - Verify complete for genre, hook and framework cards: 411/411 judged, 409 pass, 1 weak (genre:interview_qa,
   test brief too thin), 0 wrong, 1 not_tested (hook:testimonial, no quote supplied). Six re-test rounds
   (gallery/retest_1..6.json); card fixes fix1..fix6 (backups *.pre-fix* are ignored by git).

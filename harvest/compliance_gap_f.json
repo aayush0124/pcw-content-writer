@@ -1,0 +1,57 @@
+{
+ "kind": "compliance",
+ "worker": "gap_c_commerce",
+ "as_of": "2026-10-13",
+ "source": "Gap wave C (2026-10-13): listing content rules of Indian commerce and property platforms that publish rules but no length limit, read today on the platform's own terms page or official spec repository (browser read of public pages, curl for GitHub and a regulator PDF); no login.",
+ "items": [
+  {
+   "id": "comp:ondc_listing_policy",
+   "name": "ONDC retail catalogue rules (item descriptor, statutory fields and attributes in the network's retail API spec)",
+   "category": "India",
+   "one_line": "On the ONDC network every retail item must carry a name, symbol image, short and long description and images, plus statutory packaged-commodity fields; the spec sets no length cap, so each buyer app decides how much shows.",
+   "aliases": [
+    "ONDC catalogue",
+    "ONDC item descriptor",
+    "ONDC on_search catalog",
+    "ONDC product listing"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/ONDC-Official/log-validation-utility/blob/master/schema/Retail_1.2.5/RET/on_search.ts",
+     "title": "ONDC-Official log-validation-utility: retail 1.2.5 on_search catalogue schema",
+     "supports": "required item descriptor fields (name, symbol, short_desc, long_desc, images), item code format, packaged-commodity and prepackaged-food statutory fields, no maxLength on text fields"
+    },
+    {
+     "url": "https://github.com/ONDC-Official/ONDC-RET-Specifications/blob/draft-1.x/api/components/notes/on_search/on_search_Grocery.yaml",
+     "title": "ONDC-RET-Specifications (draft-1.x): grocery catalogue notes",
+     "supports": "no placeholder images, veg / non_veg / egg enum, unit-of-measure enum, category-to-attribute mapping"
+    },
+    {
+     "url": "https://github.com/ONDC-Official/ONDC-RET-Specifications/blob/draft-1.x/api/components/notes/on_search/on_search_Fashion.yaml",
+     "title": "ONDC-RET-Specifications (draft-1.x): fashion catalogue notes",
+     "supports": "item attributes with valid values improve discoverability; suggestive colour enums"
+    }
+   ],
+   "note": "Status as read 2026-10-13: ONDC's retail catalogue rules are a technical spec, not a prose policy. Read today: the network's log-validation schema for retail core version 1.2.5 (master branch) and the draft-1.x retail spec notes on GitHub. No character, word or image-size limit is published there for item text: name, short_desc and long_desc are plain strings. Rules a catalogue writer must remember: (1) every item descriptor needs 'name', 'symbol', 'short_desc', 'long_desc', 'images' (validation schema required list), so a short and a long description are both mandatory. (2) Packaged goods carry a statutory block whose required fields are manufacturer or packer name and address, the common or generic name of the commodity, and month and year of manufacture, packing or import (validation schema); cross-reference comp:legal_metrology_packaged_commodities. (3) Prepackaged food has fields for nutritional info, additives, ingredients and FSSAI licence numbers (validation schema); cross-reference comp:fssai_labelling_display_2020. (4) Grocery notes: if no image is available, seller apps 'shouldn't send image (instead of sending placeholder image)'; veg or non-veg is an enum ('veg', 'non_veg', 'egg' for some categories). (5) Fashion notes: 'populating with valid values will enable better discoverability on buyer NPs' for item attributes such as colour, which use suggestive enums. (6) Item code, when given, is 'type:code' where 1 = EAN, 2 = ISBN, 3 = GTIN, 4 = HSN, 5 = others. Each buyer app renders the catalogue its own way; no public ONDC page states how much of short_desc or long_desc is shown. Cross-reference genre:marketplace_listing, genre:product_description, plat:flipkart_listing."
+  },
+  {
+   "id": "comp:housing_com_listing_policy",
+   "name": "Housing.com terms for listing properties (REP warranties: rights, RERA compliance, accurate location, specifications and price)",
+   "category": "India",
+   "one_line": "Anyone listing on Housing.com warrants that they have the rights to list, that the listing complies with RERA, and that location, specifications and price are current and accurate; Housing.com does not verify listings.",
+   "aliases": [
+    "Housing.com posting policy",
+    "Housing.com terms of use",
+    "Housing.com listing rules"
+   ],
+   "sources": [
+    {
+     "url": "https://housing.com/terms-of-use",
+     "title": "Housing.com Terms of Use: Representations and Warranties by REPs; disclaimers on completeness and authenticity of listings",
+     "supports": "rights to list, RERA 2016 compliance for listings and advertisements, accuracy of location, specifications and price, grant of rights to reuse listing details, platform does not verify content, buyers told to verify on the state RERA website"
+    }
+   ],
+   "note": "Status as read 2026-10-13: Housing.com Terms of Use page (no last-updated date shown on the page). No character, word or photo limit for listings is published on public pages (posting is behind login). Rules for a listing writer: (1) by listing, each REP (landlord, agent, developer or other service provider) warrants it has 'all rights to list the said properties' without infringing anyone's rights, including intellectual property, so use only owned or licensed photos and text. (2) REPs warrant they comply with the Real Estate (Regulation and Development) Act 2016 for 'the listings / advertisements they are posting on this platform': a project listing needs the RERA registration number and Authority website (see comp:rera_advertisement_rules). (3) REPs warrant that listed details 'are current, up-to-date and accurate, including the location, property specifications and price'. (4) Listing details may be used or shared by Housing.com on other websites and platforms, so write copy that stays true out of context. (5) Housing.com says it 'does not filter or verify' advertiser content and tells users to verify project details 'from the RERA website' of the state where the project is registered: give the registration number in the description so a buyer can check it. Cross-reference genre:real_estate_listing."
+  }
+ ]
+}

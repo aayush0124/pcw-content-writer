@@ -81,7 +81,18 @@ class Integrity(unittest.TestCase):
 
 class Golden(unittest.TestCase):
     CASES = [("aida", "framework", "fw:aida"), ("cold email to D2C founders", "genre", "genre:cold_email"),
-             ("curiosity gap", "hook", "hook:curiosity_gap"), ("influencer disclosure india", "compliance", "comp:asci_influencer")]
+             ("curiosity gap", "hook", "hook:curiosity_gap"), ("influencer disclosure india", "compliance", "comp:asci_influencer"),
+             # gap wave C (2026-10-13): at least one per critic gap
+             ("mutual fund advertisement", "compliance", "comp:sebi_amfi_mf_advertising"),
+             ("surrogate advertising", "compliance", "comp:surrogate_advertising_india"),
+             ("ayurvedic drug advertisement", "compliance", "comp:ayush_drug_advertisement_rule_170"),
+             ("e-commerce rules seller details country of origin", "compliance", "comp:consumer_protection_ecommerce_rules_2020"),
+             ("press council norms", "compliance", "comp:pci_norms_journalistic_conduct"),
+             ("web stories", "platform", "plat:google_web_stories"),
+             ("indiamart product listing", "platform", "plat:indiamart_listing"),
+             ("99acres property listing", "platform", "plat:99acres_listing"),
+             ("price reduction prior price EU", "compliance", "comp:eu_prior_price_rule"),
+             ("app store metadata apple", "compliance", "comp:apple_app_review_metadata")]
 
     def test_find_returns_the_known_card_first(self):
         for q, kind, want in self.CASES:

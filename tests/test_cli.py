@@ -117,6 +117,35 @@ class Check(unittest.TestCase):
         self.assertEqual(code, 1)
         self.assertIn("has no lintable limit matching --field", out)
 
+    def test_web_stories_page_text_limit(self):
+        """Gap wave C: Google's Web Story content policy: text-heavy pages are over 180 characters."""
+        lim = next(l for l in pcw.harvest()["plat:google_web_stories"]["limits"] if "content policy" in l["field"])
+        self.assertEqual((lim["max"], lim["unit"]), (180, "chars"))
+        self.assertTrue(lim.get("quote") and lim["url"].startswith("https://developers.google.com/"))
+        args = ("--platform", "plat:google_web_stories", "--field", "content policy")
+        code, out = cli("pcw.py", "check", self.draft("x" * 181), *args)
+        self.assertEqual(code, 1)
+        self.assertIn(f"[fail] plat:google_web_stories {lim['field']}: 181 chars > max 180", out)
+        self.assertEqual(cli("pcw.py", "check", self.draft("x" * 180), *args)[0], 0)
+
+    def test_indiamart_title_limits(self):
+        """Gap wave C: IndiaMART titles: under 70 characters (help article), ideally 5 words (approval guidelines)."""
+        args = ("--platform", "plat:indiamart_listing", "--field", "product title")
+        code, out = cli("pcw.py", "check", self.draft("Stainless Steel Pressure Cooker 5 Litre Induction Base"), *args)
+        self.assertEqual(code, 1)
+        self.assertIn("[fail] plat:indiamart_listing product title (ideal length): 8 words > max 5", out)
+        self.assertNotIn("chars > max 70", out)
+        code, out = cli("pcw.py", "check", self.draft(" ".join(["Steel"] * 12)), *args)
+        self.assertIn("[fail] plat:indiamart_listing product title: 71 chars > max 70", out)
+        self.assertEqual(cli("pcw.py", "check", self.draft("Steel Pressure Cooker 5 Litre"), *args)[0], 0)
+
+    def test_99acres_description_single_lintable_field(self):
+        """Gap wave C: the description cap (words) is the only lintable 99acres limit, so no --field is needed."""
+        code, out = cli("pcw.py", "check", self.draft(" ".join(["flat"] * 5001)), "--platform", "plat:99acres_listing")
+        self.assertEqual(code, 1)
+        self.assertIn("[fail] plat:99acres_listing property description: 5001 words > max 5000", out)
+        self.assertNotIn("pass --field", out)
+
     def test_genre_lint_and_ai_tells(self):
         code, out = cli("pcw.py", "check", self.draft("We delve into a tapestry of synergy."), "--genre", "genre:cold_email")
         self.assertIn("[warn] AI tell (AI vocabulary)", out)
