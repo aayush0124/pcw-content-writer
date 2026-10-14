@@ -470,12 +470,35 @@ def brief(request="", genre=None, platform=None, lang=None, tone=None):
 
 
 def _graphemes(text):
-    """Visible characters (extended grapheme clusters); code points when the `regex` module is missing."""
+    """Visible characters (extended grapheme clusters). Uses the `regex` module when installed, else a stdlib
+    segmenter that agrees with it on Latin, Indic (incl. virama conjuncts), emoji ZWJ sequences and CRLF."""
     try:
         import regex
         return len(regex.findall(r"\X", text))
-    except ImportError:  # ponytail: stdlib has no grapheme segmentation; code points overcount Devanagari
-        return len(text)
+    except ImportError:
+        return _graphemes_stdlib(text)
+
+
+_LINKER_VIRAMAS = "्্્୍్്"  # Devanagari, Bengali, Gujarati, Oriya, Telugu, Malayalam
+
+
+def _graphemes_stdlib(text):
+    # ponytail: approximates UAX #29 (marks, ZWJ, virama conjuncts, CRLF, regional-indicator pairs, emoji
+    # modifiers); install `regex` for the full rules
+    import unicodedata
+    n, prev, ri = 0, None, 0
+    for ch in text:
+        cat = unicodedata.category(ch)
+        joins = prev is not None and (
+            cat.startswith("M") or ch in "‌‍" or 0x1F3FB <= ord(ch) <= 0x1F3FF or ch in "︎️"
+            or (prev == "\r" and ch == "\n")
+            or (prev == "‍" and not unicodedata.category(ch).startswith("Z"))
+            or (prev in _LINKER_VIRAMAS and cat == "Lo")  # consonant + virama + consonant (GB9c, InCB=Linker)
+            or (0x1F1E6 <= ord(ch) <= 0x1F1FF and ri % 2 == 1))
+        ri = ri + 1 if 0x1F1E6 <= ord(ch) <= 0x1F1FF else 0
+        n += 0 if joins else 1
+        prev = ch
+    return n
 
 
 def _syllables(word):

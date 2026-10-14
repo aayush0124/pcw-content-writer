@@ -1,5 +1,5 @@
 """Every pcw.py subcommand, run as a user runs it: exit codes and output shape."""
-import json, shutil, tempfile, unittest
+import json, os, shutil, tempfile, unittest
 from pathlib import Path
 
 from helpers import HOME, cli, snapshot, tmp_home
@@ -193,7 +193,7 @@ class WritingCommands(unittest.TestCase):
         code, out = cli("pcw.py", "docs", home=self.home)
         self.assertEqual(code, 0)
         md = self.home / "PCW.md"
-        self.assertEqual(Path(out.strip()), md)
+        self.assertTrue(os.path.samefile(out.strip(), md), (out, md))  # Windows may print the 8.3 short path
         first = md.read_bytes()
         cli("pcw.py", "docs", home=self.home)
         self.assertEqual(md.read_bytes(), first)
