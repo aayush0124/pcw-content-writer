@@ -180,7 +180,7 @@
     "require": [
      {
       "label": "has a return or stay CTA",
-      "regex": "(?i)shop|reorder|re-order|order|buy|browse|see|explore|come back|stay|keep|subscribe|claim|use code|book|try|restart|renew|ऑर्डर|देखें"
+      "regex": "(?i)\\bshop|\\breorder|\\bre-order|\\border|\\bbuy|\\bbrowse|\\bsee|\\bexplore|\\bcome \\bback\\b|\\bstay|\\bkeep|\\bsubscribe|\\bclaim|\\buse code|\\bbook|\\btry|\\brestart|\\brenew|(?<![ऀ-ॿ])ऑर्डर|(?<![ऀ-ॿ])देखें"
      }
     ],
     "ban": [
@@ -863,7 +863,7 @@
     "require": [
      {
       "label": "first timestamp is 00:00",
-      "regex": "(?m)^\\s*0?0:00\\b"
+      "regex": "(?m)^[^\\S\\n]*0?0:00\\b"
      },
      {
       "label": "at least three timestamps",
@@ -1217,7 +1217,7 @@
     "ban": [
      {
       "label": "throat-clearing opener",
-      "regex": "(?im)^\\s*(hi|hey|hello) (guys|everyone|friends)"
+      "regex": "(?im)^[^\\S\\n]*(hi|hey|hello) (guys|everyone|friends)"
      }
     ]
    },

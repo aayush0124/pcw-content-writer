@@ -555,7 +555,7 @@
    "kind": "trend",
    "name": "Ads inside AI assistants (ChatGPT ads)",
    "status": "rising",
-   "summary": "OpenAI said in January 2026 it planned to test ads in the U.S., stating that ads do not influence ChatGPT's answers and are always separate and clearly labelled (Plus, Pro, Business and Enterprise stay ad-free), and TechCrunch reported the U.S. test reaching the Free and Go tiers in February 2026. It is a new ad surface where copy sits beside a conversation, not a results page. The evidence is U.S. only: check availability and formats for an Indian client before planning spend.",
+   "summary": "OpenAI began testing ads in ChatGPT in the U.S. in early 2026 (labelled, separate from the answer, which ads do not influence) and rolled them out in India in late August 2026 for signed-in Free and Go users; Plus, Pro, Business, Enterprise and Education stay ad-free (Business Today). It is a new ad surface where copy sits beside a conversation, not a results page. Self-serve buying and the excluded topics are reported, not read from OpenAI: confirm them in Ads Manager before planning spend.",
    "use_for": [
     "Drafting ad copy for conversational placements that must match the intent of the chat around them",
     "Testing a 'question answered, one benefit, one action' ad pattern alongside search and social ads",
@@ -564,7 +564,7 @@
    "avoid": [
     "Writing assistant ads like banner copy ('Best deals, buy now'): beside a helpful answer, hype reads as intrusive. Match the question's tone.",
     "Promising clients that ads will make the assistant recommend them: OpenAI states ads do not influence answers; visibility inside answers is earned by being useful and citable.",
-    "Planning India budgets on a U.S. test. Treat it as watch-and-prepare until the client's market is confirmed.",
+    "Planning an Indian client's budget on the reported terms (self-serve from 4 September 2026, Rs 725 minimum daily budget) without confirming them in the client's own Ads Manager account.",
     "Making claims you would not make in a search ad; platform ad policies still apply."
    ],
    "confidence": "medium",
@@ -573,6 +573,11 @@
      "url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
      "title": "OpenAI: Our approach to advertising and expanding access to ChatGPT",
      "supports": "ads test announcement and principles"
+    },
+    {
+     "url": "https://www.businesstoday.in/technology/artificial-intelligence/story/chatgpt-ads-arrive-in-india-as-openai-targets-free-go-users-in-major-revenue-push-ahead-of-ipo-551655-2026-08-27",
+     "title": "Business Today: ChatGPT ads arrive in India (27 Aug 2026)",
+     "supports": "India rollout to Free and Go users, ad-free tiers, self-serve Ads Manager and budget, exclusions"
     }
    ],
    "related": [
@@ -584,7 +589,7 @@
     "genre:social_ad_copy",
     "plat:google_ads_rsa"
    ],
-   "as_of": "2026-10-04",
+   "as_of": "2026-10-20",
    "evidence": [
     {
      "claim": "OpenAI: 'In the coming weeks, we're also planning to start testing ads in the U.S.'; 'Ads do not influence the answers ChatGPT gives you.'; 'Ads are always separate and clearly labeled.' Plus, Pro, Business and Enterprise stay ad-free.",
@@ -595,18 +600,24 @@
      "claim": "TechCrunch: ChatGPT rolls out ads (US test for Free and Go tiers).",
      "url": "https://www.techcrunch.com/2026/02/09/chatgpt-rolls-out-ads/",
      "date": "2026-02-09"
+    },
+    {
+     "claim": "Business Today: ChatGPT ads roll out in India to signed-in Free and Go users, labelled and below the answer; Plus, Pro, Business, Enterprise and Education stay ad-free; self-serve Ads Manager from 4 September with a minimum daily budget of Rs 725; no ads for minors or beside health, mental health or politics (reported).",
+     "url": "https://www.businesstoday.in/technology/artificial-intelligence/story/chatgpt-ads-arrive-in-india-as-openai-targets-free-go-users-in-major-revenue-push-ahead-of-ipo-551655-2026-08-27",
+     "date": "2026-08-27"
     }
    ],
    "do": [
     "Write the ad to answer the question the person was asking: if the chat is about 'which air purifier for a 150 sq ft Delhi bedroom', the ad names the model, the room size it covers and the price, with one plain CTA ('See room-size chart').",
     "Give each ad one concrete benefit with a number or a proof, and one next step; no more than that.",
     "Make the landing page continue the same conversation: first screen restates the answer and the offer in the same words.",
-    "Keep organic answer-ready content (FAQ, comparison, spec pages) as a separate workstream; do not brief it as an ad."
+    "Keep organic answer-ready content (FAQ, comparison, spec pages) as a separate workstream; do not brief it as an ad.",
+    "For an Indian client, write for the people who see the ads, signed-in Free and Go users (Go costs Rs 399 a month); the paid tiers never see them."
    ],
    "dont": [
     "Do not write ads that pretend to be part of the assistant's answer; ads are labelled and separate.",
     "Do not stack three benefits and two CTAs into a conversational slot.",
-    "Do not assume Indian availability or targeting from the U.S. announcement.",
+    "Do not plan ads for health, mental-health or political clients before checking the current policy: those topics are reported as excluded, and minors see no ads.",
     "Do not sell clients 'pay to be recommended by ChatGPT'."
    ],
    "half_life_months": 12

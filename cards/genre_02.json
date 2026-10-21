@@ -1033,7 +1033,7 @@
     "require": [
      {
       "label": "has contact or CTA",
-      "regex": "(?i)call|whatsapp|e-?mail|visit|contact|enquir|quote|\\+91|www\\.|संपर्क|सम्पर्क"
+      "regex": "(?i)\\bcall|\\bwhatsapp|\\be-?mail|\\bvisit\\b|\\bcontact|\\benquir|\\bquote|\\+91|\\bwww\\.|(?<![ऀ-ॿ])संपर्क|(?<![ऀ-ॿ])सम्पर्क"
      }
     ],
     "ban": [
@@ -1840,11 +1840,11 @@
     "require": [
      {
       "label": "labels each slide",
-      "regex": "(?im)^\\s*(slide|स्लाइड)\\s*\\d+"
+      "regex": "(?im)^[^\\S\\n]*(slide|स्लाइड)[^\\S\\n]*\\d+"
      },
      {
       "label": "ends with a CTA",
-      "regex": "(?i)save|share|comment|follow|\\bdm\\b|link in bio|सेव|शेयर|कमेंट|फॉलो"
+      "regex": "(?i)\\bsave|\\bshare\\b|\\bcomment|\\bfollow\\b|\\bdm\\b|\\blink in bio|(?<![ऀ-ॿ])सेव|(?<![ऀ-ॿ])शेयर|(?<![ऀ-ॿ])कमेंट|(?<![ऀ-ॿ])फॉलो"
      }
     ],
     "max_hashtags": 5
@@ -3122,7 +3122,7 @@
     "require": [
      {
       "label": "has one clear ask",
-      "regex": "(?i)\\?|reply|worth a|open to|interested|call|chat|मिल|बात"
+      "regex": "(?i)\\?|\\breply|\\bworth a|\\bopen to|\\binterested|\\bcall|\\bchat|(?<![ऀ-ॿ])मिल|(?<![ऀ-ॿ])बात"
      }
     ],
     "ban": [

@@ -470,7 +470,7 @@
     "require": [
      {
       "label": "has a print response path",
-      "regex": "(?i)call|scan|reply|return|visit|whatsapp|order|book|apply|send|कॉल|स्कैन"
+      "regex": "(?i)\\bcall|\\bscan|\\breply|\\breturn|\\bvisit\\b|\\bwhatsapp|\\border|\\bbook|\\bapply|\\bsend|(?<![ऀ-ॿ])कॉल|(?<![ऀ-ॿ])स्कैन"
      }
     ],
     "ban": [
@@ -960,14 +960,14 @@
     "require": [
      {
       "label": "has a next-step CTA",
-      "regex": "(?i)book|call|demo|consult|sign up|register|start|try|contact|whatsapp|बुक|संपर्क"
+      "regex": "(?i)\\bbook|\\bcall|\\bdemo|\\bconsult|\\bsign up|\\bregister|\\bstart|\\btry|\\bcontact|\\bwhatsapp|(?<![ऀ-ॿ])बुक|(?<![ऀ-ॿ])संपर्क"
      }
     ]
    },
    "exemplar_brief": "Gated ebook for a Jaipur CA firm: 'GST notices for D2C founders: 6 common notice types and how to respond to each', for founders of D2C brands doing Rs 5-50 crore revenue; English; 3,000-3,800 words across an introduction, 6 short chapters, a one-page checklist and a CTA chapter; goal: book a 20-minute GST health-check call.",
    "verified": {
     "verdict": "pass",
-    "score": 8,
+    "score": 9,
     "sample": "gallery/retest_1.json#genre:ebook_lead_magnet",
     "note": "ROUND 2: P2 S2 Sp2 V2 C1. Now complete at 3,119 words: a real-reader intro that says who it is not for, six chapters in one repeatable shape each with an artefact (reconciliation sheet, monthly three-way check, missing-returns tracker, 7-working-day plan, refund reply pack, DRC-06 skeleton), a one-page triage table plus 10 checks, one CTA chapter. Round 1's errors are fixed (88C/88D thresholds, Rule 59(6) and s.79, DRC-01 as the SCN summary, s.74A from FY 2024-25) and the interest sums check. Writer errors to fix before release: s.62(2) now gives 60 days (extendable by 60 with an added fee, Finance Act 2023), not 30, to file and have a best-judgment order withdrawn; revocation in REG-21 is within 90 days of the cancellation order (Rule 23 as amended in 2022), not 30; the Rs 5 crore e-invoicing threshold could be stated rather than tagged [verify]. | round 1: weak 6",
     "judge": "vj_retest_134",
@@ -1263,7 +1263,7 @@
     "require": [
      {
       "label": "subject line marked",
-      "regex": "(?im)^\\s*(subject( line)?|विषय)\\s*:"
+      "regex": "(?im)^[^\\S\\n]*(subject( line)?|विषय)[^\\S\\n]*:"
      }
     ],
     "ban": [
@@ -1905,7 +1905,7 @@
     "require": [
      {
       "label": "subject lines marked",
-      "regex": "(?im)^\\s*(subject( line)?|विषय)\\s*:"
+      "regex": "(?im)^[^\\S\\n]*(subject( line)?|विषय)[^\\S\\n]*:"
      },
      {
       "label": "unsubscribe line",
@@ -2520,14 +2520,14 @@
     "require": [
      {
       "label": "has a registration CTA",
-      "regex": "(?i)register|book|rsvp|ticket|sign up|join|reserve|apply|रजिस्टर|बुक"
+      "regex": "(?i)\\bregister|\\bbook|\\brsvp|\\bticket|\\bsign up|\\bjoin|\\breserve|\\bapply|(?<![ऀ-ॿ])रजिस्टर|(?<![ऀ-ॿ])बुक"
      }
     ]
    },
    "exemplar_brief": "Event page plus a 3-message WhatsApp reminder sequence for a Saturday-morning in-person workshop in Indore, 'File your own ITR in 3 hours', run by a local CA firm for salaried professionals aged 25-40; Rs 499 ticket, 40 seats, early-bird price until a stated date; English for the page, Hinglish for WhatsApp; page 350-550 words, reminders 40-80 words each; goal: buy a ticket and attend.",
    "verified": {
     "verdict": "pass",
-    "score": 9,
+    "score": 10,
     "sample": "gallery/retest_1.json#genre:event_promotion",
     "note": "ROUND 2: P2 S2 Sp2 V2 C2. Round 1's season error is fixed: Saturday 10 July 2027, before the 31 July due date, early bird to Saturday 26 June, reminder on Friday 9 July (weekdays all correct). Payoff headline, key facts up top, four benefit bullets, a time-boxed agenda ending in e-verification, one CTA worded the same each time, what happens after booking, an opt-in line, the never-share-your-OTP FAQ, and three natural Hinglish reminders (62-67 words) with the checklist, a login check, parking and a gate contact. Nits (writer): 'Rs 499 until 26 June, then [regular price]' reads the brief's Rs 499 as the early-bird price, which the brief leaves ambiguous; 'Seats sirf 40 hain, isliye samay par aaiye' is a non-sequitur. | round 1: weak 7",
     "judge": "vj_retest_134",
@@ -3123,7 +3123,7 @@
     "require": [
      {
       "label": "has a CTA",
-      "regex": "(?i)download|sign up|visit|apply|try|start|book|call|install|join|message|whatsapp|डाउनलोड|आवेदन|भेजें|कॉल"
+      "regex": "(?i)\\bdownload|\\bsign up|\\bvisit\\b|\\bapply|\\btry|\\bstart|\\bbook|\\bcall|\\binstall|\\bjoin|\\bmessage|\\bwhatsapp|(?<![ऀ-ॿ])डाउनलोड|(?<![ऀ-ॿ])आवेदन|(?<![ऀ-ॿ])भेजें|(?<![ऀ-ॿ])कॉल"
      }
     ]
    },

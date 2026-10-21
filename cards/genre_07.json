@@ -669,7 +669,7 @@
     "require": [
      {
       "label": "has an action CTA",
-      "regex": "(?i)start|book|get|join|register|sign ?up|download|buy|claim|try|apply|enrol|enroll|reserve|शुरू|बुक|रजिस्टर|जुड़ें"
+      "regex": "(?i)\\bstart|\\bbook|\\bget|\\bjoin|\\bregister|\\bsign ?up|\\bdownload|\\bbuy|\\bclaim|\\btry|\\bapply|\\benrol|\\benroll|\\breserve|(?<![ऀ-ॿ])शुरू|(?<![ऀ-ॿ])बुक|(?<![ऀ-ॿ])रजिस्टर|(?<![ऀ-ॿ])जुड़ें"
      }
     ],
     "ban": [
@@ -1026,7 +1026,7 @@
     "require": [
      {
       "label": "points to a next step",
-      "regex": "(?i)next|reply|book|join|start|call|dm|whatsapp|message|email|अगला|जुड़ें"
+      "regex": "(?i)\\bnext|\\breply|\\bbook|\\bjoin|\\bstart|\\bcall|\\bdm|\\bwhatsapp|\\bmessage|\\bemail|(?<![ऀ-ॿ])अगला|(?<![ऀ-ॿ])जुड़ें"
      }
     ],
     "ban": [
@@ -1664,7 +1664,9 @@
     "hook:audience_callout",
     "hook:specificity"
    ],
-   "platforms": [],
+   "platforms": [
+    "plat:linkedin_profile"
+   ],
    "tones": [
     "tone:conversational",
     "tone:authoritative",
@@ -1697,7 +1699,7 @@
     "require": [
      {
       "label": "has a contact line",
-      "regex": "(?i)email|\\bdm\\b|message|reach|contact|connect|call|whatsapp|@|book"
+      "regex": "(?i)\\bemail|\\bdm\\b|\\bmessage|\\breach|\\bcontact|\\bconnect|\\bcall|\\bwhatsapp|@|\\bbook"
      }
     ],
     "ban": [
@@ -1873,7 +1875,7 @@
     "require": [
      {
       "label": "has numbered items",
-      "regex": "(?im)^\\s*(#{1,4}\\s*)?(\\d{1,2}|[०-९]{1,2})[.):]"
+      "regex": "(?im)^[^\\S\\n]*(#{1,4}[^\\S\\n]*)?(\\d{1,2}|[०-९]{1,2})[.):]"
      }
     ],
     "ban": [
@@ -1883,7 +1885,7 @@
      },
      {
       "label": "empty item subhead",
-      "regex": "(?im)^\\s*#{0,4}\\s*(tip|item|reason|point) ?#?\\d+\\s*$"
+      "regex": "(?im)^[^\\S\\n]*#{0,4}[^\\S\\n]*(tip|item|reason|point) ?#?\\d+[^\\S\\n]*$"
      }
     ]
    },
@@ -2681,7 +2683,7 @@
     "require": [
      {
       "label": "has a contact CTA",
-      "regex": "(?i)call|book|whatsapp|visit|quote|enquire|contact|कॉल|बुक"
+      "regex": "(?i)\\bcall|\\bbook|\\bwhatsapp|\\bvisit\\b|\\bquote|\\benquire|\\bcontact|(?<![ऀ-ॿ])कॉल|(?<![ऀ-ॿ])बुक"
      }
     ],
     "ban": [

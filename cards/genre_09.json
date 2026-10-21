@@ -179,7 +179,7 @@
      },
      {
       "label": "'Submit' button",
-      "regex": "(?im)^\\s*\\[?submit\\]?\\s*$"
+      "regex": "(?im)^[^\\S\\n]*\\[?submit\\]?[^\\S\\n]*$"
      }
     ]
    },

@@ -986,7 +986,7 @@
    "exemplar_brief": "Blog post for a fictional Bengaluru HR-tech SaaS ('ShiftSathi') publishing anonymised data from 18,400 blue-collar job applications on its platform (January-June 2026): which cities, shifts and pay bands get roles filled fastest; audience: HR heads at logistics and retail companies; English (Indian); 1,200-1,600 words with a methodology box and 4 chart captions; goal: journalists and LinkedIn creators cite a stat and readers download the full report. DEMO DATA: the dataset and every figure are invented for this test assignment; use these figures and no others. Base: the 18,400 applications went to 2,240 roles; 1,980 were filled within 60 days and are the base for every time-to-fill median (days from posting to the employer marking the role filled). Metros = Mumbai, Delhi NCR, Bengaluru, Chennai, Hyderabad, Pune; 14 other cities = Tier-2. Findings: (1) Tier-2 roles filled in a median 6 days vs 11 in metros (n = 1,140 vs 840 roles). (2) Night-shift roles took a median 10 days vs 6 for day shifts, 4 days slower (n = 412 vs 1,568 roles). (3) The Rs 18,000-22,000 monthly pay band filled in a median 7 days vs 12 for the Rs 14,000-18,000 band, 5 days faster (n = 724 vs 802 roles). (4) 13,064 of the 18,400 applications (71%) came through the WhatsApp apply link; 5,336 (29%) used the web form. Limits: only roles posted on the platform; employers mark 'filled' themselves; January-June may be seasonal.",
    "verified": {
     "verdict": "pass",
-    "score": 9,
+    "score": 10,
     "sample": "gallery/retest_3.json#genre:research_article",
     "note": "ROUND 2: P2 S2 Sp2 V2 C2. Uses only the supplied demo figures and they reconcile (1,140 + 840 and 412 + 1,568 = 1,980 filled roles; 260 excluded; 71% = 13,064 of 18,400). A finding-and-number headline, a standfirst and four quotable bullets with bases, a methodology box near the top that states the 60-day cut and its bias, four finding subheads with chart captions, labelled interpretations with no causal claims, a 'what these numbers do not tell you' section, five implications tied to findings, cite and download. Nit (writer): the chart captions restate the subheads. | round 1: weak 7",
     "judge": "vj_retest_134",
@@ -1443,7 +1443,7 @@
    "exemplar_brief": "Resignation email from a senior accountant at a fictional Indore pharma distributor ('Malwa Medisupply') to her manager, copied to HR, leaving after 4 years for a role in Pune; notice period 60 days under her contract, asking for release after 45 days with a full handover of GST filings and vendor reconciliations; English (Indian); 120-200 words; goal: the manager agrees to the early release and the relationship stays warm.",
    "verified": {
     "verdict": "pass",
-    "score": 8,
+    "score": 9,
     "sample": "gallery/genre_11.json#genre:resignation_letter",
     "note": "P2 S2 Sp2 V2 C1. Subject in the card's format, resignation in sentence one, 60-day contract notice with exact dates that check out (6 Oct + 60 = 5 Dec 2026; + 45 = 20 Nov; 15 days), handover plan first and then the release request, buyout offer, relieving letter and F&F asked of HR, no new employer or pay named, ~190 words. Plan timing fits GST (GSTR-3B for October due 20 November). Nits: thanks sits after the handover rather than before; 'we will run the October filing together' then 'I will complete both for October myself' is muddled; 'I have learned a great deal here' is generic.",
     "judge": "vj_genre_11",
@@ -1595,7 +1595,7 @@
    "exemplar_brief": "Menu copy for a fictional 40-seat Lucknow-style kebab and biryani restaurant opening in Hyderabad's Jubilee Hills ('Nawabi Angeethi'): a 60-word story blurb, 4 section intros and descriptions for 14 dishes (6 veg, 8 non-veg) with veg/non-veg and spice marks; English, keeping the original Awadhi dish names; 450-650 words; goal: diners order the two signature galouti kebabs.",
    "verified": {
     "verdict": "pass",
-    "score": 8,
+    "score": 9,
     "sample": "gallery/genre_11.json#genre:restaurant_menu_copy",
     "note": "P2 S2 Sp2 V2 C1. 60-word blurb with a real angle (Lucknow kebabs in a biryani city), 4 section intros, 14 dishes = 6 veg + 8 non-veg as briefed, Awadhi names kept, each description <= 25 words naming ingredient and method, VEG/NON-VEG and spice on every item, both galoutis marked 'Our signature' and pushed first. Writer faults: allergen tags are inconsistent (Murgh Reshmi Tikka has cream and cashew but no dairy/nut tag; ghee galoutis untagged for dairy; wheat-thickened nihari untagged for gluten) while Dahi ke Kebab is tagged; 'melt on the tongue' used four times.",
     "judge": "vj_genre_11",
@@ -2282,7 +2282,7 @@
     "require": [
      {
       "label": "has an action",
-      "regex": "(?i)open|start|set up|connect|invite|create|send|try|reply|book|upgrade|add|import|finish"
+      "regex": "(?i)\\bopen|\\bstart|\\bset up|\\bconnect|\\binvite|\\bcreate|\\bsend|\\btry|\\breply|\\bbook|\\bupgrade|\\badd|\\bimport|\\bfinish"
      }
     ],
     "ban": [
@@ -2469,7 +2469,7 @@
    "exemplar_brief": "Outbound telecalling script in Hinglish (Roman script) for a fictional Lucknow rooftop-solar installer ('Roshni Rooftop Solar') calling homeowners who filled a Facebook lead form: opener, 4 discovery questions (monthly bill, roof type, ownership, timeline), a 40-word pitch, answers to 5 objections (too costly, subsidy doubts, roof leakage, 'will think about it', already have quotes) and a close for a free site-survey slot; 500-800 words; goal: survey booked with date and time.",
    "verified": {
     "verdict": "pass",
-    "score": 8,
+    "score": 9,
     "sample": "gallery/genre_11.json#genre:sales_call_script",
     "note": "P2 S2 Sp1 V2 C2. Honest opener with name, company and the Facebook form as reason plus a permission check and branches for later/no; four discovery questions in natural spoken Hinglish with listen-fors; a 42-word pitch that plays back the prospect's bill; five objections each acknowledge-ask-answer-question; two-slot close; voicemail and WhatsApp under 50 words; consent/DND check in the pre-call note. Weakness: the subsidy-doubt answer withholds the one public number that ends the doubt (PM Surya Ghar: Rs 30,000/kW for the first 2 kW, Rs 18,000 for the 3rd, capped at Rs 78,000, paid to the bank account). Slips: 'dekh len' -> 'dekh lein'; 'call karunga' assumes a male caller.",
     "judge": "vj_genre_11",
@@ -2651,7 +2651,7 @@
    "exemplar_brief": "12-slide first-meeting sales deck (headline, body text and speaker notes per slide) for a fictional Gurugram fleet-telematics SaaS ('RahiTrack') selling to logistics companies running 200-2,000 trucks; open with the shift (rising diesel and toll costs), not the company story; one case slide with numbers from a fictional client; end with a 30-day pilot ask; English (Indian); 900-1,400 words in total; goal: the operations head agrees to a pilot. DEMO DATA: all figures below are invented for this test assignment and are ILLUSTRATIVE; use them, labelled 'illustrative' on the slides that carry them (the no-invention rule does not stop you using them). Shift slide: fuel and tolls are about 60% of a long-haul truck's cost per km; a Rs 3 per litre diesel rise adds about Rs 4 crore a year to a 600-truck fleet (each truck burns 22,500 litres a year). Case slide, a fictional 600-truck Gujarat carrier, 90-day pilot on 120 trucks, before to after: idle time 3.4 to 2.3 hours per truck per day (down 32%); fuel 25.0 to 23.7 litres per 100 km (down 5.2%); late deliveries 18% to 11% of trips; a one-line quote attributed only to 'Operations head, fictional carrier'. Pilot ask: 30 days, 50 trucks, devices fitted in 3 days, go/no-go judged on idle time and fuel per 100 km.",
    "verified": {
     "verdict": "pass",
-    "score": 9,
+    "score": 10,
     "sample": "gallery/retest_4.json#genre:sales_deck",
     "note": "ROUND 2: P2 S2 Sp2 V2 C2. Twelve slides in the card's order, every headline a full-sentence takeaway, bodies under 40 words, the illustrative shift and case numbers used and labelled (22,500 L x Rs 3 = Rs 67,500 a truck, about Rs 4 crore for 600; idle down 32%, fuel down 5.2%, late trips 18% to 11%, base 120 of 600 trucks over 90 days), three capabilities each tied to one outcome, one company slide before the proof, a rollout with what the buyer provides, and a dated 50-truck pilot ask; the speaker notes are genuinely useful in a sales meeting. Nit (writer): slide 5's headline ('Good looks like ... all falling') is the weakest line. | round 1: weak 7",
     "judge": "vj_retest_134",
@@ -2834,7 +2834,7 @@
     "require": [
      {
       "label": "has calls to action",
-      "regex": "(?i)register|sign up|join|buy|enrol|enroll|get (instant )?access|book|claim|download|order|रजिस्टर|जुड़"
+      "regex": "(?i)\\bregister|\\bsign up|\\bjoin|\\bbuy|\\benrol|\\benroll|\\bget (instant )?access|\\bbook|\\bclaim|\\bdownload|\\border|(?<![ऀ-ॿ])रजिस्टर|(?<![ऀ-ॿ])जुड़"
      }
     ],
     "ban": [
@@ -3047,7 +3047,7 @@
     "require": [
      {
       "label": "has a buying call to action",
-      "regex": "(?i)buy|enrol|enroll|join|get (instant )?access|order|book|sign up|start|register|खरीद|जुड़"
+      "regex": "(?i)\\bbuy|\\benrol|\\benroll|\\bjoin|\\bget (instant )?access|\\border|\\bbook|\\bsign up|\\bstart|\\bregister|(?<![ऀ-ॿ])खरीद|(?<![ऀ-ॿ])जुड़"
      }
     ],
     "ban": [

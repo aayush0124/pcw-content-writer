@@ -78,8 +78,8 @@
     "Devanagari and emoji handling is not covered by the KDP pages in the harvest: unverified, check the form counter."
    ],
    "writing_notes": [
-    "Lint: `pcw.py check draft.txt --platform plat:amazon_kdp_book` tests the DESCRIPTION against 4,000 chars. Paste the description WITH its HTML tags so the tag cost is counted. For title+subtitle run `--field \"title + subtitle\"` on the two joined into one string (the example below is 106 chars joined; KDP does not say whether the separator counts, so keep a 5-character margin).",
-    "The lint cannot count keyword slots (for 'count' limits it counts hashtags). Count the seven keywords by hand and make them seven different phrases.",
+    "Lint: two fields, so pass --field (without --field nothing is enforced): `pcw.py check description.txt --platform plat:amazon_kdp_book --field \"book description\"` tests the description against 4,000 chars. Paste the description WITH its HTML tags so the tag cost is counted. For title+subtitle run `--field \"title + subtitle\"` on the two joined into one string (the example below is 106 chars joined; KDP does not say whether the separator counts, so keep a 5-character margin).",
+    "The lint cannot count keyword slots (it counts only hashtags, @mentions, links and emoji). Count the seven keywords by hand and make them seven different phrases.",
     "Order of work: fix the title and subtitle first, then choose keywords that the title does not already say, then write the description. Trust the official numbers (4,000 / fewer than 200 / seven); treat 60 characters as the readability target for the title.",
     "Description shape that works inside 4,000: a bold one-line promise, a short paragraph on the reader's problem, a 4-6 item list of what they get, a line on who it is for and who it is not, then one closing call to action. Aim for roughly 3,500 plain characters so tags and edits still fit.",
     "Example title/subtitle for a Jaipur CA's guide: title 'The GST Notice Playbook', subtitle 'How Indian D2C founders answer a show-cause notice in 7 days, with reply templates'."
@@ -160,7 +160,7 @@
     "Amazon.in limits were not verified separately: the Amazon blog read is the US one. Hindi or Hinglish in the title is unverified; keep the title in the language the marketplace and category use."
    ],
    "writing_notes": [
-    "Two title numbers, one sentence: 200 is the character limit, 60 is Amazon's recommendation. Write to 60 and treat 200 only as the point where the upload is rejected. The lint's default test (`--platform plat:amazon_product_listing`) is the 200 limit; for the 60 add `--field recommendation`.",
+    "Two title numbers, one sentence: 200 is the character limit, 60 is Amazon's recommendation. Write to 60 and treat 200 only as the point where the upload is rejected. The lint needs --field here (without --field nothing is enforced): `--field \"hard limit\"` tests the 200, `--field recommendation` the 60.",
     "Bullets: lint the explanation part only with `--field \"bullet point\"` (100 chars). Amazon's 100 applies to the explanation that follows the label. The bullet COUNT per category is not verified.",
     "Title example (\"Brew Rani Masala Chai 250g, Small-Batch Assam Tea with Cardamom and Ginger, Pune\" (80 chars)): too long to be the target; a version inside Amazon's 60 is 'Brew Rani Masala Chai 250g, Small-Batch Assam Tea' (49 chars). Everything dropped moves to bullets.",
     "Bullet example, label then explanation: 'SMALL BATCH: Whole cardamom and dry ginger, roasted in small batches in Pune, packed within 48 hours' (explanation = 87 chars, inside the 100 limit).",
@@ -305,7 +305,7 @@
     "How Apple counts Devanagari or emoji in the character fields is not stated on the pages read: unverified; test in App Store Connect."
    ],
    "writing_notes": [
-    "Lint: the default test is the description (4,000). Use `--field \"app name\"`, `--field subtitle`, `--field \"promotional text\"`, `--field keywords` (counted in UTF-8 bytes, matching Apple's unit), `--field \"what's new\"`, `--field \"purchase display\"`, `--field \"purchase description\"`.",
+    "Lint: eight fields, so pass --field (without --field nothing is enforced): `--field description` tests the 4,000 description alone. Use `--field \"app name\"`, `--field subtitle`, `--field \"promotional text\"`, `--field keywords` (counted in UTF-8 bytes, matching Apple's unit), `--field \"what's new\"`, `--field \"purchase display\"`, `--field \"purchase description\"`.",
     "Sources disagree on one word: Apple's product-page guide describes the keyword field as '100 characters', while App Store Connect Help (the field specification) says 100 bytes. Trust BYTES: it is the field spec, and it only matters for non-Latin text.",
     "The description's first sentence is what users read without tapping 'more': put the app's job and its user there (for example, who files GST returns on a phone in under 5 minutes). Features list comes after, short.",
     "Promotional text is the lever you can change fast: use it for a time-limited offer or an upcoming feature, not for permanent claims.",
@@ -383,7 +383,7 @@
     "Whether links, hashtags or mentions typed in a bio render as clickable is NOT established by the sources read (the lexicon page covers limits only): unverified, check the live profile."
    ],
    "writing_notes": [
-    "Lint: the default test is the bio at 256 chars; the lint counts Unicode code points, which are never fewer than graphemes, so a draft that passes the lint fits. A Hindi draft that fails by a small margin may still fit: confirm in the Bluesky editor before cutting. Display name: `--field \"display name\"`; pronouns: `--field pronouns`.",
+    "Lint: three fields, so pass --field (without --field nothing is enforced): `--field bio` tests the bio at 256. The lint counts visible characters (graphemes), Bluesky's own unit, and only warns when the code-point count alone is over. Display name: `--field \"display name\"`; pronouns: `--field pronouns`.",
     "Formula for 256: who you are (name/role/city) + what you post about + proof or a reason to follow + one line of personality. Example: \"Brand writer in Pune. I turn founder notes into LinkedIn posts that get replies. Open for 3 retainer slots.\" (107 chars).",
     "Lead with what a stranger scanning a follow list needs: topic first, title second.",
     "For a Hinglish creator profile, keep the first clause in the language of the posts the account will make, so the bio filters the right followers."
@@ -450,7 +450,8 @@
      "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json",
      "checked": "2026-10-04",
      "quote": "Additional hashtags, in addition to any included in post text and facets.\", \"maxLength\": 8",
-     "confidence": "high (official protocol lexicon)"
+     "confidence": "high (official protocol lexicon)",
+     "lint": false
     }
    ],
    "formatting": [
@@ -460,7 +461,7 @@
     "Line breaks: not covered by the lexicon pages read; preview a multi-line post before delivering."
    ],
    "writing_notes": [
-    "Lint: default test is 300 chars; the lint counts code points (never below graphemes), so a pass is safe. The bytes limit: `pcw.py check draft.txt --platform plat:bluesky_post --field bytes`. A Devanagari character is 3 bytes in UTF-8, so 300 graphemes of Hindi use at least 900 bytes and more once conjuncts add code points; the 3,000-byte cap bites only on conjunct-heavy or ZWJ-emoji-heavy text, so run the bytes check on every Hindi post.",
+    "Lint: `pcw.py check draft.txt --platform plat:bluesky_post` tests both post-text rows at once: 300 visible characters (graphemes, Bluesky's unit) and 3,000 UTF-8 bytes; `--field bytes` tests the bytes alone. A Devanagari character is 3 bytes in UTF-8, so 300 graphemes of Hindi use at least 900 bytes and more once conjuncts add code points; the 3,000-byte cap bites only on conjunct-heavy or ZWJ-emoji-heavy text, so run the bytes check on every Hindi post.",
     "Put the claim in the first line: readers meet the first sentence in a feed. Example (Hinglish, \"GST notice aaya? Pehle 3 cheezein check karo: notice ka section, reply ki last date, aur pichle 12 mahine ke returns. Baaki sab uske baad.\" (138 chars)).",
     "One post = one idea. A reply or a second post carries the next step; do not compress a thread into 300 characters.",
     "If a client wants the same copy on X, write a separate cut: do not assume the two limits are equal."
@@ -587,7 +588,7 @@
     "How Discord counts Devanagari or multi-part emoji toward 190 is not stated on the pages read: unverified, check the profile editor counter."
    ],
    "writing_notes": [
-    "Lint: default test is About Me at 190 chars; run `--field \"display name\"` or `--field username` for the others. Count the markdown symbols and the full link text: they are part of the 190.",
+    "Lint: three fields, so pass --field (without --field nothing is enforced): `--field \"About Me\"` tests 190 chars; run `--field \"display name\"` or `--field username` for the others. Count the markdown symbols and the full link text: they are part of the 190.",
     "Pattern: role + what you do for members + how to reach you. Example: \"Pune D2C ops nerd. Weekly GST + shipping tips in #ops-help. Replies in Hinglish, DMs open.\" (90 chars).",
     "Hinglish works in About Me when the server is Hinglish; match the server's language, not the brand's website."
    ]
@@ -678,7 +679,7 @@
     "How Devanagari and emoji count toward 2,000 is not stated on the pages read: unverified."
    ],
    "writing_notes": [
-    "Lint: default test is 2,000 chars; `--field Nitro` tests 4,000; `--field \"all embeds\"` tests 6,000 for the combined embed text.",
+    "Lint: pass --field (without --field nothing is enforced): `--field \"message content\"` tests the 2,000 (the looser Nitro row shares the name); `--field Nitro` tests 4,000 alone; `--field \"all embeds\"` tests 6,000 for the combined embed text.",
     "Structure for an announcement: bold first line with the fact and the time, then 2-4 short lines, then what the member must do. Example: \"**Maintenance tonight 11 PM-12 AM IST.** Orders placed in that hour sync at 12:15 AM. No action needed from you. Questions: reply in this thread.\" (145 chars).",
     "Write to 2,000 as the working ceiling unless the sender is confirmed on Nitro, and keep the important line in the first two lines so it survives a skim.",
     "For a mixed Hindi-English community, post the key line in the server's main language and put the second language in a reply, not the same wall."
@@ -781,7 +782,7 @@
     "Devanagari and emoji rendering in subjects is not covered by the sources read: unverified; test a real send to Gmail and Outlook."
    ],
    "writing_notes": [
-    "Lint: default test is the 60-character recommendation. `--field words` tests 9 words. The lint cannot count punctuation marks or emoji for 'count' fields (it counts hashtags), so check those two by hand.",
+    "Lint: five rows, so pass --field (without --field nothing is enforced): `--field \"subject line\"` tests the 60-character and the 9-word recommendations together; `--field punctuation` and `--field emoji` count those marks in the subject against their caps.",
     "Conflict handling: 60/9/3/1 are low-confidence ESP guidance; RFC 5322 is the only high-confidence limit. Write to 60 and 9 words as a house default, and let the client's own open-rate data overrule it.",
     "Write 5 subject variants with different angles (number, question, outcome, name, deadline) and pick one; do not stop at the first.",
     "Pair them: subject carries the hook, preview carries the proof or the next detail. Example subject \"3 GST notice replies we filed this week\" (39 chars) with preview \"Copy the template that cleared a Rs 4.2 lakh demand, no login needed.\" (69 chars).",
@@ -871,7 +872,7 @@
     "Whether Devanagari characters are accepted as 'letters' in tags is not stated in the pages read: unverified, test in the listing form."
    ],
    "writing_notes": [
-    "Lint: default test is the title at 140. Test each tag one per file with `--field \"per tag\"` (20 chars). The 13-tag count must be checked by hand.",
+    "Lint: two fields, so pass --field (without --field nothing is enforced): `--field title` tests the title at 140. Test each tag one per file with `--field \"per tag\"` (20 chars). The 13-tag count must be checked by hand.",
     "Title formula: the main search phrase first, then material, size or style, then the use or occasion. Example: \"Hand Block Printed Cotton Table Runner Jaipur Indigo Dabu Print 12x72 inch Dining Table Decor\" (93 chars).",
     "Tag formula: 13 different phrases, multi-word where possible, each up to 20 characters (13 x 20 = 260 characters of tag space), for example \"dabu print runner\" (17 chars).",
     "Write the description after the title and put the facts a buyer asks in DMs first: dimensions, material, colour accuracy, care, production time.",
@@ -1006,7 +1007,7 @@
     "Devanagari counting is not stated on the page read: unverified; check the counter in the campaign editor."
    ],
    "writing_notes": [
-    "Lint: default test is the headline (30). Use `--field description` for 90.",
+    "Lint: two fields, so pass --field (without --field nothing is enforced): `--field headline` for 30, `--field description` for 90.",
     "Write 5-6 headlines that each make one distinct claim (a feature, a user, a number, an action) and 3-4 descriptions that each pair a benefit with a reason to act. Example headline \"File GST Returns on Phone\" (25 chars); description \"Make GST bills in 2 taps, share on WhatsApp and track dues. Free to start.\" (74 chars).",
     "Test every pair by reading line A then line B then line B then line A: if either order breaks the sense, rewrite the second line.",
     "The headline names the job, the description handles the objection (free, offline, in Hindi). Hindi or Hinglish lines go in as their own standalone assets, not mixed inside an English line."
@@ -1058,6 +1059,7 @@
      "field": "sitelink link text",
      "max": 25,
      "unit": "chars",
+     "count": "double_width",
      "url": "https://support.google.com/google-ads/answer/2375416?hl=en",
      "checked": "2026-10-04",
      "quote": "Sitelink text is limited to 25 characters in most languages, or 12 characters in double-width languages like Chinese, Japanese, and Korean.",
@@ -1067,6 +1069,7 @@
      "field": "callout text",
      "max": 25,
      "unit": "chars",
+     "count": "double_width",
      "url": "https://support.google.com/google-ads/answer/6079510?hl=en",
      "checked": "2026-10-04",
      "quote": "Callout text is limited to 25 characters in most languages, or 12 characters in double-width languages (like Chinese, Japanese, and Korean).",
@@ -1089,7 +1092,7 @@
     "Devanagari is not named as a double-width language on the pages read, so 25 applies by the pages' own wording; combining-mark counting is unverified."
    ],
    "writing_notes": [
-    "Lint: default test is sitelink text (25); callout text uses the same 25: run `--field callout`.",
+    "Lint: two fields, so pass --field (without --field nothing is enforced): `--field sitelink` and `--field callout`, 25 each.",
     "Sitelinks: \"GST Notice Help\" (15 chars), \"Fees and Plans\" (14 chars), \"Book a Call\" (11 chars). Callouts: \"Fixed Fee\" (9 chars), \"CA-Drafted Replies\" (18 chars), \"Mon-Sat 10 AM-7 PM\" (18 chars).",
     "Each asset must stand alone because callouts and sitelinks are picked and ordered by Google.",
     "Write sitelinks and callouts after the headlines so they add new information instead of repeating."
@@ -1185,7 +1188,7 @@
     "Plain text assets paired with the image, carousel or video the campaign uses."
    ],
    "writing_notes": [
-    "Lint: default test is the headline at 40; `--field description` 90; `--field \"business name\"` 25. Remember the separate rule: at least one headline of 30 or fewer, which the lint does not test: check it by hand.",
+    "Lint: three fields, so pass --field (without --field nothing is enforced): `--field headline` 40; `--field description` 90; `--field \"business name\"` 25. Remember the separate rule: at least one headline of 30 or fewer, which the lint does not test: check it by hand.",
     "Write the 30-character headline first; then four longer ones up to 40. Example short \"Pune-roasted masala chai, 250g\" (30 chars), long \"Small-batch chai, delivered pan-India\" (37 chars).",
     "Description example \"Whole cardamom, dry ginger, small-batch roasting. Try the 250g starter pack.\" (76 chars); business name \"Brew Rani\" (9 chars).",
     "Feed attention is short: put the proof or the offer in the headline, and the next step in the description."
@@ -1316,7 +1319,7 @@
     "Same editorial policy as responsive search ads."
    ],
    "writing_notes": [
-    "Lint: default test is the headline (30). `--field \"long headline\"` tests 90; `--field description` 90; `--field \"business name\"` 25; `--field path` 15. The 15-character short-headline rule is not tested by the lint: check by hand.",
+    "Lint: five fields, so pass --field (without --field nothing is enforced): `--field headline` tests 30. `--field \"long headline\"` tests 90; `--field description` 90; `--field \"business name\"` 25; `--field path` 15. The 15-character short-headline rule is not tested by the lint: check by hand.",
     "Write in layers: at least one short headline of 15 or fewer ('Masala Chai', 11 chars), more headlines up to 30 until you reach Google's recommended 11 ('Small-Batch Pune Chai'), long headlines of 30-90 ('Small-batch masala chai roasted in Pune and delivered across India'), and descriptions up to 90 ('Whole cardamom and dry ginger, roasted in small batches. Order the 250g starter pack.').",
     "Every asset must stand alone and be safe in any combination.",
     "Each asset carries a different angle (product, proof, offer, audience, action): do not paraphrase the same line.",
@@ -1409,7 +1412,7 @@
     "Devanagari counting is not stated on the pages read: unverified."
    ],
    "writing_notes": [
-    "Lint: default test is the short headline (30). `--field \"long headline\"` tests 90. For the description (90) and business name (25) lint with `--platform plat:google_ads_pmax --field description` / `--field \"business name\"`, which carry the same limits.",
+    "Lint: two fields, so pass --field (without --field nothing is enforced): `--field \"short headline\"` tests 30. `--field \"long headline\"` tests 90. For the description (90) and business name (25) lint with `--platform plat:google_ads_pmax --field description` / `--field \"business name\"`, which carry the same limits.",
     "Examples: short \"Chai, Roasted in Pune\" (21 chars), long \"Small-batch masala chai with whole cardamom and ginger, delivered across India\" (78 chars), description \"Order the 250g starter pack today.\" (34 chars).",
     "Write the long headline first (it is the full message), then cut it into 3-5 short headlines each with one idea.",
     "Pair each text set with the image brief: the image shows the product, the headline gives the reason."
@@ -1468,6 +1471,7 @@
      "field": "headline",
      "max": 30,
      "unit": "chars",
+     "count": "double_width",
      "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
      "checked": "2026-10-04",
      "quote": "Headline 1 | 30 characters",
@@ -1477,6 +1481,7 @@
      "field": "description",
      "max": 90,
      "unit": "chars",
+     "count": "double_width",
      "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
      "checked": "2026-10-04",
      "quote": "Description 1 | 90 characters",
@@ -1486,6 +1491,7 @@
      "field": "display URL path (each of 2)",
      "max": 15,
      "unit": "chars",
+     "count": "double_width",
      "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
      "checked": "2026-10-04",
      "quote": "Path (2) | 15 characters each",
@@ -1526,7 +1532,7 @@
     "Combining-mark handling for Devanagari is not stated on the pages read: unverified; check the Google Ads counter."
    ],
    "writing_notes": [
-    "Lint: default test is the headline (30). `--field description` 90 and `--field path` 15 each. Test each line in its own file.",
+    "Lint: three fields, so pass --field (without --field nothing is enforced): `--field headline` tests 30. `--field description` 90 and `--field path` 15 each. Test each line in its own file.",
     "Example for a Jaipur CA firm (GST notice handling for D2C brands): headlines \"GST Notice? Reply in 7 Days\" (27 chars); \"CA-Drafted Reply, Fixed Fee\" (27 chars); \"Jaipur CA Firm for D2C Brands\" (29 chars). Description \"CAs read your notice, draft the reply and file it. Fixed fee quoted upfront. Book a call.\" (89 chars). Paths \"gst-notice\" (10 chars), \"jaipur\" (6 chars).",
     "Use the 15 slots for different angles: the service, who it is for, the fixed-fee model, the location, the proof and the call to action. Do not paraphrase one line fifteen times.",
     "Check the combinations: read headline 1 | headline 2 | headline 3 in several orders; each must be grammatical and not contradict itself."
@@ -1609,7 +1615,7 @@
     "Devanagari and emoji counting are not stated in the sources read: unverified."
    ],
    "writing_notes": [
-    "Lint: default test is the description (750, official). Post text: `--field post`: 1,500, low-confidence.",
+    "Lint: two fields, so pass --field (without --field nothing is enforced): `--field description` tests the 750 (official). Post text: `--field post`: 1,500, low-confidence.",
     "Conflict handling: trust 750 (a Google help page). Treat 1,500 as a loose ceiling.",
     "Description formula: who you are and where + what you do + who you serve + hours or how to reach you. Example: \"Sharma & Rao Associates is a chartered accountancy firm in C-Scheme, Jaipur. We handle GST registration, returns and notice replies, income tax filing and statutory audits for small businesses and D2C brands. Our team of CAs and article assistants works with clients across Rajasthan. Visit us Monday to Saturday, 10 AM to 7 PM, or call to book a consultation.\" (360 chars).",
     "State services in the words customers use, not in firm jargon. Put the offer or event in a post with a date, not in the description.",
@@ -1687,7 +1693,7 @@
     "Generative AI: use structured_title and structured_description instead of title and description."
    ],
    "writing_notes": [
-    "Lint: default test is the title (150). `--field description` tests 5,000.",
+    "Lint: two fields, so pass --field (without --field nothing is enforced): `--field title` tests 150. `--field description` tests 5,000.",
     "Two numbers in tension, one rule: the help page's best practice is to use the available 150 characters, but users usually notice only the first 70. Put identifying words (product type, key attribute) in the first 70 and spend the rest on variant details.",
     "Title example: \"Masala Chai Tea 250g, Small-Batch Assam Black Tea with Whole Cardamom and Dry Ginger, Loose Leaf Blend\" (102 chars). Note it has no price, no store name, no promo words, no caps for emphasis.",
     "Description example (plain text, facts first): \"Small-batch masala chai blend, 250g loose leaf. Assam black tea with whole green cardamom and dry ginger, roasted in Pune. Brew one level teaspoon per cup with hot milk and water. Store airtight, away from sunlight.\" (215 chars). State only what the client can prove from the product: ingredients, weight, brewing and care.",
@@ -1771,7 +1777,7 @@
     "Markup and emoji support are not covered by the page read: unverified."
    ],
    "writing_notes": [
-    "Lint: default test is the full description (4,000). `--field \"app name\"` 30; `--field short` 80.",
+    "Lint: three fields, so pass --field (without --field nothing is enforced): `--field \"full description\"` 4,000; `--field \"app name\"` 30; `--field short` 80.",
     "Short description example: \"Make GST bills in 2 taps and track unpaid dues. Built for Indian shopkeepers.\" (77 chars).",
     "Full description order: lead paragraph (job, user, one proof), feature list, languages and offline behaviour, support line.",
     "Write the Hindi listing natively from the same brief, not translated word for word; the limits are in characters (full-width and half-width alike)."
@@ -1860,7 +1866,7 @@
     "Devanagari width and truncation are not covered by the sources read: preview Hindi titles in a SERP tool."
    ],
    "writing_notes": [
-    "Lint: default test is the Moz 60-character title guidance; `--field \"meta description\"` tests 160. A pass means 'probably not truncated', not 'accepted'.",
+    "Lint: two fields, so pass --field (without --field nothing is enforced): `--field \"title tag\"` tests the Moz 60-character title guidance; `--field \"meta description\"` tests 160. A pass means 'probably not truncated', not 'accepted'.",
     "Conflict handling: Google says no limit, Moz says 60 and 160. Trust Google that truncation is by pixel width, and use Moz's numbers as a safe proxy, with the key words first.",
     "Title formula: primary phrase first, then the benefit or the format, then the brand. Example: \"GST Notice Reply Format: 7-Day Checklist | Sharma & Rao CA\" (58 chars).",
     "Meta description formula: answer the query, add one proof or a next step. Example: \"How to reply to a GST show-cause notice: the documents to gather, the portal steps and a reply template, written by Jaipur CAs.\" (127 chars).",
@@ -1926,7 +1932,7 @@
     "Line-break, emoji and Devanagari counting are not covered by the help page read: unverified."
    ],
    "writing_notes": [
-    "Lint: `pcw.py check bio.txt --platform plat:instagram_bio` tests 150 characters (code points); emoji counting on Instagram is unverified, so keep a margin of a few characters.",
+    "Lint: `pcw.py check bio.txt --platform plat:instagram_bio` tests 150 visible characters (an emoji or a Hindi conjunct counts once; the tool warns when the code-point count alone is over); emoji counting on Instagram is unverified, so keep a margin of a few characters.",
     "Formula: who it is for + what you offer + proof or place + next step. Examples: \"Pune ki small-batch masala chai. Ghar tak delivery, pan-India. Order link neeche.\" (81 chars) and \"Brand writer, Pune | Founder notes to LinkedIn posts | 3 retainer slots open | DM WRITE\" (87 chars).",
     "Say the CTA in words and point to the link slot ('link neeche').",
     "Hinglish works when the audience speaks it; keep brand names in Latin script."

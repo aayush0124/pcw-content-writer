@@ -9,7 +9,7 @@ Agent stages (harvest, cards, samples, judge, critic) need an LLM agent; `status
 one and they never run from CI. Every deterministic stage is idempotent. Paths follow pcw.py: this folder, or
 $PCW_HOME when set.
 """
-import json, os, platform, re, subprocess, sys, tempfile
+import os, platform, re, subprocess, sys, tempfile
 from collections import Counter
 from pathlib import Path
 
@@ -39,7 +39,8 @@ def _lead_script(name, *args):
     script = LEAD / name
     if not script.exists():
         return None
-    env = dict(os.environ, PCW_HOME=str(HERE), PYTHONPATH=str(HERE), PYTHONIOENCODING="utf-8")
+    # the data home's script, but this checkout's pcw.py when the home holds data only
+    env = dict(os.environ, PCW_HOME=str(HERE), PYTHONPATH=str(Path(__file__).resolve().parent), PYTHONIOENCODING="utf-8")
     r = subprocess.run([sys.executable, str(script), *map(str, args)], capture_output=True, text=True,
                        encoding="utf-8", env=env)
     return r.stdout if r.returncode == 0 else None
@@ -79,7 +80,7 @@ def _readme_fresh(rows):
 
 
 def status_rows():
-    pcw.harvest.cache_clear(); pcw.cards.cache_clear()
+    pcw.harvest.cache_clear(); pcw.cards.cache_clear(); pcw._card_terms.cache_clear()
     hv, cs = pcw.harvest(), pcw.cards()
     kinds = lambda xs: ", ".join(f"{k} {n}" for k, n in sorted(Counter(xs).items()))  # noqa: E731
     files = sorted((HERE / "harvest").glob("*.json"))
@@ -105,24 +106,27 @@ def status_rows():
         t = vt["TOTAL"]
         rows += [dict(stage="samples", state="ok" if t["samples"] >= t["cards"] else "attention",
                       numbers=f"{t['samples']}/{t['cards']} genre, hook and framework cards have a demo piece"),
-                 dict(stage="judge", state="ok" if t["judged"] >= t["cards"] and not t["wrong"] else "attention",
-                      numbers=f"{t['judged']}/{t['cards']} judged: pass {t['pass']}, weak {t['weak']}, wrong {t['wrong']}; "
-                              f"{t['fixed']} cards rewritten after judging")]
+                 dict(stage="judge", state="ok" if t["judged"] >= t["cards"] and not t["wrong"]
+                      and not t.get("untested") else "attention",
+                      numbers=f"{t['judged']}/{t['cards']} judged: pass {t['pass']}, weak {t['weak']}, wrong {t['wrong']}"
+                              f", not_tested {t.get('untested', 0)}; {t['fixed']} cards rewritten after judging")]
     else:
         rows += [dict(stage=s, state="attention", numbers="work/lead/status.py missing or failed") for s in ("samples", "judge")]
     rows.append(dict(stage="fixes", state="attention" if fx is None or fx else "ok",
                      numbers="work/lead/collect_fixes.py missing or failed" if fx is None
                      else f"{fx} cards with an open CARD FIX note"))
     crit = pcw._load(HERE / "cards" / "zz_critic.json") if (HERE / "cards" / "zz_critic.json").exists() else {}
-    gaps = [json.loads(l) for l in (HERE / "work" / "gaps.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()] \
-        if (HERE / "work" / "gaps.jsonl").exists() else []
+    gaps, bad = pcw.gaps()  # a bad line is reported, never a crash
     as_of = crit.get("as_of") or (crit.get("critic") or {}).get("date")  # old shape: as_of; current: critic.date
-    later = [g for g in gaps if str(g.get("date", "")) > str(as_of or "")]
+    seen = crit.get("gaps_seen")  # how many gap lines the critic read; without it, gaps dated after the critic's day
+    later = gaps[seen:] if isinstance(seen, int) and not isinstance(seen, bool) else \
+        [g for g in gaps if str(g.get("date", "")) > str(as_of or "")]
     n = lambda k: len(crit.get(k) or [])  # noqa: E731
-    rows.append(dict(stage="critic", state="ok" if as_of and not later else "attention",
-                     numbers=(f"zz_critic.json as of {as_of}: {n('gaps')} gaps, {n('weak_cards')} weak cards, "
-                              f"{n('doubtful')} doubts, {n('next_steps')} next steps; {len(later)} gaps logged since")
-                     if as_of else "no cards/zz_critic.json yet"))
+    rows.append(dict(stage="critic", state="ok" if as_of and not later and not bad else "attention",
+                     numbers=((f"zz_critic.json as of {as_of}: {n('gaps')} gaps, {n('weak_cards')} weak cards, "
+                               f"{n('doubtful')} doubts, {n('next_steps')} next steps; {len(later)} gaps logged since")
+                              if as_of else "no cards/zz_critic.json yet")
+                     + (f"; {len(bad)} unreadable lines in work/gaps.jsonl: {[i for i, _ in bad][:10]}" if bad else "")))
     for r in rows:
         r["kind"] = next(k for s, k, _ in STAGES if s == r["stage"])
     fresh = pcw.docs_fresh() and _readme_fresh(rows)
@@ -146,7 +150,11 @@ def status():
 
 def run(stage):
     if stage == "batches":
-        made = pcw.batches()
+        try:
+            made = pcw.batches()
+        except ValueError as e:
+            print(e)
+            return FAIL
         print("\n".join(made) or "every harvest item is already batched")
         return OK
     if stage == "validate":
@@ -208,9 +216,10 @@ def doctor():
                        "ok" if (LEAD / name).exists() else "attention"))
     try:
         import regex  # noqa: F401
-        checks.append(("regex module", "installed: visible-character counts for Devanagari and emoji", "ok"))
+        checks.append(("regex module", "installed: visible characters counted by full UAX #29", "ok"))
     except ImportError:
-        checks.append(("regex module", "not installed: char limits count code points (optional: pip install regex)", "ok"))
+        checks.append(("regex module", "not installed: visible characters counted by the stdlib segmenter (agrees on "
+                                       "Latin, Indic, emoji, Hangul; rarer scripts may differ; pip install regex)", "ok"))
     ram = free_ram_gb()
     checks.append(("free RAM", f"{ram:.1f} GB" if ram is not None else "unknown", "ok"))
     checks.append(("apps", "none needed: PCW is text-only, offline, standard library", "ok"))

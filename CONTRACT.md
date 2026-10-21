@@ -16,7 +16,9 @@ pipeline, adapted to text:
    `python pcw.py brief <id>` output, linted by `python pcw.py check`, then scored by a second, independent agent.
 5. **verify**: the score and verdict are written into the card; a weak or wrong verdict means the CARD is rewritten
    (the guidance failed), then the piece is rewritten and re-judged.
-6. **critic** (`cards/zz_critic.json`: gaps and next steps), then `PCW.md` (`python pcw.py docs`).
+6. **critic** (`cards/zz_critic.json`: gaps and next steps), then `PCW.md` (`python pcw.py docs`). The critic writes
+   `"gaps_seen": <number of work/gaps.jsonl lines it read>` at the top level, so `pipeline.py status` counts every gap
+   logged after it ran, the same day included (without the field, only gaps dated after `critic.date` count).
 
 "Training" here means a curated, verified knowledge base that the writing session reads before it writes. It is not
 model fine-tuning.
@@ -27,16 +29,16 @@ Every item has a global id `<prefix>:<slug>` (slug = lower-case ascii, digits, `
 
 | kind | prefix | what one item is | examples |
 |---|---|---|---|
-| `genre` | `genre:` | a deliverable someone commissions | `genre:cold_email`, `genre:vsl_script`, `genre:press_release`, `genre:reel_script` |
+| `genre` | `genre:` | a deliverable someone commissions | `genre:cold_email`, `genre:vsl_script`, `genre:press_release`, `genre:short_form_video_script` |
 | `framework` | `fw:` | a named structure for a whole piece or section | `fw:aida`, `fw:pas`, `fw:storybrand_sb7`, `fw:scqa`, `fw:inverted_pyramid` |
 | `technique` | `tech:` | a craft move at line, paragraph or piece level | `tech:open_loop`, `tech:specificity`, `tech:bucket_brigade`, `tech:risk_reversal` |
 | `hook` | `hook:` | a family of hooks / headlines / subject lines / titles | `hook:how_to`, `hook:contrarian`, `hook:number_list`, `hook:curiosity_gap` |
-| `platform` | `plat:` | one surface where text is published, with its limits | `plat:linkedin_post`, `plat:google_ads_rsa`, `plat:email_subject`, `plat:sms_india_dlt` |
-| `tone` | `tone:` | a voice / register | `tone:authoritative`, `tone:playful`, `tone:luxury`, `tone:satirical` |
-| `language` | `lang:` | a language or variety and its writing rules | `lang:hinglish`, `lang:hindi_devanagari`, `lang:indian_english`, `lang:us_english` |
-| `editing` | `edit:` | an editing pass, checklist or quality method | `edit:ai_tell_removal`, `edit:readability`, `edit:fact_check`, `edit:seo_on_page` |
-| `compliance` | `comp:` | a law, code or platform policy that published copy must obey | `comp:asci_influencer`, `comp:ftc_endorsements`, `comp:dpdp_act`, `comp:eci_mcc` |
-| `trend` | `trend:` | something current in 2026, with dated evidence | `trend:geo_ai_search`, `trend:founder_led_content` |
+| `platform` | `plat:` | one surface where text is published, with its limits | `plat:linkedin_post`, `plat:google_ads_rsa`, `plat:email_subject_line`, `plat:sms_india_dlt` |
+| `tone` | `tone:` | a voice / register | `tone:authoritative`, `tone:playful_witty`, `tone:luxury_premium`, `tone:satirical_vyangya` |
+| `language` | `lang:` | a language or variety and its writing rules | `lang:hinglish_roman`, `lang:hindi_devanagari`, `lang:indian_english`, `lang:us_english` |
+| `editing` | `edit:` | an editing pass, checklist or quality method | `edit:ai_tell_removal`, `edit:yoast_readability`, `edit:fact_check`, `edit:seo_on_page` |
+| `compliance` | `comp:` | a law, code or platform policy that published copy must obey | `comp:asci_influencer`, `comp:ftc_endorsement_guides`, `comp:dpdp_act_rules`, `comp:eci_mcc` |
+| `trend` | `trend:` | something current in 2026, with dated evidence | `trend:geo_ai_search`, `trend:thought_leadership_b2b` |
 
 Each item lives in exactly ONE kind. A thing that is both a genre and a platform (a LinkedIn post) is a genre
 (`genre:linkedin_post`: what to write) AND a platform (`plat:linkedin_post`: the limits); the two cards point at
@@ -77,6 +79,25 @@ Platform `limits[]` (every number needs its own source; a number from memory is 
  "quote": "the source's own words for the number (short)",
  "confidence": "high (official page) | medium (official but old / indirect) | low (third-party only)"}
 ```
+
+Two optional row keys tell `pcw.py check` how to read a row; set them only where the source says so, and copy them
+into the card unchanged (validate compares field, max, min, unit, visible, lint and count):
+- `"lint": false`: a row the checker must not measure on the draft, such as a URL weight (X counts any link as 23),
+  a count of buttons or of tags outside the text. It stays in the brief, checked by hand.
+- `"count"` (chars limits only): how the platform counts. `x_weighted` (X: NFC code points, CJK and emoji 2, a
+  link 23); `sms` (the message must fit ONE SMS in the encoding it needs: 160 GSM-7 septets, or 70 UTF-16 units
+  once any character is outside GSM-7); `sms_gsm7` / `sms_ucs2` (a single-SMS limit for that encoding only; a
+  `sms_gsm7` row also fails a message that needs UCS-2 when no UCS-2 row is selected); `sms_gsm7_segment` /
+  `sms_ucs2_segment` (the size of each part of a long SMS: reported, never failed); `code_points` (Unicode code
+  points, so a vowel sign or virama counts: Telegram's "UTF-8 length"); `double_width` (a double-width CJK character
+  counts 2: Google Ads); `double_width_emoji` (CJK and emoji count 2: Microsoft Advertising). Without it a chars
+  limit counts visible characters (grapheme clusters).
+
+Rows that share a field name before any `(...)` or `, ...` qualifier ("post text" and "post text (UTF-8 bytes)")
+measure the same text, and `check --platform` enforces them together without `--field`; a platform with several
+differently named text fields needs `--field` (without it, check warns that nothing was measured). A `--field` that
+fits several rows of one unit without naming one exactly (alternative surfaces such as "bio (non-Premium)" and
+"bio (Premium)") is a fail that asks for the full name.
 
 Trend `evidence[]`: a claim, the URL, and the date the source was PUBLISHED. A trend with no evidence dated within
 the last 12 months (since 2025-10-04) is not a trend; leave it out.

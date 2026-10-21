@@ -36,9 +36,11 @@ class Status(unittest.TestCase):
         self.assertTrue(self.rows["cards"][2].startswith(f"{len(cs)} cards"))
         tested = [c for c in cs if c["kind"] in ("genre", "hook", "framework")]
         v = Counter((c.get("verified") or {}).get("verdict") for c in tested)
-        judged = len(tested) - v[None]
-        self.assertIn(f"{judged}/{len(tested)} judged: pass {v['pass']}, weak {v['weak']}, wrong {v['wrong']}",
-                      self.rows["judge"][2])
+        judged = len(tested) - v[None] - v["not_tested"]  # a not_tested verdict is not a judgement
+        self.assertIn(f"{judged}/{len(tested)} judged: pass {v['pass']}, weak {v['weak']}, wrong {v['wrong']}, "
+                      f"not_tested {v['not_tested']};", self.rows["judge"][2])  # a not_tested card is not hidden
+        if v["not_tested"]:
+            self.assertEqual(self.rows["judge"][1], "attention")
         n_samples = 0
         for f in {c["_file"] for c in tested}:
             g = HOME / "gallery" / f

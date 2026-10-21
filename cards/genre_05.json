@@ -1729,7 +1729,7 @@
    "exemplar_brief": "Branching dialogue for one side quest in an Indian mobile adventure game set in 1990s Kolkata: the player, a bicycle courier, must persuade a tea-stall owner to give up a stolen letter; 2 decision points with 3 player choices each, 2 endings, 6 barks for the tea-stall owner (2 triggers x 3 variants); English with Bengali-flavoured Hinglish for the NPC; delivered as a node table (ID, speaker, line, condition, next); 600-1,000 words; every dialogue line under 120 characters.",
    "verified": {
     "verdict": "pass",
-    "score": 9,
+    "score": 10,
     "sample": "gallery/retest_1.json#genre:game_narrative",
     "note": "ROUND 2: P2 S2 Sp2 V2 C2. Round 1's faults are fixed: the trust table makes both decisions matter (Listen+Promise reaches END_A, Pay+Promise does not), the conditional ending lines fire only on reachable flags (EB_04 only after Listen+Shame), the arithmetic holds (Rs 340 - 100 = Rs 240), barks are 2 triggers x 3 variants with a cooldown, and every line is under 120 characters. Nitai's Bengali-flavoured Hinglish is distinct from the player's Hindi. Nits (writer): Nitai calls himself 'Nitai-da'; the END_B / END_B2 routing is written as a note rather than a node. | round 1: weak 7",
     "judge": "vj_retest_134",
@@ -2061,7 +2061,7 @@
     "ban": [
      {
       "label": "bare engagement close",
-      "regex": "(?im)^\\s*(agree|thoughts|right)\\?\\s*$"
+      "regex": "(?im)^[^\\S\\n]*(agree|thoughts|right)\\?[^\\S\\n]*$"
      },
      {
       "label": "announcement cliche",
@@ -3162,7 +3162,7 @@
     "require": [
      {
       "label": "has a CTA verb",
-      "regex": "(?i)(book|buy|shop|get|start|try|call|order|contact|schedule|join|download|explore|request|बुक|खरीद|संपर्क)"
+      "regex": "(?i)(\\bbook|\\bbuy|\\bshop|\\bget|\\bstart|\\btry|\\bcall|\\border|\\bcontact|\\bschedule|\\bjoin|\\bdownload|\\bexplore|\\brequest|(?<![ऀ-ॿ])बुक|(?<![ऀ-ॿ])खरीद|(?<![ऀ-ॿ])संपर्क)"
      }
     ],
     "ban": [

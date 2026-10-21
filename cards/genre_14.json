@@ -715,7 +715,7 @@
     "require": [
      {
       "label": "has numbered steps",
-      "regex": "(?m)^\\s*\\d+[.)]\\s"
+      "regex": "(?m)^[^\\S\\n]*\\d+[.)][^\\S\\n]"
      }
     ],
     "ban": [
@@ -904,7 +904,7 @@
      },
      {
       "label": "'Submit' as a bare button",
-      "regex": "(?im)^\\s*\\|?\\s*\\[?submit\\]?\\s*\\|?\\s*$"
+      "regex": "(?im)^[^\\S\\n]*\\|?[^\\S\\n]*\\[?submit\\]?[^\\S\\n]*\\|?[^\\S\\n]*$"
      }
     ]
    },
@@ -1620,7 +1620,7 @@
     "require": [
      {
       "label": "has a buying CTA",
-      "regex": "(?i)click|button|below|buy|enrol|enroll|join|apply|book|order|खरीद|क्लिक|जुड़"
+      "regex": "(?i)\\bclick|\\bbutton|\\bbelow|\\bbuy|\\benrol|\\benroll|\\bjoin|\\bapply|\\bbook|\\border|(?<![ऀ-ॿ])खरीद|(?<![ऀ-ॿ])क्लिक|(?<![ऀ-ॿ])जुड़"
      }
     ],
     "ban": [
@@ -1792,7 +1792,7 @@
     "require": [
      {
       "label": "has scene headings (INT./EXT.)",
-      "regex": "(?im)^\\s*(int|ext)\\b"
+      "regex": "(?im)^[^\\S\\n]*(int|ext)\\b"
      }
     ]
    },
@@ -2735,7 +2735,7 @@
     "require": [
      {
       "label": "subject lines marked",
-      "regex": "(?im)^\\s*\\**\\s*(subject( line)?|विषय)\\s*:"
+      "regex": "(?im)^[^\\S\\n]*\\**[^\\S\\n]*(subject( line)?|विषय)[^\\S\\n]*:"
      },
      {
       "label": "unsubscribe line",
@@ -3217,7 +3217,7 @@
     "require": [
      {
       "label": "ends with a sender line (- Name)",
-      "regex": "(?m)^\\s*(—|–|-|~)\\s*\\S"
+      "regex": "(?m)^[^\\S\\n]*(—|–|-|~)[^\\S\\n]*\\S"
      }
     ],
     "ban": [

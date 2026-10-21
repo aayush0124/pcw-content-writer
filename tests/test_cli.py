@@ -1,8 +1,8 @@
 """Every pcw.py subcommand, run as a user runs it: exit codes and output shape."""
-import json, os, shutil, tempfile, unittest
+import json, os, shutil, subprocess, sys, tempfile, unittest
 from pathlib import Path
 
-from helpers import HOME, cli, snapshot, tmp_home
+from helpers import HOME, cli, cli3, snapshot, tmp_home
 import pcw
 
 
@@ -27,16 +27,53 @@ class ReadOnlyCommands(unittest.TestCase):
 
     def test_brief_with_overrides(self):
         code, out = cli("pcw.py", "brief", "--genre", "genre:press_release", "--platform", "plat:linkedin_post",
-                        "--tone", "tone:authoritative", "--lang", "lang:hinglish")
+                        "--tone", "tone:authoritative", "--lang", "lang:hinglish_roman")
         self.assertEqual(code, 0)
         self.assertIn("(genre:press_release)", out.splitlines()[0])
-        self.assertIn("## Platform: ", out)
+        for section in ("## Platform: ", "## Tone: ", "## Language: "):
+            self.assertIn(section, out)
+        self.assertIn("- check: `pcw.py check draft.txt --platform plat:linkedin_post` enforces ['post text']", out)
         self.assertIn("## Lint (python pcw.py check draft.txt --genre genre:press_release)", out)
 
     def test_brief_no_match(self):
-        code, out = cli("pcw.py", "brief", "--genre", "genre:does_not_exist")
-        self.assertEqual(code, 0)
+        """A free-text request that matches nothing prints the hint and exits 1 (final pass 2026-10-20: a pipeline must
+        be able to tell that no brief was written); an explicit id that does not resolve (unknown, mistyped or of
+        another kind) is an error naming the flag, exit 1, and no brief."""
+        code, out = cli("pcw.py", "brief", "zzqx wvvq")
+        self.assertEqual(code, 1)
         self.assertIn("No genre card matches", out)
+        code, out, err = cli3("pcw.py", "brief", "--genre", "genre:does_not_exist")
+        self.assertEqual((code, out), (1, ""))
+        self.assertIn("--genre genre:does_not_exist: no genre card", err)
+        code, out, err = cli3("pcw.py", "brief", "--genre", "genre:cold_email", "--platform", "genre:linkedin_post",
+                              "--lang", "lang:hinglish", "--tone", "tone:playfull")
+        self.assertEqual(code, 1)
+        self.assertIn("--platform genre:linkedin_post: no platform card 'genre:linkedin_post': genre:linkedin_post is "
+                      "a genre card; did you mean plat:linkedin_post?", err)
+        self.assertIn("--lang lang:hinglish: no language card", err)
+        self.assertIn("--tone tone:playfull: no tone card", err)
+        self.assertEqual(cli3("pcw.py", "brief", "--genre", "tone:authoritative")[0], 1)  # a tone is not a genre
+
+    def test_brief_flags_are_parsed(self):
+        """--opt=value works, words around the flags join into the request; a typo'd or empty flag exits 2."""
+        code, out = cli("pcw.py", "brief", "cold", "--genre=genre:press_release", "email")
+        self.assertEqual(code, 0)
+        self.assertIn("(genre:press_release)", out.splitlines()[0])
+        for bad in (["--genr", "genre:cold_email"], ["--genre"], ["--genre", ""]):
+            self.assertEqual(cli3("pcw.py", "brief", *bad)[0], 2, bad)
+
+    def test_find_and_card_arguments(self):
+        self.assertEqual(cli3("pcw.py", "find")[0], 2)
+        self.assertEqual(cli3("pcw.py", "card")[0], 2)
+        code, out, err = cli3("pcw.py", "card", "genre:nope")
+        self.assertEqual((code, json.loads(out)), (1, None))
+        self.assertIn("no card 'genre:nope'", err)
+        for kind in ("framework", "fw:"):  # a kind name or an id prefix with its colon
+            out = cli("pcw.py", "find", "aida", kind)[1]
+            self.assertTrue(out.startswith("[fw:aida") and all(l.startswith("[fw:") for l in out.splitlines()), out)
+        self.assertTrue(cli("pcw.py", "find", "landing", "page", "saas")[1].startswith("[genre:"))  # no kind 'page'
+        self.assertEqual(cli3("pcw.py", "find", "aida", "fx:")[0], 2)  # an unknown id prefix
+        self.assertEqual(cli("pcw.py", "ids", "fw:", "aida")[1].split()[0], "fw:aida")
 
     def test_find(self):
         code, out = cli("pcw.py", "find", "aida", "framework")
@@ -108,8 +145,8 @@ class Check(unittest.TestCase):
         long = self.draft("x" * 100)
         code, out = cli("pcw.py", "check", long, "--platform", "plat:google_ads_rsa")
         self.assertEqual(code, 0)  # several fields and no --field: nothing enforced, the writer is told to pick one
-        self.assertIn("[info] plat:google_ads_rsa has", out)
-        self.assertIn("pass --field", out)
+        # final pass 2026-10-20: a warn, not an info line, so "OK: no fails" never stands alone as a pass
+        self.assertIn("[warn] plat:google_ads_rsa has 3 fields and nothing was measured: pass --field", out)
         code, out = cli("pcw.py", "check", long, "--platform", "plat:google_ads_rsa", "--field", "headline")
         self.assertEqual(code, 1)
         self.assertIn("[fail] plat:google_ads_rsa headline: 100 chars > max 30", out)
@@ -161,6 +198,137 @@ class Check(unittest.TestCase):
         code, out = cli("pcw.py", "check", "--platform", "plat:linkedin_post", stdin="Piped text works.")
         self.assertEqual(code, 0)
         self.assertIn("OK: no fails", out)
+        self.assertEqual(cli("pcw.py", "check", "-", "--platform", "plat:linkedin_post", stdin="Piped.")[0], 0)
+
+    def test_missing_or_unreadable_draft_is_a_usage_error(self):
+        """stress 2026-10-20: a draft path that is not a readable text file exits 2 at once. It never falls back to
+        stdin (an empty pipe used to lint '' and print OK; an open pipe hung) and never shares exit 1 with lint."""
+        for args in ([self.dir / "no_such_draft.txt"], [self.dir], [""]):
+            code, out, err = cli3("pcw.py", "check", *args, "--platform", "plat:linkedin_post", stdin="")
+            self.assertEqual(code, 2, (args, out, err))
+            self.assertNotIn("OK: no fails", out)
+        p = subprocess.Popen([sys.executable, str(HOME / "pcw.py"), "check", str(self.dir / "nope.txt")],
+                             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        try:  # stdin stays open, as in an agent's shell
+            code = p.wait(timeout=60)
+        finally:
+            if p.poll() is None:
+                p.kill()
+            for f in (p.stdin, p.stdout, p.stderr):
+                f.close()
+        self.assertEqual(code, 2)
+        bad = self.dir / "cp1252.txt"
+        bad.write_bytes("Launch day \x96 price \x80 5".encode("latin-1"))  # Notepad 'ANSI'
+        code, out, err = cli3("pcw.py", "check", bad)
+        self.assertEqual(code, 2)
+        self.assertIn("not UTF-8 text", err)
+        binary = self.dir / "x.bin"
+        binary.write_bytes(bytes(range(256)))
+        self.assertEqual(cli3("pcw.py", "check", binary)[0], 2)
+
+    def test_empty_draft_fails(self):
+        code, out = cli("pcw.py", "check", self.draft(" \n"), "--platform", "plat:linkedin_post")
+        self.assertEqual(code, 1)
+        self.assertIn("[fail] draft is empty", out)
+
+    def test_utf16_bom_and_crlf_drafts_count_like_utf8(self):
+        text = "Short post.\nReply if useful."
+        ref = cli("pcw.py", "check", self.draft(text), "--platform", "plat:linkedin_post")
+        u16 = self.dir / "ps51.txt"  # Windows PowerShell 5.1 `>` writes UTF-16LE with a BOM
+        u16.write_bytes(b"\xff\xfe" + text.replace("\n", "\r\n").encode("utf-16-le"))
+        self.assertEqual(cli("pcw.py", "check", u16, "--platform", "plat:linkedin_post"), ref)
+        crlf = self.dir / "crlf.txt"
+        crlf.write_bytes(text.replace("\n", "\r\n").encode("utf-8"))
+        self.assertEqual(cli("pcw.py", "check", crlf, "--platform", "plat:linkedin_post"), ref)
+
+    def test_piped_text_is_utf8_whatever_the_console_code_page(self):
+        """Piped bytes are decoded as UTF-8 (BOM stripped) even when Python's stdin encoding is cp1252."""
+        hindi = "नमस्ते दोस्तों, आज मुफ़्त डिलीवरी है।"
+        args = ("--platform", "plat:x_bio", "--field", "bio")
+        ref = cli("pcw.py", "check", self.draft(hindi), *args)
+        legacy = {"PYTHONIOENCODING": "cp1252", "PYTHONUTF8": "0"}
+        self.assertEqual(cli3("pcw.py", "check", *args, stdin=hindi.encode("utf-8"), env=legacy)[:2], ref)
+        code, out, _ = cli3("pcw.py", "check", *args, stdin=b"\xef\xbb\xbf" + b"y" * 160, env=legacy)
+        self.assertEqual(code, 0, out)
+        # repair 2026-10-20, as README says: piped legacy code-page bytes that are not valid UTF-8 are rejected
+        code, out, err = cli3("pcw.py", "check", *args, stdin="Launch day \x96 price \x80 5".encode("latin-1"))
+        self.assertEqual(code, 2, out)
+        self.assertIn("not UTF-8 text", err)
+
+    def test_flags_are_parsed(self):
+        """--opt=value works; a typo'd flag, a flag with no value, an empty value, a second draft and --field without
+        --platform exit 2 instead of silently checking nothing; a repeated flag keeps the last value."""
+        long = self.draft("x" * 3200)
+        self.assertEqual(cli("pcw.py", "check", long, "--platform", "plat:linkedin_post")[0], 1)
+        self.assertEqual(cli("pcw.py", "check", long, "--platform=plat:linkedin_post")[0], 1)
+        self.assertEqual(cli("pcw.py", "check", long, "--platform", "plat:x_bio", "--platform", "plat:linkedin_post")[0], 1)
+        other = self.dir / "other.txt"
+        other.write_text("ok", encoding="utf-8")
+        for bad in (["--platfrom", "plat:linkedin_post"], ["--platform"], ["--platform", ""], ["--genre", ""],
+                    [other, "--platform", "plat:linkedin_post"], ["--field", "post text"]):
+            code, out, err = cli3("pcw.py", "check", long, *bad)
+            self.assertEqual(code, 2, (bad, out, err))
+
+    def test_wrong_kind_ids_fail(self):
+        """A genre id (or a card name) given as --platform, or a platform id as --genre, is a fail, not a pass."""
+        long = self.draft("x" * 3200)
+        code, out = cli("pcw.py", "check", long, "--platform", "genre:linkedin_post")
+        self.assertEqual(code, 1)
+        self.assertIn("[fail] no platform card 'genre:linkedin_post': genre:linkedin_post is a genre card; did you "
+                      "mean plat:linkedin_post?", out)
+        self.assertEqual(cli("pcw.py", "check", long, "--platform", "LinkedIn post")[0], 1)
+        code, out = cli("pcw.py", "check", long, "--genre", "plat:x_bio")
+        self.assertIn("[fail] no genre card 'plat:x_bio': plat:x_bio is a platform card", out)
+
+    def test_exact_field_name_selects_that_limit(self):
+        """--field description is the App Store's 4,000-character description, not the 45-character in-app purchase
+        description it is a substring of; a substring still works when no field is named exactly."""
+        desc = self.draft("An offline notes app for students. " * 15)
+        args = ("--platform", "plat:apple_app_store")
+        self.assertEqual(cli("pcw.py", "check", desc, *args, "--field", "description")[0], 0)
+        code, out = cli("pcw.py", "check", desc, *args, "--field", "purchase description")
+        self.assertEqual(code, 1)
+        self.assertIn("in-app purchase description", out)
+        code, out = cli("pcw.py", "check", self.draft("x" * 100), "--platform", "plat:email_subject_line",
+                        "--field", "subject line")
+        self.assertIn("subject line (recommended): 100 chars > max 60", out)
+
+    def test_count_and_weight_rows_do_not_hide_the_text_limit(self):
+        """A URL weight (X counts a link as 23) and count rows are not separate fields: X, Instagram caption and
+        comment, Telegram ads are enforced without --field; X is counted the X way."""
+        code, out = cli("pcw.py", "check", self.draft("x" * 400), "--platform", "plat:x_post")
+        self.assertEqual(code, 1)
+        self.assertIn("[fail] plat:x_post post text: 400 X-weighted chars > max 280", out)
+        hindi = ("नमस्ते दोस्तों, आज की बात सुनिए। " * 12)[:300]  # 300 code points, 192 visible characters
+        self.assertEqual(cli("pcw.py", "check", self.draft(hindi), "--platform", "plat:x_post")[0], 1)
+        link = self.draft("x" * 250 + " https://example.com/" + "a" * 100)  # 250 + 1 + 23
+        self.assertEqual(cli("pcw.py", "check", link, "--platform", "plat:x_post")[0], 0)
+        code, out = cli("pcw.py", "check", self.draft("Short post."), "--platform", "plat:x_post", "--field", "URL")
+        self.assertIn("has no lintable limit matching --field 'URL'", out)
+        code, out = cli("pcw.py", "check", self.draft("x" * 2850), "--platform", "plat:instagram_caption")
+        self.assertIn("[fail] plat:instagram_caption caption: 2850 chars > max 2200", out)
+        code, out = cli("pcw.py", "check", self.draft(" ".join(f"@user{i}" for i in range(21))),
+                        "--platform", "plat:instagram_caption")
+        self.assertIn("[fail] plat:instagram_caption @ mentions per caption: 21 count > max 20", out)
+        code, out = cli("pcw.py", "check", self.draft("Spring launch " + "#tag " * 9), "--platform", "plat:bluesky_post",
+                        "--field", "tags")
+        self.assertNotIn("count > max 8", out)  # in-text hashtags are not Bluesky's 'extra tags'
+
+    def test_sms_counts_the_encoding(self):
+        """SMS: GSM-7 septets (extension characters cost 2) or, with any other character, UCS-2 UTF-16 units; one SMS
+        is 160 or 70, and the per-segment sizes (153 / 67) never fail a message that fits one SMS."""
+        dlt = ("--platform", "plat:sms_india_dlt", "--field", "message body")
+        offer = "Flat ₹200 off on your next Kaapi Kudi order above ₹999. Use code CHAI200 at checkout. Valid till 31 Oct. T&C apply. -KAAPIK"
+        code, out = cli("pcw.py", "check", self.draft(offer), *dlt)
+        self.assertEqual(code, 1)
+        self.assertIn("UCS-2 message, 123 UTF-16 units > max 70 for one SMS (2 segments)", out)
+        seg = ("--platform", "plat:sms_encoding_segments", "--field", "SMS")
+        self.assertEqual(cli("pcw.py", "check", self.draft("x" * 158), *seg)[0], 0)
+        self.assertEqual(cli("pcw.py", "check", self.draft("x" * 68 + "’"), *seg)[0], 0)  # 69 UCS-2 units
+        code, out = cli("pcw.py", "check", self.draft("x" * 156 + "€[]"), *seg)
+        self.assertIn("GSM-7 message, 162 septets > max 160", out)
+        code, out = cli("pcw.py", "check", self.draft("x" * 149 + "’"), *seg)
+        self.assertIn("UCS-2 message, 150 UTF-16 units > max 70", out)
 
 
 class WritingCommands(unittest.TestCase):

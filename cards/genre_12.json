@@ -156,7 +156,7 @@
     "require": [
      {
       "label": "has scene headings (INT./EXT.)",
-      "regex": "(?im)^\\s*(int|ext)\\b"
+      "regex": "(?im)^[^\\S\\n]*(int|ext)\\b"
      }
     ]
    },
@@ -858,7 +858,7 @@
      },
      {
       "label": "names a next step",
-      "regex": "(?i)next step|to proceed|approve|sign|confirm|kick-?off|book"
+      "regex": "(?i)\\bnext step|\\bto proceed|\\bapprove|\\bsign|\\bconfirm|\\bkick-?off|\\bbook"
      }
     ],
     "ban": [
@@ -1014,7 +1014,7 @@
    "exemplar_brief": "Four original do-line shers in Urdu-influenced Hindi (Devanagari, with Roman transliteration below each) for a Lucknow chikankari brand's Eid campaign on Instagram; audience: women 25-45 in Lucknow, Delhi and Hyderabad; theme: the hands that stitch; each sher in one consistent metre; brand name kept out of the shers and placed in a one-line caption after each.",
    "verified": {
     "verdict": "pass",
-    "score": 9,
+    "score": 10,
     "sample": "gallery/retest_4.json#genre:shayari",
     "note": "ROUND 2: P2 S2 Sp2 V2 C2. Mutaqarib (122 x 4) holds in all eight misras on a hand scan, with no overlong syllables to argue over, so round 1's metre fault is gone. The images are concrete and on theme: the gharara everyone sees and the labour no one does; a needle in the palm where henna should be on chaand raat; the festivity resting on her needle; a prayer for the woman awake till sahar. Nuqta correct, transliteration consistent, brand only in the captions. Nits (writer): 'चितेरी' means a painter, not a chikan embroiderer ('कारीगर' would be exact); 'सुई उस हथेली' drops its postposition. | round 1: weak 6",
     "judge": "vj_retest_134",
@@ -1166,7 +1166,7 @@
     "require": [
      {
       "label": "has scene headings (INT./EXT.)",
-      "regex": "(?im)^\\s*(int|ext)\\b"
+      "regex": "(?im)^[^\\S\\n]*(int|ext)\\b"
      }
     ]
    },
@@ -2693,7 +2693,7 @@
     "require": [
      {
       "label": "has numbered steps",
-      "regex": "(?im)^\\s*\\d+[\\.)]\\s"
+      "regex": "(?im)^[^\\S\\n]*\\d+[\\.)][^\\S\\n]"
      }
     ],
     "ban": [

@@ -14,6 +14,15 @@ CASES = {
     "\U0001F468‍\U0001F469‍\U0001F467 fam": 5, "\U0001F1EE\U0001F1F3\U0001F1FA\U0001F1F8": 2,
     "é café": 6, "தமிழ்": 3, "বাংলা ভাষা": 5, "ગુજરાતી": 4, "ਪੰਜਾਬੀ": 3, "ಕನ್ನಡ": 4,
     "മലയാളം": 4, "తెలుగు": 3, "اردو زبان": 9, "中文字": 3, "한국어": 3,
+    # stress 2026-10-20: tag-sequence flag, decomposed Hangul, Thai SARA AM, Prepend, virama + independent vowel,
+    # ZWJ between letters, controls before a mark, virama + ZWJ + consonant
+    "\U0001F3F4\U000E0067\U000E0062\U000E0065\U000E006E\U000E0067\U000E007F win": 5,
+    "\u1100\u1161\u11a8": 1, "\u0e01\u0e33": 1, "\u0d4e\u0d15": 1, "\u0915\u094d\u0905": 2,
+    "a\u200db": 2, "\r\u0301\n\u0301\t\u0301": 6, "\u0915\u094d\u200d\u0937": 1,
+    # repair 2026-10-20: ZWNJ after a virama ends the conjunct (GB9c's InCB=Extend has ZWJ, not ZWNJ), with or
+    # without a ZWJ beside it; a trailing ZWNJ still attaches
+    "\u0915\u094d\u200c\u0937": 2, "\u0915\u094d\u200c\u200d\u0937": 2, "\u0915\u094d\u200d\u200c\u0937": 2,
+    "\u0915\u094d\u0937\u200c": 1,
 }
 
 

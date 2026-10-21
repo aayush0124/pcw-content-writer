@@ -51,7 +51,8 @@
      "url": "https://docs.x.com/fundamentals/counting-characters",
      "checked": "2026-10-04",
      "quote": "Posts on X can contain up to 280 characters.",
-     "confidence": "high (X developer docs)"
+     "confidence": "high (X developer docs)",
+     "count": "x_weighted"
     },
     {
      "field": "URL (any length, counted as)",
@@ -60,7 +61,8 @@
      "url": "https://docs.x.com/fundamentals/counting-characters",
      "checked": "2026-10-04",
      "quote": "All URLs are wrapped with t.co shortener and count as 23 characters, regardless of the original length",
-     "confidence": "high (X developer docs)"
+     "confidence": "high (X developer docs)",
+     "lint": false
     }
    ],
    "sources": [
@@ -160,7 +162,8 @@
      "url": "https://github.com/bluesky-social/atproto/blob/main/lexicons/app/bsky/feed/post.json",
      "checked": "2026-10-04",
      "quote": "Additional hashtags, in addition to any included in post text and facets.\", \"maxLength\": 8",
-     "confidence": "high (official protocol lexicon)"
+     "confidence": "high (official protocol lexicon)",
+     "lint": false
     }
    ],
    "sources": [
@@ -237,7 +240,8 @@
      "url": "https://docs.joinmastodon.org/entities/Instance/",
      "checked": "2026-10-04",
      "quote": "\"characters_reserved_per_url\" : 23",
-     "confidence": "high (official Mastodon docs example)"
+     "confidence": "high (official Mastodon docs example)",
+     "lint": false
     },
     {
      "field": "media alt text (description)",
@@ -1085,11 +1089,11 @@
     },
     {
      "field": "items per carousel (Graph API publishing)",
-     "max": 10,
+     "max": 20,
      "unit": "count",
      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
-     "checked": "2026-10-04",
-     "quote": "Carousels can have up to 10 total images, vidoes, or a mix of the two.",
+     "checked": "2026-10-20",
+     "quote": "Carousels can have up to 20 total images, videos, or a mix of the two.",
      "confidence": "high (Meta developer reference)"
     }
    ],
@@ -1102,10 +1106,10 @@
     {
      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
      "title": "Instagram Platform: IG User Media reference",
-     "supports": "API carousels up to 10 items"
+     "supports": "API carousels up to 20 items (read 2026-10-20; 10 when first read on 2026-10-04)"
     }
    ],
-   "note": "CONFLICT by route: 20 when posted in the app, 10 when published through the Graph API (schedulers). One orientation applies to every slide. Caption limits are those of plat:instagram_caption; comments and likes apply to the whole post. In feed only the first slide shows, with dots below, so slide 1 carries the hook."
+   "note": "Same cap on both routes: 20 when posted in the app and 20 when published through the Graph API (schedulers); the API reference said 10 when first read on 2026-10-04 and 20 on 2026-10-20. One orientation applies to every slide. Caption limits are those of plat:instagram_caption; comments and likes apply to the whole post. In feed only the first slide shows, with dots below, so slide 1 carries the hook."
   },
   {
    "id": "plat:linkedin_post",
@@ -1310,7 +1314,8 @@
     {
      "field": "bio (non-Premium)",
      "max": 70,
-     "unit": "bytes",
+     "unit": "chars",
+     "count": "code_points",
      "url": "https://core.telegram.org/api/config",
      "checked": "2026-10-04",
      "quote": "about_length_limit_default The maximum UTF-8 length of bios of non- Premium users (integer); example config: \"about_length_limit_default\": 70",
@@ -1319,7 +1324,8 @@
     {
      "field": "bio (Premium)",
      "max": 140,
-     "unit": "bytes",
+     "unit": "chars",
+     "count": "code_points",
      "url": "https://core.telegram.org/api/config",
      "checked": "2026-10-04",
      "quote": "about_length_limit_premium The maximum UTF-8 length of bios of Premium users (integer); example config: \"about_length_limit_premium\": 140",
@@ -1331,9 +1337,14 @@
      "url": "https://core.telegram.org/api/config",
      "title": "Telegram API: Client configuration",
      "supports": "about_length_limit_default 70 / premium 140, measured as UTF-8 length"
+    },
+    {
+     "url": "https://github.com/tdlib/td/blob/master/tdutils/td/utils/utf8.h",
+     "title": "TDLib (Telegram Database Library): tdutils/td/utils/utf8.h",
+     "supports": "utf8_length returns the length of a UTF-8 string in characters: it counts the first byte of each code point, so the config's 'UTF-8 length' is a count of code points, not bytes"
     }
    ],
-   "note": "The docs define the limit as \"UTF-8 length\"; recorded as bytes. Devanagari is 3 bytes per character in UTF-8, so a Hindi bio may fit only about 23 characters if Telegram counts bytes; test in the app before relying on a Hindi bio. Channel and group descriptions are separate fields; no limit for them was read."
+   "note": "The docs define the limit as \"UTF-8 length\". TDLib's utf8_length counts characters (code points), and the same config page words the media caption limit the same way while the Bot API gives captions as 0-1024 characters, so it is recorded as chars counted in code points (corrected 2026-10-20; it was recorded as bytes). A Devanagari vowel sign or virama is a code point of its own; test in the app before relying on a bio at the limit. Channel and group descriptions are separate fields; no limit for them was read."
   },
   {
    "id": "plat:mastodon_bio",

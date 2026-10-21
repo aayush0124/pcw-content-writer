@@ -1043,7 +1043,7 @@
     "require": [
      {
       "label": "has a CTA",
-      "regex": "(?i)save|share|comment|\\bdm\\b|tag|link in bio|follow|order|book|visit|\\btry\\b|bata|bhej|karo|kijiye|dekho|कमेंट|शेयर|सेव|बताओ|बताइए|भेजो|करें|करो"
+      "regex": "(?i)\\bsave|\\bshare\\b|\\bcomment|\\bdm\\b|\\btag\\b|\\blink in bio|\\bfollow\\b|\\border|\\bbook|\\bvisit\\b|\\btry\\b|\\bbata|\\bbhej|\\bkaro|\\bkijiye|\\bdekho|(?<![ऀ-ॿ])कमेंट|(?<![ऀ-ॿ])शेयर|(?<![ऀ-ॿ])सेव|(?<![ऀ-ॿ])बताओ|(?<![ऀ-ॿ])बताइए|(?<![ऀ-ॿ])भेजो|(?<![ऀ-ॿ])करें|(?<![ऀ-ॿ])करो"
      }
     ],
     "ban": [
@@ -2276,7 +2276,7 @@
      },
      {
       "label": "states the ask",
-      "regex": "(?i)raising|\\braise\\b|the ask|seeking|funding|round|निवेश"
+      "regex": "(?i)\\braising|\\braise\\b|\\bthe ask|\\bseeking|\\bfunding|\\bround|(?<![ऀ-ॿ])निवेश"
      }
     ],
     "ban": [
@@ -2920,7 +2920,7 @@
    "exemplar_brief": "30-second radio jingle for a 40-year-old Varanasi sweet shop's Diwali gift boxes (Rs 499-1,999, free delivery within the city); audience: families across Varanasi; Hindi with a light Bhojpuri flavour; 40-70 sung words with a hook line of 6-8 syllables containing the shop's name, chorus sung 3 times, and an 8-10-second spoken insert for the price range (Rs 499 to Rs 1,999), free delivery within the city and the 10-digit phone number 98765 00000 (demo); syllable counts marked per line.",
    "verified": {
     "verdict": "pass",
-    "score": 9,
+    "score": 10,
     "sample": "gallery/retest_1.json#genre:jingle_lyrics",
     "note": "ROUND 2: P2 S2 Sp2 V2 C2. The hook 'CHA-lis BA-ras ka KA-shi BHOG' (8 syllables, scans) carries both differentiators round 1 missed, 40 years and Kashi, with the name on the stressed line end; 'Ghat pe diya' places it in Varanasi; Bhog/log rhymes in natural word order; 'Diwali ba, Kashi Bhog ba' is a light, real Bhojpuri touch; every line counted at 8; 49 sung words; price range, free city delivery and the phone number in a 9-second spoken insert; the timing sums to 30 s. Nit (writer): 'mithaas se jud jaayein sab log' is the one generic line. | round 1: weak 7",
     "judge": "vj_retest_134",

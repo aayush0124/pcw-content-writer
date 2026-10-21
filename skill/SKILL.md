@@ -24,9 +24,11 @@ Check the genre it picked (first line). If it is wrong, find the right one and p
 Find other ids with `pcw.py find "<words>" platform|tone|language|compliance|hook|framework`.
 Prefer cards whose verdict is `pass`; treat a `weak` card's note as a known gap.
 
-If no genre card fits, write from the nearest one and append one line to `$PCW_HOME/work/gaps.jsonl`:
+If no genre card fits (`brief` exits 1 with a `No genre card matches` line, or the pick is plainly wrong), write
+from the nearest one and append one line to `$PCW_HOME/work/gaps.jsonl`:
 `{"date": "<YYYY-MM-DD>", "kind": "genre", "gap": "<the request>", "source": "nearest <id>"}` (the critic turns gaps
-into new cards). Same for a missing platform limit, law or language rule (`"kind": "platform"` etc.).
+into new cards). Write it as UTF-8 JSON with double quotes (in Windows PowerShell 5.1 use
+`Add-Content -Encoding utf8`, not `>>`, which writes UTF-16); `pcw.py validate` reports a line it cannot read. Same for a missing platform limit, law or language rule (`"kind": "platform"` etc.).
 
 ## 2. Voice owner
 
@@ -39,7 +41,8 @@ into new cards). Same for a missing platform limit, law or language rule (`"kind
 
 A number, quote, claim or result enters the piece only from the user, a source you can cite, or the brief; anything
 else is a visible placeholder (`[stat: source needed]`). Health, finance, political, influencer/affiliate, AI-generated
-or comparative copy: read every `## Legal` checklist in the brief and the matching `comp:` cards before writing.
+or comparative copy: read every `## Legal` checklist in the brief, the cards its `## Legal: also check` list points
+to, and the matching `comp:` cards before writing.
 
 ## 4. Write
 
@@ -52,10 +55,14 @@ land inside it.
 1. Save the draft to a file and run
    `python "$PCW_HOME/pcw.py" check <draft.txt> --genre <id> [--platform <id>] [--field "<limit field>"]`.
    Fix every `[fail]`. Treat each `[warn]` (AI tells, dashes) as a fail unless the voice owner uses that pattern.
+   The AI-vocabulary list is sense-blind: a word meant in its domain sense ("foster parents", "seamless pipes") may
+   stay; say so in the deliver line.
    A platform with several fields (headline / description, subject / preheader, title / caption) is only enforced
-   per field: save each part in its own file and check it with `--field "<words from the limit's field name>"`
-   (the `[info]` line lists the fields). Limits the lint cannot measure (seconds, pixels, link weighting) are
-   checked by hand from the brief's Platform section.
+   per field (a bare check warns that nothing was measured): save each part in its own file and check it with
+   `--field "<the field's name>"` (the brief's `check:` line and the `[warn]` line list them; an exact name selects
+   that field, other words match by substring, and words that fit several alternative surfaces ask for the full name).
+   Limits the lint cannot measure (seconds, pixels, buttons) are checked by hand from the brief's Platform section.
+   Exit 2 means the draft was not read (a wrong path, a folder, not UTF-8 text): fix the call, not the draft.
 2. English drafts: a final pass for AI-writing tells (a humanizer skill if you have one; the method is the
    `edit:ai_tell_removal` card).
 3. Re-read the brief's checklist and answer every item yes, or fix the piece.

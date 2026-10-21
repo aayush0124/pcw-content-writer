@@ -3077,7 +3077,7 @@
     "require": [
      {
       "label": "has numbered steps",
-      "regex": "(?im)^\\s*(\\d+[.)]|step\\s*\\d)"
+      "regex": "(?im)^[^\\S\\n]*(\\d+[.)]|step[^\\S\\n]*\\d)"
      }
     ],
     "ban": [

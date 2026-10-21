@@ -66,8 +66,8 @@
    ],
    "formatting": "Line breaks render, so a blank line between beats works for phone reading [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04]. Links in a caption are not clickable [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04]. Hashtags are tappable and open a page of posts with that tag (Instagram Help, 'How do I use hashtags?', seen in a search result 2026-10-05); @mention tappability in captions stays [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04]. No native bold or italic in captions [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04]. Emoji are allowed; no source read says how emoji or Devanagari characters are counted toward the 2,200, so leave a margin.",
    "writing_notes": [
-    "Binding limits (Meta developer reference): 2,200 characters including spaces, and 20 @ tags per caption. `pcw.py check --platform plat:instagram_caption` tests the draft against the 2,200 only.",
-    "The 20 @ tags limit is a count unit, and `pcw.py check --field \"@ mentions\"` counts hashtags, not @ tags (the tool maps every count limit to the hashtag count). Count @ tags by eye.",
+    "Binding limits (Meta developer reference): 2,200 characters including spaces, and 20 @ tags per caption. `pcw.py check --platform plat:instagram_caption` tests both: the 2,200 characters and the 20 @ tags.",
+    "The 20 @ tags limit is counted on the draft: the tool counts @handles (`--field mention` tests that row alone).",
     "Where the hook lands: no official figure for where the feed folds a long caption behind 'more' was found, so none is recorded here and none from a blog should be trusted. Write line 1 as a complete sentence that names the subject and the payoff and still works if it is the only line shown.",
     "Hashtags: write to 5 at most, placed after the last line of copy, chosen as topic + audience + place (for example #GSTIndia #D2CFounders #Jaipur). Do not move the overflow into the first comment: the Help Center says a comment with more than 5 tags will not post (plat:instagram_comment).",
     "Discovery leans on words, not tags (trend:hashtags_to_keywords): put the phrase a person would type, such as 'GST notice ka reply kaise karein', in line 1 and repeat it in the on-screen text or on slide 1.",
@@ -95,7 +95,7 @@
    "kind": "platform",
    "name": "Instagram carousel post",
    "status": "current",
-   "summary": "One feed post holding several photos and videos people swipe through, with one caption and one comment thread for the whole post. The limit depends on the route: 20 items in the app, 10 through the Graph API (schedulers). Slide 1 is the only slide shown in the feed.",
+   "summary": "One feed post holding several photos and videos people swipe through, with one caption and one comment thread for the whole post. Both routes allow 20 items: the app, and the Graph API that schedulers use. Slide 1 is the only slide shown in the feed.",
    "use_for": [
     "Teach-in-slides posts: a step-by-step explainer, a checklist, a myth-versus-fact set",
     "Case-study or before/after sequences for a brand or service business",
@@ -104,7 +104,7 @@
    ],
    "avoid": [
     "Filling 20 slides because the app allows it. The limit is a ceiling; cut any slide that does not change what the reader knows.",
-    "Planning 15 slides for a client who publishes through a scheduler. Through the Graph API the cap is 10; ask which route the client uses before you plan the count.",
+    "Planning more slides than the client's publishing tool takes: the app and the Graph API both allow 20 (Meta reference, read 2026-10-20), but ask which route the client uses and confirm a scheduler's own cap before you plan the count.",
     "A weak slide 1. It is the only slide that appears in the feed, so a title card with no promise wastes the post.",
     "Mixing orientations. One orientation applies to every slide.",
     "Cropping article paragraphs onto slides. Rewrite for the format; Instagram deprioritises re-posted material (trend:original_content_ranking)."
@@ -119,7 +119,7 @@
     {
      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
      "title": "Instagram Platform: IG User Media reference",
-     "supports": "API carousels up to 10 items"
+     "supports": "API carousels up to 20 items (read 2026-10-20; 10 when first read on 2026-10-04)"
     }
    ],
    "related": [
@@ -144,18 +144,18 @@
     },
     {
      "field": "items per carousel (Graph API publishing)",
-     "max": 10,
+     "max": 20,
      "unit": "count",
      "url": "https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media",
-     "checked": "2026-10-04",
-     "quote": "Carousels can have up to 10 total images, vidoes, or a mix of the two.",
+     "checked": "2026-10-20",
+     "quote": "Carousels can have up to 20 total images, videos, or a mix of the two.",
      "confidence": "high (Meta developer reference)"
     }
    ],
    "formatting": "One caption and one comment thread cover the whole post (Instagram Help). One orientation applies to every slide (harvest note). In the feed only the first slide shows, with dots below. Caption formatting and limits are those of plat:instagram_caption (line breaks render [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04]; links in captions not clickable [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04]). Slide text is part of the image or video, so it does not count toward any character limit, and the platform cannot search it as caption text [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04].",
    "writing_notes": [
-    "Which number: 20 per carousel posted in the app, 10 per carousel published through the Graph API (Meta reference). When the route is unknown, plan for 10.",
-    "`pcw.py check` is not meaningful for this card: its first limit is a count, and the tool applies every count limit to the hashtag count. Check the caption against plat:instagram_caption and count slides by hand.",
+    "Which number: 20 per carousel, both in the app and through the Graph API (Meta reference read 2026-10-20; it said 10 when first read on 2026-10-04). If the client publishes through a scheduler, confirm the tool's own cap.",
+    "`pcw.py check` cannot count slides (they are images, not draft text), so it tests nothing on this card. Check the caption against plat:instagram_caption and count slides by hand.",
     "Slide 1 is the hook: one promise in large type, the audience named, the keyword they would search. Example: 'GST notice aaya? 5 steps before you reply'.",
     "One idea per slide, 12-25 words on screen as a drafting default (not a platform rule), written for a phone held at arm's length. Hinglish headlines are fine; keep the same script on every slide.",
     "Last slide: one action only (save this, send it to your CA, DM the word 'GST'). Do not stack follow, like, share and link.",
@@ -225,7 +225,7 @@
    "formatting": "Plain text with @mentions (max 5) and hashtags. Repeated identical comments are rejected, including repeated emoji. Instagram filters certain words and phrases. No character limit for a comment is recorded on this card (none was harvested); keep replies short regardless. Whether links in comments are clickable is [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04].",
    "writing_notes": [
     "Which hashtag number to trust: the comment-error page (help.instagram.com/161863397286564) still says 30; the hashtag page (help.instagram.com/351460621611097) says 5 and that a comment with more will not post. Write to 5, because the cost of the wrong guess is a comment that silently fails.",
-    "`pcw.py check` tests the first limit (5) against the hashtag count, so it effectively checks the hashtag rule here; it does not count @mentions, so count those by eye.",
+    "`pcw.py check --platform plat:instagram_comment` counts both rows on the comment: @mentions against 5 and hashtags against 30 (`--field mention` or `--field hashtag` tests one). The 30 is looser than the 5 hashtags to write to: test the 5 by running `--platform plat:instagram_hashtags` on the same file.",
     "Reply pattern: answer in sentence 1, name the person or the point they raised, add one concrete next step, stop. Match the commenter's script: Hinglish in Roman for Hinglish comments, Devanagari for Devanagari.",
     "First comment is for what the caption cannot hold: a source line, credits ('Shot by @name'), a pinned FAQ answer. It is not a second caption and not a hashtag dump.",
     "Complaints: one public line that acknowledges and names the next step ('Sorry about this, Riya. Check your DMs, we have your order number'), then take details to DM. Never post personal details in a public reply.",
@@ -404,7 +404,7 @@
    "formatting": "Intro text, headline and description are separate fields with visible-length guides (LinkedIn Marketing Solutions Help). Emojis allowed, maximum 10 in the intro, and they count toward characters. URLs longer than 23 characters in the intro are converted to a short link. Description shows only when the image is under 200 px wide or on the LinkedIn Audience Network. Carousel: 2-10 cards; card headlines truncate after two lines. No source read on line breaks, bold or hashtags in ad intro text [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04].",
    "writing_notes": [
     "Which number to trust: the 'visible' figures (150 intro, 70 headline, 100 description) are what readers see without truncation; the maximums (3,000, 200, 300) are only what the system accepts. Write to the visible figure.",
-    "`pcw.py check` tests the first limit (intro, 3,000 chars) by default, which is not the working target. Run `--field headline` (or `--field description`, `--field \"introductory text\"`) on a file holding only that field, and read the 'visible before truncation' line it prints; the fail line fires at the maximum, so the real test is whether the 70 or 150 visible characters stand alone.",
+    "`pcw.py check` enforces nothing here without --field (five rows). Run `--field headline` (or `--field description`, or `--field \"introductory text (single image)\"`: a bare `--field \"introductory text\"` also matches the carousel row and asks you to name one) on a file holding only that field, and read the 'visible before truncation' line it prints; the fail line fires at the maximum, so the real test is whether the 70 or 150 visible characters stand alone.",
     "Intro: the first 150 characters (spaces, emoji and punctuation included) carry the hook and the offer. Example: 'Notice from the GST department? Our CAs reply within 48 hours. Free 15-minute review.' (85 chars).",
     "Headline (70 visible): the outcome or the offer as a noun phrase, no clever wordplay. Example: 'GST notice replies by practising CAs' (36 chars).",
     "Description (100 visible) is a bonus line: proof or a qualifier, never the only place a key fact appears.",
@@ -479,7 +479,7 @@
    "formatting": "Confirmed against LinkedIn Help (a522427, read 2026-10-05): you can change the style, bold or italicise text, add ordered or unordered lists, blockquotes and a divider; add images or video, add links, embed content (a LinkedIn post, a member profile, a LinkedIn Page or external content), add a cover image or video, and @mention a member or Page. Heading levels are reached through the style menu; the page does not list the levels. The SEO title and description replace the article title and opening lines only in search-engine results (LinkedIn Help: SEO settings). Devanagari rendering and exact link behaviour in articles are [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04].",
    "writing_notes": [
     "Only two numbers exist: SEO title 60 characters (truncated above that) and SEO description 140-160 characters (a recommendation, not a hard cap). The LinkedIn Help page for these is about three years old, so confidence is medium; check how the title looks in a search preview.",
-    "`pcw.py check --platform plat:linkedin_article` tests the first limit (SEO title, 60 chars) against the whole file, so put only the SEO title in the file. Test the description with `--field \"SEO description\"` on a file holding only that line.",
+    "`pcw.py check --platform plat:linkedin_article --field \"SEO title\"` tests the SEO title (60 chars) against the whole file (without --field nothing is enforced), so put only the SEO title in the file. Test the description with `--field \"SEO description\"` on a file holding only that line.",
     "SEO title: keyword first, under 60, written separately from the headline. SEO description: 140-160 characters that summarise the piece and include the keyword. Example: 'A Jaipur CA explains how D2C founders should answer a GST notice, with a 5-step reply checklist and deadlines.' (110 chars).",
     "Headline and body have no recorded limit. Use sub-headings (style menu), short paragraphs, one blockquote for the claim worth remembering, and an embed or image only where it adds evidence.",
     "Newsletter edition: the newsletter name and description have no recorded limit either; write the description as one sentence that says who it is for and what arrives each time.",
@@ -577,7 +577,7 @@
    ],
    "formatting": "Intro message up to 8,000 characters including spaces, emojis and punctuation; up to 10 emojis in the intro. HTML and rich-text formatting count toward the 8,000. CTA buttons: 25 characters each, 5 per message, 50 per conversation; 'Not Interested' is required and counts as one of the five. Custom footer and terms up to 20,000 characters. No source read on line breaks or bold in the intro [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04].",
    "writing_notes": [
-    "`pcw.py check` tests the first limit (intro, 8,000) by default, which will pass anything. Test button labels with `--field \"CTA button text\"` on a file holding only one label, and read the 500-character composer recommendation yourself.",
+    "`pcw.py check` enforces nothing here without --field (four rows); `--field intro` tests the 8,000, which will pass anything. Test button labels with `--field \"CTA button text\"` on a file holding only one label, and read the 500-character composer recommendation yourself.",
     "Design the conversation as a tree before writing: intro, up to four real buttons, one required 'Not Interested', then a follow-up message for each button with its own copy.",
     "Intro structure: line 1 says why this person is receiving it (their role or topic), line 2 gives the one offer with a number, then the buttons carry the action.",
     "Button labels are verbs with the outcome, 25 characters or fewer, for example 'Book a 15-min call' (18 chars), 'Send me the checklist' (21 chars), 'Not interested' (14 chars).",
@@ -658,7 +658,7 @@
    ],
    "formatting": "Supported files: PPT, PPTX, DOC, DOCX, PDF; file size cap 100 MB; page cap 300; word cap one million (LinkedIn Help). Text on the pages is read inside the viewer, so it is not part of the post text. Post text above the document follows plat:linkedin_post (3,000 characters; line breaks render [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04]). That the first page shows as the cover before the reader swipes is [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04].",
    "writing_notes": [
-    "`pcw.py check --platform plat:linkedin_document_post` is not meaningful: its first limit is a page count and the tool applies count limits to the hashtag count. Test the post text with `--field \"post text\"` (3,000 chars) on a file holding only the post text.",
+    "`pcw.py check --platform plat:linkedin_document_post` enforces nothing without --field (two rows: words per document, post text). Test the post text with `--field \"post text\"` (3,000 chars) on a file holding only the post text.",
     "Post text: line 1 says what the document is and the payoff ('12 GST notice replies, one page each'), line 2 gives the reason to open it, then one CTA (comment 'GST' to get the editable version). No official figure for the 'see more' fold exists (see plat:linkedin_post), so the first two lines must stand alone.",
     "Page 1 states the promise; each following page holds one idea in large type; the last page holds one action and the author's name or handle.",
     "Plan page count from the idea, not the cap. A teardown that needs 8 pages should be 8 pages.",
@@ -798,7 +798,7 @@
    ],
    "formatting": "Plain text; both limits count spaces (LinkedIn Help). Destination URL up to 500 characters (same page). No source read on emoji, capitalisation or punctuation rules [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04]; check comp:linkedin_ads_policy.",
    "writing_notes": [
-    "Limits: headline 25 characters, description 75 characters, including spaces. `pcw.py check` tests the first limit (description, 75) by default; use `--field headline` on a file holding only the headline to test the 25.",
+    "Limits: headline 25 characters, description 75 characters, including spaces. `pcw.py check` enforces nothing here without --field: use `--field description` for the 75 and `--field headline` on a file holding only the headline to test the 25.",
     "Headline (25): outcome noun phrase, for example 'GST notice replies by CAs' (25 chars).",
     "Description (75): one benefit plus one action, for example 'Draft replies reviewed by a practising CA. Book a free call.' (60 chars).",
     "Write three headline-description pairs on three angles: cost saved, time saved, proof (a number the client can back).",
@@ -884,7 +884,7 @@
    "formatting": "Confirmed against Mastodon docs (user/profile, read 2026-10-05): display name up to 30 characters by default; bio up to 500 characters by default; 'All links are counted as 23 characters'; 4 custom metadata rows with a label and a value; metadata can contain mentions, hashtags, custom emojis and links; a profile link is verified when the linked web page links back to the Mastodon profile with a rel=me attribute. Markdown is not documented on the pages read. The docs example spells the display-name key 'max_display_name_lenth'; read the live response for the real key. No source read on how Devanagari or emoji count toward these limits.",
    "writing_notes": [
     "Defaults from the official docs: bio 500, display name 30, 4 fields, 255 characters per field value. All are per-server settings; read configuration.accounts from GET /api/v2/instance for the actual server before writing.",
-    "`pcw.py check --platform plat:mastodon_bio` tests the bio (first limit, 500). Test the others with `--field \"display name\"` and `--field \"profile field value\"` on files holding only that text.",
+    "`pcw.py check --platform plat:mastodon_bio --field bio` tests the bio (500) (without --field nothing is enforced). Test the others with `--field \"display name\"` and `--field \"profile field value\"` on files holding only that text.",
     "Bio shape: who you are, who you help, one proof, one thing people will see here. About 2-4 short sentences. Example: 'Practising CA in Jaipur. I help D2C founders answer GST notices without panic. Posts: checklists, deadlines, real cases (no client names).' (138 chars).",
     "Fields: use the 4 rows for website, newsletter, other handles and one proof link. Add rel=me on the linked page so the link verifies.",
     "Display name: the name people search for, 30 characters; no source read on emoji in display names.",
@@ -950,7 +950,8 @@
      "url": "https://docs.joinmastodon.org/entities/Instance/",
      "checked": "2026-10-04",
      "quote": "\"characters_reserved_per_url\" : 23",
-     "confidence": "high (official Mastodon docs example)"
+     "confidence": "high (official Mastodon docs example)",
+     "lint": false
     },
     {
      "field": "media alt text (description)",
@@ -973,7 +974,7 @@
    ],
    "formatting": "Confirmed against Mastodon docs (user/posting, read 2026-10-05): all links count as 23 characters whatever their length and must begin with http:// or https://; hashtags may contain letters, numbers and underscores but not numbers only; mentions use the full address (@alice@example.com) and only the username part counts against the limit, not the domain; an optional content warning collapses the status; four visibility levels (Public, Quiet public, Followers, Private mention); media descriptions are optional but recommended for accessibility. Markdown is not documented on that page. The configuration example in the Instance docs also shows 4 media attachments per status.",
    "writing_notes": [
-    "Default limit 500 characters (Mastodon docs example config; per server). `pcw.py check --platform plat:mastodon_post` tests 500 against the raw text, so it overcounts every URL longer than 23 characters and overcounts @mentions that include a domain. Subtract those by hand.",
+    "Default limit 500 characters (Mastodon docs example config; per server). `pcw.py check --platform plat:mastodon_post --field \"status text\"` tests 500 against the raw text (without --field nothing is enforced: alt text and poll options are separate texts), so it overcounts every URL longer than 23 characters and overcounts @mentions that include a domain. Subtract those by hand.",
     "URL counted as 23: put the link last or in a reply, and spend the remaining characters on the sentence that earns the click.",
     "Mentions: only the username part counts, so a full address like @editor@mastodon.social costs the length of 'editor' plus the @. Use them for credit and for reaching a person, not as decoration.",
     "Alt text: up to 1,500 characters; describe what a person who cannot see the image needs (the chart's finding, the text on the poster), not 'image of'.",
@@ -1066,7 +1067,7 @@
    "formatting": "Editor tools (Medium Help, 'Using the story editor', via search result 2026-10-05): bold and italic from the text toolbar; title, subtitle, header and sub-header styles; quote blocks and pull quotes; code blocks (the { } button or triple backtick); images and embeds have their own help pages. Medium's help pages state no character limit for story titles or subtitles (checked 2026-10-04). A custom display title and subtitle can be set for previews and social shares. Read time is computed from word count.",
    "writing_notes": [
     "Word-count threshold: 150 words or less is shortform, excluding kickers, titles, subtitles and image captions (Medium Help, updated 2026-07-09). It is a classification, not a limit.",
-    "`pcw.py check --platform plat:medium_story` tests the first limit (150 words) as a ceiling, so every long story will 'fail' it. Ignore that failure for stories; use it only when you are deliberately writing shortform. Test the newsletter fields with `--field \"newsletter name\"` and `--field \"newsletter description\"` on files holding only that text.",
+    "`pcw.py check --platform plat:medium_story --field shortform` tests the 150-word shortform threshold as a ceiling, so every long story 'fails' it: use it only when you are deliberately writing shortform (without --field nothing is enforced). Test the newsletter fields with `--field \"newsletter name\"` and `--field \"newsletter description\"` on files holding only that text.",
     "Title and subtitle have no recorded limit. Write the title as one promise a reader can repeat; the subtitle carries the qualifier or the proof. Set a custom display title and subtitle when the social preview needs different wording.",
     "Structure for a long story: opening that states the point or the incident in the first paragraph, sub-headers every few paragraphs, a pull quote for the line worth sharing, code blocks for technical pieces.",
     "Publication newsletter: name 3-50 characters, description 10-200, written as one sentence that says who it is for and what arrives. Example description: 'Weekly notes for D2C founders on GST, compliance and cash flow, written by practising CAs.' (90 chars).",
@@ -1165,7 +1166,7 @@
    "formatting": "Per-placement recommendations from the Meta Ads Guide: Instagram feed image ad, primary text 125 characters, headline 40, maximum 30 hashtags; Facebook feed image ad, primary text 50-150 characters, headline 27. These are recommended lengths, not hard caps. The Ads Guide is a JavaScript app; figures were read through a fetch tool and no description length was shown for these placements. No source read on line breaks, emoji or links inside ad text [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04].",
    "writing_notes": [
     "Which number to trust: Meta's own Ads Guide pages, per placement. Instagram feed: primary text 125, headline 40. Facebook feed: primary text 50-150 (upper end recorded as 150), headline 27. Third-party '125/40/30 everywhere' guides are the weaker source.",
-    "`pcw.py check --platform plat:meta_ads` tests only the first limit (Instagram feed primary text, 125). Use `--field \"Facebook feed\"` or `--field \"Instagram feed\"` on a file that holds one field at a time (the tool tests the whole file against every matching limit).",
+    "`pcw.py check --platform plat:meta_ads` enforces nothing without --field. Name the field and the placement, one field per file: `--field \"primary text, Instagram\"`, `--field \"headline, Facebook\"` and so on (a bare `--field headline` matches both placements and asks you to name one).",
     "Write the first 125 characters (Instagram) or 150 (Facebook) so they carry the hook and the offer on their own; anything after is supporting text.",
     "Headline: one outcome or offer in 27-40 characters, for example 'Ghar baithe GST notice help' (27 chars) (Facebook feed headline fits 27) or 'Aapke GST notice ka jawab, CA ke saath' (38 chars) (Instagram feed headline fits 40).",
     "Hinglish in Roman script suits Tier-2 and Tier-3 audiences; keep Devanagari and Roman separate in an ad and test each. Sources do not say how Devanagari counts toward these guides.",
@@ -1220,6 +1221,7 @@
      "field": "headline (final, after dynamic text)",
      "max": 30,
      "unit": "chars",
+     "count": "double_width_emoji",
      "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
      "checked": "2026-10-04",
      "quote": "no more than 30 final characters are allowed after substitution",
@@ -1229,6 +1231,7 @@
      "field": "description (final, after dynamic text)",
      "max": 90,
      "unit": "chars",
+     "count": "double_width_emoji",
      "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
      "checked": "2026-10-04",
      "quote": "no more than 90 final characters are allowed after substitution",
@@ -1238,6 +1241,7 @@
      "field": "path 1 / path 2 (each)",
      "max": 15,
      "unit": "chars",
+     "count": "double_width_emoji",
      "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
      "checked": "2026-10-04",
      "quote": "No more than 15 final (not dynamic text) characters can be input.",
@@ -1274,7 +1278,7 @@
    "formatting": "Plain text assets. Headline 30 final characters and description 90 after substitution; path 1 and path 2 15 final (not dynamic) characters each; the domain plus both paths cannot exceed 67 characters. Dynamic text strings such as {keyword} are allowed; raw input may run to 1,000 characters including them. Double-width characters (Korean, Japanese, Chinese and emojis) halve the limits. No source read says Devanagari is double-width or how it counts; it is not on Microsoft's list.",
    "writing_notes": [
     "Limits (Microsoft Learn, Bulk Service reference): headline 30, description 90, path 15 each, domain plus paths 67; 3-15 headlines and 2-4 descriptions per ad. The help centre was not read; this is the API reference.",
-    "`pcw.py check --platform plat:microsoft_ads_rsa` tests the first limit (headline 30) against the whole file, so put one headline per file. Use `--field description` for 90 and `--field path` for 15; `--field headline` also matches the headline-count limit, which the tool compares to the hashtag count and is harmless.",
+    "`pcw.py check --platform plat:microsoft_ads_rsa --field headline` tests the headline (30) against the whole file, so put one headline per file (without --field nothing is enforced). Use `--field description` for 90 and `--field \"path 1\"` for 15.",
     "Write 15 headlines on distinct jobs: keyword match (2-3), offer, proof, objection, location, CTA. Example headlines: 'GST Notice Reply Service' (24 chars), 'CA-Reviewed in 48 Hours' (23 chars), 'Free 15-Min Case Review' (23 chars).",
     "Write 4 descriptions that each stand alone, 60-90 characters, one benefit and one CTA verb. Example: 'Drafted and reviewed by practising CAs. Send your notice and book a free call today.' (84 chars).",
     "Dynamic text: count the worst-case substitution against 30 and always supply default text.",
@@ -1381,7 +1385,7 @@
    ],
    "formatting": "Plain text assets: up to 15 headlines of 30 characters, up to 5 long headlines of 90, up to 5 descriptions of 90, business name 25 characters (Microsoft Learn, Bulk Service reference). The business name may appear depending on placement. No source read on emoji, capitalisation or punctuation rules for these assets [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04].",
    "writing_notes": [
-    "`pcw.py check --platform plat:microsoft_audience_ads` tests the first limit (headline, 30) against the whole file. Use `--field \"long headline\"` for 90, `--field description` for 90, `--field \"business name\"` for 25, one asset per file.",
+    "`pcw.py check --platform plat:microsoft_audience_ads --field headline` tests the headline (30) against the whole file; without --field nothing is enforced. Use `--field \"long headline\"` for 90, `--field description` for 90, `--field \"business name\"` for 25, one asset per file.",
     "Headline (30): the hook as a short phrase. Long headline (90): a full sentence with the benefit and the audience. Description (90): proof plus one CTA verb.",
     "Example long headline: 'GST notice? Get a CA-reviewed reply drafted for your D2C brand, fast.' (69 chars).",
     "Write 5 long headlines that differ in angle (cost, speed, proof, objection, location), not 5 rewordings.",
@@ -1468,7 +1472,7 @@
    ],
    "formatting": "Pinterest's Pin specs page (read 2026-10-05): title 100 characters maximum, description up to 800 characters, descriptions do not appear when viewing the Pin in the home feed or search feed. API v5 OpenAPI schema: title 100, description 800, alt text 500, link 2,048. Pin descriptions are searchable text and hashtags are allowed but not required [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04]. A search summary of Pinterest help said the first 40 characters of a title may be visible in feeds depending on device; the page itself was not confirmed to say so, so treat 40 as unverified.",
    "writing_notes": [
-    "`pcw.py check --platform plat:pinterest_pin` tests the title (first limit, 100) against the whole file, so put only the title in the file. Test the others with `--field description`, `--field \"alt text\"`, `--field link`.",
+    "`pcw.py check --platform plat:pinterest_pin --field title` tests the title (100) against the whole file (without --field nothing is enforced), so put only the title in the file. Test the others with `--field description`, `--field \"alt text\"`, `--field link`.",
     "Title: keyword and payoff in the first 40 characters (unverified feed truncation figure; safe either way), up to 100 characters. Example: 'Paneer Butter Masala Recipe: 30-Minute Dhaba Style' (50 chars).",
     "Description: 2-3 sentences in natural search language: what the Pin shows, who it is for, what they will get. The description is not shown in the home or search feed (Pinterest Pin specs page), so the title and image must work alone.",
     "Because a third party reports a 500-character in-app cap and Pinterest's page says 800, put the essential words in the first 500 characters and use the rest for supporting detail.",
@@ -1589,7 +1593,7 @@
    ],
    "formatting": "Notification messages and data messages share a 4,096-byte maximum payload (Firebase docs). The Firebase console enforces a 1,000-character limit. Visible length depends on device, OS and whether the notification is expanded; no hard title or body limit is documented. Text is UTF-8. Markdown or HTML in notification text [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04].",
    "writing_notes": [
-    "Limits: 4,096 bytes total payload for the API; 1,000 characters for a message from the Firebase console (Firebase docs). `pcw.py check --platform plat:push_notification_fcm` counts the UTF-8 bytes of the draft against 4,096; test the console cap with `--field console` (tool counts bytes for a bytes-unit limit and characters for a chars-unit limit).",
+    "Limits: 4,096 bytes total payload for the API; 1,000 characters for a message from the Firebase console (Firebase docs). `pcw.py check --platform plat:push_notification_fcm --field payload` counts the UTF-8 bytes of the draft against 4,096 (without --field nothing is enforced); test the console cap with `--field console` (tool counts bytes for a bytes-unit limit and characters for a chars-unit limit).",
     "The platform gives no visible-length figure, so write the title as a complete thought in a few words and the body so its first clause makes sense alone; whatever the device cuts is then the least important part.",
     "Do not repeat the app name in the title; the OS shows the app name beside the notification (check on a device).",
     "Craft shape: title = the thing that changed, body = the one next step with a specific. Example title 'Your refund of Rs 840 is processed' (34 chars), body 'It reaches your bank in 2-3 working days. Tap to see the details.' (65 chars).",
@@ -1697,7 +1701,7 @@
    "formatting": "Text message up to 3,072 characters; rich card title up to 200 and description up to 2,000; each suggestion (reply or action) up to 25 characters, up to 11 suggestions on a single text message; carousels hold a minimum of two and a maximum of ten rich cards; a rich card holds up to 4 suggested replies or actions; the whole AgentMessage may be up to 250 KB. Emoji and multi-byte characters count as 2-4 or more characters (Google guide). Whether rich text styling is supported is [UNVERIFIED: general platform knowledge, not read from a platform page on 2026-10-04].",
    "writing_notes": [
     "Limits (Google RBM docs): text 3,072 characters; rich card title 200, description 2,000; suggestions 25 characters, 11 per message; carousel of 2-10 cards; a rich card holds up to 4 suggestions; whole message 250 KB.",
-    "`pcw.py check --platform plat:rcs_business_messaging` tests the text limit (3,072 chars) using Python's character count, which is lower than Google's count for emoji and Devanagari. Test chips with `--field suggestion`, card title with `--field \"rich card title\"`, description with `--field \"rich card description\"`, one element per file.",
+    "`pcw.py check --platform plat:rcs_business_messaging --field \"text message\"` tests the text limit (3,072 chars) in visible characters (without --field nothing is enforced), which is lower than Google's count for emoji and Devanagari. Test chips with `--field suggestion`, card title with `--field \"rich card title\"`, description with `--field \"rich card description\"`, one element per file.",
     "Devanagari and emoji: the guide says multi-byte characters count as 2-4 or more. If counted as UTF-8 bytes a Devanagari character is 3, so a 25-limit chip may hold only about 8 Devanagari characters. That is an inference, not a documented rule; confirm with a test message on a test device and keep Hindi chips short.",
     "Chips are verbs with the outcome in 25 characters or fewer: 'Track order' (11 chars), 'Reschedule' (10 chars), 'Talk to an agent' (16 chars).",
     "Message design: line 1 says who it is from and why now; one purpose per message; put the image, title and a one-line description in a rich card and the action in a chip.",
@@ -1778,7 +1782,7 @@
    ],
    "formatting": "Community description: plain text, up to 500 characters, 'markdown/formatting will not work here' (Reddit Help: Community settings). Community name: 3-21 characters, cannot be edited after creation (Reddit Help: How to create a community). Sidebar text widget: up to 10,000 characters with markdown formatting options (Reddit Help: Sidebar Widgets).",
    "writing_notes": [
-    "`pcw.py check --platform plat:reddit_community_description` tests the 500-character description. Test the name with `--field name` (21) and the widget with `--field sidebar` (10,000), each on a file holding only that text.",
+    "`pcw.py check --platform plat:reddit_community_description --field description` tests the 500-character description (without --field nothing is enforced). Test the name with `--field name` (21) and the widget with `--field sidebar` (10,000), each on a file holding only that text.",
     "Description pattern: one sentence on who the community is for, one on what to post, one boundary (what is not welcome). Example: 'For Indian D2C founders to ask and answer questions on GST, shipping and cash flow. No self-promotion links.' (108 chars).",
     "Name: 3-21 characters, permanent; choose the word members would type, short and spellable. Check that it is not just a brand name unless it is a brand community.",
     "Sidebar text widget (markdown): a few rules in a numbered list, a short FAQ, links to resources. Keep it scannable; most people read only the top.",
@@ -1869,7 +1873,7 @@
    ],
    "formatting": "Title: up to 300 characters, does not render markdown (Reddit API docs). Body: Reddit markdown, which renders bold, italic, headings, lists, links, tables and spoilers (Reddit Formatting Guide, per the harvest note). Body limit 40,000 characters for non-Premium users and 80,000 for Premium (Reddit Help). Each subreddit may add its own title and body rules and flair. No official comment-length figure was found; none is recorded.",
    "writing_notes": [
-    "Limits: title 300 characters (Reddit API docs, /api/submit); body 40,000 (80,000 for Premium users, since the Reddit Help changelog of 4 November 2025). `pcw.py check --platform plat:reddit_post` tests the title limit (300) against the whole file, so put only the title in the file. Test the body with `--field \"text body\"` (it tests both the 40,000 and the 80,000 limits).",
+    "Limits: title 300 characters (Reddit API docs, /api/submit); body 40,000 (80,000 for Premium users, since the Reddit Help changelog of 4 November 2025). `pcw.py check --platform plat:reddit_post --field title` tests the title limit (300) against the whole file (without --field nothing is enforced), so put only the title in the file. Test the body with `--field \"text body\"` (it matches both body rows and asks you to name one: `--field 'text body (non-Premium)'` tests 40,000, `--field 'text body (Premium)'` 80,000).",
     "Title: say the question or the finding with a specific (city, price, time frame, version). Example: 'How are Jaipur D2C brands handling a GST notice for a mismatch in GSTR-1 and 3B?' (80 chars).",
     "Body: context first (who you are, what you tried), then the question or the findings, then what you want from readers. A short TL;DR at the top of a long post is a community habit, not a platform rule.",
     "Disclose affiliation in the first line when you represent a brand or sell something, and keep the tone of a member, not a pitch (trend:reddit_and_forums_in_search).",

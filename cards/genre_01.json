@@ -160,7 +160,7 @@
     "require": [
      {
       "label": "has a cart/checkout CTA",
-      "regex": "(?i)cart|checkout|check out|complete|order|bag|basket|कार्ट|ऑर्डर"
+      "regex": "(?i)\\bcart|\\bcheckout|\\bcheck out|\\bcomplete|\\border|\\bbag|\\bbasket|(?<![ऀ-ॿ])कार्ट|(?<![ऀ-ॿ])ऑर्डर"
      }
     ],
     "ban": [
@@ -329,7 +329,7 @@
     "require": [
      {
       "label": "has a next step",
-      "regex": "(?i)contact|call|book|write to|email|whatsapp|visit|shop|get in touch|talk to|schedule|enquir|संपर्क"
+      "regex": "(?i)\\bcontact|\\bcall|\\bbook|\\bwrite to|\\bemail|\\bwhatsapp|\\bvisit\\b|\\bshop|\\bget in touch|\\btalk to|\\bschedule|\\benquir|(?<![ऀ-ॿ])संपर्क"
      }
     ],
     "ban": [

@@ -14,7 +14,7 @@ Modes:
 import hashlib, json, os, re, subprocess, sys, unittest
 from pathlib import Path
 
-HOME = Path(os.environ.get("PCW_HOME") or Path(__file__).resolve().parents[1]).resolve()
+HOME = Path(__file__).resolve().parents[1]  # scan this checkout (what a push publishes), never $PCW_HOME
 STRICT = os.environ.get("PCW_SCRUB_STRICT", "1") != "0"
 CONTENT = ("cards/", "gallery/", "work/", "PCW.md")
 MAX_BYTES = 5 * 1024 * 1024

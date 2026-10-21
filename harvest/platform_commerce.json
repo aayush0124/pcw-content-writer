@@ -20,6 +20,7 @@
      "field": "headline",
      "max": 30,
      "unit": "chars",
+     "count": "double_width",
      "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
      "checked": "2026-10-04",
      "quote": "Headline 1 | 30 characters",
@@ -29,6 +30,7 @@
      "field": "description",
      "max": 90,
      "unit": "chars",
+     "count": "double_width",
      "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
      "checked": "2026-10-04",
      "quote": "Description 1 | 90 characters",
@@ -38,6 +40,7 @@
      "field": "display URL path (each of 2)",
      "max": 15,
      "unit": "chars",
+     "count": "double_width",
      "url": "https://support.google.com/google-ads/answer/1704389?hl=en",
      "checked": "2026-10-04",
      "quote": "Path (2) | 15 characters each",
@@ -405,6 +408,7 @@
      "field": "sitelink link text",
      "max": 25,
      "unit": "chars",
+     "count": "double_width",
      "url": "https://support.google.com/google-ads/answer/2375416?hl=en",
      "checked": "2026-10-04",
      "quote": "Sitelink text is limited to 25 characters in most languages, or 12 characters in double-width languages like Chinese, Japanese, and Korean.",
@@ -414,6 +418,7 @@
      "field": "callout text",
      "max": 25,
      "unit": "chars",
+     "count": "double_width",
      "url": "https://support.google.com/google-ads/answer/6079510?hl=en",
      "checked": "2026-10-04",
      "quote": "Callout text is limited to 25 characters in most languages, or 12 characters in double-width languages (like Chinese, Japanese, and Korean).",
@@ -705,6 +710,7 @@
      "field": "headline (final, after dynamic text)",
      "max": 30,
      "unit": "chars",
+     "count": "double_width_emoji",
      "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
      "checked": "2026-10-04",
      "quote": "no more than 30 final characters are allowed after substitution",
@@ -714,6 +720,7 @@
      "field": "description (final, after dynamic text)",
      "max": 90,
      "unit": "chars",
+     "count": "double_width_emoji",
      "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
      "checked": "2026-10-04",
      "quote": "no more than 90 final characters are allowed after substitution",
@@ -723,6 +730,7 @@
      "field": "path 1 / path 2 (each)",
      "max": 15,
      "unit": "chars",
+     "count": "double_width_emoji",
      "url": "https://learn.microsoft.com/en-us/advertising/bulk-service/responsive-search-ad?view=bingads-13",
      "checked": "2026-10-04",
      "quote": "No more than 15 final (not dynamic text) characters can be input.",
@@ -1091,7 +1099,8 @@
      "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
      "checked": "2026-10-04",
      "quote": "Templates are limited to two URL buttons.",
-     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)"
+     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)",
+     "lint": false
     },
     {
      "field": "phone number buttons per template",
@@ -1252,7 +1261,8 @@
      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
      "checked": "2026-10-04",
      "quote": "limited a single SMS message to 140 bytes in length. This equals 1,120 bits or 160 7-bit characters.",
-     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)",
+     "count": "sms_gsm7"
     },
     {
      "field": "per segment of a long SMS, GSM-7",
@@ -1261,7 +1271,8 @@
      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
      "checked": "2026-10-04",
      "quote": "GSM-7 messages contain 153 alphanumeric characters.",
-     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)",
+     "count": "sms_gsm7_segment"
     },
     {
      "field": "single SMS, UCS-2 (any emoji, Devanagari, curly quote)",
@@ -1270,7 +1281,8 @@
      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
      "checked": "2026-10-04",
      "quote": "This reduces the single message character limit from 160 to 70.",
-     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)",
+     "count": "sms_ucs2"
     },
     {
      "field": "per segment of a long SMS, UCS-2",
@@ -1279,7 +1291,8 @@
      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
      "checked": "2026-10-04",
      "quote": "If the message exceeds 70 characters, it splits the message into two or more messages with 67 characters each.",
-     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)",
+     "count": "sms_ucs2_segment"
     },
     {
      "field": "message body accepted by Twilio API",
@@ -1324,7 +1337,8 @@
      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
      "checked": "2026-10-04",
      "quote": "limited a single SMS message to 140 bytes in length. This equals 1,120 bits or 160 7-bit characters.",
-     "confidence": "medium (Twilio carrier-gateway docs; DLT itself sets no body length)"
+     "confidence": "medium (Twilio carrier-gateway docs; DLT itself sets no body length)",
+     "count": "sms"
     },
     {
      "field": "template variable length",
@@ -1951,8 +1965,8 @@
      "field": "ad text",
      "max": 160,
      "unit": "chars",
-     "url": "https://promote.telegram.org/guidelines",
-     "checked": "2026-10-04",
+     "url": "https://ads.telegram.org/guidelines",
+     "checked": "2026-10-20",
      "quote": "The maximum length of the ad text is 160 characters including spaces.",
      "confidence": "high (Telegram Ad Platform guidelines)"
     },
@@ -1960,16 +1974,16 @@
      "field": "extra links inside ad text",
      "max": 1,
      "unit": "count",
-     "url": "https://promote.telegram.org/guidelines",
-     "checked": "2026-10-04",
+     "url": "https://ads.telegram.org/guidelines",
+     "checked": "2026-10-20",
      "quote": "ads may also include one optional link in the ad text itself",
      "confidence": "high (Telegram Ad Platform guidelines)"
     }
    ],
    "sources": [
     {
-     "url": "https://promote.telegram.org/guidelines",
-     "title": "Telegram Ad Platform guidelines (promote.telegram.org)",
+     "url": "https://ads.telegram.org/guidelines",
+     "title": "Telegram Ad Platform guidelines (ads.telegram.org)",
      "supports": "ad format, editorial and link rules"
     }
    ],

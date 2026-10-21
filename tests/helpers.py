@@ -2,7 +2,8 @@
 import os, shutil, subprocess, sys, tempfile
 from pathlib import Path
 
-HOME = Path(os.environ.get("PCW_HOME") or Path(__file__).resolve().parents[1]).resolve()
+HOME = Path(__file__).resolve().parents[1]  # the checkout these tests live in, whatever PCW_HOME says
+os.environ["PCW_HOME"] = str(HOME)  # so `import pcw` below and in the test modules reads this checkout's data too
 COPY = ["pcw.py", "pipeline.py", "CONTRACT.md", "PCW.md", "README.md", "harvest", "cards", "gallery", "work/batches",
         "work/gaps.jsonl", "work/lead/status.py", "work/lead/collect_fixes.py"]
 sys.path.insert(0, str(HOME))
@@ -10,10 +11,23 @@ sys.path.insert(0, str(HOME))
 
 def cli(script, *args, home=HOME, stdin=""):
     """(exit code, stdout) of `python <home>/<script> args...`, run from a neutral folder against `home`."""
-    env = dict(os.environ, PCW_HOME=str(home), PYTHONIOENCODING="utf-8")
-    r = subprocess.run([sys.executable, str(home / script), *map(str, args)], input=stdin, capture_output=True,
-                       text=True, encoding="utf-8", env=env, cwd=tempfile.gettempdir())
-    return r.returncode, r.stdout
+    return cli3(script, *args, home=home, stdin=stdin)[:2]
+
+
+def cli3(script, *args, home=HOME, stdin="", env=None, timeout=None):
+    """(exit code, stdout, stderr); stdin may be bytes (sent as is), env adds or (with None values) removes
+    variables."""
+    e = dict(os.environ, PCW_HOME=str(home), PYTHONIOENCODING="utf-8")
+    for k, v in (env or {}).items():
+        if v is None:
+            e.pop(k, None)
+        else:
+            e[k] = v
+    data = stdin if isinstance(stdin, bytes) else stdin.encode("utf-8")
+    r = subprocess.run([sys.executable, str(home / script), *map(str, args)], input=data, capture_output=True,
+                       env=e, cwd=tempfile.gettempdir(), timeout=timeout)
+    out, err = (b.decode("utf-8", "replace").replace("\r\n", "\n") for b in (r.stdout, r.stderr))
+    return r.returncode, out, err
 
 
 def tmp_home():

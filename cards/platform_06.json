@@ -434,7 +434,7 @@
     "Photos: at least 1000 x 1000 px, white or clean background, product fills 70% or more, a unique photo per product, no screenshots, no watermarks, logos, prices or timestamps, real photos not drawings."
    ],
    "writing_notes": [
-    "Lint the title: `python pcw.py check title.txt --platform plat:indiamart_listing --field title` tests both title limits at once (5 words ideal, under 70 characters). Without --field the tool asks you to choose. The photo minimum (px) is checked by hand in an image viewer.",
+    "Lint the title: `python pcw.py check title.txt --platform plat:indiamart_listing --field title` tests both title limits at once (5 words ideal, under 70 characters). Without --field it tests the same two title rows, the only lintable ones. The photo minimum (px) is checked by hand in an image viewer.",
     "Title formula: [Brand if any] + product type + 1-3 key attributes (material, type, model, size). 'Stainless Steel Pressure Cooker 5 Litre' is 6 words: cut to 'Steel Pressure Cooker 5 Litre' to meet the 5-word ideal.",
     "Spec block example: 'Material: Stainless Steel 304', 'Capacity: 5 L', 'Lid Type: Outer Lid', 'Base: Induction Compatible'. No 'Customized', 'Standard' or 'All' as a value.",
     "Description (3-5 short lines): what it is used for, who buys it (hotels, caterers, retailers), two or three features that a buyer can verify, applications. Every number must match the specs and the photo, because IndiaMART audits mismatches.",

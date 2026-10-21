@@ -915,7 +915,7 @@
     "require": [
      {
       "label": "asks members to act",
-      "regex": "(?i)\\?|reply|comment|drop|share|post your|batao|bataiye|likho|बताओ|बताइए|लिखो|लिखें"
+      "regex": "(?i)\\?|\\breply|\\bcomment|\\bdrop|\\bshare\\b|\\bpost your|\\bbatao|\\bbataiye|\\blikho|(?<![ऀ-ॿ])बताओ|(?<![ऀ-ॿ])बताइए|(?<![ऀ-ॿ])लिखो|(?<![ऀ-ॿ])लिखें"
      }
     ],
     "ban": [
@@ -1286,7 +1286,7 @@
      },
      {
       "label": "has a CTA",
-      "regex": "(?i)start|try|book|switch|demo|sign up|get started|शुरू|आज़माएं"
+      "regex": "(?i)\\bstart|\\btry|\\bbook|\\bswitch|\\bdemo|\\bsign up|\\bget started|(?<![ऀ-ॿ])शुरू|(?<![ऀ-ॿ])आज़माएं"
      },
      {
       "label": "dates the comparison",
@@ -2915,7 +2915,7 @@
     "require": [
      {
       "label": "asks for backing",
-      "regex": "(?i)back|pledge|donate|contribut|support|सहयोग|दान|योगदान"
+      "regex": "(?i)\\bback\\b|\\bpledge|\\bdonate|\\bcontribut|\\bsupport|(?<![ऀ-ॿ])सहयोग|(?<![ऀ-ॿ])दान|(?<![ऀ-ॿ])योगदान"
      },
      {
       "label": "says where the money goes or what could go wrong",

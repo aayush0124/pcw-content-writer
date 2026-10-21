@@ -66,7 +66,7 @@
     "Where the hook lands: only about the first 60 characters of the title are safe (70 is the field cap, 60 is Shopify's advice). Put the primary keyword and the product type in the first words, the brand last. Shopify says 'near the beginning of the title'. Example (54 chars): \"Kachhi Ghani Mustard Oil 1L | Cold Pressed | Sarson Co\".",
     "Description: one or two natural sentences, 160 characters, with the keyword once, one specific fact (volume, material, origin) and one reason to click (price band, delivery, return window) that is true. Example (127 chars): \"Cold pressed kachhi ghani mustard oil in a 1 L glass bottle, pressed in small batches in Bharatpur. Free shipping above Rs 499.\"",
     "Which number to trust: title 70 is the field cap; 60 is Shopify's own advice for not being shortened, so write to 60. Description 160 is 'recommended', not a cap, so the same rule applies: land the point inside 160.",
-    "Lint: `pcw.py check --platform plat:shopify_seo_fields` tests the title against the FIRST limit (70) and prints the first 60 characters as the visible text. Run `--field description` for the 160. Both are counted in characters including spaces.",
+    "Lint: `pcw.py check --platform plat:shopify_seo_fields --field title` tests the title against 70 and prints the first 60 characters as the visible text (without --field nothing is enforced). Run `--field description` for the 160. Both are counted in characters including spaces.",
     "If the theme appends or prepends the shop name, it can eat into the visible title: after saving, read the rendered title and cut your own words to make room.",
     "A Hinglish store title is a judgment call: check what the client's buyers actually search for before writing one, and keep Hinglish for on-page copy and social captions by default."
    ],
@@ -123,7 +123,8 @@
      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
      "checked": "2026-10-04",
      "quote": "limited a single SMS message to 140 bytes in length. This equals 1,120 bits or 160 7-bit characters.",
-     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)",
+     "count": "sms_gsm7"
     },
     {
      "field": "per segment of a long SMS, GSM-7",
@@ -132,7 +133,8 @@
      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
      "checked": "2026-10-04",
      "quote": "GSM-7 messages contain 153 alphanumeric characters.",
-     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)",
+     "count": "sms_gsm7_segment"
     },
     {
      "field": "single SMS, UCS-2 (any emoji, Devanagari, curly quote)",
@@ -141,7 +143,8 @@
      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
      "checked": "2026-10-04",
      "quote": "This reduces the single message character limit from 160 to 70.",
-     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)",
+     "count": "sms_ucs2"
     },
     {
      "field": "per segment of a long SMS, UCS-2",
@@ -150,7 +153,8 @@
      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
      "checked": "2026-10-04",
      "quote": "If the message exceeds 70 characters, it splits the message into two or more messages with 67 characters each.",
-     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)"
+     "confidence": "medium (Twilio carrier-gateway docs; the underlying standard is 3GPP TS 23.038/23.040, not read)",
+     "count": "sms_ucs2_segment"
     },
     {
      "field": "message body accepted by Twilio API",
@@ -172,7 +176,7 @@
    "writing_notes": [
     "Budget (arithmetic from the per-segment numbers): GSM-7 holds 160 in one segment, 306 in two (2 x 153), 459 in three. UCS-2 holds 70 in one, 134 in two (2 x 67), 201 in three. Each segment is billed.",
     "India rule of thumb: 150 characters of Roman Hinglish fit one GSM-7 segment; 150 characters of Devanagari take 150/67, about 3 segments. For Hindi bulk SMS, write shorter, not the same length.",
-    "Lint: the FIRST limit is single-SMS GSM-7 = 160 chars, so `pcw.py check --platform plat:sms_encoding_segments draft.txt` tests that. For a Devanagari or emoji draft run `--field UCS-2` (it tests 70 and 67); the checker also prints a UCS-2 notice when it sees Devanagari.",
+    "Lint: `pcw.py check draft.txt --platform plat:sms_encoding_segments --field SMS` works out the encoding (GSM-7, or UCS-2 when any character such as ₹, a curly quote, an emoji or Devanagari is outside it), counts septets (^ { } [ ] ~ | \\ € cost 2) or UTF-16 units, fails a message that does not fit one SMS of that encoding (160 or 70) and reports the segment count. Without --field nothing is enforced.",
     "Write the SMS in this order: the action or offer first, brand and detail after. The sender header already identifies you (see plat:sms_india_dlt), so spend the opening words on what the reader should do.",
     "Medium confidence: the segment numbers come from Twilio's carrier-gateway documentation, not from the 3GPP standard. Before a large send, run one test text and read the segment count your gateway reports.",
     "Example that fits one GSM-7 segment (Hinglish, 101 chars): \"Aapka order SC2231 aaj ship hoga. Track karein: sarsonco.in/t/SC2231. Madad ke liye reply karein YES.\" (Fictional brand.)"
@@ -232,7 +236,8 @@
      "url": "https://www.twilio.com/docs/glossary/what-sms-character-limit",
      "checked": "2026-10-04",
      "quote": "limited a single SMS message to 140 bytes in length. This equals 1,120 bits or 160 7-bit characters.",
-     "confidence": "medium (Twilio carrier-gateway docs; DLT itself sets no body length)"
+     "confidence": "medium (Twilio carrier-gateway docs; DLT itself sets no body length)",
+     "count": "sms"
     },
     {
      "field": "template variable length",
@@ -275,7 +280,7 @@
     "Variable limit: 30 characters each; where content cannot fit in 30, the regulation allows more than one contiguous variable of the same type. More than three variables per template only on a justified request, so design for three.",
     "Fixed-content test: TRAI requires a minimum of 30% fixed characters. Count the variable slots at their 30-character maximum to stay safe (conservative practice, the counting method is not stated in the text read).",
     "Worst-case length (arithmetic): three variables at 30 characters take 90, leaving 70 characters of fixed text inside a 160-character segment. Example template: \"Hi {#var#}, your Sarson Co order {#var#} ships today. Track it here: {#var#}\": about 55 fixed characters against 90 at worst, so roughly 38% fixed and well inside 160. (Fictional brand.)",
-    "Lint: `pcw.py check --platform plat:sms_india_dlt` tests the FIRST limit, the 160-character body. Run `--field variable` (matches the 30-character row) for the 30 (put only one variable value in the file) and `--field header` for the 11. Test the FILLED message against the 160, not just the template; the 3-variable count must be checked by hand.",
+    "Lint: `pcw.py check --platform plat:sms_india_dlt --field \"message body\"` tests the body against one SMS: 160 GSM-7 septets, or 70 UTF-16 units when any character (₹, a curly quote, an emoji, Devanagari) forces UCS-2 (without --field nothing is enforced). Run `--field variable` (matches the 30-character row) for the 30 (put only one variable value in the file) and `--field header` for the 11. Test the FILLED message against the 160, not just the template; the 3-variable count must be checked by hand.",
     "Header length conflict: TRAI text = 11-character alphanumeric; operator portals and vendors = 6 characters (low confidence). When naming a header in a brief, give the brand's 6-character version and say the portal has the final word.",
     "Hinglish in Roman script is the norm for Indian consumer SMS and keeps the single-segment budget; offer a Devanagari version only with its segment cost."
    ]
@@ -362,9 +367,9 @@
    "confidence": "high",
    "sources": [
     {
-     "url": "https://promote.telegram.org/guidelines",
-     "title": "Telegram Ad Platform guidelines (promote.telegram.org)",
-     "supports": "160-character text including spaces, one optional link in the text, no line breaks/lists, no gimmicky caps or emoji (search summary re-read 2026-10-05, page itself refused a direct fetch)"
+     "url": "https://ads.telegram.org/guidelines",
+     "title": "Telegram Ad Platform guidelines (ads.telegram.org)",
+     "supports": "160-character text including spaces, one optional link in the text, no line breaks/lists, no gimmicky caps or emoji (page re-read 2026-10-20 at ads.telegram.org/guidelines; the old promote.telegram.org address no longer answers)"
     }
    ],
    "related": [
@@ -378,8 +383,8 @@
      "field": "ad text",
      "max": 160,
      "unit": "chars",
-     "url": "https://promote.telegram.org/guidelines",
-     "checked": "2026-10-04",
+     "url": "https://ads.telegram.org/guidelines",
+     "checked": "2026-10-20",
      "quote": "The maximum length of the ad text is 160 characters including spaces.",
      "confidence": "high (Telegram Ad Platform guidelines)"
     },
@@ -387,8 +392,8 @@
      "field": "extra links inside ad text",
      "max": 1,
      "unit": "count",
-     "url": "https://promote.telegram.org/guidelines",
-     "checked": "2026-10-04",
+     "url": "https://ads.telegram.org/guidelines",
+     "checked": "2026-10-20",
      "quote": "ads may also include one optional link in the ad text itself",
      "confidence": "high (Telegram Ad Platform guidelines)"
     }
@@ -401,7 +406,7 @@
    ],
    "writing_notes": [
     "Where the hook lands: the whole text is shown, but 160 characters is two short sentences. Sentence one = what the reader gets and the format; sentence two = who it is for or how often, plus the action that matches the button.",
-    "Lint: `pcw.py check --platform plat:telegram_ads` tests the FIRST limit, the 160-character text. The in-text link counts as characters in the 160. The count rows (links, buttons) cannot be linted: `pcw.py check` compares the count unit with the number of hashtags, so count them by hand.",
+    "Lint: `pcw.py check --platform plat:telegram_ads` tests the 160-character text and counts its links against the extra-link row. The in-text link counts as characters in the 160. Buttons are not text: count them by hand.",
     "Make the action match the button: if the button says Join, do not write 'Subscribe now' as well.",
     "Example (137 chars, Hinglish): \"Roz subah 3 line mein GST circular ka saar. Koi spam nahi, koi forward nahi. Free channel 'CA Notes Daily' join karein: t.me/canotesdaily\" (fictional channel).",
     "Test variants by changing one thing: the benefit sentence, or the audience qualifier. Keep punctuation plain; clever formatting is what gets an ad rejected.",
@@ -413,15 +418,15 @@
    "kind": "platform",
    "name": "Telegram profile bio",
    "status": "current",
-   "summary": "The 'about' text on a Telegram profile: 70 UTF-8 bytes for ordinary accounts, 140 for Premium (documented client-config values). Because the unit is bytes, a Roman Hinglish bio fits about 70 characters while a Devanagari one may fit only about 23.",
+   "summary": "The 'about' text on a Telegram profile: 70 characters for ordinary accounts, 140 for Premium (documented client-config values). The docs call it 'UTF-8 length', which Telegram's own library counts in Unicode code points, so in Hindi every vowel sign and virama counts as well as the letters you see.",
    "use_for": [
     "A creator, advisor or brand profile bio on Telegram.",
     "A bio that tells people who you are and why to message or join, in one line.",
-    "A Hindi or Hinglish bio where the byte budget has to be checked."
+    "A Hindi or Hinglish bio where the code-point budget has to be checked."
    ],
    "avoid": [
-    "Counting characters when the limit is UTF-8 bytes: Devanagari is 3 bytes per character, so a 40-character Hindi bio can be over 70 bytes. Count bytes, or write the bio in Roman Hinglish.",
-    "Emoji-heavy bios: each emoji takes several bytes (typically 3 to 4), so three emoji can eat a fifth of the budget.",
+    "Counting only the letters you see: the limit is code points, and a Devanagari vowel sign, virama or nukta is one more, so 55 visible Hindi characters can be 74 code points. Count code points (pcw.py check does), or test in the app.",
+    "Emoji-heavy bios: an emoji with a skin tone is 2 code points and a ZWJ family 5 or more, so a few emoji eat a real share of the 70.",
     "Treating 70 and 140 as certain: the live values are served to each client and the docs show them as example config. Test in the app before delivering a bio that sits at the limit.",
     "Mixing this up with channel or group descriptions: those are separate fields; no limit for them was read for this card."
    ],
@@ -431,6 +436,11 @@
      "url": "https://core.telegram.org/api/config",
      "title": "Telegram API: Client configuration",
      "supports": "about_length_limit_default 70 and about_length_limit_premium 140, defined as UTF-8 length (example config values)"
+    },
+    {
+     "url": "https://github.com/tdlib/td/blob/master/tdutils/td/utils/utf8.h",
+     "title": "TDLib (Telegram Database Library): tdutils/td/utils/utf8.h",
+     "supports": "utf8_length returns the length of a UTF-8 string in characters: it counts the first byte of each code point, so the config's 'UTF-8 length' is a count of code points, not bytes"
     }
    ],
    "related": [
@@ -442,7 +452,8 @@
     {
      "field": "bio (non-Premium)",
      "max": 70,
-     "unit": "bytes",
+     "unit": "chars",
+     "count": "code_points",
      "url": "https://core.telegram.org/api/config",
      "checked": "2026-10-04",
      "quote": "about_length_limit_default The maximum UTF-8 length of bios of non- Premium users (integer); example config: \"about_length_limit_default\": 70",
@@ -451,7 +462,8 @@
     {
      "field": "bio (Premium)",
      "max": 140,
-     "unit": "bytes",
+     "unit": "chars",
+     "count": "code_points",
      "url": "https://core.telegram.org/api/config",
      "checked": "2026-10-04",
      "quote": "about_length_limit_premium The maximum UTF-8 length of bios of Premium users (integer); example config: \"about_length_limit_premium\": 140",
@@ -459,16 +471,16 @@
     }
    ],
    "formatting": [
-    "Plain text profile 'about' field. The docs define the limit as UTF-8 length, recorded here as bytes.",
-    "Latin letters, digits and spaces are 1 byte each; Devanagari characters are 3 bytes each; most emoji are 3 to 4 bytes. (UTF-8 property, not a Telegram rule.)",
+    "Plain text profile 'about' field. The docs define the limit as 'UTF-8 length'; TDLib's utf8_length counts it in characters (code points), not bytes, so it is recorded as chars counted in code points. Confirm in the app before delivering a bio at the limit.",
+    "Latin letters, digits, spaces and each Devanagari letter, vowel sign, virama and nukta are 1 code point each; an emoji is 1 to several (skin tones, ZWJ sequences). (Unicode property, not a Telegram rule.)",
     "Whether @usernames and links in a bio become tappable and whether line breaks are kept were not established by the source read: [unverified, check on a live profile]."
    ],
    "writing_notes": [
-    "Lint: the FIRST limit is the non-Premium 70 bytes, and `pcw.py check` measures bytes with `len(text.encode('utf-8'))` for this unit. A pure-Devanagari draft fails near 23 characters, which is the point. Use `--field 'bio (Premium)'` to test 140 alone (a bare `--field Premium` also matches the non-Premium row).",
-    "Formula for 70 bytes: what you do + for whom + the action. Example (60 bytes): \"GST notices in simple Hindi | CA, Jaipur | DM to book a call\". (Fictional.)",
-    "Hindi option: pure Devanagari fits only about 23 characters, but mixing in Latin letters, digits and spaces (1 byte each) stretches it. Example (28 characters, 60 bytes): \"जयपुर CA | GST आसान भाषा में\". Test it in the app.",
-    "Spend the bytes on nouns and the offer; drop 'passionate', 'helping', 'welcome to'.",
-    "If the client is Premium the extra 70 bytes is worth one proof point (a number of clients or years), but write the 70-byte version first so it works for non-Premium viewers of the profile too."
+    "Lint: `pcw.py check --platform plat:telegram_bio` tests both bio rows at once, so in effect the non-Premium 70, counted in code points. Use `--field 'bio (Premium)'` to test 140 alone (a bare `--field bio` or `--field Premium` matches both rows and asks you to name one).",
+    "Formula for 70 characters: what you do + for whom + the action. Example (60 characters): \"GST notices in simple Hindi | CA, Jaipur | DM to book a call\". (Fictional.)",
+    "Hindi option: a Devanagari bio is counted in code points, so vowel signs and viramas use up the 70 faster than the letters you see. Example (28 code points, 22 visible characters): \"जयपुर CA | GST आसान भाषा में\". Test it in the app.",
+    "Spend the characters on nouns and the offer; drop 'passionate', 'helping', 'welcome to'.",
+    "If the client is Premium the extra 70 characters are worth one proof point (a number of clients or years), but write the 70-character version first so it works for non-Premium viewers of the profile too."
    ]
   },
   {
@@ -547,7 +559,7 @@
     "Structure: headline line (what this is) + two or three short lines (proof, price, date) + one link or action line. Example (Hinglish): \"Diwali Combo ab live\\nKurta + dupatta set, Rs 1,499 (MRP 2,199)\\nSirf Sunday raat tak. Order: sarsonco.in/diwali\" (fictional brand).",
     "No visible cut-off value was read for captions, so put the offer in the first line and do not rely on anything below the third line being seen.",
     "A story caption needs its own 200-character version: one line and one action. Use `--field story` to test it.",
-    "Lint: `pcw.py check --platform plat:telegram_caption` tests the FIRST limit, 1,024 characters. Strip markup characters before counting, since the platform counts after parsing."
+    "Lint: `pcw.py check --platform plat:telegram_caption --field \"media caption\"` matches both media caption rows and asks you to name one: use `--field 'media caption (non-Premium)'` for the 1,024 (without --field nothing is enforced). Strip markup characters before counting, since the platform counts after parsing."
    ]
   },
   {
@@ -609,7 +621,7 @@
     "Devanagari and emoji counting is not stated in the Bot API excerpt: test a long Hindi post in a test channel."
    ],
    "writing_notes": [
-    "Lint: `pcw.py check --platform plat:telegram_message` tests the FIRST limit, 4,096 characters. Run `--field poll` to test the 300-character poll question.",
+    "Lint: `pcw.py check --platform plat:telegram_message --field message` tests 4,096 characters (without --field nothing is enforced). Run `--field poll` to test the 300-character poll question.",
     "Most good channel posts are far shorter than the cap: a headline line, two to five short lines, one link. Use the cap only for a deliberate long read.",
     "Open with the point: the first line is what a reader sees in the chat list [general behaviour, not read on a page].",
     "If the text will be over 4,096, split at a natural break (a heading or a number) and say 'Part 2' at the start of the next message; do not cut a sentence in half.",
@@ -700,7 +712,7 @@
     "How Threads counts emoji and Devanagari against the 500 is not stated: test a Hindi post in the composer."
    ],
    "writing_notes": [
-    "Lint: `pcw.py check --platform plat:threads_post` tests the FIRST limit, 500 characters. Use `--field topic` for the 50-character tag.",
+    "Lint: `pcw.py check --platform plat:threads_post --field \"post text\"` tests 500 characters (without --field nothing is enforced). Use `--field topic` for the 50-character tag.",
     "Where the hook lands: no visible cut-off value was recorded, so write the first line as the hook and make it stand alone; Threads reads like talk, so open with the point or a question, not a headline.",
     "The one tag: choose the topic a stranger would browse (for example 'GST' or 'D2CIndia'), written without spaces or banned punctuation. Do not spend it on the brand name.",
     "Example (Hinglish, one tag): \"Founders ko GST notice se darr lagta hai, notice se nahi, deadline se. Reply ki last date calendar mein sabse pehle daalo. #GSTIndia\"",
@@ -802,7 +814,8 @@
      "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components",
      "checked": "2026-10-04",
      "quote": "Templates are limited to two URL buttons.",
-     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)"
+     "confidence": "high (Meta developer docs; read through a fetch tool, plain client refused)",
+     "lint": false
     },
     {
      "field": "phone number buttons per template",
@@ -823,7 +836,7 @@
    ],
    "writing_notes": [
     "Write by component: header (one short label or leave it out), body (the message), footer (a short line such as the brand or an opt-out cue), buttons (one primary action first). Count each against its own limit.",
-    "Lint: `pcw.py check --platform plat:whatsapp_business_template` tests the FIRST limit, the 1,024-character body. Run `--field header`, `--field footer` and `--field label` for the others; the count rows (buttons, URL buttons, phone buttons) cannot be linted because `pcw.py check` compares a count unit with the number of hashtags, so count buttons by hand.",
+    "Lint: `pcw.py check --platform plat:whatsapp_business_template --field body` tests the 1,024-character body (without --field nothing is enforced). Run `--field header`, `--field footer` and `--field label` for the others; buttons are template components, not text, so count them by hand.",
     "Where the hook lands: no visible cut-off value was recorded for the body, so make line one carry the point (order, delivery, appointment, offer) and name the customer with the first variable.",
     "Utility example (Hinglish body): \"Namaste {{1}}, aapka order {{2}} kal tak deliver ho jayega. Tracking link neeche button mein hai. Koi dikkat ho to is message ka reply kijiye.\" Button: 'Track order' (11 characters).",
     "Marketing example: lead with the offer and the end date, and keep it to one idea; put the price band or code in the body and the action in the URL button.",
@@ -961,7 +974,7 @@
    "writing_notes": [
     "Formula for 160: what you do + for whom + one proof or number + a reason to follow or an action. Example (107 chars): \"Brand writer in Pune. I turn founder voice notes into posts people reply to. Open for 2 retainer slots. DM.\"",
     "Display name (50): name plus a descriptor people search for. Example (24 chars): \"Riya Kulkarni | D2C copy\". The username must stay plain: \"riyawrites_pune\" is 15 characters, the maximum.",
-    "Lint: `pcw.py check --platform plat:x_bio` tests the FIRST limit, the 160-character bio. Use `--field \"display name\"` for the 50 and `--field username` for the 15. The checker counts Python characters, so an emoji counts as one.",
+    "Lint: `pcw.py check --platform plat:x_bio --field bio` tests the 160-character bio (without --field nothing is enforced). Use `--field \"display name\"` for the 50 and `--field username` for the 15. The checker counts visible characters, so an emoji counts as one.",
     "Hinglish bio: write it in the language of the posts you will make, so the bio filters the right followers. A Hindi-first account can put the Devanagari name in the display name and the Roman handle in the username.",
     "Proof beats adjectives: '212 CA firms served' says more than 'trusted by many'. Use a real figure the client can show."
    ]
@@ -1077,7 +1090,8 @@
      "url": "https://docs.x.com/fundamentals/counting-characters",
      "checked": "2026-10-04",
      "quote": "Posts on X can contain up to 280 characters.",
-     "confidence": "high (X developer docs)"
+     "confidence": "high (X developer docs)",
+     "count": "x_weighted"
     },
     {
      "field": "URL (any length, counted as)",
@@ -1086,7 +1100,8 @@
      "url": "https://docs.x.com/fundamentals/counting-characters",
      "checked": "2026-10-04",
      "quote": "All URLs are wrapped with t.co shortener and count as 23 characters, regardless of the original length",
-     "confidence": "high (X developer docs)"
+     "confidence": "high (X developer docs)",
+     "lint": false
     }
    ],
    "formatting": [
@@ -1098,7 +1113,7 @@
    ],
    "writing_notes": [
     "Count it the X way: (characters, with emoji as 2) + 23 per link. Example (152 counted): \"GST notice aaya? Pehle 3 cheezein check karo: notice ka section, reply ki last date, aur DIN number. Panic baad mein. Checklist: [link]\", 129 characters plus the 23 for the link.",
-    "Lint: `pcw.py check --platform plat:x_post` tests the FIRST limit, 280, by plain `len(text)`. That undercounts emoji (1 instead of 2) and overcounts a pasted link (its full length instead of 23). Hand-correct before trusting a pass or a fail near the limit.",
+    "Lint: `pcw.py check --platform plat:x_post` tests the 280 the X way (twitter-text weights: emoji and CJK 2, Latin and Devanagari code points 1 each, an http(s) link 23). A domain written without http(s):// is counted as text, so write links in full before checking.",
     "Hook: no cut-off is recorded, but readers scan, so the first words are the hook. Lead with the claim, the number or the question; no 'Thread:' or 'Let me tell you' openers on a single post.",
     "One idea, one claim per post. A strong Hinglish post reads the way the audience talks: short sentences, the key noun early.",
     "Put the link last, and only when the click is the goal. If the post is the content, leave the link out."
@@ -1158,7 +1173,7 @@
     "Links, hashtags and mentions are clickable as in single posts [general platform knowledge, not read]."
    ],
    "writing_notes": [
-    "Lint: `pcw.py check --platform plat:x_thread` tests the FIRST limit, 280, against the WHOLE file, so a full thread will always fail. Save each post as its own file (or paste one at a time) and check them separately.",
+    "Lint: `pcw.py check --platform plat:x_thread` tests the 280 against the WHOLE file, so a full thread will always fail. Save each post as its own file (or paste one at a time) and check them separately.",
     "Structure: post 1 = the claim or the promise with a number (what the reader will be able to do); posts 2 to n-1 = one step or one proof each; last post = the takeaway and the one action (follow, link, reply).",
     "Number the posts only if the order matters ('2/9'): the numbers cost characters. Example opener (49 chars): \"GST notice aaye to pehle ye 4 kaam karo (thread):\"",
     "Write each post so it still makes sense if read alone: a reader often lands on the middle of a thread from a quote or reply.",
@@ -1226,7 +1241,7 @@
    ],
    "writing_notes": [
     "Structure for 1,000: line 1 = who it is for + what they get; line 2 = topics + schedule + language; line 3 = proof (who checks the content, years, a real number); last line = one action or contact. Example (403 chars): \"Hum GST aur tax ko seedhi Hindi mein samjhate hain, un chhote business owners aur D2C founders ke liye jinke paas full-time CA nahi hai. Har Tuesday aur Friday ek naya video: GST notice, ITC, filing deadlines, aur sahi books rakhne ke tareeke. Hamare saare videos ek practicing CA ke saath check hote hain. Free checklists aur templates ke liye link neeche dekhein. Business enquiries: hello@example.com\" (fictional channel).",
-    "Lint: `pcw.py check --platform plat:youtube_channel_description` tests the FIRST limit, 1,000 characters. Use `--field keywords` to test the keyword list against 500 (write it as one space-separated line).",
+    "Lint: `pcw.py check --platform plat:youtube_channel_description --field \"channel description\"` tests 1,000 characters (without --field nothing is enforced). Use `--field keywords` to test the keyword list against 500 (write it as one space-separated line).",
     "The first sentence carries the weight: no visible cut-off was recorded, so assume a viewer reads one or two lines. Put the audience and the promise there.",
     "Keywords: pick a short set of phrases people would type (topic, language, audience), not every possible word; spend the 500 on phrases, not repetition.",
     "Match the language of the About text to the language of the videos; for a Hinglish channel, a Roman Hinglish first line with an English keyword list works."
@@ -1385,7 +1400,7 @@
     "How much of the description shows before the 'more' control was not read on a page: [unverified: assume only the first two lines are seen without a tap]."
    ],
    "writing_notes": [
-    "Lint: `pcw.py check --platform plat:youtube_description` tests the FIRST limit, 5,000 characters. For Hindi run `--field bytes` (the UTF-8 byte count) and `--field hashtags` to test the 60.",
+    "Lint: `pcw.py check --platform plat:youtube_description` tests all three rows at once: 5,000 characters, the API's UTF-8 byte cap (which matters for Hindi) and the 60 hashtags; `--field bytes` or `--field hashtags` tests one.",
     "Order: line 1 a keyword-led sentence saying what the viewer gets; line 2 the one link or action; then the chapter list; then credits and secondary links; then up to three hashtags at the end. Example (332 chars, Hinglish):\n\"GST notice aaya hai? CA Neha Sharma (Jaipur) batati hain notice ka section kaise padhein, reply kab tak dena hai aur draft kaise likhein.\nFree checklist: sarsonco.in/gst-checklist\n\n00:00 Intro\n01:10 Notice ka section kaise padhein\n03:45 Reply ki last date\n06:20 Reply draft ka format\n09:05 Common galtiyan\n\n#GST #GSTNotice #TaxIndia\"",
     "Which number to trust: write to the stricter, the API's 5,000 bytes. For Roman Hinglish it is the same as characters; for Devanagari divide by three (about 1,666 characters).",
     "Do not paste a keyword list into the description: write sentences, and use plat:youtube_tags only for variants and misspellings.",
@@ -1468,7 +1483,7 @@
     "Whether links, hashtags and emoji render in post text, and how Devanagari is counted, were not read: [unverified, test a draft post]."
    ],
    "writing_notes": [
-    "Lint: the FIRST limit is a count (10 images), which `pcw.py check` cannot test; it compares counts with hashtags. Use `--field poll` to test 65 and 36 against the draft text, and `--field quiz` for 80 and 30 (write one option per file).",
+    "Lint: the image count (10) is not text, so `pcw.py check` cannot test it, and without --field nothing is enforced. Use `--field 'text poll option'` (65) or `--field 'image poll caption'` (36) on the draft text, and `--field quiz` for 80 and 30 (write one option per file).",
     "Poll formula: one question, three or four parallel options, each a noun phrase. Example (Hinglish): question \"Agla video kis topic par banau?\" with options \"Mutual fund SIP kaise shuru karein\" (34 chars) and \"80C tax saving ke asaan tareeke\" (31 chars).",
     "Image-poll captions (36): the option's name only, for example \"80C ke tareeke\" (14 chars).",
     "Post copy: a question or one line of news plus the action. The channel's audience sees it between videos, so reference the last upload by name.",
@@ -1721,7 +1736,7 @@
     "How Devanagari and emoji are counted in Google Ads text assets was not read for this page: test in the Google Ads editor."
    ],
    "writing_notes": [
-    "Lint: `pcw.py check --platform plat:youtube_video_ads` tests the FIRST limit only: the video action headline, 30 characters. Name the field for the others: `--field \"long headline\"`, `--field description`, `--field in-feed`, `--field masthead`. Each in-feed line is checked separately: paste one line per file.",
+    "Lint: `pcw.py check --platform plat:youtube_video_ads` enforces nothing without --field, and the rows share words, so name the ad type with the field: `--field \"video action campaign: headline\"` (30), `--field \"video action campaign: long headline\"`, `--field \"in-feed video ad: description\"`, `--field \"Masthead: headline\"`. Each in-feed line is checked separately: paste one line per file.",
     "Video action set, written together. Headline (26): \"Learn GST filing in 7 days\". Long headline (74): \"GST filing made simple: a 7-day course for small business owners, in Hindi\". Description (78): \"Live classes, filing templates and a CA doubt-clearing session. Starts Monday.\" CTA (9): \"Enrol now\". (Fictional course.)",
     "In-feed: two headline lines of up to 40 and two description lines of up to 35, each its own sentence. Example headline (31): \"GST filing, explained in 7 days\"; description lines (31, 28): \"Hindi course for small business\" and \"Live classes. Starts Monday.\"",
     "Because text may not show, write the offer into the first five seconds of the video and use the text for the reinforcement: price, date, the one next step.",
